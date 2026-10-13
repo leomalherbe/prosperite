@@ -828,7 +828,7 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
             libelle=l["titre_fr"], theme=df, theme_libelle=flux_info.get(df, {}).get("nom_fr", ""), frequence=l["freq"], zone=l["zone"],
             premiere=l["premiere_periode"], derniere=l["derniere_periode"], nb_annees_depuis_2000=nb,
             serie_arretee=l["serie_arretee"].upper() == "TRUE" or "serie arretee" in cat.normaliser(l["titre_fr"]),
-            ancienne_base=anciens.get(df), dimensions={k: v for k, v in dims.items() if k == "SEXE"},
+            ancienne_base=anciens.get(df), dimensions={k: v for k, v in dims.items() if k == "SEXE"}, dimensions_bruit=dims,
         )
         par_flux[df]["catalogue"] += 1
         par_flux[df][d.candidat] += 1

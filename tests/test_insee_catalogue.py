@@ -121,3 +121,95 @@ def test_decider_infra_annuelle_et_ventilation():
                 premiere="1975-Q1", derniere="2026-Q2")
     assert d.candidat == "oui"
     assert "infra-annuelle" in d.commentaire and d.ventilation == "sexe"
+
+
+# --- corrections de la phase 2 (règles éprouvées sur l'instantané BDM d'août 2024 et l'essai du 13/10) ---
+
+def _decider(libelle, theme="ODD-X", dims=None):
+    return cat.decider(libelle=libelle, theme=theme, theme_libelle="", frequence="A", zone="principale",
+                       premiere="2000", derniere="2024", dimensions_bruit=dims)
+
+
+@pytest.mark.parametrize(
+    "libelle",
+    [
+        # « au cours des … derniers mois » n'est pas un cours de bourse (faux négatif ODD corrigé)
+        "Part des individus s'étant connectés à internet au cours des trois derniers mois - Ensemble",
+        "Personnes n’ayant pas utilisé internet au cours des trois derniers mois ou sans aucune compétence",
+        "Concentrations moyennes annuelles de PM10 à proximité du trafic routier",
+        "Part modale des transports de marchandises dans le transport intérieur terrestre de marchandises - Transport ferroviaire",
+    ],
+)
+def test_libelles_odd_restent_candidats(libelle):
+    assert _decider(libelle).candidat == "oui"
+
+
+@pytest.mark.parametrize(
+    "libelle,theme",
+    [
+        ("Cours du pétrole brut (Brent) en euros", "X"),
+        ("Indice annuel des prix agricoles à la production (IPPAP) - Gros bovins", "IPAGRI-BASE-2015"),
+        ("Prix moyens annuels de vente au détail en métropole - Sucre en morceaux (1 kg)", "IPC-PM-2015"),
+        ("Indice annuel du coût horaire du travail révisé - Salaires et charges - Tous salariés", "X"),
+        ("Taux de cotisations sociales (part patronale) - Contribution au dialogue social", "SMIC-COTISATIONS"),
+        ("Nuitées dans les hôtels - Résidents - France métropolitaine", "X"),
+        ("Effectif salarié par catégorie d'entreprise - Microentreprises - France", "X"),
+        ("Importations - Total - Valeur aux prix courants - Série CVS-CJO", "CNT-2020-PIB-EQB-RF"),
+    ],
+)
+def test_nouveaux_hors_champ(libelle, theme):
+    d = _decider(libelle, theme)
+    assert d.candidat == "non" and d.commentaire.startswith("hors champ")
+
+
+@pytest.mark.parametrize(
+    "theme,dims,ecarte",
+    [
+        # secteurs institutionnels : sous-secteurs et sociétés écartés, agrégats gardés
+        ("CNA-2020-CSI", {"SECT_INST": "S1313", "OPERATION": "B6G"}, True),
+        ("CNA-2020-CSI", {"SECT_INST": "S14", "OPERATION": "B6G"}, False),
+        ("DD_CNA_TEE", {"REF_SECTOR": "S11", "STO": "B8G"}, True),
+        ("DD_CNA_TEE", {"REF_SECTOR": "S1M", "STO": "B8G", "COUNTERPART_AREA": "W0"}, False),
+        ("DD_CNA_TEE", {"REF_SECTOR": "S14", "STO": "B8G", "COUNTERPART_AREA": "W1"}, True),     # reste du monde
+        ("DD_CNA_APU", {"REF_SECTOR": "S13", "COUNTERPART_SECTOR": "S1313", "STO": "OTE"}, True),
+        # branches, produits, fonctions
+        ("CNA-2020-EMPLOI", {"CNA_ACTIVITE": "A38-CJ"}, True),
+        ("CNA-2020-EMPLOI", {"CNA_ACTIVITE": "NNTOTAL"}, False),
+        ("CNA-2020-CONSO-MEN", {"CNA_PRODUIT": "FON01", "OPERATION": "P4"}, False),
+        ("CNA-2020-CONSO-MEN", {"CNA_PRODUIT": "FON011", "OPERATION": "P4"}, True),
+        ("CNT-2020-PIB-EQB-RF", {"CNA_PRODUIT": "D-CNT", "OPERATION": "P3"}, False),
+        ("DD_CNA_APU", {"REF_SECTOR": "S13", "EXPENDITURE": "GF07", "STO": "OTE"}, False),
+        ("DD_CNA_APU", {"REF_SECTOR": "S13", "EXPENDITURE": "GF0702", "STO": "OTE"}, True),
+        ("DD_CNA_CONSO_MENAGES_COICOP", {"EXPENDITURE": "CP0111", "STO": "P31"}, True),
+        # patrimoine : logements gardés, instruments détaillés écartés
+        ("DD_CNA_PATRIMOINE", {"REF_SECTOR": "S14", "INSTR_ASSET": "N111G", "STO": "LE"}, False),
+        ("DD_CNA_PATRIMOINE", {"REF_SECTOR": "S14", "INSTR_ASSET": "F511", "STO": "LE"}, True),
+        # valorisations et opérations techniques
+        ("DD_CNA_AGREGATS", {"REF_SECTOR": "S1", "STO": "B1GQ", "PRICES": "D"}, True),
+        ("DD_CNA_AGREGATS", {"REF_SECTOR": "S1", "STO": "B1GQ", "PRICES": "L", "TRANSFORMATION": "GY"}, False),
+        ("DD_CNA_AGREGATS", {"REF_SECTOR": "S1", "STO": "D41"}, True),
+        ("CNA-2020-PAT-NF", {"SECT_INST": "S1", "OPERATION": "AN_SEC2010"}, False),
+        # hors comptes nationaux, la liste d'opérations ne s'applique pas
+        ("DS_X", {"STO": "D41"}, False),
+    ],
+)
+def test_motif_bruit_dimensions(theme, dims, ecarte):
+    assert (cat.motif_bruit_dimensions(theme, dims) is not None) is ecarte
+    d = _decider("Revenu disponible brut", theme, dims)
+    assert (d.candidat == "non") is ecarte
+
+
+@pytest.mark.parametrize(
+    "libelle,dimension",
+    [
+        # libellés Melodi : « Emploi ou débit », « actifs », « formation brute de capital » ne trompent plus le tagging
+        ("Comptes des administrations publiques — Devise nationale (Euros) ; Épargne brute ; Emploi ou débit", "niveau_de_vie"),
+        ("Comptes de patrimoine — Emploi ou débit ; Monde ; Total ; Formation brute de capital fixe", "niveau_de_vie"),
+        ("Tableau économique d'ensemble — Ménages ; Patrimoine en fin d'année ; Actifs fixes par type d'actifs", "niveau_de_vie"),
+        ("Nombre de lits et places en chirurgie pour 100.000 habitants - France", "sante"),
+        ("Population écrouée au 31 décembre - Densité carcérale pour 100 places - France", "democratie"),
+        ("Activité, emploi et chômage - séries longues — Population active ; Femme", "travail"),
+    ],
+)
+def test_tagger_libelles_techniques(libelle, dimension):
+    assert cat.tagger(libelle) == dimension

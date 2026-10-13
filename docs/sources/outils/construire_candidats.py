@@ -182,11 +182,13 @@ def lacunes(ans: list[int]) -> list[int]:
 
 
 def frequence_de(ans: list[int]) -> str:
-    """annuelle (au plus deux années isolées manquantes, signalées en commentaire) | irreguliere | ponctuelle."""
+    """annuelle (au plus deux années isolées manquantes, moins de 15 % de la période, signalées en commentaire)
+    | irreguliere | ponctuelle."""
     if len(ans) <= 1:
         return "ponctuelle"
     pas = {b - a for a, b in zip(ans, ans[1:])}
-    return "annuelle" if max(pas) <= 2 and len(lacunes(ans)) <= 2 else "irreguliere"
+    trous = len(lacunes(ans))
+    return "annuelle" if max(pas) <= 2 and trous <= 2 and trous <= 0.15 * (ans[-1] - ans[0] + 1) else "irreguliere"
 
 
 def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unite: str, sens: str,

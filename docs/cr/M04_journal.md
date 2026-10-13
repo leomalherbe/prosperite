@@ -19,3 +19,16 @@ Périmètre du lancement en cours : **phase 1** (T1 fiches par source, T2 tablea
 - **Décision technique (dans le périmètre phase 1)** : ajout d'un script autonome `scripts/collecte_sources.py` exécuté par GitHub Actions (workflow « Collecte », cible déduite du nom de branche). Il lit `docs/sources/verif_acces/urls.csv`, ouvre chaque URL sans clé, et écrit `docs/sources/verif_acces/resultats.csv` (code HTTP, type, taille, verdict) et un extrait lisible par URL dans `docs/sources/verif_acces/extraits/` (début du texte, feuilles d'un classeur, contenu d'un zip, valeurs distinctes d'une colonne). Tests hors ligne : `tests/test_collecte_sources.py` (8 tests).
 - **Vague 1** : 82 URL (9 portails Opendatasoft, Webstat, BCE, SDES DiDo, SSMSI, élections, ONISR, Ademe, Citepa, OCDE, 18 séries Banque mondiale + WGI, OWID ×4, RSF, Transparency, Freedom House, V-Dem, WHR, EDGAR, GFN, PNUD, OMS, ONUDC).
 - **Constat** : le portail `naturefrance.fr` (ONB) est hors service ; une page de secours sur eaufrance.fr renvoie vers des fiches PDF hébergées sur Resana, sans date de reprise annoncée.
+
+## 2026-10-13 14:00 — Sous-tâche 2 : résultats des vagues 1 et 2 du robot (run Actions 38390822077 puis 38392712026)
+
+- **Vague 1** : 74/82 URL renvoient des données. Échecs instructifs : `data.culture.gouv.fr` n'est plus un portail Opendatasoft (application `culture.data.gouv.fr`) ; Webstat `observations` n'existe pas sans compte (404) ; une URL data.gouv recopiée par WebFetch était fausse (404) — leçon : ne prendre les URL de ressources data.gouv que dans la réponse brute de l'API ; V-Dem n'a pas de lien direct (404, téléchargement par formulaire) ; GFN répond 403 sans clé ; l'URL ONUDC renvoie une page HTML (portail déplacé vers data.unodc.org).
+- **Vague 2** : 104 URL ; catalogues complets des 8 portails Opendatasoft extraits (DREES 265 jeux, DEPP 310, MESR 217, Odissé 388, Ameli 51, économie 617, ODRE 187, CNAF 210).
+- **Résultats marquants** :
+  - Banque mondiale : 14 des 16 séries des prototypes répondent ; `EN.ATM.CO2E.PC` et `EN.ATM.CO2E.PP.GD` sont **archivées** (« indicator was not found… deleted or archived ») ; remplaçants vérifiés `EN.GHG.CO2.PC.CE.AR5`, `EN.GHG.ALL.PC.CE.AR5`. WGI accessibles via `source=3` avec les codes `GOV_WGI_*` (1996–2025).
+  - OWID : la série RSF des prototypes (`press-freedom-index-rsf`) **s'arrête en 2021** (9 points 2013–2021) ; la source primaire RSF publie un CSV par année (2002–2026, vérifié). Les 3 séries V-Dem des prototypes vont jusqu'en 2025.
+  - OCDE How's Life : 68 mesures France (bien-être actuel) et 33 (bien-être futur), dont des séries annuelles 2006–2025 issues de Gallup (sentiment de sécurité la nuit, soutien social, affects négatifs, confiance dans le gouvernement, bénévolat).
+  - BCE (SDMX, sans clé) : ratio dette des ménages / revenu disponible France depuis 1999T4 (`QSA…XDC_R_B6GA_CY…`).
+  - SDES DiDo : qualité de l'air nationale (exposition PM2,5 fond urbain 2009–2024, concentrations) en CSV à identifiant stable.
+  - Géodes redirige vers Odissé (Santé publique France).
+- **Problèmes** : DARES refuse la connexion du robot (« Remote end closed connection ») ; le classeur CPI 2025 est un xlsx valide mais illisible par openpyxl en mode lecture seule (à traiter en phase de collecte).

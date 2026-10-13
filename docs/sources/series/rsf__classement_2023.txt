@@ -1,6 +1,8 @@
 # rsf / classement_2023
 # URL : https://rsf.org/sites/default/files/import_classement/2023.csv
-# Mode : lignes;motif=(?i)(\bFRA\b|;France;|^France;);entete=1
-# Lu le 2026-10-13T13:34:33Z — HTTP 200 — text/csv — 29750 octets
+# Mode : lignes;motif=(?i)\bFRA\b|\bFrance\b;entete=1
+# Lu le 2026-10-13T13:46:49Z — HTTP 200 — text/csv — 29750 octets
 
-Échec : error: missing ), unterminated subpattern at position 4
+Encodage détecté : utf-8-sig ; 181 lignes
+[0] ISO;Score;Rank;Political Context;Rank_Pol;Economic Context;Rank_Eco;Legal Context;Rank_Leg;Social Context;Rank_Soc;Safety;Rank_Saf;Zone;Country_FR;Country_EN;Country_ES;Country_PT;Country_AR;Country_FA;Year (N);Rank N-1;Rank evolution;Score N-1;Score evolution
+[24] FRA;78,72;24;79,44;22;68,87;25;81,56;22;87,1;21;76,64;81;UE Balkans;France;France;Francia;França ;فرنسا;فرانسه;2023;26;2;78,53;0,19

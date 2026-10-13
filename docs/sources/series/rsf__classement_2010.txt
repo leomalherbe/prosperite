@@ -1,6 +1,8 @@
 # rsf / classement_2010
 # URL : https://rsf.org/sites/default/files/import_classement/2010.csv
-# Mode : lignes;motif=(?i)(\bFRA\b|;France;|^France;);entete=1
-# Lu le 2026-10-13T13:34:25Z — HTTP 200 — text/csv — 19208 octets
+# Mode : lignes;motif=(?i)\bFRA\b|\bFrance\b;entete=1
+# Lu le 2026-10-13T13:46:42Z — HTTP 200 — text/csv — 19208 octets
 
-Échec : error: missing ), unterminated subpattern at position 4
+Encodage détecté : utf-8-sig ; 179 lignes
+[0] Year (N);ISO;Rank N;Score N;Score N without the exactions;Score N with the exactions;Score exactions;Rank N-1;Score N-1;Rank evolution;FR_country;EN_country;ES_country;AR_country;FA_country;Zone
+[44] 2010;FRA;44;13,38;;;;43;10,66666667;-1;France;France;Francia;فرنسا;فرانسه;UE Balkans

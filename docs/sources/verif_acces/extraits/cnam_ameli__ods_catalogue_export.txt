@@ -1,24 +1,24 @@
 # cnam_ameli / ods_catalogue_export
 # URL : https://data.ameli.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T13:15:18Z — HTTP 200 — text/csv; charset=utf-8 — 232058 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T13:44:14Z — HTTP 200 — text/csv; charset=utf-8 — 232058 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'datasetid']
 51 lignes ; 51 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
 datasetid	default.title	default.modified	default.records_count	default.publisher
-causes-des-accidents-de-trajet-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : causes des accidents de trajet par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:26:17+00:00	98280	
-comorbidites	Pathologies : comorbidités associées à chaque pathologie	2026-07-06T10:50:08.809000+00:00	44690	Caisse nationale de l'Assurance Maladie (Cnam)
 demographie-secteurs-conventionnels	Professionnels de santé libéraux : effectif par secteur conventionnel et par territoire (département, région)	2026-10-12T10:07:37.452000+00:00	190680	Caisse nationale de l'Assurance Maladie (Cnam)
 contrats-aide-assistantsmed-annuelle	Accès aux soins : dispositif d'aide à l'emploi d'un assistant médical par territoire (département, région) - PAR ANNÉE	2025-01-28T15:39:41+00:00	840	Caisse nationale de l'Assurance Maladie (Cnam)
 sinistralite-par-region-carsat	Risques professionnels : sinistralité par région Carsat	2026-04-20T11:57:32+00:00	1760	
 patientele	Professionnels de santé libéraux : patientèle par territoire (département, région)	2026-10-12T10:05:58.904000+00:00	45120	Caisse nationale de l'Assurance Maladie (Cnam)
+comorbidites	Pathologies : comorbidités associées à chaque pathologie	2026-07-06T10:50:08.809000+00:00	44690	Caisse nationale de l'Assurance Maladie (Cnam)
 demographie-exercices-liberaux	Professionnels de santé libéraux : effectif par type d’exercice libéral et par territoire (département, région)	2026-10-12T10:07:28.063000+00:00	142080	Caisse nationale de l'Assurance Maladie (Cnam)
 patientele-medecintraitant-generalistes-annuelle	Accès aux soins : patientèle "médecin traitant" moyenne des médecins généralistes par territoire (département, région) - PAR ANNÉE	2025-01-28T15:30:07+00:00	1200	Caisse nationale de l'Assurance Maladie (Cnam)
-primo-installes-medgen-annuelle	Accès aux soins : primo-installations en médecine générale par territoire (département, région) - PAR ANNÉE	2025-01-28T15:28:18+00:00	1680	Caisse nationale de l'Assurance Maladie (Cnam)
 entreprises-et-salaries-par-region-administrative-et-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : entreprises et salariés par région administrative et secteur d’activité (NAF 1 et NAF 5)	2026-04-20T11:58:35+00:00	143640	
 maladies-professionnelles-par-groupe-et-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : maladies professionnelles par groupe et secteur d’activité (NAF 1 et NAF 5)	2026-06-18T14:51:35+00:00	204120	
 incapacites-permanentes-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : incapacités permanentes par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:36:45+00:00	30240	
 arrets-de-travail-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : arrêts de travail par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:35:24+00:00	30240	
 referentiels-secteurs-d-activite	[Pour visualisation] Référentiels secteurs d'activité	2026-04-23T15:47:41+00:00	755	
+causes-des-accidents-de-trajet-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : causes des accidents de trajet par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:26:17+00:00	98280	
+primo-installes-medgen-annuelle	Accès aux soins : primo-installations en médecine générale par territoire (département, région) - PAR ANNÉE	2025-01-28T15:28:18+00:00	1680	Caisse nationale de l'Assurance Maladie (Cnam)
 referentiel-professions	[Pour visualisation] Référentiel des professions de santé libérales	2024-08-30T14:54:19+00:00	38	
 depenses	Pathologies : dépenses remboursées affectées à chaque pathologie	2026-07-06T10:50:12.831000+00:00	24800	Caisse nationale de l'Assurance Maladie (Cnam)
 medecins-optam-infra-annuelle	Accès aux soins : adhésion à l’Optam/Optam-ACO par spécialité et territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:42:36+00:00	3360	Caisse nationale de l'Assurance Maladie (Cnam)
@@ -26,33 +26,33 @@ entreprises-et-salaries-par-taille-d-entreprise-et-secteur-d-activite-naf-1-et-n
 referentiel-regions	[Pour visualisation] Référentiel des régions	2024-05-30T22:29:03+00:00	27	
 patients-longueduree-infra-annuelle	Accès aux soins : part de patients en affection longue durée sans médecin traitant par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:27:11+00:00	121	Caisse nationale de l'Assurance Maladie (Cnam)
 effectifs	Pathologies : effectif de patients par pathologie, sexe, classe d'âge et territoire (département, région)	2026-07-06T10:51:07.978000+00:00	5796000	Caisse nationale de l'Assurance Maladie (Cnam)
-primo-installes-medgen-infra-annuelle	Accès aux soins : primo-installations en médecine générale par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:29:01+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
 troubles-musculosquelettiques-par-tableau-et-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : troubles musculosquelettiques par tableau et secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:29:57+00:00	45360	
-causes-des-accidents-du-travail-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : causes des accidents du travail par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:25:25+00:00	90720	
-deces-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : décès au travail par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:37:53+00:00	22680	
 couverture-sas-infra-annuelle	Accès aux soins : couverture territoriale par le service d’accès aux soins (département, région) - ANNÉE EN COURS	2025-02-14T09:26:29+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
 honoraires-detailles	Professionnels de santé libéraux : montants des honoraires par catégorie et par territoire (département, région)	2026-10-12T10:07:18.237000+00:00	1351680	Caisse nationale de l'Assurance Maladie (Cnam)
-honoraires	Professionnels de santé libéraux : montants des honoraires par territoire (département, région)	2026-10-12T10:05:46.059000+00:00	71040	Caisse nationale de l'Assurance Maladie (Cnam)
 demographie-effectifs-et-les-densites	Professionnels de santé libéraux : effectif et densité par tranche d’âge, sexe et territoire (département, région)	2026-10-12T10:04:30.954000+00:00	3700320	Caisse nationale de l'Assurance Maladie (Cnam)
 file-active-medgen-infra-annuelle	Accès aux soins : file active moyenne par spécialité et territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:37:51+00:00	3360	Caisse nationale de l'Assurance Maladie (Cnam)
-medecins-optam-annuelle	Accès aux soins : adhésion à l’Optam/Optam-ACO par spécialité et territoire (département, région) - PAR ANNÉE	2025-01-28T15:42:26+00:00	30240	Caisse nationale de l'Assurance Maladie (Cnam)
 troubles-musculosquelettiques-par-partie-du-corps-sexe-et-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : troubles musculosquelettiques par partie du corps, sexe et secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:32:07+00:00	181440	
-patientele-medecintraitant-generalistes-infra-annuelle	Accès aux soins : patientèle "médecin traitant" moyenne des médecins généralistes par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:35:45+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
-couverture-sas	Accès aux soins : couverture territoriale par le service d’accès aux soins (département, région) - PAR ANNÉE	2025-02-14T09:13:10+00:00	600	Caisse nationale de l'Assurance Maladie (Cnam)
+primo-installes-medgen-infra-annuelle	Accès aux soins : primo-installations en médecine générale par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:29:01+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
+causes-des-accidents-du-travail-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : causes des accidents du travail par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:25:25+00:00	90720	
+deces-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : décès au travail par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:37:53+00:00	22680	
 referentiel-pathologies	[Pour visualisation] Référentiel des pathologies	2025-07-10T11:27:19+00:00	78	
 georef-svg1	[Pour visualisation] Formes géographiques Carsat en SVG	2026-04-30T13:29:49+00:00	21	
+honoraires	Professionnels de santé libéraux : montants des honoraires par territoire (département, région)	2026-10-12T10:05:46.059000+00:00	71040	Caisse nationale de l'Assurance Maladie (Cnam)
 prescriptions	Professionnels de santé libéraux : montants des prescriptions par poste et par territoire (département, région)	2026-10-12T10:06:48.169000+00:00	449280	Caisse nationale de l'Assurance Maladie (Cnam)
 demographie-ages-moyens-part-des-femmes-part-des-plus-de-60-ans	Professionnels de santé libéraux : âges moyens, part hommes/femmes	2026-10-12T10:06:34.593000+00:00	592	Caisse nationale de l'Assurance Maladie (Cnam)
 file-active-medgen-annuelle	Accès aux soins : file active moyenne par spécialité et territoire (département, région) - PAR ANNÉE	2025-01-28T15:37:02+00:00	33120	Caisse nationale de l'Assurance Maladie (Cnam)
-contrats-aide-assistantsmed-infra-annuelle	Accès aux soins : dispositif d'aide à l'emploi d'un assistant médical par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:39:49+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
+medecins-optam-annuelle	Accès aux soins : adhésion à l’Optam/Optam-ACO par spécialité et territoire (département, région) - PAR ANNÉE	2025-01-28T15:42:26+00:00	30240	Caisse nationale de l'Assurance Maladie (Cnam)
 medgen-zones-sous-dotees-infra-annuelle	Accès aux soins : installations de médecins généralistes dans les zones sous-dotées par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:43:56+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
-entreprises-et-salaries-par-region-carsat-et-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : entreprises et salariés par région Carsat et secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:00:29+00:00	166320	
+patientele-medecintraitant-generalistes-infra-annuelle	Accès aux soins : patientèle "médecin traitant" moyenne des médecins généralistes par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:35:45+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
 maladies-professionnelles-psychiques-par-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : maladies professionnelles psychiques par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:27:54+00:00	7560	
-sinistralite-par-region-administrative	Risques professionnels : sinistralité par région administrative	2026-04-20T11:56:03+00:00	1520	
-georef-svg0	[Pour visualisation] Formes géographiques des départements et régions en SVG	2024-05-30T22:28:39+00:00	123	
-depenses-par-poste	Risques professionnels : dépenses par poste	2026-04-20T12:17:08+00:00	160	
-referentiel-departements	[Pour visualisation] Référentiel des départements	2024-05-30T22:29:06+00:00	110	
-patients-longueduree-annuelle	Accès aux soins : part de patients en affection longue durée sans médecin traitant par territoire (département, région) - PAR ANNÉE	2025-01-28T15:25:55+00:00	968	Caisse nationale de l'Assurance Maladie (Cnam)
-sinistralite-par-secteur-d-activite-concerne-naf-1	Risques professionnels : sinistralité par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:18:09+00:00	60480	
+contrats-aide-assistantsmed-infra-annuelle	Accès aux soins : dispositif d'aide à l'emploi d'un assistant médical par territoire (département, région) - ANNÉE EN COURS	2025-01-28T15:39:49+00:00	120	Caisse nationale de l'Assurance Maladie (Cnam)
 medgen-zones-sous-dotees-annuelle	Accès aux soins : installations de médecins généralistes dans les zones sous-dotées par territoire (département, région) - PAR ANNÉE	2025-01-28T15:43:48+00:00	720	Caisse nationale de l'Assurance Maladie (Cnam)
+entreprises-et-salaries-par-region-carsat-et-secteur-d-activite-naf-1-et-naf-5	Risques professionnels : entreprises et salariés par région Carsat et secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:00:29+00:00	166320	
+sinistralite-par-secteur-d-activite-concerne-naf-1	Risques professionnels : sinistralité par secteur d’activité (NAF 1 et NAF 5)	2026-04-20T12:18:09+00:00	60480	
+patients-longueduree-annuelle	Accès aux soins : part de patients en affection longue durée sans médecin traitant par territoire (département, région) - PAR ANNÉE	2025-01-28T15:25:55+00:00	968	Caisse nationale de l'Assurance Maladie (Cnam)
+couverture-sas	Accès aux soins : couverture territoriale par le service d’accès aux soins (département, région) - PAR ANNÉE	2025-02-14T09:13:10+00:00	600	Caisse nationale de l'Assurance Maladie (Cnam)
+sinistralite-par-region-administrative	Risques professionnels : sinistralité par région administrative	2026-04-20T11:56:03+00:00	1520	
+depenses-par-poste	Risques professionnels : dépenses par poste	2026-04-20T12:17:08+00:00	160	
+georef-svg0	[Pour visualisation] Formes géographiques des départements et régions en SVG	2024-05-30T22:28:39+00:00	123	
+referentiel-departements	[Pour visualisation] Référentiel des départements	2024-05-30T22:29:06+00:00	110	
 regions_new	[Pour visualisation] Formes géographiques des départements et régions en SVG - V2	2026-07-01T12:18:03+00:00	246	

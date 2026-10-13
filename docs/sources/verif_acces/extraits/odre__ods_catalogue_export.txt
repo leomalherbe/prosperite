@@ -1,6 +1,6 @@
 # odre / ods_catalogue_export
 # URL : https://odre.opendatasoft.com/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T14:43:03Z — HTTP 200 — text/csv; charset=utf-8 — 878371 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:13Z — HTTP 200 — text/csv; charset=utf-8 — 878371 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['semantic.rml_mapping', 'semantic.classes', 'semantic.properties', 'default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'custom.maille-geographique', 'custom.pas-temporel', 'custom.profondeur-dhistorique', 'custom.reseaux', 'custom.energie', 'custom.frequence-de-mise-a-jour', 'custom.version', 'custom.secteur-dactivite', 'dcat.created', 'dcat.issued', 'dcat.creator', 'dcat.contributor', 'dcat.contact_name', 'dcat.contact_email', 'dcat.accrualperiodicity', 'dcat.spatial', 'dcat.temporal', 'dcat.granularity', 'dcat.dataquality', 'dcat.publisher_type', 'dcat.conforms_to', 'dcat.temporal_coverage_start', 'dcat.temporal_coverage_end', 'dcat.accessRights', 'dcat.relation', 'dcat_ap.title', 'dcat_ap.description', 'dcat_ap.theme', 'dcat_ap.keyword', 'dcat_ap.contact_name', 'dcat_ap.contact_email', 'dcat_ap.publisher_name', 'dcat_ap.publisher_type', 'dcat_ap.spatial_bbox', 'dcat_ap.spatial_centroid', 'dcat_ap.temporal_startDate', 'dcat_ap.temporal_endDate', 'dcat_ap.accrualPeriodicity', 'datasetid']
 187 lignes ; 187 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
@@ -54,49 +54,49 @@ stations-gnv	Stations GNV publiques en France	2026-09-18T09:56:43.150000+00:00	3
 capacites-annuelles-d-injection-de-biomethane-reservees-par-departement	Capacités d'injection de biométhane réservées par département actuellement inscrites au Registre	2026-07-21T13:05:46+00:00	94	NaTran, Teréga
 eco2mix-regional-cons-def	Données éCO2mix régionales consolidées et définitives	2026-10-07T08:15:32+00:00	0	RTE
 temperature-quotidienne-regionale	Température quotidienne régionale (depuis janvier 2016)	2017-12-21T12:58:57+00:00	50557	Weathernews France
+energies-et-puissances-regionales-liees-au-contraintes	Energies et Puissances régionales liées au contraintes (vision à décembre 2024)	2025-01-09T16:32:57+00:00	12	RTE
 registre-garanties-capacite	Registre des transactions de garanties de capacité	2026-08-20T07:32:42+00:00	2900	RTE
 part-de-biognc-dans-la-consommation-totale-de-carburant-depuis-2014	Part de bioGNC dans la consommation totale de carburant (depuis 2014)	2026-04-17T15:45:23+00:00	12	France Mobilité Biogaz
 production-annuelle-de-biomethane-par-site-raccorde-au-reseau-de-transport-et-de	Production Annuelle de Biométhane par site raccordé au réseau de transport et de distribution	2026-10-13T08:30:17+00:00	3558	NaTran, Teréga, GRDF, Gaz et Territoires
 projet-commerciaux-et-demonstrateurs-en-france-de-pyrogazeification	Projets de production de gaz renouvelable et bas carbone par pyrogazeification pour injection dans les réseaux gaziers	2026-08-18T15:04:28.945000+00:00	24	NaTran
 igrm-epci	Indicateur Mensuel Gaz Renouvelable des territoires par EPCI	2021-04-15T12:58:35+00:00	24745	NaTran, Teréga, GRDF
 registre-national-installation-production-stockage-electricite-agrege-311222	Registre national des installations de production et de stockage d'électricité (au 31/12/2022)	2024-10-10T13:32:58+00:00	72790	RTE, Enedis, EDF SEI, ELD
+filiere-de-production-de-biogaz-en-europe-eurobserver	Filière de production de biogaz en Europe	2021-06-28T20:25:25+00:00	21	NaTran
 registre-national-installation-production-stockage-electricite-agrege-311217	Registre national des installations de production et de stockage d'électricité (au 31 décembre 2017)	2024-10-09T12:22:57+00:00	41237	RTE, Enedis, EDF SEI, ELD
 conso-finale-corrigee-par-secteur	Consommation finale corrigée par secteur d'activité (2014 à 2024)	2025-05-23T08:33:21+00:00	132	RTE
 eco2mix-regional-tr	Données éCO2mix régionales temps réel	2026-01-21T09:22:45+00:00	49536	RTE
 eco2mix-metropoles-tr	Consommation d'électricité des grandes Métropoles françaises temps réel	2025-11-24T13:17:50+00:00	4995276	RTE
 igrm-dep	Indicateur Mensuel Gaz Renouvelable des territoires par département	2026-10-13T06:51:02+00:00	5977	NaTran, Teréga, GRDF
 conso-epci-annuelle	Consommation EPCI annuelle	2026-10-01T09:00:49+00:00	16000	SDES, ODRÉ
-filiere-de-production-de-biogaz-en-europe-eurobserver	Filière de production de biogaz en Europe	2021-06-28T20:25:25+00:00	21	NaTran
+cartographie-acces-biomethane	Cartographie d’accès aux réseaux méthane renouvelable et bas carbone	2020-12-15T14:54:17+00:00	1289	NaTran, Teréga
 evolution-de-lactivite-aux-points-dechange-de-gaz-peg-sur-le-reseau-grtgaz0	Évolution de l’activité aux Points d’Échange de Gaz (PEG) sur le réseau NaTran	2021-10-29T13:09:29+00:00	250	NaTran
 signal-ecogaz	Données du signal Ecogaz	2026-10-13T12:40:02+00:00	1454	NaTran, Teréga
 parc-prod-par-filiere	Parc national annuel de production par filière	2026-02-25T13:43:22+00:00	19	RTE
-energies-et-puissances-regionales-liees-au-contraintes	Energies et Puissances régionales liées au contraintes (vision à décembre 2024)	2025-01-09T16:32:57+00:00	12	RTE
 extremas-quotidiens-flux-commerciaux	Extremas quotidiens des flux commerciaux	2026-09-21T13:23:48+00:00	5376	RTE
 parc-national-annuel-prod-eolien-solaire	Parc national annuel de production éolien et solaire (2001 à 2025)	2026-02-25T13:48:08+00:00	25	RTE
 debit-quotidien-stockages-gaz	Débit quotidien des stockages de gaz (à partir de novembre 2010)	2018-04-05T17:32:50+00:00	32563	Storengy, Teréga
 monitoring-capacites-echanges-cwe	Monitoring des capacités d'échanges aux frontières françaises de la région CWE/Europe du Centre-Ouest en 2020	2023-07-24T07:03:09+00:00	571431	RTE
 consommation-annuelle-par-iris	Consommation annuelle définitive d'électricité et de gaz par IRIS des sites industriels raccordés aux réseaux de transport	2024-12-06T12:45:47+00:00	17891	NaTran, RTE, Teréga
-cartographie-acces-biomethane	Cartographie d’accès aux réseaux méthane renouvelable et bas carbone	2020-12-15T14:54:17+00:00	1289	NaTran, Teréga
 prod-region-annuelle-filiere	Production régionale annuelle par filière (2008 à 2025)	2025-05-07T09:47:04+00:00	234	NaTran, RTE, Teréga
+parc-regional-annuel-prod-eolien-solaire	Parc régional annuel de production éolien et solaire	2026-02-25T12:42:02+00:00	325	RTE
 conso-jour-nat-eldgrd-grt	Consommation horaire définitive de gaz des distributions publiques à l'interface avec le réseau de transport de gaz	2026-10-13T12:01:08+00:00	6028	NaTran, Teréga
 consommation-journaliere-maximale-de-gaz-maille-nationale	Extremas de consommation quotidienne définitive de gaz relevée sur le réseau de NaTran et Teréga	2026-10-10T18:01:40+00:00	3165	NaTran, Teréga
 production-nette-nucleaire	Production nucléaire	2026-09-21T13:52:52+00:00	224975	RTE
 effacements-quotidiens-ma	Effacements quotidiens sur le mécanisme d'ajustement (2013 à 2024)	2026-03-11T09:38:30+00:00	4748	RTE
 injections-quotidiennes-provisoires-rpt	Injections quotidiennes provisoires sur le réseau de transport d'électricité (2018 à 2026)	2018-01-24T12:43:24+00:00	31131	RTE
 repartition-des-potentiels-de-methanisation-a-horizon-2050-a-la-maille-regionale	Répartition des potentiels de méthanisation à horizon 2050 à la maille régionale	2021-11-04T12:48:38+00:00	3689	NaTran, Teréga
-parc-regional-annuel-prod-eolien-solaire	Parc régional annuel de production éolien et solaire	2026-02-25T12:42:02+00:00	325	RTE
 prod-nat-gaz-horaire-prov	Production horaire provisoire de biométhane des sites d'injection raccordés au réseau de transport de gaz en France	2026-10-13T12:00:52+00:00	4955	NaTran, Teréga
 part-enr-intensite-ges-conso-tr	Part des EnR et intensité en émissions de GES de l’électricité consommée en France en temps réel	2026-10-13T14:00:39+00:00	50676	RTE
+suivi-projet-raccordement-enr	Projets en développement en électricité renouvelable	2025-06-25T14:45:12+00:00	193	RTE, Enedis, Agence ORÉ
 igrm-nat	Indicateur Mensuel Gaz Renouvelable des territoires - périmètre national	2021-04-16T08:41:47+00:00	149	NaTran, Teréga, GRDF
 nombre-installation-production-stockage-electricite-3112025	Nombre d'installations de production et de stockage d'électricité de moins de 36kW par IRIS (au 31 décembre 2025)	2026-03-11T20:21:14+00:00	68866	RTE, Enedis, EDF SEI, ELD
 bilan-previsionnel-electrique-2019-offre-de-production	Bilan prévisionnel électrique 2019 - Offre de production	2021-10-04T15:44:58+00:00	7	RTE
 stock-quotidien-stockages-gaz	Stock quotidien dans les stockages de gaz (à partir de novembre 2010)	2026-09-21T09:29:35+00:00	32563	Storengy, Teréga
-suivi-projet-raccordement-enr	Projets en développement en électricité renouvelable	2025-06-25T14:45:12+00:00	193	RTE, Enedis, Agence ORÉ
 soutirages-quotidiens-consolides-rpt-par-section	Soutirages quotidiens consolidés sur le réseau de transport d'électricité par section d'activité (2020 à 2026)	2018-02-14T14:19:31+00:00	37986	RTE
-eco2mix-national-tr	Données éCO2mix nationales temps réel	2026-01-28T09:37:12+00:00	4224	RTE
 fc-tc-nationaux-mensuels-eolien-solaire	Facteurs de charge et taux de couverture nationaux mensuels éoliens et solaires	2026-09-21T13:25:36+00:00	176	RTE
-pic-journalier-consommation-brute	Pic journalier de la consommation brute d'électricité	2026-09-21T13:26:41+00:00	5357	RTE, METEO-FRANCE
 equilibre-national-mensuel-prod-conso-brute	Equilibre national mensuel production = consommation brute	2026-09-21T13:28:21+00:00	236	RTE
+pic-journalier-consommation-brute	Pic journalier de la consommation brute d'électricité	2026-09-21T13:26:41+00:00	5357	RTE, METEO-FRANCE
+eco2mix-national-tr	Données éCO2mix nationales temps réel	2026-01-28T09:37:12+00:00	4224	RTE
 scenario-production-2030-2035-nat-par-filiere-pg2024	Scénario de production par filière à horizon 2030 et 2035 (Perspectives Gaz 2024)	2025-01-06T15:33:21+00:00	4	NaTran, Teréga, GRDF, Gaz et Territoires
 bp2017-elec-parc-de-production	Bilan prévisionnel électrique 2017 - Offre de production	2019-05-27T12:17:41+00:00	12	RTE
 projets-prenotifie-fr-piiec-h2	Premiers projets hydrogène français sélectionnés dans le cadre du Projet important d’intérêt européen commun (PIIEC)	2022-03-15T13:49:23+00:00	24	SGPI, NaTran

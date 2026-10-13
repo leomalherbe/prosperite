@@ -1,7 +1,7 @@
 # owid / metadata_oecd_trust_government
 # URL : https://ourworldindata.org/grapher/oecd-average-trust-in-governments.metadata.json
 # Mode : regex:(?i)[^"]{0,300}(?:gallup|licen[cs]e)[^"]{0,300}
-# Lu le 2026-10-13T14:27:44Z — HTTP 200 — application/json — 2147 octets
+# Lu le 2026-10-13T14:45:07Z — HTTP 200 — application/json — 2147 octets
 
 1 correspondances distinctes du motif '(?i)[^"]{0,300}(?:gallup|licen[cs]e)[^"]{0,300}' :
 he original question asked was: “In this country, do you have confidence in each of the following, or not? ... How about national government?” The data shows the percentage of respondents answering “yes” (the other response categories being “no”, and “don’t know”).\n- The data comes from the annual Gallup World Poll, which samples around 1000 people per country each year. The sample is designed to be nationally representative of the population aged 15 and over (including rural areas).

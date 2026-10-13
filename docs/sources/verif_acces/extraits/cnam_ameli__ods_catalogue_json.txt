@@ -1,6 +1,6 @@
 # cnam_ameli / ods_catalogue_json
 # URL : https://data.ameli.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T14:24:53Z — HTTP 200 — application/json; charset=utf-8 — 17999 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:42:57Z — HTTP 200 — application/json; charset=utf-8 — 17957 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 51,
@@ -10,88 +10,122 @@
    "fields": [
     {
      "name": "annee",
-     "description": null,
+     "description": "année",
      "annotations": {
-      "timeserie_precision": "year"
+      "facetsort": "-count",
+      "timeserie_precision": "year",
+      "facet": true
      },
-     "label": "annee",
+     "label": "﻿annee",
      "type": "date"
     },
     {
-     "name": "code_naf1",
-     "description": null,
-     "annotations": {},
-     "label": "code_NAF1",
-     "type": "text"
-    },
-    {
-     "name": "libelle_naf1",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_NAF1",
-     "type": "text"
-    },
-    {
-     "name": "naf1",
-     "description": null,
-     "annotations": {},
-     "label": "NAF1",
-     "type": "text"
-    },
-    {
-     "name": "code_naf5",
-     "description": null,
-     "annotations": {},
-     "label": "code_NAF5",
-     "type": "text"
-    },
-    {
-     "name": "libelle_naf5",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_NAF5",
-     "type": "text"
-    },
-    {
-     "name": "naf5",
-     "description": null,
-     "annotations": {},
-     "label": "NAF5",
-     "type": "text"
-    },
-    {
-     "name": "libelle_cause_tr",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_cause_TR",
-     "type": "text"
-    },
-    {
-     "name": "libelle_type_vehicule",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_type_vehicule",
-     "type": "text"
-    },
-    {
-     "name": "part_cause_tr",
-     "description": null,
+     "name": "profession_sante",
+     "description": "profession de santé",
      "annotations": {
-      "unit": "%"
+      "facet": true
      },
-     "label": "part_cause_TR",
-     "type": "double"
+     "label": "profession_sante",
+     "type": "text"
     },
     {
-     "name": "part_cause_tr_txt",
-     "description": null,
-     "annotations": {},
-     "label": "part_cause_tr_txt",
+     "name": "region",
+     "description": "numéro de la région",
+     "annotations": {
+      "facet": true,
+      "disjunctive": true
+     },
+     "label": "region",
      "type": "text"
+    },
+    {
+     "name": "libelle_region",
+     "description": "région",
+     "annotations": {
+      "facet": true
+     },
+     "label": "libelle_region",
+     "type": "text"
+    },
+    {
+     "name": "departement",
+     "description": "numéro du département",
+     "annotations": {
+      "facet": true,
+      "disjunctive": true
+     },
+     "label": "departement",
+     "type": "text"
+    },
+    {
+     "name": "libelle_departement",
+     "description": "département",
+     "annotations": {
+      "facet": true
+     },
+     "label": "libelle_departement",
+     "type": "text"
+    },
+    {
+     "name": "nombre_patients_uniques",
+     "description": "nombre moyen de patients uniques (file active moyenne)",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "nombre_patients_uniques",
+     "type": "text"
+    },
+    {
+     "name": "nombre_patients_medecin_traitant",
+     "description": "nombre moyen de patients dont le médecin est déclaré en tant que médecin traitant",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "nombre_patients_medecin_traitant",
+     "type": "text"
+    },
+    {
+     "name": "vision_generale_all",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {},
+     "label": "vision generale all",
+     "type": "text"
+    },
+    {
+     "name": "vision_generale_prescriptions",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {},
+     "label": "vision_generale_prescriptions",
+     "type": "text"
+    },
+    {
+     "name": "vision_profession_territoire",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {},
+     "label": "vision profession territoire",
+     "type": "text"
+    },
+    {
+     "name": "patients_medecin_traitant_integer",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "patients_medecin_traitant_integer",
+     "type": "int"
+    },
+    {
+     "name": "patients_uniques_integer",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "patients_uniques_integer",
+     "type": "int"
     }
    ],
-   "dataset_id": "causes-des-accidents-de-trajet-par-secteur-d-activite-naf-1-et-naf-5",
-   "dataset_uid": "da_ujti5u",
+   "dataset_id": "patientele",
+   "dataset_uid": "da_naqxb0",
    "has_records": true,
    "features": [
     "analyze",
@@ -102,5 +136,5 @@
    "data_visible": true,
    "metas": {
     "default": {
-     "title": "Risques professionnels : causes des accidents de trajet par secteur d’activité (NAF 1 et NAF 5)",
-     "description": "<p></p><p>\n</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Ce jeu de données est une des\nsources de datavisualisations disponibles sur le site <a href=\"https://data.ameli.fr/pages/data-risques-professionnels/\">Data risques\nprofessionnels</a><u>.</u> </p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"><b>Informations générales :</b></p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">La population sur laquelle est\nbasée ce jeu de données correspond aux salariés et aux<span style=\"mso-spacerun:yes\"> </span>entreprises du régime général. Il s’agit\nessentiellement des salariés, des travailleurs indépendants ayant souscrit à\nl’assurance volontaire AT/MP (Avat), ainsi que de certains agents de la\nfonction publique (contractuels, temps courts, etc.). </p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Ces données ne prennent pas en\ncompte :</p><ul style=\"margin-top:0cm\" type=\"disc\"><li class=\"MsoNormal\" style=\"text-align:justify;mso-list:l3 level1 lfo2;\n     tab-stops:list 36.0pt\">\n<p class=\"MsoNormal\" style=\"text-align:justify\">les exploitants et salariés\nagricoles, qui relèvent du régime agricole ; </p>\n</li><li class=\"MsoNormal\" style=\"text-align:justify;mso-list:l3 level1 lfo2;\n     tab-stops:list 36.0pt\">\n<p class=\"MsoNormal\" style=\"text-align:justify\">les personnels des fonctions\npubliques, qui sont couverts par leur administration ;</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">les travailleurs indépendants\nn’ayant pas souscrit à l’Avat. </p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"></p><p class=\"MsoNormal\" style=\"text-align:justify\"> </p>\n</li></ul><p class=\"MsoNormal\" style=\"text-align:justify\">Ce jeu de données présente des\ninformations sur la part de chaque cause d’accidents de trajet.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Une des causes des accidents de\ntrajet est la perte de contrôle d’un véhicule. Ce jeu de données détaille aussi\nles parts de chaque type de véhicules ayant causé cette perte de contrôle de\nvéhicule.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Pour plus d'informations (source,\nchamp, définitions des modalités), consulter la page <a href=\"https://data.ameli.fr/pages/data-risques-professionnels-methode/\">Méthode</a>\ndu site.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"><b>Secret statistique :</b></p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Par respect pour le secret\nstatistique (loi du 7 juin 1951) et afin que l’identification directe ou\nindirecte des individus et des entreprises soit impossible, aucune information\nsur les risques professionnels, les salariés et les entreprises n'est communiquée\nlorsque : </p>\n<p class=\"MsoListParagraphCxSpFirst\" style=\"text-align:justify;text-indent:-18.0pt;\nmso-list:l1 level1 lfo4\"><span style=\"font-family:Symbol;\nmso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol\"><span style=\"mso-list:Ignore\">·<span style='font:7.0pt \"Times New Roman\"'>       \n</span></span></span>le nombre d’entreprises est inférieur à 3 ;</p>\n<p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify;text-indent:-18.0pt;\nmso-list:l2 level1 lfo3\"><span style=\"font-family:Symbol;\nmso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol\"><span style=\"mso-list:Ignore\">·<span style='font:7.0pt \"Times New Roman\"'>       \n</span></span></span>ou lorsqu’une entreprise représente une part\nprédominante des salariés (&gt; 85 %).</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">La valeur de l'indicateur est\nalors indiquée par « NS » (non diffusable) dans le jeu de données.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"><b>Abréviations présentes dans\nles données :</b></p>\n<ul style=\"margin-top:0cm\" type=\"disc\"><li class=\"MsoNormal\" style=\"text-al
+     "title": "Professionnels de santé libéraux : patientèle par territoire (département, région)",
+     "description": "<p>Ce jeu de données est une des sources de datavisualisations disponibles sur le site <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux/\">Data professionnels de santé libéraux</a>.</p><h3><span>Informations générales :</span></h3>\n<p>Les professions de santé libérales disponibles dans ce jeu de données sont :</p>\n<ul>\n<li>les <b>médecins</b> (avec plus d’une vingtaine de spécialités médicales) ;</li>\n<li>les <b>chirurgiens-dentistes</b> (dont les spécialistes d'orthopédie dento-faciale – ODF) ;</li>\n<li>les <b>sages-femmes</b> ;</li>\n<li>les auxiliaires médicaux avec cinq professions : <b>infirmiers, masseur-kinésithérapeutes, orthophonistes, orthoptistes, pédicures-podologues</b>.</li>\n</ul>\n<p>Il s'agit de professionnels de santé actifs au 31 décembre de l’année concernée et :</p>\n<ul>\n<li>exerçant leur activité en libéral ;</li>\n<li>en France métropolitaine, Guadeloupe, Guyane, La Réunion, Martinique et Mayotte ;</li>\n<li>ayant perçu au moins 1 euro d’honoraires ;</li>\n<li>qu’ils soient conventionnés avec l’Assurance Maladie  ou non conventionnés (lorsqu’ils génèrent une prescription remboursée par l’Assurance Maladie) ;</li>\n<li>les professionnels en cumul emploi-retraite sont décomptés dans les effectifs dès lors qu’ils remplissent les conditions précédentes.</li>\n</ul>\n<p>Ce jeu de données présente des informations sur la patientèle des professionnels de santé libéraux :</p>\n<ul>\n<li>nombre de patients uniques (file active) ;</li>\n<li>nombre de patients « médecin traitant » (uniquement pour les <b>médecins généralistes</b> et les <b>pédiatres</b>).</li>\n</ul>\n<p>Les données sont issues du système national des données de santé (SNDS). Pour plus d'informations (source, champ, définitions des modalités), consulter la page <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux-methode/\">Méthode</a> du site.</p>\n<h3><span>Secret statistique :</span></h3>\n<p>Par respect pour le secret statistique (loi du 7 juin 1951) et afin que l’identification directe ou indirecte des individus soit impossible, aucune information sur les honoraires, les prescriptions et la patientèle n'est communiquée lorsque le nombre de professionnels de santé libéraux est strictement inférieur à 5.</p>\n<p>La valeur de l'indicateur est alors indiquée par « NS » (non significatif) dans le jeu de données.</p>\n<h3><span>Abréviations présentes dans les données :</span></h3>\n<ul>\n<li>« NS » = non significatif (application du secret statistique)</li>\n<li>« NC » = non calculé (profession non concernée, etc.)</li></ul><h3><span>Couverture spatiale et granularité :<b

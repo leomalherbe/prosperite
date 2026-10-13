@@ -340,3 +340,12 @@ for code, lib, dim, sens, typ, doub, ref, com in BM_LIGNES:
     s = serie_banque_mondiale_phase1(code)
     ajouter(lib, dim, BM, f"https://api.worldbank.org/v2/country/FRA/indicator/{code}?format=json", "voir source", sens, "non", typ, "non", doub,
             com + (" ; " if com else "") + "Extrait de phase 1 (vague 4)", s, niveau="1", ref_doublon=ref)
+
+# ============================================================================ BCE — comptes financiers trimestriels (série longue, vague 8)
+s = serie("bce__qsa_dette_menages_revenu_longue", id_debut="QSA.Q.N.FR.W0.S1M.S1.N.L.LE.F4")
+ajouter("Endettement des ménages : crédits rapportés au revenu disponible brut ajusté (BCE)", "niveau_de_vie",
+        "BCE — ECB Data Portal (SDMX, comptes financiers trimestriels QSA)",
+        "https://data-api.ecb.europa.eu/service/data/QSA/Q.N.FR.W0.S1M.S1.N.L.LE.F4.T._Z.XDC_R_B6GA_CY._T.S.V.N._T",
+        "% du revenu disponible brut ajusté", "bas", "non", "pression", "non", "partiel",
+        "Trimestriel depuis 1999T4 (agrégeable en annuel : 4e trimestre ou moyenne) ; sans clé (alternative à Webstat, D21) ; "
+        "même concept que How's Life 15_6 (base différente)", s, niveau="1", frequence="annuelle")

@@ -59,7 +59,7 @@ def table(fichier: str) -> pd.DataFrame:
     return _CACHE[fichier]
 
 
-def annees_de(periodes: str, n: int) -> tuple[list[int], bool]:
+def annees_de(periodes: str, n: int) -> tuple[list[int], bool | str]:
     """Années couvertes par la chaîne `periodes` du robot, et indicateur « périodes non annuelles ».
 
     Le robot compresse les années en plages (« 2000-2002,2005 ») ; les autres étiquettes (moyennes
@@ -77,7 +77,7 @@ def annees_de(periodes: str, n: int) -> tuple[list[int], bool]:
             return sorted(set(ans)), False
     fins = [int(re.findall(r"\d{4}", j)[-1]) for j in jetons if re.findall(r"\d{4}", j)]
     if elide and fins and all(re.fullmatch(r"\d{4}-(Q[1-4]|S[12]|\d{2})", j) for j in jetons):
-        return list(range(fins[0], fins[-1] + 1)), True  # trimestres, semestres, mois : toutes les années de la plage
+        return list(range(fins[0], fins[-1] + 1)), "infra"  # trimestres, semestres, mois : toutes les années de la plage
     if elide and fins and fins[-1] - fins[0] + 1 == n:
         fins = list(range(fins[0], fins[-1] + 1))
     return sorted(set(fins)), True
@@ -215,7 +215,9 @@ def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unit
     notes = []
     if freq == "annuelle" and lacunes(depuis_2000 or ans):
         notes.append("années manquantes : " + ", ".join(map(str, lacunes(depuis_2000 or ans))))
-    if s.get("etiquettes"):
+    if s.get("etiquettes") == "infra":
+        notes.append("données infra-annuelles (années couvertes comptées)")
+    elif s.get("etiquettes"):
         notes.append("périodes pluriannuelles (année de fin retenue)")
     if s.get("n_distinctes") and len(ans) >= 6 and s["n_distinctes"] <= len(ans) / 2:
         notes.append(f"seulement {s['n_distinctes']} valeurs distinctes sur {len(ans)} (valeurs répétées)")

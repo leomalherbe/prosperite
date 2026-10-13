@@ -178,3 +178,147 @@ Le rapport **ne fixe pas de liste fermée d'indicateurs ni de seuils** : il reco
 - Deux points structurants pour la grille v1 : (1) le bien-être subjectif y est **transversal** (couche de mesure) et non une dimension (argument pour l'arbitrage Q-B) ; (2) la **soutenabilité** (stocks de capitaux, dont dette et patrimoine) est un pilier séparé — v0 range investissement et dette dans `niveau_de_vie`, ce que le rapport déconseille implicitement.
 - Le rapport rattache **logement, transports et loisirs** aux « activités personnelles » (emploi du temps) : découpage différent de v0, qui regroupe logement et cadre de vie.
 - L'insécurité économique (risques) y est rapprochée de l'insécurité physique, comme dans v0 (`securite_confiance`) et dans le cadre Eurostat.
+
+---
+
+## 3. OCDE — *How's Life? 2024* et Better Life Index
+
+### 3.1 Références et accès
+
+- OCDE (2024), *How's Life? 2024: Well-being and Resilience in Times of Crisis*, éditions OCDE, Paris, novembre 2024 (sixième édition ; « plus de 80 indicateurs » ; aucune édition plus récente trouvée au 13/10/2026). Pages web du rapport consultées : https://www.oecd.org/en/publications/how-s-life-2024_90ba854a-en/full-report (le contenu des chapitres est chargé en JavaScript : **tableau des indicateurs et guide du lecteur non lisibles** avec l'outil).
+- **Source utilisée pour la liste des indicateurs** : la base de données *How's Life? Well-being Database* de l'OCDE, lue par son **API SDMX** (structure de données `DSD_HSL` v1.1, agence `OECD.WISE.WDP`) :
+  - liste des domaines : codelist `CL_DOMAIN` (https://sdmx.oecd.org/public/rest/codelist/OECD.WISE.WDP/CL_DOMAIN/latest) ;
+  - liste des mesures : codelist `CL_MEASURE` (https://sdmx.oecd.org/public/rest/codelist/OECD.WISE.WDP/CL_MEASURE/latest) ;
+  - dernières valeurs France : flux `DSD_HSL@DF_HSL_CWB` (bien-être actuel) et `DSD_HSL@DF_HSL_FWB` (ressources pour le bien-être futur), requête `FRA..._T._T._T.?lastNObservations=1`, consultés le 13/10/2026.
+- Les **définitions** ci-dessous sont des résumés établis à partir des libellés OCDE ; les définitions détaillées et les **sources primaires** (EU-SILC, Gallup World Poll, PISA, PIAAC, comptes nationaux…) n'ont pas pu être lues dans le guide du lecteur : elles sont indiquées « à vérifier » dans le CSV.
+- **Better Life Index** (BLI, https://www.oecdbetterlifeindex.org) : site interdit à l'outil (robots.txt). Composition reprise d'une source secondaire (page méthodologique de Statistics Jersey) et des connaissances antérieures : **à vérifier**.
+
+### 3.2 Dimensions
+
+Cadre de bien-être de l'OCDE (révisé en 2020 et utilisé dans *How's Life? 2024*) : **11 dimensions du bien-être actuel** et **4 capitaux** (ressources pour le bien-être futur). Chaque dimension est suivie sous trois angles : **moyennes**, **inégalités** (verticales, entre le haut et le bas de la distribution — suffixe `_VER` — et horizontales, entre groupes) et **privations** (part sous un seuil — suffixe `_DEP`).
+
+| Code | Bien-être actuel | Code | Ressources pour le bien-être futur |
+|---|---|---|---|
+| HSL_1 | Revenu et patrimoine (*Income and wealth*) | HSL_12 | Capital naturel (*Natural capital*) |
+| HSL_2 | Travail et qualité de l'emploi (*Work and job quality*) | HSL_13 | Capital humain (*Human capital*) |
+| HSL_3 | Logement (*Housing*) | HSL_14 | Capital social (*Social capital*) |
+| HSL_4 | Équilibre vie professionnelle-vie privée (*Work-life balance*) | HSL_15 | Capital économique (*Economic capital*) |
+| HSL_5 | Santé (*Health*) | | |
+| HSL_6 | Connaissances et compétences (*Knowledge and skills*) | | |
+| HSL_7 | Liens sociaux (*Social connections*) | | |
+| HSL_8 | Engagement civique (*Civic engagement*) | | |
+| HSL_9 | Qualité de l'environnement (*Environmental quality*) | | |
+| HSL_10 | Sécurité (*Safety*) | | |
+| HSL_11 | Bien-être subjectif (*Subjective well-being*) | | |
+
+### 3.3 Indicateurs par dimension (codelist `CL_MEASURE`) et dernière valeur France
+
+Valeurs France : dernière observation de l'API SDMX (total, tous âges, deux sexes, tous niveaux d'éducation). « – » : pas de valeur France renvoyée. Aucun indicateur OCDE ne porte de **seuil normatif** ; les seuils figurant dans les indicateurs de privation (`_DEP`) sont des seuils de définition (ex. note < 5/10).
+
+| Code | Indicateur (libellé OCDE) | Définition résumée | Unité | Sens | France (année) |
+|---|---|---|---|---|---|
+| 1_1 | Revenu disponible net ajusté par habitant (*Households and NPISHs net adjusted disposable income per capita*) | revenu disponible des ménages et ISBLSM, net, ajusté des transferts sociaux en nature | $ PPA par hab. | haut | 49 616 (2024) |
+| 1_2 | Rapport des revenus du quintile supérieur (*Top average household disposable income quintile*) | rapport S80/S20 du revenu disponible (inégalité verticale) | ratio | bas | 4,56 (2023) |
+| 1_3 | Patrimoine net médian (*Median net wealth*) | patrimoine net médian des ménages | $ PPA par ménage | haut | 195 938 (2020) |
+| 1_3_VER | Part du décile le plus riche (*Top wealthiest households decile*) | part du patrimoine total détenue par les 10 % de ménages les plus riches | % | bas | 49,9 (2020) |
+| 1_4 | Pauvreté monétaire relative (*Household disposable income below the relative income poverty line*) | part de la population sous 50 % du revenu médian (seuil à vérifier) | % | bas | 8,7 (2023) |
+| 1_5 | Difficultés à joindre les deux bouts (*Difficulty making ends meet*) | part des 16 ans et plus déclarant des difficultés | % | bas | 21,7 (2025) |
+| 1_6 | Insécurité financière (*liquid financial assets below three months of the poverty line*) | part de la population dont les actifs financiers liquides sont inférieurs à 3 mois du seuil de pauvreté | % | bas | 35,9 (2020) |
+| 2_1 | Taux d'emploi (*Employment rate*) | part des 25-64 ans en emploi (tranche d'après l'unité renvoyée) | % | haut | 77,7 (2025) |
+| 2_2 | Écart salarial femmes-hommes (*Gender wage gap*) | écart de salaire médian entre hommes et femmes, en % du salaire masculin | % | bas | 6,6 (2024) |
+| 2_3 | Taux de chômage de longue durée (*Long-term unemployment rate*) | chômeurs depuis 12 mois ou plus, en % de la population active | % | bas | 1,8 (2025) |
+| 2_4 | Jeunes NEET (*Youth not in employment, education or training*) | part des 15-24 ans | % | bas | 12,5 (2024) |
+| 2_5 | Insécurité sur le marché du travail (*Labour market insecurity*) | perte de revenu attendue liée au risque de chômage, en % des gains antérieurs | % | bas | 3,1 (2016) |
+| 2_6 | Tension au travail (*Job strain*) | part des salariés exposés à des exigences élevées et des ressources faibles | % | bas | 25,8 (2015) |
+| 2_7 | Longues heures de travail rémunéré (*Long hours in paid work*) | part des salariés travaillant habituellement 50 heures ou plus par semaine (seuil à vérifier) | % | bas | 5,9 (2025) |
+| 2_8 | Salaire annuel brut moyen (*Average annual gross earnings*) | salaire brut moyen des salariés à temps plein | $ PPA | haut | 60 608 (2024) |
+| 2_8_DEP | Bas salaires (*Full-time employees earning less than two-thirds of gross median earnings*) | part des salariés à temps plein gagnant moins de 2/3 du salaire médian | % | bas | 5,8 (2024) |
+| 2_8_VER | Dispersion des salaires (*Top earnings of full-time employees decile*) | rapport entre le décile supérieur et le décile inférieur (D9/D1, à vérifier) | ratio | bas | 2,78 (2024) |
+| 2_9 | Satisfaction au travail (*Job satisfaction*) | note moyenne 0-10 | note | haut | 7,1 (2023) |
+| 2_9_DEP | Faible satisfaction au travail | part avec note < 5 | % | bas | – |
+| 2_9_VER | Inégalité de satisfaction au travail | rapport quintile supérieur / inférieur (à vérifier) | ratio | bas | – |
+| 3_1 | Surpeuplement (*Households living in overcrowded conditions*) | part des ménages en logement surpeuplé | % | bas | 7,6 (2024) |
+| 3_2 | Accessibilité financière du logement (*Housing affordability*) | part du revenu disponible restant après les dépenses de logement | % | haut | 79,8 (2024) |
+| 3_3 | Surcharge des coûts du logement (*Housing cost overburden*) | part de la population (ménages modestes) consacrant plus de 40 % du revenu au logement (définition à vérifier) | % | bas | 10,7 (2024) |
+| 3_4 | Accès à internet à domicile (*Households with internet access at home*) | part des ménages | % | haut | 88,1 (2021) |
+| 3_5 | Incapacité à maintenir le logement suffisamment chaud (*Inability to keep home adequately warm*) | part des 16 ans et plus | % | bas | 11,8 (2024) |
+| 4_1 | Temps libre (*Time off*) | heures par jour consacrées aux loisirs et soins personnels (salariés à temps plein) | h/jour | haut | 16,2 (2009) |
+| 4_2 | Longues heures de travail non rémunéré (*Long unpaid working hours*) | part des 15-64 ans consacrant de longues heures au travail non rémunéré (seuil à vérifier) | % | bas | 7,2 (2009) |
+| 4_3 | Écart femmes-hommes de temps de travail (*Gender gap in working hours*) | écart de temps de travail total (rémunéré + non rémunéré) | min/jour | bas | 27 (2009) |
+| 4_4 | Satisfaction à l'égard de l'emploi du temps (*Satisfaction with time use*) | note moyenne 0-10 | note | haut | 6,6 (2022) |
+| 4_4_DEP | Faible satisfaction de l'emploi du temps | part avec note < 5 | % | bas | 16,9 (2022) |
+| 4_4_VER | Inégalité de satisfaction de l'emploi du temps | rapport quintile supérieur / inférieur | ratio | bas | 2,88 (2022) |
+| 5_1 | Espérance de vie à la naissance (*Life expectancy at birth*) | | années | haut | 83 (2023) |
+| 5_2 | Santé perçue positive (*Perceived health as positive*) | part des 16 ans et plus se déclarant en bonne ou très bonne santé ; variante 5_2_DEP : santé perçue négative | % | haut | 66,2 (2024) ; DEP 9,7 |
+| 5_3 | Décès par suicide, alcool et drogues (*Deaths from suicide, alcohol, drugs*) | taux standardisé | pour 100 000 | bas | 18,7 (2023) |
+| 5_4 | Dépression déclarée (*Self-reported depression*) | part des 15 ans et plus | % | bas | 10,8 (2019) |
+| 6_1 / 6_2 / 6_3 | Compétences des élèves en lecture, mathématiques, sciences (*Student … skills*) | score moyen PISA à 15 ans | score | haut | 474 / 474 / 487 (2022) |
+| 6_x_DEP | Élèves faibles dans les trois domaines (*Students with low skills in reading, mathematics and science*) | part des élèves de 15 ans sous le niveau 2 dans les trois domaines (à vérifier) | % | bas | 16,8 (2022) |
+| 6_1/2/3_VER | Dispersion des scores des élèves | rapport décile supérieur / inférieur | ratio | bas | 1,84 / 1,68 / 1,77 (2022) |
+| 6_4 / 6_5 | Compétences des adultes en numératie / littératie (*Adult numeracy / literacy skills*) | score moyen PIAAC | score | haut | 257 / 255 (2023) |
+| 6_4_DEP / 6_5_DEP | Adultes faiblement compétents en numératie / littératie | part sous le niveau 2 (à vérifier) | % | bas | 22,6 (2023) / – |
+| 6_4_VER / 6_5_VER | Dispersion des scores des adultes | rapport décile supérieur / inférieur | ratio | bas | 1,79 / 1,63 (2012) |
+| 7_1 | Soutien social (*Social support*) | part des 15 ans et plus ayant quelqu'un sur qui compter ; variante 7_1_DEP : absence de soutien | % | haut | 87,6 (2025) ; DEP 12,2 |
+| 7_2 | Temps consacré aux interactions sociales (*Time spent in social interactions*) | | h/semaine | haut | 6,2 (2009) |
+| 7_3 | Satisfaction à l'égard des relations personnelles | note moyenne 0-10 ; 7_3_DEP (< 5) ; 7_3_VER (rapport des quintiles) | note | haut | 7,7 (2022) ; DEP 4,8 ; VER 1,92 |
+| 7_4 | Sentiment de solitude (*Feeling lonely*) | part des 16 ans et plus se sentant seuls (fréquence à vérifier) | % | bas | 10,8 (2022) |
+| 8_1 | Avoir son mot à dire sur l'action du gouvernement (*Having a say in government*) | part des 16-65 ans estimant avoir leur mot à dire ; 8_1_DEP : l'inverse | % | haut | 26,3 (2023) ; DEP 57,6 |
+| 8_2 | Participation électorale (*Voter turnout*) | votants en % de la population en âge de voter (élections nationales) | % | haut | 73,7 (2022) |
+| 9_1 | Accès aux espaces verts (*Access to green space*) | part de la population urbaine ayant un espace vert accessible à pied (définition à vérifier) | % | haut | 62,2 (2018) |
+| 9_2 | Exposition à la pollution de l'air (*Exposed to air pollution*) | part de la population exposée à des PM2,5 supérieures à la valeur guide de l'OMS (5 µg/m³, à vérifier) | % | bas | 99,7 (2020) |
+| 9_3 | Exposition aux températures extrêmes (*Exposure to extreme temperature*) | part de la population exposée (définition à vérifier) | % | bas | 1,0 (2024) |
+| 10_1 | Homicides (*Homicides*) | | pour 100 000 | bas | 0,8 (2022) |
+| 10_2 | Sentiment de sécurité la nuit (*Feeling safe at night*) | part des 15 ans et plus se sentant en sécurité seuls la nuit ; 10_2_DEP : l'inverse | % | haut | 72,0 (2025) ; DEP 26,3 |
+| 10_3 | Décès sur la route (*Road deaths*) | | pour 100 000 | bas | 4,7 (2024) |
+| 11_1 | Satisfaction dans la vie (*Life satisfaction*) | note moyenne 0-10 ; 11_1_DEP : part < 5 ; 11_1_VER : rapport des quintiles | note | haut | 7,1 (2025) ; DEP 6,9 (2024) ; VER 2,08 (2024) |
+| 11_2 | Solde d'affects négatifs (*Negative affect balance*) | part des 15 ans et plus ayant plus d'affects négatifs que positifs | % | bas | 12,5 (2025) |
+| 11_3 | Douleur physique (*Feelings of physical pain*) | part des 15 ans et plus ayant ressenti de la douleur physique la veille (à vérifier) | % | bas | 33,0 (2025) |
+| 12_1 | Couverture naturelle et semi-naturelle (*Natural and semi-natural land cover*) | part de la superficie terrestre | % | haut | 52,2 (2022) |
+| 12_2 / 12_3 | Perte / gain de couverture naturelle et semi-naturelle | en % de la couverture d'une année de référence (à vérifier) | % | bas / haut | 1,30 / 1,62 (2022) |
+| 12_4 | Paysages forestiers intacts (*Intact forest landscapes*) | | km² | haut | 0 (2016) |
+| 12_5 / 12_6 | Aires protégées terrestres / marines | part de la superficie terrestre / de la ZEE | % | haut | 31,8 / 33,9 (2024) |
+| 12_7 | Indice de la liste rouge (*Red list index of threatened species*) | 1 = aucune espèce menacée | indice 0-1 | haut | 0,84 (2025) |
+| 12_8 | Émissions de GES par habitant (*Greenhouse gas emissions per capita*) | émissions territoriales | t éq. CO2/hab. (unité OCDE affichée « kg », à vérifier) | bas | 5,65 (2023) |
+| 12_9 | Empreinte carbone (*Carbon footprint*) | émissions liées à la demande finale intérieure | t CO2/hab. ou t éq. CO2/hab. | bas | 6,83 t CO2 (2018) ; 8,37 t éq. CO2 (2020) |
+| 12_10 | Énergies renouvelables (*Renewable energy*) | part dans l'approvisionnement total en énergie | % | haut | 14,0 (2024) |
+| 12_11 | Bilan des nutriments du sol (*Soil nutrient balance*) | excédent d'azote par hectare de terre agricole (à vérifier) | kg/ha | bas | 17,5 (2023) |
+| 12_12 / 12_13 | Stress hydrique (ressources internes / renouvelables totales) | prélèvements en % des ressources | % | bas | 12,1 / 11,4 (2022) |
+| 12_14 | Empreinte matières par habitant (*Material footprint per capita*) | | t/hab. | bas | 17,5 (2024) |
+| 12_15 | Taux de recyclage (*Recycling rate*) | part des déchets traités qui est recyclée (à vérifier) | % | haut | 42,9 (2024) |
+| 13_1 | Niveau d'études des jeunes adultes (*Educational attainment among young adults*) | part des 25-34 ans diplômés au moins du 2nd cycle du secondaire | % | haut | 89,4 (2024) |
+| 13_2 | Taux de sous-utilisation de la main-d'œuvre (*Labour underutilisation rate*) | chômeurs, découragés et sous-employés en % de la population active élargie | % | bas | 14,1 (2025) |
+| 13_3 | Mortalité prématurée (*Premature mortality*) | années potentielles de vie perdues | années pour 100 000 | bas | 4 125 (2022) |
+| 13_4 | Prévalence du tabagisme (*Smoking prevalence*) | fumeurs quotidiens, 15 ans et plus | % | bas | 23,1 (2023) |
+| 13_5 | Prévalence de l'obésité (*Obesity prevalence*) | 15 ans et plus (mesurée ou déclarée, à vérifier) | % | bas | 14,4 (2019) |
+| 14_1 | Confiance dans les autres (*Trust in others*) | note moyenne 0-10 | note | haut | 4,0 (2025) |
+| 14_2 | Confiance dans la police (*Trust in the police*) | note moyenne 0-10 | note | haut | 5,6 (2013) |
+| 14_3 | Confiance dans le gouvernement (*Trust in government*) | part des 15 ans et plus ayant confiance | % | haut | 37,3 (2025) |
+| 14_4 | Implication des parties prenantes (*Government stakeholder engagement*) | indice composite d'association des parties prenantes à l'élaboration des réglementations | indice 0-4 | haut | 1,97 (2024) |
+| 14_5 | Parité en politique (*Gender parity in politics*) | part des femmes parmi les parlementaires | % | haut | 36,2 (2026) |
+| 14_6 | Corruption (*Corruption*) | indice de perception de la corruption (Transparency International, à vérifier) ; 100 = très intègre | indice 0-100 | haut | 66 (2025) |
+| 14_7 | Bénévolat dans des organisations (*Volunteering through organisations*) | part des 15 ans et plus | % | haut | 31,0 (2025) |
+| 15_1 | Actifs fixes produits (*Produced fixed assets*) | stock net par habitant | $ PPA/hab. | haut | 189 920 (2024) |
+| 15_2 | Actifs de propriété intellectuelle (*Intellectual property assets*) | stock net par habitant | $ PPA/hab. | haut | 8 913 (2024) |
+| 15_3 | Formation brute de capital fixe (*Gross fixed capital formation*) | unité « PC » renvoyée par l'API (croissance en %, à vérifier) | % | haut | 0,48 (2025) |
+| 15_4 | Investissement en R&D (*Investment in R&D*) | en % du PIB (concept comptable, distinct de la DIRD, à vérifier) | % du PIB | haut | 1,77 (2024) |
+| 15_5 | Valeur financière nette de l'économie (*Total economy net financial worth*) | | $ PPA/hab. | haut | −1 225 (2025) |
+| 15_6 | Dette des ménages (*Households and NPISHs debt*) | en % du revenu disponible net | % | bas | 115,2 (2024) |
+| 15_7 | Valeur financière nette des administrations publiques (*General government net financial worth*) | | % du PIB | haut | −73,4 (2025) |
+| 15_8 | Levier des institutions financières monétaires (*Monetary financial institutions leverage*) | | ratio | bas | 18,1 (2025) |
+
+### 3.4 Better Life Index (rappel, à vérifier)
+
+Le BLI est la version interactive grand public du cadre : **11 thèmes** du bien-être actuel (sans les capitaux) et environ **24 indicateurs**, dont quelques-uns absents de la codelist ci-dessus : logements sans équipements sanitaires de base, nombre de pièces par personne, dépenses de logement, durée prévisible de scolarité (*years in education*), qualité de l'eau (satisfaction), patrimoine financier net des ménages. Calcul : normalisation min-max sur les pays de l'OCDE, moyenne simple des indicateurs dans un thème (0-10), puis **pondération des thèmes choisie par l'utilisateur** sur le site (poids 0 à 5). Les réponses des utilisateurs du BLI sont collectées et publiées par l'OCDE — précédent direct de la finalité 2 de l'observatoire (indicateur intersubjectif). Composition et méthode **à vérifier** (site non lisible par l'outil).
+
+### 3.5 Principe d'agrégation
+
+- *How's Life?* : **tableau de bord sans indice composite** ; évaluation par le sens de la variation de chaque indicateur (amélioration / stabilité / détérioration) et par la position relative du pays (tiers de l'OCDE).
+- BLI : indice composite à pondération choisie par l'utilisateur (voir 3.4).
+- Distinction stricte **bien-être actuel / ressources pour le futur** (capitaux), héritée de SSF.
+
+### 3.6 Remarques sur la pertinence pour la France
+
+- Cadre le plus complet et le plus proche de v0 ; séries France disponibles pour la plupart des indicateurs, mais **certaines sont anciennes** (enquêtes emploi du temps 2009, *job strain* 2015, insécurité du marché du travail 2016, PIAAC dispersion 2012) ou **propriétaires** (Gallup : soutien social, sentiment de sécurité, affects, confiance dans le gouvernement).
+- Découpages différents de v0 : **équilibre vie pro/perso** est une dimension à part (v0 : dans `liens_bien_etre`) ; **engagement civique** est restreint (participation, avoir son mot à dire) et la **confiance institutionnelle et la corruption** sont classées en capital social ; le **bien-être subjectif** est une dimension à part entière ; la **sécurité** ne comprend pas la sécurité économique (rangée en revenu et patrimoine : insécurité financière, difficultés à joindre les deux bouts) ; l'**accès à internet** est rangé dans le logement ; la **dette** et l'**investissement** relèvent du capital économique (ressources futures) et non du niveau de vie.
+- Les **inégalités** ne forment pas une dimension : elles sont mesurées dans chaque dimension (`_VER`, écarts entre groupes).
+- Le capital naturel apporte des indicateurs nationaux directement exploitables pour `planete` (empreinte carbone, empreinte matières, excédent d'azote, stress hydrique, aires protégées, liste rouge, recyclage).

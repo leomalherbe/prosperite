@@ -22,7 +22,7 @@ Périmètre du lancement en cours : **phase 1** (T1 fiches par source, T2 tablea
 
 ## 2026-10-13 14:00 — Sous-tâche 2 : résultats des vagues 1 et 2 du robot (run Actions 38390822077 puis 38392712026)
 
-- **Vague 1** : 74/82 URL renvoient des données. Échecs instructifs : `data.culture.gouv.fr` n'est plus un portail Opendatasoft (application `culture.data.gouv.fr`) ; Webstat `observations` n'existe pas sans compte (404) ; une URL data.gouv recopiée par WebFetch était fausse (404) — leçon : ne prendre les URL de ressources data.gouv que dans la réponse brute de l'API ; V-Dem n'a pas de lien direct (404, téléchargement par formulaire) ; GFN répond 403 sans clé ; l'URL ONUDC renvoie une page HTML (portail déplacé vers data.unodc.org).
+- **Vague 1** : 74/82 URL renvoient des données. Échecs instructifs : `data.culture.gouv.fr` n'est plus un portail Opendatasoft (application `culture.data.gouv.fr`) ; Webstat `observations` n'existe pas sans compte (404) ; l'URL du CSV SSMSI relevée via WebFetch renvoyait 404 (constat de la vague 3 : le fichier avait été remplacé le 15/09/2026 et son URL horodatée avait changé) — leçon : utiliser le permalien de ressource data.gouv.fr ou relire l'API ; V-Dem n'a pas de lien direct (404, téléchargement par formulaire) ; GFN répond 403 sans clé ; l'URL ONUDC renvoie une page HTML (portail déplacé vers data.unodc.org).
 - **Vague 2** : 104 URL ; catalogues complets des 8 portails Opendatasoft extraits (DREES 265 jeux, DEPP 310, MESR 217, Odissé 388, Ameli 51, économie 617, ODRE 187, CNAF 210).
 - **Résultats marquants** :
   - Banque mondiale : 14 des 16 séries des prototypes répondent ; `EN.ATM.CO2E.PC` et `EN.ATM.CO2E.PP.GD` sont **archivées** (« indicator was not found… deleted or archived ») ; remplaçants vérifiés `EN.GHG.CO2.PC.CE.AR5`, `EN.GHG.ALL.PC.CE.AR5`. WGI accessibles via `source=3` avec les codes `GOV_WGI_*` (1996–2025).
@@ -32,3 +32,15 @@ Périmètre du lancement en cours : **phase 1** (T1 fiches par source, T2 tablea
   - SDES DiDo : qualité de l'air nationale (exposition PM2,5 fond urbain 2009–2024, concentrations) en CSV à identifiant stable.
   - Géodes redirige vers Odissé (Santé publique France).
 - **Problèmes** : DARES refuse la connexion du robot (« Remote end closed connection ») ; le classeur CPI 2025 est un xlsx valide mais illisible par openpyxl en mode lecture seule (à traiter en phase de collecte).
+
+## 2026-10-13 14:20 — Sous-tâche 3 : vagues 3 et 4 du robot, fixtures (runs 38393724607 et 38394608567)
+
+- **Vague 3** (113 URL) : fiches data.gouv.fr complètes (URL courantes des ressources), pièces jointes DREES, enregistrements Odissé / DEPP / Ameli, ITDD France entière (185 variables, colonnes annuelles A1982–A2025).
+- **Vague 4** (123 URL, consolidée : 114 données, 4 pages HTML, 5 erreurs) : **permalien data.gouv.fr vérifié** (`/fr/datasets/r/<id_ressource>` redirige vers le fichier courant) ; baromètre d'opinion DREES = **microdonnées pondérées 2000–2024 en CSV** (pièce jointe) ; EVSI DREES figée à 2018 ; base SSMSI : 88 419 lignes, 159 titres dont « Sentiment d'insécurité dans le quartier ou le village » (15 obs.), fichier encodé en Windows-1252.
+- **Fixtures** : 19 réponses réelles copiées dans `tests/fixtures/` (opendatasoft, banque_de_france, bce, sdes_dido, data_gouv, ademe, ocde, banque_mondiale, oms, hubeau, rsf, owid) avec leur provenance dans `tests/fixtures/provenance_m04.csv`. Pas de fixture OWID « grapher » brute (l'extrait conservé est filtré sur la France).
+- **Problèmes** : la description SDMX des flux How's Life ne nomme pas les sources (l'origine Gallup de certaines séries reste à confirmer dans le PDF de métadonnées OCDE) ; DARES toujours injoignable.
+
+## 2026-10-13 14:35 — Sous-tâche 4 : livrables T1 et T2
+
+- `docs/sources/autres_sources.md` (T1) : points d'entrée communs (Opendatasoft, data.gouv.fr, DiDo, SDMX), 12 fiches françaises, 5 fiches internationales (dont tableaux V-Dem/RSF/CPI/Freedom House/WJP et WHR/Gallup/Eurofound/ESS/Eurobaromètre), 15 sources découvertes, statut des 20 séries des prototypes, synthèse par dimension.
+- `docs/sources/10_sources_inventaire.csv` (T2) : 53 sources (niveau 1 : 20 ; niveau 2 : 18 ; exclu : 15 ; fiabilité : 40 `verifie`, 2 `probable`, 11 `non_verifie`) + 20 lignes « prototype: » (16 Banque mondiale, 4 OWID) avec statut et proposition.

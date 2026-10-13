@@ -42,7 +42,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Catalogue complet (CSV) | `GET https://<portail>/api/explore/v2.1/catalog/exports/csv?delimiter=%3B` → colonnes `datasetid`, `default.title`, `default.modified`, `default.records_count`, `default.publisher`, `default.license`, `default.theme`… |
 | Enregistrements d'un jeu | `GET …/catalog/datasets/<dataset_id>/records?limit=100&where=…&select=…&order_by=…` (JSON paginé) |
 | Export complet d'un jeu | `GET …/catalog/datasets/<dataset_id>/exports/csv?delimiter=%3B` (aussi `json`, `xlsx`, `parquet`) — vérifié sur Odissé |
-| Pièces jointes | Un jeu à `records_count = 0` ne contient pas de table mais des **fichiers joints** (souvent XLSX) listés dans `attachments` ; c'est fréquent à la DREES (voir §2.2) → niveau 2 |
+| Pièces jointes | Un jeu à `records_count = 0` ne contient pas de table mais des **fichiers joints** (CSV, XLSX, ZIP) listés dans `attachments` de la fiche du jeu (`…/catalog/datasets/<dataset_id>`) et téléchargeables à `…/catalog/datasets/<dataset_id>/attachments/<attachment_id>` (vérifié à la DREES, §2.2) → niveau 2 |
 | Authentification | Aucune pour les jeux publics ; en-tête `Authorization: Apikey <clé>` pour les jeux restreints |
 | Format | JSON, CSV, XLSX, Parquet |
 | Remarque | Le `robots.txt` standard d'Opendatasoft interdit `/api/` aux robots : WebFetch est refusé, un script (Actions) passe sans difficulté. Le portail `data.culture.gouv.fr` n'est **plus** sous Opendatasoft (application `culture.data.gouv.fr`) : non vérifié. |
@@ -53,10 +53,11 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Fiche d'un jeu | `GET https://www.data.gouv.fr/api/1/datasets/<id ou slug>/` → titre, organisation, licence, fréquence, couverture temporelle, `resources[]` (titre, format, `url`, `last_modified`, taille) — vérifié |
 | Recherche | `GET https://www.data.gouv.fr/api/2/datasets/search/?q=<mots>&organization=<id>&page_size=<n>` — vérifié |
 | Ressources d'un jeu | `GET https://www.data.gouv.fr/api/2/datasets/<id>/resources/?page=1&page_size=50` — vérifié |
-| Fichiers | Hébergés sur `static.data.gouv.fr/resources/<slug>/<horodatage>/<fichier>` (l'horodatage change à chaque mise à jour) ou chez le producteur (Opendatasoft, DiDo, S3). **Toujours relire l'URL dans l'API avant de télécharger.** |
+| Fichiers | Hébergés sur `static.data.gouv.fr/resources/<slug>/<horodatage>/<fichier>` (l'horodatage change à chaque mise à jour) ou chez le producteur (Opendatasoft, DiDo, S3). |
+| **Permalien stable d'une ressource** | `https://www.data.gouv.fr/fr/datasets/r/<id_ressource>` → redirige vers la version courante du fichier (vérifié sur la base SSMSI, ressource `631cff69-f0da-4890-b4fc-97aeada1476f`). **C'est l'URL stable à utiliser pour le niveau 2.** |
 | Authentification | Aucune |
-| Licence | Indiquée par jeu (`license` : `lov2` = Licence Ouverte 2.0, `odc-odbl`…) |
-| Remarque | Une URL de fichier recopiée par WebFetch s'est révélée fausse (404) : ne prendre les URL que dans la réponse brute de l'API. |
+| Licence | Indiquée par jeu (`license` : `lov2` = Licence Ouverte 2.0, `fr-lo` = Licence Ouverte 1.0, `odc-odbl`…) |
+| Remarque | Exemple vécu : l'URL du CSV SSMSI relevée le matin (horodatage `20260810-…`) renvoyait 404 l'après-midi, le fichier ayant été remplacé le 15/09/2026 (`20260915-…`). D'où l'usage du permalien ou de l'API. |
 
 ### 1.3 SDES — plateforme DiDo (Diffusion des données)
 | Élément | Valeur |
@@ -102,7 +103,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 - Dépassements des normes de protection de la santé (NO2, O3, PM10, PM2,5), % d'agglomérations — `rid a956734e-0f63-4629-821e-669f477d5f53`.
 - Dépassements de la norme O3 de protection de la végétation — `rid 6bcf0cf8-c721-4de9-a964-f040cb2798ab`.
 - Empreinte carbone de la France 1990–2024 (t CO2e/hab ; 8,2 en 2024, provisoire, selon la page de publication) — XLSX `https://www.statistiques.developpement-durable.gouv.fr/media/8724/download?inline`.
-- Indicateurs territoriaux de développement durable (ODD), fichier « France entière » — `rid 305ea0e3-269b-47ee-bab5-7553fec6f010`.
+- **Indicateurs territoriaux de développement durable (ITDD, INSEE–SDES), fichier « France entière »** — `rid 305ea0e3-269b-47ee-bab5-7553fec6f010` : 185 variables nationales en format large (colonnes annuelles `A1982` à `A2025`), avec rattachement ODD. Exemples de variables : `nb_dossiers_deposes` (situations de surendettement soumises aux commissions), `part_agribio_surf` (part de la SAU en agriculture biologique), `nb_tues_routes`, `tx_jeunes_diff_lecture` (jeunes de 16-25 ans en difficulté de lecture, tests JDC), `part_20_24_sortis_nondip`, `part_maires_femme`, `part_class_5_eau_sout_nit` et `part_class_5_eau_sout_pes` (stations d'eaux souterraines trop chargées en nitrates / pesticides), `part_baign_douce`, `taux_lgmt_suroccupes`, `taux_val_dechets`, `prop_com_catnat` (communes touchées par une catastrophe naturelle), `surf_prot`, `surf_sols_artif`, `taux_participation` (présidentielle T1), `taux_mort_infant`, `infrac_tx_homicides`, `infrac_tx_violences_sex`, `infrac_tx_violences_intrafam`, `infrac_tx_cambriolages`, `bas_niveau_francais`, `bas_niveau_maths`. Profondeur à vérifier variable par variable (beaucoup de cases vides attendues). Produit commun avec l'INSEE : signaler à M01 pour éviter le double moissonnage.
 - Jeux SDES repérés sur data.gouv.fr (titres vérifiés, identifiants à relever en phase 2) : « Achats et ventes de produits phytosanitaires à l'échelle départementale », « Production et traitement des déchets », « Gaz à effet de serre et polluants atmosphériques au format AEA », « Exposition des logements et des individus au risque d'inondation… », « Exposition des maisons individuelles au retrait-gonflement des argiles », « Parc de véhicules routiers ».
 
 **Limites** : les séries de synthèse les plus utiles (empreinte carbone, artificialisation, bilan énergétique) sont dans des XLSX de publication dont l'URL change à chaque édition ; le moissonnage devra repartir de la page de publication. Beaucoup de jeux DiDo sont locaux (communes, IRIS) et non des séries nationales. L'empreinte carbone figure aussi dans les tableaux INSEE (M01) et l'exposition aux PM2,5 chez Eurostat (M02) : à arbitrer (doublon partiel).
@@ -123,9 +124,9 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Couverture | France, régions, départements |
 
 **Exemples de jeux (identifiants `dataset_id` vérifiés dans le catalogue)**
-- `431_le-barometre-d-opinion` — Le baromètre d'opinion (opinions sur santé, protection sociale, inégalités, cohésion sociale ; résultats agrégés rétrospectifs selon la page DREES).
-- `3457_esperance-de-vie-sans-incapacite` — Espérance de vie sans incapacité.
-- `530_l-accessibilite-potentielle-localisee-apl` — Accessibilité potentielle localisée aux professionnels de santé.
+- `431_le-barometre-d-opinion` — Le baromètre d'opinion : **microdonnées pondérées 2000–2024 en CSV** (pièce jointe `barometre2000_2024_diff_csv`, colonnes `ident;annee;poids;sdreg;…;og01;og02;…`, vérifiée), plus `barometre2025_diff_csv`, dictionnaires des variables et libellés (XLSX), questionnaires (PDF). Indicateurs à calculer (opinions sur les inégalités, la cohésion sociale, la protection sociale…). L'identifiant de la pièce jointe change avec l'édition.
+- `3457_esperance-de-vie-sans-incapacite` — Espérance de vie sans incapacité : pièce jointe XLSX vérifiée mais **figée** (séries 1995–2018) ; préférer Eurostat (espérance de vie en bonne santé, M02).
+- `530_l-accessibilite-potentielle-localisee-apl` — Accessibilité potentielle localisée aux professionnels de santé : pièces jointes par profession (XLSX) et archives (ZIP/7z) par méthode (2010–2013, 2015–2022), plus « indicateurs d'APL moyens par dixièmes de population » (XLSX).
 - `4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d` — Pauvreté avant et après redistribution.
 - `336_minima-sociaux-rsa-et-prime-d-activite` — Minima sociaux, RSA et prime d'activité.
 - `631_insertion-sociale-et-minima-sociaux` — ISD : insertion sociale et minima sociaux (27 395 enregistrements).
@@ -150,8 +151,8 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Couverture | France, régions, départements, infra-départemental |
 
 **Exemples de jeux (`dataset_id` vérifiés)**
-- `suicides-deces-france` — Suicides : décès (France), 135 enregistrements.
-- `canicules-nombres-de-jours-de-canicule-france` — Nombre de jours de canicule (France), 22 enregistrements ; `canicules-severite-france`.
+- `suicides-deces-france` — Suicides : décès (France), 135 enregistrements (champs `annee`, `sexe`, `classe_d_age`, `nombre_de_deces`, `taux_brut`, `taux_standardise` ; premiers enregistrements en 2019 — profondeur exacte à mesurer).
+- `canicules-nombres-de-jours-de-canicule-france` — Nombre de jours-départements de canicule (`nb_jdep_can`), **2004–2025** (export CSV vérifié ; 2025 : 517 ; la canicule de 2003 n'est pas couverte) ; `canicules-severite-france`.
 - `tabagisme-prevalence-selon-le-sexe` — Tabac : prévalence selon le sexe (39) ; `tabagisme-prevalence-selon-le-revenu` (36).
 - `sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mo` (France, 12) ; `sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra` (12).
 - `bien-etre-indicateurs-du-barometre-2024` — Bien-être, Baromètre de Santé publique France 2024 (104) ; `trouble-anxieux-generalise-indicateurs-du-barometre-2024`.
@@ -169,15 +170,15 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Authentification | Aucune |
 | Format | CSV, Parquet, XLSX |
 | Niveau | **2** |
-| Fiabilité | `verifie` (fiche API et fichiers ouverts par le robot, voir résultats vague 3) |
+| Fiabilité | `verifie` (fiche API, permalien et fichier CSV ouverts par le robot) |
 | Licence | Licence Ouverte 2.0 (`lov2`, fiche data.gouv.fr de la base des séries chronologiques) |
 | Fréquence | Mensuelle, trimestrielle ou annuelle selon l'indicateur ; base mise à jour en août 2026 |
 | Profondeur | Base des séries chronologiques : couverture déclarée 2006–2023 dans les métadonnées (à recouper avec le fichier) ; état 4001 : depuis janvier 1996 (fichier non mis à jour depuis 2022) |
 | Couverture | France, départements |
 
-**Exemples d'indicateurs** (périmètres listés dans la description officielle de la base ; libellés exacts des séries à relever en phase 2) : homicides et tentatives ; coups et blessures volontaires ; violences sexuelles ; cambriolages de logements ; escroqueries et fraudes aux moyens de paiement ; atteintes à caractère raciste, xénophobe ou antireligieux ; atteintes anti-LGBT ; outrages sexistes ; dépôt de plainte (taux de plainte) ; **sentiment d'insécurité** (enquêtes de victimation).
+**Contenu vérifié de la base des séries chronologiques** (fichier ouvert par le permalien, 88 419 lignes, colonnes `Valeurs, Unite_temps, Titre, Ordonnees, Indicateur, SourceGraphique, Sous_indicateur, Nomenclature, Declinaison, Statistique, Zone_geographique, Champ, Periodicite, Unite_de_compte, Detail_complementaire`, 159 titres de séries). Exemples de titres : « Homicides enregistrés par les services de sécurité » ; « Violences physiques enregistrées… » ; « Taux de dépôt de plainte : proportion de victimes déclarées ayant déposé plainte » ; **« Sentiment d'insécurité dans le quartier ou le village »** et **« Sentiment d'insécurité au domicile »** (15 observations chacune, enquêtes de victimation) ; victimes de traite et d'exploitation des êtres humains. Autres périmètres listés dans la description : cambriolages, escroqueries, atteintes racistes ou anti-LGBT, outrages sexistes, infractions numériques.
 
-**Limites** : délinquance **enregistrée** = activité des services autant que délinquance réelle (sens d'interprétation ambigu pour certaines infractions, par exemple violences intrafamiliales dont la hausse reflète aussi une meilleure révélation). Rupture entre l'enquête CVS (2007–2021) et VRS (depuis 2022). Homicides également disponibles via OCDE (How's Life 10_1) et Banque mondiale (ONUDC).
+**Limites** : délinquance **enregistrée** = activité des services autant que délinquance réelle (sens d'interprétation ambigu pour certaines infractions, par exemple violences intrafamiliales dont la hausse reflète aussi une meilleure révélation). Rupture entre l'enquête CVS (2007–2021) et VRS (depuis 2022). Le CSV est servi avec l'en-tête `charset=utf-8` mais **encodé en Latin-1/Windows-1252** (accents illisibles en UTF-8) : à gérer dans le module. Homicides également disponibles via OCDE (How's Life 10_1), Banque mondiale (ONUDC) et ITDD (`infrac_tx_homicides`).
 
 ### 2.5 DEPP — Direction de l'évaluation, de la prospective et de la performance (Éducation nationale)
 | Champ | Valeur |
@@ -194,7 +195,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Profondeur | Courte pour les évaluations nationales (dispositif récent) ; à mesurer jeu par jeu pour le baccalauréat |
 | Couverture | France, académies, départements, établissements |
 
-**Exemples de jeux (`dataset_id` vérifiés)** : `fr-en-reussite-au-baccalaureat-origine-sociale` (348 enregistrements) ; `fr-en-baccalaureat-par-academie` (43 217) ; `fr-en-dnb-par-sexe-et-par-serie` ; `fr-en-evaluations_nationales_6eme_academie` (et CE1, CM1, CM2, 4e, 2de) ; `fr-en-indicateurs-valeur-ajoutee-colleges` ; SIES : `fr-esr-insersup` (insertion professionnelle des diplômés du supérieur), `fr-esr-taux-poursuite-enseignement-superieur-par-academie`.
+**Exemples de jeux (`dataset_id` vérifiés)** : `fr-en-reussite-au-baccalaureat-origine-sociale` (348 enregistrements, **depuis 1998**, taux d'admis par origine sociale et série — enregistrements vérifiés) ; `fr-en-baccalaureat-par-academie` (43 217) ; `fr-en-dnb-par-sexe-et-par-serie` ; `fr-en-evaluations_nationales_6eme_academie` (et CE1, CM1, CM2, 4e, 2de) ; `fr-en-indicateurs-valeur-ajoutee-colleges` ; SIES : `fr-esr-insersup` (insertion professionnelle des diplômés du supérieur), `fr-esr-taux-poursuite-enseignement-superieur-par-academie`.
 
 **Compétences internationales (PISA, PIAAC)** : non publiées par la DEPP en données ouvertes ; disponibles via l'OCDE (How's Life, mesures `6_1` à `6_5`, §3.1) : PISA 2006–2022 (6 points), PIAAC 2012 et 2023.
 
@@ -303,8 +304,8 @@ Voie d'accès documentée au §1.2 (niveau 1, `verifie`). Jeux « résultats » 
 
 **Base How's Life (bien-être), flux vérifiés pour la France**
 - Bien-être actuel `OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1` (clé `FRA.......`) : 68 mesures France. Séries longues utiles : `10_2` se sentir en sécurité la nuit (2006–2025, 20 points) ; `7_1` soutien social (2006–2025) ; `11_2` affects négatifs (2006–2025) ; `11_3` douleur physique ; `1_5` difficulté à boucler les fins de mois (2004–2025) ; `3_5` incapacité à chauffer son logement ; `5_2` santé perçue positive ; `5_3` décès par suicide, alcool, drogues (2004–2023) ; `10_1` homicides (2004–2022) ; `10_3` décès sur la route (2004–2024) ; `2_7` longues heures de travail ; `9_3` exposition aux températures extrêmes. Séries courtes : `11_1` satisfaction dans la vie (2013–2025, 7 points) ; `7_4` solitude (2018, 2022) ; `8_1` avoir son mot à dire (2021, 2023) ; `8_2` participation électorale (4 scrutins).
-- Bien-être futur `OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1` : 33 mesures, dont `14_1` confiance dans les autres (2013–2025, 7 points), `14_3` confiance dans le gouvernement (2006–2025), `14_6` corruption (CPI, 2012–2025), `14_7` bénévolat (2007–2025), `14_5` parité en politique, `12_7` indice Liste rouge (2004–2025), `12_5`/`12_6` aires protégées, `12_14` empreinte matières, `12_15` taux de recyclage, `12_9` empreinte carbone, `12_11` bilan des nutriments du sol, `13_3` mortalité prématurée, `13_4` tabagisme, `15_6` dette des ménages.
-- **Remarque** : plusieurs séries annuelles (sécurité la nuit, soutien social, affects, confiance dans le gouvernement, bénévolat) proviennent du **Gallup World Poll** : l'OCDE est donc une voie d'accès ouverte à une partie des données Gallup (fermées par ailleurs).
+- Bien-être futur `OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1` : 33 mesures, dont `14_1` confiance dans les autres (2013–2025, 7 points), `14_3` confiance dans le gouvernement (2006–2025), `14_6` corruption (échelle 0–100, 2012–2025 ; vraisemblablement le CPI de Transparency International, à confirmer), `14_7` bénévolat (2007–2025), `14_5` parité en politique, `12_7` indice Liste rouge (2004–2025), `12_5`/`12_6` aires protégées, `12_14` empreinte matières, `12_15` taux de recyclage, `12_9` empreinte carbone, `12_11` bilan des nutriments du sol, `13_3` mortalité prématurée, `13_4` tabagisme, `15_6` dette des ménages.
+- **Remarque** : plusieurs séries annuelles (sécurité la nuit, soutien social, affects, confiance dans le gouvernement, bénévolat) proviennent, selon la documentation habituelle de How's Life, du **Gallup World Poll** — à confirmer dans le PDF « definitions and metadata » de la base (la description SDMX du flux ne nomme pas les sources). Si c'est confirmé, l'OCDE est une voie d'accès ouverte à une partie des données Gallup (fermées par ailleurs).
 
 **Autres flux utiles repérés dans la liste des 1 547 flux (non interrogés pour la France à ce stade)** : `OECD.WISE.INE` `DSD_WISE_IDD@DF_IDD` (distribution des revenus), `DSD_WEALTH@DF_WEALTH` (patrimoine), `DSD_TIME_USE@DF_TIME_USE` (emploi du temps) ; `OECD.ELS.HD` `DSD_HEALTH_STAT@DF_AM` (mortalité évitable), `@DF_LE`, `@DF_PHS` (santé perçue), `DSD_HEALTH_LVNG@DF_HEALTH_LVNG_AC` / `_TC` (alcool, tabac) ; `OECD.ELS.SAE` `DSD_HW@DF_AVG_ANN_HRS_WKD` (heures travaillées), `DSD_EARNINGS@GENDER_WAGE_GAP` ; `OECD.GOV.GIP` `DSD_GOV_INT@DF_GOV_TDG_2025` (confiance, sécurité et dignité) ; `OECD.ENV.EPI` `DSD_AIR_POL@DF_AIR_POLL`, `DSD_WILD_LIFE@DF_WILD_LIFE` (espèces menacées), `DSD_PA@DF_PROT_AREA`, `DSD_LAND@DF_LAND_COVER`, `DSD_MATERIAL_RESOURCES@DF_MATERIAL_RESOURCES`, `DSD_MUNW@DF_MUNW` ; `OECD.WISE.RSB` `DSD_SDG@DF_SDG_G_16` (ODD 16).
 
@@ -369,7 +370,7 @@ Voie d'accès documentée au §1.2 (niveau 1, `verifie`). Jeux « résultats » 
 | **OMS — Global Health Observatory** | API OData `https://ghoapi.azureedge.net/api/<code>?$filter=SpatialDim eq 'FRA'` | 1 | `verifie` (`MH_12`, taux de suicide) | Suicide, alcool, couverture sanitaire ; doublons fréquents avec Eurostat/OCDE ; licence non vérifiée |
 | **Hub'Eau** (OFB/BRGM, eaufrance) | API `https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340` (nitrates, 885 036 analyses) | 1 | `verifie` | Qualité des eaux souterraines et de surface ; **données brutes par station** : un indicateur national demanderait une méthode d'agrégation |
 | **ODRE** (Open Data Réseaux Énergies) | Opendatasoft `odre.opendatasoft.com` (§1.1) | 1 | `verifie` | `consommation-annuelle-brute` (électricité), `pic-annuel-conso-brute` (2001–2025), éCO2mix |
-| **Assurance maladie — data.ameli.fr** | Opendatasoft (§1.1) | 1 | `verifie` | Risques professionnels : `sinistralite-par-secteur-d-activite-concerne-naf-1`, `deces-par-secteur-d-activite-naf-1-et-naf-5`, `maladies-professionnelles-psychiques-par-secteur-d-activite-naf-1-et-n` ; accès aux soins : `patients-longueduree-annuelle` (patients en ALD sans médecin traitant) |
+| **Assurance maladie — data.ameli.fr** | Opendatasoft (§1.1) | 1 | `verifie` | Risques professionnels : `sinistralite-par-secteur-d-activite-concerne-naf-1` (depuis 2005, sinistres et salariés par risque, tous secteurs ; enregistrements vérifiés), `deces-par-secteur-d-activite-naf-1-et-naf-5`, `maladies-professionnelles-psychiques-par-secteur-d-activite-naf-1-et-n` ; accès aux soins : `patients-longueduree-annuelle` (patients en ALD sans médecin traitant) |
 | **CNAF — data.caf.fr** | Opendatasoft (§1.1) | 1 | `verifie` | Surtout des effectifs d'allocataires (indicateurs de **moyens**, peu éligibles) ; `nbpla_pe_nat_hist` (places d'accueil petite enfance 2017–2022) |
 | **Ministère de l'Économie — data.economie.gouv.fr** | Opendatasoft (§1.1) | 1 | `verifie` | Baromètre des réclamations DGCCRF depuis 2008 (marginal) |
 | **ONISR** (sécurité routière) | data.gouv.fr (§2.9) | 2 | `verifie` | Tués et blessés de la route (microdonnées BAAC 2005–2024) ; série nationale aussi à l'OCDE `10_3` |
@@ -403,7 +404,7 @@ Vérification du 13/10/2026 (robot, extraits `banque_mondiale__*.txt` et `owid__
 | hitechexports | `TX.VAL.TECH.MF.ZS` | Actif | 2007–2024 (18) | 2024 : 23,1 % | Indicateur de compétitivité, lien faible avec la prospérité ressentie |
 | pmexposure | `EN.ATM.PM25.MC.M3` | Actif | 1995–2023 (24) | 2023 : 8,23 µg/m³ | Candidat ; alternative nationale SDES (exposition PM2,5 fond urbain) |
 | co2pc | `EN.ATM.CO2E.PC` | **Archivé** (« indicator was not found… deleted or archived ») | — | — | Remplacer par `EN.GHG.CO2.PC.CE.AR5` (vérifié, 1995–2024, 2024 : 4,00 t) ou mieux Citepa/INSEE ; envisager l'empreinte carbone SDES |
-| co2intensity | `EN.ATM.CO2E.PP.GD` | **Archivé** | — | — | Remplaçant probable `EN.GHG.CO2.RT.GDP.PP.KD` (résultat de la vague 3) ; indicateur d'intensité, à discuter |
+| co2intensity | `EN.ATM.CO2E.PP.GD` | **Archivé** | — | — | Remplaçant vérifié `EN.GHG.CO2.RT.GDP.PP.KD` (kg CO2e par $ PPA 2021, 1995–2024 ; 2024 : 0,073) ; indicateur d'intensité, pertinence à discuter |
 | freexpression | OWID `freedom-of-expression-index` (V-Dem) | Actif | 1789–2025 (26 depuis 2000) | 2025 : 0,959 | Conserver (indice composite V-Dem ; voie OWID) |
 | pressfreedom | OWID `press-freedom-index-rsf` | **Arrêté en 2021** sur OWID | 2013–2021 (9) | 2021 : 22,6 (ancienne échelle) | Remplacer par la source primaire RSF (CSV annuel 2002–2026) en traitant les ruptures 2013 et 2022 |
 | judicialchecks | OWID `judicial-constraints-on-the-executive-index` (V-Dem) | Actif | 2000–2025 (26) | 2025 : 0,945 | Conserver (composite V-Dem) |

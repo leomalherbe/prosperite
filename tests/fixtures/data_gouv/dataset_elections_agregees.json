@@ -1,0 +1,559 @@
+{
+ "access_audiences": [],
+ "access_type": "open",
+ "access_type_reason": null,
+ "access_type_reason_category": null,
+ "acronym": null,
+ "archived": null,
+ "authorization_request_url": null,
+ "badges": [],
+ "contact_points": [
+  {
+   "contact_form": "https://www.data.gouv.fr/fr/support/",
+   "email": null,
+   "id": "684ac249c0e96884bce12a33",
+   "name": "Support DataGouv",
+   "organization": {
+    "acronym": null,
+    "badges": [
+     {
+      "kind": "public-service"
+     },
+     {
+      "kind": "certified"
+     }
+    ],
+    "class": "Organization",
+    "id": "646b7187b50b2a93b1ae3d45",
+    "logo": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/31/8739c52c534ed583b0256ee4541875.png",
+    "logo_thumbnail": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/31/8739c52c534ed583b0256ee4541875-100.png",
+    "name": "data.gouv.fr",
+    "page": "https://www.data.gouv.fr/organizations/data-gouv-fr",
+    "permissions": {
+     "delete": false,
+     "edit": false,
+     "harvest": false,
+     "members": false,
+     "private": false
+    },
+    "slug": "data-gouv-fr",
+    "uri": "https://www.data.gouv.fr/api/1/organizations/data-gouv-fr/"
+   },
+   "owner": null,
+   "role": "contact"
+  }
+ ],
+ "created_at": "2023-06-08T14:35:45.742000+00:00",
+ "deleted": null,
+ "description": "> /!\\ la structure des données a évolué en janvier 2026\n\nCe jeu de données contient deux fichiers créés à partir des fichiers contenant les résultats des élections, publiés par le Ministère de l'Intérieur et des Outre-mer :\n- Résultats généraux (general-results.csv) : contient les chiffres de participation, de votes blancs et nuls, par bureau de vote, pour chaque élection.\n- Résultats par candidat (candidats-results.csv) : contient les résultats des votes pour chaque candidat par bureau de vote.\n\nLa colonne id_election contient l'information de l'élection concernée (année, type, tour), par exemple : 2022_pres_t1 pour le premier tour de l'élection présidentielle de 2022.\nLes deux tables sont rapprochables par les colonnes id_election et id_brut_miom. Ces données sont également rapprochables du [Répertoire électoral unique](https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/) publié par l'INSEE. Les jointures se font par l'intermédiaire de la [table de conversion des identifiants des bureaux de vote (table-bv-reu.csv)](https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/).\n\nLe code permettant de mettre à jour ce jeu de données est ouvert et disponible [ici](https://github.com/datagouv/datagouvfr_data_pipelines/tree/main/data_processing/elections).\n\n### Sources des données agrégées\n- [Municipales 2026 T2](https://www.data.gouv.fr/datasets/elections-municipales-2026-resultats-du-second-tour)\n- [Municipales 2026 T1](https://www.data.gouv.fr/datasets/elections-municipales-2026-resultats-du-premier-tour)\n- [Législatives 2024 T2](https://www.data.gouv.fr/fr/datasets/elections-legislatives-des-30-juin-et-7-juillet-2024-resultats-definitifs-du-2nd-tour/)\n- [Législatives 2024 T1](https://www.data.gouv.fr/fr/datasets/elections-legislatives-des-30-juin-et-7-juillet-2024-resultats-definitifs-du-1er-tour/)\n- [Européennes 2024](https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-du-9-juin-2024/)\n- [Législatives 2022 T2](https://www.data.gouv.fr/datasets/elections-legislatives-des-12-et-19-juin-2022-resultats-definitifs-du-second-tour)\n- [Législatives 2022 T1](https://www.data.gouv.fr/datasets/elections-legislatives-des-12-et-19-juin-2022-resultats-definitifs-du-premier-tour)\n- [Présidentielle 2022 T2](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-2nd-tour/)\n- [Présidentielle 2022 T1](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour/)\n- [Régionales 2021 T2](https://www.data.gouv.fr/fr/datasets/elections-regionales-2021-resultats-du-2eme-tour/)\n- [Régionales 2021 T1](https://www.data.gouv.fr/fr/datasets/elections-regionales-2021-resultats-du-1er-tour-1/)\n- [Départementales 2021 T2](https://www.data.gouv.fr/fr/datasets/elections-departementales-2021-resultats-du-2eme-tour/)\n- [Départementales 2021 T1](https://www.data.gouv.fr/fr/datasets/elections-departementales-2021-resultats-du-1er-tour/)\n- [Municipales 2020 T2](https://www.data.gouv.fr/fr/datasets/municipales-2020-resultats-2nd-tour/)\n- [Municipales 2020 T1](https://www.data.gouv.fr/fr/datasets/elections-municipales-2020-resultats-1er-tour/)\n- [Européennes 2019](https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-2019/)\n- [Législatives 2017 T2](https://www.data.gouv.fr/fr/datasets/elections-legislatives-des-11-et-18-juin-2017-resultats-du-2nd-tour-par-bureaux-de-vote/)\n- [Législatives 2017 T1](https://www.data.gouv.fr/fr/datasets/elections-legislatives-des-11-et-18-juin-2017-resultats-par-bureaux-de-vote-du-1er-tour/)\n- [Présidentielle 2017 T2](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-2nd-tour-par-bureaux-de-vote/)\n- [Présidentielle 2017 T1](https://www.data.gouv.fr/fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-bureaux-de-vote/)\n- [Départementales 2015](https://www.data.gouv.fr/fr/datasets/elections-departementales-2015-resultats-par-bureaux-de-vote/)\n- [Régionales 2015 T2](https://www.data.gouv.fr/fr/datasets/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-2/)\n- [Régionales 2015 T1](https://www.data.gouv.fr/fr/datasets/elections-regionales-2015-et-des-assemblees-de-corse-de-guyane-et-de-martinique-resultats-par-bureaux-de-vote-tour-1/)\n- [Européennes 2014](https://www.data.gouv.fr/fr/datasets/elections-europeennes-2014-resultats-par-bureaux-de-vote/)\n- [Municipales 2014](https://www.data.gouv.fr/fr/datasets/elections-municipales-2014-resultats-par-bureaux-de-vote/)\n- [Législatives 2012](https://www.data.gouv.fr/fr/datasets/elections-legislatives-2012-resultats-par-bureaux-de-vote/)\n- [Présidentielle 2012](https://www.data.gouv.fr/fr/datasets/election-presidentielle-2012-resultats-par-bureaux-de-vote-1/)\n- [Cantonales 2011](https://www.data.gouv.fr/fr/datasets/elections-cantonales-2011-resultats-par-bureaux-de-vote/)\n- [Régionales 2010](https://www.data.gouv.fr/fr/datasets/elections-regionales-2010-resultats-par-bureaux-de-vote/)\n- [Européennes 2009](https://www.data.gouv.fr/fr/datasets/elections-europeennes-2009-resultats-par-bureaux-de-vote/)\n- [Cantonales 2008](https://www.data.gouv.fr/fr/datasets/elections-cantonales-2008-resultats-par-bureaux-de-vote/)\n- [Municipales 2008](https://www.data.gouv.fr/fr/datasets/elections-municipales-2008-communes-de-plus-de-3-500-habitants-resultats-par-bureaux-de-vote-1/) (uniquement les communes de plus de 3500 habitants ; votes blancs et nuls réunis dans la colonne `Nuls`)\n- [Législatives 2007](https://www.data.gouv.fr/fr/datasets/elections-legislatives-2007-resultats-par-bureaux-de-vote/)\n- [Présidentielle 2007](https://www.data.gouv.fr/fr/datasets/election-presidentielle-2007-resultats-par-bureaux-de-vote/)\n- [Européennes 2004](https://www.data.gouv.fr/fr/datasets/elections-europeennes-2004-resultats-par-bureaux-de-vote/)\n- [Régionales 2004](https://www.data.gouv.fr/fr/datasets/elections-regionales-2004-resultats-par-bureaux-de-vote/)\n- [Cantonales 2004](https://www.data.gouv.fr/fr/datasets/elections-cantonales-2004-resultats-par-bureaux-de-vote/)\n- [Législatives 2002](https://www.data.gouv.fr/fr/datasets/elections-legislatives-2002-resultats-par-bureaux-de-vote/)\n- [Présidentielle 2002](https://www.data.gouv.fr/fr/datasets/election-presidentielle-2002-resultats-par-bureaux-de-vote/)\n- [Cantonales 2001](https://www.data.gouv.fr/fr/datasets/elections-cantonales-2001-resultats-par-bureaux-de-vote/)\n- ~~[Municipales 2001](https://www.data.gouv.fr/datasets/elections-municipales-2001-resultats-572156)~~ (pas de données au niveau bureau de vote)\n- [Européennes 1999](https://www.data.gouv.fr/fr/datasets/elections-europeennes-1999-resultats-par-bureaux-de-vote/)",
+ "description_short": null,
+ "doi": null,
+ "extras": {},
+ "featured": true,
+ "frequency": "punctual",
+ "frequency_date": null,
+ "geopf": null,
+ "harvest": null,
+ "id": "6481e741d4cf002ec0efec9d",
+ "internal": {
+  "created_at_internal": "2023-06-08T14:35:45.742000+00:00",
+  "last_modified_internal": "2026-07-07T14:01:11.025000+00:00"
+ },
+ "last_modified": "2026-07-07T14:01:11.025000+00:00",
+ "last_update": "2026-07-07T14:01:07+00:00",
+ "license": "lov2",
+ "metrics": {
+  "dataservices": 1,
+  "discussions": 17,
+  "discussions_open": 13,
+  "followers": 11,
+  "followers_by_months": {
+   "2025-03": 0,
+   "2025-04": 1,
+   "2025-05": 0,
+   "2025-06": 1,
+   "2025-07": 0,
+   "2025-08": 0,
+   "2025-09": 0,
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 0,
+   "2026-01": 0,
+   "2026-02": 0,
+   "2026-03": 0
+  },
+  "resources_downloads": 88195,
+  "reuses": 27,
+  "reuses_by_months": {
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 0,
+   "2026-01": 0,
+   "2026-02": 1,
+   "2026-03": 3,
+   "2026-04": 2,
+   "2026-05": 0,
+   "2026-06": 0,
+   "2026-07": 2,
+   "2026-08": 0,
+   "2026-09": 2,
+   "2026-10": 2
+  },
+  "views": 58044
+ },
+ "organization": {
+  "acronym": null,
+  "badges": [
+   {
+    "kind": "public-service"
+   },
+   {
+    "kind": "certified"
+   }
+  ],
+  "class": "Organization",
+  "id": "646b7187b50b2a93b1ae3d45",
+  "logo": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/31/8739c52c534ed583b0256ee4541875.png",
+  "logo_thumbnail": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/31/8739c52c534ed583b0256ee4541875-100.png",
+  "name": "data.gouv.fr",
+  "page": "https://www.data.gouv.fr/organizations/data-gouv-fr",
+  "permissions": {
+   "delete": false,
+   "edit": false,
+   "harvest": false,
+   "members": false,
+   "private": false
+  },
+  "slug": "data-gouv-fr",
+  "uri": "https://www.data.gouv.fr/api/1/organizations/data-gouv-fr/"
+ },
+ "owner": null,
+ "page": "https://www.data.gouv.fr/datasets/donnees-des-elections-agregees",
+ "permissions": {
+  "delete": false,
+  "edit": false,
+  "edit_resources": false
+ },
+ "private": false,
+ "quality": {
+  "all_resources_available": true,
+  "dataset_description_quality": true,
+  "has_open_format": true,
+  "has_resources": true,
+  "license": true,
+  "resources_documentation": true,
+  "score": 1.0,
+  "spatial": true,
+  "temporal_coverage": true,
+  "update_frequency": true,
+  "update_fulfilled_in_time": true
+ },
+ "resources": [
+  {
+   "checksum": null,
+   "created_at": "2026-02-16T09:26:08.890000+00:00",
+   "description": "Dictionnaire des libellés des nuances politiques extraites de la Circulaire relative à l’attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d’arrondissements des 15 et 22 mars 2026 (<https://www.legifrance.gouv.fr/circulaire/id/45645>)\n",
+   "extras": {
+    "analysis:check_id": 44162354,
+    "analysis:checksum": "c7a4c5cf59cc98f9f9642ef579f7f7daa6707ddf",
+    "analysis:content-length": 6795,
+    "analysis:last-modified-at": "2026-03-24T13:20:09+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-03-25T01:48:09.834148+00:00",
+    "analysis:parsing:parsing_table": "2b2a57e714d024ec65971dbccfc72025",
+    "analysis:parsing:started_at": "2026-03-25T01:48:09.707929+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-16T09:26:15.698000",
+    "check:headers:content-type": "text/csv",
+    "check:id": 41823131,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 6795,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "15b3e0e5-396b-4423-9556-faed8a52bfa2",
+   "internal": {
+    "created_at_internal": "2026-02-16T09:26:08.890000+00:00",
+    "last_modified_internal": "2026-03-24T13:20:10.151000+00:00"
+   },
+   "last_modified": "2026-03-24T13:20:10.151000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/15b3e0e5-396b-4423-9556-faed8a52bfa2",
+   "metrics": {
+    "views": 2166
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/15b3e0e5-396b-4423-9556-faed8a52bfa2",
+   "schema": null,
+   "title": "Dictionnaire des nuances politiques (circulaire INTP2602966C de février 2026)",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/donnees-des-elections-agregees/20260324-132009/nuances.csv"
+  },
+  {
+   "checksum": null,
+   "created_at": "2023-06-30T10:28:13.495000+00:00",
+   "description": "Résultats généraux des élections agrégés au niveau des bureaux de votes, créés à partir des données du Ministère de l'Intérieur, au format csv (dernière modification : 2026-07-07)",
+   "extras": {
+    "analysis:check_id": 49739843,
+    "analysis:checksum": "a6b2ef46813c1c6da624e4efb2cfbe935c839655",
+    "analysis:content-length": 405739150,
+    "analysis:last-modified-at": "2026-07-07T14:00:35+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-07-10T00:19:26.105665+00:00",
+    "analysis:parsing:parquet_size": 89692948,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/b8703c69-a18f-46ab-9e7f-3a8368dcb891.parquet",
+    "analysis:parsing:parsing_table": "f1ac73bb1cbb019d1479661e427f2976",
+    "analysis:parsing:started_at": "2026-07-10T00:16:32.717754+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "authorization,content-type",
+    "check:cors:allow-methods": "GET",
+    "check:cors:allow-origin": "https://www.data.gouv.fr",
+    "check:cors:status": 204,
+    "check:date": "2026-07-09T22:26:04.310827+00:00",
+    "check:headers:content-length": 405739150,
+    "check:headers:content-type": "text/csv",
+    "check:id": 49739843,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 405739150,
+   "filetype": "remote",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "b8703c69-a18f-46ab-9e7f-3a8368dcb891",
+   "internal": {
+    "created_at_internal": "2023-06-30T10:28:13.495000+00:00",
+    "last_modified_internal": "2026-07-07T14:01:10.416000+00:00"
+   },
+   "last_modified": "2026-07-07T14:00:35+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/b8703c69-a18f-46ab-9e7f-3a8368dcb891",
+   "metrics": {
+    "views": 15766
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/b8703c69-a18f-46ab-9e7f-3a8368dcb891",
+   "schema": null,
+   "title": "Résultats généraux",
+   "type": "main",
+   "url": "https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.csv"
+  },
+  {
+   "checksum": null,
+   "created_at": "2023-06-30T10:26:36.872000+00:00",
+   "description": "Résultats des élections par candidat agrégés au niveau des bureaux de votes, créés à partir des données du Ministère de l'Intérieur, au format csv (dernière modification : 2026-07-07)",
+   "extras": {
+    "analysis:check_id": 49739924,
+    "analysis:checksum": "28939236043968ee857ee8eb6d8b0c2efe97c589",
+    "analysis:content-length": 2383692807,
+    "analysis:last-modified-at": "2026-07-07T14:00:58+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-07-10T00:58:51.857282+00:00",
+    "analysis:parsing:parquet_size": 205722687,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/52a11762-45b4-414f-b6a2-eaa290217dc6.parquet",
+    "analysis:parsing:parsing_table": "6886d0ecaa38d17744fbfde07999a521",
+    "analysis:parsing:started_at": "2026-07-10T00:21:10.020580+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "authorization,content-type",
+    "check:cors:allow-methods": "GET",
+    "check:cors:allow-origin": "https://www.data.gouv.fr",
+    "check:cors:status": 204,
+    "check:date": "2026-07-09T22:29:01.069691+00:00",
+    "check:headers:content-length": 2383692807,
+    "check:headers:content-type": "text/csv",
+    "check:id": 49739924,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 2383692807,
+   "filetype": "remote",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "52a11762-45b4-414f-b6a2-eaa290217dc6",
+   "internal": {
+    "created_at_internal": "2023-06-30T10:26:36.872000+00:00",
+    "last_modified_internal": "2026-07-07T14:01:10.615000+00:00"
+   },
+   "last_modified": "2026-07-07T14:00:58+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/52a11762-45b4-414f-b6a2-eaa290217dc6",
+   "metrics": {
+    "views": 10203
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/52a11762-45b4-414f-b6a2-eaa290217dc6",
+   "schema": null,
+   "title": "Résultats par candidat",
+   "type": "main",
+   "url": "https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/candidats_results.csv"
+  },
+  {
+   "checksum": null,
+   "created_at": "2024-04-24T14:47:30.532000+00:00",
+   "description": "Résultats généraux des élections agrégés au niveau des bureaux de votes, créés à partir des données du Ministère de l'Intérieur, au format parquet (dernière modification : 2026-07-07)",
+   "extras": {
+    "analysis:check_id": 49629863,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-07T14:00:39+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "authorization,content-type",
+    "check:cors:allow-methods": "GET",
+    "check:cors:allow-origin": "https://www.data.gouv.fr",
+    "check:cors:status": 204,
+    "check:date": "2026-07-07T14:01:15.545124+00:00",
+    "check:headers:content-length": 70866179,
+    "check:headers:content-type": "application/vnd.apache.parquet",
+    "check:id": 49629863,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 70866179,
+   "filetype": "remote",
+   "format": "parquet",
+   "geopf": null,
+   "harvest": null,
+   "id": "ff16d511-10c0-405e-9b35-511723948fce",
+   "internal": {
+    "created_at_internal": "2024-04-24T14:47:30.532000+00:00",
+    "last_modified_internal": "2026-07-07T14:01:10.914000+00:00"
+   },
+   "last_modified": "2026-07-07T14:00:39+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/ff16d511-10c0-405e-9b35-511723948fce",
+   "metrics": {
+    "views": 13282
+   },
+   "mime": null,
+   "preview_url": null,
+   "schema": null,
+   "title": "Résultats généraux",
+   "type": "main",
+   "url": "https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet"
+  },
+  {
+   "checksum": null,
+   "created_at": "2024-04-24T14:48:01.959000+00:00",
+   "description": "Résultats des élections par candidat agrégés au niveau des bureaux de votes, créés à partir des données du Ministère de l'Intérieur, au format parquet (dernière modification : 2026-07-07)",
+   "extras": {
+    "analysis:check_id": 49629862,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-07T14:01:07+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "authorization,content-type",
+    "check:cors:allow-methods": "GET",
+    "check:cors:allow-origin": "https://www.data.gouv.fr",
+    "check:cors:status": 204,
+    "check:date": "2026-07-07T14:01:15.524344+00:00",
+    "check:headers:content-length": 161344622,
+    "check:headers:content-type": "application/vnd.apache.parquet",
+    "check:id": 49629862,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 161344622,
+   "filetype": "remote",
+   "format": "parquet",
+   "geopf": null,
+   "harvest": null,
+   "id": "4d3b35f6-0b22-4415-a24c-419a676312e2",
+   "internal": {
+    "created_at_internal": "2024-04-24T14:48:01.959000+00:00",
+    "last_modified_internal": "2026-07-07T14:01:11.022000+00:00"
+   },
+   "last_modified": "2026-07-07T14:01:07+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/4d3b35f6-0b22-4415-a24c-419a676312e2",
+   "metrics": {
+    "views": 40199
+   },
+   "mime": null,
+   "preview_url": null,
+   "schema": null,
+   "title": "Résultats par candidat",
+   "type": "main",
+   "url": "https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/candidats_results.parquet"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "7e8a8479de364123fbed1e1e4bd1e2b19a957e4d"
+   },
+   "created_at": "2024-04-25T10:24:14.868000+00:00",
+   "description": "Dictionnaire des nuances politiques, généré à partir des archives ouvertes du Ministère de l'Intérieur (https://www.archives-resultats-elections.interieur.gouv.fr/). Le fichier n'est pas exhaustif.",
+   "extras": {
+    "analysis:checksum": "3a766837aea6ca5e71ba245a14eef0703aeede75",
+    "analysis:content-length": 2392,
+    "analysis:last-modified-at": "2025-07-23T15:46:46+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/csv",
+    "analysis:parsing:started_at": "2025-07-23T15:48:36.861534+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-16T09:21:50.452900+00:00",
+    "check:headers:content-type": "text/csv",
+    "check:id": 41822752,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 2392,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "6fd17a6c-519b-465c-a7fd-ad2955fafc76",
+   "internal": {
+    "created_at_internal": "2024-04-25T10:24:14.868000+00:00",
+    "last_modified_internal": "2026-02-16T09:21:46.948000+00:00"
+   },
+   "last_modified": "2026-02-16T09:21:46.948000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/6fd17a6c-519b-465c-a7fd-ad2955fafc76",
+   "metrics": {
+    "views": 2488
+   },
+   "mime": "text/csv",
+   "preview_url": null,
+   "schema": null,
+   "title": "Dictionnaire des nuances politiques (2025)",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/donnees-des-elections-agregees/20250723-154646/nuances.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "431aa814f2dbf117bd040901312612ec28a1268c"
+   },
+   "created_at": "2023-06-27T14:19:42.575000+00:00",
+   "description": "Schéma de données associé au fichier _Résultats généraux_.",
+   "extras": {
+    "analysis:check_id": 54862189,
+    "analysis:checksum": "dcc5a10fa07522f0fade53414c9211cd7abb16b4",
+    "analysis:content-length": 7375,
+    "analysis:last-modified-at": "2026-07-02T16:00:08+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/json",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-04T10:27:34.270803+00:00",
+    "check:headers:content-type": "application/json",
+    "check:id": 40858476,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 7375,
+   "filetype": "file",
+   "format": "json",
+   "geopf": null,
+   "harvest": null,
+   "id": "ced4d21f-9d17-4224-94c0-d0bf0bc28b1c",
+   "internal": {
+    "created_at_internal": "2023-06-27T14:19:42.575000+00:00",
+    "last_modified_internal": "2026-02-04T10:27:30.536000+00:00"
+   },
+   "last_modified": "2026-02-04T10:27:30.536000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/ced4d21f-9d17-4224-94c0-d0bf0bc28b1c",
+   "metrics": {
+    "views": 2027
+   },
+   "mime": "application/json",
+   "preview_url": null,
+   "schema": null,
+   "title": "schema-general-results.json",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/donnees-des-elections-agregees/20260204-102727/schema-general-results.json"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "049ed5ebb1821804f52edc3599606e94f723618c"
+   },
+   "created_at": "2023-06-27T14:18:52.491000+00:00",
+   "description": "Schéma de données associé au fichier _Résultats par candidat_.",
+   "extras": {
+    "analysis:check_id": 54862420,
+    "analysis:checksum": "ef57d4c518167e9dd0cfdf7be3085a377592330e",
+    "analysis:content-length": 5153,
+    "analysis:last-modified-at": "2026-07-02T16:00:11+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/json",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-04T10:27:47.515948+00:00",
+    "check:headers:content-type": "application/json",
+    "check:id": 40858479,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 5153,
+   "filetype": "file",
+   "format": "json",
+   "geopf": null,
+   "harvest": null,
+   "id": "c702d75b-4e7e-43c9-84fa-83220302931d",
+   "internal": {
+    "created_at_internal": "2023-06-27T14:18:52.491000+00:00",
+    "last_modified_internal": "2026-02-04T10:27:43.040000+00:00"
+   },
+   "last_modified": "2026-02-04T10:27:43.040000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/c702d75b-4e7e-43c9-84fa-83220302931d",
+   "metrics": {
+    "views": 2055
+   },
+   "mime": "application/json",
+   "preview_url": null,
+   "schema": null,
+   "title": "schema-candidats-results.json",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/donnees-des-elections-agregees/20260204-102742/schema-candidats-results.json"
+  }
+ ],
+ "schema": null,
+ "slug": "donnees-des-elections-agregees",
+ "spatial": {
+  "geom": null,
+  "granularity": "other",
+  "zones": [
+   "country:fr"
+  ]
+ },
+ "tags": [
+  "agregation",
+  "democratie",
+  "elections"
+ ],
+ "temporal_coverage": {
+  "end": "2024-07-07",
+  "start": "1999-01-01"
+ },
+ "title": "Données des élections agrégées",
+ "uri": "https://www.data.gouv.fr/api/1/datasets/donnees-des-elections-agregees/"
+}

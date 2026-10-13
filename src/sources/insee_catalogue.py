@@ -175,6 +175,9 @@ DIMENSION_PAR_ODD = {
     "ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES": "securite_confiance", "ODD-PARTENARIATS-REALISATION": "niveau_de_vie",
 }
 
+#: Même correspondance pour la dimension `SDG` du jeu Melodi DS_NAT_SDG (SDG1 … SDG17, ordre des objectifs).
+DIMENSION_PAR_SDG = {f"SDG{i}": d for i, d in enumerate(DIMENSION_PAR_ODD.values(), 1)}
+
 
 #: Expressions techniques des libellés (surtout Melodi, comptes nationaux) retirées avant le tagging :
 #: « Emploi ou débit » déclenchait la règle « emploi » → travail sur 8 000 séries de comptes publics.
@@ -183,6 +186,9 @@ BRUIT_LIBELLE = re.compile(
     r"|non consolide|consolide|en valeur aux prix courants|aux prix de l'annee precedente chaines"
     r"|options sur titres des salaries|(total des |flux d'|variations? d')?actifs?( (non )?(financiers|produits|fixes)( produits)?| ou passifs)"
     r"|total des actifs|flux d'actifs|(par )?type d'actifs?"
+    # DS_NAT_SDG : l'intitulé de l'objectif (« Objectif 8 : Travail décent et croissance ») ne doit pas
+    # l'emporter sur celui de l'indicateur ; l'objectif sert de repli (DIMENSION_PAR_SDG)
+    r"|objectif \d+ ?: [^;]*"
 )
 
 
@@ -539,7 +545,9 @@ def decider(
     dimension = tagger(libelle)
     origine_theme = False
     if dimension is None:
-        dimension = DIMENSION_PAR_ODD.get(theme) or tagger(theme_libelle) or tagger(theme)
+        # objectif ODD de la série : regroupement BDM `ODD-*` ou dimension `SDG` de Melodi (DS_NAT_SDG)
+        sdg = str(((dimensions_bruit if dimensions_bruit is not None else dimensions) or {}).get("SDG", ""))
+        dimension = DIMENSION_PAR_ODD.get(theme) or DIMENSION_PAR_SDG.get(sdg) or tagger(theme_libelle) or tagger(theme)
         origine_theme = dimension is not None
     axes = ventilations_titre(libelle)
     for axe in ventilations_dimensions(dimensions or {}):

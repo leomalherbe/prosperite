@@ -117,6 +117,10 @@ PLAFOND_MELODI = 1_500_000   # au-delà, le niveau national d'un jeu n'est pas e
 #: Codes et libellés de modalités « total » omis du libellé des séries Melodi (ils l'allongent sans
 #: l'informer : « … ; Total ; Total ; Total »).
 CODES_TOTAL_MELODI = {"_T", "_Z"}
+
+#: Valeurs GEO de Melodi équivalentes aux trois zones principales de la BDM (D15) : France, France
+#: métropolitaine, France hors Mayotte (`FRANCE-F_X_D976`, lu dans /range de DS_SRCV_SATISFACTION et DS_NAT_SDG).
+GEO_MELODI_PRINCIPALES = {"FRANCE-F", "FRANCE-FM", "FRANCE-F_X_D976", "FRANCE-FE", "FRANCE-FEHM", "FE", "FM", "FEHM"}
 LIBELLES_TOTAL_MELODI = {"total", "ensemble", "sans objet", "non applicable", "aucune", "aucun", "tous", "toutes"}
 PERIODICITES = {"annuel": "A", "trimestriel": "T", "mensuel": "M", "semestriel": "S", "bimestriel": "B", "aperiodique": "A", "quotidien": "J"}
 
@@ -873,6 +877,11 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
             par_jeu[l["jeu"]]["nationales"] += 1
             freq = l["freq"]
             a = cat.annee_de(l["derniere_periode"])
+            if not l["derniere_periode"]:
+                # combinaison de modalités sans aucune valeur numérique (secret, sans objet) : l'essai les
+                # comptait à tort comme « fréquence ? non retenue » (9 845 séries)
+                mexclusions["aucune valeur numérique"] += 1
+                continue
             if freq not in cat.FREQUENCES_RETENUES:
                 mexclusions[f"fréquence {freq or '?'} non retenue"] += 1
                 continue
@@ -882,7 +891,7 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
             dims = dict(kv.split("=", 1) for kv in l["dimensions"].split(";") if "=" in kv)
             nb = int(l["nb_annees_depuis_2000"]) if l["nb_annees_depuis_2000"] else None
             jeu = jeux_info.get(l["jeu"], {})
-            zone = "principale" if l["geo"] in ("FRANCE-F", "FRANCE-FM", "FRANCE-FE", "FRANCE-FEHM", "FE", "FM", "FEHM") else "nationale"
+            zone = "principale" if l["geo"] in GEO_MELODI_PRINCIPALES else "nationale"
             d = cat.decider(libelle=l["libelle"], theme=l["jeu"], theme_libelle=f"{jeu.get('titre', '')} {jeu.get('themes', '')}", frequence=freq, zone=zone,
                             premiere=l["premiere_periode"], derniere=l["derniere_periode"], nb_annees_depuis_2000=nb, dimensions=dims)
             par_jeu[l["jeu"]]["catalogue"] += 1

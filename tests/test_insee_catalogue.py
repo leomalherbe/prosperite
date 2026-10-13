@@ -213,3 +213,17 @@ def test_motif_bruit_dimensions(theme, dims, ecarte):
 )
 def test_tagger_libelles_techniques(libelle, dimension):
     assert cat.tagger(libelle) == dimension
+
+
+def test_dimension_par_objectif_odd_melodi():
+    """DS_NAT_SDG : libellé sans mot-clé (cas réel « Nombre de façades disposant d'une approche… ») → dimension de l'objectif."""
+    assert (cat.DIMENSION_PAR_SDG["SDG1"], cat.DIMENSION_PAR_SDG["SDG8"], cat.DIMENSION_PAR_SDG["SDG14"],
+            cat.DIMENSION_PAR_SDG["SDG16"], cat.DIMENSION_PAR_SDG["SDG17"]) == (
+        "niveau_de_vie", "travail", "planete", "securite_confiance", "niveau_de_vie")
+    d = cat.decider(libelle="Indicateurs d'objectifs de développement durable — Objectif 14 : Vie aquatique ; Nombre de façades",
+                    theme="DS_NAT_SDG", theme_libelle="Indicateurs d'objectifs de développement durable", frequence="A",
+                    zone="principale", premiere="2010", derniere="2023", dimensions={"SDG": "SDG14", "INDICATOR_SDG": "14.i2"})
+    assert (d.dimension_v0, d.candidat) == ("planete", "a_verifier")
+    # l'intitulé de l'objectif ne l'emporte pas sur celui de l'indicateur
+    assert cat.tagger("Indicateurs d'objectifs de développement durable — Objectif 8 : Travail décent et croissance économique ; "
+                      "Taux de pauvreté des travailleurs") == "niveau_de_vie"

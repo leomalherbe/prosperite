@@ -35,3 +35,7 @@ Une entrée horodatée par sous-tâche : fait, résultat, problèmes. Heure de P
 - Fait : rédaction de la fiche documentaire (synthèse des 6 voies d'accès, détail BDM / Melodi / Données locales / Métadonnées / fichiers, localisation des indicateurs sociaux annuels, tableau des indicateurs de référence, résumé du repérage, liste des fixtures, points à trancher, sources).
 - Vérification : `python -m pytest -q` → 14 tests passent (aucun code ajouté en phase 1).
 - Reste : dépôt de la fiche dans le Projet claude.ai (`claude/10_source_insee.md`).
+
+## 2026-10-13 16:45 — Dépôt Projet et clôture de la phase 1
+- Fait : `docs/sources/insee.md` déposé dans le Projet claude.ai sous `claude/10_source_insee.md`.
+- Phase 1 terminée ; arrêt avant la phase 2 (modules Python, script de moissonnage, GitHub Actions), conformément à la consigne. Aucun fichier sous `scripts/` ou `src/` modifié : le workflow « Collecte » n'a pas été déclenché.

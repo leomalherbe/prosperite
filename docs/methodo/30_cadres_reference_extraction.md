@@ -1,6 +1,6 @@
 # Extraction des cadres de référence (mission M03, tâche T1)
 
-Version de travail — 13 octobre 2026 — agent M03 (phase 1). Document de méthodologie, sans valeur de décision : la grille v1 sera proposée en phase 2 (T3) et tranchée par la session mère.
+Version de travail — 13 octobre 2026 — agent M03 (phase 1 ; section 1 contre-vérifiée en phase 2, voir §1.7). Document de méthodologie, sans valeur de décision : la grille v1 est proposée dans `30_grille_dimensions_v1_proposition.md` et tranchée par Léo (gel 1).
 
 ## Mode d'emploi
 
@@ -14,7 +14,7 @@ Version de travail — 13 octobre 2026 — agent M03 (phase 1). Document de mét
 
 | § | Cadre | Dimensions | Lignes du CSV | Seuils normatifs chiffrés | Agrégation | Lecture de la source |
 |---|---|---|---|---|---|---|
-| 1 | Doughnut 3.0 (2025) | 12 sociales + 9 écologiques | 35 | 13 limites + 5 seuils sociaux (+ 0 % de privation) | aucun indice ; médianes de privation et de dépassement | tableaux 1 et 2 lus ; tableaux supplémentaires non accessibles |
+| 1 | Doughnut 3.0 (2025) | 12 sociales + 9 écologiques | 35 | 13 limites + 5 seuils sociaux (+ 0 % de privation) | aucun indice ; médianes de privation et de dépassement | tableaux 1 et 2 lus ; contre-vérifiés sur les données des auteurs (Zenodo) ; tableaux supplémentaires non accessibles |
 | 2 | Stiglitz-Sen-Fitoussi (2009) | 8 (+ subjectif et inégalités transversaux, soutenabilité à part) | 39 | aucun | pluralité d'indices possibles (rec. 9) ; ne pas mêler présent et futur | lu jusqu'à la p. 50-51 |
 | 3 | OCDE *How's Life? 2024* et BLI | 11 bien-être actuel + 4 capitaux | 100 + 4 | aucun (1 valeur guide OMS dans une définition) | tableau de bord ; BLI pondéré par l'utilisateur | liste et valeurs France par API SDMX ; guide du lecteur non lisible |
 | 4 | Eurostat Quality of life (2017) | 8 + 1 | 94 | aucun | tableau de bord d'indicateurs phares | rapport lu jusqu'à la p. 46 ; codes partiellement vérifiés |
@@ -30,8 +30,8 @@ Version de travail — 13 octobre 2026 — agent M03 (phase 1). Document de mét
 - Fanning A.L., Raworth K. (2025), « Doughnut of social and planetary boundaries monitors a world out of balance », *Nature* 646, 47–56 (rubrique *Analysis*), publié en ligne le 1er octobre 2025, DOI 10.1038/s41586-025-09385-1, accès libre CC BY 4.0.
 - **Version lue** : version publiée déposée sur White Rose eprints (https://eprints.whiterose.ac.uk/id/eprint/233706, fichier PDF « Published Version », CC BY 4.0). **Tableau 1 p. 51** (fondation sociale), **tableau 2 p. 52** (plafond écologique), section *Methods*.
 - **Non accessibles** pendant la mission : les pages `…/tables/1` et `…/tables/2` de nature.com (lecture interdite par le robots.txt) ; les *Supplementary Information* (Supplementary Discussion 1 et 2, Supplementary Tables 1 et 2 : sources détaillées par indicateur) hébergées sur static-content.springer.com (même interdiction) ; le dépôt Zenodo des données et du code (DOI 10.5281/zenodo.15688961, refus HTTP 429) ; l'explorateur de données de https://doughnuteconomics.org/doughnut/ (contenu chargé en JavaScript) ; le rapport « The Evolving Doughnut » (Raworth 2025, DOI 10.64981/XGRX2738, erreur de téléchargement).
-- Conséquence : la **source primaire exacte de chaque indicateur social** (organisme fournisseur) n'a pas pu être lue dans le tableau supplémentaire 1. L'article indique seulement que les séries sociales proviennent de la **base de données des indicateurs ODD de l'ONU** (réf. 14) et que les données écologiques suivent la mise à jour des limites planétaires de **Richardson et al. (2023)**, *Science Advances* (réf. 13). Les fournisseurs probables (FAO, OMS, Banque mondiale, Gallup, V-Dem…) sont indiqués « à vérifier » dans le CSV.
-- Les valeurs chiffrées ci-dessous ont été relevées avec l'outil de lecture de page sur le PDF publié ; elles sont cohérentes entre elles (recalcul des dépassements vérifié pour l'aragonite et l'ozone) mais une relecture visuelle des tableaux 1 et 2 reste souhaitable.
+- Conséquence : la **source primaire exacte de chaque indicateur social** (organisme fournisseur) n'a pas pu être lue dans le tableau supplémentaire 1. La section *Methods* indique que les séries sociales proviennent de « bases de données internationales publiées et publiques », renvoie au **tableau supplémentaire 1** pour la source de chaque indicateur et cite la **base de données des indicateurs ODD de l'ONU** (réf. 14) ; les données écologiques suivent la mise à jour des limites planétaires de **Richardson et al. (2023)**, *Science Advances* (réf. 13). Les fournisseurs probables (FAO, OMS, Banque mondiale, Gallup, V-Dem…) restent indiqués « à vérifier » dans le CSV (correction de la phase 2 : la phase 1 attribuait toutes les séries sociales à la base ODD).
+- Les valeurs chiffrées ci-dessous ont été relevées avec l'outil de lecture de page sur le PDF publié, puis **contre-vérifiées en phase 2** sur les données et le code publiés par les auteurs (dépôt Zenodo v1.0.1) : voir §1.7.
 
 ### 1.2 Dimensions
 
@@ -64,7 +64,7 @@ Chaque indicateur social est exprimé en **% de la population mondiale en situat
 | Santé | Manque de services de santé (*Lack of health services*) | % de la population vivant dans un pays sans couverture élevée en services de santé essentiels | **indice de couverture sanitaire universelle (CSU) < 60/100** (ODD 3.8.1) | 79 → 28 % |
 | Éducation | Analphabétisme (*Illiteracy rate*) | % des adultes de 15 ans ou plus analphabètes | non trouvé (définition UNESCO probable, à vérifier) | 23 → 16 % |
 | Éducation | Secondaire inachevé (*Incomplete secondary school*) | % des jeunes adultes de 21 à 23 ans sans diplôme du deuxième cycle du secondaire | achèvement du 2nd cycle du secondaire (ODD 4.1.2, à vérifier) | 61 → 37 % |
-| Revenu et travail | Pauvreté sociétale (*Societal poverty*) | % de la population sous le seuil de pauvreté sociétale | **moitié du revenu (ou consommation) médian national, ou 15 $ par jour** selon le plus élevé (formulation exacte à vérifier) | 85 → 73 % |
+| Revenu et travail | Pauvreté sociétale (*Societal poverty*) | % de la population sous le seuil de pauvreté sociétale | **« la moitié du revenu médian des ménages du pays ou au moins 15 $ par jour »** (formulation du tableau 1 confirmée en phase 2 ; règle de combinaison des deux critères non précisée, à vérifier) | 85 → 73 % |
 | Revenu et travail | Jeunes NEET (*Youth NEET*) | % des 15–24 ans ni en emploi, ni en études, ni en formation | ODD 8.6.1 | (25) → 21 % |
 | Eau et assainissement | Eau potable non sûre (*Unsafe drinking water*) | % de la population sans service d'eau potable géré en toute sécurité | « géré en toute sécurité » (ODD 6.1.1) | 39 → 37 % |
 | Eau et assainissement | Assainissement non sûr (*Unsafe sanitation*) | % de la population sans service d'assainissement géré en toute sécurité | « géré en toute sécurité » (ODD 6.2.1) | 66 → 42 % |
@@ -96,9 +96,9 @@ Chaque indicateur écologique est une **variable de contrôle mondiale** rapport
 | Pollution par les nutriments | Phosphore | phosphore appliqué aux sols comme engrais (Mt/an) | **≤ 6,2 Mt/an** | 14 (+123 %) → 23 (+273 %) |
 | Pollution par les nutriments | Azote | azote appliqué aux sols comme engrais (Mt/an) | **≤ 62 Mt/an** | 134 (+116 %) → 193 (+212 %) |
 | Pollution de l'air | Aérosols interhémisphériques | asymétrie de l'épaisseur optique des aérosols (AOD) entre hémisphères | **≤ 0,1 AOD** | 0,08 (−29 %) → 0,08 (−29 %) ; tendance inconnue |
-| Perturbation de l'eau douce | Eau bleue | % des terres émergées où le débit d'eau bleue est perturbé hors de la variabilité holocène | **≤ 10,2 %** | 18,2 % (+78 %) → 18,2 % (+78 %) |
+| Perturbation de l'eau douce | Eau bleue | % des terres émergées où le débit d'eau bleue est perturbé hors de la variabilité holocène | **≤ 10,2 %** | 18,2 % (+78 %) → 18,2 % (+78 %) ; tendance non connue faute de série temporelle (texte de l'article) ; le dépôt Zenodo donne 18,23 % → 18,60 % (+82 %) : écart signalé (§1.7) |
 | Perturbation de l'eau douce | Eau verte | % des terres émergées où l'humidité du sol racinaire sort de la variabilité holocène | **≤ 11,1 %** | 15,9 % (+43 %) → 19,3 % (+74 %) |
-| Conversion des terres | Surface forestière | surface forestière en part du couvert forestier d'avant altération (millions de km²) — sens `haut` | **≥ 75 % de 64 millions de km²** | 39 (+55 %) → 38 (+61 %) |
+| Conversion des terres | Surface forestière | surface forestière en part du couvert forestier d'avant altération (millions de km²) — sens `haut` | **≥ 75 % de 64 millions de km²** (valeur du code : 47,9 millions de km², sur un couvert d'avant altération de 63,87) | 39 (+55 %) → 38 (+61 %) |
 | Effondrement de la biodiversité | Taux d'extinction | extinctions par million d'espèces-années (E/MSY) | **≤ 10 E/MSY** | 100 (+900 %) → 100 (+900 %) ; tendance inconnue |
 | Effondrement de la biodiversité | Appropriation humaine de la production primaire nette (HANPP) | Gt de carbone par an | **≤ 10 % de 55,9 Gt C** | 15 (+162 %) → 17 (+204 %) |
 | Appauvrissement de la couche d'ozone | Ozone stratosphérique | concentration en unités Dobson (DU) — sens `haut` | **baisse ≤ 5 % par rapport à la valeur 1964–1980 de 290 DU** | 283,0 (−50 %) → 283,4 (−53 %) |
@@ -108,7 +108,19 @@ Chaque indicateur écologique est une **variable de contrôle mondiale** rapport
 - **Aucun indice composite.** L'article publie des valeurs par indicateur, des tendances (régression linéaire MCO, base 2000) et deux statistiques de synthèse : la **médiane** (et l'intervalle interquartile) de la privation sociale (35 % de la population mondiale en 2022) et du dépassement écologique (environ ×2, médiane 96 %).
 - **Normalisation écologique** : dépassement = (x_t − x_base)/(x* − x_base) − 1, où x* est la limite et x_base la valeur préindustrielle (holocène) ; formule inversée pour l'aragonite, la forêt et l'ozone. Borne inférieure −100 % (valeur préindustrielle), pas de borne supérieure.
 - **Scénarios** : trajectoire linéaire jusqu'à zéro privation en **2030** (social, 8 ans) et zéro dépassement en **2050** (écologique, 28 ans).
-- **Déclinaison par groupes de pays** (RNB/hab. en $ PPA 2017, PNUD 2023/24) : < 8 100 $ (40 % les plus pauvres), 8 100–33 200 $, > 33 200 $ (20 % les plus riches, groupe de la France). Pour le plafond, empreintes de consommation 2017 (Tian et al. 2024, *Nature*) sur six indicateurs (CO2, azote, phosphore, eau bleue, perte d'espèces, HANPP) et budgets par habitant égalitaires pour quatre limites.
+- **Déclinaison par groupes de pays** (RNB/hab. en $ PPA 2017, PNUD 2023/24) : < 8 100 $ (40 % les plus pauvres), 8 100–33 200 $, > 33 200 $ (20 % les plus riches, groupe de la France). Pour le plafond, empreintes de consommation 2017 (Tian et al. 2024, *Nature*) sur six indicateurs (CO2, azote, phosphore, eau bleue, perte d'espèces, HANPP) et budgets par habitant égalitaires pour quatre limites (climat, nutriments, eau douce, biodiversité).
+- **Limites par habitant (2017)** relevées en phase 2 dans les données des auteurs (Zenodo v1.0.1, fichier `12_20250515_groupDoughnutData_2017`) — directement utiles comme bornes « scientifiques » (charte §3.3, rang 2) pour les empreintes nationales :
+
+| Empreinte de consommation (2017) | Limite par habitant | Groupe des 20 % les plus riches (dont la France) | Dépassement |
+|---|---|---|---|
+| CO2 | 0,95 t CO2/hab | 11,65 t | +1 126 % |
+| Phosphore | 0,85 kg P/hab | 4,17 kg | +390 % |
+| Azote | 8,5 kg N/hab | 32,41 kg | +281 % |
+| Eau bleue | 384 m³/hab | 267 m³ | −30 % (sous la limite) |
+| Perte d'espèces (MSA perdue par hectare et par habitant) | 0,51 | 1,86 | +265 % |
+| HANPP | 1,47 t C/hab | 3,06 t C | +108 % |
+
+  Appartenance de la France au groupe des 20 % les plus riches confirmée dans le fichier `11_avgCountryGNIperCap` (RNB/hab. moyen 2000–2022 : 43 636 $ PPA 2017, groupe 3). Attention : l'empreinte du Doughnut porte sur le CO2 seul, l'empreinte carbone du SDES sur l'ensemble des gaz à effet de serre (t CO2 éq.).
 
 ### 1.6 Remarques sur la pertinence pour la France
 
@@ -117,6 +129,26 @@ Chaque indicateur écologique est une **variable de contrôle mondiale** rapport
 - **Plafond écologique** : variables mondiales, non mesurables à l'échelle nationale telles quelles ; la déclinaison nationale passe par des **empreintes de consommation** (CO2, azote, phosphore, eau bleue, biodiversité, HANPP : Tian et al. 2024) ou des **budgets par habitant** (« downscaling »). Proxys nationaux probables : empreinte carbone (SDES), excédent d'azote (Eurostat), surface forestière, indice d'exploitation de l'eau, ventes de produits phytosanitaires, etc. — à confirmer en M01/M02/M04.
 - La **pollution de l'air** du Doughnut est un phénomène planétaire (aérosols) et non la qualité de l'air locale (PM2,5), que v0 range dans `logement_cadre_vie`.
 - Les **portraits de ville** (*Doughnut Unrolled*, portraits nationaux) mêlent local et global : non retenus ici, conformément à la fiche M03.
+
+### 1.7 Contre-vérification de la phase 2 (13 octobre 2026)
+
+**Sources relues** : (a) PDF publié sur White Rose (seule version déposée : le dépôt ne contient **pas de manuscrit accepté** distinct, ni de documents supplémentaires) — tableaux 1 et 2, *Methods*, déclarations de disponibilité ; (b) **données et code des auteurs**, dépôt Zenodo `a-fanning/doughnut-v3` v1.0.1 (DOI 10.5281/zenodo.15688961), téléchargés par le robot GitHub Actions (script ponctuel `scripts/collecte_grille.py`, extraits texte dans `journaux/m03_doughnut_supplementaire/`) : table globale `9_20250516_Doughnut-GlobalTable`, limites (`scripts/4_boundaries.R`), normalisation (`scripts/5_calculateRatios.R`), données par groupe de pays 2017 (`12_20250515_groupDoughnutData_2017`).
+
+**Non accessibles** (tableaux supplémentaires 1 et 2, qui portent les sources par indicateur) : archive ORA d'Oxford (protection Cloudflare, HTTP 403 au robot), Europe PMC (réponse interrompue), page Nature (aucun lien de document supplémentaire exploitable), `static-content.springer.com` et PMC (refus de l'outil de lecture). Le dépôt Zenodo ne contient pas de métadonnées de source par indicateur.
+
+| Point | Résultat |
+|---|---|
+| Liste des 35 indicateurs (22 sociaux dont 1 sans données, 13 écologiques) et leur rattachement aux 21 dimensions | **Confirmé** (codes NU1 à PJ2 et CC1 à OD1 du dépôt) |
+| Valeurs mondiales 2000-01 et 2021-22 (et dépassements) | **Confirmé** pour 34 indicateurs (écarts d'arrondi seulement) ; **écart** pour l'eau bleue : article 18,2 % → 18,2 % (+78 %), dépôt 18,23 % → 18,60 % (+82 %) ; valeur de l'article conservée, **à vérifier** |
+| Limites planétaires | **Confirmé** ; précisions du code : CO2 ≤ 350 ppm (référence préindustrielle 280) ; Ωarag ≥ 2,75 (80 % de 3,44) ; produits chimiques dangereux ≤ 60 Mt ; aérosols ≤ 0,1 (référence 0,03) ; forêt ≥ 47,9 millions de km² (sur 63,87 ; « 75 % de 64 » dans l'article) ; HANPP ≤ 5,59 Gt C ; ozone ≥ 276 DU dans le code (275,5 par le calcul de l'article) |
+| Seuils sociaux (25 ‰, CSU < 60, Palma ≥ 2, 5 homicides / 100 000, 0 % de privation) | **Confirmé** (limite codée 0 pour tous les indicateurs sociaux) |
+| Seuil de pauvreté sociétale | **Corrigé** : formulation exacte « la moitié du revenu médian des ménages du pays ou au moins 15 $ par jour » ; règle de combinaison **à vérifier** |
+| Méthode de l'indicateur de produits chimiques dangereux | **Précisé** : production chimique mondiale × part des produits dangereux pour la santé dans la production de l'UE (variable du code `EUshare_hzdHealth`) |
+| Source de données des indicateurs sociaux | **Corrigé** : « bases internationales publiques » avec renvoi au tableau supplémentaire 1, et non la seule base ODD ; fournisseur primaire de chaque indicateur **à vérifier** (tableau supplémentaire 1 non lu) |
+| Limites par habitant des six empreintes (2017) | **Ajouté** (§1.5) |
+| France dans le groupe des 20 % les plus riches | **Confirmé** |
+
+Le CSV `30_indicateurs_cadres_reference.csv` a été mis à jour en conséquence (colonnes `seuil_ou_cible`, `source_donnees_citee`, `unite` de l'IIG, `commentaire` des 35 lignes : code de l'indicateur dans le dépôt, valeur 2017 du groupe des pays les plus riches, limites par habitant).
 
 ---
 

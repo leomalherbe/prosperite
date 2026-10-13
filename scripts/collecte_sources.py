@@ -112,7 +112,10 @@ def decrire_classeur(contenu: bytes, lignes: int = 12, feuilles_max: int = 12) -
     sortie = [f"Feuilles ({len(wb.sheetnames)}) : {wb.sheetnames}"]
     for nom in wb.sheetnames[:feuilles_max]:
         ws = wb[nom]
-        sortie.append(f"\n=== Feuille « {nom} » (dimensions {ws.max_row} x {ws.max_column}) ===")
+        if not hasattr(ws, "iter_rows"):  # feuille graphique
+            sortie.append(f"\n=== Feuille « {nom} » : graphique, sans cellules ===")
+            continue
+        sortie.append(f"\n=== Feuille « {nom} » (dimensions {getattr(ws, 'max_row', '?')} x {getattr(ws, 'max_column', '?')}) ===")
         for i, ligne in enumerate(ws.iter_rows(values_only=True)):
             if i >= lignes:
                 break
@@ -216,7 +219,7 @@ def verifier(source: str, cle: str, url: str, octets_max: int, mode: str) -> dic
             description = valeurs_distinctes(contenu, mode.split(":", 1)[1])
         elif mode.startswith("colonnes:") and nature == "csv":
             description = combinaisons_distinctes(contenu, mode.split(":", 1)[1].split("|"))
-        elif mode.startswith("regex:") and res["verdict"] == "donnees":
+        elif mode.startswith("regex:") and res["verdict"] in ("donnees", "page_html"):
             description = correspondances(contenu, mode.split(":", 1)[1])
         elif nature in ("json", "xml", "csv", "html", "autre"):
             texte = contenu.decode("utf-8", errors="replace")

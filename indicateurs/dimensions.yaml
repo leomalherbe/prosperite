@@ -1,44 +1,154 @@
-# Grille de dimensions — version 0 (provisoire, charte §4 ; consolidée par la mission M03)
-# type : plancher (on vise au-dessus d'un minimum) | plafond (on vise en dessous d'un maximum)
-version: v0
+# Grille de dimensions — version 1, FIGÉE (gel 1, charte §3.6)
+# Décisions de Léo Malherbe du 13 octobre 2026 (journal D23 à D26), sur proposition de la mission M03
+# (docs/methodo/31_dossier_decision_gel1.md). Toute modification passe par une décision au journal et un
+# changement de version. type : plancher (on vise au-dessus d'un minimum) | plafond (on vise en dessous d'un maximum).
+version: v1
+statut: figee
+date_gel: 2026-10-13
 dimensions:
   - id: niveau_de_vie
-    libelle: Niveau de vie et économie
+    libelle: "Niveau de vie"
     type: plancher
-    contenu: Revenu disponible, consommation, pauvreté monétaire et en conditions de vie, patrimoine, PIB par habitant, investissement, dette
+    definition: "Les ressources matérielles dont disposent les ménages (revenus, consommation, patrimoine), la pauvreté et les privations, dont l'accès à l'alimentation."
+    question: "Est-ce que les gens ont de quoi vivre correctement, et combien vivent dans la pauvreté ou la privation ?"
+    contenu:
+      - revenus, pouvoir d'achat, consommation des ménages, PIB par habitant (indicateur ordinaire, A12)
+      - pauvreté monétaire, intensité de la pauvreté, privation matérielle et sociale
+      - accès à l'alimentation (insécurité alimentaire, privation alimentaire) (A2)
+      - patrimoine des ménages
+    exclusions:
+      - dette publique, investissement, patrimoine national (non retenus, A5)
+      - stabilité financière, levier bancaire (non retenue, A16)
+      - écarts de revenus → egalites ; réserves financières des ménages et surendettement → securite
+
   - id: travail
-    libelle: Travail et emploi
+    libelle: "Travail et emploi"
     type: plancher
-    contenu: Taux d'emploi, chômage et chômage de longue durée, NEET, qualité et sécurité de l'emploi, accidents, temps de travail, satisfaction au travail
+    definition: "L'accès à l'emploi et la qualité des emplois (stabilité, rémunération, conditions et santé au travail, satisfaction)."
+    question: "Est-ce que ceux qui veulent travailler trouvent un emploi, et est-ce que ces emplois sont de bonne qualité ?"
+    contenu:
+      - emploi, chômage, chômage de longue durée, sous-emploi, halo, jeunes ni en emploi ni en formation
+      - "qualité et sécurité de l'emploi : contrats courts et temps partiel subis, bas salaires, surqualification, passages au chômage (A15)"
+      - "conditions et santé au travail : accidents, expositions"
+      - satisfaction au travail
+    exclusions:
+      - thème « temps » (longues durées de travail, horaires atypiques, équilibre des temps) non traité en v1 (A4)
+      - écarts femmes-hommes d'emploi et de salaire → egalites
+
   - id: logement_cadre_vie
-    libelle: Logement et cadre de vie
+    libelle: "Logement et cadre de vie"
     type: plancher
-    contenu: Coût et qualité du logement, surpeuplement, précarité énergétique, qualité de l'air locale, bruit, accès à la nature, mobilité
+    definition: "Les conditions de logement (coût, qualité, espace, chauffage) et l'environnement de vie quotidien (air, bruit, eau du robinet, nature, accès aux services, aux transports et au numérique)."
+    question: "Est-ce que chacun peut se loger correctement à un coût supportable, dans un environnement sain et bien desservi ?"
+    contenu:
+      - coût du logement, qualité, surpeuplement, sans-abrisme
+      - précarité énergétique (ne pas pouvoir chauffer son logement) (A3)
+      - "environnement local subi : qualité de l'air locale, bruit, eau du robinet, espaces verts"
+      - accès aux services, aux transports collectifs, aux infrastructures (A5) et au numérique (haut débit, usage d'internet) (A7)
+    exclusions:
+      - canicules, inondations, aléas climatiques → planete (A14)
+      - compétences numériques → education ; consommation et mix énergétiques → planete
+
   - id: sante
-    libelle: Santé
+    libelle: "Santé"
     type: plancher
-    contenu: Espérance de vie (en bonne santé), mortalité évitable, santé perçue, accès aux soins, santé mentale, comportements
+    definition: "L'état de santé de la population (durée de vie, vie en bonne santé, santé physique et mentale), les comportements et l'accès aux soins."
+    question: "Est-ce qu'on vit longtemps et en bonne santé, physique et mentale, et est-ce que chacun peut se soigner ?"
+    contenu:
+      - espérance de vie, espérance de vie sans incapacité, mortalité infantile, prématurée, évitable
+      - santé perçue, maladies chroniques, limitations
+      - santé mentale (dépression, suicide)
+      - accès aux soins, renoncement aux soins, besoins non satisfaits
+      - "comportements et nutrition : tabac, alcool, corpulence, activité physique (A2)"
+    exclusions:
+      - tués et blessés sur la route → securite (A6) ; insécurité alimentaire → niveau_de_vie
+
   - id: education
-    libelle: Éducation, compétences et culture
+    libelle: "Éducation et compétences"
     type: plancher
-    contenu: Sorties précoces, diplômes, compétences (PISA, PIAAC), formation des adultes, numérique, pratiques culturelles
+    definition: "Le niveau d'éducation atteint et les compétences des jeunes et des adultes, y compris numériques, la formation tout au long de la vie et l'effort de recherche."
+    question: "Est-ce que les jeunes sortent de l'école avec un diplôme et des compétences solides, et est-ce que le pays continue d'apprendre et de chercher ?"
+    contenu:
+      - diplômes, sorties précoces, compétences des élèves (PISA) et des adultes (PIAAC)
+      - compétences numériques, illectronisme (A7)
+      - formation des adultes, accueil de la petite enfance
+      - effort de recherche et développement (A5)
+    exclusions:
+      - pratiques culturelles et sportives → liens_bien_etre (A13) ; accès à internet → logement_cadre_vie ; écarts selon l'origine sociale → egalites
+
   - id: liens_bien_etre
-    libelle: Vie personnelle, liens sociaux et bien-être ressenti
+    libelle: "Liens sociaux et bien-être ressenti"
     type: plancher
-    contenu: Soutien social, isolement, temps libre, équilibre vie professionnelle/personnelle, satisfaction dans la vie, sens, affects
-  - id: securite_confiance
-    libelle: Sécurité et confiance
+    definition: "La qualité des relations (soutien, solitude, confiance envers les autres, engagement), les loisirs et pratiques culturelles et sportives, et la manière dont chacun évalue et ressent sa vie."
+    question: "Est-ce que les gens peuvent compter sur d'autres, ont des loisirs, et se sentent bien dans leur vie ?"
+    contenu:
+      - relations et soutien social, solitude, confiance envers les autres (A11), bénévolat et vie associative
+      - loisirs, pratiques culturelles et sportives, vacances (A13)
+      - satisfaction dans la vie — indicateur ordinaire de cette dimension, sans repère séparé (A1) ; émotions ressenties ; sens de la vie
+    exclusions:
+      - thème « temps libre et travail domestique » non traité en v1 (A4)
+      - confiance dans les institutions → democratie ; satisfaction d'un domaine (travail, logement, santé) → ce domaine
+
+  - id: securite
+    libelle: "Sécurité"
     type: plancher
-    contenu: Homicides, violences, sentiment d'insécurité, sécurité économique, confiance interpersonnelle
+    definition: "Être protégé des atteintes aux personnes et aux biens, des accidents de la route et des coups durs financiers, et se sentir en sécurité."
+    question: "Est-ce qu'on est à l'abri des violences, des vols et des accidents, est-ce qu'on peut faire face à un coup dur financier, et est-ce qu'on se sent en sécurité ?"
+    contenu:
+      - atteintes aux personnes (homicides, violences physiques, sexuelles, intrafamiliales) et aux biens (cambriolages, vols)
+      - sentiment d'insécurité, se sentir en sécurité la nuit
+      - "sécurité routière : tués et blessés (A6)"
+      - "sécurité économique des ménages : dépense imprévue, retards de paiement, surendettement, épargne de précaution"
+    exclusions:
+      - confiance envers les autres → liens_bien_etre ; confiance dans les institutions → democratie (A11) ; sécurité de l'emploi → travail (A15)
+
   - id: democratie
-    libelle: Démocratie, droits et institutions
+    libelle: "Démocratie et institutions"
     type: plancher
-    contenu: Participation électorale, confiance dans les institutions, libertés, corruption perçue, indépendance de la justice, voix politique
+    definition: "La qualité de la vie démocratique : participation, libertés publiques, État de droit et justice, intégrité des institutions et confiance qu'elles inspirent."
+    question: "Est-ce que les citoyens participent et sont entendus, est-ce que les libertés sont respectées et est-ce qu'on peut faire confiance aux institutions ?"
+    contenu:
+      - participation électorale, sentiment d'avoir son mot à dire
+      - libertés d'expression, de la presse, académique ; État de droit, justice ; corruption
+      - confiance dans les institutions (gouvernement, Parlement, justice, police…) (A11)
+      - indices composites admis avec une variante principale par famille (D18)
+    exclusions:
+      - "parité politique et discriminations → egalites (A8) ; sécurité physique → securite (A10 : deux dimensions distinctes)"
+
   - id: egalites
-    libelle: Égalités
+    libelle: "Égalités"
     type: plancher
-    contenu: Inégalités de revenu et de patrimoine, écarts femmes-hommes, inégalités territoriales, intergénérationnelles, mobilité sociale
+    definition: "Les écarts de situation entre les personnes et entre les groupes : répartition des revenus et du patrimoine, écarts entre femmes et hommes, selon l'origine, entre territoires et entre générations, mobilité sociale."
+    question: "Les écarts entre les plus aisés et les plus modestes, entre femmes et hommes, selon l'origine ou le lieu de vie, sont-ils acceptables ?"
+    contenu:
+      - inégalités de revenu et de patrimoine (S80/S20, Gini, Palma, D9/D1, effet de la redistribution)
+      - écarts femmes-hommes (salaires, emploi, représentation politique et économique)
+      - écarts et discriminations selon l'origine (A8)
+      - inégalités territoriales, entre générations ; mobilité sociale, réussite selon l'origine sociale
+    exclusions:
+      - niveaux et taux de privation (taux de pauvreté) → niveau_de_vie (règle « les écarts ici, les niveaux ailleurs »)
+      - dimension propre, non transversale (A9)
+
   - id: planete
-    libelle: Planète
+    libelle: "Planète"
     type: plafond
-    contenu: Émissions et empreinte carbone, biodiversité, artificialisation des sols, ressources et circularité, eau, azote, pollutions
+    definition: "Les pressions que le mode de vie et l'économie français exercent sur les grands équilibres naturels (climat, énergie, biodiversité, sols, eau, azote et phosphore, pollutions, ressources) et l'exposition du pays aux dérèglements climatiques."
+    question: "Est-ce que notre façon de vivre reste dans les limites que la nature peut supporter, ici et ailleurs ?"
+    contenu:
+      - "climat : émissions sur le territoire, empreinte carbone ; adaptation et aléas subis (canicules, inondations) (A14)"
+      - "énergie : consommation, part des fossiles, renouvelables (A3)"
+      - biodiversité, sols (artificialisation, forêts), eau (prélèvements, qualité des rivières et des nappes), azote et phosphore, pesticides, agriculture (A2)
+      - pollutions, déchets, consommation de matières, recyclage
+    exclusions:
+      - pollution de l'air locale subie, eau du robinet, bruit → logement_cadre_vie ; précarité énergétique → logement_cadre_vie
+
+# Règles de rattachement transversales (pour le script de long-list et les fiches M05)
+regles:
+  - R1: un indicateur n'appartient qu'à une seule dimension ; en cas de doute, la fiche M05 propose et la session mère tranche.
+  - R2: pressions exercées → planete ; conditions subies au quotidien (air, bruit, eau du robinet) → logement_cadre_vie ; aléas climatiques (canicules, inondations) → planete (A14).
+  - R3: les écarts entre groupes → egalites ; les niveaux et taux de privation → la dimension du domaine.
+  - R4: la satisfaction d'un domaine va dans ce domaine ; l'évaluation globale de la vie → liens_bien_etre, comme indicateur ordinaire (A1).
+  - R5: confiance envers les autres → liens_bien_etre ; confiance dans les institutions → democratie (A11).
+  - R6: hors v1 — thème « temps et travail non rémunéré » (A4) ; dette publique, investissement, patrimoine national (A5) ; stabilité financière (A16).
+  - R7: PIB par habitant = indicateur ordinaire de niveau_de_vie ; appartenance au socle décidée au gel 2 (A12).
+  - R8: indices composites admis (D18) avec une variante principale par famille ; indicateurs irréguliers admis avec report de la dernière valeur (D17) ; indicateurs de moyens admis avec type moyen (D19).

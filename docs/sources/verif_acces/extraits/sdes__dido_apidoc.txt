@@ -1,0 +1,98 @@
+# sdes / dido_apidoc
+# URL : https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/apidoc.html
+# Vérifié le 2026-10-13T11:32:44Z — HTTP 200 — text/html; charset=UTF-8 — 2609 octets lus (taille annoncée : 1080)
+
+<!-- HTML for static distribution bundle build -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spécification de l'API</title>
+    <link rel="stylesheet" type="text/css" href="./apidoc/apidoc.css" >
+    <link rel="icon" type="image/png" href="./apidoc/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./apidoc/favicon-16x16.png" sizes="16x16" />
+    <style>
+      html
+      {
+        box-sizing: border-box;
+        overflow: -moz-scrollbars-vertical;
+        overflow-y: scroll;
+      }
+
+      *,
+      *:before,
+      *:after
+      {
+        box-sizing: inherit;
+      }
+
+      body
+      {
+        margin:0;
+        background: #fafafa;
+      }
+      .swagger-ui .topbar {
+        display: none;
+      }
+      .swagger-ui .info :not(.main) .link {
+        display: none
+      }
+      .swagger-ui .info .info__extdocs.link {
+        display: none;
+      }
+      .swagger-ui .svg-assets {
+        display: none
+      }
+      .swagger-ui .scheme-container {
+        display: none
+      }
+
+      #appVersion
+      {
+        width: 100%;
+        padding: 10px;
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+    <div id="appVersion"></div>
+
+    <script src="./apidoc/swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="./apidoc/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script>
+      window.onload = function() {
+        // get app verision
+        fetch('../appVersion')
+          .then((response) => response.json())
+          .then(({ version }) => (document.getElementById("appVersion").innerHTML = `v${version}`));
+        
+        // get millesime param if exists
+        const millesime = decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent('millesime').replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"))
+        const millesimeParam = millesime ? '?millesime=' + millesime : ''
+        
+        // Begin Swagger UI call region
+        const ui = SwaggerUIBundle({
+          url: `swagger.json${millesimeParam}`,
+          dom_id: '#swagger-ui',
+          deepLinking: true,
+          presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIStandalonePreset
+          ],
+          plugins: [
+            SwaggerUIBundle.plugins.DownloadUrl
+          ],
+          syntaxHighlight: false,
+          layout: "StandaloneLayout",
+          validatorUrl:null
+        })
+        // End Swagger UI call region
+
+        window.ui = ui
+      }
+    </script>
+  </body>
+</html>

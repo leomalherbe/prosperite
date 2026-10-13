@@ -1,0 +1,222 @@
+# economie / ods_catalogue_json
+# URL : https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T11:32:13Z — HTTP 200 — application/json; charset=utf-8 — 5656 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 617,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "annee",
+     "description": null,
+     "annotations": {},
+     "label": "annee",
+     "type": "text"
+    },
+    {
+     "name": "categorie_civile",
+     "description": null,
+     "annotations": {},
+     "label": "categorie_civile",
+     "type": "text"
+    },
+    {
+     "name": "sexe",
+     "description": null,
+     "annotations": {},
+     "label": "sexe",
+     "type": "text"
+    },
+    {
+     "name": "effectif",
+     "description": null,
+     "annotations": {},
+     "label": "effectif",
+     "type": "text"
+    },
+    {
+     "name": "age",
+     "description": null,
+     "annotations": {},
+     "label": "age",
+     "type": "double"
+    },
+    {
+     "name": "montant_pension",
+     "description": null,
+     "annotations": {},
+     "label": "montant_pension",
+     "type": "double"
+    },
+    {
+     "name": "taux_rp",
+     "description": null,
+     "annotations": {},
+     "label": "taux_rp",
+     "type": "text"
+    }
+   ],
+   "dataset_id": "cube-flux-retraite-progressive",
+   "dataset_uid": "da_ms4pv5",
+   "has_records": true,
+   "features": [
+    "analyze"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Retraite - cube flux retraite progressive",
+     "description": "<p><strong>Cube de données agrégées</strong> reprenant les nouvelles retraites progressives,  liquidées par le <strong>Service des Retraites de l’État</strong>.</p><hr><p>Il propose des données sur les thèmes suivants: Effectif, Âge moyen, Montant mensuel moyen et taux de retraite progressive.</p>",
+     "theme": [
+      "RETRAITE"
+     ],
+     "keyword": [
+      "Etat",
+      "catégories",
+      "âges",
+      "taux",
+      "montant",
+      "retraites",
+      "sexe",
+      "effectif",
+      "2023",
+      "2024",
+      "2025"
+     ],
+     "license": "Licence Ouverte (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
+     "language": "fr",
+     "metadata_languages": [
+      "fr"
+     ],
+     "timezone": null,
+     "modified": "2026-08-11T13:40:52.131000+00:00",
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": true,
+     "data_processed": "2026-08-11T13:40:52.131000+00:00",
+     "metadata_processed": "2026-08-11T14:04:39.818000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": null,
+     "references": "https://retraitesdeletat.gouv.fr/professionnels/donnees-statistiques",
+     "records_count": 18,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": null,
+     "update_frequency": "ANNUAL"
+    },
+    "dcat": {
+     "created": null,
+     "issued": null,
+     "creator": null,
+     "contributor": null,
+     "contact_name": null,
+     "contact_email": null,
+     "accrualperiodicity": null,
+     "spatial": null,
+     "temporal": null,
+     "granularity": null,
+     "dataquality": null,
+     "publisher_type": null,
+     "conforms_to": null,
+     "temporal_coverage_start": null,
+     "temporal_coverage_end": null,
+     "accessRights": null,
+     "relation": null
+    }
+   }
+  },
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "pays_emprunteurs",
+     "description": null,
+     "annotations": {},
+     "label": "Pays emprunteurs",
+     "type": "text"
+    },
+    {
+     "name": "creances_apd",
+     "description": null,
+     "annotations": {},
+     "label": "Creances APD",
+     "type": "double"
+    },
+    {
+     "name": "creances_napd",
+     "description": null,
+     "annotations": {},
+     "label": "Creances NAPD",
+     "type": "double"
+    }
+   ],
+   "dataset_id": "encours-de-creances-de-la-france-sur-les-etats-etrangers-au-31-decembre-2018",
+   "dataset_uid": "da_j5x6gf",
+   "has_records": true,
+   "features": [
+    "analyze",
+    "custom_view"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Encours de créances de la France sur les Etats étrangers au 31 décembre 2018",
+     "description": "<p>Il s’agit des encours des créances détenues soit par l’État \ndirectement, soit par l’Agence Française de Développement, soit par BPI \nAssurance Export et Natixis pour le compte de l’État. Sont incluses dans\n les encours présentés toutes les créances dont le débiteur est soit \nsouverain, soit appartient au secteur public d’un État étranger. Il \ns’agit donc d’un encours plus large que celui qui est détenu sur le \nsecteur souverain (État et débiteurs garantis par lui).</p>",
+     "theme": [
+      "ECONOMIE"
+     ],
+     "keyword": [
+      "aide publique au développement",
+      "2018",
+      "prêts",
+      "encours",
+      "créances"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "language": "fr",
+     "metadata_languages": [
+      "fr"
+     ],
+     "timezone": null,
+     "modified": "2019-11-07T16:01:30+00:00",
+     "modified_updates_on_metadata_change": false,
+     "modified_updates_on_data_change": false,
+     "data_processed": "2019-11-07T16:08:06.383000+00:00",
+     "metadata_processed": "2026-01-26T08:59:20.638000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DGTRESOR",
+     "references": null,
+     "records_count": 98,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source

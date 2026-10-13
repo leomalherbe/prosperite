@@ -1,0 +1,161 @@
+# drees / ods_catalogue_json
+# URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T11:31:53Z — HTTP 200 — application/json; charset=utf-8 — 9675 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 265,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [],
+   "dataset_id": "3024_l-accueil-des-jeunes-enfants-du-cote-des-familles",
+   "dataset_uid": "da_14wuvi",
+   "has_records": false,
+   "features": [],
+   "attachments": [
+    {
+     "id": "laccueil_des_jeunes_enfants_du_cote_des_famillesxlsx",
+     "title": "L’accueil des jeunes enfants : du côté des familles.xlsx",
+     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/3024_l-accueil-des-jeunes-enfants-du-cote-des-familles/attachments/laccueil_des_jeunes_enfants_du_cote_des_famillesxlsx"
+    }
+   ],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "L’accueil des jeunes enfants : du côté des familles",
+     "description": "<p style=\"font-size:15px;\">L’enquête Modes de garde et d’accueil des jeunes enfants réalisée par la DREES en 2013 est la troisième édition de l’opération, après celles menées en 2002 puis en 2007. Elle concerne les ménages vivant en France métropolitaine ayant au moins un enfant de moins de 6 ans. Son objectif principal est de dresser un panorama des solutions adoptées\npar les parents pour la garde de leurs enfants.</p>\n<p style=\"font-size:15px;\">Ce jeu de données rassemble les\ndivers résultats tirés de l'enquête publiés par la DREES dans sa collection <i style=\"mso-bidi-font-style: normal;\">Études et résultats</i>, ainsi que des\ntableaux complémentaires tirés de l'enquête (voir rubrique Autres résultats).</p>",
+     "theme": [
+      "Enfance, jeunesse, famille"
+     ],
+     "keyword": [
+      "mode d'accueil",
+      "famille",
+      "jeune enfant",
+      "conciliation vie familiale et professionnelle"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "language": "fr",
+     "metadata_languages": null,
+     "timezone": null,
+     "modified": "2021-01-22T08:30:53.513000+00:00",
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": false,
+     "data_processed": null,
+     "metadata_processed": "2021-01-22T08:30:57.646000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DREES/OSOL/BJF",
+     "references": null,
+     "records_count": 0,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": "sgsocialgouv",
+     "update_frequency": null
+    },
+    "custom": {
+     "themes-niveau-2": [
+      "Accueil des jeunes enfants"
+     ],
+     "themes-niveau-3": null,
+     "version": null,
+     "date-de-creation": "2018-04-19",
+     "frequence-de-mise-a-jour": null,
+     "periode-de-temps": "2013",
+     "code-source": null,
+     "pieces-jointes": null
+    }
+   }
+  },
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "annee",
+     "description": "Année à laquelle le montant est rattaché.",
+     "annotations": {
+      "timeserie_precision": "hour",
+      "facet": true,
+      "facetsort": "-alphanum",
+      "disjunctive": true
+     },
+     "label": "annee",
+     "type": "text"
+    },
+    {
+     "name": "poste_niv",
+     "description": "Niveau d’agrégation du poste. « 0 » correspond à la CSBM, l’agrégat total.",
+     "annotations": {},
+     "label": "poste_niv",
+     "type": "text"
+    },
+    {
+     "name": "poste",
+     "description": "Code unique d’identification du poste. Pour certains types de soins, les dépenses en centres de santé et en libéral sont enregistrées dans deux modalités distinctes dans la nomenclature de postes. Dans ce jeu de données, elles sont agrégées et le code du poste correspond à la juxtaposition des deux codes par lieux.",
+     "annotations": {},
+     "label": "poste",
+     "type": "text"
+    },
+    {
+     "name": "poste_lib",
+     "description": "Libellé du poste des comptes de la santé auquel le montant est rattaché.",
+     "annotations": {
+      "facet": true,
+      "facetsort": "-alphanum",
+      "disjunctive": true
+     },
+     "label": "poste_lib",
+     "type": "text"
+    },
+    {
+     "name": "type",
+     "description": "Nature du montant : \n- « valeur » correspond aux dépenses de santé en euros de l’année courante, \n- « tc_val » correspond au taux de croissance de la valeur (en %),\n- « tc_vol » correspond au taux de croissance du volume (en %),\n- « tc_prix » correspond au taux de croissance du prix (en %),\n- « vol_pap » correspond au volume aux prix de l’année précédente (en euros de l’année précédente),\n- « vol_ch » correspond aux volumes chaînés depuis l’année 2010, \n- « i_prix » correspond à l’indice de prix chaîné depuis l’année 2010.\n",
+     "annotations": {
+      "facet": true,
+      "disjunctive": true
+     },
+     "label": "type",
+     "type": "text"
+    },
+    {
+     "name": "montant",
+     "description": "Valeur numérique.",
+     "annotations": {
+      "facetsort": "-count",
+      "decimals": 2
+     },
+     "label": "montant",
+     "type": "double"
+    }
+   ],
+   "dataset_id": "comptes_de_la_sante_partage_volume_prix",
+   "dataset_uid": "da_rxucsp",
+   "has_records": true,
+   "features": [
+    "analyze"
+   ],
+   "attachments": [
+    {
+     "id": "nomenclature_poste_cns_diffusion_xlsx",
+     "title": "nomenclature_poste_cns_diffusion.xlsx",
+     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/comptes_de_la_sante_partage_volume_prix/attachments/nomenclature_poste_cns_diffusion_xlsx"
+    }
+   ],
+   "alternative_exports": [],
+   "data_visible": true,
+   "

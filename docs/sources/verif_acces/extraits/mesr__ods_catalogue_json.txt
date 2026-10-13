@@ -1,0 +1,245 @@
+# mesr / ods_catalogue_json
+# URL : https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T11:32:00Z — HTTP 200 — application/json; charset=utf-8 — 20527 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 217,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "uai",
+     "description": null,
+     "annotations": {},
+     "label": "uai",
+     "type": "text",
+     "label_fr": "uai",
+     "label_en": "uai",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "libelle_court",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_court",
+     "type": "text",
+     "label_fr": "libelle_court",
+     "label_en": "libelle_court",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "libelle_long",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_long",
+     "type": "text",
+     "label_fr": "libelle_long",
+     "label_en": "libelle_long",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "statut_juridique_court",
+     "description": null,
+     "annotations": {
+      "facet": true,
+      "hierarchical": "/"
+     },
+     "label": "statut_juridique_court",
+     "type": "text",
+     "label_fr": "statut_juridique_court",
+     "label_en": "statut_juridique_court",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "adresse",
+     "description": null,
+     "annotations": {},
+     "label": "adresse",
+     "type": "text",
+     "label_fr": "adresse",
+     "label_en": "adresse",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "complement_adresse",
+     "description": null,
+     "annotations": {},
+     "label": "complement_adresse",
+     "type": "text",
+     "label_fr": "complement_adresse",
+     "label_en": "complement_adresse",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "code_postal",
+     "description": null,
+     "annotations": {},
+     "label": "code_postal",
+     "type": "text",
+     "label_fr": "code_postal",
+     "label_en": "code_postal",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "localite",
+     "description": null,
+     "annotations": {},
+     "label": "localite",
+     "type": "text",
+     "label_fr": "localite",
+     "label_en": "localite",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "geolocalisation",
+     "description": null,
+     "annotations": {},
+     "label": "geolocalisation",
+     "type": "geo_point_2d",
+     "label_fr": "geolocalisation",
+     "label_en": "geolocalisation",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "site_internet",
+     "description": null,
+     "annotations": {},
+     "label": "site_internet",
+     "type": "text",
+     "label_fr": "site_internet",
+     "label_en": "site_internet",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "compte_twitter",
+     "description": null,
+     "annotations": {},
+     "label": "compte_twitter",
+     "type": "text",
+     "label_fr": "compte_twitter",
+     "label_en": "compte_twitter",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "compte_facebook",
+     "description": null,
+     "annotations": {},
+     "label": "compte_facebook",
+     "type": "text",
+     "label_fr": "compte_facebook",
+     "label_en": "compte_facebook",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "compte_linkedin",
+     "description": null,
+     "annotations": {},
+     "label": "compte_linkedin",
+     "type": "text",
+     "label_fr": "compte_linkedin",
+     "label_en": "compte_linkedin",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "compte_googleplus",
+     "description": null,
+     "annotations": {},
+     "label": "compte_googleplus",
+     "type": "text",
+     "label_fr": "compte_googleplus",
+     "label_en": "compte_googleplus",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "compte_youtube",
+     "description": null,
+     "annotations": {},
+     "label": "compte_youtube",
+     "type": "text",
+     "label_fr": "compte_youtube",
+     "label_en": "compte_youtube",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "compte_dailymotion",
+     "description": null,
+     "annotations": {},
+     "label": "compte_dailymotion",
+     "type": "text",
+     "label_fr": "compte_dailymotion",
+     "label_en": "compte_dailymotion",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "identifiant_freebase",
+     "description": null,
+     "annotations": {},
+     "label": "identifiant_freebase",
+     "type": "text",
+     "label_fr": "identifiant_freebase",
+     "label_en": "identifiant_freebase",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "identifiant_wikidata",
+     "description": null,
+     "annotations": {},
+     "label": "identifiant_wikidata",
+     "type": "text",
+     "label_fr": "identifiant_wikidata",
+     "label_en": "identifiant_wikidata",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "statut_operateur_lolf",
+     "description": null,
+     "annotations": {
+      "facet": true,
+      "hierarchical": "/"
+     },
+     "label": "statut_operateur_lolf",
+     "type": "text",
+     "label_fr": "statut_operateur_lolf",
+     "label_en": "statut_operateur_lolf",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "libelle_mission_chef_de_file",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_mission_chef_de_file",
+     "type": "text",
+     "label_fr": "libelle_mission_chef_de_file",
+     "label_en": "libelle_mission_chef_de_file",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "identifiant_programme_lolf_chef_de_file",
+     "description": null,
+     "annotations": {
+      "facet": true,
+      "hierarchical": "/"
+     },
+     "label": "identifiant_programme_lolf_chef_de_file",
+     

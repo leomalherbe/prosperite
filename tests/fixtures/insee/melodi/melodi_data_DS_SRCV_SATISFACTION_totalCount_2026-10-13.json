@@ -1,0 +1,22 @@
+{
+  "observations" : [ ],
+  "identifier" : "DS_SRCV_SATISFACTION",
+  "paging" : {
+    "count" : 8520,
+    "first" : "https://api.insee.fr/melodi/data/DS_SRCV_SATISFACTION?totalCount=TRUE&maxResult=0&page=1"
+  },
+  "publisher" : {
+    "id" : "INSEE",
+    "label" : [ {
+      "content" : "Institut national de la statistique et des etudes economiques (INSEE)",
+      "lang" : "fr"
+    }, {
+      "content" : "National Institute of Statistics and Economic Studies",
+      "lang" : "en"
+    } ]
+  },
+  "title" : {
+    "en" : "Life Satisfaction ",
+    "fr" : "Conditions de vie : niveau de satisfaction"
+  }
+}

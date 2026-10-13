@@ -116,7 +116,7 @@ def test_lister_series_decoupe_quand_la_reponse_est_trop_volumineuse():
     annuelle = fixture("bdm_serie_010593281_*.xml")
     trimestrielle = fixture("bdm_serie_001688527_*.xml")
     routes = [
-        (lambda u: u.endswith("/data/FLUX?detail=nodata"), rep(b"<Error code=\"510\"/>", 413)),
+        (lambda u: u.endswith("/data/FLUX?detail=nodata"), rep(fixture("bdm_erreur_trop_de_series_*.xml"), 413)),
         (lambda u: "/datastructure/FR1/FLUX" in u, rep(fixture("bdm_datastructure_CHOMAGE-TRIM-NATIONAL_*.xml"))),
         (lambda u: "/codelist/FR1/CL_PERIODICITE" in u, rep(fixture("bdm_codelist_CL_PERIODICITE_*.xml"))),
         (lambda u: "/data/FLUX/A........?" in u, rep(annuelle)),
@@ -178,3 +178,71 @@ def test_est_trop_volumineuse():
     assert bdm.est_trop_volumineuse(rep(b'<mes:ErrorMessage code="510">', 400))
     assert not bdm.est_trop_volumineuse(rep(b"", 404))
     assert not bdm.est_trop_volumineuse(rep(b"<ok/>", 200))
+    # réponses réelles (robot, 13/10) : CNA-2020-ERE entier (3 140 séries) → 413 code 510 ; clé sans résultat → 404 code 100
+    assert bdm.est_trop_volumineuse(rep(fixture("bdm_erreur_trop_de_series_CNA-2020-ERE_*.xml"), 413))
+    assert bdm.est_trop_volumineuse(rep(fixture("bdm_erreur_trop_de_series_CNA-2020-ERE_*.xml"), 500))  # même corps, autre statut
+    assert not bdm.est_trop_volumineuse(rep(fixture("bdm_erreur_cle_sans_resultat_*.xml"), 404))
+
+
+# --- réponses réelles enregistrées par le robot (décision D21) --------------------------------
+
+def test_liste_complete_des_dataflows_reelle():
+    flux = {f.id: f for f in bdm.analyser_dataflows(fixture("bdm_dataflows_2*.xml"))}
+    assert len(flux) == 244
+    assert sum(f.nb_series or 0 for f in flux.values()) == 374463
+    assert flux["SERIES_BDM"].nb_series == 187146
+    assert flux["ODD-ERADICATION-PAUVRETE"].nb_series == 65
+    assert flux["CNA-2020-PIB"].nb_series == 21
+    assert {"CNA-2020-ERE", "CHOMAGE-TRIM-NATIONAL", "DECES-MORTALITE"} <= set(flux)
+
+
+def test_nodata_reel_odd_pauvrete():
+    """`detail=nodata` : une série par idbank avec titre, zone, fréquence et date de mise à jour, sans observation."""
+    series = {s.idbank: s for s in bdm.analyser_donnees(fixture("bdm_nodata_ODD-ERADICATION-PAUVRETE_*.xml"))}
+    assert len(series) == 65
+    assert all(not s.observations for s in series.values())
+    pauvrete = series["010594446"].attributs
+    assert pauvrete["TITLE_FR"].startswith("Taux de pauvreté monétaire - Seuil de 60")
+    assert (pauvrete["FREQ"], pauvrete["REF_AREA"]) == ("A", "FM")
+    assert pauvrete["LAST_UPDATE"] >= "2020-01-01"
+    assert "SERIE_ARRETEE" not in pauvrete  # dimension absente des dataflows ODD
+
+
+def test_nodata_reel_comptes_nationaux_et_regles_de_catalogage():
+    from src.sources import insee_catalogue as cat
+
+    series = {s.idbank: s.attributs for s in bdm.analyser_donnees(fixture("bdm_nodata_CNA-2020-PIB_*.xml"))}
+    assert len(series) == 21 and all(a["SERIE_ARRETEE"] == "FALSE" for a in series.values())
+    decisions = {}
+    for idb, a in series.items():
+        dims = {k: v for k, v in a.items() if k not in bdm.ATTRIBUTS_SERIE and k not in ("TITLE_EN", "SERIE_ARRETEE")}
+        assert "SECT-INST" in dims  # nom réel de la dimension (avec tiret)
+        decisions[idb] = cat.decider(libelle=a["TITLE_FR"], theme="CNA-2020-PIB", theme_libelle="", frequence=a["FREQ"],
+                                     zone="principale", premiere="1949", derniere="2025", dimensions_bruit=dims)
+    assert decisions["011779993"].candidat == "oui"   # PIB par habitant
+    assert decisions["011780005"].candidat == "oui"   # consommation finale des ménages
+    assert decisions["011780009"].candidat == "non"   # FBCF des sociétés non financières : secteur détaillé
+    assert decisions["011780003"].candidat == "non"   # variation des stocks : opération technique
+
+
+def test_lister_series_reel_chomage_par_frequence():
+    """Circuit réel : flux trop gros (413) → structure réelle → fréquences ; A → 404 « aucun résultat », T → 261 séries."""
+    routes = [
+        (lambda u: u.endswith("/data/FLUX?detail=nodata"), rep(fixture("bdm_erreur_trop_de_series_*.xml"), 413)),
+        (lambda u: "/datastructure/FR1/FLUX" in u, rep(fixture("bdm_datastructure_CHOMAGE-TRIM-NATIONAL_*.xml"))),
+        (lambda u: "/codelist/FR1/CL_PERIODICITE" in u, rep(fixture("bdm_codelist_CL_PERIODICITE_*.xml"))),
+        (lambda u: "/data/FLUX/T........?" in u, rep(fixture("bdm_nodata_CHOMAGE-TRIM-NATIONAL_cle_T_*.xml"))),
+        (lambda u: "/data/FLUX/" in u, rep(fixture("bdm_erreur_cle_sans_resultat_*.xml"), 404)),
+    ]
+    client = ClientFixtures(routes)
+    res = bdm.lister_series("FLUX", client)
+    assert len(res.series) == 261 and not res.erreurs
+    assert {s["FREQ"] for s in res.series} == {"T"}
+    arretees = [s for s in res.series if s.get("SERIE_ARRETEE") == "TRUE"]
+    assert 0 < len(arretees) < 261
+
+
+def test_premiere_observation_de_deux_series_reelle():
+    series = {s.idbank: s for s in bdm.analyser_donnees(fixture("bdm_series_010593281+001688527_first1_*.xml"))}
+    assert series["010593281"].observations[0]["TIME_PERIOD"] == "2010"
+    assert series["001688527"].observations[0]["TIME_PERIOD"] == "1975-Q1"

@@ -104,7 +104,10 @@ def analyser_structure(contenu: bytes) -> list[Dimension]:
     racine = ET.fromstring(contenu)
     dims = []
     for el in racine.iter():
-        if _local(el.tag) != "Dimension":
+        # Les relations d'attributs du DSD réel citent aussi les dimensions (`<str:Dimension><Ref id="FREQ"/>`,
+        # sans attribut id) : 108 éléments de plus dans CHOMAGE-TRIM-NATIONAL, qui allongeaient la clé
+        # (constaté sur la réponse réelle du 13/10 ; la fixture reconstituée ne les contenait pas).
+        if _local(el.tag) != "Dimension" or not el.get("id"):
             continue
         codelist = None
         for enfant in el.iter():

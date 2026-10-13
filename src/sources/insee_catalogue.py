@@ -300,7 +300,7 @@ OPERATIONS_RETENUES = {
     "", "_Z", "_T", "SO",
     "B1GQ", "B1G", "B1N", "B1NQ", "B2G", "B2N", "B3G", "B3N", "B2GEB3G", "B2NEB3N", "B5G", "B5N", "B5GQ", "B5NQ", "B6G", "B6N",
     "B7G", "B7N", "B8G", "B8N", "B9", "B9N", "B90", "B11", "B101",
-    "P3", "P31", "P32", "P3NR", "P3R", "P4", "P41", "P42", "P5", "P51G", "P51C", "P51N", "P52", "P53", "P6", "P7",
+    "P3", "P31", "P32", "P3NR", "P3R", "P4", "P41", "P42", "P5", "P51G", "P51C", "P51N",
     "D1", "D11", "D12", "D5", "D51", "D61", "D62", "D63", "D6M", "D632",
     "LE", "LE_N", "EMP", "EMPH", "POP", "SAL", "SELF",
     "OTE", "TE", "OTR", "TR", "GD", "PIB", "PIB_H", "RNB", "RNB_H", "ACTIFS_TOTAL", "AN", "AN1", "AN11", "AN2", "AF",
@@ -323,7 +323,8 @@ def motif_bruit_dimensions(theme: str, dimensions: Optional[dict[str, str]]) -> 
     """Motif d'exclusion tiré des codes de dimensions (None si la série est un agrégat utile)."""
     if not dimensions:
         return None
-    d = {k.upper(): str(v).strip() for k, v in dimensions.items()}
+    # la BDM écrit « SECT-INST » (réponses réelles) là où l'instantané du paquet R écrit « SECT_INST »
+    d = {k.upper().replace("-", "_"): str(v).strip() for k, v in dimensions.items()}
     for nom in ("SECT_INST", "REF_SECTOR"):
         v = d.get(nom)
         if v is not None and v not in SECTEURS_RETENUS:

@@ -149,8 +149,8 @@ def test_identifiant_serie_et_url():
 
 def test_lire_zip_csv_structure():
     """Structure du ZIP Melodi (`<jeu>_data.csv` + `<jeu>_metadata.csv`) ; contenu construit à partir
-    des observations réelles de la fixture DS_POPULATIONS_REFERENCE (à remplacer par un échantillon
-    réel du robot)."""
+    des observations réelles de la fixture DS_POPULATIONS_REFERENCE (cas GEO_OBJECT communal ; le ZIP réel
+    enregistré par le robot est testé plus bas, `test_fichier_zip_reel_…`)."""
     corps = json.loads(fixture("melodi_data_DS_POPULATIONS_REFERENCE_COM-44109_*.json"))
     lignes = ["GEO;GEO_OBJECT;FREQ;POPREF_MEASURE;TIME_PERIOD;OBS_VALUE"]
     for o in corps["observations"]:
@@ -169,3 +169,62 @@ def test_lire_zip_csv_structure():
     assert libelles[("POPREF_MEASURE", "PMUN")] == "Population municipale"
     lignes_sortie = mel.observations_en_lignes("DS_POPULATIONS_REFERENCE", observations)
     assert {l.valeur for l in lignes_sortie} == {327734.0, 332515.0, 4781.0}
+
+
+# --- réponses réelles enregistrées par le robot le 2026-10-13 (décision D21) --------------------
+
+def test_catalogue_reel_octobre_2026():
+    import gzip
+
+    jeux = {j.id: j for j in mel.analyser_catalogue(gzip.decompress(fixture("melodi_catalog_all_2026-10-13.json.gz")))}
+    assert len(jeux) == 145
+    assert "DS_NAT_SDG" in jeux  # absent du catalogue de janvier 2026, cité par les pages ODD de mai 2026
+    assert jeux["DS_SRCV_SATISFACTION"].niveau_national
+
+
+def test_notice_reelle_srcv_satisfaction():
+    jeu = mel.analyser_catalogue(fixture("melodi_catalog_DS_SRCV_SATISFACTION_*.json"))[0]
+    assert (jeu.id, jeu.periodicite, jeu.debut[:4], jeu.niveaux_geo) == ("DS_SRCV_SATISFACTION", "Annuel", "2010", ["FRANCE"])
+    assert "SRCV_MEASURE" in jeu.composants and "TIME_PERIOD" in jeu.composants
+    assert jeu.produit_csv()["accessURL"].startswith("https://api.insee.fr/melodi/file/DS_SRCV_SATISFACTION/")
+
+
+def test_plage_reelle_srcv_deux_niveaux_nationaux():
+    plage = mel.analyser_plage(fixture("melodi_range_DS_SRCV_SATISFACTION_*.json"))
+    assert mel.valeurs_geo_nationales(plage) == [("FRANCE-F_X_D976", "France hors Mayotte"), ("FRANCE-FM", "France métropolitaine")]
+    assert plage["SRCV_MEASURE"].valeurs["TRAVSATISF"] == "Satisfaction moyenne concernant l'emploi principal"
+
+
+def test_plage_reelle_odd_nationaux():
+    plage = mel.analyser_plage(fixture("melodi_range_DS_NAT_SDG_*.json"))
+    assert [c for c, _ in mel.valeurs_geo_nationales(plage)] == ["FRANCE-FM", "FRANCE-F", "FRANCE-F_X_D976"]
+    assert plage["INDICATOR_SDG"].valeurs["3.i1a"] == "Espérance de vie en bonne santé"
+    assert len(plage["INDICATOR_SDG"].valeurs) == 167
+
+
+def test_comptage_et_donnees_reelles_srcv():
+    assert json.loads(fixture("melodi_data_DS_SRCV_SATISFACTION_totalCount_*.json"))["paging"]["count"] == 8520
+    client = ClientFixtures([(lambda u: "totalCount=TRUE" in u, rep(fixture("melodi_data_DS_SRCV_SATISFACTION_totalCount_*.json")))])
+    assert mel.compter("DS_SRCV_SATISFACTION", None, client) == 8520
+    corps = json.loads(fixture("melodi_data_DS_SRCV_SATISFACTION_extrait_*.json"))
+    lignes = mel.observations_en_lignes("DS_SRCV_SATISFACTION", corps["observations"])
+    assert len(lignes) == 40
+    premiere = lignes[0]
+    assert premiere.geo == "FRANCE-F_X_D976" and premiere.serie_id.startswith("DS_SRCV_SATISFACTION?AGE=")
+    assert "GEO=FRANCE-F_X_D976" in premiere.serie_id and "TIME_PERIOD" not in premiere.serie_id
+
+
+def test_fichier_zip_reel_et_api_donnent_le_meme_identifiant_de_serie():
+    """Extraits réels (60 premières lignes) du ZIP de DS_SRCV_SATISFACTION : même identifiant de série que /data."""
+    tampon = io.BytesIO()
+    with zipfile.ZipFile(tampon, "w") as z:
+        z.writestr("DS_SRCV_SATISFACTION_2025_data.csv", fixture("melodi_file_DS_SRCV_SATISFACTION_*_data_extrait_*.csv"))
+        z.writestr("DS_SRCV_SATISFACTION_2025_metadata.csv", fixture("melodi_file_DS_SRCV_SATISFACTION_*_metadata_extrait_*.csv"))
+    colonnes, flux, libelles = mel.lire_zip_csv(tampon.getvalue())
+    assert colonnes[:2] == ["GEO", "GEO_OBJECT"] and colonnes[-1] == "OBS_VALUE"
+    assert libelles[("AGE", "Y25T34")] == "De 25 à 34 ans"
+    observations = [mel.ligne_csv_en_observation(l) for l in flux]
+    fichier = mel.observations_en_lignes("DS_SRCV_SATISFACTION", observations)
+    api = mel.observations_en_lignes("DS_SRCV_SATISFACTION", json.loads(fixture("melodi_data_DS_SRCV_SATISFACTION_extrait_*.json"))["observations"])
+    assert fichier[0].serie_id == api[0].serie_id
+    assert (fichier[0].periode, fichier[0].valeur) == ("2022", 7.7)

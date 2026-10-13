@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Fixture RECONSTITUÉE (mission M01, phase 2, 2026-10-13) — à remplacer par la réponse brute
-  enregistrée par le robot (docs/sources/echantillons_insee/), décision D21.
-  Requête réelle : GET https://bdm.insee.fr/series/sdmx/codelist/FR1/CL_PERIODICITE
-  Lue le 2026-10-13 vers 15:15 (heure de Paris) avec l'outil de lecture de page web : en-tête, codes,
-  URN et libellés extraits un à un puis réassemblés ici. Aucune valeur ajoutée.
--->
 <mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
   <mes:Header>
-    <mes:ID>codelist_CL_PERIODICITE_1791897325573</mes:ID>
+    <mes:ID>codelist_CL_PERIODICITE_1791898394773</mes:ID>
     <mes:Test>false</mes:Test>
-    <mes:Prepared>2026-10-13T15:15:25.573+02:00</mes:Prepared>
-    <mes:Sender id="FR1"><com:Name xml:lang="fr">Institut national de la statistique et des études économiques</com:Name></mes:Sender>
+    <mes:Prepared>2026-10-13T15:33:14.773+02:00</mes:Prepared>
+    <mes:Sender id="FR1">
+      <com:Name xml:lang="fr">Institut national de la statistique et des études économiques</com:Name>
+    </mes:Sender>
     <mes:Receiver id="unknown"/>
     <mes:Source xml:lang="fr">Banque de données macro-économiques</mes:Source>
   </mes:Header>

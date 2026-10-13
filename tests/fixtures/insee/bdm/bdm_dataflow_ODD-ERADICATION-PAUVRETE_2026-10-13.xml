@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Fixture RECONSTITUÉE (mission M01, 2026-10-13).
-  Requête réelle : GET https://bdm.insee.fr/series/sdmx/dataflow/FR1/ODD-ERADICATION-PAUVRETE
-  Réponse lue le 2026-10-13 vers 13:22 (heure de Paris) avec l'outil de lecture de page web, qui ne recopie
-  pas le XML brut : balises, espaces de noms, attributs et textes extraits un à un puis réassemblés ici.
-  La liste complète (GET https://bdm.insee.fr/series/sdmx/dataflow) a la même forme, avec un str:Dataflow par
-  regroupement ; elle n'a pas pu être lue en entier (réponse tronquée par l'outil après 94 dataflows).
--->
 <mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
   <mes:Header>
-    <mes:ID>dataflows_ODD-ERADICATION-PAUVRETE_1791890521720</mes:ID>
+    <mes:ID>dataflows_ODD-ERADICATION-PAUVRETE_1791898393771</mes:ID>
     <mes:Test>false</mes:Test>
-    <mes:Prepared>2026-10-13T13:22:01.720+02:00</mes:Prepared>
+    <mes:Prepared>2026-10-13T15:33:13.771+02:00</mes:Prepared>
     <mes:Sender id="FR1">
       <com:Name xml:lang="fr">Institut national de la statistique et des études économiques</com:Name>
     </mes:Sender>

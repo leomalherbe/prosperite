@@ -22,7 +22,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 2. **Robot GitHub Actions** : le script `scripts/collecte_sources.py` (cible `collecte_sources.py` du workflow « Collecte ») ouvre sans clé chaque URL de `docs/sources/verif_acces/urls.csv` et écrit :
    - `docs/sources/verif_acces/resultats.csv` : code HTTP, type de contenu, taille, nature détectée, verdict (`donnees`, `page_html`, `pdf`, `erreur`) ;
    - `docs/sources/verif_acces/extraits/<source>__<cle>.txt` : extrait lisible (début du texte, feuilles et premières lignes d'un classeur, contenu d'une archive, valeurs distinctes d'une colonne).
-   Trois vagues ont été exécutées le 13/10/2026 ; **les colonnes `fiabilite_acces` du CSV d'inventaire renvoient à ces résultats**. Le script peut être relancé à tout moment (veille des liens) : `python scripts/actions.py lancer --branche m04-sources --cible collecte_sources.py`.
+   Quatre vagues ont été exécutées le 13/10/2026 (123 URL dans la dernière, consolidée : 114 renvoient des données) ; **les colonnes `fiabilite_acces` du CSV d'inventaire renvoient à ces résultats**. Le script peut être relancé à tout moment (veille des liens) : `python scripts/actions.py lancer --branche m04-sources --cible collecte_sources.py`.
 3. **Fixtures** : des réponses d'API réelles (issues du robot) sont copiées dans `tests/fixtures/<source>/` pour les tests hors ligne des futurs modules.
 
 ### 0.4 Points d'attention transversaux
@@ -43,7 +43,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Enregistrements d'un jeu | `GET …/catalog/datasets/<dataset_id>/records?limit=100&where=…&select=…&order_by=…` (JSON paginé) |
 | Export complet d'un jeu | `GET …/catalog/datasets/<dataset_id>/exports/csv?delimiter=%3B` (aussi `json`, `xlsx`, `parquet`) — vérifié sur Odissé |
 | Pièces jointes | Un jeu à `records_count = 0` ne contient pas de table mais des **fichiers joints** (CSV, XLSX, ZIP) listés dans `attachments` de la fiche du jeu (`…/catalog/datasets/<dataset_id>`) et téléchargeables à `…/catalog/datasets/<dataset_id>/attachments/<attachment_id>` (vérifié à la DREES, §2.2) → niveau 2 |
-| Authentification | Aucune pour les jeux publics ; en-tête `Authorization: Apikey <clé>` pour les jeux restreints |
+| Authentification | Aucune pour les jeux publics (vérifié) ; pour les jeux restreints, clé API selon la documentation Opendatasoft (non testé) |
 | Format | JSON, CSV, XLSX, Parquet |
 | Remarque | Le `robots.txt` standard d'Opendatasoft interdit `/api/` aux robots : WebFetch est refusé, un script (Actions) passe sans difficulté. Le portail `data.culture.gouv.fr` n'est **plus** sous Opendatasoft (application `culture.data.gouv.fr`) : non vérifié. |
 
@@ -57,13 +57,13 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | **Permalien stable d'une ressource** | `https://www.data.gouv.fr/fr/datasets/r/<id_ressource>` → redirige vers la version courante du fichier (vérifié sur la base SSMSI, ressource `631cff69-f0da-4890-b4fc-97aeada1476f`). **C'est l'URL stable à utiliser pour le niveau 2.** |
 | Authentification | Aucune |
 | Licence | Indiquée par jeu (`license` : `lov2` = Licence Ouverte 2.0, `fr-lo` = Licence Ouverte 1.0, `odc-odbl`…) |
-| Remarque | Exemple vécu : l'URL du CSV SSMSI relevée le matin (horodatage `20260810-…`) renvoyait 404 l'après-midi, le fichier ayant été remplacé le 15/09/2026 (`20260915-…`). D'où l'usage du permalien ou de l'API. |
+| Remarque | Exemple vécu : l'URL du CSV SSMSI relevée par l'outil de lecture (horodatage `20260810-…`, information périmée) renvoyait 404, le fichier ayant été remplacé le 15/09/2026 (`20260915-…`). D'où l'usage du permalien ou de l'API. |
 
 ### 1.3 SDES — plateforme DiDo (Diffusion des données)
 | Élément | Valeur |
 |---|---|
 | URL de base | `https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/` ; documentation Swagger : `…/dido/api/v1/apidoc.html` |
-| Liste des jeux | `GET …/datasets?page=1&pageSize=<10|20|50|100|all>` (toute autre valeur de `pageSize` → erreur 400, vérifié) |
+| Liste des jeux | `GET …/datasets?page=1&pageSize=<n>` avec `n` = 10, 20, 50, 100 ou `all` (toute autre valeur → erreur 400, vérifié ; 41 jeux le 13/10/2026) |
 | Fichier de données | `GET …/datafiles/<rid>/csv` → CSV `;` (vérifié) ; les `rid` sont stables et repris dans les fiches data.gouv.fr du SDES (organisation `681a1272bfa84b075f9531e1`) |
 | Authentification | Aucune |
 | Formats | CSV, XLSX, JSON, GeoJSON (selon la page du SDES) |
@@ -113,11 +113,11 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 |---|---|
 | Organisme | DREES (service statistique ministériel santé et solidarités) |
 | Périmètre | Santé (espérance de vie sans incapacité, accès aux soins, santé mentale), protection sociale, minima sociaux, pauvreté et redistribution, handicap, retraite, opinion (baromètre d'opinion depuis 2000) |
-| Voie d'accès | Portail Opendatasoft `data.drees.solidarites-sante.gouv.fr` (§1.1) : tables interrogeables (niveau 1) **ou** jeux sans table dont les données sont des fichiers joints XLSX (niveau 2) |
+| Voie d'accès | Portail Opendatasoft `data.drees.solidarites-sante.gouv.fr` (§1.1) : tables interrogeables (niveau 1) **ou** jeux sans table dont les données sont des fichiers joints CSV/XLSX (niveau 2) |
 | Authentification | Aucune |
-| Format | JSON/CSV (tables) ; XLSX (pièces jointes) |
+| Format | JSON/CSV (tables) ; CSV, XLSX, ZIP (pièces jointes) |
 | Niveau | **1** (jeux à enregistrements) / **2** (jeux à pièces jointes) |
-| Fiabilité | `verifie` (catalogue complet ouvert : 265 jeux) |
+| Fiabilité | `verifie` (catalogue complet : 265 jeux ; fiches et pièces jointes de 4 jeux ouvertes) |
 | Licence | Licence Ouverte (à confirmer par jeu, champ `default.license`) |
 | Fréquence | Annuelle en général |
 | Profondeur | Baromètre d'opinion : depuis 2000 (page DREES) ; autres : variable |
@@ -144,14 +144,14 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Authentification | Aucune |
 | Format | JSON, CSV, XLSX |
 | Niveau | **1** |
-| Fiabilité | `verifie` (catalogue complet : 388 jeux ; enregistrements d'un jeu, voir §0.3) |
+| Fiabilité | `verifie` (catalogue complet : 388 jeux ; enregistrements et export CSV de deux jeux ouverts) |
 | Licence | Non vérifiée (champ `default.license` à lire) |
 | Fréquence | Annuelle (mortalité, canicules) ; ponctuelle (Baromètre : éditions 2024 seulement pour plusieurs jeux) |
-| Profondeur | Variable ; par exemple jours de canicule France : 22 enregistrements |
+| Profondeur | Variable ; par exemple jours de canicule France : 2004–2025 (22 années) |
 | Couverture | France, régions, départements, infra-départemental |
 
 **Exemples de jeux (`dataset_id` vérifiés)**
-- `suicides-deces-france` — Suicides : décès (France), 135 enregistrements (champs `annee`, `sexe`, `classe_d_age`, `nombre_de_deces`, `taux_brut`, `taux_standardise` ; premiers enregistrements en 2019 — profondeur exacte à mesurer).
+- `suicides-deces-france` — Suicides : décès (France), 135 enregistrements (champs `annee`, `sexe`, `classe_d_age`, `nombre_de_deces`, `taux_brut`, `taux_standardise` ; les premiers enregistrements renvoyés portent sur 2019 — profondeur exacte à mesurer).
 - `canicules-nombres-de-jours-de-canicule-france` — Nombre de jours-départements de canicule (`nb_jdep_can`), **2004–2025** (export CSV vérifié ; 2025 : 517 ; la canicule de 2003 n'est pas couverte) ; `canicules-severite-france`.
 - `tabagisme-prevalence-selon-le-sexe` — Tabac : prévalence selon le sexe (39) ; `tabagisme-prevalence-selon-le-revenu` (36).
 - `sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mo` (France, 12) ; `sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra` (12).
@@ -172,7 +172,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Niveau | **2** |
 | Fiabilité | `verifie` (fiche API, permalien et fichier CSV ouverts par le robot) |
 | Licence | Licence Ouverte 2.0 (`lov2`, fiche data.gouv.fr de la base des séries chronologiques) |
-| Fréquence | Mensuelle, trimestrielle ou annuelle selon l'indicateur ; base mise à jour en août 2026 |
+| Fréquence | Mensuelle, trimestrielle ou annuelle selon l'indicateur ; base mise à jour le 15/09/2026 |
 | Profondeur | Base des séries chronologiques : couverture déclarée 2006–2023 dans les métadonnées (à recouper avec le fichier) ; état 4001 : depuis janvier 1996 (fichier non mis à jour depuis 2022) |
 | Couverture | France, départements |
 
@@ -211,7 +211,7 @@ Tableau récapitulatif : `docs/sources/10_sources_inventaire.csv` (T2). Preuves 
 | Fiabilité | `non_verifie` — portail interrompu, pas de date de reprise annoncée |
 | Licence | Etalab 2.0 pour les visuels (page eaufrance) |
 
-**Alternatives vérifiées pour la biodiversité** : OCDE How's Life, bien-être futur (`12_7` indice Liste rouge 2004–2025 ; `12_5`/`12_6` aires protégées terrestres et marines 2004–2024 ; `12_1` couverture naturelle et semi-naturelle) ; Hub'Eau (qualité des eaux, §3.9) ; SDES (pesticides) ; INSEE (indicateurs ODD, dont l'indice d'abondance des oiseaux communs, mission M01) ; Eurostat (mission M02).
+**Alternatives vérifiées pour la biodiversité** : OCDE How's Life, bien-être futur (`12_7` indice Liste rouge 2004–2025 ; `12_5`/`12_6` aires protégées terrestres et marines 2004–2024 ; `12_1` couverture naturelle et semi-naturelle) ; Hub'Eau (qualité des eaux, §4) ; ITDD (eaux souterraines, surfaces protégées, artificialisation, §2.1) ; SDES (pesticides) ; INSEE (indicateurs ODD, dont l'indice d'abondance des oiseaux communs, mission M01) ; Eurostat (mission M02).
 
 ### 2.7 Ademe et Citepa
 **Ademe — portail Data Fair `data.ademe.fr`**
@@ -274,7 +274,7 @@ Voie d'accès documentée au §1.2 (niveau 1, `verifie`). Jeux « résultats » 
 |---|---|
 | Voie d'accès | Rapports **PDF** par vague (vague 1 janvier 2010 → vague 17 février 2026) sur `https://www.sciencespo.fr/cevipof/fr/etudes-enquetes/barometre-confiance-politique/` ; aucun fichier de données ni lien vers des microdonnées trouvé |
 | Niveau / fiabilité | **Exclu** (PDF seulement) / `verifie` (absence de données constatée) |
-| Remarque | L'INSEE cite ce baromètre comme source de son indicateur ODD 16.i4 « Confiance de la population dans les institutions » : **à vérifier en M01** (si l'INSEE publie la série en tableau, c'est la voie d'accès). Alternatives vérifiées : OCDE `14_3` confiance dans le gouvernement (2006–2025, Gallup) ; Eurostat (confiance dans les institutions de l'UE, M02). |
+| Remarque | L'INSEE cite ce baromètre comme source de son indicateur ODD 16.i4 « Confiance de la population dans les institutions » : **à vérifier en M01** (si l'INSEE publie la série en tableau, c'est la voie d'accès). Alternatives vérifiées : OCDE `14_3` confiance dans le gouvernement (2006–2025 ; origine Gallup à confirmer) ; Eurostat (confiance dans les institutions de l'UE, M02). |
 
 ### 2.11 CEPREMAP — Observatoire du bien-être
 | Champ | Valeur |
@@ -282,7 +282,7 @@ Voie d'accès documentée au §1.2 (niveau 1, `verifie`). Jeux « résultats » 
 | Périmètre | Baromètre trimestriel du bien-être des Français (satisfaction dans la vie, sens, bonheur et anxiété la veille, solitude, relations, perspectives), adossé à l'enquête de conjoncture auprès des ménages (CAMME) de l'INSEE |
 | Voie d'accès | Tableau de bord HTML (`https://www.cepremap.fr/Tableau_de_Bord_Bien-Etre.html`), notes et rapports **PDF** ; aucun fichier CSV/XLSX trouvé (pages et code de la page examinés, voir extrait robot) |
 | Niveau / fiabilité | **Exclu** / `verifie` (absence de données téléchargeables constatée) |
-| Remarque | La source primaire est l'INSEE (module bien-être de l'enquête CAMME) : microdonnées diffusées aux chercheurs (réseau Quetelet), non automatisables ; **à poser à M01** : l'INSEE publie-t-il des séries agrégées du module ? Alternative vérifiée : OCDE How's Life `11_1` (satisfaction dans la vie, 2013–2025, 7 points), WHR (§3.5). |
+| Remarque | La source primaire est l'INSEE (module bien-être de l'enquête CAMME) : microdonnées diffusées aux chercheurs (réseau Quetelet), non automatisables ; **à poser à M01** : l'INSEE publie-t-il des séries agrégées du module ? Alternative vérifiée : OCDE How's Life `11_1` (satisfaction dans la vie, 2013–2025, 7 points), WHR (§3.4). |
 
 ### 2.12 Crédoc et Observatoire des inégalités
 - **Crédoc — enquête « Conditions de vie et aspirations »** : diffusion en rapports et notes (site `credoc.fr`, environ 600 études téléchargeables) ; aucun fichier de données trouvé. **Exclu**, `verifie` (absence constatée). Seule exception utile : le **Baromètre du numérique** (terrain Crédoc jusqu'en 2019), désormais publié en microdonnées par l'Arcep/Arcom (§2.9, niveau 2).
@@ -331,15 +331,15 @@ Voie d'accès documentée au §1.2 (niveau 1, `verifie`). Jeux « résultats » 
 | Authentification / format | Aucune / CSV, JSON |
 | Niveau / fiabilité | **2** / `verifie` (11 graphiques + co2-data ouverts) |
 | Licence | CC BY 4.0 pour les contenus OWID ; licence de la source primaire pour les données (V-Dem : CC BY-SA 4.0) |
-| Séries France vérifiées | `freedom-of-expression-index`, `judicial-constraints-on-the-executive-index`, `electoral-democracy-index`, `liberal-democracy-index` (V-Dem, 1789–2025) ; `academic-freedom-index` (V-Dem, 2000–2025) ; `political-rights-score-fh` (2002–2025), `civil-liberties-score-fh` (2003–2025) (Freedom House) ; `ti-corruption-perception-index` (2012–2024) ; `happiness-cantril-ladder` (WHR, 2011–2025, 14 points) ; `press-freedom-index-rsf` (**2013–2021 seulement**) ; `self-reported-trust-attitudes` (WVS/EVS, 5 vagues dont 2004 et 2022) |
+| Séries France vérifiées | `freedom-of-expression-index`, `judicial-constraints-on-the-executive-index`, `electoral-democracy-index`, `liberal-democracy-index` (V-Dem, 1789–2025) ; `academic-freedom-index` (V-Dem, 1900–2025) ; `political-rights-score-fh` (2002–2025), `civil-liberties-score-fh` (2003–2025) (Freedom House) ; `ti-corruption-perception-index` (2012–2024) ; `happiness-cantril-ladder` (WHR, 2011–2025, 14 points) ; `press-freedom-index-rsf` (**2013–2021 seulement**) ; `self-reported-trust-attitudes` (WVS/EVS : 5 vagues, dont 3 depuis 2000, de 2004 à 2022) |
 | Limites | Relais pouvant être en retard ou arrêté (RSF) ; slugs susceptibles de changer. |
 
 **Sources primaires**
 | Source | Voie d'accès vérifiée | Niveau | Fiabilité | Licence | Remarques |
 |---|---|---|---|---|---|
 | **V-Dem** (Varieties of Democracy, v16, mars 2026) | Téléchargement **par formulaire** (courriel obligatoire) sur `https://v-dem.net/data/the-v-dem-dataset/` ; pas de lien direct (essai d'URL directe : 404) ; paquet R `vdemdata` sur GitHub | **Exclu** en direct → passer par OWID (niveau 2) | `verifie` (formulaire constaté) | CC BY-SA 4.0 | Indices composites (démocratie électorale, libérale…) et sous-indices |
-| **RSF** — Classement mondial de la liberté de la presse | `https://rsf.org/sites/default/files/import_classement/<année>.csv` (vérifié pour 2002, 2013, 2026) | **2** | `verifie` | Non trouvée | Score France 2026 : 76,68 (rang 25). **Ruptures** : 2002–2012 échelle « plus bas = mieux » non bornée ; 2013–2021 échelle 0–100 « plus bas = mieux » ; depuis 2022 nouvelle méthode « plus haut = mieux » avec 5 sous-scores. CSV `;`, virgule décimale, encodage variable selon l'année. |
-| **Transparency International** — CPI | `https://images.transparencycdn.org/images/CPI2025_Results.xlsx` (classeur à 6 feuilles) | **2** | `verifie` | CC BY-ND 4.0 (page CPI) | Indice composite de corruption perçue ; méthode comparable depuis 2012 ; URL nouvelle chaque année ; classeur illisible par openpyxl en lecture seule (prévoir un autre lecteur) |
+| **RSF** — Classement mondial de la liberté de la presse | `https://rsf.org/sites/default/files/import_classement/<année>.csv` (vérifié pour 2002, 2013, 2026) | **2** | `verifie` | Non trouvée | France 2026 : score 76,68, rang 25. **Échelles différentes selon les années** (constaté dans les fichiers) : 2002 « plus bas = mieux » (Finlande 0,5 au 1er rang ; France 3,25) ; 2013 : France 78,4 (rang 37) alors qu'OWID donne 21,6 pour la même année, donc le CSV RSF exprime 2013 en « plus haut = mieux » (100 − ancien score) ; depuis 2022 nouvelle méthode (« plus haut = mieux », 5 sous-scores). Colonnes différentes selon l'année ; CSV `;`, virgule décimale, encodage variable. Rupture de méthode en 2022 à traiter. |
+| **Transparency International** — CPI | `https://images.transparencycdn.org/images/CPI2025_Results.xlsx` (classeur à 6 feuilles) | **2** | `verifie` | CC BY-ND 4.0 (page CPI) | Indice composite de corruption perçue ; comparabilité annoncée depuis 2012 (relais OWID 2012–2024) ; URL nouvelle chaque année ; classeur illisible par openpyxl en lecture seule (prévoir un autre lecteur) |
 | **Freedom House** — Freedom in the World | `https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx` ; `…/Country_and_Territory_Ratings_and_Statuses_FIW_1973-2024.xlsx` (vérifiés) | **2** | `verifie` (édition 2024) | Non trouvée | Éditions 2025-2026 : données sur demande (« FIW Data Request ») selon la page du rapport ; OWID relaie jusqu'en 2025. Indice composite. |
 | **World Justice Project** — Rule of Law Index | `https://worldjusticeproject.org/sites/default/files/documents/FINAL_2021_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx` (2012–2021, une feuille par édition) | **2** | `verifie` (fichier 2021) ; éditions postérieures `non_verifie` (fichier non trouvé) | Non trouvée | Indice composite ; scores antérieurs à 2015 non strictement comparables |
 
@@ -391,7 +391,7 @@ Vérification du 13/10/2026 (robot, extraits `banque_mondiale__*.txt` et `owid__
 |---|---|---|---|---|---|
 | labprod | `SL.GDP.PCAP.EM.KD` | Actif | 1995–2025 (n ≥ 2000 : 26) | 2025 : 128 587 $ PPA 2021 | Conserver comme candidat ; doublon partiel Eurostat/OCDE (productivité) |
 | hhcons | `NE.CON.PRVT.PC.KD` | Actif | 1995–2025 (26) | 2025 : 21 276 $ 2015 | Préférer INSEE (consommation par UC, euros) ; doublon |
-| adjnni | `NY.ADJ.NNTY.PC.KD` | Actif mais figé | 1995–2021 (22) | 2021 | Dernière année < 2022 : fragile ; à remplacer si l'OCDE `1_1` convient |
+| adjnni | `NY.ADJ.NNTY.PC.KD` | Actif mais figé | 1995–2021 (22) | 2021 | Satisfait de justesse le critère « dernière valeur ≥ 2020 » ; à remplacer si l'OCDE `1_1` convient |
 | adjsav | `NY.ADJ.SVNG.GN.ZS` | Actif mais figé | 1995–2021 (22) | 2021 : 9,21 % | Série plus mise à jour depuis 2021 (« épargne nette ajustée ») : à abandonner ou à suivre |
 | gini | `SI.POV.GINI` | Actif | 1996–2023 (24) | 2023 : 31,8 | Doublon INSEE/Eurostat (Gini du niveau de vie) : préférer la source nationale |
 | bottom20 | `SI.DST.FRST.20` | Actif | 1996–2023 (24) | 2023 : 7,7 % | Idem (doublon) |
@@ -407,8 +407,8 @@ Vérification du 13/10/2026 (robot, extraits `banque_mondiale__*.txt` et `owid__
 | co2intensity | `EN.ATM.CO2E.PP.GD` | **Archivé** | — | — | Remplaçant vérifié `EN.GHG.CO2.RT.GDP.PP.KD` (kg CO2e par $ PPA 2021, 1995–2024 ; 2024 : 0,073) ; indicateur d'intensité, pertinence à discuter |
 | freexpression | OWID `freedom-of-expression-index` (V-Dem) | Actif | 1789–2025 (26 depuis 2000) | 2025 : 0,959 | Conserver (indice composite V-Dem ; voie OWID) |
 | pressfreedom | OWID `press-freedom-index-rsf` | **Arrêté en 2021** sur OWID | 2013–2021 (9) | 2021 : 22,6 (ancienne échelle) | Remplacer par la source primaire RSF (CSV annuel 2002–2026) en traitant les ruptures 2013 et 2022 |
-| judicialchecks | OWID `judicial-constraints-on-the-executive-index` (V-Dem) | Actif | 2000–2025 (26) | 2025 : 0,945 | Conserver (composite V-Dem) |
-| academicfreedom | OWID `academic-freedom-index` (V-Dem) | Actif | 2000–2025 (26) | 2025 : 0,800 | Conserver (composite V-Dem) |
+| judicialchecks | OWID `judicial-constraints-on-the-executive-index` (V-Dem) | Actif | 1789–2025 (26 depuis 2000) | 2025 : 0,945 | Conserver (composite V-Dem) |
+| academicfreedom | OWID `academic-freedom-index` (V-Dem) | Actif | 1900–2025 (26 depuis 2000) | 2025 : 0,800 | Conserver (composite V-Dem) |
 
 ---
 
@@ -416,13 +416,13 @@ Vérification du 13/10/2026 (robot, extraits `banque_mondiale__*.txt` et `owid__
 
 | Dimension | Sources les plus riches hors INSEE/Eurostat (vérifiées) |
 |---|---|
-| `niveau_de_vie` | OCDE How's Life (`1_5` difficulté à boucler les fins de mois 2004–2025) ; DREES (pauvreté après redistribution) ; BCE/Banque de France (dette, épargne des ménages) |
+| `niveau_de_vie` | OCDE How's Life (`1_5` difficulté à boucler les fins de mois 2004–2025) ; DREES (pauvreté après redistribution) ; BCE/Banque de France (dette, épargne des ménages) ; ITDD (surendettement : dossiers déposés) |
 | `travail` | OCDE (`2_7` longues heures, `2_5` insécurité, `2_9` satisfaction au travail — courte) ; Assurance maladie (accidents du travail, maladies professionnelles) ; DARES non vérifiée |
 | `logement_cadre_vie` | SDES (qualité de l'air, risques d'inondation) ; OCDE (`3_5` chauffage, `9_2`, `9_3`) ; BCE (prix immobiliers) ; Odissé (jours de canicule) |
-| `sante` | Odissé (suicides, tabac, santé mentale) ; DREES (EVSI, accès aux soins) ; OCDE (`5_3` décès par suicide/alcool/drogues, mortalité évitable) ; OMS |
-| `education` | DEPP (examens, évaluations — séries courtes) ; OCDE (PISA, PIAAC via How's Life) ; Baromètre du numérique |
+| `sante` | Odissé (suicides, tabac, santé mentale) ; DREES (accès aux soins APL ; EVSI figée à 2018) ; OCDE (`5_3` décès par suicide/alcool/drogues, mortalité évitable) ; OMS |
+| `education` | DEPP (réussite au bac par origine sociale depuis 1998 ; évaluations — séries courtes) ; ITDD (jeunes en difficulté de lecture) ; OCDE (PISA, PIAAC via How's Life) ; Baromètre du numérique |
 | `liens_bien_etre` | OCDE (`7_1` soutien social, `11_2` affects négatifs 2006–2025 ; `11_1` satisfaction, `7_4` solitude — courtes) ; WHR (2011–2025) ; Odissé (Baromètre 2024) ; CEPREMAP exclu |
-| `securite_confiance` | SSMSI (délinquance enregistrée, sentiment d'insécurité) ; OCDE (`10_2` sécurité la nuit 2006–2025, `10_1`, `10_3`, `14_1` confiance dans les autres) ; ONISR |
-| `democratie` | V-Dem via OWID (2000–2025), Freedom House, RSF (2002–2026), CPI (2012–2025), WGI (1996–2025), WJP (2012–2021) ; Intérieur (participation électorale 1999–2026) ; OCDE (`14_3` confiance dans le gouvernement 2006–2025, `14_5` parité, `14_7` bénévolat) ; CEVIPOF exclu |
-| `egalites` | DREES (redistribution) ; PNUD (IDH ajusté, inégalités de genre) ; OCDE (IDD, patrimoine) ; WID non vérifié |
+| `securite_confiance` | SSMSI (délinquance enregistrée, sentiment d'insécurité, taux de plainte) ; ITDD (taux d'infractions) ; OCDE (`10_2` sécurité la nuit 2006–2025, `10_1`, `10_3`, `14_1` confiance dans les autres) ; ONISR |
+| `democratie` | V-Dem via OWID (1789–2025), Freedom House, RSF (2002–2026), CPI (2012–2025), WGI (1996–2025), WJP (2012–2021) ; Intérieur (participation électorale 1999–2026) ; OCDE (`14_3` confiance dans le gouvernement 2006–2025, `14_5` parité, `14_7` bénévolat) ; CEVIPOF exclu |
+| `egalites` | DREES (redistribution ; baromètre d'opinion, microdonnées 2000–2024 sur la perception des inégalités) ; PNUD (IDH ajusté, inégalités de genre) ; OCDE (IDD, patrimoine) ; WID non vérifié |
 | `planete` | SDES (empreinte carbone, air) ; Citepa (inventaire 1990–2025) ; EDGAR ; OCDE bien-être futur (Liste rouge, aires protégées, empreinte matières, recyclage, nutriments) ; Hub'Eau ; GFN non vérifié ; ONB indisponible |

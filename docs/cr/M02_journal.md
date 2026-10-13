@@ -21,3 +21,14 @@ Périmètre du lancement en cours : **phase 1** (A1 fiche source + statut des s�
   - Limite de débit du proxy WebFetch (HTTP 429) à deux reprises ; pages non lues et non redemandées : `sdmx/2.1/categoryscheme/ESTAT/sdg`, `sdmx/2.1/categoryscheme/ESTAT/economy`, `sdmx/2.1/dataflow/ESTAT/ILC_LI02?references=parents`. Rythme ralenti ensuite (pauses de 45 à 70 s).
   - `dataflow/ESTAT/ILC_LI02?references=categorisation` refusé (erreur client) : la recherche du chemin d'un jeu par ses catégorisations n'est pas possible ainsi.
   - Constat : TOC `lang=fr` en retard sur `lang=en` (dates de mise à jour différentes pour un même jeu).
+
+---
+
+# Phase 2 (A2, A3, A4, B) — nouvel agent (session neuve, décision D13)
+
+## 2026-10-13 15:05 — Sous-tâche 2.0 : reprise et mise en place
+
+- **Fait** : branche `m02-eurostat` recréée depuis `origin/m02-eurostat` (995af17) et fusion de `origin/main` (charte v1.1, journal D13–D22, fiches M05/M06) ; lecture de `CLAUDE.md`, charte, journal des décisions (D13 à D22, notamment D21 sur les ventilations), fiche M02, livrables de phase 1 (ce journal, `docs/sources/eurostat.md`, `docs/sources/eurostat_amorce_prototypes.csv`, fixtures), `docs/archives/prototypes_indicateurs.csv`, `scripts/lancer_collecte.py`, `scripts/actions.py`, `.github/workflows/collecte.yml`, `src/scoring/calcul.py`.
+- **Résultat** : état de départ = fiche source complète (sections 7 et 9 encore à remplir), 7 fixtures reconstituées par WebFetch, **27 séries d'amorce statuées sur 66** (25 disponibles, 1 sans donnée FR, 2 non vérifiées). Tests existants : 14 passent.
+- **Plan** : (1) module `src/sources/eurostat.py` + logique de catalogue `src/pipeline/catalogue_eurostat.py` + tests hors ligne ; (2) script reprenable `scripts/collecte_eurostat.py` (étapes : échantillons réels pour les fixtures, amorce des 66 séries, niveau 1 sur le TOC complet, niveau 2 par jeu candidat) avec fichier d'état `catalogues/eurostat_etat_collecte.json` ; (3) premier passage du robot en mode essai (niveau 2 limité), remplacement des fixtures reconstituées par les réponses réelles, corrections, puis passages complets.
+- **Problèmes** : aucun.

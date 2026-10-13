@@ -1,6 +1,6 @@
 # drees / ods_catalogue_export
 # URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T14:24:41Z — HTTP 200 — text/csv; charset=utf-8 — 641863 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:42:47Z — HTTP 200 — text/csv; charset=utf-8 — 641863 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'custom.themes-niveau-2', 'custom.themes-niveau-3', 'custom.version', 'custom.date-de-creation', 'custom.frequence-de-mise-a-jour', 'custom.periode-de-temps', 'custom.code-source', 'custom.pieces-jointes', 'datasetid']
 265 lignes ; 265 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
@@ -118,16 +118,16 @@ indicateurs-issus-du-premier-certificat-de-lenfant	Indicateurs issus du premier 
 er-causes-de-deces-tableau_pour_carte_regionales_tumeurs	ER Causes de décès - tableau_pour_carte_regionales_tumeurs	2025-07-04T06:34:14+00:00	18	
 431_le-barometre-d-opinion	Le baromètre d'opinion	2026-07-07T13:56:34.084000+00:00	0	DREES/SEEE/BRE
 loffre-de-soins-hospitaliers-en-psychiatrie-evolutions-de-2008-a-2019-et-dispari	L’offre de soins hospitaliers en psychiatrie : évolutions de 2008 à 2019 et disparités territoriales	2023-09-12T13:20:35+00:00	0	DREES/OSAM/BES
-graphique-er-non-recours-pa	Graphique- ER - non recours-PA	2026-07-06T14:58:00+00:00	6	
-graph-geste-auto-infliges-2012-2025-v2	Graph geste auto infliges 2012-2025	2026-05-06T10:05:15+00:00	14	
 dd_ase_2026_graph_dyn-cp	DD_ASE_2026_graph_dyn - CP	2026-06-29T07:32:22+00:00	29	
 graph_dyn_dd_complementaire_sante	Graph_dyn_DD_complementaire_santé	2026-03-27T10:17:08+00:00	12	
-testparts_pib_france_ue27	CPS-Parts_PIB_france_ue27	2025-12-18T11:34:08+00:00	6	
 619_indicateurs-financiers	ISD - Indicateurs financiers	2026-10-06T09:04:45.605000+00:00	29391	DREES/OSOL/BCL
 376_les-depenses-d-aide-sociale-departementale	Les dépenses d'aide sociale départementale	2026-04-17T12:11:26.497000+00:00	0	DREES/OSOL/BCL
-formes-geographiques-des-regions-en-svg	[Pour visualisation] Formes géographiques des régions en SVG	2021-11-10T14:58:55+00:00	18	
-graphique-er-suicide-complet	Graphique-ER-Suicide-Complet	2026-01-23T09:15:13+00:00	10	
 les-beneficiaires-de-l-aide-sociale-a-l-enfance	Les bénéficiaires de l'aide sociale à l'enfance	2026-09-03T12:31:00.448000+00:00	0	DREES/OSOL/BCL
+graphique-er-suicide-complet	Graphique-ER-Suicide-Complet	2026-01-23T09:15:13+00:00	10	
+graphique-er-non-recours-pa	Graphique- ER - non recours-PA	2026-07-06T14:58:00+00:00	6	
+graph-geste-auto-infliges-2012-2025-v2	Graph geste auto infliges 2012-2025	2026-05-06T10:05:15+00:00	14	
+formes-geographiques-des-regions-en-svg	[Pour visualisation] Formes géographiques des régions en SVG	2021-11-10T14:58:55+00:00	18	
+testparts_pib_france_ue27	CPS-Parts_PIB_france_ue27	2025-12-18T11:34:08+00:00	6	
 305_les-comptes-de-la-protection-sociale	Les comptes de la protection sociale	2025-12-18T05:00:00+00:00	15654	DREES/SEEE/BACS
 datastory-oc-9-1-prise-en-charge-tm-hopital	Datastory OC - 3.1 Prise en charge pour une opération de la cataracte à l'hôpital	2026-09-23T14:06:20.941000+00:00	72	
 departretraite-et-incapacite	Âge de départ à la retraite et conditions de fin de carrière des personnes handicapées	2021-08-02T09:25:03+00:00	72	DREES/OSOL/BRET

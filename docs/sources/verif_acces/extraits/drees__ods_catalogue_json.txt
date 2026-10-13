@@ -1,6 +1,6 @@
 # drees / ods_catalogue_json
 # URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T12:04:30Z — HTTP 200 — application/json; charset=utf-8 — 9675 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T13:15:00Z — HTTP 200 — application/json; charset=utf-8 — 5745 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 265,
@@ -83,79 +83,78 @@
   },
   {
    "visibility": "domain",
-   "fields": [
-    {
-     "name": "annee",
-     "description": "Année à laquelle le montant est rattaché.",
-     "annotations": {
-      "timeserie_precision": "hour",
-      "facet": true,
-      "facetsort": "-alphanum",
-      "disjunctive": true
-     },
-     "label": "annee",
-     "type": "text"
-    },
-    {
-     "name": "poste_niv",
-     "description": "Niveau d’agrégation du poste. « 0 » correspond à la CSBM, l’agrégat total.",
-     "annotations": {},
-     "label": "poste_niv",
-     "type": "text"
-    },
-    {
-     "name": "poste",
-     "description": "Code unique d’identification du poste. Pour certains types de soins, les dépenses en centres de santé et en libéral sont enregistrées dans deux modalités distinctes dans la nomenclature de postes. Dans ce jeu de données, elles sont agrégées et le code du poste correspond à la juxtaposition des deux codes par lieux.",
-     "annotations": {},
-     "label": "poste",
-     "type": "text"
-    },
-    {
-     "name": "poste_lib",
-     "description": "Libellé du poste des comptes de la santé auquel le montant est rattaché.",
-     "annotations": {
-      "facet": true,
-      "facetsort": "-alphanum",
-      "disjunctive": true
-     },
-     "label": "poste_lib",
-     "type": "text"
-    },
-    {
-     "name": "type",
-     "description": "Nature du montant : \n- « valeur » correspond aux dépenses de santé en euros de l’année courante, \n- « tc_val » correspond au taux de croissance de la valeur (en %),\n- « tc_vol » correspond au taux de croissance du volume (en %),\n- « tc_prix » correspond au taux de croissance du prix (en %),\n- « vol_pap » correspond au volume aux prix de l’année précédente (en euros de l’année précédente),\n- « vol_ch » correspond aux volumes chaînés depuis l’année 2010, \n- « i_prix » correspond à l’indice de prix chaîné depuis l’année 2010.\n",
-     "annotations": {
-      "facet": true,
-      "disjunctive": true
-     },
-     "label": "type",
-     "type": "text"
-    },
-    {
-     "name": "montant",
-     "description": "Valeur numérique.",
-     "annotations": {
-      "facetsort": "-count",
-      "decimals": 2
-     },
-     "label": "montant",
-     "type": "double"
-    }
-   ],
-   "dataset_id": "comptes_de_la_sante_partage_volume_prix",
-   "dataset_uid": "da_rxucsp",
-   "has_records": true,
-   "features": [
-    "analyze"
-   ],
+   "fields": [],
+   "dataset_id": "374_le-fond-d-aide-aux-jeunes-faj",
+   "dataset_uid": "da_3kauyb",
+   "has_records": false,
+   "features": [],
    "attachments": [
     {
-     "id": "nomenclature_poste_cns_diffusion_xlsx",
-     "title": "nomenclature_poste_cns_diffusion.xlsx",
+     "id": "faj_donnees_mensuelles_departementales_2020_2021_xlsx",
+     "title": "FAJ - Données mensuelles départementales 2020-2021.xlsx",
      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/comptes_de_la_sante_partage_volume_prix/attachments/nomenclature_poste_cns_diffusion_xlsx"
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/374_le-fond-d-aide-aux-jeunes-faj/attachments/faj_donnees_mensuelles_departementales_2020_2021_xlsx"
+    },
+    {
+     "id": "faj_donnees_annuelles_departementales_2007_2022_xlsx",
+     "title": "FAJ - Données annuelles départementales 2007-2022.xlsx",
+     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/374_le-fond-d-aide-aux-jeunes-faj/attachments/faj_donnees_annuelles_departementales_2007_2022_xlsx"
     }
    ],
    "alternative_exports": [],
    "data_visible": true,
-   "
+   "metas": {
+    "default": {
+     "title": "Le fonds d'aide aux jeunes (FAJ)",
+     "description": "<p>Données départementales sur le fonds d'aide aux jeunes.<br/></p>",
+     "theme": [
+      "Minima sociaux et Pauvreté",
+      "Enfance, jeunesse, famille",
+      "Système de protection sociale"
+     ],
+     "keyword": [
+      "aide départementale",
+      "jeunesse",
+      "fonds d'aide aux jeunes",
+      "FAJ"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "language": "fr",
+     "metadata_languages": null,
+     "timezone": null,
+     "modified": "2024-02-15T09:42:04.676000+00:00",
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": false,
+     "data_processed": null,
+     "metadata_processed": "2024-02-15T09:42:12.531000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DREES/OSOL/BCL",
+     "references": null,
+     "records_count": 0,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": "sgsocialgouv",
+     "update_frequency": null
+    },
+    "custom": {
+     "themes-niveau-2": [
+      "Minima sociaux et prestations à destination des ménages modestes",
+      "Aide et action sociales des collectivités locales",
+      "Situation des enfants, familles et jeunes adultes"
+     ],
+    

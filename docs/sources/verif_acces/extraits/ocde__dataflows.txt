@@ -1,6 +1,6 @@
 # ocde / dataflows
 # URL : https://sdmx.oecd.org/public/rest/dataflow/all
-# Vérifié le 2026-10-13T12:05:50Z — HTTP 200 — application/vnd.sdmx.structure+xml; charset=utf-8; version=2.1 — 8915827 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T13:16:13Z — HTTP 200 — application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8 — 8917087 octets lus (taille annoncée : inconnue)
 
 1547 correspondances distinctes du motif 'Dataflow id="([^"]+)" agencyID="([^"]+)" version="([^"]+)"[^>]*>(?:(?!</structure:Dataflow>)[\\s\\S])*?<common:Name xml:lang="en">([^<]+)<' :
 SEEA_AEA_A	ESTAT	1.4	Air Emissions Accounts

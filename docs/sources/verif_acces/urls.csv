@@ -112,3 +112,13 @@ spf_odisse,canicules_jours_france_csv,https://odisse.santepubliquefrance.fr/api/
 depp,bac_origine_sociale_records,https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale/records?limit=2,100000,complet
 cnam_ameli,sinistralite_secteur_records,https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1/records?limit=2,100000,complet
 dares,accueil,https://dares.travail-emploi.gouv.fr/,600000,"regex:href=\""([^\""]+(?:xlsx|csv|donnees)[^\""]*)\"""
+data_gouv,permalien_ssmsi_series_chrono_csv,https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f,40000000,colonne:Titre
+drees,barometre_opinion_2000_2024_csv,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2024_diff_csv,100000,
+drees,evsi_xlsx,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/3457_esperance-de-vie-sans-incapacite/attachments/esperance_de_vie_et_esperance_de_vie_sans_incapacitexlsx,20000000,
+fixture_opendatasoft,drees_catalogue_limit1,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets?limit=1&select=dataset_id%2Cmetas,200000,complet
+fixture_ocde,hsl_cwb_fra_2024,"https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.10_2+7_1+11_1......?startPeriod=2022&format=csvfilewithlabels",400000,complet
+fixture_oms,gho_mh12_fra_top3,https://ghoapi.azureedge.net/api/MH_12?$filter=SpatialDim%20eq%20%27FRA%27&$top=3,200000,complet
+fixture_hubeau,nappes_nitrates_size1,https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340&size=1,200000,complet
+fixture_bce,qsa_dette_menages_2024,https://data-api.ecb.europa.eu/service/data/QSA/Q.N.FR.W0.S1M.S1.N.L.LE.F4.T._Z.XDC_R_B6GA_CY._T.S.V.N._T?format=csvdata&startPeriod=2024,200000,complet
+fixture_ademe,datafair_size2,"https://data.ademe.fr/data-fair/api/v1/datasets?size=2&select=id,title,updatedAt,count",200000,complet
+fixture_dido,datasets_page1,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datasets?page=1&pageSize=10,3000000,"regex:""(?:id|rid|title)""\s*:\s*""([^""]{3,160})"""

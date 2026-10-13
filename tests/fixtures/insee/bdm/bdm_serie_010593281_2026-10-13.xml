@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Fixture RECONSTITUÉE (mission M01, 2026-10-13).
+  Requête réelle : GET https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010593281 (série complète)
+  Série « Satisfaction dans la vie - Ensemble » (dataflow ODD-SANTE-BIEN-ETRE), annuelle, France métropolitaine.
+  Réponse lue le 2026-10-13 vers 13:26 (heure de Paris) avec l'outil de lecture de page web, qui ne recopie
+  pas le XML brut : attributs et valeurs extraits un à un puis réassemblés ici ; valeurs 2010-2016 vérifiées
+  par une seconde requête (startPeriod=2010&endPeriod=2016). L'en-tête (Sender, Structure, Source) n'a pas été
+  relu pour cette requête : il est repris de la requête SERIES_BDM/001688527 du même jour, de forme identique
+  pour toute requête SERIES_BDM ; message:ID et message:Prepared sont ceux de cette requête.
+  Remarque : l'année 2025 est présente avec OBS_VALUE="NaN" (valeur manquante, OBS_STATUS="O").
+-->
+<message:StructureSpecificData xmlns:ss="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" xmlns:footer="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message/footer" xmlns:ns1="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=FR1:SERIES_BDM(1.0):ObsLevelDim:TIME_PERIOD" xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <message:Header>
+    <message:ID>SERIES_BDM_1791890781114</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2026-10-13T13:26:21</message:Prepared>
+    <message:Sender id="FR1">
+      <common:Name xml:lang="fr">Institut national de la statistique et des études économiques</common:Name>
+    </message:Sender>
+    <message:Structure structureID="FR1_SERIES_BDM_1_0" namespace="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=FR1:SERIES_BDM(1.0):ObsLevelDim:TIME_PERIOD" dimensionAtObservation="TIME_PERIOD">
+      <common:StructureUsage>
+        <Ref agencyID="FR1" id="SERIES_BDM" version="1.0"/>
+      </common:StructureUsage>
+    </message:Structure>
+    <message:Source xml:lang="fr">Banque de données macro-économiques</message:Source>
+  </message:Header>
+  <message:DataSet ss:dataScope="DataStructure" xsi:type="ns1:DataSetType" ss:structureRef="FR1_SERIES_BDM_1_0">
+    <Series IDBANK="010593281" FREQ="A" TITLE_FR="Satisfaction dans la vie - Ensemble" TITLE_EN="Satisfaction in life - All" LAST_UPDATE="2026-05-27" UNIT_MEASURE="NOTE_MOYENNE_0_10" UNIT_MULT="0" REF_AREA="FM" DECIMALS="1">
+      <Obs TIME_PERIOD="2025" OBS_VALUE="NaN" OBS_STATUS="O" OBS_QUAL="DEF" OBS_TYPE="O"/>
+      <Obs TIME_PERIOD="2024" OBS_VALUE="7.2" OBS_STATUS="A" OBS_REV="1" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2023" OBS_VALUE="7.2" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2022" OBS_VALUE="7.1" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2021" OBS_VALUE="6.8" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2020" OBS_VALUE="7.2" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2019" OBS_VALUE="7.3" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2018" OBS_VALUE="7.3" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2017" OBS_VALUE="7.2" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2016" OBS_VALUE="7.2" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2015" OBS_VALUE="7.2" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2014" OBS_VALUE="7.1" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2013" OBS_VALUE="7.1" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2012" OBS_VALUE="7.5" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2011" OBS_VALUE="7.3" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+      <Obs TIME_PERIOD="2010" OBS_VALUE="7.3" OBS_STATUS="A" OBS_QUAL="DEF" OBS_TYPE="A"/>
+    </Series>
+  </message:DataSet>
+</message:StructureSpecificData>

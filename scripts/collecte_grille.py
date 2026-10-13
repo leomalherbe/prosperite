@@ -112,24 +112,94 @@ def parcourir_zip(contenu: bytes, prefixe: str, inventaire: list[str]) -> None:
                 print(f"  extrait : {nom} -> {len(texte)} caractères")
 
 
+URL_EUROPEPMC_SUPP = "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12488500/supplementaryFiles"
+URL_ZENODO = "https://zenodo.org/api/records/15688961"
+URL_NATURE = "https://www.nature.com/articles/s41586-025-09385-1"
+TAILLE_MAX = 60_000_000
+
+
+def telecharger(url: str) -> requests.Response | None:
+    try:
+        rep = requests.get(url, headers=ENTETES, timeout=300, allow_redirects=True)
+    except requests.RequestException as exc:
+        print(f"  {url} : erreur réseau {exc!r}")
+        return None
+    print(f"  {url} : HTTP {rep.status_code} ; {rep.headers.get('Content-Type')} ; {len(rep.content)} octets")
+    return rep
+
+
+def deposer(nom: str, contenu: bytes, inventaire: list[str]) -> None:
+    """Traite un fichier téléchargé (archive ou document isolé)."""
+    inventaire.append(f"{nom}\t{len(contenu)} octets")
+    if contenu.startswith(b"PK") and not nom.lower().endswith((".xlsx", ".xlsm", ".docx")):
+        parcourir_zip(contenu, nom + "/", inventaire)
+        return
+    try:
+        texte = traiter(nom, contenu)
+    except Exception as exc:
+        texte = f"[erreur d'extraction : {exc!r}]"
+    if texte is not None:
+        (SORTIE / (_nom_sur(nom) + ".txt")).write_text(texte, encoding="utf-8")
+        print(f"  extrait : {nom} -> {len(texte)} caractères")
+
+
 def main() -> int:
     SORTIE.mkdir(parents=True, exist_ok=True)
-    print(f"Téléchargement : {URL_ORA_ZIP}")
-    rep = requests.get(URL_ORA_ZIP, headers=ENTETES, timeout=300, allow_redirects=True)
-    print(f"HTTP {rep.status_code} ; type {rep.headers.get('Content-Type')} ; {len(rep.content)} octets")
-    if rep.status_code != 200 or not rep.content.startswith(b"PK"):
-        print("Échec : la réponse n'est pas une archive ZIP.")
-        print(rep.text[:500])
-        return 1
     inventaire: list[str] = []
-    parcourir_zip(rep.content, "", inventaire)
+    obtenu = False
+
+    print("1. ORA (archive des documents supplémentaires)")
+    rep = telecharger(URL_ORA_ZIP)
+    if rep is not None and rep.status_code == 200 and rep.content.startswith(b"PK"):
+        deposer("ora_supplementary.zip", rep.content, inventaire)
+        obtenu = True
+
+    print("2. Europe PMC (fichiers supplémentaires de PMC12488500)")
+    rep = telecharger(URL_EUROPEPMC_SUPP)
+    if rep is not None and rep.status_code == 200 and rep.content.startswith(b"PK"):
+        deposer("europepmc_supplementary.zip", rep.content, inventaire)
+        obtenu = True
+
+    print("3. Zenodo (données et code, DOI 10.5281/zenodo.15688961)")
+    rep = telecharger(URL_ZENODO)
+    if rep is not None and rep.status_code == 200:
+        try:
+            fiche = rep.json()
+        except ValueError:
+            fiche = {}
+        (SORTIE / "zenodo_fiche.txt").write_text(
+            f"titre : {fiche.get('metadata', {}).get('title')}\nversion : {fiche.get('metadata', {}).get('version')}\n"
+            f"description : {fiche.get('metadata', {}).get('description')}\n", encoding="utf-8"
+        )
+        for f in fiche.get("files", []):
+            nom, taille = f.get("key", "?"), f.get("size", 0)
+            lien = f.get("links", {}).get("self")
+            print(f"  fichier Zenodo : {nom} ({taille} octets)")
+            if lien and taille and taille < TAILLE_MAX:
+                r2 = telecharger(lien)
+                if r2 is not None and r2.status_code == 200:
+                    deposer("zenodo_" + nom, r2.content, inventaire)
+                    obtenu = True
+
+    print("4. Nature (liens des documents supplémentaires dans la page de l'article)")
+    rep = telecharger(URL_NATURE)
+    if rep is not None and rep.status_code == 200:
+        liens = sorted(set(re.findall(r'https://static-content\.springer\.com/esm/[^"\']+', rep.text)))
+        for lien in liens:
+            print(f"  lien supplémentaire : {lien}")
+            r2 = telecharger(lien)
+            if r2 is not None and r2.status_code == 200:
+                deposer("nature_" + lien.rsplit("/", 1)[-1], r2.content, inventaire)
+                obtenu = True
+
     (SORTIE / "00_inventaire.txt").write_text(
-        f"Source : {URL_ORA_ZIP} (ORA, CC BY 4.0)\n" + "\n".join(inventaire) + "\n", encoding="utf-8"
+        "Sources tentées : ORA, Europe PMC, Zenodo, Nature (voir le journal d'exécution)\n" + "\n".join(inventaire) + "\n",
+        encoding="utf-8",
     )
-    print("Inventaire de l'archive :")
+    print("Inventaire :")
     for ligne in inventaire:
         print("  " + ligne)
-    return 0
+    return 0 if obtenu else 1
 
 
 if __name__ == "__main__":

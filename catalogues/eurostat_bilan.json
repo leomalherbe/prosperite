@@ -1,0 +1,135 @@
+{
+ "date": "2026-10-13T13:25:04Z",
+ "etapes": {
+  "echantillons": {
+   "version": 1,
+   "termine": true,
+   "date": "2026-10-13T13:23:04Z",
+   "nb_fichiers": 15
+  },
+  "amorce": {
+   "version": 1,
+   "termine": true,
+   "date": "2026-10-13T13:23:35Z",
+   "bilan": {
+    "disponible": 55,
+    "disponible (série courte)": 6,
+    "sans donnée FR": 3,
+    "à remplacer": 2
+   },
+   "nb": 66
+  },
+  "niveau1": {
+   "version": 1,
+   "termine": true,
+   "date": "2026-10-13T13:24:05Z",
+   "bilan": {
+    "entrees_toc": 12234,
+    "codes_distincts_par_type": {
+     "dataset": 6649,
+     "folder": 1878,
+     "table": 911
+    },
+    "jeux": 6649,
+    "jeux_par_filtre": {
+     "retenu": 2715,
+     "exclu": 2223,
+     "hors filtre": 1711
+    },
+    "jeux_retenus_par_filtres": 2715,
+    "jeux_infra_annuels": 496,
+    "candidats": 2413,
+    "candidats_par_rattrapage": 485,
+    "candidats_par_dimension": {
+     "planete": 476,
+     "travail": 456,
+     "education": 446,
+     "niveau_de_vie": 357,
+     "logement_cadre_vie": 253,
+     "sante": 245,
+     "securite_confiance": 59,
+     "egalites": 47,
+     "democratie": 42,
+     "liens_bien_etre": 30,
+     "": 2
+    },
+    "candidats_par_dossier": {
+     "(mots-clés)": 774,
+     "revenus_conditions_de_vie": 332,
+     "marche_du_travail": 293,
+     "education_formation": 286,
+     "sante": 158,
+     "environnement": 124,
+     "numerique": 92,
+     "energie": 76,
+     "population": 69,
+     "qualite_de_vie": 68,
+     "sdg": 67,
+     "culture": 24,
+     "criminalite": 23,
+     "securite_transports": 18,
+     "comptes_nationaux": 9
+    },
+    "jeux_prioritaires_non_candidats_par_motif": {
+     "exclu": 1164,
+     "hors filtre": 558,
+     "infra-annuel (trimestrielle)": 125,
+     "infra-annuel (mensuelle)": 27,
+     "infra-annuel (hebdomadaire)": 14,
+     "infra-annuel (semestrielle)": 5
+    }
+   }
+  },
+  "niveau2": {
+   "version": 1,
+   "termine": false,
+   "debut": "2026-10-13T13:24:05Z",
+   "restants": 2373
+  }
+ },
+ "niveau2_statuts": {
+  "ok": 38,
+  "sans_donnee_fr": 2
+ },
+ "series": {
+  "lignes": 3388,
+  "series_defaut": 3259,
+  "series_eligibles": 2780,
+  "lignes_ventilation": 129,
+  "jeux_avec_series": 38,
+  "series_defaut_par_dimension": {
+   "education": 1110,
+   "niveau_de_vie": 1088,
+   "planete": 974,
+   "travail": 43,
+   "securite_confiance": 26,
+   "sante": 11,
+   "egalites": 3,
+   "democratie": 2,
+   "liens_bien_etre": 1,
+   "logement_cadre_vie": 1
+  },
+  "series_eligibles_par_dimension": {
+   "niveau_de_vie": 1084,
+   "planete": 971,
+   "education": 654,
+   "travail": 43,
+   "securite_confiance": 13,
+   "sante": 9,
+   "egalites": 3,
+   "democratie": 2,
+   "logement_cadre_vie": 1
+  },
+  "jeux_avec_serie_eligible_par_dimension": {
+   "democratie": 1,
+   "education": 5,
+   "egalites": 2,
+   "logement_cadre_vie": 1,
+   "niveau_de_vie": 5,
+   "planete": 11,
+   "sante": 3,
+   "securite_confiance": 2,
+   "travail": 4
+  }
+ }
+}

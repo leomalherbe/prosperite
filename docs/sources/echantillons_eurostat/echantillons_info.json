@@ -1,0 +1,148 @@
+{
+ "toc_en_extrait.txt": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/catalogue/toc/txt?lang=en",
+  "lignes_toc_complet": 12235,
+  "octets_toc_complet": 1967744,
+  "date": "2026-10-13T13:22:50Z"
+ },
+ "toc_fr_extrait.txt": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/catalogue/toc/txt?lang=fr",
+  "lignes_toc_complet": 12235,
+  "octets_toc_complet": 2155194,
+  "date": "2026-10-13T13:22:53Z"
+ },
+ "dataflow_SDG_01_10_referencepartial.xml": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/SDG_01_10?references=descendants&detail=referencepartial",
+  "statut_http": 200,
+  "content_type": "application/vnd.sdmx.structure+xml;version=2.1",
+  "content_encoding": "",
+  "octets": 85094,
+  "duree_s": 0.35,
+  "gzip": false,
+  "date": "2026-10-13T13:22:54Z"
+ },
+ "dataflow_ILC_LI02_referencepartial.xml": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/ILC_LI02?references=descendants&detail=referencepartial",
+  "statut_http": 200,
+  "content_type": "application/vnd.sdmx.structure+xml;version=2.1",
+  "content_encoding": "",
+  "octets": 112839,
+  "duree_s": 0.38,
+  "gzip": false,
+  "date": "2026-10-13T13:22:54Z"
+ },
+ "datastructure_SDG_01_10.xml": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/datastructure/ESTAT/SDG_01_10",
+  "statut_http": 200,
+  "content_type": "application/vnd.sdmx.structure+xml;version=2.1",
+  "content_encoding": "",
+  "octets": 5913,
+  "duree_s": 0.39,
+  "gzip": false,
+  "date": "2026-10-13T13:22:54Z"
+ },
+ "sdg_01_10_FR_fr.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_10?geo=FR&lang=fr",
+  "statut_http": 200,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 6205,
+  "duree_s": 0.39,
+  "gzip": false,
+  "date": "2026-10-13T13:22:55Z"
+ },
+ "sdg_08_10_FR_2022_fr.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_10?geo=FR&lang=fr&time=2022",
+  "statut_http": 200,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 5743,
+  "duree_s": 0.38,
+  "gzip": false,
+  "date": "2026-10-13T13:22:55Z"
+ },
+ "ilc_li02_FR_T_PC_depuis2015_fr.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?geo=FR&sex=T&unit=PC&sinceTimePeriod=2015&lang=fr",
+  "statut_http": 200,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 37854,
+  "duree_s": 0.94,
+  "gzip": false,
+  "date": "2026-10-13T13:22:56Z"
+ },
+ "sdg_01_10_FR_lastTimePeriod3_fr.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_10?geo=FR&lastTimePeriod=3&lang=fr",
+  "statut_http": 200,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 5539,
+  "duree_s": 0.6,
+  "gzip": false,
+  "date": "2026-10-13T13:22:57Z"
+ },
+ "sdg_10_20_FR_fr.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_20?geo=FR&lang=fr",
+  "statut_http": 200,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 4304,
+  "duree_s": 0.42,
+  "gzip": false,
+  "date": "2026-10-13T13:22:57Z"
+ },
+ "erreur_modalite_inexistante.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_10?geo=FR&unit=XXX&lang=fr",
+  "statut_http": 200,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 6171,
+  "duree_s": 0.63,
+  "gzip": false,
+  "date": "2026-10-13T13:22:58Z"
+ },
+ "erreur_jeu_inexistant.json": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/zzz_inexistant?geo=FR&lang=fr",
+  "statut_http": 404,
+  "content_type": "application/json",
+  "content_encoding": "",
+  "octets": 138,
+  "duree_s": 0.36,
+  "gzip": false,
+  "date": "2026-10-13T13:22:58Z"
+ },
+ "erreur_structure_inexistante.xml": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/ZZZ_INEXISTANT?references=descendants&detail=referencepartial",
+  "statut_http": 404,
+  "content_type": "application/xml",
+  "content_encoding": "",
+  "octets": 249,
+  "duree_s": 0.36,
+  "gzip": false,
+  "date": "2026-10-13T13:22:58Z"
+ },
+ "sdmx_SDG_08_10_FR_tsv_compresse.tsv": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/SDG_08_10/A..B1GQ.FR?format=TSV&compressed=true&startPeriod=2018",
+  "statut_http": 200,
+  "content_type": "text/tab-separated-values",
+  "content_encoding": "",
+  "octets": 180,
+  "duree_s": 0.39,
+  "gzip": true,
+  "date": "2026-10-13T13:22:59Z",
+  "octets_decompresses": 236
+ },
+ "metabase_extrait.txt": {
+  "url": "https://ec.europa.eu/eurostat/api/dissemination/catalogue/metabase.txt.gz",
+  "statut_http": 200,
+  "content_type": "application/octet-stream;charset=UTF-8",
+  "content_encoding": "",
+  "octets": 4064878,
+  "duree_s": 4.97,
+  "gzip": true,
+  "date": "2026-10-13T13:23:04Z",
+  "octets_decompresses": 34140490,
+  "lignes": 1344860,
+  "jeux_distincts": 7600
+ }
+}

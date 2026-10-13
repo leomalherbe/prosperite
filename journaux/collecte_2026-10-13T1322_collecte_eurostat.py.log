@@ -1,0 +1,141 @@
+
+===== collecte_eurostat.py =====
+[13:22:47] Collecte Eurostat — étapes demandées : echantillons, amorce, niveau1, niveau2 ; durée max 270 min ; niveau 2 : 40 jeux par passage
+[13:22:47] === Étape 0 : échantillons de réponses réelles ===
+[13:22:47] Téléchargement du TOC (en)…
+[13:22:50] TOC en : 1,967,646 caractères, 12,235 lignes
+[13:22:50] Téléchargement du TOC (fr)…
+[13:22:53] TOC fr : 2,120,378 caractères, 12,235 lignes
+[13:22:54]   dataflow_SDG_01_10_referencepartial.xml : HTTP 200, 85,094 octets, 0.35 s
+[13:22:54]   dataflow_ILC_LI02_referencepartial.xml : HTTP 200, 112,839 octets, 0.38 s
+[13:22:54]   datastructure_SDG_01_10.xml : HTTP 200, 5,913 octets, 0.39 s
+[13:22:55]   sdg_01_10_FR_fr.json : HTTP 200, 6,205 octets, 0.39 s
+[13:22:55]   sdg_08_10_FR_2022_fr.json : HTTP 200, 5,743 octets, 0.38 s
+[13:22:56]   ilc_li02_FR_T_PC_depuis2015_fr.json : HTTP 200, 37,854 octets, 0.94 s
+[13:22:57]   sdg_01_10_FR_lastTimePeriod3_fr.json : HTTP 200, 5,539 octets, 0.6 s
+[13:22:57]   sdg_10_20_FR_fr.json : HTTP 200, 4,304 octets, 0.42 s
+[13:22:58]   erreur_modalite_inexistante.json : HTTP 200, 6,171 octets, 0.63 s
+[13:22:58]   erreur_jeu_inexistant.json : HTTP 404, 138 octets, 0.36 s
+[13:22:58]   erreur_structure_inexistante.xml : HTTP 404, 249 octets, 0.36 s
+[13:22:59]   sdmx_SDG_08_10_FR_tsv_compresse.tsv : HTTP 200, 236 octets, 0.39 s
+[13:23:04]   metabase_extrait.txt : HTTP 200, 34,140,490 octets, 4.97 s
+[13:23:04] === Étape a : amorce (séries Eurostat des prototypes) ===
+[13:23:04]   gdp_pc               sdg_08_10    disponible                 2000–2025 (26)
+[13:23:05]   investment           sdg_08_11    disponible                 2000–2024 (25)
+[13:23:05]   employment           sdg_08_30    disponible                 2009–2025 (17)
+[13:23:06]   longunemp            sdg_08_40    disponible                 2009–2025 (17)
+[13:23:06]   neet                 sdg_08_20    disponible                 2003–2025 (23)
+[13:23:07]   inworkpoverty        sdg_01_41    disponible                 2004–2025 (22)
+[13:23:07]   fatalwork            sdg_08_60    disponible                 2010–2024 (15)
+[13:23:07]   arope                sdg_01_10    disponible                 2015–2025 (11)
+[13:23:08]   income_poverty       sdg_01_20    disponible                 2000–2025 (25)
+[13:23:08]   smsd                 sdg_01_31    disponible                 2015–2025 (11)
+[13:23:09]   lowwork              sdg_01_40    disponible                 2015–2025 (11)
+[13:23:09]   povertygap           sdg_10_30    disponible                 2000–2025 (25)
+[13:23:09]   s80s20               sdg_10_41    disponible                 2004–2025 (22)
+[13:23:10]   bottom40             sdg_10_50    disponible                 2000–2025 (24)
+[13:23:10]   regionalincome       sdg_10_20    sans donnée FR             – ()
+[13:23:11]   healthy_life         sdg_03_12    disponible                 2004–2024 (21)
+[13:23:11]   unmetcare            sdg_03_60    disponible                 2008–2025 (18)
+[13:23:11]   selfhealth           sdg_03_20    disponible                 2005–2025 (21)
+[13:23:12]   smoking              sdg_03_30    disponible (série courte)  2006–2023 (7)
+[13:23:12]   earlyleave           sdg_04_10    disponible                 2000–2025 (26)
+[13:23:13]   tertiary             sdg_04_20    disponible                 2000–2025 (26)
+[13:23:13]   lowpisa              sdg_04_40    disponible (série courte)  2000–2025 (9)
+[13:23:13]   adultlearning        sdg_04_60    disponible                 2000–2025 (26)
+[13:23:14]   digitalskills        sdg_04_70    disponible (série courte)  2021–2025 (3)
+[13:23:14]   paygap               sdg_05_20    disponible                 2006–2024 (19)
+[13:23:15]   empgap               sdg_05_30    disponible                 2009–2025 (17)
+[13:23:15]   womenparl            sdg_05_50    disponible                 2003–2025 (23)
+[13:23:16]   caregap              sdg_05_40    disponible                 2006–2025 (20)
+[13:23:16]   womenmanagers        sdg_05_60    à remplacer                – ()
+[13:23:16]   housecost2           sdg_01_50    disponible                 2004–2025 (21)
+[13:23:17]   severehousing        sdg_11_11    disponible                 2004–2023 (18)
+[13:23:17]   heatpoverty          sdg_07_60    disponible                 2004–2025 (22)
+[13:23:18]   noise                sdg_11_20    disponible                 2004–2023 (18)
+[13:23:18]   overcrowding         ilc_lvho05a  disponible                 2004–2025 (22)
+[13:23:19]   rooms                ilc_lvho03   disponible                 2004–2025 (22)
+[13:23:19]   roaddeaths           sdg_11_40    disponible                 2000–2024 (25)
+[13:23:19]   crimearea            sdg_16_20    disponible                 2004–2023 (18)
+[13:23:20]   publictransport      sdg_09_50    disponible                 2000–2024 (25)
+[13:23:20]   homicide             sdg_16_10    disponible                 2001–2023 (23)
+[13:23:21]   rdgdp                sdg_09_10    disponible                 2000–2024 (25)
+[13:23:21]   rdstaff              sdg_09_30    disponible                 2003–2024 (22)
+[13:23:22]   patents              sdg_09_40    disponible                 2004–2025 (22)
+[13:23:22]   fastnet              sdg_17_60    disponible (série courte)  2019–2025 (7)
+[13:23:23]   renewables           sdg_07_40    disponible                 2004–2025 (22)
+[13:23:24]   energyproductivity   sdg_07_30    disponible                 2000–2024 (25)
+[13:23:24]   energydependency     sdg_07_50    disponible                 2000–2024 (25)
+[13:23:25]   primaryenergy        sdg_07_10    disponible                 2005–2024 (20)
+[13:23:25]   finalenergy          sdg_07_11    disponible                 2005–2024 (20)
+[13:23:26]   houseenergy          sdg_07_20    disponible                 2000–2024 (25)
+[13:23:27]   ghgnet               sdg_13_11    sans donnée FR             – ()
+[13:23:27]   pmdeaths             sdg_11_52    disponible                 2005–2023 (18)
+[13:23:28]   lulucf               sdg_13_21    disponible                 1990–2024 (35)
+[13:23:28]   materialfoot         sdg_12_21    disponible                 2008–2025 (18)
+[13:23:29]   circularity          sdg_12_41    disponible                 2010–2024 (15)
+[13:23:30]   recycling            sdg_11_60    disponible                 2000–2024 (25)
+[13:23:30]   consumptionfoot      sdg_12_31    disponible                 2010–2024 (15)
+[13:23:31]   municipalwaste       cei_pc031    disponible                 2000–2024 (25)
+[13:23:31]   wasteops             env_wasmun   disponible                 1995–2024 (30)
+[13:23:31]   birds                sdg_15_60    sans donnée FR             – ()
+[13:23:32]   protectedland        sdg_15_20    disponible                 2011–2023 (13)
+[13:23:33]   erosion              sdg_15_50    disponible (série courte)  2000–2023 (4)
+[13:23:33]   forest               sdg_15_10    à remplacer                – ()
+[13:23:33]   drought              sdg_15_42    disponible                 2009–2024 (16)
+[13:23:34]   sealing              sdg_11_32    disponible (série courte)  2006–2021 (6)
+[13:23:35]   justiceind           sdg_16_40    disponible                 2016–2025 (10)
+[13:23:35]   cpi                  sdg_16_50    disponible                 2012–2025 (14)
+[13:23:35]   Bilan amorce : {'disponible': 55, 'disponible (série courte)': 6, 'sans donnée FR': 3, 'à remplacer': 2}
+[13:23:35] === Étape b : niveau 1 (jeux du TOC) ===
+[13:24:05]   {"entrees_toc": 12234, "codes_distincts_par_type": {"dataset": 6649, "folder": 1878, "table": 911}, "jeux": 6649, "jeux_par_filtre": {"retenu": 2715, "exclu": 2223, "hors filtre": 1711}, "jeux_retenus_par_filtres": 2715, "jeux_infra_annuels": 496, "candidats": 2413, "candidats_par_rattrapage": 485, "candidats_par_dimension": {"planete": 476, "travail": 456, "education": 446, "niveau_de_vie": 357, "logement_cadre_vie": 253, "sante": 245, "securite_confiance": 59, "egalites": 47, "democratie": 42, "liens_bien_etre": 30, "": 2}, "candidats_par_dossier": {"(mots-clés)": 774, "revenus_conditions_de_vie": 332, "marche_du_travail": 293, "education_formation": 286, "sante": 158, "environnement": 124, "numerique": 92, "energie": 76, "population": 69, "qualite_de_vie": 68, "sdg": 67, "culture": 24, "criminalite": 23, "securite_transports": 18, "comptes_nationaux": 9}, "jeux_prioritaires_non_candidats_par_motif": {"exclu": 1164, "hors filtre": 558, "infra-annuel (trimestrielle)": 125, "infra-annuel (mensuelle)": 27, "infra-annuel (hebdomadaire)": 14, "infra-annuel (semestrielle)": 5}}
+[13:24:05] === Étape c : niveau 2 (séries FR des jeux candidats) ===
+[13:24:05]   Nouvelle version de l'étape : reprise de zéro
+[13:24:05]   2413 jeux candidats ; 0 déjà traités ; 2413 à traiter (au plus 40 dans ce passage)
+[13:24:09]   [1/2413] ilc_li02               ok                 séries    11 (éligibles 7, ventilations 22) 2 req. 4.0 s 
+[13:24:10]   [2/2413] ilc_di12               ok                 séries     1 (éligibles 1, ventilations 1) 2 req. 0.9 s 
+[13:24:11]   [3/2413] ilc_mdsd11             ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.2 s 
+[13:24:13]   [4/2413] ilc_pw01               ok                 séries     1 (éligibles 0, ventilations 3) 2 req. 1.1 s 
+[13:24:14]   [5/2413] ilc_peps01n            ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.1 s 
+[13:24:15]   [6/2413] ilc_lvho05a            ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.1 s 
+[13:24:16]   [7/2413] lfsa_ergaed            ok                 séries     1 (éligibles 1, ventilations 3) 2 req. 1.7 s 
+[13:24:17]   [8/2413] une_rt_a               ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.0 s 
+[13:24:19]   [9/2413] earn_nt_net            ok                 séries    39 (éligibles 39, ventilations 0) 2 req. 1.2 s 
+[13:24:22]   [10/2413] hlth_silc_01           ok                 séries     7 (éligibles 7, ventilations 14) 2 req. 3.7 s 
+[13:24:24]   [11/2413] hlth_cd_asdr2          ok                 séries     1 (éligibles 0, ventilations 2) 2 req. 2.0 s 
+[13:24:26]   [12/2413] demo_mlexpec           ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.4 s 
+[13:24:27]   [13/2413] edat_lfse_03           ok                 séries     6 (éligibles 4, ventilations 12) 2 req. 1.5 s 
+[13:24:28]   [14/2413] trng_lfse_01           ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.1 s 
+[13:24:29]   [15/2413] crim_off_cat           ok                 séries    25 (éligibles 12, ventilations 0) 2 req. 1.1 s 
+[13:24:33]   [16/2413] env_air_gge            ok                 séries   811 (éligibles 810, ventilations 0) 2 req. 3.5 s 
+[13:24:35]   [17/2413] nrg_bal_c              ok                 séries   139 (éligibles 139, ventilations 0) 2 req. 2.5 s dimensions à total fixées à la requête (jeu volumineux)
+[13:24:37]   [18/2413] nama_10_pc             ok                 séries     9 (éligibles 9, ventilations 0) 2 req. 1.1 s 
+[13:24:40]   [19/2413] nasa_10_nf_tr          ok                 séries  1066 (éligibles 1066, ventilations 0) 2 req. 3.9 s 
+[13:24:42]   [20/2413] isoc_ci_ifp_iu         ok                 séries  1046 (éligibles 592, ventilations 0) 2 req. 1.6 s 
+[13:24:43]   [21/2413] tran_sf_roadus         ok                 séries     1 (éligibles 1, ventilations 2) 2 req. 1.2 s 
+[13:24:44]   [22/2413] env_wasmun             ok                 séries    10 (éligibles 9, ventilations 0) 2 req. 1.1 s 
+[13:24:46]   [23/2413] hsw_mi08               ok                 séries     2 (éligibles 2, ventilations 2) 2 req. 1.2 s 
+[13:24:47]   [24/2413] educ_uoe_enra01        ok                 séries    55 (éligibles 55, ventilations 55) 2 req. 1.4 s 
+[13:24:48]   [25/2413] sdg_02_53              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.1 s 
+[13:24:49]   [26/2413] sdg_06_40              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.0 s 
+[13:24:50]   [27/2413] sdg_03_30              ok                 séries     1 (éligibles 0, ventilations 1) 2 req. 1.1 s 
+[13:24:51]   [28/2413] sdg_03_70              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.1 s 
+[13:24:52]   [29/2413] sdg_05_50              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.2 s 
+[13:24:53]   [30/2413] sdg_05_61              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.1 s 
+[13:24:55]   [31/2413] sdg_06_30              sans_donnee_fr     séries     0 (éligibles 0, ventilations 0) 2 req. 1.2 s aucune observation pour FR depuis 2000
+[13:24:56]   [32/2413] sdg_06_50              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.1 s 
+[13:24:57]   [33/2413] sdg_06_60              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.1 s 
+[13:24:58]   [34/2413] sdg_06_70              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.1 s 
+[13:24:59]   [35/2413] sdg_14_40              ok                 séries     4 (éligibles 4, ventilations 0) 2 req. 1.1 s 
+[13:25:00]   [36/2413] sdg_15_42              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.1 s 
+[13:25:01]   [37/2413] sdg_10_20              sans_donnee_fr     séries     0 (éligibles 0, ventilations 0) 1 req. 0.4 s ni FR ni FX parmi 2 zones
+[13:25:02]   [38/2413] sdg_10_60              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.2 s 
+[13:25:03]   [39/2413] sdg_11_32              ok                 séries     1 (éligibles 0, ventilations 0) 2 req. 1.1 s 
+[13:25:04]   [40/2413] sdg_13_31              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.2 s 
+[13:25:04]   Limite de 40 jeux par passage atteinte
+[13:25:04]   Passage terminé : 40 jeux traités, 2373 restants
+[13:25:04] Bilan : {"lignes": 3388, "series_defaut": 3259, "series_eligibles": 2780, "lignes_ventilation": 129, "jeux_avec_series": 38, "series_defaut_par_dimension": {"education": 1110, "niveau_de_vie": 1088, "planete": 974, "travail": 43, "securite_confiance": 26, "sante": 11, "egalites": 3, "democratie": 2, "liens_bien_etre": 1, "logement_cadre_vie": 1}, "series_eligibles_par_dimension": {"niveau_de_vie": 1084, "planete": 971, "education": 654, "travail": 43, "securite_confiance": 13, "sante": 9, "egalites": 3, "democratie": 2, "logement_cadre_vie": 1}, "jeux_avec_serie_eligible_par_dimension": {"democratie": 1, "education": 5, "egalites": 2, "logement_cadre_vie": 1, "niveau_de_vie": 5, "planete": 11, "sante": 3, "securite_confiance": 2, "travail": 4}}
+[13:25:04] Fin : 160 requêtes (0 nouveaux essais), 17.3 Mo, 2.3 min
+----- collecte_eurostat.py : OK en 138 s
+
+Bilan : tous les scripts ont réussi

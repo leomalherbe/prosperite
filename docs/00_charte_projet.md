@@ -1,6 +1,6 @@
 # Charte du projet — Observatoire de la prospérité
 
-Version 1.0 — 13 octobre 2026 — rédigée par la session mère, validée par Léo Malherbe.
+Version 1.1 — 13 octobre 2026 (§3.6 et feuille de route mis à jour après la phase 1) — rédigée par la session mère, validée par Léo Malherbe.
 Document de référence pour toutes les sessions et tous les agents du projet. **À lire avant toute mission.**
 
 ---
@@ -53,6 +53,25 @@ Deux finalités à terme :
 - **Niveau 2** : pas d'API mais **téléchargement direct d'un CSV/XLSX à URL stable**, automatisable par script.
 - **Exclu** : données lisibles seulement dans un PDF ou un graphique.
 - Priorité INSEE, puis Eurostat (souvent les mêmes données SRCV/SILC harmonisées : la fiche indicateur indique la version retenue et pourquoi), puis les autres.
+
+### 3.6 Validation et gel des dimensions et des indicateurs (décision D20)
+Deux gels successifs, chacun avec des critères explicites, un dossier de décision préparé par la session mère, une décision de Léo et une trace au journal. Principe : **validation par exception** — chaque élément arrive avec une recommandation argumentée ; Léo ne se prononce que là où il diverge ou hésite, le reste suit la recommandation.
+
+**Gel 1 — dimensions** (après la proposition de grille v1 de M03)
+1. Dossier de décision, une page par dimension : définition en une phrase, type plancher/plafond, question en langage courant, cadres qui la retiennent, nombre de candidats disponibles d'après les catalogues, options d'arbitrage et recommandation.
+2. Critères : présente dans au moins trois cadres de référence ou justifiée par la finalité du projet ; conceptuellement distincte (un indicateur n'appartient qu'à une dimension) ; faisable (≥ 8 candidats éligibles, annuels, depuis 2000) ; intelligible par le grand public.
+3. Décision de Léo, dimension par dimension ; consignation au journal ; `indicateurs/dimensions.yaml` v1 avec `statut: figee` et date.
+4. Une dimension figée ne change que par une nouvelle décision au journal et un changement de version.
+
+**Gel 2 — indicateurs par dimension** (après les catalogues de phase 2 et la mission M05)
+1. Long-list automatique : union des catalogues (INSEE, Eurostat, autres), rattachée à la grille v1, dédoublonnée (un concept = une ligne avec ses sources alternatives).
+2. Filtre d'éligibilité mécanique (§3.4), par script, exclusions motivées et traçables.
+3. Fiches indicateurs (M05) : définition, source, sens, type, déclaratif, qualité, note de pertinence ; regroupement en **familles** de variantes avec une variante principale ; recommandation `retenir` / `retenir comme variante` / `écarter` motivée. **Audit croisé** (M06) par un agent n'ayant pas vu le travail du rédacteur, sur un échantillon et les cas douteux.
+4. Validation de Léo, dimension par dimension, dans un classeur `30_dimensions_indicateurs/validation/validation_<dimension>.xlsx` (dossier OneDrive) : colonne `decision_leo` à liste déroulante (`retenu` = disponible dans l'outil ; `retenu_socle` = coché par défaut dans la configuration de référence ; `ecarte` ; `a_discuter`) et colonne de commentaire ; seules les lignes où Léo diverge sont remplies ; réintégration automatique.
+5. Contrôles avant gel : aucun indicateur dans deux dimensions ; nombre suffisant d'indicateurs par dimension, mélange objectif/déclaratif et résultat/pression ; test à blanc du calcul de l'indice sur données collectées ; relecture par Léo des dix fiches les plus sensibles.
+6. Gel : `indicateurs/*.yaml` en `statut: fige`, **base d'indicateurs v1.0** avec journal des modifications. Versionnement sémantique : ajout = version mineure ; retrait ou redéfinition = version majeure (comparabilité des réponses). La base ne bouge pas pendant une vague de collecte ; chaque réponse enregistre la version utilisée.
+
+**Ensuite** : socle des bornes v1 (même mécanique, classeur par dimension) ; puis boucle intersubjective sur la structure (dimensions jamais activées, indicateurs toujours décochés → arguments pour une v2).
 
 ## 4. Grille de dimensions v0 (provisoire, à consolider en mission M03)
 
@@ -176,11 +195,11 @@ observatoire-prosperite/
 
 | Phase | Contenu | Statut |
 |---|---|---|
-| 0 | Cadrage : charte, journal, arborescence, architecture | **Fait (13/10/2026)** ; décision dépôt GitHub en attente |
-| 1 | Inventaire des sources et API (M01 INSEE, M02 Eurostat, M04 autres sources) | Fiches publiées |
-| 2 | Moissonnage des catalogues (M01/M02 partie B, exécution GitHub Actions) | Attend le dépôt |
-| 3 | Grille de dimensions consolidée et crosswalk des cadres (M03), présélection taguée | Fiche publiée |
-| 4 | Fiches indicateurs et socle v1 des bornes | À venir |
+| 0 | Cadrage : charte, journal, arborescence, architecture, dépôt `leomalherbe/prosperite` (public), robots Tests et Collecte | **Fait (13/10/2026)** |
+| 1 | Inventaire des sources et API (M01 INSEE, M02 Eurostat, M04 autres sources) | **Phase 1 faite (13/10/2026)** : PR #1, #2, #4 |
+| 2 | Moissonnage des catalogues (M01/M02 phase 2, M04 phase 2, exécution GitHub Actions) | En cours |
+| 3 | Crosswalk des cadres (M03 phase 1, PR #3) **fait** ; grille v1 (M03 phase 2) puis **gel 1** | En cours |
+| 4 | Fiches indicateurs (M05), audit croisé (M06), validation par classeurs, **gel 2** ; puis socle v1 des bornes | Fiches M05/M06 publiées |
 | 5 | Pipeline de données et millésimes | À venir |
 | 6 | Front refondu (3 modes + jeu) | À venir |
 | 7 | Collecte des réponses, indice intersubjectif | À venir (recrutement des répondants à traiter plus tard) |

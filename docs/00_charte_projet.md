@@ -80,7 +80,7 @@ Décisions de Léo Malherbe (journal D23 à D26) sur le dossier de décision de 
 | # | Dimension (id) | Contenu | Type |
 |---|---|---|---|
 | 1 | Niveau de vie (`niveau_de_vie`) | Revenus, pouvoir d'achat, consommation, PIB par habitant (indicateur ordinaire), pauvreté et privations, accès à l'alimentation, patrimoine des ménages | plancher |
-| 2 | Travail et emploi (`travail`) | Emploi, chômage, NEET, qualité et sécurité de l'emploi, conditions et santé au travail, satisfaction au travail | plancher |
+| 2 | Travail et emploi (`travail`) | Emploi, chômage, NEET, qualité et sécurité de l'emploi, conditions et santé au travail (dont longues durées et horaires atypiques), satisfaction au travail | plancher |
 | 3 | Logement et cadre de vie (`logement_cadre_vie`) | Coût et qualité du logement, surpeuplement, précarité énergétique, environnement local subi (air, bruit, eau du robinet, nature), accès aux services, transports, infrastructures et numérique | plancher |
 | 4 | Santé (`sante`) | Espérance de vie (en bonne santé), mortalité évitable, santé perçue, santé mentale, accès aux soins, comportements et nutrition | plancher |
 | 5 | Éducation et compétences (`education`) | Diplômes, sorties précoces, compétences des élèves et des adultes, compétences numériques, formation des adultes, effort de R&D | plancher |
@@ -90,7 +90,7 @@ Décisions de Léo Malherbe (journal D23 à D26) sur le dossier de décision de 
 | 9 | Égalités (`egalites`) | Inégalités de revenu et de patrimoine, écarts femmes-hommes, écarts et discriminations selon l'origine, territoires, générations, mobilité sociale | plancher |
 | 10 | Planète (`planete`) | Émissions et empreinte carbone, aléas climatiques subis, énergie (consommation, fossiles, renouvelables), biodiversité, sols, eau, azote et phosphore, agriculture, pollutions, matières et recyclage | plafond |
 
-**Hors v1** (décisions A4, A5, A16) : le thème « temps et travail non rémunéré » ; la dette publique, l'investissement et le patrimoine national ; la stabilité financière.
+**Hors v1** (décisions A4, A5, A16) : le thème « temps libre, travail domestique et équilibre des temps » (les durées et horaires de travail restent dans travail, D27) ; la dette publique, l'investissement et le patrimoine national ; la stabilité financière.
 
 ## 5. Modèle de données
 

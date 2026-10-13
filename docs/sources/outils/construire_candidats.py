@@ -76,6 +76,8 @@ def annees_de(periodes: str, n: int) -> tuple[list[int], bool]:
         if n in (0, len(set(ans))):
             return sorted(set(ans)), False
     fins = [int(re.findall(r"\d{4}", j)[-1]) for j in jetons if re.findall(r"\d{4}", j)]
+    if elide and fins and all(re.fullmatch(r"\d{4}-(Q[1-4]|S[12]|\d{2})", j) for j in jetons):
+        return list(range(fins[0], fins[-1] + 1)), True  # trimestres, semestres, mois : toutes les années de la plage
     if elide and fins and fins[-1] - fins[0] + 1 == n:
         fins = list(range(fins[0], fins[-1] + 1))
     return sorted(set(fins)), True

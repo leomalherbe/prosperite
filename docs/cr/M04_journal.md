@@ -80,3 +80,29 @@ Lancement par la session mère le 13/10/2026 (agent neuf, décision D13). Lectur
 - **Échecs corrigés pour la vague 6** : motif RSF coupé par le séparateur « ; » des paramètres (25 fichiers) ; classeur WJP transposé (un pays par colonne) → nouveau mode `colonne` ; libellés du dictionnaire DREES tronqués → paramètre `largeur` ; colonnes de période non standard (Odissé, DEPP) → paramètres explicites et noms ajoutés ; identifiant Odissé erroné.
 - **Script** : seules les ressources de la vague la plus récente sont exécutées (colonne `vague` de `series.csv`), les sorties antérieures sont conservées et `resultats.csv` fusionné ; nouveaux modes `colonne` (classeur transposé) et `distribution` (parts pondérées par année et modalité des microdonnées du baromètre DREES) ; 35 tests passent.
 - **Vague 6** (48 ressources) : RSF 2002–2026, WJP (2021 + 5 URL d'éditions récentes à tester), totaux Citepa hors UTCATF, DREES (dictionnaires complets, distributions pondérées des variables d'opinion 2000–2025), 9 fichiers SDES (qualité de l'air nationale, déchets), corrections Odissé et DEPP.
+
+*(Reprise par un nouvel agent après interruption du précédent, 13/10/2026 vers 16 h : lecture de CLAUDE.md, de la charte v1.1, de D13 à D22, de la fiche M04, de ce journal, des livrables de phase 1, des sorties du robot, du dossier du gel 1 et de la table de correspondance v0 → v1 de la branche `m03-grille` ; 35 tests passaient.)*
+
+## 2026-10-13 16:10 — Sous-tâche 8 : bilan de la vague 6 (run du 13/10, 15 h 43)
+
+- **Fait** : la vague 6 avait bien tourné (commit robot `5fe5acf`) : 44/48 ressources listées. RSF 2002–2026 lisible (24 éditions, 2011 absent : édition 2011-2012 publiée sous 2012) ; **WJP : fichier historique 2025** (éditions 2012-2013 → 2025, un pays par colonne) ; Citepa : totaux hors UTCATF 1990–2025 ; DREES : distributions pondérées par année et modalité (17 202 lignes) et dictionnaires complets ; SDES : 9 fichiers air et déchets ; Odissé et DEPP corrigés.
+- **Échecs** : WJP 2022–2024 (pages HTML ou 404, sans objet grâce au fichier 2025), Odissé « maladies cardio-neuro-vasculaires » (pas de colonne de période), 3 graphiques OWID en 403 (déjà connus).
+
+## 2026-10-13 16:28 — Sous-tâche 9 : vague 7, origine Gallup (run 38413045136)
+
+- **Constat** : le PDF de métadonnées How's Life (« definitions and metadata ») est refusé à WebFetch (robots.txt) ; la page des conditions générales de l'OCDE et les pages du rapport 2024 ne sont pas lisibles (rendu JavaScript) ; le WHR ne publie plus de panel annuel (page data-sharing lue) ; aucune donnée INJEP sur data.gouv.fr ; CEVIPOF toujours en PDF.
+- **Fait** : nouveau mode `pdf` du robot (fonction `lignes_pdf` de `src/sources/series_tabulaires.py`, dépendance `pypdf` ajoutée à `requirements.txt`, test hors ligne sur un PDF construit à la main ; 36 tests passent) ; vague 7 = PDF OCDE + métadonnées OWID (confiance dans le gouvernement, échelle de Cantril).
+- **Résultat** : origine **Gallup World Poll confirmée** pour soutien social, sécurité la nuit, émotions négatives, douleur, confiance dans le gouvernement et la dernière mesure du chapitre 14 (bénévolat) ; données « pooled » : 2006-07 puis blocs triennaux 2008-10 … 2023-25 (7 valeurs), 7 ans par âge, 5 ans par diplôme. Aucune mention de licence ou de restriction dans le PDF (recherche « licence, copyright, terms, third party » : 0). OWID confirme Gallup et la moyenne triennale glissante du WHR.
+
+## 2026-10-13 16:38 — Sous-tâche 10 : liste des indicateurs candidats (T3)
+
+- **Fait** : refonte de `docs/sources/outils/construire_candidats.py` (colonnes de la fiche + `dimension_v1_proposee`, `type`, `composite`, `geo`, `ventilation`, `nb_points_depuis_2000`, `niveau_source`, `fiabilite`, `preuve` ; lecture robuste des périodes pluriannuelles ; règle de fréquence ; v1 par la table M03 copiée dans `correspondance_v0_v1_m03.csv` ; contrôle des identifiants de doublon contre les catalogues M01/M02) et définitions dans `candidats_definitions.py` (OCDE How's Life et ODD, WGI, OWID, RSF, Freedom House, WJP, élections) et `candidats_definitions_suite.py` (DREES, WHR, SSMSI, ITDD, Citepa, EDGAR, FoDaFo, PNUD, SDES, Odissé, DEPP, Ameli, WDI).
+- **Résultat** : `docs/sources/10_indicateurs_candidats_hors_insee_eurostat.csv`, **404 lignes** (370 + 34 ventilations), toutes `verifie` ; 79 déclaratives, 83 composites, 88 non annuelles (hors ventilations) ; 247 satisfont les critères chiffrés de la charte §3.4 ; doublons : 45 oui, 114 partiel, 211 non ; 68 identifiants de doublon cités, tous retrouvés dans les catalogues M01/M02.
+- **Trouvé pour `liens_bien_etre`** : baromètre DREES (situation personnelle 2002–2025, optimisme 2000–2025, intégration et cohésion 2014–2025, aidance 2011–2025) et WHR (2011–2025) : 9 séries annuelles éligibles, sans doublon INSEE/Eurostat.
+- **Problèmes** : identifiants SSMSI et ODD tronqués dans mes affichages (corrigé par recherche par préfixe) ; en-tête RSF 2012 « 2011-12 » (motif corrigé) ; fins de ligne CRLF des CSV (normalisées en LF).
+
+## 2026-10-13 16:45 — Sous-tâche 11 : fiches et inventaire
+
+- `docs/sources/autres_sources.md` : §3 mis à jour (Gallup, WJP 2025, Footprint Data Foundation) et **§7 ajouté** (méthode, chiffres par dimension v0 et v1, apports par dimension, origine Gallup et réutilisation, réponses à D21, doublons, limites).
+- `docs/sources/10_sources_inventaire.csv` : 74 sources (ajout `footprint_data_foundation`, niveau 2, `verifie`) ; mises à jour WJP, GFN, SSMSI, OWID co2, Ameli, DREES, WID, WHR, Gallup, Eurobaromètre, IDEA, PNUD, Citepa.
+- **Vague 8** préparée (série longue BCE de la dette des ménages) ; un premier lancement manuel est parti avant la poussée et a rejoué la vague 7 (sans dommage) ; relancé (run 38416125768).

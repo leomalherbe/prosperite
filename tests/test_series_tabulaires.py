@@ -144,3 +144,33 @@ def test_distribution_ponderee(tmp_path):
     assert parts[("og01", "2000", "2")] == "75.00"
     assert parts[("og01", "2001", "2")] == "100.00"
     assert not any(v == "sdsexe" for v, _, _ in parts)
+
+
+def _pdf_minimal(lignes: list[str]) -> bytes:
+    """PDF d'une page, police Helvetica, une ligne de texte par élément (construit à la main)."""
+    flux = "BT /F1 12 Tf 14 TL 72 720 Td " + " ".join(f"({l}) Tj T*" for l in lignes) + " ET"
+    objets = [
+        "<< /Type /Catalog /Pages 2 0 R >>",
+        "<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+        "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R "
+        "/Resources << /Font << /F1 5 0 R >> >> >>",
+        f"<< /Length {len(flux)} >>\nstream\n{flux}\nendstream",
+        "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+    ]
+    sortie, positions = "%PDF-1.4\n", []
+    for i, o in enumerate(objets, 1):
+        positions.append(len(sortie))
+        sortie += f"{i} 0 obj\n{o}\nendobj\n"
+    debut_xref = len(sortie)
+    sortie += f"xref\n0 {len(objets) + 1}\n0000000000 65535 f \n"
+    sortie += "".join(f"{p:010d} 00000 n \n" for p in positions)
+    sortie += f"trailer\n<< /Size {len(objets) + 1} /Root 1 0 R >>\nstartxref\n{debut_xref}\n%%EOF\n"
+    return sortie.encode("latin-1")
+
+
+def test_lignes_pdf():
+    contenu = _pdf_minimal(["Social support", "Source: Gallup World Poll", "Unit: percentage"])
+    texte = st.lignes_pdf(contenu, "(?i)gallup", contexte=1)
+    assert "Pages : 1" in texte
+    assert "Social support / Source: Gallup World Poll / Unit: percentage" in texte
+    assert "1 lignes correspondantes" in texte

@@ -344,6 +344,9 @@ def lister_series(source: str, cle: str, url: str, octets_max: int, mode: str, d
             lignes = st.distribution_ponderee(chemin, p)
         elif nom_mode == "regex":
             texte = correspondances(chemin.read_bytes(), p.get("motif", ""))
+        elif nom_mode == "pdf":
+            texte = st.lignes_pdf(chemin.read_bytes(), p.get("motif", "."), int(p.get("contexte", 1)),
+                                  int(p.get("max", 400)))
         else:
             raise ValueError(f"mode inconnu : {nom_mode!r}")
         if lignes is not None:

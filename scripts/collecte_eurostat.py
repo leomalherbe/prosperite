@@ -43,10 +43,14 @@ from src.sources import eurostat as es  # noqa: E402
 
 # ------------------------------------------------------------------ paramètres
 
-ETAPES = {"echantillons": 1, "amorce": 1, "niveau1": 1, "niveau2": 1}
+#: Versions des étapes : augmenter une version fait refaire l'étape au passage suivant.
+#: v2 (13/10) : tableaux ODD inclus, racine principale par titre, icd10 en contenu, ind_type en ventilation,
+#: colonnes allégées, remplacements vérifiés dans l'amorce.
+ETAPES = {"echantillons": 1, "amorce": 2, "niveau1": 2, "niveau2": 2}
 
 DUREE_MAX = float(os.environ.get("EUROSTAT_DUREE_MAX_MINUTES", "270")) * 60
-NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "40") or 0)
+NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "0") or 0)
+TAILLE_MAX_CSV = 90_000_000  # au-delà, le catalogue des séries est compressé (limite GitHub : 100 Mo par fichier)
 ETAPES_DEMANDEES = [e.strip() for e in os.environ.get("EUROSTAT_ETAPES", "").split(",") if e.strip()] or list(ETAPES)
 
 CATALOGUES = RACINE / "catalogues"
@@ -57,6 +61,7 @@ FICHIER_BILAN = CATALOGUES / "eurostat_bilan.json"
 FICHIER_JEUX = CATALOGUES / "eurostat_jeux_catalogue.csv"
 FICHIER_DOSSIERS = CATALOGUES / "eurostat_dossiers_toc.csv"
 FICHIER_SERIES = CATALOGUES / "eurostat_series_catalogue.csv"
+FICHIER_SERIES_GZ = CATALOGUES / "eurostat_series_catalogue.csv.gz"
 FICHIER_AMORCE = DOCS_SOURCES / "eurostat_amorce_prototypes.csv"
 FICHIER_PROTOTYPES = RACINE / "docs" / "archives" / "prototypes_indicateurs.csv"
 
@@ -88,6 +93,17 @@ DEFAUTS_AMORCE = {
     "sdg_04_70": {"indic_is": "I_DSK2_BAB", "ind_type": "IND_TOTAL"},
     "sdg_05_20": {"nace_r2": "B-S_X_O"},
     "sdg_05_30": {"wstatus": "EMP", "age": "Y20-64"},
+}
+
+#: Remplacements des séries de prototypes disparues ou sans donnée France (repérés dans le TOC
+#: au premier passage du 13/10/2026) : code → (nouveau code, statut, note). Le robot vérifie le
+#: nouveau code pour la France et ajoute sa couverture au commentaire.
+REMPLACEMENTS_AMORCE = {
+    "sdg_05_60": ("sdg_05_61", "code changé", "sdg_05_60 n'est plus diffusé ; successeur : sdg_05_61 « Positions held by women in senior management »"),
+    "sdg_15_10": ("sdg_15_11", "code changé", "sdg_15_10 n'est plus diffusé ; successeur : sdg_15_11 « Forest area » (depuis 2015) ; série longue possible : for_area (FAO, 1990–2025)"),
+    "sdg_13_11": ("sdg_13_10", "à remplacer", "sdg_13_11 = émissions nettes de l'UE (agrégat UE seulement) ; pour la France : sdg_13_10 « Domestic net greenhouse gas emissions »"),
+    "sdg_15_60": ("env_bio3", "à remplacer", "sdg_15_60 = indice UE agrégé (code typé « table », absent des jeux) ; indices nationaux : env_bio3 « Common bird indices by type of estimate »"),
+    "sdg_10_20": ("", "sans donnée FR", "aucune valeur France (dispersion des régions NUTS 2 non publiée pour FR) ; à recalculer à partir de nama_10r_2hhinc si l'indicateur est conservé"),
 }
 
 DEBUT = time.monotonic()
@@ -251,6 +267,22 @@ def _commentaires_manuels() -> dict[str, str]:
     return manuels
 
 
+def _verifier_remplacement(code: str) -> str:
+    """Couverture France de la série par défaut d'un code de remplacement (texte pour le commentaire)."""
+    try:
+        jeu = es.obtenir_jeu(code, {"geo": "FR"}, "fr", CLIENT)
+    except es.ErreurEurostat as exc:
+        return f"{code} non vérifiable ({type(exc).__name__})"
+    lignes, _ = cat.construire_series(jeu, annee_min=0)
+    defaut = [l for l in lignes if l["type_ligne"] == "defaut"]
+    if not defaut:
+        return f"{code} : aucune valeur pour la France"
+    d = max(defaut, key=lambda l: l["nb_annees"])
+    filtres = d["serie_id"].split("?", 1)[1]
+    return (f"{code} vérifié pour la France : {d['premiere_periode']}–{d['derniere_periode']} ({d['nb_annees']} années, "
+            f"{len(defaut)} série(s) par défaut ; la plus longue : {filtres}, unité {d['unite_code'] or '-'})")
+
+
 def etape_amorce(etat: dict) -> None:
     journal("=== Étape a : amorce (séries Eurostat des prototypes) ===")
     protos = [l for l in csv.DictReader(FICHIER_PROTOTYPES.open(encoding="utf-8")) if l["origine"] == "Eurostat"]
@@ -268,6 +300,12 @@ def etape_amorce(etat: dict) -> None:
         except es.ErreurEurostat as exc:
             erreur = f"{type(exc).__name__} : {exc}"
         ligne = cat.ligne_amorce(proto, jeu, erreur, DEFAUTS_AMORCE.get(code), aujourdhui(), code in codes_toc)
+        if code in REMPLACEMENTS_AMORCE and ligne["statut"] not in ("disponible",):
+            nouveau, statut, note = REMPLACEMENTS_AMORCE[code]
+            ligne["statut"], ligne["nouveau_code"] = statut, nouveau
+            if nouveau:
+                note += " ; " + _verifier_remplacement(nouveau)
+            ligne["commentaire"] += " ; " + note
         lignes.append(ligne)
         journal(f"  {proto['id_prototype']:<20} {code:<12} {ligne['statut']:<26} {ligne['premiere_periode_fr']}–{ligne['derniere_periode_fr']} ({ligne['nb_periodes_fr']})")
     pd.DataFrame(lignes, columns=cat.COLONNES_AMORCE).to_csv(FICHIER_AMORCE, index=False, lineterminator="\n")
@@ -313,6 +351,24 @@ def etape_niveau1(etat: dict) -> None:
 
 
 # ------------------------------------------------------------------ étape c : niveau 2
+
+def _preparer_fichier_series() -> None:
+    """Si le catalogue des séries a été compressé au passage précédent, le décompresser pour continuer."""
+    if FICHIER_SERIES_GZ.exists() and not FICHIER_SERIES.exists():
+        import gzip
+        FICHIER_SERIES.write_bytes(gzip.decompress(FICHIER_SERIES_GZ.read_bytes()))
+    if FICHIER_SERIES_GZ.exists():
+        FICHIER_SERIES_GZ.unlink()
+
+
+def _finaliser_fichier_series() -> None:
+    """Compresse le catalogue des séries s'il dépasse TAILLE_MAX_CSV (sinon le push du robot échouerait)."""
+    if FICHIER_SERIES.exists() and FICHIER_SERIES.stat().st_size > TAILLE_MAX_CSV:
+        import gzip
+        FICHIER_SERIES_GZ.write_bytes(gzip.compress(FICHIER_SERIES.read_bytes(), compresslevel=9))
+        FICHIER_SERIES.unlink()
+        journal(f"  Catalogue des séries compressé : {FICHIER_SERIES_GZ.name} ({FICHIER_SERIES_GZ.stat().st_size / 1e6:.1f} Mo)")
+
 
 def _ecrire_series(lignes: list[dict]) -> None:
     nouveau = not FICHIER_SERIES.exists()
@@ -441,9 +497,11 @@ def etape_niveau2(etat: dict) -> None:
     if info.get("version", 0) < ETAPES["niveau2"]:
         journal("  Nouvelle version de l'étape : reprise de zéro")
         info = {"version": ETAPES["niveau2"], "termine": False, "debut": maintenant(), "jeux": {}}
-        if FICHIER_SERIES.exists():
-            FICHIER_SERIES.unlink()
+        for f in (FICHIER_SERIES, FICHIER_SERIES_GZ):
+            if f.exists():
+                f.unlink()
     etat["etapes"]["niveau2"] = info
+    _preparer_fichier_series()
     jeux = pd.read_csv(FICHIER_JEUX, dtype=str, keep_default_na=False)
     candidats = jeux[jeux["candidat"] == "oui"]
     codes_candidats = set(candidats["code_jeu"])
@@ -490,6 +548,7 @@ def etape_niveau2(etat: dict) -> None:
         info["fin"] = maintenant()
     ecrire_etat(etat)
     mettre_a_jour_catalogue_jeux(etat)
+    _finaliser_fichier_series()
     journal(f"  Passage terminé : {traites} jeux traités, {len(restants)} restants")
 
 
@@ -500,10 +559,14 @@ def ecrire_bilan(etat: dict) -> None:
     suivi = etat["etapes"].get("niveau2", {}).get("jeux", {})
     if suivi:
         bilan["niveau2_statuts"] = pd.Series([s.get("statut") for s in suivi.values()]).value_counts().to_dict()
-    if FICHIER_SERIES.exists():
-        series = pd.read_csv(FICHIER_SERIES, dtype=str, keep_default_na=False)
+    fichier = FICHIER_SERIES if FICHIER_SERIES.exists() else FICHIER_SERIES_GZ
+    if fichier.exists():
+        series = pd.read_csv(fichier, dtype=str, keep_default_na=False)
+        taille = fichier.stat().st_size
         defaut = series[series["type_ligne"] == "defaut"]
         bilan["series"] = {
+            "fichier": fichier.name,
+            "octets": int(taille),
             "lignes": int(len(series)),
             "series_defaut": int(len(defaut)),
             "series_eligibles": int((defaut["candidat"] == "oui").sum()),

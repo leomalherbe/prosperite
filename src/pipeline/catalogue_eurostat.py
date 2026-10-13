@@ -92,10 +92,11 @@ DOSSIERS_PRIORITAIRES = [
 def dossier_prioritaire(code: str, theme_source: str) -> str:
     """Nom du dossier prioritaire (fiche M02, A3) auquel appartient le jeu, ou chaîne vide."""
     code = (code or "").lower()
-    dossiers = [sans_accents(t).strip() for t in (theme_source or "").split(" > ")]
-    for nom, motif, titres in DOSSIERS_PRIORITAIRES:
+    for nom, motif, _ in DOSSIERS_PRIORITAIRES:  # le préfixe du code prime sur l'emplacement
         if re.search(motif, code):
             return nom
+    dossiers = [sans_accents(t).strip() for t in (theme_source or "").split(" > ")]
+    for nom, _, titres in DOSSIERS_PRIORITAIRES:
         for titre in titres:
             if any(d == titre or d.startswith(titre + " (") for d in dossiers):
                 return nom
@@ -254,7 +255,7 @@ class Etiquette:
     scores: dict[str, float] = field(default_factory=dict)
 
 
-def etiqueter(code: str, titre_en: str, titre_fr: str, theme_source: str, dossier: str = "") -> Etiquette:
+def etiqueter(code: str, titre_en: str, titre_fr: str, theme_source: str, dossier: str = "", tous_chemins: str = "") -> Etiquette:
     """Étiquette `dimension_v0` d'un jeu par mots-clés.
 
     Score par dimension : 2 si un mot-clé figure dans la partie principale du titre (avant
@@ -276,9 +277,9 @@ def etiqueter(code: str, titre_en: str, titre_fr: str, theme_source: str, dossie
         ordre = sorted(scores, key=lambda d: (-scores[d], ORDRE_DEPARTAGE.index(d)))
         secondaires = [d for d in ordre[1:] if scores[d] >= 1]
         return Etiquette(ordre[0], secondaires, "mots-clés", dict(scores))
-    m = re.match(r"sdg_(\d{2})", (code or "").lower())
-    if m and m.group(1) in ODD_DIMENSION:
-        return Etiquette(ODD_DIMENSION[m.group(1)], [], f"objectif ODD {m.group(1)}")
+    m = re.match(r"sdg_(\d{2})", (code or "").lower()) or re.search(r"\bGoal (\d{1,2})\b", tous_chemins or theme_source or "")
+    if m and m.group(1).zfill(2) in ODD_DIMENSION:
+        return Etiquette(ODD_DIMENSION[m.group(1).zfill(2)], [], f"objectif ODD {m.group(1).zfill(2)}")
     if dossier in DOSSIER_DIMENSION:
         return Etiquette(DOSSIER_DIMENSION[dossier], [], f"dossier {dossier}")
     return Etiquette("", [], "aucun mot-clé")
@@ -313,34 +314,43 @@ def filtre_dates(debut: str, fin: str, frequence: str) -> tuple[str, bool]:
 
 
 def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFrame] = None) -> pd.DataFrame:
-    """Catalogue niveau 1 : un jeu (type = dataset) par ligne, dédoublonné par code.
+    """Catalogue niveau 1 : un code du TOC par ligne (jeux et tableaux), dédoublonné par code.
 
-    Le chemin principal est celui de la « Database by themes » (racine `data`) s'il existe ;
+    Le chemin principal est celui de la « Database by themes » s'il existe ;
     les autres emplacements du même code sont listés dans `autres_chemins`.
     Règle `candidat` :
+      - tableaux (`type = table`) : non (vues prédéfinies d'un jeu, filtre de la fiche), **sauf les
+        indicateurs ODD `sdg_*`**, typés « table » dans le TOC mais servis comme jeux par l'API ;
       - non si le jeu échoue aux filtres de dates (sauf rattrapage ci-dessous) ou s'il est infra-annuel ;
       - oui s'il est dans un dossier prioritaire, ou si un mot-clé du titre le rattache à une dimension v0 ;
       - rattrapage (oui) : début > 2010 mais ≥ 10 années possibles jusqu'à la fin, et pertinent (dossier ou mot-clé).
     """
-    jeux = toc_en[toc_en["type"] == "dataset"].copy()
+    jeux = toc_en[toc_en["type"].isin(["dataset", "table"])].copy()
     titres_fr = {}
     if toc_fr is not None and len(toc_fr):
         for code, titre in zip(toc_fr["code"], toc_fr["titre"]):
             titres_fr.setdefault(code, titre)
+    types_parents = dict(zip(toc_en["code"], toc_en["type"]))
     lignes = []
     for code, groupe in jeux.groupby("code", sort=False):
         groupe = groupe.reset_index(drop=True)
-        principal_idx = next((i for i, c in enumerate(groupe["theme_codes"]) if c.startswith("data")), 0)
+        # NB : la racine « Cross cutting topics » porte aussi le code `data` : on repère la racine par son titre
+        principal_idx = next((i for i, c in enumerate(groupe["theme_source"]) if c.startswith("Database by themes")), 0)
         p = groupe.iloc[principal_idx]
+        type_ = "dataset" if "dataset" in set(groupe["type"]) else "table"
         autres = [c for i, c in enumerate(groupe["theme_source"]) if i != principal_idx]
         titre_fr = titres_fr.get(code, "") or p["titre"]
         frequence = frequence_periode(p["debut"]) or frequence_periode(p["fin"])
         tous_chemins = " | ".join(groupe["theme_source"])
         dossier = dossier_prioritaire(code, tous_chemins.replace(" | ", " > "))
-        etiquette = etiqueter(code, p["titre"], titre_fr, p["theme_source"], dossier)
+        etiquette = etiqueter(code, p["titre"], titre_fr, p["theme_source"], dossier, tous_chemins)
         filtre, rattrapable = filtre_dates(p["debut"], p["fin"], frequence)
         pertinent = bool(dossier) or etiquette.methode == "mots-clés"
-        if frequence and frequence != "annuelle":
+        if type_ == "table" and not code.lower().startswith("sdg_"):
+            parent = p.get("parent", "")
+            sous_jeu = types_parents.get(parent) == "dataset"
+            candidat, motif = "non", ("tableau rangé sous le jeu " + parent if sous_jeu else "tableau (vue prédéfinie) : filtre type = dataset")
+        elif frequence and frequence != "annuelle":
             candidat, motif = "non", f"infra-annuel ({frequence}) : une version annuelle existe en général"
         elif filtre == "retenu" and dossier:
             candidat, motif = "oui", f"dossier prioritaire ({dossier})"
@@ -353,6 +363,8 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
                 f"dossier prioritaire ({dossier})" if dossier else f"mots-clés ({etiquette.dimension})")
         else:
             candidat, motif = "non", filtre
+        if type_ == "table" and code.lower().startswith("sdg_") and candidat == "oui":
+            motif = "indicateur ODD typé « table » dans le TOC, interrogeable comme un jeu ; " + motif
         lignes.append(
             {
                 "source": "Eurostat",
@@ -370,7 +382,7 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
                 "commentaire": motif,
                 "code_jeu": code,
                 "libelle_en": p["titre"],
-                "type": "dataset",
+                "type": type_,
                 "nb_valeurs": p["nb_valeurs"],
                 "derniere_modif_structure": p["derniere_modif_structure"],
                 "theme_codes": p["theme_codes"],
@@ -393,7 +405,7 @@ def bilan_dossiers(toc_en: pd.DataFrame, catalogue: pd.DataFrame, toc_fr: Option
     """Une ligne par dossier du TOC : chemin, nombre de jeux dessous, après filtres, candidats."""
     dossiers = toc_en[toc_en["type"] == "folder"].drop_duplicates("code")
     titres_fr = dict(zip(toc_fr["code"], toc_fr["titre"])) if toc_fr is not None else {}
-    jeux = toc_en[toc_en["type"] == "dataset"][["code", "theme_codes"]]
+    jeux = toc_en[toc_en["type"].isin(["dataset", "table"])][["code", "theme_codes"]]
     statut = catalogue.set_index("code_jeu")
     lignes = []
     for _, d in dossiers.iterrows():
@@ -419,13 +431,17 @@ def bilan_dossiers(toc_en: pd.DataFrame, catalogue: pd.DataFrame, toc_fr: Option
 # ---------------------------------------------------------------- niveau 2 : rôles des dimensions
 
 CODES_TOTAL = ("TOTAL", "T", "_T", "TOT", "ALL", "TOTAL_HH")
-CODES_TOTAL_PAR_DIMENSION = {"wstatus": ("POP", "TOTAL"), "sex": ("T",), "age": ("TOTAL",)}
+CODES_TOTAL_PAR_DIMENSION = {"wstatus": ("POP", "TOTAL"), "sex": ("T",), "age": ("TOTAL",), "ind_type": ("IND_TOTAL",)}
+
+#: Dimensions toujours énumérées (chaque modalité est un indicateur distinct), même si un total existe.
+DIMENSIONS_CONTENU = {"icd10"}
 
 #: Dimensions de ventilation conservées en lignes séparées (D21) et leur libellé.
 VENTILATIONS = {
     "sex": "sexe", "age": "âge", "quantile": "quantile de revenu", "quant_inc": "quintile de revenu",
     "incgrp": "groupe de revenu", "quant_expn": "quintile de dépenses", "hhtyp": "type de ménage",
     "hhcomp": "composition du ménage", "deg_urb": "degré d'urbanisation",
+    "ind_type": "type d'individus (âge, sexe, éducation, emploi…)",
 }
 PREFIXES_VENTILATION = {"isced": "niveau d'éducation"}
 
@@ -575,7 +591,9 @@ def attribuer_roles(jeu: JeuJsonStat, codes_avec_donnees: dict[str, set[str]], d
             defauts[d.id] = "FR" if "FR" in codes else ("FX" if "FX" in codes else codes[0])
             continue
         total = age_par_defaut(codes, jeu.libelle) if d.id == "age" else code_total(d.id, codes)
-        if len(codes) == 1:
+        if d.id in DIMENSIONS_CONTENU and len(codes) > 1:
+            contenu.append(d.id)
+        elif len(codes) == 1:
             defauts[d.id] = codes[0]
         elif total is not None:
             defauts[d.id] = total
@@ -593,7 +611,7 @@ def attribuer_roles(jeu: JeuJsonStat, codes_avec_donnees: dict[str, set[str]], d
 COLONNES_SERIES = [
     "source", "serie_id", "libelle", "unite", "frequence", "geo", "premiere_periode", "derniere_periode",
     "derniere_maj", "theme_source", "dimension_v0", "candidat", "commentaire",
-    "code_jeu", "libelle_jeu", "type_ligne", "ventilation", "modalites", "libelles_modalites", "unite_code",
+    "code_jeu", "type_ligne", "ventilation", "libelles_modalites", "unite_code",
     "unites_disponibles", "nb_points", "nb_annees", "derniere_valeur", "drapeaux", "modalites_ventilation",
     "jeu_source", "date_verification",
 ]
@@ -742,7 +760,7 @@ def construire_series(
             "ventilation": "",
             "modalites": " ; ".join(f"{d}={c}" for d, c in zip(ordre, codes)),
             "libelles_modalites": " ; ".join(
-                f"{libelles_dims[d]} : {libelles[d].get(c, c)}" for d, c in zip(ordre, codes) if d != "geo"),
+                f"{libelles_dims[d]} : {libelles[d].get(c, c)}" for d, c in zip(ordre, codes) if d not in ("geo", "freq", "unit")),
             "unite_code": code_unite,
             "unites_disponibles": " ; ".join(sorted(x for x in unites if x)),
             "nb_points": stat.nb_points,
@@ -750,7 +768,7 @@ def construire_series(
             "derniere_valeur": stat.derniere_valeur,
             "drapeaux": texte_drapeaux(stat.drapeaux),
             "modalites_ventilation": "",
-            "jeu_source": jeu.jeu_source,
+            "jeu_source": " ; ".join(x.strip() for x in jeu.jeu_source.split(",") if x.strip()),
             "date_verification": contexte.date_verification,
         }
         lignes.append(base)
@@ -930,7 +948,7 @@ def ligne_amorce(proto: dict, jeu: Optional[JeuJsonStat], erreur: str = "", defa
     defaut = next((l for l in lignes if l["type_ligne"] == "defaut"), None)
     ligne["libelle_eurostat_fr"] = jeu.libelle
     ligne["dimensions_du_jeu"] = " ; ".join(d.id for d in jeu.dimensions)
-    ligne["jeu_source"] = jeu.jeu_source
+    ligne["jeu_source"] = " ; ".join(x.strip() for x in jeu.jeu_source.split(",") if x.strip())
     ligne["derniere_maj"] = (jeu.mise_a_jour or "")[:10]
     unites = sorted(avec.get("unit", set()))
     ligne["unites_disponibles"] = " ; ".join(unites)

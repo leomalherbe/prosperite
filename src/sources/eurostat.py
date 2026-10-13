@@ -279,6 +279,11 @@ def _choisir_langue(noms: dict[str, str], lang: str) -> str:
 
 
 def _verifier_erreur_xml(racine: ET.Element) -> None:
+    """Message d'erreur SDMX (`Error`) ou enveloppe SOAP (`Fault`, renvoyée par Eurostat avec HTTP 404)."""
+    if _local(racine.tag) == "Fault" or any(_local(e.tag) == "Fault" for e in racine.iter()):
+        code = next(((e.text or "").strip() for e in racine.iter() if _local(e.tag) == "faultcode"), None)
+        message = next(((e.text or "").strip() for e in racine.iter() if _local(e.tag) == "faultstring"), "erreur SDMX")
+        raise (AucuneDonnee if code == "100" else ErreurEurostat)(message, code=code)
     if _local(racine.tag) == "Error":
         message = " ".join(t.text or "" for t in racine.iter() if _local(t.tag) == "Text").strip()
         code = next((e.get("code") for e in racine.iter() if _local(e.tag) == "ErrorMessage"), None)

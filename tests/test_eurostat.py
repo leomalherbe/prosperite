@@ -44,17 +44,25 @@ def test_toc_hierarchie_conservee(toc_en):
 
 
 def test_toc_tableau_range_sous_un_jeu(toc_en):
-    ligne = toc_en.set_index("code").loc["teibs020"]
-    assert ligne["parent"] == "ei_bssi_m_r2"
-    # le chemin de dossiers ne contient que des dossiers
-    assert not ligne["theme_codes"].endswith("ei_bssi_m_r2")
+    # sdg_08_10 est un « table » rangé sous le jeu nama_10_pc (et ailleurs sous le dossier Goal 8)
+    lignes = toc_en[toc_en["code"] == "sdg_08_10"]
+    assert list(lignes["type"]) == ["table", "table"]
+    assert lignes.iloc[0]["parent"] == "nama_10_pc"
+    assert lignes.iloc[0]["theme_codes"] == "data > economy > na10 > nama10 > nama_10_ma"  # dossiers seulement
+    assert lignes.iloc[1]["theme_source"] == "Cross cutting topics > EU policies > Sustainable development indicators > Goal 8 - Decent work and economic growth"
+
+
+def test_toc_deux_racines_de_meme_code(toc_en):
+    racines = toc_en[toc_en["profondeur"] == 0]
+    assert list(racines["titre"]) == ["Database by themes", "Cross cutting topics"]
+    assert set(racines["code"]) == {"data"}  # piège : les deux racines portent le code « data »
 
 
 def test_toc_dates_et_valeurs(toc_en):
     ligne = toc_en.set_index("code").loc["ei_bpm6ca_q"]
     assert ligne["derniere_maj"] == "2026-10-02"
     assert (ligne["debut"], ligne["fin"]) == ("1991-Q1", "2026-Q2")
-    assert ligne["nb_valeurs"] == 314724
+    assert ligne["nb_valeurs"] == 314789
     dossier = toc_en.set_index("code").loc["ei_bp"]
     assert dossier["derniere_maj"] == "" and pd.isna(dossier["nb_valeurs"])
 
@@ -62,7 +70,8 @@ def test_toc_dates_et_valeurs(toc_en):
 def test_toc_francais():
     fr = es.analyser_toc((FIX / "toc_extrait_fr.txt").read_text(encoding="utf-8"))
     assert fr.set_index("code").loc["general", "titre"] == "Statistiques générales et régionales"
-    assert fr.set_index("code").loc["ei_bpm6ca_q", "derniere_maj"] == "2026-07-08"
+    assert fr.set_index("code").loc["ei_bpm6ca_q", "derniere_maj"] == "2026-10-02"
+    assert fr[fr["code"] == "ilc_pw01"].iloc[0]["titre"] == "Satisfaction globale de la vie par sexe, âge et niveau d'éducation atteint"
 
 
 # ------------------------------------------------------------------ JSON-stat
@@ -136,7 +145,64 @@ def test_serie_id_ventilation_parametre_repete():
     assert jeu.serie_id(("A", ["TOTAL", "Y_LT18"], "PC", "FR")) == "sdg_01_10?freq=A&age=TOTAL&age=Y_LT18&unit=PC&geo=FR"
 
 
+def test_jsonstat_reel_multidimensionnel():
+    jeu = es.charger_jsonstat(FIX / "ilc_li02_FR_T_PC_depuis2015_fr.json")
+    assert [d.id for d in jeu.dimensions] == ["freq", "statinfo", "unit", "rskpovth", "sex", "age", "geo", "time"]
+    lignes = jeu.lignes().set_index(["serie_id", "periode"])
+    assert len(lignes) == 2387
+    cle = "ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=TOTAL&geo=FR"
+    assert lignes.loc[(cle, "2015"), "valeur"] == 13.6
+    assert lignes.loc[(cle, "2022"), ["valeur", "statut"]].tolist() == [15.6, "b"]
+    assert lignes.loc[(cle, "2025"), "valeur"] == 16.3
+
+
+def test_jsonstat_modalite_inexistante_cube_vide():
+    # HTTP 200 sans erreur : la dimension filtrée sur un code inconnu a une taille 0
+    jeu = es.charger_jsonstat(FIX / "erreur_modalite_inexistante.json")
+    assert jeu.observations == [] and jeu.lignes().empty
+
+
+def test_jsonstat_sans_donnee_france():
+    jeu = es.charger_jsonstat(FIX / "sdg_10_20_FR_fr.json")
+    assert [len(d.codes) for d in jeu.dimensions if d.id == "geo"] == [0] and jeu.observations == []
+
+
+def test_jsonstat_last_time_period():
+    jeu = es.charger_jsonstat(FIX / "sdg_01_10_FR_lastTimePeriod3_fr.json")
+    assert sorted({p for _, p, _, _ in jeu.observations}) == ["2023", "2024", "2025"]
+
+
+def test_jsonstat_jeu_inexistant():
+    with pytest.raises(es.AucuneDonnee):
+        es.charger_jsonstat(FIX / "erreur_jeu_inexistant.json")
+
+
 # ------------------------------------------------------------------ structure SDMX
+
+
+def test_structure_reelle_referencepartial():
+    s = es.analyser_structure((FIX / "dataflow_SDG_01_10_referencepartial.xml").read_bytes())
+    assert (s.code, s.partielle, s.dimension_temps) == ("sdg_01_10", True, "TIME_PERIOD")
+    assert s.libelle == "Personnes en risque de pauvreté ou d'exclusion sociale"
+    assert s.ids == ["freq", "age", "unit", "geo"]
+    assert s.dimension("unit").modalites == {"THS_PER": "Milliers de personnes", "PC": "Pourcentage"}
+    assert s.dimension("geo").libelle == "Entité géopolitique (déclarante)"
+    assert "FR" in s.dimension("geo").modalites and len(s.dimension("geo").modalites) == 39
+    s = es.analyser_structure((FIX / "dataflow_ILC_LI02_referencepartial.xml").read_bytes())
+    assert s.ids == ["freq", "statinfo", "unit", "rskpovth", "sex", "age", "geo"]
+    assert len(s.dimension("age").modalites) == 33
+
+
+def test_structure_reelle_sans_listes_de_codes():
+    s = es.analyser_structure((FIX / "datastructure_SDG_01_10.xml").read_bytes())
+    assert s.ids == ["freq", "age", "unit", "geo"] and not s.partielle
+    assert all(not d.modalites for d in s.dimensions)
+
+
+def test_structure_inexistante_enveloppe_soap():
+    with pytest.raises(es.AucuneDonnee):
+        es.analyser_structure((FIX / "erreur_structure_inexistante.xml").read_bytes())
+
 
 #: Message SDMX-ML 2.1 synthétique (forme du standard : dataflow + liste de codes partielle + DSD).
 STRUCTURE_SYNTHETIQUE = b"""<?xml version="1.0" encoding="UTF-8"?>
@@ -331,7 +397,7 @@ def test_catalogue_jeux_regles():
     brut = cat.construire_catalogue_jeux(_toc_synthetique())
     cat_jeux = brut.set_index("code_jeu")
     assert list(brut.columns)[:13] == ["source", "serie_id", "libelle", "unite", "frequence", "geo", "premiere_periode", "derniere_periode", "derniere_maj", "theme_source", "dimension_v0", "candidat", "commentaire"]
-    assert "tps00001" not in cat_jeux.index  # tableaux exclus
+    assert cat_jeux.loc["tps00001", "type"] == "table" and cat_jeux.loc["tps00001", "candidat"] == "non"  # tableaux non candidats
     assert cat_jeux.loc["ilc_li02", "candidat"] == "oui"
     assert cat_jeux.loc["ilc_li02", "theme_source"] == "Database by themes > Income and living conditions"
     assert cat_jeux.loc["ilc_li02", "autres_chemins"] == "Cross cutting"
@@ -342,12 +408,30 @@ def test_catalogue_jeux_regles():
     assert cat_jeux.loc["une_rt_m", "candidat"] == "non" and cat_jeux.loc["une_rt_m", "motif_candidat"].startswith("infra-annuel")
 
 
+def test_catalogue_sur_toc_reel(toc_en):
+    toc_fr = es.analyser_toc((FIX / "toc_extrait_fr.txt").read_text(encoding="utf-8"))
+    c = cat.construire_catalogue_jeux(toc_en, toc_fr).set_index("code_jeu")
+    # indicateurs ODD typés « table » : candidats (exception motivée)
+    assert c.loc["sdg_01_10", "type"] == "table" and c.loc["sdg_01_10", "candidat"] == "oui"
+    assert c.loc["sdg_01_10", "motif_candidat"].startswith("indicateur ODD typé")
+    assert "rattrapage" in c.loc["sdg_01_10", "motif_candidat"]  # début 2014 > 2010
+    assert c.loc["sdg_08_10", "candidat"] == "oui"
+    assert c.loc["tps00001", "candidat"] == "non" and c.loc["tps00001", "motif_candidat"] == "tableau rangé sous le jeu demo_gind"
+    assert c.loc["lfsq_egais", "candidat"] == "non" and c.loc["lfsq_egais", "motif_candidat"].startswith("infra-annuel (trimestrielle)")
+    # chemin principal sous « Database by themes », autres emplacements conservés
+    assert c.loc["ilc_pw01", "theme_source"].startswith("Database by themes > Population and social conditions")
+    assert "Cross cutting topics > Cross cutting topics > Quality of life" in c.loc["ilc_pw01", "autres_chemins"]
+    assert c.loc["ilc_pw01", "libelle"] == "Satisfaction globale de la vie par sexe, âge et niveau d'éducation atteint"
+    assert c.loc["ilc_pw01", "dimension_v0"] == "liens_bien_etre"
+    assert c.loc["hlth_silc_10", "dossier_prioritaire"] == "sante"  # le préfixe du code prime sur le dossier QoL
+
+
 def test_bilan_dossiers():
     toc = _toc_synthetique()
     catalogue = cat.construire_catalogue_jeux(toc)
     b = cat.bilan_dossiers(toc, catalogue).set_index("code_dossier")
-    assert b.loc["ilc", "nb_jeux"] == 3 and b.loc["ilc", "nb_candidats"] == 2
-    assert b.loc["data", "nb_jeux"] == 6
+    assert b.loc["ilc", "nb_jeux"] == 4 and b.loc["ilc", "nb_candidats"] == 2  # 3 jeux + 1 tableau
+    assert b.loc["data", "nb_jeux"] == 7
 
 
 # ------------------------------------------------------------------ niveau 2
@@ -489,3 +573,28 @@ def test_amorce_serie_courte_et_absente():
     assert l["statut"] == "à remplacer"
     l = cat.ligne_amorce(PROTO, None, "réponse sans valeur", present_toc=True)
     assert l["statut"] == "sans donnée FR"
+
+
+def _jeu_roles(dimension: str, codes: list[str]) -> es.JeuJsonStat:
+    doc = {
+        "label": "Essai rôles", "id": ["freq", dimension, "geo", "time"], "size": [1, len(codes), 1, 10],
+        "dimension": {
+            "freq": {"category": {"index": {"A": 0}}},
+            dimension: {"category": {"index": {c: i for i, c in enumerate(codes)}}},
+            "geo": {"category": {"index": {"FR": 0}}},
+            "time": {"category": {"index": {str(2010 + k): k for k in range(10)}}},
+        },
+        "value": {str(i): 1.0 for i in range(len(codes) * 10)}, "extension": {"id": "ESSAI"},
+    }
+    return es.analyser_jsonstat(doc)
+
+
+def test_causes_de_deces_enumerees_meme_avec_total():
+    lignes, roles = cat.construire_series(_jeu_roles("icd10", ["TOTAL", "A-B", "X60-X84_Y870"]))
+    assert roles.contenu == ["icd10"] and len([l for l in lignes if l["type_ligne"] == "defaut"]) == 3
+
+
+def test_type_d_individus_isoc_en_ventilation():
+    lignes, roles = cat.construire_series(_jeu_roles("ind_type", ["IND_TOTAL", "Y16_24", "F_Y16_74"]))
+    assert roles.ventilations == ["ind_type"] and roles.defauts["ind_type"] == "IND_TOTAL"
+    assert [l["type_ligne"] for l in lignes] == ["defaut", "ventilation"]

@@ -1,0 +1,8 @@
+# banque_de_france / webstat_observations_sans_cle
+# URL : https://webstat.banque-france.fr/api/explore/v2.1/catalog/datasets/observations/records?limit=1
+# Vérifié le 2026-10-13T11:32:35Z — HTTP 404 — application/json — 105 octets lus (taille annoncée : inconnue)
+
+{
+ "error_code": "NotFoundResource",
+ "message": "The requested dataset observations does not exist."
+}

@@ -1,0 +1,106 @@
+# cnam_ameli / ods_catalogue_json
+# URL : https://data.ameli.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T11:32:09Z — HTTP 200 — application/json; charset=utf-8 — 18680 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 51,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "annee",
+     "description": null,
+     "annotations": {
+      "timeserie_precision": "year"
+     },
+     "label": "annee",
+     "type": "date"
+    },
+    {
+     "name": "code_naf1",
+     "description": null,
+     "annotations": {},
+     "label": "code_NAF1",
+     "type": "text"
+    },
+    {
+     "name": "libelle_naf1",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_NAF1",
+     "type": "text"
+    },
+    {
+     "name": "naf1",
+     "description": null,
+     "annotations": {},
+     "label": "NAF1",
+     "type": "text"
+    },
+    {
+     "name": "code_naf5",
+     "description": null,
+     "annotations": {},
+     "label": "code_NAF5",
+     "type": "text"
+    },
+    {
+     "name": "libelle_naf5",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_NAF5",
+     "type": "text"
+    },
+    {
+     "name": "naf5",
+     "description": null,
+     "annotations": {},
+     "label": "NAF5",
+     "type": "text"
+    },
+    {
+     "name": "libelle_cause_tr",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_cause_TR",
+     "type": "text"
+    },
+    {
+     "name": "libelle_type_vehicule",
+     "description": null,
+     "annotations": {},
+     "label": "libelle_type_vehicule",
+     "type": "text"
+    },
+    {
+     "name": "part_cause_tr",
+     "description": null,
+     "annotations": {
+      "unit": "%"
+     },
+     "label": "part_cause_TR",
+     "type": "double"
+    },
+    {
+     "name": "part_cause_tr_txt",
+     "description": null,
+     "annotations": {},
+     "label": "part_cause_tr_txt",
+     "type": "text"
+    }
+   ],
+   "dataset_id": "causes-des-accidents-de-trajet-par-secteur-d-activite-naf-1-et-naf-5",
+   "dataset_uid": "da_ujti5u",
+   "has_records": true,
+   "features": [
+    "analyze",
+    "timeserie"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Risques professionnels : causes des accidents de trajet par secteur d’activité (NAF 1 et NAF 5)",
+     "description": "<p></p><p>\n</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Ce jeu de données est une des\nsources de datavisualisations disponibles sur le site <a href=\"https://data.ameli.fr/pages/data-risques-professionnels/\">Data risques\nprofessionnels</a><u>.</u> </p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"><b>Informations générales :</b></p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">La population sur laquelle est\nbasée ce jeu de données correspond aux salariés et aux<span style=\"mso-spacerun:yes\"> </span>entreprises du régime général. Il s’agit\nessentiellement des salariés, des travailleurs indépendants ayant souscrit à\nl’assurance volontaire AT/MP (Avat), ainsi que de certains agents de la\nfonction publique (contractuels, temps courts, etc.). </p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Ces données ne prennent pas en\ncompte :</p><ul style=\"margin-top:0cm\" type=\"disc\"><li class=\"MsoNormal\" style=\"text-align:justify;mso-list:l3 level1 lfo2;\n     tab-stops:list 36.0pt\">\n<p class=\"MsoNormal\" style=\"text-align:justify\">les exploitants et salariés\nagricoles, qui relèvent du régime agricole ; </p>\n</li><li class=\"MsoNormal\" style=\"text-align:justify;mso-list:l3 level1 lfo2;\n     tab-stops:list 36.0pt\">\n<p class=\"MsoNormal\" style=\"text-align:justify\">les personnels des fonctions\npubliques, qui sont couverts par leur administration ;</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">les travailleurs indépendants\nn’ayant pas souscrit à l’Avat. </p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"></p><p class=\"MsoNormal\" style=\"text-align:justify\"> </p>\n</li></ul><p class=\"MsoNormal\" style=\"text-align:justify\">Ce jeu de données présente des\ninformations sur la part de chaque cause d’accidents de trajet.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Une des causes des accidents de\ntrajet est la perte de contrôle d’un véhicule. Ce jeu de données détaille aussi\nles parts de chaque type de véhicules ayant causé cette perte de contrôle de\nvéhicule.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Pour plus d'informations (source,\nchamp, définitions des modalités), consulter la page <a href=\"https://data.ameli.fr/pages/data-risques-professionnels-methode/\">Méthode</a>\ndu site.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"><b>Secret statistique :</b></p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">Par respect pour le secret\nstatistique (loi du 7 juin 1951) et afin que l’identification directe ou\nindirecte des individus et des entreprises soit impossible, aucune information\nsur les risques professionnels, les salariés et les entreprises n'est communiquée\nlorsque : </p>\n<p class=\"MsoListParagraphCxSpFirst\" style=\"text-align:justify;text-indent:-18.0pt;\nmso-list:l1 level1 lfo4\"><span style=\"font-family:Symbol;\nmso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol\"><span style=\"mso-list:Ignore\">·<span style='font:7.0pt \"Times New Roman\"'>       \n</span></span></span>le nombre d’entreprises est inférieur à 3 ;</p>\n<p class=\"MsoListParagraphCxSpLast\" style=\"text-align:justify;text-indent:-18.0pt;\nmso-list:l2 level1 lfo3\"><span style=\"font-family:Symbol;\nmso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol\"><span style=\"mso-list:Ignore\">·<span style='font:7.0pt \"Times New Roman\"'>       \n</span></span></span>ou lorsqu’une entreprise représente une part\nprédominante des salariés (&gt; 85 %).</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\">La valeur de l'indicateur est\nalors indiquée par « NS » (non diffusable) dans le jeu de données.</p>\n<p class=\"MsoNormal\" style=\"text-align:justify\"><b>Abréviations présentes dans\nles données :</b></p>\n<ul style=\"margin-top:0cm\" type=\"disc\"><li class=\"MsoNormal\" style=\"text-al

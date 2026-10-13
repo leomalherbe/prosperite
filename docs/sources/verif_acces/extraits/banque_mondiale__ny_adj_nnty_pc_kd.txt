@@ -1,0 +1,512 @@
+# banque_mondiale / NY.ADJ.NNTY.PC.KD
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/NY.ADJ.NNTY.PC.KD?format=json&per_page=100&date=1995:2026
+# Vérifié le 2026-10-13T11:33:17Z — HTTP 200 — application/json;charset=utf-8 — 7820 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 31,
+  "sourceid": "2",
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 31680.9014052704,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 29152.2471518752,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 32401.8744303107,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 31976.3202487889,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 31700.9551822151,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": 31211.1727758202,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 30908.6863304649,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 30294.8166605871,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 30056.9300520201,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 29897.7779664682,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 30188.4414501216,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 29787.187615947,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 29454.917092852,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 30479.1468474657,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 30739.9167933558,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 30092.8928063778,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 29651.8755987452,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 29469.3158998675,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 28933.736924459,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 28863.083740533,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2001",
+   "value": 28947.4263355584,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 28529.3424589965,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1999",
+   "value": 27994.6438699687,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 27010.1106397105,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1997",
+   "value": 25977.9527603556,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 25323.330856098,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NY.ADJ.NNTY.PC.KD",
+    "value": "Adjusted net national income per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1995",
+   "value": 24951.4410241281,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  }
+ ]
+]

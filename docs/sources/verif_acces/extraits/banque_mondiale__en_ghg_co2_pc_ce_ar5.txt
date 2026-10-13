@@ -1,0 +1,512 @@
+# banque_mondiale / EN.GHG.CO2.PC.CE.AR5
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/EN.GHG.CO2.PC.CE.AR5?format=json&per_page=100&date=1995:2026
+# Vérifié le 2026-10-13T11:33:58Z — HTTP 200 — application/json;charset=utf-8 — 8447 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 31,
+  "sourceid": "2",
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": 4.00355772602595,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": 4.15598361008436,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": 4.51246828877731,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 4.66820869200128,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 4.24677642127474,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 4.79214044818249,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 4.89217066506758,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 5.06155143263354,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": 5.01727531627851,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 4.99116340691761,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 4.93048874498212,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 5.45712098979101,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 5.55949763606406,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 5.56604040689413,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 5.80194807906,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 5.71717317269645,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 5.94290191259616,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 6.09003030294036,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 6.24021668362979,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 6.45391402908229,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 6.46668310699496,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 6.49767617932604,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 6.46436747006761,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2001",
+   "value": 6.59967427030181,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 6.58034817935345,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1999",
+   "value": 6.67500237099655,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 6.81353446656297,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1997",
+   "value": 6.47243151046425,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 6.63417940846769,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.PC.CE.AR5",
+    "value": "Carbon dioxide (CO2) emissions excluding LULUCF per capita (t CO2e/capita)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1995",
+   "value": 6.41153012227111,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  }
+ ]
+]

@@ -1,0 +1,512 @@
+# banque_mondiale / SH.MED.PHYS.ZS
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/SH.MED.PHYS.ZS?format=json&per_page=100&date=1995:2026
+# Vérifié le 2026-10-13T11:33:41Z — HTTP 200 — application/json;charset=utf-8 — 6504 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 31,
+  "sourceid": "2",
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": 3.281,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 3.264,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 3.252,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 3.243,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 3.214,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 3.217,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": 3.2,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 3.184,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 3.169,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 3.156,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 3.139,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 3.124,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 3.345,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 3.339,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 3.385,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 3.388,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 3.406,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 3.413,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 3.413,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 3.396,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 3.381,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2001",
+   "value": 3.358,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 3.328,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1999",
+   "value": 3.313,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 3.315,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1997",
+   "value": 3.302,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 3.283,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "SH.MED.PHYS.ZS",
+    "value": "Physicians (per 1,000 people)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1995",
+   "value": 3.263,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  }
+ ]
+]

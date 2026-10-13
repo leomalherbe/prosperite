@@ -1,0 +1,101 @@
+# data_gouv / api_jeu_ssmsi_series_chrono
+# URL : https://www.data.gouv.fr/api/1/datasets/62b02e970a264df3467b6c42/
+# Vérifié le 2026-10-13T11:32:48Z — HTTP 200 — application/json — 13617 octets lus (taille annoncée : inconnue)
+
+{
+ "access_audiences": [],
+ "access_type": "open",
+ "access_type_reason": null,
+ "access_type_reason_category": null,
+ "acronym": "series_chrono",
+ "archived": null,
+ "authorization_request_url": null,
+ "badges": [],
+ "contact_points": [],
+ "created_at": "2022-06-20T10:23:51.920000+00:00",
+ "deleted": null,
+ "description": "La base des séries chronologiques du Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) référence plusieurs milliers d’indicateurs statistiques mensuels, trimestriels, annuels, nationaux, départementaux relatifs aux périmètres suivis par le service : crimes, délits, contraventions, taux de plainte, sentiment d’insécurité,… Pour chaque indicateur, outre ses valeurs, la base fournit des informations notamment sur sa source, sa périodicité, son unité de compte et sa définition complétée d’un lien vers une publication associée directement téléchargeable sur le site du [SSMSI](https://www.interieur.gouv.fr/Interstats/Publications). \n\nLes principaux périmètres suivis concerne les items suivants:\n_[1] \"Actes de vandalisme\"                                                            \n [2] \"Atteintes à caractère raciste, xénophobe ou antireligieux\"                      \n [3] \"Atteintes à l'environnement\"                                                    \n [4] \"Atteintes à la probité\"                                                         \n [5] \"Atteintes anti LGBT\"                                                            \n [6] \"Atteintes envers les animaux domestiques\"                                       \n [7] \"Cambriolages et tentatives\"                                                     \n [8] \"Dépôt de plainte (victime ou ménage victime ayant déclaré avoir déposé plainte)\"\n [9] \"Destructions et dégradations volontaires\"                                       \n[10] \"Escroqueries et les fraudes aux moyens de paiements\"                            \n[11] \"Homicides et tentatives d'homicide\"                                             \n[12] \"Infractions à la législation sur les stupéfiants\"                               \n[13] \"Infractions liées au numérique\"                                                 \n[14] \"Injures\"                                                                        \n[15] \"Menaces\"                                                                        \n[16] \"Outrages et violences contre dépositaires de l'autorité publique\"               \n[17] \"Outrages sexistes\"                                                              \n[18] \"Refus d’obtempérer\"                                                             \n[19] \"Sentiment d'insécurité\"                                                         \n[20] \"Traite et exploitation des êtres humains\"                                       \n[21] \"Violences conjugales\"                                                           \n[22] \"Violences physiques\"                                                            \n[23] \"Violences sexuelles\"                                                            \n[24] \"Vols et tentatives de vols avec violence\"                                       \n[25] \"Vols et tentatives de vols liés aux véhicules\"                                  \n[26] \"Vols et tentatives de vols sans violence\"                                       \n[27] \"Vols sans effraction de résidences principales\"_                                 \n\n\nLe SSMSI a créé une application de data visualisation de ces séries chronologiques directement accessible depuis l’onglet réutilisation associé à cette page, pour plus de détails sur cette application se rendre ici : [espace datavisualisation du SSMSI](https://www.interieur.gouv.fr/Interstats/Datavisualisation/Series-chronologiques-sur-la-delinquance-et-l-insecurite)\n\n**Mise à jour régulière.**",
+ "description_short": null,
+ "doi": null,
+ "extras": {},
+ "featured": false,
+ "frequency": "punctual",
+ "frequency_date": null,
+ "geopf": null,
+ "harvest": null,
+ "id": "62b02e970a264df3467b6c42",
+ "internal": {
+  "created_at_internal": "2022-06-20T10:23:51.920000+00:00",
+  "last_modified_internal": "2026-09-15T15:22:56.688000+00:00"
+ },
+ "last_modified": "2026-09-15T15:22:56.688000+00:00",
+ "last_update": "2026-09-15T15:22:56.688000+00:00",
+ "license": "lov2",
+ "metrics": {
+  "dataservices": 1,
+  "discussions": 0,
+  "discussions_open": 0,
+  "followers": 6,
+  "followers_by_months": {
+   "2024-08": 0,
+   "2024-09": 0,
+   "2024-10": 0,
+   "2024-11": 0,
+   "2024-12": 0,
+   "2025-01": 0,
+   "2025-02": 0,
+   "2025-03": 0,
+   "2025-04": 0,
+   "2025-05": 0,
+   "2025-06": 0,
+   "2025-07": 0,
+   "2025-08": 0
+  },
+  "resources_downloads": 9405,
+  "reuses": 5,
+  "reuses_by_months": {
+   "2025-08": 0,
+   "2025-09": 0,
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 0,
+   "2026-01": 0,
+   "2026-02": 0,
+   "2026-03": 1,
+   "2026-04": 0,
+   "2026-05": 1,
+   "2026-06": 0,
+   "2026-07": 1,
+   "2026-08": 1
+  },
+  "views": 40695
+ },
+ "organization": {
+  "acronym": "MI",
+  "badges": [
+   {
+    "kind": "public-service"
+   },
+   {
+    "kind": "certified"
+   }
+  ],
+  "class": "Organization",
+  "id": "534fff91a3a7292c64a77f53",
+  "logo": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/e1/27853c13394328b06c071c7953856a.jpg",
+  "logo_thumbnail": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/e1/27853c13394328b06c071c7953856a-100.jpg",
+  "name": "Ministère de l'intérieur",
+  "page": "https://www.data.gouv.fr/organizations/ministere-de-linterieur",
+  "permissions": {
+   "delete": false,
+   "edit": false,
+   "harvest": false,
+   "members": false,
+   "private": false
+  },
+  "slug": "ministere-de-linterieur",
+  "uri": "https://www.data.gouv.fr/api/1/organizations/ministere-de-linterieur/"
+ },
+ "owner": null,
+ "page": "https://www.data.gouv.fr/datasets/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques",
+ "pe

@@ -1,0 +1,253 @@
+# depp / ods_catalogue_json
+# URL : https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T11:31:57Z — HTTP 200 — application/json; charset=utf-8 — 8945 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 310,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "geo_shape",
+     "description": null,
+     "annotations": {},
+     "label": "Geo Shape",
+     "type": "geo_shape"
+    },
+    {
+     "name": "orig",
+     "description": null,
+     "annotations": {},
+     "label": "orig",
+     "type": "text"
+    },
+    {
+     "name": "dest",
+     "description": null,
+     "annotations": {},
+     "label": "dest",
+     "type": "text"
+    },
+    {
+     "name": "line_id",
+     "description": null,
+     "annotations": {},
+     "label": "line_id",
+     "type": "text"
+    },
+    {
+     "name": "stop1",
+     "description": null,
+     "annotations": {},
+     "label": "stop1",
+     "type": "text"
+    },
+    {
+     "name": "stop2",
+     "description": null,
+     "annotations": {},
+     "label": "stop2",
+     "type": "text"
+    },
+    {
+     "name": "stop3",
+     "description": null,
+     "annotations": {},
+     "label": "stop3",
+     "type": "text"
+    },
+    {
+     "name": "stop4",
+     "description": null,
+     "annotations": {},
+     "label": "stop4",
+     "type": "text"
+    },
+    {
+     "name": "stop5",
+     "description": null,
+     "annotations": {},
+     "label": "stop5",
+     "type": "text"
+    },
+    {
+     "name": "distance",
+     "description": null,
+     "annotations": {},
+     "label": "distance",
+     "type": "text"
+    },
+    {
+     "name": "name",
+     "description": null,
+     "annotations": {},
+     "label": "name",
+     "type": "text"
+    },
+    {
+     "name": "deviation",
+     "description": null,
+     "annotations": {},
+     "label": "deviation",
+     "type": "text"
+    },
+    {
+     "name": "geo_point_2d",
+     "description": null,
+     "annotations": {},
+     "label": "geo_point_2d",
+     "type": "geo_point_2d"
+    },
+    {
+     "name": "objectid",
+     "description": null,
+     "annotations": {},
+     "label": "objectid",
+     "type": "text"
+    },
+    {
+     "name": "shape_length",
+     "description": null,
+     "annotations": {},
+     "label": "Shape__Length",
+     "type": "text"
+    }
+   ],
+   "dataset_id": "paris-2024-lignes-para-dds",
+   "dataset_uid": "da_a39n9j",
+   "has_records": true,
+   "features": [
+    "geo"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "dcat": {
+     "created": null,
+     "issued": null,
+     "creator": "Paris 2024",
+     "contributor": null,
+     "contact_name": null,
+     "contact_email": null,
+     "accrualperiodicity": null,
+     "spatial": null,
+     "temporal": null,
+     "granularity": null,
+     "dataquality": null,
+     "publisher_type": null,
+     "conforms_to": null,
+     "temporal_coverage_start": null,
+     "temporal_coverage_end": null,
+     "accessRights": null,
+     "relation": null
+    },
+    "default": {
+     "title": "Paris 2024 - Lignes PARA DDS",
+     "description": "<p><span style='color: rgb(76, 76, 76); font-family: \"Avenir Next W01\", \"Avenir Next W00\", \"Avenir Next\", Avenir, \"Helvetica Neue\", sans-serif; font-size: 16px;'>Couche des itinéraires DDS. Le DDS (</span><font color=\"#4c4c4c\" face=\"Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif\"><span style=\"font-size: 16px;\">Direct and Dedicated Services) </span></font><span style='color: rgb(76, 76, 76); font-family: \"Avenir Next W01\", \"Avenir Next W00\", \"Avenir Next\", Avenir, \"Helvetica Neue\", sans-serif; font-size: 16px;'>est un service de transport pour les populations d'OBS.</span></p>",
+     "theme": [
+      "Sport, jeunesse et vie associative"
+     ],
+     "keyword": [
+      "transport",
+      "mobilité",
+      "accrédités",
+      "DDS",
+      "OBS"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "http://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "language": "fr",
+     "metadata_languages": [
+      "fr"
+     ],
+     "timezone": null,
+     "modified": "2024-10-01T10:01:34+00:00",
+     "modified_updates_on_metadata_change": false,
+     "modified_updates_on_data_change": false,
+     "data_processed": "2026-01-29T19:40:10.372000+00:00",
+     "metadata_processed": "2026-01-29T19:40:10.506000+00:00",
+     "geographic_reference": null,
+     "geographic_reference_auto": false,
+     "territory": null,
+     "geometry_types": [
+      "LineString",
+      "MultiLineString"
+     ],
+     "bbox": {
+      "type": "Feature",
+      "geometry": {
+       "coordinates": [
+        [
+         [
+          2.668751450255513,
+          49.01535398326814
+         ],
+         [
+          2.034902460873127,
+          49.01535398326814
+         ],
+         [
+          2.034902460873127,
+          48.78309953492135
+         ],
+         [
+          2.668751450255513,
+          48.78309953492135
+         ],
+         [
+          2.668751450255513,
+          49.01535398326814
+         ]
+        ]
+       ],
+       "type": "Polygon"
+      },
+      "properties": {}
+     },
+     "publisher": "Ministère des Sports",
+     "references": null,
+     "records_count": 110,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": null,
+     "update_frequency": null
+    },
+    "metadonnees-complementaires": {
+     "date-observation": null,
+     "periode-donnees": null,
+     "champ": null,
+     "couverture-geographique": null,
+     "unite-statistique": null,
+     "secret-statistique": null,
+     "source": null
+    }
+   }
+  },
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "uai",
+     "description": null,
+     "annotations": {},
+     "label": "UAI",
+     "type": "text"
+    },
+    {
+     "name": "nom_de_l_esj",
+     "description": null,
+     "annotations": {},
+     "label": "Nom de l'ESJ",
+     "type": "text"
+    },
+    {
+     "name": "nom_etablissement",
+     "description": "nom de l'établissement",
+     "annotations": 

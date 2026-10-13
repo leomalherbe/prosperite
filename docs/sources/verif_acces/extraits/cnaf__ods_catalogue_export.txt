@@ -1,6 +1,6 @@
 # cnaf / ods_catalogue_export
 # URL : https://data.caf.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T13:44:22Z — HTTP 200 — text/csv; charset=utf-8 — 239085 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:25:03Z — HTTP 200 — text/csv; charset=utf-8 — 239085 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['dcat.created', 'dcat.issued', 'dcat.creator', 'dcat.contributor', 'dcat.contact_name', 'dcat.contact_email', 'dcat.accrualperiodicity', 'dcat.spatial', 'dcat.temporal', 'dcat.granularity', 'dcat.dataquality', 'dcat.publisher_type', 'dcat.conforms_to', 'dcat.temporal_coverage_start', 'dcat.temporal_coverage_end', 'dcat.accessRights', 'dcat.relation', 'default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'custom.date-debut', 'custom.labellisation', 'custom.periodicite', 'custom.niveau-geographique', 'datasetid']
 210 lignes ; 210 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
@@ -17,26 +17,21 @@ asf_s_age_5_nat	ASF - Répartition des allocataires selon le type d'ASF et l'âg
 al_s_type_log_nat	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [National]	2026-10-09T15:24:52.694000+00:00	472	Caisse nationale des Allocations familiales
 rsa_s_type_sitfam_d_nat	RSA - Répartition des allocataires selon le type de RSA et la situation familiale [National]	2026-10-09T15:22:26.338000+00:00	1873	Caisse nationale des Allocations familiales
 ars_s_type_age_1_nat	ARS - Répartition des allocataires selon le type d'ARS et l'âge [National]	2026-10-09T15:25:28.480000+00:00	856	Caisse nationale des Allocations familiales
-s_sitfam_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation et la situation familiale [QPV]	2026-06-15T16:38:37+00:00	6665	Caisse nationale des Allocations familiales
 ppa_s_type_age_5_dep	PA - Répartition des allocataires selon le type de PA et l'âge [Département]	2026-09-28T01:18:37+00:00	271701	Caisse nationale des Allocations familiales
 al_s_type_log_qpv_f	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [QPV]	2026-06-15T16:38:46+00:00	4031	Caisse nationale des Allocations familiales
 ndur_s_qf_400_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [QPV]	2026-06-15T16:38:38+00:00	11364	Caisse nationale des Allocations familiales
 ppa_s_type_mtt_200_dep	PA - Répartition des allocataires selon le type de PA et le montant de la PA [Département]	2026-09-28T01:08:00+00:00	73005	Caisse nationale des Allocations familiales
-af_s_majo_sitfam_d_nat	AF - Répartition des allocataires selon la majoration d'AF ou non et la situation familiale [National]	2026-10-09T15:25:26.454000+00:00	1888	Caisse nationale des Allocations familiales
 s_age_10_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation et l'âge [QPV]	2026-06-15T16:38:38+00:00	10686	Caisse nationale des Allocations familiales
 asf_s_age_5_dep	ASF - Répartition des allocataires selon le type d'ASF et l'âge [Département]	2026-09-28T01:17:10+00:00	113024	Caisse nationale des Allocations familiales
 aah_s_typ_com_dep	AAH - Répartition des allocataires selon le type de complément d'AAH [Département]	2026-09-28T01:05:58+00:00	36564	Caisse nationale des Allocations familiales
 rsa_s_revtrim_200_dep	PA - Répartition des allocataires selon le montant du revenu trimestriel [Département]	2026-09-28T01:08:26+00:00	109716	Caisse nationale des Allocations familiales
 nbpla_pe_dep_hist	Nombre de places offertes pour les enfants de moins de 3 ans - historique 2017-2022 [Département]	2026-01-22T13:54:55+00:00	618	Caisse nationale des Allocations familiales
-nbpla_pe_com_hist	Nombre de places offertes pour les enfants de moins de 3 ans - historique 2017-2022 [Communal]	2026-01-22T13:48:01+00:00	6241	Caisse nationale des Allocations familiales
 al_s_type_parc_dep	AL - Répartition des allocataires selon le type de parc (privé ou public) [Département]	2026-09-28T01:08:58+00:00	24629	Caisse nationale des Allocations familiales
 al_s_type_parc_iris_f	AL - Répartition des allocataires selon le type de parc (parc privé ou public) [IRIS]	2026-06-15T16:58:19+00:00	31166	Caisse nationale des Allocations familiales
 af_s_type_epci_f	AF - Répartition des allocataires selon le type d'AF [EPCI]	2026-02-11T13:57:03+00:00	18192	Caisse nationale des Allocations familiales
 al_s_type_log_dep	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [Département]	2026-09-28T01:06:08+00:00	48595	Caisse nationale des Allocations familiales
 prepare_s_tx_epci_f	PreParE - Répartition des allocataires selon le taux de PreParE [EPCI]	2026-02-11T13:57:01+00:00	13220	Caisse nationale des Allocations familiales
 ppa_s_type_epci_f	PA - Répartition des allocataires selon le type de PA [EPCI]	2026-02-11T13:57:01+00:00	12890	Caisse nationale des Allocations familiales
-al_s_type_log_epci_f	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [EPCI]	2026-02-11T13:57:21+00:00	21131	Caisse nationale des Allocations familiales
-ndur_s_qf_400_nat	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [National]	2026-09-28T01:16:19+00:00	944	Caisse nationale des Allocations familiales
 al_s_statuetu_type_parc_nat	AL - Répartition des allocataires étudiants ou non selon le type de parc [National]	2026-10-09T15:25:14.294000+00:00	1180	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_epci_f	CMG - Répartition des allocataires selon le type de CMG et la situation familiale [EPCI]	2026-02-11T13:57:02+00:00	14440	Caisse nationale des Allocations familiales
 af_s_type_com_f	AF - Répartition des allocataires selon le type d'AF [Communal]	2026-02-11T14:09:22+00:00	253324	Caisse nationale des Allocations familiales
@@ -46,16 +41,12 @@ prepare_s_tx_age_10_nat	PreParE - Répartition des allocataires selon le taux de
 ars_s_type_dep	ARS - Répartition des allocataire selon type d'ARS (différentielle ou non) [Département]	2026-09-28T01:09:58+00:00	2140	Caisse nationale des Allocations familiales
 al_s_type_log_zonegeo_nat	AL - Répartition des allocataires selon le type de logement et la zone géographique [National]	2026-10-09T15:25:08.931000+00:00	1636	Caisse nationale des Allocations familiales
 al_s_zonegeo_dep	AL - Répartition des allocataires selon la zone géographique [Département]	2026-09-28T01:06:38+00:00	48318	Caisse nationale des Allocations familiales
-aah_s_sexe_age_1_nat	AAH - Répartition des allocataires selon le sexe et l'âge [National]	2026-10-09T15:22:46.151000+00:00	12744	Caisse nationale des Allocations familiales
 al_s_type_parc_epci_f	AL - Répartition des allocataires selon le type de parc (parc privé ou public) [EPCI]	2026-02-11T13:57:03+00:00	12508	Caisse nationale des Allocations familiales
 ppa_s_type_iris_f	PA - Répartition des allocataires selon le type de prestation [IRIS]	2026-06-15T16:57:50+00:00	31229	Caisse nationale des Allocations familiales
-rsa_s_type_iris_f	RSA - Répartition des allocataires selon le type de prestation [IRIS]	2026-06-15T16:57:34+00:00	30793	Caisse nationale des Allocations familiales
-s_ben_nat	Toutes prestations - Répartition des allocataires selon la prestation [National]	2026-10-09T15:22:12.981000+00:00	118	Caisse nationale des Allocations familiales
 rsa_ppa_s_agg_sitfam_d_nat	RSA et PA - Répartition des allocataires selon la situation familiale [National]	2026-10-09T15:24:31.269000+00:00	2832	Caisse nationale des Allocations familiales
 al_s_statuetu_type_log_dep	AL - Répartition des allocataires étudiants ou non selon le type de logement [Département]	2026-09-28T01:10:27+00:00	186986	Caisse nationale des Allocations familiales
 vfdas_dep	Dépenses d'action sociale [Département]	2026-07-22T14:58:25+00:00	909	Caisse nationale des Allocations familiales
 aah_s_complaah_age_1_nat	AAH - Répartition des allocataires selon le complément d'AAH et l'âge [National]	2026-10-09T15:24:42.313000+00:00	12744	Caisse nationale des Allocations familiales
-rsa_ppa_s_agg_com_f	RSA et PA - Répartition des allocataires [Communal]	2026-02-11T14:15:34+00:00	439710	Caisse nationale des Allocations familiales
 s_age_1_nat	Toutes prestations - Répartition des allocataires selon la prestation et  l'âge [National]	2026-10-09T15:22:15.896000+00:00	5310	Caisse nationale des Allocations familiales
 rsa_s_type_mtt_100_nat	RSA - Répartition des allocataires selon le type de RSA et le montant de droit [National]	2026-10-09T15:22:28.751000+00:00	3021	Caisse nationale des Allocations familiales
 ars_s_type_sitfam_d_dep	ARS - Répartition des allocataires selon le type d'ARS (différentielle ou non) et la situation familiale [Département]	2026-09-28T01:09:20+00:00	14536	Caisse nationale des Allocations familiales
@@ -67,40 +58,49 @@ nbpla_pe_epci_dev	Nombre de places offertes pour les enfants de moins de 3 ans [
 s_sitfam_d_nat	Toutes prestations - Répartition des allocataires selon la prestation et la situation familiale [National]	2026-10-09T15:22:19.496000+00:00	944	Caisse nationale des Allocations familiales
 ndur_s_revn2_nat	Toutes prestations - Répartition des allocataires selon le revenu (n-2) [National]	2026-10-09T15:22:21.905000+00:00	1888	Caisse nationale des Allocations familiales
 s_sitfam_sex_iris_f	Toutes prestations - Répartition des allocataires selon la prestation, le sexe et la situation familiale [IRIS]	2026-06-15T16:58:28+00:00	215253	Caisse nationale des Allocations familiales
-txcouv_pe_reg_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [Région]	2026-01-22T14:21:26+00:00	107	Caisse nationale des Allocations familiales
-nbpla_pe_nat	Nombre de places offertes pour les enfants de moins de 3 ans [National]	2026-01-22T13:47:51+00:00	2	Caisse nationale des Allocations familiales
-ppa_s_type_com_f-copy	ppa_s_type_com_f-copy	2024-05-28T11:31:34+00:00	414405	Caisse nationale des Allocations familiales
-ndurcmg_s_sitfam_com_f-copy	ndurcmg_s_sitfam_com_f-copy	2025-11-06T23:16:07+00:00	617920	Caisse nationale des Allocations familiales
-s_ben_epci_f	Toutes prestations - Répartition des allocataires selon la prestation [EPCI]	2026-02-11T13:57:00+00:00	6259	Caisse nationale des Allocations familiales
-al_s_type_parc_com_f	AL - Répartition des allocataires selon le type de parc (parc privé ou public) [Communal]	2026-02-11T14:09:43+00:00	257598	Caisse nationale des Allocations familiales
-al_s_type_log_com_f	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [Communal]	2026-02-11T14:19:49+00:00	324343	Caisse nationale des Allocations familiales
-al_s_type_parc_dep-copy	al_s_type_parc_dep-copy	2024-08-23T14:11:29+00:00	24629	Caisse nationale des Allocations familiales
-rsa_s_type_com_f-copy	rsa_s_type_com_f-copy	2024-05-28T11:31:37+00:00	376989	Caisse nationale des Allocations familiales
-prepare_s_tx_dep-copy	prepare_s_tx_dep-copy	2026-09-28T01:09:03+00:00	24282	Caisse nationale des Allocations familiales
-s_sitfam_com_f-copy	s_sitfam_com_f-copy	2024-05-28T11:31:51+00:00	650754	Caisse nationale des Allocations familiales
-ppa_s_type_epci_f-copy	ppa_s_type_epci_f-copy	2025-03-14T13:53:15+00:00	15069	Caisse nationale des Allocations familiales
-prochaines-parutions	Prochaines parutions	2026-07-22T15:22:16+00:00	2	
-s_ben_com_f	Toutes prestations - Répartition des allocataires selon la prestation [Communal]	2026-02-11T14:15:34+00:00	174452	Caisse nationale des Allocations familiales
-al_s_statuetu_zonegeo_dep	AL - Répartition des allocataires étudiants ou non selon la zone géographique [Département]	2026-09-28T01:14:41+00:00	189739	Caisse nationale des Allocations familiales
-dep_tr_nat	Dépenses tous régimes [National]	2025-11-21T14:07:19+00:00	1209	Caisse nationale des Allocations familiales
-nbpla_pe_reg	Nombre de places offertes pour les enfants de moins de 3 ans [Région]	2026-01-22T13:47:51+00:00	38	Caisse nationale des Allocations familiales
-txcouv_pe_epci	Taux de couverture d'accueil du jeune enfant [EPCI]	2026-01-22T13:47:54+00:00	2502	Caisse nationale des Allocations familiales
-al_s_type_parc_com_f-copy	al_s_type_parc_com_f-copy	2024-05-28T11:31:23+00:00	268804	Caisse nationale des Allocations familiales
-ndur_s_qf_500_epci_f-copy	ndur_s_qf_500_epci_f-copy	2024-05-27T21:54:34+00:00	49849	Caisse nationale des Allocations familiales
-rsa_s_type_epci_f-copy	rsa_s_type_epci_f-copy	2025-03-14T13:53:12+00:00	15069	Caisse nationale des Allocations familiales
-s_sitfam_agrege_dep	s_sitfam_agrege_dep	2024-12-18T13:39:04+00:00	3316	
 al_s_statuetu_nat	AL - Répartition des allocataires étudiants ou non-étudiants et leur statut (boursier, salarié) [National]	2026-10-09T15:25:06.012000+00:00	590	Caisse nationale des Allocations familiales
 txcouv_pe_epci_dev	Taux de couverture d'accueil du jeune enfant [EPCI] - DEV	2024-10-03T16:31:53+00:00	8755	Caisse nationale des Allocations familiales
 s_sitfam_sex_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation, le sexe et la situation familiale [QPV]	2026-06-15T16:38:43+00:00	23847	Caisse nationale des Allocations familiales
+txcouv_pe_epci_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [EPCI]	2026-01-22T13:50:04+00:00	7503	Caisse nationale des Allocations familiales
+rsa_s_type_iris_f	RSA - Répartition des allocataires selon le type de prestation [IRIS]	2026-06-15T16:57:34+00:00	30793	Caisse nationale des Allocations familiales
+nbpla_pe_com_hist	Nombre de places offertes pour les enfants de moins de 3 ans - historique 2017-2022 [Communal]	2026-01-22T13:48:01+00:00	6241	Caisse nationale des Allocations familiales
+s_ben_epci_f	Toutes prestations - Répartition des allocataires selon la prestation [EPCI]	2026-02-11T13:57:00+00:00	6259	Caisse nationale des Allocations familiales
+al_s_type_parc_com_f	AL - Répartition des allocataires selon le type de parc (parc privé ou public) [Communal]	2026-02-11T14:09:43+00:00	257598	Caisse nationale des Allocations familiales
+txcouv_pe_reg_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [Région]	2026-01-22T14:21:26+00:00	107	Caisse nationale des Allocations familiales
+nbpla_pe_nat	Nombre de places offertes pour les enfants de moins de 3 ans [National]	2026-01-22T13:47:51+00:00	2	Caisse nationale des Allocations familiales
+rsa_s_type_com_f-copy	rsa_s_type_com_f-copy	2024-05-28T11:31:37+00:00	376989	Caisse nationale des Allocations familiales
+ppa_s_type_com_f-copy	ppa_s_type_com_f-copy	2024-05-28T11:31:34+00:00	414405	Caisse nationale des Allocations familiales
+s_sitfam_com_f-copy	s_sitfam_com_f-copy	2024-05-28T11:31:51+00:00	650754	Caisse nationale des Allocations familiales
+ppa_s_type_epci_f-copy	ppa_s_type_epci_f-copy	2025-03-14T13:53:15+00:00	15069	Caisse nationale des Allocations familiales
+ndurcmg_s_sitfam_com_f-copy	ndurcmg_s_sitfam_com_f-copy	2025-11-06T23:16:07+00:00	617920	Caisse nationale des Allocations familiales
+al_s_type_log_com_f	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [Communal]	2026-02-11T14:19:49+00:00	324343	Caisse nationale des Allocations familiales
+dep_tr_nat	Dépenses tous régimes [National]	2025-11-21T14:07:19+00:00	1209	Caisse nationale des Allocations familiales
+nbpla_pe_reg	Nombre de places offertes pour les enfants de moins de 3 ans [Région]	2026-01-22T13:47:51+00:00	38	Caisse nationale des Allocations familiales
+rsa_ppa_s_agg_com_f	RSA et PA - Répartition des allocataires [Communal]	2026-02-11T14:15:34+00:00	439710	Caisse nationale des Allocations familiales
+al_s_type_parc_dep-copy	al_s_type_parc_dep-copy	2024-08-23T14:11:29+00:00	24629	Caisse nationale des Allocations familiales
+prepare_s_tx_dep-copy	prepare_s_tx_dep-copy	2026-09-28T01:09:03+00:00	24282	Caisse nationale des Allocations familiales
+ndur_s_qf_500_epci_f-copy	ndur_s_qf_500_epci_f-copy	2024-05-27T21:54:34+00:00	49849	Caisse nationale des Allocations familiales
+s_sitfam_agrege_dep	s_sitfam_agrege_dep	2024-12-18T13:39:04+00:00	3316	
+prochaines-parutions	Prochaines parutions	2026-07-22T15:22:16+00:00	2	
+s_ben_nat	Toutes prestations - Répartition des allocataires selon la prestation [National]	2026-10-09T15:22:12.981000+00:00	118	Caisse nationale des Allocations familiales
+al_s_statuetu_zonegeo_dep	AL - Répartition des allocataires étudiants ou non selon la zone géographique [Département]	2026-09-28T01:14:41+00:00	189739	Caisse nationale des Allocations familiales
+aah_s_sexe_age_1_nat	AAH - Répartition des allocataires selon le sexe et l'âge [National]	2026-10-09T15:22:46.151000+00:00	12744	Caisse nationale des Allocations familiales
+af_s_majo_sitfam_d_nat	AF - Répartition des allocataires selon la majoration d'AF ou non et la situation familiale [National]	2026-10-09T15:25:26.454000+00:00	1888	Caisse nationale des Allocations familiales
+al_s_type_log_epci_f	AL - Répartition des allocataires selon le type de logement (accession, location, foyer) [EPCI]	2026-02-11T13:57:21+00:00	21131	Caisse nationale des Allocations familiales
+ndur_s_qf_400_nat	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [National]	2026-09-28T01:16:19+00:00	944	Caisse nationale des Allocations familiales
+s_sitfam_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation et la situation familiale [QPV]	2026-06-15T16:38:37+00:00	6665	Caisse nationale des Allocations familiales
+txcouv_pe_epci	Taux de couverture d'accueil du jeune enfant [EPCI]	2026-01-22T13:47:54+00:00	2502	Caisse nationale des Allocations familiales
+rsa_s_type_epci_f-copy	rsa_s_type_epci_f-copy	2025-03-14T13:53:12+00:00	15069	Caisse nationale des Allocations familiales
+s_ben_com_f	Toutes prestations - Répartition des allocataires selon la prestation [Communal]	2026-02-11T14:15:34+00:00	174452	Caisse nationale des Allocations familiales
 rsa_s_type_com_f	RSA - Répartition des allocataires selon le type de RSA [Communal]	2026-02-11T14:07:48+00:00	263729	Caisse nationale des Allocations familiales
 af_s_type_com_f-copy	af_s_type_com_f-copy	2024-05-28T11:31:30+00:00	552732	Caisse nationale des Allocations familiales
 al_s_type_log_dep-copy	al_s_type_log_dep-copy	2024-08-23T14:11:30+00:00	48595	Caisse nationale des Allocations familiales
+al_s_type_parc_com_f-copy	al_s_type_parc_com_f-copy	2024-05-28T11:31:23+00:00	268804	Caisse nationale des Allocations familiales
+prepare_s_tx_com_f-copy	prepare_s_tx_com_f-copy	2024-05-28T11:31:26+00:00	283902	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_com_f-transpose	ndurcmg_s_sitfam_com_f-transpose	2024-05-28T12:17:21+00:00	245763	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_dep-transpose	ndurcmg_s_sitfam_dep-transpose	2025-01-30T16:26:41+00:00	96980	Caisse nationale des Allocations familiales
 s_sitfam_agrege_epci	s_sitfam_agrege_epci	2024-12-18T13:47:57+00:00	25115	
-prepare_s_tx_com_f-copy	prepare_s_tx_com_f-copy	2024-05-28T11:31:26+00:00	283902	Caisse nationale des Allocations familiales
 af_s_type_dep-copy	af_s_type_dep-copy	2024-08-23T14:11:44+00:00	36289	Caisse nationale des Allocations familiales
-txcouv_pe_epci_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [EPCI]	2026-01-22T13:50:04+00:00	7503	Caisse nationale des Allocations familiales
 rsa_s_dem_2_dep	RSA - Répartition des allocataires selon l'année de demande du RSA [Départemental]	2026-09-28T01:06:26+00:00	97919	Caisse nationale des Allocations familiales
 s_ben_dep	Toutes prestations - Répartition des allocataires selon la prestation [Départemental]	2026-09-28T01:15:12+00:00	12499	Caisse nationale des Allocations familiales
 txcouv_pe_nat	Taux de couverture d'accueil du jeune enfant [National]	2026-01-22T13:47:51+00:00	2	Caisse nationale des Allocations familiales
@@ -111,18 +111,14 @@ txcouv_pe_dep_hist_dev	txcouv_pe_dep_hist_dev	2026-01-08T13:24:43+00:00	610
 aah_s_sexe_tx_inca_nat	AAH - Répartition des allocataires selon le sexe et le taux d'incapacité [National]	2026-09-28T01:06:08+00:00	944	Caisse nationale des Allocations familiales
 af_s_type_qpv_f	AF - Répartition des allocataires selon le type de prestation [QPV]	2026-06-15T16:38:43+00:00	3549	Caisse nationale des Allocations familiales
 al_s_type_parc_nat	AL - Répartition des allocataires selon le type de parc (parc privé ou public) [National]	2026-10-09T15:24:55.458000+00:00	236	Caisse nationale des Allocations familiales
-asf_s_sitfam_d_nat	ASF - Répartition des allocataires selon le type d'ASF et la situation familiale [National]	2026-09-28T01:15:07+00:00	680	Caisse nationale des Allocations familiales
 ars_s_type_sitfam_d_nat	ARS - Répartition des allocataires selon le type d'ARS et la situation familiale [National]	2026-10-09T15:25:21.224000+00:00	160	Caisse nationale des Allocations familiales
-s_ben_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation [QPV]	2026-06-15T16:38:48+00:00	1674	Caisse nationale des Allocations familiales
 ppa_s_dem_2_dep	PA - Répartition des allocataires selon l'année de demande de la PA [Département] 	2026-09-28T01:10:16+00:00	45653	Caisse nationale des Allocations familiales
 aah_s_tx_inca_dep	AAH - Répartition des allocataires selon le taux d'incapacité [Département]	2026-09-28T01:06:08+00:00	35581	Caisse nationale des Allocations familiales
 rsa_s_revtrim_100_nat	RSA - Répartition des allocataires selon le revenu trimestriel [National]	2026-10-09T15:22:33.215000+00:00	2006	Caisse nationale des Allocations familiales
-al_s_statuetu_type_parc_dep	AL - Répartition des allocataires étudiants ou non selon le type de parc [Département]	2026-09-28T01:08:26+00:00	119193	Caisse nationale des Allocations familiales
 rsa_ppa_s_agg_sitfam_d_dep	RSA et PA - Répartition des allocataires selon la situation familiale [Département]	2026-09-28T01:16:31+00:00	292166	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_nat	CMG - Répartition des allocataires selon le type de CMG et la situation familiale [National]	2026-09-28T01:15:22+00:00	452	Caisse nationale des Allocations familiales
 prepare_s_tx_dep	PreParE - Répartition des allocataires selon taux de PreParE (plein ou partiel) [Département]	2026-09-28T01:05:52+00:00	24282	Caisse nationale des Allocations familiales
 al_s_statuetu_type_log_nat	AL - Répartition des allocataires étudiants ou non selon le type de logement [National]	2026-10-09T15:25:11.401000+00:00	2354	Caisse nationale des Allocations familiales
-asf_s_ben_dep	ASF - Répartition des allocataires selon le type d'ASF [Département]	2026-09-28T01:17:41+00:00	9862	Caisse nationale des Allocations familiales
 af_s_tx_dep	AF - Répartition des allocataires selon le niveau de modulation des AF [Département]	2026-09-28T01:06:16+00:00	60344	Caisse nationale des Allocations familiales
 ab_s_tx_dep	AB - Répartition des allocataires selon le taux d'AB (plein ou partiel) [Département] 	2026-09-28T01:09:06+00:00	24417	Caisse nationale des Allocations familiales
 aah_s_tx_inca_age_1_nat	AAH - Répartition des allocataires selon le taux d'incapacité et l'âge [National]	2026-10-09T15:24:39.597000+00:00	19354	Caisse nationale des Allocations familiales
@@ -134,9 +130,6 @@ ppa_s_type_qpv_f	PA - Répartition des allocataires selon le type de prestation 
 rsa_ppa_s_agg_iris_f	RSA et PA - Répartition des allocataires [IRIS]	2026-06-15T16:57:56+00:00	47700	Caisse nationale des Allocations familiales
 ajpp_s_nbj_dep	AJPP - Répartition des allocataires selon le nombre de jours AJPP [Département]	2026-09-28T01:06:14+00:00	44809	Caisse nationale des Allocations familiales
 rsa_ppa_s_agg_age_5_dep	RSA et PA - Répartition des allocataires selon l'âge [Département]	2026-09-28T01:18:31+00:00	427544	Caisse nationale des Allocations familiales
-prepare_s_tx_com_f	PreParE - Répartition des allocataires selon le taux de PreParE [Communal]	2026-02-11T14:06:26+00:00	213352	Caisse nationale des Allocations familiales
-aah_s_tx_inca_age_5_dep	AAH - Répartition des allocataires selon le taux d'incapacité et l'âge [Département]	2026-09-28T01:11:30+00:00	298056	Caisse nationale des Allocations familiales
-aah_s_sexe_dep	AAH - Répartition des allocataires selon le sexe [Département]	2026-09-28T01:05:52+00:00	24534	Caisse nationale des Allocations familiales
 asf_s_ben_nat	ASF - Répartition des allocataires selon le type d'ASF [National]	2026-09-28T01:10:12+00:00	95	Caisse nationale des Allocations familiales
 prepare_s_tx_qpv_f	PreParE - Répartition des allocataires selon le taux [QPV]	2026-06-15T16:38:45+00:00	2411	Caisse nationale des Allocations familiales
 cf_s_majo_dep	CF - Répartition des allocataires selon la majoration de CF ou non [Département]	2026-09-28T01:10:27+00:00	36450	Caisse nationale des Allocations familiales
@@ -144,74 +137,81 @@ aah_s_complaah_age_5_dep	AAH - Répartition des allocataires selon le complémen
 aah_s_sexe_age_5_dep	AAH - Répartition des allocataires selon l'âge [Département]	2026-09-28T01:12:11+00:00	288399	Caisse nationale des Allocations familiales
 af_s_type_tx_nat	AF - Répartition des allocataires selon le type d'AF et le niveau de modulation des AF [National]	2026-10-09T15:24:36.822000+00:00	1724	Caisse nationale des Allocations familiales
 af_s_majo_tx_nat	AF - Répartition des allocataires selon la majoration d'AF ou non [National]	2026-10-09T15:25:23.375000+00:00	1180	Caisse nationale des Allocations familiales
-txcouv_pe_com_dev	Taux de couverture d'accueil du jeune enfant [Communal] - DEV	2024-10-03T16:31:52+00:00	7300	Caisse nationale des Allocations familiales
-s_age_5_dep	Toutes prestations - Répartition des allocataires selon la prestation et l'âge [Départemental]	2026-09-28T01:21:04+00:00	147215	Caisse nationale des Allocations familiales
-ppa_s_type_com_f	PA - Répartition des allocataires selon le type de PA [Communal]	2026-02-11T14:09:17+00:00	297456	Caisse nationale des Allocations familiales
 ben_tr_nat	Bénéficiaires tous régimes [National]	2025-09-02T15:44:02+00:00	535	Caisse nationale des Allocations familiales
 ppa_s_type_sitfam_d_nat	PA - Répartition des allocataires selon le type de PA et la situation familiale [National]	2026-10-09T15:22:38.353000+00:00	1792	Caisse nationale des Allocations familiales
 rsa_s_dem_1_nat	RSA - Répartition des allocataires selon l'année de demande du RSA [National]	2026-10-09T15:22:30.925000+00:00	1750	Caisse nationale des Allocations familiales
-ndur_s_qf_400_epci_f	Toutes prestations - Répartition des allocataires percevant au moins une prestation légale selon le quotient familial [EPCI]	2026-02-11T13:57:50+00:00	49849	Caisse nationale des Allocations familiales
 asf_s_sitfam_d_dep	ASF - Répartition des allocataires selon le type d'ASF et la situation familiale [Département]	2026-09-28T01:18:31+00:00	58669	Caisse nationale des Allocations familiales
 ppa_s_dem_1_nat	PA - Répartition des allocataires selon l'année de demande de la PA [National]	2026-10-09T15:22:42.864000+00:00	923	Caisse nationale des Allocations familiales
-s_sitfam_iris_f	Toutes prestations - Répartition des allocataires selon la prestation et la situation familiale [IRIS]	2026-06-15T16:57:23+00:00	63925	Caisse nationale des Allocations familiales
-ndur_s_qf_400_iris_f	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [IRIS]	2026-06-15T16:58:04+00:00	122201	Caisse nationale des Allocations familiales
-nbpla_pe_epci	Nombre de places offertes pour les enfants de moins de 3 ans [EPCI]	2026-01-22T13:47:54+00:00	2502	Caisse nationale des Allocations familiales
-s_sitfam_com_f	Toutes prestations - Répartition des allocataires selon les groupes de prestations et la situation familiale [Communal]	2026-02-11T14:28:13+00:00	650754	Caisse nationale des Allocations familiales
-rsa_s_type_age_5_dep	RSA - Répartition des allocataires selon le type de RSA et l'âge [Départemental]	2026-09-28T01:16:08+00:00	276959	Caisse nationale des Allocations familiales
 aah_s_tx_dep	AAH - Répartition des allocataires selon le taux d'AAH (plein ou partiel) [Département]	2026-09-28T01:06:52+00:00	24535	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_com_f	CMG - Répartition des allocataires selon le type de CMG et la situation familiale [Communal]	2026-02-11T14:15:22+00:00	360809	Caisse nationale des Allocations familiales
 cf_s_majo_sitfam_d_nat	CF - Répartition des allocataires selon la majoration de CF ou non et la situation familiale [National]	2026-10-09T15:24:34.053000+00:00	2697	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_iris_f	CMG - Répartition des allocataires selon le type de CMG et la situation familiale [IRIS]	2026-06-15T16:58:15+00:00	27242	Caisse nationale des Allocations familiales
 af_s_type_dep	AF - Répartition des allocataires selon le type d'AF [Département]	2026-09-28T01:05:59+00:00	36289	Caisse nationale des Allocations familiales
-nbpla_pe_epci_hist	Nombre de places offertes pour les enfants de moins de 3 ans - historique 2017-2022 [EPCI]	2026-01-22T13:54:57+00:00	7504	Caisse nationale des Allocations familiales
-ndur_s_qf_400_com_f	Toutes prestations - Répartition des allocataires percevant au moins une prestation légale selon le quotient familial [Communal]	2026-02-11T14:39:43+00:00	1135366	Caisse nationale des Allocations familiales
 rsa_s_type_epci_f	RSA - Répartition des allocataires selon le type de RSA [EPCI]	2026-02-11T13:57:01+00:00	13187	Caisse nationale des Allocations familiales
 al_s_statuetu_dep	AL - Répartition des allocataires selon le type d'étudiant [Département]	2026-09-28T01:07:08+00:00	60795	Caisse nationale des Allocations familiales
 s_ben_iris_f	Toutes prestations - Répartition des allocataires selon la prestation [IRIS]	2026-06-15T16:57:07+00:00	16136	Caisse nationale des Allocations familiales
-txcouv_pe_nat_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [National]	2026-01-22T13:47:55+00:00	6	Caisse nationale des Allocations familiales
 ars_s_type_age_5_dep	ARS - Répartition des allocataires selon le type d'ARS (différentielle ou non) et l'âge [Département]	2026-09-28T01:14:56+00:00	20029	Caisse nationale des Allocations familiales
 ndur_s_qf_100_nat	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [National]	2026-10-09T15:24:50.628000+00:00	2950	Caisse nationale des Allocations familiales
-rsa_s_type_mtt_200_dep	RSA - Répartition des allocataires selon le montant du RSA [Départemental]	2026-09-28T01:17:43+00:00	122221	Caisse nationale des Allocations familiales
+ppa_s_type_age_1_nat	PA - Répartition des allocataires selon le type de PA et l'âge [National]	2026-10-09T15:22:35.611000+00:00	10627	Caisse nationale des Allocations familiales
+rsa_s_type_sitfam_d_dep	RSA - Répartition des allocataires selon le type de RSA et la situation familiale [Départemental]	2026-09-28T01:17:48+00:00	150922	Caisse nationale des Allocations familiales
+af_s_type_iris_f	AF - Répartition des allocataires selon le type de prestation [IRIS]	2026-06-15T16:58:07+00:00	32348	Caisse nationale des Allocations familiales
+al_s_type_log_zonegeo_dep	AL - Répartition des allocataires selon le type de logement et la zone géographique [Département]	2026-09-28T01:09:25+00:00	102771	Caisse nationale des Allocations familiales
+rsa_s_type_age_1_nat	RSA - Répartition des allocataires selon le type de RSA et l'âge [National]	2026-10-09T15:22:24.175000+00:00	11304	Caisse nationale des Allocations familiales
+s_age_10_epci_f	Toutes prestations - Répartition des allocataires selon les groupes de prestations  et l'âge [EPCI]	2026-02-11T13:57:40+00:00	43099	Caisse nationale des Allocations familiales
+ars_s_type_nat	ARS - Répartition des allocataires selon le type d'ARS [National]	2026-10-09T15:25:19.008000+00:00	20	Caisse nationale des Allocations familiales
+ndur_s_qf_400_dep	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [Départemental]	2026-09-28T01:13:22+00:00	98140	Caisse nationale des Allocations familiales
 nbpla_pe_reg_hist	Nombre de places offertes pour les enfants de moins de 3 ans - historique 2017-2022 [Région]	2026-01-22T13:47:56+00:00	114	Caisse nationale des Allocations familiales
+rsa_ppa_s_agg_age_1_nat	RSA et PA - Répartition des allocataires selon l'âge [National]	2026-10-09T15:24:28.898000+00:00	15930	Caisse nationale des Allocations familiales
 rsa_ppa_s_agg_epci_f	RSA et PA - Répartition des allocataires [EPCI]	2026-02-11T13:57:18+00:00	19811	Caisse nationale des Allocations familiales
 af_s_type_epci_f-copy	af_s_type_epci_f-copy	2025-03-14T15:10:46+00:00	20092	Caisse nationale des Allocations familiales
 s_sitfam_agreg_com	s_sitfam_agreg_com	2024-12-18T13:53:17+00:00	699632	
+georef-svg	[Pour visualisation] Formes géographiques des départements et régions en SVG	2024-10-29T14:25:17+00:00	36447	
 s_sitfam_epci_f	Toutes prestations - Répartition des allocataires selon les groupes de prestations  et la situation familiale [EPCI]	2026-02-11T13:57:30+00:00	25016	Caisse nationale des Allocations familiales
-ppa_s_type_age_1_nat	PA - Répartition des allocataires selon le type de PA et l'âge [National]	2026-10-09T15:22:35.611000+00:00	10627	Caisse nationale des Allocations familiales
+asf_s_sitfam_d_nat	ASF - Répartition des allocataires selon le type d'ASF et la situation familiale [National]	2026-09-28T01:15:07+00:00	680	Caisse nationale des Allocations familiales
+s_sitfam_iris_f	Toutes prestations - Répartition des allocataires selon la prestation et la situation familiale [IRIS]	2026-06-15T16:57:23+00:00	63925	Caisse nationale des Allocations familiales
+ndur_s_qf_400_iris_f	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [IRIS]	2026-06-15T16:58:04+00:00	122201	Caisse nationale des Allocations familiales
 nbpla_pe_com	Nombre de places offertes pour les enfants de moins de 3 ans [Communal]	2026-01-22T13:47:55+00:00	2118	Caisse nationale des Allocations familiales
+nbpla_pe_epci	Nombre de places offertes pour les enfants de moins de 3 ans [EPCI]	2026-01-22T13:47:54+00:00	2502	Caisse nationale des Allocations familiales
 s_ben_dep-copy	s_ben_dep-copy	2026-09-28T01:15:27+00:00	12499	Caisse nationale des Allocations familiales
 rsa_s_type_sitfam_d_dep-copy	rsa_s_type_sitfam_d_dep-copy	2024-10-24T02:48:49+00:00	150922	Caisse nationale des Allocations familiales
+s_sitfam_com_f	Toutes prestations - Répartition des allocataires selon les groupes de prestations et la situation familiale [Communal]	2026-02-11T14:28:13+00:00	650754	Caisse nationale des Allocations familiales
+ndur_s_qf_400_com_f	Toutes prestations - Répartition des allocataires percevant au moins une prestation légale selon le quotient familial [Communal]	2026-02-11T14:39:43+00:00	1135366	Caisse nationale des Allocations familiales
+rsa_s_type_age_5_dep	RSA - Répartition des allocataires selon le type de RSA et l'âge [Départemental]	2026-09-28T01:16:08+00:00	276959	Caisse nationale des Allocations familiales
+prepare_s_tx_com_f	PreParE - Répartition des allocataires selon le taux de PreParE [Communal]	2026-02-11T14:06:26+00:00	213352	Caisse nationale des Allocations familiales
+s_ben_com_f-copy	s_ben_com_f-copy	2024-05-28T11:31:58+00:00	174452	Caisse nationale des Allocations familiales
 ndur_s_qf_200_dep-copy	ndur_s_qf_200_dep-copy	2024-08-23T14:12:40+00:00	98140	Caisse nationale des Allocations familiales
+s_ben_dep_transpose	s_ben_dep_transpose	2024-08-22T14:13:01+00:00	1099912	Caisse nationale des Allocations familiales
 al_s_type_parc_epci_f-copy	al_s_type_parc_epci_f-copy	2025-03-14T13:51:21+00:00	10046	Caisse nationale des Allocations familiales
 ndurcmg_s_sitfam_epci_f-transpose	ndurcmg_s_sitfam_epci_f-transpose	2025-03-14T13:49:56+00:00	100060	Caisse nationale des Allocations familiales
-georef-svg	[Pour visualisation] Formes géographiques des départements et régions en SVG	2024-10-29T14:25:17+00:00	36447	
 s_age_10_com_f	Toutes prestations - Répartition des allocataires selon les groupes de prestations et l'âge [Communal]	2026-02-11T14:32:22+00:00	908982	Caisse nationale des Allocations familiales
-rsa_s_type_sitfam_d_dep	RSA - Répartition des allocataires selon le type de RSA et la situation familiale [Départemental]	2026-09-28T01:17:48+00:00	150922	Caisse nationale des Allocations familiales
+aah_s_tx_inca_age_5_dep	AAH - Répartition des allocataires selon le taux d'incapacité et l'âge [Département]	2026-09-28T01:11:30+00:00	298056	Caisse nationale des Allocations familiales
 txcouv_pe_com	Taux de couverture d'accueil du jeune enfant [Communal]	2026-01-22T13:47:56+00:00	2118	Caisse nationale des Allocations familiales
-af_s_type_iris_f	AF - Répartition des allocataires selon le type de prestation [IRIS]	2026-06-15T16:58:07+00:00	32348	Caisse nationale des Allocations familiales
-s_ben_com_f-copy	s_ben_com_f-copy	2024-05-28T11:31:58+00:00	174452	Caisse nationale des Allocations familiales
-ndur_s_qf_500_com_f-copy	ndur_s_qf_500_com_f-copy	2024-05-28T11:31:48+00:00	1135366	Caisse nationale des Allocations familiales
-s_ben_dep_transpose	s_ben_dep_transpose	2024-08-22T14:13:01+00:00	1099912	Caisse nationale des Allocations familiales
-s_ben_epci_f_transpose	s_ben_epci_f_transpose	2024-05-27T21:54:51+00:00	444034	Caisse nationale des Allocations familiales
-s_sitfam_agrege_region	s_sitfam_agrege_region	2024-12-17T17:18:43+00:00	608	
-al_s_type_log_zonegeo_dep	AL - Répartition des allocataires selon le type de logement et la zone géographique [Département]	2026-09-28T01:09:25+00:00	102771	Caisse nationale des Allocations familiales
-rsa_s_type_age_1_nat	RSA - Répartition des allocataires selon le type de RSA et l'âge [National]	2026-10-09T15:22:24.175000+00:00	11304	Caisse nationale des Allocations familiales
-s_age_5_dep-copy	s_age_5_dep-copy	2024-08-22T14:13:02+00:00	147215	Caisse nationale des Allocations familiales
 ppa_s_type_sitfam_d_dep-copy	ppa_s_type_sitfam_d_dep-copy	2024-10-24T02:51:04+00:00	166220	Caisse nationale des Allocations familiales
 s_sitfam_epci_f-copy	s_sitfam_epci_f-copy	2024-05-27T21:54:39+00:00	25016	Caisse nationale des Allocations familiales
+ndur_s_qf_500_com_f-copy	ndur_s_qf_500_com_f-copy	2024-05-28T11:31:48+00:00	1135366	Caisse nationale des Allocations familiales
+s_ben_epci_f_transpose	s_ben_epci_f_transpose	2024-05-27T21:54:51+00:00	444034	Caisse nationale des Allocations familiales
+s_sitfam_agrege_region	s_sitfam_agrege_region	2024-12-17T17:18:43+00:00	608	
+aah_s_sexe_dep	AAH - Répartition des allocataires selon le sexe [Département]	2026-09-28T01:05:52+00:00	24534	Caisse nationale des Allocations familiales
+txcouv_pe_com_dev	Taux de couverture d'accueil du jeune enfant [Communal] - DEV	2024-10-03T16:31:52+00:00	7300	Caisse nationale des Allocations familiales
+s_age_5_dep-copy	s_age_5_dep-copy	2024-08-22T14:13:02+00:00	147215	Caisse nationale des Allocations familiales
+txcouv_pe_nat_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [National]	2026-01-22T13:47:55+00:00	6	Caisse nationale des Allocations familiales
 s_ben_com_f_transpose	s_ben_com_f_transpose	2024-05-28T11:31:58+00:00	975352	Caisse nationale des Allocations familiales
 al_s_type_log_epci_f-copy	al_s_type_log_epci_f-copy	2025-03-14T13:51:38+00:00	20092	Caisse nationale des Allocations familiales
+asf_s_ben_dep	ASF - Répartition des allocataires selon le type d'ASF [Département]	2026-09-28T01:17:41+00:00	9862	Caisse nationale des Allocations familiales
 prepare_s_tx_epci_f-copy	prepare_s_tx_epci_f-copy	2025-03-14T13:49:34+00:00	15009	Caisse nationale des Allocations familiales
-s_sitfam_agrege_france	s_sitfam_agrege_france	2024-12-17T17:12:11+00:00	32	
-s_age_10_epci_f	Toutes prestations - Répartition des allocataires selon les groupes de prestations  et l'âge [EPCI]	2026-02-11T13:57:40+00:00	43099	Caisse nationale des Allocations familiales
-ars_s_type_nat	ARS - Répartition des allocataires selon le type d'ARS [National]	2026-10-09T15:25:19.008000+00:00	20	Caisse nationale des Allocations familiales
+s_age_5_dep	Toutes prestations - Répartition des allocataires selon la prestation et l'âge [Départemental]	2026-09-28T01:21:04+00:00	147215	Caisse nationale des Allocations familiales
+rsa_s_type_mtt_200_dep	RSA - Répartition des allocataires selon le montant du RSA [Départemental]	2026-09-28T01:17:43+00:00	122221	Caisse nationale des Allocations familiales
+s_ben_qpv_f	Toutes prestations - Répartition des allocataires selon la prestation [QPV]	2026-06-15T16:38:48+00:00	1674	Caisse nationale des Allocations familiales
 s_sitfam_d_dep-copy	s_sitfam_d_dep-copy	2024-08-23T14:12:57+00:00	98274	Caisse nationale des Allocations familiales
+ppa_s_type_com_f	PA - Répartition des allocataires selon le type de PA [Communal]	2026-02-11T14:09:17+00:00	297456	Caisse nationale des Allocations familiales
 txcouv_pe_reg	Taux de couverture d'accueil du jeune enfant [Région]	2026-01-22T13:47:52+00:00	36	Caisse nationale des Allocations familiales
 txcouv_pe_com_hist	Taux de couverture d'accueil du jeune enfant - historique 2017-2022 [Communal]	2026-01-22T13:48:00+00:00	6239	Caisse nationale des Allocations familiales
 s_ben_epci_f-copy	s_ben_epci_f-copy	2024-05-27T21:54:51+00:00	6254	Caisse nationale des Allocations familiales
 s_age_10_com_f-copy	s_age_10_com_f-copy	2024-05-28T11:32:05+00:00	908982	Caisse nationale des Allocations familiales
+s_sitfam_agrege_france	s_sitfam_agrege_france	2024-12-17T17:12:11+00:00	32	
 al_s_type_log_com_f-copy	al_s_type_log_com_f-copy	2025-11-06T23:13:16+00:00	537608	Caisse nationale des Allocations familiales
+al_s_statuetu_type_parc_dep	AL - Répartition des allocataires étudiants ou non selon le type de parc [Département]	2026-09-28T01:08:26+00:00	119193	Caisse nationale des Allocations familiales
 nbpla_pe_dep	Nombre de places offertes pour les enfants de moins de 3 ans [Département]	2026-01-22T13:47:53+00:00	206	Caisse nationale des Allocations familiales
-rsa_ppa_s_agg_age_1_nat	RSA et PA - Répartition des allocataires selon l'âge [National]	2026-10-09T15:24:28.898000+00:00	15930	Caisse nationale des Allocations familiales
-ndur_s_qf_400_dep	Toutes prestations - Répartition des allocataires selon la prestation et le quotient familial [Départemental]	2026-09-28T01:13:22+00:00	98140	Caisse nationale des Allocations familiales
+ndur_s_qf_400_epci_f	Toutes prestations - Répartition des allocataires percevant au moins une prestation légale selon le quotient familial [EPCI]	2026-02-11T13:57:50+00:00	49849	Caisse nationale des Allocations familiales
+nbpla_pe_epci_hist	Nombre de places offertes pour les enfants de moins de 3 ans - historique 2017-2022 [EPCI]	2026-01-22T13:54:57+00:00	7504	Caisse nationale des Allocations familiales
 txcouv_pe_dep	Taux de couverture d'accueil du jeune enfant [Département]	2026-01-22T13:47:53+00:00	204	Caisse nationale des Allocations familiales

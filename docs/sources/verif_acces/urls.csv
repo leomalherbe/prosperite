@@ -22,17 +22,17 @@ banque_de_france,webstat_recherche_taux_epargne,https://webstat.banque-france.fr
 banque_de_france,webstat_observations_sans_cle,https://webstat.banque-france.fr/api/explore/v2.1/catalog/datasets/observations/records?limit=1,,
 bce,dataflows,https://data-api.ecb.europa.eu/service/dataflow/ECB,20000000,"regex:Dataflow[^>]*id=""([^""]+)""[^>]*>\s*<(?:common:|com:)?Name xml:lang=""en"">([^<]+)<"
 bce,qsa_dette_menages_revenu,https://data-api.ecb.europa.eu/service/data/QSA/Q.N.FR.W0.S1M.S1.N.L.LE.F4.T._Z.XDC_R_B6GA_CY._T.S.V.N._T?format=csvdata&startPeriod=2020,400000,
-sdes,dido_datasets_structure,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datasets?page=1&pageSize=1,400000,
-sdes,itdd_france_entiere_csv,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv,30000000,colonnes:ID_INDICATEUR|LIB_INDICATEUR
+sdes,dido_datasets_structure,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datasets?page=1&pageSize=10,400000,
+sdes,itdd_france_entiere_csv,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv,30000000,colonnes:VARIABLE|LIBELLE_VARIABLE
 sdes,air_expo_pm25_fond_urbain_csv,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/d237b4e4-c1ce-431f-8716-4297be69f261/csv,400000,complet
 sdes,air_concentrations_indice_csv,https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/b10a6294-7f55-47be-b2e7-2ea2a856e564/csv,400000,complet
 sdes,empreinte_carbone_1990_2024_xlsx,https://www.statistiques.developpement-durable.gouv.fr/media/8724/download?inline,20000000,
 sdes,datagouv_liste_jeux,https://www.data.gouv.fr/api/2/datasets/search/?organization=681a1272bfa84b075f9531e1&page_size=100,6000000,"regex:""title""\s*:\s*""([^""]+)"""
-data_gouv,jeu_ssmsi_series_chrono,https://www.data.gouv.fr/api/1/datasets/62b02e970a264df3467b6c42/,2000000,"regex:""id""\s*:\s*""([0-9a-f-]{36})""[^{}]*?""title""\s*:\s*""([^""]+)""[^{}]*?""url""\s*:\s*""([^""]+)"""
-data_gouv,jeu_ssmsi_bases_delinquance,https://www.data.gouv.fr/api/1/datasets/621df2954fa5a3b5a023e23c/,2000000,"regex:""id""\s*:\s*""([0-9a-f-]{36})""[^{}]*?""title""\s*:\s*""([^""]+)""[^{}]*?""url""\s*:\s*""([^""]+)"""
-data_gouv,jeu_onisr_baac,https://www.data.gouv.fr/api/1/datasets/53698f4ca3a729239d2036df/,2000000,"regex:""id""\s*:\s*""([0-9a-f-]{36})""[^{}]*?""title""\s*:\s*""([^""]+)""[^{}]*?""url""\s*:\s*""([^""]+)"""
-data_gouv,jeu_elections_agregees,https://www.data.gouv.fr/api/1/datasets/6481e741d4cf002ec0efec9d/,2000000,"regex:""id""\s*:\s*""([0-9a-f-]{36})""[^{}]*?""title""\s*:\s*""([^""]+)""[^{}]*?""url""\s*:\s*""([^""]+)"""
-data_gouv,jeu_barometre_numerique_arcom,https://www.data.gouv.fr/api/1/datasets/67dde5bb8b979e2f5c9d869d/,2000000,"regex:""id""\s*:\s*""([0-9a-f-]{36})""[^{}]*?""title""\s*:\s*""([^""]+)""[^{}]*?""url""\s*:\s*""([^""]+)"""
+data_gouv,jeu_ssmsi_series_chrono,https://www.data.gouv.fr/api/1/datasets/62b02e970a264df3467b6c42/,2000000,complet
+data_gouv,jeu_ssmsi_bases_delinquance,https://www.data.gouv.fr/api/1/datasets/621df2954fa5a3b5a023e23c/,2000000,complet
+data_gouv,jeu_onisr_baac,https://www.data.gouv.fr/api/1/datasets/53698f4ca3a729239d2036df/,2000000,complet
+data_gouv,jeu_elections_agregees,https://www.data.gouv.fr/api/1/datasets/6481e741d4cf002ec0efec9d/,2000000,complet
+data_gouv,jeu_barometre_numerique_arcom,https://www.data.gouv.fr/api/1/datasets/67dde5bb8b979e2f5c9d869d/,2000000,complet
 ssmsi,etat4001_ts_xlsx,https://static.data.gouv.fr/resources/chiffres-departementaux-mensuels-relatifs-aux-crimes-et-delits-enregistres-par-les-services-de-police-et-de-gendarmerie-depuis-janvier-1996/20221031-102847/tableaux-4001-ts.xlsx,30000000,
 interieur_elections,resultats_generaux_csv,https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.csv,200000,
 interieur_elections,schema_resultats_generaux,https://static.data.gouv.fr/resources/donnees-des-elections-agregees/20260204-102727/schema-general-results.json,200000,complet
@@ -103,3 +103,12 @@ hubeau,qualite_nappes_nitrates,https://hubeau.eaufrance.fr/api/v1/qualite_nappes
 spf_geodes,accueil,https://geodes.santepubliquefrance.fr/,100000,
 dares,page_donnees,https://dares.travail-emploi.gouv.fr/donnees,600000,"regex:href=\""([^\""]+)\""[^>]*>([^<]{5,120})<"
 copernicus_cams,ads_catalogue,https://ads.atmosphere.copernicus.eu/api/catalogue/v1/collections,400000,
+drees,jeu_431_le-barometre-d-opinion,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion,400000,"regex:""(?:href|url|id|title)""\s*:\s*""([^""]{3,200})"""
+drees,jeu_3457_esperance-de-vie-sans-incapacite,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/3457_esperance-de-vie-sans-incapacite,400000,"regex:""(?:href|url|id|title)""\s*:\s*""([^""]{3,200})"""
+drees,jeu_530_l-accessibilite-potentielle-localise,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/530_l-accessibilite-potentielle-localisee-apl,400000,"regex:""(?:href|url|id|title)""\s*:\s*""([^""]{3,200})"""
+drees,jeu_4230_indicateurs-de-pauvrete-avant-et-ap,https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d,400000,"regex:""(?:href|url|id|title)""\s*:\s*""([^""]{3,200})"""
+spf_odisse,suicides_deces_france_records,https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/suicides-deces-france/records?limit=3,100000,complet
+spf_odisse,canicules_jours_france_csv,https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-nombres-de-jours-de-canicule-france/exports/csv?delimiter=%3B,100000,complet
+depp,bac_origine_sociale_records,https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale/records?limit=2,100000,complet
+cnam_ameli,sinistralite_secteur_records,https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1/records?limit=2,100000,complet
+dares,accueil,https://dares.travail-emploi.gouv.fr/,600000,"regex:href=\""([^\""]+(?:xlsx|csv|donnees)[^\""]*)\"""

@@ -118,3 +118,29 @@ def test_agregat(tmp_path):
     assert lignes["2022_pres_t1"]["inscrits"] == 200
     assert lignes["2022_pres_t1"]["ratio_votants_inscrits"] == "75.00"
     assert lignes["2024_euro_t1"]["n_lignes"] == 1
+
+
+def test_colonne_correspondante():
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "WJP 2021"
+    ws.append(["Country", "Finland", "France"])
+    ws.append(["Country Code", "FIN", "FRA"])
+    ws.append(["WJP Rule of Law Index: Overall Score", 0.88, 0.72])
+    t = io.BytesIO()
+    wb.save(t)
+    texte = st.colonne_correspondante(t.getvalue(), "^France$")
+    assert "colonne 2" in texte
+    assert "WJP Rule of Law Index: Overall Score | 0.72" in texte
+
+
+def test_distribution_ponderee(tmp_path):
+    f = tmp_path / "micro.csv"
+    f.write_text("ident;annee;poids;og01;sdsexe\n1;2000;1;1;1\n2;2000;3;2;2\n3;2001;1;2;1\n4;2001;1;;2\n",
+                 encoding="utf-8")
+    lignes = st.distribution_ponderee(f, {"annee": "annee", "poids": "poids", "variables": "og.*"})
+    parts = {(l["variable"], l["annee"], l["modalite"]): l["part_ponderee"] for l in lignes}
+    assert parts[("og01", "2000", "1")] == "25.00"
+    assert parts[("og01", "2000", "2")] == "75.00"
+    assert parts[("og01", "2001", "2")] == "100.00"
+    assert not any(v == "sdsexe" for v, _, _ in parts)

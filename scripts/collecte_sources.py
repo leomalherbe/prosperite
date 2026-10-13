@@ -115,7 +115,7 @@ def nom_extrait(source: str, cle: str) -> str:
     return f"{propre(source)}__{propre(cle)}.txt"
 
 
-def decrire_classeur(contenu: bytes, lignes: int = 12, feuilles_max: int = 12) -> str:
+def decrire_classeur(contenu: bytes, lignes: int = 12, feuilles_max: int = 12, largeur: int = 40) -> str:
     import openpyxl
 
     wb = openpyxl.load_workbook(io.BytesIO(contenu), read_only=True, data_only=True)
@@ -133,7 +133,7 @@ def decrire_classeur(contenu: bytes, lignes: int = 12, feuilles_max: int = 12) -
         for i, ligne in enumerate(ws.iter_rows(values_only=True)):
             if i >= lignes:
                 break
-            cellules = ["" if v is None else str(v)[:40] for v in ligne[:25]]
+            cellules = ["" if v is None else str(v)[:largeur] for v in ligne[:25]]
             while cellules and cellules[-1] == "":
                 cellules.pop()
             sortie.append(" | ".join(cellules))
@@ -337,7 +337,11 @@ def lister_series(source: str, cle: str, url: str, octets_max: int, mode: str, d
                                               max_lignes=int(p.get("max", 400)), entete=int(p.get("entete", 12)))
         elif nom_mode == "classeur":
             texte = decrire_classeur(chemin.read_bytes(), lignes=int(p.get("lignes", 12)),
-                                     feuilles_max=int(p.get("feuilles", 12)))
+                                     feuilles_max=int(p.get("feuilles", 12)), largeur=int(p.get("largeur", 40)))
+        elif nom_mode == "colonne":
+            texte = st.colonne_correspondante(chemin.read_bytes(), p.get("motif", "France"), int(p.get("entete", 10)))
+        elif nom_mode == "distribution":
+            lignes = st.distribution_ponderee(chemin, p)
         elif nom_mode == "regex":
             texte = correspondances(chemin.read_bytes(), p.get("motif", ""))
         else:
@@ -366,7 +370,11 @@ def lister_series(source: str, cle: str, url: str, octets_max: int, mode: str, d
 
 
 def main_series() -> None:
-    """Deuxième liste : docs/sources/verif_acces/series.csv → docs/sources/series/."""
+    """Deuxième liste : docs/sources/verif_acces/series.csv → docs/sources/series/.
+
+    Seules les lignes de la vague la plus récente (colonne « vague ») sont exécutées ; les sorties
+    des vagues précédentes sont conservées et resultats.csv est fusionné (une ligne par source/clé).
+    Pour tout relancer, donner à toutes les lignes le même numéro de vague."""
     import tempfile
 
     if not SERIES_ENTREE.exists():
@@ -375,10 +383,16 @@ def main_series() -> None:
     if str(RACINE) not in sys.path:
         sys.path.insert(0, str(RACINE))
     SERIES_SORTIE.mkdir(parents=True, exist_ok=True)
-    for ancien in list(SERIES_SORTIE.glob("*.txt")) + list(SERIES_SORTIE.glob("*.csv")):
-        ancien.unlink()
     with SERIES_ENTREE.open(encoding="utf-8") as f:
-        lignes = [l for l in csv.DictReader(f) if (l.get("url") or "").strip() and not l["source"].startswith("#")]
+        toutes = [l for l in csv.DictReader(f) if (l.get("url") or "").strip() and not l["source"].startswith("#")]
+    vagues = [int(l.get("vague") or 0) for l in toutes]
+    derniere = max(vagues, default=0)
+    lignes = [l for l, v in zip(toutes, vagues) if v == derniere]
+    print(f"Inventaire des séries : vague {derniere}, {len(lignes)} ressources sur {len(toutes)}.")
+    for l in lignes:  # sorties régénérées : on retire l'ancienne version (.csv ou .txt)
+        base = nom_extrait(l["source"].strip(), l["cle"].strip())[:-4]
+        for ancien in SERIES_SORTIE.glob(f"{base}.*"):
+            ancien.unlink()
     resultats = []
     with tempfile.TemporaryDirectory() as tmp:
         for i, l in enumerate(lignes, 1):
@@ -389,12 +403,21 @@ def main_series() -> None:
             print(f"[séries {i}/{len(lignes)}] {r['verdict']:<6} HTTP {r['statut_http'] or '---'} "
                   f"{r['n_lignes_sortie']:>6} lignes {time.time() - debut:6.1f} s  {l['source']} / {l['cle']}"
                   f"{'  — ' + r['message'] if r['message'] else ''}", flush=True)
+            r["vague"] = derniere
             resultats.append(r)
             time.sleep(0.3)
-    with (SERIES_SORTIE / "resultats.csv").open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(resultats[0].keys()) if resultats else ["vide"])
+    fichier = SERIES_SORTIE / "resultats.csv"
+    anciens = []
+    if fichier.exists():
+        with fichier.open(encoding="utf-8") as f:
+            nouveaux = {(r["source"], r["cle"]) for r in resultats}
+            anciens = [r for r in csv.DictReader(f) if (r.get("source"), r.get("cle")) not in nouveaux]
+    tous = anciens + resultats
+    champs = list(resultats[0].keys()) if resultats else ["vide"]
+    with fichier.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=champs, extrasaction="ignore", restval="")
         w.writeheader()
-        w.writerows(resultats)
+        w.writerows(tous)
     n_ok = sum(r["verdict"] == "series" for r in resultats)
     print(f"\nBilan séries : {n_ok}/{len(resultats)} ressources listées ; détail dans "
           f"{(SERIES_SORTIE / 'resultats.csv').relative_to(RACINE)}")

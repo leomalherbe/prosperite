@@ -12,7 +12,7 @@ recalculée ni corrigée, la dernière valeur n'est qu'un témoin de lecture.
 
 Modes (chaîne « nom;cle=valeur;… ») :
 - ``series``     : table « longue » (une ligne par observation). Paramètres :
-                   ``cles`` (colonnes séparées par « | », défaut : détection),
+                   ``cles`` (colonnes séparées par « | », « - » = aucune, défaut : détection),
                    ``temps`` (colonne de période, défaut : détection),
                    ``valeurs`` (colonnes numériques, « * » = détection),
                    ``filtre`` (« Col=Val,Col2~motif »), ``libelle``, ``unite``,
@@ -48,7 +48,8 @@ COLONNES_SERIES = [
     "derniere_valeur", "periodes",
 ]
 NOMS_TEMPS = ("time_period", "annee", "année", "annees", "year", "periode", "période",
-              "unite_temps", "an", "date", "millesime", "millésime", "session", "rentree_scolaire")
+              "unite_temps", "an", "aaaa", "an_mesure", "annee_de_l_enquete", "date", "millesime", "millésime",
+              "session", "rentree_scolaire")
 MAX_SERIES = 20_000
 
 
@@ -238,7 +239,9 @@ def resumer_series(df, p: dict, source: str = "", requete: str = "") -> list[dic
             s = s[s.astype(str).str.strip() != ""]
             if len(s) and en_nombre(s).notna().mean() >= 0.8:
                 valeurs.append(c)
-    if p.get("cles"):
+    if p.get("cles") == "-":  # aucune clé : une seule série par colonne de valeur
+        cles = []
+    elif p.get("cles"):
         cles = [colonne(df, c) for c in p["cles"].split("|")]
     else:
         cles = [c for c in df.columns
@@ -371,6 +374,72 @@ def couverture_microdonnees(chemin: Path, p: dict, taille_morceau: int = 50_000)
                    "annees": " ".join(f"{a}:{n}" for a, n in sorted(effectifs.items())),
                    "taux_reponse_derniere_annee": ""})
     return lignes
+
+
+def colonne_correspondante(contenu: bytes, motif: str, entete: int = 10) -> str:
+    """Classeur « transposé » (un pays par colonne) : pour chaque feuille, colonne dont l'en-tête
+    (dans les `entete` premières lignes) correspond au motif, avec le libellé de la première colonne."""
+    import openpyxl
+
+    rx = re.compile(motif)
+    wb = openpyxl.load_workbook(io.BytesIO(contenu), read_only=True, data_only=True)
+    sortie = [f"Feuilles ({len(wb.sheetnames)}) : {wb.sheetnames}"]
+    for f in wb.sheetnames:
+        ws = wb[f]
+        if not hasattr(ws, "iter_rows"):
+            continue
+        rangees = list(ws.iter_rows(values_only=True))
+        j = None
+        for rangee in rangees[:entete]:
+            for k, v in enumerate(rangee):
+                if v is not None and rx.search(str(v)):
+                    j = k
+                    break
+            if j is not None:
+                break
+        if j is None:
+            sortie.append(f"\n=== Feuille « {f} » : motif absent des {entete} premières lignes ===")
+            continue
+        sortie.append(f"\n=== Feuille « {f} » : colonne {j} ===")
+        for i, rangee in enumerate(rangees):
+            lib = "" if not rangee or rangee[0] is None else str(rangee[0])
+            val = "" if j >= len(rangee) or rangee[j] is None else str(rangee[j])
+            if lib or val:
+                sortie.append(f"[{i}] {lib[:200]} | {val[:60]}")
+    return "\n".join(sortie)
+
+
+def distribution_ponderee(chemin: Path, p: dict, taille_morceau: int = 50_000) -> list[dict]:
+    """Microdonnées pondérées : part pondérée (%) de chaque modalité, par année, pour les variables
+    dont le nom correspond au motif `variables` (regex). Les valeurs vides sont exclues du dénominateur."""
+    import pandas as pd
+
+    with open(chemin, "rb") as f:
+        echantillon = f.read(2_000_000)
+    encodage = p.get("encodage") or detecter_encodage(echantillon)
+    sep = p.get("sep") or detecter_separateur(echantillon.decode(encodage, errors="replace").split("\n", 1)[0])
+    col_annee, col_poids = p.get("annee", "annee"), p.get("poids", "poids")
+    rx = re.compile(p.get("variables", ".*"))
+    sommes: dict[tuple, float] = {}
+    for morceau in pd.read_csv(chemin, sep=sep, dtype=str, encoding=encodage, chunksize=taille_morceau,
+                               low_memory=False, on_bad_lines="skip", keep_default_na=False, na_values=[""]):
+        annee = morceau[colonne(morceau, col_annee)].astype(str).str.strip()
+        poids = en_nombre(morceau[colonne(morceau, col_poids)]).fillna(0)
+        for var in morceau.columns:
+            if var in (col_annee, col_poids) or not rx.fullmatch(str(var)):
+                continue
+            valeurs = morceau[var].astype(str).str.strip()
+            ok = morceau[var].notna() & (valeurs != "")
+            if not ok.any():
+                continue
+            g = poids[ok].groupby([annee[ok], valeurs[ok]]).sum()
+            for (a, m), w in g.items():
+                sommes[(var, a, m)] = sommes.get((var, a, m), 0.0) + float(w)
+    totaux: dict[tuple, float] = {}
+    for (var, a, m), w in sommes.items():
+        totaux[(var, a)] = totaux.get((var, a), 0.0) + w
+    return [{"variable": var, "annee": a, "modalite": m, "part_ponderee": f"{100 * w / totaux[(var, a)]:.2f}"}
+            for (var, a, m), w in sorted(sommes.items()) if totaux[(var, a)]]
 
 
 def lignes_correspondantes(contenu: bytes, motif: str, nom: str = "", max_lignes: int = 400,

@@ -106,3 +106,75 @@ Chaque indicateur écologique est une **variable de contrôle mondiale** rapport
 - **Plafond écologique** : variables mondiales, non mesurables à l'échelle nationale telles quelles ; la déclinaison nationale passe par des **empreintes de consommation** (CO2, azote, phosphore, eau bleue, biodiversité, HANPP : Tian et al. 2024) ou des **budgets par habitant** (« downscaling »). Proxys nationaux probables : empreinte carbone (SDES), excédent d'azote (Eurostat), surface forestière, indice d'exploitation de l'eau, ventes de produits phytosanitaires, etc. — à confirmer en M01/M02/M04.
 - La **pollution de l'air** du Doughnut est un phénomène planétaire (aérosols) et non la qualité de l'air locale (PM2,5), que v0 range dans `logement_cadre_vie`.
 - Les **portraits de ville** (*Doughnut Unrolled*, portraits nationaux) mêlent local et global : non retenus ici, conformément à la fiche M03.
+
+---
+
+## 2. Rapport Stiglitz-Sen-Fitoussi (2009)
+
+### 2.1 Références et accès
+
+- Stiglitz J.E. (président), Sen A. (conseiller), Fitoussi J.-P. (coordinateur), *Report by the Commission on the Measurement of Economic Performance and Social Progress*, Paris, 2009 (commission créée en février 2008). Version française : *Rapport de la Commission sur la mesure des performances économiques et du progrès social*.
+- **Versions lues** : PDF anglais hébergé par Eurostat (https://ec.europa.eu/eurostat/documents/8131721/8131772/Stiglitz-Sen-Fitoussi-Commission-report.pdf) et copie sur base.socioeco.org (`rapport_anglais.pdf`) ; PDF français sur vie-publique.fr (`094000427.pdf`). Les numéros de page ci-dessous sont ceux du PDF anglais (approximatifs, déduits des marqueurs de page).
+- **Limite** : l'outil de lecture tronque le texte vers la **p. 50–51** sur les trois copies. Sont donc **lus** : synthèse et 12 recommandations (p. 12–18), chapitre 1 (questions classiques relatives au PIB), chapitre 2 jusqu'à « voix politique et gouvernance » (p. 41–51). **Non lus** : fin du chapitre 2 (liens sociaux, conditions environnementales, insécurité physique et économique, corrélations et agrégation des dimensions) et chapitre 3 (développement durable et environnement, à partir de la p. 61). Les mesures de ces parties sont signalées « à vérifier ».
+
+### 2.2 Dimensions
+
+Huit dimensions clés du bien-être (synthèse, § 28, p. 14–15), à considérer **simultanément** :
+
+1. Niveau de vie matériel (revenu, consommation et patrimoine) — *Material living standards (income, consumption and wealth)*
+2. Santé — *Health*
+3. Éducation — *Education*
+4. Activités personnelles, dont le travail — *Personal activities including work*
+5. Voix politique et gouvernance — *Political voice and governance*
+6. Liens et rapports sociaux — *Social connections and relationships*
+7. Environnement (conditions présentes et futures) — *Environment (present and future conditions)*
+8. Insécurité, tant économique que physique — *Insecurity, of an economic as well as a physical nature*
+
+Le rapport ajoute deux « couches » transversales : le **bien-être subjectif** (évaluations de la vie et affects, recommandation 10) et les **inégalités** dans toutes les dimensions (recommandations 4 et 7), ainsi qu'un pilier distinct de **soutenabilité** (recommandations 11 et 12).
+
+### 2.3 Les douze recommandations (synthèse, p. 12–18, paraphrasées)
+
+| N° | Recommandation | Page |
+|---|---|---|
+| 1 | Évaluer le bien-être matériel par le revenu et la consommation plutôt que par la production | 12 |
+| 2 | Privilégier le point de vue des ménages | 13 |
+| 3 | Considérer le revenu et la consommation conjointement avec le patrimoine | 13 |
+| 4 | Accorder plus d'importance à la répartition des revenus, de la consommation et des richesses | 14 |
+| 5 | Élargir les indicateurs de revenus aux activités non marchandes | 14 |
+| 6 | La qualité de la vie dépend des conditions objectives et des capacités ; améliorer les mesures de santé, d'éducation, d'activités personnelles, d'environnement, et surtout de liens sociaux, de voix politique et d'insécurité | 15 |
+| 7 | Évaluer de manière exhaustive les inégalités dans toutes les dimensions de la qualité de la vie | 16 |
+| 8 | Concevoir les enquêtes pour évaluer les liens entre domaines de qualité de la vie pour chaque personne (cumul des avantages et désavantages) | 16 |
+| 9 | Fournir l'information nécessaire pour agréger les dimensions et construire différents indices | 16 |
+| 10 | Inclure dans les enquêtes des questions sur l'évaluation de la vie, les expériences hédoniques et les priorités | 17 |
+| 11 | Évaluer la soutenabilité par un tableau de bord de stocks ; un éventuel indice monétaire doit rester centré sur les aspects économiques | 17 |
+| 12 | Suivre les aspects environnementaux de la soutenabilité par des indicateurs physiques, dont un indicateur clair de proximité de niveaux dangereux de dommages (climat, ressources halieutiques) | 17–18 |
+
+### 2.4 Mesures citées par dimension
+
+Le rapport **ne fixe pas de liste fermée d'indicateurs ni de seuils** : il recommande des familles de mesures. Aucun seuil chiffré n'est proposé (hors mention de « niveaux dangereux » pour l'environnement, non chiffrés).
+
+| Dimension | Mesures citées (page) |
+|---|---|
+| Niveau de vie matériel | revenu national net disponible (p. 25) ; revenu disponible réel des ménages, ajusté des transferts en nature (p. 13, 25, 31) ; consommation des ménages (p. 12–13) ; patrimoine et bilans des ménages (p. 14, 30) ; valeurs médianes et non seulement moyennes du revenu, de la consommation et du patrimoine (p. 33–34) ; statistiques de pauvreté (p. 14) ; valorisation de la production domestique et des loisirs (p. 36–37) ; indices de prix par groupe (p. 35) |
+| Santé | espérance de vie à la naissance et mortalité par âge, plusieurs mesures à suivre (p. 46) ; morbidité : prévalence et limitations fonctionnelles, déclarations et registres (p. 47) ; santé mentale, jugée sous-mesurée (p. 47) ; gradient social de l'espérance de vie (p. 47) ; indices combinés mortalité-morbidité sans consensus (p. 47) |
+| Éducation | taux de diplômés, années de scolarité (p. 47–48) ; compétences mesurées par des tests standardisés (littératie, numératie) (p. 47–48) ; inégalités de résultats, notamment des jeunes les plus en difficulté (p. 48) |
+| Activités personnelles dont travail | indicateurs de « travail décent » : emploi non standard, écarts femmes-hommes d'emploi et de salaire, discriminations, formation tout au long de la vie, accès des personnes handicapées, temps de travail et horaires atypiques, équilibre vie professionnelle-vie privée, accidents du travail, intensité du travail, dialogue social, autonomie (p. 49–50) ; travail domestique non rémunéré et sa répartition (p. 50) ; temps de trajet domicile-travail, accessibilité et coût des transports (p. 50) ; loisirs : quantité, qualité, participation culturelle, « loisirs pauvres » (enfants sans vacances) (p. 50) ; logement : sans-abrisme, hébergement d'urgence, qualité, surpeuplement, services de proximité (p. 50) ; enquêtes emploi du temps avec ressenti par activité (p. 50–51) |
+| Voix politique et gouvernance | démocratie effective, suffrage universel, médias libres, organisations de la société civile, garanties légales, État de droit (p. 50–51) ; aucun indicateur chiffré nommé |
+| Liens et rapports sociaux | non lu (fin du chapitre 2) ; mesures évoquées dans la synthèse : capital social comme stock (p. 14) ; confiance, isolement, bénévolat, participation associative — **à vérifier** |
+| Environnement | conditions présentes : exposition à la pollution (air, bruit), accès aux aménités environnementales — **à vérifier** (pages non lues) ; soutenabilité : concentration de gaz à effet de serre et émissions qui y mènent, épuisement des ressources halieutiques (p. 17–18, § 39) |
+| Insécurité | non lu ; mesures évoquées : insécurité physique (victimation, crainte de la criminalité) et économique (risques de chômage, de maladie, de vieillesse) — **à vérifier** |
+| Bien-être subjectif (transversal) | évaluations de la vie, globales et par domaine ; affects positifs (joie, fierté) et négatifs (douleur, inquiétude), à mesurer séparément ; part du temps où le sentiment dominant est négatif (p. 16–17, 44–45) |
+| Soutenabilité (pilier distinct) | tableau de bord de stocks : capital physique, humain, social, naturel (§ 37–38, p. 17) ; indice monétaire limité aux aspects économiques ; indicateurs physiques de pression environnementale (rec. 12) |
+
+### 2.5 Principe d'agrégation
+
+- Priorité à un **système statistique pluriel** ; l'agrégation est secondaire (§ 21). Plusieurs mesures synthétiques possibles selon la question posée (§ 32) : satisfaction moyenne dans la vie, indices composites type IDH, part du temps à affect dominant négatif, comptages de privations objectives, mesures en **revenu équivalent** (approche des « allocations équitables », pondération par les préférences des personnes, p. 42–43).
+- La recommandation 9 demande aux instituts statistiques de fournir les données permettant à chacun de **construire différents indices** — directement en phase avec la philosophie de l'observatoire (pondérations paramétrables).
+- **Ne pas mêler bien-être actuel et soutenabilité** dans un même chiffre (analogie du tableau de bord d'une voiture : vitesse et niveau d'essence, § 36).
+
+### 2.6 Remarques sur la pertinence pour la France
+
+- Cadre fondateur des NIR de l'INSEE (loi du 13 avril 2015), du cadre Eurostat et du cadre de l'OCDE : sa grille de huit dimensions est très proche de v0.
+- Deux points structurants pour la grille v1 : (1) le bien-être subjectif y est **transversal** (couche de mesure) et non une dimension (argument pour l'arbitrage Q-B) ; (2) la **soutenabilité** (stocks de capitaux, dont dette et patrimoine) est un pilier séparé — v0 range investissement et dette dans `niveau_de_vie`, ce que le rapport déconseille implicitement.
+- Le rapport rattache **logement, transports et loisirs** aux « activités personnelles » (emploi du temps) : découpage différent de v0, qui regroupe logement et cadre de vie.
+- L'insécurité économique (risques) y est rapprochée de l'insécurité physique, comme dans v0 (`securite_confiance`) et dans le cadre Eurostat.

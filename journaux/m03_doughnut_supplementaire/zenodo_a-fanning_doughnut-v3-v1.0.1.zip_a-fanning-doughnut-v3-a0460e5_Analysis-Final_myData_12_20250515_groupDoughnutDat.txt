@@ -1,0 +1,100 @@
+domain,dimension,type,group,grpCode,indicator,indCode,unit,date,value,boundary,shortfallOvershoot_pct
+ecological,climate change,national aggregate,Bottom-40,B40,co2_footprint,CC3,tonnes CO2 per capita,2017,0.94,0.95,-1.2
+ecological,climate change,national aggregate,Middle-40,M40,co2_footprint,CC3,tonnes CO2 per capita,2017,4.26,0.95,348.1
+ecological,climate change,national aggregate,Top-20,T20,co2_footprint,CC3,tonnes CO2 per capita,2017,11.65,0.95,1126.4
+ecological,ocean acidification,national aggregate,Bottom-40,B40,omega_a_footprint,OA3,Not available,2017,NA,NA,NA
+ecological,ocean acidification,national aggregate,Middle-40,M40,omega_a_footprint,OA3,Not available,2017,NA,NA,NA
+ecological,ocean acidification,national aggregate,Top-20,T20,omega_a_footprint,OA3,Not available,2017,NA,NA,NA
+ecological,chemical pollution,national aggregate,Bottom-40,B40,hzdChemicals_footprint,CP3,Not available,2017,NA,NA,NA
+ecological,chemical pollution,national aggregate,Middle-40,M40,hzdChemicals_footprint,CP3,Not available,2017,NA,NA,NA
+ecological,chemical pollution,national aggregate,Top-20,T20,hzdChemicals_footprint,CP3,Not available,2017,NA,NA,NA
+ecological,nutrient pollution,national aggregate,Bottom-40,B40,P_footprint,NP3,kg P per capita,2017,1.54,0.85,80.7
+ecological,nutrient pollution,national aggregate,Middle-40,M40,P_footprint,NP3,kg P per capita,2017,3.08,0.85,262.5
+ecological,nutrient pollution,national aggregate,Top-20,T20,P_footprint,NP3,kg P per capita,2017,4.17,0.85,390.4
+ecological,nutrient pollution,national aggregate,Bottom-40,B40,N_footprint,NP4,kg N per capita,2017,10.6,8.5,24.7
+ecological,nutrient pollution,national aggregate,Middle-40,M40,N_footprint,NP4,kg N per capita,2017,21.44,8.5,152.2
+ecological,nutrient pollution,national aggregate,Top-20,T20,N_footprint,NP4,kg N per capita,2017,32.41,8.5,281.3
+ecological,air pollution,national aggregate,Bottom-40,B40,airPollution_footprint,AP3,Not available,2017,NA,NA,NA
+ecological,air pollution,national aggregate,Middle-40,M40,airPollution_footprint,AP3,Not available,2017,NA,NA,NA
+ecological,air pollution,national aggregate,Top-20,T20,airPollution_footprint,AP3,Not available,2017,NA,NA,NA
+ecological,freshwater disruption,national aggregate,Bottom-40,B40,blueH2O_footprint,FD3,m3 H2O per capita,2017,207.12,384,-46.1
+ecological,freshwater disruption,national aggregate,Middle-40,M40,blueH2O_footprint,FD3,m3 H2O per capita,2017,163.03,384,-57.5
+ecological,freshwater disruption,national aggregate,Top-20,T20,blueH2O_footprint,FD3,m3 H2O per capita,2017,267.11,384,-30.4
+ecological,land conversion,national aggregate,Bottom-40,B40,land_footprint,LC3,Not available,2017,NA,NA,NA
+ecological,land conversion,national aggregate,Middle-40,M40,land_footprint,LC3,Not available,2017,NA,NA,NA
+ecological,land conversion,national aggregate,Top-20,T20,land_footprint,LC3,Not available,2017,NA,NA,NA
+ecological,biodiversity breakdown,national aggregate,Bottom-40,B40,species_footprint,BB3,species-loss (MSA-loss) per hectare per capita,2017,0.3,0.51,-42
+ecological,biodiversity breakdown,national aggregate,Middle-40,M40,species_footprint,BB3,species-loss (MSA-loss) per hectare per capita,2017,0.67,0.51,30.7
+ecological,biodiversity breakdown,national aggregate,Top-20,T20,species_footprint,BB3,species-loss (MSA-loss) per hectare per capita,2017,1.86,0.51,264.9
+ecological,biodiversity breakdown,national aggregate,Bottom-40,B40,hanpp_footprint,BB4,tonnes C per capita,2017,1.51,1.47,3
+ecological,biodiversity breakdown,national aggregate,Middle-40,M40,hanpp_footprint,BB4,tonnes C per capita,2017,2.04,1.47,38.9
+ecological,biodiversity breakdown,national aggregate,Top-20,T20,hanpp_footprint,BB4,tonnes C per capita,2017,3.06,1.47,108.1
+ecological,ozone depletion,national aggregate,Bottom-40,B40,ozone_footprint,OD3,Not available,2017,NA,NA,NA
+ecological,ozone depletion,national aggregate,Middle-40,M40,ozone_footprint,OD3,Not available,2017,NA,NA,NA
+ecological,ozone depletion,national aggregate,Top-20,T20,ozone_footprint,OD3,Not available,2017,NA,NA,NA
+social,food,national aggregate,Bottom-40,B40,undernourishment,NU1,percent,2017,13.55,0,13.5
+social,food,national aggregate,Middle-40,M40,undernourishment,NU1,percent,2017,3.91,0,3.9
+social,food,national aggregate,Top-20,T20,undernourishment,NU1,percent,2017,2.61,0,2.6
+social,food,national aggregate,Bottom-40,B40,foodInsecurity,NU2,percent,2017,40.62,0,40.6
+social,food,national aggregate,Middle-40,M40,foodInsecurity,NU2,percent,2017,17.66,0,17.7
+social,food,national aggregate,Top-20,T20,foodInsecurity,NU2,percent,2017,6.66,0,6.7
+social,health,national aggregate,Bottom-40,B40,under5death,HE1,percent,2017,93.59,0,93.6
+social,health,national aggregate,Middle-40,M40,under5death,HE1,percent,2017,12.11,0,12.1
+social,health,national aggregate,Top-20,T20,under5death,HE1,percent,2017,0,0,0
+social,health,national aggregate,Bottom-40,B40,UHCindex,HE2,percent,2017,47.66,0,47.7
+social,health,national aggregate,Middle-40,M40,UHCindex,HE2,percent,2017,9.74,0,9.7
+social,health,national aggregate,Top-20,T20,UHCindex,HE2,percent,2017,0,0,0
+social,education,national aggregate,Bottom-40,B40,adultLiteracy,ED1,percent,2017,29.25,0,29.3
+social,education,national aggregate,Middle-40,M40,adultLiteracy,ED1,percent,2017,5.62,0,5.6
+social,education,national aggregate,Top-20,T20,adultLiteracy,ED1,percent,2017,2.47,0,2.5
+social,education,national aggregate,Bottom-40,B40,secondarySchool,ED2,percent,2017,60.07,0,60.1
+social,education,national aggregate,Middle-40,M40,secondarySchool,ED2,percent,2017,30.21,0,30.2
+social,education,national aggregate,Top-20,T20,secondarySchool,ED2,percent,2017,11.62,0,11.6
+social,income and work,national aggregate,Bottom-40,B40,societalPoverty,IW1,percent,2017,95.84,0,95.8
+social,income and work,national aggregate,Middle-40,M40,societalPoverty,IW1,percent,2017,70.05,0,70
+social,income and work,national aggregate,Top-20,T20,societalPoverty,IW1,percent,2017,14.34,0,14.3
+social,income and work,national aggregate,Bottom-40,B40,youthNEET,IW2,percent,2017,27.88,0,27.9
+social,income and work,national aggregate,Middle-40,M40,youthNEET,IW2,percent,2017,20.66,0,20.7
+social,income and work,national aggregate,Top-20,T20,youthNEET,IW2,percent,2017,10.02,0,10
+social,water,national aggregate,Bottom-40,B40,drinkingH2O,WA1,percent,2017,63.32,0,63.3
+social,water,national aggregate,Middle-40,M40,drinkingH2O,WA1,percent,2017,33.23,0,33.2
+social,water,national aggregate,Top-20,T20,drinkingH2O,WA1,percent,2017,2.05,0,2
+social,water,national aggregate,Bottom-40,B40,sanitation,WA2,percent,2017,64.49,0,64.5
+social,water,national aggregate,Middle-40,M40,sanitation,WA2,percent,2017,43.95,0,43.9
+social,water,national aggregate,Top-20,T20,sanitation,WA2,percent,2017,5.93,0,5.9
+social,energy,national aggregate,Bottom-40,B40,energyAccess,EN1,percent,2017,24.02,0,24
+social,energy,national aggregate,Middle-40,M40,energyAccess,EN1,percent,2017,0.73,0,0.7
+social,energy,national aggregate,Top-20,T20,energyAccess,EN1,percent,2017,0,0,0
+social,energy,national aggregate,Bottom-40,B40,energyIndoor,EN2,percent,2017,60.17,0,60.2
+social,energy,national aggregate,Middle-40,M40,energyIndoor,EN2,percent,2017,15.55,0,15.6
+social,energy,national aggregate,Top-20,T20,energyIndoor,EN2,percent,2017,0,0,0
+social,connectivity,national aggregate,Bottom-40,B40,publicTrans,CO1,percent,2017,64.15,0,64.1
+social,connectivity,national aggregate,Middle-40,M40,publicTrans,CO1,percent,2017,49.45,0,49.5
+social,connectivity,national aggregate,Top-20,T20,publicTrans,CO1,percent,2017,24.96,0,25
+social,connectivity,national aggregate,Bottom-40,B40,internet,CO2,percent,2017,78.44,0,78.4
+social,connectivity,national aggregate,Middle-40,M40,internet,CO2,percent,2017,43.73,0,43.7
+social,connectivity,national aggregate,Top-20,T20,internet,CO2,percent,2017,13.02,0,13
+social,housing,national aggregate,Bottom-40,B40,urbanSlums,HO1,percent,2017,49.2,0,49.2
+social,housing,national aggregate,Middle-40,M40,urbanSlums,HO1,percent,2017,16.34,0,16.3
+social,housing,national aggregate,Top-20,T20,urbanSlums,HO1,percent,2017,0.36,0,0.4
+social,equality,national aggregate,Bottom-40,B40,genderInequalityIndex,EQ1,0-100 scale,2017,52.85,0,52.9
+social,equality,national aggregate,Middle-40,M40,genderInequalityIndex,EQ1,0-100 scale,2017,29.11,0,29.1
+social,equality,national aggregate,Top-20,T20,genderInequalityIndex,EQ1,0-100 scale,2017,13.21,0,13.2
+social,equality,national aggregate,Bottom-40,B40,racialInequality,EQ2,Not available,2017,NA,NA,NA
+social,equality,national aggregate,Middle-40,M40,racialInequality,EQ2,Not available,2017,NA,NA,NA
+social,equality,national aggregate,Top-20,T20,racialInequality,EQ2,Not available,2017,NA,NA,NA
+social,social cohesion,national aggregate,Bottom-40,B40,socialSupport,SC1,percent,2017,32.97,0,33
+social,social cohesion,national aggregate,Middle-40,M40,socialSupport,SC1,percent,2017,19.5,0,19.5
+social,social cohesion,national aggregate,Top-20,T20,socialSupport,SC1,percent,2017,9.32,0,9.3
+social,social cohesion,national aggregate,Bottom-40,B40,palma,SC2,percent,2017,85.61,0,85.6
+social,social cohesion,national aggregate,Middle-40,M40,palma,SC2,percent,2017,67.23,0,67.2
+social,social cohesion,national aggregate,Top-20,T20,palma,SC2,percent,2017,0.04,0,0
+social,political voice,national aggregate,Bottom-40,B40,govRegimes,PV1,percent,2017,83.39,0,83.4
+social,political voice,national aggregate,Middle-40,M40,govRegimes,PV1,percent,2017,67.84,0,67.8
+social,political voice,national aggregate,Top-20,T20,govRegimes,PV1,percent,2017,6.6,0,6.6
+social,peace and justice,national aggregate,Bottom-40,B40,controlCorruption,PJ1,percent,2017,76.43,0,76.4
+social,peace and justice,national aggregate,Middle-40,M40,controlCorruption,PJ1,percent,2017,82.25,0,82.3
+social,peace and justice,national aggregate,Top-20,T20,controlCorruption,PJ1,percent,2017,60.86,0,60.9
+social,peace and justice,national aggregate,Bottom-40,B40,homicideOver5,PJ2,percent,2017,16.43,0,16.4
+social,peace and justice,national aggregate,Middle-40,M40,homicideOver5,PJ2,percent,2017,29.94,0,29.9
+social,peace and justice,national aggregate,Top-20,T20,homicideOver5,PJ2,percent,2017,31.74,0,31.7

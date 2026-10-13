@@ -1,148 +1,223 @@
 {
- "date": "2026-10-13T13:55:42+00:00",
+ "date": "2026-10-13T15:32:02+00:00",
  "bdm": {
-  "dataflows": 20,
-  "series_listees": 31888,
+  "dataflows": 226,
+  "series_listees": 182082,
   "par_frequence": {
-   "A": 31427,
-   "T": 261,
-   "M": 200
+   "A": 126772,
+   "M": 37098,
+   "T": 17044,
+   "B": 832,
+   "S": 336
   },
   "par_zone": {
-   "principale": 31888
+   "principale": 130172,
+   "hors_nationale": 51638,
+   "nationale": 271,
+   "sans_objet": 1
   },
-  "catalogue": 4030,
+  "catalogue": 79485,
   "exclusions": {
-   "dernière mise à jour … antérieure à …": 27844,
-   "dernière période … < …": 14
+   "zone non nationale …": 51638,
+   "dernière mise à jour … antérieure à …": 50368,
+   "dernière période … < …": 492,
+   "périodes inconnues …": 99
   },
   "candidat": {
-   "non": 3926,
-   "oui": 104
+   "non": 72398,
+   "oui": 6561,
+   "a_verifier": 526
   },
   "catalogue_par_frequence": {
-   "annuelle": 3638,
-   "mensuelle": 196,
-   "trimestrielle": 196
+   "annuelle": 50136,
+   "mensuelle": 20899,
+   "trimestrielle": 7440,
+   "bimestrielle": 832,
+   "semestrielle": 178
   },
   "catalogue_par_geo": {
-   "FR-D976": 2329,
-   "FE": 1686,
-   "FM": 15
+   "FE": 47978,
+   "FR-D976": 16794,
+   "FM": 14555,
+   "FM99_FR00": 99,
+   "FM_D99_D978": 35,
+   "FHREUN15_FREUN18_PUBPRIVSSC_EL15TTECL": 7,
+   "FMDOMHREUN15_FMDOMCOMREUN18_EL15TTECL": 7,
+   "FM_H_CORSE_2018": 6,
+   "FMGUADMART16_FHMAY21_PUBPRIVSSC_ELEVCM1TTAGE": 1,
+   "FMGUADMART15_FHMAY19_PUBPRIVSSC_ELEVCM1TTAGE": 1,
+   "FR-SPM-WF": 1,
+   "FE_HPBIO": 1
   }
  },
  "bdm_par_dimension": {
   "(aucune)": {
-   "non": 36
+   "non": 11961
+  },
+  "contexte": {
+   "non": 134
   },
   "democratie": {
-   "non": 3
+   "non": 18,
+   "oui": 2,
+   "a_verifier": 7
   },
   "education": {
-   "non": 160
+   "non": 3012,
+   "oui": 319,
+   "a_verifier": 49
+  },
+  "egalites": {
+   "oui": 39,
+   "a_verifier": 6,
+   "non": 1
   },
   "liens_bien_etre": {
-   "non": 102
+   "non": 1488,
+   "oui": 88,
+   "a_verifier": 119
   },
   "logement_cadre_vie": {
-   "non": 203
+   "non": 2395,
+   "oui": 255,
+   "a_verifier": 21
   },
   "niveau_de_vie": {
-   "non": 2825
+   "non": 34107,
+   "oui": 2928,
+   "a_verifier": 117
   },
   "planete": {
-   "non": 243
+   "non": 5365,
+   "oui": 982,
+   "a_verifier": 86
   },
   "sante": {
-   "non": 228
+   "non": 4322,
+   "oui": 395,
+   "a_verifier": 77
+  },
+  "securite_confiance": {
+   "non": 402,
+   "oui": 58
   },
   "travail": {
-   "non": 126,
-   "oui": 104
+   "non": 9193,
+   "oui": 1495,
+   "a_verifier": 44
   }
  },
  "melodi": {
   "jeux": 145,
   "jeux_par_statut": {
-   "non traité": 125,
-   "écarté": 11,
-   "traité": 9
+   "écarté": 84,
+   "traité": 61
   },
-  "series_nationales": 61909,
-  "catalogue": 50094,
+  "series_nationales": 66287,
+  "catalogue": 52296,
   "exclusions": {
-   "fréquence ? non retenue": 9845,
-   "dernière période < 2020 ou inconnue": 1970
+   "fréquence ? non retenue": 9992,
+   "dernière période < 2020 ou inconnue": 2196,
+   "fréquence Q non retenue": 1698,
+   "fréquence D non retenue": 105
   },
   "candidat": {
-   "oui": 31527,
-   "non": 18315,
-   "a_verifier": 252
+   "oui": 33637,
+   "non": 17556,
+   "a_verifier": 1103
   }
  },
  "melodi_par_dimension": {
+  "(aucune)": {
+   "non": 321
+  },
+  "contexte": {
+   "non": 645
+  },
+  "democratie": {
+   "a_verifier": 5,
+   "oui": 1
+  },
   "education": {
-   "oui": 58,
-   "non": 11,
+   "oui": 382,
+   "non": 1067,
    "a_verifier": 2
   },
   "egalites": {
-   "oui": 20
+   "oui": 53,
+   "non": 10,
+   "a_verifier": 15
   },
   "liens_bien_etre": {
-   "oui": 625,
-   "non": 200
+   "oui": 1051,
+   "non": 900,
+   "a_verifier": 109
   },
   "logement_cadre_vie": {
-   "oui": 62,
-   "non": 5,
-   "a_verifier": 1
+   "oui": 114,
+   "non": 1029,
+   "a_verifier": 12
   },
   "niveau_de_vie": {
-   "oui": 5928,
-   "non": 408,
-   "a_verifier": 58
+   "oui": 6787,
+   "non": 9984,
+   "a_verifier": 694
   },
   "planete": {
-   "oui": 100,
-   "non": 10,
-   "a_verifier": 2
+   "oui": 189,
+   "non": 311,
+   "a_verifier": 39
   },
   "sante": {
-   "oui": 894,
-   "non": 784,
-   "a_verifier": 7
+   "oui": 1093,
+   "non": 882,
+   "a_verifier": 43
+  },
+  "securite_confiance": {
+   "oui": 9,
+   "non": 144
   },
   "travail": {
-   "oui": 23840,
-   "a_verifier": 182,
-   "non": 16897
+   "oui": 23958,
+   "a_verifier": 184,
+   "non": 2263
   }
  },
  "comparaison_phase1": {
   "phase1": 1063,
   "statuts": {
-   "BDM:absente_de_la_bdm": 831,
-   "BDM:confirmee": 27,
-   "Melodi:confirmee": 8,
+   "BDM:absente_de_la_bdm": 10,
+   "BDM:confirmee": 704,
+   "BDM:ecartee_par_filtre": 144,
+   "Melodi:confirmee": 165,
    "Melodi:jeu_absent": 4,
-   "Melodi:jeu_sans_serie_au_catalogue": 22,
-   "Melodi:non_retrouvee": 158,
-   "candidat_different": 31,
+   "Melodi:jeu_sans_serie_au_catalogue": 9,
+   "Melodi:non_retrouvee": 14,
+   "candidat_different": 451,
+   "dimension_differente": 66,
    "fichier:hors_robot": 13
   },
-  "bdm_nouvelles_oui_ou_a_verifier": 98,
+  "bdm_nouvelles_oui_ou_a_verifier": 6649,
   "bdm_nouvelles_par_dimension": {
-   "travail": 98
+   "niveau_de_vie": 2964,
+   "travail": 1489,
+   "planete": 923,
+   "sante": 408,
+   "education": 361,
+   "logement_cadre_vie": 259,
+   "liens_bien_etre": 179,
+   "securite_confiance": 41,
+   "egalites": 22,
+   "democratie": 3
   }
  },
  "collecte": {
-  "debut": "2026-10-13T13:33:11+00:00",
-  "maj": "2026-10-13T13:55:16+00:00",
+  "debut": "2026-10-13T14:22:22+00:00",
+  "maj": "2026-10-13T15:31:09+00:00",
   "termine": false,
   "passages": [
    {
-    "debut": "2026-10-13T13:33:11+00:00",
+    "debut": "2026-10-13T14:22:22+00:00",
     "fin": null,
     "issue": null
    }

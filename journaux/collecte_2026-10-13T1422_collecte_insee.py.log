@@ -1,0 +1,365 @@
+
+===== collecte_insee.py =====
+[14:22:22] Options lues dans collecte_insee.options : --cycle mois --budget-minutes 255
+[14:22:22] Nouveau cycle de collecte « mois-2026-10 » (le précédent était terminé)
+[14:22:22] === Étape bdm_flux (budget restant 255 min) ===
+[14:22:24] BDM : 244 dataflows, 374463 séries annoncées ; zones 239 codes, unités 145 codes
+[14:22:24] === Étape echantillons (budget restant 255 min) ===
+[14:22:24]   échantillon bdm_dataflow_ODD-ERADICATION-PAUVRETE.xml : HTTP 200, 1755 octets
+[14:22:25]   échantillon bdm_datastructure_CHOMAGE-TRIM-NATIONAL.xml : HTTP 200, 28832 octets
+[14:22:25]   échantillon bdm_codelist_CL_PERIODICITE.xml : HTTP 200, 2245 octets
+[14:22:26]   échantillon bdm_nodata_ODD-ERADICATION-PAUVRETE.xml : HTTP 200, 37800 octets
+[14:22:26]   échantillon bdm_nodata_CNA-2020-PIB.xml : HTTP 200, 16058 octets
+[14:22:27]   échantillon bdm_nodata_CHOMAGE-TRIM-NATIONAL_cle_T.xml : HTTP 200, 127926 octets
+[14:22:29]   échantillon bdm_erreur_cle_sans_resultat.xml : HTTP 404, 471 octets
+[14:22:34]   échantillon bdm_erreur_trop_de_series_CNA-2020-ERE.xml : HTTP 413, 917 octets
+[14:22:35]   échantillon bdm_serie_010593281.xml : HTTP 200, 3050 octets
+[14:22:35]   échantillon bdm_serie_001688527_last5.xml : HTTP 200, 2221 octets
+[14:22:35]   échantillon bdm_series_010593281+001688527_first1.xml : HTTP 200, 2174 octets
+[14:22:36]   échantillon melodi_range_DS_SRCV_SATISFACTION.json : HTTP 200, 22455 octets
+[14:22:38]   échantillon melodi_data_DS_SRCV_SATISFACTION_extrait.json : HTTP 200, 26122 octets
+[14:22:40]   échantillon melodi_data_DS_SRCV_SATISFACTION_page2.json : HTTP 200, 26427 octets
+[14:22:42]   échantillon melodi_data_DS_SRCV_SATISFACTION_totalCount.json : HTTP 200, 604 octets
+[14:22:44]   échantillon melodi_range_DS_NAT_SDG.json : HTTP 200, 89604 octets
+[14:22:46]   échantillon melodi_data_DS_NAT_SDG_extrait.json : HTTP 200, 22590 octets
+[14:22:48]   échantillon melodi_range_DD_CNA_AGREGATS.json : HTTP 200, 83512 octets
+[14:22:53]   échantillon ZIP DS_SRCV_SATISFACTION : DS_SRCV_SATISFACTION_2025_data.csv, DS_SRCV_SATISFACTION_2025_metadata.csv
+[14:22:53] === Étape bdm_series (budget restant 254 min) ===
+[14:22:53] BDM séries : 243 dataflows à lister (0 déjà faits)
+[14:22:53]   [1/243] BALANCE-PAIEMENTS : 197 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:22:54]   [2/243] CHOMAGE-TRIM-NATIONAL : 261 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:22:54]   [3/243] CLIMAT-AFFAIRES : 3 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:24:39]   [4/243] CNA-2010-CONSO-MEN : 2247 séries, 43 requêtes, 8 découpages, 0 erreurs, 104 s
+[14:24:42]   [5/243] CNA-2010-CONSO-SI : 1391 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:26:39]   [6/243] CNA-2010-CPEB : 2739 séries, 50 requêtes, 9 découpages, 0 erreurs, 117 s
+[14:26:41]   [7/243] CNA-2010-CSI : 1173 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:28:48]   [8/243] CNA-2010-DEP-APU : 4400 séries, 51 requêtes, 10 découpages, 0 erreurs, 127 s
+[14:28:49]   [9/243] CNA-2010-DETTE-APU : 72 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:28:50]   [10/243] CNA-2010-EMPLOI : 702 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:32:00]   [11/243] CNA-2010-ERE : 5718 séries, 65 requêtes, 11 découpages, 0 erreurs, 190 s
+[14:32:00]   [12/243] CNA-2010-FBCF-BRANCHE : 136 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:32:01]   [13/243] CNA-2010-FBCF-SI : 606 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:34:25]   [14/243] CNA-2010-PAT-NF : 5350 séries, 49 requêtes, 9 découpages, 0 erreurs, 144 s
+[14:34:26]   [15/243] CNA-2010-PIB : 34 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:34:26]   [16/243] CNA-2010-RDB : 11 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:34:30]   [17/243] CNA-2010-TEI : 1922 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:34:31]   [18/243] CNA-2010-TOF : 1278 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:36:18]   [19/243] CNA-2014-CONSO-MEN : 2247 séries, 41 requêtes, 8 découpages, 0 erreurs, 108 s
+[14:36:22]   [20/243] CNA-2014-CONSO-SI : 1401 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:38:23]   [21/243] CNA-2014-CPEB : 2739 séries, 49 requêtes, 9 découpages, 0 erreurs, 121 s
+[14:38:26]   [22/243] CNA-2014-CSI : 1257 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:40:38]   [23/243] CNA-2014-DEP-APU : 4400 séries, 50 requêtes, 10 découpages, 0 erreurs, 132 s
+[14:40:38]   [24/243] CNA-2014-DETTE-APU : 72 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:40:40]   [25/243] CNA-2014-EMPLOI : 702 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:43:55]   [26/243] CNA-2014-ERE : 5686 séries, 63 requêtes, 11 découpages, 0 erreurs, 195 s
+[14:43:56]   [27/243] CNA-2014-FBCF-BRANCHE : 136 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:43:57]   [28/243] CNA-2014-FBCF-SI : 606 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:46:28]   [29/243] CNA-2014-PAT-NF : 5350 séries, 49 requêtes, 9 découpages, 0 erreurs, 151 s
+[14:46:28]   [30/243] CNA-2014-PIB : 25 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:46:29]   [31/243] CNA-2014-RDB : 12 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:46:33]   [32/243] CNA-2014-TEI : 1922 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:46:34]   [33/243] CNA-2014-TOF : 1278 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:46:39]   [34/243] CNA-2020-CONSO-MEN : 1677 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:46:41]   [35/243] CNA-2020-CONSO-SI : 1225 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:46:45]   [36/243] CNA-2020-CPEB : 1890 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:46:45]   [37/243] CNA-2020-CSI : 5 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:46:47]   [38/243] CNA-2020-EMPLOI : 683 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:48:58]   [39/243] CNA-2020-ERE : 3140 séries, 48 requêtes, 9 découpages, 0 erreurs, 131 s
+[14:48:58]   [40/243] CNA-2020-FBCF-SI : 138 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:48:59]   [41/243] CNA-2020-PIB : 21 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:49:02]   [42/243] CNA-2020-TEI : 1603 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:49:06]   [43/243] CNT-2010-CB : 594 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:49:08]   [44/243] CNT-2010-CSI : 328 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:49:12]   [45/243] CNT-2010-OPERATIONS : 676 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:49:12]   [46/243] CNT-2010-PIB-EQB-RF : 67 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:49:16]   [47/243] CNT-2014-CB : 594 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:49:19]   [48/243] CNT-2014-CSI : 329 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:49:24]   [49/243] CNT-2014-OPERATIONS : 680 séries, 1 requêtes, 0 découpages, 0 erreurs, 5 s
+[14:49:24]   [50/243] CNT-2014-PIB-EQB-RF : 68 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:49:28]   [51/243] CNT-2020-CB : 594 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:49:31]   [52/243] CNT-2020-CSI : 334 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:49:36]   [53/243] CNT-2020-OPERATIONS : 682 séries, 1 requêtes, 0 découpages, 0 erreurs, 5 s
+[14:49:36]   [54/243] CNT-2020-PIB-EQB-RF : 68 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:49:36]   [55/243] COEFF-EURO-FRANC : 3 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:50:14]   [56/243] COM-EXT : 2781 séries, 29 requêtes, 2 découpages, 0 erreurs, 38 s
+[14:50:14]   [57/243] COMPTES-ETAT : 4 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:50:15]   [58/243] CONSO-MENAGES-2010 : 16 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:50:16]   [59/243] CONSO-MENAGES-2014 : 16 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:50:16]   [60/243] CONSO-MENAGES-2020 : 16 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:50:25]   [61/243] CONSTRUCTION-LOCAUX : 1308 séries, 1 requêtes, 0 découpages, 0 erreurs, 8 s
+[14:50:28]   [62/243] CONSTRUCTION-LOGEMENTS : 608 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:50:34]   [63/243] CREATIONS-ENTREPRISES : 1669 séries, 1 requêtes, 0 découpages, 0 erreurs, 5 s
+[14:50:38]   [64/243] CREATIONS-ENTREPRISES-METHODE-2022 : 1894 séries, 1 requêtes, 0 découpages, 0 erreurs, 5 s
+[14:50:41]   [65/243] DECES-MORTALITE : 1905 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:50:45]   [66/243] DEFAILLANCES-ENTREPRISES : 573 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:52:03]   [67/243] DEMANDES-EMPLOIS-NATIONALES : 2833 séries, 41 requêtes, 8 découpages, 0 erreurs, 79 s
+[14:52:04]   [68/243] DETTE-NEGOCIABLE-ETAT : 17 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:04]   [69/243] DETTE-TRIM-APU : 19 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:05]   [70/243] DETTE-TRIM-APU-2014 : 21 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:05]   [71/243] DETTE-TRIM-APU-2020 : 21 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:06]   [72/243] EMPLOI-BIT-TRIM : 365 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:07]   [73/243] EMPLOI-SALARIE-TRIM-NATIONAL : 80 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:14]   [74/243] ENQ-CONJ-ACT-IND : 1842 séries, 1 requêtes, 0 découpages, 0 erreurs, 7 s
+[14:52:14]   [75/243] ENQ-CONJ-ART-BAT : 92 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:18]   [76/243] ENQ-CONJ-COM-DET : 552 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:52:22]   [77/243] ENQ-CONJ-COM-GROS : 786 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:52:23]   [78/243] ENQ-CONJ-IND-BAT : 213 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:24]   [79/243] ENQ-CONJ-INV-IND : 337 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:24]   [80/243] ENQ-CONJ-MENAGES : 34 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:25]   [81/243] ENQ-CONJ-PROMO-IMMO : 180 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:30]   [82/243] ENQ-CONJ-SERV : 1514 séries, 1 requêtes, 0 découpages, 0 erreurs, 5 s
+[14:52:30]   [83/243] ENQ-CONJ-TP : 41 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:31]   [84/243] ENQ-CONJ-TRES-IND : 158 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:31]   [85/243] ERI-ACTIVITE-PARTIELLE : 116 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:32]   [86/243] IC-PROD-CONS-2010 : 19 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:32]   [87/243] IC-PROD-CONS-2015 : 25 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:52:33]   [88/243] IC-PROD-CONS-2021 : 24 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:41]   [89/243] ICA-2005-COM-SERV : 1766 séries, 1 requêtes, 0 découpages, 0 erreurs, 8 s
+[14:52:41]   [90/243] ICA-2005-EMAGSA : 24 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:43]   [91/243] ICA-2005-IND-CONS : 639 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:52:47]   [92/243] ICA-2010-COMMERCE : 1040 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:52:47]   [93/243] ICA-2010-EMAGSA : 24 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:52:59]   [94/243] ICA-2010-IND-CONS : 2833 séries, 6 requêtes, 1 découpages, 0 erreurs, 12 s
+[14:53:09]   [95/243] ICA-2010-SERVICE : 2040 séries, 6 requêtes, 1 découpages, 0 erreurs, 10 s
+[14:53:12]   [96/243] ICA-2015-COMMERCE : 345 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:53:12]   [97/243] ICA-2015-EMAGSA : 24 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:22]   [98/243] ICA-2015-IND-CONS : 1988 séries, 1 requêtes, 0 découpages, 0 erreurs, 10 s
+[14:53:26]   [99/243] ICA-2015-SERVICES : 679 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:53:28]   [100/243] ICA-2021-COMMERCE : 345 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:53:37]   [101/243] ICA-2021-IND-CONS : 1187 séries, 1 requêtes, 0 découpages, 0 erreurs, 9 s
+[14:53:41]   [102/243] ICA-2021-SERVICES : 679 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:53:41]   [103/243] ICHT-2008 : 60 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:42]   [104/243] ICT-2012 : 34 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:42]   [105/243] ICT-2016 : 34 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:53:43]   [106/243] ICT-2020 : 34 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:53:43]   [107/243] ILC-ILAT-ICC : 6 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:44]   [108/243] INDEX-BT-TP-DIV-ANCIENNES-BASES : 68 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:53:44]   [109/243] INDEX-BT-TP-DIV-IM-2010 : 84 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:45]   [110/243] INDICE-TRAITEMENT-FP : 8 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:45]   [111/243] INDICES_LOYERS : 66 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:53:46]   [112/243] IP-PROD-CONS-N-HAB-2010 : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[14:53:46]   [113/243] IP-PROD-CONS-N-HAB-2015 : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:53:47]   [114/243] IP-PROD-CONS-N-HAB-2021 : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[14:53:49]   [115/243] IPAGRI : 851 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:53:51]   [116/243] IPAGRI-BASE-2015 : 725 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[14:53:54]   [117/243] IPAGRI-BASE-2020 : 853 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[14:53:57]   [118/243] IPC-1970-1980 : 813 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:54:00]   [119/243] IPC-1990 : 1650 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[14:55:56]   [120/243] IPC-1998 : 3133 séries, 52 requêtes, 8 découpages, 0 erreurs, 116 s
+[14:58:36]   [121/243] IPC-2015 : 4225 séries, 64 requêtes, 9 découpages, 0 erreurs, 160 s
+[15:01:13]   [122/243] IPC-2025 : 4523 séries, 64 requêtes, 9 découpages, 0 erreurs, 157 s
+[15:01:14]   [123/243] IPC-PM-2015 : 307 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:01:15]   [124/243] IPCH-2005 : 393 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:01:19]   [125/243] IPCH-2015 : 1293 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[15:01:23]   [126/243] IPCH-2025 : 1292 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[15:01:23]   [127/243] IPEA-2010 : 10 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:01:23]   [128/243] IPEA-2015 : 30 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:01:24]   [129/243] IPEA-2021 : 30 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:01:24]   [130/243] IPGD-1998 : 9 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:01:25]   [131/243] IPGD-2015 : 11 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:01:29]   [132/243] IPI-1990 : 1286 séries, 1 requêtes, 0 découpages, 0 erreurs, 5 s
+[15:01:32]   [133/243] IPI-2005 : 1029 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[15:01:38]   [134/243] IPI-2010 : 1446 séries, 1 requêtes, 0 découpages, 0 erreurs, 6 s
+[15:01:45]   [135/243] IPI-2015 : 1104 séries, 1 requêtes, 0 découpages, 0 erreurs, 7 s
+[15:01:51]   [136/243] IPI-2021 : 1092 séries, 1 requêtes, 0 découpages, 0 erreurs, 7 s
+[15:01:52]   [137/243] IPLA-IPLNA-2010 : 112 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:01:52]   [138/243] IPLA-IPLNA-2015 : 142 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:02:03]   [139/243] IPPI-2005 : 0 séries (annoncées 2571), 6 requêtes, 1 découpages, 0 erreurs, 11 s
+[15:02:15]   [140/243] IPPI-2010 : 0 séries (annoncées 2493), 6 requêtes, 1 découpages, 0 erreurs, 12 s
+[15:02:39]   [141/243] IPPI-2015 : 2288 séries, 11 requêtes, 2 découpages, 0 erreurs, 24 s
+[15:02:50]   [142/243] IPPI-2021 : 1920 séries, 1 requêtes, 0 découpages, 0 erreurs, 11 s
+[15:02:51]   [143/243] IPPMP : 131 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:02:53]   [144/243] IPPMP-NF : 161 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[15:02:54]   [145/243] IPPS-2010 : 634 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:02:55]   [146/243] IPPS-2015 : 627 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:02:56]   [147/243] IPPS-2021 : 531 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:02:58]   [148/243] IPS-2015-SERVICES : 452 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[15:03:00]   [149/243] IPS-2021-SERVICES : 452 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[15:03:01]   [150/243] IRL : 8 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:02]   [151/243] MARIAGES-NUPTIALITE-PACS-DIVORCES : 1070 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:03]   [152/243] NAISSANCES-FECONDITE : 841 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:03]   [153/243] ODD-CONSOMMATION-PRODUCTION : 31 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:04]   [154/243] ODD-EAU-PROPRE-ASSAINISSEMENT : 27 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:04]   [155/243] ODD-EDUCATION-QUALITE : 29 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:05]   [156/243] ODD-EGALITE-SEXES : 14 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:05]   [157/243] ODD-ENERGIE-PROPRE-COUT-ABORDABLE : 32 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:06]   [158/243] ODD-ERADICATION-PAUVRETE : 65 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:06]   [159/243] ODD-INFRASTRUCTURES-RESILIENTES-INNOVATION : 26 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:07]   [160/243] ODD-LUTTE-CHANGEMENT-CLIMATIQUE : 38 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:07]   [161/243] ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES : 15 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:08]   [162/243] ODD-PARTENARIATS-REALISATION : 27 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:08]   [163/243] ODD-REDUCTION-INEGALITES : 25 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:09]   [164/243] ODD-SANTE-BIEN-ETRE : 95 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:09]   [165/243] ODD-SECURITE-ALIMENTAIRE-AGRICULTURE-DURABLE : 60 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:10]   [166/243] ODD-TRAVAIL-CROISSANCE : 57 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:10]   [167/243] ODD-VIE-AQUATIQUE : 59 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:11]   [168/243] ODD-VIE-TERRESTRE : 26 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:11]   [169/243] ODD-VILLES-COMMUNAUTES-DURABLES : 19 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:12]   [170/243] PARC-LOGEMENTS : 32 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:12]   [171/243] POPULATION-STRUCTURE : 50 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:13]   [172/243] REVALORISATION-PENSIONS : 4 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:13]   [173/243] SALAIRES-ACEMO : 129 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:14]   [174/243] SALAIRES-ACEMO-2017 : 129 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:15]   [175/243] SALAIRES-ANNUELS : 246 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:15]   [176/243] SERIES_LOYERS : 8 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:16]   [177/243] SMIC-COTISATIONS : 74 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:16]   [178/243] SUIVI-DEMANDE-TOURISTIQUE : 55 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:17]   [179/243] TAUX-CHOMAGE : 115 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:17]   [180/243] TCRED-AGRICULTURE-CHEP-AGRI : 580 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:17]   [181/243] TCRED-AGRICULTURE-EXP-AGRI : 105 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:18]   [182/243] TCRED-AGRICULTURE-OCC-SOL : 696 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:18]   [183/243] TCRED-AGRICULTURE-PROD-VEG : 456 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:19]   [184/243] TCRED-CONDITIONSDEVIE-APE-PEC : 704 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:20]   [185/243] TCRED-CONDITIONSDEVIE-LICENCES-SPORTIVES : 936 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:20]   [186/243] TCRED-CONDITIONSDEVIE-LOG-SOC : 468 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:20]   [187/243] TCRED-CONDITIONSDEVIE-NMU-MOH : 232 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:21]   [188/243] TCRED-CONDITIONSDEVIE-TXP-CDE : 701 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:22]   [189/243] TCRED-CONSTRUCTION-LOCAUX : 1170 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:22]   [190/243] TCRED-ECONOMIE-DEP-REC : 120 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:23]   [191/243] TCRED-ECONOMIE-PIB-REG : 66 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:23]   [192/243] TCRED-ECONOMIE-PIB-REG-2014 : 66 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:24]   [193/243] TCRED-ECONOMIE-VAB-REG : 138 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:24]   [194/243] TCRED-ECONOMIE-VAB-REG-2014 : 138 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:25]   [195/243] TCRED-EDUCATION-APP-JEN : 351 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:25]   [196/243] TCRED-EDUCATION-DIPLOMES-TECHNIQUES : 936 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:26]   [197/243] TCRED-EDUCATION-EFF-PSS : 1212 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:03:27]   [198/243] TCRED-EDUCATION-ENS-PSD : 808 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:03:28]   [199/243] TCRED-EDUCATION-ETAB-SCOL : 1521 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[15:03:29]   [200/243] TCRED-EDUCATION-REU-BAC : 936 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:05:18]   [201/243] TCRED-EMPLOI-31-DECEMBRE : 2070 séries, 50 requêtes, 9 découpages, 0 erreurs, 109 s
+[15:07:10]   [202/243] TCRED-EMPLOI-31-DECEMBRE-BASE-2018 : 2070 séries, 49 requêtes, 9 découpages, 0 erreurs, 112 s
+[15:07:14]   [203/243] TCRED-EMPLOI-SALARIE-TRIM : 1473 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[15:07:14]   [204/243] TCRED-ENTREPRISES-EFF-OPE : 288 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:07:14]   [205/243] TCRED-ENTREPRISES-EMP-SAL-AN-TAILLE : 200 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:07:16]   [206/243] TCRED-ESTIMATIONS-POPULATION : 819 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:07:16]   [207/243] TCRED-SALAIRES-REVENUS-MEN : 565 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:07:17]   [208/243] TCRED-SALAIRES-REVENUS-RET-BEN : 812 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:07:17]   [209/243] TCRED-SALAIRES-REVENUS-REV-SAL-SEXE-CS : 819 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:07:17]   [210/243] TCRED-SALAIRES-REVENUS-STRUCTURE-RDB : 565 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:07:18]   [211/243] TCRED-SALAIRES-REVENUS-TAUX-PAUVRETE-AGE : 791 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:07:19]   [212/243] TCRED-SALAIRES-REVENUS-TNB : 1275 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:07:19]   [213/243] TCRED-SANTE-ACCUEIL-PERS-AGEES : 702 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:08:43]   [214/243] TCRED-SANTE-CAUSES-DECES : 2096 séries, 41 requêtes, 8 découpages, 0 erreurs, 84 s
+[15:08:43]   [215/243] TCRED-SANTE-EQUIP-HOP : 351 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:08:44]   [216/243] TCRED-SANTE-EQUIP-SPE : 351 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:08:46]   [217/243] TCRED-SANTE-PERSONNELS : 1989 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[15:08:48]   [218/243] TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN : 1872 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[15:08:48]   [219/243] TCRED-SERVICES-TOURISME-TRANSPORTS-RR : 333 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:08:49]   [220/243] TCRED-TRAVAIL-EMPLOI-EFF-FP-RATIO : 817 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:08:50]   [221/243] TCRED-TRAVAIL-EMPLOI-EFF-FPE : 1053 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:08:50]   [222/243] TCRED-TRAVAIL-EMPLOI-EFF-FPH : 351 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:08:50]   [223/243] TCRED-TRAVAIL-EMPLOI-EFF-FPT : 351 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:08:51]   [224/243] TCRED-TRAVAIL-EMPLOI-TCHOMA-SA : 702 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:09:53]   [225/243] TOURISME-FRANCE-METHODE-REDRESSEMENT-2019 : 3944 séries, 29 requêtes, 2 découpages, 0 erreurs, 62 s
+[15:09:55]   [226/243] TRANSPORTS : 97 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:09:56]   [227/243] VOV-2015-COMMERCE : 232 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:09:57]   [228/243] VOV-2021-COMMERCE : 232 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:09:57]   [229/243] CGD : 1 séries (annoncées 5), 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:09:58]   [230/243] CGO : 1 séries (annoncées 8), 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:09:58]   [231/243] CPI : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:09:59]   [232/243] EMP : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:09:59]   [233/243] FSI : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:10:00]   [234/243] GGD : 1 séries (annoncées 9), 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:10:00]   [235/243] GGO : 1 séries (annoncées 21), 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:10:01]   [236/243] IND : 1 séries (annoncées 4), 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:10:01]   [237/243] MET : 1 séries (annoncées 3), 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:10:02]   [238/243] NAG_GNA : 1 séries (annoncées 21), 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:10:02]   [239/243] POP : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:10:03]   [240/243] PPI : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:10:03]   [241/243] UEM : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:10:04]   [242/243] WOE : 1 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[15:10:05]   [243/243] STES_COLLECT : 1 séries (annoncées 93), 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[15:10:05] === Étape bdm_periodes (budget restant 207 min) ===
+[15:10:07] BDM périodes : 182082 séries listées ; à lire : 50581 annuelles (séries complètes), 29495 infra-annuelles (première/dernière observation) ; 0 déjà lues
+[15:10:17]   annuelles : lot 20/253 (1274 appels, 122 Mo, 0 erreurs)
+[15:10:28]   annuelles : lot 40/253 (1294 appels, 137 Mo, 0 erreurs)
+[15:10:42]   annuelles : lot 60/253 (1314 appels, 161 Mo, 0 erreurs)
+[15:10:58]   annuelles : lot 80/253 (1334 appels, 180 Mo, 0 erreurs)
+[15:11:11]   annuelles : lot 100/253 (1354 appels, 202 Mo, 0 erreurs)
+[15:11:23]   annuelles : lot 120/253 (1374 appels, 219 Mo, 0 erreurs)
+[15:11:35]   annuelles : lot 140/253 (1394 appels, 237 Mo, 0 erreurs)
+[15:11:45]   annuelles : lot 160/253 (1414 appels, 248 Mo, 0 erreurs)
+[15:11:55]   annuelles : lot 180/253 (1434 appels, 258 Mo, 0 erreurs)
+[15:12:09]   annuelles : lot 200/253 (1454 appels, 280 Mo, 0 erreurs)
+[15:12:21]   annuelles : lot 220/253 (1474 appels, 299 Mo, 0 erreurs)
+[15:12:33]   annuelles : lot 240/253 (1494 appels, 318 Mo, 0 erreurs)
+[15:12:40]   annuelles : lot 253/253 (1507 appels, 324 Mo, 0 erreurs)
+[15:14:18]   infra-annuelles : lot 20/74 (1565 appels, 341 Mo, 0 erreurs)
+[15:15:56]   infra-annuelles : lot 40/74 (1614 appels, 352 Mo, 0 erreurs)
+[15:17:40]   infra-annuelles : lot 60/74 (1680 appels, 367 Mo, 0 erreurs)
+[15:18:57]   infra-annuelles : lot 74/74 (1715 appels, 375 Mo, 0 erreurs)
+[15:18:57] === Étape melodi (budget restant 198 min) ===
+[15:18:58] Melodi : 145 jeux au catalogue
+[15:19:12]   [1/145] DD_CNA_AGREGATS : traité, 3672 séries nationales, 228727 obs., fichier ZIP (2.1 Mo)  (14 s)
+[15:19:40]   [2/145] DD_CNA_APU : traité, 21455 séries nationales, 627596 obs., fichier ZIP (4.3 Mo)  (28 s)
+[15:19:54]   [4/145] DD_CNA_CONSO_MENAGES_COICOP : traité, 3896 séries nationales, 258305 obs., fichier ZIP (2.4 Mo)  (14 s)
+[15:20:19]   [7/145] DD_CNA_PATRIMOINE : traité, 5402 séries nationales, 251012 obs., fichier ZIP (2.4 Mo)  (25 s)
+[15:20:41]   [11/145] DD_CNA_TEE : traité, 9226 séries nationales, 459903 obs., fichier ZIP (4.3 Mo)  (22 s)
+[15:20:55]   [13/145] DD_EEC_SERIES : traité, 1761 séries nationales, 75303 obs., /data 1 page(s)  (14 s)
+[15:21:04]   [19/145] DS_BTS_SAL_EQTP_SEX_AGE : traité, 36 séries nationales, 72 obs., /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM  (9 s)
+[15:21:15]   [20/145] DS_BTS_SAL_EQTP_SEX_PCS : traité, 30 séries nationales, 60 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:21:27]   [21/145] DS_CNT_CB : traité, 594 séries nationales, 184140 obs., fichier ZIP (2.1 Mo)  (12 s)
+[15:21:34]   [22/145] DS_CNT_CSI : traité, 334 séries nationales, 100088 obs., fichier ZIP (1.1 Mo)  (7 s)
+[15:21:53]   [23/145] DS_CNT_OPERATIONS : traité, 682 séries nationales, 211420 obs., fichier ZIP (2.5 Mo)  (19 s)
+[15:22:02]   [24/145] DS_CNT_PIB_EQB_RF : traité, 67 séries nationales, 20560 obs., /data 1 page(s)  (9 s)
+[15:22:16]   [27/145] DS_DECES_MORTALITE_SERIES : traité, 165 séries nationales, 9191 obs., /data 1 page(s) FRANCE-FM_X_R11, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (13 s)
+[15:22:23]   [32/145] DS_DERA_PRIVE_SERIES_LONGUES : traité, 436 séries nationales, 14768 obs., /data 1 page(s)  (7 s)
+[15:22:28]   [34/145] DS_DERA_PUBLIC_SERIES_LONGUES : traité, 191 séries nationales, 2183 obs., /data 1 page(s)  (5 s)
+[15:22:37]   [36/145] DS_EC_DECES : traité, 76 séries nationales, 17093 obs., /data 1 page(s) FRANCE-F  (9 s)
+[15:22:41]   [37/145] DS_EC_NAIS : traité, 4 séries nationales, 157 obs., /data 1 page(s) FRANCE-F  (4 s)
+[15:22:52]   [38/145] DS_ELECTORAL : traité, 78 séries nationales, 81 obs., /data 1 page(s) FRANCE-F_COMER, /data 1 page(s) FRANCE-F  (11 s)
+[15:22:59]   [39/145] DS_ENQPAT_DET : traité, 4036 séries nationales, 4547 obs., /data 1 page(s)  (7 s)
+[15:23:05]   [41/145] DS_ERFS_NON_RETROPOLE : traité, 918 séries nationales, 8647 obs., /data 1 page(s)  (7 s)
+[15:23:11]   [42/145] DS_ERFS_RETROPOLE : traité, 140 séries nationales, 1441 obs., /data 1 page(s)  (6 s)
+[15:23:30]   [43/145] DS_ESTIMATION_POPULATION : traité, 258 séries nationales, 11430 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM_X_R11, /data 1 page(s) FRANCE-F_X_D976  (19 s)
+[15:23:45]   [44/145] DS_ETAT_CIVIL_DECES_COMMUNES : traité, 3 séries nationales, 54 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F_X_D976, /data 1 page(s) FRANCE-F  (15 s)
+[15:24:00]   [45/145] DS_ETAT_CIVIL_NAIS_COMMUNES : traité, 3 séries nationales, 54 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F_X_D976, /data 1 page(s) FRANCE-F  (15 s)
+[15:24:04]   [46/145] DS_FECONDITE : traité, 0 séries nationales, 0 obs.,   (4 s)
+[15:24:15]   [56/145] DS_IPCH : traité, 1298 séries nationales, 173095 obs., fichier ZIP (1.4 Mo)  (11 s)
+[15:24:19]   [57/145] DS_IPC_IND_CAT : traité, 32 séries nationales, 683 obs., /data 1 page(s)  (4 s)
+[15:24:27]   [58/145] DS_IPC_PM : traité, 126 séries nationales, 20658 obs., /data 1 page(s)  (8 s)
+[15:25:40]   [59/145] DS_IPC_PRINC : traité, 4007 séries nationales, 356155 obs., /data 1 page(s) FRANCE-FM, /data 3 page(s) FRANCE-F  (74 s)
+[15:25:53]   [60/145] DS_MAR_PACS_DIV_SERIES : traité, 29 séries nationales, 4747 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM_X_R11  (13 s)
+[15:25:57]   [61/145] DS_MORTALITE : traité, 0 séries nationales, 0 obs.,   (4 s)
+[15:26:12]   [62/145] DS_NAISSANCES_FECONDITE_SERIES : traité, 35 séries nationales, 3309 obs., /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-FM_X_R11  (15 s)
+[15:26:27]   [63/145] DS_NAT_SDG : traité, 500 séries nationales, 7685 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-F_X_D976  (15 s)
+[15:26:33]   [64/145] DS_PARC_LOGEMENTS_SERIES : traité, 32 séries nationales, 1440 obs., /data 1 page(s)  (6 s)
+[15:26:44]   [65/145] DS_POPULATIONS_HISTORIQUES : traité, 4 séries nationales, 46 obs., /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM  (10 s)
+[15:26:50]   [67/145] DS_POP_STRUCT_SERIES : traité, 48 séries nationales, 2926 obs., /data 1 page(s)  (6 s)
+[15:27:01]   [69/145] DS_RP_ACTIVITE_PRINC : traité, 138 séries nationales, 414 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:27:12]   [70/145] DS_RP_DIPLOMES_PRINC : traité, 60 séries nationales, 156 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:27:23]   [71/145] DS_RP_EDUCATION_PRINC : traité, 144 séries nationales, 432 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:27:34]   [72/145] DS_RP_EMPLOI_LR_COMP : traité, 42 séries nationales, 126 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:27:45]   [73/145] DS_RP_EMPLOI_LR_PRINC : traité, 394 séries nationales, 856 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:27:56]   [74/145] DS_RP_EMPLOI_LT_COMP : traité, 120 séries nationales, 360 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:28:07]   [75/145] DS_RP_EMPLOI_LT_PRINC : traité, 32 séries nationales, 96 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:28:18]   [76/145] DS_RP_FAMILLE_COMP : traité, 26 séries nationales, 70 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:28:29]   [77/145] DS_RP_LOGEMENT_COMP : traité, 14 séries nationales, 42 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:28:31]   [78/145] DS_RP_LOGEMENT_DOM_PRINC : écarté, 0 séries nationales, 0 obs.,  aucune valeur géographique nationale dans /range (2 s)
+[15:28:42]   [79/145] DS_RP_LOGEMENT_PRINC : traité, 246 séries nationales, 570 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:28:53]   [80/145] DS_RP_MENAGES_COMP : traité, 68 séries nationales, 204 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:29:04]   [81/145] DS_RP_MENAGES_PRINC : traité, 74 séries nationales, 218 obs., /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM  (11 s)
+[15:29:15]   [82/145] DS_RP_MIGRES_PRINC : traité, 34 séries nationales, 102 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:29:26]   [83/145] DS_RP_NAVETTES_PRINC : traité, 28 séries nationales, 76 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:29:37]   [84/145] DS_RP_POPULATION_COMP : traité, 216 séries nationales, 648 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:29:48]   [85/145] DS_RP_POPULATION_PRINC : traité, 66 séries nationales, 198 obs., /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM  (11 s)
+[15:29:59]   [86/145] DS_RP_SERIE_HISTORIQUE : traité, 18 séries nationales, 146 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (11 s)
+[15:30:05]   [136/145] DS_SOCIAL_ECONOMY : traité, 1001 séries nationales, 5558 obs., /data 1 page(s)  (7 s)
+[15:30:11]   [137/145] DS_SRCV_CONFIANCE : traité, 144 séries nationales, 720 obs., /data 1 page(s)  (6 s)
+[15:30:18]   [138/145] DS_SRCV_PMS : traité, 1848 séries nationales, 9240 obs., /data 1 page(s)  (7 s)
+[15:30:24]   [139/145] DS_SRCV_SATISFACTION : traité, 852 séries nationales, 8520 obs., /data 1 page(s)  (6 s)
+[15:30:30]   [140/145] DS_SUIVI_DDE_TOUR : traité, 54 séries nationales, 2104 obs., /data 1 page(s)  (6 s)
+[15:30:37]   [142/145] DS_TICM_EQUIPEMENT : traité, 322 séries nationales, 5474 obs., /data 1 page(s)  (6 s)
+[15:30:43]   [143/145] DS_TICM_PRATIQUES : traité, 608 séries nationales, 10336 obs., /data 1 page(s)  (7 s)
+[15:31:00]   [145/145] DS_TOUR_FREQ : traité, 164 séries nationales, 17601 obs., /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (17 s)
+[15:31:00] === Étape consolidation (budget restant 186 min) ===
+[15:31:06] Inventaire BDM : 182082 séries → catalogues/insee_bdm_inventaire.csv.gz
+[15:31:09] Inventaire Melodi : 66287 séries nationales → catalogues/insee_melodi_inventaire.csv.gz
+[15:31:09] === Étape catalogage (budget restant 186 min) ===
+[15:32:02] Bilan : {"bdm": {"dataflows": 226, "series_listees": 182082, "par_frequence": {"A": 126772, "M": 37098, "T": 17044, "B": 832, "S": 336}, "par_zone": {"principale": 130172, "hors_nationale": 51638, "nationale": 271, "sans_objet": 1}, "catalogue": 79485, "exclusions": {"zone non nationale …": 51638, "dernière mise à jour … antérieure à …": 50368, "dernière période … < …": 492, "périodes inconnues …": 99}, "candidat": {"non": 72398, "oui": 6561, "a_verifier": 526}, "catalogue_par_frequence": {"annuelle": 50136, "mensuelle": 20899, "trimestrielle": 7440, "bimestrielle": 832, "semestrielle": 178}, "catalogue_par_geo": {"FE": 47978, "FR-D976": 16794, "FM": 14555, "FM99_FR00": 99, "FM_D99_D978": 35, "FHREUN15_FREUN18_PUBPRIVSSC_EL15TTECL": 7, "FMDOMHREUN15_FMDOMCOMREUN18_EL15TTECL": 7, "FM_H_CORSE_2018": 6, "FMGUADMART16_FHMAY21_PUBPRIVSSC_ELEVCM1TTAGE": 1, "FMGUADMART15_FHMAY19_PUBPRIVSSC_ELEVCM1TTAGE": 1, "FR-SPM-WF": 1, "FE_HPBIO": 1}}, "melodi": {"jeux": 145, "jeux_par_statut": {"écarté": 84, "traité": 61}, "series_nationales": 66287, "catalogue": 52296, "exclusions": {"fréquence ? non retenue": 9992, "dernière période < 2020 ou inconnue": 2196, "fréquence Q non retenue": 1698, "fréquence D non retenue": 105}, "candidat": {"oui": 33637, "non": 17556, "a_verifier": 1103}}}
+[15:32:02] Comparaison phase 1 : {"phase1": 1063, "statuts": {"BDM:absente_de_la_bdm": 10, "BDM:confirmee": 704, "BDM:ecartee_par_filtre": 144, "Melodi:confirmee": 165, "Melodi:jeu_absent": 4, "Melodi:jeu_sans_serie_au_catalogue": 9, "Melodi:non_retrouvee": 14, "candidat_different": 451, "dimension_differente": 66, "fichier:hors_robot": 13}, "bdm_nouvelles_oui_ou_a_verifier": 6649, "bdm_nouvelles_par_dimension": {"niveau_de_vie": 2964, "travail": 1489, "planete": 923, "sante": 408, "education": 361, "logement_cadre_vie": 259, "liens_bien_etre": 179, "securite_confiance": 41, "egalites": 22, "democratie": 3}}
+[15:32:02] Cycle terminé : fichiers d'état intermédiaires supprimés (les inventaires gardent tout).
+[15:32:02] Fin du passage : cycle terminé ; 1976 appels HTTP, 1029.7 Mo, 69.7 min
+----- collecte_insee.py : OK en 4181 s
+
+Bilan : tous les scripts ont réussi

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "debut": "2026-10-13T13:33:11+00:00",
+ "debut": "2026-10-13T14:22:22+00:00",
  "termine": true,
  "etapes_terminees": [
   "bdm_flux",
@@ -13,14 +13,28 @@
  ],
  "passages": [
   {
-   "debut": "2026-10-13T13:33:11+00:00",
-   "fin": "2026-10-13T13:55:42+00:00",
+   "debut": "2026-10-13T14:22:22+00:00",
+   "fin": "2026-10-13T15:32:02+00:00",
    "issue": "cycle terminé",
-   "appels": 395,
-   "mo": 139.6
+   "appels": 1976,
+   "mo": 1029.7
   }
  ],
- "passages_precedents": [],
+ "passages_precedents": [
+  {
+   "cycle": "2026-10-13T13:33:11+00:00",
+   "passages": [
+    {
+     "debut": "2026-10-13T13:33:11+00:00",
+     "fin": "2026-10-13T13:55:42+00:00",
+     "issue": "cycle terminé",
+     "appels": 395,
+     "mo": 139.6
+    }
+   ],
+   "termine": true
+  }
+ ],
  "bdm_flux_faits": [
   "BALANCE-PAIEMENTS",
   "CHOMAGE-TRIM-NATIONAL",
@@ -41,7 +55,230 @@
   "CNA-2010-TEI",
   "CNA-2010-TOF",
   "CNA-2014-CONSO-MEN",
-  "CNA-2014-CONSO-SI"
+  "CNA-2014-CONSO-SI",
+  "CNA-2014-CPEB",
+  "CNA-2014-CSI",
+  "CNA-2014-DEP-APU",
+  "CNA-2014-DETTE-APU",
+  "CNA-2014-EMPLOI",
+  "CNA-2014-ERE",
+  "CNA-2014-FBCF-BRANCHE",
+  "CNA-2014-FBCF-SI",
+  "CNA-2014-PAT-NF",
+  "CNA-2014-PIB",
+  "CNA-2014-RDB",
+  "CNA-2014-TEI",
+  "CNA-2014-TOF",
+  "CNA-2020-CONSO-MEN",
+  "CNA-2020-CONSO-SI",
+  "CNA-2020-CPEB",
+  "CNA-2020-CSI",
+  "CNA-2020-EMPLOI",
+  "CNA-2020-ERE",
+  "CNA-2020-FBCF-SI",
+  "CNA-2020-PIB",
+  "CNA-2020-TEI",
+  "CNT-2010-CB",
+  "CNT-2010-CSI",
+  "CNT-2010-OPERATIONS",
+  "CNT-2010-PIB-EQB-RF",
+  "CNT-2014-CB",
+  "CNT-2014-CSI",
+  "CNT-2014-OPERATIONS",
+  "CNT-2014-PIB-EQB-RF",
+  "CNT-2020-CB",
+  "CNT-2020-CSI",
+  "CNT-2020-OPERATIONS",
+  "CNT-2020-PIB-EQB-RF",
+  "COEFF-EURO-FRANC",
+  "COM-EXT",
+  "COMPTES-ETAT",
+  "CONSO-MENAGES-2010",
+  "CONSO-MENAGES-2014",
+  "CONSO-MENAGES-2020",
+  "CONSTRUCTION-LOCAUX",
+  "CONSTRUCTION-LOGEMENTS",
+  "CREATIONS-ENTREPRISES",
+  "CREATIONS-ENTREPRISES-METHODE-2022",
+  "DECES-MORTALITE",
+  "DEFAILLANCES-ENTREPRISES",
+  "DEMANDES-EMPLOIS-NATIONALES",
+  "DETTE-NEGOCIABLE-ETAT",
+  "DETTE-TRIM-APU",
+  "DETTE-TRIM-APU-2014",
+  "DETTE-TRIM-APU-2020",
+  "EMPLOI-BIT-TRIM",
+  "EMPLOI-SALARIE-TRIM-NATIONAL",
+  "ENQ-CONJ-ACT-IND",
+  "ENQ-CONJ-ART-BAT",
+  "ENQ-CONJ-COM-DET",
+  "ENQ-CONJ-COM-GROS",
+  "ENQ-CONJ-IND-BAT",
+  "ENQ-CONJ-INV-IND",
+  "ENQ-CONJ-MENAGES",
+  "ENQ-CONJ-PROMO-IMMO",
+  "ENQ-CONJ-SERV",
+  "ENQ-CONJ-TP",
+  "ENQ-CONJ-TRES-IND",
+  "ERI-ACTIVITE-PARTIELLE",
+  "IC-PROD-CONS-2010",
+  "IC-PROD-CONS-2015",
+  "IC-PROD-CONS-2021",
+  "ICA-2005-COM-SERV",
+  "ICA-2005-EMAGSA",
+  "ICA-2005-IND-CONS",
+  "ICA-2010-COMMERCE",
+  "ICA-2010-EMAGSA",
+  "ICA-2010-IND-CONS",
+  "ICA-2010-SERVICE",
+  "ICA-2015-COMMERCE",
+  "ICA-2015-EMAGSA",
+  "ICA-2015-IND-CONS",
+  "ICA-2015-SERVICES",
+  "ICA-2021-COMMERCE",
+  "ICA-2021-IND-CONS",
+  "ICA-2021-SERVICES",
+  "ICHT-2008",
+  "ICT-2012",
+  "ICT-2016",
+  "ICT-2020",
+  "ILC-ILAT-ICC",
+  "INDEX-BT-TP-DIV-ANCIENNES-BASES",
+  "INDEX-BT-TP-DIV-IM-2010",
+  "INDICE-TRAITEMENT-FP",
+  "INDICES_LOYERS",
+  "IP-PROD-CONS-N-HAB-2010",
+  "IP-PROD-CONS-N-HAB-2015",
+  "IP-PROD-CONS-N-HAB-2021",
+  "IPAGRI",
+  "IPAGRI-BASE-2015",
+  "IPAGRI-BASE-2020",
+  "IPC-1970-1980",
+  "IPC-1990",
+  "IPC-1998",
+  "IPC-2015",
+  "IPC-2025",
+  "IPC-PM-2015",
+  "IPCH-2005",
+  "IPCH-2015",
+  "IPCH-2025",
+  "IPEA-2010",
+  "IPEA-2015",
+  "IPEA-2021",
+  "IPGD-1998",
+  "IPGD-2015",
+  "IPI-1990",
+  "IPI-2005",
+  "IPI-2010",
+  "IPI-2015",
+  "IPI-2021",
+  "IPLA-IPLNA-2010",
+  "IPLA-IPLNA-2015",
+  "IPPI-2005",
+  "IPPI-2010",
+  "IPPI-2015",
+  "IPPI-2021",
+  "IPPMP",
+  "IPPMP-NF",
+  "IPPS-2010",
+  "IPPS-2015",
+  "IPPS-2021",
+  "IPS-2015-SERVICES",
+  "IPS-2021-SERVICES",
+  "IRL",
+  "MARIAGES-NUPTIALITE-PACS-DIVORCES",
+  "NAISSANCES-FECONDITE",
+  "ODD-CONSOMMATION-PRODUCTION",
+  "ODD-EAU-PROPRE-ASSAINISSEMENT",
+  "ODD-EDUCATION-QUALITE",
+  "ODD-EGALITE-SEXES",
+  "ODD-ENERGIE-PROPRE-COUT-ABORDABLE",
+  "ODD-ERADICATION-PAUVRETE",
+  "ODD-INFRASTRUCTURES-RESILIENTES-INNOVATION",
+  "ODD-LUTTE-CHANGEMENT-CLIMATIQUE",
+  "ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES",
+  "ODD-PARTENARIATS-REALISATION",
+  "ODD-REDUCTION-INEGALITES",
+  "ODD-SANTE-BIEN-ETRE",
+  "ODD-SECURITE-ALIMENTAIRE-AGRICULTURE-DURABLE",
+  "ODD-TRAVAIL-CROISSANCE",
+  "ODD-VIE-AQUATIQUE",
+  "ODD-VIE-TERRESTRE",
+  "ODD-VILLES-COMMUNAUTES-DURABLES",
+  "PARC-LOGEMENTS",
+  "POPULATION-STRUCTURE",
+  "REVALORISATION-PENSIONS",
+  "SALAIRES-ACEMO",
+  "SALAIRES-ACEMO-2017",
+  "SALAIRES-ANNUELS",
+  "SERIES_LOYERS",
+  "SMIC-COTISATIONS",
+  "SUIVI-DEMANDE-TOURISTIQUE",
+  "TAUX-CHOMAGE",
+  "TCRED-AGRICULTURE-CHEP-AGRI",
+  "TCRED-AGRICULTURE-EXP-AGRI",
+  "TCRED-AGRICULTURE-OCC-SOL",
+  "TCRED-AGRICULTURE-PROD-VEG",
+  "TCRED-CONDITIONSDEVIE-APE-PEC",
+  "TCRED-CONDITIONSDEVIE-LICENCES-SPORTIVES",
+  "TCRED-CONDITIONSDEVIE-LOG-SOC",
+  "TCRED-CONDITIONSDEVIE-NMU-MOH",
+  "TCRED-CONDITIONSDEVIE-TXP-CDE",
+  "TCRED-CONSTRUCTION-LOCAUX",
+  "TCRED-ECONOMIE-DEP-REC",
+  "TCRED-ECONOMIE-PIB-REG",
+  "TCRED-ECONOMIE-PIB-REG-2014",
+  "TCRED-ECONOMIE-VAB-REG",
+  "TCRED-ECONOMIE-VAB-REG-2014",
+  "TCRED-EDUCATION-APP-JEN",
+  "TCRED-EDUCATION-DIPLOMES-TECHNIQUES",
+  "TCRED-EDUCATION-EFF-PSS",
+  "TCRED-EDUCATION-ENS-PSD",
+  "TCRED-EDUCATION-ETAB-SCOL",
+  "TCRED-EDUCATION-REU-BAC",
+  "TCRED-EMPLOI-31-DECEMBRE",
+  "TCRED-EMPLOI-31-DECEMBRE-BASE-2018",
+  "TCRED-EMPLOI-SALARIE-TRIM",
+  "TCRED-ENTREPRISES-EFF-OPE",
+  "TCRED-ENTREPRISES-EMP-SAL-AN-TAILLE",
+  "TCRED-ESTIMATIONS-POPULATION",
+  "TCRED-SALAIRES-REVENUS-MEN",
+  "TCRED-SALAIRES-REVENUS-RET-BEN",
+  "TCRED-SALAIRES-REVENUS-REV-SAL-SEXE-CS",
+  "TCRED-SALAIRES-REVENUS-STRUCTURE-RDB",
+  "TCRED-SALAIRES-REVENUS-TAUX-PAUVRETE-AGE",
+  "TCRED-SALAIRES-REVENUS-TNB",
+  "TCRED-SANTE-ACCUEIL-PERS-AGEES",
+  "TCRED-SANTE-CAUSES-DECES",
+  "TCRED-SANTE-EQUIP-HOP",
+  "TCRED-SANTE-EQUIP-SPE",
+  "TCRED-SANTE-PERSONNELS",
+  "TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN",
+  "TCRED-SERVICES-TOURISME-TRANSPORTS-RR",
+  "TCRED-TRAVAIL-EMPLOI-EFF-FP-RATIO",
+  "TCRED-TRAVAIL-EMPLOI-EFF-FPE",
+  "TCRED-TRAVAIL-EMPLOI-EFF-FPH",
+  "TCRED-TRAVAIL-EMPLOI-EFF-FPT",
+  "TCRED-TRAVAIL-EMPLOI-TCHOMA-SA",
+  "TOURISME-FRANCE-METHODE-REDRESSEMENT-2019",
+  "TRANSPORTS",
+  "VOV-2015-COMMERCE",
+  "VOV-2021-COMMERCE",
+  "CGD",
+  "CGO",
+  "CPI",
+  "EMP",
+  "FSI",
+  "GGD",
+  "GGO",
+  "IND",
+  "MET",
+  "NAG_GNA",
+  "POP",
+  "PPI",
+  "UEM",
+  "WOE",
+  "STES_COLLECT"
  ],
  "bdm_flux_erreurs": {},
  "bdm_flux_stats": {
@@ -164,6 +401,1344 @@
    "requetes": 1,
    "decoupages": 0,
    "erreurs": 0
+  },
+  "CNA-2014-CPEB": {
+   "series": 2739,
+   "requetes": 49,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "CNA-2014-CSI": {
+   "series": 1257,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-DEP-APU": {
+   "series": 4400,
+   "requetes": 50,
+   "decoupages": 10,
+   "erreurs": 0
+  },
+  "CNA-2014-DETTE-APU": {
+   "series": 72,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-EMPLOI": {
+   "series": 702,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-ERE": {
+   "series": 5686,
+   "requetes": 63,
+   "decoupages": 11,
+   "erreurs": 0
+  },
+  "CNA-2014-FBCF-BRANCHE": {
+   "series": 136,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-FBCF-SI": {
+   "series": 606,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-PAT-NF": {
+   "series": 5350,
+   "requetes": 49,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "CNA-2014-PIB": {
+   "series": 25,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-RDB": {
+   "series": 12,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-TEI": {
+   "series": 1922,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-TOF": {
+   "series": 1278,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-CONSO-MEN": {
+   "series": 1677,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-CONSO-SI": {
+   "series": 1225,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-CPEB": {
+   "series": 1890,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-CSI": {
+   "series": 5,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-EMPLOI": {
+   "series": 683,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-ERE": {
+   "series": 3140,
+   "requetes": 48,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "CNA-2020-FBCF-SI": {
+   "series": 138,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-PIB": {
+   "series": 21,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2020-TEI": {
+   "series": 1603,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2010-CB": {
+   "series": 594,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2010-CSI": {
+   "series": 328,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2010-OPERATIONS": {
+   "series": 676,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2010-PIB-EQB-RF": {
+   "series": 67,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2014-CB": {
+   "series": 594,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2014-CSI": {
+   "series": 329,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2014-OPERATIONS": {
+   "series": 680,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2014-PIB-EQB-RF": {
+   "series": 68,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2020-CB": {
+   "series": 594,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2020-CSI": {
+   "series": 334,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2020-OPERATIONS": {
+   "series": 682,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNT-2020-PIB-EQB-RF": {
+   "series": 68,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "COEFF-EURO-FRANC": {
+   "series": 3,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "COM-EXT": {
+   "series": 2781,
+   "requetes": 29,
+   "decoupages": 2,
+   "erreurs": 0
+  },
+  "COMPTES-ETAT": {
+   "series": 4,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CONSO-MENAGES-2010": {
+   "series": 16,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CONSO-MENAGES-2014": {
+   "series": 16,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CONSO-MENAGES-2020": {
+   "series": 16,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CONSTRUCTION-LOCAUX": {
+   "series": 1308,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CONSTRUCTION-LOGEMENTS": {
+   "series": 608,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CREATIONS-ENTREPRISES": {
+   "series": 1669,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CREATIONS-ENTREPRISES-METHODE-2022": {
+   "series": 1894,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "DECES-MORTALITE": {
+   "series": 1905,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "DEFAILLANCES-ENTREPRISES": {
+   "series": 573,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "DEMANDES-EMPLOIS-NATIONALES": {
+   "series": 2833,
+   "requetes": 41,
+   "decoupages": 8,
+   "erreurs": 0
+  },
+  "DETTE-NEGOCIABLE-ETAT": {
+   "series": 17,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "DETTE-TRIM-APU": {
+   "series": 19,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "DETTE-TRIM-APU-2014": {
+   "series": 21,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "DETTE-TRIM-APU-2020": {
+   "series": 21,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "EMPLOI-BIT-TRIM": {
+   "series": 365,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "EMPLOI-SALARIE-TRIM-NATIONAL": {
+   "series": 80,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-ACT-IND": {
+   "series": 1842,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-ART-BAT": {
+   "series": 92,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-COM-DET": {
+   "series": 552,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-COM-GROS": {
+   "series": 786,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-IND-BAT": {
+   "series": 213,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-INV-IND": {
+   "series": 337,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-MENAGES": {
+   "series": 34,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-PROMO-IMMO": {
+   "series": 180,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-SERV": {
+   "series": 1514,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-TP": {
+   "series": 41,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ENQ-CONJ-TRES-IND": {
+   "series": 158,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ERI-ACTIVITE-PARTIELLE": {
+   "series": 116,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IC-PROD-CONS-2010": {
+   "series": 19,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IC-PROD-CONS-2015": {
+   "series": 25,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IC-PROD-CONS-2021": {
+   "series": 24,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2005-COM-SERV": {
+   "series": 1766,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2005-EMAGSA": {
+   "series": 24,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2005-IND-CONS": {
+   "series": 639,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2010-COMMERCE": {
+   "series": 1040,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2010-EMAGSA": {
+   "series": 24,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2010-IND-CONS": {
+   "series": 2833,
+   "requetes": 6,
+   "decoupages": 1,
+   "erreurs": 0
+  },
+  "ICA-2010-SERVICE": {
+   "series": 2040,
+   "requetes": 6,
+   "decoupages": 1,
+   "erreurs": 0
+  },
+  "ICA-2015-COMMERCE": {
+   "series": 345,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2015-EMAGSA": {
+   "series": 24,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2015-IND-CONS": {
+   "series": 1988,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2015-SERVICES": {
+   "series": 679,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2021-COMMERCE": {
+   "series": 345,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2021-IND-CONS": {
+   "series": 1187,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICA-2021-SERVICES": {
+   "series": 679,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICHT-2008": {
+   "series": 60,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICT-2012": {
+   "series": 34,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICT-2016": {
+   "series": 34,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ICT-2020": {
+   "series": 34,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ILC-ILAT-ICC": {
+   "series": 6,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "INDEX-BT-TP-DIV-ANCIENNES-BASES": {
+   "series": 68,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "INDEX-BT-TP-DIV-IM-2010": {
+   "series": 84,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "INDICE-TRAITEMENT-FP": {
+   "series": 8,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "INDICES_LOYERS": {
+   "series": 66,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IP-PROD-CONS-N-HAB-2010": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IP-PROD-CONS-N-HAB-2015": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IP-PROD-CONS-N-HAB-2021": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPAGRI": {
+   "series": 851,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPAGRI-BASE-2015": {
+   "series": 725,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPAGRI-BASE-2020": {
+   "series": 853,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPC-1970-1980": {
+   "series": 813,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPC-1990": {
+   "series": 1650,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPC-1998": {
+   "series": 3133,
+   "requetes": 52,
+   "decoupages": 8,
+   "erreurs": 0
+  },
+  "IPC-2015": {
+   "series": 4225,
+   "requetes": 64,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "IPC-2025": {
+   "series": 4523,
+   "requetes": 64,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "IPC-PM-2015": {
+   "series": 307,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPCH-2005": {
+   "series": 393,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPCH-2015": {
+   "series": 1293,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPCH-2025": {
+   "series": 1292,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPEA-2010": {
+   "series": 10,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPEA-2015": {
+   "series": 30,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPEA-2021": {
+   "series": 30,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPGD-1998": {
+   "series": 9,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPGD-2015": {
+   "series": 11,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPI-1990": {
+   "series": 1286,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPI-2005": {
+   "series": 1029,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPI-2010": {
+   "series": 1446,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPI-2015": {
+   "series": 1104,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPI-2021": {
+   "series": 1092,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPLA-IPLNA-2010": {
+   "series": 112,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPLA-IPLNA-2015": {
+   "series": 142,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPPI-2005": {
+   "series": 0,
+   "requetes": 6,
+   "decoupages": 1,
+   "erreurs": 0
+  },
+  "IPPI-2010": {
+   "series": 0,
+   "requetes": 6,
+   "decoupages": 1,
+   "erreurs": 0
+  },
+  "IPPI-2015": {
+   "series": 2288,
+   "requetes": 11,
+   "decoupages": 2,
+   "erreurs": 0
+  },
+  "IPPI-2021": {
+   "series": 1920,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPPMP": {
+   "series": 131,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPPMP-NF": {
+   "series": 161,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPPS-2010": {
+   "series": 634,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPPS-2015": {
+   "series": 627,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPPS-2021": {
+   "series": 531,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPS-2015-SERVICES": {
+   "series": 452,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IPS-2021-SERVICES": {
+   "series": 452,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IRL": {
+   "series": 8,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "MARIAGES-NUPTIALITE-PACS-DIVORCES": {
+   "series": 1070,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "NAISSANCES-FECONDITE": {
+   "series": 841,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-CONSOMMATION-PRODUCTION": {
+   "series": 31,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-EAU-PROPRE-ASSAINISSEMENT": {
+   "series": 27,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-EDUCATION-QUALITE": {
+   "series": 29,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-EGALITE-SEXES": {
+   "series": 14,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-ENERGIE-PROPRE-COUT-ABORDABLE": {
+   "series": 32,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-ERADICATION-PAUVRETE": {
+   "series": 65,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-INFRASTRUCTURES-RESILIENTES-INNOVATION": {
+   "series": 26,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-LUTTE-CHANGEMENT-CLIMATIQUE": {
+   "series": 38,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES": {
+   "series": 15,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-PARTENARIATS-REALISATION": {
+   "series": 27,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-REDUCTION-INEGALITES": {
+   "series": 25,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-SANTE-BIEN-ETRE": {
+   "series": 95,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-SECURITE-ALIMENTAIRE-AGRICULTURE-DURABLE": {
+   "series": 60,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-TRAVAIL-CROISSANCE": {
+   "series": 57,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-VIE-AQUATIQUE": {
+   "series": 59,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-VIE-TERRESTRE": {
+   "series": 26,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "ODD-VILLES-COMMUNAUTES-DURABLES": {
+   "series": 19,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "PARC-LOGEMENTS": {
+   "series": 32,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "POPULATION-STRUCTURE": {
+   "series": 50,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "REVALORISATION-PENSIONS": {
+   "series": 4,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "SALAIRES-ACEMO": {
+   "series": 129,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "SALAIRES-ACEMO-2017": {
+   "series": 129,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "SALAIRES-ANNUELS": {
+   "series": 246,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "SERIES_LOYERS": {
+   "series": 8,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "SMIC-COTISATIONS": {
+   "series": 74,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "SUIVI-DEMANDE-TOURISTIQUE": {
+   "series": 55,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TAUX-CHOMAGE": {
+   "series": 115,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-AGRICULTURE-CHEP-AGRI": {
+   "series": 580,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-AGRICULTURE-EXP-AGRI": {
+   "series": 105,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-AGRICULTURE-OCC-SOL": {
+   "series": 696,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-AGRICULTURE-PROD-VEG": {
+   "series": 456,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-CONDITIONSDEVIE-APE-PEC": {
+   "series": 704,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-CONDITIONSDEVIE-LICENCES-SPORTIVES": {
+   "series": 936,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-CONDITIONSDEVIE-LOG-SOC": {
+   "series": 468,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-CONDITIONSDEVIE-NMU-MOH": {
+   "series": 232,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-CONDITIONSDEVIE-TXP-CDE": {
+   "series": 701,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-CONSTRUCTION-LOCAUX": {
+   "series": 1170,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ECONOMIE-DEP-REC": {
+   "series": 120,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ECONOMIE-PIB-REG": {
+   "series": 66,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ECONOMIE-PIB-REG-2014": {
+   "series": 66,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ECONOMIE-VAB-REG": {
+   "series": 138,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ECONOMIE-VAB-REG-2014": {
+   "series": 138,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EDUCATION-APP-JEN": {
+   "series": 351,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EDUCATION-DIPLOMES-TECHNIQUES": {
+   "series": 936,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EDUCATION-EFF-PSS": {
+   "series": 1212,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EDUCATION-ENS-PSD": {
+   "series": 808,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EDUCATION-ETAB-SCOL": {
+   "series": 1521,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EDUCATION-REU-BAC": {
+   "series": 936,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-EMPLOI-31-DECEMBRE": {
+   "series": 2070,
+   "requetes": 50,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "TCRED-EMPLOI-31-DECEMBRE-BASE-2018": {
+   "series": 2070,
+   "requetes": 49,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "TCRED-EMPLOI-SALARIE-TRIM": {
+   "series": 1473,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ENTREPRISES-EFF-OPE": {
+   "series": 288,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ENTREPRISES-EMP-SAL-AN-TAILLE": {
+   "series": 200,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-ESTIMATIONS-POPULATION": {
+   "series": 819,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SALAIRES-REVENUS-MEN": {
+   "series": 565,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SALAIRES-REVENUS-RET-BEN": {
+   "series": 812,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SALAIRES-REVENUS-REV-SAL-SEXE-CS": {
+   "series": 819,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SALAIRES-REVENUS-STRUCTURE-RDB": {
+   "series": 565,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SALAIRES-REVENUS-TAUX-PAUVRETE-AGE": {
+   "series": 791,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SALAIRES-REVENUS-TNB": {
+   "series": 1275,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SANTE-ACCUEIL-PERS-AGEES": {
+   "series": 702,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SANTE-CAUSES-DECES": {
+   "series": 2096,
+   "requetes": 41,
+   "decoupages": 8,
+   "erreurs": 0
+  },
+  "TCRED-SANTE-EQUIP-HOP": {
+   "series": 351,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SANTE-EQUIP-SPE": {
+   "series": 351,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SANTE-PERSONNELS": {
+   "series": 1989,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN": {
+   "series": 1872,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-SERVICES-TOURISME-TRANSPORTS-RR": {
+   "series": 333,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-TRAVAIL-EMPLOI-EFF-FP-RATIO": {
+   "series": 817,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-TRAVAIL-EMPLOI-EFF-FPE": {
+   "series": 1053,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-TRAVAIL-EMPLOI-EFF-FPH": {
+   "series": 351,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-TRAVAIL-EMPLOI-EFF-FPT": {
+   "series": 351,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TCRED-TRAVAIL-EMPLOI-TCHOMA-SA": {
+   "series": 702,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "TOURISME-FRANCE-METHODE-REDRESSEMENT-2019": {
+   "series": 3944,
+   "requetes": 29,
+   "decoupages": 2,
+   "erreurs": 0
+  },
+  "TRANSPORTS": {
+   "series": 97,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "VOV-2015-COMMERCE": {
+   "series": 232,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "VOV-2021-COMMERCE": {
+   "series": 232,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CGD": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CGO": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CPI": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "EMP": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "FSI": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "GGD": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "GGO": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "IND": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "MET": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "NAG_GNA": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "POP": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "PPI": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "UEM": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "WOE": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "STES_COLLECT": {
+   "series": 1,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
   }
  },
  "melodi_jeux": {
@@ -232,12 +1807,8 @@
    "geo_nationales": "FRANCE-F"
   },
   "DD_EEC_ANNUEL": {
-   "statut": "traité",
-   "methode": "/data 1 page(s)",
-   "remarque": "",
-   "nb_obs": 16398,
-   "nb_series": 16398,
-   "geo_nationales": "(pas de dimension GEO ; jeu FE)"
+   "statut": "écarté",
+   "remarque": "un seul millésime (2025) : pas de série temporelle"
   },
   "DD_EEC_SERIES": {
    "statut": "traité",
@@ -269,19 +1840,734 @@
   },
   "DS_BTS_SAL_EQTP_SEX_AGE": {
    "statut": "traité",
-   "methode": "/data 1 page(s) COM-47102, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM",
+   "methode": "/data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM",
    "remarque": "",
-   "nb_obs": 108,
-   "nb_series": 54,
-   "geo_nationales": "COM-47102;FRANCE-F;FRANCE-FM"
+   "nb_obs": 72,
+   "nb_series": 36,
+   "geo_nationales": "FRANCE-F;FRANCE-FM"
   },
   "DS_BTS_SAL_EQTP_SEX_PCS": {
    "statut": "traité",
-   "methode": "/data 1 page(s) COM-47102, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
    "remarque": "",
-   "nb_obs": 90,
-   "nb_series": 45,
-   "geo_nationales": "COM-47102;FRANCE-FM;FRANCE-F"
+   "nb_obs": 60,
+   "nb_series": 30,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_CNT_CB": {
+   "statut": "traité",
+   "methode": "fichier ZIP (2.1 Mo)",
+   "remarque": "",
+   "nb_obs": 184140,
+   "nb_series": 594,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_CNT_CSI": {
+   "statut": "traité",
+   "methode": "fichier ZIP (1.1 Mo)",
+   "remarque": "",
+   "nb_obs": 100088,
+   "nb_series": 334,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_CNT_OPERATIONS": {
+   "statut": "traité",
+   "methode": "fichier ZIP (2.5 Mo)",
+   "remarque": "",
+   "nb_obs": 211420,
+   "nb_series": 682,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_CNT_PIB_EQB_RF": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 20560,
+   "nb_series": 67,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_COEFF_EURO_FRANC": {
+   "statut": "écarté",
+   "remarque": "coefficients de conversion euro-franc (outil)"
+  },
+  "DS_COMPTES_REGIONAUX": {
+   "statut": "écarté",
+   "remarque": "comptes régionaux (le niveau France double les comptes nationaux)"
+  },
+  "DS_DECES_MORTALITE_SERIES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM_X_R11, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 9191,
+   "nb_series": 165,
+   "geo_nationales": "FRANCE-FM_X_R11;FRANCE-FM;FRANCE-F"
+  },
+  "DS_DECHET_COMMERCE": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2022) : pas de série temporelle"
+  },
+  "DS_DECHET_INDUSTRIE": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2022) : pas de série temporelle"
+  },
+  "DS_DECHET_SERVICES": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2022) : pas de série temporelle"
+  },
+  "DS_DERA_PRIVE_ANNUEL": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2024) : pas de série temporelle"
+  },
+  "DS_DERA_PRIVE_SERIES_LONGUES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 14768,
+   "nb_series": 436,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_DERA_PUBLIC_ANNUEL": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_DERA_PUBLIC_SERIES_LONGUES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 2183,
+   "nb_series": 191,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_EACEI": {
+   "statut": "écarté",
+   "remarque": "enquête auprès des entreprises"
+  },
+  "DS_EC_DECES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 17093,
+   "nb_series": 76,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_EC_NAIS": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 157,
+   "nb_series": 4,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DS_ELECTORAL": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F_COMER, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 81,
+   "nb_series": 78,
+   "geo_nationales": "FRANCE-F_COMER;FRANCE-F"
+  },
+  "DS_ENQPAT_DET": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 4547,
+   "nb_series": 4036,
+   "geo_nationales": "FRANCE-FM;FRANCE-F_X_D976"
+  },
+  "DS_ENQPAT_TRANSM": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2024) : pas de série temporelle"
+  },
+  "DS_ERFS_NON_RETROPOLE": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 8647,
+   "nb_series": 918,
+   "geo_nationales": "FRANCE-FM"
+  },
+  "DS_ERFS_RETROPOLE": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 1441,
+   "nb_series": 140,
+   "geo_nationales": "FRANCE-FM"
+  },
+  "DS_ESTIMATION_POPULATION": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM_X_R11, /data 1 page(s) FRANCE-F_X_D976",
+   "remarque": "",
+   "nb_obs": 11430,
+   "nb_series": 258,
+   "geo_nationales": "FRANCE-FM;FRANCE-F;FRANCE-FM_X_R11;FRANCE-F_X_D976"
+  },
+  "DS_ETAT_CIVIL_DECES_COMMUNES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F_X_D976, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 54,
+   "nb_series": 3,
+   "geo_nationales": "FRANCE-FM;FRANCE-F_X_D976;FRANCE-F"
+  },
+  "DS_ETAT_CIVIL_NAIS_COMMUNES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F_X_D976, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 54,
+   "nb_series": 3,
+   "geo_nationales": "FRANCE-FM;FRANCE-F_X_D976;FRANCE-F"
+  },
+  "DS_FECONDITE": {
+   "statut": "traité",
+   "methode": "",
+   "remarque": "",
+   "nb_obs": 0,
+   "nb_series": 0,
+   "geo_nationales": "(pas de dimension GEO ; jeu FE)"
+  },
+  "DS_FILOSOFI_CC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_FILOSOFI_SAGE_LOG_TP_NIVVIE": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_FLORES_A17": {
+   "statut": "écarté",
+   "remarque": "établissements et effectifs salariés par secteur (statistique d'entreprises)"
+  },
+  "DS_FLORES_A38": {
+   "statut": "écarté",
+   "remarque": "établissements et effectifs salariés par secteur (statistique d'entreprises)"
+  },
+  "DS_FLORES_A5": {
+   "statut": "écarté",
+   "remarque": "établissements et effectifs salariés par secteur (statistique d'entreprises)"
+  },
+  "DS_FLORES_A88": {
+   "statut": "écarté",
+   "remarque": "établissements et effectifs salariés par secteur (statistique d'entreprises)"
+  },
+  "DS_FLORES_ECONOMIC_SPHERE": {
+   "statut": "écarté",
+   "remarque": "établissements et effectifs salariés par secteur (statistique d'entreprises)"
+  },
+  "DS_FLORES_PE": {
+   "statut": "écarté",
+   "remarque": "établissements et effectifs salariés par secteur (statistique d'entreprises)"
+  },
+  "DS_ICA": {
+   "statut": "écarté",
+   "remarque": "indices de chiffre d'affaires (entreprises)"
+  },
+  "DS_IPCH": {
+   "statut": "traité",
+   "methode": "fichier ZIP (1.4 Mo)",
+   "remarque": "",
+   "nb_obs": 173095,
+   "nb_series": 1298,
+   "geo_nationales": "(pas de dimension GEO ; jeu FE)"
+  },
+  "DS_IPC_IND_CAT": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 683,
+   "nb_series": 32,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_IPC_PM": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 20658,
+   "nb_series": 126,
+   "geo_nationales": "FRANCE-FM"
+  },
+  "DS_IPC_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 3 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 356155,
+   "nb_series": 4007,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_MAR_PACS_DIV_SERIES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM_X_R11",
+   "remarque": "",
+   "nb_obs": 4747,
+   "nb_series": 29,
+   "geo_nationales": "FRANCE-FM;FRANCE-F;FRANCE-FM_X_R11"
+  },
+  "DS_MORTALITE": {
+   "statut": "traité",
+   "methode": "",
+   "remarque": "",
+   "nb_obs": 0,
+   "nb_series": 0,
+   "geo_nationales": "(pas de dimension GEO ; jeu FE)"
+  },
+  "DS_NAISSANCES_FECONDITE_SERIES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-FM_X_R11",
+   "remarque": "",
+   "nb_obs": 3309,
+   "nb_series": 35,
+   "geo_nationales": "FRANCE-F;FRANCE-FM;FRANCE-FM_X_R11"
+  },
+  "DS_NAT_SDG": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-F_X_D976",
+   "remarque": "",
+   "nb_obs": 7685,
+   "nb_series": 500,
+   "geo_nationales": "FRANCE-FM;FRANCE-F;FRANCE-F_X_D976"
+  },
+  "DS_PARC_LOGEMENTS_SERIES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 1440,
+   "nb_series": 32,
+   "geo_nationales": "FRANCE-FM;FRANCE-F_X_D976"
+  },
+  "DS_POPULATIONS_HISTORIQUES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM",
+   "remarque": "",
+   "nb_obs": 46,
+   "nb_series": 4,
+   "geo_nationales": "FRANCE-F;FRANCE-FM"
+  },
+  "DS_POPULATIONS_REFERENCE": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_POP_STRUCT_SERIES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 2926,
+   "nb_series": 48,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_PRENOM": {
+   "statut": "écarté",
+   "remarque": "fichier des prénoms"
+  },
+  "DS_RP_ACTIVITE_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 414,
+   "nb_series": 138,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_DIPLOMES_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 156,
+   "nb_series": 60,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_EDUCATION_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 432,
+   "nb_series": 144,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_EMPLOI_LR_COMP": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 126,
+   "nb_series": 42,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_EMPLOI_LR_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 856,
+   "nb_series": 394,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_EMPLOI_LT_COMP": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 360,
+   "nb_series": 120,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_EMPLOI_LT_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 96,
+   "nb_series": 32,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_FAMILLE_COMP": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 70,
+   "nb_series": 26,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_LOGEMENT_COMP": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 42,
+   "nb_series": 14,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_LOGEMENT_DOM_PRINC": {
+   "statut": "écarté",
+   "methode": "",
+   "remarque": "aucune valeur géographique nationale dans /range",
+   "nb_obs": 0,
+   "nb_series": 0
+  },
+  "DS_RP_LOGEMENT_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 570,
+   "nb_series": 246,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_MENAGES_COMP": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 204,
+   "nb_series": 68,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_MENAGES_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM",
+   "remarque": "",
+   "nb_obs": 218,
+   "nb_series": 74,
+   "geo_nationales": "FRANCE-F;FRANCE-FM"
+  },
+  "DS_RP_MIGRES_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 102,
+   "nb_series": 34,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_NAVETTES_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 76,
+   "nb_series": 28,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_POPULATION_COMP": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 648,
+   "nb_series": 216,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_POPULATION_PRINC": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM",
+   "remarque": "",
+   "nb_obs": 198,
+   "nb_series": 66,
+   "geo_nationales": "FRANCE-F;FRANCE-FM"
+  },
+  "DS_RP_SERIE_HISTORIQUE": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 146,
+   "nb_series": 18,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
+  },
+  "DS_RP_TD_ACTIVITE_ACTIVITYEMPFORM_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_ACTIVITE_AGED_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_ACTIVITE_AGEEMPFORMD_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_ACTIVITE_AGEQEMPFORMR_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_ACTIVITE_PCSACTIVITY_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_DIPLOMES_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_EDUCATION_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_EMPLOI_LT_AGEEMPFORM_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_EMPLOI_LT_EMPFORMACTIVITY_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_EMPLOI_LT_EMPFORMWKTIME_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_EMPLOI_LT_PCSACTIVITY_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_FAMILLE_AGEENF_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_FAMILLE_NBENF_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_IMMI_AGESEXEMPSTA_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_IMMI_AGESEXPCS_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_IMMI_AGESEX_PAYSNAISS_D_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_IMMI_AGESEX_PAYSNAISS_R_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_IMMI_EMPSTASEX_PAYSNAISS_R_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_IMMI_PCSSEX_PAYSNAISS_R_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_LOGEMENT_AGE_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_LOGEMENT_CARACT_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_LOGEMENT_PCS_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MENAGES_EMPSTA_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MENAGES_FST_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MENAGES_NOC_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MENAGES_PCS_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MENAGES_TPH_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MIGRES_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_MIGRES_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_NAT_AGESEXEMPSTA_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_NAT_AGESEXPCS_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_NAT_AGESEX_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_NAVETTES_PCSACTIVITY_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_NAVETTES_SEXAGE_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_NAVETTES_SEXTRANSPORT_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_POPULATION_AGECOUPLECIVILSEX_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_POPULATION_AGEHARSEX_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_POPULATION_AGESEX_PRINC": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_RP_TD_POPULATION_PCSAGESEX_COMP": {
+   "statut": "écarté",
+   "remarque": "un seul millésime (2023) : pas de série temporelle"
+  },
+  "DS_SIDE_CREA_COM": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_CREA_DEP_REG_NAT": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_CREA_EI": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_CREA_ENT_DEP_REG_NAT_CJ": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_CREA_ENT_SERIES": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_EQDEMO_A10": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_EQDEMO_A21": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_STOCKS_A21": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_STOCKS_COM": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SIDE_STOCKS_EI": {
+   "statut": "écarté",
+   "remarque": "démographie des entreprises"
+  },
+  "DS_SOCIAL_ECONOMY": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 5558,
+   "nb_series": 1001,
+   "geo_nationales": "FRANCE-F_X_D976"
+  },
+  "DS_SRCV_CONFIANCE": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 720,
+   "nb_series": 144,
+   "geo_nationales": "FRANCE-FM;FRANCE-F_X_D976"
+  },
+  "DS_SRCV_PMS": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 9240,
+   "nb_series": 1848,
+   "geo_nationales": "FRANCE-F_X_D976;FRANCE-FM"
+  },
+  "DS_SRCV_SATISFACTION": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 8520,
+   "nb_series": 852,
+   "geo_nationales": "FRANCE-F_X_D976;FRANCE-FM"
+  },
+  "DS_SUIVI_DDE_TOUR": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 2104,
+   "nb_series": 54,
+   "geo_nationales": "FRANCE-FM"
+  },
+  "DS_TICE": {
+   "statut": "écarté",
+   "remarque": "enquête auprès des entreprises"
+  },
+  "DS_TICM_EQUIPEMENT": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 5474,
+   "nb_series": 322,
+   "geo_nationales": "(pas de dimension GEO ; jeu FEHM)"
+  },
+  "DS_TICM_PRATIQUES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 10336,
+   "nb_series": 608,
+   "geo_nationales": "(pas de dimension GEO ; jeu FEHM)"
+  },
+  "DS_TOUR_CAP": {
+   "statut": "écarté",
+   "remarque": "capacités d'hébergement touristique (offre)"
+  },
+  "DS_TOUR_FREQ": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 17601,
+   "nb_series": 164,
+   "geo_nationales": "FRANCE-FM;FRANCE-F"
   }
  },
  "compteurs": {
@@ -289,5 +2575,6 @@
   "bdm_series_annoncees": 374463,
   "melodi_jeux": 145
  },
- "maj": "2026-10-13T13:55:42+00:00"
+ "maj": "2026-10-13T15:32:02+00:00",
+ "cycle": "mois-2026-10"
 }

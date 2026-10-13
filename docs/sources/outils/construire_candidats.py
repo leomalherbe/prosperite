@@ -177,11 +177,16 @@ def dimension_v1(dim_v0: str, libelle: str) -> tuple[str, str]:
 # --------------------------------------------------------------------------- construction des lignes
 
 
+def lacunes(ans: list[int]) -> list[int]:
+    return [a for a in range(ans[0], ans[-1] + 1) if a not in set(ans)] if ans else []
+
+
 def frequence_de(ans: list[int]) -> str:
+    """annuelle (au plus deux années isolées manquantes, signalées en commentaire) | irreguliere | ponctuelle."""
     if len(ans) <= 1:
         return "ponctuelle"
     pas = {b - a for a, b in zip(ans, ans[1:])}
-    return "annuelle" if pas == {1} else "irreguliere"
+    return "annuelle" if max(pas) <= 2 and len(lacunes(ans)) <= 2 else "irreguliere"
 
 
 def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unite: str, sens: str,
@@ -204,6 +209,8 @@ def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unit
     depuis_2000 = [a for a in ans if a >= 2000]
     freq = frequence or frequence_de(depuis_2000 or ans)  # fréquence jugée sur la période utile (2000 → )
     notes = []
+    if freq == "annuelle" and lacunes(depuis_2000 or ans):
+        notes.append("années manquantes : " + ", ".join(map(str, lacunes(depuis_2000 or ans))))
     if s.get("etiquettes"):
         notes.append("périodes pluriannuelles (année de fin retenue)")
     if s.get("n_distinctes") and len(ans) >= 6 and s["n_distinctes"] <= len(ans) / 2:
@@ -251,7 +258,7 @@ def ecrire() -> None:
         assert cle not in vus, f"doublon de ligne : {cle}"
         vus.add(cle)
     with SORTIE.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=COLONNES, extrasaction="ignore")
+        w = csv.DictWriter(f, fieldnames=COLONNES, extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         w.writerows(LIGNES)
     print(f"{len(LIGNES)} indicateurs candidats écrits dans {SORTIE.relative_to(RACINE)}")

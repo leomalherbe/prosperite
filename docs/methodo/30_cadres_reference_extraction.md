@@ -423,3 +423,91 @@ Le rapport ne mentionne **ni la SNBC, ni l'objectif de zéro artificialisation n
 - Couverture partielle de v0 : **aucun indicateur** pour `logement_cadre_vie`, `liens_bien_etre` (hors satisfaction globale), `securite_confiance` et `democratie`.
 - Deux indicateurs sont des **moyens** ou des **stocks** plutôt que des résultats au sens de la charte (§3.4) : effort de recherche (moyen) et endettement (soutenabilité économique) — à arbitrer en phase 2 (Q-B : innovation, soutenabilité économique).
 - Libellés différents entre la page web et le rapport (indicateurs 4, 6, 7) : retenir les définitions du rapport.
+
+---
+
+## 6. ODD et objectifs officiels chiffrés (France, UE)
+
+### 6.1 Références et accès
+
+- **ODD** : résolution A/RES/70/1 (2015) et cadre mondial d'indicateurs (A/RES/71/313, version après la revue de 2025) — PDF *Global indicator framework* lu sur unstats.un.org (libellés des cibles et des indicateurs vérifiés).
+- **Climat et énergie** : décret **n° 2026-636 du 16 juillet 2026** relatif aux budgets carbone nationaux et à la SNBC (JO n° 166 du 18 juillet 2026, lu via la base AIDA de l'Ineris) ; **résumé de la SNBC 3** (ministère de la Transition écologique, juillet 2026, PDF lu) ; article L100-4 du code de l'énergie (Légifrance et ecologie.gouv.fr inaccessibles à l'outil : contenu repris du **rapport du Sénat n° 657 (2018-2019)** sur la loi énergie-climat — texte en vigueur **à vérifier**) ; PPE 3 (décret de février 2026, JORFTEXT000053464980, d'après *Techniques de l'ingénieur*, 18/02/2026).
+- **Sols** : loi n° 2021-1104 (Climat et résilience), art. 191, modifiée par la loi n° 2023-630 ; état de la proposition de loi TRACE d'après *Weka* (11/12/2025) — **statut au 13/10/2026 à vérifier**.
+- **Biodiversité** : art. L110-4 du code de l'environnement, décret n° 2022-527 (d'après Landot avocats, 20/11/2024) ; Ecophyto 2030 (d'après L'Info durable, 03/05/2024).
+- **Social et éducation (UE)** : Conseil de l'UE, doc. 9519/22 REV 1 (objectifs 2030 du socle européen des droits sociaux) et **doc. 15277/25 ADD 1** (27/11/2025, annexes du rapport conjoint sur l'emploi 2026 : **objectifs nationaux de la France**) ; résolution du Conseil **2021/C 66/01** (espace européen de l'éducation, annexe II, lue sur EUR-Lex).
+- Les objectifs non confirmés sur une source primaire ou secondaire fiable pendant la mission sont marqués **« à vérifier »** (loi européenne sur le climat, RED III, directive déchets, loi AGEC, lois Copé-Zimmermann et Rixain, sécurité routière UE, valeurs de la directive qualité de l'air et de l'OMS).
+
+### 6.2 Cibles ODD chiffrées utiles au socle des bornes
+
+| Cible | Contenu chiffré | Échéance | Rattachement v0 |
+|---|---|---|---|
+| 1.1 | éliminer l'extrême pauvreté (< 1,25 $/jour) | 2030 | niveau_de_vie (non pertinent France) |
+| 1.2 | réduire **au moins de moitié** la pauvreté sous toutes ses formes (définitions nationales) | 2030 | niveau_de_vie |
+| 2.1 | éliminer la faim | 2030 | sante (alimentation, Q-B) |
+| 3.1 | mortalité maternelle **< 70 / 100 000** naissances vivantes | 2030 | sante |
+| 3.2 | mortalité néonatale **≤ 12 ‰** ; moins de 5 ans **≤ 25 ‰** | 2030 | sante |
+| 3.4 | mortalité prématurée par maladies non transmissibles **−1/3** | 2030 | sante |
+| 3.6 | décès et blessés de la route **÷ 2** | 2020 (dépassée) | securite_confiance |
+| 4.1 | achèvement du secondaire pour tous (100 %) | 2030 | education |
+| 6.1 / 6.2 / 7.1 | accès universel (100 %) à l'eau, à l'assainissement, à l'énergie | 2030 | logement_cadre_vie |
+| 7.3 | **doubler** le rythme d'amélioration de l'efficacité énergétique | 2030 | planete |
+| 10.1 | croissance des revenus des 40 % les plus modestes **> moyenne nationale** | 2030 | egalites |
+| 12.3 | gaspillage alimentaire par habitant **÷ 2** | 2030 | planete |
+| 14.5 | au moins **10 %** des zones marines protégées | 2020 (dépassée) | planete |
+
+Cibles sans valeur chiffrée (non retenues comme bornes) : 3.9, 4.2, 5.5, 6.4, 7.2, 8.5, 8.6, 11.1, 11.2, 11.6, 12.5, 16.1, 16.5.
+
+### 6.3 Objectifs officiels France et UE
+
+| Domaine | Objectif | Valeur et échéance | Référence | Statut |
+|---|---|---|---|---|
+| Climat | émissions brutes de GES | **−50 % en 2030 / 1990** | SNBC 3 (résumé juillet 2026, p. 2) | vérifié |
+| Climat | neutralité carbone | **2050** | art. L100-4 C. énergie ; SNBC 3 | vérifié (rapport Sénat, SNBC 3) |
+| Climat | budgets carbone (hors puits) | **342 / 262 / 194 Mt CO2 éq./an** (2024-28 / 2029-33 / 2034-38) | décret n° 2026-636 | vérifié |
+| Climat | empreinte carbone (indicatif) | 516-531 / 408-446 / 312-358 Mt CO2 éq./an ; **2050 : 2,3 t/hab.** (1,5 °C) ou 3,1 t/hab. (2 °C) | décret n° 2026-636 ; SNBC 3 p. 22 | vérifié |
+| Climat | puits UTCATF (indicatif) | −46 / −33 / −31 Mt CO2 éq./an | décret n° 2026-636 | vérifié |
+| Climat (UE) | émissions nettes de l'UE | −55 % en 2030 / 1990 ; neutralité 2050 | règlement (UE) 2021/1119 | à vérifier |
+| Énergie | consommation finale | **−20 % en 2030, −50 % en 2050 / 2012** | art. L100-4, I, 2° | à vérifier (rapport Sénat ; PPE 3 pour 2050) |
+| Énergie | énergies fossiles primaires | **−40 % en 2030** (base 2012 à vérifier) | art. L100-4, I, 3° | à vérifier (rapport Sénat) |
+| Énergie | renouvelables / consommation finale brute | **33 % en 2030** | art. L100-4, I, 4° | à vérifier (rapport Sénat) |
+| Agriculture | engrais azotés minéraux | **−30 % en 2030**, −54 % en 2050 / 2020 | SNBC 3 p. 10 | vérifié |
+| Agriculture | agriculture biologique | **≈ 21 % de la SAU en 2030** | SNBC 3 p. 10 | vérifié |
+| Agriculture | produits phytopharmaceutiques (HRI1) | **−50 % en 2030 / 2011-2013** | Ecophyto 2030 | vérifié (source secondaire) |
+| Déchets | déchets ménagers et assimilés | **−15 % en 2030 / 2010** | SNBC 3 p. 17-18 (loi AGEC) | vérifié (SNBC 3) |
+| Déchets (UE) | recyclage des déchets municipaux | 55 % 2025, 60 % 2030, 65 % 2035 | directive (UE) 2018/851 | à vérifier |
+| Déchets | gaspillage alimentaire | −50 % en 2025 / 2030 selon secteurs (base 2015) | loi AGEC | à vérifier |
+| Sols | zéro artificialisation nette | **2050** | loi n° 2021-1104, art. 191 | vérifié (en vigueur ; réforme en cours) |
+| Sols | consommation d'ENAF | **−50 % sur 2021-2031 / 2011-2021** | loi n° 2021-1104, art. 191 | **contesté** (PPL TRACE) — statut à vérifier |
+| Biodiversité | aires protégées | **≥ 30 %** du territoire et des eaux, dont **≥ 10 % en protection forte** | art. L110-4 C. env. ; décret 2022-527 | vérifié (source secondaire) |
+| Biodiversité | haies | **+50 000 km nets en 2030** | SNBC 3 p. 10, 20 | vérifié |
+| Logement | passoires énergétiques | éradication en 2035-2040 | SNBC 3 p. 13-14 | vérifié |
+| Air (UE) | PM2,5 moyenne annuelle | 10 µg/m³ en 2030 | directive (UE) 2024/2881 | à vérifier (valeur finale) |
+| Air (OMS) | valeur guide PM2,5 | 5 µg/m³ | OMS 2021 | à vérifier |
+| Emploi | taux d'emploi 20-64 ans | **France 78,0 % en 2030** (UE ≥ 78 %) | Conseil UE 15277/25 ADD 1 | vérifié |
+| Emploi (UE) | NEET 15-29 ans | **≤ 9 % en 2030** | Conseil UE 9519/22 | vérifié |
+| Emploi (UE) | écart d'emploi femmes-hommes | **÷ 2 en 2030 / 2019** | Conseil UE 9519/22 | vérifié |
+| Compétences | formation des adultes (12 mois) | **France 65,0 % en 2030** (UE ≥ 60 %) | Conseil UE 15277/25 ADD 1 | vérifié |
+| Compétences (UE) | compétences numériques de base | **≥ 80 % des 16-74 ans en 2030** | Conseil UE 9519/22 | vérifié |
+| Pauvreté | AROPE | **France −1,1 million de personnes en 2030 / 2019** (UE −15 M) | Conseil UE 15277/25 ADD 1 | vérifié |
+| Éducation (UE) | faibles performeurs 15 ans | < 15 % en 2030 | résolution 2021/C 66/01 | vérifié |
+| Éducation (UE) | faibles compétences numériques 8e année | < 15 % en 2030 | résolution 2021/C 66/01 | vérifié |
+| Éducation (UE) | éducation et accueil des jeunes enfants | ≥ 96 % en 2030 | résolution 2021/C 66/01 | vérifié |
+| Éducation | sorties précoces | **< 9 % en 2030 (UE)** ; 9,5 % (cible française de Lisbonne) | résolution 2021/C 66/01 ; NIR 2025 p. 22 | vérifié |
+| Éducation (UE) | diplômés du supérieur 25-34 ans | ≥ 45 % en 2030 | résolution 2021/C 66/01 | vérifié |
+| Éducation (UE) | formation par le travail (EFP) ; apprentissage des adultes | ≥ 60 % (2025) ; ≥ 47 % (2025) | résolution 2021/C 66/01 | vérifié |
+| Recherche | DIRD/PIB | 3 % (UE, horizon 2020) | NIR 2025 p. 8-9 | vérifié |
+| Finances publiques | dette publique / déficit | 60 % du PIB / 3 % du PIB | NIR 2025 p. 10 (dette) ; protocole n° 12 TFUE (déficit) | dette vérifiée ; déficit à vérifier |
+| Égalité | femmes dans les conseils d'administration | 40 % | loi n° 2011-103 | à vérifier |
+| Égalité | femmes cadres dirigeants | 30 % en 2026, 40 % en 2029 | loi n° 2021-1774 | à vérifier |
+| Sécurité routière (UE) | tués et blessés graves | −50 % entre 2020 et 2030 | cadre UE 2021-2030 | à vérifier |
+
+### 6.4 Principe d'agrégation
+
+Sans objet : ces cibles servent de **bornes** (seuil minimal ou objectif) au sens de la charte §3.3, au premier rang de la hiérarchie de justification (« objectif légal ou officiel France/UE »).
+
+### 6.5 Remarques sur la pertinence pour la France
+
+- Les dimensions **`planete`**, **`education`** et **`travail`** disposent d'objectifs officiels chiffrés nombreux ; **`liens_bien_etre`**, **`securite_confiance`** (hors routes) et **`democratie`** n'en ont **aucun** : leurs bornes devront venir de l'historique, des comparaisons européennes ou du dire d'expert.
+- Plusieurs cibles ODD sont **déjà atteintes** par la France (mortalité infantile, accès à l'eau et à l'énergie, sorties précoces sous 9 %) : utiles comme seuil minimal, pas comme objectif.
+- Plusieurs objectifs sont des **moyens** (part d'ENR, agriculture biologique, haies, R&D, déficit) ou des **trajectoires** (budgets carbone) : leur conversion en bornes d'indicateurs de résultat est un choix méthodologique de phase 4.
+- Les objectifs sont **datés et révisables** (SNBC 3 de juillet 2026 remplaçant L100-4 pour 2030 ; ZAN en cours de réforme) : le socle de bornes devra enregistrer la date et la version du texte de référence.

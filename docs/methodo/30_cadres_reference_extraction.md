@@ -373,3 +373,53 @@ Aucun seuil normatif dans le cadre ; seuls existent des seuils de définition (6
 - Données harmonisées EU-SILC / EFT, mêmes enquêtes que l'INSEE (SRCV, enquête Emploi) : priorité INSEE selon la charte, Eurostat utile pour les comparaisons de bornes.
 - Beaucoup d'indicateurs subjectifs proviennent de **modules ad hoc** (2013, 2018, 2022) : trois points seulement, sous le critère de 10 points de la charte. Exception : la satisfaction dans la vie (`ilc_pw01`) et la confiance dans les autres (`ilc_pw03`), devenues plus fréquentes (à confirmer en M02).
 - Découpages différents de v0 : la **satisfaction globale** est une dimension « +1 » distincte ; la **sécurité économique** (dépense imprévue, arriérés) est réunie avec la **sécurité physique**, comme dans v0 ; la **confiance interpersonnelle** relève des interactions sociales (v0 : sécurité et confiance) ; les **inégalités femmes-hommes et selon la nationalité** relèvent de la gouvernance et des droits fondamentaux (v0 : égalités) ; le **temps de trajet** relève de l'activité principale (v0 : cadre de vie). **Pas de dimension planétaire** : l'environnement est limité au cadre de vie (pollution locale, bruit, espaces verts) ; la soutenabilité est suivie par le jeu d'indicateurs ODD de l'UE.
+
+---
+
+## 5. INSEE — Les nouveaux indicateurs de richesse (NIR, loi du 13 avril 2015)
+
+### 5.1 Références et accès
+
+- Loi **n° 2015-411 du 13 avril 2015** (référence confirmée sur la page INSEE ; intitulé non affiché) : le Gouvernement remet chaque année au Parlement un rapport sur l'évolution de nouveaux indicateurs de richesse.
+- INSEE, *Les nouveaux indicateurs de richesse — Indicateurs statistiques — Chiffres détaillés*, **édition 2025**, 28 pages, avec les services statistiques ministériels (enseignement supérieur-recherche, santé-affaires sociales, éducation nationale, environnement) : https://www.insee.fr/fr/statistiques/fichier/3281778/NIR2025.pdf — **lu en entier**.
+- Page « Indicateurs de richesse nationale » (https://www.insee.fr/fr/statistiques/3281778, parue le 17/07/2026) : seul le PDF est proposé, **aucun fichier XLSX/CSV ni identifiant de série (idbank)** n'y figure — les séries devront être retrouvées en M01 dans les sources sous-jacentes (BDM, Melodi, SDES, Agreste).
+
+### 5.2 Dimensions
+
+Trois domaines (page INSEE et rapport p. 3) — le rapport isole la satisfaction dans la vie comme indicateur « psychologique » :
+
+| Domaine | Indicateurs |
+|---|---|
+| Économique | 1. Taux d'emploi ; 2. Effort de recherche ; 3. Endettement |
+| Social (dont psychologique) | 4. Espérance de vie sans incapacité ; 5. Satisfaction dans la vie ; 6. Inégalités de revenus ; 7. Privation matérielle et sociale ; 8. Sorties précoces du système scolaire |
+| Environnemental | 9. Empreinte carbone ; 10. Artificialisation des sols |
+
+### 5.3 Indicateurs (rapport NIR 2025)
+
+| N° | Indicateur (libellé du rapport ; libellé de la page web) | Définition | Unité | Sens | Dernière valeur France | Depuis | Source | Cible ou référence citée (page) |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Taux d'emploi des 15-64 ans | part des personnes en emploi parmi les 15-64 ans | % | haut | 68,8 % (2024) | 1975 | INSEE, enquête Emploi | ODD 8, cible 8.5 (p. 6), sans valeur chiffrée |
+| 2 | Effort de recherche (DIRD/PIB) | dépense intérieure de R&D rapportée au PIB | % du PIB | haut | 2,18 % (2023, estimation 2024 identique) | 2003 | MESRE-SIES ; OCDE pour l'UE | ODD 9.5 ; **objectif européen de 3 % du PIB (horizon 2020)** (p. 8-9) |
+| 3 | Endettement (dette publique et privée) | dette des administrations publiques (Maastricht), des sociétés non financières et des ménages, rapportée au PIB | % du PIB | bas | APU 112,6 % ; SNF 90,7 % ; ménages 59,6 % (fin 2024) | 2014 (figure) | Eurostat ; INSEE comptes nationaux base 2020 | **critère de Maastricht : 60 % du PIB pour la dette publique** ; ODD 17.13 (p. 10) |
+| 4 | Espérance de vie sans incapacité (« espérance de vie en bonne santé ») | années à vivre sans incapacité dans les gestes de la vie quotidienne (déclaratif) | années | haut | 63,7 ans (hommes), 64,1 ans (femmes) (2024) | 2008 | INSEE SRCV ; calculs DREES (méthode EHEMU) ; Eurostat | ODD 3, sans cible chiffrée (p. 12) |
+| 5 | Satisfaction dans la vie (« satisfaction globale dans la vie ») | note de 0 à 10 de satisfaction à l'égard de sa vie actuelle | note | haut | 7,2 (début 2024, France métropolitaine) | 2010 | INSEE SRCV ; Eurostat EU-SILC | ODD 3.4 (p. 15), sans cible chiffrée |
+| 6 | Inégalités de revenus (« dispersion des revenus ») | rapport des niveaux de vie des 20 % les plus aisés et des 20 % les plus modestes après redistribution (S80/S20) | ratio | bas | 4,5 (2023, France métropolitaine) | 1996 | INSEE-DGFiP-Cnaf-Cnav-CCMSA, ERFS ; EU-SILC | ODD 10.4 (p. 17), sans cible chiffrée |
+| 7 | Privation matérielle et sociale (« taux de pauvreté en conditions de vie ») | part des personnes cumulant au moins 5 privations ou difficultés sur 13 | % population | bas | 12,7 % (début 2024, France métropolitaine) | 2013 | INSEE SRCV ; EU-SILC | **ODD 1.2 : réduire au moins de moitié la pauvreté sous toutes ses formes** (p. 19) |
+| 8 | Sorties précoces du système scolaire | part des 18-24 ans hors études et formation sans diplôme de niveau CAP, BEP ou supérieur | % des 18-24 ans | bas | 7,9 % (2024) | 2003 | INSEE enquêtes Emploi ; DEPP | ODD 4.4 ; **objectif UE de 9 % en 2030** ; **cible française de 9,5 %** (stratégie de Lisbonne) (p. 22) |
+| 9 | Empreinte carbone | émissions de GES induites par la demande finale intérieure, importations comprises | Mt CO2 éq. ; t CO2 éq./hab. | bas | 563 Mt CO2 éq., 8,2 t/hab. (2024) | 1990 | INSEE et SDES ; Eurostat, Citepa, Douanes, OCDE | ODD 13.2 (p. 24), sans cible chiffrée dans le rapport (cible SNBC 3 : voir section 6) |
+| 10 | Artificialisation des sols | part du territoire occupée par des sols artificialisés | % du territoire | bas | 9,5 % du territoire métropolitain (2023) | 1983 | Agreste, enquête Teruti ; Eurostat LUCAS | ODD 11.3 (p. 27), sans cible chiffrée dans le rapport (objectif ZAN : voir section 6) |
+
+Indicateurs **complémentaires** présentés dans le rapport : espérance de vie à la naissance (p. 12-13) ; taux de pauvreté monétaire à 60 % du niveau de vie médian (p. 19) ; rapport interquintile avant redistribution (p. 17) ; composantes de la DIRD (DIRDE entreprises, DIRDA administrations, p. 8) ; endettement des SNF et des ménages (p. 10, déjà inclus dans l'indicateur 3) ; émissions des unités résidentes hors importations (p. 24-25).
+
+Le rapport ne mentionne **ni la SNBC, ni l'objectif de zéro artificialisation nette** (constat de lecture) : les cibles nationales correspondantes sont relevées en section 6.
+
+### 5.4 Principe d'agrégation
+
+**Tableau de bord** de dix indicateurs, sans indice composite ni pondération ; évolutions commentées indicateur par indicateur et comparaisons européennes.
+
+### 5.5 Remarques sur la pertinence pour la France
+
+- Seul cadre **officiel français** ; indicateurs tous disponibles en séries annuelles longues (sauf satisfaction dans la vie depuis 2010 et privation matérielle et sociale depuis 2013), donc candidats naturels au socle de l'observatoire.
+- Couverture partielle de v0 : **aucun indicateur** pour `logement_cadre_vie`, `liens_bien_etre` (hors satisfaction globale), `securite_confiance` et `democratie`.
+- Deux indicateurs sont des **moyens** ou des **stocks** plutôt que des résultats au sens de la charte (§3.4) : effort de recherche (moyen) et endettement (soutenabilité économique) — à arbitrer en phase 2 (Q-B : innovation, soutenabilité économique).
+- Libellés différents entre la page web et le rapport (indicateurs 4, 6, 7) : retenir les définitions du rapport.

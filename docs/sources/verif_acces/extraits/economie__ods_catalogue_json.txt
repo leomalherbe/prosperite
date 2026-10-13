@@ -1,6 +1,6 @@
 # economie / ods_catalogue_json
 # URL : https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T12:04:47Z — HTTP 200 — application/json; charset=utf-8 — 5656 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T13:15:19Z — HTTP 200 — application/json; charset=utf-8 — 5546 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 617,
@@ -144,52 +144,36 @@
   },
   {
    "visibility": "domain",
-   "fields": [
-    {
-     "name": "pays_emprunteurs",
-     "description": null,
-     "annotations": {},
-     "label": "Pays emprunteurs",
-     "type": "text"
-    },
-    {
-     "name": "creances_apd",
-     "description": null,
-     "annotations": {},
-     "label": "Creances APD",
-     "type": "double"
-    },
-    {
-     "name": "creances_napd",
-     "description": null,
-     "annotations": {},
-     "label": "Creances NAPD",
-     "type": "double"
-    }
-   ],
-   "dataset_id": "encours-de-creances-de-la-france-sur-les-etats-etrangers-au-31-decembre-2018",
-   "dataset_uid": "da_j5x6gf",
-   "has_records": true,
+   "fields": [],
+   "dataset_id": "plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2010",
+   "dataset_uid": "da_dgn1bo",
+   "has_records": false,
    "features": [
-    "analyze",
     "custom_view"
    ],
-   "attachments": [],
+   "attachments": [
+    {
+     "id": "plf2014_jaune_personnels_affectes_dans_les_cabinets_ministeriels_en_2010_csv",
+     "title": "PLF2014 Jaune - Personnels affectés dans les cabinets ministériels en 2010.csv",
+     "mimetype": "text/csv",
+     "url": "https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets/plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2010/attachments/plf2014_jaune_personnels_affectes_dans_les_cabinets_ministeriels_en_2010_csv"
+    }
+   ],
    "alternative_exports": [],
    "data_visible": true,
    "metas": {
     "default": {
-     "title": "Encours de créances de la France sur les Etats étrangers au 31 décembre 2018",
-     "description": "<p>Il s’agit des encours des créances détenues soit par l’État \ndirectement, soit par l’Agence Française de Développement, soit par BPI \nAssurance Export et Natixis pour le compte de l’État. Sont incluses dans\n les encours présentés toutes les créances dont le débiteur est soit \nsouverain, soit appartient au secteur public d’un État étranger. Il \ns’agit donc d’un encours plus large que celui qui est détenu sur le \nsecteur souverain (État et débiteurs garantis par lui).</p>",
+     "title": "Projet de loi de finances pour 2014 (PLF 2014), jaune personnels affectés dans les cabinets ministériels en 2010",
+     "description": "Effectifs et dotation annuelle des ISP (indemnités pour sujétions particulières) des cabinets ministériels à la date du 1er juillet 2010. Extrait du Jaune 2014 'personnels affectés dans les cabinets ministériels'",
      "theme": [
-      "ECONOMIE"
+      "BUDGET DE L'ETAT"
      ],
      "keyword": [
-      "aide publique au développement",
-      "2018",
-      "prêts",
-      "encours",
-      "créances"
+      " loi de finances",
+      " PLF 2014",
+      " annexes budgétaires",
+      " jaune budgétaire",
+      "finances publiques"
      ],
      "license": "Licence Ouverte v2.0 (Etalab)",
      "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
@@ -197,12 +181,12 @@
      "metadata_languages": [
       "fr"
      ],
-     "timezone": null,
-     "modified": "2019-11-07T16:01:30+00:00",
+     "timezone": "Europe/Paris",
+     "modified": "2018-12-13T20:51:40+00:00",
      "modified_updates_on_metadata_change": false,
      "modified_updates_on_data_change": false,
-     "data_processed": "2019-11-07T16:08:06.383000+00:00",
-     "metadata_processed": "2026-01-26T08:59:20.638000+00:00",
+     "data_processed": null,
+     "metadata_processed": "2026-01-26T09:02:30.160000+00:00",
      "geographic_reference": [
       "world_fr"
      ],
@@ -212,11 +196,15 @@
      ],
      "geometry_types": null,
      "bbox": null,
-     "publisher": "DGTRESOR",
-     "references": null,
-     "records_count": 98,
+     "publisher": "DB",
+     "references": "https://www.data.gouv.fr/fr/datasets/plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2010-576364/",
+     "records_count": 0,
      "attributions": null,
      "source_domain": null,
      "source_domain_title": null,
      "source_domain_address": null,
-     "source
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": null,
+   

@@ -187,8 +187,12 @@ def frequence_de(ans: list[int]) -> str:
 def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unite: str, sens: str,
             declaratif: str, type_: str, composite: str, doublon: str, commentaire: str, s: dict,
             geo: str = "FR", niveau: str = "1", frequence: str | None = None, ventilation: str = "",
-            dim_v1: str | None = None, fiabilite: str = "verifie", ref_doublon: str = "") -> None:
-    """Ajoute un indicateur candidat ; `s` est la preuve (dictionnaire renvoyé par serie(), annees_*())."""
+            dim_v1: str | None = None, fiabilite: str = "verifie", ref_doublon: str = "",
+            points_effectifs: int | None = None) -> None:
+    """Ajoute un indicateur candidat ; `s` est la preuve (dictionnaire renvoyé par serie(), annees_*()).
+
+    `points_effectifs` remplace le nombre de points depuis 2000 quand les valeurs annuelles publiées
+    répètent des moyennes pluriannuelles (cas des séries Gallup relayées par l'OCDE)."""
     assert dimension in DIMENSIONS, dimension
     assert sens in ("haut", "bas", "ambigu"), sens
     assert declaratif in ("oui", "non") and composite in ("oui", "non"), indicateur
@@ -198,7 +202,7 @@ def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unit
     assert doublon == "non" or ref_doublon or "doublon" in commentaire.lower() or commentaire, indicateur
     ans = s["annees"]
     depuis_2000 = [a for a in ans if a >= 2000]
-    freq = frequence or frequence_de(ans)
+    freq = frequence or frequence_de(depuis_2000 or ans)  # fréquence jugée sur la période utile (2000 → )
     notes = []
     if s.get("etiquettes"):
         notes.append("périodes pluriannuelles (année de fin retenue)")
@@ -222,7 +226,8 @@ def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unit
                    "frequence": freq, "premiere_annee": ans[0], "derniere_annee": ans[-1],
                    "doublon_insee_eurostat": doublon, "commentaire": com, "dimension_v1_proposee": v1,
                    "type": type_, "composite": composite, "geo": geo, "ventilation": ventilation,
-                   "nb_points_depuis_2000": len(depuis_2000), "niveau_source": niveau, "fiabilite": fiabilite,
+                   "nb_points_depuis_2000": len(depuis_2000) if points_effectifs is None else points_effectifs,
+                   "niveau_source": niveau, "fiabilite": fiabilite,
                    "preuve": s["preuve"], "_ref": ref_doublon})
 
 

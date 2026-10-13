@@ -1,9 +1,12 @@
 name: Collecte
 
-# Exécute les scripts scripts/collecte_*.py (qui interrogent les API statistiques)
-# et commite leurs résultats (catalogues/, donnees/). Lancement manuel depuis
-# l'onglet Actions, par `gh workflow run collecte.yml -f cible=collecte_insee.py`,
-# ou automatiquement le 1er de chaque mois.
+# Exécute les scripts scripts/collecte_*.py (qui interrogent les API statistiques),
+# écrit le journal d'exécution dans journaux/ et commite résultats + journal sur la
+# branche courante. Déclenchement :
+#   - manuel (onglet Actions, ou `python scripts/actions.py lancer --branche <b> --cible <script>`) ;
+#   - automatique à chaque push sur une branche de mission `mNN-<sujet>` qui modifie
+#     scripts/ ou src/ : la cible est déduite du nom de branche (m01-insee → collecte_insee.py) ;
+#   - le 1er de chaque mois sur main (tous les scripts).
 
 on:
   workflow_dispatch:
@@ -12,6 +15,9 @@ on:
         description: "Script à exécuter (nom de fichier scripts/collecte_*.py) ou 'tous'"
         required: false
         default: "tous"
+  push:
+    branches: ["m[0-9][0-9]-*"]
+    paths: ["scripts/**", "src/**", "requirements.txt"]
   schedule:
     - cron: "17 4 1 * *"
 
@@ -19,7 +25,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: collecte
+  group: collecte-${{ github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -35,23 +41,41 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Déterminer la cible
+        id: cible
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            cible="${{ github.event.inputs.cible }}"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            suffixe="${GITHUB_REF_NAME#*-}"
+            if [ -f "scripts/collecte_${suffixe}.py" ]; then cible="collecte_${suffixe}.py"; else cible="tous"; fi
+          else
+            cible="tous"
+          fi
+          echo "cible=${cible:-tous}" >> "$GITHUB_OUTPUT"
+          echo "Cible : ${cible:-tous}"
       - name: Lancer la collecte
         id: collecte
         continue-on-error: true
-        run: python scripts/lancer_collecte.py --cible "${{ github.event.inputs.cible || 'tous' }}"
-      - name: Commiter les résultats
+        run: |
+          set -o pipefail
+          mkdir -p journaux
+          horodatage=$(date -u +%Y-%m-%dT%H%M)
+          python scripts/lancer_collecte.py --cible "${{ steps.cible.outputs.cible }}" 2>&1 | tee "journaux/collecte_${horodatage}_${{ steps.cible.outputs.cible }}.log"
+      - name: Commiter les résultats et le journal
         run: |
           git config user.name "robot-collecte"
           git config user.email "robot-collecte@users.noreply.github.com"
-          git add -A catalogues donnees docs/sources
+          git add -A catalogues donnees docs/sources journaux
           if git diff --cached --quiet; then
             echo "Aucun changement à commiter."
           else
-            git commit -m "Collecte automatique du $(date -u +%Y-%m-%d) (cible : ${{ github.event.inputs.cible || 'tous' }})"
+            git commit -m "Collecte automatique du $(date -u +%Y-%m-%d) (cible : ${{ steps.cible.outputs.cible }}) [skip ci]"
+            git pull --rebase origin "${{ github.ref_name }}" || true
             git push
           fi
       - name: État final
         if: steps.collecte.outcome == 'failure'
         run: |
-          echo "::error::Au moins un script de collecte a échoué ; voir le journal ci-dessus."
+          echo "::error::Au moins un script de collecte a échoué ; voir le journal dans journaux/ sur la branche."
           exit 1

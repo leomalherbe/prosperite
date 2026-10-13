@@ -289,14 +289,27 @@ Pour chaque jeu candidat (ordre : échantillon de contrôle, puis indicateurs OD
 
 ### 10.4 Volumes au 13/10/2026
 
-VOLUMES_A_COMPLETER
+**État au 13/10/2026, 16 h 55** : le passage complet n° 2 du robot (run 38405905176, règles v2, niveau 2 sans limite, lancé à 15 h 33) n'était pas terminé ; le passage n° 3 (règles v4, run 38412944475) attend derrière lui. Les chiffres ci-dessous sont ceux du passage n° 1 (essai) et, pour les règles v4, une **estimation hors ligne** (règles appliquées à un pseudo-TOC reconstruit depuis le catalogue du passage 1, qui reproduit exactement les volumes v3 annoncés ; tableaux ODD non compris). `catalogues/eurostat_bilan.json` donne les chiffres réels du dernier passage commité.
+
+| Élément | Valeur | Source |
+|---|---|---|
+| Entrées du TOC (anglais) | 12 234 (6 649 jeux, 911 tableaux, 1 878 codes de dossiers) | passage 1 |
+| Jeux retenus par les filtres de dates (fin ≥ 2020, début ≤ 2010) | 2 715 (exclus 2 223 ; hors filtre 1 711) | passage 1 |
+| Jeux candidats, règles v1 / v3 / **v4** (hors tableaux ODD) | 2 413 / 2 143 / **1 820** (dont 401 par rattrapage en v4) | passage 1 ; estimations hors ligne |
+| Candidats v4 par dimension v0 | éducation 420, travail 420, niveau de vie 288, planète 230, santé 186, logement 107, sécurité 55, égalités 41, liens et bien-être 17, démocratie 7, sans étiquette (`demo_*`) 49 | estimation hors ligne |
+| Candidats v4 par dossier prioritaire | revenus et conditions de vie 338, éducation 300, marché du travail 300, santé 191, environnement 109, numérique 92, population 70, énergie 62, ODD (jeux) 40, criminalité 24, culture 24, sécurité des transports 18, qualité de vie 16, comptes nationaux 10 ; hors dossiers (mots-clés du titre) 226 | estimation hors ligne |
+| Non candidats v4 par motif principal | fin < 2020 ou dates absentes 1 704 ; domaine hors périmètre 1 357 ; début > 2010 sans rattrapage 942 ; infra-annuels 349 ; aucun mot-clé ni dossier 210 ; pays hors UE 176 ; mot-clé seulement dans le chemin ou la ventilation 50 ; projections 41 | estimation hors ligne |
+| Niveau 2, passage 1 (40 jeux de contrôle) | 38 jeux avec séries FR, 2 sans donnée FR (`sdg_06_30`, `sdg_10_20`) ; 3 259 séries par défaut dont 2 780 éligibles, 129 lignes de ventilation ; 100 % `geo=FR` ; 0 série éligible hors critères (contrôle) | passage 1 |
+| Amorce (66 séries des prototypes) | toutes vérifiées par le robot : 55 disponibles, 6 séries courtes (`sdg_03_30`, `sdg_04_40`, `sdg_04_70`, `sdg_17_60`, `sdg_15_50`, `sdg_11_32`), 3 sans donnée FR (`sdg_10_20`, `sdg_13_11`, `sdg_15_60`), 2 codes disparus (`sdg_05_60`, `sdg_15_10`) ; la version 2 (passage 2) vérifie les remplaçants `sdg_05_61`, `sdg_15_11`, `sdg_13_10`, `env_bio3` | passage 1 |
+
+À compléter à la fin des passages 2 et 3 : nombre de jeux candidats réels (tableaux ODD compris), statuts du niveau 2, séries France vérifiées et éligibles par dimension v0, lignes de ventilation.
 
 ### 10.5 Limites connues
 
 - **Étiquetage par mots-clés** : une dimension principale par jeu, déterminée surtout par le titre ; les jeux multi-thèmes (ex. santé par niveau de revenu) n'ont qu'une étiquette principale (les autres dans `dimensions_v0_secondaires`) ; la même étiquette est recopiée sur toutes les séries du jeu, y compris quand une modalité de contenu relèverait d'une autre dimension.
 - **Jeux à beaucoup de séries de contenu** : certains jeux énumèrent des centaines de combinaisons (émissions par polluant × secteur, comptes par secteur × opération, usages d'internet par type d'individu…) ; elles sont toutes gardées (aucune limite a priori) et devront être regroupées par concept en M05.
 - **Dimensions sans code total reconnu** (ex. `nace_r2` dont le total s'appelle `B-S_X_O`, `indic_*`) : énumérées comme contenu.
-- **Choix de l'unité** : heuristique (taux et parts d'abord) ; les autres unités disponibles figurent dans `unites_disponibles`.
+- **Choix de l'unité** : heuristique (taux et parts d'abord) ; les autres unités disponibles figurent dans `unites_disponibles`. Défaut constaté : les indices relatifs à la moyenne UE commençant par `PC_` (ex. `PC_EU27_2020_HAB_MEUR_CP` pour `nama_10_pc`) passent avant les niveaux par habitant en volume (`CLV20_EUR_HAB`) ; à corriger à la prochaine version du niveau 2 (rang plus faible pour les unités relatives à l'UE).
 - **Découpage limité** à 60 (puis 120) requêtes par jeu : pour les jeux les plus volumineux, des modalités peuvent ne pas avoir été lues (signalé dans le message du jeu, colonne `structure_fr` et état de collecte).
 - **Jeux infra-annuels et tableaux non candidats** (sauf ODD) : à réexaminer si un indicateur n'existe qu'en trimestriel ou en tableau.
 - **France métropolitaine** (`FX`) prise seulement quand `FR` est absent.

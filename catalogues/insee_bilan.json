@@ -1,5 +1,5 @@
 {
- "date": "2026-10-13T15:32:02+00:00",
+ "date": "2026-10-13T15:33:27+00:00",
  "bdm": {
   "dataflows": 226,
   "series_listees": 182082,
@@ -24,9 +24,9 @@
    "périodes inconnues …": 99
   },
   "candidat": {
-   "non": 72398,
-   "oui": 6561,
-   "a_verifier": 526
+   "non": 77835,
+   "oui": 1345,
+   "a_verifier": 305
   },
   "catalogue_par_frequence": {
    "annuelle": 50136,
@@ -52,20 +52,20 @@
  },
  "bdm_par_dimension": {
   "(aucune)": {
-   "non": 11961
+   "non": 12290
   },
   "contexte": {
-   "non": 134
+   "non": 122
   },
   "democratie": {
-   "non": 18,
+   "non": 20,
    "oui": 2,
-   "a_verifier": 7
+   "a_verifier": 13
   },
   "education": {
-   "non": 3012,
-   "oui": 319,
-   "a_verifier": 49
+   "non": 2099,
+   "oui": 43,
+   "a_verifier": 46
   },
   "egalites": {
    "oui": 39,
@@ -73,37 +73,37 @@
    "non": 1
   },
   "liens_bien_etre": {
-   "non": 1488,
-   "oui": 88,
-   "a_verifier": 119
+   "non": 1639,
+   "oui": 17,
+   "a_verifier": 39
   },
   "logement_cadre_vie": {
-   "non": 2395,
-   "oui": 255,
-   "a_verifier": 21
+   "non": 2578,
+   "oui": 104,
+   "a_verifier": 12
   },
   "niveau_de_vie": {
-   "non": 34107,
-   "oui": 2928,
-   "a_verifier": 117
+   "non": 38266,
+   "oui": 277,
+   "a_verifier": 17
   },
   "planete": {
-   "non": 5365,
-   "oui": 982,
-   "a_verifier": 86
+   "non": 6351,
+   "oui": 114,
+   "a_verifier": 59
   },
   "sante": {
-   "non": 4322,
-   "oui": 395,
-   "a_verifier": 77
+   "non": 4538,
+   "oui": 191,
+   "a_verifier": 69
   },
   "securite_confiance": {
-   "non": 402,
-   "oui": 58
+   "non": 416,
+   "oui": 44
   },
   "travail": {
-   "non": 9193,
-   "oui": 1495,
+   "non": 9515,
+   "oui": 514,
    "a_verifier": 44
   }
  },
@@ -116,15 +116,15 @@
   "series_nationales": 66287,
   "catalogue": 52296,
   "exclusions": {
-   "fréquence ? non retenue": 9992,
+   "aucune valeur numérique": 9992,
    "dernière période < 2020 ou inconnue": 2196,
    "fréquence Q non retenue": 1698,
    "fréquence D non retenue": 105
   },
   "candidat": {
-   "oui": 33637,
-   "non": 17556,
-   "a_verifier": 1103
+   "non": 45842,
+   "oui": 5427,
+   "a_verifier": 1027
   }
  },
  "melodi_par_dimension": {
@@ -139,48 +139,46 @@
    "oui": 1
   },
   "education": {
-   "oui": 382,
-   "non": 1067,
-   "a_verifier": 2
+   "non": 2612,
+   "oui": 344
   },
   "egalites": {
-   "oui": 53,
-   "non": 10,
-   "a_verifier": 15
+   "non": 22,
+   "a_verifier": 15,
+   "oui": 28
   },
   "liens_bien_etre": {
-   "oui": 1051,
-   "non": 900,
-   "a_verifier": 109
+   "non": 1604,
+   "oui": 414
   },
   "logement_cadre_vie": {
-   "oui": 114,
-   "non": 1029,
-   "a_verifier": 12
+   "non": 2171,
+   "oui": 145,
+   "a_verifier": 10
   },
   "niveau_de_vie": {
-   "oui": 6787,
-   "non": 9984,
-   "a_verifier": 694
+   "non": 32601,
+   "oui": 2334,
+   "a_verifier": 703
   },
   "planete": {
-   "oui": 189,
-   "non": 311,
-   "a_verifier": 39
+   "non": 2108,
+   "oui": 134,
+   "a_verifier": 36
   },
   "sante": {
-   "oui": 1093,
-   "non": 882,
-   "a_verifier": 43
+   "non": 1765,
+   "oui": 225,
+   "a_verifier": 70
   },
   "securite_confiance": {
-   "oui": 9,
+   "oui": 12,
    "non": 144
   },
   "travail": {
-   "oui": 23958,
-   "a_verifier": 184,
-   "non": 2263
+   "non": 1849,
+   "oui": 1790,
+   "a_verifier": 188
   }
  },
  "comparaison_phase1": {
@@ -193,33 +191,35 @@
    "Melodi:jeu_absent": 4,
    "Melodi:jeu_sans_serie_au_catalogue": 9,
    "Melodi:non_retrouvee": 14,
-   "candidat_different": 451,
-   "dimension_differente": 66,
+   "candidat_different": 442,
+   "dimension_differente": 49,
    "fichier:hors_robot": 13
   },
-  "bdm_nouvelles_oui_ou_a_verifier": 6649,
+  "bdm_nouvelles_oui_ou_a_verifier": 1203,
   "bdm_nouvelles_par_dimension": {
-   "niveau_de_vie": 2964,
-   "travail": 1489,
-   "planete": 923,
-   "sante": 408,
-   "education": 361,
-   "logement_cadre_vie": 259,
-   "liens_bien_etre": 179,
-   "securite_confiance": 41,
+   "travail": 508,
+   "niveau_de_vie": 213,
+   "sante": 196,
+   "logement_cadre_vie": 99,
+   "education": 74,
+   "liens_bien_etre": 28,
+   "planete": 28,
+   "securite_confiance": 27,
    "egalites": 22,
-   "democratie": 3
+   "democratie": 8
   }
  },
  "collecte": {
   "debut": "2026-10-13T14:22:22+00:00",
-  "maj": "2026-10-13T15:31:09+00:00",
-  "termine": false,
+  "maj": "2026-10-13T15:32:02+00:00",
+  "termine": true,
   "passages": [
    {
     "debut": "2026-10-13T14:22:22+00:00",
-    "fin": null,
-    "issue": null
+    "fin": "2026-10-13T15:32:02+00:00",
+    "issue": "cycle terminé",
+    "appels": 1976,
+    "mo": 1029.7
    }
   ]
  }

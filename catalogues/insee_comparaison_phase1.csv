@@ -163,7 +163,7 @@ BDM SDMX,010594749,"Nombre de projets d’éducation au développement durable d
 BDM SDMX,010594779,Nombre d’établissements ayant obtenu le label E3D (école-établissement en démarche de développement durable) - Série arrêtée,ecartee_par_filtre,dernière période 2016 < 2020,education,,non,
 BDM SDMX,010594810,Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitude minimale en lecture,confirmee,"moins de 10 points depuis 2000 (3, première période 2011)",education,education,non,non
 BDM SDMX,010594824,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par sexe - Filles,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594834,Personnes n’ayant pas utilisé internet au cours des trois derniers mois ou sans aucune compétence,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594834,Personnes n’ayant pas utilisé internet au cours des trois derniers mois ou sans aucune compétence,confirmee,"moins de 10 points depuis 2000 (7, première période 2015)",education,education,oui,non
 BDM SDMX,010599819,Taux de sorties précoces du système scolaire des 18-24 ans - Hommes,confirmee,ventilation : sexe,education,education,oui,oui
 BDM SDMX,010594823,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - ensemble,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
 BDM SDMX,010594822,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - très favorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
@@ -269,21 +269,21 @@ BDM SDMX,010776362,Inégalités des revenus - Rapport interquintile des masses d
 BDM SDMX,010776363,Inégalités des revenus - Rapport interquintile des masses de niveau de vie (100-S80)/S20 - Après redistribution - Homme,confirmee,ventilation : sexe;revenu,egalites,egalites,oui,oui
 BDM SDMX,010776365,Inégalités des revenus - Rapport interquintile des masses de niveau de vie (100-S80)/S20 - Après redistribution - 18 à 64 ans,confirmee,ventilation : age;revenu,egalites,egalites,oui,oui
 BDM SDMX,010594683,Inégalités du patrimoine - Patrimoine brut (indice de Gini),confirmee,"moins de 10 points depuis 2000 (3, première période 2015)",egalites,egalites,oui,non
-BDM SDMX,010594692,Part des individus s'étant connectés à internet au cours des trois derniers mois - 45 à 59 ans,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594692,Part des individus s'étant connectés à internet au cours des trois derniers mois - 45 à 59 ans,confirmee,ventilation : age,education,education,oui,oui
 BDM SDMX,010594686,Part des individus disposant du haut débit à leur domicile - Femmes,confirmee,ventilation : sexe,education,education,oui,oui
 BDM SDMX,010594681,Inégalités des revenus - Rapport interdécile D9/D1,confirmee,ventilation : revenu,egalites,egalites,oui,oui
-BDM SDMX,010594687,Part des individus s'étant connectés à internet au cours des trois derniers mois - Ensemble,confirmee,hors champ : cours et taux de change,education,education,oui,non
-BDM SDMX,010594688,Part des individus s'étant connectés à internet au cours des trois derniers mois - Hommes,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594687,Part des individus s'étant connectés à internet au cours des trois derniers mois - Ensemble,confirmee,,education,education,oui,oui
+BDM SDMX,010594688,Part des individus s'étant connectés à internet au cours des trois derniers mois - Hommes,confirmee,ventilation : sexe,education,education,oui,oui
 BDM SDMX,010594680,Inégalités des revenus - Rapport interquintile des masses de niveau de vie (100-S80)/S20,confirmee,ventilation : revenu,egalites,egalites,oui,oui
-BDM SDMX,010594691,Part des individus s'étant connectés à internet au cours des trois derniers mois - 30 à 44 ans,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594691,Part des individus s'étant connectés à internet au cours des trois derniers mois - 30 à 44 ans,confirmee,ventilation : age,education,education,oui,oui
 BDM SDMX,010754805,Part des niveaux de vie des 40 % les plus pauvres (S40),confirmee,,egalites,egalites,oui,oui
-BDM SDMX,010594694,Part des individus s'étant connectés à internet au cours des trois derniers mois - 75 ans ou plus,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594694,Part des individus s'étant connectés à internet au cours des trois derniers mois - 75 ans ou plus,confirmee,ventilation : age,education,education,oui,oui
 BDM SDMX,010594685,Part des individus disposant du haut débit à leur domicile - Hommes,confirmee,ventilation : sexe,education,education,oui,oui
-BDM SDMX,010594690,Part des individus s'étant connectés à internet au cours des trois derniers mois - 15 à 29 ans,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594690,Part des individus s'étant connectés à internet au cours des trois derniers mois - 15 à 29 ans,confirmee,ventilation : age,education,education,oui,oui
 BDM SDMX,010594682,Inégalités du patrimoine - Patrimoine brut hors reste (indice de Gini),confirmee,série irrégulière : 4 années avec valeur depuis 2000 (D17),egalites,egalites,oui,a_verifier
-BDM SDMX,010594693,Part des individus s'étant connectés à internet au cours des trois derniers mois - 60 à 74 ans,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594693,Part des individus s'étant connectés à internet au cours des trois derniers mois - 60 à 74 ans,confirmee,ventilation : age,education,education,oui,oui
 BDM SDMX,010594684,Part des individus disposant du haut débit à leur domicile - Ensemble,confirmee,,education,education,oui,oui
-BDM SDMX,010594689,Part des individus s'étant connectés à internet au cours des trois derniers mois - Femmes,confirmee,hors champ : cours et taux de change,education,education,oui,non
+BDM SDMX,010594689,Part des individus s'étant connectés à internet au cours des trois derniers mois - Femmes,confirmee,ventilation : sexe,education,education,oui,oui
 BDM SDMX,010776375,Proportion de terres agricoles,confirmee,,planete,planete,oui,oui
 BDM SDMX,010776377,"Proportion de zones boisées, naturelles, humides ou en eau",confirmee,,planete,planete,oui,oui
 BDM SDMX,010776376,Surface de terres agricoles,confirmee,,planete,planete,oui,oui
@@ -769,8 +769,8 @@ BDM SDMX,001756154,Nombre de licences sportives de la fédération française de
 BDM SDMX,010752018,Nombre de licences sportives de la fédération française de handball pour 10 000 habitants - France,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),liens_bien_etre,liens_bien_etre,non,a_verifier
 BDM SDMX,010752019,Nombre de licences sportives de la fédération française de handball pour 10 000 habitants - France métropolitaine,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),liens_bien_etre,liens_bien_etre,non,a_verifier
 BDM SDMX,001779517,Auteurs poursuivables dans les affaires pénales - Pour 1 000 habitants - France hors Mayotte - Série arrêtée,ecartee_par_filtre,dernière période 2017 < 2020,securite_confiance,,non,
-BDM SDMX,001779518,Auteurs poursuivables dans les affaires pénales - Pour 1 000 habitants - France métropolitaine,confirmee,"contexte démographique (dénominateur), pas un indicateur de prospérité",securite_confiance,contexte,non,non
-BDM SDMX,010757167,Auteurs poursuivables dans les affaires pénales - Pour 1 000 habitants - France,confirmee,"contexte démographique (dénominateur), pas un indicateur de prospérité",securite_confiance,contexte,non,non
+BDM SDMX,001779518,Auteurs poursuivables dans les affaires pénales - Pour 1 000 habitants - France métropolitaine,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; première période 2012 > 2010 : raccordement à prévoir (D16),securite_confiance,democratie,non,a_verifier
+BDM SDMX,010757167,Auteurs poursuivables dans les affaires pénales - Pour 1 000 habitants - France,confirmee,"moins de 10 points depuis 2000 (7, première période 2018)",securite_confiance,democratie,non,non
 BDM SDMX,001779753,Loyer moyen dans le parc locatif social - France,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),logement_cadre_vie,logement_cadre_vie,non,a_verifier
 BDM SDMX,001779754,Loyer moyen dans le parc locatif social - France métropolitaine,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),logement_cadre_vie,logement_cadre_vie,non,a_verifier
 BDM SDMX,001779870,Nombre de logements sociaux pour 10 000 habitants - France,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),logement_cadre_vie,logement_cadre_vie,non,a_verifier
@@ -857,17 +857,17 @@ BDM SDMX,001587668,Enquête mensuelle de conjoncture auprès des ménages - Indi
 BDM SDMX,011779993,Comptes nationaux annuels base 2020 - Produit intérieur brut par habitant - Total des secteurs institutionnels - Total des produits (nouvelle nomenclature) - Prix chaîné année de base (non équilibré),confirmee,,niveau_de_vie,niveau_de_vie,oui,oui
 BDM SDMX,011779998,"PIB par habitant, prix courants (libellé résumé à la lecture)",confirmee,,niveau_de_vie,niveau_de_vie,non,oui
 BDM SDMX,011779995,"PIB, évolution en volume, prix chaîné année de base (libellé résumé à la lecture)",confirmee,,niveau_de_vie,niveau_de_vie,non,oui
-Melodi,DD_CNA_AGREGATS,Produit Intérieur Brut (PIB) et grands agrégats économiques,confirmee,3530 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,a_verifier=33;non=40;oui=3457
-Melodi,DD_CNA_APU,Comptes des administrations publiques,confirmee,10312 séries au catalogue ; jeu : traité,niveau_de_vie,,a_verifier,a_verifier=84;non=1529;oui=8699
-Melodi,DD_CNA_CONSO_MENAGES_COICOP,Consommation des ménages par fonction,confirmee,3884 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,oui=3884
-Melodi,DD_CNA_PATRIMOINE,Comptes de patrimoine,confirmee,5392 séries au catalogue ; jeu : traité,niveau_de_vie,,a_verifier,oui=5392
-Melodi,DD_CNA_TEE,Tableau économique d'ensemble,confirmee,8849 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,a_verifier=21;non=292;oui=8536
+Melodi,DD_CNA_AGREGATS,Produit Intérieur Brut (PIB) et grands agrégats économiques,confirmee,3530 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,non=3018;oui=512
+Melodi,DD_CNA_APU,Comptes des administrations publiques,confirmee,10312 séries au catalogue ; jeu : traité,niveau_de_vie,,a_verifier,a_verifier=14;non=10245;oui=53
+Melodi,DD_CNA_CONSO_MENAGES_COICOP,Consommation des ménages par fonction,confirmee,3884 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,non=3667;oui=217
+Melodi,DD_CNA_PATRIMOINE,Comptes de patrimoine,confirmee,5392 séries au catalogue ; jeu : traité,niveau_de_vie,,a_verifier,non=4847;oui=545
+Melodi,DD_CNA_TEE,Tableau économique d'ensemble,confirmee,8849 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,a_verifier=129;non=8045;oui=675
 Melodi,DD_EEC_ANNUEL,"Activité, emploi et chômage - résultats annuels 2024",jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté un seul millésime (2025) : pas de série temporelle,travail,,a_verifier,
 Melodi,DD_EEC_SERIES,"Activité, emploi et chômage - séries longues",confirmee,1673 séries au catalogue ; jeu : traité,travail,,oui,a_verifier=114;oui=1559
 Melodi,DS_ANTIPOL,Enquête annuelle sur les investissements pour protéger l'environnement (Antipol),jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté enquête auprès des entreprises,planete,,non,
 Melodi,DS_BTS_SAL_EQTP_SEX_PCS,Salaires dans le secteur privé selon le sexe et la catégorie socioprofessionnelle au niveau communal,confirmee,30 séries au catalogue ; jeu : traité,egalites,,non,non=30
 Melodi,DS_COMPTES_REGIONAUX,Comptes régionaux annuels,jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté comptes régionaux (le niveau France double les comptes nationaux),niveau_de_vie,,non,
-Melodi,DS_DERA_PRIVE_SERIES_LONGUES,Séries longues de salaires dans le secteur privé,confirmee,436 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,oui=436
+Melodi,DS_DERA_PRIVE_SERIES_LONGUES,Séries longues de salaires dans le secteur privé,confirmee,436 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,non=144;oui=292
 Melodi,DS_DERA_PUBLIC_SERIES_LONGUES,Séries longues des salaires dans la fonction publique ,confirmee,191 séries au catalogue ; jeu : traité,niveau_de_vie,,oui,a_verifier=103;non=60;oui=28
 Melodi,DS_DEVDUR,Indicateurs d'objectifs de développement durable,jeu_absent,jeu absent du catalogue Melodi actuel,non_classe,,a_verifier,
 Melodi,DS_EACEI,Enquête annuelle sur les consommations d'énergie dans l'industrie (EACEI),jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté enquête auprès des entreprises,planete,,non,
@@ -896,7 +896,7 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i1b,Taux de pauvreté monétaire - seuil à 50
 Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i2,Taux de privation matérielle et sociale,confirmee,7 série(s) du catalogue correspondent,niveau_de_vie,niveau_de_vie,oui,a_verifier;non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i3,Intensité de la pauvreté monétaire,confirmee,2 série(s) du catalogue correspondent,niveau_de_vie,niveau_de_vie,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i4,Taux d'effort net en logement,non_retrouvee,traité,logement_cadre_vie,,non,
-Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i5,Nombre de situations de surendettement soumises aux commissions,confirmee,1 série(s) du catalogue correspondent,securite_confiance,niveau_de_vie,oui,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i5,Nombre de situations de surendettement soumises aux commissions,confirmee,1 série(s) du catalogue correspondent,securite_confiance,securite_confiance,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i1,Renoncement à consommer des protéines pour raisons financières,confirmee,1 série(s) du catalogue correspondent,niveau_de_vie,niveau_de_vie,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2a,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),non_retrouvee,traité,sante,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2b,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),non_retrouvee,traité,sante,,non,
@@ -912,14 +912,14 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i7,Races locales à risque d'extinction,confir
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i1a,Espérance de vie (sans incapacité et à la naissance) (correspondance a/b non précisée),confirmee,2 série(s) du catalogue correspondent,sante,sante,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i1b,Espérance de vie (sans incapacité et à la naissance) (correspondance a/b non précisée),confirmee,2 série(s) du catalogue correspondent,sante,sante,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i2,Découvertes de séropositivité VIH,confirmee,8 série(s) du catalogue correspondent,sante,sante,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i3,Décès pour cause de suicide (taux standardisés),confirmee,3 série(s) du catalogue correspondent,sante,liens_bien_etre,oui,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i3,Décès pour cause de suicide (taux standardisés),confirmee,3 série(s) du catalogue correspondent,sante,sante,oui,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i4a,Satisfaction dans la vie (note de 0 à 10),confirmee,3 série(s) du catalogue correspondent,liens_bien_etre,liens_bien_etre,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i4b,Satisfaction dans la vie (note de 0 à 10) (ventilation),non_retrouvee,traité,liens_bien_etre,,oui,
-Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i5,Consommation d'alcool,confirmee,3 série(s) du catalogue correspondent,sante,liens_bien_etre,non,a_verifier;non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i6,Personnes tuées par accident de la route,confirmee,11 série(s) du catalogue correspondent,sante,liens_bien_etre,oui,a_verifier;oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i7a,Renoncement aux soins pour raisons financières - examen ou traitement médical,confirmee,2 série(s) du catalogue correspondent,sante,liens_bien_etre,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i7b,Renoncement aux soins pour raisons financières - soins dentaires,confirmee,2 série(s) du catalogue correspondent,sante,liens_bien_etre,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i8,Prévalence du tabagisme quotidien,confirmee,21 série(s) du catalogue correspondent,sante,liens_bien_etre,a_verifier,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i5,Consommation d'alcool,confirmee,3 série(s) du catalogue correspondent,sante,sante,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i6,Personnes tuées par accident de la route,confirmee,11 série(s) du catalogue correspondent,sante,sante,oui,a_verifier;oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i7a,Renoncement aux soins pour raisons financières - examen ou traitement médical,confirmee,2 série(s) du catalogue correspondent,sante,sante,a_verifier,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i7b,Renoncement aux soins pour raisons financières - soins dentaires,confirmee,2 série(s) du catalogue correspondent,sante,sante,a_verifier,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i8,Prévalence du tabagisme quotidien,confirmee,21 série(s) du catalogue correspondent,sante,sante,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i1a,"Compétences en lecture et mathématiques (PISA, PIRLS, TIMSS) (correspondance non précisée)",confirmee,1 série(s) du catalogue correspondent,education,education,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i1b,"Compétences en lecture et mathématiques (PISA, PIRLS, TIMSS) (correspondance non précisée)",confirmee,1 série(s) du catalogue correspondent,education,education,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i2,Taux de participation à une formation formelle et non formelle,confirmee,3 série(s) du catalogue correspondent,education,education,non,non
@@ -928,23 +928,23 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i4,Taux de sorties précoces du système scola
 Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i5,Écoles et établissements engagés dans une démarche de développement durable (E3D),confirmee,1 série(s) du catalogue correspondent,education,education,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i1,Écart de rémunération entre femmes et hommes,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i2,Part des femmes dans les disciplines scientifiques à l'université,confirmee,4 série(s) du catalogue correspondent,egalites,egalites,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i3a,Victimes de violences intrafamiliales physiques et/ou sexuelles (nombre),confirmee,1 série(s) du catalogue correspondent,securite_confiance,egalites,a_verifier,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i3a,Victimes de violences intrafamiliales physiques et/ou sexuelles (nombre),confirmee,1 série(s) du catalogue correspondent,securite_confiance,securite_confiance,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i3b,Part des femmes parmi les victimes de violences intrafamiliales,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i4a,Victimes de violences sexuelles hors violences intrafamiliales (nombre),confirmee,1 série(s) du catalogue correspondent,securite_confiance,egalites,a_verifier,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i4a,Victimes de violences sexuelles hors violences intrafamiliales (nombre),confirmee,1 série(s) du catalogue correspondent,securite_confiance,securite_confiance,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i4b,Part des femmes parmi les victimes de violences sexuelles hors intrafamiliales,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i5a,Part des femmes parmi les cadres dirigeants dans le privé,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i5b,Part des femmes parmi les cadres dirigeants dans la fonction publique,confirmee,4 série(s) du catalogue correspondent,egalites,egalites,a_verifier,a_verifier;oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i1a,Eau distribuée non conforme pour la microbiologie,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i1b,Eau distribuée non conforme pour la physico-chimie,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2a,Proportion des masses d'eau de surface selon l'état écologique,confirmee,6 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2b,Proportion des masses d'eau de surface selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2c,Proportion des masses d'eau souterraine selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2d,Proportion des masses d'eau souterraine selon l'état quantitatif,confirmee,3 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2a,Proportion des masses d'eau de surface selon l'état écologique,confirmee,6 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2b,Proportion des masses d'eau de surface selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2c,Proportion des masses d'eau souterraine selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2d,Proportion des masses d'eau souterraine selon l'état quantitatif,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i3a,Taux de conformité des dispositifs d'assainissement non collectif,confirmee,1 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i3b,Taux de conformité de la performance des ouvrages d'assainissement collectif,confirmee,1 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i4,Rendement des réseaux d'eau potable,confirmee,1 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i4,Rendement des réseaux d'eau potable,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i5,Prélèvements en eau,confirmee,6 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i6,Services publics locaux de l'eau ayant une CCSPL,confirmee,1 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i6,Services publics locaux de l'eau ayant une CCSPL,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=7.i1,Incapacité à maintenir son logement à bonne température,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,sante,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=7.i2a,Consommation finale d'énergie par secteur (correspondance inférée),confirmee,5 série(s) du catalogue correspondent,planete,planete,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=7.i2b,Part des énergies renouvelables dans la consommation finale brute d'énergie (correspondance inférée),confirmee,1 série(s) du catalogue correspondent,planete,planete,oui,oui
@@ -975,8 +975,8 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i2a,Rapport interquintile des masses de nivea
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i2b,Rapport interdécile D9/D1,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i3a,Inégalités de patrimoine brut hors reste (indice de Gini),confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i3b,Inégalités de patrimoine brut (indice de Gini),confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i4,Part des individus disposant du haut débit à leur domicile,confirmee,3 série(s) du catalogue correspondent,education,egalites,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i5,Personnes s'étant connectées à internet au cours des trois derniers mois,confirmee,8 série(s) du catalogue correspondent,education,egalites,a_verifier,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i4,Part des individus disposant du haut débit à leur domicile,confirmee,3 série(s) du catalogue correspondent,education,education,a_verifier,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i5,Personnes s'étant connectées à internet au cours des trois derniers mois,confirmee,8 série(s) du catalogue correspondent,education,education,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i1,Taux de surpeuplement des logements,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i2a,Surface des sols artificialisés (correspondance probable),confirmee,2 série(s) du catalogue correspondent,planete,planete,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i2b,Proportion de sols artificialisés (correspondance probable),non_retrouvee,traité,planete,,oui,

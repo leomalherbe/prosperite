@@ -78,3 +78,23 @@ def test_correspondances():
     texte = correspondances(xml, r'Dataflow id="([^"]+)" agencyID="([^"]+)"')
     assert "2 correspondances" in texte
     assert "DF_B\tOECD.Y" in texte
+
+
+def test_lister_series_hors_ligne(tmp_path, monkeypatch):
+    """Chaîne complète de la deuxième liste (inventaire des séries), téléchargement simulé."""
+    import scripts.collecte_sources as cs
+
+    def faux_telecharger(url, octets_max, destination):
+        destination.write_text("entity,code,year,score\nFrance,FRA,2000,1\nFrance,FRA,2001,2\n", encoding="utf-8")
+        return {"statut_http": 200, "url_finale": "", "content_type": "text/csv", "taille_annoncee": "",
+                "octets_lus": 60, "tronque": False, "message": ""}
+
+    monkeypatch.setattr(cs, "telecharger", faux_telecharger)
+    monkeypatch.setattr(cs, "SERIES_SORTIE", tmp_path)
+    r = cs.lister_series("owid", "essai", "https://exemple.org/x.csv", 1000,
+                         "series;filtre=code=FRA;temps=year;cles=code", tmp_path)
+    assert r["verdict"] == "series"
+    assert r["n_lignes_sortie"] == 1
+    assert (tmp_path / "owid__essai.csv").read_text(encoding="utf-8").count("FRA") == 1
+    r = cs.lister_series("owid", "regex", "https://exemple.org/x.csv", 1000, "regex:(France,FRA,\\d+)", tmp_path)
+    assert r["verdict"] == "series" and "France,FRA,2001" in (tmp_path / "owid__regex.txt").read_text(encoding="utf-8")

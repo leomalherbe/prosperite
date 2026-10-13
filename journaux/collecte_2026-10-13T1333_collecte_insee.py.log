@@ -1,0 +1,75 @@
+
+===== collecte_insee.py =====
+[13:33:11] Options lues dans collecte_insee.options : --nouveau --max-flux 20 --max-jeux 20 --budget-minutes 45
+[13:33:11] Nouveau cycle de collecte
+[13:33:11] === Étape bdm_flux (budget restant 45 min) ===
+[13:33:13] BDM : 244 dataflows, 374463 séries annoncées ; zones 239 codes, unités 145 codes
+[13:33:13] === Étape echantillons (budget restant 45 min) ===
+[13:33:13]   échantillon bdm_dataflow_ODD-ERADICATION-PAUVRETE.xml : HTTP 200, 1755 octets
+[13:33:14]   échantillon bdm_datastructure_CHOMAGE-TRIM-NATIONAL.xml : HTTP 200, 28832 octets
+[13:33:14]   échantillon bdm_codelist_CL_PERIODICITE.xml : HTTP 200, 2245 octets
+[13:33:15]   échantillon bdm_nodata_ODD-ERADICATION-PAUVRETE.xml : HTTP 200, 37800 octets
+[13:33:15]   échantillon bdm_nodata_CNA-2020-PIB.xml : HTTP 200, 16058 octets
+[13:33:16]   échantillon bdm_nodata_CHOMAGE-TRIM-NATIONAL_cle_T.xml : HTTP 200, 127926 octets
+[13:33:18]   échantillon bdm_erreur_cle_sans_resultat.xml : HTTP 404, 471 octets
+[13:33:23]   échantillon bdm_erreur_trop_de_series_CNA-2020-ERE.xml : HTTP 413, 917 octets
+[13:33:23]   échantillon bdm_serie_010593281.xml : HTTP 200, 3050 octets
+[13:33:24]   échantillon bdm_serie_001688527_last5.xml : HTTP 200, 2221 octets
+[13:33:24]   échantillon bdm_series_010593281+001688527_first1.xml : HTTP 200, 2174 octets
+[13:33:25]   échantillon melodi_range_DS_SRCV_SATISFACTION.json : HTTP 200, 22455 octets
+[13:33:27]   échantillon melodi_data_DS_SRCV_SATISFACTION_extrait.json : HTTP 200, 26122 octets
+[13:33:29]   échantillon melodi_data_DS_SRCV_SATISFACTION_page2.json : HTTP 200, 26427 octets
+[13:33:31]   échantillon melodi_data_DS_SRCV_SATISFACTION_totalCount.json : HTTP 200, 604 octets
+[13:33:33]   échantillon melodi_range_DS_NAT_SDG.json : HTTP 200, 89604 octets
+[13:33:35]   échantillon melodi_data_DS_NAT_SDG_extrait.json : HTTP 200, 22590 octets
+[13:33:37]   échantillon melodi_range_DD_CNA_AGREGATS.json : HTTP 200, 83512 octets
+[13:33:41]   échantillon ZIP DS_SRCV_SATISFACTION : DS_SRCV_SATISFACTION_2025_data.csv, DS_SRCV_SATISFACTION_2025_metadata.csv
+[13:33:41] === Étape bdm_series (budget restant 44 min) ===
+[13:33:41] BDM séries : 20 dataflows à lister (0 déjà faits)
+[13:33:42]   [1/20] BALANCE-PAIEMENTS : 197 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[13:33:43]   [2/20] CHOMAGE-TRIM-NATIONAL : 261 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[13:33:43]   [3/20] CLIMAT-AFFAIRES : 3 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[13:35:29]   [4/20] CNA-2010-CONSO-MEN : 2247 séries, 43 requêtes, 8 découpages, 0 erreurs, 106 s
+[13:35:32]   [5/20] CNA-2010-CONSO-SI : 1391 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[13:37:29]   [6/20] CNA-2010-CPEB : 2739 séries, 50 requêtes, 9 découpages, 0 erreurs, 117 s
+[13:37:31]   [7/20] CNA-2010-CSI : 1173 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[13:39:38]   [8/20] CNA-2010-DEP-APU : 4400 séries, 51 requêtes, 10 découpages, 0 erreurs, 127 s
+[13:39:39]   [9/20] CNA-2010-DETTE-APU : 72 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[13:39:40]   [10/20] CNA-2010-EMPLOI : 702 séries, 1 requêtes, 0 découpages, 0 erreurs, 2 s
+[13:42:48]   [11/20] CNA-2010-ERE : 5718 séries, 65 requêtes, 11 découpages, 0 erreurs, 187 s
+[13:42:48]   [12/20] CNA-2010-FBCF-BRANCHE : 136 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[13:42:49]   [13/20] CNA-2010-FBCF-SI : 606 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[13:45:14]   [14/20] CNA-2010-PAT-NF : 5350 séries, 49 requêtes, 9 découpages, 0 erreurs, 145 s
+[13:45:14]   [15/20] CNA-2010-PIB : 34 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[13:45:15]   [16/20] CNA-2010-RDB : 11 séries, 1 requêtes, 0 découpages, 0 erreurs, 0 s
+[13:45:18]   [17/20] CNA-2010-TEI : 1922 séries, 1 requêtes, 0 découpages, 0 erreurs, 4 s
+[13:45:20]   [18/20] CNA-2010-TOF : 1278 séries, 1 requêtes, 0 découpages, 0 erreurs, 1 s
+[13:47:07]   [19/20] CNA-2014-CONSO-MEN : 2247 séries, 41 requêtes, 8 découpages, 0 erreurs, 108 s
+[13:47:11]   [20/20] CNA-2014-CONSO-SI : 1401 séries, 1 requêtes, 0 découpages, 0 erreurs, 3 s
+[13:47:11] === Étape bdm_periodes (budget restant 31 min) ===
+[13:47:11] BDM périodes : 31888 séries listées ; à lire : 3648 annuelles (séries complètes), 396 infra-annuelles (première/dernière observation) ; 0 déjà lues
+[13:47:25]   annuelles : lot 19/19 (356 appels, 45 Mo, 0 erreurs)
+[13:47:28]   infra-annuelles : lot 1/1 (359 appels, 45 Mo, 0 erreurs)
+[13:47:28] === Étape melodi (budget restant 31 min) ===
+[13:52:28]     réseau : ReadTimeout: HTTPSConnectionPool(host='api.insee.fr', port=443): Read timed out. (read timeout=300.0) (tentative 1/3, attente 10 s)
+[13:52:39] Melodi : 145 jeux au catalogue
+[13:52:54]   [1/20] DD_CNA_AGREGATS : traité, 3672 séries nationales, 228727 obs., fichier ZIP (2.1 Mo)  (14 s)
+[13:53:22]   [2/20] DD_CNA_APU : traité, 21455 séries nationales, 627596 obs., fichier ZIP (4.3 Mo)  (28 s)
+[13:53:37]   [4/20] DD_CNA_CONSO_MENAGES_COICOP : traité, 3896 séries nationales, 258305 obs., fichier ZIP (2.4 Mo)  (15 s)
+[13:54:01]   [7/20] DD_CNA_PATRIMOINE : traité, 5402 séries nationales, 251012 obs., fichier ZIP (2.4 Mo)  (25 s)
+[13:54:24]   [11/20] DD_CNA_TEE : traité, 9226 séries nationales, 459903 obs., fichier ZIP (4.3 Mo)  (23 s)
+[13:54:31]   [12/20] DD_EEC_ANNUEL : traité, 16398 séries nationales, 16398 obs., /data 1 page(s)  (7 s)
+[13:54:43]   [13/20] DD_EEC_SERIES : traité, 1761 séries nationales, 75303 obs., /data 1 page(s)  (12 s)
+[13:54:57]   [19/20] DS_BTS_SAL_EQTP_SEX_AGE : traité, 54 séries nationales, 108 obs., /data 1 page(s) COM-47102, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM  (14 s)
+[13:55:12]   [20/20] DS_BTS_SAL_EQTP_SEX_PCS : traité, 45 séries nationales, 90 obs., /data 1 page(s) COM-47102, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F  (16 s)
+[13:55:12] === Étape consolidation (budget restant 23 min) ===
+[13:55:13] Inventaire BDM : 31888 séries → catalogues/insee_bdm_inventaire.csv.gz
+[13:55:16] Inventaire Melodi : 61909 séries nationales → catalogues/insee_melodi_inventaire.csv.gz
+[13:55:16] === Étape catalogage (budget restant 23 min) ===
+[13:55:42] Bilan : {"bdm": {"dataflows": 20, "series_listees": 31888, "par_frequence": {"A": 31427, "T": 261, "M": 200}, "par_zone": {"principale": 31888}, "catalogue": 4030, "exclusions": {"dernière mise à jour … antérieure à …": 27844, "dernière période … < …": 14}, "candidat": {"non": 3926, "oui": 104}, "catalogue_par_frequence": {"annuelle": 3638, "mensuelle": 196, "trimestrielle": 196}, "catalogue_par_geo": {"FR-D976": 2329, "FE": 1686, "FM": 15}}, "melodi": {"jeux": 145, "jeux_par_statut": {"non traité": 125, "écarté": 11, "traité": 9}, "series_nationales": 61909, "catalogue": 50094, "exclusions": {"fréquence ? non retenue": 9845, "dernière période < 2020 ou inconnue": 1970}, "candidat": {"oui": 31527, "non": 18315, "a_verifier": 252}}}
+[13:55:42] Comparaison phase 1 : {"phase1": 1063, "statuts": {"BDM:absente_de_la_bdm": 831, "BDM:confirmee": 27, "Melodi:confirmee": 8, "Melodi:jeu_absent": 4, "Melodi:jeu_sans_serie_au_catalogue": 22, "Melodi:non_retrouvee": 158, "candidat_different": 31, "fichier:hors_robot": 13}, "bdm_nouvelles_oui_ou_a_verifier": 98, "bdm_nouvelles_par_dimension": {"travail": 98}}
+[13:55:42] Cycle terminé : fichiers d'état intermédiaires supprimés (les inventaires gardent tout).
+[13:55:42] Fin du passage : cycle terminé ; 395 appels HTTP, 139.6 Mo, 22.5 min
+----- collecte_insee.py : OK en 1351 s
+
+Bilan : tous les scripts ont réussi

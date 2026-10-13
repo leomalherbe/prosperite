@@ -1,0 +1,293 @@
+{
+ "version": 1,
+ "debut": "2026-10-13T13:33:11+00:00",
+ "termine": true,
+ "etapes_terminees": [
+  "bdm_flux",
+  "echantillons",
+  "bdm_series",
+  "bdm_periodes",
+  "melodi",
+  "consolidation",
+  "catalogage"
+ ],
+ "passages": [
+  {
+   "debut": "2026-10-13T13:33:11+00:00",
+   "fin": "2026-10-13T13:55:42+00:00",
+   "issue": "cycle terminé",
+   "appels": 395,
+   "mo": 139.6
+  }
+ ],
+ "passages_precedents": [],
+ "bdm_flux_faits": [
+  "BALANCE-PAIEMENTS",
+  "CHOMAGE-TRIM-NATIONAL",
+  "CLIMAT-AFFAIRES",
+  "CNA-2010-CONSO-MEN",
+  "CNA-2010-CONSO-SI",
+  "CNA-2010-CPEB",
+  "CNA-2010-CSI",
+  "CNA-2010-DEP-APU",
+  "CNA-2010-DETTE-APU",
+  "CNA-2010-EMPLOI",
+  "CNA-2010-ERE",
+  "CNA-2010-FBCF-BRANCHE",
+  "CNA-2010-FBCF-SI",
+  "CNA-2010-PAT-NF",
+  "CNA-2010-PIB",
+  "CNA-2010-RDB",
+  "CNA-2010-TEI",
+  "CNA-2010-TOF",
+  "CNA-2014-CONSO-MEN",
+  "CNA-2014-CONSO-SI"
+ ],
+ "bdm_flux_erreurs": {},
+ "bdm_flux_stats": {
+  "BALANCE-PAIEMENTS": {
+   "series": 197,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CHOMAGE-TRIM-NATIONAL": {
+   "series": 261,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CLIMAT-AFFAIRES": {
+   "series": 3,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-CONSO-MEN": {
+   "series": 2247,
+   "requetes": 43,
+   "decoupages": 8,
+   "erreurs": 0
+  },
+  "CNA-2010-CONSO-SI": {
+   "series": 1391,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-CPEB": {
+   "series": 2739,
+   "requetes": 50,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "CNA-2010-CSI": {
+   "series": 1173,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-DEP-APU": {
+   "series": 4400,
+   "requetes": 51,
+   "decoupages": 10,
+   "erreurs": 0
+  },
+  "CNA-2010-DETTE-APU": {
+   "series": 72,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-EMPLOI": {
+   "series": 702,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-ERE": {
+   "series": 5718,
+   "requetes": 65,
+   "decoupages": 11,
+   "erreurs": 0
+  },
+  "CNA-2010-FBCF-BRANCHE": {
+   "series": 136,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-FBCF-SI": {
+   "series": 606,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-PAT-NF": {
+   "series": 5350,
+   "requetes": 49,
+   "decoupages": 9,
+   "erreurs": 0
+  },
+  "CNA-2010-PIB": {
+   "series": 34,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-RDB": {
+   "series": 11,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-TEI": {
+   "series": 1922,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2010-TOF": {
+   "series": 1278,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  },
+  "CNA-2014-CONSO-MEN": {
+   "series": 2247,
+   "requetes": 41,
+   "decoupages": 8,
+   "erreurs": 0
+  },
+  "CNA-2014-CONSO-SI": {
+   "series": 1401,
+   "requetes": 1,
+   "decoupages": 0,
+   "erreurs": 0
+  }
+ },
+ "melodi_jeux": {
+  "DD_CNA_AGREGATS": {
+   "statut": "traité",
+   "methode": "fichier ZIP (2.1 Mo)",
+   "remarque": "",
+   "nb_obs": 228727,
+   "nb_series": 3672,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DD_CNA_APU": {
+   "statut": "traité",
+   "methode": "fichier ZIP (4.3 Mo)",
+   "remarque": "",
+   "nb_obs": 627596,
+   "nb_series": 21455,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DD_CNA_BRANCHES": {
+   "statut": "écarté",
+   "remarque": "comptes nationaux par branche ou par produit (hors champ, volumineux)"
+  },
+  "DD_CNA_CONSO_MENAGES_COICOP": {
+   "statut": "traité",
+   "methode": "fichier ZIP (2.4 Mo)",
+   "remarque": "",
+   "nb_obs": 258305,
+   "nb_series": 3896,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DD_CNA_CONSO_MENAGES_PRODUITS": {
+   "statut": "écarté",
+   "remarque": "comptes nationaux par branche ou par produit (hors champ, volumineux)"
+  },
+  "DD_CNA_ECH_EXT": {
+   "statut": "écarté",
+   "remarque": "comptes nationaux par branche ou par produit (hors champ, volumineux)"
+  },
+  "DD_CNA_PATRIMOINE": {
+   "statut": "traité",
+   "methode": "fichier ZIP (2.4 Mo)",
+   "remarque": "",
+   "nb_obs": 251012,
+   "nb_series": 5402,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DD_CNA_PATRIMOINE_BRANCHES": {
+   "statut": "écarté",
+   "remarque": "comptes nationaux par branche ou par produit (hors champ, volumineux)"
+  },
+  "DD_CNA_REBS": {
+   "statut": "écarté",
+   "remarque": "comptes nationaux par branche ou par produit (hors champ, volumineux)"
+  },
+  "DD_CNA_SUT": {
+   "statut": "écarté",
+   "remarque": "comptes nationaux par branche ou par produit (hors champ, volumineux)"
+  },
+  "DD_CNA_TEE": {
+   "statut": "traité",
+   "methode": "fichier ZIP (4.3 Mo)",
+   "remarque": "",
+   "nb_obs": 459903,
+   "nb_series": 9226,
+   "geo_nationales": "FRANCE-F"
+  },
+  "DD_EEC_ANNUEL": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 16398,
+   "nb_series": 16398,
+   "geo_nationales": "(pas de dimension GEO ; jeu FE)"
+  },
+  "DD_EEC_SERIES": {
+   "statut": "traité",
+   "methode": "/data 1 page(s)",
+   "remarque": "",
+   "nb_obs": 75303,
+   "nb_series": 1761,
+   "geo_nationales": "(pas de dimension GEO ; jeu FE)"
+  },
+  "DS_ANTIPOL": {
+   "statut": "écarté",
+   "remarque": "enquête auprès des entreprises"
+  },
+  "DS_BPE": {
+   "statut": "écarté",
+   "remarque": "base permanente des équipements (dénombrements d'équipements)"
+  },
+  "DS_BPE_EDUCATION": {
+   "statut": "écarté",
+   "remarque": "base permanente des équipements (dénombrements d'équipements)"
+  },
+  "DS_BPE_EVOLUTION": {
+   "statut": "écarté",
+   "remarque": "base permanente des équipements (dénombrements d'équipements)"
+  },
+  "DS_BPE_SPORT_CULTURE": {
+   "statut": "écarté",
+   "remarque": "base permanente des équipements (dénombrements d'équipements)"
+  },
+  "DS_BTS_SAL_EQTP_SEX_AGE": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) COM-47102, /data 1 page(s) FRANCE-F, /data 1 page(s) FRANCE-FM",
+   "remarque": "",
+   "nb_obs": 108,
+   "nb_series": 54,
+   "geo_nationales": "COM-47102;FRANCE-F;FRANCE-FM"
+  },
+  "DS_BTS_SAL_EQTP_SEX_PCS": {
+   "statut": "traité",
+   "methode": "/data 1 page(s) COM-47102, /data 1 page(s) FRANCE-FM, /data 1 page(s) FRANCE-F",
+   "remarque": "",
+   "nb_obs": 90,
+   "nb_series": 45,
+   "geo_nationales": "COM-47102;FRANCE-FM;FRANCE-F"
+  }
+ },
+ "compteurs": {
+  "bdm_dataflows": 244,
+  "bdm_series_annoncees": 374463,
+  "melodi_jeux": 145
+ },
+ "maj": "2026-10-13T13:55:42+00:00"
+}

@@ -1,0 +1,3345 @@
+{
+  "code" : "DS_NAT_SDG",
+  "label" : {
+    "en" : "Sustainable development goals indicators",
+    "fr" : "Indicateurs d'objectifs de développement durable"
+  },
+  "range" : [ {
+    "concept" : {
+      "code" : "TYPE_INDICATOR_SDG",
+      "label" : {
+        "en" : "Sustainable development indicator type",
+        "fr" : "Type d’indicateur Développement durable"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "I_SDG",
+      "label" : {
+        "en" : "National SDG indicator",
+        "fr" : "Indicateur national ODD "
+      }
+    }, {
+      "code" : "I_SDG_NWI",
+      "label" : {
+        "en" : "National SDG and National Wealth indicator",
+        "fr" : "Indicateur national ODD et de richesse nationale"
+      }
+    }, {
+      "code" : "I_NWI",
+      "label" : {
+        "en" : "National Wealth indicator",
+        "fr" : "Indicateur de richesse nationale"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "SEX",
+      "label" : {
+        "en" : "Sex",
+        "fr" : "Sexe"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "F",
+      "label" : {
+        "en" : "Female",
+        "fr" : "Femme"
+      }
+    }, {
+      "code" : "M",
+      "label" : {
+        "en" : "Male",
+        "fr" : "Homme"
+      }
+    }, {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable "
+      }
+    }, {
+      "code" : "F_cis",
+      "label" : {
+        "en" : "Cis women",
+        "fr" : "Femmes cis"
+      }
+    }, {
+      "code" : "M_cis",
+      "label" : {
+        "en" : "Cis men",
+        "fr" : "Hommes cis"
+      }
+    }, {
+      "code" : "TS",
+      "label" : {
+        "en" : "Trans people",
+        "fr" : "Personnes trans"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "INDICATOR_SDG",
+      "label" : {
+        "en" : "Sustainable development indicator ",
+        "fr" : "Indicateur développement durable"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "3.i6",
+      "label" : {
+        "en" : "People killed in road accidents",
+        "fr" : "Personnes tuées par accident de la route"
+      }
+    }, {
+      "code" : "3.i1a",
+      "label" : {
+        "en" : "Life expectancy in good health",
+        "fr" : "Espérance de vie en bonne santé"
+      }
+    }, {
+      "code" : "2.i2e",
+      "label" : {
+        "en" : "Prevalence of overweight among kindergarten children, by parents' socio-professional category",
+        "fr" : "Prévalence du surpoids chez les enfants en grande section de maternelle selon la PCS des parents"
+      }
+    }, {
+      "code" : "5.i5a",
+      "label" : {
+        "en" : "Share of women among senior managers in the private sector",
+        "fr" : "Part des femmes parmi les cadres dirigeants dans le privé"
+      }
+    }, {
+      "code" : "1.i2",
+      "label" : {
+        "en" : "Material and social deprivation rate",
+        "fr" : "Taux de privation matérielle et sociale"
+      }
+    }, {
+      "code" : "9.i4",
+      "label" : {
+        "en" : "Research personnel",
+        "fr" : "Personnel de recherche"
+      }
+    }, {
+      "code" : "1.i1a",
+      "label" : {
+        "en" : "Income poverty rate - Threshold at 60% of the median standard of living",
+        "fr" : "Taux de pauvreté monétaire - Seuil à 60% du niveau de vie médian"
+      }
+    }, {
+      "code" : "16.i2",
+      "label" : {
+        "en" : "Proportion of people reporting physical and/or sexual violence",
+        "fr" : "Proportion de personnes se déclarant victimes de violences physiques et/ou sexuelles"
+      }
+    }, {
+      "code" : "15.i5a",
+      "label" : {
+        "en" : "French land area classified as protected land area (strong protection)",
+        "fr" : "Surfaces terrestres françaises classées en aires terrestres protégées (protection forte)"
+      }
+    }, {
+      "code" : "13.i1b",
+      "label" : {
+        "en" : "Number of very serious natural events: Floods ",
+        "fr" : "Nombre d’évènements naturels très graves: Inondations"
+      }
+    }, {
+      "code" : "17.i1c",
+      "label" : {
+        "en" : "Distribution of total net ODA/donation equivalent to least developed countries",
+        "fr" : "Distribution de l’APD totale nette/Équivalent-don aux pays les moins avancés"
+      }
+    }, {
+      "code" : "8.i2",
+      "label" : {
+        "en" : "Employment rate",
+        "fr" : "Taux d'emploi"
+      }
+    }, {
+      "code" : "9.i6c",
+      "label" : {
+        "en" : "Public R&D budget appropriations by socio-economic objective",
+        "fr" : "Montant des crédits budgétaires publics de R&D par objectif socio-économique "
+      }
+    }, {
+      "code" : "14.i5d",
+      "label" : {
+        "en" : "Trends in coral reef status by area of distribution - French West Indies, Mayotte, Reunion Island",
+        "fr" : "Évolution de l’état des récifs coralliens par aire de répartition - Antilles, Mayotte, La Réunion"
+      }
+    }, {
+      "code" : "11.i3a",
+      "label" : {
+        "en" : "Municipal waste treated by type of treatment",
+        "fr" : "Déchets municipaux traités par type de traitement"
+      }
+    }, {
+      "code" : "17.i1d",
+      "label" : {
+        "en" : "Amount of bilateral aid in the distribution of total net ODA/donation-equivalent to least developed countries",
+        "fr" : "Montant de l’aide bilatérale dans la distribution de l’APD totale nette/Équivalent-don aux pays les moins avancés"
+      }
+    }, {
+      "code" : "14.i2b",
+      "label" : {
+        "en" : "Floating macro-waste (average density)",
+        "fr" : "Macro-déchets flottants (densité moyenne)"
+      }
+    }, {
+      "code" : "14.i5a",
+      "label" : {
+        "en" : "Status of coral reefs by area of distribution - Pacific and Remote Islands",
+        "fr" : "État des récifs coralliens par aire de répartition - Pacifique et îles Éparses"
+      }
+    }, {
+      "code" : "16.i3",
+      "label" : {
+        "en" : "Proportion of remand prisoners",
+        "fr" : "Proportion des personnes prévenues parmi les détenus"
+      }
+    }, {
+      "code" : "17.i1e",
+      "label" : {
+        "en" : "Distribution of total net ODA/donation-equivalent by geographical area",
+        "fr" : "Distribution de l’APD totale nette/Équivalent-don par zone géographique"
+      }
+    }, {
+      "code" : "16.i4",
+      "label" : {
+        "en" : "Proportion of people declaring that they have confidence in certain institutions",
+        "fr" : "Proportion de personnes déclarant avoir confiance dans certaines institutions"
+      }
+    }, {
+      "code" : "14.i5b",
+      "label" : {
+        "en" : "Status of coral reefs by area of distribution - West Indies, Mayotte, Reunion Island",
+        "fr" : "État des récifs coralliens par aire de répartition - Antilles, Mayotte, La Réunion"
+      }
+    }, {
+      "code" : "15.i5b",
+      "label" : {
+        "en" : "Percentage of French land area classified as protected land area (strong protection)",
+        "fr" : "Part des terres françaises en aires terrestres protégées (protection forte)"
+      }
+    }, {
+      "code" : "9.i6a",
+      "label" : {
+        "en" : "Public R&D budget appropriations",
+        "fr" : "Montant des crédits budgétaires publics de R&D"
+      }
+    }, {
+      "code" : "5.i5b",
+      "label" : {
+        "en" : "Share of women among senior managers in the civil service",
+        "fr" : "Part des femmes parmi les cadres dirigeants dans la fonction publique"
+      }
+    }, {
+      "code" : "17.i2a",
+      "label" : {
+        "en" : "Gross bilateral official development assistance (ODA)",
+        "fr" : "Montant de l’aide publique au développement (APD) bilatérale brute"
+      }
+    }, {
+      "code" : "13.i2",
+      "label" : {
+        "en" : "Number of municipalities covered by an approved natural risk prevention plan",
+        "fr" : "Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé"
+      }
+    }, {
+      "code" : "17.i2b",
+      "label" : {
+        "en" : "Gross bilateral official development assistance (ODA) by sector",
+        "fr" : "Montant de l’aide publique au développement (APD) bilatérale brute par secteur"
+      }
+    }, {
+      "code" : "12.i6b",
+      "label" : {
+        "en" : "Breakdown of jobs by circular economy pillar",
+        "fr" : "Répartition de l’emploi par pilier de l’emploi circulaire"
+      }
+    }, {
+      "code" : "15.i7a",
+      "label" : {
+        "en" : "Number of invasive exotic species in Metropolitain France (average over 10 years)",
+        "fr" : "Nombre d’espèces exotiques envahissantes  en France métropolitaine (en moyenne sur 10 ans)"
+      }
+    }, {
+      "code" : "15.i6a",
+      "label" : {
+        "en" : "Population of common specialist birds",
+        "fr" : "Population d'oiseaux communs spécialistes (indice base 100 en 1989)"
+      }
+    }, {
+      "code" : "15.i6b",
+      "label" : {
+        "en" : "Population of common generalist birds",
+        "fr" : "Population d'oiseaux communs généralistes (indice base 100 en 1989)"
+      }
+    }, {
+      "code" : "3.i7a",
+      "label" : {
+        "en" : "Unmet need for medical examination or treatment",
+        "fr" : "Besoins non satisfaits d’examen ou de traitement médical"
+      }
+    }, {
+      "code" : "15.i7b",
+      "label" : {
+        "en" : "Number of the world's most invasive species",
+        "fr" : "Nombre d’espèces parmi les plus envahissantes au monde"
+      }
+    }, {
+      "code" : "8.i5",
+      "label" : {
+        "en" : "Number of accidents at work per million hours worked",
+        "fr" : "Nombre d’accidents du travail par million d’heures travaillées"
+      }
+    }, {
+      "code" : "13.i3a",
+      "label" : {
+        "en" : "Carbon footprint - Total",
+        "fr" : "Empreinte carbone - Total"
+      }
+    }, {
+      "code" : "14.i2c",
+      "label" : {
+        "en" : "Macro-waste on the seabed (average density)",
+        "fr" : "Macro-déchets sur les fonds marins (densité moyenne)"
+      }
+    }, {
+      "code" : "14.i1a",
+      "label" : {
+        "en" : "Ecological quality or potential of transitional water bodies by ecological status",
+        "fr" : "Qualité ou potentiel écologique des masses d’eau de transition selon l’état écologique"
+      }
+    }, {
+      "code" : "7.i2a",
+      "label" : {
+        "en" : "Final energy consumption by sector - All sectors",
+        "fr" : "Consommation finale d’énergie par secteur - Ensemble des secteurs"
+      }
+    }, {
+      "code" : "5.i3a",
+      "label" : {
+        "en" : "Number of victims of physical and/or sexual domestic violence",
+        "fr" : "Nombre de victimes de violences intrafamiliales physiques et/ou sexuelles"
+      }
+    }, {
+      "code" : "17.i2c",
+      "label" : {
+        "en" : "Bilateral ODA commitments by marker",
+        "fr" : "Engagements d'APD bilatérale par marqueur"
+      }
+    }, {
+      "code" : "13.i3b",
+      "label" : {
+        "en" : "Total carbon footprint per capita",
+        "fr" : "Empreinte carbone totale par habitant"
+      }
+    }, {
+      "code" : "1.i1b",
+      "label" : {
+        "en" : "Income poverty rate - Threshold at 50% of median standard of living",
+        "fr" : "Taux de pauvreté monétaire - Seuil à 50% du niveau de vie médian"
+      }
+    }, {
+      "code" : "17.i3",
+      "label" : {
+        "en" : "Public debt as defined by Maastricht (as % of GDP)",
+        "fr" : "Dette publique au sens de Maastricht (en % du PIB)"
+      }
+    }, {
+      "code" : "3.i1b",
+      "label" : {
+        "en" : "Life expectancy at birth",
+        "fr" : "Espérance de vie à la naissance"
+      }
+    }, {
+      "code" : "17.i4a",
+      "label" : {
+        "en" : "Household debt (as % of GDP)",
+        "fr" : "Endettement des ménages (en % du PIB)"
+      }
+    }, {
+      "code" : "3.i7b",
+      "label" : {
+        "en" : "Unmet need for dental treatment",
+        "fr" : "Besoins non satisfaits de traitement dentaire"
+      }
+    }, {
+      "code" : "14.i2d",
+      "label" : {
+        "en" : "Floating micro-waste at sea (average density)",
+        "fr" : "Micro-déchets flottant en mer (densité moyenne)"
+      }
+    }, {
+      "code" : "2.i2c",
+      "label" : {
+        "en" : "Prevalence of overweight among teenagers in the ninth grade, by parents' socio-professional category",
+        "fr" : "Prévalence du surpoids chez les adolescents en troisième selon la PCS des parents"
+      }
+    }, {
+      "code" : "13.i4c",
+      "label" : {
+        "en" : "Greenhouse gas emissions (excluding LULUCF) per capita - All greenhouse gases ",
+        "fr" : "Émissions de gaz à effet de serre (hors UTCATF) par habitant - Ensemble des gaz à effet de serre "
+      }
+    }, {
+      "code" : "17.i4b",
+      "label" : {
+        "en" : "Non-financial corporate debt (as % of GDP)",
+        "fr" : "Endettement des sociétés non financières (en % du PIB)"
+      }
+    }, {
+      "code" : "5.i4a",
+      "label" : {
+        "en" : "Number of victims of sexual violence other than domestic violence",
+        "fr" : "Nombre de victimes de violences sexuelles hors violences intrafamiliales"
+      }
+    }, {
+      "code" : "17.i5",
+      "label" : {
+        "en" : "Financial strength (Regulatory Tier 1 capital to risk-weighted assets)",
+        "fr" : "Solidité financière (Regulatory Tier 1 capital to risk-weighted assets)"
+      }
+    }, {
+      "code" : "9.i5a",
+      "label" : {
+        "en" : "Share of domestic R&D expenditure in GDP",
+        "fr" : "Part des dépenses intérieures de R&D dans le PIB"
+      }
+    }, {
+      "code" : "3.i3",
+      "label" : {
+        "en" : "Standardised rate of death by suicide",
+        "fr" : "Taux standardisé de décès pour cause de suicide"
+      }
+    }, {
+      "code" : "1.i3",
+      "label" : {
+        "en" : "Income poverty intensity",
+        "fr" : "Intensité de la pauvreté monétaire"
+      }
+    }, {
+      "code" : "13.i4b",
+      "label" : {
+        "en" : "Greenhouse gas emissions (excluding LULUCF) by sector of the economy - All greenhouse gases ",
+        "fr" : "Émissions de gaz à effet de serre (hors UTCATF) par secteur de l’économie - Ensemble des gaz à effet de serre "
+      }
+    }, {
+      "code" : "14.i1b",
+      "label" : {
+        "en" : "Ecological quality or potential of coastal water bodies by ecological status",
+        "fr" : "Qualité ou potentiel écologique des masses d’eau côtières selon l’état écologique"
+      }
+    }, {
+      "code" : "5.i3b",
+      "label" : {
+        "en" : "Share of women among victims of physical and/or sexual domestic violence",
+        "fr" : "Part des femmes parmi les victimes de violences intrafamiliales physiques et/ou sexuelles"
+      }
+    }, {
+      "code" : "14.i2a",
+      "label" : {
+        "en" : "Macro-waste on the coast (median abundance)",
+        "fr" : "Macro-déchets sur le littoral (abondance médiane)"
+      }
+    }, {
+      "code" : "2.i5",
+      "label" : {
+        "en" : "Animal Level of Exposure to Antimicrobials (ALEA)",
+        "fr" : "Exposition des animaux aux antibiotiques (indicateur ALEA)"
+      }
+    }, {
+      "code" : "2.i6b",
+      "label" : {
+        "en" : "Quantities of active substances sold (QSA) known as ‘conventional’, that can be used neither in biocontrol products nor in organic farming",
+        "fr" : "Quantités de substances actives (QSA) vendues dites « conventionnelles », utilisables ni en produits biocontrôle, ni en agriculture biologique"
+      }
+    }, {
+      "code" : "4.i4",
+      "label" : {
+        "en" : "Early school-leaving rate for 18-24 year-olds",
+        "fr" : "Taux de sortie précoce du système scolaire des 18-24 ans"
+      }
+    }, {
+      "code" : "12.i1a",
+      "label" : {
+        "en" : "Domestic material consumption (DMC)",
+        "fr" : "Consommation intérieure de matières (DMC)"
+      }
+    }, {
+      "code" : "3.i8",
+      "label" : {
+        "en" : "Prevalence of daily smoking",
+        "fr" : "Prévalence du tabagisme quotidien"
+      }
+    }, {
+      "code" : "7.i3a",
+      "label" : {
+        "en" : "Primary energy consumption - All energies",
+        "fr" : "Consommation d'énergie primaire - Toutes énergies"
+      }
+    }, {
+      "code" : "2.i2f",
+      "label" : {
+        "en" : "Prevalence of obesity among kindergarten children, by parents' socio-professional category",
+        "fr" : "Prévalence de l'obésité chez les enfants en grande section de maternelle selon la PCS des parents"
+      }
+    }, {
+      "code" : "1.i4",
+      "label" : {
+        "en" : "Net Housing Effort Rate",
+        "fr" : "Taux d'effort net en logement"
+      }
+    }, {
+      "code" : "5.i4b",
+      "label" : {
+        "en" : "Percentage of women among victims of sexual violence excluding domestic violence",
+        "fr" : "Part des femmes parmi les victimes de violences sexuelles hors violences intrafamiliales"
+      }
+    }, {
+      "code" : "2.i6c",
+      "label" : {
+        "en" : "Quantities of active substances sold for use in biocontrol products and organic farming",
+        "fr" : "Quantités de substances actives (QSA) vendues, utilisables en produits biocontrôle et agriculture biologique"
+      }
+    }, {
+      "code" : "7.i3b",
+      "label" : {
+        "en" : "Primary energy consumption - nuclear energy",
+        "fr" : "Consommation d’énergie primaire - Énergie nucléaire"
+      }
+    }, {
+      "code" : "12.i1b",
+      "label" : {
+        "en" : "Domestic material consumption per capita (DMC/cap)",
+        "fr" : "Consommation intérieure de matières par habitant (DMC/hbt)"
+      }
+    }, {
+      "code" : "6.i1b",
+      "label" : {
+        "en" : "Distributed water non-compliant with physico-chemical standards",
+        "fr" : "Eau distribuée non conforme pour la physico-chimie"
+      }
+    }, {
+      "code" : "6.i5",
+      "label" : {
+        "en" : "Water withdrawal by use",
+        "fr" : "Prélèvements en eau selon les usages"
+      }
+    }, {
+      "code" : "9.i2",
+      "label" : {
+        "en" : "Rate of acceptance of credit applications from very small businesses",
+        "fr" : "Taux d'acceptation des demandes de crédit des très petites entreprises (TPE)"
+      }
+    }, {
+      "code" : "6.i1a",
+      "label" : {
+        "en" : "Distributed water non-compliant for microbiology",
+        "fr" : "Eau distribuée non conforme pour la micro-biologie"
+      }
+    }, {
+      "code" : "2.i6d",
+      "label" : {
+        "en" : "Harmonised risk indicator number 1 (HRI1) for pesticides ",
+        "fr" : "Indicateur de Risque Harmonisé numéro 1 (HRI1) pour les pesticides "
+      }
+    }, {
+      "code" : "7.i3c",
+      "label" : {
+        "en" : "Share of fossil fuels in primary energy consumption",
+        "fr" : "Part des énergies fossiles dans la consommation d'énergie primaire"
+      }
+    }, {
+      "code" : "6.i2a",
+      "label" : {
+        "en" : "Proportion of surface water bodies by ecological status",
+        "fr" : "Proportion des masses d’eau de surface selon l’état écologique"
+      }
+    }, {
+      "code" : "14.i3a",
+      "label" : {
+        "en" : "Nitrate-related nitrogen flows to sea by coastline",
+        "fr" : "Flux à la mer d'azote lié aux nitrates par façade"
+      }
+    }, {
+      "code" : "12.i1c",
+      "label" : {
+        "en" : "Material productivity (GDP/DMC)",
+        "fr" : "Productivité matières (PIB/DMC)"
+      }
+    }, {
+      "code" : "12.i4b",
+      "label" : {
+        "en" : "Hazardous waste treatment",
+        "fr" : "Traitement de déchets dangereux"
+      }
+    }, {
+      "code" : "4.i2",
+      "label" : {
+        "en" : "Participation of young people and adults in training",
+        "fr" : "Participation des jeunes et des adultes à une formation"
+      }
+    }, {
+      "code" : "14.i3b",
+      "label" : {
+        "en" : "Phosphorus sea flows by coastline",
+        "fr" : "Flux à la mer de phosphore par façade"
+      }
+    }, {
+      "code" : "7.i4a",
+      "label" : {
+        "en" : "Final energy intensity",
+        "fr" : "Intensité énergétique finale"
+      }
+    }, {
+      "code" : "3.i2",
+      "label" : {
+        "en" : "Number of HIV-positive discoveries",
+        "fr" : "Nombre de découvertes de séropositivité VIH"
+      }
+    }, {
+      "code" : "7.i4b",
+      "label" : {
+        "en" : "Final energy intensity by sector",
+        "fr" : "Intensité énergétique finale par secteur (indice base 100 en 2000)"
+      }
+    }, {
+      "code" : "12.i5a",
+      "label" : {
+        "en" : "Hazardous and non-hazardous waste production",
+        "fr" : "Production de déchets dangereux et non dangereux"
+      }
+    }, {
+      "code" : "1.i5",
+      "label" : {
+        "en" : "Number of over-indebtedness situations referred to the commissions",
+        "fr" : "Nombre de situations de surendettement soumises aux commissions"
+      }
+    }, {
+      "code" : "13.i4a",
+      "label" : {
+        "en" : "Greenhouse gas emissions (including LULUCF) - All greenhouse gases ",
+        "fr" : "Émissions de gaz à effet de serre (UTCATF inclus) - Ensemble des gaz à effet de serre "
+      }
+    }, {
+      "code" : "14.i4",
+      "label" : {
+        "en" : "Number of POLREP (Pollution Report) reports confirmed by the authorities",
+        "fr" : "Nombre de rapports POLREP (Pollution Report) confirmés par les autorités"
+      }
+    }, {
+      "code" : "14.i6a",
+      "label" : {
+        "en" : "Number of facades with an ecosystem approach in mainland France (4 facades)",
+        "fr" : "Nombre de façades disposant d'une approche écosystémique en France métropolitaine (4 façades)"
+      }
+    }, {
+      "code" : "12.i2a",
+      "label" : {
+        "en" : "Material footprint (RMC)",
+        "fr" : "Empreinte matières (RMC)"
+      }
+    }, {
+      "code" : "12.i5c",
+      "label" : {
+        "en" : "Treatment of hazardous and non-hazardous waste by type of material",
+        "fr" : "Traitement de déchets dangereux et non dangereux par type de matières"
+      }
+    }, {
+      "code" : "14.i6b",
+      "label" : {
+        "en" : "Number of facades with an ecosystem approach in Overseas France",
+        "fr" : "Nombre de façades disposant d'une approche écosystémique en Outre-mer"
+      }
+    }, {
+      "code" : "8.i3",
+      "label" : {
+        "en" : "Under-employment rate",
+        "fr" : "Taux de sous emploi"
+      }
+    }, {
+      "code" : "14.i7",
+      "label" : {
+        "en" : "Percentage of French marine waters covered by marine protected areas",
+        "fr" : "Part des eaux marines françaises en aires marines protégées"
+      }
+    }, {
+      "code" : "17.i1a",
+      "label" : {
+        "en" : "Total net official development assistance (ODA)/donation equivalent",
+        "fr" : "Montant de l’aide publique au développement (APD) totale nette/Équivalent-don"
+      }
+    }, {
+      "code" : "17.i1b",
+      "label" : {
+        "en" : "Share of total net ODA/donation equivalent as a proportion of gross national income",
+        "fr" : "Part de l'APD totale nette/Équivalent-don en proportion du revenu national brut"
+      }
+    }, {
+      "code" : "10.i2a",
+      "label" : {
+        "en" : "Interquintile ratio of living standard masses (100-S80)/S20 after redistrbution",
+        "fr" : "Rapport interquintile des masses de niveau de vie (100-S80)/S20 après redistribution"
+      }
+    }, {
+      "code" : "4.i1a",
+      "label" : {
+        "en" : "Proportion of children in CM1 who have mastered at least the minimum proficiency standards in reading",
+        "fr" : "Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitudes minimales en lecture"
+      }
+    }, {
+      "code" : "2.i2d",
+      "label" : {
+        "en" : "Prevalence of obesity among teenagers in the ninth grade, by parents' socio-professional category",
+        "fr" : "Prévalence de l'obésité chez les adolescents en troisième selon la PCS des parents"
+      }
+    }, {
+      "code" : "12.i2b",
+      "label" : {
+        "en" : "Material footprint per capita (RMC/cap)",
+        "fr" : "Empreinte matières par habitant (RMC/hab)"
+      }
+    }, {
+      "code" : "4.i1b",
+      "label" : {
+        "en" : "Proportion of children in CM1 who have mastered at least the minimum proficiency standards in mathematics",
+        "fr" : "Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitudes minimales en mathématiques"
+      }
+    }, {
+      "code" : "12.i6a",
+      "label" : {
+        "en" : "Number of circular economy jobs",
+        "fr" : "Nombre d’emplois de l’économie circulaire"
+      }
+    }, {
+      "code" : "4.i1c",
+      "label" : {
+        "en" : "Proportion of 15-year-olds who have mastered at least the minimum reading standards",
+        "fr" : "Proportion de jeunes de 15 ans qui maîtrisent au moins les normes d'aptitudes minimales en lecture"
+      }
+    }, {
+      "code" : "12.i2c",
+      "label" : {
+        "en" : "Material footprint per unit of GDP  (GDP/RMC)",
+        "fr" : "Empreinte matières par unité de PIB (PIB/RMC)"
+      }
+    }, {
+      "code" : "11.i3b",
+      "label" : {
+        "en" : "Municipal waste treated per inhabitant",
+        "fr" : "Déchets municipaux traités par habitant"
+      }
+    }, {
+      "code" : "11.i3c",
+      "label" : {
+        "en" : "Municipal waste recycling rate",
+        "fr" : "Taux de recyclage des déchets municipaux"
+      }
+    }, {
+      "code" : "10.i2b",
+      "label" : {
+        "en" : "Interdecile ratio D9/D1",
+        "fr" : "Rapport interdécile D9/D1"
+      }
+    }, {
+      "code" : "6.i2b",
+      "label" : {
+        "en" : "Proportion of surface water bodies by chemical status",
+        "fr" : "Proportion des masses d’eau de surface selon l’état chimique"
+      }
+    }, {
+      "code" : "12.i3",
+      "label" : {
+        "en" : "Food loss and waste per capita",
+        "fr" : "Pertes et gaspillages alimentaires par habitant"
+      }
+    }, {
+      "code" : "2.i3",
+      "label" : {
+        "en" : "Average diversity of arable crops",
+        "fr" : "Diversité moyenne des cultures arables"
+      }
+    }, {
+      "code" : "10.i3a",
+      "label" : {
+        "en" : "Gross wealth excluding rest (Gini index)",
+        "fr" : "Patrimoine brut hors reste (Indice de Gini)"
+      }
+    }, {
+      "code" : "3.i5",
+      "label" : {
+        "en" : "Proportion of the population with different drinking habits",
+        "fr" : "Proportion de la population répartie selon différents modes de consommation d’alcool"
+      }
+    }, {
+      "code" : "9.i1a",
+      "label" : {
+        "en" : "Modal share of public passenger transport (excluding air) in inland passenger transport",
+        "fr" : "Part modale des transports collectifs de voyageurs (hors aérien) dans le transport intérieur terrestre de voyageurs"
+      }
+    }, {
+      "code" : "2.i4a",
+      "label" : {
+        "en" : "Share of organic farming in the agricultural area used",
+        "fr" : "Part d'agriculture biologique dans la surface agricole utilisée (SAU)"
+      }
+    }, {
+      "code" : "2.i4b",
+      "label" : {
+        "en" : "Number of farms with high environmental value",
+        "fr" : "Nombre d'exploitations de haute valeur environnementale (HVE)"
+      }
+    }, {
+      "code" : "10.i3b",
+      "label" : {
+        "en" : "Gross wealth (Gini index)",
+        "fr" : "Patrimoine brut (indice de Gini)"
+      }
+    }, {
+      "code" : "6.i2c",
+      "label" : {
+        "en" : "Proportion of groundwater bodies by chemical status",
+        "fr" : "Proportion des masses d’eau souterraine selon l’état chimique"
+      }
+    }, {
+      "code" : "8.i6",
+      "label" : {
+        "en" : "Labor intensity",
+        "fr" : "Intensité du travail"
+      }
+    }, {
+      "code" : "9.i1b",
+      "label" : {
+        "en" : "Modal share of freight transport in domestic inland freight transport",
+        "fr" : "Part modale des transports de marchandises dans le transport intérieur terrestre de marchandises"
+      }
+    }, {
+      "code" : "8.i8",
+      "label" : {
+        "en" : "Share of subsidized jobs in the employment of young people under the age of 26",
+        "fr" : "Part des emplois aidés dans l'emploi des jeunes de moins de 26 ans"
+      }
+    }, {
+      "code" : "8.i4",
+      "label" : {
+        "en" : "Proportion of young people not in work, education or training",
+        "fr" : "Proportion de jeunes ne travaillant pas et ne suivant ni études, ni formation"
+      }
+    }, {
+      "code" : "10.i4",
+      "label" : {
+        "en" : "Percentage of individuals with broadband at home",
+        "fr" : "Part des individus disposant du haut débit à leur domicile"
+      }
+    }, {
+      "code" : "8.i7",
+      "label" : {
+        "en" : "Proportion of adults with an account in a bank or other financial institution or using mobile money services",
+        "fr" : "Proportion d'adultes possédant un compte dans une banque ou dans une autre institution financière ou faisant appel à des services monétaires mobiles"
+      }
+    }, {
+      "code" : "6.i2d",
+      "label" : {
+        "en" : "Proportion of groundwater bodies by quantitative status",
+        "fr" : "Proportion des masses d’eau souterraine selon l’état quantitatif"
+      }
+    }, {
+      "code" : "12.i4a",
+      "label" : {
+        "en" : "Hazardous waste production",
+        "fr" : "Production de déchets dangereux"
+      }
+    }, {
+      "code" : "7.i1",
+      "label" : {
+        "en" : "Proportion of the population unable to maintain an adequate temperature in their dwelling",
+        "fr" : "Proportion de la population en incapacité de maintenir une température adéquate dans le logement"
+      }
+    }, {
+      "code" : "2.i6a",
+      "label" : {
+        "en" : "Number of unit doses (Nodu) of plant protection products ",
+        "fr" : "Nombre de doses unités (Nodu) de produits phytosanitaires "
+      }
+    }, {
+      "code" : "15.i5c",
+      "label" : {
+        "en" : "French land area classified as protected land area (30% SNAP target)",
+        "fr" : "Surfaces terrestres françaises classées en aires terrestres protégées (objectif 30 % SNAP)"
+      }
+    }, {
+      "code" : "4.i1d",
+      "label" : {
+        "en" : "Proportion of 15-year-olds who master at least the minimum skill standards in mathematics",
+        "fr" : "Proportion de jeunes de 15 ans qui maîtrisent au moins les normes d'aptitudes minimales en mathématiques"
+      }
+    }, {
+      "code" : "3.i4a",
+      "label" : {
+        "en" : "Life satisfaction",
+        "fr" : "Satisfaction dans la vie"
+      }
+    }, {
+      "code" : "15.i5d",
+      "label" : {
+        "en" : "Percentage of French land area classified as protected land area (30% SNAP target)",
+        "fr" : "Part des terres françaises en aires terrestres protégées (objectif 30 % SNAP)"
+      }
+    }, {
+      "code" : "7.i2b",
+      "label" : {
+        "en" : "Share of renewable energies in gross final energy consumption",
+        "fr" : "Part des énergies renouvelables dans la consommation finale brute d’énergie"
+      }
+    }, {
+      "code" : "10.i5",
+      "label" : {
+        "en" : "Percentage of individuals having connected to the Internet in the last three months",
+        "fr" : "Part des individus s'étant connectés à Internet au cours des trois derniers mois"
+      }
+    }, {
+      "code" : "9.i3",
+      "label" : {
+        "en" : "Greenhouse gas emissions per unit of value added (t CO2 eq./million $ 2017 PPP)",
+        "fr" : "Émissions de gaz à effet de serre par unité de valeur ajoutée (t CO2 eq./million $ 2017 PPA)"
+      }
+    }, {
+      "code" : "2.i7",
+      "label" : {
+        "en" : "Number of local breeds classified classified according to extinction risk",
+        "fr" : "Nombre de races locales classées selon le risque d’extinction"
+      }
+    }, {
+      "code" : "11.i2a",
+      "label" : {
+        "en" : "Arficialised land",
+        "fr" : "Sols artificialisés"
+      }
+    }, {
+      "code" : "12.i7",
+      "label" : {
+        "en" : "Number of industrial and territorial ecology projects",
+        "fr" : "Nombre de projets d'écologie industrielle et territoriale"
+      }
+    }, {
+      "code" : "6.i3a",
+      "label" : {
+        "en" : "Compliance rate of wastewater treatment plant performance",
+        "fr" : "Taux de conformité de la performance des ouvrages d'assainissement collectif"
+      }
+    }, {
+      "code" : "9.i5b",
+      "label" : {
+        "en" : "Share of domestic R&D expenditure of companies in GDP",
+        "fr" : "Part des dépenses intérieures de R&D des entreprises dans le PIB"
+      }
+    }, {
+      "code" : "13.i5",
+      "label" : {
+        "en" : "Amount of compensation paid for natural disasters",
+        "fr" : "Montant des indemnisations versées au titre des catastrophes naturelles "
+      }
+    }, {
+      "code" : "4.i5",
+      "label" : {
+        "en" : "Number of schools and educational establishments involved in a global approach to sustainable development (E3D label)",
+        "fr" : "Nombre d'écoles et d’établissements scolaires engagés dans une démarche globale de développement durable (label E3D)"
+      }
+    }, {
+      "code" : "6.i3b",
+      "label" : {
+        "en" : "Non-collective wastewater treatment system compliance rate",
+        "fr" : "Taux de conformité des dispositifs d'assainissement non collectif"
+      }
+    }, {
+      "code" : "11.i4a",
+      "label" : {
+        "en" : "Percentage of measuring stations having exceeded the daily regulatory air quality standard for PM10 particles",
+        "fr" : "Part des stations de mesure ayant dépassé la norme réglementaire journalière de la qualité de l'air pour les particules PM10"
+      }
+    }, {
+      "code" : "16.i1",
+      "label" : {
+        "en" : "Number of homicides",
+        "fr" : "Nombre d’homicides"
+      }
+    }, {
+      "code" : "6.i4",
+      "label" : {
+        "en" : "Efficiency rate of drinking water networks",
+        "fr" : "Taux de rendement des réseaux d'eau potable"
+      }
+    }, {
+      "code" : "2.i2a",
+      "label" : {
+        "en" : "Prevalence of overweight among adults",
+        "fr" : "Prévalence du surpoids chez les adultes"
+      }
+    }, {
+      "code" : "8.i1",
+      "label" : {
+        "en" : "Annual growth rate of real GDP per capita",
+        "fr" : "Taux de croissance annuelle du PIB réel par habitant"
+      }
+    }, {
+      "code" : "2.i2b",
+      "label" : {
+        "en" : "Prevalence of obesity among adults",
+        "fr" : "Prévalence de l'obésité chez les adultes"
+      }
+    }, {
+      "code" : "11.i4b",
+      "label" : {
+        "en" : "Average annual PM10 concentrations",
+        "fr" : "Concentrations moyennes annuelles de PM10"
+      }
+    }, {
+      "code" : "10.i1",
+      "label" : {
+        "en" : "Share of standard of living received by the lowest 40% of the population",
+        "fr" : "Part du niveau de vie perçu par les 40 % les plus modestes de la population"
+      }
+    }, {
+      "code" : "12.i5b",
+      "label" : {
+        "en" : "Hazardous and non-hazardous waste treatment",
+        "fr" : "Traitement de déchets dangereux et non dangereux"
+      }
+    }, {
+      "code" : "11.i1",
+      "label" : {
+        "en" : "Overcrowding rates",
+        "fr" : "Taux de surpeuplement des logements"
+      }
+    }, {
+      "code" : "14.i5c",
+      "label" : {
+        "en" : "Trends in coral reef status by area of distribution - Pacific",
+        "fr" : "Évolution de l’état des récifs coralliens par aire de répartition - Pacifique"
+      }
+    }, {
+      "code" : "2.i1",
+      "label" : {
+        "en" : "Giving up protein for financial reasons",
+        "fr" : "Renoncement à consommer des protéines pour raisons financières"
+      }
+    }, {
+      "code" : "4.i3",
+      "label" : {
+        "en" : "Proportion of the population broken down by level of digital skills",
+        "fr" : "Proportion de la population répartie selon le niveau de compétences numériques "
+      }
+    }, {
+      "code" : "6.i6",
+      "label" : {
+        "en" : "Local water utilities with Consultative Commissions (CCSPL) among those legally required to have them",
+        "fr" : "Services publics locaux de l'eau ayant des Commissions consultatives (CCSPL) parmi ceux ayant l'obligation légale d'en disposer"
+      }
+    }, {
+      "code" : "13.i1a",
+      "label" : {
+        "en" : "Number of very serious natural events",
+        "fr" : "Nombre d’évènements naturels très graves"
+      }
+    }, {
+      "code" : "15.i1",
+      "label" : {
+        "en" : "Afforestation rate (average over 5 years) ",
+        "fr" : "Taux de boisement (moyenne sur 5 ans)"
+      }
+    }, {
+      "code" : "15.i2",
+      "label" : {
+        "en" : "Conservation status of natural habitats (average over 6 years) ",
+        "fr" : "État de conservation des habitats naturels  (moyenne sur 6 ans)"
+      }
+    }, {
+      "code" : "9.i6b",
+      "label" : {
+        "en" : "Public budget appropriations for civil R&D (excluding defence)",
+        "fr" : "Montant des crédits budgétaires publics de R&D civils (hors Défense)"
+      }
+    }, {
+      "code" : "5.i2",
+      "label" : {
+        "en" : "Share of women in scientific disciplines at university",
+        "fr" : "Part des femmes dans les disciplines scientifiques à l'université"
+      }
+    }, {
+      "code" : "15.i3a",
+      "label" : {
+        "en" : "Ecosystems with little human activity in Metropolitain France",
+        "fr" : "Écosystèmes peu anthropisés en France métropolitaine"
+      }
+    }, {
+      "code" : "15.i3b",
+      "label" : {
+        "en" : "Ecosystems with little human activity in French overseas departments",
+        "fr" : "Écosystèmes peu anthropisés dans les départements et régions d’Outre-mer"
+      }
+    }, {
+      "code" : "5.i1",
+      "label" : {
+        "en" : "Gender pay gap",
+        "fr" : "Écart de rémunération entre hommes et femmes (Gender Pay Gap) "
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "OBS_STATUS",
+      "label" : {
+        "en" : "Observation status",
+        "fr" : "Statut de l'observation"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "A",
+      "label" : {
+        "en" : "Normal",
+        "fr" : "Normale"
+      }
+    }, {
+      "code" : "L",
+      "label" : {
+        "en" : "Missing value : data exist but were not collected",
+        "fr" : "Valeur manquante : les données existent mais ne sont pas collectées (non disponible : nd)"
+      }
+    }, {
+      "code" : "B",
+      "label" : {
+        "en" : "Time series break",
+        "fr" : "Rupture de séries"
+      }
+    }, {
+      "code" : "R",
+      "label" : {
+        "en" : "Revised value",
+        "fr" : "Valeur révisée"
+      }
+    }, {
+      "code" : "P",
+      "label" : {
+        "en" : "Provisional value",
+        "fr" : "Valeur provisoire"
+      }
+    }, {
+      "code" : "E",
+      "label" : {
+        "en" : "Estimated value",
+        "fr" : "Valeur estimée"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "GEO",
+      "label" : {
+        "en" : "Geography",
+        "fr" : "Géographie"
+      }
+    },
+    "type" : "geo",
+    "values" : [ {
+      "code" : "FM",
+      "id" : "2023-FRANCE-FM",
+      "iri" : "http://id.insee.fr/geo/france/FM",
+      "label" : {
+        "en" : "Metropolitan France",
+        "fr" : "France métropolitaine"
+      },
+      "type" : {
+        "code" : "FRANCE",
+        "en" : "France",
+        "fr" : "France"
+      }
+    }, {
+      "code" : "F",
+      "id" : "2023-FRANCE-F",
+      "iri" : "http://id.insee.fr/geo/france/F",
+      "label" : {
+        "en" : "France",
+        "fr" : "France"
+      },
+      "type" : {
+        "code" : "FRANCE",
+        "en" : "France",
+        "fr" : "France"
+      }
+    }, {
+      "code" : "F_X_D976",
+      "id" : "2023-FRANCE-F_X_D976",
+      "iri" : "http://id.insee.fr/geo/france/F_X_D976",
+      "label" : {
+        "en" : "France except Mayotte",
+        "fr" : "France hors Mayotte"
+      },
+      "type" : {
+        "code" : "FRANCE",
+        "en" : "France",
+        "fr" : "France"
+      }
+    }, {
+      "code" : "DOM_COMER",
+      "id" : "2023-OTHER-DOM_COMER",
+      "iri" : "http://id.insee.fr/geo/autre/DOM_COMER",
+      "label" : {
+        "fr" : "Territoire d'outre-mer"
+      },
+      "type" : {
+        "code" : "OTHER",
+        "en" : "Other types of territories",
+        "fr" : "Autre type de territoires"
+      }
+    }, {
+      "code" : "DOM",
+      "id" : "2023-OTHER-DOM",
+      "iri" : "http://id.insee.fr/geo/autre/DOM",
+      "label" : {
+        "en" : "Overseas regions",
+        "fr" : "Départements d'Outre-mer"
+      },
+      "type" : {
+        "code" : "OTHER",
+        "en" : "Other types of territories",
+        "fr" : "Autre type de territoires"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "BASE_PER",
+      "label" : {
+        "en" : "Reference time period of the index",
+        "fr" : "Période de référence de l'indice"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable"
+      }
+    }, {
+      "code" : "1989",
+      "label" : {
+        "en" : "Year 1989",
+        "fr" : "Année 1989"
+      }
+    }, {
+      "code" : "2011_2013",
+      "label" : {
+        "en" : "Average year 2011_2013",
+        "fr" : "Moyenne année 2011_2013"
+      }
+    }, {
+      "code" : "2000",
+      "label" : {
+        "en" : "Year 2000",
+        "fr" : "Année 2000"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "SDG",
+      "label" : {
+        "en" : "Sustainable development goal",
+        "fr" : "Objectif développement durable"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "SDG3",
+      "label" : {
+        "en" : "Goal 3: Health and well-being",
+        "fr" : "Objectif 3 : Santé et bien-être"
+      }
+    }, {
+      "code" : "SDG2",
+      "label" : {
+        "en" : "Goal 2 : Food security and sustainable agriculture",
+        "fr" : "Objectif 2 : Sécurité alimentaire et agriculture durable"
+      }
+    }, {
+      "code" : "SDG5",
+      "label" : {
+        "en" : "Goal 5: Gender equality",
+        "fr" : "Objectif 5 : Égalité entre les sexes"
+      }
+    }, {
+      "code" : "SDG1",
+      "label" : {
+        "en" : "Goal 1 : Poverty eradication",
+        "fr" : "Objectif 1 : Éradication de la pauvreté"
+      }
+    }, {
+      "code" : "SDG9",
+      "label" : {
+        "en" : "Goal 9: Resilient infrastructure and innovation",
+        "fr" : "Objectif 9 : Infrastructures résilientes et innovation"
+      }
+    }, {
+      "code" : "SDG16",
+      "label" : {
+        "en" : "Goal 16: Peace, justice and effective institutions",
+        "fr" : "Objectif 16 : Paix, justice et institutions efficaces"
+      }
+    }, {
+      "code" : "SDG15",
+      "label" : {
+        "en" : "Goal 15: Life on land",
+        "fr" : "Objectif 15 : Vie terrestre"
+      }
+    }, {
+      "code" : "SDG13",
+      "label" : {
+        "en" : "Goal 13: Action on climate change",
+        "fr" : "Objectif 13 : Mesures relatives à la lutte contre les changements climatiques"
+      }
+    }, {
+      "code" : "SDG17",
+      "label" : {
+        "en" : "Goal 17: Partnerships to achieve the goals",
+        "fr" : "Objectif 17 : Partenariats pour la réalisation des objectifs"
+      }
+    }, {
+      "code" : "SDG8",
+      "label" : {
+        "en" : "Goal 8: Decent work and sustainable growth",
+        "fr" : "Objectif 8 : Travail décent et croissance durable"
+      }
+    }, {
+      "code" : "SDG14",
+      "label" : {
+        "en" : "Goal 14: Aquatic life",
+        "fr" : "Objectif 14 : Vie aquatique"
+      }
+    }, {
+      "code" : "SDG11",
+      "label" : {
+        "en" : "Goal 11: Sustainable cities and communities",
+        "fr" : "Objectif 11 : Villes et communautés durables"
+      }
+    }, {
+      "code" : "SDG12",
+      "label" : {
+        "en" : "Goal 12: Responsible consumption and production",
+        "fr" : "Objectif 12 : Consommation et production responsables"
+      }
+    }, {
+      "code" : "SDG7",
+      "label" : {
+        "en" : "Goal 7: Clean and affordable energy ",
+        "fr" : "Objectif 7 : Énergies propres et d'un coût abordable"
+      }
+    }, {
+      "code" : "SDG4",
+      "label" : {
+        "en" : "Goal 4: Quality education",
+        "fr" : "Objectif 4 : Éducation de qualité"
+      }
+    }, {
+      "code" : "SDG6",
+      "label" : {
+        "en" : "Goal 6: Clean water and sanitation",
+        "fr" : "Objectif 6 : Eau propre et assainissement"
+      }
+    }, {
+      "code" : "SDG10",
+      "label" : {
+        "en" : "Goal 10: Reducing inequalities",
+        "fr" : "Objectif 10 : Réduction des inégalités"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "EMPSTA",
+      "label" : {
+        "en" : "Status of activity",
+        "fr" : "Statut d'activité au sens du BIT"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable"
+      }
+    }, {
+      "code" : "11",
+      "label" : {
+        "en" : "Employed",
+        "fr" : "Employé"
+      }
+    }, {
+      "code" : "1T2_GE18",
+      "label" : {
+        "en" : "Active aged 18 or over",
+        "fr" : "Actif âgé de 18 ans ou plus"
+      }
+    }, {
+      "code" : "12",
+      "label" : {
+        "en" : "Self-employed",
+        "fr" : "Indépendant"
+      }
+    }, {
+      "code" : "1",
+      "label" : {
+        "en" : "Occupied active",
+        "fr" : "Actif occupé"
+      }
+    }, {
+      "code" : "2",
+      "label" : {
+        "en" : "Unemployed",
+        "fr" : "Chômeur"
+      }
+    }, {
+      "code" : "3_GE18",
+      "label" : {
+        "en" : "Inactive aged 18 or over",
+        "fr" : "Inactif âgé de 18 ans ou plus"
+      }
+    }, {
+      "code" : "31",
+      "label" : {
+        "en" : "Retired or pre-retired",
+        "fr" : "Retraité ou préretraité"
+      }
+    }, {
+      "code" : "36",
+      "label" : {
+        "en" : "Other inactives ",
+        "fr" : "Autre inactif"
+      }
+    }, {
+      "code" : "32",
+      "label" : {
+        "en" : "Student ",
+        "fr" : "Étudiant"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "TIME_PERIOD",
+      "label" : {
+        "en" : "Time period",
+        "fr" : "Période temporelle"
+      }
+    },
+    "type" : "date",
+    "values" : [ {
+      "code" : "2023",
+      "label" : {
+        "en" : "2023",
+        "fr" : "2023"
+      }
+    }, {
+      "code" : "2024",
+      "label" : {
+        "en" : "2024",
+        "fr" : "2024"
+      }
+    }, {
+      "code" : "2025",
+      "label" : {
+        "en" : "2025",
+        "fr" : "2025"
+      }
+    }, {
+      "code" : "2004",
+      "label" : {
+        "en" : "2004",
+        "fr" : "2004"
+      }
+    }, {
+      "code" : "2013",
+      "label" : {
+        "en" : "2013",
+        "fr" : "2013"
+      }
+    }, {
+      "code" : "2020",
+      "label" : {
+        "en" : "2020",
+        "fr" : "2020"
+      }
+    }, {
+      "code" : "2014",
+      "label" : {
+        "en" : "2014",
+        "fr" : "2014"
+      }
+    }, {
+      "code" : "2005",
+      "label" : {
+        "en" : "2005",
+        "fr" : "2005"
+      }
+    }, {
+      "code" : "2021",
+      "label" : {
+        "en" : "2021",
+        "fr" : "2021"
+      }
+    }, {
+      "code" : "2015",
+      "label" : {
+        "en" : "2015",
+        "fr" : "2015"
+      }
+    }, {
+      "code" : "2022",
+      "label" : {
+        "en" : "2022",
+        "fr" : "2022"
+      }
+    }, {
+      "code" : "2016",
+      "label" : {
+        "en" : "2016",
+        "fr" : "2016"
+      }
+    }, {
+      "code" : "2006",
+      "label" : {
+        "en" : "2006",
+        "fr" : "2006"
+      }
+    }, {
+      "code" : "2017",
+      "label" : {
+        "en" : "2017",
+        "fr" : "2017"
+      }
+    }, {
+      "code" : "2018",
+      "label" : {
+        "en" : "2018",
+        "fr" : "2018"
+      }
+    }, {
+      "code" : "2007",
+      "label" : {
+        "en" : "2007",
+        "fr" : "2007"
+      }
+    }, {
+      "code" : "2019",
+      "label" : {
+        "en" : "2019",
+        "fr" : "2019"
+      }
+    }, {
+      "code" : "2010",
+      "label" : {
+        "en" : "2010",
+        "fr" : "2010"
+      }
+    }, {
+      "code" : "2011",
+      "label" : {
+        "en" : "2011",
+        "fr" : "2011"
+      }
+    }, {
+      "code" : "2008",
+      "label" : {
+        "en" : "2008",
+        "fr" : "2008"
+      }
+    }, {
+      "code" : "2012",
+      "label" : {
+        "en" : "2012",
+        "fr" : "2012"
+      }
+    }, {
+      "code" : "2009",
+      "label" : {
+        "en" : "2009",
+        "fr" : "2009"
+      }
+    }, {
+      "code" : "1975",
+      "label" : {
+        "en" : "1975",
+        "fr" : "1975"
+      }
+    }, {
+      "code" : "1976",
+      "label" : {
+        "en" : "1976",
+        "fr" : "1976"
+      }
+    }, {
+      "code" : "1977",
+      "label" : {
+        "en" : "1977",
+        "fr" : "1977"
+      }
+    }, {
+      "code" : "1978",
+      "label" : {
+        "en" : "1978",
+        "fr" : "1978"
+      }
+    }, {
+      "code" : "1979",
+      "label" : {
+        "en" : "1979",
+        "fr" : "1979"
+      }
+    }, {
+      "code" : "1980",
+      "label" : {
+        "en" : "1980",
+        "fr" : "1980"
+      }
+    }, {
+      "code" : "1981",
+      "label" : {
+        "en" : "1981",
+        "fr" : "1981"
+      }
+    }, {
+      "code" : "1982",
+      "label" : {
+        "en" : "1982",
+        "fr" : "1982"
+      }
+    }, {
+      "code" : "1983",
+      "label" : {
+        "en" : "1983",
+        "fr" : "1983"
+      }
+    }, {
+      "code" : "1984",
+      "label" : {
+        "en" : "1984",
+        "fr" : "1984"
+      }
+    }, {
+      "code" : "1985",
+      "label" : {
+        "en" : "1985",
+        "fr" : "1985"
+      }
+    }, {
+      "code" : "1986",
+      "label" : {
+        "en" : "1986",
+        "fr" : "1986"
+      }
+    }, {
+      "code" : "1987",
+      "label" : {
+        "en" : "1987",
+        "fr" : "1987"
+      }
+    }, {
+      "code" : "1988",
+      "label" : {
+        "en" : "1988",
+        "fr" : "1988"
+      }
+    }, {
+      "code" : "1989",
+      "label" : {
+        "en" : "1989",
+        "fr" : "1989"
+      }
+    }, {
+      "code" : "1990",
+      "label" : {
+        "en" : "1990",
+        "fr" : "1990"
+      }
+    }, {
+      "code" : "1991",
+      "label" : {
+        "en" : "1991",
+        "fr" : "1991"
+      }
+    }, {
+      "code" : "1992",
+      "label" : {
+        "en" : "1992",
+        "fr" : "1992"
+      }
+    }, {
+      "code" : "1993",
+      "label" : {
+        "en" : "1993",
+        "fr" : "1993"
+      }
+    }, {
+      "code" : "1994",
+      "label" : {
+        "en" : "1994",
+        "fr" : "1994"
+      }
+    }, {
+      "code" : "1995",
+      "label" : {
+        "en" : "1995",
+        "fr" : "1995"
+      }
+    }, {
+      "code" : "1996",
+      "label" : {
+        "en" : "1996",
+        "fr" : "1996"
+      }
+    }, {
+      "code" : "1997",
+      "label" : {
+        "en" : "1997",
+        "fr" : "1997"
+      }
+    }, {
+      "code" : "1998",
+      "label" : {
+        "en" : "1998",
+        "fr" : "1998"
+      }
+    }, {
+      "code" : "1999",
+      "label" : {
+        "en" : "1999",
+        "fr" : "1999"
+      }
+    }, {
+      "code" : "2000",
+      "label" : {
+        "en" : "2000",
+        "fr" : "2000"
+      }
+    }, {
+      "code" : "2001",
+      "label" : {
+        "en" : "2001",
+        "fr" : "2001"
+      }
+    }, {
+      "code" : "2002",
+      "label" : {
+        "en" : "2002",
+        "fr" : "2002"
+      }
+    }, {
+      "code" : "2003",
+      "label" : {
+        "en" : "2003",
+        "fr" : "2003"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "UNIT_MEASURE",
+      "label" : {
+        "en" : "Unit measure",
+        "fr" : "Unité de mesure"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "NR",
+      "label" : {
+        "en" : "Number",
+        "fr" : "Nombre"
+      }
+    }, {
+      "code" : "YR",
+      "label" : {
+        "en" : "Year",
+        "fr" : "Année"
+      }
+    }, {
+      "code" : "PT",
+      "label" : {
+        "en" : "Percent",
+        "fr" : "Pourcentage"
+      }
+    }, {
+      "code" : "FT",
+      "label" : {
+        "en" : "Full time equivalent",
+        "fr" : "Équivalent temps plein"
+      }
+    }, {
+      "code" : "KM2",
+      "label" : {
+        "en" : "Square kilometer",
+        "fr" : "Kilomètre carré"
+      }
+    }, {
+      "code" : "CP_MUSD",
+      "label" : {
+        "en" : "Current prices, millions of US dollars",
+        "fr" : "Prix courants, millions de dollars US "
+      }
+    }, {
+      "code" : "XDC",
+      "label" : {
+        "en" : "Domestic currency (Euros)",
+        "fr" : "Devise nationale (Euros)"
+      }
+    }, {
+      "code" : "T",
+      "label" : {
+        "en" : "Tonne",
+        "fr" : "Tonne"
+      }
+    }, {
+      "code" : "N_KM2",
+      "label" : {
+        "en" : "Number per Km2",
+        "fr" : "Nombre par Km2"
+      }
+    }, {
+      "code" : "IX",
+      "label" : {
+        "en" : "Index",
+        "fr" : "Indice"
+      }
+    }, {
+      "code" : "HW",
+      "label" : {
+        "en" : "Hours worked",
+        "fr" : "Heures travaillées"
+      }
+    }, {
+      "code" : "TCO2E",
+      "label" : {
+        "en" : "Tonnes of CO2-equivalent",
+        "fr" : "Tonnes équivalent CO2"
+      }
+    }, {
+      "code" : "TWH",
+      "label" : {
+        "en" : "Terawatt hour",
+        "fr" : "Térawattheure"
+      }
+    }, {
+      "code" : "P100000",
+      "label" : {
+        "en" : "For one hundred thousand",
+        "fr" : "Pour cent mille"
+      }
+    }, {
+      "code" : "N_100m",
+      "label" : {
+        "en" : "Number per 100m",
+        "fr" : "Nombre par 100m"
+      }
+    }, {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Number",
+        "fr" : "Nombre"
+      }
+    }, {
+      "code" : "M3",
+      "label" : {
+        "en" : "Cubic metre",
+        "fr" : "Mètre cube"
+      }
+    }, {
+      "code" : "EUR_KG",
+      "label" : {
+        "en" : "Euro per kilogram",
+        "fr" : "Euro par kilogramme"
+      }
+    }, {
+      "code" : "MWH_6XDC",
+      "label" : {
+        "en" : "Megawatt hour per million euros",
+        "fr" : "Mégawattheure par million d’euros"
+      }
+    }, {
+      "code" : "KG",
+      "label" : {
+        "en" : "Kilogram",
+        "fr" : "Kilogramme"
+      }
+    }, {
+      "code" : "IX_S",
+      "label" : {
+        "en" : "Simpson index",
+        "fr" : "Indice de Simpson"
+      }
+    }, {
+      "code" : "TCO2E_MUSD",
+      "label" : {
+        "en" : "Tonnes of CO2-equivalent per millions of US dollars",
+        "fr" : "Tonnes équivalent CO2 par millions de dollars"
+      }
+    }, {
+      "code" : "uGM3",
+      "label" : {
+        "en" : "Microgram per cubic metre",
+        "fr" : "Microgramme par mètre cube"
+      }
+    }, {
+      "code" : "HA",
+      "label" : {
+        "en" : "Hectare",
+        "fr" : "Hectare"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "COMPOSITE_BREAKDOWN",
+      "label" : {
+        "en" : "Sustainable development composite",
+        "fr" : "Composite développement durable"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "ROUTE_TYP1",
+      "label" : {
+        "en" : "Motorways",
+        "fr" : "Autoroutes"
+      }
+    }, {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable"
+      }
+    }, {
+      "code" : "ROUTE_TYP2",
+      "label" : {
+        "en" : "Roads outside built-up areas",
+        "fr" : "Routes hors agglomération"
+      }
+    }, {
+      "code" : "NIVIEMED_S60",
+      "label" : {
+        "en" : "Threshold at 60% of median standard of living",
+        "fr" : "Seuil à 60 % du niveau de vie médian"
+      }
+    }, {
+      "code" : "VIOLENCE_TYP5",
+      "label" : {
+        "en" : "Violence committed outside the family circle",
+        "fr" : "Violences commises hors de la sphère intrafamiliale"
+      }
+    }, {
+      "code" : "OBJ_SOCECO3",
+      "label" : {
+        "en" : "Energy",
+        "fr" : "Énergie"
+      }
+    }, {
+      "code" : "ETAT13",
+      "label" : {
+        "en" : "Stable",
+        "fr" : "Stable"
+      }
+    }, {
+      "code" : "TRAIT3",
+      "label" : {
+        "en" : "Material recycling",
+        "fr" : "Recyclage matière"
+      }
+    }, {
+      "code" : "ETAT14",
+      "label" : {
+        "en" : "Deteriorating",
+        "fr" : "En dégradation"
+      }
+    }, {
+      "code" : "MER_FACADE1",
+      "label" : {
+        "en" : "Channel-North Sea",
+        "fr" : "Manche-Mer du Nord"
+      }
+    }, {
+      "code" : "ETAT9",
+      "label" : {
+        "en" : "Optimal",
+        "fr" : "Optimal"
+      }
+    }, {
+      "code" : "ETAT2",
+      "label" : {
+        "en" : "Good",
+        "fr" : "Bon"
+      }
+    }, {
+      "code" : "APD_ZONEGEO1",
+      "label" : {
+        "en" : "Africa",
+        "fr" : "Afrique"
+      }
+    }, {
+      "code" : "ETAT10",
+      "label" : {
+        "en" : "Gradient",
+        "fr" : "Dégradé"
+      }
+    }, {
+      "code" : "INSTIT1",
+      "label" : {
+        "en" : "Army",
+        "fr" : "Armée"
+      }
+    }, {
+      "code" : "APD_ZONEGEO2",
+      "label" : {
+        "en" : "Sub-Saharan Africa",
+        "fr" : "Afrique subsaharienne"
+      }
+    }, {
+      "code" : "ETAT11",
+      "label" : {
+        "en" : "Very degraded",
+        "fr" : "Très dégradé"
+      }
+    }, {
+      "code" : "ROUTE_TYP3",
+      "label" : {
+        "en" : "Roads in built-up areas",
+        "fr" : "Routes en agglomération"
+      }
+    }, {
+      "code" : "APD_ZONEGEO3",
+      "label" : {
+        "en" : "Asia",
+        "fr" : "Asie"
+      }
+    }, {
+      "code" : "INSTIT2",
+      "label" : {
+        "en" : "Police",
+        "fr" : "Police"
+      }
+    }, {
+      "code" : "FPE",
+      "label" : {
+        "en" : "State civil service",
+        "fr" : "Fonction publique d’État"
+      }
+    }, {
+      "code" : "INSTIT3",
+      "label" : {
+        "en" : "Justice",
+        "fr" : "Justice"
+      }
+    }, {
+      "code" : "MER_FACADE4",
+      "label" : {
+        "en" : "Celtic sea",
+        "fr" : "Mer Celtique"
+      }
+    }, {
+      "code" : "APD_CAD100",
+      "label" : {
+        "en" : "Infrastructure and Social Services ",
+        "fr" : "Infrastructure et services sociaux "
+      }
+    }, {
+      "code" : "ECOCIRC_PILIER2",
+      "label" : {
+        "en" : "Sustainable sourcing",
+        "fr" : "Approvisionnement durable"
+      }
+    }, {
+      "code" : "APD_CAD110",
+      "label" : {
+        "en" : "Education  ",
+        "fr" : "Éducation  "
+      }
+    }, {
+      "code" : "FPH",
+      "label" : {
+        "en" : "Hospital civil service",
+        "fr" : "Fonction publique hospitalière"
+      }
+    }, {
+      "code" : "INSTIT4",
+      "label" : {
+        "en" : "School",
+        "fr" : "École"
+      }
+    }, {
+      "code" : "APD_CAD122",
+      "label" : {
+        "en" : "Basic health",
+        "fr" : "Santé de base"
+      }
+    }, {
+      "code" : "MER_FACADE5",
+      "label" : {
+        "en" : "Bay of Biscay",
+        "fr" : "Golfe de Gascogne"
+      }
+    }, {
+      "code" : "INSTIT5",
+      "label" : {
+        "en" : "Hospital",
+        "fr" : "Hôpital"
+      }
+    }, {
+      "code" : "TRAIT5",
+      "label" : {
+        "en" : "Incineration with energy recovery",
+        "fr" : "Incinération avec récupération d’énergie"
+      }
+    }, {
+      "code" : "MER_FACADE3",
+      "label" : {
+        "en" : "Mediterranean Sea",
+        "fr" : "Mer Méditerranée"
+      }
+    }, {
+      "code" : "OBJ_SOCECO8",
+      "label" : {
+        "en" : "Agriculture",
+        "fr" : "Agriculture"
+      }
+    }, {
+      "code" : "HABIT_TYP1",
+      "label" : {
+        "en" : "Agricultural areas",
+        "fr" : "Milieux agricoles"
+      }
+    }, {
+      "code" : "APD_CAD140",
+      "label" : {
+        "en" : "Water Supply and Sanitation",
+        "fr" : "Distribution d'eau et assainissement"
+      }
+    }, {
+      "code" : "HABIT_TYP2",
+      "label" : {
+        "en" : "Forest areas",
+        "fr" : "Milieux forestiers"
+      }
+    }, {
+      "code" : "TRAIT1",
+      "label" : {
+        "en" : "Incineration without energy recovery",
+        "fr" : "Incinération sans récupération d’énergie"
+      }
+    }, {
+      "code" : "HABIT_TYP3",
+      "label" : {
+        "en" : "Built-up areas",
+        "fr" : "Milieux bâtis"
+      }
+    }, {
+      "code" : "FPT",
+      "label" : {
+        "en" : "Local government",
+        "fr" : "Fonction publique territoriale"
+      }
+    }, {
+      "code" : "APD_CAD230",
+      "label" : {
+        "en" : "Energy",
+        "fr" : "Énergie"
+      }
+    }, {
+      "code" : "APD_CAD311",
+      "label" : {
+        "en" : "Agriculture",
+        "fr" : "Agriculture"
+      }
+    }, {
+      "code" : "ETAT7",
+      "label" : {
+        "en" : "Very good and good",
+        "fr" : "Très bon et bon"
+      }
+    }, {
+      "code" : "OBJ_SOCECO7",
+      "label" : {
+        "en" : "Exploration and exploitation of the earth",
+        "fr" : "Exploration et exploitation du milieu terrestre"
+      }
+    }, {
+      "code" : "NIVIEMED_S20",
+      "label" : {
+        "en" : "Lowest 20% of income",
+        "fr" : "20 % les plus modestes"
+      }
+    }, {
+      "code" : "APD_CAD410",
+      "label" : {
+        "en" : "Environmental protection",
+        "fr" : "Protection de l'environnement"
+      }
+    }, {
+      "code" : "APD_MARQUEUR1",
+      "label" : {
+        "en" : "Gender marker (gender equality and women's rights)",
+        "fr" : "Marqueur genre (égalité homme-femme et droits des femmes)"
+      }
+    }, {
+      "code" : "ECO_SECT1",
+      "label" : {
+        "en" : "Industry (including construction, but excluding blast furnaces)",
+        "fr" : "Industrie (y compris construction, mais hors hauts-fourneaux)"
+      }
+    }, {
+      "code" : "APD_MARQUEUR2",
+      "label" : {
+        "en" : "Biodiversity marker",
+        "fr" : "Marqueur biodiversité"
+      }
+    }, {
+      "code" : "TRAIT4",
+      "label" : {
+        "en" : "Storage",
+        "fr" : "Stockage"
+      }
+    }, {
+      "code" : "APD_MARQUEUR3",
+      "label" : {
+        "en" : "Climate change mitigation marker",
+        "fr" : "Marqueur mitigation changement climatique"
+      }
+    }, {
+      "code" : "APD_MARQUEUR4",
+      "label" : {
+        "en" : "Climate change adaptation marker",
+        "fr" : "Marqueur adaptation changement climatique"
+      }
+    }, {
+      "code" : "ETAT3",
+      "label" : {
+        "en" : "Fair",
+        "fr" : "Moyen"
+      }
+    }, {
+      "code" : "OBJ_SOCECO4",
+      "label" : {
+        "en" : "Transport, telecommunications and other infrastructure",
+        "fr" : "Transports, télécommunications et autres infrastructures"
+      }
+    }, {
+      "code" : "NIVIEMED_S50",
+      "label" : {
+        "en" : "Threshold at 50% of median standard of living",
+        "fr" : "Seuil à 50 % du niveau de vie médian"
+      }
+    }, {
+      "code" : "ECO_SECT12",
+      "label" : {
+        "en" : "Energy industry",
+        "fr" : "Industrie de l'énergie"
+      }
+    }, {
+      "code" : "ETAT8",
+      "label" : {
+        "en" : "Very poor and poor",
+        "fr" : "Médiocre et mauvais"
+      }
+    }, {
+      "code" : "ETAT6",
+      "label" : {
+        "en" : "Unknown",
+        "fr" : "Inconnu"
+      }
+    }, {
+      "code" : "ECO_SECT2",
+      "label" : {
+        "en" : "Transport",
+        "fr" : "Transport"
+      }
+    }, {
+      "code" : "ECO_SECT4-5",
+      "label" : {
+        "en" : "Residential-Tertiary",
+        "fr" : "Résidentiel-Tertiaire"
+      }
+    }, {
+      "code" : "ECO_SECT3",
+      "label" : {
+        "en" : "Agriculture and forestry",
+        "fr" : "Agriculture et sylviculture"
+      }
+    }, {
+      "code" : "OBJ_SOCECO2",
+      "label" : {
+        "en" : "Production and industrial technologies",
+        "fr" : "Production et technologies industrielles"
+      }
+    }, {
+      "code" : "PHYTO1",
+      "label" : {
+        "en" : "Fungicides, bactericides and virucides",
+        "fr" : "Fongicides, bactéricides et virucides"
+      }
+    }, {
+      "code" : "PHYTO2",
+      "label" : {
+        "en" : "Herbicides and moss killers",
+        "fr" : "Herbicides et anti-mousses"
+      }
+    }, {
+      "code" : "PHYTO3",
+      "label" : {
+        "en" : "Insecticides, acaricides, nematicides and chemical mediators",
+        "fr" : "Insecticides, acaricides, nématicides et médiateurs chimiques"
+      }
+    }, {
+      "code" : "PHYTO4",
+      "label" : {
+        "en" : "Other substances",
+        "fr" : "Autres substances"
+      }
+    }, {
+      "code" : "OBJ_SOCECO1",
+      "label" : {
+        "en" : "Health",
+        "fr" : "Santé"
+      }
+    }, {
+      "code" : "REV_Q1",
+      "label" : {
+        "en" : "1st quartile of income per consumer unit",
+        "fr" : "1er quartile de revenu par unité de consommation"
+      }
+    }, {
+      "code" : "EAU_UTIL3",
+      "label" : {
+        "en" : "Canal supply",
+        "fr" : "Alimentation des canaux"
+      }
+    }, {
+      "code" : "51.21",
+      "label" : {
+        "en" : "Freight air transport",
+        "fr" : "Transports aériens de fret"
+      }
+    }, {
+      "code" : "PHYTO0",
+      "label" : {
+        "en" : "Pesticides",
+        "fr" : "Pesticides"
+      }
+    }, {
+      "code" : "REV_Q2",
+      "label" : {
+        "en" : "2nd quartile of income per consumer unit",
+        "fr" : "2e quartile de revenu par unité de consommation"
+      }
+    }, {
+      "code" : "85.51",
+      "label" : {
+        "en" : "Sports and recreation education",
+        "fr" : "Enseignement de disciplines sportives et d'activités de loisirs"
+      }
+    }, {
+      "code" : "ETAT1",
+      "label" : {
+        "en" : "Very good ",
+        "fr" : "Très bon "
+      }
+    }, {
+      "code" : "REV_Q3",
+      "label" : {
+        "en" : "3rd quartile of income per consumer unit",
+        "fr" : "3e quartile de revenu par unité de consommation"
+      }
+    }, {
+      "code" : "93.12",
+      "label" : {
+        "en" : "Activities of sport clubs",
+        "fr" : "Activités de clubs de sports"
+      }
+    }, {
+      "code" : "REV_Q4",
+      "label" : {
+        "en" : "4th quartile of income per consumer unit",
+        "fr" : "4e quartile de revenu par unité de consommation"
+      }
+    }, {
+      "code" : "MER_FACADE2",
+      "label" : {
+        "en" : "Atlantic",
+        "fr" : "Atlantique"
+      }
+    }, {
+      "code" : "93.19",
+      "label" : {
+        "en" : "Other sports activities",
+        "fr" : "Autres activités liées au sport"
+      }
+    }, {
+      "code" : "DOCSTRA_NIV2",
+      "label" : {
+        "en" : "Strategic document adopted ",
+        "fr" : "Document stratégique adopté "
+      }
+    }, {
+      "code" : "DOCSTRA_NIV1",
+      "label" : {
+        "en" : "Strategic document in progress",
+        "fr" : "Document stratégique en cours"
+      }
+    }, {
+      "code" : "MAT_TYP2",
+      "label" : {
+        "en" : "Plastics",
+        "fr" : "Plastique"
+      }
+    }, {
+      "code" : "DOCSTRA_NIV0",
+      "label" : {
+        "en" : "No strategic document",
+        "fr" : "Aucun document stratégique"
+      }
+    }, {
+      "code" : "43.91A",
+      "label" : {
+        "en" : "Roof frames works",
+        "fr" : "Travaux de charpente"
+      }
+    }, {
+      "code" : "ETAT4",
+      "label" : {
+        "en" : "Very Poor",
+        "fr" : "Médiocre"
+      }
+    }, {
+      "code" : "ECO_SECT13",
+      "label" : {
+        "en" : "Manufacturing and construction",
+        "fr" : "Industrie manufacturière et construction "
+      }
+    }, {
+      "code" : "ECO_SECT22",
+      "label" : {
+        "en" : "Transport-heavy vehicles",
+        "fr" : "Transport–Véhicules lourds"
+      }
+    }, {
+      "code" : "43.91B",
+      "label" : {
+        "en" : "Roof covering activities by elements",
+        "fr" : "Travaux de couverture par éléments"
+      }
+    }, {
+      "code" : "ETAT5",
+      "label" : {
+        "en" : "Poor",
+        "fr" : "Mauvais"
+      }
+    }, {
+      "code" : "ECO_SECT4",
+      "label" : {
+        "en" : "Residential",
+        "fr" : "Résidentiel"
+      }
+    }, {
+      "code" : "49.42",
+      "label" : {
+        "en" : "Removal services",
+        "fr" : "Services de déménagement"
+      }
+    }, {
+      "code" : "CONTAMIN_MOD1",
+      "label" : {
+        "en" : "Sex between men",
+        "fr" : "Rapports sexuels entre hommes"
+      }
+    }, {
+      "code" : "02.40",
+      "label" : {
+        "en" : "Support services to forestry",
+        "fr" : "Services de soutien à l'exploitation forestière"
+      }
+    }, {
+      "code" : "ECO_SECT21",
+      "label" : {
+        "en" : "Transport - Light vehicles",
+        "fr" : "Transport–Véhicules légers"
+      }
+    }, {
+      "code" : "88.10C",
+      "label" : {
+        "en" : "Assistance by work",
+        "fr" : "Aide par le travail"
+      }
+    }, {
+      "code" : "ALIM_ETAP1",
+      "label" : {
+        "en" : "Production",
+        "fr" : "Production"
+      }
+    }, {
+      "code" : "MAT_TYP1",
+      "label" : {
+        "en" : "Rubber",
+        "fr" : "Caoutchouc"
+      }
+    }, {
+      "code" : "81.30",
+      "label" : {
+        "en" : "Landscape service activities",
+        "fr" : "Services d'aménagement paysager"
+      }
+    }, {
+      "code" : "CONTAMIN_MOD2",
+      "label" : {
+        "en" : "Heterosexual",
+        "fr" : "Hétérosexuels"
+      }
+    }, {
+      "code" : "ECO_SECT5",
+      "label" : {
+        "en" : "Tertiary",
+        "fr" : "Tertiaire"
+      }
+    }, {
+      "code" : "ALIM_ETAP2",
+      "label" : {
+        "en" : "Transformation",
+        "fr" : "Transformation"
+      }
+    }, {
+      "code" : "ALCOOL_CONS5",
+      "label" : {
+        "en" : "at least ten drunkenness in the past 12 months",
+        "fr" : "Au moins dix ivresses au cours des 12 derniers mois"
+      }
+    }, {
+      "code" : "TRANSP_MOY1",
+      "label" : {
+        "en" : "By bus, coach and tram",
+        "fr" : "En bus, cars et tramways"
+      }
+    }, {
+      "code" : "CONTAMIN_MOD3",
+      "label" : {
+        "en" : "Intravenous drug user",
+        "fr" : "Usagers de drogues IV (injection intraveineuse)"
+      }
+    }, {
+      "code" : "ALIM_ETAP3",
+      "label" : {
+        "en" : "Distribution",
+        "fr" : "Distribution"
+      }
+    }, {
+      "code" : "TRANSP_MOY2",
+      "label" : {
+        "en" : "By rail (including metro)",
+        "fr" : "En transport ferré (y compris métro)"
+      }
+    }, {
+      "code" : "SESC1",
+      "label" : {
+        "en" : "Very low socio-economic status",
+        "fr" : "Statut socio-économique très défavorisé"
+      }
+    }, {
+      "code" : "ANIM1",
+      "label" : {
+        "en" : "Cattle",
+        "fr" : "Bovins"
+      }
+    }, {
+      "code" : "ALIM_ETAP4",
+      "label" : {
+        "en" : "Home consumption",
+        "fr" : "Consommation à domicile"
+      }
+    }, {
+      "code" : "TRANSP_MOY4",
+      "label" : {
+        "en" : "Rail transport",
+        "fr" : "Transport ferroviaire"
+      }
+    }, {
+      "code" : "CONTAMIN_MOD4",
+      "label" : {
+        "en" : "Other",
+        "fr" : "Autres "
+      }
+    }, {
+      "code" : "EMP_AIDE5",
+      "label" : {
+        "en" : "Integration through economic activity",
+        "fr" : "Insertion par l‘activité économique"
+      }
+    }, {
+      "code" : "ALIM_ETAP5",
+      "label" : {
+        "en" : "Foodservice consumption",
+        "fr" : "Consommation en restauration collective et commerciale"
+      }
+    }, {
+      "code" : "SESC2",
+      "label" : {
+        "en" : "Low socio-economic status",
+        "fr" : "Statut socio-économique défavorisé"
+      }
+    }, {
+      "code" : "ANIM3",
+      "label" : {
+        "en" : "Rabbits",
+        "fr" : "Lapins"
+      }
+    }, {
+      "code" : "EMP_AIDE6",
+      "label" : {
+        "en" : "Other subsidized jobs",
+        "fr" : "Autres emplois aidés"
+      }
+    }, {
+      "code" : "ANIM5",
+      "label" : {
+        "en" : "Pigs",
+        "fr" : "Porcs"
+      }
+    }, {
+      "code" : "SESC3",
+      "label" : {
+        "en" : "High socio-economic status",
+        "fr" : "Statut socio-économique favorisé"
+      }
+    }, {
+      "code" : "ECO_SECT6",
+      "label" : {
+        "en" : "Centralised waste treatment",
+        "fr" : "Traitement centralisé des déchets"
+      }
+    }, {
+      "code" : "TRANSP_MOY3",
+      "label" : {
+        "en" : "Road transport",
+        "fr" : "Transport routier"
+      }
+    }, {
+      "code" : "ANIM6",
+      "label" : {
+        "en" : "Poultry",
+        "fr" : "Volailles"
+      }
+    }, {
+      "code" : "SESC4",
+      "label" : {
+        "en" : "Very high socio-economic status",
+        "fr" : "Statut socio-économique très favorisé"
+      }
+    }, {
+      "code" : "MAT_TYP3",
+      "label" : {
+        "en" : "Glass",
+        "fr" : "Verre"
+      }
+    }, {
+      "code" : "TRANSP_MOY5",
+      "label" : {
+        "en" : "River transport",
+        "fr" : "Navigation fluviale"
+      }
+    }, {
+      "code" : "APD_CAD120-130",
+      "label" : {
+        "en" : "Health",
+        "fr" : "Santé"
+      }
+    }, {
+      "code" : "APD_CAD152_700",
+      "label" : {
+        "en" : "Crises and fragility",
+        "fr" : "Crises et fragilités "
+      }
+    }, {
+      "code" : "EMP_AIDE1",
+      "label" : {
+        "en" : "Apprenticeship",
+        "fr" : "Apprentissage"
+      }
+    }, {
+      "code" : "EXCT_R1",
+      "label" : {
+        "en" : "Risk of extinction",
+        "fr" : "À risque d’extinction"
+      }
+    }, {
+      "code" : "APD_CAD310-520",
+      "label" : {
+        "en" : "Agriculture and Food Safety",
+        "fr" : "Agriculture et sécurité alimentaire"
+      }
+    }, {
+      "code" : "MAT_TYP5",
+      "label" : {
+        "en" : "Paper and cardboard",
+        "fr" : "Papiers et cartons"
+      }
+    }, {
+      "code" : "EMP_AIDE2",
+      "label" : {
+        "en" : "Work-linked training (excluding apprenticeships)",
+        "fr" : "Formations en alternance (hors apprentissage)"
+      }
+    }, {
+      "code" : "APD_CAD151",
+      "label" : {
+        "en" : "Governance",
+        "fr" : "Gouvernance"
+      }
+    }, {
+      "code" : "DIPL_NIV1",
+      "label" : {
+        "en" : "No diploma or less than baccalaureate",
+        "fr" : "Aucun diplôme ou inférieur au baccalauréat"
+      }
+    }, {
+      "code" : "EXCT_R2",
+      "label" : {
+        "en" : "Not at risk of extinction",
+        "fr" : "Non à risque d'extinction"
+      }
+    }, {
+      "code" : "MAT_TYP6",
+      "label" : {
+        "en" : "Wood",
+        "fr" : "Bois"
+      }
+    }, {
+      "code" : "EMP_AIDE3",
+      "label" : {
+        "en" : "Assisted contracts in the commercial sector",
+        "fr" : "Contrats aidés du secteur marchand"
+      }
+    }, {
+      "code" : "3_X_353",
+      "label" : {
+        "en" : "Baccalaureate",
+        "fr" : "Baccalauréat"
+      }
+    }, {
+      "code" : "EXCT_R3",
+      "label" : {
+        "en" : "Unknown level of extinction risk",
+        "fr" : "Risque d'extinction inconnu"
+      }
+    }, {
+      "code" : "EMP_AIDE4",
+      "label" : {
+        "en" : "Non-market sector contracts",
+        "fr" : "Contrats aidés du secteur non marchand"
+      }
+    }, {
+      "code" : "MAT_TYP4",
+      "label" : {
+        "en" : "Plants",
+        "fr" : "Végétaux"
+      }
+    }, {
+      "code" : "4T8",
+      "label" : {
+        "en" : "Diploma higher than baccalauréat",
+        "fr" : "Diplôme supérieur au baccalauréat"
+      }
+    }, {
+      "code" : "URBA1",
+      "label" : {
+        "en" : "In agglomerations with more than 250,000 inhabitants",
+        "fr" : "Dans les agglomérations de plus de 250 000 habitants"
+      }
+    }, {
+      "code" : "URBA2",
+      "label" : {
+        "en" : "In agglomerations of 50,000 to 250,000 inhabitants",
+        "fr" : "Dans les agglomérations de 50 000 à 250 000 habitants"
+      }
+    }, {
+      "code" : "ALCOOL_CONS1",
+      "label" : {
+        "en" : "At least once a year",
+        "fr" : "Au moins une fois dans l’année"
+      }
+    }, {
+      "code" : "EAU_UTIL4",
+      "label" : {
+        "en" : "Drinking water",
+        "fr" : "Eau potable"
+      }
+    }, {
+      "code" : "MAT_TYP7",
+      "label" : {
+        "en" : "Metals",
+        "fr" : "Métaux"
+      }
+    }, {
+      "code" : "VIOLENCE_TYP1",
+      "label" : {
+        "en" : "Physical violence",
+        "fr" : "Violences physiques"
+      }
+    }, {
+      "code" : "URBA3",
+      "label" : {
+        "en" : "Close to urban road traffic",
+        "fr" : "À proximité du trafic routier en milieu urbain"
+      }
+    }, {
+      "code" : "EAU_UTIL1",
+      "label" : {
+        "en" : "Industrial use",
+        "fr" : "Usage industriel"
+      }
+    }, {
+      "code" : "VIOLENCE_TYP2",
+      "label" : {
+        "en" : "Sexual violence",
+        "fr" : "Violences sexuelles"
+      }
+    }, {
+      "code" : "NIVIEMED_S40",
+      "label" : {
+        "en" : "Threshold at 40% of median standard of living",
+        "fr" : "Seuil à 40 % du niveau de vie médian"
+      }
+    }, {
+      "code" : "ALCOOL_CONS2",
+      "label" : {
+        "en" : "Every day of the year",
+        "fr" : "Tous les jours de l’année"
+      }
+    }, {
+      "code" : "VIOLENCE_TYP3",
+      "label" : {
+        "en" : "Violence committed by a spouse or ex-spouse",
+        "fr" : "Violences commises par le conjoint ou ex-conjoint"
+      }
+    }, {
+      "code" : "VIOLENCE_TYP4",
+      "label" : {
+        "en" : "Violence committed within the family circle other than by a spouse or ex-spouse",
+        "fr" : "Violences commises dans le cercle familial hors conjoint ou ex-conjoint"
+      }
+    }, {
+      "code" : "URBA4",
+      "label" : {
+        "en" : "Urban background",
+        "fr" : "En fond urbain"
+      }
+    }, {
+      "code" : "EAU_UTIL2",
+      "label" : {
+        "en" : "Agricultural use including irrigation",
+        "fr" : "Usage agricole dont irrigation"
+      }
+    }, {
+      "code" : "ALCOOL_CONS3",
+      "label" : {
+        "en" : "At least one binge drinking session in the past 12 months",
+        "fr" : "Au moins une alcoolisation ponctuelle importante (API) au cours des 12 derniers mois"
+      }
+    }, {
+      "code" : "ETAT12",
+      "label" : {
+        "en" : "Improving",
+        "fr" : "En amélioration"
+      }
+    }, {
+      "code" : "EAU_UTIL5",
+      "label" : {
+        "en" : "Cooling of power stations",
+        "fr" : "Refroidissement des centrales électriques"
+      }
+    }, {
+      "code" : "ECOCIRC_PILIER3",
+      "label" : {
+        "en" : "Responsible consumption",
+        "fr" : "Consommation responsable"
+      }
+    }, {
+      "code" : "NUM_COMP1",
+      "label" : {
+        "en" : "Poor general digital skills",
+        "fr" : "Faibles compétences numériques générales"
+      }
+    }, {
+      "code" : "ALCOOL_CONS4",
+      "label" : {
+        "en" : "At least one drunkenness in the past 12 months",
+        "fr" : "Au moins une ivresse au cours des 12 derniers mois"
+      }
+    }, {
+      "code" : "NUM_COMP2",
+      "label" : {
+        "en" : "Basic general digital skills",
+        "fr" : "Compétences numériques générales de base"
+      }
+    }, {
+      "code" : "ECOCIRC_PILIER1",
+      "label" : {
+        "en" : "Extending useful life",
+        "fr" : "Allongement de la durée d'usage"
+      }
+    }, {
+      "code" : "NUM_COMP3",
+      "label" : {
+        "en" : "More advanced general digital skills",
+        "fr" : "Compétences numériques générales plus avancées"
+      }
+    }, {
+      "code" : "ECOCIRC_PILIER4",
+      "label" : {
+        "en" : "Recycling and waste recovery",
+        "fr" : "Recyclage et valorisation des déchets"
+      }
+    }, {
+      "code" : "NUM_COMP4",
+      "label" : {
+        "en" : "People who have not used the Internet in the last 3 months or who have no skills at all",
+        "fr" : "Personnes n’ayant pas utilisé Internet au cours des 3 derniers mois ou sans aucune compétence"
+      }
+    }, {
+      "code" : "OBJ_SOCECO5",
+      "label" : {
+        "en" : "Space exploration and exploitation",
+        "fr" : "Exploration et exploitation de l’espace"
+      }
+    }, {
+      "code" : "TRAIT2",
+      "label" : {
+        "en" : "Composting-methanisation",
+        "fr" : "Compostage-méthanisation"
+      }
+    }, {
+      "code" : "ETAT15",
+      "label" : {
+        "en" : "Favorable",
+        "fr" : "Favorable"
+      }
+    }, {
+      "code" : "ETAT16",
+      "label" : {
+        "en" : "Unfavorable inadequate",
+        "fr" : "Défavorable inadéquat"
+      }
+    }, {
+      "code" : "SC_DISC1",
+      "label" : {
+        "en" : "DUT Production (including IT)",
+        "fr" : "DUT Production (y compris informatique)"
+      }
+    }, {
+      "code" : "ETAT17",
+      "label" : {
+        "en" : "Unfavorable poor",
+        "fr" : "Défavorable mauvais"
+      }
+    }, {
+      "code" : "ETAT18",
+      "label" : {
+        "en" : "Unfavorable unknown",
+        "fr" : "Défavorable inconnu"
+      }
+    }, {
+      "code" : "OBJ_SOCECO6",
+      "label" : {
+        "en" : "Environment",
+        "fr" : "Environnement"
+      }
+    }, {
+      "code" : "SC_DISC2",
+      "label" : {
+        "en" : "Scientific training (including engineers)",
+        "fr" : "Formations scientifiques (ingénieurs compris)"
+      }
+    }, {
+      "code" : "SC_DISC3",
+      "label" : {
+        "en" : "Health",
+        "fr" : "Santé"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "UNIT_MULT",
+      "label" : {
+        "en" : "Quantity of units (in power of 10)",
+        "fr" : "Quantité d'unités (en puissance de 10)"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "0",
+      "label" : {
+        "en" : "Units",
+        "fr" : "Unités"
+      }
+    }, {
+      "code" : "6",
+      "label" : {
+        "en" : "Millions",
+        "fr" : "Millions"
+      }
+    }, {
+      "code" : "3",
+      "label" : {
+        "en" : "Thousands",
+        "fr" : "Milliers"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "PCS",
+      "label" : {
+        "en" : "Occupation and socio-economic group",
+        "fr" : "Profession et catégorie socioprofessionnelle (PCS)"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable "
+      }
+    }, {
+      "code" : "3",
+      "label" : {
+        "en" : "Executives and higher-level intellectual professions",
+        "fr" : "Cadres et professions intellectuelles supérieures"
+      }
+    }, {
+      "code" : "4",
+      "label" : {
+        "en" : "Technicians and associate professionals",
+        "fr" : "Professions intermédiaires"
+      }
+    }, {
+      "code" : "1_2",
+      "label" : {
+        "en" : "Farmers, Craftsmen, merchants, and business owners",
+        "fr" : "Agriculteurs, artisans, commerçants, chefs d'entreprise"
+      }
+    }, {
+      "code" : "5",
+      "label" : {
+        "en" : "Office employees",
+        "fr" : "Employés"
+      }
+    }, {
+      "code" : "6",
+      "label" : {
+        "en" : "Workers",
+        "fr" : "Ouvriers"
+      }
+    }, {
+      "code" : "30",
+      "label" : {
+        "en" : "Executives",
+        "fr" : "Cadres"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "AGE",
+      "label" : {
+        "en" : "Age",
+        "fr" : "Âge"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable"
+      }
+    }, {
+      "code" : "Y18T29",
+      "label" : {
+        "en" : "From 18 to 29 years",
+        "fr" : "De 18 à 29 ans"
+      }
+    }, {
+      "code" : "Y18T75",
+      "label" : {
+        "en" : "From 18 to 75 years",
+        "fr" : "De 18 à 75 ans"
+      }
+    }, {
+      "code" : "Y15T64",
+      "label" : {
+        "en" : "From 15 to 64 years",
+        "fr" : "De 15 à 64 ans"
+      }
+    }, {
+      "code" : "Y65T74",
+      "label" : {
+        "en" : "From 65 to 74 years",
+        "fr" : "De 65 à 74 ans"
+      }
+    }, {
+      "code" : "Y_GE75",
+      "label" : {
+        "en" : "75 years old or older",
+        "fr" : "75 ans ou plus"
+      }
+    }, {
+      "code" : "Y_LT18",
+      "label" : {
+        "en" : "Less than 18 years",
+        "fr" : "Moins de 18 ans"
+      }
+    }, {
+      "code" : "Y30T39",
+      "label" : {
+        "en" : "30 to 39 years old",
+        "fr" : "De 30 à 39 ans"
+      }
+    }, {
+      "code" : "Y_GE16",
+      "label" : {
+        "en" : "16 years old or older",
+        "fr" : "16 ans ou plus"
+      }
+    }, {
+      "code" : "Y18T64",
+      "label" : {
+        "en" : "From 18 to 64 years",
+        "fr" : "De 18 à 64 ans"
+      }
+    }, {
+      "code" : "Y_GE65",
+      "label" : {
+        "en" : "65 years old or older",
+        "fr" : "65 ans ou plus"
+      }
+    }, {
+      "code" : "Y40T49",
+      "label" : {
+        "en" : "From 40 to 49 years",
+        "fr" : "De 40 à 49 ans"
+      }
+    }, {
+      "code" : "Y18T24",
+      "label" : {
+        "en" : "From 18 to 24 years",
+        "fr" : "De 18 à 24 ans"
+      }
+    }, {
+      "code" : "Y15T24",
+      "label" : {
+        "en" : "From 15 to 24 years",
+        "fr" : "De 15 à 24 ans"
+      }
+    }, {
+      "code" : "Y25T49",
+      "label" : {
+        "en" : "From 25 to 49 years",
+        "fr" : "De 25 à 49 ans"
+      }
+    }, {
+      "code" : "Y50T64",
+      "label" : {
+        "en" : "From 50 to 64 years",
+        "fr" : "De 50 à 64 ans"
+      }
+    }, {
+      "code" : "Y25T34",
+      "label" : {
+        "en" : "From 25 to 34 years",
+        "fr" : "De 25 à 34 ans"
+      }
+    }, {
+      "code" : "Y_GE15",
+      "label" : {
+        "en" : "15 years old or older",
+        "fr" : "15 ans ou plus"
+      }
+    }, {
+      "code" : "Y35T44",
+      "label" : {
+        "en" : "From 35 to 44 years",
+        "fr" : "De 35 à 44 ans"
+      }
+    }, {
+      "code" : "Y45T54",
+      "label" : {
+        "en" : "From 45 to 54 years",
+        "fr" : "De 45 à 54 ans"
+      }
+    }, {
+      "code" : "Y15",
+      "label" : {
+        "en" : "15 years",
+        "fr" : "15 ans"
+      }
+    }, {
+      "code" : "Y55T64",
+      "label" : {
+        "en" : "From 55 to 64 years",
+        "fr" : "De 55 à 64 ans"
+      }
+    }, {
+      "code" : "Y65T75",
+      "label" : {
+        "en" : "From 65 to 75 years",
+        "fr" : "De 65 à 75 ans"
+      }
+    }, {
+      "code" : "Y_GE50",
+      "label" : {
+        "en" : "50 years old or older",
+        "fr" : "50 ans ou plus"
+      }
+    }, {
+      "code" : "Y_LT26",
+      "label" : {
+        "en" : "Less than 26 years",
+        "fr" : "Moins de 26 ans"
+      }
+    }, {
+      "code" : "Y15T29",
+      "label" : {
+        "en" : "From 15 to 29 years",
+        "fr" : "De 15 à 29 ans"
+      }
+    }, {
+      "code" : "Y30T44",
+      "label" : {
+        "en" : "From 30 to 44 years",
+        "fr" : "De 30 à 44 ans"
+      }
+    }, {
+      "code" : "Y45T59",
+      "label" : {
+        "en" : "From 45 to 59 years",
+        "fr" : "De 45 à 59 ans"
+      }
+    }, {
+      "code" : "Y16T74",
+      "label" : {
+        "en" : "From 16 to 74 years",
+        "fr" : "De 16 à 74 ans"
+      }
+    }, {
+      "code" : "Y60T74",
+      "label" : {
+        "en" : "From 60 to 74 years",
+        "fr" : "De 60 à 74 ans"
+      }
+    }, {
+      "code" : "Y_LT14",
+      "label" : {
+        "en" : "Under 14 years old",
+        "fr" : "Moins de 14 ans"
+      }
+    }, {
+      "code" : "Y14T17",
+      "label" : {
+        "en" : "From 14 to 17 years",
+        "fr" : "De 14  à 17 ans"
+      }
+    }, {
+      "code" : "Y25T44",
+      "label" : {
+        "en" : "From 25 to 44 years",
+        "fr" : "De 25 à 44 ans"
+      }
+    }, {
+      "code" : "Y45T64",
+      "label" : {
+        "en" : "From 45 to 64 years",
+        "fr" : "De 45 à 64 ans"
+      }
+    }, {
+      "code" : "Y_LT16",
+      "label" : {
+        "en" : "Under 16 years old",
+        "fr" : "Moins de 16 ans"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "MEASURE",
+      "label" : {
+        "en" : "Measure",
+        "fr" : "Mesure"
+      }
+    },
+    "type" : "mesures",
+    "values" : [ {
+      "code" : "OBS_VALUE_NIVEAU",
+      "label" : {
+        "en" : "Value",
+        "fr" : "Valeur"
+      },
+      "measureType" : {
+        "code" : "NIVEAU",
+        "id" : "NIVEAU",
+        "libelle" : {
+          "en" : "Niveau",
+          "fr" : "Niveau"
+        },
+        "ordreRmes" : 1,
+        "total" : false,
+        "uri" : "NIVEAU"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "OBS_STATUS_2",
+      "label" : {
+        "en" : "Second observation status",
+        "fr" : "Deuxième statut de l'observation"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "_X",
+      "label" : {
+        "en" : "Value not specified ",
+        "fr" : "Valeur non renseignée"
+      }
+    } ]
+  } ]
+}

@@ -1,0 +1,151 @@
+{
+ "date": "2026-10-13T13:55:42+00:00",
+ "bdm": {
+  "dataflows": 20,
+  "series_listees": 31888,
+  "par_frequence": {
+   "A": 31427,
+   "T": 261,
+   "M": 200
+  },
+  "par_zone": {
+   "principale": 31888
+  },
+  "catalogue": 4030,
+  "exclusions": {
+   "dernière mise à jour … antérieure à …": 27844,
+   "dernière période … < …": 14
+  },
+  "candidat": {
+   "non": 3926,
+   "oui": 104
+  },
+  "catalogue_par_frequence": {
+   "annuelle": 3638,
+   "mensuelle": 196,
+   "trimestrielle": 196
+  },
+  "catalogue_par_geo": {
+   "FR-D976": 2329,
+   "FE": 1686,
+   "FM": 15
+  }
+ },
+ "bdm_par_dimension": {
+  "(aucune)": {
+   "non": 36
+  },
+  "democratie": {
+   "non": 3
+  },
+  "education": {
+   "non": 160
+  },
+  "liens_bien_etre": {
+   "non": 102
+  },
+  "logement_cadre_vie": {
+   "non": 203
+  },
+  "niveau_de_vie": {
+   "non": 2825
+  },
+  "planete": {
+   "non": 243
+  },
+  "sante": {
+   "non": 228
+  },
+  "travail": {
+   "non": 126,
+   "oui": 104
+  }
+ },
+ "melodi": {
+  "jeux": 145,
+  "jeux_par_statut": {
+   "non traité": 125,
+   "écarté": 11,
+   "traité": 9
+  },
+  "series_nationales": 61909,
+  "catalogue": 50094,
+  "exclusions": {
+   "fréquence ? non retenue": 9845,
+   "dernière période < 2020 ou inconnue": 1970
+  },
+  "candidat": {
+   "oui": 31527,
+   "non": 18315,
+   "a_verifier": 252
+  }
+ },
+ "melodi_par_dimension": {
+  "education": {
+   "oui": 58,
+   "non": 11,
+   "a_verifier": 2
+  },
+  "egalites": {
+   "oui": 20
+  },
+  "liens_bien_etre": {
+   "oui": 625,
+   "non": 200
+  },
+  "logement_cadre_vie": {
+   "oui": 62,
+   "non": 5,
+   "a_verifier": 1
+  },
+  "niveau_de_vie": {
+   "oui": 5928,
+   "non": 408,
+   "a_verifier": 58
+  },
+  "planete": {
+   "oui": 100,
+   "non": 10,
+   "a_verifier": 2
+  },
+  "sante": {
+   "oui": 894,
+   "non": 784,
+   "a_verifier": 7
+  },
+  "travail": {
+   "oui": 23840,
+   "a_verifier": 182,
+   "non": 16897
+  }
+ },
+ "comparaison_phase1": {
+  "phase1": 1063,
+  "statuts": {
+   "BDM:absente_de_la_bdm": 831,
+   "BDM:confirmee": 27,
+   "Melodi:confirmee": 8,
+   "Melodi:jeu_absent": 4,
+   "Melodi:jeu_sans_serie_au_catalogue": 22,
+   "Melodi:non_retrouvee": 158,
+   "candidat_different": 31,
+   "fichier:hors_robot": 13
+  },
+  "bdm_nouvelles_oui_ou_a_verifier": 98,
+  "bdm_nouvelles_par_dimension": {
+   "travail": 98
+  }
+ },
+ "collecte": {
+  "debut": "2026-10-13T13:33:11+00:00",
+  "maj": "2026-10-13T13:55:16+00:00",
+  "termine": false,
+  "passages": [
+   {
+    "debut": "2026-10-13T13:33:11+00:00",
+    "fin": null,
+    "issue": null
+   }
+  ]
+ }
+}

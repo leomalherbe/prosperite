@@ -1,0 +1,4 @@
+# Options du prochain passage du robot pour scripts/collecte_insee.py
+# (lues seulement quand le script est lancé sans argument, ce que fait le workflow « Collecte »).
+# Passage d'essai réduit : nouveau cycle, 20 premiers dataflows BDM, 20 premiers jeux Melodi, 45 minutes.
+--nouveau --max-flux 20 --max-jeux 20 --budget-minutes 45

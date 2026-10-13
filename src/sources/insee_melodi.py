@@ -420,11 +420,18 @@ def lire_zip_csv(contenu: bytes) -> tuple[list[str], Iterator[dict[str, str]], d
     return colonnes, iter(lecteur), libelles
 
 
+def est_attribut(colonne: str) -> bool:
+    """Colonne d'attribut (statut, décimales, commentaire…) plutôt que dimension."""
+    c = colonne.upper()
+    return c in ATTRIBUTS_CONNUS or c.startswith(("OBS_", "COMMENT", "NOTE")) or c.endswith(("_STATUS", "_FLAG"))
+
+
 def ligne_csv_en_observation(ligne: dict[str, str], dimensions: Optional[set[str]] = None) -> dict[str, Any]:
     """Convertit une ligne du CSV complet au format d'observation de /data.
 
     `dimensions` : noms des colonnes à traiter comme dimensions (sinon : toutes les colonnes qui ne
-    sont ni la valeur, ni la période, ni un attribut connu). GEO est reconstitué en `<GEO_OBJECT>-<GEO>`.
+    sont ni la valeur, ni la période, ni un attribut — voir `est_attribut`). GEO est reconstitué en
+    `<GEO_OBJECT>-<GEO>`.
     """
     dims: dict[str, str] = {}
     attributs: dict[str, str] = {}
@@ -439,7 +446,7 @@ def ligne_csv_en_observation(ligne: dict[str, str], dimensions: Optional[set[str
         elif col == "GEO":
             objet = (ligne.get("GEO_OBJECT") or "").strip()
             dims["GEO"] = f"{objet}-{val}" if objet and not val.startswith(objet + "-") else val
-        elif (dimensions is not None and col in dimensions) or (dimensions is None and col not in ATTRIBUTS_CONNUS):
+        elif (dimensions is not None and col in dimensions) or (dimensions is None and not est_attribut(col)):
             dims[col] = val
         else:
             attributs[col] = val

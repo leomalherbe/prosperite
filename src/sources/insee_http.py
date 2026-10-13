@@ -170,13 +170,17 @@ class ClientFixtures:
     def __init__(self, routes: list[tuple[Callable[[str], bool], Reponse]]) -> None:
         self.routes = routes
         self.appels: list[str] = []
+        self.nb_appels = 0
+        self.nb_octets = 0
 
     def get(self, url: str, params: Optional[Mapping[str, str]] = None, entetes: Optional[Mapping[str, str]] = None) -> Reponse:
         complete = url
         if params:
             complete += ("&" if "?" in url else "?") + "&".join(f"{k}={v}" for k, v in params.items())
         self.appels.append(complete)
+        self.nb_appels += 1
         for predicat, reponse in self.routes:
             if predicat(complete):
+                self.nb_octets += len(reponse.contenu)
                 return Reponse(statut=reponse.statut, contenu=reponse.contenu, url=complete, entetes=reponse.entetes)
         return Reponse(statut=404, contenu=b"", url=complete)

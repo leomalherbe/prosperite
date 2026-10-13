@@ -20,7 +20,7 @@ Périmètre du lancement en cours : **phase 1** (T1 fiches par source, T2 tablea
 - **Vague 1** : 82 URL (9 portails Opendatasoft, Webstat, BCE, SDES DiDo, SSMSI, élections, ONISR, Ademe, Citepa, OCDE, 18 séries Banque mondiale + WGI, OWID ×4, RSF, Transparency, Freedom House, V-Dem, WHR, EDGAR, GFN, PNUD, OMS, ONUDC).
 - **Constat** : le portail `naturefrance.fr` (ONB) est hors service ; une page de secours sur eaufrance.fr renvoie vers des fiches PDF hébergées sur Resana, sans date de reprise annoncée.
 
-## 2026-10-13 14:00 — Sous-tâche 2 : résultats des vagues 1 et 2 du robot (run Actions 38390822077 puis 38392712026)
+## 2026-10-13 13:55 — Sous-tâche 2 : résultats des vagues 1 et 2 du robot (run Actions 38390822077 puis 38392712026)
 
 - **Vague 1** : 74/82 URL renvoient des données. Échecs instructifs : `data.culture.gouv.fr` n'est plus un portail Opendatasoft (application `culture.data.gouv.fr`) ; Webstat `observations` n'existe pas sans compte (404) ; l'URL du CSV SSMSI relevée via WebFetch renvoyait 404 (constat de la vague 3 : le fichier avait été remplacé le 15/09/2026 et son URL horodatée avait changé) — leçon : utiliser le permalien de ressource data.gouv.fr ou relire l'API ; V-Dem n'a pas de lien direct (404, téléchargement par formulaire) ; GFN répond 403 sans clé ; l'URL ONUDC renvoie une page HTML (portail déplacé vers data.unodc.org).
 - **Vague 2** : 104 URL ; catalogues complets des 8 portails Opendatasoft extraits (DREES 265 jeux, DEPP 310, MESR 217, Odissé 388, Ameli 51, économie 617, ODRE 187, CNAF 210).
@@ -33,14 +33,21 @@ Périmètre du lancement en cours : **phase 1** (T1 fiches par source, T2 tablea
   - Géodes redirige vers Odissé (Santé publique France).
 - **Problèmes** : DARES refuse la connexion du robot (« Remote end closed connection ») ; le classeur CPI 2025 est un xlsx valide mais illisible par openpyxl en mode lecture seule (à traiter en phase de collecte).
 
-## 2026-10-13 14:20 — Sous-tâche 3 : vagues 3 et 4 du robot, fixtures (runs 38393724607 et 38394608567)
+## 2026-10-13 14:08 — Sous-tâche 3 : vagues 3 et 4 du robot, fixtures (runs 38393724607 et 38394608567)
 
 - **Vague 3** (113 URL) : fiches data.gouv.fr complètes (URL courantes des ressources), pièces jointes DREES, enregistrements Odissé / DEPP / Ameli, ITDD France entière (185 variables, colonnes annuelles A1982–A2025).
 - **Vague 4** (123 URL, consolidée : 114 données, 4 pages HTML, 5 erreurs) : **permalien data.gouv.fr vérifié** (`/fr/datasets/r/<id_ressource>` redirige vers le fichier courant) ; baromètre d'opinion DREES = **microdonnées pondérées 2000–2024 en CSV** (pièce jointe) ; EVSI DREES figée à 2018 ; base SSMSI : 88 419 lignes, 159 titres dont « Sentiment d'insécurité dans le quartier ou le village » (15 obs.), fichier encodé en Windows-1252.
 - **Fixtures** : 19 réponses réelles copiées dans `tests/fixtures/` (opendatasoft, banque_de_france, bce, sdes_dido, data_gouv, ademe, ocde, banque_mondiale, oms, hubeau, rsf, owid) avec leur provenance dans `tests/fixtures/provenance_m04.csv`. Pas de fixture OWID « grapher » brute (l'extrait conservé est filtré sur la France).
 - **Problèmes** : la description SDMX des flux How's Life ne nomme pas les sources (l'origine Gallup de certaines séries reste à confirmer dans le PDF de métadonnées OCDE) ; DARES toujours injoignable.
 
-## 2026-10-13 14:35 — Sous-tâche 4 : livrables T1 et T2
+## 2026-10-13 14:10 — Sous-tâche 4 : livrables T1 et T2
 
 - `docs/sources/autres_sources.md` (T1) : points d'entrée communs (Opendatasoft, data.gouv.fr, DiDo, SDMX), 12 fiches françaises, 5 fiches internationales (dont tableaux V-Dem/RSF/CPI/Freedom House/WJP et WHR/Gallup/Eurofound/ESS/Eurobaromètre), 15 sources découvertes, statut des 20 séries des prototypes, synthèse par dimension.
 - `docs/sources/10_sources_inventaire.csv` (T2) : 53 sources (niveau 1 : 20 ; niveau 2 : 18 ; exclu : 15 ; fiabilité : 40 `verifie`, 2 `probable`, 11 `non_verifie`) + 20 lignes « prototype: » (16 Banque mondiale, 4 OWID) avec statut et proposition.
+
+## 2026-10-13 14:13 — Sous-tâche 5 : relecture, dépôt dans le Projet, fin de la phase 1
+
+- Relecture des fiches : tableaux markdown contrôlés ; corrections (échelles RSF constatées dans les fichiers : 2013 exprimé en « plus haut = mieux » ; premières années OWID ; EVSI DREES figée à 2018 ; origine Gallup des séries OCDE marquée « à confirmer »).
+- Dépôt dans le Projet claude.ai : `claude/10_sources_hors_insee_eurostat.md` (contenu de `docs/sources/autres_sources.md`) et `claude/10_sources_inventaire.csv`.
+- Tout est commité et poussé sur `m04-sources`. **Phase 1 terminée ; arrêt en attente de la validation de Léo avant la phase 2 (T3).**
+- Note pour la suite : `scripts/collecte_sources.py` tournera aussi chaque mois si la branche est fusionnée dans `main` (veille des liens) ; à confirmer par la session mère.

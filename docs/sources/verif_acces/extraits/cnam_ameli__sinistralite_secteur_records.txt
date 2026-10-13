@@ -1,0 +1,41 @@
+# cnam_ameli / sinistralite_secteur_records
+# URL : https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1/records?limit=2
+# Vérifié le 2026-10-13T11:59:19Z — HTTP 200 — application/json; charset=utf-8 — 874 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 60480,
+ "results": [
+  {
+   "annee": "2005",
+   "risque": "Maladies professionnelles",
+   "code_naf1": "TOUS",
+   "libelle_naf1": "Tous secteurs confondus",
+   "naf1": "Tous secteurs confondus",
+   "code_naf5": "TOUS",
+   "libelle_naf5": "Tous secteurs confondus",
+   "naf5": "Tous secteurs confondus",
+   "nb_sinistres": "41182",
+   "nb_salaries": "18299350",
+   "indice_frequence": "NC",
+   "nb_sinistres_int": 41182,
+   "nb_salaries_int": 18299350,
+   "indice_frequence_int": null
+  },
+  {
+   "annee": "2005",
+   "risque": "Tous risques confondus",
+   "code_naf1": "TOUS",
+   "libelle_naf1": "Tous secteurs confondus",
+   "naf1": "Tous secteurs confondus",
+   "code_naf5": "TOUS",
+   "libelle_naf5": "Tous secteurs confondus",
+   "naf5": "Tous secteurs confondus",
+   "nb_sinistres": "823579",
+   "nb_salaries": "18299350",
+   "indice_frequence": "NC",
+   "nb_sinistres_int": 823579,
+   "nb_salaries_int": 18299350,
+   "indice_frequence_int": null
+  }
+ ]
+}

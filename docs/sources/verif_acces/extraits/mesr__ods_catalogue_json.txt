@@ -1,6 +1,6 @@
 # mesr / ods_catalogue_json
 # URL : https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T11:48:25Z — HTTP 200 — application/json; charset=utf-8 — 20527 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T11:57:08Z — HTTP 200 — application/json; charset=utf-8 — 31141 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 217,
@@ -9,237 +9,119 @@
    "visibility": "domain",
    "fields": [
     {
-     "name": "uai",
-     "description": null,
-     "annotations": {},
-     "label": "uai",
-     "type": "text",
-     "label_fr": "uai",
-     "label_en": "uai",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "libelle_court",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_court",
-     "type": "text",
-     "label_fr": "libelle_court",
-     "label_en": "libelle_court",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "libelle_long",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_long",
-     "type": "text",
-     "label_fr": "libelle_long",
-     "label_en": "libelle_long",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "statut_juridique_court",
+     "name": "code_cib_simplifie",
      "description": null,
      "annotations": {
       "facet": true,
-      "hierarchical": "/"
+      "facetsort": "count"
      },
-     "label": "statut_juridique_court",
+     "label": "Code cib simplifié",
      "type": "text",
-     "label_fr": "statut_juridique_court",
-     "label_en": "statut_juridique_court",
+     "label_fr": "Code cib simplifié",
+     "label_en": "Code cib simplifié",
      "description_fr": null,
      "description_en": null
     },
     {
-     "name": "adresse",
-     "description": null,
-     "annotations": {},
-     "label": "adresse",
-     "type": "text",
-     "label_fr": "adresse",
-     "label_en": "adresse",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "complement_adresse",
-     "description": null,
-     "annotations": {},
-     "label": "complement_adresse",
-     "type": "text",
-     "label_fr": "complement_adresse",
-     "label_en": "complement_adresse",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "code_postal",
-     "description": null,
-     "annotations": {},
-     "label": "code_postal",
-     "type": "text",
-     "label_fr": "code_postal",
-     "label_en": "code_postal",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "localite",
-     "description": null,
-     "annotations": {},
-     "label": "localite",
-     "type": "text",
-     "label_fr": "localite",
-     "label_en": "localite",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "geolocalisation",
-     "description": null,
-     "annotations": {},
-     "label": "geolocalisation",
-     "type": "geo_point_2d",
-     "label_fr": "geolocalisation",
-     "label_en": "geolocalisation",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "site_internet",
-     "description": null,
-     "annotations": {},
-     "label": "site_internet",
-     "type": "text",
-     "label_fr": "site_internet",
-     "label_en": "site_internet",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "compte_twitter",
-     "description": null,
-     "annotations": {},
-     "label": "compte_twitter",
-     "type": "text",
-     "label_fr": "compte_twitter",
-     "label_en": "compte_twitter",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "compte_facebook",
-     "description": null,
-     "annotations": {},
-     "label": "compte_facebook",
-     "type": "text",
-     "label_fr": "compte_facebook",
-     "label_en": "compte_facebook",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "compte_linkedin",
-     "description": null,
-     "annotations": {},
-     "label": "compte_linkedin",
-     "type": "text",
-     "label_fr": "compte_linkedin",
-     "label_en": "compte_linkedin",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "compte_googleplus",
-     "description": null,
-     "annotations": {},
-     "label": "compte_googleplus",
-     "type": "text",
-     "label_fr": "compte_googleplus",
-     "label_en": "compte_googleplus",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "compte_youtube",
-     "description": null,
-     "annotations": {},
-     "label": "compte_youtube",
-     "type": "text",
-     "label_fr": "compte_youtube",
-     "label_en": "compte_youtube",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "compte_dailymotion",
-     "description": null,
-     "annotations": {},
-     "label": "compte_dailymotion",
-     "type": "text",
-     "label_fr": "compte_dailymotion",
-     "label_en": "compte_dailymotion",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "identifiant_freebase",
-     "description": null,
-     "annotations": {},
-     "label": "identifiant_freebase",
-     "type": "text",
-     "label_fr": "identifiant_freebase",
-     "label_en": "identifiant_freebase",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "identifiant_wikidata",
-     "description": null,
-     "annotations": {},
-     "label": "identifiant_wikidata",
-     "type": "text",
-     "label_fr": "identifiant_wikidata",
-     "label_en": "identifiant_wikidata",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "statut_operateur_lolf",
+     "name": "domaines",
      "description": null,
      "annotations": {
-      "facet": true,
-      "hierarchical": "/"
+      "facet": true
      },
-     "label": "statut_operateur_lolf",
+     "label": "Domaines",
      "type": "text",
-     "label_fr": "statut_operateur_lolf",
-     "label_en": "statut_operateur_lolf",
+     "label_fr": "Domaines",
+     "label_en": "Domaines",
      "description_fr": null,
      "description_en": null
     },
     {
-     "name": "libelle_mission_chef_de_file",
-     "description": null,
-     "annotations": {},
-     "label": "libelle_mission_chef_de_file",
-     "type": "text",
-     "label_fr": "libelle_mission_chef_de_file",
-     "label_en": "libelle_mission_chef_de_file",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "identifiant_programme_lolf_chef_de_file",
+     "name": "sous_domaines",
      "description": null,
      "annotations": {
-      "facet": true,
-      "hierarchical": "/"
+      "facet": true
      },
-     "label": "identifiant_programme_lolf_chef_de_file",
-     
+     "label": "Sous-domaines",
+     "type": "text",
+     "label_fr": "Sous-domaines",
+     "label_en": "Sous-domaines",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "cib",
+     "description": null,
+     "annotations": {
+      "multivalued": ";",
+      "facet": true
+     },
+     "label": "Cib",
+     "type": "text",
+     "label_fr": "Cib",
+     "label_en": "Cib",
+     "description_fr": null,
+     "description_en": null
+    }
+   ],
+   "dataset_id": "fr-esr-nomenclature-simplifiee-codes-cib",
+   "dataset_uid": "da_y9k8q1",
+   "has_records": true,
+   "features": [
+    "analyze",
+    "custom_view"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "dcat": {
+     "created": "2017-02-01",
+     "issued": "2017-02-01",
+     "creator": "Ministère de l'Éducation nationale, de l'Enseignement supérieur et de la Recherche",
+     "contributor": "Département des outils d'aide à la décision - Institut National de la Propriété Intellectuelle",
+     "contact_name": null,
+     "contact_email": null,
+     "accrualperiodicity": "Annuelle",
+     "spatial": null,
+     "temporal": null,
+     "granularity": null,
+     "dataquality": null,
+     "publisher_type": null,
+     "conforms_to": null,
+     "temporal_coverage_start": null,
+     "temporal_coverage_end": null,
+     "accessRights": null,
+     "relation": null
+    },
+    "default": {
+     "title": "Nomenclature simplifiée codes CIB des brevets",
+     "title_fr": "Nomenclature simplifiée codes CIB des brevets",
+     "title_en": "Nomenclature simplifiée codes CIB des brevets",
+     "description": "<p>Chaque brevet contient des codes de la CIB (Classification internationale des brevets) attribués par l’office examinateur, qui indiquent selon une arborescence très détaillée le domaine technique auquel se rapporte l’invention : la CIB divise la technologie en huit sections comptant environ <strong style=\"font-family: inherit; background-color: initial;\">70 000</strong> subdivisions. C’est un système hiérarchique de symboles indépendants de la langue pour le classement des brevets selon les différents domaines technologiques auxquels ils appartiennent.Cette nomenclature étant difficile à utiliser, la classification technologique utilisée est la classification simplifiée établie par l’Organisation mondiale de la propriété intellectuelle (OMPI) qui regroupe les classes technologiques de la CIB en 5 domaines technologiques et 35 sous-domaines technologiques qui correspondent au domaine d’application de l’invention (et non au secteur d’activité économique).</p>",
+     "description_fr": "<p>Chaque brevet contient des codes de la CIB (Classification internationale des brevets) attribués par l’office examinateur, qui indiquent selon une arborescence très détaillée le domaine technique auquel se rapporte l’invention : la CIB divise la technologie en huit sections comptant environ <strong style=\"font-family: inherit; background-color: initial;\">70 000</strong> subdivisions. C’est un système hiérarchique de symboles indépendants de la langue pour le classement des brevets selon les différents domaines technologiques auxquels ils appartiennent.Cette nomenclature étant difficile à utiliser, la classification technologique utilisée est la classification simplifiée établie par l’Organisation mondiale de la propriété intellectuelle (OMPI) qui regroupe les classes technologiques de la CIB en 5 domaines technologiques et 35 sous-domaines technologiques qui correspondent au domaine d’application de l’invention (et non au secteur d’activité économique).</p>",
+     "description_en": "<p>Chaque brevet contient des codes de la CIB (Classification internationale des brevets) attribués par l’office examinateur, qui indiquent selon une arborescence très détaillée le domaine technique auquel se rapporte l’invention : la CIB divise la technologie en huit sections comptant environ <strong style=\"font-family: inherit; background-color: initial;\">70 000</strong> subdivisions. C’est un système hiérarchique de symboles indépendants de la langue pour le classement des brevets selon les différents domaines technologiques auxquels ils appartiennent.Cette nomenclature étant difficile à utiliser, la classification technologique utilisée est la classification simplifiée établie par l’Organisation mondiale de la propriété intellectuelle (OMPI) qui regroupe les classes technologiques de la CIB en 5 domaines technologiques et 35 sous-domaines technologiques qui correspondent au domaine d’application de l’invention (et non au secteur d’activité économique).</p>",
+     "theme": [
+      "Innovation",
+      "Propriété intellectuelle",
+      "Nomenclature, référentiel"
+     ],
+     "theme_fr": [
+      "Innovation",
+      "Propriété intellectuelle",
+      "Nomenclature, référentiel"
+     ],
+     "theme_en": [
+      "Innovation",
+      "Intellectual property",
+      "Nomenclature, reference system"
+     ],
+     "keyword": [
+      "Brevet",
+      "Patent",
+      "innovation",
+      "recherche publique",
+      "organismes de recherche",
+      "structures de recherche",
+      "régions 2016",
+      "recherche universitaire",
+ 

@@ -1,5 +1,252 @@
 # data_gouv / jeu_ssmsi_series_chrono
 # URL : https://www.data.gouv.fr/api/1/datasets/62b02e970a264df3467b6c42/
-# Vérifié le 2026-10-13T11:49:07Z — HTTP 200 — application/json — 13617 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T11:57:48Z — HTTP 200 — application/json — 13617 octets lus (taille annoncée : inconnue)
 
-0 correspondances distinctes du motif '"id"\\s*:\\s*"([0-9a-f-]{36})"[^{}]*?"title"\\s*:\\s*"([^"]+)"[^{}]*?"url"\\s*:\\s*"([^"]+)"' :
+{
+ "access_audiences": [],
+ "access_type": "open",
+ "access_type_reason": null,
+ "access_type_reason_category": null,
+ "acronym": "series_chrono",
+ "archived": null,
+ "authorization_request_url": null,
+ "badges": [],
+ "contact_points": [],
+ "created_at": "2022-06-20T10:23:51.920000+00:00",
+ "deleted": null,
+ "description": "La base des séries chronologiques du Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) référence plusieurs milliers d’indicateurs statistiques mensuels, trimestriels, annuels, nationaux, départementaux relatifs aux périmètres suivis par le service : crimes, délits, contraventions, taux de plainte, sentiment d’insécurité,… Pour chaque indicateur, outre ses valeurs, la base fournit des informations notamment sur sa source, sa périodicité, son unité de compte et sa définition complétée d’un lien vers une publication associée directement téléchargeable sur le site du [SSMSI](https://www.interieur.gouv.fr/Interstats/Publications). \n\nLes principaux périmètres suivis concerne les items suivants:\n_[1] \"Actes de vandalisme\"                                                            \n [2] \"Atteintes à caractère raciste, xénophobe ou antireligieux\"                      \n [3] \"Atteintes à l'environnement\"                                                    \n [4] \"Atteintes à la probité\"                                                         \n [5] \"Atteintes anti LGBT\"                                                            \n [6] \"Atteintes envers les animaux domestiques\"                                       \n [7] \"Cambriolages et tentatives\"                                                     \n [8] \"Dépôt de plainte (victime ou ménage victime ayant déclaré avoir déposé plainte)\"\n [9] \"Destructions et dégradations volontaires\"                                       \n[10] \"Escroqueries et les fraudes aux moyens de paiements\"                            \n[11] \"Homicides et tentatives d'homicide\"                                             \n[12] \"Infractions à la législation sur les stupéfiants\"                               \n[13] \"Infractions liées au numérique\"                                                 \n[14] \"Injures\"                                                                        \n[15] \"Menaces\"                                                                        \n[16] \"Outrages et violences contre dépositaires de l'autorité publique\"               \n[17] \"Outrages sexistes\"                                                              \n[18] \"Refus d’obtempérer\"                                                             \n[19] \"Sentiment d'insécurité\"                                                         \n[20] \"Traite et exploitation des êtres humains\"                                       \n[21] \"Violences conjugales\"                                                           \n[22] \"Violences physiques\"                                                            \n[23] \"Violences sexuelles\"                                                            \n[24] \"Vols et tentatives de vols avec violence\"                                       \n[25] \"Vols et tentatives de vols liés aux véhicules\"                                  \n[26] \"Vols et tentatives de vols sans violence\"                                       \n[27] \"Vols sans effraction de résidences principales\"_                                 \n\n\nLe SSMSI a créé une application de data visualisation de ces séries chronologiques directement accessible depuis l’onglet réutilisation associé à cette page, pour plus de détails sur cette application se rendre ici : [espace datavisualisation du SSMSI](https://www.interieur.gouv.fr/Interstats/Datavisualisation/Series-chronologiques-sur-la-delinquance-et-l-insecurite)\n\n**Mise à jour régulière.**",
+ "description_short": null,
+ "doi": null,
+ "extras": {},
+ "featured": false,
+ "frequency": "punctual",
+ "frequency_date": null,
+ "geopf": null,
+ "harvest": null,
+ "id": "62b02e970a264df3467b6c42",
+ "internal": {
+  "created_at_internal": "2022-06-20T10:23:51.920000+00:00",
+  "last_modified_internal": "2026-09-15T15:22:56.688000+00:00"
+ },
+ "last_modified": "2026-09-15T15:22:56.688000+00:00",
+ "last_update": "2026-09-15T15:22:56.688000+00:00",
+ "license": "lov2",
+ "metrics": {
+  "dataservices": 1,
+  "discussions": 0,
+  "discussions_open": 0,
+  "followers": 6,
+  "followers_by_months": {
+   "2024-08": 0,
+   "2024-09": 0,
+   "2024-10": 0,
+   "2024-11": 0,
+   "2024-12": 0,
+   "2025-01": 0,
+   "2025-02": 0,
+   "2025-03": 0,
+   "2025-04": 0,
+   "2025-05": 0,
+   "2025-06": 0,
+   "2025-07": 0,
+   "2025-08": 0
+  },
+  "resources_downloads": 9405,
+  "reuses": 5,
+  "reuses_by_months": {
+   "2025-08": 0,
+   "2025-09": 0,
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 0,
+   "2026-01": 0,
+   "2026-02": 0,
+   "2026-03": 1,
+   "2026-04": 0,
+   "2026-05": 1,
+   "2026-06": 0,
+   "2026-07": 1,
+   "2026-08": 1
+  },
+  "views": 40695
+ },
+ "organization": {
+  "acronym": "MI",
+  "badges": [
+   {
+    "kind": "public-service"
+   },
+   {
+    "kind": "certified"
+   }
+  ],
+  "class": "Organization",
+  "id": "534fff91a3a7292c64a77f53",
+  "logo": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/e1/27853c13394328b06c071c7953856a.jpg",
+  "logo_thumbnail": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/e1/27853c13394328b06c071c7953856a-100.jpg",
+  "name": "Ministère de l'intérieur",
+  "page": "https://www.data.gouv.fr/organizations/ministere-de-linterieur",
+  "permissions": {
+   "delete": false,
+   "edit": false,
+   "harvest": false,
+   "members": false,
+   "private": false
+  },
+  "slug": "ministere-de-linterieur",
+  "uri": "https://www.data.gouv.fr/api/1/organizations/ministere-de-linterieur/"
+ },
+ "owner": null,
+ "page": "https://www.data.gouv.fr/datasets/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques",
+ "permissions": {
+  "delete": false,
+  "edit": false,
+  "edit_resources": false
+ },
+ "private": false,
+ "quality": {
+  "all_resources_available": true,
+  "dataset_description_quality": true,
+  "has_open_format": true,
+  "has_resources": true,
+  "license": true,
+  "resources_documentation": true,
+  "score": 1.0,
+  "spatial": true,
+  "temporal_coverage": true,
+  "update_frequency": true,
+  "update_fulfilled_in_time": true
+ },
+ "resources": [
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "f172f5de9c867077a260ac93d5d11c27f7e04cb2"
+   },
+   "created_at": "2024-02-12T17:15:25.261000+00:00",
+   "description": "La base des séries chronologiques du Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) référence plusieurs milliers d’indicateurs statistiques mensuels, trimestriels, annuels, nationaux, départementaux relatifs aux périmètres suivis par le service : crimes, délits, contraventions, taux de plainte, sentiment d’insécurité,… Pour chaque indicateur, outre ses valeurs, la base fournit des informations notamment sur sa source, sa périodicité, son unité de compte et sa définition complétée d’un lien vers une publication associée directement téléchargeable sur le site du [SSMSI](https://www.interieur.gouv.fr/Interstats/Publications).\n\n**Ouverture du fichier avec le logiciel R** (exemple d’instruction):\nlibrary(arrow)\ndir=chemin vers le stockage du fichier parquet\ndt=read_parquet(paste0(dir,\" series_chrono_2024-01-08.parquet\"))\n\n**Ouverture du fichier avec le logiciel Python** (exemple d’instruction):\nimport pandas as pd\nparquet.file=\"chemin\\series_chrono_2024-01-08.parquet\"\npd.read_parquet(parquet_file,engine='pyarrow')\n\n**Ouverture du fichier avec Visual Studio Code** :\nInstaller l’extension parquet-viewer et glisser/déposer le fichier parquet directement dans Visual Studio Code\n",
+   "extras": {
+    "analysis:check_id": 53412579,
+    "analysis:checksum": "f172f5de9c867077a260ac93d5d11c27f7e04cb2",
+    "analysis:content-length": 365722,
+    "analysis:last-modified-at": "2026-09-15T15:22:17+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/octet-stream",
+    "analysis:parsing:error": "copy_records_to_table:'header_row_idx'",
+    "analysis:parsing:finished_at": "2026-08-10T15:11:04.207730+00:00",
+    "analysis:parsing:started_at": "2026-08-10T15:11:02.520169+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-09-15T15:22:20.930317+00:00",
+    "check:headers:content-length": 365722,
+    "check:headers:content-type": "application/octet-stream",
+    "check:id": 53412579,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 365722,
+   "filetype": "file",
+   "format": "parquet",
+   "geopf": null,
+   "harvest": null,
+   "id": "8e1ba8e5-8b5c-46b5-b867-79bfac1b325c",
+   "internal": {
+    "created_at_internal": "2024-02-12T17:15:25.261000+00:00",
+    "last_modified_internal": "2026-09-15T15:22:18.064000+00:00"
+   },
+   "last_modified": "2026-09-15T15:22:18.064000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/8e1ba8e5-8b5c-46b5-b867-79bfac1b325c",
+   "metrics": {
+    "views": 2204
+   },
+   "mime": "application/vnd.apache.parquet",
+   "preview_url": null,
+   "schema": null,
+   "title": "Base des séries chronologiques du SSMSI (fichier parquet)",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20260915-152217/serieschrono-datagouv.parquet"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "1a1ce80920293aab4124f86f8a0c1816fc9ded74"
+   },
+   "created_at": "2023-07-12T08:44:25.705000+00:00",
+   "description": "La base des séries chronologiques du Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) référence plusieurs milliers d’indicateurs statistiques mensuels, trimestriels, annuels, nationaux, départementaux relatifs aux périmètres suivis par le service : crimes, délits, contraventions, taux de plainte, sentiment d’insécurité,… Pour chaque indicateur, outre ses valeurs, la base fournit des informations notamment sur sa source, sa périodicité, son unité de compte et sa définition complétée d’un lien vers une publication associée directement téléchargeable sur le site du [SSMSI](https://www.interieur.gouv.fr/Interstats/Publications).",
+   "extras": {
+    "analysis:check_id": 53412609,
+    "analysis:checksum": "1a1ce80920293aab4124f86f8a0c1816fc9ded74",
+    "analysis:content-length": 24636942,
+    "analysis:last-modified-at": "2026-09-15T15:22:56+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-09-15T15:23:05.772541+00:00",
+    "analysis:parsing:parquet_size": 315518,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/631cff69-f0da-4890-b4fc-97aeada1476f.parquet",
+    "analysis:parsing:parsing_table": "b5a201c5ed509773091df8ef46cfd455",
+    "analysis:parsing:started_at": "2026-09-15T15:23:04.658349+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-23T04:55:05.630000",
+    "check:headers:content-type": "text/csv",
+    "check:id": 42289253,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 24636942,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "631cff69-f0da-4890-b4fc-97aeada1476f",
+   "internal": {
+    "created_at_internal": "2023-07-12T08:44:25.705000+00:00",
+    "last_modified_internal": "2026-09-15T15:22:56.688000+00:00"
+   },
+   "last_modified": "2026-09-15T15:22:56.688000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f",
+   "metrics": {
+    "views": 7013
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/631cff69-f0da-4890-b4fc-97aeada1476f",
+   "schema": null,
+   "title": "serieschrono-datagouv.csv",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20260915-152254/serieschrono-datagouv.csv"
+  }
+ ],
+ "schema": null,
+ "slug": "service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques",
+ "spatial": {
+  "geom": null,
+  "granularity": "country",
+  "zones": [
+   "country:fr"
+  ]
+ },
+ "tags": [
+  "base",
+  "crimes",
+  "crimes-et-delits",
+  "securite",
+  "statistiques",
+  "victime"
+ ],
+ "temporal_coverage": {
+  "end": "2023-12-31",
+  "start": "2006-01-01"
+ },
+ "title": "Service statistique ministériel de la sécurité intérieure – Base des séries chronologiques",
+ "uri": "https://www.data.gouv.fr/api/1/datasets/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/"
+}

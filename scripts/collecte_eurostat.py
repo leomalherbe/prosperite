@@ -46,7 +46,8 @@ from src.sources import eurostat as es  # noqa: E402
 #: Versions des étapes : augmenter une version fait refaire l'étape au passage suivant.
 #: v2 (13/10) : tableaux ODD inclus, racine principale par titre, icd10 en contenu, ind_type en ventilation,
 #: colonnes allégées, remplacements vérifiés dans l'amorce.
-ETAPES = {"echantillons": 1, "amorce": 2, "niveau1": 2, "niveau2": 2}
+#: v3 niveau 1 (13/10) : exclusion des jeux hors France (voisinage, candidats) et des projections, mots-clés affinés.
+ETAPES = {"echantillons": 1, "amorce": 2, "niveau1": 3, "niveau2": 2}
 
 DUREE_MAX = float(os.environ.get("EUROSTAT_DUREE_MAX_MINUTES", "270")) * 60
 NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "0") or 0)
@@ -347,6 +348,8 @@ def etape_niveau1(etat: dict) -> None:
     }
     journal("  " + json.dumps(bilan, ensure_ascii=False))
     etat["etapes"]["niveau1"] = {"version": ETAPES["niveau1"], "termine": True, "date": maintenant(), "bilan": bilan}
+    if "niveau2" in etat["etapes"]:  # nouveaux candidats à traiter, anciens à retirer
+        etat["etapes"]["niveau2"]["termine"] = False
     ecrire_etat(etat)
 
 

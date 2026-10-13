@@ -27,6 +27,11 @@ from src.sources.eurostat import DimensionJsonStat, JeuJsonStat, StructureJeu
 ANNEE_MIN = 2000          # profondeur temporelle (charte §2)
 ANNEE_FIN_MIN = 2020      # dernière valeur ≥ 2020 (charte §3.4, fiche M02)
 ANNEE_DEBUT_MAX = 2010    # filtre de la fiche M02 sur le début des données
+ANNEE_FIN_MAX = 2027      # au-delà : projections (données futures), non candidates
+
+#: Jeux sans la France par construction (pays du voisinage, candidats, hors UE) : préfixes et dossiers.
+PREFIXES_HORS_FRANCE = ("enps_", "enpe_", "enpr_", "cpc_", "med_", "enlr_")
+DOSSIERS_HORS_FRANCE = ("Non EU countries",)
 NB_ANNEES_MIN = 10        # au moins 10 points depuis 2000 (charte §3.4)
 
 DIMENSIONS_V0 = [
@@ -127,12 +132,12 @@ MOTS_CLES = {
         r"in-work", r"labour status", r"health and safety at work", r"work accident", r"overtime", r"commut",
         r"emploi", r"chomage", r"chomeur", r"marche du travail", r"population active", r"travailleur", r"salaire",
         r"remuneration", r"gains", r"temps partiel", r"contrat temporaire", r"accidents? du travail", r"inactifs?",
-        r"taux d'activite", r"heures (travaillees|de travail)",
+        r"taux d'activite", r"heures (travaillees|de travail)", r"intensite de travail",
     ],
     "logement_cadre_vie": [
-        r"housing", r"dwelling", r"overcrowd", r"rooms?\b", r"accommodation", r"\brent", r"mortgage", r"keep (the )?home",
+        r"housing", r"dwelling", r"overcrowd", r"rooms?\b", r"\brent", r"mortgage", r"keep (the )?home",
         r"warm", r"heating", r"energy poverty", r"noise", r"neighbourhood", r"green (space|area)", r"leaking roof",
-        r"damp", r"bath or shower", r"toilet", r"tenure", r"homeless", r"passenger transport", r"modal split",
+        r"damp", r"bath or shower", r"toilet", r"tenure", r"homeless", r"modal split",
         r"public transport", r"mobility", r"access to (services|public)", r"urban", r"living environment",
         r"logement", r"surpeuplement", r"pieces?\b", r"loyer", r"chauff", r"precarite energetique", r"bruit",
         r"quartier", r"espaces? verts?", r"transport de (voyageurs|passagers)", r"transports? (publics?|en commun)",
@@ -151,10 +156,10 @@ MOTS_CLES = {
     "education": [
         r"education", r"educational", r"school", r"pupil", r"student", r"tertiary", r"early leavers", r"training",
         r"learning", r"skills", r"literacy", r"pisa\b", r"enrol", r"graduat", r"teacher", r"digital skills", r"internet",
-        r"\bict\b", r"e-skills", r"culture", r"cultural", r"museum", r"reading", r"\bbooks?\b", r"language", r"lifelong",
+        r"\bict\b", r"e-skills", r"cultural", r"museum", r"reading", r"\bbooks?\b", r"language", r"lifelong",
         r"vocational", r"apprentic", r"isced", r"computer",
         r"education", r"enseignement", r"ecole", r"eleve", r"etudiant", r"superieur", r"sortie precoce",
-        r"jeunes ayant quitte", r"formation", r"apprentissage", r"competence", r"scolari", r"diplome", r"culture",
+        r"jeunes ayant quitte", r"formation", r"apprentissage", r"competence", r"scolari", r"diplome",
         r"culturel", r"musee", r"lecture", r"langue", r"internet", r"ordinateur", r"numerique",
     ],
     "liens_bien_etre": [
@@ -162,9 +167,9 @@ MOTS_CLES = {
         r"social participation", r"social (relations|life|activities|support)", r"personal relationships",
         r"someone to (rely|ask|discuss)", r"lonel", r"leisure", r"time use", r"free time", r"volunt", r"meaning",
         r"worthwhile", r"feeling", r"work-life", r"friends", r"relatives", r"participation in (formal|informal|cultural|sport)",
-        r"emotional", r"tension", r"sport",
+        r"emotional", r"tension",
         r"satisfaction", r"bien-etre", r"qualite de vie", r"participation sociale", r"relations", r"soutien",
-        r"solitude", r"seul", r"loisirs", r"temps libre", r"benevol", r"emploi du temps", r"amis", r"sens de la vie",
+        r"solitude", r"vivant seul", r"personnes seules", r"loisirs", r"temps libre", r"benevol", r"emploi du temps", r"amis", r"sens de la vie",
     ],
     "securite_confiance": [
         r"crime", r"criminal", r"offence", r"homicide", r"violen", r"assault", r"robber", r"burglar", r"theft",
@@ -177,11 +182,11 @@ MOTS_CLES = {
     ],
     "democratie": [
         r"trust in (the )?(political|legal|police|institutions|parliament|government)", r"political", r"election",
-        r"voting", r"\bvoter?s?\b", r"parliament", r"government", r"corruption", r"justice", r"judicial", r"courts?\b",
-        r"civic", r"citizens' (participation|engagement)", r"seats", r"public authorities", r"e-government",
+        r"voting", r"\bvoter?s?\b", r"parliament", r"corruption", r"justice", r"judicial", r"courts?\b",
+        r"civic", r"citizens' (participation|engagement)", r"seats held", r"public authorities", r"e-government",
         r"rule of law", r"decision-making", r"governance",
-        r"politique", r"election", r"\bvote\b", r"parlement", r"gouvernement", r"corruption", r"justice", r"judiciaire",
-        r"tribunaux", r"citoyen", r"sieges", r"pouvoirs publics", r"administration en ligne", r"gouvernance",
+        r"politique", r"election", r"\bvote\b", r"parlement", r"corruption", r"justice", r"judiciaire",
+        r"tribunaux", r"sieges (detenus|occupes)", r"pouvoirs publics", r"administration en ligne", r"gouvernance",
     ],
     "egalites": [
         r"inequalit", r"gender", r"pay gap", r"employment gap", r"\bgaps?\b", r"quintile share", r"s80/s20",
@@ -200,7 +205,7 @@ MOTS_CLES = {
         r"protected area", r"forest", r"land (use|cover|take|area)", r"\bsoil", r"erosion", r"sealing", r"artificial",
         r"water", r"freshwater", r"bathing", r"marine", r"fish", r"organic", r"environment", r"energy", r"renewable",
         r"fossil", r"electricity", r"fuel", r"footprint", r"ecosystem", r"drought", r"wildfire", r"eco-", r"nuclear",
-        r"agri-environment", r"fertili", r"livestock", r"heat pump", r"vehicles?\b.*(emission|co2)",
+        r"agri-environment", r"fertilis", r"fertiliz", r"livestock", r"heat pump", r"vehicles?\b.*(emission|co2)",
         r"emissions?", r"effet de serre", r"carbone", r"climat", r"polluant", r"pollution", r"particules", r"azote",
         r"ammoniac", r"phosphore", r"pesticide", r"dechets", r"recyclage", r"circulaire", r"matieres", r"biodiversite",
         r"oiseaux", r"especes", r"habitats?", r"aires protegees", r"forets?", r"\bsols?\b", r"erosion", r"impermeabil",
@@ -226,7 +231,7 @@ ODD_DIMENSION = {
 DOSSIER_DIMENSION = {
     "qualite_de_vie": "liens_bien_etre", "revenus_conditions_de_vie": "niveau_de_vie", "marche_du_travail": "travail",
     "sante": "sante", "education_formation": "education", "criminalite": "securite_confiance",
-    "environnement": "planete", "energie": "planete", "comptes_nationaux": "niveau_de_vie", "population": "sante",
+    "environnement": "planete", "energie": "planete", "comptes_nationaux": "niveau_de_vie",
     "numerique": "education", "culture": "education", "securite_transports": "securite_confiance",
 }
 
@@ -346,7 +351,13 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
         etiquette = etiqueter(code, p["titre"], titre_fr, p["theme_source"], dossier, tous_chemins)
         filtre, rattrapable = filtre_dates(p["debut"], p["fin"], frequence)
         pertinent = bool(dossier) or etiquette.methode == "mots-clés"
-        if type_ == "table" and not code.lower().startswith("sdg_"):
+        hors_france = code.lower().startswith(PREFIXES_HORS_FRANCE) or any(
+            f" > {d}" in " > " + tous_chemins or tous_chemins.startswith(d) for d in DOSSIERS_HORS_FRANCE)
+        if hors_france:
+            candidat, motif = "non", "pays hors UE (voisinage, candidats) : pas de France par construction"
+        elif (annee(p["fin"]) or 0) > ANNEE_FIN_MAX:
+            candidat, motif = "non", f"projections (données jusqu'en {annee(p['fin'])})"
+        elif type_ == "table" and not code.lower().startswith("sdg_"):
             parent = p.get("parent", "")
             sous_jeu = types_parents.get(parent) == "dataset"
             candidat, motif = "non", ("tableau rangé sous le jeu " + parent if sous_jeu else "tableau (vue prédéfinie) : filtre type = dataset")

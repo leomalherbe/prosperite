@@ -426,6 +426,26 @@ def test_catalogue_sur_toc_reel(toc_en):
     assert c.loc["hlth_silc_10", "dossier_prioritaire"] == "sante"  # le préfixe du code prime sur le dossier QoL
 
 
+def test_exclusions_hors_france_et_projections():
+    toc = pd.DataFrame([
+        {"code": "enps_demo_pjan", "titre": "Population on 1 January - ENP-South countries", "type": "dataset", "profondeur": 3,
+         "theme_source": "Database by themes > General and regional statistics > Non EU countries", "theme_codes": "data > general > noneu",
+         "parent": "", "derniere_maj": "", "derniere_modif_structure": "", "debut": "2005", "fin": "2024", "nb_valeurs": 1},
+        {"code": "proj_23np", "titre": "Population on 1st January by age, sex and type of projection", "type": "dataset", "profondeur": 3,
+         "theme_source": "Database by themes > Population and social conditions > Population projections", "theme_codes": "data > popul > proj",
+         "parent": "", "derniere_maj": "", "derniere_modif_structure": "", "debut": "2022", "fin": "2100", "nb_valeurs": 1},
+    ])
+    c = cat.construire_catalogue_jeux(toc).set_index("code_jeu")
+    assert c.loc["enps_demo_pjan", "candidat"] == "non" and c.loc["enps_demo_pjan", "motif_candidat"].startswith("pays hors UE")
+    assert c.loc["proj_23np", "candidat"] == "non" and c.loc["proj_23np", "motif_candidat"].startswith("projections")
+
+
+def test_faux_amis_mots_cles():
+    # « cultures » (récoltes) ne relève pas de la culture ; « fertility » n'est pas « fertiliser »
+    assert cat.etiqueter("ef_fsi_cdiv", "Crop diversity", "Diversité des cultures", "", "").dimension != "education"
+    assert cat.etiqueter("demo_find", "Fertility indicators", "Indicateurs de fécondité", "", "").dimension != "planete"
+
+
 def test_bilan_dossiers():
     toc = _toc_synthetique()
     catalogue = cat.construire_catalogue_jeux(toc)

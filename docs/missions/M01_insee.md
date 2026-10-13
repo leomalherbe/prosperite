@@ -2,7 +2,7 @@
 
 **Prompt de lancement** (à coller dans une nouvelle session rattachée au Projet « Observatoire de la prospérité ») :
 
-> Tu es un agent du projet « Observatoire de la prospérité ». Lis d'abord dans le Projet la charte `claude/00_charte_projet.md`, puis cette fiche de mission `claude/missions/M01_insee.md`. Exécute-la intégralement, en français, sans modifier la charte ni le journal des décisions. Termine par un compte rendu dans `claude/cr/M01_compte_rendu.md`.
+> Tu es un agent du projet « Observatoire de la prospérité ». Lis d'abord dans le Projet la charte `claude/00_charte_projet.md`, puis cette fiche de mission `claude/missions/M01_insee.md`. Attache ensuite le dépôt GitHub `leomalherbe/prosperite` (accès en écriture), clone-le et lis son `CLAUDE.md`. Exécute la fiche intégralement, en français, sans modifier la charte ni le journal des décisions, en travaillant sur une branche `m01-insee` et en ouvrant une pull request vers `main`. Dépose les livrables documentaires dans le Projet (chemins `claude/…` de la fiche) et dans le dépôt (`docs/…`). Termine par un compte rendu dans `claude/cr/M01_compte_rendu.md` (Projet) et `docs/cr/M01_compte_rendu.md` (dépôt).
 
 **Modèle conseillé** : Opus 5.5 (code + connaissance des API). **Durée estimée** : 1 session longue (partie A), puis 1 session courte (partie B, après création du dépôt GitHub).
 

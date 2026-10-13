@@ -2,7 +2,7 @@
 
 **Prompt de lancement** (à coller dans une nouvelle session rattachée au Projet « Observatoire de la prospérité ») :
 
-> Tu es un agent du projet « Observatoire de la prospérité ». Lis d'abord dans le Projet la charte `claude/00_charte_projet.md`, puis cette fiche de mission `claude/missions/M02_eurostat.md`. Exécute-la intégralement, en français, sans modifier la charte ni le journal des décisions. Termine par un compte rendu dans `claude/cr/M02_compte_rendu.md`.
+> Tu es un agent du projet « Observatoire de la prospérité ». Lis d'abord dans le Projet la charte `claude/00_charte_projet.md`, puis cette fiche de mission `claude/missions/M02_eurostat.md`. Attache ensuite le dépôt GitHub `leomalherbe/prosperite` (accès en écriture), clone-le et lis son `CLAUDE.md`. Exécute la fiche intégralement, en français, sans modifier la charte ni le journal des décisions, en travaillant sur une branche `m02-eurostat` et en ouvrant une pull request vers `main`. Dépose les livrables documentaires dans le Projet (chemins `claude/…` de la fiche) et dans le dépôt (`docs/…`). Termine par un compte rendu dans `claude/cr/M02_compte_rendu.md` (Projet) et `docs/cr/M02_compte_rendu.md` (dépôt).
 
 **Modèle conseillé** : Opus 5.5. **Durée estimée** : 1 session longue (partie A), 1 session courte (partie B).
 

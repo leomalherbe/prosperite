@@ -1,0 +1,448 @@
+# banque_mondiale / wgi_GOV_WGI_GE.EST
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_GE.EST?source=3&format=json&per_page=100
+# Vérifié le 2026-10-13T11:50:17Z — HTTP 200 — application/json;charset=utf-8 — 6866 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 27,
+  "sourceid": "3",
+  "lastupdated": "2026-09-25"
+ },
+ [
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": 1.2114339,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": 1.2039741,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": 1.3720902,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": 1.3924355,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 1.4128698,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 1.366778,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 1.4144212,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 1.4342986,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 1.3383594,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": 1.341528,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 1.3765464,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 1.3686277,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 1.3674315,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 1.4273702,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 1.3834002,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 1.3529818,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 1.460584,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 1.5344921,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 1.5602399,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 1.5012664,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 1.7461623,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 1.5784227,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 1.6521559,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 1.5779695,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 1.6837123,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 1.5058382,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_GE.EST",
+    "value": "Government Effectiveness - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 1.5712502,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  }
+ ]
+]

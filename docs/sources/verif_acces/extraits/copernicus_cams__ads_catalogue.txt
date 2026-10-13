@@ -1,0 +1,89 @@
+# copernicus_cams / ads_catalogue
+# URL : https://ads.atmosphere.copernicus.eu/api/catalogue/v1/collections
+# Vérifié le 2026-10-13T11:51:30Z — HTTP 200 — application/json — 54044 octets lus (taille annoncée : 10981)
+
+{
+ "collections": [
+  {
+   "type": "Collection",
+   "id": "cams-global-greenhouse-gas-forecasts",
+   "stac_version": "1.1.0",
+   "title": "CAMS global greenhouse gas forecasts",
+   "description": "CAMS produces global forecasts for the two main long-lived greenhouse gases once a day. This dataset consists of 5-day high-resolution forecasts of carbon dioxide (CO2) and methane (CH4). Additionally, carbon monoxide (CO) and meteorological parameters relevant to the CAMS greenhouse gas forecast are included.\nThe initial conditions of each forecast are obtained by combining a previous forecast with current satellite observations through a process called data assimilation. This best estimate of the state of the atmosphere at the initial forecast time step, called the analysis, provides a globally complete and consistent dataset allowing for estimates at locations where observation data coverage is low.\nThe analysis has a resolution of approximately 25km and it is produced 4 days behind real-time due to the current latency of satellite retrievals of CO2 and CH4. As this analysis of greenhouse gases is not available close to real time, it is not provided. Instead, the high-resolution forecast with a resolution of approximately 9km is run a few hours behind real time, with initial conditions based on a 4-day forecast of the analysis experiment. Additionally, because some meteorological fields in the forecast do not fall within the general CAMS data licence, they are only available with a delay of 5 days.\nThe forecast itself uses a model of the atmosphere based on the laws of physics and prescribed chemical loss rates or simplified chemistry to determine the evolution of the concentrations of all species over time for the next five days. Apart from the required initial state, it also uses inventory-based, observation-based and modelled emission estimates as a boundary condition at the surface.\nThe CAMS global forecasting system is upgraded about once a year resulting in technical and scientific changes. The horizontal or vertical resolution can change, new species can be added, and more generally the accuracy of the forecasts can be improved. Details of these system changes can be found in the documentation.\nUsers looking for a more consistent long term data set should consider using the CAMS greenhouse gas reanalysis instead, which is available through the Atmosphere Data Store (ADS) and spans the period from 2003 onwards, or the CAMS global inversion-optimised greenhouse gas fluxes and concentrations which provides a longer dataset that is suitable for trend analysis and also available through the ADS.",
+   "summaries": {},
+   "providers": [
+    {
+     "name": "ECMWF"
+    }
+   ],
+   "keywords": [
+    "Variable domain: Atmosphere (composition)",
+    "Spatial coverage: Global",
+    "Parameter family: Greenhouse gas",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future",
+    "Product type: Forecast"
+   ],
+   "license": "CC-BY-4.0",
+   "extent": {
+    "spatial": {
+     "bbox": [
+      [
+       0.0,
+       -89.0,
+       360.0,
+       89.0
+      ]
+     ]
+    },
+    "temporal": {
+     "interval": [
+      [
+       "2024-03-01T00:00:00+00:00",
+       "2026-10-12T00:00:00+00:00"
+      ]
+     ]
+    }
+   },
+   "links": [
+    {
+     "rel": "self",
+     "type": "application/json",
+     "href": "https://ads.atmosphere.copernicus.eu/api/catalogue/v1/collections/cams-global-greenhouse-gas-forecasts"
+    },
+    {
+     "rel": "parent",
+     "type": "application/json",
+     "href": "https://ads.atmosphere.copernicus.eu/api/catalogue/v1/"
+    },
+    {
+     "rel": "root",
+     "type": "application/json",
+     "href": "https://ads.atmosphere.copernicus.eu/api/catalogue/v1/"
+    }
+   ],
+   "assets": {
+    "thumbnail": {
+     "href": "https://object-store.os-api.cci2.ecmwf.int:443/cci2-prod-catalogue/resources/cams-global-greenhouse-gas-forecasts/overview_0529b16a644b49da937a6fb6b25e3f2467e9fb8273fcb6ea7ff03c0d6423a91d.png",
+     "type": "image/jpg",
+     "roles": [
+      "thumbnail"
+     ]
+    }
+   },
+   "published": "2024-10-21T00:00:00Z",
+   "updated": "2026-10-13T00:00:00Z",
+   "sci:doi": "10.24381/93910310",
+   "cads:disabled_reason": null,
+   "cads:sanity_check": {
+    "status": "available",
+    "timestamp": "2026-10-13T11:16:39.763341+00:00"
+   },
+   "cads:fair": 92
+  },
+  {
+   "type": "Collection",
+   "id": "cams-global-greenhouse-gas-inversion",
+   "stac_version": "1.1.0",
+   "title": "CAMS global inversion-optimised greenhouse gas fluxes and concentrations",
+   "description": "This data set contains net fluxes at the surface, atmospheric mixing ratios at model levels, and column-mean atmospheric mixing ratios  for carbon dioxide (CO2), methane (CH4) and nitrous oxide (N20).\nNatural and anthropogenic surface fluxes of greenhouse gases are key drivers of the evolution of Earth’s climate, so their monitoring is essential. Such information has been used in particular as part of the Assessment Reports of the Intergovernmental Panel on Climate Change (IPCC). Ground-based and satellite remote-sensing observations provide a means to quantifying the net fluxes between the land and ocean on the one hand and the atmosphere on the other hand. This is done through a process called atmospheric inversion, which uses transport models of the atmosphere to link the observed concentrations of CO2, CH4 and N2O to the net fluxes at the Earth's surface. By correctly modelling the winds, vertical diffusion, and convection in the global atmosphere, the observed concentrations of the greenhouse gases are used to infer the surface fluxes for the last few decades. For CH4 and N2O, the flux inversions account also for the chemical loss of these greenhouse gases. The net fluxes include contributions from the natural biosphere (e.g., vegetation, wetlands) as well anthropogenic contributions (e.g., fossil fuel emissions, rice fields).\nThe data sets for the three species are updated once or three times per year adding the 

@@ -1,0 +1,11 @@
+# sdes / dido_datasets_structure
+# URL : https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datasets?page=1&pageSize=1
+# Vérifié le 2026-10-13T11:48:58Z — HTTP 400 — application/json; charset=utf-8 — 177 octets lus (taille annoncée : 177)
+
+{
+ "code": 400,
+ "message": "Erreur de validation",
+ "errors": [
+  "Le champ \"pageSize\" est requis et doit avoir une des valeurs autorisées (all, 10, 20, 50, 100)"
+ ]
+}

@@ -1,0 +1,36 @@
+type,group,grpCode,domain,dimension,indicator,indCode,valueStart,ratioStart,valueEnd,ratioEnd,diff,betterWorse,slope,stdErrorSlope,pValSlope,adjr2,t,slopeD
+global doughnut,World,WLD,ecological,climate change,co2_ppm,CC1,369.765,0.282,415.885,0.941,0.659,worsening,0.031,3.80E-04,0,0.9968,28,-0.034
+global doughnut,World,WLD,ecological,climate change,erf_wm2,CC2,1.784,0.784,2.832,1.832,1.048,worsening,0.055,0.00225,0,0.9646,28,-0.065
+global doughnut,World,WLD,ecological,ocean acidification,omega_a,OA1,2.986,-0.341,2.795,-0.064,0.277,worsening,0.013,4.00E-04,0,0.9786,28,0.002
+global doughnut,World,WLD,ecological,chemical pollution,chemicalsMt_Hzd,CP1,932.911,14.549,1964.173,31.736,17.188,worsening,0.818,0,0,1,28,-1.133
+global doughnut,World,WLD,ecological,nutrient pollution,phosphorusMt,NP1,13.821,1.229,23.121,2.729,1.5,worsening,0.071,8.70E-04,0,0.9967,28,-0.097
+global doughnut,World,WLD,ecological,nutrient pollution,nitrogenMt,NP2,133.588,1.155,193.156,2.115,0.961,worsening,0.046,1.70E-04,0,0.9997,28,-0.076
+global doughnut,World,WLD,ecological,air pollution,interhemAOD,AP1,0.08,-0.286,0.08,-0.286,0,improving,0,0,0.09793,0.499,28,0.01
+global doughnut,World,WLD,ecological,freshwater disruption,blueDev,FD1,18.233,0.788,18.596,0.823,0.036,worsening,-0.007,0.01959,0.7397,-0.2116,28,-0.029
+global doughnut,World,WLD,ecological,freshwater disruption,soilDev,FD2,15.902,0.433,19.253,0.735,0.302,worsening,0.025,0.00318,0,0.8157,28,-0.026
+global doughnut,World,WLD,ecological,land conversion,forestAreaMKM2,LC1,39.183,0.546,38.2,0.607,0.062,worsening,0.003,2.00E-05,0,0.9994,28,-0.022
+global doughnut,World,WLD,ecological,biodiversity breakdown,extinction1900,BB1,100,9,100,9,0,improving,0,0,NA,NA,28,-0.321
+global doughnut,World,WLD,ecological,biodiversity breakdown,hanppGtC,BB2,14.655,1.622,16.965,2.035,0.413,worsening,0.02,0,0,1,28,-0.073
+global doughnut,World,WLD,ecological,ozone depletion,totalOzone,OD1,283.056,-0.504,283.398,-0.528,-0.024,improving,0.001,0.00663,0.93935,-0.0497,28,0.019
+global doughnut,World,WLD,social,food,undernourishment,NU1,13.113,0.131,9.53,0.095,-0.036,improving,-0.002,3.60E-04,0,0.6666,8,-0.012
+global doughnut,World,WLD,social,food,foodInsecurity,NU2,22.689,0.227,29.118,0.291,0.064,worsening,0.011,9.40E-04,3.00E-05,0.9483,8,-0.036
+global doughnut,World,WLD,social,health,under5death,HE1,75.145,0.751,42.469,0.425,-0.327,improving,-0.014,0.00235,0,0.6257,8,-0.053
+global doughnut,World,WLD,social,health,UHCindex,HE2,79.114,0.791,27.907,0.279,-0.512,improving,-0.028,0.00197,0,0.8985,8,-0.035
+global doughnut,World,WLD,social,education,adultLiteracy,ED1,23.143,0.231,16.218,0.162,-0.069,improving,-0.004,1.00E-04,0,0.9844,8,-0.02
+global doughnut,World,WLD,social,education,secondarySchool,ED2,60.676,0.607,37.063,0.371,-0.236,improving,-0.013,4.30E-04,0,0.9758,8,-0.046
+global doughnut,World,WLD,social,income and work,societalPoverty,IW1,84.749,0.847,72.502,0.725,-0.122,improving,-0.006,1.20E-04,0,0.9917,8,-0.091
+global doughnut,World,WLD,social,income and work,youthNEET,IW2,24.545,0.245,20.998,0.21,-0.035,improving,-0.001,3.60E-04,0.00204,0.4241,8,-0.026
+global doughnut,World,WLD,social,water,drinkingH2O,WA1,39.316,0.393,36.651,0.367,-0.027,improving,-0.001,4.00E-05,0,0.98,8,-0.046
+global doughnut,World,WLD,social,water,sanitation,WA2,66.117,0.661,41.558,0.416,-0.246,improving,-0.012,2.00E-04,0,0.9946,8,-0.052
+global doughnut,World,WLD,social,energy,energyAccess,EN1,21.465,0.215,8.476,0.085,-0.13,improving,-0.006,1.10E-04,0,0.9939,8,-0.011
+global doughnut,World,WLD,social,energy,energyIndoor,EN2,50.224,0.502,26.558,0.266,-0.237,improving,-0.012,3.60E-04,0,0.9797,8,-0.033
+global doughnut,World,WLD,social,connectivity,publicTrans,CO1,NA,0.527,52.709,0.527,0,improving,NA,NA,NA,0,8,-0.066
+global doughnut,World,WLD,social,connectivity,internet,CO2,92.762,0.928,37,0.37,-0.558,improving,-0.026,6.80E-04,0,0.9854,8,-0.046
+global doughnut,World,WLD,social,housing,urbanSlums,HO1,39.655,0.397,32.155,0.322,-0.075,improving,-0.004,1.10E-04,0,0.9827,8,-0.04
+global doughnut,World,WLD,social,equality,genderGapIndex,EQ1,45.535,0.455,34.901,0.349,-0.106,improving,-0.005,8.00E-05,0,0.995,8,-0.044
+global doughnut,World,WLD,social,equality,racialInequality,EQ2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,8,NA
+global doughnut,World,WLD,social,social cohesion,socialSupport,SC1,20.677,0.207,23.666,0.237,0.03,worsening,0.001,5.40E-04,0.18042,0.0535,8,-0.03
+global doughnut,World,WLD,social,social cohesion,palma,SC2,71.6,0.716,64.641,0.646,-0.07,improving,-0.002,5.00E-04,2.60E-04,0.4529,8,-0.081
+global doughnut,World,WLD,social,political voice,govRegimes,PV1,46.333,0.463,70.757,0.708,0.244,worsening,0.01,0.00183,1.00E-05,0.5828,8,-0.088
+global doughnut,World,WLD,social,peace and justice,controlCorruption,PJ1,79.995,0.8,74.699,0.747,-0.053,improving,-0.005,5.40E-04,0,0.8069,8,-0.093
+global doughnut,World,WLD,social,peace and justice,homicideOver5,PJ2,28.501,0.285,20.168,0.202,-0.083,improving,-0.005,7.60E-04,0,0.6845,8,-0.025

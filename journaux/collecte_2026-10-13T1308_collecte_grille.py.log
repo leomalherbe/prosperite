@@ -1,0 +1,153 @@
+
+===== collecte_grille.py =====
+1. ORA (archive des documents supplémentaires)
+  https://ora.ox.ac.uk/objects/uuid:cb7f2af6-96de-4744-9b44-185ce77c6b14/files/r6h440v46z : HTTP 403 ; text/html; charset=UTF-8 ; 5910 octets
+2. Europe PMC (fichiers supplémentaires de PMC12488500)
+  https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12488500/supplementaryFiles : erreur réseau ChunkedEncodingError(ProtocolError('Response ended prematurely'))
+3. Zenodo (données et code, DOI 10.5281/zenodo.15688961)
+  https://zenodo.org/api/records/15688961 : HTTP 200 ; application/json ; 4179 octets
+  fichier Zenodo : a-fanning/doughnut-v3-v1.0.1.zip (883248 octets)
+  https://zenodo.org/api/records/15688962/files/a-fanning/doughnut-v3-v1.0.1.zip/content : HTTP 200 ; application/octet-stream, application/octet-stream ; 883248 octets
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/001_nationalGNIperCap-Population_2000-2022_n193.csv -> 18167 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/WPP2022_PopulationData_1950-2100.csv -> 14130 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-1_climateChange_clean.csv -> 13255 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-2_oceanAcid_clean.csv -> 12315 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-3_chemPollution_clean.csv -> 14690 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-4_nutrientPollution_clean.csv -> 23951 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-5_freshwaterDisruption_clean.csv -> 14475 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-6_landConversion_clean.csv -> 11856 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-7_biodiversityBreakdown_clean.csv -> 25233 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-8_airPollution_clean.csv -> 12156 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-9_ozoneDepletion_clean.csv -> 11991 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-10_socialCohesion_clean.csv -> 17051 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-11_politicalVoice_clean.csv -> 8773 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-12_peaceJustice_clean.csv -> 18503 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-1_food_clean.csv -> 14117 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-2_health_clean.csv -> 15113 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-3_education_clean.csv -> 17072 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-4_incomeWork_clean.csv -> 17645 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-5_water_clean.csv -> 15742 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-6_energy_clean.csv -> 15605 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-7_connectivity_clean.csv -> 15525 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-8_housing_clean.csv -> 13691 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-9_equality_clean.csv -> 15857 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/10_20250113_EcologicalOvershoot-boxPlotData.csv -> 5754 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/10_20250204_SocialShortfall-boxPlotData.csv -> 5831 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/10_worldPopulation_1950-2100.csv -> 5366 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250115_multiPanelData.csv -> 11688 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250122_EcologicalOvershoot-grpBoxPlotData.csv -> 882 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250122_socialShortfall-grpBoxPlotData.csv -> 852 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250127-grpDataAndShares.csv -> 15670 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_avgCountryGNIperCap.csv -> 16418 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/12_20250515_globalDoughnutData_2000-2022.csv -> 40077 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/12_20250515_globalDoughnutData_regressions.csv -> 5805 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/12_20250515_groupDoughnutData_2017.csv -> 10122 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/2_20241226_ecoData.csv -> 41086 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/2_20250108_doughnutv3-data.csv -> 41084 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/2_20250108_doughnutv3-data_wide.csv -> 56138 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/3_20250108_doughnutData.csv -> 41092 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/4_20250108_doughnutData-boundaries.csv -> 42592 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/5_20250108_doughnutDat-boundariesRatios.csv -> 48819 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250108_globalDoughnut-missingToNum.json -> 5811 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250108_globalDoughnut.json -> 5811 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250109_incomeGrpDoughnuts-missingToNum.json -> 5617 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250109_incomeGrpDoughnuts.json -> 5575 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/7_20250112_baguetteData.csv -> 5703 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/8_20250515_lmModelCoefficients.csv -> 6153 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/8_20250515_ratios-observedAndFitted.csv -> 32632 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/9_20250113_Doughnut-GlobalTablesData_af.csv -> 5011 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/9_20250516_Doughnut-GlobalTablesData.csv -> 5041 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/~$9_20241501_Doughnut-TablesData_afStats.xlsx -> 60 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/10_extentStats.R -> 9569 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/11_grpMultiPanel.R -> 8451 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/11a_grpStats.R -> 4608 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/11b_grpShares.R -> 10790 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/12_SupplementaryData.R -> 6139 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/13_gdpTrends.R -> 3544 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/1_setUp.R -> 4258 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/2a_loadData_ecological.R -> 5777 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/2b_loadData_social.R -> 10073 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/3_extrapolateVars.R -> 2961 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/4_boundaries.R -> 4220 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/5_calculateRatios.R -> 10847 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/6a_convertGlobalToJSON.R -> 12383 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/6b_convertGroupsToJSON.R -> 14707 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/7_baguette.R -> 18287 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/8_trends.R -> 17940 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/9_ambition2050.R -> 3454 caractères
+  extrait : zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/README.md -> 1266 caractères
+4. Nature (liens des documents supplémentaires dans la page de l'article)
+  https://www.nature.com/articles/s41586-025-09385-1 : HTTP 200 ; text/html; charset=utf-8 ; 490512 octets
+Inventaire :
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip	883248 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/001_nationalGNIperCap-Population_2000-2022_n193.csv	200584 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/WPP2022_PopulationData_1950-2100.csv	1304809 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-1_climateChange_clean.csv	13255 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-2_oceanAcid_clean.csv	12315 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-3_chemPollution_clean.csv	14690 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-4_nutrientPollution_clean.csv	23951 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-5_freshwaterDisruption_clean.csv	14475 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-6_landConversion_clean.csv	11856 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-7_biodiversityBreakdown_clean.csv	25233 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-8_airPollution_clean.csv	12156 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/eco-9_ozoneDepletion_clean.csv	11991 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-10_socialCohesion_clean.csv	17051 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-11_politicalVoice_clean.csv	8773 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-12_peaceJustice_clean.csv	18503 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-1_food_clean.csv	14117 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-2_health_clean.csv	15113 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-3_education_clean.csv	17072 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-4_incomeWork_clean.csv	17645 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-5_water_clean.csv	15742 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-6_energy_clean.csv	15605 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-7_connectivity_clean.csv	15525 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-8_housing_clean.csv	13691 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/cleanData/soc-9_equality_clean.csv	15857 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/10_20250113_EcologicalOvershoot-boxPlotData.csv	5754 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/10_20250204_SocialShortfall-boxPlotData.csv	5831 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/10_worldPopulation_1950-2100.csv	5366 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250115_multiPanelData.csv	11688 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250122_EcologicalOvershoot-grpBoxPlotData.csv	882 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250122_socialShortfall-grpBoxPlotData.csv	852 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_20250127-grpDataAndShares.csv	15670 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/11_avgCountryGNIperCap.csv	16418 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/12_20250515_globalDoughnutData_2000-2022.csv	75697 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/12_20250515_globalDoughnutData_regressions.csv	5805 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/12_20250515_groupDoughnutData_2017.csv	10122 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/2_20241226_ecoData.csv	139605 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/2_20250108_doughnutv3-data.csv	407916 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/2_20250108_doughnutv3-data_wide.csv	56138 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/3_20250108_doughnutData.csv	408409 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/4_20250108_doughnutData-boundaries.csv	417819 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/5_20250108_doughnutDat-boundariesRatios.csv	498123 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250108_globalDoughnut-missingToNum.json	27651 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250108_globalDoughnut.json	27441 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250109_incomeGrpDoughnuts-missingToNum.json	112479 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/6_20250109_incomeGrpDoughnuts.json	109047 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/7_20250112_baguetteData.csv	5703 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/8_20250515_lmModelCoefficients.csv	6153 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/8_20250515_ratios-observedAndFitted.csv	55249 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/9_20250113_Doughnut-GlobalTablesData_af.csv	5011 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/9_20250516_Doughnut-GlobalTablesData.csv	5041 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/myData/~$9_20241501_Doughnut-TablesData_afStats.xlsx	165 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/10_extentStats.R	9569 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/11_grpMultiPanel.R	8451 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/11a_grpStats.R	4608 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/11b_grpShares.R	10790 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/12_SupplementaryData.R	6139 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/13_gdpTrends.R	3544 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/1_setUp.R	4258 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/2a_loadData_ecological.R	5777 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/2b_loadData_social.R	10073 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/3_extrapolateVars.R	2961 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/4_boundaries.R	4220 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/5_calculateRatios.R	10847 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/6a_convertGlobalToJSON.R	12383 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/6b_convertGroupsToJSON.R	14707 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/7_baguette.R	18287 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/8_trends.R	17940 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/Analysis-Final/scripts/9_ambition2050.R	3454 octets
+  zenodo_a-fanning/doughnut-v3-v1.0.1.zip/a-fanning-doughnut-v3-a0460e5/README.md	1266 octets
+----- collecte_grille.py : OK en 439 s
+
+Bilan : tous les scripts ont réussi

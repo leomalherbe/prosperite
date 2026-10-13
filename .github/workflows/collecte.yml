@@ -1,0 +1,57 @@
+name: Collecte
+
+# Exécute les scripts scripts/collecte_*.py (qui interrogent les API statistiques)
+# et commite leurs résultats (catalogues/, donnees/). Lancement manuel depuis
+# l'onglet Actions, par `gh workflow run collecte.yml -f cible=collecte_insee.py`,
+# ou automatiquement le 1er de chaque mois.
+
+on:
+  workflow_dispatch:
+    inputs:
+      cible:
+        description: "Script à exécuter (nom de fichier scripts/collecte_*.py) ou 'tous'"
+        required: false
+        default: "tous"
+  schedule:
+    - cron: "17 4 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collecte
+  cancel-in-progress: false
+
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Lancer la collecte
+        id: collecte
+        continue-on-error: true
+        run: python scripts/lancer_collecte.py --cible "${{ github.event.inputs.cible || 'tous' }}"
+      - name: Commiter les résultats
+        run: |
+          git config user.name "robot-collecte"
+          git config user.email "robot-collecte@users.noreply.github.com"
+          git add -A catalogues donnees docs/sources
+          if git diff --cached --quiet; then
+            echo "Aucun changement à commiter."
+          else
+            git commit -m "Collecte automatique du $(date -u +%Y-%m-%d) (cible : ${{ github.event.inputs.cible || 'tous' }})"
+            git push
+          fi
+      - name: État final
+        if: steps.collecte.outcome == 'failure'
+        run: |
+          echo "::error::Au moins un script de collecte a échoué ; voir le journal ci-dessus."
+          exit 1

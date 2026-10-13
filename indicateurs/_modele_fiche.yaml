@@ -1,0 +1,29 @@
+# Modèle de fiche indicateur (charte §5.1). Copier sous le nom <id>.yaml et remplir.
+id: taux_pauvrete_60
+libelle: Taux de pauvreté monétaire (seuil à 60 % du niveau de vie médian)
+dimension: niveau_de_vie
+sous_theme: pauvreté
+definition: >
+  Part des personnes vivant dans un ménage dont le niveau de vie est inférieur
+  à 60 % du niveau de vie médian de la population.
+unite: "%"
+sens: bas                       # haut | bas
+type: resultat                  # resultat | moyen | pression
+declaratif: non                 # oui si donnée d'enquête d'opinion ou de ressenti
+source_organisme: INSEE
+source_jeu: ERFS / SRCV
+source_serie_id: ""             # idbank, code Eurostat, identifiant de fichier…
+source_niveau: 1                # 1 = API ; 2 = téléchargement CSV/XLSX à URL stable
+url_api: ""
+url_page: ""
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2023
+geo: FR
+socle_v1:
+  seuil_minimal: 16.0           # valeur à laquelle le score vaut 0
+  objectif: 8.0                 # valeur à laquelle le score vaut 100
+  type_justification: historique   # officiel | scientifique | historique | europeen | expert
+  justification: ""
+qualite: []                     # ex. [rupture_2010, revision_frequente]
+notes: ""

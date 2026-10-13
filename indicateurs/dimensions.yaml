@@ -1,0 +1,44 @@
+# Grille de dimensions — version 0 (provisoire, charte §4 ; consolidée par la mission M03)
+# type : plancher (on vise au-dessus d'un minimum) | plafond (on vise en dessous d'un maximum)
+version: v0
+dimensions:
+  - id: niveau_de_vie
+    libelle: Niveau de vie et économie
+    type: plancher
+    contenu: Revenu disponible, consommation, pauvreté monétaire et en conditions de vie, patrimoine, PIB par habitant, investissement, dette
+  - id: travail
+    libelle: Travail et emploi
+    type: plancher
+    contenu: Taux d'emploi, chômage et chômage de longue durée, NEET, qualité et sécurité de l'emploi, accidents, temps de travail, satisfaction au travail
+  - id: logement_cadre_vie
+    libelle: Logement et cadre de vie
+    type: plancher
+    contenu: Coût et qualité du logement, surpeuplement, précarité énergétique, qualité de l'air locale, bruit, accès à la nature, mobilité
+  - id: sante
+    libelle: Santé
+    type: plancher
+    contenu: Espérance de vie (en bonne santé), mortalité évitable, santé perçue, accès aux soins, santé mentale, comportements
+  - id: education
+    libelle: Éducation, compétences et culture
+    type: plancher
+    contenu: Sorties précoces, diplômes, compétences (PISA, PIAAC), formation des adultes, numérique, pratiques culturelles
+  - id: liens_bien_etre
+    libelle: Vie personnelle, liens sociaux et bien-être ressenti
+    type: plancher
+    contenu: Soutien social, isolement, temps libre, équilibre vie professionnelle/personnelle, satisfaction dans la vie, sens, affects
+  - id: securite_confiance
+    libelle: Sécurité et confiance
+    type: plancher
+    contenu: Homicides, violences, sentiment d'insécurité, sécurité économique, confiance interpersonnelle
+  - id: democratie
+    libelle: Démocratie, droits et institutions
+    type: plancher
+    contenu: Participation électorale, confiance dans les institutions, libertés, corruption perçue, indépendance de la justice, voix politique
+  - id: egalites
+    libelle: Égalités
+    type: plancher
+    contenu: Inégalités de revenu et de patrimoine, écarts femmes-hommes, inégalités territoriales, intergénérationnelles, mobilité sociale
+  - id: planete
+    libelle: Planète
+    type: plafond
+    contenu: Émissions et empreinte carbone, biodiversité, artificialisation des sols, ressources et circularité, eau, azote, pollutions

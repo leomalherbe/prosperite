@@ -57,4 +57,4 @@ Préciser : pas de clé, licence (réutilisation libre avec mention), quotas (re
 - Les jeux EU-SILC (`ilc_*`) ont des ruptures de série (2020, changement de méthodologie) : conserver le `statut` (drapeaux `b`, `e`, `p`, `u`) dans les sorties.
 
 ## Compte rendu attendu
-Fait / non fait ; chiffres clés ; liste des 20 jeux les plus prometteurs par dimension v0 selon toi (avec codes) ; problèmes ; propositions.
+Fait / non fait ; chiffres clés ; liste des jeux les plus prometteurs par dimension v0 selon toi (avec codes, sans limite de nombre) ; problèmes ; propositions.

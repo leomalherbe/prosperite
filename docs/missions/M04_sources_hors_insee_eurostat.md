@@ -44,7 +44,7 @@ Sources à couvrir (ajouter toute source découverte en route) :
 CSV `10_sources_inventaire.csv` : `source, organisme, theme, voie_acces (api|telechargement|exclu), url_base_ou_fichier, authentification, format, licence, frequence, premiere_annee, derniere_annee, geo, niveau (1|2|exclu), fiabilite_acces (verifie|probable|non_verifie), commentaire`.
 
 ### T3. Indicateurs candidats apportés
-CSV `10_indicateurs_candidats_hors_insee_eurostat.csv` : `indicateur, dimension_v0, source, identifiant_ou_url, unite, sens, declaratif (oui|non), frequence, premiere_annee, derniere_annee, doublon_insee_eurostat (oui|non|partiel), commentaire`. Viser 60 à 120 lignes, toutes vérifiées (URL ouverte, série repérée).
+CSV `10_indicateurs_candidats_hors_insee_eurostat.csv` : `indicateur, dimension_v0, source, identifiant_ou_url, unite, sens, declaratif (oui|non), frequence, premiere_annee, derniere_annee, doublon_insee_eurostat (oui|non|partiel), commentaire`. **Sans limite de nombre** : viser l'exhaustivité raisonnable ; toutes les lignes vérifiées (URL ouverte, série repérée).
 
 ## Livrables (docs Projet + pièces jointes)
 - `claude/10_sources_hors_insee_eurostat.md` (T1).

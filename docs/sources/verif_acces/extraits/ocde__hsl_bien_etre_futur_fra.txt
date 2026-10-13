@@ -1,0 +1,885 @@
+# ocde / hsl_bien_etre_futur_fra
+# URL : https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+# Vérifié le 2026-10-13T11:49:38Z — HTTP 200 — application/vnd.sdmx.data+csv; charset=utf-8; version=2; labels=name — 237441 octets lus (taille annoncée : inconnue)
+
+Colonnes : ['STRUCTURE', 'STRUCTURE_ID', 'STRUCTURE_NAME', 'ACTION', 'REF_AREA', 'Reference area', 'MEASURE', 'Measure', 'UNIT_MEASURE', 'Unit of measure', 'AGE', 'Age', 'SEX', 'Sex', 'EDUCATION_LEV', 'Education level', 'DOMAIN', 'Domain', 'TIME_PERIOD', 'Time period', 'OBS_VALUE', 'Observation value', 'OBS_STATUS', 'Observation status', 'UNIT_MULT', 'Unit multiplier', 'DECIMALS', 'Decimals', 'BASE_PER', 'Base period']
+878 lignes ; 878 combinaisons distinctes de ['MEASURE', 'Measure', 'UNIT_MEASURE', 'AGE', 'SEX', 'EDUCATION_LEV', 'TIME_PERIOD', 'OBS_VALUE'] :
+MEASURE	Measure	UNIT_MEASURE	AGE	SEX	EDUCATION_LEV	TIME_PERIOD	OBS_VALUE
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2004	21.03271
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2005	21.24125
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2006	21.49395
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2007	22.13415
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2008	21.7403
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2009	19.74241
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2010	18.00343
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2011	19.67265
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2012	18.44356
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2013	18.36682
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2014	18.11767
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2015	16.8343
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2016	16.68368
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2017	17.18569
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2018	17.17669
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2019	17.10198
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2020	16.29457
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2021	17.15559
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2022	16.84016
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2023	17.27716
+12_14	Material footprint per capita	T_PS	_T	_T	_T	2024	17.50294
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2004	9.030524
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2005	8.987876
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2006	8.754903
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2007	8.545478
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2008	8.422912
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2009	8.049288
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2010	8.069527
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2011	7.643127
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2012	7.644898
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2013	7.592053
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2014	7.046576
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2015	7.074852
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2016	7.093895
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2017	7.110206
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2018	6.790996
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2019	6.62196
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2020	5.997182
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2021	6.340007
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2022	6.074304
+12_8	Greenhouse gas emissions per capita	KG_CO2E_PS	_T	_T	_T	2023	5.653277
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2004	12.2528924673
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2005	12.2528924673
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2006	12.297775945
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2007	12.6140312892
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2008	12.6989846449
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2009	13.0223281938
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2010	33.2998367151
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2011	33.5184119809
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2012	33.7920302885
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2013	33.7950004813
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2014	33.8173320866
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2015	33.820426091
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2016	33.8753227474
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2017	33.9075702951
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2018	33.9076201903
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2019	33.9093914707
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2020	33.9094663135
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2021	33.9111378034
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2022	33.9111378034
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2023	33.9111378034
+12_6	Protected marine areas	PT_EEZ	_T	_T	_T	2024	33.9111378034
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2004	21.9131910506
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2005	21.9141330687
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2006	22.2532284344
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2007	27.94902311
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2008	28.3631526755
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2009	28.7652732627
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2010	28.7686236994
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2011	28.8844895939
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2012	29.1056573778
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2013	29.1320323275
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2014	29.4959832589
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2015	29.8455195205
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2016	29.980744706
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2017	30.2485069359
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2018	30.5442803753
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2019	31.1412814534
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2020	31.4623779613
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2021	31.8359434774
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2022	31.8390991213
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2023	31.8407743396
+12_5	Protected terrestrial areas	PT_LAR	_T	_T	_T	2024	31.8414755938
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2022	12.07599
+12_4	Intact forest landscapes	KM2	_T	_T	_T	2013	0
+12_4	Intact forest landscapes	KM2	_T	_T	_T	2016	0
+12_3	Gain of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2005	0.176117236
+12_3	Gain of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2010	0.886426754
+12_3	Gain of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2015	1.083579469
+12_3	Gain of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2020	1.532896309
+12_3	Gain of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2022	1.617216249
+12_2	Loss of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2005	0.574032217
+12_2	Loss of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2010	0.802014767
+12_2	Loss of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2015	1.077733455
+12_2	Loss of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2020	1.203240378
+12_2	Loss of natural and semi-natural land cover	PT_LND_NTR_SNTR_BP	_T	_T	_T	2022	1.297878344
+12_1	Natural and semi-natural land cover	PT_LAR	_T	_T	_T	2005	51.82915409
+12_1	Natural and semi-natural land cover	PT_LAR	_T	_T	_T	2010	52.08013879
+12_1	Natural and semi-natural land cover	PT_LAR	_T	_T	_T	2015	52.03925603
+12_1	Natural and semi-natural land cover	PT_LAR	_T	_T	_T	2020	52.20775445
+12_1	Natural and semi-natural land cover	PT_LAR	_T	_T	_T	2022	52.20238534
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2004	16.80246
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2005	16.86368
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2006	16.20633
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2007	15.63774
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2008	14.53915
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2009	14.72927
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2010	14.10872
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2011	14.09736
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2012	14.9399
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2013	13.85445
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2014	13.4592
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2015	13.99423
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2016	13.15659
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2017	13.41155
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2018	13.36754
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2019	13.0499
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2020	12.28293
+12_12	Water stress (internal resources)	PT_RSC_REN_INT	_T	_T	_T	2021	12.1615
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2004	15.93006
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2005	15.9881
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2006	15.36488
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2007	14.82581
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2008	13.78427
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2009	13.96451
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2010	13.37618
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2011	13.36541
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2012	14.16421
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2013	13.13512
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2014	12.76039
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2015	13.26763
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2016	12.47349
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2017	12.71521
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2018	12.67349
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2019	12.37233
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2020	11.64519
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2021	11.53007
+12_13	Water stress (total renewable resources)	PT_RSC_REN_WAT	_T	_T	_T	2022	11.44899
+12_11	Soil nutrient balance	KG	_T	_T	_T	2020	42.4
+12_11	Soil nutrient balance	KG	_T	_T	_T	2021	27.7
+12_11	Soil nutrient balance	KG	_T	_T	_T	2022	30.3
+12_11	Soil nutrient balance	KG	_T	_T	_T	2023	17.5
+12_11	Soil nutrient balance	KG	_T	_T	_T	2004	35.6
+12_11	Soil nutrient balance	KG	_T	_T	_T	2005	47.4
+12_11	Soil nutrient balance	KG	_T	_T	_T	2006	39.3
+12_11	Soil nutrient balance	KG	_T	_T	_T	2007	34.4
+12_11	Soil nutrient balance	KG	_T	_T	_T	2008	35.6
+12_11	Soil nutrient balance	KG	_T	_T	_T	2009	29.8
+12_11	Soil nutrient balance	KG	_T	_T	_T	2010	36.3
+12_11	Soil nutrient balance	KG	_T	_T	_T	2011	49.1
+12_11	Soil nutrient balance	KG	_T	_T	_T	2012	23.5
+12_11	Soil nutrient balance	KG	_T	_T	_T	2013	29.7
+12_11	Soil nutrient balance	KG	_T	_T	_T	2014	29.6
+12_11	Soil nutrient balance	KG	_T	_T	_T	2015	37.3
+12_11	Soil nutrient balance	KG	_T	_T	_T	2016	47.5
+12_11	Soil nutrient balance	KG	_T	_T	_T	2017	33.7
+12_11	Soil nutrient balance	KG	_T	_T	_T	2018	40.8
+12_11	Soil nutrient balance	KG	_T	_T	_T	2019	38
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2005	29.01011
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2006	30.67546
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2007	32.28447
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2008	33.78743
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2009	35.2931
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2010	36.03976
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2011	36.77493
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2012	37.73344
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2013	38.71137
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2014	39.73147
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2015	40.74656
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2020	40.23764
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2021	42.4692
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2022	41.64183
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2023	42.04254
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2024	42.94542
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2004	28.95142
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2016	39.28588
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2017	39.75345
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2018	41.12513
+12_15	Recycling rate	PT_WST_TR	_T	_T	_T	2019	41.46065
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2011	7.12
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2012	8.33
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2013	9.23
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2014	8.95
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2015	9.06
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2016	9.91
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2017	9.74
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2018	10.58
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2019	10.83
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2020	11.96
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2021	11.65
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2022	12.59
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2023	13.65
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2024	14.03
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2004	5.74
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2005	5.73
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2006	5.69
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2007	6.23
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2008	6.98
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2009	7.36
+12_10	Renewable energy	PT_SUP_NRG	_T	_T	_T	2010	7.94
+12_7	Red list index of threatened species	IX	_T	_T	_T	2004	0.91179
+12_7	Red list index of threatened species	IX	_T	_T	_T	2005	0.90886
+12_7	Red list index of threatened species	IX	_T	_T	_T	2006	0.90628
+12_7	Red list index of threatened species	IX	_T	_T	_T	2007	0.90313
+12_7	Red list index of threatened species	IX	_T	_T	_T	2008	0.89985
+12_7	Red list index of threatened species	IX	_T	_T	_T	2009	0.89649
+12_7	Red list index of threatened species	IX	_T	_T	_T	2010	0.89302
+12_7	Red list index of threatened species	IX	_T	_T	_T	2011	0.88956
+12_7	Red list index of threatened species	IX	_T	_T	_T	2012	0.88589
+12_7	Red list index of threatened species	IX	_T	_T	_T	2013	0.88248
+12_7	Red list index of threatened species	IX	_T	_T	_T	2014	0.87903
+12_7	Red list index of threatened species	IX	_T	_T	_T	2015	0.87531
+12_7	Red list index of threatened species	IX	_T	_T	_T	2016	0.87199
+12_7	Red list index of threatened species	IX	_T	_T	_T	2017	0.86845
+12_7	Red list index of threatened species	IX	_T	_T	_T	2018	0.86521
+12_7	Red list index of threatened species	IX	_T	_T	_T	2019	0.86217
+12_7	Red list index of threatened species	IX	_T	_T	_T	2020	0.85873
+12_7	Red list index of threatened species	IX	_T	_T	_T	2021	0.85509
+12_7	Red list index of threatened species	IX	_T	_T	_T	2022	0.85218
+12_7	Red list index of threatened species	IX	_T	_T	_T	2023	0.84915
+12_7	Red list index of threatened species	IX	_T	_T	_T	2024	0.8456
+12_7	Red list index of threatened species	IX	_T	_T	_T	2025	0.8426
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2004	8.582
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2005	8.741
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2006	8.542
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2007	8.557
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2008	8.543
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2009	7.88
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2010	8.109
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2011	7.973
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2012	7.654
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2013	7.597
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2014	7.045
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2015	6.841
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2016	6.894
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2017	7.02
+12_9	Carbon footprint	T_CO2_PS	_T	_T	_T	2018	6.828
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2004	12.389
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2005	12.46
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2006	12.208
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2007	12.158
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2008	12.221
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2009	11.303
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2010	11.336
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2011	11.088
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2012	10.631
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2013	10.525
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2014	10.163
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2015	9.797
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2016	9.793
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2017	9.911
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2018	9.86
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2019	9.557
+12_9	Carbon footprint	T_CO2E_PS	_T	_T	_T	2020	8.369
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2023	1.285276
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2022	-0.379157
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2004	3.602859
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2005	2.96711
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2006	4.374152
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2007	5.461605
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2008	1.20622
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2009	-9.228881
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2010	1.762963
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2011	2.100857
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2012	-0.251331
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2013	-0.54738
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2014	-0.396403
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2015	0.618788
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2016	2.758919
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2017	3.698314
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2018	3.502211
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2019	4.110082
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2020	-5.829109
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2021	9.734361
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2009	-4075
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2010	-4181
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2015	-6506
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2004	-392
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2005	319
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2006	-1221
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2007	-3315
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2008	-4979
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2011	-4274
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2012	-8289
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2013	-5535
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2014	-6933
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2016	-5958
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2017	-7344
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2018	-7825
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2019	-9290
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2020	-9774
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2021	-10866
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2022	-9263
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2023	-12225
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2004	15.330185
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2016	17.52808
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2021	21.333699
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2022	30.599042
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2023	26.49659
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2024	25.409988
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2025	18.104445
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2005	15.101241
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2006	14.272775
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2007	20.0711
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2008	35.031819
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2009	22.785368
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2010	23.081277
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2011	32.072711
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2012	24.338513
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2013	21.672283
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2014	20.108521
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2015	18.712252
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2017	17.106926
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2018	20.988401
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2019	18.875225
+15_8	Monetary financial institutions leverage	FCTR_LI_F51	_T	_T	_T	2020	22.178622
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2021	130.6338
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2022	129.80532
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2023	121.79973
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2024	115.24977
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2004	85.390144
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2005	92.079548
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2006	96.901673
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2007	101.91492
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2008	103.43427
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2009	110.74596
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2010	114.93789
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2011	116.3473
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2012	112.74251
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2013	115.20206
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2014	116.18903
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2015	118.75921
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2016	120.24053
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2017	123.48623
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2018	125.55328
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2019	126.0479
+15_6	Households and NPISHs debt	PT_B6N_S1M	_T	_T	_T	2020	130.72348
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2004	1.9093480915
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2005	1.8624524183
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2006	1.8848650026
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2007	1.8557737664
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2008	1.841774147
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2009	1.9456151391
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2010	1.9453777065
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2011	2.0170537287
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2012	1.9666456718
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2013	1.9799496489
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2014	1.948054752
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2015	1.9570440941
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2016	1.9978500051
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2017	1.8558127976
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2018	1.9016433477
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2019	1.8650099983
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2020	1.9271042855
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2021	1.8351324824
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2022	1.7984118446
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2014	-75.292523
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2015	-76.161614
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2017	-77.665015
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2019	-76.406044
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2021	-82.422077
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2022	-71.293971
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2004	-43.507556
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2005	-41.161826
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2006	-36.80939
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2007	-34.275046
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2008	-42.738901
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2009	-49.901795
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2010	-55.780216
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2011	-59.565411
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2012	-66.252158
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2013	-67.004114
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2016	-79.356115
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2018	-76.682072
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2020	-90.523036
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2023	-73.259039
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2024	-72.816934
+15_7	General government net financial worth	PT_B1GQ	_T	_T	_T	2025	-73.390504
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2015	4219.8
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2016	4127.1
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2019	3982.9
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2020	4019
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2021	4055.3
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2022	4125.2
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2024	89.4087219238
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2022	89.0808525
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2023	89.22587204
+14_6	Corruption	0_TO_100	_T	_T	_T	2025	66
+14_6	Corruption	0_TO_100	_T	_T	_T	2024	67
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2025	36.2
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2026	36.2
+14_4	Government stakeholder engagement	0_TO_4	_T	_T	_T	2014	1.775
+14_4	Government stakeholder engagement	0_TO_4	_T	_T	_T	2017	1.97
+14_4	Government stakeholder engagement	0_TO_4	_T	_T	_T	2021	1.97
+14_4	Government stakeholder engagement	0_TO_4	_T	_T	_T	2024	1.97
+14_2	Trust in the police	0_TO_10	_T	_T	_T	2013	5.6431529915
+14_1	Trust in others	0_TO_10	_T	_T	_T	2018	5.9031756222
+14_1	Trust in others	0_TO_10	_T	_T	_T	2023	4.3658513255
+14_1	Trust in others	0_TO_10	_T	_T	_T	2024	4.3338605605
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2010	16.28
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2015	18.15
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2016	17.98
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2017	17.43
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2022	14.48
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2023	14.23
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2012	16.24
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2024	14
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2007	14.02
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2008	13.71
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2009	15.93
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2011	15.64
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2013	17.28
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2014	17.79
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2018	16.42
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2019	15.28
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2021	15.82
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2020	19.15
+13_2	Labour underutilisation rate	PT_LF	_T	_T	_T	2025	14.14
+14_6	Corruption	0_TO_100	_T	_T	_T	2012	71
+14_6	Corruption	0_TO_100	_T	_T	_T	2013	71
+14_6	Corruption	0_TO_100	_T	_T	_T	2014	69
+14_6	Corruption	0_TO_100	_T	_T	_T	2015	70
+14_6	Corruption	0_TO_100	_T	_T	_T	2016	69
+14_6	Corruption	0_TO_100	_T	_T	_T	2017	70
+14_6	Corruption	0_TO_100	_T	_T	_T	2018	72
+14_6	Corruption	0_TO_100	_T	_T	_T	2019	69
+14_6	Corruption	0_TO_100	_T	_T	_T	2020	69
+14_6	Corruption	0_TO_100	_T	_T	_T	2021	71
+14_6	Corruption	0_TO_100	_T	_T	_T	2022	72
+14_6	Corruption	0_TO_100	_T	_T	_T	2023	71
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2004	80.409416
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2005	81.461349
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2006	82.249897
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2007	82.714313
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2008	82.845673
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2009	83.838318
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2010	83.758732
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2011	83.283065
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2012	83.319389
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2013	85.250564
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2014	86.69791
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2015	86.522041
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2016	86.655079
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2017	86.160335
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2018	86.997006
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2019	87.430542
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2020	88.090924
+13_1	Educational attainment among young adults	PT_POP_Y25T34	_T	_T	_T	2021	88.077381
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2012	26.9
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2015	26.2
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2017	25.8
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2019	39.7
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2021	39.5
+14_5	Gender parity in politics	PT_PARL_MEM	_T	_T	_T	2023	37.8
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2004	5274.1
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2005	5206.2
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2006	5066
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2007	4938.7
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2008	4880.6
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2009	4846.4
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2010	4763.6
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2011	4626.6
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2012	4481.4
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2013	4365.4
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2014	4204.5
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2017	4099.9
+13_3	Premature mortality	Y_10P5PS	_T	_T	_T	2018	4094.1
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2007	28.5236751664
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2008	25.4912946533
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2009	25.4912946533
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2010	25.4912946533
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2011	25.6065513183
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2012	25.6065513183
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2013	25.6065513183
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2014	29.9058167273
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2015	29.9058167273
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2016	29.9058167273
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2017	28.9558697897
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2018	28.9558697897
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2019	28.9558697897
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2020	28.0832132344
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2021	28.0832132344
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2022	28.0832132344
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2023	30.9855379826
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2024	30.9855379826
+14_7	Volunteering through organisations	PT_POP_Y_GE15	_T	_T	_T	2025	30.9855379826
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2022	24.5
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2023	23.1
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2010	29.7
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2014	28.5
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2015	29.4
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2016	29.4
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2017	26.9
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2018	25.4
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2019	24
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2020	25.5
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2021	25.3
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2004	9.4
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2006	17
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2008	12.2
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2010	12.9
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2012	14.5
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2014	15.3
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2015	17
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2017	15.6
+13_5	Obesity prevalence	PT_POP_Y_GE15	_T	_T	_T	2019	14.4
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2020	43.3761281481
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2021	43.3761281481
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2022	43.3761281481
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2023	37.3337530749
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2024	37.3337530749
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2025	37.3337530749
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2006	34.3118218148
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2007	34.3118218148
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2008	44.285816878
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2009	44.285816878
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2010	44.285816878
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2011	40.3615037206
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2012	40.3615037206
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2013	40.3615037206
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2014	29.2010859272
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2015	29.2010859272
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2016	29.2010859272
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2017	37.9063398077
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2018	37.9063398077
+14_3	Trust in government	PT_POP_Y_GE15	_T	_T	_T	2019	37.9063398077
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2007	30.3852080317
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2008	30.3852080317
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2009	30.3852080317
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2010	30.3852080317
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2011	30.3852080317
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2012	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2013	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2014	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2015	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2016	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2017	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2018	27.3080990557
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2019	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2020	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2021	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2022	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2023	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2024	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	OLD	_T	_T	2025	29.5525148573
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2007	26.2921543566
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2008	26.2921543566
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2009	26.2921543566
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2010	26.2921543566
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2011	26.2921543566
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2012	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2013	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2014	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2015	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2016	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2017	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2018	29.6867219423
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2019	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2020	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2021	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2022	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2023	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2024	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	MID	_T	_T	2025	30.2192276922
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2012	26.6722866028
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2013	26.6722866028
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2014	26.6722866028
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2015	26.6722866028
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2016	26.6722866028
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2017	26.6722866028
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2018	26.6722866028
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2006	43.5519673897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2007	43.5519673897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2008	43.5519673897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2009	43.5519673897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2010	43.5519673897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2011	43.5519673897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2012	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2013	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2014	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2015	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2016	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2017	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2018	34.3067000603
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2006	34.4599372534
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2007	34.4599372534
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2008	34.4599372534
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2009	34.4599372534
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2010	34.4599372534
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2011	34.4599372534
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2012	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2013	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2014	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2015	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2016	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2017	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2018	34.8900936094
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2019	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2020	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2021	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2022	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2023	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2024	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	MID	_T	_T	2025	34.4046127227
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2006	42.6075333737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2007	42.6075333737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2008	42.6075333737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2009	42.6075333737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2010	42.6075333737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2011	42.6075333737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2012	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2013	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2014	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2015	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2016	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2017	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2018	35.9134623342
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2019	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2020	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2021	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2022	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2023	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2024	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	OLD	_T	_T	2025	42.8366197127
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2006	33.9350032897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2007	33.9350032897
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2008	44.1556985836
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2009	44.1556985836
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2010	44.1556985836
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2011	38.2156441235
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2012	38.2156441235
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2013	38.2156441235
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2014	26.9010032114
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2015	26.9010032114
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2016	26.9010032114
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2017	35.9416904373
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2018	35.9416904373
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2019	35.9416904373
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2008	44.5731293996
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2009	44.5731293996
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2010	44.5731293996
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2011	42.9073293279
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2012	42.9073293279
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2013	42.9073293279
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2014	31.7839032249
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2015	31.7839032249
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2016	31.7839032249
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2017	40.0631626915
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2018	40.0631626915
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2019	40.0631626915
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2020	41.4260665964
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2021	41.4260665964
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2022	41.4260665964
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2023	39.5828306414
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2024	39.5828306414
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	F	_T	2025	39.5828306414
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2020	45.4641925068
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2021	45.4641925068
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2022	45.4641925068
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2023	34.9028284858
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2024	34.9028284858
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2025	34.9028284858
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2020	27.6844983912
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2021	27.6844983912
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2022	27.6844983912
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2023	31.6097262643
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2024	31.6097262643
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2025	31.6097262643
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2020	28.4141429166
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2021	28.4141429166
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2022	28.4141429166
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2023	30.4101207841
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2024	30.4101207841
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2025	30.4101207841
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2008	28.6009828267
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2009	28.6009828267
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2010	28.6009828267
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2011	28.967877672
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2012	28.967877672
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2013	28.967877672
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2014	28.7417204295
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2015	28.7417204295
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2016	28.7417204295
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2017	27.5155466878
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2018	27.5155466878
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2019	27.5155466878
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2008	22.7743211275
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2009	22.7743211275
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2010	22.7743211275
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2011	22.6879686053
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2012	22.6879686053
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2013	22.6879686053
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2014	30.8992177415
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2015	30.8992177415
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2016	30.8992177415
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2017	30.2890067422
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2018	30.2890067422
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2019	30.2890067422
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2008	26.2074371811
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2009	26.2074371811
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2010	26.2074371811
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2011	27.3666191332
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2012	27.3666191332
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2013	27.3666191332
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2014	27.3666191332
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2015	27.3666191332
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2016	26.9965337963
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2017	26.9965337963
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2018	26.9965337963
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2019	26.9965337963
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2020	26.9965337963
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2021	30.4414235261
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2022	30.4414235261
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2023	30.4414235261
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2024	30.4414235261
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2025	30.4414235261
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2011	31.5582939384
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2012	31.5582939384
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2013	31.5582939384
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2014	31.5582939384
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2015	31.5582939384
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2016	34.8849304495
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2017	34.8849304495
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2018	34.8849304495
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2019	34.8849304495
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2020	34.8849304495
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2021	32.4296088095
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2022	32.4296088095
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2023	32.4296088095
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2024	32.4296088095
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2025	32.4296088095
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2011	41.9164024191
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2012	41.9164024191
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2013	41.9164024191
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2014	41.9164024191
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2015	41.9164024191
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2016	41.2989034625
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2017	41.2989034625
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2018	41.2989034625
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2019	41.2989034625
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2020	41.2989034625
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2021	43.8438420216
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2022	43.8438420216
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2023	43.8438420216
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2024	43.8438420216
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2025	43.8438420216
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2008	41.8510962335
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2009	41.8510962335
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2010	41.8510962335
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2011	33.9327615785
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2012	33.9327615785
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2013	33.9327615785
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2014	33.9327615785
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2015	33.9327615785
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2016	35.89743888
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2017	35.89743888
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2018	35.89743888
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2019	35.89743888
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2020	35.89743888
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2021	38.5850869768
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2022	38.5850869768
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2023	38.5850869768
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2024	38.5850869768
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_2_3	2025	38.5850869768
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2004	137547
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2005	141567
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2006	145968
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2007	150713
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2008	153179
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2009	156219
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2010	159788
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2011	163833
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2012	165386
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2013	166357
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2014	166341
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2015	165016
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2016	167462
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2017	171341
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2018	174293
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2019	176577
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2020	176721
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2021	188073
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2022	195109
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2020	8073
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2021	8375
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2022	8611
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2004	6322
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2005	6429
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2006	6555
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2007	6595
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2008	6645
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2009	6771
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2010	6861
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2011	6999
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2012	7098
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2013	7191
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2014	7273
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2015	7367
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2016	7529
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2017	7659
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2018	7842
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2019	8073
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2023	191088
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2023	8657
+15_1	Produced fixed assets	USD_PPP_PS	_T	_T	_T	2024	189920
+15_2	Intellectual property assets	USD_PPP_PS	_T	_T	_T	2024	8913
+14_1	Trust in others	0_TO_10	_T	_T	_T	2013	4.9884663552
+14_1	Trust in others	0_TO_10	_T	_T	_T	2021	4.4726286463
+14_1	Trust in others	0_TO_10	_T	_T	_T	2022	4.1256588446
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2023	1.7880029631
+15_4	Investment in R&D	PT_B1GQ	_T	_T	_T	2024	1.769976808
+14_1	Trust in others	0_TO_10	_T	_T	_T	2025	4
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2024	-0.923201
+15_3	Gross fixed capital formation	PC	_T	_T	_T	2025	0.482008
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2024	-1798
+15_5	Total economy net financial worth	USD_PPP_PS	_T	_T	_T	2025	-1225
+13_4	Smoking prevalence	PT_POP_Y_GE15	_T	_T	_T	2005	27.5
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2006	34.7107599934
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	M	_T	2007	34.7107599934
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2019	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2020	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2021	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2022	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2023	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2024	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2025	41.8674977737
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2008	41.4158707568
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2009	41.4158707568
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2010	41.4158707568
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2008	59.6616339817963
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2009	48.3613802869629
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2010	48.3613802869629
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2011	48.3613802869629
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2012	48.3613802869629
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2013	48.3613802869629
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2014	31.6006238735551
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2015	31.6006238735551
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2016	31.6006238735551
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2017	31.6006238735551
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2018	31.6006238735551
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2019	43.5624015758202
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2020	43.5624015758202
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2021	43.5624015758202
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2022	43.5624015758202
+14_3	Trust in government	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2023	43.5624015758202
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	F	_T	2007	28.4326618106
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	M	_T	2007	28.6204694518
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2007	21.0393616315
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2008	21.0393616315
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2009	21.0393616315
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2010	21.0393616315
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2011	21.0393616315
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2019	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2020	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2021	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2022	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2023	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2024	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	YOUNG	_T	_T	2025	27.7189330932
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2008	29.4592372629
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2009	29.4592372629
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_5T8	2010	29.4592372629
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2008	22.9966441909258
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2009	19.6753039557974
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2010	19.6753039557974
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2011	19.6753039557974
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2012	19.6753039557974
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2013	19.6753039557974
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2014	27.7874505606969
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2015	27.7874505606969
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2016	27.7874505606969
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2017	27.7874505606969
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2018	27.7874505606969
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2019	21.3115464483863
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2020	21.3115464483863
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2021	21.3115464483863
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2022	21.3115464483863
+14_7	Volunteering through organisations	PT_POP_Y_GE15_SUB	_T	_T	ISCED11_1	2023	21.3115464483863

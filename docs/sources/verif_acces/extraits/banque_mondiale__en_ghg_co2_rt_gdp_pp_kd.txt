@@ -1,0 +1,512 @@
+# banque_mondiale / EN.GHG.CO2.RT.GDP.PP.KD
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/EN.GHG.CO2.RT.GDP.PP.KD?format=json&per_page=100&date=1995:2026
+# Vérifié le 2026-10-13T11:49:53Z — HTTP 200 — application/json;charset=utf-8 — 7958 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 31,
+  "sourceid": "2",
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": null,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": 0.0730584916152229,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": 0.076542070563134,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": 0.0840720637177388,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 0.088888909697982,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 0.0861217113314687,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 0.089658933875645,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 0.093076139752495,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 0.0975334078351058,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": 0.0984086753946062,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 0.098478261188514,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 0.0979698984916927,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 0.108997386929991,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 0.111333290083425,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 0.111130368519661,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 0.118092776971791,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 0.118111294580179,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 0.118695906968588,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 0.121417452046252,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 0.126773771316921,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 0.133739184529024,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 0.135511804293333,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 0.139044307703908,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 0.138688242993235,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2001",
+   "value": 0.142066357561376,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 0.143292529753699,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1999",
+   "value": 0.150337431460343,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 0.15785757951138,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1997",
+   "value": 0.154558393910223,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 0.161845809248461,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "EN.GHG.CO2.RT.GDP.PP.KD",
+    "value": "Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1995",
+   "value": 0.158033443905263,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  }
+ ]
+]

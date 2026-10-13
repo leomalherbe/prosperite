@@ -1,6 +1,6 @@
 # depp / ods_catalogue_json
 # URL : https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T11:31:57Z — HTTP 200 — application/json; charset=utf-8 — 8945 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T11:48:21Z — HTTP 200 — application/json; charset=utf-8 — 8616 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 310,
@@ -234,20 +234,19 @@
    "visibility": "domain",
    "fields": [
     {
-     "name": "uai",
-     "description": null,
-     "annotations": {},
-     "label": "UAI",
-     "type": "text"
+     "name": "annee",
+     "description": "Année des données",
+     "annotations": {
+      "timeserie_precision": "year"
+     },
+     "label": "Année",
+     "type": "date"
     },
     {
-     "name": "nom_de_l_esj",
-     "description": null,
-     "annotations": {},
-     "label": "Nom de l'ESJ",
-     "type": "text"
-    },
-    {
-     "name": "nom_etablissement",
-     "description": "nom de l'établissement",
-     "annotations": 
+     "name": "mois_des_donnees",
+     "description": "Mois des données",
+     "annotations": {
+      "timeserie_precision": "month"
+     },
+     "label": "Mois des données",
+     "t

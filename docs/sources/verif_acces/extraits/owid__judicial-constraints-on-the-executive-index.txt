@@ -1,224 +1,242 @@
 # owid / judicial-constraints-on-the-executive-index
 # URL : https://ourworldindata.org/grapher/judicial-constraints-on-the-executive-index.csv?v=1&csvType=full&useColumnShortNames=true
-# Vérifié le 2026-10-13T11:34:08Z — HTTP 200 — text/csv — 1099838 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T11:50:57Z — HTTP 200 — text/csv — 1099838 octets lus (taille annoncée : inconnue)
 
-Colonnes : ['entity', 'code', 'year', 'judicial_constr_vdem__estimate_best', 'owid_region']
-33711 lignes ; 217 combinaisons distinctes de ['entity', 'code'] :
-entity	code
-Afghanistan	AFG
-Africa	OWID_AFR
-Africa (population-weighted)	
-Albania	ALB
-Algeria	DZA
-Angola	AGO
-Argentina	ARG
-Armenia	ARM
-Asia	OWID_ASI
-Asia (population-weighted)	
-Australia	AUS
-Austria	AUT
-Azerbaijan	AZE
-Baden	OWID_BAD
-Bahrain	BHR
-Bangladesh	BGD
-Barbados	BRB
-Bavaria	OWID_BAV
-Belarus	BLR
-Belgium	BEL
-Benin	BEN
-Bhutan	BTN
-Bolivia	BOL
-Bosnia and Herzegovina	BIH
-Botswana	BWA
-Brazil	BRA
-Brunswick	
-Bulgaria	BGR
-Burkina Faso	BFA
-Burundi	BDI
-Cambodia	KHM
-Cameroon	CMR
-Canada	CAN
-Cape Verde	CPV
-Central African Republic	CAF
-Chad	TCD
-Chile	CHL
-China	CHN
-Colombia	COL
-Comoros	COM
-Congo	COG
-Costa Rica	CRI
-Cote d'Ivoire	CIV
-Croatia	HRV
-Cuba	CUB
-Cyprus	CYP
-Czechia	CZE
-Democratic Republic of Congo	COD
-Democratic Republic of Vietnam	OWID_DRV
-Denmark	DNK
-Djibouti	DJI
-Dominican Republic	DOM
-Duchy of Nassau	
-East Germany	OWID_GDR
-East Timor	TLS
-Ecuador	ECU
-Egypt	EGY
-El Salvador	SLV
-Equatorial Guinea	GNQ
-Eritrea	ERI
-Estonia	EST
-Eswatini	SWZ
-Ethiopia	ETH
-Europe	OWID_EUR
-Europe (population-weighted)	
-Fiji	FJI
-Finland	FIN
-France	FRA
-Gabon	GAB
-Gambia	GMB
-Georgia	GEO
-Germany	DEU
-Ghana	GHA
-Greece	GRC
-Guatemala	GTM
-Guinea	GIN
-Guinea-Bissau	GNB
-Guyana	GUY
-Haiti	HTI
-Hanover	OWID_HAN
-Hesse Grand Ducal	OWID_HSG
-Honduras	HND
-Hong Kong	HKG
-Hungary	HUN
-Iceland	ISL
-India	IND
-Indonesia	IDN
-Iran	IRN
-Iraq	IRQ
-Ireland	IRL
-Israel	ISR
-Italy	ITA
-Jamaica	JAM
-Japan	JPN
-Jordan	JOR
-Kazakhstan	KAZ
-Kenya	KEN
-Kosovo	OWID_KOS
-Kuwait	KWT
-Kyrgyzstan	KGZ
-Laos	LAO
-Latvia	LVA
-Lebanon	LBN
-Lesotho	LSO
-Liberia	LBR
-Libya	LBY
-Lithuania	LTU
-Luxembourg	LUX
-Madagascar	MDG
-Malawi	MWI
-Malaysia	MYS
-Maldives	MDV
-Mali	MLI
-Malta	MLT
-Mauritania	MRT
-Mauritius	MUS
-Mecklenburg Schwerin	OWID_MEC
-Mexico	MEX
-Modena	OWID_MOD
-Moldova	MDA
-Mongolia	MNG
-Montenegro	MNE
-Morocco	MAR
-Mozambique	MOZ
-Myanmar	MMR
-Namibia	NAM
-Nepal	NPL
-Netherlands	NLD
-New Zealand	NZL
-Nicaragua	NIC
-Niger	NER
-Nigeria	NGA
-North America	OWID_NAM
-North America (population-weighted)	
-North Korea	PRK
-North Macedonia	MKD
-Norway	NOR
-Oceania	OWID_OCE
-Oceania (population-weighted)	
-Oldenburg	
-Oman	OMN
-Pakistan	PAK
-Palestine	PSE
-Palestine/Gaza	
-Palestine/West Bank	
-Panama	PAN
-Papua New Guinea	PNG
-Paraguay	PRY
-Parma	OWID_PMA
-Peru	PER
-Philippines	PHL
-Piedmont-Sardinia	
-Poland	POL
-Portugal	PRT
-Qatar	QAT
-Republic of Vietnam	OWID_RVN
-Romania	ROU
-Russia	RUS
-Rwanda	RWA
-Sao Tome and Principe	STP
-Saudi Arabia	SAU
-Saxe-Weimar-Eisenach	
-Saxony	OWID_SAX
-Senegal	SEN
-Serbia	SRB
-Seychelles	SYC
-Sierra Leone	SLE
-Singapore	SGP
-Slovakia	SVK
-Slovenia	SVN
-Solomon Islands	SLB
-Somalia	SOM
-Somaliland	OWID_SML
-South Africa	ZAF
-South America	OWID_SAM
-South America (population-weighted)	
-South Korea	KOR
-South Sudan	SSD
-Spain	ESP
-Sri Lanka	LKA
-Sudan	SDN
-Suriname	SUR
-Sweden	SWE
-Switzerland	CHE
-Syria	SYR
-Taiwan	TWN
-Tajikistan	TJK
-Tanzania	TZA
-Thailand	THA
-Togo	TGO
-Trinidad and Tobago	TTO
-Tunisia	TUN
-Turkey	TUR
-Turkmenistan	TKM
-Tuscany	OWID_TUS
-Two Sicilies	OWID_SIC
-Uganda	UGA
-Ukraine	UKR
-United Arab Emirates	ARE
-United Kingdom	GBR
-United States	USA
-Uruguay	URY
-Uzbekistan	UZB
-Vanuatu	VUT
-Vatican	VAT
-Venezuela	VEN
-Vietnam	VNM
-West Germany	OWID_GFR
-World	OWID_WRL
-World (population-weighted)	
-Wurttemberg	
-Yemen	YEM
-Yemen Arab Republic	OWID_YAR
-Yemen People's Republic	OWID_YPR
-Zambia	ZMB
-Zanzibar	OWID_ZAN
-Zimbabwe	ZWE
+237 correspondances distinctes du motif '(?m)^(France,FRA,-?\\d+,.*)$' :
+France,FRA,1789,0.707,Europe
+France,FRA,1790,0.707,Europe
+France,FRA,1791,0.604,Europe
+France,FRA,1792,0.518,Europe
+France,FRA,1793,0.518,Europe
+France,FRA,1794,0.518,Europe
+France,FRA,1795,0.618,Europe
+France,FRA,1796,0.618,Europe
+France,FRA,1797,0.618,Europe
+France,FRA,1798,0.618,Europe
+France,FRA,1799,0.514,Europe
+France,FRA,1800,0.307,Europe
+France,FRA,1801,0.307,Europe
+France,FRA,1802,0.307,Europe
+France,FRA,1803,0.307,Europe
+France,FRA,1804,0.307,Europe
+France,FRA,1805,0.307,Europe
+France,FRA,1806,0.307,Europe
+France,FRA,1807,0.307,Europe
+France,FRA,1808,0.307,Europe
+France,FRA,1809,0.307,Europe
+France,FRA,1810,0.307,Europe
+France,FRA,1811,0.307,Europe
+France,FRA,1812,0.307,Europe
+France,FRA,1813,0.307,Europe
+France,FRA,1814,0.307,Europe
+France,FRA,1815,0.484,Europe
+France,FRA,1816,0.484,Europe
+France,FRA,1817,0.484,Europe
+France,FRA,1818,0.484,Europe
+France,FRA,1819,0.484,Europe
+France,FRA,1820,0.484,Europe
+France,FRA,1821,0.484,Europe
+France,FRA,1822,0.484,Europe
+France,FRA,1823,0.484,Europe
+France,FRA,1824,0.484,Europe
+France,FRA,1825,0.484,Europe
+France,FRA,1826,0.484,Europe
+France,FRA,1827,0.484,Europe
+France,FRA,1828,0.484,Europe
+France,FRA,1829,0.484,Europe
+France,FRA,1830,0.625,Europe
+France,FRA,1831,0.625,Europe
+France,FRA,1832,0.625,Europe
+France,FRA,1833,0.625,Europe
+France,FRA,1834,0.625,Europe
+France,FRA,1835,0.625,Europe
+France,FRA,1836,0.625,Europe
+France,FRA,1837,0.625,Europe
+France,FRA,1838,0.625,Europe
+France,FRA,1839,0.625,Europe
+France,FRA,1840,0.625,Europe
+France,FRA,1841,0.625,Europe
+France,FRA,1842,0.625,Europe
+France,FRA,1843,0.625,Europe
+France,FRA,1844,0.625,Europe
+France,FRA,1845,0.625,Europe
+France,FRA,1846,0.625,Europe
+France,FRA,1847,0.625,Europe
+France,FRA,1848,0.79,Europe
+France,FRA,1849,0.79,Europe
+France,FRA,1850,0.79,Europe
+France,FRA,1851,0.447,Europe
+France,FRA,1852,0.447,Europe
+France,FRA,1853,0.447,Europe
+France,FRA,1854,0.447,Europe
+France,FRA,1855,0.447,Europe
+France,FRA,1856,0.447,Europe
+France,FRA,1857,0.447,Europe
+France,FRA,1858,0.447,Europe
+France,FRA,1859,0.447,Europe
+France,FRA,1860,0.447,Europe
+France,FRA,1861,0.447,Europe
+France,FRA,1862,0.447,Europe
+France,FRA,1863,0.447,Europe
+France,FRA,1864,0.447,Europe
+France,FRA,1865,0.447,Europe
+France,FRA,1866,0.447,Europe
+France,FRA,1867,0.447,Europe
+France,FRA,1868,0.447,Europe
+France,FRA,1869,0.498,Europe
+France,FRA,1870,0.748,Europe
+France,FRA,1871,0.748,Europe
+France,FRA,1872,0.802,Europe
+France,FRA,1873,0.802,Europe
+France,FRA,1874,0.802,Europe
+France,FRA,1875,0.802,Europe
+France,FRA,1876,0.802,Europe
+France,FRA,1877,0.802,Europe
+France,FRA,1878,0.802,Europe
+France,FRA,1879,0.802,Europe
+France,FRA,1880,0.802,Europe
+France,FRA,1881,0.802,Europe
+France,FRA,1882,0.802,Europe
+France,FRA,1883,0.802,Europe
+France,FRA,1884,0.802,Europe
+France,FRA,1885,0.802,Europe
+France,FRA,1886,0.802,Europe
+France,FRA,1887,0.802,Europe
+France,FRA,1888,0.802,Europe
+France,FRA,1889,0.802,Europe
+France,FRA,1890,0.802,Europe
+France,FRA,1891,0.802,Europe
+France,FRA,1892,0.802,Europe
+France,FRA,1893,0.802,Europe
+France,FRA,1894,0.802,Europe
+France,FRA,1895,0.802,Europe
+France,FRA,1896,0.802,Europe
+France,FRA,1897,0.802,Europe
+France,FRA,1898,0.802,Europe
+France,FRA,1899,0.802,Europe
+France,FRA,1900,0.802,Europe
+France,FRA,1901,0.802,Europe
+France,FRA,1902,0.802,Europe
+France,FRA,1903,0.802,Europe
+France,FRA,1904,0.802,Europe
+France,FRA,1905,0.802,Europe
+France,FRA,1906,0.802,Europe
+France,FRA,1907,0.802,Europe
+France,FRA,1908,0.802,Europe
+France,FRA,1909,0.802,Europe
+France,FRA,1910,0.802,Europe
+France,FRA,1911,0.802,Europe
+France,FRA,1912,0.802,Europe
+France,FRA,1913,0.802,Europe
+France,FRA,1914,0.802,Europe
+France,FRA,1915,0.802,Europe
+France,FRA,1916,0.802,Europe
+France,FRA,1917,0.802,Europe
+France,FRA,1918,0.802,Europe
+France,FRA,1919,0.802,Europe
+France,FRA,1920,0.802,Europe
+France,FRA,1921,0.802,Europe
+France,FRA,1922,0.802,Europe
+France,FRA,1923,0.802,Europe
+France,FRA,1924,0.802,Europe
+France,FRA,1925,0.802,Europe
+France,FRA,1926,0.802,Europe
+France,FRA,1927,0.802,Europe
+France,FRA,1928,0.802,Europe
+France,FRA,1929,0.802,Europe
+France,FRA,1930,0.802,Europe
+France,FRA,1931,0.802,Europe
+France,FRA,1932,0.802,Europe
+France,FRA,1933,0.802,Europe
+France,FRA,1934,0.802,Europe
+France,FRA,1935,0.802,Europe
+France,FRA,1936,0.802,Europe
+France,FRA,1937,0.802,Europe
+France,FRA,1938,0.802,Europe
+France,FRA,1939,0.802,Europe
+France,FRA,1940,0.235,Europe
+France,FRA,1941,0.237,Europe
+France,FRA,1942,0.237,Europe
+France,FRA,1943,0.237,Europe
+France,FRA,1944,0.23,Europe
+France,FRA,1945,0.803,Europe
+France,FRA,1946,0.806,Europe
+France,FRA,1947,0.816,Europe
+France,FRA,1948,0.816,Europe
+France,FRA,1949,0.816,Europe
+France,FRA,1950,0.816,Europe
+France,FRA,1951,0.816,Europe
+France,FRA,1952,0.816,Europe
+France,FRA,1953,0.816,Europe
+France,FRA,1954,0.816,Europe
+France,FRA,1955,0.816,Europe
+France,FRA,1956,0.816,Europe
+France,FRA,1957,0.816,Europe
+France,FRA,1958,0.816,Europe
+France,FRA,1959,0.873,Europe
+France,FRA,1960,0.873,Europe
+France,FRA,1961,0.873,Europe
+France,FRA,1962,0.873,Europe
+France,FRA,1963,0.873,Europe
+France,FRA,1964,0.873,Europe
+France,FRA,1965,0.873,Europe
+France,FRA,1966,0.873,Europe
+France,FRA,1967,0.873,Europe
+France,FRA,1968,0.873,Europe
+France,FRA,1969,0.912,Europe
+France,FRA,1970,0.919,Europe
+France,FRA,1971,0.922,Europe
+France,FRA,1972,0.922,Europe
+France,FRA,1973,0.922,Europe
+France,FRA,1974,0.922,Europe
+France,FRA,1975,0.922,Europe
+France,FRA,1976,0.922,Europe
+France,FRA,1977,0.922,Europe
+France,FRA,1978,0.922,Europe
+France,FRA,1979,0.922,Europe
+France,FRA,1980,0.922,Europe
+France,FRA,1981,0.945,Europe
+France,FRA,1982,0.945,Europe
+France,FRA,1983,0.945,Europe
+France,FRA,1984,0.945,Europe
+France,FRA,1985,0.945,Europe
+France,FRA,1986,0.945,Europe
+France,FRA,1987,0.945,Europe
+France,FRA,1988,0.945,Europe
+France,FRA,1989,0.945,Europe
+France,FRA,1990,0.945,Europe
+France,FRA,1991,0.945,Europe
+France,FRA,1992,0.945,Europe
+France,FRA,1993,0.926,Europe
+France,FRA,1994,0.944,Europe
+France,FRA,1995,0.944,Europe
+France,FRA,1996,0.944,Europe
+France,FRA,1997,0.944,Europe
+France,FRA,1998,0.944,Europe
+France,FRA,1999,0.944,Europe
+France,FRA,2000,0.944,Europe
+France,FRA,2001,0.944,Europe
+France,FRA,2002,0.944,Europe
+France,FRA,2003,0.944,Europe
+France,FRA,2004,0.944,Europe
+France,FRA,2005,0.944,Europe
+France,FRA,2006,0.944,Europe
+France,FRA,2007,0.944,Europe
+France,FRA,2008,0.944,Europe
+France,FRA,2009,0.944,Europe
+France,FRA,2010,0.944,Europe
+France,FRA,2011,0.944,Europe
+France,FRA,2012,0.944,Europe
+France,FRA,2013,0.946,Europe
+France,FRA,2014,0.946,Europe
+France,FRA,2015,0.946,Europe
+France,FRA,2016,0.946,Europe
+France,FRA,2017,0.946,Europe
+France,FRA,2018,0.946,Europe
+France,FRA,2019,0.946,Europe
+France,FRA,2020,0.946,Europe
+France,FRA,2021,0.946,Europe
+France,FRA,2022,0.945,Europe
+France,FRA,2023,0.945,Europe
+France,FRA,2024,0.945,Europe
+France,FRA,2025,0.945,Europe

@@ -204,13 +204,22 @@ def _normaliser(t: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
+#: Types géographiques dont le libellé peut désigner un périmètre national (« Autre » : France
+#: métropolitaine, France hors Mayotte…). Les types communaux, départementaux, etc. ne le peuvent pas :
+#: l'essai du 13/10 a retenu à tort une commune (COM-47102) comme niveau national, ce que seul un libellé
+#: commençant par « France… » pouvait expliquer ; le mot « France » doit aussi être un mot entier.
+TYPES_A_LIBELLE = {"OTHER", ""}
+
+
 def est_geo_nationale(type_code: str, libelle: str) -> bool:
-    """Niveau national : type FRANCE/NAT, ou type OTHER dont le libellé désigne la France entière
-    (métropole, hors Mayotte…) et non une partie (province, hors Île-de-France, DOM…)."""
+    """Niveau national : type FRANCE/NAT, ou type OTHER (ou absent) dont le libellé désigne la France
+    entière (métropole, hors Mayotte…) et non une partie (province, hors Île-de-France, DOM…)."""
     if type_code in TYPES_NATIONAUX:
         return True
+    if type_code not in TYPES_A_LIBELLE:
+        return False
     lib = _normaliser(libelle)
-    if not lib.startswith("france"):
+    if not re.match(r"^france\b", lib):
         return False
     return not any(m in lib for m in ("province", "hors ile", "hors paris", "outre-mer", "infra"))
 

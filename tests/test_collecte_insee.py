@@ -92,8 +92,12 @@ def test_collecte_complete_puis_catalogage(script, monkeypatch, tmp_path):
     assert list(ligne)[:13] == ["source", "serie_id", "libelle", "unite", "frequence", "geo", "premiere_periode", "derniere_periode",
                                 "derniere_maj", "theme_source", "dimension_v0", "candidat", "commentaire"]
 
+    # catalogue des candidates (oui, a_verifier) + séries écartées dans un CSV compressé à côté
     melodi = list(csv.DictReader(open(tmp_path / "catalogues" / "insee_melodi_catalogue.csv", encoding="utf-8")))
-    assert melodi and all(r["serie_id"].startswith(("DD_CNA_AGREGATS?", "DD_CNA_APU?")) for r in melodi)
+    melodi_non = list(csv.DictReader(gzip.open(tmp_path / "catalogues" / "insee_melodi_catalogue_non.csv.gz", "rt", encoding="utf-8")))
+    assert all(r["candidat"] != "non" for r in melodi) and all(r["candidat"] == "non" for r in melodi_non)
+    assert melodi + melodi_non and all(r["serie_id"].startswith(("DD_CNA_AGREGATS?", "DD_CNA_APU?")) for r in melodi + melodi_non)
+    assert (tmp_path / "catalogues" / "insee_bdm_catalogue_non.csv.gz").exists()
     jeux = list(csv.DictReader(open(tmp_path / "catalogues" / "insee_melodi_jeux.csv", encoding="utf-8")))
     assert {j["statut"] for j in jeux} >= {"traité", "non traité"}
 
@@ -110,3 +114,47 @@ def test_collecte_complete_puis_catalogage(script, monkeypatch, tmp_path):
     # 3e passage hors ligne : catalogage seul depuis les inventaires
     assert lancer(m, monkeypatch, "--catalogage-seul") == 0
     assert len(list(csv.DictReader(open(tmp_path / "catalogues" / "insee_bdm_catalogue.csv", encoding="utf-8")))) == 1
+
+
+def test_cycle_identifie_reprise_puis_catalogage_seul(script, monkeypatch, tmp_path):
+    m = script
+    etat_json = tmp_path / "catalogues" / "insee_etat" / "etat.json"
+    # cycle « essai » : interrompu (budget nul), puis repris et terminé
+    assert lancer(m, monkeypatch, "--cycle", "essai", "--budget-minutes", "0", "--max-jeux", "1") == 0
+    assert json.loads(etat_json.read_text())["cycle"] == "essai"
+    assert lancer(m, monkeypatch, "--cycle", "essai", "--max-jeux", "1") == 0
+    etat = json.loads(etat_json.read_text())
+    assert etat["termine"] and len(etat["passages"]) == 2
+    # même identifiant, cycle terminé : catalogage seul, aucune nouvelle collecte
+    (tmp_path / "catalogues" / "insee_bdm_catalogue.csv").unlink()
+    assert lancer(m, monkeypatch, "--cycle", "essai", "--max-jeux", "1") == 0
+    assert len(json.loads(etat_json.read_text())["passages"]) == 2
+    assert (tmp_path / "catalogues" / "insee_bdm_catalogue.csv").exists()
+    # autre identifiant : nouveau cycle
+    assert lancer(m, monkeypatch, "--cycle", "complet", "--budget-minutes", "0", "--max-jeux", "1") == 0
+    etat = json.loads(etat_json.read_text())
+    assert etat["cycle"] == "complet" and not etat["termine"] and len(etat["passages"]) == 1
+
+
+def test_decider_cycle():
+    m = charger_script()
+    termine_recent = {"termine": True, "cycle": "mois-2026-10", "maj": m.maintenant()}
+    assert m.decider_cycle({}, False, None, 20) == "nouveau"
+    assert m.decider_cycle(termine_recent, True, "mois-2026-10", 20) == "nouveau"
+    assert m.decider_cycle(termine_recent, False, "mois-2026-10", 20) == "catalogage"
+    assert m.decider_cycle(termine_recent, False, "mois-2026-11", 20) == "nouveau"
+    assert m.decider_cycle({**termine_recent, "termine": False}, False, "mois-2026-10", 20) == "reprise"
+    assert m.decider_cycle(termine_recent, False, None, 20) == "catalogage"
+    assert m.decider_cycle({**termine_recent, "maj": "2026-01-01T00:00:00+00:00"}, False, None, 20) == "nouveau"
+    assert m.decider_cycle({"termine": False, "maj": "2026-01-01T00:00:00+00:00"}, False, None, 20) == "reprise"
+
+
+def test_jeux_melodi_ecartes_d_emblee():
+    m = charger_script()
+    from src.sources.insee_melodi import JeuMelodi
+    national = ["FRANCE"]
+    assert m.motif_jeu_hors_champ(JeuMelodi("DD_EEC_ANNUEL", debut="2025-01-01", fin="2025-12-31", niveaux_geo=national)).startswith("un seul millésime")
+    assert "terminé en 2015" in m.motif_jeu_hors_champ(JeuMelodi("DS_X", debut="2000", fin="2015", niveaux_geo=national))
+    assert m.motif_jeu_hors_champ(JeuMelodi("DS_SRCV_SATISFACTION", debut="2010", fin="2025", niveaux_geo=national)) is None
+    assert m.motif_jeu_hors_champ(JeuMelodi("DS_MORTALITE", niveaux_geo=national)) is None  # couverture non renseignée
+    assert m.motif_jeu_hors_champ(JeuMelodi("DS_LOCAL_X", debut="2015", fin="2025", niveaux_geo=["COM", "DEP"])).startswith("pas de niveau national")

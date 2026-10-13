@@ -72,6 +72,10 @@ def test_analyser_plage_et_geo_nationale():
         ("OTHER", "France de province", False),
         ("OTHER", "France métropolitaine hors Île-de-France", False),
         ("DEP", "Ain", False),
+        # essai du 13/10 : une commune (COM-47102) avait été prise pour un niveau national
+        ("COM", "Franceville", False),
+        ("OTHER", "Franceville", False),
+        ("REG", "France entière", False),
     ],
 )
 def test_est_geo_nationale(type_code, libelle, attendu):

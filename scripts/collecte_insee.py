@@ -13,15 +13,18 @@ n'atteint pas les API : seule l'étape `catalogage` (hors ligne) s'y exécute.
   melodi         catalogue, /range, séries nationales de chaque jeu pertinent (/data ou fichier ZIP)
   echantillons   réponses brutes de référence → docs/sources/echantillons_insee/ (futures fixtures)
   consolidation  inventaires bruts : catalogues/insee_{bdm,melodi}_inventaire.csv.gz
-  catalogage     filtres, tagging dimension_v0, candidat → catalogues/insee_*_catalogue.csv, bilans,
-                 comparaison avec le repérage de phase 1
+  catalogage     filtres, tagging dimension_v0, candidat → catalogues/insee_*_catalogue.csv (séries
+                 candidates : oui, a_verifier) et insee_*_catalogue_non.csv.gz (écartées, motif),
+                 bilans, comparaison avec le repérage de phase 1
 
 Reprise : l'état est gardé dans `catalogues/insee_etat/` (commité par le robot). Si le budget de
 temps est atteint (240 min par défaut, le robot coupe à 300 min), le script s'arrête proprement ;
-le passage suivant reprend. Un cycle terminé est recommencé de zéro au passage suivant.
+le passage suivant reprend. Avec `--cycle <id>` (ou `--cycle mois`), un cycle terminé n'est pas
+recommencé : un nouveau passage refait seulement le catalogage avec les règles du moment (utile après
+une correction des règles) ; un nouvel identifiant de cycle (ou un nouveau mois) relance la collecte.
 
 Options du robot : lancé sans argument, le script lit `scripts/collecte_insee.options` s'il existe
-(ex. « --nouveau --budget-minutes 45 ») ; les arguments de la ligne de commande l'emportent.
+(ex. « --cycle mois --budget-minutes 255 ») ; les arguments de la ligne de commande l'emportent.
 
 Usage :
     python scripts/collecte_insee.py                     # collecte complète ou reprise (robot)
@@ -105,10 +108,16 @@ JEUX_HORS_CHAMP: list[tuple[re.Pattern, str]] = [
         (r"^DS_ICA$", "indices de chiffre d'affaires (entreprises)"),
         (r"^DD_CNA_(BRANCHES|SUT|REBS|PATRIMOINE_BRANCHES|ECH_EXT|CONSO_MENAGES_PRODUITS)$", "comptes nationaux par branche ou par produit (hors champ, volumineux)"),
         (r"^DS_COMPTES_REGIONAUX$", "comptes régionaux (le niveau France double les comptes nationaux)"),
+        (r"^DS_COEFF_EURO_FRANC$", "coefficients de conversion euro-franc (outil)"),
     ]
 ]
 
-PLAFOND_MELODI = 3_000_000   # au-delà, le niveau national d'un jeu n'est pas extrait (journalisé)
+PLAFOND_MELODI = 1_500_000   # au-delà, le niveau national d'un jeu n'est pas extrait (journalisé)
+
+#: Codes et libellés de modalités « total » omis du libellé des séries Melodi (ils l'allongent sans
+#: l'informer : « … ; Total ; Total ; Total »).
+CODES_TOTAL_MELODI = {"_T", "_Z"}
+LIBELLES_TOTAL_MELODI = {"total", "ensemble", "sans objet", "non applicable", "aucune", "aucun", "tous", "toutes"}
 PERIODICITES = {"annuel": "A", "trimestriel": "T", "mensuel": "M", "semestriel": "S", "bimestriel": "B", "aperiodique": "A", "quotidien": "J"}
 
 
@@ -374,6 +383,12 @@ def motif_jeu_hors_champ(jeu: mel.JeuMelodi) -> Optional[str]:
             return explication
     if jeu.niveaux_geo and not jeu.niveau_national:
         return f"pas de niveau national dans le catalogue ({';'.join(jeu.niveaux_geo)})"
+    # Couverture temporelle du jeu (catalogue) : aucune de ses séries ne pourrait passer les filtres.
+    debut, fin = cat.annee_de(jeu.debut), cat.annee_de(jeu.fin)
+    if fin is not None and fin < cat.ANNEE_DERNIERE_MIN:
+        return f"jeu terminé en {fin} (< {cat.ANNEE_DERNIERE_MIN})"
+    if debut is not None and fin is not None and debut == fin:
+        return f"un seul millésime ({fin}) : pas de série temporelle"
     return None
 
 
@@ -440,8 +455,13 @@ class AgregatMelodi:
             parties = []
             for k in variables:
                 v = dims.get(k, "")
+                if v in CODES_TOTAL_MELODI:
+                    continue
                 concept = plage.get(k)
-                parties.append((concept.valeurs.get(v) if concept else "") or v)
+                lib = (concept.valeurs.get(v) if concept else "") or v
+                if cat.normaliser(lib) in LIBELLES_TOTAL_MELODI:
+                    continue
+                parties.append(lib)
             libelle = self.jeu.titre + (" — " + " ; ".join(parties) if parties else "")
             unite = ""
             if "UNIT_MEASURE" in dims:
@@ -723,6 +743,35 @@ def etape_consolidation(etat: Etat) -> None:
 # Étape catalogage (hors ligne)
 # --------------------------------------------------------------------------------------
 
+#: Au-delà de cette taille, un CSV est écrit compressé (GitHub refuse les fichiers de plus de 100 Mo :
+#: un refus ferait perdre tout le passage du robot, état de reprise compris).
+TAILLE_MAX_CSV = 80_000_000
+
+
+def chemin_non(chemin: Path) -> Path:
+    """catalogues/insee_bdm_catalogue.csv → catalogues/insee_bdm_catalogue_non.csv.gz"""
+    return chemin.with_name(chemin.stem + "_non.csv.gz")
+
+
+def ecrire_catalogue(chemin: Path, lignes: list[dict]) -> None:
+    """Catalogue des séries candidates (`candidat` = oui ou a_verifier) en CSV, et séries écartées
+    (`candidat` = non, motif en commentaire) dans un CSV compressé à côté : les exclusions restent
+    traçables sans alourdir le fichier de travail (l'essai du 13/10 donnait 48 Mo pour 9 jeux Melodi)."""
+    retenues = [l for l in lignes if l["candidat"] != "non"]
+    ecartees = [l for l in lignes if l["candidat"] == "non"]
+    ecrire_csv(chemin, COLONNES_CATALOGUE, retenues)
+    if chemin.stat().st_size > TAILLE_MAX_CSV:
+        gz = chemin.with_name(chemin.name + ".gz")
+        ecrire_csv(gz, COLONNES_CATALOGUE, retenues, compresser=True)
+        chemin.unlink()
+        log(f"  {chemin.name} dépasse {TAILLE_MAX_CSV / 1e6:.0f} Mo : écrit compressé ({gz.name})")
+    else:
+        ancien_gz = chemin.with_name(chemin.name + ".gz")
+        if ancien_gz.exists():
+            ancien_gz.unlink()
+    ecrire_csv(chemin_non(chemin), COLONNES_CATALOGUE, ecartees, compresser=True)
+
+
 def frequence_libelle(code: str) -> str:
     return cat.FREQUENCES_RETENUES.get(code, code)
 
@@ -793,7 +842,7 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
             "url_api": f"{bdm.URL_BASE}/data/SERIES_BDM/{l['idbank']}",
         })
     catalogue.sort(key=lambda r: (r["theme_source"], r["serie_id"]))
-    ecrire_csv(CATALOGUE_BDM, COLONNES_CATALOGUE, catalogue)
+    ecrire_catalogue(CATALOGUE_BDM, catalogue)
 
     # dataflows
     lignes_flux = []
@@ -848,7 +897,7 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
                 "theme_libelle": jeu.get("titre", ""), "url_api": f"{mel.URL_BASE}/data/{requete}",
             })
     mcatalogue.sort(key=lambda r: r["serie_id"])
-    ecrire_csv(CATALOGUE_MELODI, COLONNES_CATALOGUE, mcatalogue)
+    ecrire_catalogue(CATALOGUE_MELODI, mcatalogue)
     if jeux_info:
         lignes_jeux = []
         for jid, j in sorted(jeux_info.items()):
@@ -973,6 +1022,29 @@ def faire_bilan(inventaire, catalogue, exclusions, mcatalogue, mexclusions, jeux
 # Programme principal
 # --------------------------------------------------------------------------------------
 
+def age_jours(horodatage: Optional[str]) -> float:
+    try:
+        t = datetime.fromisoformat(str(horodatage))
+    except (TypeError, ValueError):
+        return float("inf")
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - t).total_seconds() / 86400
+
+
+def decider_cycle(d: dict, nouveau: bool, cycle: Optional[str], renouveler_apres_jours: float) -> str:
+    """'nouveau' | 'reprise' | 'catalogage' (cycle terminé à ne pas recommencer)."""
+    if nouveau or not d:
+        return "nouveau"
+    if cycle is not None:
+        if d.get("cycle", "") != cycle:
+            return "nouveau"
+        return "catalogage" if d.get("termine") else "reprise"
+    if d.get("termine"):
+        return "catalogage" if age_jours(d.get("maj")) < renouveler_apres_jours else "nouveau"
+    return "reprise"
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--etapes", default=",".join(ETAPES), help="étapes à exécuter, séparées par des virgules")
@@ -982,6 +1054,12 @@ def main() -> int:
     p.add_argument("--max-flux", type=int, default=None, help="(essai) nombre maximal de dataflows")
     p.add_argument("--max-jeux", type=int, default=None, help="(essai) nombre maximal de jeux Melodi")
     p.add_argument("--intervalle-bdm", type=float, default=0.5, help="secondes minimales entre deux appels à bdm.insee.fr")
+    p.add_argument("--cycle", default=None,
+                   help="identifiant du cycle voulu : nouveau cycle si l'état porte un autre identifiant ; reprise s'il est "
+                        "inachevé ; catalogage seul s'il est terminé (un push ultérieur ne relance donc pas la collecte). "
+                        "« mois » = un cycle par mois civil (mois-AAAA-MM)")
+    p.add_argument("--renouveler-apres-jours", type=float, default=20.0,
+                   help="sans --cycle : un cycle terminé depuis moins de N jours n'est pas recommencé (catalogage seul)")
     argv = sys.argv[1:]
     if not argv and FICHIER_OPTIONS.exists():
         argv = shlex.split(FICHIER_OPTIONS.read_text(encoding="utf-8"), comments=True)
@@ -996,11 +1074,21 @@ def main() -> int:
     etapes = [e for e in args.etapes.split(",") if e]
     budget = Budget(args.budget_minutes)
     etat = Etat(ETAT_DIR)
-    if args.nouveau or not etat.d or etat.d.get("termine"):
-        log("Nouveau cycle de collecte" + (" (le précédent était terminé)" if etat.d.get("termine") else ""))
+    if args.cycle == "mois":  # un cycle par mois civil : reprise dans le mois, nouveau cycle le mois suivant
+        args.cycle = "mois-" + datetime.now(timezone.utc).strftime("%Y-%m")
+    decision = decider_cycle(etat.d, args.nouveau, args.cycle, args.renouveler_apres_jours)
+    if decision == "catalogage":
+        log(f"Cycle {etat.d.get('cycle') or ''} terminé ({etat.d.get('maj')}) : pas de nouvelle collecte ; "
+            "catalogage seul avec les règles actuelles (forcer une collecte : --nouveau ou un autre --cycle)")
+        etape_catalogage(etat)
+        return 0
+    if decision == "nouveau":
+        log("Nouveau cycle de collecte" + (f" « {args.cycle} »" if args.cycle else "") + (" (le précédent était terminé)" if etat.d.get("termine") else ""))
         etat.nouveau_cycle()
+        etat.d["cycle"] = args.cycle or ""
+        etat.sauver()
     else:
-        log(f"Reprise du cycle commencé le {etat.d.get('debut')} ; étapes déjà terminées : {', '.join(etat.d.get('etapes_terminees', [])) or 'aucune'}")
+        log(f"Reprise du cycle {etat.d.get('cycle') or ''} commencé le {etat.d.get('debut')} ; étapes déjà terminées : {', '.join(etat.d.get('etapes_terminees', [])) or 'aucune'}")
     passage = {"debut": maintenant(), "fin": None, "issue": None}
     etat.d["passages"].append(passage)
     etat.sauver()

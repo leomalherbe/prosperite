@@ -13,3 +13,11 @@ Branche : `m03-grille`. Une entrée horodatée par sous-tâche. Périmètre du l
 | 2026-10-13 17:00 | T1/T2 — ODD (16 cibles chiffrées) et objectifs officiels France-UE (41) ; 57 lignes CSV ; extraction T1 complète (6 cadres) | fait | Vérifiés : décret SNBC 3 n° 2026-636, résumé SNBC 3, objectifs nationaux 2030 (Conseil UE 15277/25 ADD 1), résolution 2021/C 66/01, cadre mondial ODD. Légifrance et ecologie.gouv.fr interdits : L100-4 repris du rapport du Sénat (à vérifier). ZAN : objectif intermédiaire contesté (PPL TRACE), statut à vérifier. |
 | 2026-10-13 17:40 | T2 — synthèse du crosswalk (`30_crosswalk_synthese.md`) : matrice 8 colonnes × 10 dimensions v0, cases vides, 3 non rattachables, 10 thèmes hors contenu v0, recoupements, découpages, disponibilité, seuils ; vue d'ensemble ajoutée en tête de l'extraction | fait | Matrice calculée par script sur le CSV (344 lignes, 0 erreur de validation). Aucune proposition de grille v1 (phase 2). |
 | 2026-10-13 17:50 | Dépôt dans le Projet claude.ai : `claude/30_cadres_reference_extraction.md`, `claude/30_indicateurs_cadres_reference.csv`, `claude/30_crosswalk_synthese.md` ; fin de la phase 1 | fait | En attente de validation de Léo avant la phase 2 (T3 : proposition de grille v1 et arbitrages). Pas de pull request ouverte à ce stade. |
+
+## Phase 2 (T3, contrôle du Doughnut, dossier de décision du gel 1)
+
+Nouvel agent (session neuve, D13). Horodatages de phase 2 = heure de Paris lue sur l'horloge système (les horodatages de phase 1 ci-dessus étaient estimés : les commits correspondants sont datés de 13:05 à 13:58).
+
+| Horodatage | Sous-tâche | État | Remarques |
+|---|---|---|---|
+| 2026-10-13 15:05 | Mise en place : branche `m03-grille` recréée depuis `origin/m03-grille`, fusion de `origin/main` (charte v1.1 §3.6, journal D13–D22, fiches M05/M06) ; lecture de `CLAUDE.md`, charte §3.1–3.6 et §4, journal D13–D22, fiche M03, livrables de phase 1, repérage INSEE (1 063 séries, `origin/m01-insee`), fiches M04 (`origin/m04-sources`) | fait | Aucun conflit de fusion. |

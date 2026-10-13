@@ -32,6 +32,8 @@ Modes (chaîne « nom;cle=valeur;… ») :
 - ``agregat``    : somme de colonnes par clé (gros CSV lu par morceaux) ;
                    paramètres ``cle``, ``sommes``, ``ratio=num/den``.
 - ``bm``         : réponse JSON de l'API de la Banque mondiale.
+- ``pdf``        : lignes d'un PDF de documentation contenant ``motif`` (paramètres
+                   ``contexte``, ``max``) ; vérification de métadonnées seulement.
 """
 
 from __future__ import annotations
@@ -493,6 +495,30 @@ def lignes_correspondantes(contenu: bytes, motif: str, nom: str = "", max_lignes
             if trouves >= max_lignes:
                 sortie.append("… (tronqué)")
                 break
+    return "\n".join(sortie)
+
+
+def lignes_pdf(contenu: bytes, motif: str, contexte: int = 1, max_lignes: int = 400) -> str:
+    """Texte d'un PDF (documentation, métadonnées) : lignes contenant le motif, avec `contexte`
+    lignes avant et après. Sert à **vérifier une information de documentation** (source d'une
+    série, conditions de réutilisation), jamais à lire des données (charte §3.5 : PDF exclu)."""
+    from pypdf import PdfReader
+
+    lecteur = PdfReader(io.BytesIO(contenu))
+    rx = re.compile(motif)
+    sortie = [f"Pages : {len(lecteur.pages)} ; motif : {motif!r}"]
+    trouves = 0
+    for i, page in enumerate(lecteur.pages, 1):
+        lignes = [l.strip() for l in (page.extract_text() or "").splitlines()]
+        for j, l in enumerate(lignes):
+            if rx.search(l):
+                bloc = [x for x in lignes[max(0, j - contexte): j + contexte + 1] if x]
+                sortie.append(f"[p. {i}, l. {j}] " + " / ".join(bloc)[:3000])
+                trouves += 1
+                if trouves >= max_lignes:
+                    sortie.append("… (tronqué)")
+                    return "\n".join(sortie)
+    sortie.append(f"{trouves} lignes correspondantes")
     return "\n".join(sortie)
 
 

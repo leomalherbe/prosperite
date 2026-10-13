@@ -105,6 +105,10 @@ def decrire_classeur(contenu: bytes, lignes: int = 12, feuilles_max: int = 12) -
     import openpyxl
 
     wb = openpyxl.load_workbook(io.BytesIO(contenu), read_only=True, data_only=True)
+    if not wb.sheetnames:  # certains classeurs ne s'ouvrent pas en lecture seule
+        wb = openpyxl.load_workbook(io.BytesIO(contenu), read_only=False, data_only=True)
+    if not wb.sheetnames:
+        return "Classeur sans feuille lisible par openpyxl. " + decrire_zip(contenu)
     sortie = [f"Feuilles ({len(wb.sheetnames)}) : {wb.sheetnames}"]
     for nom in wb.sheetnames[:feuilles_max]:
         ws = wb[nom]
@@ -241,6 +245,8 @@ def main() -> int:
         print(f"Pas de liste d'URL ({ENTREE}) : rien à vérifier.")
         return 0
     EXTRAITS.mkdir(parents=True, exist_ok=True)
+    for ancien in EXTRAITS.glob("*.txt"):  # chaque exécution produit un instantané complet
+        ancien.unlink()
     with ENTREE.open(encoding="utf-8") as f:
         lignes = [l for l in csv.DictReader(f) if (l.get("url") or "").strip()]
     resultats = []

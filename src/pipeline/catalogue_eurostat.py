@@ -32,6 +32,23 @@ ANNEE_FIN_MAX = 2027      # au-delà : projections (données futures), non candi
 #: Jeux sans la France par construction (pays du voisinage, candidats, hors UE) : préfixes et dossiers.
 PREFIXES_HORS_FRANCE = ("enps_", "enpe_", "enpr_", "cpc_", "med_", "enlr_")
 DOSSIERS_HORS_FRANCE = ("Non EU countries",)
+
+#: Domaines hors périmètre (v4) : statistiques de production, de structure d'entreprises, d'échanges
+#: ou de trafic, qui décrivent un secteur et non la situation de la population ou de l'environnement.
+#: Ne s'applique pas aux dossiers prioritaires de la fiche M02. Exceptions : `EXCEPTIONS_HORS_PERIMETRE`.
+PREFIXES_HORS_PERIMETRE = {
+    "apro_": "production agricole", "apri_": "prix agricoles", "aact_": "comptes économiques de l'agriculture",
+    "ef_": "structure des exploitations agricoles", "vit_": "viticulture", "orch_": "vergers",
+    "fish_": "pêche et aquaculture", "for_": "produits et comptes de la sylviculture",
+    "iww_": "transport fluvial", "pipe_": "transport par oléoduc", "rail_": "transport ferroviaire (hors sécurité)",
+    "mar_": "transport maritime", "avia_": "transport aérien", "road_eq": "parc de véhicules",
+    "road_go": "transport routier de marchandises", "road_tf": "trafic routier", "road_ec": "investissements routiers",
+    "tran_im_": "transport intermodal de marchandises", "tour_": "tourisme",
+    "bop_fdi": "investissements directs étrangers", "bop_euins": "institutions de l'UE", "ext_": "commerce extérieur",
+    "sbs_": "statistiques structurelles d'entreprises", "bd_": "démographie des entreprises", "fats_": "filiales étrangères",
+    "met_bd": "démographie des entreprises", "urt_bd": "démographie des entreprises", "migr_res": "titres de séjour",
+}
+EXCEPTIONS_HORS_PERIMETRE = ("for_area", "road_eqr_zev", "road_eqs_zev")
 NB_ANNEES_MIN = 10        # au moins 10 points depuis 2000 (charte §3.4)
 
 DIMENSIONS_V0 = [
@@ -118,7 +135,7 @@ MOTS_CLES = {
         r"household consumption", r"final consumption", r"wealth", r"saving", r"debt", r"investment", r"purchasing power",
         r"price level", r"social protection", r"social benefit", r"social transfer", r"pension", r"minimum wage",
         r"make ends meet", r"financial burden", r"national income", r"living standard", r"standard of living",
-        r"actual individual consumption", r"household budget", r"labour productivity",
+        r"actual individual consumption", r"household budget", r"labour productivity", r"house price",
         r"revenu", r"pauvrete", r"privation", r"\bpib\b", r"produit interieur brut", r"depenses de consommation",
         r"consommation (finale|des menages)", r"patrimoine", r"epargne", r"dette", r"investissement", r"pouvoir d'achat",
         r"protection sociale", r"prestations sociales", r"transferts sociaux", r"pension", r"niveau de vie",
@@ -137,11 +154,11 @@ MOTS_CLES = {
     "logement_cadre_vie": [
         r"housing", r"dwelling", r"overcrowd", r"rooms?\b", r"\brent", r"mortgage", r"keep (the )?home",
         r"warm", r"heating", r"energy poverty", r"noise", r"neighbourhood", r"green (space|area)", r"leaking roof",
-        r"damp", r"bath or shower", r"toilet", r"tenure", r"homeless", r"modal split",
+        r"damp", r"bath or shower", r"toilet", r"tenure status", r"homeless", r"modal split",
         r"public transport", r"mobility", r"access to (services|public)", r"urban", r"living environment",
         r"logement", r"surpeuplement", r"pieces?\b", r"loyer", r"chauff", r"precarite energetique", r"bruit",
         r"quartier", r"espaces? verts?", r"transport de (voyageurs|passagers)", r"transports? (publics?|en commun)",
-        r"mobilite", r"sans-abri", r"cadre de vie", r"statut d'occupation",
+        r"mobilite", r"sans-abri", r"cadre de vie", r"statut d'occupation (du|des) logements?",
     ],
     "sante": [
         r"health", r"life expectancy", r"mortality", r"death", r"causes of death", r"disease", r"illness", r"morbidity",
@@ -166,14 +183,16 @@ MOTS_CLES = {
         r"life satisfaction", r"satisf", r"happ(y|iness)", r"well-being", r"wellbeing", r"quality of life",
         r"social participation", r"social (relations|life|activities|support)", r"personal relationships",
         r"someone to (rely|ask|discuss)", r"lonel", r"leisure", r"time use", r"free time", r"volunt", r"meaning",
-        r"worthwhile", r"feeling", r"work-life", r"friends", r"relatives", r"participation in (formal|informal|cultural|sport)",
+        r"worthwhile", r"feeling", r"work-life", r"friends", r"(family|friends) (or|and) relatives",
+        r"participation in (formal|informal|cultural|sport)",
         r"emotional", r"tension",
         r"satisfaction", r"bien-etre", r"qualite de vie", r"participation sociale", r"relations", r"soutien",
         r"solitude", r"vivant seul", r"personnes seules", r"loisirs", r"temps libre", r"benevol", r"emploi du temps", r"amis", r"sens de la vie",
     ],
     "securite_confiance": [
         r"crime", r"criminal", r"offence", r"homicide", r"violen", r"assault", r"robber", r"burglar", r"theft",
-        r"police", r"prison", r"victim", r"safety", r"feel(ing)? safe", r"trust", r"road (accident|traffic|fatalit|death)",
+        r"police", r"prison", r"victim", r"safety", r"feel(ing)? safe", r"trust",
+        r"road (accident|fatalit|death)", r"road traffic (accident|fatalit|death|injur|victim)",
         r"fatalit", r"persons killed", r"arrears", r"unexpected (financial )?expenses", r"insecur", r"vandalism",
         r"intentional", r"trafficking", r"sexual",
         r"criminalite", r"\bcrimes?\b", r"infraction", r"homicide", r"violence", r"agression", r"\bvols?\b", r"cambriol",
@@ -185,7 +204,8 @@ MOTS_CLES = {
         r"voting", r"\bvoter?s?\b", r"parliament", r"corruption", r"justice", r"judicial", r"courts?\b",
         r"civic", r"citizens' (participation|engagement)", r"seats held", r"public authorities", r"e-government",
         r"rule of law", r"decision-making", r"governance",
-        r"politique", r"election", r"\bvote\b", r"parlement", r"corruption", r"justice", r"judiciaire",
+        r"(vie|participation|engagement|activites?|partis?|systeme|confiance dans le systeme) politiques?",
+        r"election", r"\bvote\b", r"parlement", r"corruption", r"justice", r"judiciaire",
         r"tribunaux", r"sieges (detenus|occupes)", r"pouvoirs publics", r"administration en ligne", r"gouvernance",
     ],
     "egalites": [
@@ -203,7 +223,8 @@ MOTS_CLES = {
         r"recycl", r"circular", r"material (flow|footprint|consumption|productivity)", r"raw material",
         r"resource productivity", r"biodiversity", r"birds?\b", r"species", r"habitat", r"natura 2000",
         r"protected area", r"forest", r"land (use|cover|take|area)", r"\bsoil", r"erosion", r"sealing", r"artificial",
-        r"water", r"freshwater", r"bathing", r"marine", r"fish", r"organic", r"environment", r"energy", r"renewable",
+        r"water(?!ways?)", r"freshwater", r"bathing", r"marine", r"fish", r"organic", r"environment", r"energy", r"renewable",
+        r"nutrient", r"wooded land", r"settlement area", r"zero-emission",
         r"fossil", r"electricity", r"fuel", r"footprint", r"ecosystem", r"drought", r"wildfire", r"eco-", r"nuclear",
         r"agri-environment", r"fertilis", r"fertiliz", r"livestock", r"heat pump", r"vehicles?\b.*(emission|co2)",
         r"emissions?", r"effet de serre", r"carbone", r"climat", r"polluant", r"pollution", r"particules", r"azote",
@@ -258,6 +279,9 @@ class Etiquette:
     secondaires: list[str]
     methode: str
     scores: dict[str, float] = field(default_factory=dict)
+    #: vrai si un mot-clé figure dans la partie principale du titre (en ou fr) : condition (v4) pour
+    #: qu'un jeu hors dossier prioritaire devienne candidat par mots-clés.
+    dans_titre: bool = False
 
 
 def etiqueter(code: str, titre_en: str, titre_fr: str, theme_source: str, dossier: str = "", tous_chemins: str = "") -> Etiquette:
@@ -271,17 +295,17 @@ def etiqueter(code: str, titre_en: str, titre_fr: str, theme_source: str, dossie
     principal_en, ventil_en = decouper_titre(titre_en, "by")
     principal_fr, ventil_fr = decouper_titre(titre_fr, "par")
     scores: dict[str, float] = defaultdict(float)
-    for dim in _correspondances(principal_en + " | " + principal_fr):
+    dans_titre = _correspondances(principal_en + " | " + principal_fr)
+    for dim in dans_titre:
         scores[dim] += 2
     for dim in _correspondances(ventil_en + " | " + ventil_fr):
         scores[dim] += 0.5
     for dim in _correspondances(theme_source):
         scores[dim] += 1
     if scores:
-        meilleur = max(scores.values())
         ordre = sorted(scores, key=lambda d: (-scores[d], ORDRE_DEPARTAGE.index(d)))
         secondaires = [d for d in ordre[1:] if scores[d] >= 1]
-        return Etiquette(ordre[0], secondaires, "mots-clés", dict(scores))
+        return Etiquette(ordre[0], secondaires, "mots-clés", dict(scores), bool(dans_titre))
     m = re.match(r"sdg_(\d{2})", (code or "").lower()) or re.search(r"\bGoal (\d{1,2})\b", tous_chemins or theme_source or "")
     if m and m.group(1).zfill(2) in ODD_DIMENSION:
         return Etiquette(ODD_DIMENSION[m.group(1).zfill(2)], [], f"objectif ODD {m.group(1).zfill(2)}")
@@ -323,12 +347,16 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
 
     Le chemin principal est celui de la « Database by themes » s'il existe ;
     les autres emplacements du même code sont listés dans `autres_chemins`.
-    Règle `candidat` :
+    Règle `candidat` (dans cet ordre) :
+      - non pour les jeux sans France par construction (voisinage, candidats), les domaines hors
+        périmètre hors dossiers prioritaires (`PREFIXES_HORS_PERIMETRE`) et les projections (fin > 2027) ;
       - tableaux (`type = table`) : non (vues prédéfinies d'un jeu, filtre de la fiche), **sauf les
         indicateurs ODD `sdg_*`**, typés « table » dans le TOC mais servis comme jeux par l'API ;
-      - non si le jeu échoue aux filtres de dates (sauf rattrapage ci-dessous) ou s'il est infra-annuel ;
-      - oui s'il est dans un dossier prioritaire, ou si un mot-clé du titre le rattache à une dimension v0 ;
-      - rattrapage (oui) : début > 2010 mais ≥ 10 années possibles jusqu'à la fin, et pertinent (dossier ou mot-clé).
+      - non si le jeu est infra-annuel ou échoue aux filtres de dates (sauf rattrapage ci-dessous) ;
+      - oui s'il est dans un dossier prioritaire, ou si un mot-clé de la **partie principale du titre**
+        le rattache à une dimension v0 (un mot-clé trouvé seulement dans le chemin ou dans la partie
+        « by … » du titre donne l'étiquette mais pas la candidature) ;
+      - rattrapage (oui) : début > 2010 mais ≥ 10 années possibles jusqu'à la fin, et pertinent (dossier ou mot-clé du titre).
     """
     jeux = toc_en[toc_en["type"].isin(["dataset", "table"])].copy()
     titres_fr = {}
@@ -348,13 +376,19 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
         frequence = frequence_periode(p["debut"]) or frequence_periode(p["fin"])
         tous_chemins = " | ".join(groupe["theme_source"])
         dossier = dossier_prioritaire(code, tous_chemins.replace(" | ", " > "))
-        etiquette = etiqueter(code, p["titre"], titre_fr, p["theme_source"], dossier, tous_chemins)
+        # titre français seulement s'il existe (sinon le titre anglais, non découpé par « par », serait relu en entier)
+        etiquette = etiqueter(code, p["titre"], titres_fr.get(code, ""), p["theme_source"], dossier, tous_chemins)
         filtre, rattrapable = filtre_dates(p["debut"], p["fin"], frequence)
-        pertinent = bool(dossier) or etiquette.methode == "mots-clés"
+        par_mots_cles = etiquette.methode == "mots-clés" and etiquette.dans_titre
+        pertinent = bool(dossier) or par_mots_cles
         hors_france = code.lower().startswith(PREFIXES_HORS_FRANCE) or any(
             f" > {d}" in " > " + tous_chemins or tous_chemins.startswith(d) for d in DOSSIERS_HORS_FRANCE)
+        domaine = "" if dossier or code.lower().startswith(EXCEPTIONS_HORS_PERIMETRE) else next(
+            (lib for prefixe, lib in PREFIXES_HORS_PERIMETRE.items() if code.lower().startswith(prefixe)), "")
         if hors_france:
             candidat, motif = "non", "pays hors UE (voisinage, candidats) : pas de France par construction"
+        elif domaine:
+            candidat, motif = "non", f"domaine hors périmètre ({domaine}) : statistique sectorielle, pas un résultat pour la population"
         elif (annee(p["fin"]) or 0) > ANNEE_FIN_MAX:
             candidat, motif = "non", f"projections (données jusqu'en {annee(p['fin'])})"
         elif type_ == "table" and not code.lower().startswith("sdg_"):
@@ -365,8 +399,10 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
             candidat, motif = "non", f"infra-annuel ({frequence}) : une version annuelle existe en général"
         elif filtre == "retenu" and dossier:
             candidat, motif = "oui", f"dossier prioritaire ({dossier})"
-        elif filtre == "retenu" and etiquette.methode == "mots-clés":
+        elif filtre == "retenu" and par_mots_cles:
             candidat, motif = "oui", f"mots-clés ({etiquette.dimension})"
+        elif filtre == "retenu" and etiquette.methode == "mots-clés":
+            candidat, motif = "non", "mot-clé seulement dans le chemin des dossiers ou dans la ventilation du titre"
         elif filtre == "retenu":
             candidat, motif = "non", "aucun mot-clé ni dossier prioritaire"
         elif rattrapable and pertinent:
@@ -412,31 +448,65 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
     return pd.DataFrame(lignes, columns=COLONNES_JEUX)
 
 
+COLONNES_DOSSIERS = [
+    "code_dossier", "titre_en", "titre_fr", "profondeur", "chemin", "chemin_codes",
+    "nb_jeux", "nb_jeux_filtres", "nb_candidats",
+]
+
+
+def _cles_dossiers(toc: pd.DataFrame) -> list[tuple]:
+    """Clé d'emplacement de chaque dossier du TOC : (codes des ancêtres, code, rang d'occurrence).
+
+    Le rang distingue deux dossiers de même chemin de codes (cas des deux racines `data`)."""
+    vus: Counter = Counter()
+    cles = []
+    for tc, code in zip(toc["theme_codes"], toc["code"]):
+        cles.append((tc, code, vus[(tc, code)]))
+        vus[(tc, code)] += 1
+    return cles
+
+
 def bilan_dossiers(toc_en: pd.DataFrame, catalogue: pd.DataFrame, toc_fr: Optional[pd.DataFrame] = None) -> pd.DataFrame:
-    """Une ligne par dossier du TOC : chemin, nombre de jeux dessous, après filtres, candidats."""
-    dossiers = toc_en[toc_en["type"] == "folder"].drop_duplicates("code")
-    titres_fr = dict(zip(toc_fr["code"], toc_fr["titre"])) if toc_fr is not None else {}
-    jeux = toc_en[toc_en["type"].isin(["dataset", "table"])][["code", "theme_codes"]]
-    statut = catalogue.set_index("code_jeu")
-    lignes = []
-    for _, d in dossiers.iterrows():
-        chemin_codes = (d["theme_codes"] + " > " + d["code"]).strip(" >")
-        dessous = jeux[(jeux["theme_codes"] == chemin_codes) | jeux["theme_codes"].str.startswith(chemin_codes + " > ")]
-        codes = sorted(set(dessous["code"]))
-        sous = statut.loc[[c for c in codes if c in statut.index]]
-        lignes.append(
-            {
-                "code_dossier": d["code"],
-                "titre_en": d["titre"],
-                "titre_fr": titres_fr.get(d["code"], ""),
-                "profondeur": d["profondeur"],
-                "chemin": (d["theme_source"] + " > " + d["titre"]).strip(" >"),
-                "nb_jeux": len(codes),
-                "nb_jeux_filtres": int((sous["filtre_toc"] == "retenu").sum()) if len(sous) else 0,
-                "nb_candidats": int((sous["candidat"] == "oui").sum()) if len(sous) else 0,
-            }
-        )
-    return pd.DataFrame(lignes)
+    """Une ligne par **emplacement** de dossier du TOC (un même code de dossier peut figurer à plusieurs
+    endroits ; les deux racines portent le code `data`) : chemin, nombre de codes (jeux et tableaux)
+    rangés dessous à quelque profondeur que ce soit, dont retenus par les filtres de dates, dont candidats.
+
+    Le rattachement suit l'ordre du TOC (descendants = entrées suivantes plus indentées), ce qui
+    distingue les deux arborescences « Database by themes » et « Cross cutting topics »."""
+    statut = catalogue.drop_duplicates("code_jeu").set_index("code_jeu")
+    filtres = set(statut.index[statut["filtre_toc"] == "retenu"])
+    candidats = set(statut.index[statut["candidat"] == "oui"])
+    titres_fr: dict[tuple, str] = {}
+    if toc_fr is not None and len(toc_fr):
+        dossiers_fr = toc_fr[toc_fr["type"] == "folder"]
+        titres_fr = dict(zip(_cles_dossiers(dossiers_fr), dossiers_fr["titre"]))
+    dossiers_en = toc_en[toc_en["type"] == "folder"]
+    cles_en = dict(zip(dossiers_en.index, _cles_dossiers(dossiers_en)))
+    lignes: list[dict] = []
+    codes_dessous: list[set] = []
+    pile: list[tuple[int, int]] = []  # (profondeur, rang dans `lignes`)
+    for idx, r in zip(toc_en.index, toc_en.itertuples(index=False)):
+        while pile and pile[-1][0] >= r.profondeur:
+            pile.pop()
+        if r.type == "folder":
+            lignes.append(
+                {
+                    "code_dossier": r.code,
+                    "titre_en": r.titre,
+                    "titre_fr": titres_fr.get(cles_en[idx], ""),
+                    "profondeur": r.profondeur,
+                    "chemin": (r.theme_source + " > " + r.titre).strip(" >"),
+                    "chemin_codes": (r.theme_codes + " > " + r.code).strip(" >"),
+                }
+            )
+            codes_dessous.append(set())
+            pile.append((r.profondeur, len(lignes) - 1))
+        elif r.type in ("dataset", "table"):
+            for _, i in pile:
+                codes_dessous[i].add(r.code)
+    for ligne, codes in zip(lignes, codes_dessous):
+        ligne.update(nb_jeux=len(codes), nb_jeux_filtres=len(codes & filtres), nb_candidats=len(codes & candidats))
+    return pd.DataFrame(lignes, columns=COLONNES_DOSSIERS)
 
 
 # ---------------------------------------------------------------- niveau 2 : rôles des dimensions

@@ -47,7 +47,9 @@ from src.sources import eurostat as es  # noqa: E402
 #: v2 (13/10) : tableaux ODD inclus, racine principale par titre, icd10 en contenu, ind_type en ventilation,
 #: colonnes allégées, remplacements vérifiés dans l'amorce.
 #: v3 niveau 1 (13/10) : exclusion des jeux hors France (voisinage, candidats) et des projections, mots-clés affinés.
-ETAPES = {"echantillons": 1, "amorce": 2, "niveau1": 3, "niveau2": 2}
+#: v4 niveau 1 (13/10) : candidature par mots-clés seulement si le mot-clé est dans le titre principal, domaines
+#: sectoriels hors périmètre (agriculture, pêche, transport de marchandises, tourisme…), bilan des dossiers par emplacement.
+ETAPES = {"echantillons": 1, "amorce": 2, "niveau1": 4, "niveau2": 2}
 
 DUREE_MAX = float(os.environ.get("EUROSTAT_DUREE_MAX_MINUTES", "270")) * 60
 NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "0") or 0)

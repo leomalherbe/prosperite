@@ -444,14 +444,67 @@ def test_faux_amis_mots_cles():
     # « cultures » (récoltes) ne relève pas de la culture ; « fertility » n'est pas « fertiliser »
     assert cat.etiqueter("ef_fsi_cdiv", "Crop diversity", "Diversité des cultures", "", "").dimension != "education"
     assert cat.etiqueter("demo_find", "Fertility indicators", "Indicateurs de fécondité", "", "").dimension != "planete"
+    # v4 : « relatives à » (fr) n'est pas « relatives » (proches) ; « politique de sécurité » n'est pas la vie politique
+    e = cat.etiqueter("migr_resbc11", "Persons subject to EU Blue Card decisions by length of validity",
+                      "Personnes faisant l'objet de décisions relatives à la carte bleue européenne", "", "")
+    assert e.dimension != "liens_bien_etre"
+    assert cat.etiqueter("isoc_cisce_ra", "Security policy, measures, risks and staff awareness by size class of enterprise",
+                         "Politique de sécurité, mesures, risques", "", "").dimension != "democratie"
+    assert cat.etiqueter("road_tf_veh", "Road traffic performance by category of vehicle", "", "", "").dimension != "securite_confiance"
+    assert cat.etiqueter("tran_sf_roadus", "Road traffic deaths by type of road", "", "", "").dimension == "securite_confiance"
+    assert cat.etiqueter("iww_if_infrastr", "Length of navigable inland waterways by waterway type", "", "", "").dimension != "planete"
+
+
+def test_candidature_v4_titre_principal_et_domaines_hors_perimetre():
+    base = {"profondeur": 3, "parent": "", "derniere_maj": "", "derniere_modif_structure": "", "debut": "2000", "fin": "2024", "nb_valeurs": 1}
+    agri = "Database by themes > Agriculture, forestry and fisheries > Agriculture"
+    toc = pd.DataFrame([
+        # mot-clé seulement dans le chemin (« forestry », « fisheries ») : étiquette sans candidature
+        dict(base, code="apro_mk_strbt", titre="Butter - distribution of enterprises by volume of annual production",
+             type="dataset", theme_source=agri, theme_codes="data > agric > agr"),
+        # mot-clé seulement dans la ventilation (« by degree of urbanisation ») : non candidat
+        dict(base, code="xyz_nights", titre="Nights spent at establishments by degree of urbanisation",
+             type="dataset", theme_source="Database by themes > General", theme_codes="data > general"),
+        # domaine hors périmètre malgré un mot-clé du titre (« fish ») ; sauf exception (surface boisée)
+        dict(base, code="fish_ld_fr", titre="Landings of fishery products in France", type="dataset",
+             theme_source=agri, theme_codes="data > agric > agr"),
+        dict(base, code="for_area", titre="Area of wooded land (FAO)", type="dataset",
+             theme_source=agri, theme_codes="data > agric > agr"),
+        # mot-clé du titre principal : candidat ; agro-environnement conservé
+        dict(base, code="aei_pr_gnb", titre="Gross nutrient balance", type="dataset", theme_source=agri, theme_codes="data > agric > agr"),
+        # dossier prioritaire : candidat même sans mot-clé
+        dict(base, code="demo_nind", titre="Marriage indicators", type="dataset",
+             theme_source="Database by themes > Population and social conditions > Demography", theme_codes="data > popul > demo"),
+    ])
+    c = cat.construire_catalogue_jeux(toc).set_index("code_jeu")
+    assert c.loc["apro_mk_strbt", "candidat"] == "non"
+    assert c.loc["xyz_nights", "candidat"] == "non" and c.loc["xyz_nights", "motif_candidat"].startswith("mot-clé seulement")
+    assert c.loc["fish_ld_fr", "candidat"] == "non" and c.loc["fish_ld_fr", "motif_candidat"].startswith("domaine hors périmètre (pêche")
+    assert c.loc["for_area", "candidat"] == "oui" and c.loc["for_area", "dimension_v0"] == "planete"
+    assert c.loc["aei_pr_gnb", "candidat"] == "oui" and c.loc["aei_pr_gnb", "dimension_v0"] == "planete"
+    assert c.loc["demo_nind", "candidat"] == "oui" and c.loc["demo_nind", "dossier_prioritaire"] == "population"
 
 
 def test_bilan_dossiers():
     toc = _toc_synthetique()
     catalogue = cat.construire_catalogue_jeux(toc)
     b = cat.bilan_dossiers(toc, catalogue).set_index("code_dossier")
-    assert b.loc["ilc", "nb_jeux"] == 4 and b.loc["ilc", "nb_candidats"] == 2  # 3 jeux + 1 tableau
+    # rattachement par l'ordre du TOC : ilc contient les 3 jeux qui le suivent (le tableau tps00001 est plus loin)
+    assert b.loc["ilc", "nb_jeux"] == 3 and b.loc["ilc", "nb_candidats"] == 2 and b.loc["ilc", "nb_jeux_filtres"] == 1
     assert b.loc["data", "nb_jeux"] == 7
+    assert b.loc["cc", "nb_jeux"] == 1  # ilc_li02, rangé aussi sous la seconde racine
+
+
+def test_bilan_dossiers_toc_reel(toc_en):
+    toc_fr = es.analyser_toc((FIX / "toc_extrait_fr.txt").read_text(encoding="utf-8"))
+    catalogue = cat.construire_catalogue_jeux(toc_en, toc_fr)
+    b = cat.bilan_dossiers(toc_en, catalogue, toc_fr)
+    assert list(b.columns) == cat.COLONNES_DOSSIERS
+    racines = b[b["code_dossier"] == "data"]  # les deux racines de même code sont deux lignes distinctes
+    assert list(racines["chemin"]) == ["Database by themes", "Cross cutting topics"]
+    assert list(racines["titre_fr"]) == ["Base de données par thèmes", "Thèmes transversaux"]
+    assert b.set_index("chemin_codes").loc["data > general > euroind > ei_bp", "nb_jeux"] == 5  # 5 tableaux
+    assert racines["nb_jeux"].sum() >= b[b["profondeur"] == 1]["nb_jeux"].max()
 
 
 # ------------------------------------------------------------------ niveau 2

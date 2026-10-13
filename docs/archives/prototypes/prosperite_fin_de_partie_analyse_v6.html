@@ -1,0 +1,1411 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prospérité · Observatoire France</title>
+<style>
+:root{
+ --bg:#f4f5f7;--card:#fff;--ink:#17191d;--muted:#69717c;--line:#dde2e7;
+ --accent:#2459d3;--accent-soft:#edf2ff;--ok:#277052;--warn:#936313;--err:#a23f3f;
+ --panel:#f8f9fb
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1460px;margin:auto;padding:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px}
+.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800}
+h1{font-size:clamp(28px,4vw,45px);line-height:1.04;letter-spacing:-.035em;margin:7px 0 10px}
+.lead{font-size:14px;line-height:1.55;color:#48505a;margin:0;max-width:940px}
+.top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:13px}
+.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 11px;font-size:11px;color:var(--muted);white-space:nowrap}
+
+.statusbar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.leftcontrols,.rightstatus{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.btn,select{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;color:var(--ink);font-size:11px}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.btn:disabled{opacity:.5;cursor:not-allowed}
+.dot{width:8px;height:8px;border-radius:50%;background:#a2a8b1}.dot.loading{background:var(--warn)}.dot.ok{background:var(--ok)}.dot.err{background:var(--err)}
+.statustxt{font-size:11px;color:var(--muted)}
+
+.overview{display:grid;grid-template-columns:240px minmax(0,1fr) 300px;gap:11px;margin-bottom:12px}
+.scorebox,.trendbox,.profilebox{padding:15px;min-width:0}
+.smalltitle{font-size:14px;font-weight:760}.sub{font-size:10px;color:var(--muted);line-height:1.45;margin-top:3px}
+.ring{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;position:relative;margin:10px auto 5px;background:conic-gradient(var(--accent) 0deg,#e7eaf0 0)}
+.ring:after{content:"";position:absolute;inset:12px;background:#fff;border-radius:50%}.ringin{position:relative;z-index:1;text-align:center}.ringin strong{font-size:39px;display:block;line-height:1}.ringin span{font-size:10px;color:var(--muted)}
+.coverage{font-size:10px;color:var(--muted);text-align:center;line-height:1.4}
+
+.scoreCompareList{display:flex;flex-direction:column;gap:7px;margin-top:10px}
+.scoreCompareItem{border:1px solid var(--line);border-radius:10px;padding:8px 9px;display:grid;grid-template-columns:1fr auto;gap:7px;align-items:center}
+.scoreCompareItem.current{border-color:#9fb7f2;background:#f8faff}
+.scoreCompareItem.baseline{background:#fafbfc}
+.scoreCompareName{font-size:9px;font-weight:730;line-height:1.25;min-width:0}
+.scoreCompareMeta{font-size:8px;color:var(--muted);margin-top:2px}
+.scoreCompareValue{font-size:19px;font-weight:820;white-space:nowrap}
+.scoreCompareValue small{font-size:8px;font-weight:500;color:var(--muted)}
+.scoreCompareEmpty{font-size:9px;color:var(--muted);line-height:1.4;margin-top:8px}
+
+#trend{width:100%;height:165px;margin-top:6px}.chartfoot{display:flex;justify-content:space-between;gap:8px;font-size:9px;color:var(--muted)}
+.profiles{display:grid;grid-template-columns:1fr;gap:6px;margin-top:9px}.prow{display:grid;grid-template-columns:116px 1fr 26px;gap:7px;align-items:center;font-size:9px}.bar{height:6px;background:#edf0f3;border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;background:#78818d;border-radius:999px}
+
+.modebar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:14px;padding:9px 11px;margin-bottom:12px}
+.tabs{display:flex;background:#eff1f4;border-radius:10px;padding:3px}.tab{border:0;background:transparent;padding:8px 12px;border-radius:8px;font-size:12px;font-weight:700;color:#555d67}.tab.on{background:#fff;color:#173f9e;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.hint{font-size:11px;color:var(--muted)}
+.view{display:none}.view.on{display:block}
+
+.quickgrid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:11px;align-items:start}
+.dimgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.dim{padding:12px;min-width:0}.dim.off{opacity:.48}
+.dimhead{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:start}.dim h3{font-size:12px;line-height:1.3;margin:1px 0}.dimscore{font-size:19px;font-weight:800;white-space:nowrap}
+.dimmeta{font-size:10px;color:var(--muted);margin:6px 0 9px;min-height:26px}.weightline{display:grid;grid-template-columns:39px 1fr 22px;gap:7px;align-items:center;font-size:10px;color:var(--muted)}.weightline input{width:100%;accent-color:var(--accent)}
+.dactions{display:flex;justify-content:space-between;gap:7px;align-items:center;margin-top:9px}.linkbtn{border:0;background:none;color:var(--accent);font-size:10px;padding:3px 0}.badge{display:inline-flex;font-size:8px;padding:4px 6px;border-radius:999px;background:#eff1f4;color:#59616b;font-weight:750}.badge.ok{background:#e9f5ef;color:#246246}.badge.err{background:#f9eded;color:#913434}.badge.loading{background:#fff4df;color:#80580d}
+.side{position:sticky;top:10px;padding:14px}.side h2{font-size:16px;margin:0 0 4px}.side p{font-size:10px;color:var(--muted);line-height:1.45;margin:0}.contrib{margin-top:11px;padding-top:10px;border-top:1px solid var(--line)}.crow{display:grid;grid-template-columns:1fr 56px;gap:8px;margin:7px 0;font-size:9px}.btns{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px}.notice{font-size:10px;color:#72500e;background:#fff4df;border-radius:10px;padding:9px 10px;line-height:1.45;margin-top:10px}
+
+.two{display:grid;grid-template-columns:235px minmax(0,1fr);gap:11px;align-items:start}.nav{padding:9px;position:sticky;top:10px}.navlist{max-height:720px;overflow:auto}.nav button{width:100%;border:0;background:transparent;text-align:left;padding:8px;border-radius:8px;font-size:10px;display:grid;grid-template-columns:21px 1fr auto;gap:7px;align-items:center}.nav button.on{background:var(--accent-soft);color:#173f9e}.num{width:20px;height:20px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:9px;font-weight:800}
+.editor{padding:16px;min-width:0}.editor h2{font-size:19px;margin:4px 0}.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+.opt{border:1px solid var(--line);border-radius:11px;padding:10px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;min-width:0}.opt.sel{border-color:#9fb7f2;background:#f8faff}.opt input{width:17px;height:17px;accent-color:var(--accent);margin-top:2px}.opttitle{font-size:11px;font-weight:750;line-height:1.3}.optdesc{font-size:9px;color:var(--muted);line-height:1.4;margin-top:4px}.optmeta{font-size:8px;color:var(--muted);margin-top:6px;display:flex;gap:5px;flex-wrap:wrap}.sourcebtn{font-size:8px}
+.advancedfooter{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
+
+.expertTop{display:flex;justify-content:space-between;gap:10px;align-items:start;flex-wrap:wrap;margin-bottom:10px}.methodbox{display:flex;gap:5px;align-items:center;background:#eff1f4;border-radius:10px;padding:3px}.methodbox button{border:0;background:transparent;border-radius:8px;padding:7px 9px;font-size:9px;font-weight:750;color:#58606b}.methodbox button.on{background:#fff;color:#173f9e;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.scoreStrip{display:grid;grid-template-columns:155px 1fr;gap:10px;margin-bottom:10px}.scoreCard,.weightCard{padding:13px}.big{font-size:32px;font-weight:820}.weightRows{display:flex;flex-direction:column;gap:6px;margin-top:8px}.wrow{display:grid;grid-template-columns:170px 1fr 43px;gap:7px;align-items:center;font-size:9px}
+
+.expertDimWeights{padding:14px;margin-bottom:12px}
+.expertDimWeightsHead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.expertDimWeightsGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}
+.expertDimWeightRow{border:1px solid var(--line);border-radius:10px;padding:9px 10px;display:grid;grid-template-columns:auto minmax(125px,1.2fr) minmax(100px,1fr) 28px 48px auto;gap:8px;align-items:center;min-width:0}
+.expertDimWeightRow.current{border-color:#9fb7f2;background:#f8faff}
+.expertDimWeightRow.off{opacity:.55}
+.expertDimWeightRow input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent)}
+.expertDimWeightRow input[type=range]{width:100%;min-width:70px;accent-color:var(--accent)}
+.expertDimWeightName{font-size:10px;font-weight:730;line-height:1.25;min-width:0}
+.expertDimWeightRaw{font-size:10px;font-weight:800;text-align:right;font-variant-numeric:tabular-nums}
+.expertDimWeightShare{font-size:9px;color:var(--muted);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.expertDimOpen{border:0;background:transparent;color:var(--accent);font-size:8px;font-weight:720;padding:4px;cursor:pointer}
+.expertStepLabel{font-size:9px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
+.expertPalette{margin-bottom:10px;padding:12px}.expertPaletteHead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}.expertPaletteGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:9px}.expertPick{border:1px solid var(--line);border-radius:9px;padding:8px;display:grid;grid-template-columns:auto 1fr;gap:7px;align-items:start}.expertPick.on{border-color:#9fb7f2;background:#f8faff}.expertPick input{width:16px;height:16px;accent-color:var(--accent);margin-top:1px}.expertPickName{font-size:10px;font-weight:720;line-height:1.3}.expertPickMeta{font-size:8px;color:var(--muted);margin-top:3px;display:flex;gap:5px;flex-wrap:wrap}.expertList{display:flex;flex-direction:column;gap:8px}.item{border:1px solid var(--line);border-radius:12px;padding:11px}.itemtop{display:flex;justify-content:space-between;gap:9px;align-items:start}.iname{font-size:11px;font-weight:760;line-height:1.3}.ival{font-size:9px;color:var(--muted);margin-top:4px}.iscore{font-size:17px;font-weight:820;white-space:nowrap}
+.iboundmode{display:inline-flex;background:#eff1f4;border-radius:8px;padding:2px;margin-top:7px}.iboundmode button{border:0;background:transparent;border-radius:6px;padding:5px 7px;font-size:8px;font-weight:720;color:#5b636d}.iboundmode button.on{background:#fff;color:#173f9e}
+.igrid{display:grid;grid-template-columns:minmax(300px,1.8fr) 150px minmax(165px,1fr);gap:10px;align-items:end;margin-top:9px}.label{font-size:8px;color:var(--muted);display:block;margin-bottom:3px}.item select{width:100%;border:1px solid var(--line);border-radius:8px;padding:7px;background:#fff;font-size:10px}.item input[type=range]{accent-color:var(--accent)}
+.rangeBlock{min-width:0}.rangeTitle{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:4px}.rangeValues{display:flex;gap:6px;flex-wrap:wrap}.rangeValue{font-size:9px;font-weight:760;padding:4px 6px;border-radius:7px;background:var(--panel);border:1px solid var(--line);white-space:nowrap}
+.dualRange{position:relative;height:32px;--from:0%;--to:100%}.dualTrack{position:absolute;left:2px;right:2px;top:14px;height:5px;border-radius:999px;background:linear-gradient(to right,#e5e8ed 0 var(--from),var(--accent) var(--from) var(--to),#e5e8ed var(--to) 100%)}
+.dualRange input[type=range]{position:absolute;left:0;top:3px;width:100%;height:26px;margin:0;background:transparent;pointer-events:none;-webkit-appearance:none;appearance:none}
+.dualRange input[type=range]::-webkit-slider-runnable-track{height:5px;background:transparent;border:0}.dualRange input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:17px;height:17px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.18);margin-top:-6px;pointer-events:auto}
+.dualRange input[type=range]::-moz-range-track{height:5px;background:transparent;border:0}.dualRange input[type=range]::-moz-range-thumb{width:15px;height:15px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.18);pointer-events:auto}
+.rangeDomain{display:flex;justify-content:space-between;gap:8px;font-size:8px;color:var(--muted);margin-top:-2px}.weightControl input{width:100%}.formula{font-size:9px;color:var(--muted);margin-top:7px;line-height:1.4}
+.apirow{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:8px;padding-top:7px;font-size:8px;color:var(--muted)}
+
+.exportPanel{margin-top:12px;padding:14px}.exportPanel h2{font-size:15px;margin:0 0 4px}.exportPanel textarea{width:100%;min-height:190px;border:1px solid var(--line);border-radius:9px;padding:9px;font:10px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;background:#fafbfc;color:var(--ink);margin-top:9px;display:none}
+details{margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px}summary{cursor:pointer;font-weight:720;font-size:12px}.detailsbody{font-size:10px;color:var(--muted);line-height:1.55;margin-top:8px}
+.sourceTable{overflow:auto;margin-top:8px}.sourceTable table{border-collapse:collapse;width:100%;min-width:950px}.sourceTable th,.sourceTable td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top;font-size:9px}.sourceTable th{background:#fafbfc;position:sticky;top:0}
+.footer{font-size:9px;color:var(--muted);line-height:1.5;margin:14px 2px}
+
+.configPanel{padding:14px;margin-bottom:12px}
+.configTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.configSave{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.configSave input{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 10px;font-size:11px;min-width:220px}
+.configList{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:11px}
+.configItem{border:1px solid var(--line);border-radius:11px;padding:10px;min-width:0}
+.configItem.reference{background:#fafbfc}
+.configItem.current{border-color:#9fb7f2;background:#f8faff}
+.configHead{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.configName{font-size:11px;font-weight:760;line-height:1.3}
+.configMeta{font-size:9px;color:var(--muted);line-height:1.4;margin-top:4px}
+.configActions{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.miniBtn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:5px 7px;font-size:8px}
+.compareToggle{display:flex;gap:6px;align-items:center;font-size:9px;color:var(--muted);white-space:nowrap}
+.compareToggle input{accent-color:var(--accent)}
+
+.configStatusBar{margin-top:10px;border:1px solid var(--line);border-radius:10px;padding:9px 10px;background:#fafbfc;font-size:9px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.configStatusBar.active{border-color:#9fb7f2;background:#f5f8ff;color:#2a3e67}
+.configStatusBar.success{border-color:#a8d7b7;background:#f3fbf5;color:#245c34}
+.configStatusMain{font-weight:740;color:inherit}
+.configItem.activeProfile{border-color:#5f86e8;background:#f5f8ff;box-shadow:inset 0 0 0 1px rgba(37,106,237,.08)}
+.configActiveTag{display:inline-flex;align-items:center;gap:4px;border-radius:999px;background:#e7efff;color:#234fbb;padding:3px 6px;font-size:8px;font-weight:800;margin-top:5px}
+.miniBtn{transition:background .15s ease,border-color .15s ease,color .15s ease,transform .08s ease}
+.miniBtn:hover:not(:disabled){border-color:#aeb7c4;background:#f8f9fb}
+.miniBtn:active:not(:disabled){transform:translateY(1px)}
+.miniBtn.loadActive{background:#eef4ff;border-color:#8cacfa;color:#214ea9;font-weight:800}
+.miniBtn.saveActive{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+.miniBtn.successState{background:#eef9f1;border-color:#9fd0ad;color:#25643a;font-weight:800}
+.miniBtn:disabled{opacity:.48;cursor:not-allowed}
+.profilePill{display:none;align-items:center;gap:6px;border-radius:999px;padding:5px 8px;background:#eef4ff;border:1px solid #b9caf7;color:#244caa;font-size:9px;font-weight:760}
+.profilePill.on{display:inline-flex}
+.modeMeta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+
+.trendLegend{display:flex;gap:9px;flex-wrap:wrap;margin-top:6px;font-size:9px;color:var(--muted)}
+
+.trendbox{position:relative}
+.trendSvgWrap{position:relative;margin-top:6px}
+.trendbox svg{display:block;width:100%;height:auto;overflow:visible}
+.trendTooltip{position:absolute;z-index:5;pointer-events:none;min-width:155px;max-width:240px;background:rgba(25,29,35,.95);color:#fff;border-radius:9px;padding:8px 9px;font-size:9px;line-height:1.35;box-shadow:0 6px 18px rgba(0,0,0,.16);transform:translate(10px,-50%);display:none}
+.trendTooltip.show{display:block}
+.trendTooltip strong{display:block;font-size:10px;margin-bottom:5px}
+.trendTooltipRow{display:grid;grid-template-columns:8px minmax(0,1fr) auto;gap:6px;align-items:center;margin-top:3px}
+.trendTooltipDot{width:7px;height:7px;border-radius:50%}
+.trendTooltipVal{font-weight:780;font-variant-numeric:tabular-nums}
+.trendScaleNote{font-size:8px;color:var(--muted);margin-top:5px}
+
+.legendItem{display:inline-flex;gap:5px;align-items:center}
+.legendSwatch{width:15px;height:3px;border-radius:999px;display:inline-block}
+
+
+@media(max-width:1100px){.configList{grid-template-columns:repeat(2,minmax(0,1fr))}.overview{grid-template-columns:220px 1fr}.profilebox{grid-column:1/-1}.quickgrid{grid-template-columns:1fr}.side{position:static}.dimgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.nav{position:static}.navlist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-height:none}.scoreStrip{grid-template-columns:1fr}.expertDimWeightsGrid{grid-template-columns:1fr}.igrid{grid-template-columns:minmax(260px,1fr) 140px minmax(150px,1fr)}}
+@media(max-width:680px){.configList{grid-template-columns:1fr}.configSave input{min-width:0;width:100%}.wrap{padding:12px}.top{display:block}.pill{display:inline-block;margin-top:10px}.overview{grid-template-columns:1fr}.profilebox{grid-column:auto}.dimgrid,.options,.expertPaletteGrid,.expertDimWeightsGrid{grid-template-columns:1fr}.expertDimWeightRow{grid-template-columns:auto minmax(0,1fr) 75px 26px 42px}.expertDimOpen{grid-column:2/-1;justify-self:start}.navlist{grid-template-columns:1fr 1fr}.igrid{grid-template-columns:1fr}.rangeBlock{grid-column:1/-1}.wrow{grid-template-columns:1fr 1fr}.wrow .bar{grid-column:1/-1}}
+
+/* ===== Gamified collective interface ===== */
+body{background:
+ radial-gradient(circle at 12% 5%,rgba(37,106,237,.10),transparent 25%),
+ radial-gradient(circle at 90% 12%,rgba(139,92,246,.09),transparent 22%),
+ #f6f7fb}
+.top{padding:6px 3px 2px}
+.top h1{font-size:31px;letter-spacing:-.035em;max-width:850px}
+.top .lead{max-width:850px}
+.statusbar{box-shadow:0 4px 18px rgba(30,45,80,.05)}
+.gameSetup,.gameHUD,.gameTurnGate,.gameResultsHero,.gameActionBar{display:none}
+body.gameSetupState .gameSetup{display:block}
+body.gamePlayState .gameHUD,body.gamePlayState .gameActionBar{display:block}
+body.gameGateState .gameHUD,body.gameGateState .gameTurnGate{display:block}
+body.gameCompleteState .gameHUD,body.gameCompleteState .gameComplete{display:block}
+body.gameResultsState .gameHUD,body.gameResultsState .gameResultsHero{display:block}
+
+body.gameSetupState .overview,
+body.gameSetupState .configPanel,
+body.gameSetupState .modebar,
+body.gameSetupState .view,
+body.gameSetupState .exportPanel,
+body.gameSetupState details,
+body.gameGateState .overview,
+body.gameGateState .configPanel,
+body.gameGateState .modebar,
+body.gameGateState .view,
+body.gameGateState .exportPanel,
+body.gameGateState details,
+body.gameCompleteState .overview,
+body.gameCompleteState .configPanel,
+body.gameCompleteState .modebar,
+body.gameCompleteState .view,
+body.gameCompleteState .exportPanel,
+body.gameCompleteState details,
+body.gamePlayState .overview,
+body.gamePlayState .configPanel,
+body.gamePlayState .modebar,
+body.gamePlayState .exportPanel,
+body.gamePlayState details,
+body.gameResultsState .configPanel,
+body.gameResultsState .modebar,
+body.gameResultsState .view,
+body.gameResultsState .exportPanel,
+body.gameResultsState details{display:none!important}
+body.gamePlayState #quick.view.on,
+body.gamePlayState #advanced.view.on,
+body.gamePlayState #expert.view.on{display:block!important}
+body.gamePlayState #expert .expertDimWeights{display:none!important}
+body.gameResultsState .overview{display:grid!important}
+body.gameResultsState .profilebox{display:none!important}
+body.gameResultsState .overview{grid-template-columns:250px minmax(0,1fr)!important}
+body.gameResultsState .trendbox{grid-column:auto!important}
+
+.gameSetup{max-width:980px;margin:26px auto 34px}
+.gameHero{border:1px solid #dce3f0;border-radius:24px;background:linear-gradient(135deg,#fff 0%,#f9fbff 64%,#f2efff 100%);padding:27px;box-shadow:0 14px 38px rgba(32,48,83,.08)}
+.gameEyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:850;color:#315dcc}
+.gameHero h2{font-size:27px;margin:5px 0 7px;letter-spacing:-.025em}
+.gameHero p{font-size:12px;color:var(--muted);line-height:1.55;max-width:760px}
+
+.gamePitch{margin-top:15px;border:1px solid #dbe3f1;border-radius:16px;background:#fff;padding:15px 16px}
+.gamePitchLead{font-size:13px!important;color:#29313d!important;line-height:1.55!important;max-width:none!important;margin:0}
+.gamePitchLead strong{color:#1f2b43}
+.gamePitchFlow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.gamePitchStep{background:#f6f8fb;border-radius:12px;padding:10px}
+.gamePitchStep span{display:block;font-size:8px;text-transform:uppercase;letter-spacing:.08em;font-weight:850;color:#315dcc;margin-bottom:3px}
+.gamePitchStep strong{display:block;font-size:10px;color:#242c38;margin-bottom:3px}
+.gamePitchStep p{font-size:9px!important;line-height:1.4!important;margin:0!important;color:#69717d!important}
+.gameArchiveNote{display:flex;gap:8px;align-items:flex-start;margin-top:11px;padding:9px 10px;border-radius:11px;background:#f0f5ff;color:#38527d;font-size:9px;line-height:1.45}
+.gameArchiveNote strong{color:#274987}
+.gameArchiveCount{font-weight:850}
+
+.playerCountRow{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:18px;padding:11px 12px;border-radius:14px;background:#f5f7fb;border:1px solid #e2e7ef}
+.playerCountCopy strong{display:block;font-size:11px;color:#222a35}.playerCountCopy span{font-size:9px;color:var(--muted)}
+.playerCountControl{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:4px}
+.playerCountBtn{width:34px;height:34px;border:0;border-radius:9px;background:#eef1f6;font-size:18px;font-weight:800;color:#303846;cursor:pointer}
+.playerCountBtn:disabled{opacity:.35;cursor:not-allowed}
+.playerCountValue{min-width:34px;text-align:center;font-size:15px;font-weight:900;font-variant-numeric:tabular-nums}
+.playerSetupGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:9px;margin-top:12px}
+.playerSetup{border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px}
+.playerAvatar{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;font-size:14px;font-weight:900;background:var(--player-bg,#edf3ff);color:var(--player,#2f62dc);margin-bottom:9px}
+.playerSetup label{font-size:8px;color:var(--muted);display:block;margin-bottom:4px}
+.playerSetup input{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px;font:inherit;font-size:11px;background:#fff}
+.gameStartRow{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.gameStartBtn{border:0;border-radius:12px;background:#202a44;color:#fff;font-size:12px;font-weight:850;padding:12px 17px;cursor:pointer}
+.gameResumeBtn{border:1px solid var(--line);border-radius:12px;background:#fff;font-size:11px;font-weight:750;padding:11px 14px;cursor:pointer}
+.gameRules{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.gameRule{border-radius:13px;background:#f4f6fa;padding:10px;font-size:9px;color:#5e6671;line-height:1.45}
+.gameRule strong{display:block;color:#222a35;font-size:10px;margin-bottom:3px}
+
+.gameHUD{border:1px solid #dbe2ef;border-radius:18px;background:rgba(255,255,255,.95);padding:12px 14px;margin:14px 0 12px;box-shadow:0 8px 24px rgba(31,45,78,.06)}
+.gameHUDTop{display:grid;grid-template-columns:minmax(190px,1fr) auto;gap:12px;align-items:center}
+.waveTitle{font-size:16px;font-weight:850;letter-spacing:-.015em}
+.waveSub{font-size:9px;color:var(--muted);margin-top:2px}
+.waveTrack{display:flex;gap:6px;align-items:center}
+.waveStep{display:flex;align-items:center;gap:6px;border-radius:999px;padding:6px 9px;background:#f0f2f6;color:#727b87;font-size:8px;font-weight:800}
+.waveStep.done{background:#edf8f0;color:#2f6b3e}
+.waveStep.current{background:#eaf0ff;color:#2855bd}
+.waveNum{width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid currentColor}
+.playerRail{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:7px;margin-top:11px}
+.playerChip{border:1px solid var(--line);border-radius:12px;padding:8px;background:#fff;display:flex;gap:7px;align-items:center;min-width:0}
+.playerChip.current{border-color:var(--player,#4774df);box-shadow:inset 0 0 0 1px var(--player,#4774df);background:var(--player-bg,#f3f6ff)}
+.playerChip.done{background:#f5faf6;border-color:#cbe1d1}
+.playerChip .playerAvatar{width:28px;height:28px;border-radius:9px;margin:0;flex:0 0 auto;font-size:10px}
+.playerChipTxt{min-width:0}.playerChipName{font-size:9px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.playerChipState{font-size:7px;color:var(--muted);margin-top:1px}
+
+.gameTurnGate{max-width:660px;margin:42px auto 54px;text-align:center}
+.turnCard{border:1px solid #dbe2ef;background:#fff;border-radius:24px;padding:30px;box-shadow:0 14px 42px rgba(31,45,78,.09)}
+.turnBigAvatar{width:74px;height:74px;border-radius:24px;margin:0 auto 14px;display:grid;place-items:center;font-size:26px;font-weight:900;background:var(--player-bg);color:var(--player)}
+.turnCard h2{font-size:27px;margin:4px 0 6px}
+.turnCard p{font-size:12px;color:var(--muted);line-height:1.5;max-width:480px;margin:0 auto}
+.turnStartBtn{margin-top:19px;border:0;border-radius:13px;background:var(--player,#315dcc);color:white;padding:12px 20px;font-weight:850;font-size:12px;cursor:pointer}
+.turnSaved{display:inline-flex;gap:5px;align-items:center;border-radius:999px;background:#edf8f0;color:#2f6b3e;padding:5px 8px;font-size:8px;font-weight:850;margin-bottom:8px}
+
+.gameActionBar{position:sticky;bottom:10px;z-index:30;margin:14px auto 5px;max-width:950px;border:1px solid #d7dfed;background:rgba(255,255,255,.96);backdrop-filter:blur(9px);border-radius:16px;padding:9px 11px;box-shadow:0 12px 34px rgba(27,41,74,.13)}
+.gameActionInner{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.gameActionWho{display:flex;gap:8px;align-items:center;min-width:0}
+.gameActionWho .playerAvatar{width:31px;height:31px;border-radius:10px;margin:0}
+.gameActionTitle{font-size:10px;font-weight:850}.gameActionSub{font-size:8px;color:var(--muted);margin-top:1px}
+.gameValidateBtn{border:0;border-radius:11px;background:#202a44;color:#fff;padding:10px 14px;font-size:10px;font-weight:850;cursor:pointer;white-space:nowrap}
+.gameValidateBtn:active{transform:translateY(1px)}
+
+body.gamePlayState .card{box-shadow:0 5px 16px rgba(31,45,78,.045)}
+body.gamePlayState .dim{transition:transform .12s ease,border-color .12s ease,background .12s ease}
+body.gamePlayState .dim:hover{transform:translateY(-1px);border-color:#c4d1e7}
+body.gamePlayState input[type=range]{accent-color:#315dcc}
+body.gamePlayState .linkbtn{border:1px solid #d8e1f3!important;border-radius:8px!important;padding:5px 7px!important;background:#f8faff!important}
+
+
+.gameComplete{display:none;max-width:760px;margin:34px auto 48px}
+.gameCompleteCard{position:relative;overflow:hidden;border:1px solid #dbe2ef;border-radius:26px;background:#fff;padding:30px;text-align:center;box-shadow:0 18px 48px rgba(31,45,78,.10)}
+.gameCompleteCard:before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#315dcc,#8b5cf6,#159b8a,#e06b2e,#b04a73)}
+.completeMark{width:72px;height:72px;border-radius:24px;margin:3px auto 14px;display:grid;place-items:center;background:#edf8f0;color:#2f6b3e;font-size:31px;font-weight:900}
+.gameCompleteCard h2{font-size:29px;letter-spacing:-.03em;margin:3px 0 7px}
+.gameCompleteLead{font-size:12px;color:var(--muted);line-height:1.55;max-width:570px;margin:0 auto}
+.completePlayers{display:flex;justify-content:center;gap:7px;flex-wrap:wrap;margin:17px 0 4px}
+.completePlayer{display:flex;align-items:center;gap:6px;border:1px solid #dfe5ed;border-radius:999px;padding:6px 9px;background:#fafbfc;font-size:9px;font-weight:780}
+.completePlayer i{width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:#eaf7ee;color:#2f6b3e;font-style:normal;font-size:9px}
+.completeSummary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}
+.completeStat{border-radius:13px;background:#f5f7fb;padding:11px}
+.completeStat strong{display:block;font-size:18px;color:#222b38}
+.completeStat span{font-size:8px;color:var(--muted)}
+.analyzeBtn{border:0;border-radius:14px;background:#202a44;color:#fff;padding:13px 20px;font-size:12px;font-weight:900;cursor:pointer;box-shadow:0 8px 20px rgba(32,42,68,.18)}
+.analyzeBtn:hover{background:#283654}
+.analyzeBtn:active{transform:translateY(1px)}
+.completeNote{font-size:8px;color:var(--muted);margin-top:9px}
+
+.gameResultsHero{margin:18px 0 12px;border-radius:20px;background:linear-gradient(130deg,#202a44,#304777);color:#fff;padding:19px 20px}
+.gameResultsHero h2{font-size:24px;margin:0 0 5px}.gameResultsHero p{font-size:10px;opacity:.78;margin:0;max-width:700px;line-height:1.45}
+.resultsPlayers{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:8px;margin-top:14px}
+.resultsPlayer{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);border-radius:13px;padding:10px}
+.resultsPlayerTop{display:flex;gap:6px;align-items:center}.resultsPlayer .playerAvatar{width:28px;height:28px;border-radius:9px;margin:0;background:rgba(255,255,255,.15);color:#fff}
+.resultsPlayerName{font-size:9px;font-weight:820}.resultsPlayerScore{font-size:23px;font-weight:900;margin-top:7px}.resultsPlayerScore small{font-size:8px;font-weight:600;opacity:.65}
+.resultsActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.resultsBtn{border:1px solid rgba(255,255,255,.26);background:rgba(255,255,255,.10);color:#fff;border-radius:9px;padding:7px 9px;font-size:8px;font-weight:760;cursor:pointer}
+.resultsBtn.primary{background:#fff;color:#202a44;border-color:#fff}
+.gameToast{position:fixed;right:18px;bottom:18px;z-index:99;background:#202a44;color:#fff;border-radius:11px;padding:9px 11px;font-size:9px;font-weight:730;box-shadow:0 10px 30px rgba(0,0,0,.18);opacity:0;transform:translateY(8px);pointer-events:none;transition:.18s}
+.gameToast.show{opacity:1;transform:none}
+
+@media(max-width:900px){
+ .gameRules,.gamePitchFlow{grid-template-columns:1fr}
+ .gameHUDTop{grid-template-columns:1fr}.waveTrack{flex-wrap:wrap}
+ .playerRail{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:580px){
+ .playerSetupGrid,.resultsPlayers,.playerRail{grid-template-columns:1fr}
+ .gameHero{padding:18px}.gameHero h2{font-size:22px}
+ .gameActionInner{align-items:flex-start;flex-direction:column}.gameValidateBtn{width:100%}.completeSummary{grid-template-columns:1fr}.gameCompleteCard{padding:22px}
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+ <div><div class="kicker">Prospérité · jeu collectif de l’Observatoire France</div><h1>Prospérité</h1><p class="lead">Construisez chacun votre propre indice de prospérité à partir des mêmes données publiques, en deux vagues : pondération des dimensions, puis choix et réglage des indicateurs.</p></div>
+ <div class="pill"><strong id="baselineCount">44</strong> indicateurs dans le socle · <strong id="catalogCount">86</strong> disponibles</div>
+</div>
+
+<div class="statusbar">
+ <div class="leftcontrols">
+  <button class="btn primary" id="refreshBtn">Actualiser maintenant</button>
+  <label><select id="yearSelect"><option value="latest">Dernière donnée disponible</option></select></label>
+  <button class="btn" id="loadAllBtn">Précharger les 86 séries</button>
+ </div>
+ <div class="rightstatus"><span class="dot loading" id="statusDot"></span><span class="statustxt" id="statusText">Initialisation…</span></div>
+</div>
+
+<section class="gameSetup" id="gameSetup">
+ <div class="gameHero">
+  <div class="gameEyebrow">Prospérité · nouvelle partie</div>
+  <h2>Et si la prospérité dépendait aussi de ce qui compte pour vous ?</h2>
+  <div class="gamePitch">
+   <p class="gamePitchLead"><strong>Prospérité</strong> combine des données réelles sur la France, récupérées automatiquement auprès de sources publiques, avec vos propres priorités. En choisissant ce qui compte, son importance et les performances que vous jugez satisfaisantes, vous construisez votre propre mesure de la <strong>prospérité subjective de la France</strong>.</p>
+   <div class="gamePitchFlow">
+    <div class="gamePitchStep"><span>1 · Le réel</span><strong>Des données publiques actualisées</strong><p>Économie, santé, éducation, inégalités, climat, biodiversité, institutions et autres dimensions.</p></div>
+    <div class="gamePitchStep"><span>2 · Vos priorités</span><strong>Votre conception de la prospérité</strong><p>Vous choisissez les dimensions, les indicateurs, leurs poids et les seuils qui vous paraissent pertinents.</p></div>
+    <div class="gamePitchStep"><span>3 · Le résultat</span><strong>Un indice qui vous ressemble</strong><p>Votre score et votre trajectoire historique peuvent ensuite être comparés à ceux des autres joueurs et au socle de référence.</p></div>
+   </div>
+   <div class="gameArchiveNote"><span>▣</span><div><strong>Une expérience qui s’enrichit avec les joueurs.</strong> Chaque profil terminé peut alimenter une base de résultats afin d’étudier ensuite la distribution des préférences : poids accordé à chaque dimension, choix d’indicateurs, bornes retenues et scores obtenus. <span id="gameArchiveCount" class="gameArchiveCount"></span></div></div>
+  </div>
+  <div style="margin-top:18px"><div class="smalltitle">Qui joue aujourd’hui ?</div><div class="sub">Commencez avec un joueur, puis ajoutez les participants avec le bouton +.</div></div>
+  <div class="playerCountRow">
+   <div class="playerCountCopy"><strong>Nombre de joueurs</strong><span>1 à 10 participants · ajoutez les joueurs au fur et à mesure</span></div>
+   <div class="playerCountControl"><button type="button" class="playerCountBtn" id="playerCountMinus" aria-label="Retirer un joueur">−</button><span class="playerCountValue" id="playerCountValue">1</span><button type="button" class="playerCountBtn" id="playerCountPlus" aria-label="Ajouter un joueur" title="Ajouter un joueur">+</button></div>
+  </div>
+  <div class="playerSetupGrid" id="playerSetupGrid"></div>
+  <div class="gameRules">
+   <div class="gameRule"><strong>Vague 1 · Dimensions</strong>Pondérez les 15 dimensions selon l’importance que vous leur accordez.</div>
+   <div class="gameRule"><strong>Vague 2 · Indicateurs & réglages</strong>Pour chaque dimension, choisissez vos indicateurs puis réglez immédiatement leurs bornes, leur sens de performance et leur poids interne.</div>
+  </div>
+  <div class="gameStartRow"><span class="sub">Après chaque tour, la configuration est verrouillée et le socle est restauré avant le joueur suivant. Dans ce prototype HTML, l’historique cumulé est conservé localement dans ce navigateur ; une base partagée pourra ensuite agréger les réponses de plusieurs sessions et appareils.</span><div><button class="gameResumeBtn" id="gameResumeBtn" style="display:none">Reprendre la partie</button> <button class="gameStartBtn" id="gameStartBtn">Lancer la partie</button></div></div>
+ </div>
+</section>
+
+<section class="gameHUD" id="gameHUD">
+ <div class="gameHUDTop"><div><div class="waveTitle" id="gameWaveTitle">Vague 1 · Dimensions</div><div class="waveSub" id="gameWaveSub"></div></div><div class="waveTrack" id="gameWaveTrack"></div></div>
+ <div class="playerRail" id="gamePlayerRail"></div>
+</section>
+
+<section class="gameTurnGate" id="gameTurnGate">
+ <div class="turnCard" id="gameTurnCard"></div>
+</section>
+
+<section class="gameComplete" id="gameComplete">
+ <div class="gameCompleteCard">
+  <div class="completeMark">✓</div>
+  <div class="gameEyebrow">Prospérité · partie terminée</div>
+  <h2>Tous les choix sont enregistrés</h2>
+  <p class="gameCompleteLead">Les joueurs ont terminé les deux vagues. Leurs configurations sont maintenant figées. Vous pouvez passer à l’analyse collective pour comparer les scores, les priorités et les trajectoires obtenues.</p>
+  <div class="completePlayers" id="completePlayers"></div>
+  <div class="completeSummary">
+   <div class="completeStat"><strong id="completePlayerCount">—</strong><span>joueur(s)</span></div>
+   <div class="completeStat"><strong>2</strong><span>vagues terminées</span></div>
+   <div class="completeStat"><strong id="completeProfileCount">—</strong><span>profils comparables</span></div>
+  </div>
+  <button type="button" class="analyzeBtn" id="gameAnalyzeBtn">Analyser les résultats →</button>
+  <div class="completeNote">L’analyse affichera simultanément le socle de référence et les profils de tous les joueurs.</div>
+ </div>
+</section>
+
+<section class="gameResultsHero" id="gameResultsHero">
+ <h2 id="gameResultsTitle">Vos indices sont prêts</h2>
+ <p>Les configurations sont maintenant figées et comparées au même millésime. Passez sur les trajectoires pour lire les écarts année par année.</p>
+ <div class="resultsPlayers" id="gameResultsPlayers"></div>
+ <div class="resultsActions"><button class="resultsBtn primary" id="gameBackToEdit">Reprendre une vague</button><button class="resultsBtn" id="gameRestart">Nouvelle partie</button></div>
+</section>
+
+<div class="gameActionBar" id="gameActionBar">
+ <div class="gameActionInner"><div class="gameActionWho" id="gameActionWho"></div><button class="gameValidateBtn" id="gameValidateBtn">Valider mon tour →</button></div>
+</div>
+<div class="gameToast" id="gameToast"></div>
+
+<section class="overview">
+ <article class="card scorebox"><div class="smalltitle">Indices globaux</div><div class="sub">Configuration actuelle et configurations comparées au même millésime.</div><div class="ring" id="globalRing"><div class="ringin"><strong id="globalScore">—</strong><span>/ 100</span></div></div><div class="coverage" id="coverageText">Chargement des données…</div><div class="scoreCompareList" id="scoreCompareList"></div></article>
+ <article class="card trendbox"><div class="smalltitle">Trajectoires comparées</div><div class="sub">Superpose la configuration actuelle, le socle d’origine et les configurations enregistrées.</div><div class="trendSvgWrap" id="trendSvgWrap"><svg id="trend" viewBox="0 0 650 185" role="img" aria-label="Comparaison interactive des trajectoires historiques de l’indice"></svg><div class="trendTooltip" id="trendTooltip"></div></div><div class="chartfoot"><span id="trendStart">—</span><span id="trendCoverage">—</span><span id="trendEnd">—</span></div><div class="trendLegend" id="trendLegend"></div><div class="trendScaleNote" id="trendScaleNote"></div></article>
+ <article class="card profilebox"><div class="smalltitle">Scores par dimension</div><div class="sub">Les 15 dimensions, classées du score le plus élevé au plus faible selon la configuration actuelle.</div><div class="profiles" id="profiles"></div></article>
+</section>
+
+<section class="card configPanel">
+ <div class="configTop">
+  <div><div class="smalltitle">Configurations utilisateur</div><div class="sub">Crée un profil par personne. Charge ensuite le profil à modifier : son nom reste affiché comme profil actif jusqu’à ce que tu en charges un autre.</div></div>
+  <div class="configSave"><input id="configName" type="text" maxlength="60" placeholder="Nom de la configuration…"><button class="btn primary" id="saveUserConfig">Enregistrer la configuration actuelle</button></div>
+ </div>
+ <div class="configStatusBar" id="configStatusBar"><span class="configStatusMain">Aucun profil chargé.</span><span>Charge un profil avant de modifier ses réglages.</span></div>
+ <div class="configList" id="configList"></div>
+</section>
+
+<div class="modebar">
+ <div class="tabs"><button class="tab on" data-mode="quick">Rapide</button><button class="tab" data-mode="advanced">Avancé</button><button class="tab" data-mode="expert">Expert</button></div>
+ <div class="modeMeta"><span class="profilePill" id="activeProfilePill"></span><div class="hint" id="modeHint">Choisir les dimensions et régler leur poids relatif.</div></div>
+</div>
+
+<section id="quick" class="view on">
+ <div class="quickgrid">
+  <div class="dimgrid" id="dimGrid"></div>
+  <aside class="card side"><h2>Contribution des dimensions</h2><p>Le poids d'une dimension est normalisé par rapport à l'ensemble des dimensions actives.</p><div class="contrib" id="contrib"></div><div class="btns"><button class="btn" id="equalDims">Poids égaux</button><button class="btn" id="allDims">Tout inclure</button><button class="btn" id="resetConfig">Réinitialiser au socle</button></div><div class="notice">Un score n'est calculé qu'à partir des séries effectivement disponibles. La couverture est toujours affichée pour éviter de confondre une donnée absente avec une mauvaise performance.</div></aside>
+ </div>
+</section>
+
+<section id="advanced" class="view">
+ <div class="two">
+  <aside class="card nav"><div class="kicker" style="padding:4px 7px 8px">Configurer une dimension</div><div class="navlist" id="advNav"></div></aside>
+  <section class="card editor"><div class="kicker" id="advStep"></div><h2 id="advTitle"></h2><div class="sub">Coche ou décoche les indicateurs. Ouvrir une dimension déclenche automatiquement le chargement de ses séries candidates.</div><div class="options" id="advOptions"></div><div class="advancedfooter"><div class="btns" style="margin:0"><button class="btn" id="advPrev">← Précédente</button><button class="btn primary" id="advNext">Suivante →</button></div><div class="btns" style="margin:0"><button class="btn" id="restoreDim">Restaurer le socle de cette dimension</button><button class="btn" id="clearDim">Tout retirer</button></div></div></section>
+ </div>
+</section>
+
+<section id="expert" class="view">
+ <section class="card expertDimWeights">
+  <div class="expertDimWeightsHead">
+   <div><div class="expertStepLabel">Étape 1</div><div class="smalltitle">Pondération des dimensions</div><div class="sub">Détermine d’abord le poids relatif des 15 dimensions dans l’indice global. La part normalisée indique leur contribution théorique au poids total.</div></div>
+   <div class="btns" style="margin:0"><button class="btn" id="expertEqualDims">Poids égaux</button><button class="btn" id="expertAllDims">Tout inclure</button></div>
+  </div>
+  <div class="expertDimWeightsGrid" id="expertDimWeightsGrid"></div>
+ </section>
+ <div class="two">
+  <aside class="card nav"><div class="kicker" style="padding:4px 7px 8px">Méthodologie</div><div class="navlist" id="expNav"></div></aside>
+  <div>
+   <div class="expertTop"><div><div class="expertStepLabel">Vague 2 · Indicateurs & réglages</div><div class="kicker" id="expStep"></div><h2 id="expTitle" style="font-size:20px;margin:4px 0"></h2><div class="sub">Choisis les indicateurs de cette dimension puis règle-les immédiatement : bornes, sens de performance et poids interne. Les bornes peuvent être définies dans l’unité d’origine ou sur le score intermédiaire 0–100.</div></div></div>
+   <section class="card expertPalette">
+    <div class="expertPaletteHead"><div><div class="smalltitle">Indicateurs de la dimension</div><div class="sub">Sélectionne directement ici les indicateurs à inclure. Les paramètres experts apparaissent immédiatement pour les indicateurs actifs.</div></div><div class="sub" id="expertPaletteCount"></div></div>
+    <div class="expertPaletteGrid" id="expertPaletteGrid"></div>
+   </section>
+   <section class="scoreStrip">
+    <article class="card scoreCard"><div class="smalltitle">Score de dimension</div><div class="big"><span id="expertDimScore">—</span><small style="font-size:10px;color:var(--muted)"> / 100</small></div><div class="sub" id="expertDimMeta"></div></article>
+    <article class="card weightCard"><div class="smalltitle">Poids internes normalisés</div><div class="weightRows" id="weightViz"></div></article>
+   </section>
+   <section class="card editor"><div class="expertList" id="expertList"></div><div class="btns"><button class="btn" id="equalIndicators">Poids internes égaux</button><button class="btn" id="restoreExpert">Restaurer les bornes ±50 %</button></div><div class="notice">Bornes par défaut : borne basse à −50 % et borne haute à +50 % autour de la dernière valeur observée disponible. Les deux poignées occupent ainsi la même position initiale sur toutes les barres (25 % et 75 %). Elles seront remplacées par le socle méthodologique de référence lorsque celui-ci sera défini. Les valeurs observées proviennent toujours de l’API.</div></section>
+  </div>
+ </div>
+</section>
+
+<section class="card exportPanel">
+ <h2>Exporter / transmettre la configuration</h2><div class="sub">L'export contient les URLs d'API, datasets, indicateurs sélectionnés, poids, bornes, méthode de bornage, valeur et millésime actuellement observés.</div>
+ <div class="btns"><button class="btn primary" id="showExport">Afficher le JSON</button><button class="btn" id="copyExport">Copier</button><button class="btn" id="downloadExport">Télécharger JSON</button></div>
+ <textarea id="exportText" readonly></textarea>
+</section>
+
+<details><summary>Sources API et état des 86 séries</summary><div class="detailsbody">Eurostat est interrogé via son API Statistics JSON-stat avec <code>geo=FR</code>. La Banque mondiale utilise l'API Indicators V2 avec <code>country/FRA</code>. Les séries institutionnelles complémentaires passent par les flux CSV Grapher d'Our World in Data. Le tableau ci-dessous indique le connecteur et l'état de chaque série.</div><div class="sourceTable"><table><thead><tr><th>Dimension</th><th>Indicateur</th><th>Source</th><th>Dataset</th><th>Dernière valeur</th><th>État</th><th>API</th></tr></thead><tbody id="sourceBody"></tbody></table></div></details>
+<div class="footer">Actualisation : au chargement de la page, à la demande via « Actualiser maintenant », puis toutes les six heures tant que la page reste ouverte. Les données non disponibles ou les erreurs d'API sont exclues du calcul et signalées explicitement. Périmètre : France.</div>
+</div>
+
+<script>
+const DATA={"dimensions": [{"id": "prosperity", "name": "Prospérité économique", "question": "Que doit refléter la prospérité économique ?"}, {"id": "jobs", "name": "Emploi & insertion", "question": "Quels aspects du marché du travail doivent entrer dans le score ?"}, {"id": "poverty", "name": "Pauvreté & précarité", "question": "Quelles formes de pauvreté et de précarité voulez-vous mesurer ?"}, {"id": "inequality", "name": "Inégalités & redistribution", "question": "Quelles dimensions des inégalités de revenu faut-il retenir ?"}, {"id": "health", "name": "Santé", "question": "Quels résultats et accès en santé doivent compter ?"}, {"id": "education", "name": "Éducation & compétences", "question": "Quels résultats éducatifs et compétences doivent être suivis ?"}, {"id": "gender", "name": "Égalité de genre", "question": "Quels écarts entre femmes et hommes doivent entrer dans l'indice ?"}, {"id": "housing", "name": "Logement & conditions de vie", "question": "Quels aspects du logement et du confort matériel faut-il mesurer ?"}, {"id": "safety", "name": "Mobilité & sécurité", "question": "Quels résultats de mobilité et de sécurité doivent compter ?"}, {"id": "innovation", "name": "Innovation & infrastructure", "question": "Quels éléments de capacité productive, numérique et technologique faut-il suivre ?"}, {"id": "energy", "name": "Transition énergétique", "question": "Quels résultats de la transition énergétique doivent être retenus ?"}, {"id": "climate", "name": "Climat & pollution", "question": "Quels impacts climatiques et sanitaires de la pollution faut-il intégrer ?"}, {"id": "resources", "name": "Ressources & circularité", "question": "Quels aspects de l'usage des ressources et des déchets faut-il mesurer ?"}, {"id": "biodiversity", "name": "Biodiversité & sols", "question": "Quels indicateurs de biodiversité et d'occupation des sols faut-il retenir ?"}, {"id": "rights", "name": "Institutions, libertés & État de droit", "question": "Quels aspects institutionnels et droits fondamentaux doivent entrer dans le score ?"}], "indicators": [{"id": "gdp_pc", "dim": "prosperity", "name": "PIB réel par habitant", "code": "sdg_08_10", "desc": "Niveau de production réelle par habitant, utile pour suivre le niveau matériel moyen.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_08_10/default/table?lang=fr", "direction": "high", "unit_hint": "€/hab.", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_10?geo=FR&lang=en"}, {"id": "investment", "dim": "prosperity", "name": "Investissement total rapporté au PIB", "code": "sdg_08_11", "desc": "Part de l'investissement dans l'économie, indicateur de renouvellement du capital.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_11?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_08_11/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_11?geo=FR&lang=en"}, {"id": "labprod", "dim": "prosperity", "name": "Productivité du travail par personne employée", "code": "SL.GDP.PCAP.EM.KD", "desc": "Production réelle par personne employée ; complète le PIB par habitant par une mesure d'efficacité productive.", "core": true, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SL.GDP.PCAP.EM.KD?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SL.GDP.PCAP.EM.KD?locations=FR", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SL.GDP.PCAP.EM.KD?format=json&per_page=1000"}, {"id": "hhcons", "dim": "prosperity", "name": "Consommation finale réelle des ménages par habitant", "code": "NE.CON.PRVT.PC.KD", "desc": "Approximation du niveau de consommation matérielle effectivement accessible aux ménages.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/NE.CON.PRVT.PC.KD?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/NE.CON.PRVT.PC.KD?locations=FR", "direction": "high", "unit_hint": "€/hab.", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/NE.CON.PRVT.PC.KD?format=json&per_page=1000"}, {"id": "adjnni", "dim": "prosperity", "name": "Revenu national net ajusté réel par habitant", "code": "NY.ADJ.NNTY.PC.KD", "desc": "Revenu national après dépréciation du capital fixe et ajustements liés aux ressources.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/NY.ADJ.NNTY.PC.KD?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/NY.ADJ.NNTY.PC.KD?locations=FR", "direction": "high", "unit_hint": "€/hab.", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/NY.ADJ.NNTY.PC.KD?format=json&per_page=1000"}, {"id": "adjsav", "dim": "prosperity", "name": "Épargne nette ajustée rapportée au RNB", "code": "NY.ADJ.SVNG.GN.ZS", "desc": "Mesure d'épargne tenant compte de l'investissement humain et de la dégradation de certains actifs naturels.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/NY.ADJ.SVNG.GN.ZS?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/NY.ADJ.SVNG.GN.ZS?locations=FR", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/NY.ADJ.SVNG.GN.ZS?format=json&per_page=1000"}, {"id": "employment", "dim": "jobs", "name": "Taux d'emploi des 20–64 ans", "code": "sdg_08_30", "desc": "Part des personnes en âge de travailler qui occupent un emploi.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_30?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_08_30/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_30?geo=FR&lang=en"}, {"id": "longunemp", "dim": "jobs", "name": "Chômage de longue durée", "code": "sdg_08_40", "desc": "Part de la population active au chômage depuis au moins douze mois.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_08_40/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_40?geo=FR&lang=en"}, {"id": "neet", "dim": "jobs", "name": "Jeunes ni en emploi, ni en études, ni en formation", "code": "sdg_08_20", "desc": "Part des jeunes hors emploi et hors système éducatif ou de formation.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_08_20/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_20?geo=FR&lang=en"}, {"id": "inworkpoverty", "dim": "jobs", "name": "Travailleurs exposés au risque de pauvreté", "code": "sdg_01_41", "desc": "Mesure la capacité de l'emploi à procurer un niveau de vie suffisant.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_41?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_41/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_41?geo=FR&lang=en"}, {"id": "fatalwork", "dim": "jobs", "name": "Accidents du travail mortels", "code": "sdg_08_60", "desc": "Décès liés au travail rapportés au nombre de travailleurs.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_08_60/default/table?lang=fr", "direction": "low", "unit_hint": "pour 100 000", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_60?geo=FR&lang=en"}, {"id": "arope", "dim": "poverty", "name": "Risque de pauvreté ou d'exclusion sociale", "code": "sdg_01_10", "desc": "Indicateur multidimensionnel combinant pauvreté monétaire, privation et faible intensité de travail.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_10/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_10?geo=FR&lang=en"}, {"id": "income_poverty", "dim": "poverty", "name": "Risque de pauvreté monétaire après transferts sociaux", "code": "sdg_01_20", "desc": "Part de la population sous le seuil relatif de pauvreté après transferts.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_20/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_20?geo=FR&lang=en"}, {"id": "smsd", "dim": "poverty", "name": "Privation matérielle et sociale sévère", "code": "sdg_01_31", "desc": "Manque contraint d'un ensemble de biens, services et activités considérés comme nécessaires.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_31?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_31/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_31?geo=FR&lang=en"}, {"id": "lowwork", "dim": "poverty", "name": "Très faible intensité de travail du ménage", "code": "sdg_01_40", "desc": "Part des personnes vivant dans un ménage où les adultes travaillent très peu.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_40/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_40?geo=FR&lang=en"}, {"id": "povertygap", "dim": "poverty", "name": "Écart médian au seuil de pauvreté", "code": "sdg_10_30", "desc": "Mesure l'intensité de la pauvreté parmi les personnes déjà sous le seuil.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_30?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_30/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_30?geo=FR&lang=en"}, {"id": "s80s20", "dim": "inequality", "name": "Rapport de revenus S80/S20", "code": "sdg_10_41", "desc": "Rapport entre le revenu total des 20 % les plus aisés et celui des 20 % les plus modestes.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_41?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_41/default/table?lang=fr", "direction": "low", "unit_hint": "ratio", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_41?geo=FR&lang=en"}, {"id": "bottom40", "dim": "inequality", "name": "Part du revenu détenue par les 40 % les plus modestes", "code": "sdg_10_50", "desc": "Part du revenu disponible allant aux 40 % situés en bas de la distribution.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_50/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_50?geo=FR&lang=en"}, {"id": "gini", "dim": "inequality", "name": "Indice de Gini du revenu disponible", "code": "SI.POV.GINI", "desc": "Mesure synthétique de concentration des revenus, de 0 (égalité parfaite) à 100.", "core": true, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SI.POV.GINI?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=FR", "direction": "low", "unit_hint": "indice", "baseline": true, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SI.POV.GINI?format=json&per_page=1000"}, {"id": "regionalincome", "dim": "inequality", "name": "Disparités territoriales de revenu des ménages par habitant", "code": "sdg_10_20", "desc": "Dispersion territoriale des revenus des ménages ; ajoute une dimension géographique aux inégalités.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_20/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_10_20?geo=FR&lang=en"}, {"id": "bottom20", "dim": "inequality", "name": "Part du revenu des 20 % les plus modestes", "code": "SI.DST.FRST.20", "desc": "Part du revenu ou de la consommation revenant au quintile inférieur.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SI.DST.FRST.20?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SI.DST.FRST.20?locations=FR", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SI.DST.FRST.20?format=json&per_page=1000"}, {"id": "healthy_life", "dim": "health", "name": "Espérance de vie en bonne santé", "code": "sdg_03_12", "desc": "Nombre d'années qu'une personne peut espérer vivre en bonne santé selon l'indicateur harmonisé.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_12?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_12/default/table?lang=fr", "direction": "high", "unit_hint": "ans", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_12?geo=FR&lang=en"}, {"id": "unmetcare", "dim": "health", "name": "Besoins médicaux non satisfaits", "code": "sdg_03_60", "desc": "Part de la population déclarant avoir renoncé à des soins nécessaires.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_60/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_60?geo=FR&lang=en"}, {"id": "lifeexp", "dim": "health", "name": "Espérance de vie à la naissance", "code": "SP.DYN.LE00.IN", "desc": "Durée de vie moyenne attendue dans les conditions de mortalité du moment.", "core": true, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SP.DYN.LE00.IN?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=FR", "direction": "high", "unit_hint": "ans", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SP.DYN.LE00.IN?format=json&per_page=1000"}, {"id": "selfhealth", "dim": "health", "name": "Santé perçue bonne ou très bonne", "code": "sdg_03_20", "desc": "Part des personnes évaluant positivement leur propre état de santé.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_20/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?geo=FR&lang=en"}, {"id": "smoking", "dim": "health", "name": "Prévalence du tabagisme", "code": "sdg_03_30", "desc": "Part de la population déclarant fumer ; facteur important de mortalité évitable.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_30?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_03_30/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_30?geo=FR&lang=en"}, {"id": "physicians", "dim": "health", "name": "Médecins pour 1 000 habitants", "code": "SH.MED.PHYS.ZS", "desc": "Densité médicale, utile comme indicateur d'offre de soins.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SH.MED.PHYS.ZS?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=FR", "direction": "high", "unit_hint": "pour 1 000 hab.", "baseline": true, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SH.MED.PHYS.ZS?format=json&per_page=1000"}, {"id": "earlyleave", "dim": "education", "name": "Sorties précoces de l'éducation et de la formation", "code": "sdg_04_10", "desc": "Part des jeunes ayant un faible niveau d'éducation et ne suivant plus de formation.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_10/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_10?geo=FR&lang=en"}, {"id": "tertiary", "dim": "education", "name": "Diplômés du supérieur parmi les 25–34 ans", "code": "sdg_04_20", "desc": "Part des jeunes adultes ayant achevé l'enseignement supérieur.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_20/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_20?geo=FR&lang=en"}, {"id": "lowpisa", "dim": "education", "name": "Faibles résultats des élèves de 15 ans", "code": "sdg_04_40", "desc": "Part des élèves sous le niveau de compétence de base en lecture, mathématiques ou sciences.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_40/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_40?geo=FR&lang=en"}, {"id": "adultlearning", "dim": "education", "name": "Participation des adultes à la formation", "code": "sdg_04_60", "desc": "Part des adultes participant à une activité récente d'éducation ou de formation.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_60/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_60?geo=FR&lang=en"}, {"id": "digitalskills", "dim": "education", "name": "Compétences numériques au moins élémentaires", "code": "sdg_04_70", "desc": "Part de la population disposant d'un niveau minimal de compétences numériques.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_70?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_70/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_70?geo=FR&lang=en"}, {"id": "preprimary", "dim": "education", "name": "Scolarisation dans l'enseignement préprimaire", "code": "SE.PRE.ENRR", "desc": "Taux brut de scolarisation dans le préprimaire, pour couvrir le début du parcours éducatif.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SE.PRE.ENRR?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SE.PRE.ENRR?locations=FR", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SE.PRE.ENRR?format=json&per_page=1000"}, {"id": "paygap", "dim": "gender", "name": "Écart de rémunération femmes-hommes", "code": "sdg_05_20", "desc": "Écart non ajusté de rémunération horaire moyenne entre hommes et femmes.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_05_20/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_20?geo=FR&lang=en"}, {"id": "empgap", "dim": "gender", "name": "Écart de taux d'emploi femmes-hommes", "code": "sdg_05_30", "desc": "Différence entre les taux d'emploi masculin et féminin.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_30?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_05_30/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_30?geo=FR&lang=en"}, {"id": "womenparl", "dim": "gender", "name": "Femmes au Parlement national", "code": "sdg_05_50", "desc": "Part des sièges du parlement national occupés par des femmes.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_05_50/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_50?geo=FR&lang=en"}, {"id": "caregap", "dim": "gender", "name": "Inactivité pour responsabilités de soins", "code": "sdg_05_40", "desc": "Mesure la sortie du marché du travail liée aux responsabilités familiales et de soins.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_05_40/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_40?geo=FR&lang=en"}, {"id": "womenmanagers", "dim": "gender", "name": "Femmes dans les postes de direction", "code": "sdg_05_60", "desc": "Part des femmes dans les fonctions de management et de décision économique.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_05_60/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_60?geo=FR&lang=en"}, {"id": "lfprratio", "dim": "gender", "name": "Ratio femmes-hommes de participation au marché du travail", "code": "SL.TLF.CACT.FM.ZS", "desc": "Rapport entre les taux d'activité féminin et masculin.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/SL.TLF.CACT.FM.ZS?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/SL.TLF.CACT.FM.ZS?locations=FR", "direction": "high", "unit_hint": "ratio", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/SL.TLF.CACT.FM.ZS?format=json&per_page=1000"}, {"id": "housecost2", "dim": "housing", "name": "Surcharge des coûts du logement", "code": "sdg_01_50", "desc": "Part de la population dont les dépenses de logement dépassent 40 % du revenu disponible.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_50/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_50?geo=FR&lang=en"}, {"id": "severehousing", "dim": "housing", "name": "Privation sévère liée au logement", "code": "sdg_11_11", "desc": "Combine surpeuplement et problèmes graves de qualité du logement.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_11?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_11/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_11?geo=FR&lang=en"}, {"id": "heatpoverty", "dim": "housing", "name": "Incapacité à chauffer suffisamment son logement", "code": "sdg_07_60", "desc": "Part de la population déclarant ne pas pouvoir maintenir une température adéquate.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_60/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_60?geo=FR&lang=en"}, {"id": "noise", "dim": "housing", "name": "Nuisances sonores dans le logement ou le quartier", "code": "sdg_11_20", "desc": "Part de la population déclarant subir du bruit provenant du voisinage ou de l'extérieur.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_20/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_20?geo=FR&lang=en"}, {"id": "overcrowding", "dim": "housing", "name": "Taux de surpeuplement du logement", "code": "ilc_lvho05a", "desc": "Part de la population vivant dans un logement ne disposant pas d'un nombre suffisant de pièces.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho05a?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho05a/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho05a?geo=FR&lang=en"}, {"id": "rooms", "dim": "housing", "name": "Nombre moyen de pièces par personne", "code": "ilc_lvho03", "desc": "Espace habitable disponible par personne, complément quantitatif au surpeuplement.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho03?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho03/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho03?geo=FR&lang=en"}, {"id": "roaddeaths", "dim": "safety", "name": "Décès sur la route", "code": "sdg_11_40", "desc": "Nombre de décès dus aux accidents routiers rapporté à la population.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_40/default/table?lang=fr", "direction": "low", "unit_hint": "pour 100 000", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_40?geo=FR&lang=en"}, {"id": "crimearea", "dim": "safety", "name": "Crime, violence ou vandalisme signalé dans le quartier", "code": "sdg_16_20", "desc": "Part des personnes déclarant ces problèmes dans leur zone de résidence.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_16_20/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_20?geo=FR&lang=en"}, {"id": "publictransport", "dim": "safety", "name": "Part du transport collectif dans le transport intérieur de voyageurs", "code": "sdg_09_50", "desc": "Part des transports collectifs dans les déplacements terrestres de voyageurs.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_09_50/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_50?geo=FR&lang=en"}, {"id": "homicide", "dim": "safety", "name": "Mortalité par homicide", "code": "sdg_16_10", "desc": "Taux standardisé de décès dus aux homicides.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_16_10/default/table?lang=fr", "direction": "low", "unit_hint": "pour 100 000", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_10?geo=FR&lang=en"}, {"id": "railpass", "dim": "safety", "name": "Transport ferroviaire de voyageurs", "code": "IS.RRS.PASG.KM", "desc": "Volume annuel de transport ferroviaire de voyageurs en passagers-kilomètres.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/IS.RRS.PASG.KM?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/IS.RRS.PASG.KM?locations=FR", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/IS.RRS.PASG.KM?format=json&per_page=1000"}, {"id": "rdgdp", "dim": "innovation", "name": "Dépenses de R&D rapportées au PIB", "code": "sdg_09_10", "desc": "Effort de recherche et développement de l'économie.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_09_10/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_10?geo=FR&lang=en"}, {"id": "rdstaff", "dim": "innovation", "name": "Personnel de R&D dans la population active", "code": "sdg_09_30", "desc": "Poids des chercheurs et personnels de R&D dans la main-d'œuvre.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_30?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_09_30/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_30?geo=FR&lang=en"}, {"id": "patents", "dim": "innovation", "name": "Demandes de brevet auprès de l'OEB", "code": "sdg_09_40", "desc": "Activité inventive mesurée par les demandes déposées auprès de l'Office européen des brevets.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_09_40/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_40?geo=FR&lang=en"}, {"id": "fastnet", "dim": "innovation", "name": "Couverture des réseaux à très haut débit", "code": "sdg_17_60", "desc": "Part des ménages couverts par des réseaux fixes à très haute capacité.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_17_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_17_60/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_17_60?geo=FR&lang=en"}, {"id": "internet", "dim": "innovation", "name": "Utilisateurs d'Internet", "code": "IT.NET.USER.ZS", "desc": "Part de la population ayant utilisé Internet.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/IT.NET.USER.ZS?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=FR", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/IT.NET.USER.ZS?format=json&per_page=1000"}, {"id": "hitechexports", "dim": "innovation", "name": "Exportations de haute technologie", "code": "TX.VAL.TECH.MF.ZS", "desc": "Part des produits de haute technologie dans les exportations manufacturières.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/TX.VAL.TECH.MF.ZS?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/TX.VAL.TECH.MF.ZS?locations=FR", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/TX.VAL.TECH.MF.ZS?format=json&per_page=1000"}, {"id": "renewables", "dim": "energy", "name": "Part des énergies renouvelables", "code": "sdg_07_40", "desc": "Part des renouvelables dans la consommation finale brute d'énergie.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_40/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_40?geo=FR&lang=en"}, {"id": "energyproductivity", "dim": "energy", "name": "Productivité énergétique", "code": "sdg_07_30", "desc": "Production économique obtenue par unité d'énergie consommée.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_30?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_30/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_30?geo=FR&lang=en"}, {"id": "energydependency", "dim": "energy", "name": "Dépendance aux importations d'énergie", "code": "sdg_07_50", "desc": "Part des besoins énergétiques couverte par des importations nettes.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_50/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_50?geo=FR&lang=en"}, {"id": "primaryenergy", "dim": "energy", "name": "Consommation d'énergie primaire", "code": "sdg_07_10", "desc": "Énergie consommée avant transformation, utile pour suivre l'efficacité globale du système.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_10/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_10?geo=FR&lang=en"}, {"id": "finalenergy", "dim": "energy", "name": "Consommation finale d'énergie", "code": "sdg_07_11", "desc": "Énergie effectivement consommée par les utilisateurs finaux.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_11?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_11/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_11?geo=FR&lang=en"}, {"id": "houseenergy", "dim": "energy", "name": "Consommation finale d'énergie des ménages par habitant", "code": "sdg_07_20", "desc": "Consommation énergétique domestique rapportée à la population.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_20/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_20?geo=FR&lang=en"}, {"id": "ghgnet", "dim": "climate", "name": "Émissions nettes de gaz à effet de serre", "code": "sdg_13_11", "desc": "Émissions nettes suivies dans le cadre de la politique climatique européenne.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_13_11?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_13_11/default/table?lang=fr", "direction": "low", "unit_hint": "tCO₂e/hab.", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_13_11?geo=FR&lang=en"}, {"id": "pmdeaths", "dim": "climate", "name": "Décès prématurés attribuables aux PM2,5", "code": "sdg_11_52", "desc": "Impact sanitaire de l'exposition aux particules fines.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_52?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_52/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_52?geo=FR&lang=en"}, {"id": "pmexposure", "dim": "climate", "name": "Exposition moyenne aux PM2,5", "code": "EN.ATM.PM25.MC.M3", "desc": "Concentration annuelle moyenne de particules fines à laquelle la population est exposée.", "core": true, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.PM25.MC.M3?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/EN.ATM.PM25.MC.M3?locations=FR", "direction": "low", "unit_hint": "µg/m³", "baseline": true, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.PM25.MC.M3?format=json&per_page=1000"}, {"id": "lulucf", "dim": "climate", "name": "Émissions et absorptions nettes des terres et forêts", "code": "sdg_13_21", "desc": "Bilan climatique du secteur utilisation des terres, changement d'affectation et forêt.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_13_21?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_13_21/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_13_21?geo=FR&lang=en"}, {"id": "co2pc", "dim": "climate", "name": "Émissions territoriales de CO₂ par habitant", "code": "EN.ATM.CO2E.PC", "desc": "Émissions de dioxyde de carbone rapportées à la population.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.CO2E.PC?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PC?locations=FR", "direction": "low", "unit_hint": "tCO₂e/hab.", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.CO2E.PC?format=json&per_page=1000"}, {"id": "co2intensity", "dim": "climate", "name": "Intensité carbone du PIB en PPA", "code": "EN.ATM.CO2E.PP.GD", "desc": "Quantité de CO₂ émise par unité de production économique en parité de pouvoir d'achat.", "core": false, "connector": "World Bank API", "origin": "World Development Indicators", "api": "https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.CO2E.PP.GD?format=json&per_page=1000", "source": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PP.GD?locations=FR", "direction": "low", "unit_hint": "", "baseline": false, "api_url": "https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.CO2E.PP.GD?format=json&per_page=1000"}, {"id": "materialfoot", "dim": "resources", "name": "Empreinte matières / consommation de matières premières", "code": "sdg_12_21", "desc": "Quantité de matières premières mobilisées par la consommation intérieure.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_21?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_12_21/default/table?lang=fr", "direction": "low", "unit_hint": "t/hab.", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_21?geo=FR&lang=en"}, {"id": "circularity", "dim": "resources", "name": "Taux d'utilisation circulaire des matières", "code": "sdg_12_41", "desc": "Part des matières recyclées réinjectées dans l'utilisation totale de matières.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_41?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_12_41/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_41?geo=FR&lang=en"}, {"id": "recycling", "dim": "resources", "name": "Taux de recyclage des déchets municipaux", "code": "sdg_11_60", "desc": "Part des déchets municipaux recyclés ou compostés.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_60/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?geo=FR&lang=en"}, {"id": "consumptionfoot", "dim": "resources", "name": "Empreinte de consommation — score environnemental agrégé", "code": "sdg_12_31", "desc": "Score d'impacts environnementaux du cycle de vie de la consommation des ménages.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_31?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_12_31/default/table?lang=fr", "direction": "low", "unit_hint": "", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_31?geo=FR&lang=en"}, {"id": "municipalwaste", "dim": "resources", "name": "Production de déchets municipaux par habitant", "code": "cei_pc031", "desc": "Quantité annuelle de déchets municipaux générés par personne.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/cei_pc031?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/cei_pc031/default/table?lang=fr", "direction": "low", "unit_hint": "kg/hab.", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/cei_pc031?geo=FR&lang=en"}, {"id": "wasteops", "dim": "resources", "name": "Déchets municipaux par opération de traitement", "code": "env_wasmun", "desc": "Jeu de données détaillé permettant de suivre génération, recyclage, incinération et mise en décharge.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/env_wasmun/default/table?lang=fr", "direction": "high", "unit_hint": "", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?geo=FR&lang=en"}, {"id": "birds", "dim": "biodiversity", "name": "Indice des oiseaux communs", "code": "sdg_15_60", "desc": "Évolution de l'abondance des populations d'oiseaux communs.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_60?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_15_60/default/table?lang=fr", "direction": "high", "unit_hint": "indice", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_60?geo=FR&lang=en"}, {"id": "protectedland", "dim": "biodiversity", "name": "Aires terrestres protégées", "code": "sdg_15_20", "desc": "Part du territoire terrestre incluse dans des zones protégées.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_20?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_15_20/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_20?geo=FR&lang=en"}, {"id": "erosion", "dim": "biodiversity", "name": "Sols touchés par une érosion sévère", "code": "sdg_15_50", "desc": "Part des terres soumises à une érosion hydrique sévère.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_15_50/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_50?geo=FR&lang=en"}, {"id": "forest", "dim": "biodiversity", "name": "Part du territoire couverte par les forêts", "code": "sdg_15_10", "desc": "Part des terres occupée par des surfaces forestières.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_10?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_15_10/default/table?lang=fr", "direction": "high", "unit_hint": "%", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_10?geo=FR&lang=en"}, {"id": "drought", "dim": "biodiversity", "name": "Impact de la sécheresse sur les écosystèmes", "code": "sdg_15_42", "desc": "Indicateur de stress de la végétation et des écosystèmes lié à la sécheresse.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_42?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_15_42/default/table?lang=fr", "direction": "low", "unit_hint": "indice", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_42?geo=FR&lang=en"}, {"id": "sealing", "dim": "biodiversity", "name": "Imperméabilisation des sols par habitant", "code": "sdg_11_32", "desc": "Surface artificialisée et imperméabilisée rapportée à la population.", "core": false, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_32?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_11_32/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_32?geo=FR&lang=en"}, {"id": "justiceind", "dim": "rights", "name": "Indépendance perçue du système judiciaire", "code": "sdg_16_40", "desc": "Perception de l'indépendance des tribunaux et des juges.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_40?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_16_40/default/table?lang=fr", "direction": "low", "unit_hint": "%", "baseline": true, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_40?geo=FR&lang=en"}, {"id": "cpi", "dim": "rights", "name": "Indice de perception de la corruption", "code": "sdg_16_50", "desc": "Indice de Transparency International diffusé dans l'ensemble SDG d'Eurostat.", "core": true, "connector": "Eurostat API", "origin": "Eurostat", "api": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_50?geo=FR&lang=fr", "source": "https://ec.europa.eu/eurostat/databrowser/view/sdg_16_50/default/table?lang=fr", "direction": "high", "unit_hint": "indice", "baseline": false, "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_50?geo=FR&lang=en"}, {"id": "freexpression", "dim": "rights", "name": "Liberté d'expression", "code": "freedom-of-expression-index", "desc": "Indice V-Dem couvrant discussion politique, presse, médias et expression académique et culturelle.", "core": true, "connector": "OWID Grapher API", "origin": "V-Dem via Our World in Data", "api": "https://ourworldindata.org/grapher/freedom-of-expression-index.csv?v=1&csvType=full&useColumnShortNames=false", "source": "https://ourworldindata.org/grapher/freedom-of-expression-index?tab=chart&country=~FRA", "direction": "high", "unit_hint": "indice", "baseline": false, "api_url": "https://ourworldindata.org/grapher/freedom-of-expression-index.csv?v=1&csvType=full&useColumnShortNames=false&nocache=1"}, {"id": "pressfreedom", "dim": "rights", "name": "Liberté de la presse", "code": "press-freedom-index-rsf", "desc": "Indice de Reporters sans frontières diffusé sous forme de série programmable.", "core": false, "connector": "OWID Grapher API", "origin": "RSF via Our World in Data", "api": "https://ourworldindata.org/grapher/press-freedom-index-rsf.csv?v=1&csvType=full&useColumnShortNames=false", "source": "https://ourworldindata.org/grapher/press-freedom-index-rsf?tab=chart&country=~FRA", "direction": "high", "unit_hint": "indice", "baseline": true, "api_url": "https://ourworldindata.org/grapher/press-freedom-index-rsf.csv?v=1&csvType=full&useColumnShortNames=false&nocache=1"}, {"id": "judicialchecks", "dim": "rights", "name": "Contrepoids judiciaires à l'exécutif", "code": "judicial-constraints-on-the-executive-index", "desc": "Indice V-Dem sur le respect des décisions de justice et l'indépendance effective des juridictions.", "core": false, "connector": "OWID Grapher API", "origin": "V-Dem via Our World in Data", "api": "https://ourworldindata.org/grapher/judicial-constraints-on-the-executive-index.csv?v=1&csvType=full&useColumnShortNames=false", "source": "https://ourworldindata.org/grapher/judicial-constraints-on-the-executive-index?tab=chart&country=~FRA", "direction": "high", "unit_hint": "indice", "baseline": true, "api_url": "https://ourworldindata.org/grapher/judicial-constraints-on-the-executive-index.csv?v=1&csvType=full&useColumnShortNames=false&nocache=1"}, {"id": "academicfreedom", "dim": "rights", "name": "Liberté académique", "code": "academic-freedom-index", "desc": "Indice V-Dem sur la liberté de recherche, d'enseignement, de publication et l'autonomie universitaire.", "core": false, "connector": "OWID Grapher API", "origin": "V-Dem via Our World in Data", "api": "https://ourworldindata.org/grapher/academic-freedom-index.csv?v=1&csvType=full&useColumnShortNames=false", "source": "https://ourworldindata.org/grapher/academic-freedom-index?tab=chart&country=~FRA", "direction": "high", "unit_hint": "indice", "baseline": false, "api_url": "https://ourworldindata.org/grapher/academic-freedom-index.csv?v=1&csvType=full&useColumnShortNames=false&nocache=1"}], "baselineIds": ["gdp_pc", "investment", "labprod", "longunemp", "inworkpoverty", "fatalwork", "income_poverty", "smsd", "lowwork", "s80s20", "gini", "regionalincome", "healthy_life", "unmetcare", "physicians", "earlyleave", "tertiary", "lowpisa", "paygap", "empgap", "womenparl", "housecost2", "severehousing", "heatpoverty", "publictransport", "homicide", "rdgdp", "patents", "fastnet", "renewables", "energyproductivity", "finalenergy", "ghgnet", "pmexposure", "lulucf", "materialfoot", "circularity", "consumptionfoot", "birds", "drought", "sealing", "justiceind", "pressfreedom", "judicialchecks"], "dedupe": [{"dataset": "sdg_08_60", "kept": "Emploi & insertion", "removed": "Mobilité & sécurité", "indicator": "Accidents du travail mortels"}, {"dataset": "sdg_05_40", "kept": "Égalité de genre", "removed": "Emploi & insertion", "indicator": "Inactivité pour responsabilités de soins"}, {"dataset": "sdg_10_30", "kept": "Pauvreté & précarité", "removed": "Inégalités & redistribution", "indicator": "Écart médian au seuil de pauvreté"}, {"dataset": "sdg_01_50", "kept": "Logement & conditions de vie", "removed": "Pauvreté & précarité", "indicator": "Surcharge des coûts du logement"}]};
+const DIMS=DATA.dimensions, INDS=DATA.indicators, BYID=Object.fromEntries(INDS.map(x=>[x.id,x]));
+const BASELINE=new Set(DATA.baselineIds);
+const state={
+ selected:new Set(DATA.baselineIds),
+ dimEnabled:Object.fromEntries(DIMS.map(d=>[d.id,true])),
+ dimWeights:Object.fromEntries(DIMS.map(d=>[d.id,5])),
+ series:{}, sourceStatus:{}, sourceDetail:{},
+ expert:{}, currentDim:0, mode:"quick", year:"latest",
+ lastRefresh:null, refreshing:false,
+ savedConfigs:[], compare:{current:true,baseline:true}, activeConfigId:null, configFeedback:null, configBusyId:null
+};
+for(const ind of INDS){
+ state.sourceStatus[ind.id]="idle";
+ state.expert[ind.id]={weight:5,boundMode:"raw",rawLow:null,rawHigh:null,scoreLow:0,scoreHigh:100,direction:ind.direction||"high",boundsAuto:true};
+}
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const fmt=(v,unit="")=>{
+ if(v==null||!Number.isFinite(Number(v))) return "—";
+ const x=Number(v),dec=Math.abs(x)<1?3:Math.abs(x)<10?2:Math.abs(x)<100?1:0;
+ return x.toLocaleString("fr-FR",{maximumFractionDigits:dec})+(unit?" "+unit:"");
+};
+function indsForDim(id){return INDS.filter(x=>x.dim===id)}
+function chosenForDim(id){return indsForDim(id).filter(x=>state.selected.has(x.id))}
+function dimById(id){return DIMS.find(d=>d.id===id)}
+function statusBadge(st){
+ const label=st==="ok"?"OK":st==="loading"?"Chargement":st==="error"?"Erreur":"Non chargé";
+ return `<span class="badge ${st==="ok"?"ok":st==="error"?"err":st==="loading"?"loading":""}">${label}</span>`;
+}
+
+/* ---------- Persistence ---------- */
+const STORAGE_KEY="observatoire_france_game_working_v1";
+const SAVED_CONFIGS_KEY="observatoire_france_game_profiles_v1";
+const GAME_KEY="observatoire_france_collective_game_v1";
+const GAME_ARCHIVE_KEY="prosperite_completed_profiles_v1";
+function saveConfig(){
+ try{
+  const expert={};
+  for(const [id,s] of Object.entries(state.expert)) expert[id]={weight:s.weight,boundMode:s.boundMode,rawLow:s.rawLow,rawHigh:s.rawHigh,scoreLow:s.scoreLow,scoreHigh:s.scoreHigh,direction:s.direction,boundsAuto:s.boundsAuto};
+  localStorage.setItem(STORAGE_KEY,JSON.stringify({selected:[...state.selected],dimEnabled:state.dimEnabled,dimWeights:state.dimWeights,expert,year:state.year}));
+ }catch(e){}
+}
+function restoreSaved(){
+ try{
+  const raw=localStorage.getItem(STORAGE_KEY); if(!raw)return;
+  const c=JSON.parse(raw);
+  if(Array.isArray(c.selected)) state.selected=new Set(c.selected.filter(id=>BYID[id]));
+  if(c.dimEnabled) Object.assign(state.dimEnabled,c.dimEnabled);
+  if(c.dimWeights) Object.assign(state.dimWeights,c.dimWeights);
+  if(c.expert) for(const [id,v] of Object.entries(c.expert)) if(state.expert[id]) Object.assign(state.expert[id],v);
+  if(c.year) state.year=c.year;
+ }catch(e){}
+}
+restoreSaved();
+function restoreSavedConfigs(){
+ try{
+  const raw=localStorage.getItem(SAVED_CONFIGS_KEY); if(!raw)return;
+  const arr=JSON.parse(raw); if(Array.isArray(arr))state.savedConfigs=arr.filter(x=>x&&x.id&&x.name&&x.config);
+ }catch(e){}
+}
+function persistSavedConfigs(){try{localStorage.setItem(SAVED_CONFIGS_KEY,JSON.stringify(state.savedConfigs))}catch(e){}}
+restoreSavedConfigs();
+
+/* ---------- Generic data parsers ---------- */
+function parseCSV(text){
+ const rows=[];let row=[],cell="",quoted=false;
+ for(let i=0;i<text.length;i++){
+  const c=text[i],n=text[i+1];
+  if(quoted){if(c=='"'&&n=='"'){cell+='"';i++;}else if(c=='"')quoted=false;else cell+=c;}
+  else{if(c=='"')quoted=true;else if(c==","){row.push(cell);cell="";}else if(c=="\n"){row.push(cell.replace(/\r$/,""));rows.push(row);row=[];cell="";}else cell+=c;}
+ }
+ if(cell.length||row.length){row.push(cell);rows.push(row)} return rows;
+}
+function cats(dim){
+ const idx=dim?.category?.index||{},lab=dim?.category?.label||{};
+ if(Array.isArray(idx)) return idx.map((code,i)=>({code,index:i,label:lab[code]||code}));
+ return Object.entries(idx).map(([code,index])=>({code,index,label:lab[code]||code})).sort((a,b)=>a.index-b.index);
+}
+function decodeIndex(flat,sizes){const out=new Array(sizes.length);let x=flat;for(let i=sizes.length-1;i>=0;i--){out[i]=x%sizes[i];x=Math.floor(x/sizes[i])}return out}
+function groupScore(ind,g){
+ const t=g.labels.toLowerCase(); let s=Math.min(g.data.length,40)*.03;
+ const positive=[" total ","total","all ages","both sexes","all sectors","overall"];
+ for(const p of positive) if(t.includes(p))s+=1.4;
+ if(/women|female|femmes/.test(ind.name.toLowerCase()) && /women|female/.test(t))s+=3;
+ if(/parlement|parliament/.test(ind.name.toLowerCase()) && /parliament/.test(t))s+=4;
+ if(/management|direction/.test(ind.name.toLowerCase()) && /manager|management/.test(t))s+=3;
+ if(/25.?34/.test(ind.name) && /25.?34|y25-34/.test(t))s+=3;
+ if(/20.?64/.test(ind.name) && /20.?64|y20-64/.test(t))s+=3;
+ if(/15 ans|15-year/.test(ind.name.toLowerCase()) && /15/.test(t))s+=2;
+ if(ind.unit_hint==="%" && /percentage|percent/.test(t))s+=1;
+ if(/per capita|inhabitant|habitant/.test(ind.name.toLowerCase()) && /per capita|inhabitant/.test(t))s+=1.5;
+ if(/male|men/.test(t) && !/men|hommes/.test(ind.name.toLowerCase()))s-=1.5;
+ if(/female|women/.test(t) && !/women|femmes/.test(ind.name.toLowerCase()))s-=1;
+ return s;
+}
+function euroSeries(json,ind){
+ const ids=json.id||[],sizes=json.size||[],dims=json.dimension||{},tp=ids.indexOf("time");
+ if(tp<0)throw new Error("Dimension time absente");
+ const categories=ids.map(id=>cats(dims[id])), vals=json.value||{}, groups=new Map();
+ const entries=Array.isArray(vals)?vals.map((v,i)=>[i,v]):Object.entries(vals);
+ for(const [key,raw] of entries){
+  const v=Number(raw),flat=Number(key); if(!Number.isFinite(v)||!Number.isFinite(flat))continue;
+  const coords=decodeIndex(flat,sizes),tc=categories[tp]?.[coords[tp]]; if(!tc)continue;
+  const year=parseInt(tc.code,10); if(!Number.isFinite(year))continue;
+  const signature=[], labels=[], unitLabels=[];
+  ids.forEach((id,i)=>{
+   if(id==="time"||id==="geo"||id==="freq")return;
+   const c=categories[i]?.[coords[i]]; if(!c)return;
+   signature.push(id+"="+c.code); labels.push(id+" "+c.code+" "+c.label);
+   if(id==="unit")unitLabels.push(c.label||c.code);
+  });
+  const sig=signature.join("|");
+  if(!groups.has(sig))groups.set(sig,{labels:labels.join(" "),unit:unitLabels[0]||"",data:[]});
+  groups.get(sig).data.push({year,value:v});
+ }
+ const arr=[...groups.values()]; if(!arr.length)throw new Error("Aucune observation France");
+ arr.sort((a,b)=>groupScore(ind,b)-groupScore(ind,a));
+ const best=arr[0]; best.data.sort((a,b)=>a.year-b.year);
+ return {series:best.data,unit:best.unit,detail:best.labels};
+}
+async function timedFetch(url,opts={},timeout=22000){
+ const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),timeout);
+ try{return await fetch(url,{...opts,signal:ctrl.signal,cache:"no-store"})}finally{clearTimeout(timer)}
+}
+async function fetchEurostat(ind){
+ const r=await timedFetch(ind.api_url); if(!r.ok)throw new Error("Eurostat HTTP "+r.status);
+ return euroSeries(await r.json(),ind);
+}
+async function fetchWB(ind){
+ try{
+  const r=await timedFetch(ind.api_url); if(!r.ok)throw new Error("World Bank HTTP "+r.status);
+  const j=await r.json(),rows=Array.isArray(j)&&Array.isArray(j[1])?j[1]:[];
+  const series=rows.map(x=>({year:+x.date,value:Number(x.value)})).filter(x=>Number.isFinite(x.year)&&Number.isFinite(x.value)).sort((a,b)=>a.year-b.year);
+  if(!series.length)throw new Error("Aucune observation France");
+  return {series,unit:ind.unit_hint||"",detail:"World Bank Indicators V2"};
+ }catch(firstErr){
+  return await new Promise((resolve,reject)=>{
+   const cb="wbcb_"+Math.random().toString(36).slice(2),script=document.createElement("script");
+   const clean=()=>{try{delete window[cb]}catch(e){};script.remove()};
+   const timer=setTimeout(()=>{clean();reject(firstErr)},22000);
+   window[cb]=j=>{clearTimeout(timer);clean();try{const rows=Array.isArray(j)&&Array.isArray(j[1])?j[1]:[];const series=rows.map(x=>({year:+x.date,value:Number(x.value)})).filter(x=>Number.isFinite(x.year)&&Number.isFinite(x.value)).sort((a,b)=>a.year-b.year);if(!series.length)throw new Error("Aucune observation France");resolve({series,unit:ind.unit_hint||"",detail:"World Bank JSONP fallback"})}catch(e){reject(e)}};
+   script.src=ind.api_url.replace("format=json","format=jsonP")+"&prefix="+cb;script.onerror=()=>{clearTimeout(timer);clean();reject(firstErr)};document.head.appendChild(script);
+  });
+ }
+}
+async function fetchOWID(ind){
+ const r=await timedFetch(ind.api_url); if(!r.ok)throw new Error("OWID HTTP "+r.status);
+ const rows=parseCSV(await r.text()); if(rows.length<2)throw new Error("CSV vide");
+ const h=rows[0],ei=h.indexOf("Entity"),ci=h.indexOf("Code"),yi=h.indexOf("Year");
+ const valueCols=h.map((name,i)=>({name,i})).filter(x=>![ei,ci,yi].includes(x.i));
+ if(!valueCols.length)throw new Error("Colonne de valeur absente");
+ let vi=valueCols[0].i;
+ const series=[];
+ for(let i=1;i<rows.length;i++){
+  const row=rows[i],isFR=(ci>=0&&row[ci]==="FRA")||(ei>=0&&row[ei]==="France"); if(!isFR)continue;
+  const year=Number(row[yi]),v=Number(row[vi]); if(Number.isFinite(year)&&Number.isFinite(v))series.push({year,value:v});
+ }
+ series.sort((a,b)=>a.year-b.year); if(!series.length)throw new Error("France absente du flux");
+ return {series,unit:ind.unit_hint||"",detail:"OWID Grapher · "+valueCols[0].name};
+}
+
+/* ---------- Bounds and scores ---------- */
+function percentile(vals,p){
+ if(!vals.length)return null; const a=[...vals].sort((x,y)=>x-y),idx=(a.length-1)*p,lo=Math.floor(idx),hi=Math.ceil(idx);
+ return lo===hi?a[lo]:a[lo]+(a[hi]-a[lo])*(idx-lo);
+}
+function defaultObservedRange(id){
+ const s=state.series[id]||[];
+ if(!s.length)return null;
+ const p=s[s.length-1],center=Number(p.value);
+ if(!Number.isFinite(center))return null;
+ let radius=Math.abs(center);
+ // A zero observation cannot generate a +/-50% interval; use the historical magnitude only as a fallback scale.
+ if(radius===0){
+  const vals=s.map(x=>Math.abs(Number(x.value))).filter(v=>Number.isFinite(v)&&v>0);
+  radius=vals.length?Math.max(...vals):1;
+ }
+ const low=center-radius*.5,high=center+radius*.5;
+ const domainMin=center-radius,domainMax=center+radius;
+ return {
+  center,
+  low:Number(low.toPrecision(8)),
+  high:Number(high.toPrecision(8)),
+  domainMin:Number(domainMin.toPrecision(8)),
+  domainMax:Number(domainMax.toPrecision(8)),
+  year:p.year
+ };
+}
+function autoBounds(id){
+ const def=defaultObservedRange(id);if(!def)return;
+ const st=state.expert[id];
+ if(st.boundsAuto||st.rawLow==null||st.rawHigh==null){
+  st.rawLow=def.low;st.rawHigh=def.high;st.boundsAuto=true;
+ }
+}
+function valueAt(id,yearMode=state.year){
+ const s=state.series[id]||[]; if(!s.length)return null;
+ if(yearMode==="latest")return s[s.length-1];
+ const y=+yearMode,a=s.filter(x=>x.year<=y); return a.length?a[a.length-1]:null;
+}
+function rawScore(id,p){
+ if(!p)return null;const st=state.expert[id],lo=Number(st.rawLow),hi=Number(st.rawHigh);
+ if(!Number.isFinite(lo)||!Number.isFinite(hi)||lo===hi)return null;
+ let z=(p.value-lo)/(hi-lo)*100;if(st.direction==="low")z=100-z;return clamp(z,0,100);
+}
+function indicatorScore(id,yearMode=state.year){
+ const p=valueAt(id,yearMode);if(!p)return null;const st=state.expert[id],base=rawScore(id,p);if(base==null)return null;
+ if(st.boundMode==="score"){const lo=Number(st.scoreLow),hi=Number(st.scoreHigh);if(!Number.isFinite(lo)||!Number.isFinite(hi)||lo===hi)return null;return clamp((base-lo)/(hi-lo)*100,0,100)}
+ return base;
+}
+function dimensionScore(dimId,yearMode=state.year){
+ const ids=chosenForDim(dimId).map(x=>x.id),parts=[];
+ for(const id of ids){const sc=indicatorScore(id,yearMode),w=Number(state.expert[id].weight)||0;if(sc!=null&&w>0)parts.push({sc,w})}
+ const tw=parts.reduce((a,b)=>a+b.w,0);return {score:tw?parts.reduce((a,b)=>a+b.sc*b.w,0)/tw:null,available:parts.length,total:ids.length};
+}
+function globalScore(yearMode=state.year){
+ const parts=[];
+ for(const d of DIMS){if(!state.dimEnabled[d.id]||state.dimWeights[d.id]<=0)continue;const ds=dimensionScore(d.id,yearMode);if(ds.score!=null)parts.push({sc:ds.score,w:state.dimWeights[d.id]})}
+ const tw=parts.reduce((a,b)=>a+b.w,0);return {score:tw?parts.reduce((a,b)=>a+b.sc*b.w,0)/tw:null,dimensions:parts.length};
+}
+
+
+function autoBoundsSnapshot(id){
+ const def=defaultObservedRange(id);
+ return def?{low:def.low,high:def.high}:{low:null,high:null};
+}
+function snapshotCurrent(){
+ const expert={};
+ for(const ind of INDS){
+  const s=state.expert[ind.id];
+  expert[ind.id]={weight:s.weight,boundMode:s.boundMode,rawLow:s.rawLow,rawHigh:s.rawHigh,scoreLow:s.scoreLow,scoreHigh:s.scoreHigh,direction:s.direction,boundsAuto:s.boundsAuto};
+ }
+ return {selected:[...state.selected],dimEnabled:{...state.dimEnabled},dimWeights:{...state.dimWeights},expert};
+}
+function baselineSnapshot(){
+ const expert={};
+ for(const ind of INDS){
+  const b=autoBoundsSnapshot(ind.id);
+  expert[ind.id]={weight:1,boundMode:"raw",rawLow:b.low,rawHigh:b.high,scoreLow:0,scoreHigh:100,direction:ind.direction,boundsAuto:true};
+ }
+ return {selected:[...DATA.baselineIds],dimEnabled:Object.fromEntries(DIMS.map(d=>[d.id,true])),dimWeights:Object.fromEntries(DIMS.map(d=>[d.id,1])),expert};
+}
+function pointAtSeries(id,year){
+ const s=state.series[id]||[],a=s.filter(x=>x.year<=year);return a.length?a[a.length-1]:null;
+}
+function scoreWithConfig(id,year,cfg){
+ const p=pointAtSeries(id,year);if(!p)return null;
+ const ind=BYID[id],st=cfg.expert?.[id]||{},auto=autoBoundsSnapshot(id);
+ const lo=Number(st.rawLow ?? auto.low),hi=Number(st.rawHigh ?? auto.high);if(!Number.isFinite(lo)||!Number.isFinite(hi)||lo===hi)return null;
+ let z=(p.value-lo)/(hi-lo)*100;if((st.direction||ind.direction)==="low")z=100-z;z=clamp(z,0,100);
+ if((st.boundMode||"raw")==="score"){const sl=Number(st.scoreLow??0),sh=Number(st.scoreHigh??100);if(!Number.isFinite(sl)||!Number.isFinite(sh)||sl===sh)return null;z=clamp((z-sl)/(sh-sl)*100,0,100)}
+ return z;
+}
+function globalWithConfig(cfg,year){
+ const selectedSet=new Set(cfg.selected||[]),parts=[];
+ for(const d of DIMS){
+  if(cfg.dimEnabled?.[d.id]===false)continue;
+  const dw=Number(cfg.dimWeights?.[d.id]??1);if(dw<=0)continue;
+  const ips=[];
+  for(const ind of indsForDim(d.id)){
+   if(!selectedSet.has(ind.id))continue;
+   const sc=scoreWithConfig(ind.id,year,cfg),iw=Number(cfg.expert?.[ind.id]?.weight??1);
+   if(sc!=null&&iw>0)ips.push({sc,w:iw});
+  }
+  const ti=ips.reduce((a,b)=>a+b.w,0);if(!ti)continue;
+  const ds=ips.reduce((a,b)=>a+b.sc*b.w,0)/ti;parts.push({sc:ds,w:dw});
+ }
+ const tw=parts.reduce((a,b)=>a+b.w,0);return {score:tw?parts.reduce((a,b)=>a+b.sc*b.w,0)/tw:null,dimensions:parts.length};
+}
+function applySnapshot(cfg){
+ state.selected=new Set((cfg.selected||[]).filter(id=>BYID[id]));
+ Object.assign(state.dimEnabled,Object.fromEntries(DIMS.map(d=>[d.id,true])),cfg.dimEnabled||{});
+ Object.assign(state.dimWeights,Object.fromEntries(DIMS.map(d=>[d.id,5])),cfg.dimWeights||{});
+ if(cfg.expert)for(const [id,v] of Object.entries(cfg.expert))if(state.expert[id])Object.assign(state.expert[id],v);
+ saveConfig();renderAll();refreshSelected(false);
+}
+function configIndicatorIds(cfg){return (cfg.selected||[]).filter(id=>BYID[id])}
+
+/* ---------- Fetch orchestration ---------- */
+async function fetchIndicator(id,force=false){
+ const ind=BYID[id]; if(!ind)return;
+ if(!force && (state.sourceStatus[id]==="ok"||state.sourceStatus[id]==="loading"))return;
+ state.sourceStatus[id]="loading";renderStatusLite();
+ try{
+  let out;if(ind.connector==="Eurostat API")out=await fetchEurostat(ind);else if(ind.connector==="World Bank API")out=await fetchWB(ind);else out=await fetchOWID(ind);
+  state.series[id]=out.series;state.sourceStatus[id]="ok";state.sourceDetail[id]={unit:out.unit||ind.unit_hint||"",detail:out.detail||""};autoBounds(id);
+ }catch(e){state.sourceStatus[id]="error";state.sourceDetail[id]={unit:ind.unit_hint||"",detail:String(e?.message||e)}}
+ renderAll();
+}
+async function pool(ids,limit=6,force=false){
+ let idx=0;const workers=Array.from({length:limit},async()=>{while(idx<ids.length){const id=ids[idx++];await fetchIndicator(id,force)}});
+ await Promise.all(workers);
+}
+async function refreshSelected(force=true){
+ if(state.refreshing)return;state.refreshing=true;$("#refreshBtn").disabled=true;
+ const ids=[...state.selected];await pool(ids,6,force);state.lastRefresh=new Date();state.refreshing=false;$("#refreshBtn").disabled=false;renderAll();
+}
+async function preloadDimension(dimId){const ids=indsForDim(dimId).map(x=>x.id).filter(id=>state.sourceStatus[id]==="idle"||state.sourceStatus[id]==="error");if(ids.length)await pool(ids,4,false)}
+async function loadAll(){if(state.refreshing)return;state.refreshing=true;$("#loadAllBtn").disabled=true;await pool(INDS.map(x=>x.id),6,false);state.lastRefresh=new Date();state.refreshing=false;$("#loadAllBtn").disabled=false;renderAll()}
+
+/* ---------- Rendering ---------- */
+function yearsAvailable(){const ys=new Set();Object.values(state.series).forEach(s=>s.forEach(p=>ys.add(p.year)));return [...ys].sort((a,b)=>a-b)}
+function renderYear(){
+ const ys=yearsAvailable().filter(y=>y>=1990),sel=$("#yearSelect"),cur=state.year;
+ sel.innerHTML='<option value="latest">Dernière donnée disponible</option>'+ys.slice().reverse().map(y=>`<option value="${y}">${y}</option>`).join("");
+ if([...sel.options].some(o=>o.value===String(cur)))sel.value=cur;else{state.year="latest";sel.value="latest"}
+}
+function scoreForConfigAtDisplayYear(cfg){
+ if(state.year==="latest"){
+  const years=yearsAvailable();
+  if(!years.length)return {score:null,dimensions:0,year:null};
+  // "latest" must use each indicator's latest available observation, like the live index.
+  const selectedSet=new Set(cfg.selected||[]),parts=[];
+  for(const d of DIMS){
+   if(cfg.dimEnabled?.[d.id]===false)continue;
+   const dw=Number(cfg.dimWeights?.[d.id]??1);if(dw<=0)continue;
+   const ips=[];
+   for(const ind of indsForDim(d.id)){
+    if(!selectedSet.has(ind.id))continue;
+    const s=state.series[ind.id]||[];if(!s.length)continue;
+    const p=s[s.length-1],st=cfg.expert?.[ind.id]||{},auto=autoBoundsSnapshot(ind.id);
+    const lo=Number(st.rawLow??auto.low),hi=Number(st.rawHigh??auto.high);
+    if(!Number.isFinite(lo)||!Number.isFinite(hi)||lo===hi)continue;
+    let sc=(p.value-lo)/(hi-lo)*100;if((st.direction||ind.direction)==="low")sc=100-sc;sc=clamp(sc,0,100);
+    if((st.boundMode||"raw")==="score"){const sl=Number(st.scoreLow??0),sh=Number(st.scoreHigh??100);if(!Number.isFinite(sl)||!Number.isFinite(sh)||sl===sh)continue;sc=clamp((sc-sl)/(sh-sl)*100,0,100)}
+    const iw=Number(st.weight??1);if(iw>0)ips.push({sc,w:iw});
+   }
+   const ti=ips.reduce((a,b)=>a+b.w,0);if(!ti)continue;
+   parts.push({sc:ips.reduce((a,b)=>a+b.sc*b.w,0)/ti,w:dw});
+  }
+  const tw=parts.reduce((a,b)=>a+b.w,0);
+  return {score:tw?parts.reduce((a,b)=>a+b.sc*b.w,0)/tw:null,dimensions:parts.length,year:"latest"};
+ }
+ return {...globalWithConfig(cfg,+state.year),year:+state.year};
+}
+function renderScoreComparison(){
+ const rows=[];
+ if(state.compare.current){
+  const cur=globalScore();
+  rows.push({id:"current",name:"Configuration actuelle",score:cur.score,dimensions:cur.dimensions,kind:"current"});
+ }
+ if(state.compare.baseline){
+  const b=scoreForConfigAtDisplayYear(baselineSnapshot());
+  rows.push({id:"baseline",name:"Socle d’origine",score:b.score,dimensions:b.dimensions,kind:"baseline"});
+ }
+ for(const c of state.savedConfigs){
+  if(!c.compare)continue;
+  const s=scoreForConfigAtDisplayYear(c.config);
+  rows.push({id:c.id,name:c.name,score:s.score,dimensions:s.dimensions,kind:"saved"});
+ }
+ const box=$("#scoreCompareList");
+ if(!rows.length){box.innerHTML='<div class="scoreCompareEmpty">Coche au moins une configuration dans « Configurations utilisateur » pour afficher ses scores ici.</div>';return}
+ box.innerHTML=rows.map(r=>`<div class="scoreCompareItem ${r.kind}"><div><div class="scoreCompareName">${esc(r.name)}</div><div class="scoreCompareMeta">${r.dimensions} dimension(s) calculables${state.year==="latest"?" · dernières valeurs":" · "+state.year}</div></div><div class="scoreCompareValue">${r.score==null?"—":Math.round(r.score)}<small>/100</small></div></div>`).join("");
+}
+function renderOverview(){
+ const g=globalScore(),selected=[...state.selected],ok=selected.filter(id=>state.sourceStatus[id]==="ok").length;
+ $("#globalScore").textContent=g.score==null?"—":Math.round(g.score);$("#globalRing").style.background=`conic-gradient(var(--accent) ${(g.score||0)*3.6}deg,#e7eaf0 0deg)`;
+ $("#coverageText").textContent=`${g.dimensions} dimension(s) calculables · ${ok}/${selected.length} séries sélectionnées chargées`;
+ renderScoreComparison();
+ const dims=DIMS.map(d=>({name:d.name,...dimensionScore(d.id)})).filter(x=>x.score!=null).sort((a,b)=>b.score-a.score);
+ $("#profiles").innerHTML=dims.map(x=>`<div class="prow"><span>${esc(x.name)}</span><div class="bar"><i style="width:${x.score}%"></i></div><strong>${Math.round(x.score)}</strong></div>`).join("")||'<div class="sub">En attente de données.</div>';
+ renderTrend();
+}
+function niceAxisStep(span){
+ const target=Math.max(span/4,.5),pow=Math.pow(10,Math.floor(Math.log10(target))),n=target/pow;
+ const nice=n<=1?1:n<=2?2:n<=5?5:10;
+ return nice*pow;
+}
+function renderTrend(){
+ const years=yearsAvailable().filter(y=>y>=2000);
+ const configs=[];
+ if(state.compare.baseline)configs.push({id:"baseline",name:"Socle d’origine",config:baselineSnapshot(),kind:"baseline"});
+ if(state.compare.current)configs.push({id:"current",name:"Configuration actuelle",config:snapshotCurrent(),kind:"current"});
+ for(const saved of state.savedConfigs)if(saved.compare)configs.push({id:saved.id,name:saved.name,config:saved.config,kind:"saved"});
+ const palette=["#2459d3","#20242b","#8b5cf6","#e06b2e","#159b8a","#b04a73","#708238","#8a6d3b"];
+ const series=configs.map((c,i)=>({id:c.id,name:c.name,color:c.kind==="baseline"?"#20242b":c.kind==="current"?"#2459d3":palette[(i+1)%palette.length],kind:c.kind,points:years.map(y=>({year:y,...globalWithConfig(c.config,y)})).filter(x=>x.score!=null&&x.dimensions>0)})).filter(s=>s.points.length>=2);
+ const svg=$("#trend"),tip=$("#trendTooltip"),wrap=$("#trendSvgWrap");
+ if(!series.length){
+  svg.innerHTML='<text x="325" y="92" text-anchor="middle" font-size="11" fill="#7a828c">Historique en cours de chargement</text>';
+  $("#trendStart").textContent="—";$("#trendEnd").textContent="—";$("#trendCoverage").textContent="—";$("#trendLegend").innerHTML="";$("#trendScaleNote").textContent="";tip.classList.remove("show");return;
+ }
+ const allPoints=series.flatMap(s=>s.points),minYear=Math.min(...allPoints.map(x=>x.year)),maxYear=Math.max(...allPoints.map(x=>x.year));
+ const values=allPoints.map(x=>x.score),rawMin=Math.min(...values),rawMax=Math.max(...values),rawSpan=Math.max(rawMax-rawMin,1);
+ // Adaptive scale: visible variation, but keep a meaningful minimum span to avoid overstating tiny changes.
+ const minVisibleSpan=12,paddedSpan=Math.max(rawSpan*1.35,minVisibleSpan),mid=(rawMin+rawMax)/2;
+ let yMin=mid-paddedSpan/2,yMax=mid+paddedSpan/2;
+ yMin=Math.max(0,yMin);yMax=Math.min(100,yMax);
+ if(yMax-yMin<minVisibleSpan){
+  if(yMin===0)yMax=Math.min(100,minVisibleSpan);
+  else if(yMax===100)yMin=Math.max(0,100-minVisibleSpan);
+ }
+ const step=niceAxisStep(yMax-yMin);
+ yMin=Math.max(0,Math.floor(yMin/step)*step);yMax=Math.min(100,Math.ceil(yMax/step)*step);
+ if(yMax<=yMin)yMax=Math.min(100,yMin+10);
+ const W=650,H=185,L=42,R=13,T=10,B=27;
+ const x=y=>L+(y-minYear)/((maxYear-minYear)||1)*(W-L-R),yy=v=>T+(yMax-v)/(yMax-yMin)*(H-T-B);
+ let grid="";
+ const ticks=[];
+ for(let v=Math.ceil(yMin/step)*step;v<=yMax+step*.01;v+=step)ticks.push(+v.toFixed(6));
+ ticks.forEach(v=>{const py=yy(v);grid+=`<line x1="${L}" x2="${W-R}" y1="${py}" y2="${py}" stroke="#e6e9ed"/><text x="${L-7}" y="${py+3}" text-anchor="end" font-size="8" fill="#7a828c">${Math.round(v)}</text>`});
+ const yearTicks=[minYear,Math.round((minYear+maxYear)/2),maxYear].filter((v,i,a)=>a.indexOf(v)===i);
+ yearTicks.forEach(y=>grid+=`<text x="${x(y)}" y="${H-7}" text-anchor="middle" font-size="8" fill="#7a828c">${y}</text>`);
+ let lines="";
+ series.forEach((s,si)=>{
+  const path=s.points.map((p,i)=>(i?"L":"M")+x(p.year).toFixed(1)+","+yy(p.score).toFixed(1)).join(" "),last=s.points.at(-1),dash=s.kind==="baseline"?' stroke-dasharray="5 4"':"";
+  lines+=`<path d="${path}" fill="none" stroke="${s.color}" stroke-width="${s.kind==="current"?2.8:2.2}"${dash} stroke-linecap="round" stroke-linejoin="round"/><circle cx="${x(last.year)}" cy="${yy(last.score)}" r="3" fill="${s.color}"/>`;
+ });
+ const interaction=`<g id="trendHoverLayer" opacity="0"><line id="trendCrosshair" x1="${L}" x2="${L}" y1="${T}" y2="${H-B}" stroke="#8c939d" stroke-width="1" stroke-dasharray="3 3"/></g><rect id="trendHit" x="${L}" y="${T}" width="${W-L-R}" height="${H-T-B}" fill="transparent" style="cursor:crosshair"/>`;
+ svg.innerHTML=grid+lines+interaction;
+ $("#trendStart").textContent=minYear;$("#trendEnd").textContent=maxYear;$("#trendCoverage").textContent=`${series.length} courbe(s) · ${new Set(allPoints.map(x=>x.year)).size} millésimes`;
+ $("#trendLegend").innerHTML=series.map(s=>`<span class="legendItem"><i class="legendSwatch" style="background:${s.color}"></i>${esc(s.name)}</span>`).join("");
+ $("#trendScaleNote").textContent=`Échelle verticale adaptée aux données affichées : ${Math.round(yMin)}–${Math.round(yMax)}/100. Une amplitude minimale de 12 points est conservée pour ne pas amplifier excessivement de faibles écarts.`;
+ const hit=$("#trendHit"),hoverLayer=$("#trendHoverLayer"),cross=$("#trendCrosshair");
+ function nearestYear(clientX){
+  const rect=svg.getBoundingClientRect(),px=(clientX-rect.left)/rect.width*W,ratio=clamp((px-L)/(W-L-R),0,1),guess=minYear+ratio*(maxYear-minYear);
+  const available=[...new Set(allPoints.map(p=>p.year))];
+  return available.reduce((a,b)=>Math.abs(b-guess)<Math.abs(a-guess)?b:a,available[0]);
+ }
+ function showAt(clientX,clientY){
+  const yr=nearestYear(clientX),cx=x(yr);
+  hoverLayer.setAttribute("opacity","1");cross.setAttribute("x1",cx);cross.setAttribute("x2",cx);
+  hoverLayer.querySelectorAll(".hoverPoint").forEach(n=>n.remove());
+  const rows=[];
+  series.forEach(s=>{
+   const p=s.points.find(q=>q.year===yr);
+   if(!p)return;
+   const c=document.createElementNS("http://www.w3.org/2000/svg","circle");c.setAttribute("class","hoverPoint");c.setAttribute("cx",cx);c.setAttribute("cy",yy(p.score));c.setAttribute("r","4");c.setAttribute("fill","#fff");c.setAttribute("stroke",s.color);c.setAttribute("stroke-width","2");hoverLayer.appendChild(c);
+   rows.push({name:s.name,color:s.color,score:p.score});
+  });
+  if(!rows.length){tip.classList.remove("show");return}
+  tip.innerHTML=`<strong>${yr}</strong>${rows.map(r=>`<div class="trendTooltipRow"><i class="trendTooltipDot" style="background:${r.color}"></i><span>${esc(r.name)}</span><span class="trendTooltipVal">${r.score.toFixed(1)}</span></div>`).join("")}`;
+  const wr=wrap.getBoundingClientRect(),sr=svg.getBoundingClientRect(),localX=clientX-wr.left,localY=clientY-wr.top;
+  tip.style.left=Math.min(localX,Math.max(20,wr.width-230))+"px";tip.style.top=Math.max(35,Math.min(localY,wr.height-25))+"px";tip.classList.add("show");
+ }
+ hit.addEventListener("mousemove",e=>showAt(e.clientX,e.clientY));
+ hit.addEventListener("mouseleave",()=>{hoverLayer.setAttribute("opacity","0");tip.classList.remove("show")});
+ hit.addEventListener("click",e=>showAt(e.clientX,e.clientY));
+}
+function renderQuick(){
+ $("#dimGrid").innerHTML=DIMS.map((d,i)=>{const ds=dimensionScore(d.id),on=state.dimEnabled[d.id],n=chosenForDim(d.id).length;
+  return `<article class="card dim ${on?"":"off"}"><div class="dimhead"><input type="checkbox" data-den="${d.id}" ${on?"checked":""}><h3>${esc(d.name)}</h3><div class="dimscore">${ds.score==null?"—":Math.round(ds.score)}</div></div><div class="dimmeta">${n} indicateur(s) retenu(s) · ${ds.available}/${ds.total} disponibles</div><div class="weightline"><span>Poids</span><input type="range" min="0" max="10" step="1" value="${state.dimWeights[d.id]}" data-dw="${d.id}" ${on?"":"disabled"}><strong>${state.dimWeights[d.id]}</strong></div><div class="dactions">${ds.score==null?'<span class="badge loading">Données en attente</span>':`<span class="badge ok">Score ${Math.round(ds.score)}/100</span>`}<button class="linkbtn" data-config="${i}">Configurer →</button></div></article>`}).join("");
+ $$("[data-den]").forEach(x=>x.addEventListener("change",()=>{state.dimEnabled[x.dataset.den]=x.checked;saveConfig();renderAll()}));$$("[data-dw]").forEach(x=>x.addEventListener("input",()=>{state.dimWeights[x.dataset.dw]=+x.value;saveConfig();renderAll()}));$$("[data-config]").forEach(x=>x.addEventListener("click",()=>{state.currentDim=+x.dataset.config;setMode("advanced")}));
+ const a=DIMS.filter(d=>state.dimEnabled[d.id]&&state.dimWeights[d.id]>0),sum=a.reduce((z,d)=>z+state.dimWeights[d.id],0)||1;
+ $("#contrib").innerHTML=a.map(d=>{const p=state.dimWeights[d.id]/sum*100,ds=dimensionScore(d.id),c=ds.score==null?null:ds.score*p/100;return `<div class="crow"><span>${esc(d.name)}<br><span class="muted">${p.toFixed(1)} % du poids${c==null?"":" · "+c.toFixed(1)+" pts"}</span></span><div class="bar"><i style="width:${p}%"></i></div></div>`}).join("")||'<div class="sub">Aucune dimension active.</div>';
+}
+function navHtml(){
+ return DIMS.map((d,i)=>`<button data-go="${i}" class="${i===state.currentDim?"on":""}"><span class="num">${i+1}</span><span>${esc(d.name)}</span><span>${chosenForDim(d.id).length}/${indsForDim(d.id).length}</span></button>`).join("");
+}
+function renderAdvanced(){
+ const d=DIMS[state.currentDim],arr=indsForDim(d.id);$("#advNav").innerHTML=navHtml();$("#advStep").textContent=`Dimension ${state.currentDim+1} sur ${DIMS.length}`;$("#advTitle").textContent=d.name;
+ $$("#advNav [data-go]").forEach(x=>x.addEventListener("click",()=>{state.currentDim=+x.dataset.go;renderAdvanced();preloadDimension(DIMS[state.currentDim].id)}));
+ $("#advOptions").innerHTML=arr.map(ind=>{const p=valueAt(ind.id),unit=state.sourceDetail[ind.id]?.unit||ind.unit_hint||"",st=state.sourceStatus[ind.id];return `<label class="opt ${state.selected.has(ind.id)?"sel":""}"><input type="checkbox" data-iid="${ind.id}" ${state.selected.has(ind.id)?"checked":""}><span><div class="opttitle">${esc(ind.name)}</div><div class="optdesc">${esc(ind.desc||"")}</div><div class="optmeta">${BASELINE.has(ind.id)?'<span class="badge">Socle initial</span>':''}${statusBadge(st)}<span>${p?fmt(p.value,unit)+" · "+p.year:""}</span><span>${esc(ind.connector)}</span></div><div class="optmeta"><a class="sourcebtn" href="${ind.source}" target="_blank" rel="noopener">Source</a> · <a class="sourcebtn" href="${ind.api_url}" target="_blank" rel="noopener">API</a></div></span></label>`}).join("");
+ $$("[data-iid]").forEach(x=>x.addEventListener("change",async()=>{const id=x.dataset.iid;if(x.checked){state.selected.add(id);if(state.sourceStatus[id]==="idle"||state.sourceStatus[id]==="error")fetchIndicator(id)}else state.selected.delete(id);saveConfig();renderAll()}));
+ $("#advPrev").disabled=state.currentDim===0;$("#advNext").textContent=state.currentDim===DIMS.length-1?"Retour à la première ↺":"Suivante →";
+}
+function niceSliderStep(span){
+ const x=Math.abs(span);if(!Number.isFinite(x)||x===0)return 1;
+ const raw=x/200,pow=Math.pow(10,Math.floor(Math.log10(raw))),n=raw/pow;
+ const nice=n<=1?1:n<=2?2:n<=5?5:10;return nice*pow;
+}
+function rawSliderDomain(id){
+ const st=state.expert[id],def=defaultObservedRange(id);
+ let min,max;
+ if(def){
+  min=def.domainMin;max=def.domainMax;
+  // Preserve the common 25% / 75% starting position, but expand if a saved/custom bound lies outside the default domain.
+  const lo=Number(st.rawLow),hi=Number(st.rawHigh);
+  if(Number.isFinite(lo)&&lo<min){const extra=(min-lo)*.12;min=lo-extra}
+  if(Number.isFinite(hi)&&hi>max){const extra=(hi-max)*.12;max=hi+extra}
+ }else if(Number.isFinite(Number(st.rawLow))&&Number.isFinite(Number(st.rawHigh))){
+  const lo=Number(st.rawLow),hi=Number(st.rawHigh),span=Math.abs(hi-lo)||Math.abs(lo)||1;
+  min=Math.min(lo,hi)-span*.5;max=Math.max(lo,hi)+span*.5;
+ }else{min=0;max=100}
+ const step=niceSliderStep(max-min);
+ if(max<=min)max=min+step*10;
+ return {min,max,step};
+}
+function rangeMarkup(ind,st,unit){
+ const raw=st.boundMode==="raw",dom=raw?rawSliderDomain(ind.id):{min:0,max:100,step:1};
+ let low=Number(raw?st.rawLow:st.scoreLow),high=Number(raw?st.rawHigh:st.scoreHigh);
+ if(!Number.isFinite(low))low=dom.min;if(!Number.isFinite(high))high=dom.max;
+ low=clamp(low,dom.min,dom.max);high=clamp(high,dom.min,dom.max);
+ if(low>high)[low,high]=[high,low];
+ const span=dom.max-dom.min||1,from=((low-dom.min)/span*100),to=((high-dom.min)/span*100);
+ const lf=raw?fmt(low,unit):Math.round(low)+"/100",hf=raw?fmt(high,unit):Math.round(high)+"/100";
+ return `<div class="rangeBlock" data-range-block="${ind.id}"><div class="rangeTitle"><span class="label">${raw?`Bornes ${unit?"("+esc(unit)+")":""}`:"Plage du score normalisé"}</span><span class="rangeValues"><span class="rangeValue" data-low-label="${ind.id}">${lf}</span><span class="rangeValue" data-high-label="${ind.id}">${hf}</span></span></div><div class="dualRange" data-range-track="${ind.id}" style="--from:${from.toFixed(2)}%;--to:${to.toFixed(2)}%"><div class="dualTrack"></div><input aria-label="Borne basse" type="range" min="${dom.min}" max="${dom.max}" step="${dom.step}" value="${low}" data-range-id="${ind.id}" data-range-side="low" data-range-mode="${raw?"raw":"score"}"><input aria-label="Borne haute" type="range" min="${dom.min}" max="${dom.max}" step="${dom.step}" value="${high}" data-range-id="${ind.id}" data-range-side="high" data-range-mode="${raw?"raw":"score"}"></div><div class="rangeDomain"><span>${raw?fmt(dom.min,unit):"0"}</span><span>${raw?fmt(dom.max,unit):"100"}</span></div></div>`;
+}
+function updateRangeVisual(id){
+ const inputs=$$(`[data-range-id="${id}"]`);if(inputs.length!==2)return;
+ const loEl=inputs.find(x=>x.dataset.rangeSide==="low"),hiEl=inputs.find(x=>x.dataset.rangeSide==="high");if(!loEl||!hiEl)return;
+ const min=Number(loEl.min),max=Number(loEl.max),span=max-min||1,low=Number(loEl.value),high=Number(hiEl.value),track=$(`[data-range-track="${id}"]`),ind=BYID[id],unit=state.sourceDetail[id]?.unit||ind.unit_hint||"",mode=loEl.dataset.rangeMode;
+ if(track){track.style.setProperty("--from",((low-min)/span*100).toFixed(2)+"%");track.style.setProperty("--to",((high-min)/span*100).toFixed(2)+"%")}
+ const ll=$(`[data-low-label="${id}"]`),hl=$(`[data-high-label="${id}"]`);
+ if(ll)ll.textContent=mode==="raw"?fmt(low,unit):Math.round(low)+"/100";
+ if(hl)hl.textContent=mode==="raw"?fmt(high,unit):Math.round(high)+"/100";
+}
+function refreshExpertScoresWithoutRebuild(){
+ const d=DIMS[state.currentDim],ds=dimensionScore(d.id);$("#expertDimScore").textContent=ds.score==null?"—":Math.round(ds.score);$("#expertDimMeta").textContent=`${ds.available}/${ds.total} indicateurs calculables`;
+ for(const ind of chosenForDim(d.id)){const node=$(`[data-item-score="${ind.id}"]`),sc=indicatorScore(ind.id);if(node)node.innerHTML=`${sc==null?"—":Math.round(sc)}<span style="font-size:8px;color:var(--muted)">/100</span>`}
+ renderOverview();renderQuick();
+}
+function expertDimWeightShares(){
+ const active=DIMS.filter(d=>state.dimEnabled[d.id]&&Number(state.dimWeights[d.id])>0);
+ const sum=active.reduce((a,d)=>a+Number(state.dimWeights[d.id]||0),0);
+ return Object.fromEntries(DIMS.map(d=>[d.id,sum&&state.dimEnabled[d.id]?Number(state.dimWeights[d.id]||0)/sum*100:0]));
+}
+function refreshExpertDimWeightValues(){
+ const shares=expertDimWeightShares();
+ DIMS.forEach(d=>{
+  const raw=$(`[data-edw-val="${d.id}"]`),share=$(`[data-edw-share="${d.id}"]`);
+  if(raw)raw.textContent=state.dimWeights[d.id];
+  if(share)share.textContent=(shares[d.id]||0).toFixed(1)+" %";
+ });
+}
+function renderExpertDimWeights(){
+ const shares=expertDimWeightShares();
+ $("#expertDimWeightsGrid").innerHTML=DIMS.map((d,i)=>{
+  const on=state.dimEnabled[d.id],w=Number(state.dimWeights[d.id]||0);
+  return `<div class="expertDimWeightRow ${i===state.currentDim?"current":""} ${on?"":"off"}">
+   <input type="checkbox" aria-label="Inclure ${esc(d.name)}" data-edw-enable="${d.id}" ${on?"checked":""}>
+   <div class="expertDimWeightName">${esc(d.name)}</div>
+   <input type="range" min="0" max="10" step="1" value="${w}" data-edw="${d.id}" ${on?"":"disabled"} aria-label="Poids de ${esc(d.name)}">
+   <div class="expertDimWeightRaw" data-edw-val="${d.id}">${w}</div>
+   <div class="expertDimWeightShare" data-edw-share="${d.id}">${(shares[d.id]||0).toFixed(1)} %</div>
+   <button type="button" class="expertDimOpen" data-edw-open="${i}">Configurer →</button>
+  </div>`;
+ }).join("");
+ $$("[data-edw-enable]").forEach(el=>el.addEventListener("change",()=>{
+  const id=el.dataset.edwEnable;state.dimEnabled[id]=el.checked;
+  if(el.checked&&Number(state.dimWeights[id])===0)state.dimWeights[id]=5;
+  saveConfig();renderAll();
+ }));
+ $$("[data-edw]").forEach(el=>el.addEventListener("input",()=>{
+  state.dimWeights[el.dataset.edw]=+el.value;saveConfig();refreshExpertDimWeightValues();renderOverview();renderQuick();
+ }));
+ $$("[data-edw]").forEach(el=>el.addEventListener("change",()=>{saveConfig();renderExpertDimWeights()}));
+ $$("[data-edw-open]").forEach(el=>el.addEventListener("click",()=>{
+  state.currentDim=+el.dataset.edwOpen;renderExpert();preloadDimension(DIMS[state.currentDim].id);
+ }));
+}
+function renderExpert(){
+ renderExpertDimWeights();
+ const d=DIMS[state.currentDim],allArr=indsForDim(d.id),arr=chosenForDim(d.id);$("#expNav").innerHTML=navHtml();$("#expStep").textContent=`Dimension ${state.currentDim+1} sur ${DIMS.length}`;$("#expTitle").textContent=d.name;
+ $("#expertPaletteCount").textContent=`${arr.length}/${allArr.length} sélectionné(s)`;
+ $("#expertPaletteGrid").innerHTML=allArr.map(ind=>{const p=valueAt(ind.id),unit=state.sourceDetail[ind.id]?.unit||ind.unit_hint||"",st=state.sourceStatus[ind.id];return `<label class="expertPick ${state.selected.has(ind.id)?"on":""}"><input type="checkbox" data-exp-pick="${ind.id}" ${state.selected.has(ind.id)?"checked":""}><span><div class="expertPickName">${esc(ind.name)}</div><div class="expertPickMeta">${BASELINE.has(ind.id)?'<span class="badge">Socle initial</span>':''}${statusBadge(st)}${p?`<span>${fmt(p.value,unit)} · ${p.year}</span>`:""}<span>${esc(ind.connector)}</span></div></span></label>`}).join("");
+ $$("[data-exp-pick]").forEach(x=>x.addEventListener("change",async()=>{const id=x.dataset.expPick;if(x.checked){state.selected.add(id);if(state.sourceStatus[id]==="idle"||state.sourceStatus[id]==="error")fetchIndicator(id)}else state.selected.delete(id);saveConfig();renderAll()}));
+ $$("#expNav [data-go]").forEach(x=>x.addEventListener("click",()=>{state.currentDim=+x.dataset.go;renderExpert();preloadDimension(DIMS[state.currentDim].id)}));
+ const ds=dimensionScore(d.id);$("#expertDimScore").textContent=ds.score==null?"—":Math.round(ds.score);$("#expertDimMeta").textContent=`${ds.available}/${ds.total} indicateurs calculables`;
+ const available=arr.filter(ind=>indicatorScore(ind.id)!=null),tw=available.reduce((z,ind)=>z+(+state.expert[ind.id].weight||0),0)||1;
+ $("#weightViz").innerHTML=available.map(ind=>{const p=(+state.expert[ind.id].weight||0)/tw*100;return `<div class="wrow"><span>${esc(ind.name)}</span><div class="bar"><i style="width:${p}%"></i></div><strong>${p.toFixed(1)} %</strong></div>`}).join("")||'<div class="sub">Aucun indicateur calculable.</div>';
+ $("#expertList").innerHTML=arr.map(ind=>{
+  const st=state.expert[ind.id],p=valueAt(ind.id),unit=state.sourceDetail[ind.id]?.unit||ind.unit_hint||"",sc=indicatorScore(ind.id),base=p?rawScore(ind.id,p):null,rawOn=st.boundMode==="raw";
+  return `<article class="item"><div class="itemtop"><div><div class="iname">${esc(ind.name)}</div><div class="ival">${p?`Valeur observée : <strong>${fmt(p.value,unit)}</strong> · ${p.year}`:"Valeur en attente"} · ${statusBadge(state.sourceStatus[ind.id])}</div><div class="iboundmode"><button type="button" data-bmode="${ind.id}" data-v="raw" class="${rawOn?"on":""}">Valeurs d'origine</button><button type="button" data-bmode="${ind.id}" data-v="score" class="${!rawOn?"on":""}">Score 0–100</button></div></div><div class="iscore" data-item-score="${ind.id}">${sc==null?"—":Math.round(sc)}<span style="font-size:8px;color:var(--muted)">/100</span></div></div><div class="igrid">${rangeMarkup(ind,st,unit)}<label><span class="label">Sens de performance</span><select data-exp="${ind.id}" data-field="direction"><option value="high" ${st.direction==="high"?"selected":""}>Plus élevé = mieux</option><option value="low" ${st.direction==="low"?"selected":""}>Plus faible = mieux</option></select></label><label class="weightControl"><span class="label">Poids interne : <strong>${st.weight}</strong></span><input type="range" min="0" max="10" step="1" data-exp="${ind.id}" data-field="weight" value="${st.weight}"></label></div><div class="formula">${rawOn?(p&&st.rawLow!=null&&st.rawHigh!=null?`La valeur ${fmt(p.value,unit)} est positionnée dans la plage sélectionnée entre ${fmt(st.rawLow,unit)} et ${fmt(st.rawHigh,unit)}${st.direction==="low"?", puis le score est inversé":""}.`:"La plage sera initialisée à ±50 % autour de la dernière valeur observée dès que la série est chargée."):`Score intermédiaire issu des bornes d'origine : ${base==null?"—":Math.round(base)+"/100"}. La plage sélectionnée sur 0–100 est ensuite étirée sur l'échelle complète.`}</div><div class="apirow"><span>${esc(ind.connector)} · ${esc(ind.code)}</span><span><a href="${ind.source}" target="_blank" rel="noopener">source</a> · <a href="${ind.api_url}" target="_blank" rel="noopener">API</a></span></div></article>`;
+ }).join("")||'<div class="sub">Aucun indicateur sélectionné dans cette dimension. Ajoutez-en dans le mode avancé.</div>';
+ $$("[data-bmode]").forEach(b=>b.addEventListener("click",()=>{const st=state.expert[b.dataset.bmode];st.boundMode=b.dataset.v;saveConfig();renderAll()}));
+ $$("#expertList [data-exp]").forEach(el=>el.addEventListener("input",()=>{const st=state.expert[el.dataset.exp],f=el.dataset.field;if(f==="direction")st[f]=el.value;else st[f]=+el.value;saveConfig();refreshExpertScoresWithoutRebuild()}));
+ $$("#expertList [data-exp]").forEach(el=>el.addEventListener("change",()=>{saveConfig();renderExpert()}));
+ $$("#expertList [data-range-id]").forEach(el=>el.addEventListener("input",()=>{
+   const id=el.dataset.rangeId,side=el.dataset.rangeSide,mode=el.dataset.rangeMode,st=state.expert[id],pair=$$(`[data-range-id="${id}"]`),loEl=pair.find(x=>x.dataset.rangeSide==="low"),hiEl=pair.find(x=>x.dataset.rangeSide==="high");
+   let low=Number(loEl.value),high=Number(hiEl.value),step=Number(el.step)||1;
+   if(side==="low"&&low>high-step){low=high-step;loEl.value=low}
+   if(side==="high"&&high<low+step){high=low+step;hiEl.value=high}
+   if(mode==="raw"){st.rawLow=low;st.rawHigh=high;st.boundsAuto=false}else{st.scoreLow=low;st.scoreHigh=high}
+   updateRangeVisual(id);refreshExpertScoresWithoutRebuild();
+ }));
+ $$("#expertList [data-range-id]").forEach(el=>el.addEventListener("change",()=>{saveConfig();renderExpert()}));
+}
+function renderStatusLite(){
+ const selected=[...state.selected],loading=selected.filter(id=>state.sourceStatus[id]==="loading").length,ok=selected.filter(id=>state.sourceStatus[id]==="ok").length,err=selected.filter(id=>state.sourceStatus[id]==="error").length;
+ const dot=$("#statusDot");if(loading){dot.className="dot loading";$("#statusText").textContent=`Chargement : ${ok}/${selected.length} · ${err} erreur(s)`}else if(err){dot.className="dot err";$("#statusText").textContent=`${ok}/${selected.length} séries sélectionnées disponibles · ${err} erreur(s)`}else if(ok===selected.length&&selected.length){dot.className="dot ok";$("#statusText").textContent=`${ok}/${selected.length} séries sélectionnées à jour${state.lastRefresh?" · "+state.lastRefresh.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}):""}`}else{dot.className="dot loading";$("#statusText").textContent=`${ok}/${selected.length} séries chargées`}}
+function renderSources(){
+ $("#sourceBody").innerHTML=INDS.map(ind=>{const p=valueAt(ind.id),unit=state.sourceDetail[ind.id]?.unit||ind.unit_hint||"";return `<tr><td>${esc(dimById(ind.dim)?.name||ind.dim)}</td><td>${esc(ind.name)}${state.selected.has(ind.id)?' <span class="badge">sélectionné</span>':''}</td><td>${esc(ind.connector)}</td><td>${esc(ind.code)}</td><td>${p?fmt(p.value,unit)+" ("+p.year+")":"—"}</td><td>${statusBadge(state.sourceStatus[ind.id])}</td><td><a href="${ind.api_url}" target="_blank" rel="noopener">endpoint</a></td></tr>`}).join("");
+}
+function resetWorkingConfigToBaseline(){
+ state.selected=new Set(DATA.baselineIds);
+ DIMS.forEach(d=>{state.dimEnabled[d.id]=true;state.dimWeights[d.id]=5});
+ for(const ind of INDS){
+  const st=state.expert[ind.id];
+  st.weight=5;
+  st.boundMode="raw";
+  st.scoreLow=0;
+  st.scoreHigh=100;
+  st.direction=ind.direction;
+  st.boundsAuto=true;
+  st.rawLow=null;
+  st.rawHigh=null;
+  if(state.series[ind.id]?.length)autoBounds(ind.id);
+ }
+ state.currentDim=0;
+ state.year="latest";
+ saveConfig();
+}
+function renderConfigurations(){
+ const current=snapshotCurrent(),countCfg=cfg=>(cfg.selected||[]).length;
+ const active=state.savedConfigs.find(c=>c.id===state.activeConfigId)||null;
+ const pill=$("#activeProfilePill");
+ if(active){pill.textContent=`Profil actif : ${active.name}`;pill.classList.add("on")}else{pill.textContent="";pill.classList.remove("on")}
+ const status=$("#configStatusBar");
+ if(state.configFeedback){
+  status.className=`configStatusBar ${state.configFeedback.type==="success"?"success":state.activeConfigId?"active":""}`;
+  status.innerHTML=`<span class="configStatusMain">${esc(state.configFeedback.message)}</span><span>${state.configFeedback.detail?esc(state.configFeedback.detail):""}</span>`;
+ }else if(active){
+  status.className="configStatusBar active";
+  status.innerHTML=`<span class="configStatusMain">Profil en cours : ${esc(active.name)}</span><span>Modifie les réglages, puis clique sur « Enregistrer les modifications » dans cette carte.</span>`;
+ }else{
+  status.className="configStatusBar";
+  status.innerHTML='<span class="configStatusMain">Aucun profil chargé.</span><span>Pour travailler sur une personne, clique sur « Charger ce profil ».</span>';
+ }
+ const reference=`<article class="configItem reference"><div class="configHead"><div><div class="configName">Socle d’origine</div><div class="configMeta">Référence fixe · ${DATA.baselineIds.length} indicateurs socles · dimensions et indicateurs pondérés à parts égales</div></div><label class="compareToggle"><input type="checkbox" data-compare-special="baseline" ${state.compare.baseline?"checked":""}> comparer</label></div></article>`;
+ const currentCard=`<article class="configItem current"><div class="configHead"><div><div class="configName">Configuration actuelle</div><div class="configMeta">${state.selected.size} indicateurs · réglages actuellement affichés${active?` · issus de ${esc(active.name)}`:""}</div></div><label class="compareToggle"><input type="checkbox" data-compare-special="current" ${state.compare.current?"checked":""}> comparer</label></div></article>`;
+ const saved=state.savedConfigs.map(c=>{
+  const isActive=c.id===state.activeConfigId,busy=c.id===state.configBusyId;
+  const updated=new Date(c.saved_at);
+  const dateLabel=Number.isNaN(updated.getTime())?"":updated.toLocaleString("fr-FR",{dateStyle:"short",timeStyle:"short"});
+  const loadLabel=busy?"Chargement…":isActive?"Profil chargé ✓":"Charger ce profil";
+  const saveLabel=busy?"Enregistrement…":isActive?"Enregistrer les modifications":"Charger d’abord";
+  return `<article class="configItem ${isActive?"activeProfile":""}">
+   <div class="configHead"><div><div class="configName">${esc(c.name)}</div><div class="configMeta">${countCfg(c.config)} indicateurs · dernière mise à jour ${dateLabel}</div>${isActive?'<div class="configActiveTag">● Profil actif</div>':""}</div><label class="compareToggle"><input type="checkbox" data-compare-saved="${c.id}" ${c.compare?"checked":""}> comparer</label></div>
+   <div class="configActions">
+    <button class="miniBtn ${isActive?"loadActive":""}" data-load-config="${c.id}" ${busy?"disabled":""}>${loadLabel}</button>
+    <button class="miniBtn ${isActive?"saveActive":""}" data-replace-config="${c.id}" ${!isActive||busy?"disabled":""}>${saveLabel}</button>
+    <button class="miniBtn" data-delete-config="${c.id}" ${busy?"disabled":""}>Supprimer</button>
+   </div>
+  </article>`;
+ }).join("");
+ $("#configList").innerHTML=reference+currentCard+saved;
+ $$("[data-compare-special]").forEach(x=>x.addEventListener("change",()=>{state.compare[x.dataset.compareSpecial]=x.checked;renderOverview()}));
+ $$("[data-compare-saved]").forEach(x=>x.addEventListener("change",()=>{const c=state.savedConfigs.find(c=>c.id===x.dataset.compareSaved);if(c){c.compare=x.checked;persistSavedConfigs();renderOverview()}}));
+ $$("[data-load-config]").forEach(x=>x.addEventListener("click",async()=>{
+  const c=state.savedConfigs.find(c=>c.id===x.dataset.loadConfig);if(!c)return;
+  state.configBusyId=c.id;state.configFeedback={type:"info",message:`Chargement de « ${c.name} »…`,detail:"Application des réglages enregistrés."};renderConfigurations();
+  state.activeConfigId=c.id;
+  applySnapshot(c.config);
+  state.configBusyId=null;
+  state.configFeedback={type:"success",message:`Profil « ${c.name} » chargé ✓`,detail:"Tu peux maintenant modifier ses dimensions, indicateurs et bornes."};
+  renderConfigurations();
+  setTimeout(()=>{if(state.configFeedback?.message===`Profil « ${c.name} » chargé ✓`){state.configFeedback=null;renderConfigurations()}},2600);
+  await pool(configIndicatorIds(c.config).filter(id=>state.sourceStatus[id]!=="ok"),5,false);
+ }));
+ $$("[data-replace-config]").forEach(x=>x.addEventListener("click",()=>{
+  const c=state.savedConfigs.find(c=>c.id===x.dataset.replaceConfig);if(!c||c.id!==state.activeConfigId)return;
+  state.configBusyId=c.id;state.configFeedback={type:"info",message:`Enregistrement dans « ${c.name} »…`,detail:"Les réglages actuels vont remplacer la version enregistrée."};renderConfigurations();
+  c.config=snapshotCurrent();c.saved_at=new Date().toISOString();persistSavedConfigs();
+  const savedName=c.name;
+  state.activeConfigId=null;
+  state.configBusyId=null;
+  resetWorkingConfigToBaseline();
+  state.configFeedback={type:"success",message:`Profil « ${savedName} » mis à jour ✓`,detail:"Profil fermé. L’interface a été remise sur le socle initial pour la personne suivante."};
+  renderAll();
+  refreshSelected(false);
+  setTimeout(()=>{if(state.configFeedback?.message===`Profil « ${savedName} » mis à jour ✓`){state.configFeedback=null;renderConfigurations()}},3200);
+ }));
+ $$("[data-delete-config]").forEach(x=>x.addEventListener("click",()=>{
+  const id=x.dataset.deleteConfig;
+  state.savedConfigs=state.savedConfigs.filter(c=>c.id!==id);
+  if(state.activeConfigId===id){state.activeConfigId=null;state.configFeedback={type:"info",message:"Profil supprimé.",detail:"La configuration actuellement affichée reste inchangée."}}
+  persistSavedConfigs();renderAll();
+ }));
+}
+
+const GAME_COLORS=[
+ {color:"#315dcc",bg:"#edf3ff"},{color:"#8b5cf6",bg:"#f3efff"},{color:"#159b8a",bg:"#eaf8f5"},{color:"#e06b2e",bg:"#fff1e9"},{color:"#b04a73",bg:"#fbecf2"},
+ {color:"#607d3b",bg:"#f0f5e9"},{color:"#b27a19",bg:"#fff5df"},{color:"#397b9b",bg:"#eaf5fa"},{color:"#7b5e57",bg:"#f4efed"},{color:"#6b6fb3",bg:"#efeffa"}
+];
+const GAME_MIN_PLAYERS=1,GAME_MAX_PLAYERS=10;
+let setupPlayerCount=1;
+function gameColor(i){return GAME_COLORS[i%GAME_COLORS.length]}
+function renderPlayerSetup(){
+ const grid=$("#playerSetupGrid");if(!grid)return;
+ const oldNames=$$("[data-player-name]").map(x=>x.value);
+ grid.innerHTML=Array.from({length:setupPlayerCount},(_,i)=>{
+  const col=gameColor(i),name=oldNames[i]||`Joueur ${i+1}`;
+  return `<div class="playerSetup" style="--player:${col.color};--player-bg:${col.bg}"><div class="playerAvatar">${i+1}</div><label>Joueur ${i+1}</label><input data-player-name="${i}" value="${esc(name)}" maxlength="30"></div>`;
+ }).join("");
+ $("#playerCountValue").textContent=setupPlayerCount;
+ $("#playerCountMinus").disabled=setupPlayerCount<=GAME_MIN_PLAYERS;
+ $("#playerCountPlus").disabled=setupPlayerCount>=GAME_MAX_PLAYERS;
+}
+const GAME_WAVES=[
+ {id:"dimensions",title:"Vague 1 · Dimensions",short:"Dimensions",mode:"quick",desc:"Pondérez les 15 dimensions. Ces poids seront ensuite conservés tels quels."},
+ {id:"indicators",title:"Vague 2 · Indicateurs & réglages",short:"Indicateurs + réglages",mode:"expert",desc:"Pour chaque dimension, sélectionnez les indicateurs puis réglez immédiatement leurs bornes, leur sens de performance et leur poids interne."}
+];
+let game={players:[],playerCount:1,wave:0,turn:0,status:"setup",justSaved:null};
+function readGameArchive(){
+ try{const raw=localStorage.getItem(GAME_ARCHIVE_KEY);const arr=raw?JSON.parse(raw):[];return Array.isArray(arr)?arr:[]}catch(e){return []}
+}
+function updateArchiveCount(){
+ const el=$("#gameArchiveCount");if(!el)return;
+ const n=readGameArchive().length;
+ el.textContent=n?`${n} profil${n>1?"s":""} déjà conservé${n>1?"s":""} sur cet appareil.`:"Aucun profil archivé sur cet appareil pour le moment.";
+}
+function archiveCompletedPlayers(){
+ const archive=readGameArchive(),existing=new Set(archive.map(x=>x.archive_id));
+ for(const p of game.players){
+  const aid=`${game.started_at||"session"}_${p.id}`;
+  if(existing.has(aid))continue;
+  archive.push({
+   archive_id:aid,
+   recorded_at:new Date().toISOString(),
+   player_name:p.name,
+   configuration:p.config,
+   final_score:scoreForConfigAtDisplayYear(p.config).score,
+   progress:p.progress
+  });
+ }
+ try{localStorage.setItem(GAME_ARCHIVE_KEY,JSON.stringify(archive))}catch(e){}
+ updateArchiveCount();
+}
+function gamePersist(){try{localStorage.setItem(GAME_KEY,JSON.stringify(game));localStorage.setItem(SAVED_CONFIGS_KEY,JSON.stringify(state.savedConfigs))}catch(e){}}
+function gameRestore(){
+ try{
+  const raw=localStorage.getItem(GAME_KEY);if(!raw)return false;
+  const g=JSON.parse(raw);
+  if(!g||!Array.isArray(g.players)||g.players.length<GAME_MIN_PLAYERS||g.players.length>GAME_MAX_PLAYERS)return false;
+  game=g;
+  state.savedConfigs=game.players.map(p=>({id:p.id,name:p.name,saved_at:p.saved_at||new Date().toISOString(),compare:true,gamePlayer:true,config:p.config||baselineSnapshot()}));
+  return true;
+ }catch(e){return false}
+}
+function gameInitialPlayer(name,i){
+ const now=new Date().toISOString(),id=`player_${i+1}_${Date.now().toString(36)}`,col=gameColor(i);
+ return {id,name:name||`Joueur ${i+1}`,saved_at:now,compare:true,gamePlayer:true,config:baselineSnapshot(),progress:{dimensions:false,indicators:false},color:col.color,bg:col.bg};
+}
+function syncGamePlayersFromSaved(){
+ game.players=state.savedConfigs.filter(c=>c.gamePlayer).map((c,i)=>{
+  const prior=game.players.find(p=>p.id===c.id)||{};
+  return {...prior,id:c.id,name:c.name,saved_at:c.saved_at,compare:true,gamePlayer:true,config:c.config,color:prior.color||gameColor(i).color,bg:prior.bg||gameColor(i).bg,progress:prior.progress||{dimensions:false,indicators:false}};
+ });
+}
+function gamePlayer(){return game.players[game.turn]||null}
+function gameWave(){return GAME_WAVES[game.wave]||GAME_WAVES[0]}
+function gameSetBodyState(s){
+ document.body.classList.remove("gameSetupState","gamePlayState","gameGateState","gameCompleteState","gameResultsState");
+ const cls=s==="setup"?"gameSetupState":s==="play"?"gamePlayState":s==="gate"?"gameGateState":s==="complete"?"gameCompleteState":"gameResultsState";
+ document.body.classList.add(cls);
+}
+function gameToast(msg){
+ const el=$("#gameToast");el.textContent=msg;el.classList.add("show");clearTimeout(gameToast._t);gameToast._t=setTimeout(()=>el.classList.remove("show"),1800);
+}
+function gameSetMode(mode){
+ state.mode=mode;
+ $$("[data-mode]").forEach(x=>x.classList.toggle("on",x.dataset.mode===mode));
+ $$(".view").forEach(x=>x.classList.remove("on"));
+ $("#"+mode).classList.add("on");
+ if(mode!=="quick")preloadDimension(DIMS[state.currentDim].id);
+}
+function renderGameHUD(){
+ if(!game.players.length)return;
+ const w=gameWave(),p=gamePlayer();
+ $("#gameWaveTitle").textContent=w.title;
+ $("#gameWaveSub").textContent=w.desc;
+ const allDone=game.status==="complete"||game.status==="results";
+ $("#gameWaveTrack").innerHTML=GAME_WAVES.map((x,i)=>`<div class="waveStep ${allDone||i<game.wave?"done":i===game.wave?"current":""}"><span class="waveNum">${allDone||i<game.wave?"✓":i+1}</span>${x.short}</div>`).join("");
+ $("#gamePlayerRail").innerHTML=game.players.map((pl,i)=>{
+  const done=!!pl.progress?.[w.id],current=i===game.turn&&(game.status==="play"||game.status==="gate");
+  return `<div class="playerChip ${current?"current":done?"done":""}" style="--player:${pl.color};--player-bg:${pl.bg}"><div class="playerAvatar">${esc((pl.name||"?").slice(0,1).toUpperCase())}</div><div class="playerChipTxt"><div class="playerChipName">${esc(pl.name)}</div><div class="playerChipState">${current?"À toi de jouer":done?"Tour validé ✓":"En attente"}</div></div></div>`;
+ }).join("");
+ if(p){
+  $("#gameActionWho").innerHTML=`<div class="playerAvatar" style="--player:${p.color};--player-bg:${p.bg}">${esc(p.name.slice(0,1).toUpperCase())}</div><div><div class="gameActionTitle">${esc(p.name)} · ${w.short}</div><div class="gameActionSub">Tes choix sont enregistrés uniquement quand tu valides le tour.</div></div>`;
+  const lastTurn=game.turn===game.players.length-1,lastWave=game.wave===GAME_WAVES.length-1;
+ $("#gameValidateBtn").textContent=lastTurn&&lastWave?"Valider et terminer la partie ✓":lastTurn?`Valider ${w.short} et terminer la vague →`:`Valider mon tour →`;
+ }
+}
+function renderGameGate(){
+ const p=gamePlayer(),w=gameWave();if(!p)return;
+ const saved=game.justSaved?`<div class="turnSaved">✓ ${esc(game.justSaved)} enregistré</div>`:"";
+ $("#gameTurnCard").innerHTML=`${saved}<div class="turnBigAvatar" style="--player:${p.color};--player-bg:${p.bg}">${esc(p.name.slice(0,1).toUpperCase())}</div><div class="gameEyebrow">${esc(w.title)}</div><h2>À toi, ${esc(p.name)}</h2><p>${esc(w.desc)} La configuration des autres joueurs reste masquée pendant ton tour.</p><button class="turnStartBtn" id="turnStartBtn" style="--player:${p.color}">Commencer mon tour</button>`;
+ $("#turnStartBtn").addEventListener("click",gameBeginTurn);
+}
+function renderGameComplete(){
+ $("#completePlayerCount").textContent=game.players.length;
+ $("#completeProfileCount").textContent=game.players.length;
+ $("#completePlayers").innerHTML=game.players.map(p=>`<span class="completePlayer"><i>✓</i>${esc(p.name)}</span>`).join("");
+ renderGameHUD();
+}
+function gameAnalyzeResults(){
+ syncGamePlayersFromSaved();
+ game.status="results";
+ gamePersist();
+ archiveCompletedPlayers();
+ gameSetBodyState("results");
+ renderGameHUD();
+ renderGameResults();
+ renderAll();
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function renderGameResults(){
+ state.compare.current=false;state.compare.baseline=true;
+ state.savedConfigs.forEach(c=>c.compare=true);
+ $("#gameResultsTitle").textContent=`${game.players.length} indices sont prêts`;
+ const cards=game.players.map((p,i)=>{
+  const s=scoreForConfigAtDisplayYear(p.config);
+  return `<div class="resultsPlayer"><div class="resultsPlayerTop"><div class="playerAvatar">${esc(p.name.slice(0,1).toUpperCase())}</div><div class="resultsPlayerName">${esc(p.name)}</div></div><div class="resultsPlayerScore">${s.score==null?"—":s.score.toFixed(1)} <small>/100</small></div></div>`;
+ }).join("");
+ $("#gameResultsPlayers").innerHTML=cards;
+ renderOverview();
+}
+function gameStartNew(){
+ const names=$$("[data-player-name]").map((x,i)=>x.value.trim()||`Joueur ${i+1}`);
+ game={players:names.map((n,i)=>gameInitialPlayer(n,i)),playerCount:names.length,wave:0,turn:0,status:"gate",justSaved:null,started_at:new Date().toISOString()};
+ state.savedConfigs=game.players.map(p=>({id:p.id,name:p.name,saved_at:p.saved_at,compare:true,gamePlayer:true,config:p.config}));
+ state.activeConfigId=null;state.compare={current:false,baseline:true};
+ resetWorkingConfigToBaseline();gamePersist();gameSetBodyState("gate");renderGameHUD();renderGameGate();renderAll();
+}
+function gameResume(){
+ if(!gameRestore())return;
+ if(game.status==="results"){gameSetBodyState("results");renderGameHUD();renderGameResults();return}
+ if(game.status==="complete"){gameSetBodyState("complete");renderGameComplete();renderAll();return}
+ game.status="gate";game.justSaved=null;gameSetBodyState("gate");renderGameHUD();renderGameGate();renderAll();
+}
+function gameBeginTurn(){
+ const p=gamePlayer(),w=gameWave();if(!p)return;
+ const c=state.savedConfigs.find(x=>x.id===p.id);if(!c)return;
+ state.activeConfigId=p.id;applySnapshot(c.config);state.currentDim=0;gameSetMode(w.mode);
+ game.status="play";game.justSaved=null;gamePersist();gameSetBodyState("play");renderGameHUD();renderAll();
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function gameValidateTurn(){
+ const p=gamePlayer(),w=gameWave();if(!p)return;
+ const c=state.savedConfigs.find(x=>x.id===p.id);if(!c)return;
+ c.config=snapshotCurrent();c.saved_at=new Date().toISOString();c.compare=true;
+ p.config=c.config;p.saved_at=c.saved_at;p.progress=p.progress||{};p.progress[w.id]=true;
+ const finishedName=p.name;
+ state.activeConfigId=null;resetWorkingConfigToBaseline();
+ if(game.turn<game.players.length-1){
+  game.turn++;game.status="gate";game.justSaved=finishedName;syncGamePlayersFromSaved();gamePersist();gameSetBodyState("gate");renderGameHUD();renderGameGate();renderAll();
+ }else if(game.wave<GAME_WAVES.length-1){
+  game.wave++;game.turn=0;game.status="gate";game.justSaved=`Vague précédente · ${finishedName}`;syncGamePlayersFromSaved();gamePersist();gameSetBodyState("gate");renderGameHUD();renderGameGate();renderAll();
+ }else{
+  syncGamePlayersFromSaved();game.status="complete";game.justSaved=finishedName;gamePersist();gameSetBodyState("complete");renderGameComplete();renderAll();
+ }
+ gameToast(`${finishedName} : tour enregistré ✓`);
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function gameBackToEdit(){
+ game.wave=1;game.turn=0;game.status="gate";game.justSaved=null;gamePersist();gameSetBodyState("gate");renderGameHUD();renderGameGate();renderAll();window.scrollTo({top:0,behavior:"smooth"});
+}
+function gameRestart(){
+ if(!confirm("Démarrer une nouvelle partie ? Les profils de cette session seront remplacés."))return;
+ try{localStorage.removeItem(GAME_KEY);localStorage.removeItem(SAVED_CONFIGS_KEY);localStorage.removeItem(STORAGE_KEY)}catch(e){}
+ game={players:[],playerCount:1,wave:0,turn:0,status:"setup",justSaved:null};setupPlayerCount=1;state.savedConfigs=[];state.activeConfigId=null;resetWorkingConfigToBaseline();
+ gameSetBodyState("setup");$("#gameResumeBtn").style.display="none";renderAll();window.scrollTo({top:0,behavior:"smooth"});
+}
+function gameInit(){
+ const has=gameRestore();
+ if(has)setupPlayerCount=game.players.length;
+ renderPlayerSetup();updateArchiveCount();
+ $("#gameResumeBtn").style.display=has?"inline-block":"none";
+ if(has&&game.status==="results"){gameSetBodyState("results");renderGameHUD();renderGameResults()}
+ else if(has&&game.status==="complete"){gameSetBodyState("complete");renderGameComplete()}
+ else{game.status="setup";gameSetBodyState("setup")}
+}
+
+function renderAll(){renderYear();renderOverview();renderQuick();renderAdvanced();renderExpert();renderConfigurations();renderStatusLite();renderSources()}
+
+/* ---------- Export ---------- */
+function exportPayload(){
+ return {
+  generated_at:new Date().toISOString(),scope:"France",year_mode:state.year,auto_refresh_hours:6,
+  selected_indicator_count:state.selected.size,
+  active_saved_configuration_id:state.activeConfigId,
+  active_saved_configuration_name:state.savedConfigs.find(c=>c.id===state.activeConfigId)?.name??null,
+  comparison:{...state.compare,saved_configuration_ids:state.savedConfigs.filter(c=>c.compare).map(c=>c.id)},
+  saved_configurations:state.savedConfigs,
+  dimensions:DIMS.map(d=>{const ds=dimensionScore(d.id);return {id:d.id,name:d.name,enabled:state.dimEnabled[d.id],weight:state.dimWeights[d.id],score:ds.score,coverage:{available:ds.available,total:ds.total},indicators:indsForDim(d.id).map(ind=>{const st=state.expert[ind.id],p=valueAt(ind.id),unit=state.sourceDetail[ind.id]?.unit||ind.unit_hint||"";return {id:ind.id,name:ind.name,selected:state.selected.has(ind.id),connector:ind.connector,source:ind.origin,dataset_or_slug:ind.code,api_url:ind.api_url,source_url:ind.source,status:state.sourceStatus[ind.id],observed_value:p?.value??null,observed_year:p?.year??null,unit,direction:st.direction,internal_weight:st.weight,bound_mode:st.boundMode,raw_lower_bound:st.rawLow,raw_upper_bound:st.rawHigh,score_lower_bound:st.scoreLow,score_upper_bound:st.scoreHigh,bounds_auto:st.boundsAuto,score:indicatorScore(ind.id)}})}})
+ };
+}
+function showExport(){const txt=JSON.stringify(exportPayload(),null,2);$("#exportText").value=txt;$("#exportText").style.display="block";return txt}
+function download(name,text){const blob=new Blob([text],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+
+/* ---------- UI actions ---------- */
+function setMode(m){
+ state.mode=m;$$("[data-mode]").forEach(x=>x.classList.toggle("on",x.dataset.mode===m));$$(".view").forEach(x=>x.classList.remove("on"));$("#"+m).classList.add("on");
+ $("#modeHint").textContent=m==="quick"?"Choisir les dimensions et régler leur poids relatif.":m==="advanced"?"Choisir les indicateurs qui composent chaque dimension.":"Pondérer les dimensions, choisir leurs indicateurs, puis régler bornes et pondérations internes.";
+ if(m!=="quick")preloadDimension(DIMS[state.currentDim].id);renderAll();
+}
+$$("[data-mode]").forEach(x=>x.addEventListener("click",()=>setMode(x.dataset.mode)));
+$("#yearSelect").addEventListener("change",e=>{state.year=e.target.value;saveConfig();renderAll()});
+$("#refreshBtn").addEventListener("click",()=>refreshSelected(true));
+$("#loadAllBtn").addEventListener("click",loadAll);
+$("#equalDims").addEventListener("click",()=>{DIMS.forEach(d=>state.dimWeights[d.id]=5);saveConfig();renderAll()});
+$("#allDims").addEventListener("click",()=>{DIMS.forEach(d=>state.dimEnabled[d.id]=true);saveConfig();renderAll()});
+$("#resetConfig").addEventListener("click",()=>{state.activeConfigId=null;resetWorkingConfigToBaseline();renderAll();refreshSelected(false)});
+$("#advPrev").addEventListener("click",()=>{if(state.currentDim>0){state.currentDim--;renderAdvanced();preloadDimension(DIMS[state.currentDim].id)}});
+$("#advNext").addEventListener("click",()=>{state.currentDim=state.currentDim===DIMS.length-1?0:state.currentDim+1;renderAdvanced();preloadDimension(DIMS[state.currentDim].id)});
+$("#restoreDim").addEventListener("click",()=>{const id=DIMS[state.currentDim].id;for(const ind of indsForDim(id)){if(BASELINE.has(ind.id))state.selected.add(ind.id);else state.selected.delete(ind.id)}saveConfig();renderAll();refreshSelected(false)});
+$("#clearDim").addEventListener("click",()=>{for(const ind of indsForDim(DIMS[state.currentDim].id))state.selected.delete(ind.id);saveConfig();renderAll()});
+$("#expertEqualDims").addEventListener("click",()=>{DIMS.forEach(d=>state.dimWeights[d.id]=5);saveConfig();renderAll()});
+$("#expertAllDims").addEventListener("click",()=>{DIMS.forEach(d=>{state.dimEnabled[d.id]=true;if(Number(state.dimWeights[d.id])===0)state.dimWeights[d.id]=5});saveConfig();renderAll()});
+$("#equalIndicators").addEventListener("click",()=>{for(const ind of chosenForDim(DIMS[state.currentDim].id))state.expert[ind.id].weight=5;saveConfig();renderAll()});
+$("#restoreExpert").addEventListener("click",()=>{for(const ind of chosenForDim(DIMS[state.currentDim].id)){const st=state.expert[ind.id];st.boundsAuto=true;st.rawLow=null;st.rawHigh=null;st.scoreLow=0;st.scoreHigh=100;st.boundMode="raw";st.direction=ind.direction;st.weight=5;if(state.series[ind.id]?.length)autoBounds(ind.id)}saveConfig();renderAll()});
+$("#saveUserConfig").addEventListener("click",()=>{
+ const input=$("#configName"),name=input.value.trim()||`Configuration ${state.savedConfigs.length+1}`;
+ const existing=state.savedConfigs.find(c=>c.name.toLowerCase()===name.toLowerCase());
+ let target;
+ if(existing){existing.config=snapshotCurrent();existing.saved_at=new Date().toISOString();target=existing}
+ else{target={id:"cfg_"+Date.now().toString(36)+"_"+Math.random().toString(36).slice(2,6),name,saved_at:new Date().toISOString(),compare:true,config:snapshotCurrent()};state.savedConfigs.push(target)}
+ state.activeConfigId=target.id;
+ state.configFeedback={type:"success",message:`Profil « ${target.name} » enregistré ✓`,detail:"Il devient le profil actif. Tu peux poursuivre ses réglages ou charger une autre personne."};
+ input.value="";persistSavedConfigs();renderAll();
+ setTimeout(()=>{if(state.configFeedback?.message===`Profil « ${target.name} » enregistré ✓`){state.configFeedback=null;renderConfigurations()}},2800);
+});
+$("#configName").addEventListener("keydown",e=>{if(e.key==="Enter")$("#saveUserConfig").click()});
+$("#showExport").addEventListener("click",showExport);
+$("#copyExport").addEventListener("click",async()=>{const txt=showExport();try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(txt);else{$("#exportText").focus();$("#exportText").select();document.execCommand("copy")}$("#copyExport").textContent="Copié ✓";setTimeout(()=>$("#copyExport").textContent="Copier",1400)}catch(e){$("#exportText").focus();$("#exportText").select()}});
+$("#downloadExport").addEventListener("click",()=>{try{download("configuration_observatoire_france.json",showExport())}catch(e){}});
+
+
+/* ---------- Game actions ---------- */
+$("#playerCountMinus").addEventListener("click",()=>{setupPlayerCount=Math.max(GAME_MIN_PLAYERS,setupPlayerCount-1);renderPlayerSetup()});
+$("#playerCountPlus").addEventListener("click",()=>{setupPlayerCount=Math.min(GAME_MAX_PLAYERS,setupPlayerCount+1);renderPlayerSetup()});
+$("#gameStartBtn").addEventListener("click",gameStartNew);
+$("#gameResumeBtn").addEventListener("click",gameResume);
+$("#gameValidateBtn").addEventListener("click",gameValidateTurn);
+$("#gameAnalyzeBtn").addEventListener("click",gameAnalyzeResults);
+$("#gameBackToEdit").addEventListener("click",gameBackToEdit);
+$("#gameRestart").addEventListener("click",gameRestart);
+
+/* ---------- Start ---------- */
+$("#baselineCount").textContent=DATA.baselineIds.length;$("#catalogCount").textContent=INDS.length;
+renderAll();
+gameInit();
+refreshSelected(false).then(async()=>{
+ const needed=new Set(DATA.baselineIds);
+ for(const c of state.savedConfigs)for(const id of configIndicatorIds(c.config))needed.add(id);
+ await pool([...needed].filter(id=>state.sourceStatus[id]!=="ok"),5,false);
+ renderAll();if(game.status==="results")renderGameResults();
+});
+setInterval(()=>refreshSelected(true),6*60*60*1000);
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&state.lastRefresh&&Date.now()-state.lastRefresh.getTime()>6*60*60*1000)refreshSelected(true)});
+</script>
+</body>
+</html>

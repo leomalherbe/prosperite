@@ -19,15 +19,14 @@ ordre,dimension_v0,motif_libelle,dimension_v1,regle,remarque
 18,niveau_de_vie,dette (publique|des administrations|de l'État|de l'etat)|dette au sens de Maastricht|déficit public|deficit public|investissement|formation brute de capital|patrimoine national|patrimoine (net )?de la nation,hors_v1,A5,"Décision Léo A5 (gel 1) : dette publique, investissement et patrimoine national non retenus (la dette des ménages reste en sécurité économique via la règle 17)"
 19,niveau_de_vie,recherche et développement|recherche et developpement|R&D|R-D|DIRD|effort de recherche|dépenses? intérieures? de recherche,education,A5,Décision Léo A5 (gel 1) : effort de R&D rattaché à éducation et compétences
 20,niveau_de_vie,,niveau_de_vie,—,"Décision Léo A5 et A12 (gel 1) : PIB par habitant reste indicateur ordinaire ici ; dette publique, investissement et patrimoine national ne sont pas retenus (voir règles 18a–18c)"
-21,travail,longues? durées? de travail|horaires atypiques|travail (de nuit|le dimanche)|équilibre .*temps|equilibre .*temps|temps de travail hebdomadaire|heures de travail,hors_v1,A4,Décision Léo A4 (gel 1) : thème temps non traité en v1 (y compris durées et horaires de travail)
-22,travail,,travail,—,
-23,liens_bien_etre,temps libre|loisirs? \(temps\)|travail domestique|tâches domestiques|taches domestiques|emploi du temps|équilibre vie|equilibre vie,hors_v1,A4,"Décision Léo A4 (gel 1) : temps libre et travail domestique non traités en v1 (les pratiques culturelles et sportives restent en liens, règle 10)"
-24,liens_bien_etre,,liens_bien_etre,—,
-25,democratie,,democratie,—,
-26,egalites,,egalites,—,
-27,non rattachable,stocks de capitaux,hors_grille,A5,Décision Léo A5 (gel 1) : stocks de capitaux et patrimoine national non retenus
-28,non rattachable,production domestique|activités non marchandes|activites non marchandes,hors_v1,A4,Décision Léo A4 (gel 1) : temps et travail non rémunéré non traités en v1
-29,non rattachable,levier|stabilité financière|stabilite financiere,hors_grille,—,"Stabilité financière : non retenue (hors bien-être, arbitrage « autres points »)"
-30,non rattachable,,a_classer,—,Examen manuel
-31,contexte,,hors_grille,—,"Séries de contexte (population, prix…) : non rattachées à une dimension"
-32,non_classe,,a_classer,—,Examen manuel
+21,travail,,travail,—,
+22,liens_bien_etre,temps libre|loisirs? \(temps\)|travail domestique|tâches domestiques|taches domestiques|emploi du temps|équilibre vie|equilibre vie,hors_v1,A4,"Décision Léo A4 (gel 1) : temps libre et travail domestique non traités en v1 (les pratiques culturelles et sportives restent en liens, règle 10)"
+23,liens_bien_etre,,liens_bien_etre,—,
+24,democratie,,democratie,—,
+25,egalites,,egalites,—,
+26,non rattachable,stocks de capitaux,hors_grille,A5,Décision Léo A5 (gel 1) : stocks de capitaux et patrimoine national non retenus
+27,non rattachable,production domestique|activités non marchandes|activites non marchandes,hors_v1,A4,Décision Léo A4 (gel 1) : temps et travail non rémunéré non traités en v1
+28,non rattachable,levier|stabilité financière|stabilite financiere,hors_grille,—,"Stabilité financière : non retenue (hors bien-être, arbitrage « autres points »)"
+29,non rattachable,,a_classer,—,Examen manuel
+30,contexte,,hors_grille,—,"Séries de contexte (population, prix…) : non rattachées à une dimension"
+31,non_classe,,a_classer,—,Examen manuel

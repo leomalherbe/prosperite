@@ -1,6 +1,6 @@
 # fixture_ocde / hsl_cwb_fra_2024
 # URL : https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.10_2+7_1+11_1......?startPeriod=2022&format=csvfilewithlabels
-# Vérifié le 2026-10-13T14:44:56Z — HTTP 200 — application/vnd.sdmx.data+csv; charset=utf-8; labels=name; version=2 — 26956 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:48:10Z — HTTP 200 — application/vnd.sdmx.data+csv; charset=utf-8; labels=name; version=2 — 26956 octets lus (taille annoncée : inconnue)
 
 STRUCTURE,STRUCTURE_ID,STRUCTURE_NAME,ACTION,REF_AREA,Reference area,MEASURE,Measure,UNIT_MEASURE,Unit of measure,AGE,Age,SEX,Sex,EDUCATION_LEV,Education level,DOMAIN,Domain,TIME_PERIOD,Time period,OBS_VALUE,Observation value,OBS_STATUS,Observation status,UNIT_MULT,Unit multiplier,DECIMALS,Decimals,BASE_PER,Base period
 DATAFLOW,OECD.WISE.WDP:DSD_HSL@DF_HSL_CWB(1.1),Current well-being,I,FRA,France,10_2,Feeling safe at night,PT_POP_Y_GE15,Percentage of population aged 15 years or over,_T,Total,_T,Total,_T,Total,HSL_10,Safety,2023,,72.0198722306,,A,Normal value,0,Units,2,Two,_Z,

@@ -1,6 +1,6 @@
 # drees / ods_catalogue_export
 # URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T11:57:01Z — HTTP 200 — text/csv; charset=utf-8 — 641863 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T12:04:32Z — HTTP 200 — text/csv; charset=utf-8 — 641863 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'custom.themes-niveau-2', 'custom.themes-niveau-3', 'custom.version', 'custom.date-de-creation', 'custom.frequence-de-mise-a-jour', 'custom.periode-de-temps', 'custom.code-source', 'custom.pieces-jointes', 'datasetid']
 265 lignes ; 265 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
@@ -20,7 +20,6 @@ nombre-moyen-et-nature-des-trimestres-valides-selon-lage-en-2012-et-2013	Nombre 
 4041_la-protection-maternelle-et-infantile-pmi	Base de données brutes de l'enquête Aide sociale - Volet protection maternelle et infantile (PMI)-Activité et Personnels	2024-04-03T12:59:19+00:00	0	DREES/OSOL/BCL
 enquete-autonomie-2022-en-logement-ordinaire-donnees-detaillees	Enquête Autonomie 2022 en logement ordinaire - Données détaillées	2025-11-12T14:00:00+00:00	0	DREES/OSOL/BHD
 indicateurs-issus-du-premier-certificat-de-lenfant	Indicateurs issus du premier certificat de l'enfant	2019-06-27T00:00:00+00:00	6	DREES/OSAM/BESP
-graf-dyn-scolarisation-enfants-handicapes0	Graf dyn scolarisation enfants handicapés	2025-10-03T14:49:21+00:00	17	
 datastory-oc-7-1-taux-de-sondage-et-taux-de-reponse	Datastory OC 7.2 Taux de sondage  et taux de réponse	2026-10-06T09:47:35.834000+00:00	10	
 datastory-badiane-carte-3-part-des-places-habilitees-a-l-aide-sociale-selon-la-categorie-juridique-des-ehpad	Datastory BADIANE Carte 3 - Part des places habilitées à l'aide sociale selon la catégorie juridique des Ehpad	2026-09-23T13:32:29.803000+00:00	96	
 4042_les-mesures-d-accompagnement-social-personnalise-masp	La mesure d’accompagnement social personnalisé (MASP)	2025-02-18T15:48:22.001000+00:00	0	DREES/OSOL/BCL
@@ -42,7 +41,6 @@ datastory-oc-6-1-prise-en-charge-du-ticket-moderateur-en-audiologie	Datastory OC
 373_le-fond-de-solidarite-pour-le-logement-fsl	Le fond de solidarité pour le logement (FSL)	2014-09-02T00:00:00+00:00	0	DREES/OSOL/BLEX
 contrats-responsables	Datastory OC - 1.2 Part des bénéficiaires couverts par un contrat responsable	2026-10-06T09:46:33.658000+00:00	36	
 invalidite-pensmoy-dd	Pension d'invalidité de droit direct moyenne	2021-01-18T20:17:20+00:00	303	DREES/OSOL/BRET
-les-professions-sociales-effectifs-profil-et-caracteristiques-des-emplois	Effectifs, caractéristiques socio-démographiques et caractéristiques des emplois des professions sociales, par profession	2026-05-12T12:24:13.510000+00:00	0	DREES/OSOL/BCL
 proportion-dhommes-et-de-femmes-ayant-valide-des-trimestres-davpf-ou-des-trimest	Proportion d'hommes et de femmes ayant validé des trimestres d'AVPF ou des trimestres assimilés utiles avant fin 2013	2020-10-19T13:52:21+00:00	66	DREES/OSOL/BRET
 enquete-sur-les-contrats-de-complementaire-sante-les-plus-souscrits-2011-a-2016-	Enquête auprès des organismes offrant des couvertures complémentaires santé (Enquête OC) 2011 à 2019 (2011-2016 révisées)	2022-03-15T15:05:19.749000+00:00	0	DREES/OSAM/BAMEDS
 adultes-presents-es-handicap-2022-base-floutee-v1	Adultes handicapés accompagnés par une structure dédiée fin 2022 : base floutée (V1)	2025-11-19T14:00:00+00:00	180950	DREES/OSOL/BHD
@@ -68,67 +66,69 @@ graphique-1-evolution-du-nombre-de-lits-et-de-places-au-31-decembre-depuis-fin-2
 datadreesmdg_mgs	Modes de garde et d’accueil et scolarisation des enfants âgés de moins de 6 ans	2024-02-13T11:24:05.219000+00:00	0	DREES/OSOL/BJF
 rec06	Caractéristiques des retraités - Quintiles	2022-07-11T14:20:58+00:00	1182	DREES/OSOL/BRET
 datastory-badiane-carte-1-taux-d-encadrement-d-etp-en-personnel-soignant-pour-100-residents	Datastory BADIANE Carte 1 - Taux d'encadrement d'ETP en personnel soignant pour 100 résidents	2026-10-06T09:14:59.859000+00:00	96	
-salaires-des-professionnels-du-social	Les salaires des professionnels du social, par profession, au niveau national et au niveau régional	2026-09-30T13:11:08.109000+00:00	0	DREES/OSOL/BCL
 graphique_ecole_sante	Graphique_Ecole_Santé	2024-11-26T14:47:28+00:00	12	
 er_inegalites_maladies_chroniques	Inégalités sociales face aux maladies chroniques (ER 1243)	2022-10-18T09:03:00+00:00	46176	DREES/OSAM/BESP
 bases-de-donnees-brutes-de-l-enquete-aide-sociale-volet-aides-sociales-aux-perso	Bases de données brutes de l’enquête Aide sociale – Volet Aides sociales aux personnes âgées ou handicapées	2026-09-03T12:35:51.005000+00:00	0	DREES/OSOL/BCL
 covid-19-avant-amelioration-resultats-regionaux-issus-des-appariements-entre-si-	Covid-19 : avant amélioration, résultats régionaux issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2022-10-28T08:28:16+00:00	85080	
 rec03	Caractéristiques des retraités - Âge de liquidation détaillé	2022-07-11T14:48:45+00:00	10698	DREES/OSOL/BRET
 cns_financement	Les comptes de la santé - Répartition par financeur	2026-10-01T15:42:55.670000+00:00	3504	DREES/SEEE/BACS
-500_morbidite-hospitaliere	Morbidité hospitalière	2026-04-10T12:22:44.112000+00:00	3	DREES/OSAM/BESP
 lallocation-personnalisee-dautonomie-apa-copie	L'allocation personnalisée d'autonomie (APA) – Remontées individuelles	2023-06-27T10:18:44.705000+00:00	0	DREES/OSOL/BHD
 graphique-er-ass	Graphique-ER-ASS	2026-02-20T09:18:14+00:00	6	
 434_l-enquete-aupres-des-etablissements-et-services-pour-enfants-et-adultes-hand	L'enquête auprès des établissements et services pour enfants et adultes handicapés (ES-Handicap)	2025-11-19T14:00:00+00:00	0	DREES/OSOL/BHD
 492_la-formation-aux-professions-sociales	La formation aux professions sociales	2025-11-10T14:24:25.444000+00:00	0	DREES/OSOL/BCL
 laide-alimentaire-en-france-depuis-2019	L'aide alimentaire en France depuis 2019	2021-07-23T09:48:14+00:00	0	DREES/OSOL
-etudes-et-resultats	Etudes et résultats	2022-10-07T07:59:34.204000+00:00	53	
 3919_l-enquete-aupres-des-etablissements-et-services-de-la-protection-de-l-enfan	L’enquête auprès des établissements et services de la protection de l’enfance  (ES-PE)	2025-09-16T08:01:30.589000+00:00	0	DREES/OSOL/BCL
 491_la-formation-aux-professions-de-sante	La formation aux professions de santé	2026-05-29T07:47:21.481000+00:00	0	DREES/OSAM/BPS
 lallocation-personnalisee-dautonomie-apa-beneficiaires-et-depenses	L'allocation personnalisée d'autonomie (APA) - Bénéficiaires et dépenses des départements	2022-07-28T14:30:19.442000+00:00	0	DREES/OSOL/BCL
-431_le-barometre-d-opinion	Le baromètre d'opinion	2026-07-07T13:56:34.084000+00:00	0	DREES/SEEE/BRE
 covid-19-avant-amelioration-resultats-par-age-issus-des-appariements-entre-si-vi	Covid-19 : avant amélioration, résultats par âge issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2022-10-28T08:25:04+00:00	24348	DREES/OSAM
 2596_les-droits-valides-au-cours-de-la-carriere	Les droits validés au cours de la carrière	2022-12-16T13:35:16.495000+00:00	0	DREES/OSOL/BRET
 mh_tab_2024_morbidite_hospitaliere_cartes	mh_tab_2024_morbidite_hospitaliere_cartes	2026-04-24T16:21:59+00:00	101	
 graphique-er-non-recours-pa	Graphique- ER - non recours-PA	2026-07-06T14:58:00+00:00	6	
 apa-et-pch-montants-verses	APA et PCH - Montants versés	2025-12-19T10:36:37.015000+00:00	0	DREES/OSOL/BCL
 repartition-des-taux-de-remplacement-entre-les-revenus-juste-avant-et-juste-apres-la-retraite	Répartition des taux de remplacement entre les revenus juste avant et juste après le départ à la retraite, selon la catégorie et selon diverses mesures du revenu	2026-03-19T13:58:11+00:00	4806	DREES/OSOL/BRET
-596_enfance-et-jeunesse-en-danger	ISD - Protection de l'enfance	2026-10-06T09:04:28.307000+00:00	34572	DREES/OSOL/BCL
-fichier_maternites_112021	Liste des maternités de France depuis 2000	2026-01-06T13:58:04+00:00	5889	DREES/OSAM/BES
-lits-de-reanimation-de-soins-intensifs-et-de-surveillance-continue-en-france0	Lits de soins critiques des établissements de santé en France	2026-01-06T14:32:19.222000+00:00	15141	DREES/OSAM/BES
 panorama-statistique-handicap-et-invalidite	[PANORAMA STATISTIQUE] : Handicap et invalidité	2026-02-04T16:09:33.078000+00:00	0	DREES/OSOL
-data-drees-ad-badiane-part-d-ehpad-avec-un-medecin-coordonnateur	data drees AD Badiane - Part d'Ehpad avec un médecin coordonnateur	2026-07-22T09:44:05+00:00	1	
-graf-dyn-er-ivg	Graf dyn ER IVG	2025-09-23T07:52:19+00:00	9	
-cns-graphique-le-financement-de-la-csbm-par-les-administrations-publiques	CNS - Graphique - Le financement de la CSBM par les administrations publiques	2025-09-22T08:28:08+00:00	15	
-graphique2a-er-livia	Graphique2a-ER-LIVIA	2026-01-30T13:16:20+00:00	4	
-639_personnes-agees	ISD - Personnes âgées	2026-10-06T09:05:15.922000+00:00	31290	DREES/OSOL/BCL
 546_l-allocation-personnalisee-d-autonomie-apa	Enquête trimestrielle sur l'APA à domicile (2016 - 2017)	2021-01-22T08:39:40.428000+00:00	0	DREES/OSOL/BHD
-336_minima-sociaux-rsa-et-prime-d-activite	Minima sociaux, RSA et prime d’activité	2025-12-04T10:33:18.577000+00:00	0	DREES/OSOL/BLEX
 panorama-statistique-toutes-thematiques	[PANORAMA STATISTIQUE] : Toutes thématiques	2026-07-24T13:00:00+00:00	550511	
-penstotnet-retrdd-distrib	Distribution de la pension mensuelle nette totale des retraités de droit direct, fin 2016	2021-01-18T21:06:46+00:00	138	DREES/OSOL/BRET
 375_les-beneficiaires-de-l-aide-sociale-departementale	Les bénéficiaires de l'aide sociale départementale	2023-12-05T07:43:54.863000+00:00	0	DREES/OSOL/BCL
-4178_distribution-des-pensions-mensuelles	Distribution des pensions mensuelles	2025-07-16T13:00:00+00:00	0	DREES/OSOL/BRET
 datastory-oc-prise-en-charge-ticket-moderateur-radio	Datastory OC - 4.3 Prise en charge d'un acte de radiologie	2026-09-23T13:56:25.095000+00:00	108	
-departretraite_parcsp	Âge de départ à la retraite et conditions de fin de carrière selon la catégorie socioprofessionnelle	2021-08-02T09:34:45+00:00	56	DREES/OSOL/BRET
-619_indicateurs-financiers	ISD - Indicateurs financiers	2026-10-06T09:04:45.605000+00:00	29391	DREES/OSOL/BCL
-la-demographie-des-professionnels-de-sante-depuis-2012	La démographie des professionnels de santé depuis 2012	2026-07-02T09:38:44.540000+00:00	0	DREES/OSAM
-panorama-statistique-seniors-et-retraites	[PANORAMA STATISTIQUE] : Séniors et retraités	2026-02-04T16:10:10.023000+00:00	0	DREES/OSOL
 er-causes-de-deces-tableau_pour_carte_regionales_tumeurs	ER Causes de décès - tableau_pour_carte_regionales_tumeurs	2025-07-04T06:34:14+00:00	18	
 graph-geste-auto-infliges-2012-2025-v2	Graph geste auto infliges 2012-2025	2026-05-06T10:05:15+00:00	14	
 dd_ase_2026_graph_dyn-cp	DD_ASE_2026_graph_dyn - CP	2026-06-29T07:32:22+00:00	29	
-graph_dyn_dd_complementaire_sante	Graph_dyn_DD_complementaire_santé	2026-03-27T10:17:08+00:00	12	
-testparts_pib_france_ue27	CPS-Parts_PIB_france_ue27	2025-12-18T11:34:08+00:00	6	
-305_les-comptes-de-la-protection-sociale	Les comptes de la protection sociale	2025-12-18T05:00:00+00:00	15654	DREES/SEEE/BACS
-376_les-depenses-d-aide-sociale-departementale	Les dépenses d'aide sociale départementale	2026-04-17T12:11:26.497000+00:00	0	DREES/OSOL/BCL
-les-beneficiaires-de-l-aide-sociale-a-l-enfance	Les bénéficiaires de l'aide sociale à l'enfance	2026-09-03T12:31:00.448000+00:00	0	DREES/OSOL/BCL
-covid-19-avant-amelioration-resultats-nationaux-issus-des-appariements-entre-si-	Covid-19 : avant amélioration, résultats nationaux issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2022-10-27T12:34:30+00:00	5013	DREES/OSAM
-graphique-er-suicide-complet	Graphique-ER-Suicide-Complet	2026-01-23T09:15:13+00:00	10	
 formes-geographiques-des-regions-en-svg	[Pour visualisation] Formes géographiques des régions en SVG	2021-11-10T14:58:55+00:00	18	
-dd_effectifs_medecins_en_activite_2012-a-2026	DD_Effectifs_médecins_en_activité_2012 à 2026	2026-07-01T12:16:57+00:00	15	
 covid-19-resultats-issus-des-appariements-entre-si-vic-si-dep-et-vac-si	Covid-19 : résultats nationaux issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2023-06-23T08:07:17+00:00	9247	DREES/OSAM
+enquete-oc-depuis-2019	Enquête auprès des organismes offrant des couvertures complémentaires santé (Enquête OC) depuis 2019	2026-01-23T10:05:55.641000+00:00	7449	DREES/OSAM/BAMEDS
+trajectoires-des-beneficiaires-de-minima-sociaux	Trajectoires des bénéficiaires de minima sociaux	2026-10-06T09:08:15.800000+00:00	4576	DREES/OSOL/BLEX
 les-beneficiaires-de-l-aide-sociale-departementale-aux-personnes-agees-ou-handic	Les bénéficiaires de l'aide sociale départementale aux personnes âgées ou handicapées (APA, PCH, ASH, Aides ménagères, …)	2026-09-03T12:31:38.862000+00:00	0	DREES/OSOL/BCL
 er-ivg-carte-1	ER IVG - carte 1	2024-09-13T11:51:12+00:00	101	
-trajectoires-des-beneficiaires-de-minima-sociaux	Trajectoires des bénéficiaires de minima sociaux	2026-10-06T09:08:15.800000+00:00	4576	DREES/OSOL/BLEX
-enquete-oc-depuis-2019	Enquête auprès des organismes offrant des couvertures complémentaires santé (Enquête OC) depuis 2019	2026-01-23T10:05:55.641000+00:00	7449	DREES/OSAM/BAMEDS
+dd_effectifs_medecins_en_activite_2012-a-2026	DD_Effectifs_médecins_en_activité_2012 à 2026	2026-07-01T12:16:57+00:00	15	
+graphique2a-er-livia	Graphique2a-ER-LIVIA	2026-01-30T13:16:20+00:00	4	
+596_enfance-et-jeunesse-en-danger	ISD - Protection de l'enfance	2026-10-06T09:04:28.307000+00:00	34572	DREES/OSOL/BCL
+500_morbidite-hospitaliere	Morbidité hospitalière	2026-04-10T12:22:44.112000+00:00	3	DREES/OSAM/BESP
+les-professions-sociales-effectifs-profil-et-caracteristiques-des-emplois	Effectifs, caractéristiques socio-démographiques et caractéristiques des emplois des professions sociales, par profession	2026-05-12T12:24:13.510000+00:00	0	DREES/OSOL/BCL
+lits-de-reanimation-de-soins-intensifs-et-de-surveillance-continue-en-france0	Lits de soins critiques des établissements de santé en France	2026-01-06T14:32:19.222000+00:00	15141	DREES/OSAM/BES
+data-drees-ad-badiane-part-d-ehpad-avec-un-medecin-coordonnateur	data drees AD Badiane - Part d'Ehpad avec un médecin coordonnateur	2026-07-22T09:44:05+00:00	1	
+graf-dyn-er-ivg	Graf dyn ER IVG	2025-09-23T07:52:19+00:00	9	
+cns-graphique-le-financement-de-la-csbm-par-les-administrations-publiques	CNS - Graphique - Le financement de la CSBM par les administrations publiques	2025-09-22T08:28:08+00:00	15	
+etudes-et-resultats	Etudes et résultats	2022-10-07T07:59:34.204000+00:00	53	
+639_personnes-agees	ISD - Personnes âgées	2026-10-06T09:05:15.922000+00:00	31290	DREES/OSOL/BCL
+la-demographie-des-professionnels-de-sante-depuis-2012	La démographie des professionnels de santé depuis 2012	2026-07-02T09:38:44.540000+00:00	0	DREES/OSAM
+336_minima-sociaux-rsa-et-prime-d-activite	Minima sociaux, RSA et prime d’activité	2025-12-04T10:33:18.577000+00:00	0	DREES/OSOL/BLEX
+fichier_maternites_112021	Liste des maternités de France depuis 2000	2026-01-06T13:58:04+00:00	5889	DREES/OSAM/BES
+penstotnet-retrdd-distrib	Distribution de la pension mensuelle nette totale des retraités de droit direct, fin 2016	2021-01-18T21:06:46+00:00	138	DREES/OSOL/BRET
+panorama-statistique-seniors-et-retraites	[PANORAMA STATISTIQUE] : Séniors et retraités	2026-02-04T16:10:10.023000+00:00	0	DREES/OSOL
+4178_distribution-des-pensions-mensuelles	Distribution des pensions mensuelles	2025-07-16T13:00:00+00:00	0	DREES/OSOL/BRET
+graf-dyn-scolarisation-enfants-handicapes0	Graf dyn scolarisation enfants handicapés	2025-10-03T14:49:21+00:00	17	
+graph_dyn_dd_complementaire_sante	Graph_dyn_DD_complementaire_santé	2026-03-27T10:17:08+00:00	12	
+departretraite_parcsp	Âge de départ à la retraite et conditions de fin de carrière selon la catégorie socioprofessionnelle	2021-08-02T09:34:45+00:00	56	DREES/OSOL/BRET
+619_indicateurs-financiers	ISD - Indicateurs financiers	2026-10-06T09:04:45.605000+00:00	29391	DREES/OSOL/BCL
+431_le-barometre-d-opinion	Le baromètre d'opinion	2026-07-07T13:56:34.084000+00:00	0	DREES/SEEE/BRE
+376_les-depenses-d-aide-sociale-departementale	Les dépenses d'aide sociale départementale	2026-04-17T12:11:26.497000+00:00	0	DREES/OSOL/BCL
+salaires-des-professionnels-du-social	Les salaires des professionnels du social, par profession, au niveau national et au niveau régional	2026-09-30T13:11:08.109000+00:00	0	DREES/OSOL/BCL
+testparts_pib_france_ue27	CPS-Parts_PIB_france_ue27	2025-12-18T11:34:08+00:00	6	
+graphique-er-suicide-complet	Graphique-ER-Suicide-Complet	2026-01-23T09:15:13+00:00	10	
+covid-19-avant-amelioration-resultats-nationaux-issus-des-appariements-entre-si-	Covid-19 : avant amélioration, résultats nationaux issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2022-10-27T12:34:30+00:00	5013	DREES/OSAM
+les-beneficiaires-de-l-aide-sociale-a-l-enfance	Les bénéficiaires de l'aide sociale à l'enfance	2026-09-03T12:31:00.448000+00:00	0	DREES/OSOL/BCL
+305_les-comptes-de-la-protection-sociale	Les comptes de la protection sociale	2025-12-18T05:00:00+00:00	15654	DREES/SEEE/BACS
 datastory-oc-9-1-prise-en-charge-tm-hopital	Datastory OC - 3.1 Prise en charge pour une opération de la cataracte à l'hôpital	2026-09-23T14:06:20.941000+00:00	72	
 departretraite-et-incapacite	Âge de départ à la retraite et conditions de fin de carrière des personnes handicapées	2021-08-02T09:25:03+00:00	72	DREES/OSOL/BRET
 repartition-par-categorie-de-niveau-de-vie-juste-avant-et-juste-apres-le-depart-a-la-retraite	Répartition par catégorie de niveau de vie juste avant et juste après le départ à la retraite, selon les caractéristiques individuelles et l'année de départ à la retraite	2026-03-19T13:43:11+00:00	15808	DREES/OSOL/BRET
@@ -163,14 +163,12 @@ mh_tableau_tx_stand_patho_sexe_graphique_vf	mh_tableau_tx_stand_patho_sexe_graph
 ri-autonomie-profils-des-beneficiaires-et-montants-notifies-et-verses-pch	RI-Autonomie : Profils des bénéficiaires et montants notifiés et versés au titre de la prestation de compensation de handicap (PCH)	2026-01-05T14:33:11.808000+00:00	0	DREES/OSOL/BHD
 maquette_edifis_2023	Maquette_Edifis_2023	2024-02-20T14:41:58+00:00	0	DREES/SEEE/BRE
 donnees-graphique-5	ER 1281 graphique 5	2024-02-28T14:28:37+00:00	8	
-enquete-vie-quotidienne-et-sante-2021-donnees-detaillees	Enquête Vie quotidienne et santé 2021 - Données détaillées	2023-02-10T09:00:00+00:00	0	DREES/OSOL/BHD
 conditions_travail_tracov	Les conditions de travail des professionnelles du social et de santé	2025-06-23T12:54:53.135000+00:00	0	DREES/OSOL/BCL
 les-modalites-departementales-de-gestion-de-lash-des-personnes-agees	Les modalités départementales de gestion de l'ASH des personnes âgées	2021-02-22T14:26:07.255000+00:00	0	DREES/OSOL/BCL
 datastory-oc-7-7-prise-en-charge-implantologie	Datastory OC - 5.4. Prise en charge pour la pose d'un implant dentaire	2026-09-24T14:28:58.240000+00:00	72	
 datastory-maternites-graphique-1	Datastory - maternités - graphique 1	2024-03-18T15:07:48+00:00	46	
 er1315	ER1315	2024-10-22T08:12:49+00:00	11	
 covid-19-anciens-resultats-par-age-issus-des-appariements-entre-si-vic-si-dep-et	Covid-19 : anciens résultats par âge issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2021-10-29T09:13:20+00:00	2380	DREES/OSAM
-rec05	Caractéristiques des retraités - Conditions de liquidation	2022-07-11T14:25:01+00:00	1182	DREES/OSOL/BRET
 lucie-test-formation-maternites-copie	(Lucie) test formation - 2022 Maternités - copie	2024-02-08T09:40:30+00:00	464	
 les-conditions-de-vie-des-beneficiaires-de-minima-sociaux-enquete-bms-2018	Les conditions de vie des bénéficiaires de minima sociaux et de la prime d’activité tirées de l’enquête BMS 2018	2021-05-03T12:16:30.813000+00:00	0	DREES/OSOL/BLEX
 rec04	Caractéristiques des retraités - Taux CSG	2022-07-11T14:27:15+00:00	1182	DREES/OSOL/BRET
@@ -184,8 +182,6 @@ rec07	Caractéristiques des retraités - Quintiles équivalent carrières compl�
 graphique-er-livia-vf	graphique-ER-Livia-simplifié	2026-02-04T13:06:59+00:00	2	
 306_les-comptes-de-la-sante	Les comptes de la santé - Tableaux et graphiques	2024-04-05T09:54:51.859000+00:00	0	DREES/SEEE/BACS
 donnees_insee_nombre_naissance_2022	données_insee_nombre_naissance_2022	2024-03-18T15:35:44+00:00	96	
-rec08	Caractéristiques des retraités - Lieu de naissance et résidence	2022-07-11T14:15:41+00:00	1182	DREES/OSOL/BRET
-3457_esperance-de-vie-sans-incapacite	Espérance de vie sans incapacité	2019-10-08T00:00:00+00:00	0	DREES/OSAM/BESP
 datastory-oc-6-5-prise-en-charge-d-une-operation-de-chirurgie-refractive	Datastory OC - 6.5 Prise en charge d'une opération de chirurgie réfractive non remboursée par l'assurance maladie obligatoire	2026-10-06T09:47:30.697000+00:00	72	
 graph1-er-rsa-simplifie	Graph1 ER RSA - simplifié	2026-05-05T10:12:40+00:00	3	
 bases-de-donnees-brutes-de-l-enquete-aide-sociale-volet-aide-sociale-a-l-enfance	Bases de données brutes de l'enquête Aide sociale - Volet Aide sociale à l'enfance (ASE)	2026-09-03T12:31:39.826000+00:00	0	DREES/OSOL/BCL
@@ -199,24 +195,17 @@ organismes_complementaires_rapport_annuel	Organismes complémentaires santé - R
 ivg_ods_test1	ivg_ods_pour_cartographie	2024-02-19T14:38:38+00:00	909	
 series_longues_passages_urgences_2017_2023	Séries longues corrigées du nombre de passages aux urgences 2017 à 2023 en France	2024-12-12T08:57:34.643000+00:00	247933	DREES
 er-ivg-graf1-sept-2024	ER IVG - Graf1 - sept 2024	2024-09-06T15:21:36+00:00	34	
-514_la-demographie-des-professionnels-de-sante-de-1999-a-2011	La démographie des professionnels de santé de 1999 à 2011	2022-08-05T08:31:28.975000+00:00	0	DREES/OSAM/BPS
 covid-19-anciens-resultats-nationaux-issus-des-appariements-entre-si-vic-si-dep-	Covid-19 : anciens résultats nationaux issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2021-10-29T09:12:40+00:00	476	DREES/OSAM
 2060_l-enquete-vie-quotidienne-et-sante-vqs	L'enquête Vie quotidienne et santé (VQS)	2016-10-19T00:00:00+00:00	5	DREES/OSOL/BHD
 mh_tab_2019_morbidite_hospitaliere_cartes	mh_tab_2019_morbidite_hospitaliere_cartes	2026-04-24T14:35:57+00:00	101	
 mh_tab_2020_morbidite_hospitaliere_cartes	mh_tab_2020_morbidite_hospitaliere_cartes	2026-04-24T14:49:20+00:00	101	
 mh_tab_2021_morbidite_hospitaliere_cartes	mh_tab_2021_morbidite_hospitaliere_cartes	2026-04-24T14:55:58+00:00	101	
-projections-des-effectifs-de-medecins	Projections des effectifs de médecins en activité et étudiants en 3ème cycle à l'horizon 2070	2026-10-06T13:00:00+00:00	0	DREES/OSAM/BPS
-tarification-aux-revenus	Datastory OC - 2.1 Part des bénéficiaires de contrats dont la tarification dépend des revenus	2026-10-06T09:46:41.757000+00:00	12	
-631_insertion-sociale-et-minima-sociaux	ISD - Insertion sociale et Minima sociaux	2026-10-08T13:19:10.108000+00:00	27395	DREES/OSOL/BCL
-ods_revenu-liberal-des-medecins-liberaux_prod2022	Les revenus des professionnels de santé libéraux	2026-09-15T15:04:15+00:00	252	DREES/OSAM/BPS
 skyline	Comparaison des dépenses publiques en France et en Europe	2025-11-20T17:52:55+00:00	5580	DREES/SEEE
 datastory-badiane-carte-2-taux-d-equipement-en-places-dans-les-ehpad	Datastory BADIANE Carte 2 - Taux d'équipement en places dans les Ehpad	2026-09-23T13:36:16.503000+00:00	96	
 4161_couverture-des-risques-sociaux-a-partir-des-donnees-acpr	Couverture des risques sociaux par les organismes privés d’assurance	2026-03-31T12:03:24+00:00	6038	DREES/SEEE/BACS
 rec09	Caractéristiques des retraités - Minima de pension	2022-07-11T14:13:40+00:00	1182	DREES/OSOL/BRET
 datadrees_badiane_2019	DataDrees_Badiane	2026-07-27T13:00:00+00:00	0	DREES/OSOL/BHD
-projections-de-personnes-agees-avec-un-besoin-d-aide-a-l-autonomie-modele-epp4-insee-drees	Projections de personnes âgées avec un besoin d'aide à l'autonomie - modèle EPP4 (Insee-Drees)	2025-11-20T16:19:12+00:00	0	DREES/OSOL/BHD
 datastory-oc-6-1-part-des-beneficiaires-dont-l-organisme-est-lie-a-un-reseau-d-opticiens	Datastory OC - 6.1. Accès à un réseau d'opticiens	2026-09-23T14:07:12.426000+00:00	36	
-les-caracteristiques-des-beneficiaires-de-l-aide-sociale-departementale-aux-pers	Les caractéristiques des bénéficiaires de l'aide sociale départementale aux personnes âgées ou handicapées (APA, PCH, ASH, Aides ménagères, …)	2025-12-19T10:37:25.683000+00:00	0	DREES/OSOL/BCL
 2848_action-sociale-des-communes-et-des-intercommunalites	Action sociale des communes et des intercommunalités - Enquête ASCO	2021-01-22T08:23:25.706000+00:00	0	DREES/OSOL/BCL
 rec01	Caractéristiques des retraités - Région de résidence	2022-07-11T14:54:15+00:00	1182	DREES/OSOL/BRET
 datastory-oc-part-tarification-des-enfants	Datastory OC - 2.4 Pour des enfants ayants droit : part des bénéficiaires par mode de tarification	2026-10-06T09:46:48.314000+00:00	144	
@@ -224,43 +213,26 @@ er-ivg-graphique-2-ica0	ER IVG - graphique 2 - ICA	2024-09-10T08:00:25+00:00	34
 627_personnes-en-situation-de-handicap	ISD - Personnes en situation de handicap	2026-10-06T09:05:03.091000+00:00	42021	DREES/OSOL/BCL
 causes-de-deces	Causes de décès	2026-06-23T13:30:56.186000+00:00	0	Inserm-CépiDc, traitements DREES
 beneficiaires-apa-a-domicile-base-floutee-v1	Bénéficiaires de l'APA à domicile : base floutée (V1)	2025-02-17T13:57:57.391000+00:00	308733	DREES/OSOL/BHD
-507_l-enquete-nationale-sur-les-structures-des-urgences-hospitalieres	Enquête Urgences	2025-05-20T14:30:00+00:00	9	DREES/OSAM/BES
-indicateurs-ehis	Indicateurs EHIS	2021-05-17T18:11:56+00:00	2	DREES/OSAM/BESP
-587_l-enquete-aupres-des-etablissements-d-hebergement-pour-personnes-agees-ehpa	L'enquête auprès des établissements d'hébergement pour personnes âgées (EHPA)	2025-11-04T09:57:47.793000+00:00	0	DREES/OSOL/BHD
 1377_le-minimum-vieillesse	Données sur le minimum vieillesse	2025-12-15T14:12:59.256000+00:00	0	DREES/OSOL/BRET
 drees_projections_infirmieres_2024	Projections des effectifs d'infirmières à l'horizon 2050	2025-01-06T14:56:47+00:00	3240	DREES
 proportions-de-beneficiaires-de-l-apa-ages-d-entree-et-durees-de-benefice-de-la-prestation-parmi	Proportions de bénéficiaires de l'APA, âges d'entrée et durées de bénéfice de la prestation parmi diverses catégories de retraités	2025-02-20T16:52:48+00:00	2205	DREES-IPP
 graphique_ecole_social	Graphique_Ecole_social	2024-11-26T09:43:30+00:00	18	
-graphique-er-depistage_cancer0	Graphique-ER-dépistage_cancer	2026-02-16T10:30:38+00:00	10	
 graph1-er-rsa	Graph1 ER RSA	2026-05-05T07:53:36+00:00	6	
 formes-geographiques-des-departements-en-svg	[Pour visualisation] Formes géographiques des départements en SVG	2021-11-12T09:14:36+00:00	105	
 covid-19-resultats-regionaux-issus-des-appariements-entre-si-vic-si-dep-et-vac-s	Covid-19 : résultats régionaux issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2023-06-23T08:06:16+00:00	157553	DREES/OSAM
 accessibilite-potentielle-localisee-apl-aux-structures-medico-sociales-destinees	Accessibilité potentielle localisée (APL) aux structures médico-sociales destinées aux personnes âgées	2021-12-08T10:06:00+00:00	36571	DREES/OSOL
 la-protection-maternelle-et-infantile-pmi-activite-et-personnels	La protection maternelle et infantile (PMI)-Activité et Personnels des services	2025-10-29T13:52:38+00:00	0	DREES/OSOL/BCL
-covid-19-resultats-par-age-issus-des-appariements-entre-si-vic-si-dep-et-vac-si	Covid-19 : résultats par âge issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2023-06-23T08:03:08+00:00	44741	DREES/OSAM
 enquetemdg2021_reu	Modes de garde et d'accueil des enfants âgés de moins de 3 ans à La Réunion	2024-08-26T13:55:21+00:00	0	DREES/OSOL/BJF
 nombre-moyen-de-trimestres-valides-a-30-ans-par-sexe-et-par-generation-entre-194	Nombre moyen de trimestres validés à 30 ans, par sexe et par génération (1942:1982) (EIC 2013)	2026-10-09T09:39:32.887000+00:00	18	DREES/OSOL/BRET
 datastory-badiane-gr1-evolution-du-nombre-de-residents-selon-la-categorie-juridique-des-ehpad	Datastory BADIANE Gr1 - Évolution du nombre de résidents selon la catégorie juridique des Ehpad	2026-10-06T09:14:45.122000+00:00	20	
-graphique-1-effectifs-de-medecins-en-activite-au-1er-janvier-de-2012-a-2025	Graphique 1 - Effectifs de médecins en activité au 1er janvier, de 2012 à 2025	2025-07-22T10:14:57+00:00	14	
 graphique_evsi	Graphique_EVSI	2026-01-19T08:53:51+00:00	17	
 graphique-er-suicide	Graphique-ER-Suicide	2026-01-23T08:47:38+00:00	2	
-707_bases-administratives-sae	Bases administratives SAE	2026-07-23T12:29:13+00:00	54	DREES/OSAM/BES
-1520_indicateurs-de-sante-perinatale	Indicateurs de santé périnatale	2026-07-17T08:42:53.558000+00:00	14	DREES/OSAM/BESP
 bases-de-donnees-brutes-de-l-enquete-aide-sociale-volet-depenses	Bases de données brutes de l’enquête Aide sociale – Volet dépenses	2025-12-18T14:48:00.989000+00:00	0	DREES/OSOL/BCL
 donnes_eacr	Données de l'enquête annuelle auprès des caisses de retraite	2026-05-22T14:58:43.757000+00:00	0	DREES/OSOL/BRET
 3013_donnees-statistiques-sur-les-caracteristiques-des-retraites	Données statistiques sur les caractéristiques des retraités	2025-07-16T13:00:00+00:00	0	DREES/OSOL/BRET
 3647_ivg	IVG	2026-09-29T20:22:25.040000+00:00	0	DREES/OSAM/BESP
-graph-er-1297	Graph ER 1297	2024-03-25T10:10:09+00:00	49	
-graphique2b-er-livia	Graphique2b-ER-LIVIA	2026-02-03T10:16:08+00:00	4	
-graphique-de-une_rupture-de-stock-de-medicaments	Graphique de Une_Rupture de stock de médicaments	2025-03-21T09:43:44+00:00	109	
 depenses-de-sante-et-restes-a-charge	Dépenses de santé et restes à charge	2026-04-13T12:38:32+00:00	1234682	DREES/OSAM/BAMEDS
-708_bases-statistiques-sae	Bases statistiques SAE	2025-11-03T14:10:39+00:00	44	DREES/OSAM/BES
-projections-du-nombre-de-personnes-agees-en-perte-dautonomie-par-lieu-de-vie-mod	Projections du nombre de personnes âgées en perte d'autonomie par lieu de vie (modèle LIVIA)	2025-12-09T12:01:25.033000+00:00	0	DREES/OSOL/BHD
-331_l-offre-d-accueil-du-jeune-enfant	L'offre d'accueil du jeune enfant	2026-05-28T12:51:57+00:00	0	DREES/OSOL/BCL
 er-causes-de-deces-carte_departements_12causes	ER Causes de décès - carte_departements_12causes	2025-07-01T06:21:01+00:00	101	
-data-drees-ad-badiane-part-d-ehpad-avec-une-infirmere-presente-la-nuit	data drees AD Badiane - Part d'Ehpad avec une infirmère présente la nuit	2026-07-22T09:26:52+00:00	1	
-effectifs_professionnel_sante	Effectifs_professionnel_santé	2026-07-01T13:49:53+00:00	5	
-graphique-2-evolution-des-effectifs-des-pharmaciens-chirurgiens-dentistes-sages-femme-et-pedicaures	Graphique 2 - Evolution des effectifs des pharmaciens chirurgiens dentistes sages-femme et pédicaures	2025-07-22T11:06:11+00:00	4	
 601_indicateurs-de-contexte	ISD - Indicateurs de contexte	2026-10-06T09:04:36.434000+00:00	145933	DREES/OSOL/BCL
 effectifs-salaries-hospitaliers-series-longues	Effectifs salariés hospitaliers - Séries longues	2026-05-27T13:00:00+00:00	368	DREES/OSAM/BPS
 1393_les-effectifs-et-montants-de-pension-des-retraites	Les effectifs de retraités, montants de pensions et âges de départ à la retraite	2024-10-30T08:00:00+00:00	0	DREES/OSOL/BRET
@@ -269,4 +241,32 @@ donnees-mensuelles-sur-les-prestations-de-solidarite	Données mensuelles sur les
 530_l-accessibilite-potentielle-localisee-apl	Accessibilité potentielle localisée (APL) aux professionnels de santé	2026-07-22T13:25:30+00:00	0	DREES/OSAM/BPS
 panorama-retraite2025_graphique-1_age-de-depart	Panorama-retraite2025_Graphique-1_Age de départ	2025-07-31T14:18:12+00:00	20	
 rapport-oc_graphique-cp	Rapport OC_Graphique CP	2025-12-11T09:25:45+00:00	13	
+507_l-enquete-nationale-sur-les-structures-des-urgences-hospitalieres	Enquête Urgences	2025-05-20T14:30:00+00:00	9	DREES/OSAM/BES
+covid-19-resultats-par-age-issus-des-appariements-entre-si-vic-si-dep-et-vac-si	Covid-19 : résultats par âge issus des appariements entre SI-VIC, SI-DEP et VAC-SI	2023-06-23T08:03:08+00:00	44741	DREES/OSAM
+514_la-demographie-des-professionnels-de-sante-de-1999-a-2011	La démographie des professionnels de santé de 1999 à 2011	2022-08-05T08:31:28.975000+00:00	0	DREES/OSAM/BPS
+1520_indicateurs-de-sante-perinatale	Indicateurs de santé périnatale	2026-07-17T08:42:53.558000+00:00	14	DREES/OSAM/BESP
+graphique-1-effectifs-de-medecins-en-activite-au-1er-janvier-de-2012-a-2025	Graphique 1 - Effectifs de médecins en activité au 1er janvier, de 2012 à 2025	2025-07-22T10:14:57+00:00	14	
 datastory-badiane-gr5-evolution-du-nombre-de-places-habilitees-a-l-ash-selon-la-categorie-juridique	Datastory BADIANE Gr5 - Évolution du nombre de places habilitées à l'ASH selon la catégorie juridique des Ehpad	2026-10-06T09:15:18.018000+00:00	20	
+graphique2b-er-livia	Graphique2b-ER-LIVIA	2026-02-03T10:16:08+00:00	4	
+graphique-de-une_rupture-de-stock-de-medicaments	Graphique de Une_Rupture de stock de médicaments	2025-03-21T09:43:44+00:00	109	
+707_bases-administratives-sae	Bases administratives SAE	2026-07-23T12:29:13+00:00	54	DREES/OSAM/BES
+les-caracteristiques-des-beneficiaires-de-l-aide-sociale-departementale-aux-pers	Les caractéristiques des bénéficiaires de l'aide sociale départementale aux personnes âgées ou handicapées (APA, PCH, ASH, Aides ménagères, …)	2025-12-19T10:37:25.683000+00:00	0	DREES/OSOL/BCL
+indicateurs-ehis	Indicateurs EHIS	2021-05-17T18:11:56+00:00	2	DREES/OSAM/BESP
+587_l-enquete-aupres-des-etablissements-d-hebergement-pour-personnes-agees-ehpa	L'enquête auprès des établissements d'hébergement pour personnes âgées (EHPA)	2025-11-04T09:57:47.793000+00:00	0	DREES/OSOL/BHD
+projections-de-personnes-agees-avec-un-besoin-d-aide-a-l-autonomie-modele-epp4-insee-drees	Projections de personnes âgées avec un besoin d'aide à l'autonomie - modèle EPP4 (Insee-Drees)	2025-11-20T16:19:12+00:00	0	DREES/OSOL/BHD
+enquete-vie-quotidienne-et-sante-2021-donnees-detaillees	Enquête Vie quotidienne et santé 2021 - Données détaillées	2023-02-10T09:00:00+00:00	0	DREES/OSOL/BHD
+projections-des-effectifs-de-medecins	Projections des effectifs de médecins en activité et étudiants en 3ème cycle à l'horizon 2070	2026-10-06T13:00:00+00:00	0	DREES/OSAM/BPS
+tarification-aux-revenus	Datastory OC - 2.1 Part des bénéficiaires de contrats dont la tarification dépend des revenus	2026-10-06T09:46:41.757000+00:00	12	
+graphique-er-depistage_cancer0	Graphique-ER-dépistage_cancer	2026-02-16T10:30:38+00:00	10	
+631_insertion-sociale-et-minima-sociaux	ISD - Insertion sociale et Minima sociaux	2026-10-08T13:19:10.108000+00:00	27395	DREES/OSOL/BCL
+projections-du-nombre-de-personnes-agees-en-perte-dautonomie-par-lieu-de-vie-mod	Projections du nombre de personnes âgées en perte d'autonomie par lieu de vie (modèle LIVIA)	2025-12-09T12:01:25.033000+00:00	0	DREES/OSOL/BHD
+331_l-offre-d-accueil-du-jeune-enfant	L'offre d'accueil du jeune enfant	2026-05-28T12:51:57+00:00	0	DREES/OSOL/BCL
+rec05	Caractéristiques des retraités - Conditions de liquidation	2022-07-11T14:25:01+00:00	1182	DREES/OSOL/BRET
+rec08	Caractéristiques des retraités - Lieu de naissance et résidence	2022-07-11T14:15:41+00:00	1182	DREES/OSOL/BRET
+graph-er-1297	Graph ER 1297	2024-03-25T10:10:09+00:00	49	
+effectifs_professionnel_sante	Effectifs_professionnel_santé	2026-07-01T13:49:53+00:00	5	
+ods_revenu-liberal-des-medecins-liberaux_prod2022	Les revenus des professionnels de santé libéraux	2026-09-15T15:04:15+00:00	252	DREES/OSAM/BPS
+3457_esperance-de-vie-sans-incapacite	Espérance de vie sans incapacité	2019-10-08T00:00:00+00:00	0	DREES/OSAM/BESP
+graphique-2-evolution-des-effectifs-des-pharmaciens-chirurgiens-dentistes-sages-femme-et-pedicaures	Graphique 2 - Evolution des effectifs des pharmaciens chirurgiens dentistes sages-femme et pédicaures	2025-07-22T11:06:11+00:00	4	
+708_bases-statistiques-sae	Bases statistiques SAE	2025-11-03T14:10:39+00:00	44	DREES/OSAM/BES
+data-drees-ad-badiane-part-d-ehpad-avec-une-infirmere-presente-la-nuit	data drees AD Badiane - Part d'Ehpad avec une infirmère présente la nuit	2026-07-22T09:26:52+00:00	1	

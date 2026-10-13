@@ -1,15 +1,15 @@
 # economie / ods_catalogue_export
 # URL : https://data.economie.gouv.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T11:57:19Z — HTTP 200 — text/csv; charset=utf-8 — 1126816 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T12:04:49Z — HTTP 200 — text/csv; charset=utf-8 — 1126816 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'dcat.created', 'dcat.issued', 'dcat.creator', 'dcat.contributor', 'dcat.contact_name', 'dcat.contact_email', 'dcat.accrualperiodicity', 'dcat.spatial', 'dcat.temporal', 'dcat.granularity', 'dcat.dataquality', 'dcat.publisher_type', 'dcat.conforms_to', 'dcat.temporal_coverage_start', 'dcat.temporal_coverage_end', 'dcat.accessRights', 'dcat.relation', 'datasetid']
 617 lignes ; 617 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
 datasetid	default.title	default.modified	default.records_count	default.publisher
 cube-flux-retraite-progressive	Retraite - cube flux retraite progressive	2026-08-11T13:40:52.131000+00:00	18	
+plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2010	Projet de loi de finances pour 2014 (PLF 2014), jaune personnels affectés dans les cabinets ministériels en 2010	2018-12-13T20:51:40+00:00	0	DB
 encours-de-creances-de-la-france-sur-les-etats-etrangers-au-31-decembre-2018	Encours de créances de la France sur les Etats étrangers au 31 décembre 2018	2019-11-07T16:01:30+00:00	98	DGTRESOR
 encours-de-creances-de-la-france-sur-les-etats-etrangers-au-31-decembre-2017	Encours de créances de la France sur les Etats étrangers au 31 décembre 2017	2019-05-16T08:54:06+00:00	98	DGTRESOR
 poles-de-competitivite-nombre-de-projets-deposes-et-retenus-au-fonds-unique-inte	Pôles de compétitivité : nombre de projets déposés et retenus au Fonds Unique Interministériel (FUI) et leur financement par l’État et les collectivités locales, 2006-2018	2018-12-13T22:00:32+00:00	0	DGE
-plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2010	Projet de loi de finances pour 2014 (PLF 2014), jaune personnels affectés dans les cabinets ministériels en 2010	2018-12-13T20:51:40+00:00	0	DB
 base-documentaire-des-notes-communicables-de-la-dgfip	Base documentaire des notes communicables de la DGFiP	2023-09-26T09:51:08+00:00	0	DGFIP
 plan-de-relance-aap-industrie-annonces-au-18-12-donnees-mesure-x-filiere	Plan de relance - Projets industriels : Montant des investissements industriels et des aides Etat par mesure et par filière	2022-04-08T16:54:01.272000+00:00	53	DGE
 comptes-individuels-des-groupements-a-fiscalite-propre-fichier-global-2011-2015	Comptes individuels des groupements à fiscalité propre (fichier global) 2011-2015	2025-10-02T13:59:34+00:00	11874	DGFIP
@@ -21,17 +21,17 @@ comptes-individuels-des-communes-fichier-global-2010	Comptes individuels des com
 concession-de-service-public-gestion-et-le-developpement-du-domaine-internet-de-premier-niveau-pour-le-gf-guyane	Concession de service public - Désignation office enregistrement - Gestion et développement du domaine Internet de premier niveau pour le .gf (Guyane)	2026-03-24T13:43:27.819000+00:00	15	
 declaration-preliminaire-de-laide-publique-au-developpement-apd	Encours des créances de la France sur les États étrangers au 31 décembre 2016	2018-12-13T20:49:17+00:00	0	DGTRESOR
 liste-des-complements-alimentaires-declares-preprod	[Obsolète] Liste des compléments alimentaires déclarés	2020-09-01T19:37:12+00:00	0	DGCCRF
-plf2012-jaune-donnees-relations_financieres_ue-ressources-par-etat-membre	Projet de loi de finances pour 2012  (PLF 2012), jaune données relations financières union européenne   ressources par état membre	2018-12-13T20:38:20+00:00	31	DB
 plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2007	Projet de loi de finances pour 2014 (PLF 2014), jaune personnels affectés dans les cabinets ministériels en 2007	2018-12-13T20:52:31+00:00	0	DB
+plf2012-jaune-donnees-relations_financieres_ue-ressources-par-etat-membre	Projet de loi de finances pour 2012  (PLF 2012), jaune données relations financières union européenne   ressources par état membre	2018-12-13T20:38:20+00:00	31	DB
 top-8-depenses-fiscales-ir2021dlf-bces	Top 8 dépenses fiscales IR2021DLF BCES	2023-03-10T10:02:26+00:00	8	DB
 comptes-individuels-des-departements-fichier-global-2008	Comptes individuels des départements (fichier global) 2008	2025-10-06T15:47:36.417000+00:00	100	DGFIP
-comptes-individuels-des-departements-fichier-global-2009	Comptes individuels des départements (fichier global) 2009	2025-10-06T15:47:57.469000+00:00	100	DGFIP
-limpot-sur-le-revenu-par-collectivite-territoriale0	L'impôt sur le revenu par collectivité territoriale depuis 2004	2018-12-13T20:24:20+00:00	0	DGFIP
-parc-automobile-copie	Parc automobile par ministère en 2013	2018-12-13T20:40:07+00:00	0	DAE
-plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2012	Projet de loi de finances pour 2014 (PLF 2014), jaune personnels affectés dans les cabinets ministériels en 2012	2018-12-13T20:21:06+00:00	0	DB
 plf2012-jaune-donnees-relations_financieres_ue-recettes-budgetaires	Projet de loi de finances pour 2012  (PLF 2012), jaune données relations financières union européenne recettes budgétaires	2018-12-13T20:21:11+00:00	95	DB
 liste-des-8-depenses-fiscales-les-plus-couteuses-parmi-celles-relatives-a-limpot	Liste des 8 dépenses fiscales les plus coûteuses parmi celles relatives à l'impôt sur le revenu	2020-06-16T14:49:39+00:00	0	DB
+comptes-individuels-des-departements-fichier-global-2009	Comptes individuels des départements (fichier global) 2009	2025-10-06T15:47:57.469000+00:00	100	DGFIP
+plf2014-jaune-personnels-affectes-dans-les-cabinets-ministeriels-en-2012	Projet de loi de finances pour 2014 (PLF 2014), jaune personnels affectés dans les cabinets ministériels en 2012	2018-12-13T20:21:06+00:00	0	DB
 comptes-individuels-des-departements-et-des-collectivites-territoriales-uniques-fichier-global-2017-2018	Comptes individuels des départements et des collectivités territoriales uniques (fichier global) 2017-2018	2025-10-06T19:17:47.570000+00:00	201	DGFIP
+limpot-sur-le-revenu-par-collectivite-territoriale0	L'impôt sur le revenu par collectivité territoriale depuis 2004	2018-12-13T20:24:20+00:00	0	DGFIP
+parc-automobile-copie	Parc automobile par ministère en 2013	2018-12-13T20:40:07+00:00	0	DAE
 comptes-individuels-des-regions-fichier-global-2008	Comptes individuels des régions (fichier global) 2008	2025-10-02T11:39:09.359000+00:00	26	
 plf-2012-emplois-operateurs-de-letat	Projet de loi de finances pour 2012 (PLF 2012), emplois opérateurs de l'État	2018-12-13T20:47:10+00:00	224	DB
 agregats-comptables-des-collectivites-et-des-etablissements-publics-locaux-2023	Agrégats comptables des collectivités et des établissements publics locaux 2023	2024-12-06T10:32:28+00:00	106090	DGFIP
@@ -373,83 +373,83 @@ plan-cadastral-informatise	Plan Cadastral Informatisé	2018-12-13T20:44:30+00:00
 comptes-individuels-des-groupements-a-fiscalite-propre-fichier-global-2017	Comptes individuels des groupements à fiscalité propre (fichier global) 2017	2025-10-06T19:17:29.124000+00:00	1267	DGFIP
 plf-2023-v-and-m-tome-1-mn-presentes-dans-des-lois-adoptees-depuis-le-depot-du-d	PLF 2023 V&M tome 1 - MN presentes dans des lois adoptees depuis le depot du dernier PLF (2022)	2023-03-10T10:19:14+00:00	0	DB
 plf-2014-budget-general-bg-par-destination-et-nature	Projet de loi de finances pour 2014 (PLF 2014), budget général (BG)par destination et nature	2018-12-13T20:38:25+00:00	1218	DB
-lfi-2012-dotation-bg-titre-2-et-hors-titre-2-par-mission	Loi de finances initiale 2012, dotation budget général  (BG) titre 2 et hors titre 2 (H2 et HT2)  par mission (LFI 2012)	2018-12-13T20:32:02+00:00	125	DB
 projet-de-loi-de-finances-pour-2020-plf-2020-donnees-du-plf-et-des-annexes-proje	Projet de loi de finances pour 2020 (PLF 2020), données du PLF et des annexes projet annuel de performance (PAP)	2019-10-02T13:46:40+00:00	0	DB
 plf-2015-donnees-du-volet-performance	Projet de loi de finances pour 2015  (PLF 2015), données du volet performance	2018-12-13T20:31:13+00:00	2094	DB
+lfi-2012-dotation-bg-titre-2-et-hors-titre-2-par-mission	Loi de finances initiale 2012, dotation budget général  (BG) titre 2 et hors titre 2 (H2 et HT2)  par mission (LFI 2012)	2018-12-13T20:32:02+00:00	125	DB
 lfi-2013-dotation-cas-en-ae-cp-par-mission-programme-action-et-categorie	Loi de finances initiale 2013, dotation comptes d'affectation spéciale (CAS) en autorisations d'engagement (AE), crédits de paiement (CP) par mission, programme, action et catégorie (LFI 2013)	2018-12-13T20:46:58+00:00	78	DB
 plf-2024-vm-tome-2_depenses-fiscales	PLF 2024 VM tome 2_Dépenses fiscales	2023-10-03T18:51:04+00:00	468	DB
-loi-de-finances-initiale-pour-2016-lfi-2016	Loi de finances initiale pour 2016 (LFI 2016)	2018-12-13T20:31:54+00:00	0	DB
 execution-2010-des-comptes-de-concours-financiers-en-cp	Exécution du budget de l'État 2010, budget des comptes de concours financiers en crédits de paiement (CP) (PLR 2010)	2018-12-13T20:37:49+00:00	29	DB
+loi-de-finances-initiale-pour-2016-lfi-2016	Loi de finances initiale pour 2016 (LFI 2016)	2018-12-13T20:31:54+00:00	0	DB
 plf-2023-v-and-m-tome-1-fichier-annexe-vdef	PLF 2023 - V&M tome 1 - Fichier annexe vdef	2023-03-10T10:05:55+00:00	0	DB
-plf-2014-etp-du-budget-general-bg-par-ministere-et-categorie-demploi	Projet de loi de finances pour 2014  (PLF 2014),budget général (BG) par ministère et catégorie d'emploi 	2018-12-13T20:32:06+00:00	93	DB
 plf-2024-recettes-du-budget-general	PLF 2024 - Recettes du budget général	2023-10-03T18:47:32+00:00	148	DB
 loi-de-finances-initiale2011-comptes-de-concours-financiers	Loi de finances initiale 2011, comptes de concours financiers	2018-12-13T20:21:16+00:00	30	DB
-loi-de-finances-initiale-2011-comptes-daffectation-speciale-de-letat	Loi de finances initiale 2011, comptes d'affectation spéciale de l'Etat	2018-12-13T20:21:40+00:00	49	DB
-plf-2013-budget-general-par-programme	Projet de loi de finances pour 2013 (PLF 2013), budget général (BG) par programme	2018-12-13T20:31:38+00:00	125	DB
+plf-2014-etp-du-budget-general-bg-par-ministere-et-categorie-demploi	Projet de loi de finances pour 2014  (PLF 2014),budget général (BG) par ministère et catégorie d'emploi 	2018-12-13T20:32:06+00:00	93	DB
 projet-de-loi-de-finances-pour-2017-plf-2017-donnees-du-volet-performance	Projet de loi de finances pour 2017 (PLF 2017) , données du volet performance	2018-12-13T20:32:18+00:00	1999	DB
+loi-de-finances-initiale-2011-comptes-daffectation-speciale-de-letat	Loi de finances initiale 2011, comptes d'affectation spéciale de l'Etat	2018-12-13T20:21:40+00:00	49	DB
 bfn-2022-resultats-2022	[Old] France Num - Baromètre 2022 - Libellés des questions et résultats	2026-01-26T07:39:51.996000+00:00	358685	DGE
 execution-2012-du-budget-de-letat-en-cp-suivant-la-nomenclature-ministere-progra	Exécution du budget de l'État 2012, en crédits de paiement (CP) suivant la nomenclature ministère, programme, action et titre (PLR 2012)	2018-12-13T20:31:31+00:00	682	DB
 cube-stock-militaire-armee-droit-direct-1	Retraite - Cube stock militaire armée droit direct 1	2026-08-11T13:28:35.433000+00:00	132	DGFIP
-dgccrf-plaintes-des-consommateurs-par-operateurs-depuis-2008	Baromètre des réclamations depuis 2008 - Répartition des plaintes par opérateurs	2024-02-13T15:28:14.223000+00:00	128	DGCCRF
+plf-2013-budget-general-par-programme	Projet de loi de finances pour 2013 (PLF 2013), budget général (BG) par programme	2018-12-13T20:31:38+00:00	125	DB
 decp-2022-concessions-exclues	Données Essentielles de la Commande Publique - Arrêté du 22/12/2022 - Concessions (invalides)	2026-10-13T06:01:34.539000+00:00	178	DAJ
 projet-de-loi-de-reglement-2019-plr-20192	Projet de loi de règlement 2019 (PLR 2019)	2020-09-09T13:59:55+00:00	0	DB
-plf-2014-budget-general-bg-par-ministere-et-titre	Projet de loi de finances pour 2014 (PLF 2014), budget général (BG) par ministère et titre	2018-12-13T20:21:07+00:00	138	DB
-comptes-speciaux-non-dotes-decouverts-lfi2023	Comptes spéciaux non dotés Découverts LFI2023	2023-03-10T09:59:00+00:00	13	DB
+dgccrf-plaintes-des-consommateurs-par-operateurs-depuis-2008	Baromètre des réclamations depuis 2008 - Répartition des plaintes par opérateurs	2024-02-13T15:28:14.223000+00:00	128	DGCCRF
 projet-de-loi-de-finances-pour-2022-plf-2022-donnees-du-rapport-sur-limpact-envi	Projet de loi de finances pour 2022 (PLF 2022) - données du rapport sur l’impact environnemental du budget de l’État	2021-12-03T08:52:19+00:00	0	DB
 execution-2013-du-budget-de-letat-en-cp-et-ae-	Exécution du budget de l'État 2013, en autorisations d'engagement (AE) et des crédits de paiement (CP) (PLR 2013)	2018-12-13T20:46:38+00:00	0	DB
 effectifs-de-la-fonction-publique-de-letat	Effectifs de la fonction publique de l'État depuis 1998	2018-12-13T21:46:03+00:00	0	DGAFP
-plf-2012-recettes-fiscales-nettes	Projet de loi de finances pour 2012 (PLF 2012), recettes fiscales nettes	2018-12-13T20:21:43+00:00	0	DB
+plf-2014-budget-general-bg-par-ministere-et-titre	Projet de loi de finances pour 2014 (PLF 2014), budget général (BG) par ministère et titre	2018-12-13T20:21:07+00:00	138	DB
 plf-2013-comptes-de-concours-financiers-nomenclature-par-destination	Projet de loi de finances pour 2013 (PLF 2013),  comptes de concours financiers nomenclature par destination	2018-12-13T20:21:20+00:00	28	DB
 le-secteur-du-tourisme	Le secteur du tourisme	2018-12-13T22:00:53+00:00	0	DGE
+comptes-speciaux-non-dotes-decouverts-lfi2023	Comptes spéciaux non dotés Découverts LFI2023	2023-03-10T09:59:00+00:00	13	DB
 loi-de-finances-intiale-2011-budget-general	Loi de finances initiale 2011, budget général	2018-12-13T20:47:15+00:00	1271	DB
 execution-2012-du-budget-de-letat-en-ae-suivant-la-nomenclature-ministere-progra	Exécution du budget de l'État 2012, en autorisations d'engagement (AE) suivant la nomenclature ministère, programme, action et titre (PLR 2012)	2018-12-13T20:38:21+00:00	682	DB
-perimetre-des-interventions-economiques-analysees-dans-le-cadre-de-la-mission-ma	Périmètre des interventions économiques analysées dans le cadre de la mission MAP sur les aides aux entreprises	2018-12-13T22:01:13+00:00	660	DGE
 execution-2011-du-budget-des-comptes-daffectation-speciale-en-ae	Exécution du budget de l'État 2011, budget des comptes d'affectation spéciale en autorisations d'engagement (AE) (PLR 2011)	2018-12-13T20:21:52+00:00	46	DB
 lfi-2013-dotation-cas-titre-2-et-hors-titre-2-par-mission	Loi de finances initiale 2013, dotation comptes d'affectation spéciale (CAS) titre 2 et hors titre 2 par mission (LFI 2013)	2018-12-13T20:52:22+00:00	24	DB
 projet-de-loi-de-finances-initiale-pour-2021-lfi-2021	Projet de loi de finances initiale pour 2021 (LFI 2021)	2021-02-11T13:27:36+00:00	0	DB
+plf-2012-recettes-fiscales-nettes	Projet de loi de finances pour 2012 (PLF 2012), recettes fiscales nettes	2018-12-13T20:21:43+00:00	0	DB
 nomenclature-des-titres-comptabilite-budgetaire	Loi organique relative aux lois de finances, nomenclature des titres (comptabilité budgétaire) (LOLF)	2018-12-13T20:51:46+00:00	7	DB
+perimetre-des-interventions-economiques-analysees-dans-le-cadre-de-la-mission-ma	Périmètre des interventions économiques analysées dans le cadre de la mission MAP sur les aides aux entreprises	2018-12-13T22:01:13+00:00	660	DGE
 decp-v3-concessions-valides	Données Essentielles de la Commande Publique - Arrêté du 22/03/2019 - Concessions	2026-08-08T06:00:37.299000+00:00	252	DAJ
 cube-stock-gendarme-droit-direct-1	Retraite - Cube stock militaire gendarme droit direct 1	2026-08-11T13:27:32.591000+00:00	44	DGFIP
-lfi-2012-dotation-ccf-titre-2-et-hors-titre-2-par-ministere	Loi de finances initiale 2012, dotation comptes de concours financiers (CCF), titre 2 et hors titre 2 (H2 et HT2) par ministère (LFI 2012)	2018-12-13T20:46:52+00:00	21	DB
 plf-2013-budgets-annexes-nomenclature-par-destination	Projet de loi de finances pour 2013 (PLF 2013), budget annexes (BA) nomenclature par destination	2018-12-13T20:52:27+00:00	17	DB
-lfi-2013-dotation-bg-titre-2-et-hors-titre-2-par-programme	Loi de finances initiale 2013, dotation budget général  (BG) titre 2 et hors titre 2 (H2 et HT2) par programme (LFI 2013)	2018-12-13T20:21:42+00:00	1091	DB
+lfi-2012-dotation-ccf-titre-2-et-hors-titre-2-par-ministere	Loi de finances initiale 2012, dotation comptes de concours financiers (CCF), titre 2 et hors titre 2 (H2 et HT2) par ministère (LFI 2012)	2018-12-13T20:46:52+00:00	21	DB
 loi-de-finances-initiale-2011-dotations-par-ministere	Loi de finances initiale 2011, dotations par ministère	2018-12-13T20:22:05+00:00	124	DB
 execution-2011-du-budget-general-en-cp	Exécution du budget de l'État 2011, budget général en  crédits de paiement (CP) (PLR 2011)	2018-12-13T20:52:25+00:00	603	DB
+lfi-2013-dotation-bg-titre-2-et-hors-titre-2-par-programme	Loi de finances initiale 2013, dotation budget général  (BG) titre 2 et hors titre 2 (H2 et HT2) par programme (LFI 2013)	2018-12-13T20:21:42+00:00	1091	DB
 donnees-resf-plf-23	Donnees RESF PLF 23	2023-03-10T10:12:16+00:00	0	DB
 lfi-2013-fdc-des-cas-en-ae-cp	Loi de finances initiale 2013, fonds de concours (FDC) des comptes d'affectation spéciale (CAS) en autorisations d'engagement (AE), crédits de paiement (CP) (LFI 2013)	2018-12-13T20:38:27+00:00	78	DB
 annuaire-statistique-depuis-2004	Annuaire statistique depuis 2004	2018-12-13T20:44:01+00:00	0	DGFIP
 lfi-2012-dotation-bg-titre-2-et-hors-titre-2-par-programme	Loi de finances initiale 2012, dotation budget général  (BG) titre 2 et hors titre 2 (H2 et HT2)  par programme (LFI 2012)	2018-12-13T20:22:10+00:00	125	DB
+lfi-2012-dotation-ccf-en-ae-cp-par-mission-programme-action-et-categorie	Loi de finances initiale 2012, dotation comptes de concours financiers (CCF) en autorisations d'engagement (AE), crédits de paiement (CP) par mission, programme, action et catégorie (LFI 2012)	2018-12-13T20:38:29+00:00	27	DB
+lfi-2013-dotation-cas-en-ae-cp-par-mission-programme-action-et-titre	Loi de finances initiale 2013, dotation comptes d'affectation spéciale (CAS) en autorisations d'engagement (AE), crédits de paiement (CP) par mission,  programme, action et titre (LFI 2013)	2018-12-13T20:21:44+00:00	0	DB
 lfi-2013-dotation-ccf-en-ae-cp-par-mission-programme-action-et-titre	Loi de finances initiale 2013, dotation comptes de concours financiers (CCF) en autorisations d'engagement (AE), crédits de paiement (CP) par mission, programme, action et titre (LFI 2013)	2018-12-13T20:21:19+00:00	29	DB
-execution-2011-du-budget-des-comptes-daffectation-speciale-en-cp	Exécution du budget de l'État 2011, budget des comptes d'affectation spéciale en crédits de paiement (CP) (PLR 2011)	2018-12-13T20:51:48+00:00	45	DB
+execution-du-budget-de-letat-2011-par-ministere-comptes-des-concours-financiers0	Exécution du budget de l'État 2011, par ministère, comptes des concours financiers en autorisations d'engagement (AE) (PLR 2011)	2018-12-13T20:51:47+00:00	30	DB
 plf2012-jaune-donnees-creances-et-dettes-reciproques-entre-letat-et-les-regimes-	Projet de loi de finances pour 2012 (PLF 2012), jaune données créances et dettes réciproques entre l’État et les régimes de sécurité sociale	2018-12-13T20:51:45+00:00	31	DB
 projet-de-loi-de-finances-pour-2018-plf-2018-donnees-du-plf-et-des-annexes-proje	Projet de loi de finances pour 2018 (PLF 2018), données du PLF et des annexes projet annuel de performance (PAP)	2018-12-13T20:51:30+00:00	0	DB
+retraite-cube-generation-1	Retraite - Cube génération civil droit direct 1	2026-08-11T13:21:59.375000+00:00	126	DGFIP
 projet-de-loi-de-finances-pour-2021-plf-2021-donnees-du-rapport-sur-limpact-envi	Projet de loi de finances pour 2021 (PLF 2021), données du rapport sur l’impact environnemental du budget de l’État	2020-10-08T06:59:05+00:00	0	DB
+lfi-2012-dotation-ba-titre-2-et-hors-titre-2-par-programme	Loi de finances initiale 2012, dotation budgets annexes (BA) titre 2 et hors titre 2 (H2 et HT2)  par programme (LFI 2012) 	2018-12-13T20:51:49+00:00	6	DB
 plf2012-budget-general-par-ministere	Projet de loi de finances pour 2012 (PLF 2012), budget général (BG) par ministère	2018-12-13T20:21:14+00:00	125	DB
 plf-2016-donnees-du-volet-performance	Projet de loi de finances pour 2016 (PLF 2016), données du volet performance	2018-12-13T20:52:07+00:00	2035	DB
 pap-2023-objectifs-et-indicateurs-de-performance	Projets annuels de performances (PAP) 2023 - Objectifs et indicateurs de performance	2022-10-20T06:52:47+00:00	2128	DB
 lfi-2014-dotation-t2-ht2-par-mission-des-ccf	Loi de finances initiale 2014, dotation titre 2 et hors titre 2 (T2 et HT2 ) par mission des comptes de concours financiers (CCF) (LFI 2014)	2018-12-13T20:21:02+00:00	25	DB
-plf-2013-comptes-de-concours-financiers-par-mission	Projet de loi de finances pour 2013  (PLF 2013),  comptes de concours financiers par mission	2018-12-13T20:21:58+00:00	23	DB
+lfi-2012-dotation-bg-en-etp-par-ministere	Loi de finances initiale 2012, dotation budget général  (BG) en emplois temps plein (ETP) par ministère (LFI 2012)	2018-12-13T20:52:23+00:00	81	DB
 plf2012-rattachement-fonds-de-concours-2008-2010	Projet de loi de finances pour 2012 (PLF 2012), rattachement fonds de concours 2008, 2009, 2010	2018-12-13T20:37:48+00:00	0	DB
-plf-2014-budgets-annexes-ba-par-mission-et-titre	Projet de loi de finances pour 2014  (PLF 2014), budgets annexes (BA) par mission et titre	2018-12-13T20:21:50+00:00	5	DB
-projet-de-loi-de-finances-pour-2022-plf-2022-donnees-du-plf-et-des-annexes-proje	Projet de loi de finances pour 2022 (PLF 2022), données du PLF et des annexes projet annuel de performance (PAP)	2021-10-07T12:52:48+00:00	0	DB
-formes-geographiques-des-regions-en-svg	[Pour visualisation] Formes géographiques des régions en SVG	2021-12-09T13:43:00+00:00	18	
+plf-2014-budget-general-bg-par-mission-et-titre	Projet de loi de finances pour 2014 (PLF 2014), budget général (BG) par mission et titre	2018-12-13T20:46:43+00:00	138	DB
+execution-2011-du-budget-des-comptes-daffectation-speciale-en-cp	Exécution du budget de l'État 2011, budget des comptes d'affectation spéciale en crédits de paiement (CP) (PLR 2011)	2018-12-13T20:51:48+00:00	45	DB
 plf25-budget-vert-justification-des-credits-budgetaires-et-des-taxes-affectees	PLF 2025 - Budget Vert - Justification des crédits budgétaires et des taxes affectées	2024-12-23T18:00:49+00:00	180	DB
-lfi-2012-dotation-ccf-en-ae-cp-par-mission-programme-action-et-categorie	Loi de finances initiale 2012, dotation comptes de concours financiers (CCF) en autorisations d'engagement (AE), crédits de paiement (CP) par mission, programme, action et catégorie (LFI 2012)	2018-12-13T20:38:29+00:00	27	DB
-lfi-2013-dotation-cas-en-ae-cp-par-mission-programme-action-et-titre	Loi de finances initiale 2013, dotation comptes d'affectation spéciale (CAS) en autorisations d'engagement (AE), crédits de paiement (CP) par mission,  programme, action et titre (LFI 2013)	2018-12-13T20:21:44+00:00	0	DB
-execution-du-budget-de-letat-2011-par-ministere-comptes-des-concours-financiers0	Exécution du budget de l'État 2011, par ministère, comptes des concours financiers en autorisations d'engagement (AE) (PLR 2011)	2018-12-13T20:51:47+00:00	30	DB
-retraite-cube-generation-1	Retraite - Cube génération civil droit direct 1	2026-08-11T13:21:59.375000+00:00	126	DGFIP
 projet-de-loi-relatif-aux-resultats-de-la-gestion-et-portant-approbation-des-comptes-de-lannee-plrg-2023	Projet de loi relatif aux résultats de la gestion et portant approbation des comptes de l'année (PLRG) 2023	2025-05-22T20:30:34.899000+00:00	1	DGFIP
 lfi-2013-dotation-cas-titre-2-et-hors-titre-2-par-ministere	Loi de finances initiale 2013, dotation comptes d'affectation spéciale (CAS) titre 2 et hors titre 2 par ministère (LFI 2013)	2018-12-13T20:32:10+00:00	0	DB
-lfi-2012-dotation-ba-titre-2-et-hors-titre-2-par-programme	Loi de finances initiale 2012, dotation budgets annexes (BA) titre 2 et hors titre 2 (H2 et HT2)  par programme (LFI 2012) 	2018-12-13T20:51:49+00:00	6	DB
-lfi-2012-dotation-bg-en-etp-par-ministere	Loi de finances initiale 2012, dotation budget général  (BG) en emplois temps plein (ETP) par ministère (LFI 2012)	2018-12-13T20:52:23+00:00	81	DB
+plf-2013-comptes-de-concours-financiers-par-mission	Projet de loi de finances pour 2013  (PLF 2013),  comptes de concours financiers par mission	2018-12-13T20:21:58+00:00	23	DB
+plf-2014-budgets-annexes-ba-par-mission-et-titre	Projet de loi de finances pour 2014  (PLF 2014), budgets annexes (BA) par mission et titre	2018-12-13T20:21:50+00:00	5	DB
+projet-de-loi-de-finances-pour-2022-plf-2022-donnees-du-plf-et-des-annexes-proje	Projet de loi de finances pour 2022 (PLF 2022), données du PLF et des annexes projet annuel de performance (PAP)	2021-10-07T12:52:48+00:00	0	DB
 plf-2013-comptes-daffectation-speciale-par-mission	Projet de loi de finances pour 2013 (PLF 2013), comptes d'affectation spéciale par mission	2018-12-13T20:37:57+00:00	28	DB
+formes-geographiques-des-regions-en-svg	[Pour visualisation] Formes géographiques des régions en SVG	2021-12-09T13:43:00+00:00	18	
 lfi-2013-dotation-ccf-en-ae-cp-par-mission-programme-action-et-categorie	Loi de finances initiale 2013, dotation comptes de concours financiers (CCF), en autorisations d'engagement (AE), crédits de paiement (CP) par mission, programme, action et catégorie (LFI 2013)	2018-12-13T20:46:47+00:00	29	DB
-plf-2014-budget-general-bg-par-mission-et-titre	Projet de loi de finances pour 2014 (PLF 2014), budget général (BG) par mission et titre	2018-12-13T20:46:43+00:00	138	DB
-afa_eurobarometre_entreprises_carte	afa_eurobarometre_entreprises_carte	2026-09-11T14:40:41+00:00	264	
-dgddi-statistiques-de-consultation-des-supports-numeriques-de-la-douane	Statistiques de consultation des supports numériques de la douane	2026-06-12T08:42:02.846000+00:00	109	DGDDI
 execution-2010-du-budget-general-en-cp	Exécution du budget de l'État 2010, budget général en  crédits de paiement (CP) (PLR 2010)	2018-12-13T20:47:12+00:00	656	DB
 lfi-2014-dotation-t2-ht2-par-mission-du-bg	Loi de finances initiale 2014, dotation T2 , HT2 par mission du  budget général (BG) (LFI 2014)	2018-12-13T20:31:23+00:00	138	DB
 etpt-par-ministere-mission-programme-pour-le-bg-et-les-ba-lfi-2023	ETPT par ministere,mission, programme pour le BG et les BA LFI 2023	2023-03-10T09:54:49+00:00	242	DB
+dgddi-statistiques-de-consultation-des-supports-numeriques-de-la-douane	Statistiques de consultation des supports numériques de la douane	2026-06-12T08:42:02.846000+00:00	109	DGDDI
+afa_eurobarometre_entreprises_carte	afa_eurobarometre_entreprises_carte	2026-09-11T14:40:41+00:00	264	
 fiscalite-locale-des-particuliers-geo	Fiscalité locale des particuliers - Géo	2026-05-21T17:58:01.508000+00:00	174668	DGFIP
 projet-de-loi-de-finances-pour-2020-plf-2020-donnees-de-lannexe-jaune-effort-fin	Projet de loi de finances pour 2020 (PLF 2020), données de l'annexe Jaune « Effort financier de l’État en faveur des associations »	2019-10-19T11:59:19+00:00	92114	DB
 impots-locaux-fichier-de-recensement-des-elements-dimposition-a-la-fiscalite-dir	Impôts locaux : fichier de recensement des éléments d'imposition à la fiscalité directe locale (REI)	2026-05-11T07:52:00+00:00	0	DGFIP
@@ -482,7 +482,6 @@ lfi-2014-dotation-t2-ht2-par-ministere-du-bg	Loi de finances initiale 2014, dota
 comptes-individuels-des-communes-fichier-global-2019-2020	Comptes individuels des communes (fichier global) 2019-2020	2025-10-07T15:54:22.242000+00:00	69931	DGFIP
 nomenclature-par-destination-lfi-2023	Nomenclature par destination LFI 2023	2023-03-10T09:50:12+00:00	2499	DB
 pap2023-programme-titre-pluriannuel	PAP2023 Programme Titre Pluriannuel	2023-03-10T10:08:59+00:00	415	DB
-afa-eurobarometre-evolution-tolerance-corruption-france	AFA Eurobarometre evolution tolerance corruption France	2026-08-21T13:28:18+00:00	15	AFA Eurobarometre
 delta_deliberation_tam_17_01_23	Taxe d'aménagement-Eléments de taxation votés par les collectivités à partir de 2022	2026-03-03T08:06:51+00:00	1152960	DGFIP
 balances-comptables-des-etablissements-publics-locaux-depuis-2010	Balances comptables des établissements publics locaux depuis 2010	2026-07-13T16:01:39+00:00	8374498	DGFIP
 deliberations-de-fiscalite-directe-locale-des-groupements-a-fiscalite-propre-2026-hors-taux	Délibérations de fiscalité directe locale des groupements à fiscalité propre 2026 (hors taux)	2026-07-24T15:05:22+00:00	1368	DGFIP
@@ -491,13 +490,14 @@ projet-de-loi-de-reglement-2019-plr-2019	Projet de loi de règlement 2018 (PLR 2
 lfi-2014-dotation-t2-ht2-par-ministere-des-ccf	Loi de finances initiale 2014, dotation  titre 2 et hors titre 2 (T2 et HT2 ) par ministère des comptes de concours financiers (CCF) (LFI 2014)	2018-12-13T20:46:39+00:00	25	DB
 bfn-resultats-2025	France Num - Baromètre 2025 - Libellés des questions et résultats	2026-08-26T10:52:03.540000+00:00	1409946	DGE
 comptes-individuels-des-communes-fichier-global-2008	Comptes individuels des communes (fichier global) 2000 - 2008	2025-10-06T15:42:23.318000+00:00	329985	DGFIP
+dgccrf-panorama-des-textes-pythie	DGCCRF - Panorama des textes (PYTHIE)	2026-10-02T07:50:58.543000+00:00	16207	DGCCRF
+afa-eurobarometre-evolution-tolerance-corruption-france	AFA Eurobarometre evolution tolerance corruption France	2026-08-21T13:28:18+00:00	15	AFA Eurobarometre
 marches-publics-conclus-recenses-sur-la-plateforme-des-achats-de-letat-	Marchés publics conclus recensés sur la plateforme des achats de l’Etat depuis 2013	2026-01-26T07:35:01.039000+00:00	53604	DAE
 adresses-des-services-douaniers-ouverts-au-public0	Annuaire des services douaniers ouverts au public	2020-01-31T12:15:13.349000+00:00	313	DGDDI
 plf-2014-comptes-daffectation-speciale-cas-et-comptes-de-concours-financier-ccf1	Projet de loi de finances pour 2014  (PLF 2014), des Comptes d'affectation spéciale (CAS) et Comptes de concours financier (CCF) par destination et nature	2018-12-13T20:37:47+00:00	118	DB
 plf2012-budget-general-par-programme	Projet de loi de finances pour 2012 (PLF 2012), budget général (BG) par programme	2018-12-13T20:21:11+00:00	125	DB
 lfi-2012-dotation-bg-en-etp-par-programme	Loi de finances initiale 2012, dotation budget général  (BG) en emplois temps plein (ETP) par programme (LFI 2012)	2018-12-13T20:47:09+00:00	1102	DB
 comptes-individuels-des-groupements-a-fiscalite-propre-fichier-global-2020	Comptes individuels des groupements à fiscalité propre (fichier global) 2020	2025-10-06T19:17:36.265000+00:00	1267	DGFIP
-dgccrf-panorama-des-textes-pythie	DGCCRF - Panorama des textes (PYTHIE)	2026-10-02T07:50:58.543000+00:00	16207	DGCCRF
 balances-comptables-des-syndicats-depuis-2010	Balances comptables des syndicats depuis 2010	2026-07-13T15:49:24+00:00	5989163	DGFIP
 delta_deliberation_ts_abattement	Abattements taxe de séjour_Données DELTA à partir de 2024	2026-06-29T12:47:10.074000+00:00	4424	DGFIP
 balances-comptables-des-communes-en-2013	Balances comptables des communes en 2013	2018-12-13T21:04:13+00:00	7353195	DGFIP
@@ -533,7 +533,6 @@ projet-de-loi-de-finances-pour-2017-plf-2017-jaune-effort-financier-de-letat-en-
 lfi-2014-dotation-en-etpt-par-ministere-des-budgets-annexes-de-la-loi-de-finance	Loi de finances initiale 2014, dotation en emplois temps plein  travaillé (ETPT) par ministère des budgets annexes (LFI 2014)	2018-12-13T20:37:45+00:00	11	DB
 lfi-2014-dotation-t2-ht2-par-ministere-des-ba	Loi de finances initiale 2014, dotation titre 2 et hors titre 2 (T2 et HT2 ) par ministère des budgets annexes  (BA) (LFI 2014)	2018-12-13T20:37:43+00:00	5	DB
 comptes-individuels-des-groupements-a-fiscalite-propre-fichier-global-2018-2019	Comptes individuels des groupements à fiscalité propre (fichier global) 2018-2019	2025-10-02T13:54:12+00:00	2546	DGFIP
-plf-2024-depenses-2024-selon-nomenclatures-destination-et-nature	PLF 2024 - Dépenses 2024 selon nomenclatures destination et nature	2023-10-03T18:39:10+00:00	2392	DB
 cessions-immobilieres-de-letat-copie	Cessions immobilières de l’Etat depuis 2013	2018-12-13T20:32:16+00:00	4979	DGFIP
 balances-comptables-des-collectivites-et-des-etablissements-publics-locaux-avec-la-presentation-croisee-nature-fonction-2025	Balances comptables des collectivités et des établissements publics locaux avec la présentation croisée nature-fonction 2025	2026-07-13T16:06:26+00:00	5326293	DGFIP
 liste-des-etablissements-labellises-tourisme-et-handicap	[To-Delete]Liste des établissements labellisés Tourisme et Handicap	2020-12-15T10:12:39+00:00	3760	DGE
@@ -541,6 +540,8 @@ taxe-sur-les-salaires-les-declarations-nationales	Taxe sur les salaires : les d�
 plf25-donnees-de-l-annexe-jaune-effort-financier-de-l-etat-en-faveur-des-associations	PLF 2025 - Données de l'annexe Jaune « Effort financier de l’État en faveur des associations »	2024-12-23T18:05:29+00:00	112722	DB
 performance-execution-cible-n-1-du-budget-de-l-etat-jusqu-au-niveau-sous-indicateur	Performance : exécution et cible N+1 du Budget de l’Etat jusqu’au niveau sous indicateur	2025-07-02T10:31:08+00:00	6531	DB
 projet-de-loi-relatif-aux-resultats-de-la-gestion-et-portant-approbation-des-comptes-de-lannee-plrg-2025	Projet de loi relatif aux résultats de la gestion et portant approbation des comptes de l'année (PLRG) 2025	2024-04-17T16:30:01+00:00	1	DGFIP
+tableau-mensuel-des-taux-de-chancellerie	DGFIP - Tableau mensuel des taux de chancellerie	2025-10-23T10:48:31+00:00	142	DGFIP
+plf-2024-depenses-2024-selon-nomenclatures-destination-et-nature	PLF 2024 - Dépenses 2024 selon nomenclatures destination et nature	2023-10-03T18:39:10+00:00	2392	DB
 agregats-comptables-des-collectivites-et-des-etablissements-publics-locaux-2019-	Agrégats comptables des collectivités et des établissements publics locaux 2020	2020-12-17T14:40:57+00:00	111284	DGFIP
 les-professions-liberales	Les professions libérales	2018-12-13T22:01:17+00:00	0	DGE
 fermeture-reseau-cuivre	Fermeture du réseau cuivre	2025-10-20T12:26:18+00:00	35305	DGE
@@ -550,7 +551,6 @@ projet-de-loi-de-reglement-2019-plr-20190	Projet de loi de règlement 2018 (PLR 
 lfi-2014-dotation-en-etpt-par-programme-du-budget-general-de-la-loi-de-finances-	Loi de finances initiale 2014, dotation en emplois temps plein travaillé (ETPT) par programme du budget général (LFI 2014)	2018-12-13T20:37:44+00:00	1122	DB
 lfi-2013-dotation-bg-en-etp-par-programme	Loi de finances initiale 2013, dotation budget général (BG) en emplois temps plein (ETP) par programme (LFI 2013)	2018-12-13T20:37:54+00:00	1091	DB
 lfi-2013-dotation-ba-titre-2-et-hors-titre-2-par-ministere	Loi de finances initiale 2013, dotation budgets annexes  (BA) titre 2 et hors titre 2 (H2 et HT2) par ministère (LFI 2013)	2018-12-13T20:46:59+00:00	5	DB
-tableau-mensuel-des-taux-de-chancellerie	DGFIP - Tableau mensuel des taux de chancellerie	2025-10-23T10:48:31+00:00	142	DGFIP
 dessins-et-modeles-francais-2020	Dessins et modèles français 2020	2021-08-19T14:19:55.797000+00:00	10564	INPI
 balances-comptables-des-collectivites-et-des-etablissements-publics-locaux-avec2	Balances comptables des collectivités et des établissements publics locaux avec la présentation croisée nature-fonction 2015	2019-07-02T09:47:21.823000+00:00	4411227	DGFIP
 balances-comptables-des-collectivites-et-des-etablissements-publics-locaux-avec5	Balances comptables des collectivités et des établissements publics locaux avec la présentation croisée nature-fonction 2012	2019-07-02T15:57:11.390000+00:00	4126916	DGFIP
@@ -586,7 +586,6 @@ projet-de-loi-de-finances-initiale-pour-2020-lfi-2020	Projet de loi de finances 
 loi-de-finances-initiale-2011-emplois-temps-plein	Loi de finances initiale 2011, emplois temps plein	2018-12-13T20:21:10+00:00	1136	DB
 interne-accueil-kpi	[Admin] KPI affichés sur la page d'accueil	2026-10-13T11:13:17.507000+00:00	5	Bercy Hub - Mission Open Data
 comptes-individuels-des-communes-fichier-global-2025	Comptes individuels des communes (fichier global) 2025	2026-09-24T12:47:20.769000+00:00	34860	DGFIP
-execution-2010-du-budget-des-comptes-daffectation-speciale-en-ae	Exécution du budget de l'État 2010, budget des  comptes d'affectation spéciale en autorisations d'engagement (AE) (PLR 2010)	2018-12-13T20:31:35+00:00	34	DB
 apd-france	Aide publique au développement de la France (2018-2020)	2022-08-03T09:43:30+00:00	41602	DGTRESOR
 plan-de-relance-aap-industrie-annonces-au-18-12-donnees-par-region	Plan de relance - Projets industriels : Montant des investissements industriels et des aides Etat par mesure et par type d'entreprise	2022-04-08T16:52:53.055000+00:00	45	DGE
 balances-comptables-des-collectivites-et-des-epl-avec-fonction-2023	Balances comptables des collectivités et des établissements publics locaux avec la présentation croisée nature-fonction 2023	2024-12-06T13:57:17+00:00	5022191	DGFIP
@@ -595,8 +594,10 @@ projets-dachats-publics	Projets d'achats publics	2026-10-10T23:00:29.908000+00:0
 loi-de-finances-initiale-pour-2019-lfi-2019	Loi de finances initiale pour 2019 (LFI 2019)	2019-03-20T08:51:51+00:00	178	DB
 comptes-individuels-des-collectivites	Comptes individuels des collectivités	2021-09-14T14:12:27+00:00	0	DGFIP
 plf25-depenses-2025-des-comptes-speciaux-non-dotes	PLF 2025 - Dépenses 2025 des comptes spéciaux non dotés	2024-10-11T11:46:31+00:00	55	DB
+plf2012-jaune-donnees-operateurs-epst-cofi-2010	Projet de loi de finances pour 2012  (PLF 2012), jaune données opérateurs établissement à caractère scientifique et technique (EPST) compte financier (CoFi)  2010	2018-12-13T20:37:50+00:00	9	DB
+execution-2010-du-budget-des-comptes-daffectation-speciale-en-ae	Exécution du budget de l'État 2010, budget des  comptes d'affectation spéciale en autorisations d'engagement (AE) (PLR 2010)	2018-12-13T20:31:35+00:00	34	DB
+fiscalite-locale-des-entreprises	Fiscalité locale des professionnels	2026-05-22T12:48:19.990000+00:00	174668	DGFIP
 agregats-comptables-des-collectivites-et-des-etablissements-publics-locaux-2021	Agrégats comptables des collectivités et des établissements publics locaux 2021	2022-12-19T09:27:43+00:00	109400	DGFIP
-balances-comptables-des-collectivites-et-des-etablissements-publics-locaux-avec8	Balances comptables des collectivités et des établissements publics locaux avec la présentation croisée nature-fonction 2021	2022-12-22T16:43:32+00:00	4622809	DGFIP
 plf-2015-jaune-effort-financier-de-letat-en-faveur-des-associations-	Projet de loi de finances pour 2015 (PLF 2015), jaune effort financier de l’État en faveur des associations	2018-12-13T20:51:58+00:00	28147	DB
 rappelconso-v2-gtin-espaces	RappelConso V2 - Rappels de produits	2026-10-13T11:05:45.080000+00:00	18972	DGCCRF
 lfi-2013-fdc-du-bg-en-ae-cp	Loi de finances initiale 2013, fonds de concours (FDC) du  budget général (BG) en autorisations d'engagement (AE), crédits de paiement (CP) (LFI 2013)	2018-12-13T20:38:39+00:00	1284	DB
@@ -604,9 +605,8 @@ plf-2013-comptes-daffectation-speciale-par-programme	Projet de loi de finances p
 plf25-recettes-des-budgets-annexes	PLF 2025 - Recettes des budgets annexes	2024-10-11T11:53:15+00:00	18	DB
 fichier-des-competences-territoriales-des-services-dgfip	Fichier des compétences territoriales des services DGFIP	2026-09-08T21:19:09.816000+00:00	40252650	DGFIP
 comptes-individuels-des-departements-et-des-collectivites-territoriales-uniques-fichier-global-2025	Comptes individuels des départements et des collectivités territoriales uniques (fichier global) 2025	2026-09-24T12:50:46.496000+00:00	98	
-plf2012-jaune-donnees-operateurs-epst-cofi-2010	Projet de loi de finances pour 2012  (PLF 2012), jaune données opérateurs établissement à caractère scientifique et technique (EPST) compte financier (CoFi)  2010	2018-12-13T20:37:50+00:00	9	DB
-fiscalite-locale-des-entreprises	Fiscalité locale des professionnels	2026-05-22T12:48:19.990000+00:00	174668	DGFIP
 deliberations-de-fiscalite-directe-locale-des-groupements-a-fiscalite-propre-200	Délibérations de fiscalité directe locale des groupements à fiscalité propre 2023 (hors taux)	2023-10-10T09:36:54+00:00	1374	DGFIP
+balances-comptables-des-collectivites-et-des-etablissements-publics-locaux-avec8	Balances comptables des collectivités et des établissements publics locaux avec la présentation croisée nature-fonction 2021	2022-12-22T16:43:32+00:00	4622809	DGFIP
 balances-comptables-des-communes-en-2011	Balances comptables des communes en 2011	2018-12-13T21:04:13+00:00	7230244	DGFIP
 projet-de-loi-de-reglement-2019-plr-20191	Projet de loi de règlement 2018 (PLR 2018)	2019-06-27T17:00:37+00:00	668	DB
 plf2012-jaune-donnees-associations-subventionnees	Projet de loi de finances pour 2012  (PLF 2012), jaune données associations subventionnées 	2018-12-13T20:32:00+00:00	37679	DB
@@ -620,5 +620,5 @@ decp-v3-marches-valides	Données Essentielles de la Commande Publique - Arrêté
 impots-locaux0	Impôts locaux	2018-12-13T20:58:59+00:00	0	DGFIP
 plf-2014-comptes-daffectation-speciale-cas-et-comptes-de-concours-financier-ccf0	Projet de loi de finances pour 2014  (PLF 2014), des Comptes d'affectation spéciale (CAS) et Comptes de concours financier (CCF) par mission et titre	2018-12-13T20:32:09+00:00	53	DB
 lfi-2013-dotation-ccf-titre-2-et-hors-titre-2-par-programme	Loi de finances initiale 2013, dotation comptes de concours financiers (CCF) titre 2 et hors titre 2 (H2 et HT2) par programme (LFI 2013)	2018-12-13T20:21:18+00:00	24	DB
+prix-controle-technique	Prix des controles techniques	2026-10-13T11:25:33.292000+00:00	146179	DGCCRF
 prix-des-carburants-en-france-flux-instantane-v2	Prix des carburants en France - Flux instantané - v2	2026-10-13T11:47:55.873000+00:00	9818	DGCCRF
-prix-controle-technique	Prix des controles techniques	2026-10-13T11:49:04.435000+00:00	146179	DGCCRF

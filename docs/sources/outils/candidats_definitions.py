@@ -260,8 +260,9 @@ for code, (lib, dim) in WGI.items():
         ajouter(f"{lib} — WGI ({unite})", dim, "Banque mondiale — Worldwide Governance Indicators",
                 f"api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_{code}.{suffixe}?source=3", unite, "haut", "non",
                 "resultat", "oui", "non",
-                f"Indice composite agrégeant 30+ sources d'experts et d'enquêtes (D18) ; pas de valeur en 1997, 1999, 2001 ; {note}",
-                s, dim_v1="hors_grille" if code == "RQ" else None)
+                f"Indice composite agrégeant 30+ sources d'experts et d'enquêtes (D18) ; pas de valeur en 1997, 1999, 2001 ; {note}"
+                + (" ; qualité de la réglementation : surtout climat des affaires, lien faible avec la prospérité ressentie" if code == "RQ" else ""),
+                s)
 
 # ============================================================================ Our World in Data (relais de V-Dem, Freedom House, etc.)
 OWID = "Our World in Data (relais)"
@@ -333,7 +334,8 @@ for slug, col, lib, dim, sens, decl, typ, comp, doub, ref, com in OWID_LIGNES:
     s = serie(f"owid__{slug}", id=col or "FRA")
     nom_col = (col or "").split("#")[-1] or s["libelle_source"]
     ajouter(lib, dim, OWID, f"https://ourworldindata.org/grapher/{slug}.csv (colonne {nom_col})", "indice ou % (voir source)",
-            sens, decl, typ, comp, doub, com, s, niveau="2", ref_doublon=ref)
+            sens, decl, typ, comp, doub, com, s, niveau="2", ref_doublon=ref,
+            dim_v1="liens_bien_etre" if slug == "self-reported-trust-attitudes" else None)  # confiance interpersonnelle (R4)
 
 CO2 = [("co2_per_capita", "Émissions territoriales de CO2 fossile par habitant (Global Carbon Project via OWID)", "partiel", "Eurostat env_air_gge"),
        ("consumption_co2_per_capita", "Émissions de CO2 fondées sur la consommation par habitant (Global Carbon Project via OWID)", "partiel", "INSEE 010595988"),

@@ -1,7 +1,7 @@
 # Sources de données hors INSEE et Eurostat — fiches par source (mission M04, tâche T1)
 
 Version phase 2 — 13 octobre 2026 — agent de mission M04. Phase 1 : fiches par source (§0 à §6). **Phase 2 : indicateurs candidats (§7)**, avec la réponse aux questions de D21 et à la condition posée pour `liens_bien_etre` et `democratie` par le dossier du gel 1.
-Tableaux : `docs/sources/10_sources_inventaire.csv` (T2) et `docs/sources/10_indicateurs_candidats_hors_insee_eurostat.csv` (T3, 404 lignes). Preuves : `docs/sources/verif_acces/` (accès, §0.3) et `docs/sources/series/` (séries listées par le robot, §7.1).
+Tableaux : `docs/sources/10_sources_inventaire.csv` (T2) et `docs/sources/10_indicateurs_candidats_hors_insee_eurostat.csv` (T3, 405 lignes). Preuves : `docs/sources/verif_acces/` (accès, §0.3) et `docs/sources/series/` (séries listées par le robot, §7.1).
 
 ---
 
@@ -441,7 +441,7 @@ Tableau de phase 1 ; la synthèse de phase 2, fondée sur les séries réellemen
 - **Fréquence** : `annuelle` (au plus deux années isolées manquantes, moins de 15 % de la période, années manquantes citées en commentaire), `irreguliere` (D17 : élections, PISA, enquêtes sur les valeurs, séries Gallup groupées), `ponctuelle` (1 point, gardé seulement quand c'est la seule mesure d'un concept How's Life).
 - **Non retenu dans la liste** : séries à une seule édition (Baromètre de Santé publique France 2024, Wellcome Global Monitor 2020 via OWID, TIMSS 2015), déchets SDES (biennaux 2016-2022 par activité, doublon Eurostat), variables locales de l'ITDD, sous-indicateurs de montagne de l'ODD 15, flux d'aide publique au développement, indicateurs de « moyens » sans lien direct avec la prospérité (densité de médecins, logements sociaux).
 
-### 7.2 Chiffres clés (404 lignes, dont 34 ventilations)
+### 7.2 Chiffres clés (405 lignes, dont 34 ventilations)
 
 Par dimension **v0** (charte §4) :
 
@@ -452,14 +452,14 @@ Par dimension **v0** (charte §4) :
 | egalites | 41 | 4 | 6 | 10 | 15 | 20 | 18 | 4 | 9 |
 | liens_bien_etre | 36 | 12 | 22 | 0 | 14 | 9 | 9 | 3 | 10 |
 | logement_cadre_vie | 20 | 0 | 2 | 0 | 1 | 18 | 16 | 3 | 7 |
-| niveau_de_vie | 18 | 0 | 2 | 1 | 1 | 16 | 14 | 2 | 12 |
+| niveau_de_vie | 19 | 0 | 2 | 1 | 1 | 17 | 15 | 2 | 13 |
 | planete | 73 | 7 | 0 | 7 | 3 | 62 | 53 | 9 | 31 |
 | sante | 30 | 2 | 11 | 0 | 8 | 17 | 13 | 8 | 10 |
 | securite_confiance | 52 | 4 | 21 | 0 | 5 | 28 | 27 | 1 | 13 |
 | travail | 14 | 2 | 2 | 1 | 3 | 8 | 5 | 4 | 7 |
-| **total** | **404** | **34** | **79** | **83** | **88** | **247** | **217** | **45** | **114** |
+| **total** | **405** | **34** | **79** | **83** | **88** | **248** | **218** | **45** | **115** |
 
-Par dimension **v1 proposée** (dossier du gel 1) : `democratie` 101 ; `planete` 68 ; `securite` 53 ; `egalites` 41 ; `liens_bien_etre` 38 (dont 12 ventilations) ; `logement_cadre_vie` 28 ; `sante` 28 ; `niveau_de_vie` 16 ; `education` 16 ; `travail` 14 ; hors grille 1. Critères chiffrés satisfaits : democratie 60, planete 57, securite 31, logement_cadre_vie 25, egalites 20, sante 15, niveau_de_vie 14, liens_bien_etre 9, travail 8, education 7.
+Par dimension **v1 proposée** (dossier du gel 1) : `democratie` 101 ; `planete` 68 ; `securite` 53 ; `egalites` 41 ; `liens_bien_etre` 38 (dont 12 ventilations) ; `logement_cadre_vie` 28 ; `sante` 28 ; `niveau_de_vie` 17 ; `education` 16 ; `travail` 14 ; hors grille 1. Critères chiffrés satisfaits : democratie 60, planete 57, securite 31, logement_cadre_vie 25, egalites 20, sante 15, niveau_de_vie 15, liens_bien_etre 9, travail 8, education 7.
 
 \* Hors ventilations : série annuelle, au moins 10 points depuis 2000, dernière valeur ≥ 2020. Ce compte ne juge ni la pertinence, ni le sens, ni la redondance : en démocratie, 31 lignes viennent de V-Dem (une même famille d'indices et de questions d'experts, hors participation électorale), 12 des WGI (6 concepts sur deux échelles), 10 de Freedom House, 9 du WJP, 6 de RSF. Les colonnes « déclaratifs », « composites », « non annuels » et « doublon » excluent les ventilations.
 
@@ -477,12 +477,12 @@ Par dimension **v1 proposée** (dossier du gel 1) : `democratie` 101 ; `planete`
 - Même constat pour le World Happiness Report : origine Gallup et moyenne triennale confirmées par les métadonnées OWID (robot, vague 7) ; données de la figure 2.1 « disponibles gratuitement », sans licence explicite.
 
 ### 7.5 Réponses aux questions de D21
-- **Comptes et clés (Webstat, Global Footprint Network)** : aucune clé n'est nécessaire à ce stade. Empreinte écologique : classeur de la Footprint Data Foundation téléchargeable sans inscription (France 1961-2025). Endettement des ménages : BCE (SDMX sans clé ; série longue redemandée au robot en vague 8) et OCDE How's Life (`15_6`). Surendettement : Banque de France via l'ITDD (dossiers déposés 2014-2024). Webstat reste utile seulement pour l'épargne de précaution détaillée.
+- **Comptes et clés (Webstat, Global Footprint Network)** : aucune clé n'est nécessaire à ce stade. Empreinte écologique : classeur de la Footprint Data Foundation téléchargeable sans inscription (France 1961-2025). Endettement des ménages : BCE (SDMX sans clé ; série trimestrielle 1999T4-2026T1 vérifiée par le robot en vague 8) et OCDE How's Life (`15_6`). Surendettement : Banque de France via l'ITDD (dossiers déposés 2014-2024). Webstat reste utile seulement pour l'épargne de précaution détaillée.
 - **Veille mensuelle** : le script vérifie à chaque exécution les 123 URL de `urls.csv` et liste les séries de la vague la plus récente de `series.csv` (option `M04_SERIES_SEULEMENT=1` pour sauter la vérification) ; le jour où il tourne sur `main`, il faudra soit regrouper toutes les ressources dans une même vague, soit ajouter une vague « veille ».
 - **Ventilations** : 34 lignes marquées (sexe pour 10 séries How's Life, soit 20 lignes ; secteur pour les émissions Citepa, 7 ; femmes pour 3 indicateurs ODD ; sexe pour le taux d'activité PNUD, 2 ; origine sociale pour la réussite au baccalauréat, 2).
 
 ### 7.6 Doublons avec INSEE et Eurostat
-Sur 370 lignes hors ventilations : **45 `oui`** (même définition : essentiellement EU-SILC, LFS et inventaires d'émissions relayés par l'OCDE ou le Citepa, CPI déjà diffusé par Eurostat `sdg_16_50`), **114 `partiel`** (concept proche, source ou champ différents) et **211 `non`**. L'identifiant du doublon est donné en commentaire (`doublon : INSEE … + Eurostat …`) : 68 identifiants distincts, cités 147 fois, tous présents dans les catalogues M01/M02 (contrôle automatique). Pour quelques concepts proches (R&D, ratio de Palma, détention provisoire, surendettement, eau non conforme, nitrates), l'identifiant INSEE n'a pas été retrouvé dans le repérage M01 : le commentaire porte « identifiant à préciser » ou « non retrouvé ».
+Sur 371 lignes hors ventilations : **45 `oui`** (même définition : essentiellement EU-SILC, LFS et inventaires d'émissions relayés par l'OCDE ou le Citepa, CPI déjà diffusé par Eurostat `sdg_16_50`), **115 `partiel`** (concept proche, source ou champ différents) et **211 `non`**. L'identifiant du doublon est donné en commentaire (`doublon : INSEE … + Eurostat …`) : 68 identifiants distincts, cités 147 fois, tous présents dans les catalogues M01/M02 (contrôle automatique). Pour quelques concepts proches (R&D, ratio de Palma, détention provisoire, surendettement, eau non conforme, nitrates), l'identifiant INSEE n'a pas été retrouvé dans le repérage M01 : le commentaire porte « identifiant à préciser » ou « non retrouvé ».
 
 ### 7.7 Limites
 - Les définitions (sens, déclaratif, type, doublon, dimension) sont des propositions d'agent, à revoir en M05 ; le sens est `ambigu` pour 19 lignes (délinquance enregistrée sensible au signalement, votes blancs, aidance…).

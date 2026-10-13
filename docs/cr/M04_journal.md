@@ -106,3 +106,9 @@ Lancement par la session mère le 13/10/2026 (agent neuf, décision D13). Lectur
 - `docs/sources/autres_sources.md` : §3 mis à jour (Gallup, WJP 2025, Footprint Data Foundation) et **§7 ajouté** (méthode, chiffres par dimension v0 et v1, apports par dimension, origine Gallup et réutilisation, réponses à D21, doublons, limites).
 - `docs/sources/10_sources_inventaire.csv` : 74 sources (ajout `footprint_data_foundation`, niveau 2, `verifie`) ; mises à jour WJP, GFN, SSMSI, OWID co2, Ameli, DREES, WID, WHR, Gallup, Eurobaromètre, IDEA, PNUD, Citepa.
 - **Vague 8** préparée (série longue BCE de la dette des ménages) ; un premier lancement manuel est parti avant la poussée et a rejoué la vague 7 (sans dommage) ; relancé (run 38416125768).
+
+## 2026-10-13 16:58 — Sous-tâche 12 : vague 8, clôture de la phase 2
+
+- **Vague 8** (run 38416125768) : série BCE des crédits aux ménages rapportés au revenu disponible brut ajusté, trimestrielle **1999T4–2026T1** (106 trimestres) ; ajoutée à la liste (405 lignes au total, 248 satisfaisant les critères chiffrés §3.4 ; doublons 45 oui, 115 partiel, 211 non).
+- **Compte rendu** : `docs/cr/M04_compte_rendu.md` (copié dans le Projet sous `claude/cr/M04_compte_rendu.md`) ; liste des candidats déposée dans le Projet (`claude/10_indicateurs_candidats_hors_insee_eurostat.csv`) ; fiches mises à jour (`claude/10_sources_hors_insee_eurostat.md`, `claude/10_sources_inventaire.csv`).
+- Tout est commité et poussé sur `m04-sources` ; description de la PR #4 mise à jour. **Phase 2 terminée.**

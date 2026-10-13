@@ -9,7 +9,7 @@ Phase 1 (T1 fiches par source, T2 inventaire) puis phase 2 (T3 indicateurs candi
 |---|---|---|
 | T1 — fiches par source | `docs/sources/autres_sources.md` (Projet : `claude/10_sources_hors_insee_eurostat.md`) | fait ; §7 de synthèse de phase 2 ajouté |
 | T2 — inventaire | `docs/sources/10_sources_inventaire.csv` (74 sources) | fait ; mis à jour en phase 2 |
-| T3 — indicateurs candidats | `docs/sources/10_indicateurs_candidats_hors_insee_eurostat.csv` (404 lignes) (Projet : `claude/10_indicateurs_candidats_hors_insee_eurostat.csv`) | fait |
+| T3 — indicateurs candidats | `docs/sources/10_indicateurs_candidats_hors_insee_eurostat.csv` (405 lignes) (Projet : `claude/10_indicateurs_candidats_hors_insee_eurostat.csv`) | fait (405 lignes) |
 | Outils | robot `scripts/collecte_sources.py` + `src/sources/series_tabulaires.py` (modes séries, large, couverture, distribution, colonne, pdf…) ; constructeur `docs/sources/outils/construire_candidats.py` + définitions | 36 tests hors ligne passent |
 | Preuves | `docs/sources/verif_acces/` (accès, phase 1), `docs/sources/series/` (séries listées, vagues 5 à 8), `journaux/` | commités par le robot |
 
@@ -17,7 +17,7 @@ Phase 1 (T1 fiches par source, T2 inventaire) puis phase 2 (T3 indicateurs candi
 
 ## 2. Chiffres clés de la liste des candidats
 
-404 lignes (370 indicateurs + 34 ventilations), toutes `fiabilite = verifie`. Hors ventilations : 79 déclaratifs, 83 composites, 88 non annuels (D17), 310 résultats, 36 pressions, 24 moyens ; 247 lignes satisfont les critères chiffrés de la charte §3.4 (annuel, ≥ 10 points depuis 2000, dernière valeur ≥ 2020).
+405 lignes (371 indicateurs + 34 ventilations), toutes `fiabilite = verifie`. Hors ventilations : 79 déclaratifs, 83 composites, 88 non annuels (D17), 310 résultats, 37 pressions, 24 moyens ; 248 lignes satisfont les critères chiffrés de la charte §3.4 (annuel, ≥ 10 points depuis 2000, dernière valeur ≥ 2020).
 
 | Dimension v1 proposée (v0 entre parenthèses si différente) | Lignes | Ventilations | Déclaratifs | Composites | Non annuels | Critères §3.4 | Doublon oui / partiel |
 |---|---|---|---|---|---|---|---|
@@ -28,12 +28,12 @@ Phase 1 (T1 fiches par source, T2 inventaire) puis phase 2 (T3 indicateurs candi
 | liens_bien_etre (v0 : 36) | 38 | 12 | 24 | 0 | 16 | 9 | 3 / 12 |
 | logement_cadre_vie (v0 : 20) | 28 | 1 | 2 | 0 | 1 | 25 | 5 / 9 |
 | sante (v0 : 30) | 28 | 2 | 11 | 0 | 8 | 15 | 7 / 9 |
-| niveau_de_vie (v0 : 18) | 16 | 0 | 2 | 1 | 1 | 14 | 2 / 11 |
+| niveau_de_vie (v0 : 19) | 17 | 0 | 2 | 1 | 1 | 15 | 2 / 12 |
 | education (v0 : 19) | 16 | 0 | 0 | 0 | 7 | 7 | 3 / 5 |
 | travail | 14 | 2 | 2 | 1 | 3 | 8 | 4 / 7 |
 | hors grille | 1 | 0 | 0 | 0 | 0 | 1 | 0 / 0 |
 
-Doublons (hors ventilations) : 45 `oui`, 114 `partiel`, 211 `non` ; 68 identifiants INSEE/Eurostat cités, tous présents dans les catalogues M01/M02. Sources : OCDE How's Life 122 lignes, OWID 66, SSMSI 27, ITDD 24, OCDE ODD 23, Citepa 21, DREES 17, PNUD 17, WGI 12, Odissé 11, SDES 10, WDI 10, WJP 9, Intérieur 8, Freedom House 7, RSF 6, DEPP 6, Footprint Data Foundation 3, Ameli 3, WHR 1, EDGAR 1.
+Doublons (hors ventilations) : 45 `oui`, 115 `partiel`, 211 `non` ; 68 identifiants INSEE/Eurostat cités, tous présents dans les catalogues M01/M02. Sources : OCDE How's Life 122 lignes, OWID 66, SSMSI 27, ITDD 24, OCDE ODD 23, Citepa 21, DREES 17, PNUD 17, WGI 12, Odissé 11, SDES 10, WDI 10, WJP 9, Intérieur 8, Freedom House 7, RSF 6, DEPP 6, Footprint Data Foundation 3, Ameli 3, WHR 1, EDGAR 1, BCE 1.
 
 ## 3. Conditions du gel 1 : `liens_bien_etre` et `democratie`
 

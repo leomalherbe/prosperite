@@ -322,3 +322,54 @@ Le BLI est la version interactive grand public du cadre : **11 thèmes** du bien
 - Découpages différents de v0 : **équilibre vie pro/perso** est une dimension à part (v0 : dans `liens_bien_etre`) ; **engagement civique** est restreint (participation, avoir son mot à dire) et la **confiance institutionnelle et la corruption** sont classées en capital social ; le **bien-être subjectif** est une dimension à part entière ; la **sécurité** ne comprend pas la sécurité économique (rangée en revenu et patrimoine : insécurité financière, difficultés à joindre les deux bouts) ; l'**accès à internet** est rangé dans le logement ; la **dette** et l'**investissement** relèvent du capital économique (ressources futures) et non du niveau de vie.
 - Les **inégalités** ne forment pas une dimension : elles sont mesurées dans chaque dimension (`_VER`, écarts entre groupes).
 - Le capital naturel apporte des indicateurs nationaux directement exploitables pour `planete` (empreinte carbone, empreinte matières, excédent d'azote, stress hydrique, aires protégées, liste rouge, recyclage).
+
+---
+
+## 4. Eurostat — cadre « Quality of life » (8 + 1)
+
+### 4.1 Références et accès
+
+- Eurostat (2017), *Final report of the expert group on quality of life indicators*, Statistical reports, KS-FT-17-004 (https://ec.europa.eu/eurostat/documents/7870049/7960327/KS-FT-17-004-EN-N.pdf). Groupe d'experts créé après le rapport du *Sponsorship Group on Measuring Progress* (novembre 2011) ; experts de 10 instituts nationaux, scientifiques, OCDE, Eurofound ; réunions 2012-2016. **Lu jusqu'à la p. 46 environ** (texte tronqué par l'outil au début de la dimension santé) : pour les dimensions 3 à 9, les indicateurs proviennent de la vue d'ensemble et du tableau des indicateurs phares du rapport, les pages détaillées n'ont pas été lues.
+- Statistics Explained, *Quality of life indicators – measuring quality of life* (présentation des 8+1 dimensions) et articles par dimension (conditions de vie matérielles 2023-2024 ; activité productive, données 2012 ; sécurité économique et physique, données 2016 ; gouvernance et droits fondamentaux 2024 ; environnement naturel et cadre de vie 2025 ; expérience globale de la vie 2024). **Non lus** : articles santé et éducation (erreur de l'outil), loisirs et interactions sociales (refus HTTP 429).
+- **Codes de jeux de données** : la base Eurostat « Quality of life » est organisée en neuf dossiers `qol_mlc`, `qol_act`, `qol_hlt`, `qol_edu`, `qol_lei`, `qol_saf`, `qol_gov`, `qol_env`, `qol_lif` (cités dans Statistics Explained) qui regroupent des tables d'autres domaines (`ilc_*`, `lfsa_*`, `hlth_*`, `edat_*`…). L'arborescence de la base n'a pas pu être lue (arbre de navigation vide, sommaire de l'API tronqué). Les codes sont marqués **« vérifié »** quand ils sont cités dans un article Statistics Explained ou confirmés par l'API Eurostat (`ilc_di11`, `ilc_pw01b`, `ilc_pw03`), sinon **« à vérifier »** (à confirmer par la mission M02).
+
+### 4.2 Dimensions
+
+| N° | Dimension | Sous-dimensions | Indicateur(s) phare(s) (rapport 2017) |
+|---|---|---|---|
+| 1 | Conditions de vie matérielles (*Material living conditions*) | revenu ; consommation ; conditions matérielles (privation, logement) | revenu équivalent médian ; S80/S20 ; privation matérielle grave |
+| 2 | Activité productive ou principale (*Productive or main activity*) | quantité d'emploi ; qualité de l'emploi ; autre activité principale (inactivité, travail non rémunéré) | taux d'emploi ; satisfaction au travail |
+| 3 | Santé (*Health*) | état de santé ; déterminants ; accès aux soins | espérance de vie ; santé perçue |
+| 4 | Éducation (*Education*) | compétences ; formation tout au long de la vie ; possibilités d'éducation | diplômés du supérieur |
+| 5 | Loisirs et interactions sociales (*Leisure and social interactions*) | loisirs ; interactions sociales | satisfaction de l'emploi du temps ; avoir quelqu'un sur qui compter |
+| 6 | Sécurité économique et physique (*Economic security and physical safety*) | sécurité économique ; sécurité physique | dépense imprévue ; homicides ; criminalité perçue dans le quartier |
+| 7 | Gouvernance et droits fondamentaux (*Governance and basic rights*) | institutions et services publics ; discriminations et égalité des chances ; citoyenneté active | confiance dans le système judiciaire |
+| 8 | Environnement naturel et cadre de vie (*Natural and living environment*) | pollution (dont bruit) ; accès aux espaces verts ; paysage et cadre bâti | exposition urbaine aux particules ; pollution perçue |
+| +1 | Expérience globale de la vie (*Overall experience of life*) | satisfaction dans la vie ; affects ; eudémonie (sens) | satisfaction dans la vie |
+
+### 4.3 Indicateurs
+
+Le détail (94 indicateurs, avec sous-dimension, définition, unité, sens, code de table et statut de vérification du code) est dans le CSV (`cadre = Eurostat Quality of life`). Synthèse :
+
+- **Dimension 1** (13) : revenu médian, S80/S20, risque de pauvreté (60 %), pauvreté ancrée 2008, satisfaction financière, consommation individuelle effective, part des dépenses de base, privation matérielle grave, capacité à joindre les deux bouts, problèmes du logement, surpeuplement, sous-occupation, satisfaction du logement.
+- **Dimension 2** (24) : emploi, chômage, chômage de longue durée, très faible intensité de travail, temps partiel subi, bas salaires, contrats temporaires (et subis), surqualification (mesurée et déclarée), accidents du travail mortels et déclarés, problèmes de santé liés au travail, expositions physiques et psychosociales, durée du travail, longues durées (> 48 h), horaires atypiques, flexibilité, satisfaction du temps de trajet, satisfaction au travail, autonomie (à développer), inactivité par raison, travail non rémunéré (à développer).
+- **Dimension 3** (11) : espérance de vie, années de vie en bonne santé, santé perçue, maladies chroniques et limitations, santé mentale, IMC, tabac, alcool, activité physique, fruits et légumes, besoins de soins non satisfaits.
+- **Dimension 4** (8) : diplômés du supérieur, sorties précoces, compétences numériques, langues étrangères (deux indicateurs), littératie PIAAC, formation des adultes, scolarisation à 4 ans.
+- **Dimension 5** (12) : non-participation culturelle ou sportive, satisfaction de l'emploi du temps, qualité des loisirs (à développer), obstacles financiers aux loisirs, rencontres entre amis, satisfaction des relations, bénévolat formel et informel, aide d'autrui, confident, confiance dans les autres, inclusion sociale perçue (à développer).
+- **Dimension 6** (6) : dépense imprévue, arriérés, transitions emploi-chômage, homicides, criminalité perçue, sentiment de sécurité la nuit.
+- **Dimension 7** (11) : confiance dans la justice, le système politique, la police ; satisfaction des services publics (à développer) ; discriminations (à développer) ; écarts d'emploi et de salaire femmes-hommes ; écart d'emploi nationaux / pays tiers ; citoyenneté active ; participation électorale ; voix et responsabilité (à développer).
+- **Dimension 8** (5) : exposition urbaine aux particules, pollution perçue, bruit, satisfaction des espaces verts, satisfaction du cadre de vie.
+- **Dimension +1** (4) : satisfaction dans la vie, affects négatifs, affects positifs, sens de la vie.
+
+Aucun seuil normatif dans le cadre ; seuls existent des seuils de définition (60 % du revenu médian, 4 privations sur 9, intensité de travail ≤ 0,20, 2/3 du salaire médian, 48 heures).
+
+### 4.4 Principe d'agrégation
+
+- **Tableau de bord** de quelques indicateurs phares par dimension, complété par des indicateurs secondaires peu corrélés ; **pas d'indice composite**. Le rapport note que des indicateurs synthétiques pourraient être construits pour des variables très corrélées, et que tirer les indicateurs phares d'une même source (EU-SILC) faciliterait une agrégation ultérieure.
+- Critères de sélection (p. 8-9) : pertinence, exactitude, actualité, comparabilité, clarté ; mélange d'indicateurs objectifs et subjectifs ; lien avec le bien-être ; interprétation univoque ; sensibilité aux politiques ; cohérence avec Europe 2020 et les ODD ; ventilations par sous-population ; continuité de la collecte.
+
+### 4.5 Remarques sur la pertinence pour la France
+
+- Données harmonisées EU-SILC / EFT, mêmes enquêtes que l'INSEE (SRCV, enquête Emploi) : priorité INSEE selon la charte, Eurostat utile pour les comparaisons de bornes.
+- Beaucoup d'indicateurs subjectifs proviennent de **modules ad hoc** (2013, 2018, 2022) : trois points seulement, sous le critère de 10 points de la charte. Exception : la satisfaction dans la vie (`ilc_pw01`) et la confiance dans les autres (`ilc_pw03`), devenues plus fréquentes (à confirmer en M02).
+- Découpages différents de v0 : la **satisfaction globale** est une dimension « +1 » distincte ; la **sécurité économique** (dépense imprévue, arriérés) est réunie avec la **sécurité physique**, comme dans v0 ; la **confiance interpersonnelle** relève des interactions sociales (v0 : sécurité et confiance) ; les **inégalités femmes-hommes et selon la nationalité** relèvent de la gouvernance et des droits fondamentaux (v0 : égalités) ; le **temps de trajet** relève de l'activité principale (v0 : cadre de vie). **Pas de dimension planétaire** : l'environnement est limité au cadre de vie (pollution locale, bruit, espaces verts) ; la soutenabilité est suivie par le jeu d'indicateurs ODD de l'UE.

@@ -1,7 +1,7 @@
 # Source INSEE — voies d'accès et indicateurs repérés
 
-Fiche documentaire de la mission M01, phase 1 (tâches A1 et A4). Rédigée le 13 octobre 2026 par l'agent de mission M01.
-Branche `m01-insee`. À valider par la session mère avant la phase 2 (modules Python, moissonnage, GitHub Actions).
+Fiche documentaire de la mission M01 : phase 1 (tâches A1 et A4), complétée en phase 2 (modules, robot de collecte, catalogue : §2.3, §2.7, §10, §11 et **§12**). Rédigée le 13 octobre 2026 par les agents de mission M01.
+Branche `m01-insee`.
 
 Conventions : « vérifié » = constaté le 2026-10-13 en lisant la réponse de l'API ; « non trouvé » = information introuvable ; aucune valeur n'est inventée. Les codes de zone (`FE`, `FM`, `FR-D976`, …) sont ceux de l'attribut `REF_AREA` de la BDM (voir §2.6).
 
@@ -11,7 +11,7 @@ Conventions : « vérifié » = constaté le 2026-10-13 en lisant la réponse de
 
 | Voie | URL de base | Authentification aujourd'hui | Formats | Quota | Lister le catalogue | Obtenir une série complète | Fixture réelle |
 |---|---|---|---|---|---|---|---|
-| **BDM, service web SDMX** | `https://bdm.insee.fr/series/sdmx/` | **Aucune** (vérifié) | SDMX-ML 2.1 (XML) | non documenté (pynsee s'impose 30 appels/min par prudence) ; 400 idbanks par requête, 2 000 séries par requête de dataflow | `/dataflow` puis `/data/<dataflow>?detail=nodata` | `/data/SERIES_BDM/<idbank>` | oui (reconstituée, §10) |
+| **BDM, service web SDMX** | `https://bdm.insee.fr/series/sdmx/` | **Aucune** (vérifié) | SDMX-ML 2.1 (XML) | non documenté (pynsee s'impose 30 appels/min par prudence) ; 400 idbanks par requête, 2 000 séries par requête de dataflow | `/dataflow` puis `/data/<dataflow>?detail=nodata` | `/data/SERIES_BDM/<idbank>` | oui (réponses brutes du robot, §10) |
 | BDM via le portail | `https://api.insee.fr/series/BDM/V1/` | incertain : « Restreint », 30 appels/min/IP selon data.gouv.fr ; « pas besoin de jeton » selon le code de pynsee 0.2.5 | SDMX-ML | 30/min | identique | identique | non (api.insee.fr illisible depuis le bac à sable) |
 | **Melodi** | `https://api.insee.fr/melodi/` | **Aucune** en mode anonyme (30 appels/min) ; compte facultatif pour un quota plus élevé (non chiffré) | JSON ; fichiers ZIP/CSV et XLSX | 30/min anonyme ; 100 000 lignes max. par appel `/data` | `/catalog/all` | `/data/<jeu>?<DIM>=<code>…` ou fichier complet `/file/<jeu>/<produit>` | oui (enregistrements de l'INSEE, §10) |
 | Données locales | `https://api.insee.fr/donnees-locales/` | aucune selon pynsee 0.2.5 | JSON / XML | 30/min | non documenté ici | sans objet (cubes communaux) | **non** (aucune réponse réelle obtenue) |
@@ -49,7 +49,7 @@ Formats (en-tête `Accept`) : par défaut `application/vnd.sdmx.structurespecifi
 Erreurs (guide) : code SDMX 100 → HTTP 404 (aucun résultat), 140 → 400 (syntaxe), 500 → 500, 510 → 413 (réponse trop volumineuse, plus de 2 000 séries).
 
 ### 2.3 Comment lister le catalogue
-1. `GET /dataflow` : un `str:Dataflow` par regroupement, avec `com:Name` (fr, en), une annotation URL vers la page insee.fr et une annotation « Nombre de séries : N ». La réponse complète n'a pas pu être lue (outil tronqué après 94 dataflows, de `BALANCE-PAIEMENTS` à `ICA-2010-IND-CONS`). L'instantané du paquet R `insee` (août 2024) en compte **199** ; depuis, sont apparus au moins les flux base 2020 (`CNA-2020-*`, `CNT-2020-*`, `CONSO-MENAGES-2020`, `DETTE-TRIM-APU-2020`, `IC-PROD-CONS-2021`). Il n'existe **pas** de `CNA-2020-RDB` (revenu et pouvoir d'achat base 2020) parmi les flux lus.
+1. `GET /dataflow` : un `str:Dataflow` par regroupement, avec `com:Name` (fr, en), une annotation URL vers la page insee.fr et une annotation « Nombre de séries : N ». **Lue en entier par le robot le 13/10/2026 : 244 dataflows, 374 463 séries annoncées, dont 187 146 pour `SERIES_BDM`** (regroupement technique de toutes les séries, non listé) — fixture `bdm_dataflows_2026-10-13.xml`. En phase 1, l'outil de lecture s'était arrêté après 94 dataflows. L'instantané du paquet R `insee` (août 2024) en compte **199** ; depuis, sont apparus au moins les flux base 2020 (`CNA-2020-*`, `CNT-2020-*`, `CONSO-MENAGES-2020`, `DETTE-TRIM-APU-2020`, `IC-PROD-CONS-2021`). Il n'existe **pas** de `CNA-2020-RDB` (revenu et pouvoir d'achat base 2020) parmi les flux lus.
 2. `GET /data/<dataflow>?detail=nodata` : **une ligne par série avec IDBANK, TITLE_FR, TITLE_EN, LAST_UPDATE, REF_AREA, UNIT_MEASURE, sans observations**. C'est la bonne requête pour construire le catalogue.
    **Piège** : `detail=serieskeysonly` (recommandé par la fiche de mission) ne renvoie que les dimensions de la clé, **sans IDBANK ni titre** (vérifié sur `ODD-ERADICATION-PAUVRETE`).
 3. Première et dernière période : `GET /data/<dataflow>?firstNObservations=1` et `?lastNObservations=6` (la dernière observation peut être une valeur manquante, voir §2.5).
@@ -74,7 +74,10 @@ Erreurs (guide) : code SDMX 100 → HTTP 404 (aucun résultat), 140 → 400 (syn
 | `FHREUN15_…`, `FMGUADMART16_…` | champs composites des enquêtes PISA/PIRLS/TIMSS | — |
 
 ### 2.7 Limites constatées
-- Requêtes par clé de dataflow (`/data/CNA-2020-CSI/A..S14.......`, `/data/CNA-2014-CSI/<clé complète>`) : **erreur client** via l'outil de lecture ; cause non élucidée (404 SDMX ou refus de l'outil). À tester depuis GitHub Actions en phase 2.
+- Requêtes par clé de dataflow : **elles fonctionnent** (vérifié par le robot le 13/10). Une clé a une position par dimension du DSD, séparées par des points, codes multiples joints par « + » (ex. `CHOMAGE-TRIM-NATIONAL/T........` → 261 séries). Une clé sans série renvoie **HTTP 404, code SDMX 100** « Aucun résultat ne correspond à cette requête » (c'était la cause de l'« erreur client » de phase 1 : `A........` n'a pas de série dans ce regroupement trimestriel).
+- Plus de 2 000 séries : **HTTP 413, code SDMX 510** « La réponse est trop volumineuse » ; le message propose lui-même des clés de découpage (ex. `/data/CNA-2020-ERE/A..IPCH......BRUT.FALSE`). Le module découpe automatiquement par la première dimension libre (fréquence d'abord). Coût : 40 à 65 requêtes et 2 à 3 minutes pour un regroupement de 2 000 à 6 000 séries.
+- Le DSD (`/datastructure`) cite les dimensions deux fois : dans `DimensionList` (avec `id` et `position`, TIME_PERIOD en position 1) et dans les relations d'attributs (`<str:Dimension><Ref id="…"/>`, sans `id`). Seules les premières font la clé.
+- Le nom de certaines dimensions contient un tiret dans les réponses réelles (`SECT-INST` des comptes base 2020) ; les dataflows ODD n'ont pas de dimension `SERIE_ARRETEE`.
 - URL de plus de ~25 idbanks : refusée par le proxy de l'outil (longueur). Sans conséquence pour un script (limite serveur : 400).
 - Réponses supérieures à ~60 ko tronquées par l'outil (pas par le serveur).
 
@@ -196,26 +199,69 @@ Toutes les valeurs « période » des lignes BDM ont été lues en direct le 202
 - Limites : libellés des séries BDM anciennes repris de l'instantané d'août 2024 ; séries hors ODD non vérifiées une à une (marquées) ; codes `INDICATOR_SDG` parfois attribués par inférence (marqués) ; périodes Melodi = couverture du jeu, pas de chaque série.
 
 ## 10. Fixtures (`tests/fixtures/insee/`)
+Depuis la phase 2, **toutes les fixtures BDM sont des réponses brutes** enregistrées par le robot (décision D21) ; les fixtures reconstituées de phase 1 ont été remplacées. Le robot réenregistre ces échantillons à chaque nouveau cycle dans `docs/sources/echantillons_insee/` (avec `provenance.csv` : URL, statut HTTP, taille, horodatage).
+
 | Fichier | Voie | Provenance |
 |---|---|---|
-| `bdm/bdm_serie_001688527_last5_2026-10-13.xml` | BDM | **reconstituée** : réponse lue le 2026-10-13, attributs extraits un à un (l'outil ne recopie pas le XML brut) |
-| `bdm/bdm_serie_010593281_2026-10-13.xml` | BDM | reconstituée, série complète, valeurs recoupées par une 2e requête |
-| `bdm/bdm_dataflow_ODD-ERADICATION-PAUVRETE_2026-10-13.xml` | BDM | reconstituée (message de structure) |
-| `bdm/bdm_nodata_ODD-ERADICATION-PAUVRETE_2026-10-13.csv` | BDM | extraction CSV de la réponse `detail=nodata` (65 séries) |
-| `bdm/bdm_dataflows_extrait_2026-10-13.csv` | BDM | 93 premiers dataflows de la liste vivante |
-| `melodi/*.json`, `melodi/*.xlsx`, `melodi/*.txt` | Melodi | **réponses réelles** enregistrées par l'INSEE (cassettes vcr du paquet R `melodi`, dépôt InseeFrLab/melodi, 2026-01-06 à 2026-07-17) ; correspondance URI ↔ fichier dans `melodi/provenance_melodi.csv` |
+| `bdm/bdm_dataflows_2026-10-13.xml` | BDM | réponse brute du robot : liste complète (244 dataflows) |
+| `bdm/bdm_dataflow_ODD-ERADICATION-PAUVRETE_…`, `bdm/bdm_datastructure_CHOMAGE-TRIM-NATIONAL_…`, `bdm/bdm_codelist_CL_PERIODICITE_…` | BDM | réponses brutes du robot (structure) |
+| `bdm/bdm_nodata_ODD-ERADICATION-PAUVRETE_…`, `…_CNA-2020-PIB_…`, `…_CHOMAGE-TRIM-NATIONAL_cle_T_…` | BDM | réponses brutes `detail=nodata` (65, 21 et 261 séries) |
+| `bdm/bdm_erreur_trop_de_series_CNA-2020-ERE_…`, `bdm/bdm_erreur_cle_sans_resultat_…` | BDM | erreurs réelles 413 (code 510) et 404 (code 100) |
+| `bdm/bdm_serie_010593281_…`, `bdm/bdm_serie_001688527_last5_…`, `bdm/bdm_series_010593281+001688527_first1_…` | BDM | séries complètes, dernières et premières observations |
+| `bdm/provenance_bdm.csv` | BDM | URL, statut, horodatage de chaque fixture (run 38405848499 du 13/10) |
+| `melodi/*_2026-01-06…` à `*_2026-07-17…` (`.json`, `.xlsx`, `.txt`) | Melodi | réponses réelles enregistrées par l'INSEE (cassettes vcr du paquet R `melodi`, dépôt InseeFrLab/melodi) |
+| `melodi/*_2026-10-13…` | Melodi | réponses brutes du robot : catalogue d'octobre (145 jeux, `.json.gz`), notice, `/range`, `/data`, comptage et extraits du ZIP de `DS_SRCV_SATISFACTION`, `/range` et `/data` de `DS_NAT_SDG`, `/range` de `DD_CNA_AGREGATS` ; correspondance dans `melodi/provenance_melodi.csv` |
 | `metadonnees/rdf_sparql_concept_c1653_2026-10-13.csv` | Métadonnées (RMéS) | réponse SPARQL de `rdf.insee.fr` (lue le 2026-10-13) |
 | — | Données locales | aucune (voir §4) |
 | — | Fichiers insee.fr | aucune ; XLSX réel de Melodi utilisable pour le lecteur XLSX |
 
-## 11. Points à trancher ou vérifier avant la phase 2
-1. **Voies retenues** : BDM `bdm.insee.fr` (sans clé) + Melodi (sans clé) ; Données locales abandonnée ; fichiers insee.fr limités au fichier Chiffres-clés du Gini (robots.txt : à valider).
-2. **Fixtures BDM reconstituées** : les remplacer par de vraies réponses enregistrées lors du premier passage sur GitHub Actions.
-3. **Requêtes par clé de dataflow** à tester depuis Actions (échec via l'outil).
-4. **Série longue 2000-2009** : beaucoup de séries ODD commencent en 2010 ; prévoir le raccord avec Melodi (ERFS, EEC) ou des séries BDM longues.
-5. **Choix de zone** : `FM` (métropole) pour les enquêtes ménages, `FR-D976` pour l'enquête Emploi, `FE` pour la démographie et les comptes : il faudra accepter des champs différents selon les indicateurs (champ `geo` de la fiche).
+## 11. Points à trancher ou vérifier (état après la phase 2)
+1. **Voies retenues** (D14) : BDM `bdm.insee.fr` + Melodi, sans clé — confirmé par le robot (aucune authentification, aucun refus de débit pendant l'essai) ; Données locales abandonnée ; fichiers insee.fr limités au fichier Chiffres-clés du Gini (non moissonné par le robot).
+2. ~~Fixtures BDM reconstituées~~ : **fait**, remplacées par les réponses brutes (§10).
+3. ~~Requêtes par clé de dataflow~~ : **fonctionnent** depuis Actions (§2.7).
+4. **Série longue 2000-2009** (D16) : beaucoup de séries ODD commencent en 2010 ; elles sont `a_verifier` au catalogue quand elles commencent après 2010, avec le motif « raccordement à prévoir » ; le raccord avec Melodi (ERFS, EEC) reste à faire en M05.
+5. **Choix de zone** (D15) : `FM` (métropole) pour les enquêtes ménages, `FR-D976` pour l'enquête Emploi, `FE` pour la démographie et les comptes ; Melodi ajoute `FRANCE-F`, `FRANCE-FM`, `FRANCE-F_X_D976` : la colonne `geo` du catalogue les garde distincts.
+6. **Comptes nationaux** : les règles de bruit (§12.3) ne gardent que les agrégats (économie totale, APU, ménages, ISBLSM ; premier niveau des nomenclatures). À relire par la session mère : la liste des opérations gardées et le traitement des dépenses publiques par fonction (gardées au 1er niveau COFOG, `type moyen`, D19).
 
-## 12. Sources consultées
+## 12. Catalogue des séries candidates (phase 2, robot de collecte)
+
+### 12.1 Méthode
+`scripts/collecte_insee.py`, exécuté par GitHub Actions (workflow « Collecte »), en étapes reprenables d'un passage à l'autre (état dans `catalogues/insee_etat/`) :
+1. **BDM** : liste des dataflows et des listes de codes ; pour chaque dataflow (sauf `SERIES_BDM`), toutes les séries par `detail=nodata` avec découpage automatique au-delà de 2 000 séries (§2.7) ; pour les séries nationales de fréquence A/S/T/B/M mises à jour depuis 2020 : lecture complète des séries annuelles (première et dernière valeur non manquante, nombre d'années avec valeur depuis 2000), première et dernière observation des séries infra-annuelles.
+2. **Melodi** : catalogue `/catalog/all` ; jeux écartés d'emblée (motif tracé dans `insee_melodi_jeux.csv`) : statistiques d'entreprises, équipements, prénoms, comptes par branche ou par produit, comptes régionaux, jeux sans niveau national, jeux d'**un seul millésime** ou terminés avant 2020 ; pour les autres, `/range` puis extraction du **seul niveau national** (`/data` filtré sur chaque valeur nationale de `GEO`, ou fichier ZIP complet si le jeu est entièrement national et dépasse 100 000 lignes). Une série Melodi = une combinaison de modalités ; son identifiant est la requête qui la relit (`<jeu>?DIM=code&…`).
+3. **Échantillons** de réponses brutes (§10), **inventaires** bruts (`catalogues/insee_bdm_inventaire.csv.gz`, `insee_melodi_inventaire.csv.gz`), puis **catalogage hors ligne** (`--catalogage-seul`, exécutable dans le bac à sable sur les inventaires).
+
+Options : `scripts/collecte_insee.options` (`--cycle mois --budget-minutes 255`). Avec `--cycle`, un cycle terminé n'est pas recommencé : un nouveau passage refait seulement le catalogage avec les règles du moment ; le mois suivant (ou un autre identifiant de cycle) relance une collecte complète.
+
+### 12.2 Fichiers produits (`catalogues/`)
+| Fichier | Contenu |
+|---|---|
+| `insee_bdm_catalogue.csv`, `insee_melodi_catalogue.csv` | séries **candidates** (`candidat` = `oui` ou `a_verifier`) : colonnes de la charte §5.3 (`source, serie_id, libelle, unite, frequence, geo, premiere_periode, derniere_periode, derniere_maj, theme_source, dimension_v0, candidat, commentaire`) + `agregable, ventilation, geo_libelle, nb_annees_depuis_2000, statut_derniere_valeur, theme_libelle, url_api` |
+| `insee_bdm_catalogue_non.csv.gz`, `insee_melodi_catalogue_non.csv.gz` | séries écartées par une règle (`candidat = non`), même colonnes, **motif dans `commentaire`** (traçabilité, charte §3.6) |
+| `insee_bdm_inventaire.csv.gz`, `insee_melodi_inventaire.csv.gz` | toutes les séries listées (BDM) ou nationales (Melodi), avec leurs dimensions, avant tout filtre |
+| `insee_bdm_dataflows.csv`, `insee_melodi_jeux.csv`, `insee_bdm_zones.csv` | traitement par dataflow / jeu (statut, motif d'exclusion, nombre de séries, de candidates) ; codes de zone rencontrés |
+| `insee_bilan.json` | chiffres clés (séries listées, exclusions par motif, candidats par dimension) |
+| `insee_comparaison_phase1.csv` | sort de chacune des 1 063 lignes du repérage de phase 1 (confirmée, écartée par un filtre et pourquoi, absente) |
+
+### 12.3 Règles (`src/sources/insee_catalogue.py`)
+- **Filtres durs** (série absente des catalogues, comptée dans les exclusions du bilan) : fréquence A, S, T, B ou M ; zone nationale (FE, FM, FR-D976 et autres périmètres nationaux, gardés distincts — D15) ; dernière valeur non manquante ≥ 2020 (pour la BDM, une série mise à jour pour la dernière fois avant 2020 ne peut pas l'avoir : ses périodes ne sont pas lues).
+- **`candidat = non`** (motif en commentaire) : hors champ (statistiques d'entreprises, prix de production, prix agricoles et de détail par produit, indices de prix et déflateurs, coût du travail, conjoncture des entreprises, commerce extérieur, tourisme vu de l'offre, trafic de voyageurs, barèmes, aide publique au développement) ; **déclinaisons techniques** lues dans les codes de dimensions (sous-secteurs institutionnels et sociétés, contreparties, branches, produits détaillés, COFOG de niveau 2, instruments financiers et actifs détaillés sauf les logements, valorisations et transformations techniques ; dans les comptes nationaux, opérations hors liste des agrégats) ; séries arrêtées ; anciennes bases ; démographie de contexte ; aucune règle de dimension ; moins de 10 points depuis 2000 quand la série commence après 2010.
+- **`candidat = a_verifier`** : première période après 2010 mais au moins 10 points possibles (raccordement D16) ; moins de 10 années avec valeur (série irrégulière, D17) ; dimension déduite du seul regroupement ; zone non renseignée.
+- **`candidat = oui`** : les autres ; drapeaux en commentaire : `type moyen (D19)`, `infra-annuelle : agrégation annuelle à prévoir`, `ventilation : sexe;age;…` (D21, colonne `ventilation`).
+- **Tagging `dimension_v0`** : règles de mots-clés ordonnées sur le libellé (grille v0, charte §4), après retrait des expressions comptables (« Emploi ou débit », « actifs financiers »…) ; à défaut, dimension du regroupement ODD.
+- **Validation des règles** (phase 2) : application à l'instantané de 158 166 séries BDM du paquet R `insee` (août 2024 ; 110 302 séries nationales A/S/T/B/M) et aux inventaires réels de l'essai ; examen par regroupement des séries qui changent de statut. Corrections : faux négatif « au cours des … derniers mois » (indicateurs ODD d'usage d'internet écartés comme « cours de bourse »), « pour 100 000 habitants » classé en démographie, densité carcérale non classée ; bruit : 8 699 comptes détaillés des APU et 16 398 séries d'un seul millésime de l'enquête Emploi annuelle étaient `oui` dans l'essai Melodi. Sur l'instantané 2024, `oui` passe de 20 584 à 2 489 sans qu'aucune série des regroupements ODD, mortalité, enquête Emploi ou conditions de vie ne change de statut à tort.
+
+### 12.4 Chiffres
+- **Essai réduit** (run 38405848499, 13/10, 20 premiers dataflows et 20 premiers jeux Melodi, règles de l'époque) : 31 888 séries BDM listées (comptes en base 2010 et 2014, balance des paiements, chômage trimestriel), 4 030 au catalogue, 104 `oui` (chômage) ; 9 jeux Melodi traités, 61 909 séries nationales. Ces chiffres ne sont pas représentatifs : l'ordre alphabétique faisait passer d'abord les anciennes bases des comptes nationaux.
+- **Passage complet** : run **38412716221** lancé le 13/10 à 14:22 UTC (tous les dataflows, tous les jeux Melodi, 255 min) ; un run en attente (38415610569) le reprendra s'il n'a pas fini, ou refera le catalogage avec les règles finales. **Les chiffres du passage complet (séries listées, retenues, candidates par dimension) sont dans `catalogues/insee_bilan.json` une fois ces runs terminés** ; ils seront reportés ici et dans le compte rendu de mission.
+
+### 12.5 Limites
+- Périodes Melodi : calculées sur les observations nationales extraites (exactes) ; périodes BDM infra-annuelles : première et dernière observation seulement (le nombre d'années avec valeur n'est pas compté).
+- Les jeux Melodi d'un seul millésime (recensement détaillé 2023, Filosofi 2023, enquête Emploi annuelle 2025…) ne sont pas extraits : ils ne forment pas de série temporelle.
+- Le tagging par mots-clés reste approximatif sur les libellés composés de Melodi (concaténation des modalités) ; `dimension_v0` est une orientation pour M03/M05, pas un rattachement définitif.
+- Les ventilations sont gardées (D21) : l'enquête Emploi en séries longues compte à elle seule environ 1 700 séries candidates (sexe × âge × PCS × diplôme).
+
+## 13. Sources consultées
 - Catalogue des API de l'INSEE : https://www.insee.fr/fr/information/8184146 (mise à jour 12/06/2025)
 - Service web SDMX : https://www.insee.fr/fr/information/2862759 ; guide v2.1 et v2.2 (PDF)
 - Fiches data.gouv.fr : https://www.data.gouv.fr/fr/dataservices/api-melodi/ ; https://www.data.gouv.fr/dataservices/api-bdm

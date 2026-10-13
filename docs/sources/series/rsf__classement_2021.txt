@@ -1,6 +1,8 @@
 # rsf / classement_2021
 # URL : https://rsf.org/sites/default/files/import_classement/2021.csv
-# Mode : lignes;motif=(?i)(\bFRA\b|;France;|^France;);entete=1
-# Lu le 2026-10-13T13:34:32Z — HTTP 200 — text/csv — 21477 octets
+# Mode : lignes;motif=(?i)\bFRA\b|\bFrance\b;entete=1
+# Lu le 2026-10-13T13:46:48Z — HTTP 200 — text/csv — 21477 octets
 
-Échec : error: missing ), unterminated subpattern at position 4
+Encodage détecté : utf-8-sig ; 181 lignes
+[0] Year (N);ISO;Rank N;Score N;Score N without the exactions;Score N with the exactions;Score exactions;Rank N-1;Score N-1;Rank evolution;FR_country;EN_country;ES_country;AR_country;FA_country;Zone
+[34] 2021;FRA;34;77,4;82,11;77,4;58,1;34;77,08;0;France;France;Francia;فرنسا;فرانسه;UE Balkans

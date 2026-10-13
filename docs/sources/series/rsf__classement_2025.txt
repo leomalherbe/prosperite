@@ -1,6 +1,8 @@
 # rsf / classement_2025
 # URL : https://rsf.org/sites/default/files/import_classement/2025.csv
-# Mode : lignes;motif=(?i)(\bFRA\b|;France;|^France;);entete=1
-# Lu le 2026-10-13T13:34:35Z — HTTP 200 — text/csv — 26912 octets
+# Mode : lignes;motif=(?i)\bFRA\b|\bFrance\b;entete=1
+# Lu le 2026-10-13T13:46:51Z — HTTP 200 — text/csv — 26912 octets
 
-Échec : error: missing ), unterminated subpattern at position 4
+Encodage détecté : cp1252 ; 181 lignes
+[0] ISO;Score 2025;Rank;Political Context;Rank_Pol;Economic Context;Rank_Eco;Legal Context;Rank_Leg;Social Context;Rank_Soc;Safety;Rank_Saf;Zone;Country_FR;Country_EN;Country_ES;Country_PT;Country_AR;Country_FA;Year (N);Rank N-1;Rank evolution;Score N-1;Score evolution
+[25] FRA;76,62;25;75,42;22;63,13;26;80,92;27;77,8;34;85,8;66;UE Balkans;France;France;Francia;França ;?????;??????;2025;21;-4;78,65;-2,03

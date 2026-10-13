@@ -19,6 +19,15 @@ Sorties : docs/sources/verif_acces/resultats.csv (une ligne par URL) ;
           début du texte, feuilles et premières lignes d'un classeur, contenu
           d'une archive zip, valeurs distinctes d'une colonne).
 
+Deuxième liste (phase 2, inventaire des séries) :
+Entrée  : docs/sources/verif_acces/series.csv (mêmes colonnes ; « mode » = un des
+          modes de src/sources/series_tabulaires.py : series, large, couverture,
+          lignes, classeur, ods_champs, dido, agregat, bm, regex:<motif>).
+Sorties : docs/sources/series/<source>__<cle>.csv (une ligne par série : clé,
+          libellé, première et dernière période, nombre de périodes, dernière
+          valeur) ou .txt (description) ; docs/sources/series/resultats.csv.
+          La variable d'environnement M04_SERIES_SEULEMENT=1 saute la première liste.
+
 Aucune clé d'API n'est utilisée : une source qui en exige une est signalée
 par son code HTTP (401/403). Le script ne lève pas d'erreur si une URL échoue :
 l'échec est le résultat de la vérification.
@@ -29,6 +38,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import os
 import re
 import sys
 import time
@@ -41,6 +51,10 @@ DOSSIER = RACINE / "docs" / "sources" / "verif_acces"
 ENTREE = DOSSIER / "urls.csv"
 SORTIE = DOSSIER / "resultats.csv"
 EXTRAITS = DOSSIER / "extraits"
+SERIES_ENTREE = DOSSIER / "series.csv"
+SERIES_SORTIE = RACINE / "docs" / "sources" / "series"
+OCTETS_MAX_SERIES_DEFAUT = 200_000_000
+OCTETS_MAX_SERIES_ABSOLU = 800_000_000
 
 OCTETS_MAX_DEFAUT = 300_000
 OCTETS_MAX_ABSOLU = 80_000_000
@@ -243,7 +257,157 @@ def verifier(source: str, cle: str, url: str, octets_max: int, mode: str) -> dic
     return res
 
 
+def telecharger(url: str, octets_max: int, destination: Path) -> dict:
+    """Télécharge au plus octets_max octets dans un fichier (sans tout garder en mémoire)."""
+    import requests
+
+    meta = {"statut_http": "", "url_finale": "", "content_type": "", "taille_annoncee": "", "octets_lus": 0,
+            "tronque": False, "message": ""}
+    try:
+        with requests.get(url, headers=ENTETES, timeout=(20, 300), stream=True, allow_redirects=True) as r:
+            meta["statut_http"] = r.status_code
+            meta["url_finale"] = r.url if r.url != url else ""
+            meta["content_type"] = r.headers.get("Content-Type", "")
+            meta["taille_annoncee"] = r.headers.get("Content-Length", "")
+            total = 0
+            with open(destination, "wb") as f:
+                for bloc in r.iter_content(chunk_size=1 << 20):
+                    f.write(bloc)
+                    total += len(bloc)
+                    if total >= octets_max:
+                        meta["tronque"] = True
+                        break
+            meta["octets_lus"] = total
+    except Exception as exc:  # l'échec fait partie du résultat
+        meta["message"] = f"{type(exc).__name__}: {exc}"[:300]
+    return meta
+
+
+def lister_series(source: str, cle: str, url: str, octets_max: int, mode: str, dossier_tmp: Path) -> dict:
+    """Télécharge une ressource et en dresse la liste des séries (mode décrit dans src/sources/series_tabulaires.py).
+
+    Écrit docs/sources/series/<source>__<cle>.csv (liste de séries) et/ou .txt (description)."""
+    from src.sources import series_tabulaires as st
+
+    if mode.startswith("regex:"):
+        nom_mode, p = "regex", {"motif": mode[len("regex:"):]}
+    else:
+        nom_mode, p = st.parametres(mode)
+    res = {"source": source, "cle": cle, "url": url, "mode": nom_mode,
+           "date_verification": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+           "statut_http": "", "content_type": "", "octets_lus": 0, "tronque": "", "nature": "",
+           "n_lignes_sortie": 0, "verdict": "erreur", "message": "", "sortie": ""}
+    octets_max = min(octets_max or OCTETS_MAX_SERIES_DEFAUT, OCTETS_MAX_SERIES_ABSOLU)
+    chemin = dossier_tmp / "ressource"
+    meta = telecharger(url, octets_max, chemin)
+    for k in ("statut_http", "content_type", "octets_lus", "message"):
+        res[k] = meta[k]
+    res["tronque"] = "oui" if meta["tronque"] else ""
+    if meta["message"] or not meta["statut_http"] or int(meta["statut_http"]) >= 400:
+        res["message"] = res["message"] or f"HTTP {meta['statut_http']}"
+        return res
+    with open(chemin, "rb") as f:
+        debut = f.read(4096)
+    res["nature"] = deviner_nature(meta["content_type"], debut, url)
+    base = SERIES_SORTIE / nom_extrait(source, cle)[:-4]
+    entete = (f"# {source} / {cle}\n# URL : {url}\n# Mode : {mode}\n# Lu le {res['date_verification']} — HTTP "
+              f"{meta['statut_http']} — {meta['content_type']} — {meta['octets_lus']} octets"
+              f"{' (TRONQUÉ : augmenter octets_max)' if meta['tronque'] else ''}\n\n")
+    try:
+        lignes, texte, colonnes = None, None, None
+        if nom_mode == "series":
+            lignes = st.resumer_series(st.lire_table(chemin, p), p, source, cle)
+            colonnes = st.COLONNES_SERIES
+        elif nom_mode == "large":
+            lignes = st.resumer_large(st.lire_table(chemin, p), p, source, cle)
+            colonnes = st.COLONNES_SERIES
+        elif nom_mode == "bm":
+            lignes = st.series_banque_mondiale(chemin.read_bytes(), source, cle)
+            colonnes = st.COLONNES_SERIES
+        elif nom_mode == "couverture":
+            lignes = st.couverture_microdonnees(chemin, p)
+        elif nom_mode == "agregat":
+            lignes = st.agreger(chemin, p)
+        elif nom_mode == "ods_champs":
+            lignes = st.catalogue_ods(chemin.read_bytes())
+        elif nom_mode == "dido":
+            lignes = st.catalogue_dido(chemin.read_bytes())
+        elif nom_mode == "lignes":
+            texte = st.lignes_correspondantes(chemin.read_bytes(), p.get("motif", "France"),
+                                              max_lignes=int(p.get("max", 400)), entete=int(p.get("entete", 12)))
+        elif nom_mode == "classeur":
+            texte = decrire_classeur(chemin.read_bytes(), lignes=int(p.get("lignes", 12)),
+                                     feuilles_max=int(p.get("feuilles", 12)))
+        elif nom_mode == "regex":
+            texte = correspondances(chemin.read_bytes(), p.get("motif", ""))
+        else:
+            raise ValueError(f"mode inconnu : {nom_mode!r}")
+        if lignes is not None:
+            if not colonnes:
+                colonnes = list(lignes[0].keys()) if lignes else ["vide"]
+            with open(f"{base}.csv", "w", encoding="utf-8", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=colonnes, extrasaction="ignore")
+                w.writeheader()
+                w.writerows(lignes)
+            res["n_lignes_sortie"] = len(lignes)
+            res["sortie"] = f"series/{base.name}.csv"
+        if texte is not None:
+            Path(f"{base}.txt").write_text(entete + texte, encoding="utf-8")
+            res["n_lignes_sortie"] = texte.count("\n") + 1
+            res["sortie"] = f"series/{base.name}.txt"
+        res["verdict"] = "series" if res["n_lignes_sortie"] else "vide"
+    except Exception as exc:
+        res["message"] = f"{type(exc).__name__}: {exc}"[:400]
+        Path(f"{base}.txt").write_text(entete + "Échec : " + res["message"], encoding="utf-8")
+        res["sortie"] = f"series/{base.name}.txt"
+    finally:
+        chemin.unlink(missing_ok=True)
+    return res
+
+
+def main_series() -> None:
+    """Deuxième liste : docs/sources/verif_acces/series.csv → docs/sources/series/."""
+    import tempfile
+
+    if not SERIES_ENTREE.exists():
+        print(f"Pas de liste de séries ({SERIES_ENTREE}).")
+        return
+    if str(RACINE) not in sys.path:
+        sys.path.insert(0, str(RACINE))
+    SERIES_SORTIE.mkdir(parents=True, exist_ok=True)
+    for ancien in list(SERIES_SORTIE.glob("*.txt")) + list(SERIES_SORTIE.glob("*.csv")):
+        ancien.unlink()
+    with SERIES_ENTREE.open(encoding="utf-8") as f:
+        lignes = [l for l in csv.DictReader(f) if (l.get("url") or "").strip() and not l["source"].startswith("#")]
+    resultats = []
+    with tempfile.TemporaryDirectory() as tmp:
+        for i, l in enumerate(lignes, 1):
+            octets = int(l.get("octets_max") or OCTETS_MAX_SERIES_DEFAUT)
+            debut = time.time()
+            r = lister_series(l["source"].strip(), l["cle"].strip(), l["url"].strip(), octets,
+                              (l.get("mode") or "").strip(), Path(tmp))
+            print(f"[séries {i}/{len(lignes)}] {r['verdict']:<6} HTTP {r['statut_http'] or '---'} "
+                  f"{r['n_lignes_sortie']:>6} lignes {time.time() - debut:6.1f} s  {l['source']} / {l['cle']}"
+                  f"{'  — ' + r['message'] if r['message'] else ''}", flush=True)
+            resultats.append(r)
+            time.sleep(0.3)
+    with (SERIES_SORTIE / "resultats.csv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(resultats[0].keys()) if resultats else ["vide"])
+        w.writeheader()
+        w.writerows(resultats)
+    n_ok = sum(r["verdict"] == "series" for r in resultats)
+    print(f"\nBilan séries : {n_ok}/{len(resultats)} ressources listées ; détail dans "
+          f"{(SERIES_SORTIE / 'resultats.csv').relative_to(RACINE)}")
+
+
 def main() -> int:
+    if os.environ.get("M04_SERIES_SEULEMENT") != "1":
+        main_verification()
+    main_series()
+    return 0
+
+
+def main_verification() -> int:
     if not ENTREE.exists():
         print(f"Pas de liste d'URL ({ENTREE}) : rien à vérifier.")
         return 0

@@ -154,7 +154,8 @@ ITDD_LIGNES = [
 for var, lib, dim, sens, typ, doub, ref, com in ITDD_LIGNES:
     s = serie("sdes__itdd_france_entiere", id=f"FRA.{var}")
     ajouter(lib, dim, ITDD, f"{URL_ITDD} (variable {var.replace('.nan', '')})", s["unite_source"], sens, "non", typ, "non", doub,
-            com + " ; produit commun INSEE-SDES (à signaler à M01 pour éviter le double moissonnage)", s, niveau="1", geo="FE", ref_doublon=ref)
+            com + " ; produit commun INSEE-SDES (à signaler à M01 pour éviter le double moissonnage)", s, niveau="1", geo="FE", ref_doublon=ref,
+            dim_v1="logement_cadre_vie" if "eau du robinet" in lib else None)  # règle R2 (eau du robinet : condition subie)
 
 # ============================================================================ Citepa — inventaire national (format Secten, édition 2026)
 CITEPA = "Citepa — inventaire national des émissions, format Secten (édition 2026)"

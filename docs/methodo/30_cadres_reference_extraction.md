@@ -10,6 +10,17 @@ Version de travail — 13 octobre 2026 — agent M03 (phase 1). Document de mét
 - Les mentions **« à vérifier »** signalent une information plausible mais non confirmée sur la source primaire au moment de la rédaction ; **« non trouvé »** signale une information cherchée et non trouvée. Aucun seuil n'est reconstitué de mémoire sans cette mention.
 - Le détail ligne à ligne (avec le rattachement à la grille v0) est dans `30_indicateurs_cadres_reference.csv` ; la matrice de synthèse est dans `30_crosswalk_synthese.md`.
 
+## Vue d'ensemble
+
+| § | Cadre | Dimensions | Lignes du CSV | Seuils normatifs chiffrés | Agrégation | Lecture de la source |
+|---|---|---|---|---|---|---|
+| 1 | Doughnut 3.0 (2025) | 12 sociales + 9 écologiques | 35 | 13 limites + 5 seuils sociaux (+ 0 % de privation) | aucun indice ; médianes de privation et de dépassement | tableaux 1 et 2 lus ; tableaux supplémentaires non accessibles |
+| 2 | Stiglitz-Sen-Fitoussi (2009) | 8 (+ subjectif et inégalités transversaux, soutenabilité à part) | 39 | aucun | pluralité d'indices possibles (rec. 9) ; ne pas mêler présent et futur | lu jusqu'à la p. 50-51 |
+| 3 | OCDE *How's Life? 2024* et BLI | 11 bien-être actuel + 4 capitaux | 100 + 4 | aucun (1 valeur guide OMS dans une définition) | tableau de bord ; BLI pondéré par l'utilisateur | liste et valeurs France par API SDMX ; guide du lecteur non lisible |
+| 4 | Eurostat Quality of life (2017) | 8 + 1 | 94 | aucun | tableau de bord d'indicateurs phares | rapport lu jusqu'à la p. 46 ; codes partiellement vérifiés |
+| 5 | INSEE NIR (édition 2025) | 3 domaines, 10 indicateurs | 15 | 4 références citées | tableau de bord | PDF lu en entier |
+| 6 | ODD et objectifs officiels France-UE | — | 16 + 41 | 57 (dont 14 « à vérifier ») | sans objet (bornes) | textes primaires ou sources secondaires fiables |
+
 ---
 
 ## 1. Doughnut 3.0 (Fanning & Raworth, *Nature*, 2025)

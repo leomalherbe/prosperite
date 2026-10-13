@@ -1,0 +1,51 @@
+# ess / api_documentation
+# URL : https://api.ess.sikt.no/docs
+# Vérifié le 2026-10-13T14:47:45Z — HTTP 200 — text/html; charset=UTF-8 — 1581 octets lus (taille annoncée : 1581)
+
+<!doctype html>
+<html>
+    <head>
+        <title>ESS API Documentation</title>
+        <!-- needed for adaptive design -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700"
+            rel="stylesheet" />
+        <link
+            rel="icon"
+            type="image/ico"
+            href="/static/favicon.ico" />
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            // Read and remove query parameters from the URL
+            const queryString = window.location.search
+            const searchParams = new URLSearchParams(queryString)
+            searchParams.append('host', window.location.origin)
+            history.pushState(
+                null,
+                '',
+                window.location.origin + window.location.pathname,
+            )
+
+            // Add redoc element to the page
+            let elem = document.createElement('redoc')
+            elem.setAttribute(
+                'spec-url',
+                '/docs/openapi' + '?' + searchParams.toString(),
+            )
+            elem.setAttribute('hide-download-button', true)
+            elem.setAttribute('disable-search', true)
+            document.body.appendChild(elem)
+        </script>
+        <script src="https://cdn.redoc.ly/redoc/v2.1.5/bundles/redoc.standalone.js"></script>
+    </body>
+</html>

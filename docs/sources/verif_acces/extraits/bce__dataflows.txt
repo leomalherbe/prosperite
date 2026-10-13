@@ -1,0 +1,108 @@
+# bce / dataflows
+# URL : https://data-api.ecb.europa.eu/service/dataflow/ECB
+# Vérifié le 2026-10-13T14:46:23Z — HTTP 200 — application/vnd.sdmx.structure+xml;version=2.1 — 39607 octets lus (taille annoncée : inconnue)
+
+103 correspondances distinctes du motif 'Dataflow[^>]*id="([^"]+)"[^>]*>\\s*<(?:common:|com:)?Name xml:lang="en">([^<]+)<' :
+AGR	AGR
+AME	AMECO
+BKN	Banknotes statistics
+BLS	Bank Lending Survey Statistics
+BNT	Shipments of Euro Banknotes Statistics (ESCB)
+BOP	Euro Area Balance of Payments and International Investment Position Statistics
+BSI	Balance Sheet Items
+BSP	Balance Sheet Items Statistics (tables 2 to 5 of the Blue Book)
+CAR	CAR
+CBD	Statistics on Consolidated Banking Data
+CBD2	Consolidated Banking data
+CCP	Central Counterparty Clearing Statistics
+CES	Consumer Expectations Survey
+CISS	Composite Indicator of Systemic Stress
+CLIFS	Country-Level Index of Financial Stress (CLIFS)
+CMT	Macro-Finance Financial Condition Index
+CPP	Commercial Property Price Statistics
+CSEC	CSEC
+DCM	Dealogic DCM analytics data
+DD	Derived Data
+DWA	DWA
+ECS	ECS
+EFS	ECB Financial Statements
+EMMS	Extended Money Market Statistics
+EON	EONIA: Euro Interbank Offered Rate
+ESB	European Union Balance of Payments (Source Eurostat)
+EST	Euro Short-Term Rate
+EWT	ECB wage tracker
+EXR	Exchange Rates
+FM	Financial market data
+FVC	Financial Vehicle Corporation
+FXI	Foreign Exchange Statistics
+HICP	Indices of Consumer Prices
+ICB	Insurance Corporations Assets and Liabilities
+ICO	Insurance Corporations Operations
+ICP	Indices of Consumer prices
+IFI	Indicators of Financial Integration
+ILM	Internal Liquidity Management
+INW	Indicator of negotiated wage rates
+IRS	Interest rate statistics
+IVF	Investment Funds Balance Sheet Statistics
+KRI	EBA Key Risk Indicators
+LIG	Large Insurance Groups Statistics
+MFI	List of MFIs
+MIR	MFI Interest Rate Statistics
+MMS	Money Market Survey
+MMSR	Money Market Statistical Reporting
+MPD	Macroeconomic Projection Database
+NEC	NEC
+OFI	Other Financial Intermediaries
+OMO	Open market operations
+PAY	PAY
+PCN	PCN
+PCP	PCP
+PCT	PCT
+PDD	PDD
+PEM	PEM
+PFB	Pension Fund Assets and Liabilities
+PFBM	Pension funds number of members
+PFBR	Pension funds Regulation
+PIS	PIS
+PLB	Losses due to fraud by liability bearer
+PMC	PMC
+PPC	PPC
+PSN	PSN
+PSS	Payments and Settlement Systems Statistics
+PST	PST
+PTN	PTN
+PTT	PTT
+RA	International Reserves of the Eurosystem
+RAI	Risk Assessment Indicators
+RDE	Risk Dashboard data
+RDF	Risk Dashboard data
+RESC	Commercial Property Prices
+RESH	Structural Housing Indicators
+RESR	Real Estate Statistics
+RESV	Residential Property Valuation
+RIR	Retail Interest Rates
+RPP	Residential Property Price Index Statistics
+RPV	Residential Property Valuation
+RTD	Real Time Database (research database)
+SAFE	Survey on the Access to Finance of SMEs
+SEC	Securities
+SEE	Securities exchange - Trading Statistics
+SESFOD	Survey on credit terms and conditions in euro-denominated securities financing and over-the-counter derivatives markets
+SHI	Structural Housing Indicators Statistics
+SHS	Securities Holding Statistics
+SHSS	SHSS
+SPF	Survey of Professional Forecasters
+SSI	Banking structural statistical indicators
+SSP	Structural Financial Indicators for Payments
+SST	Securities Settlement Statistics
+ST1	Balance of Payments statistics, national data
+ST3	Euro Area Balance of Payments and International Investment Position Statistics, Geographical Breakdown
+STBS	Short-Term Business Statistics
+STP	STEP data
+STS	Short-Term Statistics
+SUP	Supervisory Banking Statistics
+SUR	Opinion Surveys
+TGB	Target Balances
+TRD	External Trade
+WTS	Trade weights
+YC	Financial market data - yield curve

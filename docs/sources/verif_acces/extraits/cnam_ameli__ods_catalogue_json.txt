@@ -1,0 +1,140 @@
+# cnam_ameli / ods_catalogue_json
+# URL : https://data.ameli.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T14:46:06Z — HTTP 200 — application/json; charset=utf-8 — 17957 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 51,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "annee",
+     "description": "année",
+     "annotations": {
+      "facetsort": "-count",
+      "timeserie_precision": "year",
+      "facet": true
+     },
+     "label": "﻿annee",
+     "type": "date"
+    },
+    {
+     "name": "profession_sante",
+     "description": "profession de santé",
+     "annotations": {
+      "facet": true
+     },
+     "label": "profession_sante",
+     "type": "text"
+    },
+    {
+     "name": "region",
+     "description": "numéro de la région",
+     "annotations": {
+      "facet": true,
+      "disjunctive": true
+     },
+     "label": "region",
+     "type": "text"
+    },
+    {
+     "name": "libelle_region",
+     "description": "région",
+     "annotations": {
+      "facet": true
+     },
+     "label": "libelle_region",
+     "type": "text"
+    },
+    {
+     "name": "departement",
+     "description": "numéro du département",
+     "annotations": {
+      "facet": true,
+      "disjunctive": true
+     },
+     "label": "departement",
+     "type": "text"
+    },
+    {
+     "name": "libelle_departement",
+     "description": "département",
+     "annotations": {
+      "facet": true
+     },
+     "label": "libelle_departement",
+     "type": "text"
+    },
+    {
+     "name": "nombre_patients_uniques",
+     "description": "nombre moyen de patients uniques (file active moyenne)",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "nombre_patients_uniques",
+     "type": "text"
+    },
+    {
+     "name": "nombre_patients_medecin_traitant",
+     "description": "nombre moyen de patients dont le médecin est déclaré en tant que médecin traitant",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "nombre_patients_medecin_traitant",
+     "type": "text"
+    },
+    {
+     "name": "vision_generale_all",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {},
+     "label": "vision generale all",
+     "type": "text"
+    },
+    {
+     "name": "vision_generale_prescriptions",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {},
+     "label": "vision_generale_prescriptions",
+     "type": "text"
+    },
+    {
+     "name": "vision_profession_territoire",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {},
+     "label": "vision profession territoire",
+     "type": "text"
+    },
+    {
+     "name": "patients_medecin_traitant_integer",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "patients_medecin_traitant_integer",
+     "type": "int"
+    },
+    {
+     "name": "patients_uniques_integer",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "patients_uniques_integer",
+     "type": "int"
+    }
+   ],
+   "dataset_id": "patientele",
+   "dataset_uid": "da_naqxb0",
+   "has_records": true,
+   "features": [
+    "analyze",
+    "timeserie"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Professionnels de santé libéraux : patientèle par territoire (département, région)",
+     "description": "<p>Ce jeu de données est une des sources de datavisualisations disponibles sur le site <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux/\">Data professionnels de santé libéraux</a>.</p><h3><span>Informations générales :</span></h3>\n<p>Les professions de santé libérales disponibles dans ce jeu de données sont :</p>\n<ul>\n<li>les <b>médecins</b> (avec plus d’une vingtaine de spécialités médicales) ;</li>\n<li>les <b>chirurgiens-dentistes</b> (dont les spécialistes d'orthopédie dento-faciale – ODF) ;</li>\n<li>les <b>sages-femmes</b> ;</li>\n<li>les auxiliaires médicaux avec cinq professions : <b>infirmiers, masseur-kinésithérapeutes, orthophonistes, orthoptistes, pédicures-podologues</b>.</li>\n</ul>\n<p>Il s'agit de professionnels de santé actifs au 31 décembre de l’année concernée et :</p>\n<ul>\n<li>exerçant leur activité en libéral ;</li>\n<li>en France métropolitaine, Guadeloupe, Guyane, La Réunion, Martinique et Mayotte ;</li>\n<li>ayant perçu au moins 1 euro d’honoraires ;</li>\n<li>qu’ils soient conventionnés avec l’Assurance Maladie  ou non conventionnés (lorsqu’ils génèrent une prescription remboursée par l’Assurance Maladie) ;</li>\n<li>les professionnels en cumul emploi-retraite sont décomptés dans les effectifs dès lors qu’ils remplissent les conditions précédentes.</li>\n</ul>\n<p>Ce jeu de données présente des informations sur la patientèle des professionnels de santé libéraux :</p>\n<ul>\n<li>nombre de patients uniques (file active) ;</li>\n<li>nombre de patients « médecin traitant » (uniquement pour les <b>médecins généralistes</b> et les <b>pédiatres</b>).</li>\n</ul>\n<p>Les données sont issues du système national des données de santé (SNDS). Pour plus d'informations (source, champ, définitions des modalités), consulter la page <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux-methode/\">Méthode</a> du site.</p>\n<h3><span>Secret statistique :</span></h3>\n<p>Par respect pour le secret statistique (loi du 7 juin 1951) et afin que l’identification directe ou indirecte des individus soit impossible, aucune information sur les honoraires, les prescriptions et la patientèle n'est communiquée lorsque le nombre de professionnels de santé libéraux est strictement inférieur à 5.</p>\n<p>La valeur de l'indicateur est alors indiquée par « NS » (non significatif) dans le jeu de données.</p>\n<h3><span>Abréviations présentes dans les données :</span></h3>\n<ul>\n<li>« NS » = non significatif (application du secret statistique)</li>\n<li>« NC » = non calculé (profession non concernée, etc.)</li></ul><h3><span>Couverture spatiale et granularité :<b

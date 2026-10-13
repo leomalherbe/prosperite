@@ -1,0 +1,8 @@
+# owid / metadata_happiness_cantril
+# URL : https://ourworldindata.org/grapher/happiness-cantril-ladder.metadata.json
+# Mode : regex:(?i)[^"]{0,300}(?:gallup|licen[cs]e)[^"]{0,300}
+# Lu le 2026-10-13T14:45:07Z — HTTP 200 — application/json — 2426 octets
+
+2 correspondances distinctes du motif '(?i)[^"]{0,300}(?:gallup|licen[cs]e)[^"]{0,300}' :
+ink of a ladder, with the best possible life for them being a 10 and the worst possible life being a 0. They are then asked to rate their own current lives on that 0 to 10 scale.\n- The rankings are calculated by the World Happiness Report based on nationally representative samples collected by the Gallup World Poll.\n- The score is the average of the three-year survey period, i.e. the year 2025 shows the average of the 2023-2025 survey data.\n- The number of people and countries surveyed varies year to year, but typically more than 100,000 people in over 140 countries participate in the Gallup Worl
+d Poll each year.\n- The rankings are based entirely on the survey scores, which are weighted by Gallup to make the estimates representative.

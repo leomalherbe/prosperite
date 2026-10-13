@@ -1,0 +1,33 @@
+# spf_odisse / suicides_deces_france_records
+# URL : https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/suicides-deces-france/records?limit=3
+# Vérifié le 2026-10-13T14:48:00Z — HTTP 200 — application/json; charset=utf-8 — 438 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 135,
+ "results": [
+  {
+   "annee": "2019",
+   "sexe": "Hommes",
+   "classe_d_age": "00-10 ans",
+   "nombre_de_deces": 2.5,
+   "taux_brut": 0.1,
+   "taux_standardise": null
+  },
+  {
+   "annee": "2019",
+   "sexe": "Hommes",
+   "classe_d_age": "15-17 ans",
+   "nombre_de_deces": 42.0,
+   "taux_brut": 3.2,
+   "taux_standardise": null
+  },
+  {
+   "annee": "2019",
+   "sexe": "Hommes",
+   "classe_d_age": "18-24 ans",
+   "nombre_de_deces": 257.0,
+   "taux_brut": 9.3,
+   "taux_standardise": null
+  }
+ ]
+}

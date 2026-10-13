@@ -1,0 +1,123 @@
+
+===== collecte_sources.py =====
+[1/104] donnees   HTTP 200 json    drees / ods_catalogue_json
+[2/104] donnees   HTTP 200 csv     drees / ods_catalogue_export
+[3/104] donnees   HTTP 200 json    depp / ods_catalogue_json
+[4/104] donnees   HTTP 200 csv     depp / ods_catalogue_export
+[5/104] donnees   HTTP 200 json    mesr / ods_catalogue_json
+[6/104] donnees   HTTP 200 csv     mesr / ods_catalogue_export
+[7/104] donnees   HTTP 200 json    spf_odisse / ods_catalogue_json
+[8/104] donnees   HTTP 200 csv     spf_odisse / ods_catalogue_export
+[9/104] donnees   HTTP 200 json    cnam_ameli / ods_catalogue_json
+[10/104] donnees   HTTP 200 csv     cnam_ameli / ods_catalogue_export
+[11/104] donnees   HTTP 200 json    economie / ods_catalogue_json
+[12/104] donnees   HTTP 200 csv     economie / ods_catalogue_export
+[13/104] donnees   HTTP 200 json    odre / ods_catalogue_json
+[14/104] donnees   HTTP 200 csv     odre / ods_catalogue_export
+[15/104] donnees   HTTP 200 json    cnaf / ods_catalogue_json
+[16/104] donnees   HTTP 200 csv     cnaf / ods_catalogue_export
+[17/104] page_html HTTP 200 html    culture / portail_culture_data_gouv
+[18/104] donnees   HTTP 200 json    banque_de_france / webstat_catalogue_recherche
+[19/104] donnees   HTTP 200 json    banque_de_france / webstat_recherche_surendettement
+[20/104] donnees   HTTP 200 json    banque_de_france / webstat_recherche_taux_epargne
+[21/104] erreur    HTTP 404 json    banque_de_france / webstat_observations_sans_cle
+[22/104] donnees   HTTP 200 xml     bce / dataflows
+[23/104] donnees   HTTP 200 csv     bce / qsa_dette_menages_revenu
+[24/104] erreur    HTTP 400 json    sdes / dido_datasets_structure
+[25/104] donnees   HTTP 200 csv     sdes / itdd_france_entiere_csv
+[26/104] donnees   HTTP 200 csv     sdes / air_expo_pm25_fond_urbain_csv
+[27/104] donnees   HTTP 200 csv     sdes / air_concentrations_indice_csv
+[28/104] donnees   HTTP 200 xlsx    sdes / empreinte_carbone_1990_2024_xlsx
+[29/104] donnees   HTTP 200 json    sdes / datagouv_liste_jeux
+[30/104] donnees   HTTP 200 json    data_gouv / jeu_ssmsi_series_chrono
+[31/104] donnees   HTTP 200 json    data_gouv / jeu_ssmsi_bases_delinquance
+[32/104] donnees   HTTP 200 json    data_gouv / jeu_onisr_baac
+[33/104] donnees   HTTP 200 json    data_gouv / jeu_elections_agregees
+[34/104] donnees   HTTP 200 json    data_gouv / jeu_barometre_numerique_arcom
+[35/104] donnees   HTTP 200 xlsx    ssmsi / etat4001_ts_xlsx
+[36/104] donnees   HTTP 200 csv     interieur_elections / resultats_generaux_csv
+[37/104] donnees   HTTP 200 json    interieur_elections / schema_resultats_generaux
+[38/104] donnees   HTTP 200 csv     onisr / baac_usagers_2024
+[39/104] donnees   HTTP 200 csv     arcom_credoc / barometre_numerique_2007_2025_csv
+[40/104] donnees   HTTP 200 json    ademe / datafair_liste
+[41/104] donnees   HTTP 200 xlsx    citepa / secten_serie_longue_xlsx
+[42/104] donnees   HTTP 200 zip     citepa / secten_ges_zip
+[43/104] donnees   HTTP 200 zip     edgar / ghg_ar5_1970_2024_zip
+[44/104] erreur    HTTP 403 json    gfn / api_sans_cle
+[45/104] donnees   HTTP 200 xml     ocde / dataflows
+[46/104] donnees   HTTP 200 csv     ocde / hsl_bien_etre_actuel_fra
+[47/104] donnees   HTTP 200 csv     ocde / hsl_bien_etre_futur_fra
+[48/104] donnees   HTTP 200 json    banque_mondiale / SL.GDP.PCAP.EM.KD
+[49/104] donnees   HTTP 200 json    banque_mondiale / NE.CON.PRVT.PC.KD
+[50/104] donnees   HTTP 200 json    banque_mondiale / NY.ADJ.NNTY.PC.KD
+[51/104] donnees   HTTP 200 json    banque_mondiale / NY.ADJ.SVNG.GN.ZS
+[52/104] donnees   HTTP 200 json    banque_mondiale / SI.POV.GINI
+[53/104] donnees   HTTP 200 json    banque_mondiale / SI.DST.FRST.20
+[54/104] donnees   HTTP 200 json    banque_mondiale / SP.DYN.LE00.IN
+[55/104] donnees   HTTP 200 json    banque_mondiale / SH.MED.PHYS.ZS
+[56/104] donnees   HTTP 200 json    banque_mondiale / SE.PRE.ENRR
+[57/104] donnees   HTTP 200 json    banque_mondiale / SL.TLF.CACT.FM.ZS
+[58/104] donnees   HTTP 200 json    banque_mondiale / IS.RRS.PASG.KM
+[59/104] donnees   HTTP 200 json    banque_mondiale / IT.NET.USER.ZS
+[60/104] donnees   HTTP 200 json    banque_mondiale / TX.VAL.TECH.MF.ZS
+[61/104] donnees   HTTP 200 json    banque_mondiale / EN.ATM.PM25.MC.M3
+[62/104] donnees   HTTP 200 json    banque_mondiale / EN.ATM.CO2E.PC
+[63/104] donnees   HTTP 200 json    banque_mondiale / EN.ATM.CO2E.PP.GD
+[64/104] donnees   HTTP 200 json    banque_mondiale / EN.GHG.CO2.PC.CE.AR5
+[65/104] donnees   HTTP 200 json    banque_mondiale / EN.GHG.ALL.PC.CE.AR5
+[66/104] donnees   HTTP 200 json    banque_mondiale / EN.GHG.CO2.RT.GDP.PP.KD
+[67/104] donnees   HTTP 200 json    banque_mondiale / VC.IHR.PSRC.P5
+[68/104] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_VA.EST
+[69/104] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_CC.EST
+[70/104] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_RL.EST
+[71/104] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_GE.EST
+[72/104] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_PV.EST
+[73/104] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_RQ.EST
+[74/104] donnees   HTTP 200 json    banque_mondiale / liste_wdi
+[75/104] donnees   HTTP 200 json    banque_mondiale / liste_wgi
+[76/104] donnees   HTTP 200 csv     owid / freedom-of-expression-index
+[77/104] donnees   HTTP 200 csv     owid / press-freedom-index-rsf
+[78/104] donnees   HTTP 200 csv     owid / judicial-constraints-on-the-executive-index
+[79/104] donnees   HTTP 200 csv     owid / academic-freedom-index
+[80/104] donnees   HTTP 200 csv     owid / electoral-democracy-index
+[81/104] donnees   HTTP 200 csv     owid / liberal-democracy-index
+[82/104] donnees   HTTP 200 csv     owid / happiness-cantril-ladder
+[83/104] donnees   HTTP 200 csv     owid / ti-corruption-perception-index
+[84/104] donnees   HTTP 200 csv     owid / political-rights-score-fh
+[85/104] donnees   HTTP 200 csv     owid / civil-liberties-score-fh
+[86/104] donnees   HTTP 200 csv     owid / self-reported-trust-attitudes
+[87/104] donnees   HTTP 200 json    owid / metadata_freedom-of-expression-index
+[88/104] donnees   HTTP 200 csv     owid / co2_data_github
+[89/104] donnees   HTTP 200 csv     rsf / classement_2026
+[90/104] donnees   HTTP 200 csv     rsf / classement_2013
+[91/104] donnees   HTTP 200 csv     rsf / classement_2002
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:84: UserWarning: File contains an invalid specification for 0. This will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 4 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 5 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 1 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 0 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 3 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+[92/104] donnees   HTTP 200 xlsx    transparency / cpi2025_xlsx
+[93/104] donnees   HTTP 200 xlsx    freedom_house / fiw_all_data_2013_2024
+[94/104] donnees   HTTP 200 xlsx    freedom_house / fiw_ratings_1973_2024
+[95/104] donnees   HTTP 200 xlsx    wjp / historique_2021_xlsx
+[96/104] donnees   HTTP 200 xlsx    whr / whr26_figure_2_1
+[97/104] page_html HTTP 200 html    cepremap / tableau_de_bord_html
+[98/104] page_html HTTP 200 html    ess / api_documentation
+[99/104] donnees   HTTP 200 csv     pnud / hdr25_series_composites_csv
+[100/104] donnees   HTTP 200 json    oms / gho_suicide_MH_12_fra
+[101/104] donnees   HTTP 206 json    hubeau / qualite_nappes_nitrates
+[102/104] page_html HTTP 200 html    spf_geodes / accueil
+[103/104] erreur    HTTP ---         dares / page_donnees
+[104/104] donnees   HTTP 200 json    copernicus_cams / ads_catalogue
+
+Bilan : 96/104 URL renvoient des données ; détail dans docs/sources/verif_acces/resultats.csv
+----- collecte_sources.py : OK en 195 s
+
+Bilan : tous les scripts ont réussi

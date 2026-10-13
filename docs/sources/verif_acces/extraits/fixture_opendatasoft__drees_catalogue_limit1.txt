@@ -1,0 +1,8 @@
+# fixture_opendatasoft / drees_catalogue_limit1
+# URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets?limit=1&select=dataset_id%2Cmetas
+# Vérifié le 2026-10-13T14:48:09Z — HTTP 400 — application/json — 139 octets lus (taille annoncée : 139)
+
+{
+ "error_code": "ODSQLError",
+ "message": "ODSQL query is malformed: Unknown field: metas. Clause(s) containing the error(s): select."
+}

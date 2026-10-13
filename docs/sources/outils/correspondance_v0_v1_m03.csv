@@ -1,0 +1,29 @@
+ordre,dimension_v0,motif_libelle,dimension_v1,regle,remarque
+1,securite_confiance,"confiance (envers|dans|en) (les )?autres|confiance interpersonnelle|trust in others",liens_bien_etre,R4,"Confiance interpersonnelle : liens sociaux (Eurostat QoL 5.2, OCDE capital social)"
+2,securite_confiance,"confiance .*(institutions|gouvernement|parlement|justice|police|système politique|systeme politique)",democratie,R4,"Confiance institutionnelle : démocratie et institutions"
+3,securite_confiance,"transitions? .*ch[ôo]mage|insécurité (sur|du) le marché du travail|insecurite (sur|du) le marche du travail|labour market insecurity",travail,R7,"Sécurité de l'emploi : travail ; la sécurité économique au sens des réserves financières des ménages reste en sécurité"
+4,securite_confiance,,securite,—,"Changement d'identifiant : securite_confiance devient securite (sécurité physique, routière et économique)"
+5,sante,"(tués|tues|blessés|blesses|décès|deces|morts?) .*(route|routi)|accidents? de la (route|circulation)|sécurité routière|securite routiere|road deaths",securite,R7,"Sécurité routière : dimension sécurité (OCDE 10_3) ; l'ONU range l'ODD 3.6 en santé (option écartée, arbitrage A6)"
+6,sante,"sous-aliment|sous aliment|insécurité alimentaire|insecurite alimentaire|\bfaim\b|undernourish|food insecurity",niveau_de_vie,R9,"Accès à l'alimentation : niveau de vie (privation) ; nutrition et comportements alimentaires restent en santé"
+7,sante,,sante,—,
+8,education,"compétence|competence|illectronisme|skills",education,R5,"Compétences numériques et illectronisme : éducation (règle appliquée avant la suivante)"
+9,education,"internet|haut débit|haut debit|très haut débit|fibre|connexion",logement_cadre_vie,R5,"Accès et usage d'internet, équipement des ménages : logement et cadre de vie (sous-thème accès aux services, transports et numérique)"
+10,education,"pratiques? culturelles?|participation culturelle|activités culturelles|activites culturelles|sportives|licences sportives",liens_bien_etre,R11,"Pratiques culturelles et sportives : loisirs (Eurostat QoL 5.1, SSF)"
+11,education,,education,—,"Libellé v1 : Éducation et compétences (la culture passe en liens_bien_etre)"
+12,planete,"eau (distribuée )?non conforme|eau potable non conforme|desservie par une eau non conforme",logement_cadre_vie,R2,"Qualité de l'eau du robinet : condition de vie subie (plancher)"
+13,planete,"catastrophes? naturelles?|évènements? naturels?|événements? naturels?|evenements? naturels?|inondation|canicule|températures? extrêmes?|temperatures? extremes?|vagues? de chaleur",logement_cadre_vie,R2,"Exposition aux aléas climatiques et naturels : condition de vie subie (adaptation)"
+14,planete,"exposition .*(particules|pm ?2|pm ?10|pollution)|qualité de l'air|qualite de l'air|concentrations? .*(pm ?2|pm ?10|no2|ozone troposph)",logement_cadre_vie,R2,"Exposition locale à la pollution de l'air : cadre de vie ; les émissions de polluants restent en planète"
+15,planete,,planete,—,
+16,logement_cadre_vie,,logement_cadre_vie,—,
+17,niveau_de_vie,"surendettement|dépenses? imprévues?|depenses? imprevues?|arriérés|arrieres|impayés|impayes|épargne de précaution|epargne de precaution|actifs financiers liquides",securite,R7,"Sécurité économique (réserves financières des ménages, capacité à faire face) : dimension sécurité"
+18,niveau_de_vie,,niveau_de_vie,—,"Sous-thème « économie et ressources pour l'avenir » (dette, R&D, investissement, PIB) conservé ici si l'arbitrage A5 suit la recommandation"
+19,travail,,travail,—,
+20,liens_bien_etre,,liens_bien_etre,—,
+21,democratie,,democratie,—,
+22,egalites,,egalites,—,
+23,non rattachable,"stocks de capitaux",niveau_de_vie,R12,"Ressources pour l'avenir (SSF rec. 11) : sous-thème économie de niveau_de_vie (arbitrage A5)"
+24,non rattachable,"production domestique|activités non marchandes|activites non marchandes",liens_bien_etre,R8,"Temps et travail non rémunéré : temps libre et vie personnelle (arbitrage A4)"
+25,non rattachable,"levier|stabilité financière|stabilite financiere",hors_grille,—,"Stabilité financière : non retenue (hors bien-être, arbitrage « autres points »)"
+26,non rattachable,,a_classer,—,"Examen manuel"
+27,contexte,,hors_grille,—,"Séries de contexte (population, prix…) : non rattachées à une dimension"
+28,non_classe,,a_classer,—,"Examen manuel"

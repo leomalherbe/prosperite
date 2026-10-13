@@ -1,0 +1,301 @@
+
+===== collecte_sources.py =====
+[1/123] donnees   HTTP 200 json    drees / ods_catalogue_json
+[2/123] donnees   HTTP 200 csv     drees / ods_catalogue_export
+[3/123] donnees   HTTP 200 json    depp / ods_catalogue_json
+[4/123] donnees   HTTP 200 csv     depp / ods_catalogue_export
+[5/123] donnees   HTTP 200 json    mesr / ods_catalogue_json
+[6/123] donnees   HTTP 200 csv     mesr / ods_catalogue_export
+[7/123] donnees   HTTP 200 json    spf_odisse / ods_catalogue_json
+[8/123] donnees   HTTP 200 csv     spf_odisse / ods_catalogue_export
+[9/123] donnees   HTTP 200 json    cnam_ameli / ods_catalogue_json
+[10/123] donnees   HTTP 200 csv     cnam_ameli / ods_catalogue_export
+[11/123] donnees   HTTP 200 json    economie / ods_catalogue_json
+[12/123] donnees   HTTP 200 csv     economie / ods_catalogue_export
+[13/123] donnees   HTTP 200 json    odre / ods_catalogue_json
+[14/123] donnees   HTTP 200 csv     odre / ods_catalogue_export
+[15/123] donnees   HTTP 200 json    cnaf / ods_catalogue_json
+[16/123] donnees   HTTP 200 csv     cnaf / ods_catalogue_export
+[17/123] page_html HTTP 200 html    culture / portail_culture_data_gouv
+[18/123] donnees   HTTP 200 json    banque_de_france / webstat_catalogue_recherche
+[19/123] donnees   HTTP 200 json    banque_de_france / webstat_recherche_surendettement
+[20/123] donnees   HTTP 200 json    banque_de_france / webstat_recherche_taux_epargne
+[21/123] erreur    HTTP 404 json    banque_de_france / webstat_observations_sans_cle
+[22/123] donnees   HTTP 200 xml     bce / dataflows
+[23/123] donnees   HTTP 200 csv     bce / qsa_dette_menages_revenu
+[24/123] donnees   HTTP 200 json    sdes / dido_datasets_structure
+[25/123] donnees   HTTP 200 csv     sdes / itdd_france_entiere_csv
+[26/123] donnees   HTTP 200 csv     sdes / air_expo_pm25_fond_urbain_csv
+[27/123] donnees   HTTP 200 csv     sdes / air_concentrations_indice_csv
+[28/123] donnees   HTTP 200 xlsx    sdes / empreinte_carbone_1990_2024_xlsx
+[29/123] donnees   HTTP 200 json    sdes / datagouv_liste_jeux
+[30/123] donnees   HTTP 200 json    data_gouv / jeu_ssmsi_series_chrono
+[31/123] donnees   HTTP 200 json    data_gouv / jeu_ssmsi_bases_delinquance
+[32/123] donnees   HTTP 200 json    data_gouv / jeu_onisr_baac
+[33/123] donnees   HTTP 200 json    data_gouv / jeu_elections_agregees
+[34/123] donnees   HTTP 200 json    data_gouv / jeu_barometre_numerique_arcom
+[35/123] donnees   HTTP 200 xlsx    ssmsi / etat4001_ts_xlsx
+[36/123] donnees   HTTP 200 csv     interieur_elections / resultats_generaux_csv
+[37/123] donnees   HTTP 200 json    interieur_elections / schema_resultats_generaux
+[38/123] donnees   HTTP 200 csv     onisr / baac_usagers_2024
+[39/123] donnees   HTTP 200 csv     arcom_credoc / barometre_numerique_2007_2025_csv
+[40/123] donnees   HTTP 200 json    ademe / datafair_liste
+[41/123] donnees   HTTP 200 xlsx    citepa / secten_serie_longue_xlsx
+[42/123] donnees   HTTP 200 zip     citepa / secten_ges_zip
+[43/123] donnees   HTTP 200 zip     edgar / ghg_ar5_1970_2024_zip
+[44/123] erreur    HTTP 403 json    gfn / api_sans_cle
+[45/123] donnees   HTTP 200 xml     ocde / dataflows
+[46/123] donnees   HTTP 200 csv     ocde / hsl_bien_etre_actuel_fra
+[47/123] donnees   HTTP 200 csv     ocde / hsl_bien_etre_futur_fra
+[48/123] donnees   HTTP 200 json    banque_mondiale / SL.GDP.PCAP.EM.KD
+[49/123] donnees   HTTP 200 json    banque_mondiale / NE.CON.PRVT.PC.KD
+[50/123] donnees   HTTP 200 json    banque_mondiale / NY.ADJ.NNTY.PC.KD
+[51/123] donnees   HTTP 200 json    banque_mondiale / NY.ADJ.SVNG.GN.ZS
+[52/123] donnees   HTTP 200 json    banque_mondiale / SI.POV.GINI
+[53/123] donnees   HTTP 200 json    banque_mondiale / SI.DST.FRST.20
+[54/123] donnees   HTTP 200 json    banque_mondiale / SP.DYN.LE00.IN
+[55/123] donnees   HTTP 200 json    banque_mondiale / SH.MED.PHYS.ZS
+[56/123] donnees   HTTP 200 json    banque_mondiale / SE.PRE.ENRR
+[57/123] donnees   HTTP 200 json    banque_mondiale / SL.TLF.CACT.FM.ZS
+[58/123] donnees   HTTP 200 json    banque_mondiale / IS.RRS.PASG.KM
+[59/123] donnees   HTTP 200 json    banque_mondiale / IT.NET.USER.ZS
+[60/123] donnees   HTTP 200 json    banque_mondiale / TX.VAL.TECH.MF.ZS
+[61/123] donnees   HTTP 200 json    banque_mondiale / EN.ATM.PM25.MC.M3
+[62/123] donnees   HTTP 200 json    banque_mondiale / EN.ATM.CO2E.PC
+[63/123] donnees   HTTP 200 json    banque_mondiale / EN.ATM.CO2E.PP.GD
+[64/123] donnees   HTTP 200 json    banque_mondiale / EN.GHG.CO2.PC.CE.AR5
+[65/123] donnees   HTTP 200 json    banque_mondiale / EN.GHG.ALL.PC.CE.AR5
+[66/123] donnees   HTTP 200 json    banque_mondiale / EN.GHG.CO2.RT.GDP.PP.KD
+[67/123] donnees   HTTP 200 json    banque_mondiale / VC.IHR.PSRC.P5
+[68/123] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_VA.EST
+[69/123] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_CC.EST
+[70/123] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_RL.EST
+[71/123] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_GE.EST
+[72/123] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_PV.EST
+[73/123] donnees   HTTP 200 json    banque_mondiale / wgi_GOV_WGI_RQ.EST
+[74/123] donnees   HTTP 200 json    banque_mondiale / liste_wdi
+[75/123] donnees   HTTP 200 json    banque_mondiale / liste_wgi
+[76/123] donnees   HTTP 200 csv     owid / freedom-of-expression-index
+[77/123] donnees   HTTP 200 csv     owid / press-freedom-index-rsf
+[78/123] donnees   HTTP 200 csv     owid / judicial-constraints-on-the-executive-index
+[79/123] donnees   HTTP 200 csv     owid / academic-freedom-index
+[80/123] donnees   HTTP 200 csv     owid / electoral-democracy-index
+[81/123] donnees   HTTP 200 csv     owid / liberal-democracy-index
+[82/123] donnees   HTTP 200 csv     owid / happiness-cantril-ladder
+[83/123] donnees   HTTP 200 csv     owid / ti-corruption-perception-index
+[84/123] donnees   HTTP 200 csv     owid / political-rights-score-fh
+[85/123] donnees   HTTP 200 csv     owid / civil-liberties-score-fh
+[86/123] donnees   HTTP 200 csv     owid / self-reported-trust-attitudes
+[87/123] donnees   HTTP 200 json    owid / metadata_freedom-of-expression-index
+[88/123] donnees   HTTP 200 csv     owid / co2_data_github
+[89/123] donnees   HTTP 200 csv     rsf / classement_2026
+[90/123] donnees   HTTP 200 csv     rsf / classement_2013
+[91/123] donnees   HTTP 200 csv     rsf / classement_2002
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:84: UserWarning: File contains an invalid specification for 0. This will be removed
+  warn(msg)
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 4 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 5 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 1 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 0 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/openpyxl/reader/workbook.py:102: UserWarning: Defined names for sheet index 3 cannot be located
+  warn(f"Defined names for sheet index {idx} cannot be located")
+[92/123] donnees   HTTP 200 xlsx    transparency / cpi2025_xlsx
+[93/123] donnees   HTTP 200 xlsx    freedom_house / fiw_all_data_2013_2024
+[94/123] donnees   HTTP 200 xlsx    freedom_house / fiw_ratings_1973_2024
+[95/123] donnees   HTTP 200 xlsx    wjp / historique_2021_xlsx
+[96/123] donnees   HTTP 200 xlsx    whr / whr26_figure_2_1
+[97/123] page_html HTTP 200 html    cepremap / tableau_de_bord_html
+[98/123] page_html HTTP 200 html    ess / api_documentation
+[99/123] donnees   HTTP 200 csv     pnud / hdr25_series_composites_csv
+[100/123] donnees   HTTP 200 json    oms / gho_suicide_MH_12_fra
+[101/123] donnees   HTTP 206 json    hubeau / qualite_nappes_nitrates
+[102/123] page_html HTTP 200 html    spf_geodes / accueil
+[103/123] erreur    HTTP ---         dares / page_donnees
+[104/123] donnees   HTTP 200 json    copernicus_cams / ads_catalogue
+[105/123] donnees   HTTP 200 json    drees / jeu_431_le-barometre-d-opinion
+[106/123] donnees   HTTP 200 json    drees / jeu_3457_esperance-de-vie-sans-incapacite
+[107/123] donnees   HTTP 200 json    drees / jeu_530_l-accessibilite-potentielle-localise
+[108/123] donnees   HTTP 200 json    drees / jeu_4230_indicateurs-de-pauvrete-avant-et-ap
+[109/123] donnees   HTTP 200 json    spf_odisse / suicides_deces_france_records
+[110/123] donnees   HTTP 200 csv     spf_odisse / canicules_jours_france_csv
+[111/123] donnees   HTTP 200 json    depp / bac_origine_sociale_records
+[112/123] donnees   HTTP 200 json    cnam_ameli / sinistralite_secteur_records
+[113/123] erreur    HTTP ---         dares / accueil
+[114/123] donnees   HTTP 200 csv     data_gouv / permalien_ssmsi_series_chrono_csv
+[115/123] donnees   HTTP 200 csv     drees / barometre_opinion_2000_2024_csv
+[116/123] donnees   HTTP 200 xlsx    drees / evsi_xlsx
+[117/123] erreur    HTTP 400 json    fixture_opendatasoft / drees_catalogue_limit1
+[118/123] donnees   HTTP 200 csv     fixture_ocde / hsl_cwb_fra_2024
+[119/123] donnees   HTTP 200 json    fixture_oms / gho_mh12_fra_top3
+[120/123] donnees   HTTP 206 json    fixture_hubeau / nappes_nitrates_size1
+[121/123] donnees   HTTP 200 csv     fixture_bce / qsa_dette_menages_2024
+[122/123] donnees   HTTP 200 json    fixture_ademe / datafair_size2
+[123/123] donnees   HTTP 200 json    fixture_dido / datasets_page1
+
+Bilan : 114/123 URL renvoient des données ; détail dans docs/sources/verif_acces/resultats.csv
+[séries 1/157] series HTTP 200    296 lignes    0.3 s  ocde / hsl_bien_etre_actuel
+[séries 2/157] series HTTP 200     52 lignes    0.2 s  ocde / hsl_bien_etre_futur
+[séries 3/157] series HTTP 200     11 lignes    1.0 s  ocde / hsl_inegalites_verticales
+[séries 4/157] series HTTP 200   5482 lignes    1.6 s  ocde / hsl_structure_libelles_fr
+[séries 5/157] series HTTP 200   5532 lignes    0.3 s  ocde / hsl_structure_libelles_en
+[séries 6/157] series HTTP 200     86 lignes    1.6 s  ocde / odd_3
+[séries 7/157] series HTTP 200     39 lignes    0.9 s  ocde / odd_5
+[séries 8/157] series HTTP 200     60 lignes    1.2 s  ocde / odd_10
+[séries 9/157] series HTTP 200     45 lignes    1.2 s  ocde / odd_11
+[séries 10/157] series HTTP 200    154 lignes    1.1 s  ocde / odd_15
+[séries 11/157] series HTTP 200    168 lignes    0.9 s  ocde / odd_16
+[séries 12/157] series HTTP 200      1 lignes    0.1 s  banque_mondiale / wgi_VA_EST
+[séries 13/157] series HTTP 200      1 lignes  219.6 s  banque_mondiale / wgi_VA_SC
+[séries 14/157] series HTTP 200      1 lignes    0.1 s  banque_mondiale / wgi_PV_EST
+[séries 15/157] series HTTP 200      1 lignes  156.4 s  banque_mondiale / wgi_PV_SC
+[séries 16/157] series HTTP 200      1 lignes    0.1 s  banque_mondiale / wgi_GE_EST
+[séries 17/157] series HTTP 200      1 lignes  117.8 s  banque_mondiale / wgi_GE_SC
+[séries 18/157] series HTTP 200      1 lignes    0.1 s  banque_mondiale / wgi_RQ_EST
+[séries 19/157] series HTTP 200      1 lignes   85.3 s  banque_mondiale / wgi_RQ_SC
+[séries 20/157] series HTTP 200      1 lignes    0.1 s  banque_mondiale / wgi_RL_EST
+[séries 21/157] series HTTP 200      1 lignes  168.7 s  banque_mondiale / wgi_RL_SC
+[séries 22/157] series HTTP 200      1 lignes    0.1 s  banque_mondiale / wgi_CC_EST
+[séries 23/157] series HTTP 200      1 lignes  151.6 s  banque_mondiale / wgi_CC_SC
+[séries 24/157] series HTTP 200      1 lignes    1.2 s  owid / electoral-democracy-index
+[séries 25/157] series HTTP 200      1 lignes    0.4 s  owid / liberal-democracy-index
+[séries 26/157] series HTTP 200      1 lignes    1.1 s  owid / participatory-democracy-index
+[séries 27/157] series HTTP 200      1 lignes    0.9 s  owid / deliberative-democracy-index-vdem
+[séries 28/157] series HTTP 200      1 lignes    1.2 s  owid / egalitarian-democracy-index-vdem
+[séries 29/157] series HTTP 200      1 lignes    0.3 s  owid / freedom-of-expression-index
+[séries 30/157] series HTTP 200      1 lignes    1.2 s  owid / freedom-of-association-index
+[séries 31/157] series HTTP 200      1 lignes    0.8 s  owid / academic-freedom-index
+[séries 32/157] series HTTP 200      1 lignes    0.3 s  owid / judicial-constraints-on-the-executive-index
+[séries 33/157] series HTTP 200      1 lignes    1.6 s  owid / legislative-constraints-on-the-executive-index
+[séries 34/157] series HTTP 200      1 lignes    0.7 s  owid / human-rights-index-vdem
+[séries 35/157] series HTTP 200      1 lignes    1.3 s  owid / physical-integrity-rights-index-vdem
+[séries 36/157] series HTTP 200      1 lignes    1.5 s  owid / private-civil-liberties-index
+[séries 37/157] series HTTP 200      1 lignes    1.1 s  owid / political-civil-liberties-index
+[séries 38/157] series HTTP 200      1 lignes    1.1 s  owid / women-civil-liberties-index
+[séries 39/157] series HTTP 200      1 lignes    1.0 s  owid / women-political-empowerment-index
+[séries 40/157] series HTTP 200      1 lignes    1.0 s  owid / women-political-participation-index
+[séries 41/157] series HTTP 200      1 lignes    1.1 s  owid / women-civil-society-participation-index
+[séries 42/157] series HTTP 200      1 lignes    1.0 s  owid / equal-rights-protection-index
+[séries 43/157] series HTTP 200      1 lignes    1.4 s  owid / individual-liberties-and-equality-before-the-law-index
+[séries 44/157] series HTTP 200      1 lignes    1.1 s  owid / equality-of-civil-liberties-across-social-groups-score
+[séries 45/157] series HTTP 200      1 lignes    1.0 s  owid / political-corruption-index
+[séries 46/157] series HTTP 200      1 lignes    0.9 s  owid / executive-corruption-index
+[séries 47/157] series HTTP 200      1 lignes    2.8 s  owid / legislative-corruption-score
+[séries 48/157] series HTTP 200      1 lignes    0.7 s  owid / judicial-corruption-score
+[séries 49/157] series HTTP 200      1 lignes    1.0 s  owid / public-sector-corruption-index
+[séries 50/157] series HTTP 200      1 lignes    0.8 s  owid / media-corruption-score
+[séries 51/157] series HTTP 200      1 lignes    0.9 s  owid / clientelism-index
+[séries 52/157] series HTTP 200      1 lignes    1.0 s  owid / rule-of-law-index
+[séries 53/157] series HTTP 200      1 lignes    0.9 s  owid / rigorous-and-impartial-public-administration-score
+[séries 54/157] series HTTP 200      1 lignes    1.4 s  owid / strong-civil-society-index
+[séries 55/157] series HTTP 200      1 lignes    0.7 s  owid / political-polarization-score
+[séries 56/157] series HTTP 200      4 lignes    1.8 s  owid / key-media-freedoms
+[séries 57/157] series HTTP 200      1 lignes    0.6 s  owid / freedom-score-fh
+[séries 58/157] series HTTP 200      1 lignes    0.2 s  owid / political-rights-score-fh
+[séries 59/157] series HTTP 200      1 lignes    0.7 s  owid / civil-liberties-score-fh
+[séries 60/157] series HTTP 200      1 lignes    0.6 s  owid / press-freedom-fh
+[séries 61/157] erreur HTTP 403      0 lignes    0.3 s  owid / democracy-index-eiu  — HTTP 403
+[séries 62/157] series HTTP 200      1 lignes    0.5 s  owid / ti-corruption-perception-index
+[séries 63/157] series HTTP 200      1 lignes    0.1 s  owid / press-freedom-index-rsf
+[séries 64/157] series HTTP 200      1 lignes    0.3 s  owid / happiness-cantril-ladder
+[séries 65/157] series HTTP 200      1 lignes    0.5 s  owid / share-of-people-who-say-they-are-happy
+[séries 66/157] series HTTP 200      1 lignes    0.6 s  owid / share-of-people-who-say-they-are-happy-eurobarometer
+[séries 67/157] series HTTP 200      1 lignes    0.1 s  owid / self-reported-trust-attitudes
+[séries 68/157] series HTTP 200      7 lignes    1.0 s  owid / trust-state-institutions-wvs
+[séries 69/157] series HTTP 200      1 lignes    0.9 s  owid / share-who-trust-government
+[séries 70/157] series HTTP 200      1 lignes    0.7 s  owid / share-people-trust-neighborhood
+[séries 71/157] series HTTP 200      1 lignes    0.6 s  owid / share-people-trust-science
+[séries 72/157] series HTTP 200      1 lignes    4.1 s  owid / share-people-trust-journalists-country
+[séries 73/157] series HTTP 200      1 lignes    0.6 s  owid / voter-turnout-of-registered-voters
+[séries 74/157] series HTTP 200      1 lignes    1.1 s  owid / voter-turnout-of-voting-age-population
+[séries 75/157] erreur HTTP 403      0 lignes    0.8 s  owid / perceived-influence-over-government  — HTTP 403
+[séries 76/157] erreur HTTP 403      0 lignes    0.5 s  owid / self-reported-freedom  — HTTP 403
+[séries 77/157] series HTTP 200      1 lignes    0.7 s  owid / share-of-women-in-parliament
+[séries 78/157] series HTTP 200      1 lignes    0.7 s  owid / lgbt-legal-equality-index
+[séries 79/157] series HTTP 200      1 lignes    0.7 s  owid / lgbt-rights-index
+[séries 80/157] series HTTP 200      1 lignes    0.6 s  owid / physical-integrity-rights-score-fariss-kenwick-reuning
+[séries 81/157] series HTTP 200      1 lignes    0.8 s  owid / gini-coefficient-wid
+[séries 82/157] series HTTP 200      1 lignes    0.9 s  owid / palma-ratio-wid
+[séries 83/157] series HTTP 200      1 lignes    1.2 s  owid / incomes-of-the-richest
+[séries 84/157] series HTTP 200      1 lignes    0.7 s  owid / red-list-index
+[séries 85/157] series HTTP 200      1 lignes    0.6 s  owid / terrestrial-protected-areas
+[séries 86/157] series HTTP 200      1 lignes    0.5 s  owid / marine-protected-areas
+[séries 87/157] series HTTP 200      1 lignes    0.5 s  owid / forest-area-as-share-of-land-area
+[séries 88/157] vide   HTTP 200      0 lignes    0.6 s  owid / material-footprint-per-capita
+[séries 89/157] series HTTP 200     76 lignes    0.9 s  owid / co2_data_france
+[séries 90/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2002  — error: missing ), unterminated subpattern at position 4
+[séries 91/157] erreur HTTP 200      0 lignes    0.4 s  rsf / classement_2003  — error: missing ), unterminated subpattern at position 4
+[séries 92/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2004  — error: missing ), unterminated subpattern at position 4
+[séries 93/157] erreur HTTP 200      0 lignes    0.4 s  rsf / classement_2005  — error: missing ), unterminated subpattern at position 4
+[séries 94/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2006  — error: missing ), unterminated subpattern at position 4
+[séries 95/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2007  — error: missing ), unterminated subpattern at position 4
+[séries 96/157] erreur HTTP 200      0 lignes    0.5 s  rsf / classement_2008  — error: missing ), unterminated subpattern at position 4
+[séries 97/157] erreur HTTP 200      0 lignes    0.5 s  rsf / classement_2009  — error: missing ), unterminated subpattern at position 4
+[séries 98/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2010  — error: missing ), unterminated subpattern at position 4
+[séries 99/157] erreur HTTP 404      0 lignes    0.5 s  rsf / classement_2011  — HTTP 404
+[séries 100/157] erreur HTTP 200      0 lignes    0.4 s  rsf / classement_2012  — error: missing ), unterminated subpattern at position 4
+[séries 101/157] erreur HTTP 200      0 lignes    0.6 s  rsf / classement_2013  — error: missing ), unterminated subpattern at position 4
+[séries 102/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2014  — error: missing ), unterminated subpattern at position 4
+[séries 103/157] erreur HTTP 200      0 lignes    0.2 s  rsf / classement_2015  — error: missing ), unterminated subpattern at position 4
+[séries 104/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2016  — error: missing ), unterminated subpattern at position 4
+[séries 105/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2017  — error: missing ), unterminated subpattern at position 4
+[séries 106/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2018  — error: missing ), unterminated subpattern at position 4
+[séries 107/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2019  — error: missing ), unterminated subpattern at position 4
+[séries 108/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2020  — error: missing ), unterminated subpattern at position 4
+[séries 109/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2021  — error: missing ), unterminated subpattern at position 4
+[séries 110/157] erreur HTTP 200      0 lignes    0.4 s  rsf / classement_2022  — error: missing ), unterminated subpattern at position 4
+[séries 111/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2023  — error: missing ), unterminated subpattern at position 4
+[séries 112/157] erreur HTTP 200      0 lignes    0.3 s  rsf / classement_2024  — error: missing ), unterminated subpattern at position 4
+[séries 113/157] erreur HTTP 200      0 lignes    0.8 s  rsf / classement_2025  — error: missing ), unterminated subpattern at position 4
+[séries 114/157] erreur HTTP 200      0 lignes    0.2 s  rsf / classement_2026  — error: missing ), unterminated subpattern at position 4
+[séries 115/157] series HTTP 200     23 lignes    0.9 s  freedom_house / fiw_2013_2024_france
+[séries 116/157] series HTTP 200     26 lignes    0.5 s  freedom_house / fiw_1973_2024_france
+[séries 117/157] series HTTP 200     37 lignes    0.8 s  wjp / historique_2021_france
+[séries 118/157] series HTTP 200     18 lignes    0.6 s  whr / whr26_figure_2_1_france
+[séries 119/157] series HTTP 200     40 lignes    0.9 s  pnud / hdr25_series_composites_france
+[séries 120/157] series HTTP 200    188 lignes    3.6 s  citepa / secten_series
+[séries 121/157] series HTTP 200    173 lignes    7.4 s  edgar / ghg_ar5_france
+[séries 122/157] series HTTP 200     98 lignes    2.7 s  gfn_fodafo / nfba2026_france
+[séries 123/157] series HTTP 200    210 lignes    5.5 s  sdes / dido_catalogue
+[séries 124/157] series HTTP 200    537 lignes    1.3 s  sdes / itdd_france_entiere
+[séries 125/157] series HTTP 200   3828 lignes    4.0 s  ssmsi / series_chronologiques
+[séries 126/157] series HTTP 200     56 lignes   25.8 s  interieur_elections / participation_par_scrutin
+[séries 127/157] series HTTP 200    265 lignes    1.4 s  drees / catalogue_champs
+[séries 128/157] series HTTP 200    360 lignes    8.0 s  drees / barometre_2000_2025_couverture
+[séries 129/157] series HTTP 200    390 lignes    0.6 s  drees / barometre_dico_variables_2025
+[séries 130/157] series HTTP 200   2465 lignes    3.3 s  drees / barometre_tc_simplifies_2025
+[séries 131/157] series HTTP 200    388 lignes    2.7 s  spf_odisse / catalogue_champs
+[séries 132/157] series HTTP 200     57 lignes    0.9 s  spf_odisse / suicides-deces-france
+[séries 133/157] series HTTP 200      1 lignes    0.9 s  spf_odisse / canicules-nombres-de-jours-de-canicule-france
+[séries 134/157] series HTTP 200      9 lignes    0.6 s  spf_odisse / tabagisme-prevalence-selon-le-sexe
+[séries 135/157] series HTTP 200    108 lignes    0.7 s  spf_odisse / tabagisme-prevalence-selon-le-revenu
+[séries 136/157] series HTTP 200     12 lignes    0.7 s  spf_odisse / corpulence-surpoids-et-obesite-fra
+[séries 137/157] series HTTP 200     40 lignes    0.8 s  spf_odisse / mortalite-infantile-et-mortinatalite-france
+[séries 138/157] series HTTP 200     27 lignes    0.6 s  spf_odisse / sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra
+[séries 139/157] erreur HTTP 404      0 lignes    0.4 s  spf_odisse / sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mo  — HTTP 404
+[séries 140/157] series HTTP 200      7 lignes    0.5 s  spf_odisse / couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-france
+[séries 141/157] erreur HTTP 200      0 lignes    0.5 s  spf_odisse / cancer-participation-au-depistage-organise-du-cancer-du-sein_fra  — ValueError: colonne de période non trouvée ; colonnes : ['aaaa', 'tx_part_insee_std']
+[séries 142/157] series HTTP 200     57 lignes    0.6 s  spf_odisse / gestes-auto-infliges-hospitalisations-france
+[séries 143/157] series HTTP 200     33 lignes    0.6 s  spf_odisse / asthme-mortalite-france
+[séries 144/157] erreur HTTP 200      0 lignes    0.5 s  spf_odisse / maladies-cardio-neuro-vasculaires-taux-standardises-france  — ValueError: colonne de période non trouvée ; colonnes : ['patho', 'type_indic', 'valeur']
+[séries 145/157] series HTTP 200    416 lignes    0.8 s  spf_odisse / bien-etre-indicateurs-du-barometre-2024
+[séries 146/157] series HTTP 200     18 lignes    0.5 s  spf_odisse / pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_fra
+[séries 147/157] series HTTP 200     48 lignes    0.6 s  spf_odisse / chutes-hospitalisations-et-deces-pour-les-plus-de-65-ans-region-copie
+[séries 148/157] series HTTP 200     19 lignes    0.7 s  spf_odisse / perinatalite-prematurite-france
+[séries 149/157] series HTTP 200    356 lignes    1.0 s  spf_odisse / alcool-indicateurs-du-barometre-2024
+[séries 150/157] series HTTP 200    980 lignes    1.0 s  spf_odisse / sedentarite-indicateurs-du-barometre-2024
+[séries 151/157] series HTTP 200    310 lignes    1.8 s  depp / catalogue_champs
+[séries 152/157] series HTTP 200     96 lignes    0.8 s  depp / fr-en-reussite-au-baccalaureat-origine-sociale
+[séries 153/157] series HTTP 200     36 lignes    0.5 s  depp / fr-en-proportion-de-bacheliers-dans-une-generation
+[séries 154/157] erreur HTTP 200      0 lignes    0.7 s  depp / fr-en-objectifs_europeens_education_formation  — IndexError: list index out of range
+[séries 155/157] series HTTP 200     72 lignes    0.6 s  depp / fr-en-scores-timss
+[séries 156/157] erreur HTTP 200      0 lignes    0.4 s  depp / fr-en-sante-enfants-grande-section-et-cm2  — ValueError: colonne de période non trouvée ; colonnes : ['indicateur', 'classe', 'education_prioritaire', 'csp_des_parents', 'annee_de_l_enquete', 'proportion_d_eleves']
+[séries 157/157] series HTTP 200    228 lignes    4.9 s  cnam_ameli / sinistralite_naf1
+
+Bilan séries : 123/157 ressources listées ; détail dans docs/sources/series/resultats.csv
+----- collecte_sources.py : OK en 1282 s
+
+Bilan : tous les scripts ont réussi

@@ -1,0 +1,448 @@
+# banque_mondiale / wgi_GOV_WGI_PV.EST
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_PV.EST?source=3&format=json&per_page=100
+# Vérifié le 2026-10-13T14:47:19Z — HTTP 200 — application/json;charset=utf-8 — 6732 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 27,
+  "sourceid": "3",
+  "lastupdated": "2026-09-25"
+ },
+ [
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": -0.09223,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": -0.158041,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": 0.0023031,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": 0.024904,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 0.1364995,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 0.1379842,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 0.2071946,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 0.1159491,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 0.2385567,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": -0.0169936,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 0.1837498,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 0.3896732,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 0.4836281,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 0.6180957,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 0.5825275,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 0.742088,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 0.4962624,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 0.6511462,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 0.6600764,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 0.6027659,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 0.4714137,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 0.3908244,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 0.3666745,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 0.7880574,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 0.8473506,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 0.7698884,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  },
+  {
+   "indicator": {
+    "id": "GOV_WGI_PV.EST",
+    "value": "Political Stability - Governance estimate (approx. -2.5 to +2.5)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 0.8511739,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 1
+  }
+ ]
+]

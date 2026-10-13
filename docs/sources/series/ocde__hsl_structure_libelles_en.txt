@@ -1,0 +1,5537 @@
+# ocde / hsl_structure_libelles_en
+# URL : https://sdmx.oecd.org/public/rest/dataflow/OECD.WISE.WDP/DSD_HSL@DF_HSL_FWB/1.1?references=all
+# Mode : regex:<structure:Code id="([^"]+)"[^>]*>(?:(?!</structure:Code>)[\s\S])*?<common:Name xml:lang="en">([^<]+)<
+# Lu le 2026-10-13T13:17:47Z — HTTP 200 — application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8 — 3721575 octets
+
+5525 correspondances distinctes du motif '<structure:Code id="([^"]+)"[^>]*>(?:(?!</structure:Code>)[\\s\\S])*?<common:Name xml:lang="en">([^<]+)<' :
+_T	Total
+_U	Unknown
+_X	Unspecified
+YOUNG	Young
+MID	Middle-aged
+OLD	Old
+RETIRE	National retirement age
+DEPENDENT	Dependent
+Y0	0 years
+Y_LT1	Less than 1 years
+Y1	1 years
+Y_LE2	2 years or less
+Y2	2 years
+Y_LT3	Less than 3 years
+Y3	3 years
+Y_LE4	4 years or less
+Y4	4 years
+Y_GE5	5 years or over
+Y_GT5	Over 5 years
+Y_LE5	5 years or less
+Y_LT5	Less than 5 years
+Y5	5 years
+Y6	6 years
+Y7	7 years
+Y_LE8	8 years or less
+Y8	8 years
+Y_LE9	9 years or less
+Y9	9 years
+Y_GE10	10 years or over
+Y_GT10	Over 10 years
+Y_LE10	10 years or less
+Y_LT10	Less than 10 years
+Y10	10 years
+Y_LT11	Less than 11 years
+Y11	11 years
+Y12	12 years
+Y_LE13	13 years or less
+Y13	13 years
+Y_LT14	Less than 14 years
+Y14	14 years
+Y_GE15	15 years or over
+Y_GT15	Over 15 years
+Y_LE15	15 years or less
+Y_LT15	Less than 15 years
+Y15	15 years
+Y_GE16	16 years or over
+Y16	16 years
+Y17	17 years
+Y_GE18	18 years or over
+Y18	18 years
+Y_GT19	Over 19 years
+Y19	19 years
+Y_GE20	20 years or over
+Y_GT20	Over 20 years
+Y_LE20	20 years or less
+Y_LT20	Less than 20 years
+Y20	20 years
+Y21	21 years
+Y22	22 years
+Y23	23 years
+Y_GT24	Over 24 years
+Y_LE24	24 years or less
+Y24	24 years
+Y_GE25	25 years or over
+Y_GT25	Over 25 years
+Y_LE25	25 years or less
+Y_LT25	Less than 25 years
+Y25	25 years
+Y26	26 years
+Y27	27 years
+Y_LE28	28 years or less
+Y28	28 years
+Y_GT29	Over 29 years
+Y29	29 years
+Y_GE30	30 years or over
+Y_GT30	Over 30 years
+Y_LE30	30 years or less
+Y_LT30	Less than 30 years
+Y30	30 years
+Y31	31 years
+Y32	32 years
+Y33	33 years
+Y34	34 years
+Y_GE35	35 years or over
+Y_GT35	Over 35 years
+Y_LE35	35 years or less
+Y_LT35	Less than 35 years
+Y35	35 years
+Y36	36 years
+Y37	37 years
+Y38	38 years
+Y39	39 years
+Y_GE40	40 years or over
+Y_GT40	Over 40 years
+Y_LE40	40 years or less
+Y_LT40	Less than 40 years
+Y40	40 years
+Y41	41 years
+Y42	42 years
+Y43	43 years
+Y_LE44	44 years or less
+Y44	44 years
+Y_GE45	45 years or over
+Y_GT45	Over 45 years
+Y_LE45	45 years or less
+Y_LT45	Less than 45 years
+Y45	45 years
+Y46	46 years
+Y47	47 years
+Y48	48 years
+Y49	49 years
+Y_GE50	50 years or over
+Y_GT50	Over 50 years
+Y_LE50	50 years or less
+Y_LT50	Less than 50 years
+Y50	50 years
+Y51	51 years
+Y52	52 years
+Y53	53 years
+Y54	54 years
+Y_GE55	55 years or over
+Y_GT55	Over 55 years
+Y_LE55	55 years or less
+Y_LT55	Less than 55 years
+Y55	55 years
+Y56	56 years
+Y57	57 years
+Y58	58 years
+Y59	59 years
+Y_GE60	60 years or over
+Y_GT60	Over 60 years
+Y_LE60	60 years or less
+Y_LT60	Less than 60 years
+Y60	60 years
+Y61	61 years
+Y62	62 years
+Y63	63 years
+Y_GT64	Over 64 years
+Y64	64 years
+Y_GE65	65 years or over
+Y_GT65	Over 65 years
+Y_LE65	65 years or less
+Y_LT65	Less than 65 years
+Y65	65 years
+Y66	66 years
+Y67	67 years
+Y68	68 years
+Y69	69 years
+Y_GE70	70 years or over
+Y_GT70	Over 70 years
+Y_LE70	70 years or less
+Y_LT70	Less than 70 years
+Y70	70 years
+Y71	71 years
+Y72	72 years
+Y73	73 years
+Y74	74 years
+Y_GE75	75 years or over
+Y_GT75	Over 75 years
+Y_LE75	75 years or less
+Y_LT75	Less than 75 years
+Y75	75 years
+Y76	76 years
+Y77	77 years
+Y78	78 years
+Y79	79 years
+Y_GE80	80 years or over
+Y_GT80	Over 80 years
+Y_LE80	80 years or less
+Y_LT80	Less than 80 years
+Y80	80 years
+Y81	81 years
+Y82	82 years
+Y83	83 years
+Y84	84 years
+Y_GE85	85 years or over
+Y_GT85	Over 85 years
+Y_LE85	85 years or less
+Y_LT85	Less than 85 years
+Y85	85 years
+Y86	86 years
+Y87	87 years
+Y88	88 years
+Y89	89 years
+Y_GE90	90 years or over
+Y_GT90	Over 90 years
+Y_LE90	90 years or less
+Y_LT90	Less than 90 years
+Y90	90 years
+Y91	91 years
+Y92	92 years
+Y93	93 years
+Y94	94 years
+Y_GE95	95 years or over
+Y_GT95	Over 95 years
+Y_LE95	95 years or less
+Y_LT95	Less than 95 years
+Y95	95 years
+Y96	96 years
+Y97	97 years
+Y98	98 years
+Y99	99 years
+Y100	100 years
+Y101	101 years
+Y102	102 years
+Y103	103 years
+Y104	104 years
+Y105	105 years
+Y106	106 years
+Y107	107 years
+Y108	108 years
+Y109	109 years
+Y10T14	From 10 to 14 years
+Y15T17	From 15 to 17 years
+Y15T19	From 15 to 19 years
+Y15T24	From 15 to 24 years
+Y15T29	From 15 to 29 years
+Y15T44	From 15 to 44 years
+Y15T64	From 15 to 64 years
+Y15T74	From 15 to 74 years
+Y16T24	From 16 to 24 years
+Y16T65	From 16 to 65 years
+Y16T74	From 16 to 74 years
+Y18T20	From 18 to 20 years
+Y18T24	From 18 to 24 years
+Y19T20	From 19 to 20 years
+Y1T2	From 1 to 2 years
+Y1T4	From 1 to 4 years
+Y20T24	From 20 to 24 years
+Y20T29	From 20 to 29 years
+Y20T64	From 20 to 64 years
+Y21T22	From 21 to 22 years
+Y21T24	From 21 to 24 years
+Y23T24	From 23 to 24 years
+Y25T26	From 25 to 26 years
+Y25T29	From 25 to 29 years
+Y25T34	From 25 to 34 years
+Y25T39	From 25 to 39 years
+Y25T44	From 25 to 44 years
+Y25T54	From 25 to 54 years
+Y25T64	From 25 to 64 years
+Y27T28	From 27 to 28 years
+D29T60	From 29 to 60 days
+Y30T34	From 30 to 34 years
+Y30T39	From 30 to 39 years
+Y30T44	From 30 to 44 years
+Y30T49	From 30 to 49 years
+Y35T39	From 35 to 39 years
+Y35T44	From 35 to 44 years
+Y35T54	From 35 to 54 years
+Y3T4	From 3 to 4 years
+Y3T5	From 3 to 5 years
+Y40T44	From 40 to 44 years
+Y40T49	From 40 to 49 years
+Y40T64	From 40 to 64 years
+Y45T49	From 45 to 49 years
+Y45T54	From 45 to 54 years
+Y45T59	From 45 to 59 years
+Y45T64	From 45 to 64 years
+Y50T54	From 50 to 54 years
+Y50T59	From 50 to 59 years
+Y50T64	From 50 to 64 years
+Y55T59	From 55 to 59 years
+Y55T64	From 55 to 64 years
+Y55T74	From 55 to 74 years
+Y5T14	From 5 to 14 years
+Y5T9	From 5 to 9 years
+Y60T64	From 60 to 64 years
+Y61T90	From 61 to 90 years
+Y65T69	From 65 to 69 years
+Y65T74	From 65 to 74 years
+Y65T79	From 65 to 79 years
+Y6T14	From 6 to 14 years
+Y6T9	From 6 to 9 years
+Y70T74	From 70 to 74 years
+Y75T79	From 75 to 79 years
+Y75T84	From 75 to 84 years
+Y75T99	From 75 to 99 years
+Y80T84	From 80 to 84 years
+Y85T89	From 85 to 89 years
+Y90T94	From 90 to 94 years
+D91T365	From 91 to 365 days
+Y_LT20_GE65	Less than 20 years or 65 years or over
+Y20T69	From 20 to 69 years
+Y50T69	From 50 to 69 years
+Y50T74	From 50 to 74 years
+_Z	Not applicable
+Y_LT18	Less than 18 years
+Y18T25	From 18 to 25 years
+Y18T65	From 18 to 65 years
+Y26T40	From 26 to 40 years
+Y41T50	From 41 to 50 years
+Y51T65	From 51 to 65 years
+Y60T99	From 60 to 99 years
+Y65T99	From 65 to 99 years
+Y66T75	From 66 to 75 years
+Y70T99	From 70 to 99 years
+Y_GE76	76 years or over
+Y80T99	From 80 to 99 years
+Y85T99	From 85 to 99 years
+Y_LT2	Less than 2 years
+Y_LT4	Less than 4 years
+Y_LT6	Less than 6 years
+Y_GT7	Over 7 years
+Y_LT16	Less than 16 years
+Y_GT18	Over 18 years
+Y_GE19	19 years or over
+Y_GT49	Over 49 years
+ISCED11_0	Early childhood education
+ISCED11_01	Early childhood educational development
+ISCED11_010	Early childhood educational development
+ISCED11_02	Pre-primary education
+ISCED11_020	Pre-primary education
+ISCED11_1	Primary education
+ISCED11_10	Primary education
+ISCED11_100	Primary education
+ISCED11_2	Lower secondary education
+ISCED11_24	Lower secondary general education
+ISCED11_241	Lower secondary general education, insufficient for level completion or partial level completion, without direct access to upper secondary education
+ISCED11_242	Lower secondary general education, sufficient for partial level completion, without direct access to upper secondary education
+ISCED11_243	Lower secondary general education, sufficient for level completion, without direct access to upper secondary education
+ISCED11_244	Lower secondary general education, sufficient for level completion, with direct access to upper secondary education
+ISCED11_243_244_253_254	Lower secondary education, sufficient for level completion
+ISCED11_25	Lower secondary vocational education
+ISCED11_251	Lower secondary vocational education, insufficient for level completion or partial level completion, without direct access to upper secondary education
+ISCED11_252	Lower secondary vocational education, sufficient for partial level completion, without direct access to upper secondary education
+ISCED11_253	Lower secondary vocational education, sufficient for level completion, without direct access to upper secondary education
+ISCED11_254	Lower secondary vocational education, sufficient for level completion, with direct access to upper secondary education
+ISCED11_2_3	Secondary education
+ISCED11_25_35_45	Non-tertiary vocational programmes
+ISCED11_25_35_45_55	Vocational education
+ISCED11_3	Upper secondary education
+ISCED11_34	Upper secondary general education
+ISCED11_341	Upper secondary general education, insufficient for level completion or partial level completion, without direct access to tertiary education
+ISCED11_342	Upper secondary general education, sufficient for partial level completion, without direct access to tertiary education
+ISCED11_343	Upper secondary general education, sufficient for level completion, without direct access to tertiary education
+ISCED11_344	Upper secondary general education, sufficient for level completion, with direct access to tertiary education
+ISCED11_34X341	Upper secondary general education, full or partial level completion
+ISCED11_343_344_353_354	Upper secondary education, sufficient for level completion
+ISCED11_35	Upper secondary vocational education
+ISCED11_351	Upper secondary vocational education, insufficient for level completion or partial level completion, without direct access to tertiary education
+ISCED11_352	Upper secondary vocational education, sufficient for partial level completion, without direct access to tertiary education
+ISCED11_353	Upper secondary vocational education, sufficient for level completion, without direct access to tertiary education
+ISCED11_354	Upper secondary vocational education, sufficient for level completion, with direct access to tertiary education
+ISCED11_35X351	Upper secondary vocational education, full or partial level completion
+ISCED11_3X341_351	Upper secondary education, full or partial level completion
+ISCED11_342_352	Upper secondary education, partial level completion without direct access to tertiary education
+ISCED11_343_353	Upper secondary education, level completion without direct access to tertiary education
+ISCED11_343_344	Upper secondary general education, sufficient for level completion
+ISCED11_344_354	Upper secondary education, level completion with direct access to tertiary education
+ISCED11_353_354	Upper secondary vocational education, sufficient for level completion
+ISCED11_34_44	Upper secondary and post-secondary non-tertiary general programmes
+ISCED11_35_45	Upper secondary and post-secondary non-tertiary vocational programmes
+ISCED11_35SW	Upper secondary vocational education, school and work-based programmes
+ISCED11_3_4	Upper secondary and post-secondary non-tertiary all programmes
+ISCED11_4	Post-secondary non-tertiary education
+ISCED11_44	Post-secondary non-tertiary general education
+ISCED11_441	Post-secondary non-tertiary general education, insufficient for level completion, without direct access to tertiary education
+ISCED11_443	Post-secondary non-tertiary general education, sufficient for level completion, without direct access to tertiary education
+ISCED11_444	Post-secondary non-tertiary general education, sufficient for level completion, with direct access to tertiary education
+ISCED11_44X441	Post-secondary non-tertiary general education, sufficient for level completion
+ISCED11_45	Post-secondary non-tertiary vocational education
+ISCED11_45SW	Post-secondary non-tertiary vocational education, school and work-based programmes
+ISCED11_451	Post-secondary non-tertiary vocational education, insufficient for level completion, without direct access to tertiary education
+ISCED11_453	Post-secondary non-tertiary vocational education, sufficient for level completion, without direct access to tertiary education
+ISCED11_454	Post-secondary non-tertiary vocational education, sufficient for level completion, with direct access to tertiary education
+ISCED11_45X451	Post-secondary non-tertiary vocational education, sufficient for level completion
+ISCED11_443_453	Post-secondary non-tertiary education, level completion without direct access to tertiary education
+ISCED11_444_454	Post-secondary non-tertiary education, level completion with direct access to tertiary education
+ISCED11_4X441_451	Post-secondary non-tertiary education, sufficient for level completion
+ISCED11_5	Short-cycle tertiary education
+ISCED11_54	Short-cycle tertiary general education
+ISCED11_541	Short-cycle tertiary general education, insufficient for level completion
+ISCED11_544	Short-cycle tertiary general education, sufficient for level completion
+ISCED11_55	Short-cycle tertiary vocational education
+ISCED11_55SW	Short-cycle tertiary vocational education, school and work-based programmes
+ISCED11_551	Short-cycle tertiary vocational education, insufficient for level completion
+ISCED11_554	Short-cycle tertiary vocational education, sufficient for level completion
+ISCED11_544_554	Short-cycle tertiary education, sufficient for level completion
+ISCED11_6	Bachelor’s or equivalent level
+ISCED11_64	Bachelor’s or equivalent academic level
+ISCED11_641	Bachelor’s or equivalent academic level, insufficient for level completion
+ISCED11_645	Bachelor’s or equivalent academic level, first degree (3-4 years)
+ISCED11_646	Bachelor’s or equivalent academic level, long first degree (more than 4 years)
+ISCED11_647	Bachelor’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)
+ISCED11_65	Bachelor’s or equivalent professional level
+ISCED11_651	Bachelor’s or equivalent professional level, insufficient for  completion
+ISCED11_655	Bachelor’s or equivalent professional level, first degree (3-4 years)
+ISCED11_656	Bachelor’s or equivalent professional level, long first degree (more than 4 years)
+ISCED11_657	Bachelor’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)
+ISCED11_66	Bachelor’s or equivalent level, orientation unspecified
+ISCED11_661	Bachelor’s or equivalent level, orientation unspecified, insufficient for level completion
+ISCED11_665	Bachelor’s or equivalent level, orientation unspecified, first degree (3-4 years)
+ISCED11_666	Bachelor’s or equivalent level, orientation unspecified, long first degree (more than 4 years)
+ISCED11_667	Bachelor’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)
+ISCED11_645_655_665	Bachelor's or equivalent level, first degree (3-4 years)
+ISCED11_646_656_666	Bachelor's or equivalent level, first long degree (more than 4 years)
+ISCED11_645_646_655_656_665_666	Bachelor's or equivalent level, first degrees (more than 3 years)
+ISCED11_647_657_667	Second or further degree following successful completion of a Bachelor's or equivalent programme
+ISCED11_6X641_651_661	Bachelor's or equivalent level, sufficient for level completion
+ISCED11_645T647	Bachelor’s or equivalent academic level, sufficient for level completion
+ISCED11_655T657	Bachelor’s or equivalent professional level, sufficient for level completion
+ISCED11_641_651_661	Bachelor’s or equivalent level, insufficient for  completion
+ISCED11_645_655_665_646_656_666	Bachelor’s or equivalent level, sufficient for level completion and first degrees
+ISCED11_6X647_657_667	Bachelor’s or equivalent level,  insufficient for level completion and first degrees (3-4 years)
+ISCED11_64X647	Bachelor’s or equivalent academic level,  excluding second or further degree (following a Bachelor's or equivalent programme)
+ISCED11_65X657	Bachelor’s or equivalent professional level, excluding second or further degree (following a Bachelor's or equivalent programme)
+ISCED11_665_666_766	Tertiary education first degrees
+ISCED11_7	Master’s or equivalent level
+ISCED11_74	Master’s or equivalent academic level
+ISCED11_741	Master’s or equivalent academic level, insufficient for level completion
+ISCED11_746	Master’s or equivalent academic level, long first degree (at least 5 years)
+ISCED11_747	Master’s or equivalent academic level, second or further degree (following a Bachelor’s or equivalent programme)
+ISCED11_748	Master’s or equivalent academic level, second or further degree (following a Master’s or equivalent programme)
+ISCED11_75	Master’s or equivalent professional level
+ISCED11_751	Master’s or equivalent professional level, insufficient for  completion
+ISCED11_756	Master’s or equivalent professional level, long first degree (at least 5 years)
+ISCED11_757	Master’s or equivalent professional level, second or further degree (following a Bachelor’s or equivalent programme)
+ISCED11_758	Master’s or equivalent professional level, second or further degree (following a Master’s or equivalent programme)
+ISCED11_76	Master’s or equivalent level, orientation unspecified
+ISCED11_761	Master’s or equivalent level, orientation unspecified, insufficient for  completion
+ISCED11_766	Master’s or equivalent level, orientation unspecified, long first degree (at least 5 years)
+ISCED11_767	Master’s or equivalent level, orientation unspecified, second or further degree (following a Bachelor’s or equivalent programme)
+ISCED11_768	Master’s or equivalent level, orientation unspecified, second or further degree (following a Master’s or equivalent programme)
+ISCED11_746_756_766	Master’s or equivalent level, long first degree (at least 5 years)
+ISCED11_747_757_767	Master’s or equivalent level, second or further degree (following a Bachelor's or equivalent programme)
+ISCED11_746_747_756_757_766_767	Master’s or equivalent level, first and second or further degree (following a Bachelor's or equivalent programme)
+ISCED11_748_758_768	Master’s or equivalent level, second or further degree (following a Master’s or equivalent programme)
+ISCED11_7X741_751_761	Master’s or equivalent level, sufficient for level completion
+ISCED11_746T748	Master’s or equivalent academic level, sufficient for level completion
+ISCED11_756T758	Master’s or equivalent professional level, sufficient for level completion
+ISCED11_741_751_761	Master’s or equivalent level, all programmes, insufficient for level completion
+ISCED11_741_746_751_756_761_766	Master's or equivalent level, insufficient for level completion or first degrees
+ISCED11_7X748_758_768	Master’s or equivalent level,  excluding second or further degree (following a Master’s or equivalent programme)
+ISCED11_74X747	Master’s or equivalent  academic level, excluding second or further degree (following a Master’s or equivalent programme)
+ISCED11_75X757	Master’s or equivalent  professional level, excluding second or further degree (following a Master’s or equivalent programme)
+ISCED11_8	Doctoral or equivalent level
+ISCED11_84	Doctoral or equivalent academic level
+ISCED11_841	Doctoral or equivalent academic level, insufficient for  completion
+ISCED11_844	Doctoral or equivalent academic level, sufficient for completion of level
+ISCED11_85	Doctoral or equivalent professional level
+ISCED11_851	Doctoral or equivalent professional level, insufficient for  completion
+ISCED11_854	Doctoral or equivalent professional level, sufficient for completion of level
+ISCED11_86	Doctoral or equivalent level, orientation unspecified
+ISCED11_861	Doctoral or equivalent level, orientation unspecified, insufficient for  completion
+ISCED11_864	Doctoral or equivalent level, orientation unspecified, sufficient for completion of level
+ISCED11_844_854_864	Doctoral or equivalent level, sufficient for level completion
+ISCED11_9	Not elsewhere classified
+ISCED11_99	Not elsewhere classified
+ISCED11_999	Not elsewhere classified
+ISCED11_5T8	Tertiary education
+ISCED11_54T84	Tertiary general/academic education
+ISCED11_55T85	Tertiary vocational/professional education
+ISCED11_0_1	Early childhood and primary education
+ISCED11_0T2	Pre-primary, primary and lower secondary education
+ISCED11_0T4	Pre-primary, primary, secondary and post-secondary non-tertiary education
+ISCED11_0T8	Pre-primary to tertiary education
+ISCED11_1_2	Primary and lower secondary education (basic education)
+ISCED11_1T3	Primary and secondary education
+ISCED11_1T4	Primary to post-secondary non-tertiary education
+ISCED11_1T8	Primary to tertiary education
+ISCED11_2T4	Lower secondary, upper secondary and post-secondary non-tertiary education
+ISCED11_2T8	Lower secondary to tertiary education levels
+ISCED11_3T8	Upper secondary to tertiary education levels
+ISCED11_5_6	Short-cycle tertiary education and Bachelor's or equivalent level
+ISCED11_5T7	Short-cycle tertiary, Bachelor's, Master's or equivalent level
+ISCED11_6_7	Bachelor's and Master's or equivalent levels
+ISCED11_6T8	Bachelor's, Master's and Doctoral or equivalent level
+ISCED11_7_8	Master's and Doctoral or equivalent level
+_O	Other
+_U	No data/unknown
+AUS	Australia
+AU1	New South Wales
+AU101	Capital Region
+AU103	Central West
+AU104	Coffs Harbour - Grafton
+AU105	Far West and Orana
+AU106	Hunter Valley Exc Newcastle
+AU107	Illawarra
+AU108	Mid North Coast
+AU109	Murray
+AU110	New England and North West
+AU111	Newcastle and Lake Macquarie
+AU112	Richmond - Tweed
+AU113	Riverina
+AU114	Southern Highlands and Shoalhaven
+AU1GS	Sydney
+AU2	Victoria
+AU201	Ballarat
+AU202	Bendigo
+AU203	Geelong
+AU204	Hume
+AU205	Latrobe - Gippsland
+AU215	North West
+AU216	Shepparton
+AU217	Warrnambool and South West
+AU2GM	Melbourne
+AU3	Queensland
+AU306	Cairns
+AU307	Darling Downs - Maranoa
+AU308	Fitzroy
+AU309	Gold Coast
+AU312	Mackay
+AU315	Queensland - Outback
+AU316	Sunshine Coast
+AU317	Toowoomba
+AU318	Townsville
+AU319	Wide Bay
+AU3GB	Brisbane
+AU4	South Australia
+AU405	Barossa - Yorke - Mid North
+AU406	South Australia - Outback
+AU407	South Australia - South East
+AU4GA	Adelaide
+AU5	Western Australia
+AU501	Bunbury
+AU508	Western Australia - Outback
+AU509	Western Australia - Wheat Belt
+AU5GP	Perth
+AU6	Tasmania
+AU601	Hobart
+AU602	Launceston and North East
+AU603	South East
+AU604	West and North West
+AU7	Northern Territory
+AU701	Darwin
+AU702	Northern Territory - Outback
+AU8	Australian Capital Territory
+AU801	Australian Capital Territory
+AUT	Austria
+AT11	Burgenland (AT)
+AT111	Mittelburgenland
+AT112	Nordburgenland
+AT113	Südburgenland
+AT12	Lower Austria
+AT121	Mostviertel-Eisenwurzen
+AT122	Niederösterreich-Süd
+AT123	Sankt Pölten
+AT124	Waldviertel
+AT125	Weinviertel
+AT126	Wiener Umland/Nordteil
+AT127	Wiener Umland/Südteil
+AT13	Vienna
+AT130	Vienna
+AT21	Carinthia
+AT211	Klagenfurt-Villach
+AT212	Oberkärnten
+AT213	Unterkärnten
+AT22	Styria
+AT221	Graz
+AT222	Liezen
+AT223	Östliche Obersteiermark
+AT224	Oststeiermark
+AT225	West- und Südsteiermark
+AT226	Westliche Obersteiermark
+AT31	Upper Austria
+AT311	Innviertel
+AT312	Linz-Wels
+AT313	Mühlviertel
+AT314	Steyr-Kirchdorf
+AT315	Traunviertel
+AT32	Salzburg
+AT321	Lungau
+AT322	Pinzgau-Pongau
+AT323	Salzburg und Umgebung
+AT33	Tyrol
+AT331	Außerfern
+AT332	Innsbruck
+AT333	Osttirol
+AT334	Tyrolean Oberland
+AT335	Tyrolean Unterland
+AT34	Vorarlberg
+AT341	Bludenz-Bregenzer Wald
+AT342	Rheintal-Bodenseegebiet
+BEL	Belgium
+BE1	Brussels Capital Region
+BE100	Arr. de Bruxelles-Capitale / Arr. Van Brussel-Hoofdstad
+BE2	Flemish Region
+BE211	Arr. Antwerpen
+BE212	Arr. Mechelen
+BE213	Arr. Turnhout
+BE221	Arr. Hasselt
+BE222	Arr. Maaseik
+BE223	Arr. Tongeren
+BE231	Arr. Aalst
+BE232	Arr. Dendermonde
+BE233	Arr. Eeklo
+BE234	Arr. Gent
+BE235	Arr. Oudenaarde
+BE236	Arr. Sint-Niklaas
+BE241	Arr. Halle-Vilvoorde
+BE242	Arr. Leuven
+BE251	Arr. Brugge
+BE252	Arr. Diksmuide
+BE253	Arr. Ieper
+BE254	Arr. Kortrijk
+BE255	Arr. Oostende
+BE256	Arr. Roeselare
+BE257	Arr. Tielt
+BE258	Arr. Veurne
+BE3	Wallonia
+BE310	Arr. Nivelles
+BE321	Arr. Ath
+BE322	Arr. Charleroi
+BE323	Arr. Mons
+BE324	Arr. Mouscron
+BE325	Arr. Soignies
+BE326	Arr. Thuin
+BE327	Arr. Tournai
+BE331	Arr. Huy
+BE332	Arr. Liège
+BE334	Arr. Waremme
+BE335	Arr. Verviers - Communes Francophones
+BE336	Bezirk Verviers - Deutschsprachige Gemeinschaft
+BE341	Arr. Arlon
+BE342	Arr. Bastogne
+BE343	Arr. Marche-en-Famenne
+BE344	Arr. Neufchâteau
+BE345	Arr. Virton
+BE351	Arr. Dinant
+BE352	Arr. Namur
+BE353	Arr. Philippeville
+CAN	Canada
+CA10	Newfoundland and Labrador
+CA1010N	Avalon Peninsula, Newfoundland and Labrador
+CA1020N	South Coast-Burin Peninsula, Newfoundland and Labrador
+CA1030N	West Coast-Northern Peninsula-Labrador, Newfoundland and Labrador
+CA1040N	Notre Dame-Central Bonavista Bay, Newfoundland and Labrador
+CA1001	Division 1 - NL
+CA1002	Division 2, NL
+CA1003	Division 3, NL
+CA1004	Division 4, NL
+CA1005	Division 5, NL
+CA1006	Division 6, NL
+CA1007	Division 7, NL
+CA1008	Division 8, NL
+CA1009	Division 9, NL
+CA1010	Division 10, NL
+CA1011	Division 11, NL
+CA11	Prince Edward Island
+CA1110N	Prince Edward Island
+CA1101	Kings, PE
+CA1102	Queens, PE
+CA1103	Prince, PE
+CA12	Nova Scotia
+CA1210N	Cape Breton, Nova Scotia
+CA1220N	North Shore, Nova Scotia
+CA1230N	Annapolis Valley, Nova Scotia
+CA1240N	Southern, Nova Scotia
+CA1250N	Halifax, Nova Scotia
+CA1201	Shelburne, NS
+CA1202	Yarmouth, NS
+CA1203	Digby, NS
+CA1204	Queens, NS
+CA1205	Annapolis, NS
+CA1206	Lunenburg, NS
+CA1207	Kings, NS
+CA1208	Hants, NS
+CA1209	Halifax, NS
+CA1210	Colchester, NS
+CA1211	Cumberland, NS
+CA1212	Pictou, NS
+CA1213	Guysborough, NS
+CA1214	Antigonish, NS
+CA1215	Inverness, NS
+CA1216	Richmond, NS
+CA1217	Cape Breton, NS
+CA1218	Victoria, NS
+CA13	New Brunswick
+CA1310N	Campbellton-Miramichi, New Brunswick
+CA1320N	Moncton-Richibucto, New Brunswick
+CA1330N	Saint John-St. Stephen, New Brunswick
+CA1340N	Fredericton-Oromocto, New Brunswick
+CA1350N	Edmundston-Woodstock, New Brunswick
+CA1301	Saint John, NB
+CA1302	Charlotte, NB
+CA1303	Sunbury, NB
+CA1304	Queens, NB
+CA1305	Kings, NB
+CA1306	Albert, NB
+CA1307	Westmorland, NB
+CA1308	Kent, NB
+CA1309	Northumberland, NB
+CA1310	York, NB
+CA1311	Carleton, NB
+CA1312	Victoria, NB
+CA1313	Madawaska County, NB
+CA1314	Restigouche County, NB
+CA1315	Gloucester County, NB
+CA24	Quebec
+CA2410N	Gaspésie-Îles-de-la-Madeleine, Quebec
+CA2415N	Bas-Saint-Laurent, Quebec
+CA2420N	Capitale-Nationale, Quebec
+CA2425N	Chaudière-Appalaches, Quebec
+CA2430N	Estrie, Quebec
+CA2433N	Centre-du-Québec, Quebec
+CA2435N	Montérégie, Quebec
+CA2440N	Montréal, Quebec
+CA2445N	Laval, Quebec
+CA2450N	Lanaudière, Quebec
+CA2455N	Laurentides, Quebec
+CA2460N	Outaouais, Quebec
+CA2465N	Abitibi-Témiscamingue, Quebec
+CA2470N	Mauricie, Quebec
+CA2475N	Saguenay-Lac-Saint-Jean, Quebec
+CA2480N	Côte-Nord and Nord-du-Québec, Quebec
+CA2401	Les Îles-de-la-Madeleine, QC
+CA2402	Le Rocher-Percé, QC
+CA2403	La Côte-de-Gaspé, QC
+CA2404	La Haute-Gaspésie, QC
+CA2405	Bonaventure, QC
+CA2406	Avignon, QC
+CA2407	La Matapédia, QC
+CA2408	Matane, QC
+CA2409	La Mitis, QC
+CA2410	Rimouski-Neigette, QC
+CA2411	Les Basques, QC
+CA2412	Rivière-du-Loup, QC
+CA2413	Témiscouata, QC
+CA2414	Kamouraska, QC
+CA2415	Charlevoix-Est, QC
+CA2416	Charlevoix, QC
+CA2417	L'Islet, QC
+CA2418	Montmagny, QC
+CA2419	Bellechasse, QC
+CA2420	L'Île-d'Orléans, QC
+CA2421	La Côte-de-Beaupré, QC
+CA2422	La Jacques-Cartier, QC
+CA2423	Communauté-Urbaine-de-Québec, QC
+CA2425	Lévis, QC
+CA2426	La Nouvelle-Beauce, QC
+CA2427	Robert-Cliche, QC
+CA2428	Les Etchemins, QC
+CA2429	Beauce-Sartigan, QC
+CA2430	Le Granit, QC
+CA2431	L'Amiante, QC
+CA2432	L'Érable, QC
+CA2433	Lotbinière, QC
+CA2434	Portneuf, QC
+CA2435	Mékinac, QC
+CA2436	Shawinigan, QC
+CA2437	Francheville, QC
+CA2438	Bécancour, QC
+CA2439	Arthabaska, QC
+CA2440	Asbestos, QC
+CA2441	Le Haut-Saint-François, QC
+CA2442	Le Val-Saint-François, QC
+CA2443	Sherbrooke, QC
+CA2444	Coaticook, QC
+CA2445	Memphrémagog, QC
+CA2446	Brome-Missisquoi, QC
+CA2447	La Haute-Yamaska, QC
+CA2448	Acton, QC
+CA2449	Drummond, QC
+CA2450	Nicolet-Yamaska, QC
+CA2451	Maskinongé, QC
+CA2452	D'Autray, QC
+CA2453	Le Bas-Richelieu, QC
+CA2454	Les Maskoutains, QC
+CA2455	Rouville, QC
+CA2456	Le Haut-Richelieu, QC
+CA2457	La Vallée-du-Richelieu, QC
+CA2458	Longueuil, QC
+CA2459	Lajemmerais, QC
+CA2460	L'Assomption, QC
+CA2461	Joliette, QC
+CA2462	Matawinie, QC
+CA2463	Montcalm, QC
+CA2464	Les Moulins, QC
+CA2465	Laval, QC
+CA2466	Communauté-Urbaine-de-Montréal, QC
+CA2467	Roussillon, QC
+CA2468	Les Jardins-de-Napierville, QC
+CA2469	Le Haut-Saint-Laurent, QC
+CA2470	Beauharnois-Salaberry, QC
+CA2471	Vaudreuil-Soulanges, QC
+CA2472	Deux-Montagnes, QC
+CA2473	Thérèse-De Blainville, QC
+CA2474	Mirabel, QC
+CA2475	La Rivière-du-Nord, QC
+CA2476	Argenteuil, QC
+CA2477	Les Pays-d'en-Haut, QC
+CA2478	Les Laurentides, QC
+CA2479	Antoine-Labelle, QC
+CA2480	Papineau, QC
+CA2481	Gatineau, QC
+CA2482	Les Collines-de-l'Outaouais, QC
+CA2483	La Vallée-de-la-Gatineau, QC
+CA2484	Pontiac, QC
+CA2485	Témiscamingue, QC
+CA2486	Rouyn-Noranda, QC
+CA2487	Abitibi-Ouest, QC
+CA2488	Abitibi, QC
+CA2489	Vallée-de-l'Or, QC
+CA2490	La Tuque, QC
+CA2491	Le Domaine-du-Roy, QC
+CA2492	Maria-Chapdelaine, QC
+CA2493	Lac-Saint-Jean-Est, QC
+CA2494	Le Saguenay-et-son-Fjord, QC
+CA2495	La Haute-Côte-Nord, QC
+CA2496	Manicouagan, QC
+CA2497	Sept-Rivières-Caniapiscau, QC
+CA2498	Minganie-Basse-Côte-Nord, QC
+CA2499	Nord-du-Québec, QC
+CA35	Ontario
+CA3510N	Ottawa, Ontario
+CA3515N	Kingston-Pembroke, Ontario
+CA3520N	Muskoka-Kawarthas, Ontario
+CA3530N	Toronto, Ontario
+CA3540N	Kitchener-Waterloo-Barrie, Ontario
+CA3550N	Hamilton-Niagara Peninsula, Ontario
+CA3560N	London, Ontario
+CA3570N	Windsor-Sarnia, Ontario
+CA3580N	Stratford-Bruce Peninsula, Ontario
+CA3590N	Northeast, Ontario
+CA3595N	Northwest, Ontario
+CA3501	Stormont, Dundas and Glengarry, ON
+CA3502	Prescott and Russell, ON
+CA3506	Ottawa-Carleton, ON
+CA3507	Leeds and Grenville, ON
+CA3509	Lanark, ON
+CA3510	Frontenac, ON
+CA3511	Lennox and Addington, ON
+CA3512	Hastings, ON
+CA3513	Prince Edward, ON
+CA3514	Northumberland, ON
+CA3515	Peterborough, ON
+CA3516	Kawartha Lakes, ON
+CA3518	Durham, ON
+CA3519	York, ON
+CA3520	Toronto metropolitan municipality, ON
+CA3521	Peel, ON
+CA3522	Dufferin, ON
+CA3523	Wellington, ON
+CA3524	Halton, ON
+CA3525	Hamilton, ON
+CA3526	Niagara, ON
+CA3528	Haldimand-Norfolk, ON
+CA3529	Brant, ON
+CA3530	Waterloo, ON
+CA3531	Perth, ON
+CA3532	Oxford, ON
+CA3534	Elgin, ON
+CA3536	Chatham-Kent, ON
+CA3537	Essex, ON
+CA3538	Lambton, ON
+CA3539	Middlesex, ON
+CA3540	Huron, ON
+CA3541	Bruce, ON
+CA3542	Grey, ON
+CA3543	Simcoe, ON
+CA3544	Muskoka, ON
+CA3546	Haliburton, ON
+CA3547	Renfrew, ON
+CA3548	Nipissing, ON
+CA3549	Parry Sound, ON
+CA3551	Manitoulin, ON
+CA3552	Sudbury (District), ON
+CA3553	Greater Sudbury / Grand Sudbury, ON
+CA3554	Timiskaming, ON
+CA3556	Cochrane, ON
+CA3557	Algoma, ON
+CA3558	Thunder Bay, ON
+CA3559	Rainy River, ON
+CA3560	Kenora, ON
+CA46	Manitoba
+CA4610N	Southeast, Manitoba
+CA4620N	South Central, Manitoba
+CA4630N	Southwest, Manitoba
+CA4640N	North Central, Manitoba
+CA4650N	Winnipeg, Manitoba
+CA4660N	Interlake, Manitoba
+CA4670N	Parklands and North, Manitoba
+CA4601	Division 1, MB
+CA4602	Division 2, MB
+CA4603	Division 3, MB
+CA4604	Division 4, MB
+CA4605	Division 5, MB
+CA4606	Division 6, MB
+CA4607	Division 7, MB
+CA4608	Division 8, MB
+CA4609	Division 9, MB
+CA4610	Division 10, MB
+CA4611	Division 11, MB
+CA4612	Division 12, MB
+CA4613	Division 13, MB
+CA4614	Division 14, MB
+CA4615	Division 15, MB
+CA4616	Division 16, MB
+CA4617	Division 17, MB
+CA4618	Division 18, MB
+CA4619	Division 19, MB
+CA4620	Division 20, MB
+CA4621	Division 21, MB
+CA4622	Division 22, MB
+CA4623	Division 23, MB
+CA47	Saskatchewan
+CA4710N	Regina-Moose Mountain, Saskatchewan
+CA4720N	Swift Current-Moose Jaw, Saskatchewan
+CA4730N	Saskatoon-Biggar, Saskatchewan
+CA4740N	Yorkton-Melville, Saskatchewan
+CA4750N	Prince Albert and Northern, Saskatchewan
+CA4701	Division 1, SK
+CA4702	Division 2, SK
+CA4703	Division 3, SK
+CA4704	Division 4, SK
+CA4705	Division 5, SK
+CA4706	Division 6, SK
+CA4707	Division 7, SK
+CA4708	Division 8, SK
+CA4709	Division 9, SK
+CA4710	Division 10, SK
+CA4711	Division 11, SK
+CA4712	Division 12, SK
+CA4713	Division 13, SK
+CA4714	Division 14, SK
+CA4715	Division 15, SK
+CA4716	Division 16, SK
+CA4717	Division 17, SK
+CA4718	Division 18, SK
+CA48	Alberta
+CA4810N	Lethbridge-Medicine Hat, Alberta
+CA4820N	Camrose-Drumheller, Alberta
+CA4830N	Calgary, Alberta
+CA4840N	Banff-Jasper-Rocky Mountain House, Alberta
+CA4850N	Red Deer, Alberta
+CA4860N	Edmonton, Alberta
+CA4870N	Athabasca-Grande Prairie-Peace River, Alberta
+CA4880N	Wood Buffalo-Cold Lake, Alberta
+CA4801	Division 1, AB
+CA4802	Division 2, AB
+CA4803	Division 3, AB
+CA4804	Division 4, AB
+CA4805	Division 5, AB
+CA4806	Division 6, AB
+CA4807	Division 7, AB
+CA4808	Division 8, AB
+CA4809	Division 9, AB
+CA4810	Division 10, AB
+CA4811	Division 11, AB
+CA4812	Division 12, AB
+CA4813	Division 13, AB
+CA4814	Division 14, AB
+CA4815	Division 15, AB
+CA4816	Division 16, AB
+CA4817	Division 17, AB
+CA4818	Division 18, AB
+CA4819	Division 19, AB
+CA59	British Columbia
+CA5910N	Vancouver Island and Coast, British Columbia
+CA5920N	Lower Mainland-Southwest, British Columbia
+CA5930N	Thompson-Okanagan, British Columbia
+CA5940N	Kootenay, British Columbia
+CA5950N	Cariboo, British Columbia
+CA5960N	North Coast and Nechako, British Columbia
+CA5980N	Northeast, British Columbia
+CA5901	East Kootenay, BC
+CA5903	Central Kootenay, BC
+CA5905	Kootenay Boundary, BC
+CA5907	Okanagan-Similkameen, BC
+CA5909	Fraser Valley, BC
+CA5915	Greater Vancouver, BC
+CA5917	Capital, BC
+CA5919	Cowichan Valley, BC
+CA5921	Nanaimo, BC
+CA5923	Alberni-Clayoquot, BC
+CA5924	Strathcona, BC
+CA5925	Comox Valley BC
+CA5927	Powell River, BC
+CA5929	Sunshine Coast, BC
+CA5931	Squamish-Lillooet, BC
+CA5933	Thompson-Nicola, BC
+CA5935	Central Okanagan, BC
+CA5937	North Okanagan, BC
+CA5939	Columbia-Shuswap, BC
+CA5941	Cariboo, BC
+CA5943	Mount Waddington, BC
+CA5945	Central Coast, BC
+CA5947	Skeena-Queen Charlotte, BC
+CA5949	Kitimat-Stikine, BC
+CA5951	Bulkley-Nechako, BC
+CA5953	Fraser-Fort George, BC
+CA5955	Peace River, BC
+CA5957	Stikine, BC
+CA5959	Northern Rockies, BC
+CA60	Yukon
+CA6010N	Yukon Territory
+CA6001	Yukon, YT
+CA61	Northwest Territories
+CA6110N	Northwest Territories
+CA6101	Region 1, NT
+CA6102	Region 2, NT
+CA6103	Region 3, NT
+CA6104	Region 4, NT
+CA6105	Region 5, NT
+CA6106	Region 6, NT
+CA6107	Inuvik, NT
+CA62	Nunavut
+CA6210N	Nunavut
+CA6204	Baffin, NU
+CA6205	Keewatin, NU
+CA6208	Kitikmeot, NU
+CHL	Chile
+CL01	Tarapacá
+CL011	Iquique
+CL012	Tamarugal
+CL02	Antofagasta
+CL021	Antofagasta
+CL022	El Loa
+CL023	Tocopilla
+CL03	Atacama
+CL031	Copiapó
+CL032	Chañaral
+CL033	Huasco
+CL04	Coquimbo
+CL041	Elqui
+CL042	Choapa
+CL043	Limarí
+CL05	Valparaíso
+CL051	Valparaíso
+CL052	Isla de Pascua
+CL053	Los Andes
+CL054	Petorca
+CL055	Quillota
+CL056	San Antonio
+CL057	San Felipe de Aconcagua
+CL058	Marga Marga
+CL06	O'Higgins
+CL061	Cachapoal
+CL062	Cardenal Caro
+CL063	Colchagua
+CL07	Maule
+CL071	Talca
+CL072	Cauquenes
+CL073	Curicó
+CL074	Linares
+CL08	Biobío
+CL081	Concepción
+CL082	Arauco
+CL09	Araucanía
+CL091	Cautín
+CL092	Malleco
+CL10	Los Lagos
+CL101	Llanquihue
+CL102	Chiloé
+CL103	Osorno
+CL104	Palena
+CL11	Aysén
+CL111	Coyhaique
+CL112	Aysén
+CL113	Capitán Prat
+CL114	General Carrera
+CL12	Magallanes y Antártica
+CL121	Magallanes
+CL122	Antártica Chilena
+CL123	Tierra del Fuego
+CL124	Última Esperanza
+CL13	Santiago Metropolitan
+CL131	Santiago
+CL132	Cordillera
+CL133	Chacabuco
+CL134	Maipo
+CL135	Melipilla
+CL136	Talagante
+CL14	Los Ríos
+CL141	Valdivia
+CL142	Ranco
+CL15	Arica y Parinacota
+CL151	Arica
+CL152	Parinacota
+CL16	Ñuble
+CL161	Diguillín
+CL162	Itata
+CL163	Punilla
+COL	Colombia
+CO05	Antioquia
+CO08	Atlántico
+CO11	Bogotá Capital District
+CO13	Bolívar
+CO15	Boyacá
+CO17	Caldas
+CO18	Caquetá
+CO19	Cauca
+CO20	Cesar
+CO23	Córdoba (CO)
+CO25	Cundinamarca
+CO27	Chocó
+CO41	Huila
+CO44	La Guajira
+CO47	Magdalena
+CO50	Meta
+CO52	Nariño
+CO54	Norte de Santander
+CO63	Quindio
+CO66	Risaralda
+CO68	Santander
+CO70	Sucre
+CO73	Tolima
+CO76	Valle del Cauca
+CO81	Arauca
+CO85	Casanare
+CO86	Putumayo
+CO88	San Andrés
+CO90	Grupo Amazonía
+CO91	Amazonas
+CO94	Guainía
+CO95	Guaviare
+CO97	Vaupés
+CO99	Vichada
+CRI	Costa Rica
+CR01	Central
+CR02	Chorotega
+CR03	Central Pacific
+CR04	Brunca
+CR05	Huetar Caribbean
+CR06	North Huetar
+CZE	Czechia
+CZ01	Prague
+CZ010	Prague
+CZ02	Central Bohemian Region
+CZ020	Central Bohemia
+CZ03	Southwest
+CZ031	South Bohemia
+CZ032	Plzen
+CZ04	Northwest
+CZ041	Karlovy Vary
+CZ042	Ústí nad Labem
+CZ05	Northeast
+CZ051	Liberec
+CZ052	Hradec Králové
+CZ053	Pardubice
+CZ06	Southeast
+CZ063	Vysocina
+CZ064	South Moravia
+CZ07	Central Moravia
+CZ071	Olomouc
+CZ072	Zlín
+CZ08	Moravia-Silesia
+CZ080	Moravia-Silesia
+DNK	Denmark
+DK01	Capital (DK)
+DK011	City of Copenhagen
+DK012	Copenhagen suburbs
+DK013	North Zealand
+DK014	Bornholm
+DK02	Zealand
+DK021	East Zealand
+DK022	West and South Zealand
+DK03	Southern Denmark
+DK031	Fyn
+DK032	South Jutland
+DK04	Central Jutland
+DK041	West Jutland
+DK042	East Jutland
+DK05	Northern Jutland
+DK050	North Jutland
+EST	Estonia
+EE00	Estonia
+EE001	North Estonia
+EE004	West Estonia
+EE006	Central Estonia
+EE007	Northeast Estonia
+EE008	Southern Estonia
+FIN	Finland
+FI19	Western Finland
+FI193	Central Finland
+FI194	Southern Ostrobothnia
+FI195	Ostrobothnia
+FI196	Satakunta
+FI197	Pirkanmaa
+FI1B	Helsinki-Uusimaa
+FI1B1	Helsinki-Uusimaa
+FI1C	Southern Finland
+FI1C1	Finland Proper
+FI1C2	Tavastia Proper
+FI1C3	Päijät-Häme
+FI1C4	Kymenlaakso
+FI1C5	South Karelia
+FI1D	Eastern and Northern Finland
+FI1D1	Southern Savonia
+FI1D2	Northern Savonia
+FI1D3	North Karelia
+FI1D8	Kainuu
+FI1D5	Central Ostrobothnia
+FI1D9	North Ostrobothnia
+FI1D7	Lapland
+FI20	Åland (region, level 2)
+FI200	Åland (region, level 3)
+FRA	France
+FR1	Île-de-France
+FR10	Île-de-France
+FR101	Paris
+FR102	Seine-et-Marne
+FR103	Yvelines
+FR104	Essonne
+FR105	Hauts-de-Seine
+FR106	Seine-Saint-Denis
+FR107	Val-de-Marne
+FR108	Val-d'Oise
+FRB	Centre - Val de Loire
+FRB0	Centre-Val de Loire
+FRB01	Cher
+FRB02	Eure-et-Loir
+FRB03	Indre
+FRB04	Indre-et-Loire
+FRB05	Loir-et-Cher
+FRB06	Loiret
+FRC	Bourgogne-Franche-Comté
+FRC1	Burgundy
+FRC11	Côte-d'Or
+FRC12	Nièvre
+FRC13	Saône-et-Loire
+FRC14	Yonne
+FRC2	Franche-Comté
+FRC21	Doubs
+FRC22	Jura
+FRC23	Haute-Saône
+FRC24	Territoire de Belfort
+FRD	Normandy
+FRD2	Upper Normandy
+FRD21	Eure
+FRD22	Seine-Maritime
+FRD1	Lower Normandy
+FRD11	Calvados
+FRD12	Manche
+FRD13	Orne
+FRE	Hauts-de-France
+FRE2	Picardy
+FRE21	Aisne
+FRE22	Oise
+FRE23	Somme
+FRE1	Nord-Pas-de-Calais
+FRE11	Nord (FR)
+FRE12	Pas-de-Calais
+FRF	Grand Est
+FRF2	Champagne-Ardenne
+FRF21	Ardennes
+FRF22	Aube
+FRF23	Marne
+FRF24	Haute-Marne
+FRF3	Lorraine
+FRF31	Meurthe-et-Moselle
+FRF32	Meuse
+FRF33	Moselle
+FRF34	Vosges
+FRF1	Alsace
+FRF11	Bas-Rhin
+FRF12	Haut-Rhin
+FRG	Pays de la Loire
+FRG0	Pays de la Loire
+FRG01	Loire-Atlantique
+FRG02	Maine-et-Loire
+FRG03	Mayenne
+FRG04	Sarthe
+FRG05	Vendée
+FRH	Brittany
+FRH0	Brittany
+FRH01	Côtes-d'Armor
+FRH02	Finistère
+FRH03	Ille-et-Vilaine
+FRH04	Morbihan
+FRI	Nouvelle-Aquitaine
+FRI3	Poitou-Charentes
+FRI31	Charente
+FRI32	Charente-Maritime
+FRI33	Deux-Sèvres
+FRI34	Vienne
+FRI1	Aquitaine
+FRI11	Dordogne
+FRI12	Gironde
+FRI13	Landes
+FRI14	Lot-et-Garonne
+FRI15	Pyrénées-Atlantiques
+FRI2	Limousin
+FRI21	Corrèze
+FRI22	Creuse
+FRI23	Haute-Vienne
+FRJ	Occitanie
+FRJ2	Midi-Pyrénées
+FRJ21	Ariège
+FRJ22	Aveyron
+FRJ23	Haute-Garonne
+FRJ24	Gers
+FRJ25	Lot
+FRJ26	Hautes-Pyrénées
+FRJ27	Tarn
+FRJ28	Tarn-et-Garonne
+FRJ1	Languedoc-Roussillon
+FRJ11	Aude
+FRJ12	Gard
+FRJ13	Hérault
+FRJ14	Lozère
+FRJ15	Pyrénées-Orientales
+FRK	Auvergne-Rhône-Alpes
+FRK2	Rhône-Alpes
+FRK21	Ain
+FRK22	Ardèche
+FRK23	Drôme
+FRK24	Isère
+FRK25	Loire
+FRK26	Rhône
+FRK27	Savoie
+FRK28	Haute-Savoie
+FRK1	Auvergne
+FRK11	Allier
+FRK12	Cantal
+FRK13	Haute-Loire
+FRK14	Puy-de-Dôme
+FRL	Provence-Alpes-Côte d’Azur
+FRL0	Provence-Alpes-Côte d'Azur
+FRL01	Alpes-de-Haute-Provence
+FRL02	Hautes-Alpes
+FRL03	Alpes-Maritimes
+FRL04	Bouches-du-Rhône
+FRL05	Var
+FRL06	Vaucluse
+FRM	Corsica (region, level 2)
+FRM0	Corsica (region, level 3)
+FRM01	Corse-du-Sud
+FRM02	Haute-Corse
+FRY	Overseas regions and departments
+FRY1	Guadeloupe (region, level 2)
+FRY10	Guadeloupe (region, level 3)
+FRY2	Martinique (region, level 2)
+FRY20	Martinique (region, level 3)
+FRY3	French Guiana (region, level2)
+FRY30	French Guiana (region, level3)
+FRY4	La Réunion (region, level 2)
+FRY40	La Réunion (region, level 3)
+FRY5	Mayotte (region, level 2)
+FRY50	Mayotte (region, level 3)
+DEU	Germany
+DE1	Baden-Württemberg
+DE1E	Unterer Neckar
+DE125	Heidelberg Stadtkreis
+DE126	Mannheim Stadtkreis
+DE127	Neckar-Odenwald-Kreis
+DE128	Rhein-Neckar-Kreis
+DE1B	Franken
+DE117	Heilbronn Stadtkreis
+DE118	Heilbronn Landkreis
+DE119	Hohenlohekreis
+DE11A	Schwäbisch Hall
+DE11B	Main-Tauber-Kreis
+DE1D	Mittlerer Oberrhein
+DE121	Baden-Baden Stadtkreis
+DE122	Karlsruhe Stadtkreis
+DE123	Karlsruhe Landkreis
+DE124	Rastatt
+DE1F	Nordschwarzwald
+DE129	Pforzheim Stadtkreis
+DE12A	Calw
+DE12B	Enzkreis
+DE12C	Freudenstadt
+DE1A	Stuttgart
+DE111	Stuttgart Stadtkreis
+DE112	Böblingen
+DE113	Esslingen
+DE114	Göppingen
+DE115	Ludwigsburg
+DE116	Rems-Murr-Kreis
+DE1C	Ostwürttemberg
+DE11C	Heidenheim
+DE11D	Ostalbkreis
+DE1K	Donau-Iller (Bw)
+DE144	Ulm Stadtkreis
+DE145	Alb-Donau-Kreis
+DE146	Biberach
+DE1J	Neckar-Alb
+DE141	Reutlingen
+DE142	Tübingen Landkreis
+DE143	Zollernalbkreis
+DE1H	Schwarzwald-Baar-Heuberg
+DE135	Rottweil
+DE136	Schwarzwald-Baar-Kreis
+DE137	Tuttlingen
+DE1G	Südlicher Oberrhein
+DE131	Freiburg im Breisgau Stadtkreis
+DE132	Breisgau-Hochschwarzwald
+DE133	Emmendingen
+DE134	Ortenaukreis
+DE1I	Hochrhein-Bodensee
+DE138	Konstanz
+DE139	Lörrach
+DE13A	Waldshut
+DE1L	Bodensee-Oberschwaben
+DE147	Bodenseekreis
+DE148	Ravensburg
+DE149	Sigmaringen
+DE2	Bavaria
+DE2M	Bayerischer Untermain
+DE261	Aschaffenburg Kreisfreie Stadt
+DE264	Aschaffenburg Landkreis
+DE269	Miltenberg
+DE2O	Würzburg
+DE263	Würzburg Kreisfreie Stadt
+DE268	Kitzingen
+DE26A	Main-Spessart
+DE26C	Würzburg Landkreis
+DE2N	Main-Rhön
+DE262	Schweinfurt Kreisfreie Stadt
+DE265	Bad Kissingen
+DE266	Rhön-Grabfeld
+DE267	Haßberge
+DE26B	Schweinfurt Landkreis
+DE2I	Oberfranken-West
+DE241	Bamberg Kreisfreie Stadt
+DE243	Coburg Kreisfreie Stadt
+DE245	Bamberg Landkreis
+DE247	Coburg Landkreis
+DE248	Forchheim
+DE24A	Kronach
+DE24C	Lichtenfels
+DE2J	Oberfranken-Ost
+DE242	Bayreuth Kreisfreie Stadt
+DE244	Hof Kreisfreie Stadt
+DE246	Bayreuth Landkreis
+DE249	Hof Landkreis
+DE24B	Kulmbach
+DE24D	Wunsiedel i. Fichtelgebirge
+DE2H	Oberpfalz-Nord
+DE231	Amberg Kreisfreie Stadt
+DE233	Weiden i. d. Opf Kreisfreie Stadt
+DE234	Amberg-Sulzbach
+DE237	Neustadt a. d. Waldnaab
+DE239	Schwandorf
+DE23A	Tirschenreuth
+DE2L	Industrieregion Mittelfranken
+DE252	Erlangen Kreisfreie Stadt
+DE253	Fürth Kreisfreie Stadt
+DE254	Nürnberg Kreisfreie Stadt
+DE255	Schwabach Kreisfreie Stadt
+DE257	Erlangen-Höchstadt
+DE258	Fürth Landkreis
+DE259	Nürnberger Land
+DE25B	Roth
+DE2K	Westmittelfranken
+DE251	Ansbach Kreisfreie Stadt
+DE256	Ansbach Landkreis
+DE25A	Neustadt a. d. Aisch-Bad Windsheim
+DE25C	Weißenburg-Gunzenhausen
+DE2P	Augsburg
+DE271	Augsburg Kreisfreie Stadt
+DE275	Aichach-Friedberg
+DE276	Augsburg Landkreis
+DE277	Dillingen a.d. Donau
+DE27D	Donau-Ries
+DE2A	Ingolstadt
+DE211	Ingolstadt Kreisfreie Stadt
+DE219	Eichstätt
+DE21I	Neuburg-Schrobenhausen
+DE21J	Pfaffenhofen a. d. Ilm
+DE2G	Regensburg
+DE226	Kelheim
+DE232	Regensburg Kreisfreie Stadt
+DE235	Cham
+DE236	Neumarkt i. d. OPf.
+DE238	Regensburg Landkreis
+DE2F	Donau-Wald
+DE222	Passau Kreisfreie Stadt
+DE223	Straubing Kreisfreie Stadt
+DE224	Deggendorf
+DE225	Freyung-Grafenau
+DE228	Passau Landkreis
+DE229	Regen
+DE22B	Straubing-Bogen
+DE2E	Landshut
+DE221	Landshut Kreisfreie Stadt
+DE227	Landshut Landkreis
+DE22A	Rottal-Inn
+DE22C	Dingolfing-Landau
+DE2B	Munich
+DE212	München Kreisfreie Stadt
+DE217	Dachau
+DE218	Ebersberg
+DE21A	Erding
+DE21B	Freising
+DE21C	Fürstenfeldbruck
+DE21E	Landsberg am Lech
+DE21H	München Landkreis
+DE21L	Starnberg
+DE2R	Donau-Iller (By)
+DE274	Memmingen Kreisfreie Stadt
+DE278	Günzburg
+DE279	Neu-Ulm
+DE27C	Unterallgäu
+DE2Q	Allgäu
+DE272	Kaufbeuren Kreisfreie Stadt
+DE273	Kempten (Allgäu) Kreisfreie Stadt
+DE27A	Lindau (Bodensee)
+DE27B	Ostallgäu
+DE27E	Oberallgäu
+DE2D	Oberland
+DE216	Bad Tölz-Wolfratshausen
+DE21D	Garmisch-Partenkirchen
+DE21F	Miesbach
+DE21N	Weilheim-Schongau
+DE2C	Südostoberbayern
+DE213	Rosenheim Kreisfreie Stadt
+DE214	Altötting
+DE215	Berchtesgadener Land
+DE21G	Mühldorf a. Inn
+DE21K	Rosenheim Landkreis
+DE21M	Traunstein
+DE3	Berlin
+DE3A	Berlin
+DE300	Berlin
+DE4	Brandenburg
+DE4E	Prignitz-Oberhavel
+DE40A	Oberhavel
+DE40D	Ostprignitz-Ruppin
+DE40F	Prignitz
+DE4D	Uckermark-Barnim
+DE405	Barnim
+DE40I	Uckermark
+DE4C	Oderland-Spree
+DE403	Frankfurt (Oder) Kreisfreie Stadt
+DE409	Märkisch-Oderland
+DE40C	Oder-Spree
+DE4B	Lausitz-Spreewald
+DE402	Cottbus Kreisfreie Stadt
+DE406	Dahme-Spreewald
+DE407	Elbe-Elster
+DE40B	Oberspreewald-Lausitz
+DE40G	Spree-Neiße
+DE4A	Havelland-Fläming
+DE401	Brandenburg an der Havel Kreisfreie Stadt
+DE404	Potsdam Kreisfreie Stadt
+DE408	Havelland
+DE40E	Potsdam-Mittelmark
+DE40H	Teltow-Fläming
+DE5	Bremen
+DE5A	Bremen
+DE501	Bremen Kreisfreie Stadt
+DE5B	Bremerhaven
+DE502	Bremerhaven Kreisfreie Stadt
+DE932	Cuxhaven
+DE94G	Wesermarsch
+DE6	Hamburg
+DE6A	Hamburg
+DE600	Hamburg
+DE7	Hesse
+DE7D	Nordhessen
+DE731	Kassel Kreisfreie Stadt
+DE734	Kassel Landkreis
+DE735	Schwalm-Eder-Kreis
+DE736	Waldeck-Frankenberg
+DE737	Werra-Meißner-Kreis
+DE7C	Mittelhessen
+DE721	Gießen Landkreis
+DE722	Lahn-Dill-Kreis
+DE723	Limburg-Weilburg
+DE724	Marburg-Biedenkopf
+DE725	Vogelsbergkreis
+DE7E	Osthessen
+DE732	Fulda
+DE733	Hersfeld-Rotenburg
+DE7B	Rhein-Main
+DE712	Frankfurt am Main Kreisfreie Stadt
+DE713	Offenbach am Main Kreisfreie Stadt
+DE714	Wiesbaden Kreisfreie Stadt
+DE718	Hochtaunuskreis
+DE719	Main-Kinzig-Kreis
+DE71A	Main-Taunus-Kreis
+DE71C	Offenbach Landkreis
+DE71D	Rheingau-Taunus-Kreis
+DE71E	Wetteraukreis
+DE7A	Starkenburg
+DE711	Darmstadt Kreisfreie Stadt
+DE715	Bergstraße
+DE716	Darmstadt-Dieburg
+DE717	Groß-Gerau
+DE71B	Odenwaldkreis
+DE8	Mecklenburg-Vorpommern
+DE8B	Westmecklenburg
+DE804	Schwerin, Kreisfreie Stadt
+DE80M	Nordwestmecklenburg
+DE80O	Ludwigslust-Parchim
+DE8A	Mittleres Mecklenburg/Rostock
+DE803	Rostock, Kreisfreie Stadt
+DE80K	Landkreis Rostock
+DE8C	Vorpommern
+DE80L	Vorpommern-Rügen
+DE80N	Vorpommern-Greifswald
+DE8D	Mecklenburgische Seenplatte
+DE80J	Mecklenburgische Seenplatte
+DE9	Lower Saxony
+DE9J	Ost-Friesland
+DE942	Emden Kreisfreie Stadt
+DE945	Wilhelmshaven Kreisfreie Stadt
+DE947	Aurich
+DE94A	Friesland (DE)
+DE94C	Leer
+DE94H	Wittmund
+DE9H	Hamburg-Umland-Süd
+DE933	Harburg
+DE937	Rotenburg (Wümme)
+DE939	Stade
+DE9C	Bremen-Umland
+DE922	Diepholz
+DE936	Osterholz
+DE93B	Verden
+DE941	Delmenhorst Kreisfreie Stadt
+DE9K	Oldenburg
+DE943	Oldenburg (Oldenburg) Kreisfreie Stadt
+DE946	Ammerland
+DE948	Cloppenburg
+DE94D	Oldenburg Landkreis
+DE9M	Emsland
+DE949	Emsland
+DE94B	Grafschaft Bentheim
+DE9L	Osnabrück
+DE944	Osnabrück Kreisfreie Stadt
+DE94E	Osnabrück Landkreis
+DE94F	Vechta
+DE9E	Hannover
+DE927	Nienburg (Weser)
+DE928	Schaumburg
+DE929	Region Hannover
+DE9F	Südheide
+DE931	Celle
+DE938	Heidekreis
+DE9G	Bremerhaven-Umland
+DE9I	Lüneburg
+DE934	Lüchow-Dannenberg
+DE935	Lüneburg Landkreis
+DE93A	Uelzen
+DE9A	Braunschweig
+DE911	Braunschweig Kreisfreie Stadt
+DE912	Salzgitter Kreisfreie Stadt
+DE913	Wolfsburg Kreisfreie Stadt
+DE914	Gifhorn
+DE916	Goslar
+DE917	Helmstedt
+DE91A	Peine
+DE91B	Wolfenbüttel
+DE9D	Hildesheim
+DE923	Hameln-Pyrmont
+DE925	Hildesheim
+DE9B	Göttingen
+DE91C	Göttingen
+DE915	Göttingen
+DE919	Osterode am Harz
+DE918	Northeim
+DE926	Holzminden
+DEA	North Rhine-Westphalia
+DEAG	Münster
+DEA33	Münster Kreisfreie Stadt
+DEA34	Borken
+DEA35	Coesfeld
+DEA37	Steinfurt
+DEA38	Warendorf
+DEAH	Bielefeld
+DEA41	Bielefeld Kreisfreie Stadt
+DEA42	Gütersloh
+DEA43	Herford
+DEA45	Lippe
+DEA46	Minden-Lübbecke
+DEAI	Paderborn
+DEA44	Höxter
+DEA47	Paderborn
+DEAL	Arnsberg
+DEA57	Hochsauerlandkreis
+DEA5B	Soest
+DEAK	Dortmund
+DEA52	Dortmund Kreisfreie Stadt
+DEA54	Hamm Kreisfreie Stadt
+DEA5C	Unna
+DEAF	Emscher-Lippe
+DEA31	Bottrop Kreisfreie Stadt
+DEA32	Gelsenkirchen Kreisfreie Stadt
+DEA36	Recklinghausen
+DEAB	Duisburg/Essen
+DEA12	Duisburg Kreisfreie Stadt
+DEA13	Essen Kreisfreie Stadt
+DEA16	Mülheim an der Ruhr,Kreisfreie Stadt
+DEA17	Oberhausen Kreisfreie Stadt
+DEA1B	Kleve
+DEA1F	Wesel
+DEAA	Düsseldorf
+DEA11	Düsseldorf Kreisfreie Stadt
+DEA14	Krefeld Kreisfreie Stadt
+DEA15	Mönchengladbach Kreisfreie Stadt
+DEA18	Remscheid Kreisfreie Stadt
+DEA19	Solingen Kreisfreie Stadt
+DEA1A	Wuppertal Kreisfreie Stadt
+DEA1C	Mettmann
+DEA1D	Rhein-Kreis Neuss
+DEA1E	Viersen
+DEAJ	Bochum/Hagen
+DEA51	Bochum Kreisfreie Stadt
+DEA53	Hagen Kreisfreie Stadt
+DEA55	Herne Kreisfreie Stadt
+DEA56	Ennepe-Ruhr-Kreis
+DEA58	Märkischer Kreis
+DEAD	Cologne
+DEA23	Köln Kreisfreie Stadt
+DEA24	Leverkusen Kreisfreie Stadt
+DEA27	Rhein-Erft-Kreis
+DEA2A	Oberbergischer Kreis
+DEA2B	Rheinisch-Bergischer Kreis
+DEAE	Aachen
+DEA26	Düren
+DEA28	Euskirchen
+DEA29	Heinsberg
+DEA2D	Städteregion Aachen
+DEAC	Bonn
+DEA22	Bonn Kreisfreie Stadt
+DEA2C	Rhein-Sieg-Kreis
+DEAM	Siegen
+DEA59	Olpe
+DEA5A	Siegen-Wittgenstein
+DEB	Rhineland-Palatinate
+DEBA	Mittelrhein-Westerwald
+DEB11	Koblenz Kreisfreie Stadt
+DEB12	Ahrweiler
+DEB13	Altenkirchen (Westerwald)
+DEB1C	Cochem-Zell
+DEB17	Mayen-Koblenz
+DEB18	Neuwied
+DEB1D	Rhein-Hunsrück-Kreis
+DEB1A	Rhein-Lahn-Kreis
+DEB1B	Westerwaldkreis
+DEBC	Trier
+DEB21	Trier Kreisfreie Stadt
+DEB22	Bernkastel-Wittlich
+DEB23	Eifelkreis Bitburg-Prüm
+DEB24	Vulkaneifel
+DEB25	Trier-Saarburg
+DEBB	Rheinhessen-Nahe
+DEB14	Bad Kreuznach
+DEB15	Birkenfeld
+DEB35	Mainz Kreisfreie Stadt
+DEB39	Worms Kreisfreie Stadt
+DEB3B	Alzey-Worms
+DEB3J	Mainz-Bingen
+DEBE	Westpfalz
+DEB32	Kaiserslautern Kreisfreie Stadt
+DEB37	Pirmasens Kreisfreie Stadt
+DEB3A	Zweibrücken Kreisfreie Stadt
+DEB3D	Donnersbergkreis
+DEB3F	Kaiserslautern Landkreis
+DEB3G	Kusel
+DEB3K	Südwestpfalz
+DEBD	Rheinpfalz
+DEB31	Frankenthal (Pfalz) Kreisfreie Stadt
+DEB33	Landau in der Pfalz Kreisfreie Stadt
+DEB34	Ludwigshafen am Rhein Kreisfreie Stadt
+DEB36	Neustadt an der Weinstraße Kreisfreie Stadt
+DEB38	Speyer Kreisfreie Stadt
+DEB3C	Bad Dürkheim
+DEB3E	Germersheim
+DEB3H	Südliche Weinstraße
+DEB3I	Rhein-Pfalz-Kreis
+DEC	Saarland
+DECA	Saar
+DEC01	Regionalverband Saarbrücken
+DEC02	Merzig-Wadern
+DEC03	Neunkirchen
+DEC04	Saarlouis
+DEC05	Saarpfalz-Kreis
+DEC06	St. Wendel
+DED	Saxony
+DEDD	Westsachsen
+DED51	Leipzig Kreisfreie Stadt
+DED53	Nordsachsen
+DED52	Leipzig
+DEDA	Oberes Elbtal/Osterzgebirge
+DED21	Dresden Kreisfreie Stadt
+DED2E	Meißen
+DED2F	Sächsische Schweiz-Osterzgebirge
+DEDB	Oberlausitz-Niederschlesien
+DED2D	Görlitz
+DED2C	Bautzen
+DEDC	Südwestsachsen
+DED41	Chemnitz Kreisfreie Stadt
+DED44	Vogtlandkreis
+DED45	Zwickau
+DED42	Erzgebirgskreis
+DED43	Mittelsachsen
+DEE	Saxony-Anhalt
+DEED	Altmark
+DEE04	Altmarkkreis Salzwedel
+DEE0D	Stendal
+DEEC	Magdeburg
+DEE03	Magdeburg Kreisfreie Stadt
+DEE06	Jerichower Land
+DEE07	Börde
+DEE09	Harz
+DEE0C	Salzlandkreis
+DEEA	Dessau
+DEE01	Dessau-Roßlau Kreisfreie Stadt
+DEE05	Anhalt-Bitterfeld
+DEE0E	Wittenberg
+DEEB	Halle/S.
+DEE02	Halle (Saale) Kreisfreie Stadt
+DEE08	Burgenland (DE)
+DEE0A	Mansfeld-Südharz
+DEE0B	Saalekreis
+DEF	Schleswig-Holstein
+DEFA	Schleswig-Holstein Nord
+DEF01	Flensburg Kreisfreie Stadt
+DEF07	Nordfriesland
+DEF0C	Schleswig-Flensburg
+DEFD	Schleswig-Holstein Süd-West
+DEF05	Dithmarschen
+DEF0E	Steinburg
+DEFB	Schleswig-Holstein Mitte
+DEF02	Kiel Kreisfreie Stadt
+DEF04	Neumünster Kreisfreie Stadt
+DEF0A	Plön
+DEF0B	Rendsburg-Eckernförde
+DEFC	Schleswig-Holstein Ost
+DEF03	Lübeck Kreisfreie Stadt
+DEF08	Ostholstein
+DEFE	Schleswig-Holstein Süd
+DEF06	Herzogtum Lauenburg
+DEF09	Pinneberg
+DEF0D	Segeberg
+DEF0F	Stormarn
+DEG	Thuringia
+DEGD	Nordthüringen
+DEG06	Eichsfeld
+DEG07	Nordhausen
+DEG09	Unstrut-Hainich-Kreis
+DEG0A	Kyffhäuserkreis
+DEGA	Mittelthüringen
+DEG01	Erfurt Kreisfreie Stadt
+DEG05	Weimar Kreisfreie Stadt
+DEG0C	Gotha
+DEG0D	Sömmerda
+DEG0F	Ilm-Kreis
+DEG0G	Weimarer Land
+DEGC	Südthüringen
+DEG04	Suhl Kreisfreie Stadt
+DEG0B	Schmalkalden-Meiningen
+DEG0E	Hildburghausen
+DEG0H	Sonneberg
+DEG0N	Eisenach Kreisfreie Stadt
+DEG0P	Wartburgkreis
+DEGB	Ostthüringen
+DEG02	Gera Kreisfreie Stadt
+DEG03	Jena Kreisfreie Stadt
+DEG0I	Saalfeld-Rudolstadt
+DEG0J	Saale-Holzland-Kreis
+DEG0K	Saale-Orla-Kreis
+DEG0L	Greiz
+DEG0M	Altenburger Land
+GRC	Greece
+EL30	Attica
+EL301	Northern Athens
+EL302	Western Athens
+EL303	Central Athens
+EL304	Southern Athens
+EL305	Eastern Attica
+EL306	Western Attica
+EL307	Piraeus, Islands
+EL41	North Aegean
+EL411	Lesbos, Lemnos
+EL412	Ikaria, Samos
+EL413	Chios
+EL42	South Aegean
+EL421	Kalymnos, Karpathos, Kos, Rhodes
+EL422	Andros, Thira, Kea, Milos, Mykonos, Naxos, Paros, Syros, Tinos
+EL43	Crete
+EL431	Heraklion
+EL432	Lasithi
+EL433	Rethymno
+EL434	Chania
+EL51	Eastern Macedonia, Thrace
+EL511	Evros
+EL512	Xanthi
+EL513	Rodope
+EL514	Drama
+EL515	Thassos, Kavala
+EL52	Central Macedonia
+EL521	Imathia
+EL522	Thessalonica
+EL523	Kilkis
+EL524	Pella
+EL525	Pieria
+EL526	Serres
+EL527	Chalcidice
+EL53	Western Macedonia
+EL531	Grevena, Kozani
+EL532	Kastoria
+EL533	Florina
+EL54	Epirus
+EL541	Arta, Preveza
+EL542	Thesprotia
+EL543	Ioannina
+EL61	Thessaly
+EL611	Karditsa, Trikala
+EL612	Larissa
+EL613	Magnesia
+EL62	Ionian Islands
+EL621	Zakynthos
+EL622	Corfu
+EL623	Ithaca, Cephalonia
+EL624	Lefkada
+EL63	Western Greece
+EL631	Aetolia-Acarnania
+EL632	Achaea
+EL633	Elis
+EL64	Central Greece
+EL641	Boeotia
+EL642	Euboea
+EL643	Evrytania
+EL644	Phthiotis
+EL645	Phocis
+EL65	Peloponnese
+EL651	Argolida, Arcadia
+EL652	Corinthia
+EL653	Laconia, Messinia
+HUN	Hungary
+HU11	Budapest
+HU110	Budapest
+HU12	Pest
+HU120	Pest
+HU21	Central Transdanubia
+HU211	Fejér
+HU212	Komárom-Esztergom
+HU213	Veszprém
+HU22	Western Transdanubia
+HU221	Gyor-Moson-Sopron
+HU222	Vas
+HU223	Zala
+HU23	Southern Transdanubia
+HU231	Baranya
+HU232	Somogy
+HU233	Tolna
+HU31	Northern Hungary
+HU311	Borsod-Abaúj-Zemplén
+HU312	Heves
+HU313	Nógrád
+HU32	Northern Great Plain
+HU321	Hajdú-Bihar
+HU322	Jász-Nagykun-Szolnok
+HU323	Szabolcs-Szatmár-Bereg
+HU33	Southern Great Plain
+HU331	Bács-Kiskun
+HU332	Békés
+HU333	Csongrád
+ISL	Iceland
+IS01	Capital Region
+IS011	Capital Region
+IS02	Other Regions
+IS021	Southern Peninsula
+IS022	Western Region (IS)
+IS023	Westfjords
+IS024	Northwestern Region (IS)
+IS025	Southern Region (IS)
+IS026	Northeastern Region (IS)
+IS027	Austurland
+IRL	Ireland
+IE04	Northern and Western
+IE041	Border
+IE042	West
+IE05	Southern and Eastern
+IE051	Mid-West
+IE052	South-East (IE)
+IE053	South-West (IE)
+IE06	Southern and Eastern
+IE061	Dublin
+IE062	Mid-East
+IE063	Midlands
+IE01	Border, Midland and Western
+IE02	Southern and Eastern
+ISR	Israel
+IL01	Jerusalem District
+IL010	Jerusalem District
+IL02	Northern District
+IL020	Northern District
+IL03	Haifa District
+IL030	Haifa District
+IL04	Central District
+IL040	Central District
+IL05	Tel Aviv District
+IL050	Tel Aviv District
+IL06	Southern District
+IL060	Southern District
+ITA	Italy
+ITC1	Piedmont
+ITC11	Turin
+ITC12	Vercelli
+ITC13	Biella
+ITC14	Verbano-Cusio-Ossola
+ITC15	Novara
+ITC16	Cuneo
+ITC17	Asti
+ITC18	Alessandria
+ITC2	Aosta Valley
+ITC20	Aosta Valley
+ITC3	Liguria
+ITC31	Imperia
+ITC32	Savona
+ITC33	Genoa
+ITC34	La Spezia
+ITC4	Lombardy
+ITC41	Varese
+ITC42	Como
+ITC43	Lecco
+ITC44	Sondrio
+ITC46	Bergamo
+ITC47	Brescia
+ITC48	Pavia
+ITC49	Lodi
+ITC4A	Cremona
+ITC4B	Mantua
+ITC4C	Milan
+ITC4D	Monza e della Brianza
+ITF1	Abruzzo
+ITF11	L'Aquila
+ITF12	Teramo
+ITF13	Pescara
+ITF14	Chieti
+ITF2	Molise
+ITF21	Isernia
+ITF22	Campobasso
+ITF3	Campania
+ITF31	Caserta
+ITF32	Benevento
+ITF33	Naples
+ITF34	Avellino
+ITF35	Salerno
+ITF4	Apulia
+ITF43	Taranto
+ITF44	Brindisi
+ITF45	Lecce
+ITF46	Foggia
+ITF47	Bari
+ITF48	Barletta-Andria-Trani
+ITF5	Basilicata
+ITF51	Potenza
+ITF52	Matera
+ITF6	Calabria
+ITF61	Cosenza
+ITF62	Crotone
+ITF63	Catanzaro
+ITF64	Vibo Valentia
+ITF65	Reggio di Calabria
+ITG1	Sicily
+ITG11	Trapani
+ITG12	Palermo
+ITG13	Messina
+ITG14	Agrigento
+ITG15	Caltanissetta
+ITG16	Enna
+ITG17	Catania
+ITG18	Ragusa
+ITG19	Siracusa
+ITG2	Sardinia
+ITG25	Sassari
+ITG26	Nuoro
+ITG27	Cagliari
+ITG28	Oristano
+ITG29	Olbia-Tempio
+ITG2A	Ogliastra
+ITG2B	Medio Campidano
+ITG2C	Carbonia-Iglesias
+ITH1	Province of Bolzano-Bozen
+ITH10	Bolzano-Bozen
+ITH2	Province of Trento
+ITH20	Trento
+ITH3	Veneto
+ITH31	Verona
+ITH32	Vicenza
+ITH33	Belluno
+ITH34	Treviso
+ITH35	Venice
+ITH36	Padua
+ITH37	Rovigo
+ITH4	Friuli-Venezia Giulia
+ITH41	Pordenone
+ITH42	Udine
+ITH43	Gorizia
+ITH44	Trieste
+ITH5	Emilia-Romagna
+ITH51	Piacenza
+ITH52	Parma
+ITH53	Reggio Nell'Emilia
+ITH54	Modena
+ITH55	Bologna
+ITH56	Ferrara
+ITH57	Ravenna
+ITH58	Forlì-Cesena
+ITH59	Rimini
+ITI1	Tuscany
+ITI11	Massa-Carrara
+ITI12	Lucca
+ITI13	Pistoia
+ITI14	Florence
+ITI15	Prato
+ITI16	Livorno
+ITI17	Pisa
+ITI18	Arezzo
+ITI19	Siena
+ITI1A	Grosseto
+ITI2	Umbria
+ITI21	Perugia
+ITI22	Terni
+ITI3	Marche
+ITI31	Pesaro e Urbino
+ITI32	Ancona
+ITI33	Macerata
+ITI34	Ascoli Piceno
+ITI35	Fermo
+ITI4	Lazio
+ITI41	Viterbo
+ITI42	Rieti
+ITI43	Rome
+ITI44	Latina
+ITI45	Frosinone
+JPN	Japan
+JPA	Hokkaido
+JPA01	Hokkaido
+JPB	Tohoku
+JPB02	Aomori
+JPB03	Iwate
+JPB04	Miyagi
+JPB05	Akita
+JPB06	Yamagata
+JPB07	Fukushima
+JPC	Northern-Kanto, Koshin
+JPC08	Ibaraki
+JPC09	Tochigi
+JPC10	Gumma
+JPC19	Yamanashi
+JPC20	Nagano
+JPD	Southern-Kanto
+JPD11	Saitama
+JPD12	Chiba
+JPD13	Tokyo
+JPD14	Kanagawa
+JPE	Hokuriku
+JPE15	Niigata
+JPE16	Toyama
+JPE17	Ishikawa
+JPE18	Fukui
+JPF	Toukai
+JPF21	Gifu
+JPF22	Shizuoka
+JPF23	Aichi
+JPF24	Mie
+JPG	Kansai region
+JPG25	Shiga
+JPG26	Kyoto
+JPG27	Osaka
+JPG28	Hyogo
+JPG29	Nara
+JPG30	Wakayama
+JPH	Chugoku
+JPH31	Tottori
+JPH32	Shimane
+JPH33	Okayama
+JPH34	Hiroshima
+JPH35	Yamaguchi
+JPI	Shikoku
+JPI36	Tokushima
+JPI37	Kagawa
+JPI38	Ehime
+JPI39	Kochi
+JPJ	Kyushu, Okinawa
+JPJ40	Fukuoka
+JPJ41	Saga
+JPJ42	Nagasaki
+JPJ43	Kumamoto
+JPJ44	Oita
+JPJ45	Miyazaki
+JPJ46	Kagoshima
+JPJ47	Okinawa
+KOR	Korea
+KR01	Capital Region (KR)
+KR011	Seoul
+KR012	Incheon
+KR013	Gyeonggi-do
+KR02	Gyeongnam Region
+KR021	Busan
+KR022	Ulsan
+KR023	Gyeongsangnam-do
+KR03	Gyeongbuk Region
+KR031	Daegu
+KR032	Gyeongsangbuk-do
+KR04	Jeolla Region
+KR041	Gwangju
+KR042	Jeollabuk-do
+KR043	Jeollanam-do
+KR05	Chungcheong Region
+KR051	Daejeon
+KR052	Chungcheongbuk-do
+KR053	Chungcheongnam-do
+KR054	Sejong
+KR06	Gangwon Region
+KR061	Gangwon-do
+KR07	Jeju
+KR071	Jeju-do
+LVA	Latvia
+LV00	Latvia
+LV003	Kurzeme
+LV005	Latgale
+LV006	Riga
+LV007	Pieriga
+LV008	Vidzeme
+LV009	Zemgale
+LTU	Lithuania
+LT01	Vilnius Region
+LT011	Vilnius county
+LT02	Central and Western Lithuania
+LT021	Alytus county
+LT022	Kaunas county
+LT023	Klaipeda county
+LT024	Marijampole county
+LT025	Panevežys county
+LT026	Šiauliai county
+LT027	Taurage county
+LT028	Telšiai county
+LT029	Utena county
+LT00	Lithuania
+LUX	Luxembourg
+LU00	Luxembourg
+LU000	Luxembourg
+MEX	Mexico
+ME01	Aguascalientes
+ME01R1	Aguacalientes, R1
+ME01R2	Aguacalientes, R2
+ME02	Baja California Norte
+ME02R1	Baja California Norte, R1
+ME02R2	Baja California Norte, R2
+ME02R3	Baja California Norte, R3
+ME02R4	Baja California Norte, R4
+ME03	Baja California Sur
+ME03R1	Baja California Sur, R1
+ME03R2	Baja California Sur, R2
+ME03R3	Baja California Sur, R3
+ME03R4	Baja California Sur, R4
+ME04	Campeche
+ME04R1	Campeche, R1
+ME04R2	Campeche, R2
+ME04R3	Campeche, R3
+ME04R4	Campeche, R4
+ME05	Coahuila
+ME05R1	Coahuila, R1
+ME05R2	Coahuila, R2
+ME05R3	Coahuila, R3
+ME05R4	Coahuila, R4
+ME05R5	Coahuila, R5
+ME05R6	Coahuila, R6
+ME06	Colima
+ME06R1	Colima, R1
+ME06R2	Colima, R2
+ME06R3	Colima, R3
+ME07	Chiapas
+ME07R1	Chiapas, R1
+ME07R2	Chiapas, R2
+ME07R3	Chiapas, R3
+ME07R4	Chiapas, R4
+ME07R5	Chiapas, R5
+ME07R6	Chiapas, R6
+ME07R7	Chiapas, R7
+ME07R8	Chiapas, R8
+ME07R9	Chiapas, R9
+ME08	Chihuahua
+ME08R1	Chihuahua, R1
+ME08R10	Chihuahua, R10
+ME08R11	Chihuahua, R11
+ME08R12	Chihuahua, R12
+ME08R13	Chihuahua, R13
+ME08R2	Chihuahua, R2
+ME08R3	Chihuahua, R3
+ME08R4	Chihuahua, R4
+ME08R5	Chihuahua, R5
+ME08R6	Chihuahua, R6
+ME08R7	Chihuahua, R7
+ME08R8	Chihuahua, R8
+ME08R9	Chihuahua, R9
+ME09	Federal District (MX)
+ME09R1	Distrito Federal (MX), R1
+ME09R2	Distrito Federal (MX), R2
+ME10	Durango
+ME10R1	Durango, R1
+ME10R2	Durango, R2
+ME10R3	Durango, R3
+ME10R4	Durango, R4
+ME10R5	Durango, R5
+ME10R6	Durango, R6
+ME10R7	Durango, R7
+ME10R8	Durango, R8
+ME10R9	Durango, R9
+ME11	Guanajuato
+ME11R1	Guanajuato, R1
+ME11R2	Guanajuato, R2
+ME11R3	Guanajuato, R3
+ME11R4	Guanajuato, R4
+ME12	Guerrero
+ME12R1	Guerrero, R1
+ME12R2	Guerrero, R2
+ME12R3	Guerrero, R3
+ME12R4	Guerrero, R4
+ME12R5	Guerrero, R5
+ME12R6	Guerrero, R6
+ME12R7	Guerrero, R7
+ME13	Hidalgo
+ME13R1	Hidalgo, R1
+ME13R10	Hidalgo, R10
+ME13R11	Hidalgo, R11
+ME13R12	Hidalgo, R12
+ME13R13	Hidalgo, R13
+ME13R2	Hidalgo, R2
+ME13R3	Hidalgo, R3
+ME13R4	Hidalgo, R4
+ME13R5	Hidalgo, R5
+ME13R6	Hidalgo, R6
+ME13R7	Hidalgo, R7
+ME13R8	Hidalgo, R8
+ME13R9	Hidalgo, R9
+ME14	Jalisco
+ME14R1	Jalisco, R1
+ME14R10	Jalisco, R10
+ME14R2	Jalisco, R2
+ME14R3	Jalisco, R3
+ME14R4	Jalisco, R4
+ME14R5	Jalisco, R5
+ME14R6	Jalisco, R6
+ME14R7	Jalisco, R7
+ME14R8	Jalisco, R8
+ME14R9	Jalisco, R9
+ME15	Mexico
+ME15R1	Mexico, R1
+ME15R2	Mexico, R2
+ME15R3	Mexico, R3
+ME15R4	Mexico, R4
+ME15R5	Mexico, R5
+ME15R6	Mexico, R6
+ME15R7	Mexico, R7
+ME15R8	Mexico, R8
+ME16	Michoacan
+ME16R1	Michoacan, R1
+ME16R2	Michoacan, R2
+ME16R3	Michoacan, R3
+ME16R4	Michoacan, R4
+ME16R5	Michoacan, R5
+ME16R6	Michoacan, R6
+ME17	Morelos
+ME17R1	Morelos, R1
+ME17R2	Morelos, R2
+ME17R3	Morelos, R3
+ME17R4	Morelos, R4
+ME17R5	Morelos, R5
+ME17R6	Morelos, R6
+ME17R7	Morelos, R7
+ME18	Nayarit
+ME18R1	Nayarit, R1
+ME18R2	Nayarit, R2
+ME18R3	Nayarit, R3
+ME18R4	Nayarit, R4
+ME18R5	Nayarit, R5
+ME19	Nuevo Leon
+ME19R1	Nuevo Leon, R1
+ME19R2	Nuevo Leon, R2
+ME19R3	Nuevo Leon, R3
+ME19R4	Nuevo Leon, R4
+ME19R5	Nuevo Leon, R5
+ME19R6	Nuevo Leon, R6
+ME19R7	Nuevo Leon, R7
+ME20	Oaxaca
+ME20R1	Oaxaca, R1
+ME20R2	Oaxaca, R2
+ME20R3	Oaxaca, R3
+ME20R4	Oaxaca, R4
+ME20R5	Oaxaca, R5
+ME20R6	Oaxaca, R6
+ME20R7	Oaxaca, R7
+ME20R8	Oaxaca, R8
+ME21	Puebla
+ME21R1	Puebla, R1
+ME21R2	Puebla, R2
+ME21R3	Puebla, R3
+ME21R4	Puebla, R4
+ME21R5	Puebla, R5
+ME21R6	Puebla, R6
+ME21R7	Puebla, R7
+ME22	Queretaro
+ME22R1	Queretaro, R1
+ME22R2	Queretaro, R2
+ME22R3	Queretaro, R3
+ME22R4	Queretaro, R4
+ME22R5	Queretaro, R5
+ME23	Quintana Roo
+ME23R1	Quintana Roo, R1
+ME23R2	Quintana Roo, R2
+ME23R3	Quintana Roo, R3
+ME23R4	Quintana Roo, R4
+ME24	San Luis Potosi
+ME24R1	San Luis Potosi, R1
+ME24R2	San Luis Potosi, R2
+ME24R3	San Luis Potosi, R3
+ME24R4	San Luis Potosi, R4
+ME25	Sinaloa
+ME25R1	Sinaloa, R1
+ME25R2	Sinaloa, R2
+ME25R3	Sinaloa, R3
+ME25R4	Sinaloa, R4
+ME25R5	Sinaloa, R5
+ME26	Sonora
+ME26R1	Sonora, R1
+ME26R10	Sonora, R10
+ME26R11	Sonora, R11
+ME26R12	Sonora, R12
+ME26R2	Sonora, R2
+ME26R3	Sonora, R3
+ME26R4	Sonora, R4
+ME26R5	Sonora, R5
+ME26R6	Sonora, R6
+ME26R7	Sonora, R7
+ME26R8	Sonora, R8
+ME26R9	Sonora, R9
+ME27	Tabasco
+ME27R1	Tabasco, R1
+ME27R2	Tabasco, R2
+ME27R3	Tabasco, R3
+ME27R4	Tabasco, R4
+ME28	Tamaulipas
+ME28R1	Tamaulipas, R1
+ME28R2	Tamaulipas, R2
+ME28R3	Tamaulipas, R3
+ME28R4	Tamaulipas, R4
+ME29	Tlaxcala
+ME29R1	Tlaxcala, R1
+ME29R2	Tlaxcala, R2
+ME29R3	Tlaxcala, R3
+ME29R4	Tlaxcala, R4
+ME29R5	Tlaxcala, R5
+ME29R6	Tlaxcala, R6
+ME29R7	Tlaxcala, R7
+ME29R8	Tlaxcala, R8
+ME29R9	Tlaxcala, R9
+ME30	Veracruz
+ME30R1	Veracruz, R1
+ME30R2	Veracruz, R2
+ME30R3	Veracruz, R3
+ME30R4	Veracruz, R4
+ME30R5	Veracruz, R5
+ME30R6	Veracruz, R6
+ME30R7	Veracruz, R7
+ME31	Yucatan
+ME31R1	Yucatan, R1
+ME31R2	Yucatan, R2
+ME31R3	Yucatan, R3
+ME31R4	Yucatan, R4
+ME31R5	Yucatan, R5
+ME31R6	Yucatan, R6
+ME31R7	Yucatan, R7
+ME31R8	Yucatan, R8
+ME32	Zacatecas
+ME32R1	Zacatecas, R1
+ME32R2	Zacatecas, R2
+ME32R3	Zacatecas, R3
+ME32R4	Zacatecas, R4
+ME32R5	Zacatecas, R5
+ME32R6	Zacatecas, R6
+ME32R7	Zacatecas, R7
+ME32R8	Zacatecas, R8
+ME32R9	Zacatecas, R9
+NLD	Netherlands
+NL11	Groningen
+NL111	Oost-Groningen
+NL112	Delfzijl en omgeving
+NL113	Overig Groningen
+NL12	Friesland
+NL124	Noord-Friesland
+NL125	Zuidwest-Friesland
+NL126	Zuidoost-Friesland
+NL13	Drenthe
+NL131	Noord-Drenthe
+NL132	Zuidoost-Drenthe
+NL133	Zuidwest-Drenthe
+NL21	Overijssel
+NL211	Noord-Overijssel
+NL212	Zuidwest-Overijssel
+NL213	Twente
+NL22	Gelderland
+NL221	Veluwe
+NL224	Zuidwest-Gelderland
+NL225	Achterhoek
+NL226	Arnhem/Nijmegen
+NL23	Flevoland
+NL230	Flevoland
+NL31	Utrecht
+NL310	Utrecht
+NL32	North Holland
+NL321	Kop van Noord-Holland
+NL323	IJmond
+NL324	Agglomeratie Haarlem
+NL325	Zaanstreek
+NL327	Het Gooi en Vechtstreek
+NL328	Alkmaar en omgeving
+NL329	Groot-Amsterdam
+NL33	South Holland
+NL332	Agglomeratie 's-Gravenhage
+NL333	Delft en Westland
+NL337	Agglomeratie Leiden en Bollenstreek
+NL33A	Zuidoost-Zuid-Holland
+NL33B	Oost-Zuid-Holland
+NL33C	Groot-Rijnmond
+NL34	Zeeland
+NL341	Zeeuwsch-Vlaanderen
+NL342	Overig Zeeland
+NL41	North Brabant
+NL411	West-Noord-Brabant
+NL412	Midden-Noord-Brabant
+NL413	Noordoost-Noord-Brabant
+NL414	Zuidoost-Noord-Brabant
+NL42	Limburg
+NL421	Noord-Limburg
+NL422	Midden-Limburg
+NL423	Zuid-Limburg
+NZL	New Zealand
+NZ11	Northland Region
+NZ011	Northland Region
+NZ12	Auckland Region
+NZ012	Auckland Region
+NZ13	Waikato Region
+NZ013	Waikato Region
+NZ14	Bay of Plenty Region
+NZ014	Bay of Plenty Region
+NZ15	Gisborne Region
+NZ015	Gisborne Region
+NZ16	Hawke's Bay Region
+NZ016	Hawke's Bay Region
+NZ17	Taranaki Region
+NZ017	Taranaki Region
+NZ18	Manawatu-Wanganui Region
+NZ018	Manawatu-Wanganui Region
+NZ19	Wellington Region
+NZ019	Wellington Region
+NZ21	Tasman-Nelson-Marlborough
+NZ021	Tasman-Nelson-Marlborough
+NZ22	West Coast Region
+NZ022	West Coast Region
+NZ23	Canterbury Region
+NZ023	Canterbury Region
+NZ24	Otago Region
+NZ024	Otago Region
+NZ25	Southland Region
+NZ025	Southland Region
+NOR	Norway
+NO01	Oslo and Akershus
+NO011	Oslo
+NO012	Akershus
+NO02	Hedmark and Oppland
+NO021	Hedmark
+NO022	Oppland
+NO03	South-Eastern Norway
+NO031	Østfold
+NO032	Buskerud
+NO033	Vestfold
+NO034	Telemark
+NO04	Agder and Rogaland
+NO041	Aust-Agder
+NO042	Vest-Agder
+NO043	Rogaland
+NO05	Western Norway
+NO051	Hordaland
+NO052	Sogn og Fjordane
+NO053	Møre og Romsdal
+NO06	Trøndelag
+NO060	Trøndelag
+NO07	Northern Norway
+NO071	Nordland
+NO072	Troms
+NO073	Finnmark
+NO08	Oslo and Viken
+NO09	Agder and Sør-Østlandet
+POL	Poland
+PL21	Lesser Poland
+PL213	City of Krakow
+PL214	Krakowski
+PL217	Tarnowski
+PL218	Nowosadecki
+PL219	Nowotarski
+PL21A	Oswiecimski
+PL22	Silesia
+PL224	Czestochowski
+PL225	Bielski
+PL227	Rybnicki
+PL228	Bytomski
+PL229	Gliwicki
+PL22A	Katowicki
+PL22B	Sosnowiecki
+PL22C	Tyski
+PL41	Greater Poland
+PL411	Pilski
+PL414	Koninski
+PL415	City of Poznan
+PL416	Kaliski
+PL417	Leszczynski
+PL418	Poznanski
+PL42	West Pomerania
+PL424	City of Szczecin
+PL426	Koszalinski
+PL427	Szczecinecko-pyrzycki
+PL428	Szczecinski
+PL43	Lubusz
+PL431	Gorzowski
+PL432	Zielonogórski
+PL51	Lower Silesia
+PL514	City of Wroclaw
+PL515	Jeleniogórski
+PL516	Legnicko-Glogowski
+PL517	Walbrzyski
+PL518	Wroclawski
+PL52	Opole region
+PL523	Nyski
+PL524	Opolski
+PL61	Kuyavian-Pomerania
+PL613	Bydgosko-Torunski
+PL616	Grudziadzki
+PL617	Inowroclawski
+PL618	Swiecki
+PL619	Wloclawski
+PL62	Warmian-Masuria
+PL621	Elblaski
+PL622	Olsztynski
+PL623	Elcki
+PL63	Pomerania
+PL633	Trojmiejski
+PL634	Gdanski
+PL636	Slupski
+PL637	Chojnicki
+PL638	Starogardzki
+PL71	Lodzkie
+PL711	City of Lódz
+PL712	Lódzki
+PL713	Piotrkowski
+PL714	Sieradzki
+PL715	Skierniewicki
+PL72	Swietokrzyskie
+PL721	Kielecki
+PL722	Sandomiersko-Jedrzejowski
+PL81	Lublin Province
+PL811	Bialski
+PL812	Chelmsko-Zamojski
+PL814	Lubelski
+PL815	Pulawski
+PL82	Podkarpacia
+PL821	Krosnienski
+PL822	Przemyski
+PL823	Rzeszowski
+PL824	Tarnobrzeski
+PL84	Podlaskie
+PL841	Bialostocki
+PL842	Lomzynski
+PL843	Suwalski
+PL91	Warsaw
+PL911	City of Warsaw
+PL912	Warsaw-East
+PL913	Warsaw-West
+PL92	Mazowiecki region
+PL921	Radomski
+PL922	Ciechanowski
+PL923	Plocki
+PL924	Ostrolecki
+PL925	Siedlecki
+PL926	Żyrardowski
+PL12	Mazovia
+PRT	Portugal
+PT11	North (PT)
+PT111	Alto Minho
+PT112	Cávado
+PT119	Ave
+PT11A	Metropolitan area of Porto
+PT11B	Alto Tâmega
+PT11C	Tâmega e Sousa
+PT11D	Douro
+PT11E	Terras de Trás-os-Montes
+PT15	Algarve
+PT150	Algarve
+PT16	Central Portugal
+PT16B	Oeste
+PT16D	Região de Aveiro
+PT16E	Região de Coimbra
+PT16F	Região de Leiria
+PT16G	Viseu Dão Lafões
+PT16H	Beira Baixa
+PT16I	Médio Tejo
+PT16J	Beiras e Serra da Estrela
+PT17	Metropolitan area of Lisbon
+PT170	Metropolitan area of Lisbon
+PT18	Alentejo
+PT181	Alentejo Litoral
+PT184	Baixo Alentejo
+PT185	Lezíria do Tejo
+PT186	Alto Alentejo
+PT187	Alentejo Central
+PT20	Autonomous Region of the Azores
+PT200	Autonomous Region of the Azores
+PT30	Autonomous Region of Madeira
+PT300	Autonomous Region of Madeira
+SVK	Slovak Republic
+SK01	Bratislava Region
+SK010	Bratislava Region
+SK02	West Slovakia
+SK021	Trnava Region
+SK022	Trencín Region
+SK023	Nitra Region
+SK03	Central Slovakia
+SK031	Žilina Region
+SK032	Banská Bystrica Region
+SK04	East Slovakia
+SK041	Prešov Region
+SK042	Košice Region
+SVN	Slovenia
+SI03	Eastern Slovenia
+SI031	Mura
+SI032	Drava
+SI033	Carinthia
+SI034	Savinja
+SI035	Central Sava
+SI036	Lower Sava
+SI037	Southeast Slovenia
+SI038	Littoral–Inner Carniola
+SI04	Western Slovenia
+SI041	Central Slovenia
+SI042	Upper Carniola
+SI043	Goriska
+SI044	Coastal-Karst
+ESP	Spain
+ES11	Galicia
+ES111	La Corunna
+ES112	Lugo
+ES113	Orense
+ES114	Pontevedra
+ES12	Asturias
+ES120	Asturias
+ES13	Cantabria
+ES130	Cantabria
+ES21	Basque Country
+ES211	Araba/Álava
+ES212	Gipuzkoa
+ES213	Biscay
+ES22	Navarra
+ES220	Navarre
+ES23	La Rioja
+ES230	La Rioja (ES)
+ES24	Aragon
+ES241	Huesca
+ES242	Teruel
+ES243	Saragossa
+ES30	Madrid
+ES300	Madrid
+ES41	Castile and León
+ES411	Ávila
+ES412	Burgos
+ES413	León
+ES414	Palencia
+ES415	Salamanca
+ES416	Segovia
+ES417	Soria
+ES418	Valladolid
+ES419	Zamora
+ES42	Castile-La Mancha
+ES421	Albacete
+ES422	Ciudad Real
+ES423	Cuenca
+ES424	Guadalajara
+ES425	Toledo
+ES43	Extremadura
+ES431	Badajoz
+ES432	Cáceres
+ES51	Catalonia
+ES511	Barcelona
+ES512	Gerona
+ES513	Lérida
+ES514	Tarragona
+ES52	Valencia
+ES521	Alicante
+ES522	Castellón
+ES523	Valencia
+ES53	Balearic Islands
+ES531	Eivissa y Formentera
+ES532	Mallorca
+ES533	Menorca
+ES61	Andalusia
+ES611	Almería
+ES612	Cádiz
+ES613	Cordoba (ES)
+ES614	Granada
+ES615	Huelva
+ES616	Jaén
+ES617	Málaga
+ES618	Seville
+ES62	Murcia
+ES620	Murcia
+ES63	Ceuta
+ES630	Ceuta (ES)
+ES64	Melilla
+ES640	Melilla (ES)
+ES70	Canary Islands
+ES703	El Hierro
+ES704	Fuerteventura
+ES705	Gran Canaria
+ES706	La Gomera
+ES707	La Palma
+ES708	Lanzarote
+ES709	Tenerife
+SWE	Sweden
+SE11	Stockholm
+SE110	Stockholm County
+SE12	East Middle Sweden
+SE121	Uppsala County
+SE122	Södermanland County
+SE123	Östergötland County
+SE124	Örebro County
+SE125	Västmanland County
+SE21	Småland with Islands
+SE211	Jönköping County
+SE212	Kronoberg County
+SE213	Kalmar County
+SE214	Gotland County
+SE22	South Sweden
+SE221	Blekinge County
+SE224	Skåne County
+SE23	West Sweden
+SE231	Halland County
+SE232	Västra Götaland County
+SE31	North Middle Sweden
+SE311	Värmlands County
+SE312	Dalarna County
+SE313	Gävleborg County
+SE32	Central Norrland
+SE321	Västernorrland County
+SE322	Jämtland County
+SE33	Upper Norrland
+SE331	Västerbottens County
+SE332	Norrbottens County
+CHE	Switzerland
+CH01	Lake Geneva Region
+CH011	Vaud
+CH012	Valais
+CH013	Genève
+CH02	Espace Mittelland
+CH021	Bern
+CH022	Fribourg (CH)
+CH023	Solothurn
+CH024	Neuchâtel
+CH025	Jura (CH)
+CH03	Northwestern Switzerland
+CH031	Basel-Stadt
+CH032	Basel-Landschaft
+CH033	Aargau
+CH04	Zurich
+CH040	Zürich
+CH05	Eastern Switzerland
+CH051	Glarus
+CH052	Schaffhausen
+CH053	Appenzell Ausserrhoden
+CH054	Appenzell Innerrhoden
+CH055	St. Gallen
+CH056	Graubünden
+CH057	Thurgau
+CH06	Central Switzerland
+CH061	Lucerne
+CH062	Uri
+CH063	Schwyz
+CH064	Obwalden
+CH065	Nidwalden
+CH066	Zug
+CH07	Ticino
+CH070	Ticino
+TUR	Türkiye
+TR10	Istanbul
+TR100	Istanbul
+TR21	Thrace
+TR211	Tekirdag
+TR212	Edirne
+TR213	Kirklareli
+TR22	Southern Marmara - West
+TR221	Balikesir
+TR222	Çanakkale
+TR31	Izmir
+TR310	Izmir
+TR32	Southern Aegean
+TR321	Aydin
+TR322	Denizli
+TR323	Mugla
+TR33	Northern Aegean
+TR331	Manisa
+TR332	Afyon
+TR333	Kütahya
+TR334	Usak
+TR41	Eastern Marmara - South
+TR411	Bursa
+TR412	Eskisehir
+TR413	Bilecik
+TR42	Eastern Marmara - North
+TR421	Kocaeli
+TR422	Sakarya
+TR423	Düzce
+TR424	Bolu
+TR425	Yalova
+TR51	Ankara
+TR510	Ankara
+TR52	Central Anatolia - West and South
+TR521	Konya
+TR522	Karaman
+TR61	Mediterranean region - West
+TR611	Antalya
+TR612	Isparta
+TR613	Burdur
+TR62	Mediterranean region - Middle
+TR621	Adana
+TR622	Mersin
+TR63	Mediterranean region - East
+TR631	Hatay
+TR632	Kahramanmaras
+TR633	Osmaniye
+TR71	Central Anatolia - Middle
+TR711	Kirikkale
+TR712	Aksaray
+TR713	Nigde
+TR714	Nevsehir
+TR715	Kirsehir
+TR72	Central Anatolia - East
+TR721	Kayseri
+TR722	Sivas
+TR723	Yozgat
+TR81	Western Black Sea - West
+TR811	Zonguldak
+TR812	Karabük
+TR813	Bartin
+TR82	Western Black Sea - Middle and East
+TR821	Kastamonu
+TR822	Çankiri
+TR823	Sinop
+TR83	Middle Black Sea
+TR831	Samsun
+TR832	Tokat
+TR833	Çorum
+TR834	Amasya
+TR90	Eastern Black Sea
+TR901	Trabzon
+TR902	Ordu
+TR903	Giresun
+TR904	Rize
+TR905	Artvin
+TR906	Gümüshane
+TRA1	Northeastern Anatolia - West
+TRA11	Erzurum
+TRA12	Erzincan
+TRA13	Bayburt
+TRA2	Northeastern Anatolia - East
+TRA21	Agri
+TRA22	Kars
+TRA23	Igdir
+TRA24	Ardahan
+TRB1	Eastern Anatolia - West
+TRB11	Malatya
+TRB12	Elazig
+TRB13	Bingöl
+TRB14	Tunceli
+TRB2	Eastern Anatolia - East
+TRB21	Van
+TRB22	Mus
+TRB23	Bitlis
+TRB24	Hakkari
+TRC1	Southeastern Anatolia - West
+TRC11	Gaziantep
+TRC12	Adiyaman
+TRC13	Kilis
+TRC2	Southeastern Anatolia - Middle
+TRC21	Sanliurfa
+TRC22	Diyarbakir
+TRC3	Southeastern Anatolia - East
+TRC31	Mardin
+TRC32	Batman
+TRC33	Sirnak
+TRC34	Siirt
+GBR	United Kingdom
+UKC	North East England
+UKC11	Hartlepool and Stockton-on-Tees
+UKC12	South Teesside
+UKC13	Darlington
+UKC14	Durham CC
+UKC21	Northumberland
+UKC22	Tyneside
+UKC23	Sunderland
+UKD	North West England
+UKD11	West Cumbria
+UKD12	East Cumbria
+UKD33	Manchester
+UKD34	Greater Manchester South West
+UKD35	Greater Manchester South East
+UKD36	Greater Manchester North West
+UKD37	Greater Manchester North East
+UKD41	Blackburn with Darwen
+UKD42	Blackpool
+UKD44	Lancaster &amp; Wyre
+UKD45	Mid Lancashire
+UKD46	East Lancashire
+UKD47	Chorley &amp; West Lancashire
+UKD61	Warrington
+UKD62	Cheshire East
+UKD63	Cheshire West and Chester
+UKD71	East Merseyside
+UKD72	Liverpool
+UKD73	Sefton
+UKD74	Wirral
+UKE	Yorkshire and The Humber
+UKE11	Kingston Upon Hull, City of
+UKE12	East Riding of Yorkshire
+UKE13	North and North East Lincolnshire
+UKE21	York
+UKE22	North Yorkshire CC
+UKE31	Barnsley, Doncaster and Rotherham
+UKE32	Sheffield
+UKE41	Bradford
+UKE42	Leeds
+UKE44	Calderdale and Kirklees
+UKE45	Wakefield
+UKF	East Midlands
+UKF11	Derby
+UKF12	East Derbyshire
+UKF13	South and West Derbyshire
+UKF14	Nottingham
+UKF15	North Nottinghamshire
+UKF16	South Nottinghamshire
+UKF21	Leicester
+UKF22	Leicestershire CC and Rutland
+UKF24	West Northamptonshire
+UKF25	North Northamptonshire
+UKF30	Lincolnshire
+UKG	West Midlands
+UKG11	Herefordshire, County of
+UKG12	Worcestershire
+UKG13	Warwickshire
+UKG21	Telford and Wrekin
+UKG22	Shropshire CC
+UKG23	Stoke-on-Trent
+UKG24	Staffordshire CC
+UKG31	Birmingham
+UKG32	Solihull
+UKG33	Coventry
+UKG36	Dudley
+UKG37	Sandwell
+UKG38	Walsall
+UKG39	Wolverhampton
+UKH	East of England
+UKH11	Peterborough
+UKH12	Cambridgeshire CC
+UKH14	Suffolk
+UKH15	Norwich &amp; East Norfolk
+UKH16	North &amp; West Norfolk
+UKH17	Breckland &amp; South Norfolk
+UKH21	Luton
+UKH23	Hertfordshire
+UKH24	Bedford
+UKH25	Central Bedfordshire
+UKH31	Southend-on-Sea
+UKH32	Thurrock
+UKH34	Essex Haven Gateway
+UKH35	West Essex
+UKH36	Heart of Essex
+UKH37	Essex Thames Gateway
+UKI	Greater London
+UKI31	Camden &amp; City of London
+UKI32	Westminster
+UKI33	Kensington and Chelsea &amp; Hammersmith and Fulham
+UKI34	Wandsworth
+UKI41	Hackney &amp; Newham
+UKI42	Tower Hamlets
+UKI43	Haringey &amp; Islington
+UKI44	Lewisham &amp; Southwark
+UKI45	Lambeth
+UKI51	Bexley &amp; Greenwich
+UKI52	Barking and Dagenham &amp; Havering
+UKI53	Redbridge &amp; Waltham Forest
+UKI54	Enfield
+UKI61	Bromley
+UKI62	Croydon
+UKI63	Merton, Kingston upon Thames &amp; Sutton
+UKI7	Outer London - West and North West
+UKI71	Barnet
+UKI72	Brent
+UKI73	Ealing
+UKI74	Harrow &amp; Hillingdon
+UKI75	Hounslow &amp; Richmond upon Thames
+UKJ	South East England
+UKJ11	Berkshire
+UKJ12	Milton Keynes
+UKJ13	Buckinghamshire CC
+UKJ14	Oxfordshire
+UKJ21	Brighton and Hove
+UKJ22	East Sussex CC
+UKJ25	West Surrey
+UKJ26	East Surrey
+UKJ27	West Sussex (South West)
+UKJ28	West Sussex (North East)
+UKJ31	Portsmouth
+UKJ32	Southampton
+UKJ34	Isle of Wight
+UKJ35	South Hampshire
+UKJ36	Central Hampshire
+UKJ37	North Hampshire
+UKJ41	Medway
+UKJ43	Kent Thames Gateway
+UKJ44	East Kent
+UKJ45	Mid Kent
+UKJ46	West Kent
+UKK	South West England
+UKK11	Bristol, City of
+UKK12	Bath and North East Somerset, North Somerset and South Gloucestershire
+UKK13	Gloucestershire
+UKK14	Swindon
+UKK15	Wiltshire CC
+UKK21	Bournemouth and Poole
+UKK22	Dorset CC
+UKK23	Somerset
+UKK30	Cornwall and Isles of Scilly
+UKK41	Plymouth
+UKK42	Torbay
+UKK43	Devon CC
+UKL	Wales
+UKL11	Isle of Anglesey
+UKL12	Gwynedd
+UKL13	Conwy and Denbighshire
+UKL14	South West Wales
+UKL15	Central Valleys
+UKL16	Gwent Valleys
+UKL17	Bridgend and Neath Port Talbot
+UKL18	Swansea
+UKL21	Monmouthshire and Newport
+UKL22	Cardiff and Vale of Glamorgan
+UKL23	Flintshire and Wrexham
+UKL24	Powys
+UKM	Scotland
+UKM50	Aberdeen City and Aberdeenshire
+UKM61	Caithness &amp; Sutherland and Ross &amp; Cromarty
+UKM62	Inverness &amp; Nairn and Moray, Badenoch &amp; Strathspey
+UKM63	Lochaber, Skye &amp; Lochalsh, Arran &amp; Cumbrae and Argyll &amp; Bute
+UKM64	Eilean Siar (Western Isles)
+UKM65	Orkney Islands
+UKM66	Shetland Islands
+UKM71	Angus and Dundee City
+UKM72	Clackmannanshire and Fife
+UKM73	East Lothian and Midlothian
+UKM75	Edinburgh, City of
+UKM76	Falkirk
+UKM77	Perth &amp; Kinross and Stirling
+UKM78	West Lothian
+UKM81	East Dunbartonshire, West Dunbartonshire and Helensburgh &amp; Lomond
+UKM82	Glasgow City
+UKM83	Inverclyde, East Renfrewshire and Renfrewshire
+UKM84	North Lanarkshire
+UKM91	Scottish Borders
+UKM92	Dumfries &amp; Galloway
+UKM93	East Ayrshire and North Ayrshire mainland
+UKM94	South Ayrshire
+UKM95	South Lanarkshire
+UKN	Northern Ireland
+UKN06	Belfast
+UKN07	Armagh City, Banbridge and Craigavon
+UKN08	Newry, Mourne and Down
+UKN09	Ards and C193North Down
+UKN10	Derry City and Strabane
+UKN11	Mid Ulster
+UKN12	Causeway Coast and Glens
+UKN13	Antrim and Newtownabbey
+UKN14	Lisburn and Castlereagh
+UKN15	Mid and East Antrim
+UKN16	Fermanagh and Omagh
+UKN02	Outer Belfast
+UKN03	East of Northern Ireland
+UKN04	North of Northern Ireland
+UKN05	West and South of Northern Ireland
+USA	United States
+US01	Alabama
+US02	Alaska
+US04	Arizona
+US05	Arkansas
+US06	California
+US08	Colorado
+US09	Connecticut
+US10	Delaware
+US11	District of Columbia
+US12	Florida
+US13	Georgia
+US15	Hawaii
+US16	Idaho
+US17	Illinois
+US18	Indiana
+US19	Iowa
+US20	Kansas
+US21	Kentucky
+US22	Louisiana
+US23	Maine
+US24	Maryland
+US25	Massachusetts
+US26	Michigan
+US27	Minnesota
+US28	Mississippi
+US29	Missouri
+US30	Montana (US)
+US31	Nebraska
+US32	Nevada
+US33	New Hampshire
+US34	New Jersey
+US35	New Mexico
+US36	New York
+US37	North Carolina
+US38	North Dakota
+US39	Ohio
+US40	Oklahoma
+US41	Oregon
+US42	Pennsylvania
+US44	Rhode Island
+US45	South Carolina
+US46	South Dakota
+US47	Tennessee
+US48	Texas
+US49	Utah
+US50	Vermont
+US51	Virginia
+US53	Washington
+US54	West Virginia
+US55	Wisconsin
+US56	Wyoming
+USA_TL3	United States TL3
+US001	Aberdeen, SD
+US002	Abilene, TX
+US003	Albany, GA
+US004	Albany-Schenectady-Amsterdam, NY
+US005	Albuquerque, NM
+US006	Alpena, MI
+US007	Amarillo, TX
+US008	Anchorage, AK
+US009	Appleton-Oshkosh-Neenah, WI
+US010	Asheville-Brevard, NC
+US011	Atlanta-Sandy Springs-Gainesville, GA-AL
+US012	Augusta-Richmond County, GA-SC
+US013	Austin-Round Rock, TX
+US014	Bangor, ME
+US015	Baton Rouge-Pierre Part, LA
+US016	Beaumont-Port Arthur, TX
+US017	Bend-Prineville, OR
+US018	Billings, MT
+US019	Birmingham-Hoover-Cullman, AL
+US020	Bismarck, ND
+US021	Boise City-Nampa, ID
+US022	Boston-Worcester-Manchester, MA-NH
+US023	Buffalo-Niagara-Cattaraugus, NY
+US024	Burlington-South Burlington, VT
+US025	Cape Girardeau-Jackson, MO-IL
+US026	Casper, WY
+US027	Cedar Rapids, IA
+US028	Champaign-Urbana, IL
+US029	Charleston, WV
+US030	Charleston-North Charleston, SC
+US031	Charlotte-Gastonia-Salisbury, NC-SC
+US032	Chicago-Naperville-Michigan City, IL-IN-WI
+US033	Cincinnati-Middletown-Wilmington, OH-KY-IN
+US034	Clarksburg, WV + Morgantown, WV
+US035	Cleveland-Akron-Elyria, OH
+US036	Colorado Springs, CO
+US037	Columbia, MO
+US038	Columbia-Newberry, SC
+US039	Columbus-Auburn-Opelika, GA-AL
+US040	Columbus-Marion-Chillicothe, OH
+US041	Corpus Christi-Kingsville, TX
+US042	Dallas-Fort Worth, TX
+US043	Davenport-Moline-Rock Island, IA-IL
+US044	Dayton-Springfield-Greenville, OH
+US045	Denver-Aurora-Boulder, CO
+US046	Des Moines-Newton-Pella, IA
+US047	Detroit-Warren-Flint, MI
+US048	Dothan-Enterprise-Ozark, AL
+US049	Dover, DE
+US050	Duluth, MN-WI
+US051	El Paso, TX
+US052	Erie, PA
+US053	Eugene-Springfield, OR
+US054	Evansville, IN-KY
+US055	Fargo-Wahpeton, ND-MN
+US056	Farmington, NM
+US057	Fayetteville-Springdale-Rogers, AR-MO
+US058	Flagstaff, AZ
+US059	Fort Smith, AR-OK
+US060	Fort Wayne-Huntington-Auburn, IN
+US061	Fresno-Madera, CA
+US062	Gainesville, FL
+US063	Grand Forks, ND-MN
+US064	Grand Rapids-Muskegon-Holland, MI
+US065	Great Falls, MT
+US066	Greensboro--Winston-Salem--High Point, NC
+US067	Greenville, NC
+US068	Greenville-Spartanburg-Anderson, SC
+US069	Gulfport-Biloxi-Pascagoula, MS
+US070	Harrisburg-Carlisle-Lebanon, PA
+US071	Harrisonburg, VA
+US072	Hartford-West Hartford-Willimantic, CT
+US073	Helena, MT
+US074	Honolulu, HI
+US075	Houston-Baytown-Huntsville, TX
+US076	Huntsville-Decatur, AL
+US077	Idaho Falls-Blackfoot, ID
+US078	Indianapolis-Anderson-Columbus, IN
+US079	Jacksonville, FL
+US080	Jackson-Yazoo City, MS
+US081	Johnson City-Kingsport-Bristol (Tri-Cities), TN-VA
+US082	Jonesboro, AR
+US083	Joplin, MO
+US084	Kansas City-Overland Park-Kansas City, MO-KS
+US085	Kearney, NE
+US086	Kennewick-Richland-Pasco, WA
+US087	Killeen-Temple-Fort Hood, TX
+US088	Knoxville-Sevierville-La Follette, TN
+US089	La Crosse, WI-MN
+US090	Lafayette-Acadiana, LA
+US091	Lake Charles-Jennings, LA
+US092	Las Vegas-Paradise-Pahrump, NV
+US093	Lewiston, ID-WA
+US094	Lexington-Fayette--Frankfort--Richmond, KY
+US095	Lincoln, NE
+US096	Little Rock-North Little Rock-Pine Bluff, AR
+US097	Los Angeles-Long Beach-Riverside, CA
+US098	Louisville-Elizabethtown-Scottsburg, KY-IN
+US099	Lubbock-Levelland, TX
+US100	Macon-Warner Robins-Fort Valley, GA
+US101	Madison-Baraboo, WI
+US102	Marinette, WI-MI
+US103	Mason City, IA
+US104	McAllen-Edinburg-Pharr, TX
+US105	Memphis, TN-MS-AR
+US106	Miami-Fort Lauderdale-Miami Beach, FL
+US107	Midland-Odessa, TX
+US108	Milwaukee-Racine-Waukesha, WI
+US109	Minneapolis-St. Paul-St. Cloud, MN-WI
+US110	Minot, ND
+US111	Missoula, MT
+US112	Mobile-Daphne-Fairhope, AL
+US113	Monroe-Bastrop, LA
+US114	Montgomery-Alexander City, AL
+US115	Myrtle Beach-Conway-Georgetown, SC
+US116	Nashville-Davidson--Murfreesboro--Columbia, TN
+US117	New Orleans-Metairie-Bogalusa, LA
+US118	New York-Newark-Bridgeport, NY-NJ-CT-PA
+US119	Oklahoma City-Shawnee, OK
+US120	Omaha-Council Bluffs-Fremont, NE-IA
+US121	Orlando-The Villages, FL
+US122	Paducah, KY-IL
+US123	Panama City-Lynn Haven, FL
+US124	Pendleton-Hermiston, OR
+US125	Pensacola-Ferry Pass-Brent, FL
+US126	Peoria-Canton, IL
+US127	Philadelphia-Camden-Vineland, PA-NJ-DE-MD
+US128	Phoenix-Mesa-Scottsdale, AZ
+US129	Pittsburgh-New Castle, PA
+US130	Portland-Lewiston-South Portland, ME
+US131	Portland-Vancouver-Beaverton, OR-WA
+US132	Pueblo, CO
+US133	Raleigh-Durham-Cary, NC
+US134	Rapid City, SD
+US135	Redding, CA
+US136	Reno-Sparks, NV
+US137	Richmond, VA
+US138	Roanoke, VA
+US139	Rochester-Batavia-Seneca Falls, NY
+US140	Sacramento--Arden-Arcade--Truckee, CA-NV
+US141	Salina, KS
+US142	Salt Lake City-Ogden-Clearfield, UT
+US143	San Angelo, TX
+US144	San Antonio, TX
+US145	San Diego-Carlsbad-San Marcos, CA
+US146	San Jose-San Francisco-Oakland, CA
+US147	Santa Fe-Espanola, NM
+US148	Sarasota-Bradenton-Venice, FL
+US149	Savannah-Hinesville-Fort Stewart, GA
+US150	Scotts Bluff, NE
+US151	Scranton--Wilkes-Barre, PA
+US152	Seattle-Tacoma-Olympia, WA
+US153	Shreveport-Bossier City-Minden, LA
+US154	Sioux City-Vermillion, IA-NE-SD
+US155	Sioux Falls, SD
+US156	South Bend-Mishawaka, IN-MI
+US157	Spokane, WA
+US158	Springfield, IL
+US159	Springfield, MO
+US160	St. Louis-St. Charles-Farmington, MO-IL
+US161	State College, PA
+US162	Syracuse-Auburn, NY
+US163	Tallahassee, FL
+US164	Tampa-St. Petersburg-Clearwater, FL
+US165	Texarkana, TX-Texarkana, AR
+US166	Toledo-Fremont, OH
+US167	Topeka, KS
+US168	Traverse City, MI
+US169	Tucson, AZ
+US170	Tulsa-Bartlesville, OK
+US171	Tupelo, MS
+US172	Twin Falls, ID
+US173	Virginia Beach-Norfolk-Newport News, VA-NC
+US174	Washington-Baltimore-Northern Virginia, DC-MD-VA-WV
+US175	Waterloo-Cedar Falls, IA
+US176	Wausau-Merrill, WI
+US177	Wenatchee, WA
+US178	Wichita Falls, TX
+US179	Wichita-Winfield, KS
+G4E	Major four European countries
+E4M	Major four euro area countries
+G7	G7
+G20	G20
+G20XEU	G20 excl. European Union
+G20OECD	G20 OECD countries
+G20XOECD	G20 non-OECD economies
+G20_A	G20 advanced economies
+G20_E	G20 emerging economies
+EA	Euro area
+EA00	Euro area (evolving composition)
+EA11	Euro area (11 countries)
+EA12	Euro area (12 countries)
+EA13	Euro area (13 countries)
+EA15	Euro area (15 countries)
+EA16	Euro area (16 countries)
+EA17	Euro area (17 countries)
+EA18	Euro area (18 countries)
+EA19	Euro area (19 countries)
+EA_X	Euro area unspecified
+EA00_X	Euro area (evolving composition) unspecified
+EU	European Union
+EU00	European Union (evolving composition)
+EU15	European Union (15 countries)
+EU25	European Union (25 countries)
+EU27	European Union (27 countries)
+EU28	European Union (28 countries)
+EU27_2020	European Union (27 countries from 01/02/2020)
+EU28XEU15	European Union 28 excluding European Union 15 countries
+EU_X	European Union unspecified
+EU00_X	European Union (evolving composition) unspecified
+EUOECD	European Union countries in OECD
+EU13OECD	European Union (13 countries) in OECD
+EU14OECD	European Union (14 countries) in OECD
+EU19OECD	European Union (19 countries) in OECD
+EU20OECD	European Union (20 countries) in OECD
+EU21OECD	European Union (21 countries) in OECD
+EU22OECD	European Union (22 countries) in OECD
+EU22OECD_2020	European Union (22 countries) in OECD (from 01/02/2020)
+EU23OECD	European Union (23 countries) in OECD
+OECD	OECD
+OECD00	OECD (evolving composition)
+OECD26	OECD (26 countries)
+OECD30	OECD (30 countries)
+OECD31	OECD (31 countries)
+OECD34	OECD (34 countries)
+OECD35	OECD (35 countries)
+OECD36	OECD (36 countries)
+OECD37	OECD (37 countries)
+OECD38	OECD (38 countries)
+OECDXEA	OECD excluding the euro area
+OECDXUSAJPNEA17	OECD countries except USA, JPN and Euro area
+OECDA	OECD America
+OECDS	OECD Asia
+OECDSO	OECD Asia Oceania
+OECDE	OECD Europe
+OECDXG7	OECD smaller countries
+OECD_X	OECD unspecified
+OECD00_X	OECD (evolving composition) unspecified
+WXOECD	Non-OECD economies
+WXOECDXCHN	Non-OECD economies excluding China
+AXOECD	Non-OECD America
+AXOECD_O	Other non-OECD America
+SXOECD	Non-OECD Asia
+EXOECD	Non-OECD Europe
+AFG	Afghanistan
+ALA	Åland
+ALB	Albania
+AL01	Veri
+AL02	Qender
+AL03	Jug
+DZA	Algeria
+ASM	American Samoa
+AGO	Angola
+AND	Andorra
+ATA	Antarctica
+AIA	Anguilla
+ATG	Antigua and Barbuda
+ARG	Argentina
+AR01	Autonomous City of Buenos Aires
+AR02	Buenos Aires
+AR03	Catamarca
+AR04	Chaco
+AR05	Chubut
+AR06	Córdoba
+AR07	Corrientes
+AR08	Entre Ríos
+AR09	Formosa
+AR10	Jujuy
+AR11	La Pampa
+AR12	La Rioja
+AR13	Mendoza
+AR14	Misiones
+AR15	Neuquén
+AR16	Río Negro
+AR17	Salta
+AR18	San Juan
+AR19	San Luis
+AR20	Santa Cruz
+AR21	Santa Fe
+AR22	Santiago del Estero
+AR23	Tierra del Fuego, Antártida e Islas del Atlántico Sur
+AR24	Tucumán
+ARM	Armenia
+ABW	Aruba
+AZE	Azerbaijan
+BHS	Bahamas
+BHR	Bahrain
+GGY	Bailiwick of Guernsey
+BGD	Bangladesh
+BRB	Barbados
+BLR	Belarus
+BLZ	Belize
+BEN	Benin
+BMU	Bermuda
+BTN	Bhutan
+BOL	Bolivia
+BES	Bonaire, Saba, Saint Eustatius
+BIH	Bosnia and Herzegovina
+BWA	Botswana
+BVT	Bouvet Island
+BRA	Brazil
+BR01	Acre
+BR02	Amapá
+BR03	Amazonas
+BR04	Pará
+BR05	Rondônia
+BR06	Roraima
+BR07	Tocantins
+BR08	Alagoas
+BR09	Bahia
+BR10	Ceará
+BR11	Maranhão
+BR12	Paraíba
+BR13	Pernambuco
+BR14	Piauí
+BR15	Rio Grande Do Norte
+BR16	Sergipe
+BR17	Espírito Santo
+BR18	Minas Gerais
+BR19	Rio De Janeiro
+BR20	São Paulo
+BR21	Paraná
+BR22	Rio Grande Do Sul
+BR23	Santa Catarina
+BR24	Distrito Federal (BR)
+BR25	Goiás
+BR26	Mato Grosso
+BR27	Mato Grosso Do Sul
+IOT	British Indian Ocean Territory
+VGB	British Virgin Islands
+BRN	Brunei Darussalam
+BGR	Bulgaria
+BG31	North West
+BG311	Vidin
+BG312	Montana (BG)
+BG313	Vratsa
+BG314	Pleven
+BG315	Lovech
+BG32	North Central
+BG321	Veliko Tarnovo
+BG322	Gabrovo
+BG323	Ruse
+BG324	Razgrad
+BG325	Silistra
+BG33	North East
+BG331	Varna
+BG332	Dobrich
+BG333	Shumen
+BG334	Targovishte
+BG34	South East
+BG341	Burgas
+BG342	Sliven
+BG343	Yambol
+BG344	Starazagora
+BG41	South West
+BG411	Sofia (Stolitsa)
+BG412	Sofia
+BG413	Blagoevgrad
+BG414	Pernik
+BG415	Kyustendil
+BG42	South Central
+BG421	Plovdiv
+BG422	Haskovo
+BG423	Pazardzhik
+BG424	Smolyan
+BG425	Kardzhali
+BFA	Burkina Faso
+BDI	Burundi
+CPV	Cabo Verde
+KHM	Cambodia
+CMR	Cameroon
+CYM	Cayman Islands
+CAF	Central African Republic
+TCD	Chad
+CHN	China (People’s Republic of)
+CN01	Beijing
+CN02	Tianjin
+CN03	Hebei
+CN04	Shanxi
+CN05	Inner Mongolia
+CN06	Liaoning
+CN07	Jilin
+CN08	Heilongjiang
+CN09	Shanghai
+CN10	Jiangsu
+CN11	Zhejiang
+CN12	Anhui
+CN13	Fujian
+CN14	Jiangxi
+CN15	Shandong
+CN16	Henan
+CN17	Hubei
+CN18	Hunan
+CN19	Guangdong
+CN20	Guangxi
+CN21	Hainan
+CN22	Chongqing
+CN23	Sichuan
+CN24	Guizhou
+CN25	Yunnan
+CN26	Tibet
+CN27	Shaanxi
+CN28	Gansu
+CN29	Qinghai
+CN30	Ningxia
+CN31	Xinjiang
+CXR	Christmas Island
+COM	Comoros
+CCK	Cocos (Keeling) Islands
+COG	Congo
+COK	Cook Islands
+CIV	Côte d’Ivoire
+HRV	Croatia
+HR02	Pannonian Croatia
+HR03	Adriatic Croatia
+HR031	Primorje-Gorski Kotar County
+HR032	Lika-Senj County
+HR033	Zadar County
+HR034	Sibenik-Knin County
+HR035	Split-Dalmatia County
+HR036	Istria County
+HR037	Dubrovnik-Neretva County
+HR04	Continental Croatia
+HR041	City of Zagreb
+HR042	Zagreb County
+HR043	Krapina-Zagorje County
+HR044	Varazdin County
+HR045	Koprivnica-Krizevci County
+HR046	Medimurje County
+HR047	Bjelovar-Bilogora County
+HR048	Virovitica-Podravina County
+HR049	Pozega-Slavonia County
+HR04A	Brod-Posavina County
+HR04B	Osijek-Baranja County
+HR04C	Vukovar-Srijem County
+HR04D	Karlovac County
+HR04E	Sisak-Moslavina County
+HR06	Northern Croatia
+CUB	Cuba
+CUW	Curaçao
+CYP	Cyprus
+PRK	Democratic People’s Republic of Korea
+COD	Democratic Republic of the Congo
+DJI	Djibouti
+DMA	Dominica
+DOM	Dominican Republic
+ECU	Ecuador
+EGY	Egypt
+SLV	El Salvador
+GNQ	Equatorial Guinea
+ERI	Eritrea
+SWZ	Eswatini
+ETH	Ethiopia
+FLK	Falkland Islands (Malvinas)
+FRO	Faroe Islands
+FJI	Fiji
+GUF	French Guiana
+PYF	French Polynesia
+ATF	French Southern and Antarctic Lands
+GAB	Gabon
+GMB	Gambia
+GEO	Georgia
+GHA	Ghana
+GIB	Gibraltar
+GRL	Greenland
+GRD	Grenada
+GLP	Guadeloupe
+GUM	Guam
+GTM	Guatemala
+GIN	Guinea
+GNB	Guinea-Bissau
+GUY	Guyana
+HTI	Haiti
+HMD	Heard Island and McDonald Islands
+VAT	Holy See
+HND	Honduras
+HKG	Hong Kong (China)
+IND	India
+IN01	Jammu and Kashmir
+IN02	Himachal Pradesh
+IN03	National Capital Territory of Delhi
+IN04	Rajasthan
+IN05	Uttar Pradesh
+IN06	Sikkim
+IN07	Arunachal Pradesh
+IN08	Nagaland
+IN09	Meghalaya
+IN10	Assam
+IN11	West Bengal
+IN12	Gujarat
+IN13	Dadra &amp; Nagar Haveli
+IN14	Maharashtra
+IN15	Daman &amp; Diu
+IN16	Lakshadweep
+IN17	Kerala
+IN18	Punjab
+IN19	Chandigarh
+IN20	Haryana
+IN21	Uttaranchal
+IN22	Bihar
+IN23	Jharkhand
+IN24	Manipur
+IN25	Mizoram
+IN26	Tripura
+IN27	Orissa
+IN28	Madhya Pradesh
+IN29	Chhattisgarh
+IN30	Andhra Pradesh
+IN31	Karnataka
+IN32	Goa
+IN33	Tamil Nadu
+IN34	Puducherry
+IN35	Andaman and Nicobar Islands
+IN36	Telangana
+IDN	Indonesia
+ID01	DKI Jakarta Province
+ID02	Banten Province
+ID03	D.I. Yogyakarta Province
+ID04	West Java Province
+ID05	East Java Province
+ID06	Central Java Province
+ID07	Bali Province
+ID08	Aceh Province
+ID09	North Sumatera Province
+ID10	Bengkulu Province
+ID11	Riau Province
+ID12	Riau Mainland Province
+ID13	West Sumatera Province
+ID14	South Sumatera Province
+ID15	Bangka Belitung Province
+ID16	Jambi Province
+ID17	Lampung Province
+ID18	Papua Province
+ID19	West Papua Province
+ID20	Gorontalo Province
+ID2A	North Kalimantan
+ID21	West Kalimantan Province
+ID22	South Kalimantan Province
+ID23	Middle Kalimantan Province
+ID24	East Kalimantan Province
+ID25	Maluku Province
+ID26	North Maluku Province
+ID27	South East Sulawesi Province
+ID28	North Sulawesi Province
+ID29	South Sulawesi Province
+ID30	Middle Sulawesi Province
+ID31	West Sulawesi Province
+ID32	Western Lesser Sundas Province
+ID33	Eastern Lesser Sundas Province
+IRN	Iran
+IRQ	Iraq
+IMN	Isle of Man
+JAM	Jamaica
+JEY	Jersey
+JOR	Jordan
+KAZ	Kazakhstan
+KEN	Kenya
+KIR	Kiribati
+XKV	Kosovo
+KWT	Kuwait
+KGZ	Kyrgyzstan
+LAO	Lao People’s Democratic Republic
+LBN	Lebanon
+LSO	Lesotho
+LBR	Liberia
+LBY	Libya
+LIE	Liechtenstein
+MAC	Macau (China)
+MDG	Madagascar
+MWI	Malawi
+MYS	Malaysia
+MDV	Maldives
+MLI	Mali
+MLT	Malta
+MT00	Malta
+MT001	Malta
+MT002	Malta
+MHL	Marshall Islands
+MTQ	Martinique
+MRT	Mauritania
+MUS	Mauritius
+MYT	Mayotte
+FSM	Micronesia
+MDA	Moldova
+MCO	Monaco
+MNG	Mongolia
+MNE	Montenegro
+MSR	Montserrat
+MAR	Morocco
+MOZ	Mozambique
+MMR	Myanmar
+NAM	Namibia
+NRU	Nauru
+NPL	Nepal
+NCL	New Caledonia
+NIC	Nicaragua
+NER	Niger
+NGA	Nigeria
+NIU	Niue
+NFK	Norfolk Island
+MKD	North Macedonia
+MNP	Northern Mariana Islands
+OMN	Oman
+PAK	Pakistan
+PLW	Palau
+PSE	Palestinian Authority or  West Bank and Gaza Strip
+PAN	Panama
+PNG	Papua New Guinea
+PRY	Paraguay
+PER	Peru
+PE01	Amazonas (PE)
+PE02	Áncash
+PE03	Apurímac
+PE04	Arequipa
+PE05	Ayacucho
+PE06	Cajamarca
+PE07	Prov. const. del Callao
+PE08	Cusco
+PE09	Huancavelica
+PE10	Huánuco
+PE11	Ica
+PE12	Junín
+PE13	La Libertad
+PE14	Lambayeque
+PE15	Lima
+PE16	Loreto
+PE17	Madre de dios
+PE18	Moquegua
+PE19	Pasco
+PE20	Piura
+PE21	Puno
+PE22	San Martin
+PE23	Tacna
+PE24	Tumbes
+PE25	Ucayali
+PHL	Philippines
+PCN	Pitcairn
+PRI	Puerto Rico
+QAT	Qatar
+REU	Réunion
+ROU	Romania
+RO11	North West
+RO111	Bihor
+RO112	Bistrita-Nasaud
+RO113	Cluj
+RO114	Maramures
+RO115	Satumare
+RO116	Salaj
+RO12	Center
+RO121	Alba
+RO122	Brasov
+RO123	Covasna
+RO124	Harghita
+RO125	Mures
+RO126	Sibiu
+RO21	North East
+RO211	Bacau
+RO212	Botosani
+RO213	Iasi
+RO214	Neamt
+RO215	Suceava
+RO216	Vaslui
+RO22	South East
+RO221	Braila
+RO222	Buzau
+RO223	Constanta
+RO224	Galati
+RO225	Tulcea
+RO226	Vrancea
+RO31	South - Muntenia
+RO311	Arges
+RO312	Calarasi
+RO313	Dambovita
+RO314	Giurgiu
+RO315	Ialomita
+RO316	Prahova
+RO317	Teleorman
+RO32	Bucharest - Ilfov
+RO321	Bucuresti
+RO322	Ilfov
+RO41	South West Oltenia
+RO411	Dolj
+RO412	Gorj
+RO413	Mehedinti
+RO414	Olt
+RO415	Valcea
+RO42	West
+RO421	Arad
+RO422	Caras-Severin
+RO423	Hunedoara
+RO424	Timis
+RUS	Russia
+RU01	Belgorod Oblast
+RU02	Bryansk Oblast
+RU03	Vladimir Oblast
+RU04	Voronezh Oblast
+RU05	Ivanovo Oblast
+RU06	Kaluga Oblast
+RU07	Kostroma Oblast
+RU08	Kursk Oblast
+RU09	Lipetsk Oblast
+RU10	Moscow Oblast
+RU11	Oryol Oblast
+RU12	Ryazan Oblast
+RU13	Smolensk Oblast
+RU14	Tambov Oblast
+RU15	Tver Oblast
+RU16	Tula Oblast
+RU17	Yaroslavl Oblast
+RU18	City of Moscow
+RU19	Republic of Karelia
+RU20	Komi republic
+RU21	Arkhangelsk Oblast
+RU22	Nenets Autonomous Okrug
+RU23	Vologda Oblast
+RU24	Kaliningrad Oblast
+RU25	Leningrad Oblast
+RU26	Murmansk Oblast
+RU27	Novgorod Oblast
+RU28	Pskov Oblast
+RU29	Federal City of Saint Petersburg
+RU30	Republic of Adygea
+RU31	Republic of Kalmykia
+RU32	Krasnodar Krai
+RU33	Astrakhan Oblast
+RU34	Volgograd Oblast
+RU35	Rostov Oblast
+RU36	Republic of Dagestan
+RU37	Republic of Ingushetia
+RU38	Kabardino-Balkar Republic
+RU39	Karachay-Cherkhess Republic
+RU40	Republic of North Ossetia-Alania
+RU41	Chechen Republic
+RU42	Stavropol Krai
+RU43	Republic of Bashkorstostan
+RU44	Mari El Republic
+RU45	Republic of Mordovia
+RU46	Republic of Tatarstan
+RU47	Udmurt Republic
+RU48	Chuvash Republic
+RU49	Perm Krai
+RU50	Kirov Oblast
+RU51	Nizhny Novgorod Oblast
+RU52	Orenburg Oblast
+RU53	Penza Oblast
+RU54	Samara Oblast
+RU55	Saratov Oblast
+RU56	Ulianov Oblast
+RU57	Kurgan Oblast
+RU58	Sverdlovsk Oblast
+RU59	Tyumen Oblast
+RU60	Khanty-Mansi Autonomous Okrug - Yugra
+RU61	Yamalo-Nenets Autonomous Okrug
+RU62	Chelyabinsk Oblast
+RU63	Republic of Altai
+RU64	Buryat Republic
+RU65	Tyva Republic
+RU66	Republic of Khakassia
+RU67	Altai Krai
+RU68	Zabaykalsky Krai
+RU69	Krasnoyarsk Krai
+RU70	Irkutsk Oblast
+RU71	Kemerovo oblast
+RU72	Novosibirsk Oblast
+RU73	Omsk Oblast
+RU74	Tomsk Oblast
+RU75	Sakha Republic (Yakutia)
+RU76	Kamchatka Krai
+RU77	Primorsky Krai
+RU78	Khabarovsk Krai
+RU79	Amur Oblast
+RU80	Magadan Oblast
+RU81	Sakhalin Oblast
+RU82	Jewish Autonomous Oblast
+RU83	Chukotka Autonomous Okrug
+RWA	Rwanda
+BLM	Saint Barthélemy
+SHN	Saint Helena
+KNA	Saint Kitts and Nevis
+MAF	Saint Martin
+LCA	Saint Lucia
+SPM	Saint Pierre and Miquelon
+VCT	Saint Vincent and the Grenadines
+WSM	Samoa
+SMR	San Marino
+STP	Sao Tome and Principe
+SAU	Saudi Arabia
+SEN	Senegal
+SRB	Serbia
+RS11	Belgrade region
+RS12	Vojvodina region
+RS21	Šumadija and Western Serbia
+RS22	Southern and Eastern Serbia
+SYC	Seychelles
+SLE	Sierra Leone
+SGP	Singapore
+SXM	Sint Maarten
+SLB	Solomon Islands
+SOM	Somalia
+ZAF	South Africa
+ZA01	Eastern Cape
+ZA02	Free State
+ZA03	Gauteng
+ZA04	KwaZulu-Natal
+ZA05	Limpopo
+ZA06	Mpumalanga
+ZA07	Northern Cape
+ZA08	North West
+ZA09	Western Cape
+SGS	South Georgia and the South Sandwich Islands
+SSD	South Sudan
+LKA	Sri Lanka
+SDN	Sudan
+SUR	Suriname
+SJM	Svalbard and Jan Mayen
+SYR	Syrian Arab Republic
+TWN	Chinese Taipei
+TJK	Tajikistan
+TZA	Tanzania
+THA	Thailand
+TLS	Timor-Leste
+TGO	Togo
+TKL	Tokelau
+TON	Tonga
+TTO	Trinidad and Tobago
+TUN	Tunisia
+TN1	District de Tunis
+TN11	Tunis
+TN12	Ariana
+TN13	Ben Arous
+TN14	Manouba
+TN2	Nord-Est
+TN21	Nabeul
+TN22	Zaghouan
+TN23	Bizerte
+TN3	Nord-Ouest
+TN31	Béja
+TN32	Jendouba
+TN33	Le Kef
+TN34	Siliana
+TN4	Centre-Est
+TN41	Sousse
+TN42	Monastir
+TN43	Mahdia
+TN44	Sfax
+TN5	Centre-Ouest
+TN51	Kairouan
+TN52	Kasserine
+TN53	Sidi Bouzid
+TN6	Sud-Est
+TN61	Gabés
+TN62	Médenine
+TN63	Tataouine
+TN7	Sud-Ouest
+TN71	Gafsa
+TN72	Tozeur
+TN73	Kébili
+TKM	Turkmenistan
+TCA	Turks and Caicos Islands
+TUV	Tuvalu
+UGA	Uganda
+UKR	Ukraine
+ARE	United Arab Emirates
+UMI	United States Minor Outlying Islands
+VIR	United States Virgin Islands
+URY	Uruguay
+UZB	Uzbekistan
+VUT	Vanuatu
+VEN	Venezuela
+VNM	Viet Nam
+WLF	Wallis and Futuna
+ESH	Western Sahara
+YEM	Yemen
+ZMB	Zambia
+ZWE	Zimbabwe
+YAR_F	Former Arab Republic of Yemen
+BEL_LUX	Belgo-Luxembourg Economic Union
+CSK_F	Former Czechoslovakia
+DDR_F	Former Democratic Republic of Germany
+VDR_F	Former Democratic Republic of Viet Nam
+YMD_F	Former Democratic Yemen
+ETH_F	Former Ethiopia
+DEU_F	Former Federal Republic of Germany
+ANT_F	Former Netherlands Antilles
+ANT_F_ABW	Former Netherlands Antilles and Aruba
+PCI_F	Former Pacific Islands (Trust Territory)
+PCZ_F	Former Panama Canal Zone
+RNY_F	Former Rhodesia Nyas
+SCG_F	Former Serbia and Montenegro
+TZA_F	Former Tanganyika
+SUN_F	Former USSR
+YUG_F	Former Yugoslavia
+ACP	ACP
+AES	Advanced economies
+APEC	APEC
+ASEAN	ASEAN
+CEEC	CEEC
+CIS	CIS
+DAE	Dynamic Asian economies
+EMES	Emerging market economies
+EEA	EEA
+GULF	Gulf Arabian countries
+DAE_IND_IDN	Main industrialised Asia
+A5M	Major five Asia economies
+MERCOSUR	MERCOSUR
+NAFTA	NAFTA
+OPEC	OPEC
+OIL_O	Other major oil producers
+OIL_SAU_O	Other oil producers
+SAARC	SAARC
+SDR	SDR
+DAC	DAC countries
+ODA	ODA recipient countries
+ODAA	ODA recipient countries - America
+ODAF	ODA recipient countries - Africa
+ODAE	ODA recipient countries - Europe
+ODAO	ODA recipient countries - Oceania
+ODAS	ODA recipients countries - Asia
+LDC	Least developed countries
+LLDC	Land locked developing countries
+SIDS	Small island developing states
+DPGC	Developing countries
+DPDC	Developed countries
+MADCT	More advanced developed countries and territories
+HICS	High income countries
+UMIC	Upper-middle income countries
+LMIC	Lower-middle income countries
+OLIC	Other low income countries
+INC_X	Countries unallocated by income
+HICSWB	High income countries (World Bank)
+UMICWB	Upper-middle income countries (World Bank)
+LMICWB	Lower-middle income countries (World Bank)
+OLICWB	Low income countries (World Bank)
+INCWB_X	Countries not classified by the World Bank
+HIPC	Heavily-indebted poor countries
+FSCAC	Fragile states and Conflict-affected countries
+WBA	World aviation bunkers
+WBM	World marine bunkers
+WB	World marine and aviation bunkers
+FZ	Free zones
+IEA	IEA Total
+IEAA	IEA Americas
+IEAOS	IEA Asia Oceania
+IEAXMEX	IEA Total (excl. Mexico)
+IEAE	IEA Europe
+IEA_ACC	IEA and Accession/Association countries
+ANNEX1	Annex I of the United Nations Framework Convention on Climate 
+Change Parties
+WXANNEX1	Non-Annex I of the United Nations Framework Convention on Climate 
+Change Parties
+ANNEX2	Annex II of the United Nations Framework Convention on Climate 
+Change Parties
+ANNEX2A2	Annex II of the United Nations Framework Convention on Climate 
+Change North America
+ANNEX2E	Annex II of the United Nations Framework Convention on Climate 
+Change Europe
+ANNEX2OS	Annex II of the United Nations Framework Convention on Climate 
+Change Asia Oceania
+A	America
+A2	Northern America
+A3	Central America
+A4	Caribbean
+A5	Central America and the Caribbean
+A5_A7	South and Central America
+A7	South America
+A8	Latin America
+A8_M	Main Latin American countries
+A9	Latin America and the Caribbean
+A_X	America unspecified
+A_O	Other America
+E	Europe
+E2	Eastern Europe
+E3	Northern Europe
+E4	Southern Europe
+E5	Western Europe
+E_X	Europe unspecified
+E_O	Other Europe
+F	Africa
+F3	Eastern Africa
+F4	Northern Africa
+F5	Middle Africa
+F6	Sub-Saharan Africa
+F7	Southern Africa
+F8	Western Africa
+F97	Middle East
+F98	Middle East and North Africa
+F_X	Africa unspecified
+F_O	Other Africa
+O	Oceania
+O6	Australia and New Zealand
+O7	Melanesia
+O8	Micronesia
+O9	Polynesia
+O_X	Oceania unspecified
+O_O	Other Oceania
+S	Asia
+S2	Eastern Asia
+S2_S8	Eastern and South-eastern Asia
+S3	Western Asia / Near and Middle East countries
+S4	Central Asia
+S7	Southern Asia
+S8	South-eastern Asia
+S_X	Asia unspecified
+S_O	Other Asia
+W_O	Other countries
+WXTIVA	Non-target TiVA countries
+W	World
+W_IO	World and international organsations
+W_X	World unspecified
+IO	International organisations
+D	Domestic (home or reference area)
+WXD	Rest of the world
+F	Female
+M	Male
+_N	Non response
+BBL_US	Barrels
+C	Degrees celsius
+CAL	Calories
+CT	Carats
+CM	Centimetres
+D	Days
+DD	Degree days
+G	Grammes
+GJ	Gigajoules
+GT	Gross tonnage
+GW	Gigawatts
+GWH	Gigawatt hours
+H	Hours
+HA	Hectares
+HL	Hectolitres
+KCAL	Kilocalories
+KG	Kilogramme
+KJ	Kilojoules
+KL	Kilolitres
+KM	Kilometres
+KM2	Square kilometres
+KT	Kilotonnes
+KW	Kilowatts
+KWH	Kilowatt hours
+L	Litres
+LB	Pounds
+M	Metres
+M2	Square metres
+M3	Cubic metres
+MCG	Microgrammes
+MG	Milligrammes
+MH	Months
+MM	Millimetres
+MN	Minutes
+MW	Megawatts
+VEHKM_10P3USD	Vehicle-kilometres per 1 000 US dollars
+OZ	Ounces
+S	Seconds
+T	Tonnes
+TJ	Terajoules
+TWH	Terawatt hours
+WK	Weeks
+XGO	(Gold fine) Troy ounces
+Y	Years
+ANM	Animals
+BD	Beds
+BR	Births
+CH	Children
+CL	Classes
+CU	Consumption units
+CR	Courts
+CRA	Crashes
+CS	Cases
+DEVC	Devices
+DT	Deaths
+DSC	Discharges
+DW	Dwellings
+ENT	Enterprises
+ENT_EM	Employer enterprises
+ENT_MULT	Multinational enterprises
+EST	Establishments
+EXM	Exams
+PRC	Procedures
+FM	Families
+INST_PL	Policy instruments
+FTE	Full time equivalent unit
+GRDS	Grades
+HB	Inhabitants
+HH	Households
+HH_EQ	Equivalised households
+HSPTL	Hospitals
+IC	Inpatient cases
+IJ	Injuries
+INSP	Inspectors
+INV	Inventions
+INV_C	Co-inventions
+INVS	Investors
+IT	Items
+LAU	Local administrative units
+SNGU	Subnational government units
+JB	Jobs
+NGHT	Nights
+PAC	Packages
+PAR	Pairs
+DOZ	Dozens
+PAS	Passengers
+PATN	Patents
+PATN_FM	Sets of patents
+PAT	Patients
+PBL_SC	Scientific publications
+PR	Permits
+PS	Persons
+PL	Policies
+RCP	Recipients
+RG	Registrations
+RO	Rooms
+RW	Registered workplaces
+SB	Subscriptions
+SC	Schools
+SPC	Species
+SPC_FSH	Fish species
+ST	Students
+TEU	Twenty-foot equivalent units
+UT	Units
+VC	Job vacancies
+VEH	Vehicles
+VEHKM	Vehicle-kilometres
+VIS	Visits
+VS	Vessels
+AGRMNT	Agreements
+BRD	Breeds
+CHRS_CMMT	Committee chairs
+CNTRY	Countries
+DSRPTN	Disruptions
+FC	Facilities
+PARL_MEM	Members of parliament
+PH	pH scale
+PLNT_GEN_RESRC	Plant genetic resources
+SCL_CAT	Category scale
+TBL_ACCNT	Accounting tables
+AED	United Arab Emirates dirham
+AFN	Afghani
+ALL	Lek
+AMD	Armenian dram
+ANG	Netherlands Antillian guilder
+AOA	Kwanza
+ARS	Argentine peso
+AUD	Australian dollar
+AWG	Aruban guilder
+AZN	Azerbaijanian manat
+BAM	Bosnia and Herzegovina convertible mark
+BBD	Barbados dollar
+BDT	Taka
+BGN	Bulgarian lev
+BHD	Bahraini dinar
+BIF	Burundi franc
+BMD	Bermudian dollar
+BND	Brunei dollar
+BOB	Boliviano
+BOV	Mvdol
+BRL	Brazilian real
+BSD	Bahamian dollar
+BTN	Ngultrum
+BWP	Pula
+BYN	Belarussian ruble
+BZD	Belize dollar
+CAD	Canadian dollar
+CDF	Congolese franc
+CENT	Euro cent
+CFA	CFA franc
+CHE	WIR euro
+CHF	Swiss franc
+CHW	WIR franc
+CLF	Unidad de formento (UF)
+CLP	Chilean peso
+CNY	Chinese yuan renminbi
+COP	Colombian peso
+CRC	Costa Rican colon
+CUP	Cuban peso
+CVE	Cape Verde escudo
+CZK	Czech koruna
+DJF	Djibouti franc
+DKK	Danish krone
+DOP	Dominican peso
+DZD	Algerian dinar
+EGP	Egyptian pound
+ERN	Nakfa
+ETB	Ethiopian birr
+EUR	Euro
+FJD	Fiji dollar
+FKP	Falkland Islands pound
+GBP	Pound sterling
+GEL	Lari
+GHS	Ghana cedi
+GIP	Gibraltar pound
+GMD	Dalasi
+GNF	Guinea franc
+GTQ	Quetzal
+GYD	Guyana dollar
+HKD	Hong Kong dollar
+HNL	Lempira
+HRK	Croatian kuna
+HTG	Gourde
+HUF	Forint
+IDR	Rupiah
+ILS	New Israeli sheqel
+IMP	Isle of Man pounds
+INR	Indian rupee
+IQD	Iraqi dinar
+IRR	Iranian rial
+ISK	Iceland krona
+JMD	Jamaican dollar
+JOD	Jordanian dinar
+JPY	Yen
+KES	Kenyan shilling
+KGS	Som
+KHR	Riel
+KMF	Comoro franc
+KPW	North Korean won
+KRW	Won
+KWD	Kuwaiti dinar
+KYD	Cayman Islands dollar
+KZT	Tenge
+LAK	Kip
+LBP	Lebanese pound
+LKR	Sri Lanka rupee
+LRD	Liberian dollar
+LSL	Loti
+LYD	Libyan dinar
+MAD	Moroccan dirham
+MDL	Moldovan leu
+MGA	Malagasy ariary
+MKD	Denar
+MMK	Kyat
+MNT	Tugrik
+MOP	Pataca
+MRU	Ouguiya
+MUR	Mauritius rupee
+MVR	Rufiyaa
+MWK	Malawian kwacha
+MXN	Mexican peso
+MXV	Mexican unidad de inversion (UDI)
+MYR	Malaysian ringgit
+MZN	Metical
+NAD	Namibia dollar
+NGN	Naira
+NIO	Cordoba oro
+NOK	Norwegian krone
+NPR	Nepalese rupee
+NZD	New Zealand dollar
+OMR	Rial Omani
+PAB	Balboa
+PEN	Peruvian sol
+PGK	Kina
+PHP	Philippine peso
+PKR	Pakistan rupee
+PLN	Zloty
+PYG	Guarani
+QAR	Qatari rial
+RON	Romanian leu
+RSD	Serbian dinar
+RUB	Russian ruble
+RWF	Rwanda franc
+SAR	Saudi riyal
+SBD	Solomon Islands dollar
+SCR	Seychelles rupee
+SDG	Sudanese pound
+SEK	Swedish krona
+SGD	Singapore dollar
+SHP	Saint Helena pound
+SLL	Leone
+SOS	Somali shilling
+SPL	Seborga luigini
+SRD	Surinam dollar
+SSP	South-Sudanese pound
+STD	Dobra
+SVC	El Salvador colon
+SYP	Syrian pound
+SZL	Lilangeni
+THB	Thai bhat
+TJS	Somoni
+TMT	Turkmen manat
+TND	Tunisian dinar
+TOP	Tongan paanga
+TRY	Turkish lira
+TTD	Trinidad and Tobago dollar
+TWD	New Taiwan dollar
+TZS	Tanzanian shilling
+UAH	Hryvnia
+UGX	Uganda shilling
+USD	US dollar
+USN	US dollar (next day)
+USS	US dollar (same day)
+UYI	Uruguay peso en unidades indexadas
+UYU	Uruguayan peso
+UZS	Uzbekistan sum
+VES	Bolivar soberano
+VND	Dong
+VUV	Vatu
+WST	Tala
+XAF	CFA franc - BEAC
+XAG	Silver
+XAU	Gold
+XCD	East Caribbean dollar
+XDC	National currency
+XDR	Special Drawing Rights
+XEU	European Currency Unit (ECU)
+XOF	CFA Franc - BCEAO
+XPF	CFP franc
+YER	Yemeni rial
+ZAR	Rand
+ZMW	Kwacha
+RC	Reported currency
+USD_BBL_US	US dollars per barrel
+USD_CO2	US dollars per unit of CO2
+USD_CONT	US dollars per container
+USD_GJ	US dollars per gigajoule
+USD_H	US dollars per hour
+USD_HH	US dollars per household
+USD_HH_PPP	US dollars per household, PPP converted
+USD_HHE	US dollars per equivalised household
+USD_HHE_PPP	US dollars per equivalised household, PPP converted
+USD_HL	US dollars per hectolitre
+USD_KG	US dollars per kilogramme
+USD_KG_CO2	US dollars per kilogramme of CO2
+USD_KG_CO2E	US dollars per kilogramme of CO2-equivalent
+USD_KWH	US dollars per kilowatt hour
+USD_L	US dollars per litre
+USD_PS	US dollars per person
+USD_ST	US dollars per student
+USD_T	US dollars per tonne
+USD_TCO2	US dollars per tonne of CO2
+USD_TCO2E	US dollars per tonne of CO2-equivalent
+USD_TOE	US dollars per tonne of oil equivalent
+USD_UT	US dollars per unit
+USD_PPP	US dollars, PPP converted
+USD_PPP_H	US dollars per hour, PPP converted
+USD_PPP_L	US dollars per litre, PPP converted
+USD_PPP_KWH	US dollars per kilowatt hour, PPP converted
+USD_PPP_PS	US dollars per person, PPP converted
+USD_PPP_ST	US dollars per student, PPP converted
+USD_PPP_WR	US dollars per worker, PPP converted
+USD_EXC	US dollars, exchange rate converted
+USD_EXC_H	US dollars per hour, exchange rate converted
+USD_EXC_PS	US dollars per person, exchange rate converted
+USD_XDC	US dollars per national currency
+EUR_PPP	Euros, PPP converted
+EUR_PPP_H	Euros, per hour, PPP converted
+EUR_PPP_PS	Euros per person, PPP converted
+EUR_EXC	Euros, exchange rate converted
+EUR_EXC_PS	Euros, exchange rate converted, per person
+EUR_BBL_US	Euros per barrel
+EUR_CO2	Euros per unit of CO2
+EUR_GJ	Euros per gigajoule
+EUR_H	Euros per hour
+EUR_HH	Euros per household
+EUR_HHE	Euros per equivalised household
+EUR_HL	Euros per hectolitre
+EUR_KG	Euros per kilogramme
+EUR_L	Euros per litre
+EUR_PS	Euros per person
+EUR_T	Euros per tonne
+EUR_TCO2	Euros per tonne of CO2
+EUR_TCO2E	Euros per tonne of CO2-equivalent
+XDC_BBL_US	National currency per barrel
+XDC_CAP	National currency per unit of capital
+XDC_CO2	National currency per unit of CO2
+XDC_CU	National currency per consumption unit
+XDC_INP	National currency per unit of total inputs
+XDC_EUR	National currency per euro
+XDC_GJ	National currency per gigajoule
+XDC_H	National currency per hour
+XDC_HH	National currency per household
+XDC_HH_EQ	National currency per equivalised household
+XDC_HL	National currency per hectolitre
+XDC_KG	National currency per kilogramme
+XDC_L	National currency per litre
+XDC_PS	National currency per person
+XDC_SAL	National currency per employee
+XDC_ST	National currency per student
+XDC_T	National currency per tonne
+XDC_TCO2	National currency per tonne of CO2
+XDC_TCO2E	National currency per tonne of CO2-equivalent
+XDC_USD	National currency per US dollar
+XDC_WR	National currency per worker
+ADF	Andorran franc (1-1 peg to the French franc)
+ADP	Andorran peseta (1-1 peg to the Spanish peseta)
+AFA	Afghanistan afghani (old)
+AON	Angolan kwanza (old)
+AOR	Angolan kwanza readjustado (old)
+ATS	Austrian schilling
+AZM	Azerbaijanian manat (old)
+BEF	Belgian franc
+BEL	Belgian franc (financial)
+BGL	Bulgarian lev (old)
+BYB	Belarussian rouble (old)
+BYR	Belarus ruble
+COU	Unidad de Valor real
+CSD	Serbian dinar (old)
+CYP	Cypriot pound
+DEM	German mark
+ECS	Ecuador sucre (old)
+ECV	Unidad de valor constante
+EEK	Estonian kroon
+ESP	Spanish peseta
+FIM	Finnish markka
+FRF	French franc
+GGP	Guernsey pounds
+GHC	Ghanaian cedi (old)
+GRD	Greek drachma
+GWP	Guinea-Bissau peso
+HKQ	Hong Kong dollar (old)
+IEP	Irish pound
+ITL	Italian lira
+JEP	Jersey pounds
+LTL	Lithuanian litas
+LUF	Luxembourg franc
+LVL	Latvian lats
+MGF	Malagasy franc
+MTL	Maltese lira
+MXP	Mexican peso (old)
+MZM	Mozambique metical (old)
+MRO	Ouguiya (old)
+NLG	Netherlands guilder
+PLZ	Polish zloty (old)
+PTE	Portugese escudo (old)
+ROL	Romanian leu (old)
+RUR	Russian ruble (old)
+SDD	Sudanese dinar (old)
+SDP	First sudanese pound
+SIT	Slovenian tolar
+SKK	Slovak koruna
+SRG	Suriname guilder (old)
+TJR	Tajikistan rouble (old)
+TMM	Turkmenistan manat (old)
+TPE	East Timor escudo (old)
+TRL	Turkish lira (old)
+TVD	Tuvalu dollars
+VEB	Venezuela bolivar (old)
+VEF	Bolivar fuerte
+XFO	Gold-franc
+XFU	UIC-franc
+YUM	Yugoslav dinar (old)
+ZMK	Zambian kwacha
+ZWD	Zimbabwe dollar
+ZWL	Fourth zimbabwe dollar
+ZWN	Zimbabwe dollars (old)
+ZWR	Third zimbabwe dollar
+BBL_US_D	Barrels per day
+BBL_US_T	Barrels per tonne
+CAL_PS_D	Calories per person per day
+CS_10P5PS	Cases per 100 000 persons
+CS_10P5M	Cases per 100 000 men
+CS_10P5W	Cases per 100 000 women
+CS_BD	Cases per available bed
+CS_PS	Cases per person
+CS_WR	Cases per worker
+CH_W	Children per woman
+CN_PS	Consultations per person
+D_IJ	Days per injury
+D_PS	Days per person
+D_WK	Days per week
+D_WR	Days per worker
+D_Y	Days per year
+D_Y_PS	Days per year per person
+DSC_10P5PS	Discharges per 100 000 persons
+BR_W	Births per 1 000 women
+BR_L_W	Live births per woman
+DT_10P3BR	Deaths per 1 000 births
+DT_10P3BR_L	Deaths per 1 000 live births
+DT_10P5BR_L	Deaths per 100 000 live births
+DT_10P3HB	Deaths per 1 000 inhabitants
+DT_10P5HB	Deaths per 100 000 inhabitants
+DT_10P6HB	Deaths per 1 000 000 inhabitants
+DT_PAT	Deaths per patient
+DT_10P2PAT	Deaths per 100 patients
+EXM_10P3PS	Exams per 1 000 persons
+EXM_SCN	Exams per scanner
+DVC_10P3PS	Divorces per 1 000 persons
+MRG_10P3PS	Marriages per 1 000 persons
+G_CO2E_KWH	Grammes of CO2-equivalent per kilowatt hour
+G_PS	Grammes per person
+G_PS_D	Grammes per person per day
+GBIT_SB_M	Gigabits per subscription per month
+H_D	Hours per day
+H_PS	Hours per person
+H_WK	Hours per week
+H_WK_PS	Hours per week per person
+H_WR	Hours per worker
+H_Y	Hours per year
+H_Y_PS	Hours per year per person
+HB_KM2	Inhabitants per square kilometre
+HB_LAU	Inhabitants per local administrative unit
+IJ_10P6HB	Injured per 1 000 000 inhabitants
+INSP_EMP	Inspectors per employed person
+INV_10P6HB	Inventions per 1 000 000 inhabitants
+INV_PS	Inventions per person
+INV_RD_S13	Inventions per unit of government R&amp;D
+INV_RD_S1ZS	Inventions per unit of public R&amp;D
+KBBL_US_D	Kilobarrels per day
+KCAL_PS	Kilocalories per person
+KCAL_PS_D	Kilocalories per person per day
+KG_10P3USD	Kilogrammes per 1 000 US dollars
+KG_10P6USD	Kilogrammes per 1 000 000 US dollars
+KG_CO2E_KG	Kilogrammes of CO2-equivalent per kilogramme
+KG_CO2E_PS	Kilogrammes of CO2-equivalent per person
+KG_CO2E_10P3USD	Kilogrammes of CO2-equivalent per 1 000 US dollars
+KG_CO2_USD	Kilogrammes of CO2 per US dollar
+KG_D	Kilogrammes per day
+KG_EUR	Kilogrammes per euro
+KG_HA	Kilogrammes per hectare
+KG_PS	Kilogrammes per person
+KG_PS_D	Kilogrammes per person per day
+KG_PS_WK	Kilogrammes per person per week
+KG_PS_Y	Kilogrammes per person per year
+KG_HH	Kilogrammes per household
+KG_HH_WK	Kilogrammes per household per week
+KG_USD	Kilogrammes per US dollar
+KG_WK	Kilogrammes per week
+KGOE	Kilogrammes of oil equivalent
+KGOE_PS	Kilogrammes of oil equivalent per person
+KJ_KG	Kilojoules per kilogramme
+KJ_M3	Kilojoules per cubic metre
+KM_100KM2	Kilometres per 100 square kilometres
+L_PS	Litres per person
+L_HH	Litres per household
+LAU_10P5HB	Local administrative units per 100 000 inhabitants
+M2_PS	Square metres per person
+M3_PS	Cubic metres per person
+M3_Y	Cubic metres per year
+MB_S	Megabytes per second
+MCG_L	Microgrammes per litre
+MCG_M3	Microgrammes per cubic metre
+MG_L	Milligrammes per litre
+MM_H	Millimetres per hour
+MM_Y	Millimetres per year
+MCMOL_L	Micromole per liter
+MJ_USD	Megajoules per USD
+W_PS	Watts per person
+MN_D	Minutes per day
+PASKM	Passenger-kilometres
+PASKM_10P3USD	Passenger-kilometres per 1 000 US dollars
+TKM_10P3USD	Tonne-kilometres per 1 000 US dollars
+SEATKM_10P3USD	Seat-kilometres per 1 000 US dollars
+DDD_10P3HB	Defined daily dose per 1 000 inhabitants per day
+CG_SM_D	Cigarettes per smoker per day
+PRC_10P5PS	Procedures per 100 000 persons
+PRC_10P5M	Procedures per 100 000 men
+PRC_10P5W	Procedures per 100 000 women
+PT_ROAD_NTWK	Percentage of road network
+PRC_10P3BR_L	Procedures per 1 000 live births
+PRC_10P5BR_L	Procedures per 100 000 live births
+PRC_10P3POP_Y_GE65	[Deprecated] Procedures per 1 000 population aged 65 years old and over
+PRC_10P3HB_Y_GE65	Procedures per 1 000 inhabitants aged 65 years old or over
+PS_FTE	Persons (full-time equivalent)
+PS_H	Persons per hour
+PS_KM2	Persons per square kilometer
+RO_PS	Rooms per person
+ST_CL	Students per class
+ST_TCHR	Students per teacher
+T_10P3USD	Tonnes per 1 000 US dollars
+T_10P6USD	Tonnes per 1 000 000 US dollars
+T_ANM	Tonnes per animal
+KT_CO2	Kilotonnes of CO2
+T_CO2	Tonnes of CO2
+T_CO2_PS	Tonnes of CO2 per person
+KT_CO2E	Kilotonnes of CO2-equivalent
+T_CO2E	Tonnes of CO2-equivalent
+T_CO2E_PS	Tonnes of CO2-equivalent per person
+T_CO2E_USD	Tonnes of CO2-equivalent per US dollar
+T_HA	Tonnes per hectare
+T_PS	Tonnes per person
+T_NMVOCE	Tonnes of NMVOC-equivalent
+T_NMVOCE_PS	Tonnes of NMVOC-equivalent per person
+T_NMVOCE_USD	Tonnes of NMVOC equivalent per US dollar
+T_NO2E	Tonnes of NO2-equivalent
+T_NO2E_PS	Tonnes of NO2-equivalent per person
+T_NO2E_USD	Tonnes of NO2-equivalent per US dollar
+T_RME	Tonnes in raw material equivalents
+T_SO2E	Tonnes of SO2-equivalent
+T_SO2E_PS	Tonnes of SO2-equivalent per person
+T_SO2E_USD	Tonnes of SO2-equivalent per US dollar
+T_USD	Tonnes per US dollar
+T_VEH	Tonnes per vehicle
+TKM	Tonnes-kilometres
+TOE	Tonnes of oil equivalent
+TOE_10P3USD	Tonnes of oil equivalent per 1 000 US dollars
+TOE_PS	Tonnes of oil equivalent per person
+VIS_INSP	Visits per inspector
+WK_Y	Weeks per year
+Y_10P5PS	Years per 100 000 persons
+MD	Man-days
+MY	Man-years
+10P3BR_L	Per 1 000 live births
+100HB	Per 100 inhabitants
+10P3HB	Per 1 000 inhabitants
+10P3HB_AGE	Per 1 000 inhabitants in the same age group
+10P5HB	Per 100 000 inhabitants
+10P6HB	Per 1 000 000 inhabitants
+10P4HB	Per 10 000 inhabitants
+10P2HB_Y_GE65	Per 100 inhabitants aged 65 years or over
+10P3HB_Y_GE65	Per 1 000 inhabitants aged 65 years or over
+10P3HB_UNINFCT	Per 1 000 uninfected inhabitants
+10P3EMP	Per 1 000 employment
+10P3EMP_MS	Per 1 000 employment in the market sector
+100KM2	Per 100 square kilometres
+10P3LF	Per 1 000 of labour force
+10P3EXP_CNSMR	Per 1 000 of consumer expenditure
+10P3PHYS_PRF_HLTH	Per 1 000 practising physicians in the same health profession
+10P3PS_FTE	Per 1 000 full-time equivalent persons
+10P9VEHKM	Per 1 000 000 000 vehicle-kilometres
+10P4VEH_MOT_ROAD	Per 10 000 road motor vehicles
+10P3USD	Per 1 000 US dollars
+10P6USD	Per 1 000 000 US dollars
+100W	Per 100 women
+10P2ADM	Per 100 admissions
+10P2PAT	Per 100 patients
+10P3PAT_Y_GE65	Per 1 000 patients aged 65 or over
+10P5PAT	Per 100 000 patients
+10P5DSC	Per 100 000 discharges
+10P2DLV	Per 100 deliveries
+10P3ADLSC	Per 1 000 adolescents
+10P5SAL	Per 100 000 employees
+PT_AS	Percentage of assets
+PT_AS_PENS_OCC	Percentage of occupational pension assets
+PT_F3_AS	Percentage of bond holdings
+PT_F51_AS	Percentage of equity holdings
+PT_S12L_AS	Percentage of mutual fund holdings
+PT_CTRB	Percentage of contributions
+PT_MEM	Percentage of members
+PT_MEM_PSV	Percentage of passive members
+PT_RAIL_NTWK	Percentage of rail network
+PT_INFR_MAI	Percentage of infrastructure maintenance
+PT_INFR_INV	Percentage of infrastructure investment
+PT_INC_DISP_HH_TP_REF_WG_MEDIAN	Percentage of disposable income in the same household type and with reference person working at median wage
+PT_POP	Percentage of population
+PT_POP_AGE	Percentage of population in the same age
+PT_POP_SEX	Percentage of population in the same sex
+PT_POP_SEX_AGE	Percentage of population in the same sex and age
+PT_POP_SUB	Percentage of population in the same subgroup
+PT_POP_URB	Percentage of urban population
+PT_POP_LT_INT_PVL	Percentage of population living with less than the international poverty line amount
+PT_POP_Y_LT1	Percentage of children aged less than 1 years
+PT_POP_Y_GE15	Percentage of population aged 15 years or over
+PT_POP_Y_GE15_SUB	Percentage of population aged 15 years or over in the same subgroup
+PT_POP_Y_GE16	Percentage of population aged 16 years or over
+PT_POP_Y_GE16_SUB	Percentage of population aged 16 years or over in the same subgroup
+PT_POP_Y15T24	Percentage of population aged 15-24 years
+PT_POP_Y15T24_SUB	Percentage of population aged 15-24 years in the same subgroup
+PT_POP_Y15T29	Percentage of population aged 15-29 years
+PT_POP_Y15T64	Percentage of population aged 15-64 years
+PT_POP_Y15T74	Percentage of population aged 15-74 years
+PT_POP_Y16T65	Percentage of population aged 16-65 years
+PT_POP_Y16T65_SUB	Percentage of population aged 16-65 in the same subgroup
+PT_POP_Y20T64	Percentage of population aged 20-64 years
+PT_POP_Y25T34	Percentage of population aged 25-34 years
+PT_POP_Y25T54	Percentage of population aged 25-54 years
+PT_POP_Y25T64	Percentage of population aged 25-64 years
+PT_POP_Y25T64_SUB	Percentage of population aged 25-64 years in the same subgroup
+PT_POP_Y_GE65	Percentage of population aged 65 years or over
+PT_POP_Y_GE75	Percentage of population aged 75 years or over
+PT_POP_COND	Percentage of population who have condition
+PT_WAP	Percentage of working age population
+PT_WAP_SUB	Percentage of working age population in the same subgroup
+PT_ADLSC	Percentage of adolescents
+PT_ADLSC_EDU	Percentage of adolescent students at the same education level
+PT_DEPEND_SUB	Percentage of dependents in the subgroup
+PT_W	Percentage of women
+PT_W_SUB	Percentage of women in the same subgroup
+PT_W_AGE	Percentage of women in the same age
+PT_W_Y15T49	Percentage of women aged 15-49 years
+PT_CH	Percentage of children
+PT_MTH_CH_Y_LE15	Percentage of mothers with at least one child under 15 years
+PT_BR	Percentage of births
+PT_BR_L	Percentage of live births
+PT_DT	Percentage of deaths
+PT_DT_A_PRECVD19	Percentage of average deaths in pre-COVID years
+PT_DT_PRMTR	Percentage of premature deaths
+PT_PAT_DIAB	Percentage of diabetic patients
+PT_PAT_DRUG_ANTCOAG	Percentage of patients receiving anticoagulating drugs
+PT_PAT_MH	Percentage of mental health patients
+PT_PAT_DSC_D_MD	Percentage of discharged patients diagnosed with a mental disorder
+PT_DDD_PRSC	Percentage of defined daily doses (DDDs) prescribed
+PT_SURG_HIPF	Percentage of hip fracture surgeries
+PT_SC	Percentage of schools
+PT_ST	Percentage of students
+PT_ST_SUB	Percentage of students in the same subgroup
+PT_NST_SUB	Percentage of non-students in the same subgroup
+PT_INST_COM	Percentage of compulsory instruction time
+PT_LF	Percentage of labour force
+PT_LF_SUB	Percentage of labour force in the same subgroup
+PT_EMP	Percentage of employment
+PT_EMP_S13	Percentage of general government employment
+PT_EMP_SEX_AGE	Percentage of employment in the same age and sex
+PT_EMP_SUB	Percentage of employment in the same subgroup
+PT_EMP_INF	Percentage of informal employment
+PT_EMP_HSPTL	Percentage of hospital employment
+PT_EMP_FT_HSPTL	Percentage of full-time hospital employment
+PT_SAL	Percentage of employees
+PT_SAL_FT	Percentage of full-time employees
+PT_SAL_SUB	Percentage of employees in the same subgroup
+PT_SELF	Percentage of self-employed
+PT_SELF_SUB	Percentage of self-employed in the same subgroup
+PT_UNEMPT	Percentage of unemployment
+PT_UNEMPT_SUB	Percentage of unemployment in the same subgroup
+PT_UNE	Percentage of unemployed
+PT_H_W_USA_PS	Percentage of USA hours worked per person
+PT_LB_UT_USA	Percentage of USA labour utilisation
+PT_ENT	Percentage of enterprises
+PT_ENT_EM	Percentage of employer enterprises
+PT_ENT_LRG	Percentage of large enterprises
+PT_ENT_MED	Percentage of medium-sized enterprises
+PT_ENT_SML	Percentage of small enterprises
+PT_SME	Percentage of small and medium-sized enterprises
+PT_EST	Percentage of establishments
+PT_JB	Percentage of jobs
+PT_EMP_FT	Percentage of full-time employment
+PT_INC_DISP_HH_TP_REF_WG_A	Percentage of disposable income in the same household type and with reference person working at average wage
+PT_INC_DISP_HH_MEDIAN	Percentage of median disposable household income
+PT_WG_SAL_PA	Percentage of prime-age employees wage
+PT_WG_A_SAL	Percentage of average wage
+PT_WG_A_SAL_FT	Percentage of average wage of full-time employees
+PT_WG_SAL_M	Percentage of wages of men
+PT_WG_SAL_M_D	Percentage of wages of men in the same decile
+PT_WG_SAL_M_MEDIAN	Percentage of the median wages of men
+PT_WG_EARN_G	Percentage of gross wage earnings
+PT_EARN	Percentage of earnings
+PT_EARN_A	Percentage of average earnings
+PT_EARN_ADD	Percentage of additional earnings
+PT_EARN_G_PRVS	Percentage of previous gross earnings
+PT_EARN_G_PRE_RET_INC	Percentage of gross pre-retirement earnings at the same income level
+PT_EARN_N_PRE_RET_INC	Percentage of net pre-retirement earnings at the same income level
+PT_EARN_NEW_JOB	Percentage of earnings in the new job
+PT_EARN_PRVS_LST	Percentage of previous earnings lost
+PT_EARN_PRVS_LST_SUB	Percentage of previous earnings lost in the same subgroup
+PT_EARN_WR_ISCED11A_0T2	Percentage of earnings of workers with below upper secondary educational attainment
+PT_EARN_WR_ISCED11A_3	Percentage of earnings of workers with upper secondary educational attainment
+PT_EARN_WR_ISCED11A_3_3_4	Percentage of earnings of workers with upper secondary educational attainment, or workers with upper secondary or post-secondary non-tertiary education if the former is not available
+PT_EARN_WR_ISCED11A_3_4	Percentage of earnings of workers with upper secondary or post-secondary non-tertiary educational attainment
+PT_EARN_WR_ISCED11A_5T8	Percentage of earnings of workers with tertiary educational attainment
+PT_EARN_WR_M	Percentage of earnings of men workers
+PT_EARN_WR_NST	Percentage of earnings of non-students
+PT_EARN_WR_Y25T34	Percentage of earnings of workers aged 25-34 years
+PT_EARN_WR_NB	Percentage of earnings of native-born workers
+PT_INC_DISP_HH_BJL	Percentage of disposable household income before job loss
+PT_INC_DISP_HH	Percentage of disposable household income
+PT_IM_CIF	Percentage of imports (valued at the CIF price)
+PT_EXP_S14_TRAN	Percentage of household expenditure in transport
+PT_EXP_S14	Percentage of household expenditure
+PT_EXP_SECTOR	Percentage of expenditure in the same institutional sector
+PT_PENS	Percentage of pension
+PT_WR	Percentage of workers
+PT_WR_SUB	Percentage of workers in the same subgroup
+PT_WR_LT_INT_PVL	Percentage of workers living with less than the international poverty line amount
+PT_WR_LT_NAT_PVL	Percentage of workers living with less than the national poverty line amount
+PT_WR_PENS_SUB	Percentage of workers contributing to pensions in the same subgroup
+PT_WR_HLTH_INS_SUB	Percentage of workers with health insurance in the same subgroup
+PT_WR_SEX_AGE_EMP_ST	Percentage of workers in the same age, sex and employment status
+PT_WR_INF	Percentage of informal workers
+PT_WR_INF_SUB	Percentage of informal workers in the same subgroup
+PT_WR_INF_DEG_URB	Percentage of informal workers in the same degree of urbanisation
+PT_WR_INF_EMP_ST	Percentage of informal workers in the same employment status
+PT_WR_INF_SEX	Percentage of informal workers in the same sex
+PT_WR_PRF_HLTH	Percentage of workers in the same health profession
+PT_WR_PRF_HLTH_SEX	Percentage of workers in the same health profession and sex
+PT_RSH	Percentage of researchers
+PT_INV_D	Percentage of domestic inventions
+PT_INV_W_ENV	Percentage of environment related worldwide inventions
+PT_AR	Percentage of area
+PT_AR_1990	Percentage of area in 1990
+PT_AR_2000	Percentage of area in 2000
+PT_BAR	Percentage of built-up area
+PT_FAR	Percentage of forested area
+PT_LAR	Percentage of land area
+PT_ALAR	Percentage of agricultural land area
+PT_ARL	Percentage of arable land
+PT_LND_NTR_SNTR_1992	Percentage of natural and semi-natural land in 1992
+PT_LND_NTR_SNTR_2004	Percentage of natural and semi-natural land in 2004
+PT_LND_NTR_SNTR_BP	Percentage of natural and semi-natural land in base period
+PT_CRL_1992	Percentage of cropland in 1992
+PT_CRL_BP	Percentage of cropland in base period
+PT_EEZ	Percentage of exclusive economic zone
+PT_SUR_WAT_PER_1984	Percentage of permanent water surface in 1984
+PT_LSC_FRST_INT_2000	Percentage of intact forest landscape in 2000
+PT_SUR_ART_BP	Percentage of artificial surfaces in base period
+PT_TCAR_BP	Percentage of tree-covered areas in base period
+PT_RSC_REN_WAT	Percentage of available renewable water resources
+PT_RSC_REN_INT	Percentage of internal renewable resources
+PT_RSC_REN_INT_WAT_FRSH	Percentage of internal renewable fresh water resources
+PT_EMP_PT_INV	Percentage of involuntary part-time employment
+PT_EM_CO2	Percentage of CO2 emissions
+PT_EMP_PT	Percentage of part-time employment
+PT_EM_GHG	Percentage of greenhouse gas emissions
+PT_GEN_EL	Percentage of electricity generation
+PT_SUPP_FOS_FL	Percentage of fossil fuel support
+PT_SPC_IND	Percentage of indigenous species
+PT_SPC_KN	Percentage of known species
+PT_WST_TR	Percentage of treated waste
+PT_HH	Percentage of households
+PT_HH_INDBT	Percentage of indebted households
+PT_HH_WR_LT_INT_PVL	Percentage of households with workers living with less than the international poverty line amount
+PT_HH_PS_GE1_PENS	Percentage of households with at least one member aged 65+ that benefits from a pension in the same subgroup
+PT_AS_S14	Percentage of household assets
+PT_AS_S1M	Percentage of household and NPISH assets
+PT_FAS	Percentage of financial assets
+PT_FAS_S14	Percentage of household financial assets
+PT_FAS_S1M	Percentage of household and NPISH financial assets
+PT_FAS_S12L	Percentage of financial assets of investment funds
+PT_FAS_S12Q	Percentage of financial assets of insurance corporations and pension funds
+PT_LI	Percentage of liabilities
+PT_LI_S12L	Percentage of liabilities of investment funds
+PT_LI_S12Q	Percentage of liabilities of insurance corporations and pension funds
+PT_LI_S13	Percentage of general government liabilities
+PT_LI_F2	Percentage of currency and deposits liabilities
+PT_B1GQ	Percentage of GDP
+PT_B1GQ_USA	Percentage of USA GDP
+PT_B1GQ_USA_H_W	Percentage of USA GDP per hour worked
+PT_B1GQ_USA_PS	Percentage of USA GDP per person
+PT_B1GQ_USA_WR	Percentage of USA GDP per worker
+PT_B1GQ_POP	Percentage of GDP per capita
+PT_B1GQ_POP_PPP_OECD	Percentage of PPP converted GDP per capita of OECD
+PT_B1GQ_GR	Percentage of GDP growth
+PT_PB1GQ	Percentage of potential GDP
+PT_MB1GQ	Percentage of mainland GDP
+PT_B1G	Percentage of gross value added
+PT_B1G_MS	Percentage of gross value added in the market sector
+PT_B1N	Percentage of net value added
+PT_B2A3G	Percentage of gross operating surplus and mixed income
+PT_B2G	Percentage of gross operating surplus
+PT_B2N	Percentage of net operating surplus
+PT_B90_S14	Percentage of household wealth
+PT_BF90_S14	Percentage of household financial wealth
+PT_B90_S1M	Percentage of household and NPISH wealth
+PT_BF90_S1M	Percentage of household and NPISH financial wealth
+PT_B5G	Percentage of gross national income
+PT_B5G_S14	Percentage of balance of household gross primary income
+PT_B5G_S1M	Percentage of balance of household and NPISH gross primary income
+PT_B5N_S14	Percentage of balance of household net primary incomes
+PT_B6G_S14	Percentage of household gross disposable income
+PT_B6G_S1M	Percentage of household and NPISH gross disposable income
+PT_B6GA_S1M	Percentage of household and NPISH gross disposable income adjusted for the net change in pension entitlements
+PT_B6N_S14	Percentage of household net disposable income
+PT_B6N_S1M	Percentage of household and NPISH net disposable income
+PT_B6NA_S1M	Percentage of household and NPISH net disposable income adjusted for the net change in pension entitlements
+PT_B6N_A	Percentage of average disposable income
+PT_B6G_A_POP_Y_GT65	Percentage of gross disposable income of the population aged over 65 years
+PT_B7G_S14	Percentage of household gross adjusted disposable income
+PT_B7N_S14	Percentage of household net adjusted disposable income
+PT_B7N_S1M	Percentage of household and NPISH net adjusted disposable income
+PT_PRFT_BF_TAX	Percentage of profit before tax
+PT_INC_TAX	Percentage of taxable income
+PT_D1	Percentage of compensation of employees
+PT_FD4_S13	Percentage of general government debt
+PT_FD4_S13_INST	Percentage of general government debt in the same instrument
+PT_FD4_S13M_INST	Percentage of state and local government debt in the same instrument
+PT_ODA_S13	[Deprecated] Percentage of tax revenue / total tax receipt
+PT_ODA	Percentage of tax receipts
+PT_TAX_REV	Percentage of tax revenue
+PT_TAX_REV_ENV	Percentage of environment related tax revenue
+PT_TAX_REV_NRG	Percentage of energy related tax revenue
+PT_EXP	Percentage of expenditure
+PT_EXP_EDU_INST	Percentage of expenditure on educational institutions
+PT_EXP_EDU_INST_EXP_TP	Percentage of expenditure on educational institutions in the same expenditure type
+PT_EXP_CUR_EDU_INST	Percentage of current expenditure on educational institutions
+PT_EXP_FNC	Percentage of expenditure in the same function
+PT_EM_CO2_TRAN	Percentage of CO2 emissions from transport
+PT_EXP_S14_SUB	Percentage of household expenditure in the same subgroup
+PT_ABSTR_WAT_FRSH	Percentage of freshwater abstractions
+PT_EXP_OUT_S13	Percentage of general government outsourcing expenditures
+PT_EXP_TOUR_INT	Percentage of international tourism expenditure
+PT_REC_TOUR_INT	Percentage of international tourism receipts
+PT_EXP_PRV	Percentage of expenditure in the same provider
+PT_EXP_FS	Percentage of expenditure in the same financing scheme
+PT_EXP_HLTH	Percentage of expenditure on health
+PT_BERD	Percentage of business enterprise expenditure on R&amp;D
+PT_GBARD	Percentage of government allocations for R&amp;D
+PT_GBARD_C	Percentage of civil government allocations for R&amp;D
+PT_GERD	Percentage of gross domestic expenditure on R&amp;D
+PT_GOVERD	Percentage of government intramural expenditure on R&amp;D
+PT_HERD	Percentage of higher education expenditure on R&amp;D
+PT_RDD_BDG_NRG	Percentage of public energy RD&amp;D budget
+PT_PRSNL_RD	Percentage of R&amp;D personnel
+PT_GPROC_S13	Percentage of general government procurement
+PT_OTE_S13	Percentage of general government expenditure
+PT_OTE_S13_EDU	Percentage of general government expenditure on education
+PT_OTE_S13_FNC	Percentage of general government expenditure in the same function
+PT_OTE_S13_TRANSACT	Percentage of general government expenditure in the same transaction
+PT_OTE_S13M_TRANSACT	Percentage of state and local government expenditure in the same transaction
+PT_OTE_S13M_FNC	Percentage of state and local government expenditure in the same function
+PT_OTR_S13	Percentage of general government revenues
+PT_OTR_S13_CAT	Percentage of general government revenues in the same category
+PT_OTR_S13M_REV_CAT	Percentage of state and local government revenues in the same revenue category
+PT_OTR_REV_CAT	Percentage of revenues in the same revenue category
+PT_OTR_SECTOR	Percentage of revenues in the same institutional sector
+PT_P1	Percentage of gross output
+PT_P2	Percentage of intermediate consumption
+PT_P2_ACT	Percentage of intermediate consumption in the same activity
+PT_P2_PROD	Percentage of intermediate consumption in the same product
+PT_P2_ACT_PROD	Percentage of intermediate consumption in the same activity and product
+PT_P3	Percentage of final consumption expenditure
+PT_P3_POP_PPP_OECD	Percentage of PPP converted final consumption expenditure per capita of OECD
+PT_P3_S14	Percentage of final household consumption expenditure
+PT_P3_S14_O_PROD	Percentage of household final consumption expenditure at purchasers' prices in the same product
+PT_P3_S14_PROD	Percentage of household final consumption expenditure in the same product
+PT_P3T6	Percentage of final demand
+PT_P41_POP_PPP_OECD	Percentage of PPP converted actual individual consumption per capita of OECD
+PT_P51G	Percentage of gross fixed capital formation
+PT_P51G_PROD	Percentage of gross fixed capital formation in the same product
+PT_P5L	Percentage of investment
+PT_P5L_INIT	Percentage of initial investment
+PT_P5L_S1	Percentage of investment of total economy
+PT_P5L_S13	Percentage of general government investment
+PT_P5L_SECTOR	Percentage of investment in the same institutional sector
+PT_P6	Percentage of exports
+PT_P6_PROD	Percentage of exports in the same product
+PT_P6_W	Percentage of world exports
+PT_P7	Percentage of imports
+PT_P7_W	Percentage of world imports
+PT_TU	Percentage of total demand / use
+PT_TS	Percentage of total supply
+PT_TS_O_PROD	Percentage of total supply at purchasers' prices in the same product
+PT_CPI_OECD	Percentage of OECD consumer price index
+PT_SUP_NRG	Percentage of energy supply
+PT_CONS_NRG	Percentage of energy consumption
+PT_CONS_MAT_D	Percentage of domestic material consumption
+PT_TRD_W	Percentage of world trade
+PT_TRD_D	Percentage of domestic trade
+PT_TRD_SRV	Percentage of trade in services
+PT_TRD_INT_G	Percentage of trade in intermediate goods
+PT_COS	Percentage of costs
+PT_PCOS	Percentage of production costs
+PT_PCOS_S13	Percentage of general government production costs
+PT_COS_LB	Percentage of labour costs
+PT_COS_WLFR_DT_PRMTR	Percentage of welfare cost of premature deaths
+PT_FDI	Percentage of foreign direct investment
+PT_APD	Percentage of official development assistance
+PT_APD_SEC	Percentage of sector-allocable official development assistance
+PT_ADM	Percentage of admissions
+PT_BD_AV	Percentage of available beds
+PT_BD_AV_ICU	Percentage of available intensive care unit (ICU) beds
+PT_PAT	Percentage of patients
+PT_PAT_WAIT_M_GT3	Percentage of patients waiting more than 3 months
+PT_PRC	Percentage of procedures
+PT_DALY	Percentage of disability-adjusted life years
+PT_SCR_POS_MAX	Percentage of possible maximum score
+PT_MRCH_VAL	Percentage of merchandise value
+PT_SL_VAL	Percentage of sales value (turnover)
+PT_SL_VAL_M	Percentage of sales value (turnover) in the same market
+PT_SL_VOL_M	Percentage of sales volume in the same market
+PT_PATN_FM_T	Percentage of world triadic patent families
+PT_NAT	Percentage of national value
+PT_PARL_ELECT_OFF_LSH	Percentage of elected officials in the national lower or single houses of parliament
+PT_PARL_MEM	Percentage of members of parliament
+PT_POP_VA	Percentage of voting age population
+PT_VOTES	Percentage of votes
+PT_VOTES_SUB	Percentage of votes in the same subgroup
+PT_PBL_SC_SUB	Percentage of scientific publications in the same subgroup
+PT_PBL_SC_E	Percentage of expected scientific publications
+PT_INST_PL	Percentage of policy instruments
+PT_INV	Percentage of inventions
+PT_INV_C	Percentage of co-inventions
+PT_INV_HV	Percentage of high-value inventions
+PT_PATN	Percentage of patents
+PT_TECH	Percentage of technologies
+PT_TECH_COL	Percentage of collaborations in all technologies
+PT_TECH_ENV	Percentage of environment related technologies
+PT_STCK_FSH	Percentage of fish stocks
+PT_SUPP_FOS_FL_OC	Percentage of ocean-related fossil fuel support
+PT_RESP	Percentage of respondents
+PT_VEH	Percentage of vehicles
+PT_TRAN_FRE	Percentage of freight transport
+PT_SEAT_CAP	Percentage of seat capacity
+PT_REC_FRM	Percentage of gross farm receipts
+PT_REC_FRM_COM	Percentage of commodity specific gross farm receipts
+PT_SUPP_E	Percentage of total support estimate
+PT_SUPP_E_ALL	Percentage of total support estimate for all countries
+PT_SUPP_E_PRDC	Percentage of producer support estimate
+PT_SUPP_E_PRDC_ALL	Percentage of producer support estimate for all countries
+PT_SUPP_E_GN_SRV	Percentage of general services support estimate
+PT_SUPP_E_GN_SRV_ALL	Percentage of general services support estimate for all countries
+PT_CSE_AGR_COM	Percentage of consumption expenditure on agricultural commodities at farm gate prices, excluding taxpayer transfers to consumers
+PT_PROD_VAL	Percentage of value of production
+PT_EXGR	Percentage of gross exports
+PT_EXGR_T	Percentage of total economy gross exports
+PT_EXGR_DVA	Percentage of domestic value added in gross exports
+PT_EXGR_INT_DVA	Percentage of domestic value added in gross exports of intermediates
+PT_IMGR	Percentage of gross imports
+PT_IMGR_INT	Percentage of gross imports of intermediates
+PT_VA	Percentage of value added
+PT_CONS_VA	Percentage of value added in consumption
+PT_FD_VA	Percentage of value added in final demand
+PT_GFCF_VA	Percentage of value added in gross fixed capital formation
+PT_FFD_DVA	Percentage of domestic value added in foreign final demand
+PT_FFD_DCE	Percentage of domestic compensation of employees in foreign final demand
+PT_FFD_DEM	Percentage of domestic employment in foreign final demand
+PT_DFD_FVA	Percentage of foreign value added in domestic final demand
+PT_EM_NO3	Percentage of nitrate emissions
+PT_EM_PO4	Percentage of phosphate emissions
+PT_MNTR_STS	Percentage of monitoring sites
+PT_AVG_L_TERM	Percentage of long term average
+PT_SNGU_SECTOR	Percentage of subnational government units in the same institutional sector
+PT_AMNT_SNT	Percentage of amount sent
+PT_AR_BIOD_K_MAR	Percentage of marine key biodiversity area
+PT_AR_BIOD_K_MTN	Percentage of mountain key biodiversity area
+PT_AR_BIOD_K_TERR	Percentage of terrestrial key biodiversity area
+PT_AR_BIOD_K_WAT_FRSH	Percentage of freshwater key biodiversity area
+PT_ARM	Percentage of arms
+PT_BD_FC_LT	Percentage of beds in long-term care facilities
+PT_BD_FC_LT_PP	Percentage of beds in private long-term care facilities
+PT_BDG_D	Percentage of domestic budget
+PT_BDG_ORIG_APPR	Percentage of original approved budget
+PT_BRD	Percentage of breeds
+PT_CAP	Percentage of capacity
+PT_CNTRY_MEM	Percentage of member countries
+PT_FC_LT	Percentage of long-term care facilities
+PT_FC_LT_PP	Percentage of private long-term care facilities
+PT_FCLT_HLTH	Percentage of health facilities
+PT_FRMWRKS_RSLTS	Percentage of results frameworks
+PT_FUND_RD	Percentage of R&amp;D funding
+PT_INFCT_BLDSTRM	Percentage of bloodstream infections
+PT_LTTR_BCH	Percentage of beach litter
+PT_MCHNSM	Percentage of mechanisms
+PT_MTH_NWBRN	Percentage of mothers and newborns
+PT_MTNAR	Percentage of mountain area
+PT_P6_W_MRCH	Percentage of worldwide merchandise exports
+PT_P6_W_SRV	Percentage of worldwide service exports
+PT_P7_W_MRCH	Percentage of worldwide merchandise imports
+PT_P7_W_SRV	Percentage of worldwide service imports
+PT_POP_M36T59	Percentage of children aged 36 to 59 months
+PT_POP_PRSN	Percentage of prison population
+PT_POP_SUBST_ABUSE_DISORD	Percentage of the population with substance abuse disorders
+PT_POP_VLNRB	Percentage of vulnerable population
+PT_POP_Y_GE80	Percentage of population aged 80 years or over
+PT_POP_Y_LT5	Percentage of children aged less than 5 years
+PT_PRT	Percentage of parties
+PT_RCP_FC_LT	Percentage of recipients in long-term care facilities
+PT_RCP_FC_LT_PP	Percentage of recipients in private long-term care facilities
+PT_RCP_Y_GE65	Percentage of recipients aged 65 years or over
+PT_RCP_Y_GE80	Percentage of recipients aged 80 years or over
+PT_SEAT_ELEC_S1313	Percentage of elected seats in local government
+PT_TARIFF_LINES	Percentage of tariff lines
+PT_TCHR	Percentage of teachers
+PT_VA_MNF	Percentage of manufacturing value added
+PT_W_EVER_PARTN	Percentage of ever-partnered women
+PT_W_Y20T24	Percentage of women aged 20-24 years
+PT_WAT_UNDRLNG_RSRC_TP	Percentage of underlying water resource type
+PT_WAT_WST	Percentage of waste water
+PT_WR_FLT	Percentage of formal long-term care workers
+PT_WR_FLT_F	Percentage of female formal long-term care workers
+PT_WST	Percentage of waste
+PT_WST_ELCTRN	Percentage of electronic waste
+PT_WST_MUN	Percentage of municipal waste
+PA	Percent per annum
+PB	Percentage balance
+PC	Percentage change
+PC_DT_A	Percentage change from base period average deaths
+PD	Percentage points
+PD_EMP_PA	Percentage point difference from prime-age workers
+PP	Percent per period
+0_TO_1	0-1 scale
+0_TO_4	0-4 scale
+0_TO_6	0-6 scale
+0_TO_10	0-10 scale
+0_TO_100	0-100 scale
+1_TO_4	1-4 scale
+1_TO_5	1-5 scale
+PO	Points
+FCTR	Factor
+FCTR_D1	Factor of decile 1
+FCTR_D1_SCR	Factor of lowest scores decile
+FCTR_D1_EARN	Factor of lowest earnings decile
+FCTR_D5	Factor of decile 5
+FCTR_Q1_INC	Factor of lowest income quintile
+FCTR_Q1_SCR_LIFE_SATISFACTION	Factor of lowest life satisfaction scores quintile
+FCTR_Q1_SCR_PERS_REL_SATISFACTION	Factor of lowest personal relationship satisfaction scores quintile
+FCTR_Q1_SCR_TIME_USE	Factor of lowest time use scores quintile
+FCTR_CAP_PR_A	Factor of annual productive capacity
+FCTR_PBL_SC	Factor of scientific publications
+FCTR_EARN_FT_TER	Factor of earnings for full-time, full-year tertiary-educated workers
+FCTR_EARN_FT_SIM	Factor of earnings for full-time, full-year similarly educated workers
+FCTR_SAL_EXP0	Factor of salary at the start of the career
+FCTR_SAL_ISCED11_1	Factor of salary per net teaching hour of teachers in primary education
+FCTR_SAL_MIN	Factor of minimum salary
+FCTR_AS	Factor of assets
+FCTR_FAS	Factor of financial assets
+FCTR_FAS_S1	Factor of financial assets of total economy
+FCTR_LI_F2T4S	Factor of short-term liabilities
+FCTR_LI_F5	Factor of equity and investment fund shares liabilities
+FCTR_LI_F51	Factor of equity liabilities
+FCTR_LI_F51_S12K	Factor of banking sector equity
+FCTR_LI_S1S	Factor of liabilities of total economy, except financial corporations
+FCTR_INC	Factor of income
+FCTR_B1GQ	Factor of GDP
+FCTR_B1GQ_POP	Factor of GDP per capita
+FCTR_B2G	Factor of gross operating surplus
+FCTR_B90_MEDIAN	Factor of median net wealth
+FCTR_P3TP5	Factor of domestic demand
+FCTR_P3_P51	Factor of final domestic demand
+FCTR_P3_P6	Factor of expenditure
+FCTR_P6_M	Factor of export market for goods and services
+FCTR_TIME_M	Factor of men's time
+FCTR_WG_A_SAL_A	Factor of average annual wage
+FCTR_WG_SAL_G_I_INC	Factor of gross individual wage at the same income level
+FCTR_WG_SAL_N_I_INC	Factor of net individual wage at the same income level
+FCTR_POP_MORT	Factor of population mortality
+FCTR_ADVANTAGED_GROUP	Factor of more advantaged group
+FCTR_AS_RSK_WGHT	Factor of risk-weighted assets
+FCTR_CPTL	Factor of capital
+FCTR_EMP	Factor of employment
+FCTR_F4G	Factor of gross loans
+FCTR_MNGR	Factor of managers
+FCTR_P7	Factor of imports
+FCTR_POP_Y_LE45	Factor of population aged 45 or below
+FCTR_POS_JDCR	Factor of positions in the judiciary
+FCTR_PROP_W_ELIG_POP	Factor of proportion of women in the eligible population
+FCTR_PROP_YOUTH_ELIG_POP	Factor of proportion of youth in the eligible population
+FCTR_RSRV	Factor of reserves
+IX	Index
+GR	Growth rate
+HSL_1	Income and wealth
+HSL_2	Work and job quality
+HSL_3	Housing
+HSL_4	Work-life balance
+HSL_5	Health
+HSL_6	Knowledge and skills
+HSL_7	Social connections
+HSL_8	Civic engagement
+HSL_9	Environmental quality
+HSL_10	Safety
+HSL_11	Subjective well-being
+HSL_12	Natural capital
+HSL_13	Human capital
+HSL_14	Social capital
+HSL_15	Economic capital
+1_1	Households and NPISHs net adjusted disposable income per capita
+1_2	Top average household disposable income quintile
+1_3	Median net wealth
+1_3_VER	Top wealthiest households decile
+1_4	Household disposable income below the relative income poverty line
+1_5	Difficulty making ends meet
+1_6	Equivalised liquid financial assets below three months of the annual national relative income poverty line
+2_1	Employment rate
+2_2	Gender wage gap
+2_3	Long-term unemployment rate
+2_4	Youth not in employment, education or training
+2_5	Labour market insecurity
+2_6	Job strain
+2_7	Long hours in paid work
+2_8	Average annual gross earnings
+2_8_DEP	Full-time employees earning less than two-thirds of gross median earnings
+2_8_VER	Top earnings of full-time employees decile
+2_9	Job satisfaction
+2_9_DEP	Satisfaction with job score less than 5
+2_9_VER	Top job satisfaction scores quintile
+3_1	Households living in overcrowded conditions
+3_2	Housing affordability
+3_3	Housing cost overburden
+3_4	Households with internet access at home
+3_5	Inability to keep home adequately warm
+4_1	Time off
+4_2	Long unpaid working hours
+4_3	Gender gap in working hours
+4_4	Satisfaction with time use
+4_4_DEP	Satisfaction with time use score less than 5
+4_4_VER	Top satisfaction with time use quintile
+5_1	Life expectancy at birth
+5_2	Perceived health as positive
+5_2_DEP	Perceived health as negative
+5_3	Deaths from suicide, alcohol, drugs
+5_4	Self-reported depression
+6_1	Student reading skills
+6_1_DEP	Students with low skills in reading, mathematics and science
+6_1_VER	Top reading scores decile
+6_2	Student mathematics skills
+6_2_DEP	Students with low skills in reading, mathematics and science
+6_2_VER	Top mathematics scores decile
+6_3	Student science skills
+6_3_DEP	Students with low skills in reading, mathematics and science
+6_3_VER	Top science scores decile
+6_4	Adult numeracy skills
+6_4_DEP	Adults with low numeracy skills
+6_4_VER	Top adult numeracy scores decile
+6_5	Adult literacy skills
+6_5_DEP	Adults with low literacy skills
+6_5_VER	Top adult literacy scores decile
+7_1	Social support
+7_1_DEP	Lack of social support
+7_2	Time spent in social interactions
+7_3	Satisfaction with personal relationships
+7_3_DEP	Satisfaction with personal relationships score less than 5
+7_3_VER	Top personal relationship satisfaction scores quintile
+7_4	Feeling lonely
+8_1	Having a say in government
+8_1_DEP	Not having a say in government
+8_2	Voter turnout
+9_1	Access to green space
+9_2	Exposed to air pollution
+9_3	Exposure to extreme temperature
+10_1	Homicides
+10_2	Feeling safe at night
+10_2_DEP	Not feeling safe at night
+10_3	Road deaths
+11_1	Life satisfaction
+11_1_DEP	Life satisfaction score less than 5
+11_1_VER	Top life satisfaction scores quintile
+11_2	Negative affect balance
+11_3	Feelings of physical pain
+12_1	Natural and semi-natural land cover
+12_2	Loss of natural and semi-natural land cover
+12_3	Gain of natural and semi-natural land cover
+12_4	Intact forest landscapes
+12_5	Protected terrestrial areas
+12_6	Protected marine areas
+12_7	Red list index of threatened species
+12_8	Greenhouse gas emissions per capita
+12_9	Carbon footprint
+12_10	Renewable energy
+12_11	Soil nutrient balance
+12_12	Water stress (internal resources)
+12_13	Water stress (total renewable resources)
+12_14	Material footprint per capita
+12_15	Recycling rate
+13_1	Educational attainment among young adults
+13_2	Labour underutilisation rate
+13_3	Premature mortality
+13_4	Smoking prevalence
+13_5	Obesity prevalence
+14_1	Trust in others
+14_2	Trust in the police
+14_3	Trust in government
+14_4	Government stakeholder engagement
+14_5	Gender parity in politics
+14_6	Corruption
+14_7	Volunteering through organisations
+15_1	Produced fixed assets
+15_2	Intellectual property assets
+15_3	Gross fixed capital formation
+15_4	Investment in R&amp;D
+15_5	Total economy net financial worth
+15_6	Households and NPISHs debt
+15_7	General government net financial worth
+15_8	Monetary financial institutions leverage
+0	Zero
+1	One
+2	Two
+3	Three
+4	Four
+5	Five
+6	Six
+7	Seven
+8	Eight
+9	Nine
+10	Ten
+11	Eleven
+12	Twelve
+13	Thirteen
+14	Fourteen
+15	Fifteen
+A	Normal value
+B	Time series break
+D	Definition differs
+E	Estimated value
+F	Forecast value
+G	Experimental value
+I	Value imputed by a receiving agency
+K	Data included in another category
+W	Includes data from another category
+O	Missing value
+M	Missing value; data cannot exist
+P	Provisional value
+S	Strike and other special events
+L	Missing value; data exist but were not collected
+H	Missing value; holiday or weekend
+Q	Missing value; suppressed
+J	Derogation
+N	Not significant
+U	Low reliability
+V	Unvalidated value
+0	Units
+1	Tens
+2	Hundreds
+3	Thousands
+4	Tens of thousands
+5	Hundreds of thousands
+6	Millions
+7	Tens of millions
+8	Hundreds of millions
+9	Billions
+10	Tens of billions
+11	Hundreds of billions
+12	Trillions
+13	Tens of trillions
+14	Hundreds of trillions
+15	Quadrillions
+-1	Tenths
+-2	Hundredths
+-3	Thousandths
+-4	Ten-thousandths
+-5	Hundred-thousandths
+-6	Millionths
+-7	Ten-millionths
+-8	Hundred-millionths
+-9	Billionths
+-10	Ten-billionths
+-11	Hundred-billionths
+-12	Trillionths
+-13	Ten-trillionths
+-14	Hundred-trillionths
+-15	Quadrillionths

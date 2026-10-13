@@ -1,0 +1,512 @@
+# banque_mondiale / NE.CON.PRVT.PC.KD
+# URL : https://api.worldbank.org/v2/country/FRA/indicator/NE.CON.PRVT.PC.KD?format=json&per_page=100&date=1995:2026
+# Vérifié le 2026-10-13T14:47:05Z — HTTP 200 — application/json;charset=utf-8 — 8583 octets lus (taille annoncée : inconnue)
+
+[
+ {
+  "page": 1,
+  "pages": 1,
+  "per_page": 100,
+  "total": 31,
+  "sourceid": "2",
+  "lastupdated": "2026-10-08"
+ },
+ [
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2025",
+   "value": 21275.5616963438,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2024",
+   "value": 21249.1508607368,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2023",
+   "value": 21080.762072302,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2022",
+   "value": 20996.6058688345,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2021",
+   "value": 20424.5776093856,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2020",
+   "value": 19474.4098015167,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2019",
+   "value": 20885.8154145207,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2018",
+   "value": 20609.9976365453,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2017",
+   "value": 20466.9962910379,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2016",
+   "value": 20229.1764052616,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2015",
+   "value": 19940.8668342447,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2014",
+   "value": 19694.4007083731,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2013",
+   "value": 19588.1428033102,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2012",
+   "value": 19571.7513740805,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2011",
+   "value": 19737.3329944421,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2010",
+   "value": 19675.3955319831,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2009",
+   "value": 19387.5818925722,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2008",
+   "value": 19433.033523466,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2007",
+   "value": 19436.2311366044,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2006",
+   "value": 19030.015838837,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2005",
+   "value": 18649.8653745961,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2004",
+   "value": 18326.2910700588,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2003",
+   "value": 18111.5477899996,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2002",
+   "value": 17950.6814068978,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2001",
+   "value": 17701.0226420968,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "2000",
+   "value": 17384.1783862119,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1999",
+   "value": 16848.0754461505,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1998",
+   "value": 16353.8313166327,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1997",
+   "value": 15766.5067648254,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1996",
+   "value": 15697.2503730752,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  },
+  {
+   "indicator": {
+    "id": "NE.CON.PRVT.PC.KD",
+    "value": "Households and NPISHs Final consumption expenditure per capita (constant 2015 US$)"
+   },
+   "country": {
+    "id": "FR",
+    "value": "France"
+   },
+   "countryiso3code": "FRA",
+   "date": "1995",
+   "value": 15423.3905142847,
+   "unit": "",
+   "obs_status": "",
+   "decimal": 0
+  }
+ ]
+]

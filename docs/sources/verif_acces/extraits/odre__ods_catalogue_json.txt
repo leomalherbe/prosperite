@@ -1,0 +1,95 @@
+# odre / ods_catalogue_json
+# URL : https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T14:46:11Z — HTTP 200 — application/json; charset=utf-8 — 41532 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 187,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "annee",
+     "description": null,
+     "annotations": {
+      "timeserie_precision": "year"
+     },
+     "label": "Année",
+     "type": "date",
+     "label_fr": "Année",
+     "label_en": "Année",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "secteur",
+     "description": null,
+     "annotations": {},
+     "label": "Secteur d'activité",
+     "type": "text",
+     "label_fr": "Secteur d'activité",
+     "label_en": "Secteur d'activité",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "pg24_sensibilite_basse",
+     "description": null,
+     "annotations": {
+      "decimals": 1
+     },
+     "label": "PG24_sensibilité basse",
+     "type": "double",
+     "label_fr": "PG24_sensibilité basse",
+     "label_en": "PG24_sensibilité basse",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "pg24_fit_for_55",
+     "description": null,
+     "annotations": {
+      "decimals": 1
+     },
+     "label": "PG24_Fit for 55",
+     "type": "double",
+     "label_fr": "PG24_Fit for 55",
+     "label_en": "PG24_Fit for 55",
+     "description_fr": null,
+     "description_en": null
+    },
+    {
+     "name": "pg24_sensibilite_haute",
+     "description": null,
+     "annotations": {
+      "decimals": 1
+     },
+     "label": "PG24_sensibilité haute",
+     "type": "double",
+     "label_fr": "PG24_sensibilité haute",
+     "label_en": "PG24_sensibilité haute",
+     "description_fr": null,
+     "description_en": null
+    }
+   ],
+   "dataset_id": "pg2024-conso-nat-secteur",
+   "dataset_uid": "da_cx6i0c",
+   "has_records": true,
+   "features": [
+    "timeserie",
+    "analyze"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "semantic": {
+     "rml_mapping": null,
+     "classes": null,
+     "properties": null
+    },
+    "default": {
+     "title": "Scénarios de consommation à horizon 2030 et 2035 (Perspectives Gaz 2024)",
+     "title_fr": "Scénarios de consommation à horizon 2030 et 2035 (Perspectives Gaz 2024)",
+     "title_en": "Scénarios de consommation à horizon 2030 et 2035 (Perspectives Gaz 2024)",
+     "description": "<p class=\"MsoNormal\">Ce jeu de données contient le scénario de consommation de\ngaz aux horizons 2030 et 2035 issues du document<b> <i>Perspectives gaz 2024</i>.</b>\nCelui-ci a été réalisé conjointement par GRDF, NaTran et Teréga dans le cadre\nde l’article L141-10 du code de l’énergie.<o:p></o:p></p><p class=\"MsoNormal\">L’ambition est d’enrichir le débat public sur l’évolution du\nmix énergétique français : il s’agit de contribuer à décrire les chemins\npossibles de décarbonation de ce mix en proposant un scénario d’évolution des\nconsommations de gaz.<o:p></o:p></p><p>\n\n\n\n</p><p class=\"MsoNormal\">Les opérateurs d’infrastructures ont enrichi le scénario <i>Perspectives\nGaz 2024</i> par des études de sensibilité à certains paramètres, présentant\ndes incertitudes notables et reconnues.</p><p class=\"MsoNormal\">La création de plusieurs trajectoires permet de quantifier\nla sensibilité des paramètres qui composent la trajectoire principale. Il\ns’agit ici d’encadrer la consommation finale de gaz de 282 TWh en 2035 donnée\npar le scénario <i>Perspectives Gaz 2024</i>. Ce scénario est décliné en cinq\nvariantes d’influence baissière ou haussière sur la consommation de gaz.<o:p></o:p></p><p class=\"MsoNormal\"><o:p> </o:p></p><ul style=\"margin-top:0cm\" type=\"disc\">\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante « Sobriété\n     renforcée dans les bâtiments » quantifie l’économie sur la consommation de\n     gaz selon une proposition de leviers de sobriété nouveaux ou déjà employés\n     en France. Ces leviers relatent d’une modification de nos habitudes de\n     consommations et plus globalement de nos modes de vie. La somme de tous\n     ces leviers permettrait d’atteindre une réduction de la consommation de\n     gaz de 12 TWh en 2035.<o:p></o:p></li>\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante «\n     Développement accéléré des équipements énergétiques hybrides » évalue\n     l’impact de parts de marché accrues pour deux équipements hybrides à\n     faible consommation énergétique, peu mis en avant aujourd’hui : la pompe à\n     chaleur hybride et un chauffe-eau solaire, associé à un chauffe-bain gaz\n     ou une chaudière gaz. À horizon 2035, leur déploiement accéléré réduirait\n     de 7 TWh la consommation de gaz.<o:p></o:p></li>\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante « Aléas dans\n     la mise en œuvre de la transition énergétique » traduit l’impact de deux\n     aléas possibles. D’une part, un retard de la mise en service de capacité\n     de production d’électricité et d’autre part, un retard sur les objectifs\n     de rénovation énergétique des bâtiments du point de vue de la consommation\n     énergétique. La combinaison de ces deux aléas rajouterait 8 TWh à la\n     consommation de gaz en 2035.<o:p></o:p></li>\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante « Succès\n     industriel » projette un succès dans la réindustrialisation de secteurs\n     clés de l’économie française. Cela concerne l’industrie automobile et des\n     équipements, chimique, agro-alimentaire, papier-carton, métallurgie. La\n     concrétisation sur le long terme de cette réindustrialisation implique une\n     augmentation de la consommation de gaz de 10 TWh en 2035. Cette\n     sensibilité haute des consommations de gaz de l’industrie pourrait aussi\n     traduire une situation différente, dans laquelle les conditions\n     économiques ne sont réunies ni pour accroître la production industrielle\n     ni pour électrifier rapidement les procédés industriels.<o:

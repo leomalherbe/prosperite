@@ -1,0 +1,208 @@
+# spf_odisse / ods_catalogue_json
+# URL : https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets?limit=2
+# Vérifié le 2026-10-13T14:46:01Z — HTTP 200 — application/json; charset=utf-8 — 20407 octets lus (taille annoncée : inconnue)
+
+{
+ "total_count": 388,
+ "results": [
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "annee",
+     "description": null,
+     "annotations": {
+      "timeserie_precision": "year"
+     },
+     "label": "Année",
+     "type": "date"
+    },
+    {
+     "name": "sexe",
+     "description": null,
+     "annotations": {},
+     "label": "﻿Sexe",
+     "type": "text"
+    },
+    {
+     "name": "classe_d_age",
+     "description": null,
+     "annotations": {},
+     "label": "Classe d'âge",
+     "type": "text"
+    },
+    {
+     "name": "statut_du_travailleur",
+     "description": null,
+     "annotations": {},
+     "label": "Statut du travailleur",
+     "type": "text"
+    },
+    {
+     "name": "nombre_de_travailleurs",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs",
+     "type": "int"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Herbicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Herbicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Herbicides",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Herbicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Herbicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne sup. - Herbicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Insecticides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Insecticides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Insecticides",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Insecticides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Insecticides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne sup. - Insecticides (%)",
+     "type": "double"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Fongicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Fongicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Fongicides",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Fongicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Fongicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne sup. - Fongicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Autres PPP",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Autres PPP",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Autres PPP",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Autres PPP (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Autres PPP (%)",
+     "type": "double"
+    }

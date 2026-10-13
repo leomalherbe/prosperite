@@ -1,0 +1,192 @@
+# sdes / itdd_france_entiere_csv
+# URL : https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+# Vérifié le 2026-10-13T14:46:28Z — HTTP 200 — text/csv; charset=utf-8 — 148051 octets lus (taille annoncée : inconnue)
+
+Colonnes : ['CODGEO', 'LIBGEO', 'LIBELLE_VARIABLE', 'VARIABLE', 'LIBELLE_SOUS_CHAMP', 'SOUS_CHAMP', 'TYPE_VAR', 'UNITE', 'NO_INDIC', 'ODD1', 'CIBLE1', 'ODD2', 'CIBLE2', 'A2025', 'A2024', 'A2023', 'A2022', 'A2021', 'A2020', 'A2019', 'A2018', 'A2017', 'A2016', 'A2015', 'A2014', 'A2013', 'A2012', 'A2011', 'A2010', 'A2009', 'A2008', 'A2007', 'A2006', 'A2005', 'A2004', 'A2003', 'A2002', 'A2001', 'A2000', 'A1999', 'A1998', 'A1997', 'A1996', 'A1995', 'A1994', 'A1993', 'A1992', 'A1991', 'A1990', 'A1989', 'A1988', 'A1987', 'A1986', 'A1985', 'A1984', 'A1983', 'A1982']
+551 lignes ; 185 combinaisons distinctes de ['VARIABLE', 'LIBELLE_VARIABLE'] :
+VARIABLE	LIBELLE_VARIABLE
+nb_dossiers_deposes	Nombre de situations de surendettement soumises aux commissions
+agribio_nbexp	Nombre d’exploitations en agriculture biologique
+agribio_surf	Surface en agriculture biologique
+saue	Surface agricole utilisée des exploitations
+part_agribio_surf	Part des surfaces en agriculture biologique (AB)
+agri_usa	Usages agricoles du sol
+nb_seropo_VIH	Nombre de découvertes de séropositivité VIH
+nb_tues_routes	Nombre de tués par accident de la route
+nb_blesses_routes	Nombre de blessés par accident de la route
+pop_75	population des 75 ans et plus
+pop	population totale
+part_pop75	Part des 75 ans ou plus dans la population
+esper_vie	Espérance de vie à la naissance selon le sexe
+Eff_Diff	Nombre de jeunes de 16-25 ans en difficulté de lecture
+Eff_Tot	Nombre de jeunes de 16-25 ans testés
+tx_jeunes_diff_lecture	Taux de jeunes en difficulté de lecture (16-25 ans)
+20_24_sortis_etudes_nondip	Nombre de jeunes de 20 à 24 ans non diplômés et non en formation
+20_24_sortis_etudes	Nombre total de jeunes de 20 à 24 ans sortis d’études
+part_20_24_sortis_nondip	Part des non diplômés chez les 20-24 ans sortis d’études
+nb_maires_femme	nombre de femmes maires
+nb_maires_tot	nombre total de maires
+part_maires_femme	Participation des femmes à la gouvernance :  part des femmes maires
+actifs_occ	Nombre d’actifs occupés
+taux_emp	taux d’emploi
+ecart_tx_emp_f_h	Différence entre le taux d’emploi des femmes et le taux d’emploi des hommes par âge
+taux_conform_prelev_microbio	Taux de conformité des prélèvements sur les eaux distribuées pour la microbiologie
+taux_conform_prelev_physico	Taux de conformité des prélèvements sur les eaux distribuées pour la physico-chimie
+taux_rendmt_res_distr	Rendement des réseaux d'eau potable
+vol_prelev	Prélèvements en eau selon les grands usages
+ESO_NIT_NB_TOT_CLAS1	Nombre de points de relevés souterrains : nitrates <= 10 mg/l
+ESO_NIT_NB_TOT_CLAS2	Nombre de points de relevés souterrains  : nitrates > 10 mg/l et <= 25 mg/l
+ESO_NIT_NB_TOT_CLAS3	Nombre de points de relevés souterrains  : nitrates > 25 mg/l et <= 40 mg/l
+ESO_NIT_NB_TOT_CLAS4	Nombre de points de relevés souterrains  : nitrates > 40 mg/l et <= 50 mg/l
+ESO_NIT_NB_TOT_CLAS5	Nombre de points de relevés souterrains  : nitrates > 50 mg/l
+ESO_NIT_NB_TOT	Nombre total de points de relevés souterrains pour les nitrates
+part_class_5_eau_sout_nit	Part des stations enregistrant une trop forte concentration de nitrates dans les eaux souterraines
+ESO_PES_NB_TOT_CLAS1	Nombre de points de relevés souterrains : pesticides totaux ≤ 0,01 µg/l
+ESO_PES_NB_TOT_CLAS2	Nombre de points de relevés souterrains : pesticides totaux > 0,01 µg/l et <= 0,1 µg/l
+ESO_PES_NB_TOT_CLAS3	Nombre de points de relevés souterrains : pesticides totaux >0,1 µg/l et <= 0,5 µg/l
+ESO_PES_NB_TOT_CLAS4	Nombre de points de relevés souterrains : pesticides totaux >0,5 µg/l et <= 5 µg/l
+ESO_PES_NB_TOT_CLAS5	Nombre de points de relevés souterrains : pesticides totaux >5 µg/l
+ESO_PES_NB_TOT	Nombre total de points de relevés souterrains pour les pesticides
+part_class_5_eau_sout_pes	Part des stations enregistrant une trop forte concentration de pesticides dans les eaux souterraines
+baign_nb_douce	Nombre de points contrôle eau douce
+part_baign_douce	Part des points de surveillance des eaux douces selon leur qualité
+baign_nb_mer	Nombre de points contrôle eau de mer
+part_baign_mer	Part des points de surveillance des eaux de mer selon leur qualité
+step_nb	Nombre de stations d’épuration
+step_capa	Capacité totale de traitement des stations d’épuration
+step_pollu	Pollution entrante dans stations d’épuration
+step_capacite	Rapport entre la charge globale (produits entrants) et la capacité de traitement des stations d’épuration
+step_capa	Capacité de traitement des stations d’épuration
+step_taux_conform	Taux de conformité des stations d'épuration
+step_prodboues	Quantités de boues produites par les stations d’épuration
+pib_hab	Produit Intérieur Brut par habitant (euros)
+taux_emp	Taux d'emploi par sexe et tranche d'âge
+chomeurs	nombre de chômeurs
+actifs	population active
+taux_chom_rp	Taux de chômage par tranche d'âge au sens du recensement
+creation	Nombre de créations d'établissements
+stock	Nombre d’établissements
+salaries_tp	nombre de salariés à temps partiel
+salaries	nombre de salariés
+part_tps_partiel	Part des salariés occupés à temps partiel
+chomeur_ld	Nombre de chômeurs depuis plus de 1 an
+chomeurs_total	Nombre de chômeurs total
+part_chomeurs_ld	Part des chômeurs de longue durée parmi les demandeurs d'emploi
+salaries_form_parti	Nombre de salariés avec une forme d'emploi particulière (CDD, Intérim)
+salaries_horsform_lt	Nombre de salariés en CDD, Intérim, CDI, Fonct. pub.
+part_salarie_form_parti	Part des salariés dans des formes particulières d'emploi (cdd, intérim) parmi les salariés en CDD, intérim, CDI, Fonction publique
+jeunes_18_24_noninseres	Jeunes de 18-24 ans sans emploi non scolarisés
+jeunes_18_24_nonscol	Population des 18-24 ans non scolarisés
+part_jeunes_non_inseres	Part des jeunes de 18 à 24 ans sans emploi non scolarisés
+effectifs_recherche	Personnel de recherche (chercheurs et personnel de soutien)
+DIRD	Dépense de R & D total
+pib_val	Produit Intérieur Brut en valeur
+effort_recherche	Effort de recherche : dépense intérieure de recherche et développement (DIRD)
+DIRDE	Dépense de R & D des entreprises
+part_depRD_prive	Part de la dépense R&D des entreprises
+DIRDA	Dépense de R & D du public
+part_depRD_public	Part de la dépense R&D du public
+dep_cour_fonc	Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste
+dep_cour_gesdech_actipol	Dépenses courantes liées aux déchets
+dep_cour_managenv	Dépenses courantes en management environnemental et/ou de l’énergie
+dep_cour_autr	Autres dépenses courantes
+dep_cour_tot	Total des dépenses courantes
+inves_env_nat	Investissements industriels pour la protection de l'environnement par nature
+inves_env_dom	Investissements industriels pour la protection de l'environnement par domaine
+inves_env_tot	Total des investissements industriels pour la protection de l'environnement
+etude_env	Études environnementales en vue d’un investissement
+trans_int	Trafic interne par modes
+trans_it_entr	Trafic international par modes – entrées
+trans_it_sort	Trafic international par modes – sorties
+trans_nat_entr	Trafic national (interrégional) par modes – entrées
+trans_nat_sort	Trafic national (interrégional) par modes – sorties
+med_dist_min_hp	Durée médiane des navettes domicile-Travail (en minute)
+med_dist_km	Distance médiane des navettes domicile-Travail (en km)
+nb_depl_dom_trav	Nombre de déplacements domicile-travail
+part_depl_dom_trav	Parts modales des déplacements Domicile-travail
+risq_tech_com	Nombre de communes classées à risque technologique majeur
+nb_etab_seveso	Nombre d'établissements industriels à risque (classés Seveso)
+risq_icpe_autor	Nombre d'installations soumises à autorisation
+risq_pprt	Nombre de communes ayant un PPRT prescrit ou approuvé
+CO2_netab	Nombre d'établissements émettant plus de 10 000 tonnes de CO2
+CO2_emissions	Emissions de CO2 en tonnes des établissements émettant plus de 10 000 tonnes de CO2
+nb_suroccupes	Nombre de résidences principales, en état de sur-occupation
+nb_logement	Nombre  de logements (résidences principales)
+taux_lgmt_suroccupes	Part des logements en situation de sur-occupation
+qualair_PM10	Qualité de l’air au regard des normes réglementaires journalières pour les particules fines (PM 10) dans les villes
+qualair_PM25	Qualité de l’air au regard des normes réglementaires annuelles pour les particules fines (PM 2,5) dans les villes
+qualair_NO2	Qualité de l’air au regard des normes réglementaires annuelles pour le dioxyde d’azote (NO2) dans les villes
+qualair_O3	Qualité de l’air au regard des normes réglementaires journalières pour l’ozone (O3) dans les villes
+qualair_SO2	Qualité de l’air au regard des normes réglementaires journalières pour le dioxyde de soufre (SO2) dans les villes
+nb_col_etud_pls	Nombre de logements sociaux collectifs (y compris logements de type étudiant)
+nb_ind_pls	Nombre de logements sociaux individuels
+parc_non_conv	Nombre de logements sociaux du parc non conventionné des SEM
+nb_tot_alncsem	Nombre de logements du parc locatif des bailleurs sociaux (y compris logements non conventionnés des sociétés d'économie mixte)
+log_hlm_tot	Nombre de logements sociaux
+nb_resprinc	Nombre de résidences principales
+part_pls	Part des logements sociaux dans l'ensemble des logements
+log_hlm_phab	Nombre de logements sociaux pour 10 000 habitants
+nb_vacant_pls	Nombre de logements sociaux vacants
+nb_dest_loc_pls	Nombre de logements sociaux destinés à la location
+taux_pls_vacant	Taux de vacance du logement social
+log	Nombre de logements
+part_log	Part des logements selon le type de logement
+quantite_dd_prod	Quantité de déchets dangereux produit
+nb_etab_prod_dd	Nombre d’établissement producteurs de déchets dangereux
+quantite_dd_trait	Quantité de déchets dangereux traités
+nb_etab_trait_dd	Nombre d’établissements traitant les déchets dangereux
+quantite_dechets_val	Quantités totales de déchets valorisés (matière ou organique)
+quantite_dechets_tot	Quantités totales de déchets collectés par le service public
+taux_val_dechets	Taux de valorisation matière et organique des déchets ménagers et assimilés
+quantite_dechets	Quantités de déchets collectés par mode de traitement
+nb_etab_decla_poll	Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants
+coeff_dep_seuil_poll	Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution
+nb_com_catnat	Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles
+prop_com_catnat	Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années
+ppr_prescrit	Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit
+ppr_approuve	Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé
+risq_nat_com	Nombre de communes classées à risque naturel majeur
+surf_prot	Ensemble des surfaces protegées (zonages d’enjeux écologique et dispositifs de protection)
+surf_inventaires	Surfaces inventaires des espaces naturels
+surf_natura2000	Surfaces Natura 2000
+surf_prot_regl	Espaces de protection réglementaire
+surf_prot_contr	Espaces de protection contractuelle
+surf_prot_autre	Autres types d’espaces de protection
+ElectionPres_T1_votants	Nombre de votants pour le 1er tour des présidentielles
+ElectionPres_T1_inscrits	Nombre d'inscrits sur les listes électorales pour le 1er tour des présidentielles
+taux_participation	Participation au premier tour des élections présidentielles
+nb_expl_hve	Nombre d'exploitations de haute valeur environnementale (HVE)
+taux_mort_infant	Taux de mortalité infantile (pour 1000 enfants nés vivants sur les années N-3 à N-1)
+reemploi	Nombre de structures chargées du réemploi
+phyto_qtach	Quantité de substances achetées selon leur toxicité
+phyto_qtach	Quantité de substances achetées selon leur fonction
+phyto_qtach	Quantité de substances achetées
+phyto_qtach	Quantité de substances achetées selon présence de glyphosate
+surf_sols	Occupation des sols
+surf_sols_nat	Occupation des sols (détail surfaces naturelles)
+surf_sols_artif	Occupation des sols (détail surfaces artificialisées)
+parc_vp	Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air
+part_critair_1_0_vp	Part des voitures particulières crit’air1 ou électriques dans l’ensemble du parc
+parc_pl	Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air
+part_critair_1_0_pl	Part des poids lourds crit’air1 ou électriques dans l’ensemble du parc
+parc_vul	Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air
+part_critair_1_0_vul	Part des véhicules utilitaires légers crit’air1 ou électriques dans l’ensemble du parc
+locaux_raccor	Part des locaux raccordables FTTH (fibre optique)
+couv4g	Part de la surface couverte en 4G par a minima un opérateur
+enerc2e	Économies d’énergie C2E
+elec_renouv	Électricité renouvelable
+solaire_therm	Solaire thermique
+puissance_inst	Puissance des installations
+infrac_tx_homicides	Nombre d’homicides pour 1000 habitants
+infrac_tx_violences_horsfam	Nombre de violences hors cadre familial pour 1000 habitants
+infrac_tx_violences_sex	Nombre de violences sexuelles pour 1000 habitants
+infrac_tx_violences_intrafam	Nombre de violences intrafamiliales pour 1000 habitants
+infrac_tx_degrad	Nombre de dégradations et destructions pour 1000 habitants
+infrac_tx_vols_pers	Nombre de vols sans violence contre des personnes pour 1000 habitants
+infrac_tx_vols_vehic	Nombre de vols de véhicule pour 1000 habitants
+infrac_tx_cambriolages	Nombre de cambriolages pour 1000 logements
+infrac_tx_fraudpaie	Nombre de fraudes au moyen de paiement pour 1000 habitants
+infrac_tx_usagstup	Nombre d’usages de stupéfiants pour 1000 habitants
+infrac_tx_traficstup	Nombre de trafics de stupéfiants pour 1000 habitants
+bas_niveau_francais	Part des élèves de 6ème à bas niveau en français
+bas_niveau_maths	Part des élèves de 6ème à bas niveau en mathématiques

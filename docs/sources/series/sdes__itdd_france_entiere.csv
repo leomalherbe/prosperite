@@ -1,0 +1,538 @@
+source,requete,serie_id,libelle,unite,details,premiere_periode,derniere_periode,n_periodes,n_valeurs_distinctes,derniere_valeur,periodes
+sdes,itdd_france_entiere,FRA.nb_dossiers_deposes.nan,Nombre de situations de surendettement soumises aux commissions,Nombre de dossiers,,2014,2024,11,11,138062,2014-2024
+sdes,itdd_france_entiere,FRA.agribio_nbexp.nan,Nombre d’exploitations en agriculture biologique,Nombre d'exploitations,,2000,2024,25,25,61850,2000-2024
+sdes,itdd_france_entiere,FRA.agribio_surf.certif,Surface en agriculture biologique,hectares,,2002,2024,23,23,2.43126e+06,2002-2024
+sdes,itdd_france_entiere,FRA.agribio_surf.conver,Surface en agriculture biologique,hectares,,2002,2024,23,23,280256,2002-2024
+sdes,itdd_france_entiere,FRA.agribio_surf.tot,Surface en agriculture biologique,hectares,,2000,2024,25,25,2.71152e+06,2000-2024
+sdes,itdd_france_entiere,FRA.saue.nan,Surface agricole utilisée des exploitations,hectares,,2000,2024,25,25,2.68251e+07,2000-2024
+sdes,itdd_france_entiere,FRA.part_agribio_surf.nan,Part des surfaces en agriculture biologique (AB),%,,2000,2024,25,24,10.11,2000-2024
+sdes,itdd_france_entiere,FRA.agri_usa.aperm,Usages agricoles du sol,hectares,,2010,2024,15,15,23987,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.arables,Usages agricoles du sol,hectares,,2010,2024,15,15,1.69424e+07,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.arom,Usages agricoles du sol,hectares,,2010,2024,15,15,70204,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.betind,Usages agricoles du sol,hectares,,2010,2024,15,15,411637,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.cerea,Usages agricoles du sol,hectares,,2010,2024,15,15,8.53023e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.choux,Usages agricoles du sol,hectares,,2010,2024,15,15,15755,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.fibr,Usages agricoles du sol,hectares,,2010,2024,15,15,181229,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.fleur,Usages agricoles du sol,hectares,,2010,2024,15,15,5043,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.fouran,Usages agricoles du sol,hectares,,2010,2024,15,15,1.48719e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.fruit,Usages agricoles du sol,hectares,,2010,2024,15,15,219194,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.inddiv,Usages agricoles du sol,hectares,,2010,2024,15,15,5882,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.jach,Usages agricoles du sol,hectares,,2010,2024,15,15,519816,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.jfame,Usages agricoles du sol,hectares,,2010,2024,15,15,10245,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.jfamh,Usages agricoles du sol,hectares,,2010,2024,15,15,119014,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.lfrais,Usages agricoles du sol,hectares,,2010,2024,15,15,245321,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.lsec,Usages agricoles du sol,hectares,,2010,2024,15,15,68927,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.olea,Usages agricoles du sol,hectares,,2010,2024,15,15,2.27652e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.pepin,Usages agricoles du sol,hectares,,2010,2024,15,15,21073,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.perm,Usages agricoles du sol,hectares,,2010,2024,15,15,1.03724e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.pote,Usages agricoles du sol,hectares,,2010,2024,15,15,217719,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.prairartif,Usages agricoles du sol,hectares,,2010,2024,15,15,2.53149e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.prot,Usages agricoles du sol,hectares,,2010,2024,15,15,255028,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.saue,Usages agricoles du sol,hectares,,2010,2024,15,15,2.68251e+07,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.saut,Usages agricoles du sol,hectares,,2010,2024,15,15,2.86301e+07,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.semen,Usages agricoles du sol,hectares,,2010,2024,15,15,67758,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.sthe,Usages agricoles du sol,hectares,,2010,2024,15,15,8.84548e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.sthh,Usages agricoles du sol,hectares,,2010,2024,15,15,1.68488e+06,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.stot,Usages agricoles du sol,hectares,,2010,2024,15,1,6.38334e+07,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.sucdom,Usages agricoles du sol,hectares,,2010,2024,15,15,35324,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.tdom,Usages agricoles du sol,hectares,,2010,2024,15,15,7060,2010-2024
+sdes,itdd_france_entiere,FRA.agri_usa.vigne,Usages agricoles du sol,hectares,,2010,2024,15,15,772983,2010-2024
+sdes,itdd_france_entiere,FRA.nb_seropo_VIH.nan,Nombre de découvertes de séropositivité VIH,Nombre de personnes,,2016,2016,1,1,4475,2016
+sdes,itdd_france_entiere,FRA.nb_tues_routes.nan,Nombre de tués par accident de la route,Nombre de personnes,,2005,2024,10,10,3353,"2005,2009,2013,2018-2024"
+sdes,itdd_france_entiere,FRA.nb_blesses_routes.nan,Nombre de blessés par accident de la route,Nombre de personnes,,2019,2024,6,6,68207,2019-2024
+sdes,itdd_france_entiere,FRA.pop_75.nan,population des 75 ans et plus,Nombre de personnes,,2011,2022,3,3,6.65831e+06,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.pop.nan,population totale,Nombre de personnes,,2011,2022,3,3,6.80171e+07,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.part_pop75.nan,Part des 75 ans ou plus dans la population,%,,2011,2022,3,3,9.79,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.esper_vie.homme,Espérance de vie à la naissance selon le sexe,années,,2014,2024,11,9,80,2014-2024
+sdes,itdd_france_entiere,FRA.esper_vie.femme,Espérance de vie à la naissance selon le sexe,années,,2014,2024,11,5,85.6,2014-2024
+sdes,itdd_france_entiere,FRA.Eff_Diff.nan,Nombre de jeunes de 16-25 ans en difficulté de lecture,Nombre de personnes,,2022,2024,3,3,112246,2022-2024
+sdes,itdd_france_entiere,FRA.Eff_Tot.nan,Nombre de jeunes de 16-25 ans testés,Nombre de personnes,,2022,2024,3,3,842880,2022-2024
+sdes,itdd_france_entiere,FRA.tx_jeunes_diff_lecture.nan,Taux de jeunes en difficulté de lecture (16-25 ans),%,,2022,2024,3,3,13.32,2022-2024
+sdes,itdd_france_entiere,FRA.20_24_sortis_etudes_nondip.nan,Nombre de jeunes de 20 à 24 ans non diplômés et non en formation,Nombre de personnes,,2016,2022,2,2,360040,"2016,2022"
+sdes,itdd_france_entiere,FRA.20_24_sortis_etudes.nan,Nombre total de jeunes de 20 à 24 ans sortis d’études,Nombre de personnes,,2016,2022,2,2,2.28873e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_20_24_sortis_nondip.nan,Part des non diplômés chez les 20-24 ans sortis d’études,%,,2016,2022,2,2,15.73,"2016,2022"
+sdes,itdd_france_entiere,FRA.nb_maires_femme.nan,nombre de femmes maires,Nombre de personnes,,2014,2025,4,4,7333,"2014,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.nb_maires_tot.nan,nombre total de maires,Nombre de personnes,,2014,2025,4,4,34782,"2014,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.part_maires_femme.nan,Participation des femmes à la gouvernance :  part des femmes maires,%,,2014,2025,4,4,21.08,"2014,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.actifs_occ.f_15_24,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.18008e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.f_25_54,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,9.98112e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.f_55_64,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.35445e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.f,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.35157e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h_15_24,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.45466e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h_25_54,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.05075e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h_55_64,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.36201e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.43242e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f_15_24,population totale,Nombre de personnes,,2016,2022,2,2,3.94875e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f_25_54,population totale,Nombre de personnes,,2016,2022,2,2,1.28709e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f_55_64,population totale,Nombre de personnes,,2016,2022,2,2,4.45339e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f,population totale,Nombre de personnes,,2016,2022,2,2,2.12731e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h_15_24,population totale,Nombre de personnes,,2016,2022,2,2,4.14255e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h_25_54,population totale,Nombre de personnes,,2016,2022,2,2,1.2459e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h_55_64,population totale,Nombre de personnes,,2016,2022,2,2,4.16145e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h,population totale,Nombre de personnes,,2016,2022,2,2,2.0763e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f_15_24,taux d’emploi,%,,2016,2022,2,2,29.88,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f_25_54,taux d’emploi,%,,2016,2022,2,2,77.55,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f_55_64,taux d’emploi,%,,2016,2022,2,2,52.87,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h_15_24,taux d’emploi,%,,2016,2022,2,2,35.12,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h_25_54,taux d’emploi,%,,2016,2022,2,2,84.34,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h_55_64,taux d’emploi,%,,2016,2022,2,2,56.76,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f,taux d’emploi,%,,2016,2022,2,2,63.53,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h,taux d’emploi,%,,2016,2022,2,2,68.99,"2016,2022"
+sdes,itdd_france_entiere,FRA.ecart_tx_emp_f_h.total,Différence entre le taux d’emploi des femmes et le taux d’emploi des hommes par âge,points de pourcentage,,2016,2022,2,2,-5.46,"2016,2022"
+sdes,itdd_france_entiere,FRA.ecart_tx_emp_f_h.15_24,Différence entre le taux d’emploi des femmes et le taux d’emploi des hommes par âge,points de pourcentage,,2016,2022,2,2,-5.24,"2016,2022"
+sdes,itdd_france_entiere,FRA.ecart_tx_emp_f_h.25_54,Différence entre le taux d’emploi des femmes et le taux d’emploi des hommes par âge,points de pourcentage,,2016,2022,2,2,-6.79,"2016,2022"
+sdes,itdd_france_entiere,FRA.ecart_tx_emp_f_h.55_64,Différence entre le taux d’emploi des femmes et le taux d’emploi des hommes par âge,points de pourcentage,,2016,2022,2,2,-3.89,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_conform_prelev_microbio.nan,Taux de conformité des prélèvements sur les eaux distribuées pour la microbiologie,%,,2008,2024,17,9,97.9,2008-2024
+sdes,itdd_france_entiere,FRA.taux_conform_prelev_physico.nan,Taux de conformité des prélèvements sur les eaux distribuées pour la physico-chimie,%,,2008,2024,17,14,95.3,2008-2024
+sdes,itdd_france_entiere,FRA.taux_rendmt_res_distr.nan,Rendement des réseaux d'eau potable,%,,2010,2024,15,12,84,2010-2024
+sdes,itdd_france_entiere,FRA.vol_prelev.supe_aep,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,1.95482e+09,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.supe_ind,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,1.26768e+09,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.supe_irr,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,2.08104e+09,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.supe_elec,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,1.32718e+10,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.supe_can,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2012,2022,11,11,4.83224e+09,2012-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.sout_aep,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,3.52399e+09,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.sout_ind,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,8.57518e+08,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.sout_irr,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,1.49372e+09,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.sout_elec,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,5.73384e+06,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.sout_can,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2012,2022,11,11,9.32265e+06,2012-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.saum_ind,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2012,2022,11,11,1.303e+08,2012-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.saum_elec,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2008,2022,15,15,4.70026e+09,2008-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.saum_can,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2014,2022,9,9,1.32254e+07,2014-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.saum_irr,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2012,2022,11,11,336239,2012-2022
+sdes,itdd_france_entiere,FRA.vol_prelev.total,Prélèvements en eau selon les grands usages,Volumes d'eau en m3,,2014,2022,9,9,3.4142e+10,2014-2022
+sdes,itdd_france_entiere,FRA.ESO_NIT_NB_TOT_CLAS1.nan,Nombre de points de relevés souterrains : nitrates <= 10 mg/l,Nombre de points de relevés,,2010,2022,13,12,4002,2010-2022
+sdes,itdd_france_entiere,FRA.ESO_NIT_NB_TOT_CLAS2.nan,Nombre de points de relevés souterrains  : nitrates > 10 mg/l et <= 25 mg/l,Nombre de points de relevés,,2010,2022,13,13,1558,2010-2022
+sdes,itdd_france_entiere,FRA.ESO_NIT_NB_TOT_CLAS3.nan,Nombre de points de relevés souterrains  : nitrates > 25 mg/l et <= 40 mg/l,Nombre de points de relevés,,2010,2022,13,13,968,2010-2022
+sdes,itdd_france_entiere,FRA.ESO_NIT_NB_TOT_CLAS4.nan,Nombre de points de relevés souterrains  : nitrates > 40 mg/l et <= 50 mg/l,Nombre de points de relevés,,2010,2022,13,13,374,2010-2022
+sdes,itdd_france_entiere,FRA.ESO_NIT_NB_TOT_CLAS5.nan,Nombre de points de relevés souterrains  : nitrates > 50 mg/l,Nombre de points de relevés,,2010,2022,13,13,278,2010-2022
+sdes,itdd_france_entiere,FRA.ESO_NIT_NB_TOT.nan,Nombre total de points de relevés souterrains pour les nitrates,Nombre de points de relevés,,2010,2022,13,13,7180,2010-2022
+sdes,itdd_france_entiere,FRA.part_class_5_eau_sout_nit.nan,Part des stations enregistrant une trop forte concentration de nitrates dans les eaux souterraines,%,,2010,2022,13,12,3.87,2010-2022
+sdes,itdd_france_entiere,FRA.ESO_PES_NB_TOT_CLAS1.nan,"Nombre de points de relevés souterrains : pesticides totaux ≤ 0,01 µg/l",Nombre de points de relevés,,2020,2022,3,3,4477,2020-2022
+sdes,itdd_france_entiere,FRA.ESO_PES_NB_TOT_CLAS2.nan,"Nombre de points de relevés souterrains : pesticides totaux > 0,01 µg/l et <= 0,1 µg/l",Nombre de points de relevés,,2020,2022,3,3,2437,2020-2022
+sdes,itdd_france_entiere,FRA.ESO_PES_NB_TOT_CLAS3.nan,"Nombre de points de relevés souterrains : pesticides totaux >0,1 µg/l et <= 0,5 µg/l",Nombre de points de relevés,,2020,2022,3,3,48,2020-2022
+sdes,itdd_france_entiere,FRA.ESO_PES_NB_TOT_CLAS4.nan,"Nombre de points de relevés souterrains : pesticides totaux >0,5 µg/l et <= 5 µg/l",Nombre de points de relevés,,2020,2022,3,3,51,2020-2022
+sdes,itdd_france_entiere,FRA.ESO_PES_NB_TOT_CLAS5.nan,Nombre de points de relevés souterrains : pesticides totaux >5 µg/l,Nombre de points de relevés,,2020,2022,3,3,37,2020-2022
+sdes,itdd_france_entiere,FRA.ESO_PES_NB_TOT.nan,Nombre total de points de relevés souterrains pour les pesticides,Nombre de points de relevés,,2020,2022,3,3,7050,2020-2022
+sdes,itdd_france_entiere,FRA.part_class_5_eau_sout_pes.nan,Part des stations enregistrant une trop forte concentration de pesticides dans les eaux souterraines,%,,2020,2022,3,3,0.52,2020-2022
+sdes,itdd_france_entiere,FRA.baign_nb_douce.noncl,Nombre de points contrôle eau douce,Nombre de points contrôle,,2013,2024,12,12,55,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_douce.excel,Nombre de points contrôle eau douce,Nombre de points contrôle,,2013,2024,12,11,905,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_douce.bonne,Nombre de points contrôle eau douce,Nombre de points contrôle,,2013,2024,12,12,204,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_douce.suffi,Nombre de points contrôle eau douce,Nombre de points contrôle,,2013,2024,12,11,42,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_douce.insuf,Nombre de points contrôle eau douce,Nombre de points contrôle,,2013,2024,12,11,64,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_douce.total,Nombre de points contrôle eau douce,Nombre de points contrôle,,2013,2024,12,12,1270,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_douce.noncl,Part des points de surveillance des eaux douces selon leur qualité,%,,2013,2024,12,11,4.33,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_douce.excel,Part des points de surveillance des eaux douces selon leur qualité,%,,2013,2024,12,12,71.26,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_douce.bonne,Part des points de surveillance des eaux douces selon leur qualité,%,,2013,2024,12,12,16.06,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_douce.suffi,Part des points de surveillance des eaux douces selon leur qualité,%,,2013,2024,12,12,3.31,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_douce.insuf,Part des points de surveillance des eaux douces selon leur qualité,%,,2013,2024,12,12,5.04,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_mer.noncl,Nombre de points contrôle eau de mer,Nombre de points contrôle,,2013,2024,12,11,19,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_mer.excel,Nombre de points contrôle eau de mer,Nombre de points contrôle,,2013,2024,12,12,1570,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_mer.bonne,Nombre de points contrôle eau de mer,Nombre de points contrôle,,2013,2024,12,10,338,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_mer.suffi,Nombre de points contrôle eau de mer,Nombre de points contrôle,,2013,2024,12,10,80,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_mer.insuf,Nombre de points contrôle eau de mer,Nombre de points contrôle,,2013,2024,12,9,42,2013-2024
+sdes,itdd_france_entiere,FRA.baign_nb_mer.total,Nombre de points contrôle eau de mer,Nombre de points contrôle,,2013,2024,12,10,2049,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_mer.noncl,Part des points de surveillance des eaux de mer selon leur qualité,%,,2013,2024,12,11,0.93,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_mer.excel,Part des points de surveillance des eaux de mer selon leur qualité,%,,2013,2024,12,11,76.62,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_mer.bonne,Part des points de surveillance des eaux de mer selon leur qualité,%,,2013,2024,12,11,16.5,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_mer.suffi,Part des points de surveillance des eaux de mer selon leur qualité,%,,2013,2024,12,10,3.9,2013-2024
+sdes,itdd_france_entiere,FRA.part_baign_mer.insuf,Part des points de surveillance des eaux de mer selon leur qualité,%,,2013,2024,12,11,2.05,2013-2024
+sdes,itdd_france_entiere,FRA.step_nb.nan,Nombre de stations d’épuration,nan,,2007,2023,17,17,22809,2007-2023
+sdes,itdd_france_entiere,FRA.step_capa.tot,Capacité totale de traitement des stations d’épuration,Equivalent-habitant,,2007,2023,17,17,1.06545e+08,2007-2023
+sdes,itdd_france_entiere,FRA.step_pollu.nan,Pollution entrante dans stations d’épuration,Equivalent-habitant,,2007,2023,17,17,7.8077e+07,2007-2023
+sdes,itdd_france_entiere,FRA.step_capacite.nan,Rapport entre la charge globale (produits entrants) et la capacité de traitement des stations d’épuration,%,,2007,2023,17,17,73.28,2007-2023
+sdes,itdd_france_entiere,FRA.step_capa.conf_oui,Capacité de traitement des stations d’épuration,Equivalent-habitant,,2007,2023,17,17,5.849e+07,2007-2023
+sdes,itdd_france_entiere,FRA.step_capa.conf_non,Capacité de traitement des stations d’épuration,Equivalent-habitant,,2007,2023,17,17,4.80547e+07,2007-2023
+sdes,itdd_france_entiere,FRA.step_taux_conform.nan,Taux de conformité des stations d'épuration,%,,2007,2023,17,17,54.9,2007-2023
+sdes,itdd_france_entiere,FRA.step_prodboues.nan,Quantités de boues produites par les stations d’épuration,Tonne de matière sèche,,2007,2023,17,17,1.14344e+06,2007-2023
+sdes,itdd_france_entiere,FRA.pib_hab.nan,Produit Intérieur Brut par habitant (euros),€,,2000,2023,24,24,37553.3,2000-2023
+sdes,itdd_france_entiere,FRA.actifs_occ.f_15_24,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.18008e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.f_25_54,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,9.98112e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.f_55_64,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.35445e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h_15_24,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.45466e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h_25_54,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.05075e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h_55_64,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.36201e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.15_24,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.63474e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.25_54,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.04886e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.55_64,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,4.71646e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.h,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.43242e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.f,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,1.35157e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs_occ.total,Nombre d’actifs occupés,Nombre de personnes,,2016,2022,2,2,2.78398e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f_15_24,population totale,Nombre de personnes,,2016,2022,2,2,3.94875e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f_25_54,population totale,Nombre de personnes,,2016,2022,2,2,1.28709e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f_55_64,population totale,Nombre de personnes,,2016,2022,2,2,4.45339e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h_15_24,population totale,Nombre de personnes,,2016,2022,2,2,4.14255e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h_25_54,population totale,Nombre de personnes,,2016,2022,2,2,1.2459e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h_55_64,population totale,Nombre de personnes,,2016,2022,2,2,4.16145e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.15_24,population totale,Nombre de personnes,,2016,2022,2,2,8.0913e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.25_54,population totale,Nombre de personnes,,2016,2022,2,2,2.53299e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.55_64,population totale,Nombre de personnes,,2016,2022,2,2,8.61484e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.h,population totale,Nombre de personnes,,2016,2022,2,2,2.0763e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.f,population totale,Nombre de personnes,,2016,2022,2,2,2.12731e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.pop.total,population totale,Nombre de personnes,,2016,2022,2,2,4.20361e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f_15_24,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,29.88,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f_25_54,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,77.55,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f_55_64,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,52.87,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h_15_24,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,35.12,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h_25_54,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,84.34,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h_55_64,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,56.76,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.f,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,63.53,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.h,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,68.99,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.15_24,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,32.56,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.25_54,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,80.89,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.55_64,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,54.75,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_emp.total,Taux d'emploi par sexe et tranche d'âge,%,,2016,2022,2,2,66.23,"2016,2022"
+sdes,itdd_france_entiere,FRA.chomeurs.15_24,nombre de chômeurs,Nombre de personnes,,2016,2022,2,2,790324,"2016,2022"
+sdes,itdd_france_entiere,FRA.chomeurs.25_54,nombre de chômeurs,Nombre de personnes,,2016,2022,2,2,2.42185e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.chomeurs.55_64,nombre de chômeurs,Nombre de personnes,,2016,2022,2,2,505614,"2016,2022"
+sdes,itdd_france_entiere,FRA.chomeurs.total,nombre de chômeurs,Nombre de personnes,,2016,2022,2,2,3.71779e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs.15_24,population active,Nombre de personnes,,2016,2022,2,2,3.42507e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs.25_54,population active,Nombre de personnes,,2016,2022,2,2,2.29105e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs.55_64,population active,Nombre de personnes,,2016,2022,2,2,5.22207e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.actifs.total,population active,Nombre de personnes,,2016,2022,2,2,3.15576e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_chom_rp.15_24,Taux de chômage par tranche d'âge au sens du recensement,%,,2016,2022,2,2,23.07,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_chom_rp.25_54,Taux de chômage par tranche d'âge au sens du recensement,%,,2016,2022,2,2,10.57,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_chom_rp.55_64,Taux de chômage par tranche d'âge au sens du recensement,%,,2016,2022,2,2,9.68,"2016,2022"
+sdes,itdd_france_entiere,FRA.taux_chom_rp.total,Taux de chômage par tranche d'âge au sens du recensement,%,,2016,2022,2,2,11.78,"2016,2022"
+sdes,itdd_france_entiere,FRA.creation.nan,Nombre de créations d'établissements,Nombre d’établissements,,2012,2024,13,13,1.2625e+06,2012-2024
+sdes,itdd_france_entiere,FRA.stock.nan,Nombre d’établissements,Nombre d’établissements,,2014,2023,10,10,6.28171e+06,2014-2023
+sdes,itdd_france_entiere,FRA.chomeur_ld.nan,Nombre de chômeurs depuis plus de 1 an,Nombre de chômeurs,,2016,2022,2,2,1.57611e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.chomeurs_total.nan,Nombre de chômeurs total,Nombre de chômeurs,,2016,2022,2,2,3.71779e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_chomeurs_ld.nan,Part des chômeurs de longue durée parmi les demandeurs d'emploi,%,,2016,2022,2,2,42.39,"2016,2022"
+sdes,itdd_france_entiere,FRA.salaries_form_parti.nan,"Nombre de salariés avec une forme d'emploi particulière (CDD, Intérim)",Nombre de salariés,,2022,2022,1,1,2.83336e+06,2022
+sdes,itdd_france_entiere,FRA.salaries_horsform_lt.nan,"Nombre de salariés en CDD, Intérim, CDI, Fonct. pub.",Nombre de salariés,,2022,2022,1,1,2.33804e+07,2022
+sdes,itdd_france_entiere,FRA.part_salarie_form_parti.nan,"Part des salariés dans des formes particulières d'emploi (cdd, intérim) parmi les salariés en CDD, intérim, CDI, Fonction publique",%,,2022,2022,1,1,12.12,2022
+sdes,itdd_france_entiere,FRA.jeunes_18_24_noninseres.nan,Jeunes de 18-24 ans sans emploi non scolarisés,Nombre de personnes,,2022,2022,1,1,980028,2022
+sdes,itdd_france_entiere,FRA.jeunes_18_24_nonscol.nan,Population des 18-24 ans non scolarisés,Nombre de personnes,,2022,2022,1,1,2.67159e+06,2022
+sdes,itdd_france_entiere,FRA.part_jeunes_non_inseres.nan,Part des jeunes de 18 à 24 ans sans emploi non scolarisés,%,,2022,2022,1,1,36.68,2022
+sdes,itdd_france_entiere,FRA.effectifs_recherche.ent,Personnel de recherche (chercheurs et personnel de soutien),Nombre de personnes,,2009,2022,14,14,303204,2009-2022
+sdes,itdd_france_entiere,FRA.effectifs_recherche.admin,Personnel de recherche (chercheurs et personnel de soutien),Nombre de personnes,,2009,2022,14,14,198169,2009-2022
+sdes,itdd_france_entiere,FRA.effectifs_recherche.total,Personnel de recherche (chercheurs et personnel de soutien),Nombre de personnes,,2009,2022,14,14,501373,2009-2022
+sdes,itdd_france_entiere,FRA.DIRD.nan,Dépense de R & D total,Millions d’€,,2012,2022,11,11,58934,2012-2022
+sdes,itdd_france_entiere,FRA.pib_val.nan,Produit Intérieur Brut en valeur,Millions d’€,,2009,2022,14,14,2.65443e+06,2009-2022
+sdes,itdd_france_entiere,FRA.effort_recherche.nan,Effort de recherche : dépense intérieure de recherche et développement (DIRD),%,,2012,2022,11,6,2.22,2012-2022
+sdes,itdd_france_entiere,FRA.DIRD.nan,Dépense de R & D total,Millions d’€,,2012,2022,11,11,58934,2012-2022
+sdes,itdd_france_entiere,FRA.DIRDE.nan,Dépense de R & D des entreprises,Millions d’€,,2012,2022,11,11,38965,2012-2022
+sdes,itdd_france_entiere,FRA.part_depRD_prive.nan,Part de la dépense R&D des entreprises,%,,2012,2022,11,11,66.12,2012-2022
+sdes,itdd_france_entiere,FRA.DIRDA.nan,Dépense de R & D du public,Millions d’€,,2012,2022,11,11,19969,2012-2022
+sdes,itdd_france_entiere,FRA.part_depRD_public.nan,Part de la dépense R&D du public,%,,2012,2022,11,11,33.88,2012-2022
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.air,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,152.152,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.aut,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,86.8453,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.dech,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,249.649,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.eau,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,405.163,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.biod,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,24.0741,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.bruit,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,7.1647,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.sols,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,39.9132,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.ener,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2022,2022,1,1,153.652,2022
+sdes,itdd_france_entiere,FRA.dep_cour_fonc.tot,Dépenses courantes de fonctionnement des équipements pour la protection de l'environnement dans les entreprises industrielles par poste,Millions d’€,,2013,2022,4,4,1118.61,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_gesdech_actipol.nan,Dépenses courantes liées aux déchets,Millions d’€,,2013,2022,4,4,1341.92,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_managenv.nan,Dépenses courantes en management environnemental et/ou de l’énergie,Millions d’€,,2013,2022,4,4,239.358,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_autr.nan,Autres dépenses courantes,Millions d’€,,2013,2022,4,4,379.395,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.dep_cour_tot.nan,Total des dépenses courantes,Millions d’€,,2013,2022,4,4,3079.29,"2013,2016,2019,2022"
+sdes,itdd_france_entiere,FRA.inves_env_nat.spe_prev,Investissements industriels pour la protection de l'environnement par nature,Millions d’€,,2013,2022,10,10,869.207,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_nat.spe_valor,Investissements industriels pour la protection de l'environnement par nature,Millions d’€,,2013,2022,10,10,96.661,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_nat.spe_trait,Investissements industriels pour la protection de l'environnement par nature,Millions d’€,,2013,2022,10,10,825.883,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_nat.spe_mesu,Investissements industriels pour la protection de l'environnement par nature,Millions d’€,,2013,2022,10,10,80.511,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_nat.spe_tot,Investissements industriels pour la protection de l'environnement par nature,Millions d’€,,2013,2022,10,10,1872.26,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_nat.integ,Investissements industriels pour la protection de l'environnement par nature,Millions d’€,,2013,2022,10,10,406.699,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.air,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,342.932,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.ges,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2021,9,9,416.49,2013-2021
+sdes,itdd_france_entiere,FRA.inves_env_dom.polair,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2021,9,9,251.86,2013-2021
+sdes,itdd_france_entiere,FRA.inves_env_dom.bruit,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,29.879,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.dech,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,176.579,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.eau,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,354.951,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.pays,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,124.733,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.sols,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,196.508,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.ener,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2021,2022,2,2,1030.61,2021-2022
+sdes,itdd_france_entiere,FRA.inves_env_dom.aut,Investissements industriels pour la protection de l'environnement par domaine,Millions d’€,,2013,2022,10,10,22.782,2013-2022
+sdes,itdd_france_entiere,FRA.inves_env_tot.nan,Total des investissements industriels pour la protection de l'environnement,Millions d’€,,2013,2022,10,10,2278.96,2013-2022
+sdes,itdd_france_entiere,FRA.etude_env.pro,Études environnementales en vue d’un investissement,Millions d’€,,2013,2022,10,10,313.117,2013-2022
+sdes,itdd_france_entiere,FRA.etude_env.aut,Études environnementales en vue d’un investissement,Millions d’€,,2013,2022,10,10,120.48,2013-2022
+sdes,itdd_france_entiere,FRA.etude_env.tot,Études environnementales en vue d’un investissement,Millions d’€,,2013,2022,10,10,433.596,2013-2022
+sdes,itdd_france_entiere,FRA.trans_int.trm,Trafic interne par modes,tonnes-kilomètre,,2023,2023,1,1,7.34217e+10,2023
+sdes,itdd_france_entiere,FRA.trans_it_entr.trm,Trafic international par modes – entrées,tonnes-kilomètre,,2023,2023,1,1,7.94403e+10,2023
+sdes,itdd_france_entiere,FRA.trans_it_sort.trm,Trafic international par modes – sorties,tonnes-kilomètre,,2023,2023,1,1,6.27981e+10,2023
+sdes,itdd_france_entiere,FRA.trans_nat_entr.trm,Trafic national (interrégional) par modes – entrées,tonnes-kilomètre,,2023,2023,1,1,9.51002e+10,2023
+sdes,itdd_france_entiere,FRA.trans_nat_sort.trm,Trafic national (interrégional) par modes – sorties,tonnes-kilomètre,,2023,2023,1,1,9.51002e+10,2023
+sdes,itdd_france_entiere,FRA.med_dist_min_hp.act,Durée médiane des navettes domicile-Travail (en minute),minutes,,2011,2022,3,2,13,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.med_dist_min_hp.nav,Durée médiane des navettes domicile-Travail (en minute),minutes,,2011,2022,3,2,19,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.med_dist_km.act,Distance médiane des navettes domicile-Travail (en km),km,,2011,2022,3,3,8.4,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.med_dist_km.nav,Distance médiane des navettes domicile-Travail (en km),km,,2011,2022,3,3,14.9,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.tec,Nombre de déplacements domicile-travail,Nombre de déplacements,,2016,2022,2,2,4.318e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.voiture,Nombre de déplacements domicile-travail,Nombre de déplacements,,2016,2022,2,2,1.96817e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.deux_roues,Nombre de déplacements domicile-travail,Nombre de déplacements,,2016,2022,2,2,1.43287e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.velo,Nombre de déplacements domicile-travail,Nombre de déplacements,,2022,2022,1,1,930031,2022
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.deux_roues_mot,Nombre de déplacements domicile-travail,Nombre de déplacements,,2022,2022,1,1,502837,2022
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.pied,Nombre de déplacements domicile-travail,Nombre de déplacements,,2016,2022,2,2,1.73741e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.nb_depl_dom_trav.sans_transp,Nombre de déplacements domicile-travail,Nombre de déplacements,,2016,2022,2,2,1.16423e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.tec,Parts modales des déplacements Domicile-travail,%,,2016,2022,2,2,15.24,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.voiture,Parts modales des déplacements Domicile-travail,%,,2016,2022,2,2,69.46,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.deux_roues,Parts modales des déplacements Domicile-travail,%,,2016,2022,2,2,5.06,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.deux_roues_mot,Parts modales des déplacements Domicile-travail,%,,2022,2022,1,1,1.77,2022
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.velo,Parts modales des déplacements Domicile-travail,%,,2022,2022,1,1,3.28,2022
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.pied,Parts modales des déplacements Domicile-travail,%,,2016,2022,2,2,6.13,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_depl_dom_trav.sans_transp,Parts modales des déplacements Domicile-travail,%,,2016,2022,2,2,4.11,"2016,2022"
+sdes,itdd_france_entiere,FRA.risq_tech_com.ami,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,6,1312,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_tech_com.bar,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,7,4281,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_tech_com.eng,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,3,2109,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_tech_com.ind,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,7,2248,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_tech_com.min,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,3,160,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_tech_com.nuc,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,7,909,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_tech_com.tmd,Nombre de communes classées à risque technologique majeur,Nombre de communes,,2015,2025,7,7,16647,"2015-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.nb_etab_seveso.sb,Nombre d'établissements industriels à risque (classés Seveso),Nombre d'établissements,,2012,2025,6,6,596,"2012,2017,2021,2023-2025"
+sdes,itdd_france_entiere,FRA.nb_etab_seveso.sh,Nombre d'établissements industriels à risque (classés Seveso),Nombre d'établissements,,2012,2025,6,6,702,"2012,2017,2021,2023-2025"
+sdes,itdd_france_entiere,FRA.nb_etab_seveso.total,Nombre d'établissements industriels à risque (classés Seveso),Nombre d'établissements,,2012,2025,6,6,1298,"2012,2017,2021,2023-2025"
+sdes,itdd_france_entiere,FRA.risq_icpe_autor.nan,Nombre d'installations soumises à autorisation,Nombre d'installations,,2003,2025,16,16,27469,"2003-2007,2009-2015,2021,2023-2025"
+sdes,itdd_france_entiere,FRA.risq_pprt.comappr,Nombre de communes ayant un PPRT prescrit ou approuvé,Nombre de communes,,2015,2025,5,4,805,"2015,2021,2023-2025"
+sdes,itdd_france_entiere,FRA.risq_pprt.compres,Nombre de communes ayant un PPRT prescrit ou approuvé,Nombre de communes,,2015,2025,5,4,818,"2015,2021,2023-2025"
+sdes,itdd_france_entiere,FRA.CO2_netab.nan,Nombre d'établissements émettant plus de 10 000 tonnes de CO2,Nombre d’établissements,,2010,2023,14,14,1615,2010-2023
+sdes,itdd_france_entiere,FRA.CO2_emissions.bio,Emissions de CO2 en tonnes des établissements émettant plus de 10 000 tonnes de CO2,tonnes,,2010,2023,14,14,2.20105e+07,2010-2023
+sdes,itdd_france_entiere,FRA.CO2_emissions.nonbio,Emissions de CO2 en tonnes des établissements émettant plus de 10 000 tonnes de CO2,tonnes,,2010,2023,14,14,7.5876e+07,2010-2023
+sdes,itdd_france_entiere,FRA.CO2_emissions.total,Emissions de CO2 en tonnes des établissements émettant plus de 10 000 tonnes de CO2,tonnes,,2010,2023,14,14,9.78866e+07,2010-2023
+sdes,itdd_france_entiere,FRA.nb_suroccupes.nan,"Nombre de résidences principales, en état de sur-occupation",Nombre de logements,,2011,2022,3,3,3.0105e+06,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.nb_logement.nan,Nombre  de logements (résidences principales),Nombre de logements,,2011,2022,3,3,3.09704e+07,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.taux_lgmt_suroccupes.nan,Part des logements en situation de sur-occupation,%,,2011,2022,3,3,9.72,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.qualair_PM10.situregl,Qualité de l’air au regard des normes réglementaires journalières pour les particules fines (PM 10) dans les villes,nan,,2007,2024,18,2,1,2007-2024
+sdes,itdd_france_entiere,FRA.qualair_PM10.nbstat_val,Qualité de l’air au regard des normes réglementaires journalières pour les particules fines (PM 10) dans les villes,stations,,2007,2024,18,17,328,2007-2024
+sdes,itdd_france_entiere,FRA.qualair_PM10.nbstat_dep,Qualité de l’air au regard des normes réglementaires journalières pour les particules fines (PM 10) dans les villes,stations,,2007,2024,18,14,3,2007-2024
+sdes,itdd_france_entiere,FRA.qualair_PM10.nbjmin_dep,Qualité de l’air au regard des normes réglementaires journalières pour les particules fines (PM 10) dans les villes,jours,,2007,2024,17,6,37,"2007-2019,2021-2024"
+sdes,itdd_france_entiere,FRA.qualair_PM10.nbjmax_dep,Qualité de l’air au regard des normes réglementaires journalières pour les particules fines (PM 10) dans les villes,jours,,2007,2024,17,17,90,"2007-2019,2021-2024"
+sdes,itdd_france_entiere,FRA.qualair_PM25.situregl,"Qualité de l’air au regard des normes réglementaires annuelles pour les particules fines (PM 2,5) dans les villes",nan,,2009,2024,16,2,0,2009-2024
+sdes,itdd_france_entiere,FRA.qualair_PM25.nbstat_val,"Qualité de l’air au regard des normes réglementaires annuelles pour les particules fines (PM 2,5) dans les villes",stations,,2009,2024,16,16,238,2009-2024
+sdes,itdd_france_entiere,FRA.qualair_PM25.nbstat_dep,"Qualité de l’air au regard des normes réglementaires annuelles pour les particules fines (PM 2,5) dans les villes",stations,,2009,2024,16,4,0,2009-2024
+sdes,itdd_france_entiere,FRA.qualair_PM25.moyanmin_dep,"Qualité de l’air au regard des normes réglementaires annuelles pour les particules fines (PM 2,5) dans les villes",μg/m³,,2009,2014,6,3,26,2009-2014
+sdes,itdd_france_entiere,FRA.qualair_PM25.moyanmax_dep,"Qualité de l’air au regard des normes réglementaires annuelles pour les particules fines (PM 2,5) dans les villes",μg/m³,,2009,2014,6,4,26,2009-2014
+sdes,itdd_france_entiere,FRA.qualair_NO2.situregl,Qualité de l’air au regard des normes réglementaires annuelles pour le dioxyde d’azote (NO2) dans les villes,nan,,2000,2024,25,1,1,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_NO2.nbstat_val,Qualité de l’air au regard des normes réglementaires annuelles pour le dioxyde d’azote (NO2) dans les villes,stations,,2000,2024,25,21,351,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_NO2.nbstat_dep,Qualité de l’air au regard des normes réglementaires annuelles pour le dioxyde d’azote (NO2) dans les villes,stations,,2000,2024,25,22,4,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_NO2.moyanmin_dep,Qualité de l’air au regard des normes réglementaires annuelles pour le dioxyde d’azote (NO2) dans les villes,μg/m³,,2000,2024,25,2,41,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_NO2.moyanmax_dep,Qualité de l’air au regard des normes réglementaires annuelles pour le dioxyde d’azote (NO2) dans les villes,μg/m³,,2000,2024,25,18,44,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_O3.situregl,Qualité de l’air au regard des normes réglementaires journalières pour l’ozone (O3) dans les villes,nan,,2000,2024,25,1,1,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_O3.nbstat_val,Qualité de l’air au regard des normes réglementaires journalières pour l’ozone (O3) dans les villes,stations,,2000,2024,25,22,300,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_O3.nbstat_dep,Qualité de l’air au regard des normes réglementaires journalières pour l’ozone (O3) dans les villes,stations,,2000,2024,25,22,29,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_O3.nbjmin_dep,Qualité de l’air au regard des normes réglementaires journalières pour l’ozone (O3) dans les villes,jours,,2000,2024,25,1,26,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_O3.nbjmax_dep,Qualité de l’air au regard des normes réglementaires journalières pour l’ozone (O3) dans les villes,jours,,2000,2024,25,21,48,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_SO2.situregl,Qualité de l’air au regard des normes réglementaires journalières pour le dioxyde de soufre (SO2) dans les villes,nan,,2000,2024,25,2,0,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_SO2.nbstat_val,Qualité de l’air au regard des normes réglementaires journalières pour le dioxyde de soufre (SO2) dans les villes,stations,,2000,2024,25,24,64,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_SO2.nbstat_dep,Qualité de l’air au regard des normes réglementaires journalières pour le dioxyde de soufre (SO2) dans les villes,stations,,2000,2024,25,9,0,2000-2024
+sdes,itdd_france_entiere,FRA.qualair_SO2.nbjmin_dep,Qualité de l’air au regard des normes réglementaires journalières pour le dioxyde de soufre (SO2) dans les villes,jours,,2000,2020,11,2,4,"2000-2008,2015,2020"
+sdes,itdd_france_entiere,FRA.qualair_SO2.nbjmax_dep,Qualité de l’air au regard des normes réglementaires journalières pour le dioxyde de soufre (SO2) dans les villes,jours,,2000,2020,11,10,4,"2000-2008,2015,2020"
+sdes,itdd_france_entiere,FRA.nb_col_etud_pls.nan,Nombre de logements sociaux collectifs (y compris logements de type étudiant),Nombre de logements,,2011,2025,15,15,4.59133e+06,2011-2025
+sdes,itdd_france_entiere,FRA.nb_ind_pls.nan,Nombre de logements sociaux individuels,Nombre de logements,,2011,2025,15,15,816704,2011-2025
+sdes,itdd_france_entiere,FRA.parc_non_conv.nan,Nombre de logements sociaux du parc non conventionné des SEM,Nombre de logements,,2020,2025,6,6,107171,2020-2025
+sdes,itdd_france_entiere,FRA.nb_tot_alncsem.nan,Nombre de logements du parc locatif des bailleurs sociaux (y compris logements non conventionnés des sociétés d'économie mixte),Nombre de logements,,2020,2025,6,6,5.53327e+06,2020-2025
+sdes,itdd_france_entiere,FRA.log_hlm_tot.nan,Nombre de logements sociaux,Nombre de logements,,2011,2025,15,15,5.40804e+06,2011-2025
+sdes,itdd_france_entiere,FRA.nb_resprinc.nan,Nombre de résidences principales,Nombre de logements,,2016,2022,2,2,3.09517e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_pls.nan,Part des logements sociaux dans l'ensemble des logements,%,,2011,2025,15,15,17.47,2011-2025
+sdes,itdd_france_entiere,FRA.pop.nan,population totale,Nombre de personnes,,2016,2022,2,2,6.80171e+07,"2016,2022"
+sdes,itdd_france_entiere,FRA.log_hlm_phab.nan,Nombre de logements sociaux pour 10 000 habitants,Nombre de logements,,2011,2025,15,15,795.1,2011-2025
+sdes,itdd_france_entiere,FRA.nb_vacant_pls.nan,Nombre de logements sociaux vacants,Nombre de logements,,2011,2025,15,14,105675,2011-2025
+sdes,itdd_france_entiere,FRA.nb_dest_loc_pls.nan,Nombre de logements sociaux destinés à la location,Nombre de logements,,2011,2025,15,15,4.99822e+06,2011-2025
+sdes,itdd_france_entiere,FRA.taux_pls_vacant.nan,Taux de vacance du logement social,%,,2011,2025,15,14,2.11,2011-2025
+sdes,itdd_france_entiere,FRA.log.occas,Nombre de logements,Nombre de logements,,2016,2022,2,2,388274,"2016,2022"
+sdes,itdd_france_entiere,FRA.log.vac,Nombre de logements,Nombre de logements,,2016,2022,2,2,2.99711e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.log.res_princ,Nombre de logements,Nombre de logements,,2011,2022,3,3,3.09517e+07,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.log.res_sec,Nombre de logements,Nombre de logements,,2016,2022,2,2,3.26465e+06,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_log.occas,Part des logements selon le type de logement,%,,2016,2022,2,2,1.03,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_log.vac,Part des logements selon le type de logement,%,,2016,2022,2,2,7.97,"2016,2022"
+sdes,itdd_france_entiere,FRA.part_log.res_princ,Part des logements selon le type de logement,%,,2011,2022,3,3,82.31,"2011,2016,2022"
+sdes,itdd_france_entiere,FRA.part_log.res_sec,Part des logements selon le type de logement,%,,2016,2022,2,2,8.68,"2016,2022"
+sdes,itdd_france_entiere,FRA.quantite_dd_prod.nan,Quantité de déchets dangereux produit,Milliers tonnes,,2009,2022,8,8,5.55556e+06,"2009,2015-2016,2018-2022"
+sdes,itdd_france_entiere,FRA.nb_etab_prod_dd.nan,Nombre d’établissement producteurs de déchets dangereux,Nombre d’établissements,,2009,2022,8,8,8201,"2009,2015-2016,2018-2022"
+sdes,itdd_france_entiere,FRA.quantite_dd_trait.nan,Quantité de déchets dangereux traités,Milliers tonnes,,2015,2022,7,7,9.3595e+06,"2015-2016,2018-2022"
+sdes,itdd_france_entiere,FRA.nb_etab_trait_dd.nan,Nombre d’établissements traitant les déchets dangereux,Nombre d’établissements,,2009,2022,8,8,1779,"2009,2015-2016,2018-2022"
+sdes,itdd_france_entiere,FRA.quantite_dechets_val.nan,Quantités totales de déchets valorisés (matière ou organique),tonnes,,2015,2017,2,2,1.57342e+07,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets_tot.nan,Quantités totales de déchets collectés par le service public,tonnes,,2015,2017,2,2,3.51571e+07,"2015,2017"
+sdes,itdd_france_entiere,FRA.taux_val_dechets.nan,Taux de valorisation matière et organique des déchets ménagers et assimilés,%,,2015,2017,2,2,45.51,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets.org,Quantités de déchets collectés par mode de traitement,tonnes,,2015,2017,2,2,6.33627e+06,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets.rec,Quantités de déchets collectés par mode de traitement,tonnes,,2015,2017,2,2,9.39797e+06,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets.cet,Quantités de déchets collectés par mode de traitement,tonnes,,2015,2017,2,2,6.64407e+06,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets.inca,Quantités de déchets collectés par mode de traitement,tonnes,,2015,2017,2,2,1.20411e+07,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets.incs,Quantités de déchets collectés par mode de traitement,tonnes,,2015,2017,2,2,152463,"2015,2017"
+sdes,itdd_france_entiere,FRA.quantite_dechets.nd,Quantités de déchets collectés par mode de traitement,tonnes,,2015,2017,2,2,585175,"2015,2017"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Air_NH3,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,640,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Eau_N,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,95,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Eau_Cd,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,56,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Air_COVNM,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,496,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Eau_Hg,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,22,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Air_NOx,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,195,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Air_SOx,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,3,86,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Eau_Pb,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,27,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Air_TSP,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,16,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_etab_decla_poll.Eau_Zn,Emissions de polluants soumises à déclaration : nombre d'établissements dépassant les seuils de déclaration d'émission de polluants,nan,,2016,2022,4,4,98,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Air_NH3,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,2061.84,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Eau_N,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,879.504,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Eau_Cd,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,625.929,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Air_COVNM,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,2390.15,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Eau_Hg,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,164.1,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Air_NOx,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,837.671,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Air_SOx,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,400.147,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Eau_Pb,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,262.684,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Air_TSP,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,52.0993,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.coeff_dep_seuil_poll.Eau_Zn,Emissions de polluants soumises à déclaration : coefficient de dépassement du seuil de pollution,nan,,2016,2022,4,4,1021.45,"2016,2018,2020,2022"
+sdes,itdd_france_entiere,FRA.nb_com_catnat.atm,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,11,7,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.ava,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,11,0,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.temp82,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,2,0,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.temp99,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,2,0,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.ino,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,42,2771,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.mvt,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,38,126,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.sei,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,19,0,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.volc,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,2,0,1982-2024
+sdes,itdd_france_entiere,FRA.nb_com_catnat.sec,Nombre de communes ayant enregistré au moins un arrêté de catastrophe naturelle par type de catastrophes naturelles,Nombre de communes,,1982,2024,43,37,0,1982-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.atm,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,12,0.0748387,1991-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.ava,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,24,0.00401434,1991-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.ino,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,34,4.86337,1991-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.mvt,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,34,0.703656,1991-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.sei,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,26,0.0335484,1991-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.volc,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,2,0,1991-2024
+sdes,itdd_france_entiere,FRA.prop_com_catnat.sec,"Proportion de communes ayant enregistré au moins un arrêté de catastrophe naturelle sur une année par type de catastrophes naturelles, calculée à partir des 10 dernières années",%,,1991,2024,34,34,5.99082,1991-2024
+sdes,itdd_france_entiere,FRA.ppr_prescrit.atm,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2018,2024,6,2,66,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_prescrit.ava,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2018,2024,6,6,398,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_prescrit.feu,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2018,2024,6,5,268,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_prescrit.ino,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2011,2024,12,12,12243,"2011-2016,2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_prescrit.mvt,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2011,2024,12,12,4469,"2011-2016,2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_prescrit.sei,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2018,2024,6,6,218,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_prescrit.volc,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels prescrit,Nombre de communes,,2018,2024,6,2,66,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.atm,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2018,2024,6,2,66,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.ava,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2018,2024,6,6,358,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.feu,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2018,2024,6,5,206,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.ino,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2011,2024,12,12,12195,"2011-2016,2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.mvt,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2011,2024,12,12,3999,"2011-2016,2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.sei,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2018,2024,6,6,197,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.ppr_approuve.volc,Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé,Nombre de communes,,2018,2024,6,4,66,"2018,2020-2024"
+sdes,itdd_france_entiere,FRA.risq_nat_com.atm,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,10,9143,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.ava,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,7,618,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.feu,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,10,6893,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.ino,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,10,19441,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.mvt,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,10,20723,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.rad,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,8,8406,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.sei,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,10,20002,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.risq_nat_com.vol,Nombre de communes classées à risque naturel majeur,Nombre de communes,,2012,2025,10,2,68,"2012-2016,2018,2020,2022,2024-2025"
+sdes,itdd_france_entiere,FRA.surf_prot.for_pro,Ensemble des surfaces protegées (zonages d’enjeux écologique et dispositifs de protection),hectares,,2019,2019,1,1,3.31001e+06,2019
+sdes,itdd_france_entiere,FRA.surf_prot.tou_pro,Ensemble des surfaces protegées (zonages d’enjeux écologique et dispositifs de protection),hectares,,2019,2019,1,1,2.17414e+07,2019
+sdes,itdd_france_entiere,FRA.surf_inventaires.znieff1,Surfaces inventaires des espaces naturels,hectares,,2019,2019,1,1,6.64564e+06,2019
+sdes,itdd_france_entiere,FRA.surf_inventaires.znieff2,Surfaces inventaires des espaces naturels,hectares,,2019,2019,1,1,1.74371e+07,2019
+sdes,itdd_france_entiere,FRA.surf_inventaires.zzz,Surfaces inventaires des espaces naturels,hectares,,2019,2019,1,1,2.03742e+07,2019
+sdes,itdd_france_entiere,FRA.surf_natura2000.sic,Surfaces Natura 2000,hectares,,2019,2019,1,1,4.88592e+06,2019
+sdes,itdd_france_entiere,FRA.surf_natura2000.zps,Surfaces Natura 2000,hectares,,2019,2019,1,1,4.43781e+06,2019
+sdes,itdd_france_entiere,FRA.surf_natura2000.natura,Surfaces Natura 2000,hectares,,2019,2019,1,1,7.10949e+06,2019
+sdes,itdd_france_entiere,FRA.surf_prot_regl.pnc,Espaces de protection réglementaire,hectares,,2019,2019,1,1,2.51111e+06,2019
+sdes,itdd_france_entiere,FRA.surf_prot_regl.rnr,Espaces de protection réglementaire,hectares,,2019,2019,1,1,40321.3,2019
+sdes,itdd_france_entiere,FRA.surf_prot_regl.apb,Espaces de protection réglementaire,hectares,,2019,2019,1,1,212512,2019
+sdes,itdd_france_entiere,FRA.surf_prot_regl.rncfs,Espaces de protection réglementaire,hectares,,2019,2019,1,1,31027.7,2019
+sdes,itdd_france_entiere,FRA.surf_prot_regl.rbfd,Espaces de protection réglementaire,hectares,,2019,2019,1,1,134958,2019
+sdes,itdd_france_entiere,FRA.surf_prot_regl.rn,Espaces de protection réglementaire,hectares,,2019,2019,1,1,446800,2019
+sdes,itdd_france_entiere,FRA.surf_prot_contr.pnp,Espaces de protection contractuelle,hectares,,2019,2019,1,1,2.08221e+06,2019
+sdes,itdd_france_entiere,FRA.surf_prot_contr.pnr,Espaces de protection contractuelle,hectares,,2019,2019,1,1,9.13052e+06,2019
+sdes,itdd_france_entiere,FRA.surf_prot_contr.ramsar,Espaces de protection contractuelle,hectares,,2019,2019,1,1,952455,2019
+sdes,itdd_france_entiere,FRA.surf_prot_contr.bio,Espaces de protection contractuelle,hectares,,2019,2019,1,1,3.79764e+06,2019
+sdes,itdd_france_entiere,FRA.surf_prot_autre.celrl,Autres types d’espaces de protection,hectares,,2019,2019,1,1,173562,2019
+sdes,itdd_france_entiere,FRA.ElectionPres_T1_votants.nan,Nombre de votants pour le 1er tour des présidentielles,Nombre de personnes,,2002,2022,5,5,3.52662e+07,"2002,2007,2012,2017,2022"
+sdes,itdd_france_entiere,FRA.ElectionPres_T1_inscrits.nan,Nombre d'inscrits sur les listes électorales pour le 1er tour des présidentielles,Nombre de personnes,,2002,2022,5,5,4.68488e+07,"2002,2007,2012,2017,2022"
+sdes,itdd_france_entiere,FRA.taux_participation.nan,Participation au premier tour des élections présidentielles,%,,2002,2022,5,5,75.28,"2002,2007,2012,2017,2022"
+sdes,itdd_france_entiere,FRA.nb_expl_hve.nan,Nombre d'exploitations de haute valeur environnementale (HVE),Nombre d'exploitations,,2017,2025,9,9,39738,2017-2025
+sdes,itdd_france_entiere,FRA.taux_mort_infant.nan,Taux de mortalité infantile (pour 1000 enfants nés vivants sur les années N-3 à N-1),‰,,2019,2024,6,2,3.8,2019-2024
+sdes,itdd_france_entiere,FRA.reemploi.asso,Nombre de structures chargées du réemploi,Nombre de structures,,2011,2025,10,9,2589,"2011-2013,2016,2019-2021,2023-2025"
+sdes,itdd_france_entiere,FRA.reemploi.ent,Nombre de structures chargées du réemploi,Nombre de structures,,2012,2025,9,7,4968,"2012-2013,2016,2019-2021,2023-2025"
+sdes,itdd_france_entiere,FRA.reemploi.epub,Nombre de structures chargées du réemploi,Nombre de structures,,2012,2025,9,3,18,"2012-2013,2016,2019-2021,2023-2025"
+sdes,itdd_france_entiere,FRA.phyto_qtach.cmr,Quantité de substances achetées selon leur toxicité,Quantité en kg,,2015,2023,9,9,1.02801e+07,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.non_cmr,Quantité de substances achetées selon leur toxicité,Quantité en kg,,2015,2023,9,9,5.3489e+07,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.fongi_bacteri,Quantité de substances achetées selon leur fonction,Quantité en kg,,2015,2023,9,9,2.58939e+07,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.herbi,Quantité de substances achetées selon leur fonction,Quantité en kg,,2015,2023,9,9,2.91813e+07,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.insecti_acari,Quantité de substances achetées selon leur fonction,Quantité en kg,,2015,2023,9,9,5.39963e+06,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.autre,Quantité de substances achetées selon leur fonction,Quantité en kg,,2015,2023,9,9,3.29435e+06,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.total,Quantité de substances achetées,Quantité en kg,,2015,2023,9,9,6.37691e+07,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.glypho,Quantité de substances achetées selon présence de glyphosate,Quantité en kg,,2015,2023,9,9,6.67417e+06,2015-2023
+sdes,itdd_france_entiere,FRA.phyto_qtach.non_glypho,Quantité de substances achetées selon présence de glyphosate,Quantité en kg,,2015,2023,9,9,5.7095e+07,2015-2023
+sdes,itdd_france_entiere,FRA.surf_sols.agri,Occupation des sols,Hectare,,2019,2023,5,5,2.78376e+07,2019-2023
+sdes,itdd_france_entiere,FRA.surf_sols.artif,Occupation des sols,Hectare,,2019,2023,5,5,5.33152e+06,2019-2023
+sdes,itdd_france_entiere,FRA.surf_sols.nat,Occupation des sols,Hectare,,2019,2023,5,5,3.06748e+07,2019-2023
+sdes,itdd_france_entiere,FRA.surf_sols.total,Occupation des sols,Hectare,,2019,2023,5,3,6.38439e+07,2019-2023
+sdes,itdd_france_entiere,FRA.surf_sols_nat.eaux,Occupation des sols (détail surfaces naturelles),Hectare,,2023,2023,1,1,1.66654e+06,2023
+sdes,itdd_france_entiere,FRA.surf_sols_nat.forets,Occupation des sols (détail surfaces naturelles),Hectare,,2023,2023,1,1,2.54335e+07,2023
+sdes,itdd_france_entiere,FRA.surf_sols_nat.land_frich_maq,Occupation des sols (détail surfaces naturelles),Hectare,,2023,2023,1,1,1.64582e+06,2023
+sdes,itdd_france_entiere,FRA.surf_sols_nat.nusnat,Occupation des sols (détail surfaces naturelles),Hectare,,2023,2023,1,1,532375,2023
+sdes,itdd_france_entiere,FRA.surf_sols_nat.autr_bois,Occupation des sols (détail surfaces naturelles),Hectare,,2023,2023,1,1,1.39662e+06,2023
+sdes,itdd_france_entiere,FRA.surf_sols_artif.batis,Occupation des sols (détail surfaces artificialisées),Hectare,,2023,2023,1,1,854578,2023
+sdes,itdd_france_entiere,FRA.surf_sols_artif.revet,Occupation des sols (détail surfaces artificialisées),Hectare,,2023,2023,1,1,1.42892e+06,2023
+sdes,itdd_france_entiere,FRA.surf_sols_artif.autre,Occupation des sols (détail surfaces artificialisées),Hectare,,2023,2023,1,1,2.06964e+06,2023
+sdes,itdd_france_entiere,FRA.surf_sols_artif.stabili,Occupation des sols (détail surfaces artificialisées),Hectare,,2023,2023,1,1,978379,2023
+sdes,itdd_france_entiere,FRA.parc_vp.critair1_essence,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,1.05751e+07,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair1_esshybrr,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,554851,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair1_gazolhybrr,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,21139.1,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair1_esshnr,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,1.53375e+06,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair1_gaz,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,288624,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair1_autre,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,2,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair2_essence,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,2.3788e+06,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair2_esshnr,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,7980.55,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair2_gazol,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,1.14667e+07,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair2_gazolhnr,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,166114,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair2_autre,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,7,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair3,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,7.60114e+06,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair4,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,2.29567e+06,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critair5,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,489279,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critairE,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,868124,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critairnc_gazol,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,267682,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critairnc_essence,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,716439,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vp.critairnc_autre,Nombre de voitures particulières immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,4206.89,2011-2024
+sdes,itdd_france_entiere,FRA.part_critair_1_0_vp.nan,Part des voitures particulières crit’air1 ou électriques dans l’ensemble du parc,%,,2011,2024,14,14,36.19,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair1_essence,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,11,128.283,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair1_gaz,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,10025.1,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair1_autre,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,10,15.112,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair2_essence,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,12,27.771,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair2_gazol,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,380596,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair2_gazolhnr,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,10,218.928,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair2_autre,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,3,0,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair3,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,81309.7,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair4,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,49894.8,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critair5,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,52574.8,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critairE,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,13,906.978,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critairnc_gazol,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,48007.1,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critairnc_essence,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,14,305.813,2011-2024
+sdes,itdd_france_entiere,FRA.parc_pl.critairnc_autre,Nombre de poids lourds immatriculés selon énergie et vignette Crit’Air,Nombre de poids lourds,,2011,2024,14,13,263.664,2011-2024
+sdes,itdd_france_entiere,FRA.part_critair_1_0_pl.nan,Part des poids lourds crit’air1 ou électriques dans l’ensemble du parc,%,,2011,2024,14,12,1.92,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair1_essence,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,171242,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair1_esshybrr,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,2508.59,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair1_gazolhybrr,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,10,60,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair1_esshnr,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,21922.3,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair1_gaz,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,13,19877.6,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair1_autre,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,6,1,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair2_essence,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,14936.3,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair2_esshnr,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,7,0.983,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair2_gazol,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,3.70245e+06,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair2_gazolhnr,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,6441.44,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair2_autre,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,13,0,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair3,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,1.19402e+06,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair4,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,688175,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critair5,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,231508,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critairE,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,101433,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critairnc_gazol,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,257160,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critairnc_essence,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,62579.9,2011-2024
+sdes,itdd_france_entiere,FRA.parc_vul.critairnc_autre,Nombre de véhicules utilitaires légers immatriculés selon énergie et vignette Crit’Air,Nombre de voitures,,2011,2024,14,14,2150.69,2011-2024
+sdes,itdd_france_entiere,FRA.part_critair_1_0_vul.nan,Part des véhicules utilitaires légers crit’air1 ou électriques dans l’ensemble du parc,%,,2011,2024,14,14,5.15,2011-2024
+sdes,itdd_france_entiere,FRA.locaux_raccor.nan,Part des locaux raccordables FTTH (fibre optique),%,,2019,2024,5,5,89.39,"2019-2021,2023-2024"
+sdes,itdd_france_entiere,FRA.couv4g.nan,Part de la surface couverte en 4G par a minima un opérateur,%,,2019,2024,4,4,99.05,"2019,2021,2023-2024"
+sdes,itdd_france_entiere,FRA.enerc2e.classiq_res,Économies d’énergie C2E,kWh Cumac,,2017,2022,6,6,1.42475e+11,2017-2022
+sdes,itdd_france_entiere,FRA.enerc2e.precar_res,Économies d’énergie C2E,kWh Cumac,,2017,2022,6,6,6.7622e+10,2017-2022
+sdes,itdd_france_entiere,FRA.enerc2e.classiq_ter,Économies d’énergie C2E,kWh Cumac,,2017,2022,6,6,1.23019e+10,2017-2022
+sdes,itdd_france_entiere,FRA.enerc2e.precar_ter,Économies d’énergie C2E,kWh Cumac,,2017,2022,6,6,434646,2017-2022
+sdes,itdd_france_entiere,FRA.elec_renouv.prodbrut,Électricité renouvelable,Twh,,2018,2023,6,6,140.716,2018-2023
+sdes,itdd_france_entiere,FRA.solaire_therm.surf_inst,Solaire thermique,millier de m²,,2018,2023,6,5,4072.36,2018-2023
+sdes,itdd_france_entiere,FRA.puissance_inst.hydraulique,Puissance des installations,MW,,2018,2023,6,6,24569.3,2018-2023
+sdes,itdd_france_entiere,FRA.puissance_inst.eolien,Puissance des installations,MW,,2019,2024,6,6,24967,2019-2024
+sdes,itdd_france_entiere,FRA.puissance_inst.eolien_mer,Puissance des installations,MW,,2022,2024,3,3,1508,2022-2024
+sdes,itdd_france_entiere,FRA.puissance_inst.eolien_ter,Puissance des installations,MW,,2022,2024,3,3,23459,2022-2024
+sdes,itdd_france_entiere,FRA.puissance_inst.photovolt,Puissance des installations,MW,,2019,2024,6,6,25310,2019-2024
+sdes,itdd_france_entiere,FRA.puissance_inst.biogaz,Puissance des installations,MW,,2020,2024,5,5,589.6,2020-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_homicides.nan,Nombre d’homicides pour 1000 habitants,‰,,2016,2024,9,9,0.0143493,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_violences_horsfam.nan,Nombre de violences hors cadre familial pour 1000 habitants,‰,,2016,2024,9,9,3.0207,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_violences_sex.nan,Nombre de violences sexuelles pour 1000 habitants,‰,,2016,2024,9,9,1.80019,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_violences_intrafam.nan,Nombre de violences intrafamiliales pour 1000 habitants,‰,,2016,2024,9,9,3.59263,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_degrad.nan,Nombre de dégradations et destructions pour 1000 habitants,‰,,2016,2024,9,9,7.77524,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_vols_pers.nan,Nombre de vols sans violence contre des personnes pour 1000 habitants,‰,,2016,2024,9,9,8.93558,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_vols_vehic.nan,Nombre de vols de véhicule pour 1000 habitants,‰,,2016,2024,9,9,2.02273,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_cambriolages.nan,Nombre de cambriolages pour 1000 logements,‰,,2016,2024,9,9,5.85972,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_fraudpaie.nan,Nombre de fraudes au moyen de paiement pour 1000 habitants,‰,,2016,2024,9,9,6.09631,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_usagstup.nan,Nombre d’usages de stupéfiants pour 1000 habitants,‰,,2016,2024,9,9,4.27284,2016-2024
+sdes,itdd_france_entiere,FRA.infrac_tx_traficstup.nan,Nombre de trafics de stupéfiants pour 1000 habitants,‰,,2016,2024,9,9,0.772482,2016-2024
+sdes,itdd_france_entiere,FRA.bas_niveau_francais.nan,Part des élèves de 6ème à bas niveau en français,%,,2017,2024,8,7,26.9,2017-2024
+sdes,itdd_france_entiere,FRA.bas_niveau_maths.nan,Part des élèves de 6ème à bas niveau en mathématiques,%,,2017,2024,8,7,32.2,2017-2024

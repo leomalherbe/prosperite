@@ -1,6 +1,6 @@
 # Charte du projet — Observatoire de la prospérité
 
-Version 1.1 — 13 octobre 2026 (§3.6 et feuille de route mis à jour après la phase 1) — rédigée par la session mère, validée par Léo Malherbe.
+Version 1.2 — 13 octobre 2026 (§4 : grille v1 figée au gel 1 ; §3.6 et feuille de route mis à jour) — rédigée par la session mère, validée par Léo Malherbe.
 Document de référence pour toutes les sessions et tous les agents du projet. **À lire avant toute mission.**
 
 ---
@@ -27,7 +27,7 @@ Deux finalités à terme :
 
 ### 3.1 Deux sens de « subjectif », distingués explicitement
 - **Subjectivité du paramétrage** : chaque utilisateur choisit dimensions, poids, indicateurs, seuils, règle d'agrégation. C'est le cœur de l'outil.
-- **Données déclaratives** : les indicateurs de bien-être ressenti (satisfaction dans la vie, santé perçue, confiance, sentiment d'insécurité…) sont admis **comme indicateurs** dans les dimensions, signalés par un drapeau `declaratif = oui`. Ils ne constituent pas une dimension à part (sauf arbitrage en mission M03).
+- **Données déclaratives** : les indicateurs de bien-être ressenti (satisfaction dans la vie, santé perçue, confiance, sentiment d'insécurité…) sont admis **comme indicateurs** dans les dimensions, signalés par un drapeau `declaratif = oui`. Ils ne constituent pas une dimension à part (arbitrage A1 du gel 1 : la satisfaction dans la vie est un indicateur ordinaire de la dimension 6).
 
 ### 3.2 Un seul indice, mais des règles d'agrégation au choix
 - Sortie principale : **un indice unique 0–100**, plus les scores par dimension, la trajectoire et la couverture.
@@ -73,24 +73,24 @@ Deux gels successifs, chacun avec des critères explicites, un dossier de décis
 
 **Ensuite** : socle des bornes v1 (même mécanique, classeur par dimension) ; puis boucle intersubjective sur la structure (dimensions jamais activées, indicateurs toujours décochés → arguments pour une v2).
 
-## 4. Grille de dimensions v0 (provisoire, à consolider en mission M03)
+## 4. Grille de dimensions v1 — FIGÉE (gel 1, 13 octobre 2026)
 
-Sert à orienter le moissonnage et le tagging. Chaque dimension est de type **plancher social** (on vise au-dessus d'un minimum) ou **plafond écologique** (on vise en dessous d'un maximum).
+Décisions de Léo Malherbe (journal D23 à D26) sur le dossier de décision de M03 (`docs/methodo/31_dossier_decision_gel1.md`). Le fichier de référence est `indicateurs/dimensions.yaml` (définitions, contenu, exclusions, règles de rattachement R1–R8). Toute modification passe par une décision au journal et un changement de version. Chaque dimension est de type **plancher** (on vise au-dessus d'un minimum) ou **plafond** (on vise en dessous d'un maximum).
 
-| # | Dimension (id) | Contenu indicatif | Type |
+| # | Dimension (id) | Contenu | Type |
 |---|---|---|---|
-| 1 | Niveau de vie et économie (`niveau_de_vie`) | Revenu disponible, consommation, pauvreté monétaire et en conditions de vie, patrimoine, PIB/hab., investissement, dette | plancher |
-| 2 | Travail et emploi (`travail`) | Taux d'emploi, chômage et chômage de longue durée, NEET, qualité et sécurité de l'emploi, accidents, temps de travail, satisfaction au travail | plancher |
-| 3 | Logement et cadre de vie (`logement_cadre_vie`) | Coût et qualité du logement, surpeuplement, précarité énergétique, qualité de l'air locale, bruit, accès à la nature, mobilité | plancher |
-| 4 | Santé (`sante`) | Espérance de vie (en bonne santé), mortalité évitable, santé perçue, accès aux soins, santé mentale, comportements | plancher |
-| 5 | Éducation, compétences et culture (`education`) | Sorties précoces, diplômes, compétences (PISA, PIAAC), formation des adultes, numérique, pratiques culturelles | plancher |
-| 6 | Vie personnelle, liens sociaux et bien-être ressenti (`liens_bien_etre`) | Soutien social, isolement, temps libre, équilibre vie pro/perso, satisfaction dans la vie, sens, affects | plancher |
-| 7 | Sécurité et confiance (`securite_confiance`) | Homicides, violences, sentiment d'insécurité, sécurité économique (épargne de précaution, impayés), confiance interpersonnelle | plancher |
-| 8 | Démocratie, droits et institutions (`democratie`) | Participation électorale, confiance dans les institutions, libertés (presse, expression, académique), corruption perçue, indépendance de la justice, voix politique | plancher |
-| 9 | Égalités (`egalites`) | Inégalités de revenu et de patrimoine, écarts femmes-hommes, inégalités territoriales, intergénérationnelles, mobilité sociale | plancher |
-| 10 | Planète (`planete`) | Émissions et empreinte carbone, biodiversité, artificialisation des sols, ressources et circularité, eau, azote, pollutions | plafond |
+| 1 | Niveau de vie (`niveau_de_vie`) | Revenus, pouvoir d'achat, consommation, PIB par habitant (indicateur ordinaire), pauvreté et privations, accès à l'alimentation, patrimoine des ménages | plancher |
+| 2 | Travail et emploi (`travail`) | Emploi, chômage, NEET, qualité et sécurité de l'emploi, conditions et santé au travail (dont longues durées et horaires atypiques), satisfaction au travail | plancher |
+| 3 | Logement et cadre de vie (`logement_cadre_vie`) | Coût et qualité du logement, surpeuplement, précarité énergétique, environnement local subi (air, bruit, eau du robinet, nature), accès aux services, transports, infrastructures et numérique | plancher |
+| 4 | Santé (`sante`) | Espérance de vie (en bonne santé), mortalité évitable, santé perçue, santé mentale, accès aux soins, comportements et nutrition | plancher |
+| 5 | Éducation et compétences (`education`) | Diplômes, sorties précoces, compétences des élèves et des adultes, compétences numériques, formation des adultes, effort de R&D | plancher |
+| 6 | Liens sociaux et bien-être ressenti (`liens_bien_etre`) | Soutien social, solitude, confiance envers les autres, engagement, loisirs et pratiques culturelles et sportives, satisfaction dans la vie (indicateur ordinaire), émotions, sens | plancher |
+| 7 | Sécurité (`securite`) | Atteintes aux personnes et aux biens, sentiment d'insécurité, sécurité routière, sécurité économique des ménages | plancher |
+| 8 | Démocratie et institutions (`democratie`) | Participation, libertés, État de droit et justice, corruption, confiance dans les institutions ; composites admis par familles | plancher |
+| 9 | Égalités (`egalites`) | Inégalités de revenu et de patrimoine, écarts femmes-hommes, écarts et discriminations selon l'origine, territoires, générations, mobilité sociale | plancher |
+| 10 | Planète (`planete`) | Émissions et empreinte carbone, aléas climatiques subis, énergie (consommation, fossiles, renouvelables), biodiversité, sols, eau, azote et phosphore, agriculture, pollutions, matières et recyclage | plafond |
 
-Points à arbitrer en M03 : place de la satisfaction globale (dimension 6 ou transversale) ; alimentation (1 ou 4) ; énergie (3 ou 10) ; innovation/infrastructures (1 ou dimension propre, sachant la limite de 10).
+**Hors v1** (décisions A4, A5, A16) : le thème « temps libre, travail domestique et équilibre des temps » (les durées et horaires de travail restent dans travail, D27) ; la dette publique, l'investissement et le patrimoine national ; la stabilité financière.
 
 ## 5. Modèle de données
 

@@ -1,0 +1,709 @@
+# data_gouv / jeu_ssmsi_bases_delinquance
+# URL : https://www.data.gouv.fr/api/1/datasets/621df2954fa5a3b5a023e23c/
+# Vérifié le 2026-10-13T14:46:37Z — HTTP 200 — application/json — 36814 octets lus (taille annoncée : inconnue)
+
+{
+ "access_audiences": [],
+ "access_type": "open",
+ "access_type_reason": null,
+ "access_type_reason_category": null,
+ "acronym": null,
+ "archived": null,
+ "authorization_request_url": null,
+ "badges": [],
+ "contact_points": [],
+ "created_at": "2022-03-01T11:16:53.477000+00:00",
+ "deleted": null,
+ "description": "Visualisez les résultats détaillés sur [cette application](https://ssmsi.shinyapps.io/donneesterritoriales/).\n\n**Afin de favoriser l’ouverture des données sur la délinquance et l’insécurité, le SSMSI met à disposition, 3 bases de données annuelles (communale, départementale et régionale) sur les principaux indicateurs des crimes et délits enregistrés par la police et la gendarmerie nationales, depuis 2016, toutes les trois selon le lieu de commission.**\nCes bases ont vocation à être enrichies au fur et à mesure que les données pour d’autres indicateurs seront fiabilisées.\n\n**Précisions sur les données**\n\nDans le cadre de leur activité judiciaire, les forces de sécurité (services de police et unités de gendarmerie) sont amenées à rédiger des procédures relatives à des infractions, avant de les transmettre à l’autorité judiciaire qui est susceptible de les requalifier par la suite. Ces infractions ont pu être constatées suite à une plainte déposée par une victime, à un signalement, un témoignage, un flagrant délit, une dénonciation, etc., mais aussi sur l’initiative des forces de sécurité.\n\nDepuis 1972, les services de sécurité (police et gendarmerie) se sont dotées d’un outil standardisé de mesure de l’activité judiciaire des services basé sur des comptages mensuels, appelé « État 4001 ». Ce document administratif porte sur les crimes et les délits (à l’exclusion des contraventions et des délits routiers), enregistrés pour la première fois par les forces de sécurité et portés à la connaissance de l’institution judiciaire. Les infractions y sont classées en 107 catégories (appelés « index »), très hétérogènes par la nature et la gravité des faits, mais aussi par le nombre d’infractions constatées chaque mois. Selon l’index, l’unité de compte retenue peut varier : elle peut être la victime par exemple en matière de violence sexuelle, l’auteur par exemple en matière d’usage ou d’usage revente de stupéfiants ou encore le véhicule en matière de vol de véhicule, etc. Cela implique qu’il n’est pas pertinent de constituer des agrégats regroupant des index n’ayant pas la même unité de compte.\n\nDepuis sa création fin 2014, le Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) expertise et fiabilise ces différents index et diffuse des indicateurs choisis et construits à partir de regroupements de ces index.\n\nLa disponibilité, depuis le printemps 2016, de bases de données détaillées sur les infractions constatées a permis la construction de catégories statistiques plus fines que celles de « l’état 4001» (comptages historiques suivis par le ministère de l’Intérieur) : repérage des violences intrafamiliales, analyses par types de victimes ou selon la localisation des faits (par exemple dans les transports en commun).\n\n_Calendrier des enrichissements/modifications :_\n\n* *Juillet 2026 : Intégration de la géographie des communes connue au 1er janvier 2026. Révision de l’indicateur des amendes forfaitaires délictuelles (AFD) pour usage de stupéfiants.*\n\n* *Mars 2026 : ajout d'information complémentaire sur la force compétente sur la commune : police, gendarmerie ou les deux.*\n\n* *Juillet 2025 : Intégration de la géographie des communes connue au 1er janvier 2025. Remplacement de l’indicateur des « coups et blessures volontaires sur personne de 15 ans ou plus » par deux nouveaux indicateurs : les « violences physiques intrafamiliales » et les « violences physiques hors cadre familial ».*\n\n* *Mars 2025 : Intégration de l’indicateur relatif aux escroqueries à l’échelon communal (pour plus de détails cf.* *[Interstats Analyse numéro 74](https://www.interieur.gouv.fr/Interstats/Publications-et-infographies/Interstats-Analyse)) et des amendes forfaitaires délictuelles (AFD) pour usage de stupéfiants (pour plus de détails cf.* *[Document de travail numéro 2](https://www.interieur.gouv.fr/Interstats/Publications-et-infographies/Documents-de-travail)).*\n\n* _Janvier 2025 : Intégration de l’indicateur relatif aux tentatives d’homicides à l’échelon départemental et régional ; renommage des variables._\n\n* _Juillet 2024 : Intégration de la géographie des communes connue au 1er janvier 2024._\n\n* _Mars 2024 : Ajout des arrondissements de Paris, Lyon et Marseille pour les indicateurs usage et trafic de stupéfiants dans la base communale ; création d'une base régionale pour l'ensemble des indicateurs de la délinquance disponibles._\n\n* _Février 2024 : Ajout de la base communale au format Parquet ; révision du fichier départemental sur les destructions et dégradations volontaires en 2023 (ajout de remontées d’informations tardives)._\n\n* _Janvier 2024 : Ajouts des indicateurs relatifs aux homicides et aux escroqueries à l’échelon départemental (pour plus de détails cf._ _[Interstats Analyse n°65 - Géographie départementale de la délinquance enregistrée en 2023](https://www.interieur.gouv.fr/Interstats/Publications/Interstats-Analyse/Geographie-departementale-de-la-delinquance-enregistree-en-2023-Interstats-Analyse-n-65))._\n\n* _Juillet 2023 : Ajouts des indicateurs relatifs à l’usage et au trafic de stupéfiants, intégration de la géographie des communes connue au 1er janvier 2023, intégration de la géographie des communes connue au 1er janvier 2023._\n\n* _Mars 2023 : Ajout de l’indicateur relatif aux destructions et dégradations volontaires, extension du champ géographique aux DROM et ajout des arrondissements de Paris, Lyon et Marseille._\n\n* _Septembre 2022 : Intégration de la géographie des communes connue au 1er janvier 2022._\n\n* _Juin 2022 : Rectification de la valeur de certains taux départementaux de délinquance pour 1000 habitants/logements. Pour les départements de Paris, du Rhône et des Bouches-du-Rhône, les habitants/logements de Paris, Lyon et Marseille ont été comptés en double (en sommant la population de la commune et celle de ses arrondissements). Ceci a induit une erreur dans les taux de délinquance pour 1 000 habitants/logements de ces départements._\n\n* _Mars 2022 : Création des bases communale et départementale._\n\nLes données diffusées sont limitées aux communes pour lesquelles plus de 5 faits ont été enregistrés pendant 3 années successives. Cette précaution est motivée : d’une part par la fragilité des estimations sur des communes qui enregistrent peu de faits de délinquance (cf. [Interstats Analyse n°66 - Géographie de la délinquance à l'échelle communale en 2023](https://www.interieur.gouv.fr/Interstats/Publications/Interstats-Analyse/Geographie-de-la-delinquance-a-l-echelle-communale-en-2023-Interstats-Analyse-n-66)), d’autre part par le secret statistique qui ne doit pas permettre, par le croisement de multiples sources, de déduire des informations individuelles sur les personnes concernées dans ces procédures. Cette précaution doit notamment être appréciée au regard de la sensibilité de certaines atteintes comme les violences sexuelles. La base de données diffusée fournit également l'information sur l'absence de faits enregistrés lorsqu’elle se reproduit sur 3 années successives. Les données communales de délinquance ventilées par lieu de commission en 2014 et en 2015 n’étant pas disponibles, les données communales de 2016 et de 2017 sont diffusées si les critères de diffusion pour l’année 2018 sont vérifiés.\n\nOutre les indicateurs des crimes et délits, la base communale comporte des données informatives relatives à la commune où se sont produits les faits, telles que les codes officiels géographiques de la commune, du département et de la région d’appartenance, leurs libellés respectifs, les populations résidentes correspondantes,… (pour plus de détails se référer à l’espace Documentation ci-dessous)\n\n**Dernière mise à jour :** juillet 2026\n",
+ "description_short": null,
+ "doi": null,
+ "extras": {},
+ "featured": true,
+ "frequency": "annual",
+ "frequency_date": "2023-03-02T08:15:12+00:00",
+ "geopf": null,
+ "harvest": null,
+ "id": "621df2954fa5a3b5a023e23c",
+ "internal": {
+  "created_at_internal": "2022-03-01T11:16:53.477000+00:00",
+  "last_modified_internal": "2026-07-09T12:01:37.059000+00:00"
+ },
+ "last_modified": "2026-07-09T12:01:37.059000+00:00",
+ "last_update": "2026-07-09T12:01:37.058000+00:00",
+ "license": "lov2",
+ "metrics": {
+  "dataservices": 1,
+  "discussions": 24,
+  "discussions_open": 11,
+  "followers": 21,
+  "followers_by_months": {
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 0,
+   "2026-01": 0,
+   "2026-02": 0,
+   "2026-03": 0,
+   "2026-04": 0,
+   "2026-05": 0,
+   "2026-06": 0,
+   "2026-07": 0,
+   "2026-08": 0,
+   "2026-09": 0,
+   "2026-10": 0
+  },
+  "resources_downloads": 286954,
+  "reuses": 54,
+  "reuses_by_months": {
+   "2025-10": 0,
+   "2025-11": 0,
+   "2025-12": 1,
+   "2026-01": 2,
+   "2026-02": 1,
+   "2026-03": 1,
+   "2026-04": 0,
+   "2026-05": 2,
+   "2026-06": 4,
+   "2026-07": 4,
+   "2026-08": 16,
+   "2026-09": 6,
+   "2026-10": 1
+  },
+  "views": 300719
+ },
+ "organization": {
+  "acronym": "MI",
+  "badges": [
+   {
+    "kind": "public-service"
+   },
+   {
+    "kind": "certified"
+   }
+  ],
+  "class": "Organization",
+  "id": "534fff91a3a7292c64a77f53",
+  "logo": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/e1/27853c13394328b06c071c7953856a.jpg",
+  "logo_thumbnail": "https://udata-avatars.s3.rbx.io.cloud.ovh.net/e1/27853c13394328b06c071c7953856a-100.jpg",
+  "name": "Ministère de l'intérieur",
+  "page": "https://www.data.gouv.fr/organizations/ministere-de-linterieur",
+  "permissions": {
+   "delete": false,
+   "edit": false,
+   "harvest": false,
+   "members": false,
+   "private": false
+  },
+  "slug": "ministere-de-linterieur",
+  "uri": "https://www.data.gouv.fr/api/1/organizations/ministere-de-linterieur/"
+ },
+ "owner": null,
+ "page": "https://www.data.gouv.fr/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales",
+ "permissions": {
+  "delete": false,
+  "edit": false,
+  "edit_resources": false
+ },
+ "private": false,
+ "quality": {
+  "all_resources_available": true,
+  "dataset_description_quality": true,
+  "has_open_format": true,
+  "has_resources": true,
+  "license": true,
+  "resources_documentation": true,
+  "score": 1.0,
+  "spatial": true,
+  "temporal_coverage": true,
+  "update_frequency": true,
+  "update_fulfilled_in_time": true
+ },
+ "resources": [
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "5a378d21e7ad22f760bcb7908d4bc40f7a93ed7e"
+   },
+   "created_at": "2026-06-29T15:03:10.696000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49721225,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-09T11:58:12+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:parsing:error": "csv_detective:Table seems to be empty",
+    "analysis:parsing:finished_at": "2026-06-29T15:03:53.464464+00:00",
+    "analysis:parsing:started_at": "2026-06-29T15:03:53.403913+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-07-09T11:58:15.808649+00:00",
+    "check:headers:content-length": 174436049,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 49721225,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 174436049,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "3e7cf5e1-a084-4a6a-9a55-7c36a4e72aaf",
+   "internal": {
+    "created_at_internal": "2026-06-29T15:03:10.696000+00:00",
+    "last_modified_internal": "2026-07-09T11:58:12.801000+00:00"
+   },
+   "last_modified": "2026-07-09T11:58:12.801000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/3e7cf5e1-a084-4a6a-9a55-7c36a4e72aaf",
+   "metrics": {
+    "views": 2563
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": null,
+   "title": "Atlas départemental de la délinquance enregistrée en 2025 - Édition juillet 2026",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-115756/atlas-2026.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "a5b2dad1c4103c22b9e81bc2525bc368304e1a2c"
+   },
+   "created_at": "2026-03-27T11:06:34.764000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49827990,
+    "analysis:checksum": "a5b2dad1c4103c22b9e81bc2525bc368304e1a2c",
+    "analysis:content-length": 3768542,
+    "analysis:last-modified-at": "2026-07-09T11:58:33+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "analysis:parsing:error": "copy_records_to_table:\"There is no item named 'xl/drawings/drawing1.xml' in the archive\"",
+    "analysis:parsing:finished_at": "2026-07-11T15:27:03.289152+00:00",
+    "analysis:parsing:started_at": "2026-07-11T15:26:00.492771+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-07-11T15:25:24.590588+00:00",
+    "check:headers:content-length": 3768542,
+    "check:headers:content-type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "check:id": 49827990,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 3768542,
+   "filetype": "file",
+   "format": "xlsx",
+   "geopf": null,
+   "harvest": null,
+   "id": "a2af06fc-ba6c-4e6c-a69a-ac222817c93f",
+   "internal": {
+    "created_at_internal": "2026-03-27T11:06:34.764000+00:00",
+    "last_modified_internal": "2026-07-09T11:58:34.249000+00:00"
+   },
+   "last_modified": "2026-07-09T11:58:34.249000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/a2af06fc-ba6c-4e6c-a69a-ac222817c93f",
+   "metrics": {
+    "views": 11938
+   },
+   "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+   "preview_url": null,
+   "schema": null,
+   "title": "COM COMPL - Base statistique communale de la délinquance enregistrée par la police et la gendarmerie nationales (fichier complémentaire)",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-115833/info-complements-data.gouv-2025-geographie2026-produit-le2026-06-25.xlsx"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "287b5105a136d0f1a08302a80ec87bcad6ef0257"
+   },
+   "created_at": "2026-03-26T12:43:12.813000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49721295,
+    "analysis:checksum": "287b5105a136d0f1a08302a80ec87bcad6ef0257",
+    "analysis:content-length": 277329,
+    "analysis:last-modified-at": "2026-07-09T12:01:36+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/pdf",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-07-09T12:01:41.564542+00:00",
+    "check:headers:content-length": 277329,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 49721295,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 277329,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "5e6dd067-3bba-45e3-b7ad-ed8c673bea5b",
+   "internal": {
+    "created_at_internal": "2026-03-26T12:43:12.813000+00:00",
+    "last_modified_internal": "2026-07-09T12:01:37.058000+00:00"
+   },
+   "last_modified": "2026-07-09T12:01:37.058000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/5e6dd067-3bba-45e3-b7ad-ed8c673bea5b",
+   "metrics": {
+    "views": 4104
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": null,
+   "title": "Documentation - Bases statistiques communale, départementale et régionale de la délinquance enregistrée par la police et la gendarmerie nationales",
+   "type": "documentation",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-120136/fichier-metadonnees-data-gouv-geographie-delinquance-juillet2026.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "a68550f3b9dcc8a42d8ebd78025f84a29970fd0f"
+   },
+   "created_at": "2026-03-26T12:42:30.465000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49721274,
+    "analysis:checksum": "a68550f3b9dcc8a42d8ebd78025f84a29970fd0f",
+    "analysis:content-length": 16095547,
+    "analysis:last-modified-at": "2026-07-09T12:00:19+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/octet-stream",
+    "analysis:parsing:error": "csv_detective:Could not detect the file's encoding. Consider specifying it in the routine call.",
+    "analysis:parsing:finished_at": "2026-07-09T12:00:32.682960+00:00",
+    "analysis:parsing:started_at": "2026-07-09T12:00:32.100253+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-07-09T12:00:25.324088+00:00",
+    "check:headers:content-length": 16095547,
+    "check:headers:content-type": "application/octet-stream",
+    "check:id": 49721274,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 16095547,
+   "filetype": "file",
+   "format": "parquet",
+   "geopf": null,
+   "harvest": null,
+   "id": "604d71b8-337d-4869-9226-49e01bae87df",
+   "internal": {
+    "created_at_internal": "2026-03-26T12:42:30.465000+00:00",
+    "last_modified_internal": "2026-07-09T12:00:20.286000+00:00"
+   },
+   "last_modified": "2026-07-09T12:00:20.286000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/604d71b8-337d-4869-9226-49e01bae87df",
+   "metrics": {
+    "views": 7461
+   },
+   "mime": "application/octet-stream",
+   "preview_url": null,
+   "schema": null,
+   "title": "COM - Base statistique communale de la délinquance enregistrée par la police et la gendarmerie nationales (fichier parquet)",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-120017/donnee-comm-data.gouv-parquet-2025-geographie2026-produit-le2026-06-25.parquet"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "ff67c9c06137b98f2c99d9b9f5230a21aaf735b3"
+   },
+   "created_at": "2026-03-26T12:41:47.794000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49721263,
+    "analysis:checksum": "723e73677ba71ddd1a7b94cae22cb6086d4c9bb7",
+    "analysis:content-length": 621167706,
+    "analysis:last-modified-at": "2026-07-09T11:59:46+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-07-09T12:02:03.847099+00:00",
+    "analysis:parsing:parquet_size": 15303407,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/44ef4323-1097-48d5-8719-3c544b55d294.parquet",
+    "analysis:parsing:parsing_table": "352e9805856e25ba3a3e7af328a53fea",
+    "analysis:parsing:started_at": "2026-07-09T12:00:08.857460+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-07-09T11:59:52.677459+00:00",
+    "check:headers:content-length": 39932450,
+    "check:headers:content-type": "application/octet-stream",
+    "check:id": 49721263,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 39932450,
+   "filetype": "file",
+   "format": "csv.gz",
+   "geopf": null,
+   "harvest": null,
+   "id": "44ef4323-1097-48d5-8719-3c544b55d294",
+   "internal": {
+    "created_at_internal": "2026-03-26T12:41:47.794000+00:00",
+    "last_modified_internal": "2026-07-09T11:59:52.049000+00:00"
+   },
+   "last_modified": "2026-07-09T11:59:52.049000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/44ef4323-1097-48d5-8719-3c544b55d294",
+   "metrics": {
+    "views": 30535
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/44ef4323-1097-48d5-8719-3c544b55d294",
+   "schema": null,
+   "title": "COM - Base statistique communale de la délinquance enregistrée par la police et la gendarmerie nationales (fichier csv compressé)",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-115942/donnee-data.gouv-2025-geographie2026-produit-le2026-06-25.csv.gz"
+  },
+  {
+   "checksum": null,
+   "created_at": "2026-01-27T17:56:25.689000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 54659587,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-02T15:00:19+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-01-31T04:05:12.654000",
+    "check:headers:content-length": 173246734,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 40603331,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 173246734,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "eaf4d1df-9a43-44e3-a4d1-a0f789fb4d74",
+   "internal": {
+    "created_at_internal": "2026-01-27T17:56:25.689000+00:00",
+    "last_modified_internal": "2026-07-09T11:05:36.750000+00:00"
+   },
+   "last_modified": "2026-07-09T11:05:36.750000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/eaf4d1df-9a43-44e3-a4d1-a0f789fb4d74",
+   "metrics": {
+    "views": 19233
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": null,
+   "title": "Atlas départemental de la délinquance enregistrée en 2025 - Édition janvier 2026",
+   "type": "other",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260129-160019/atlas-janvier-2026.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "28d2bc5a7b271bec4e7bb3f3d352e25e62ae3eae"
+   },
+   "created_at": "2026-01-27T17:44:04.585000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49721283,
+    "analysis:checksum": "28d2bc5a7b271bec4e7bb3f3d352e25e62ae3eae",
+    "analysis:content-length": 346163,
+    "analysis:last-modified-at": "2026-07-09T12:00:55+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-07-09T12:01:09.811350+00:00",
+    "analysis:parsing:parquet_size": 43751,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/75753852-aca0-4c53-bfd4-a29513358d2f.parquet",
+    "analysis:parsing:parsing_table": "382219b5389d6723d67a83bfee98e366",
+    "analysis:parsing:started_at": "2026-07-09T12:01:07.991788+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-01-31T04:04:18.650000",
+    "check:headers:content-type": "text/csv",
+    "check:id": 40603277,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 346163,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "75753852-aca0-4c53-bfd4-a29513358d2f",
+   "internal": {
+    "created_at_internal": "2026-01-27T17:44:04.585000+00:00",
+    "last_modified_internal": "2026-07-09T12:00:58.553000+00:00"
+   },
+   "last_modified": "2026-07-09T12:00:58.553000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/75753852-aca0-4c53-bfd4-a29513358d2f",
+   "metrics": {
+    "views": 8852
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/75753852-aca0-4c53-bfd4-a29513358d2f",
+   "schema": null,
+   "title": "REG - Base statistique régionale de la délinquance enregistrée par la police et la gendarmerie nationales",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-120055/donnee-reg-data.gouv-2025-geographie2026-produit-le2026-06-25.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "e42900f452b56e624752813e4396b7e2fd1b14b9"
+   },
+   "created_at": "2026-01-27T17:41:54.890000+00:00",
+   "description": null,
+   "extras": {
+    "analysis:check_id": 49721276,
+    "analysis:checksum": "e42900f452b56e624752813e4396b7e2fd1b14b9",
+    "analysis:content-length": 2001231,
+    "analysis:last-modified-at": "2026-07-09T12:00:38+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "text/plain",
+    "analysis:parsing:finished_at": "2026-07-09T12:00:55.489388+00:00",
+    "analysis:parsing:parquet_size": 219287,
+    "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/2b27a675-e3bf-41ef-a852-5fb9ab483967.parquet",
+    "analysis:parsing:parsing_table": "99628f5efd734f9d7881b5f91dda4251",
+    "analysis:parsing:started_at": "2026-07-09T12:00:48.275127+00:00",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-01-31T04:04:22.456000",
+    "check:headers:content-type": "text/csv",
+    "check:id": 40603281,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 2001231,
+   "filetype": "file",
+   "format": "csv",
+   "geopf": null,
+   "harvest": null,
+   "id": "2b27a675-e3bf-41ef-a852-5fb9ab483967",
+   "internal": {
+    "created_at_internal": "2026-01-27T17:41:54.890000+00:00",
+    "last_modified_internal": "2026-07-09T12:00:39.199000+00:00"
+   },
+   "last_modified": "2026-07-09T12:00:39.199000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/2b27a675-e3bf-41ef-a852-5fb9ab483967",
+   "metrics": {
+    "views": 20001
+   },
+   "mime": "text/csv",
+   "preview_url": "https://explore.data.gouv.fr/fr/resources/2b27a675-e3bf-41ef-a852-5fb9ab483967",
+   "schema": null,
+   "title": "DEP - Base statistique départementale de la délinquance enregistrée par la police et la gendarmerie nationales",
+   "type": "main",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-120038/donnee-dep-data.gouv-2025-geographie2026-produit-le2026-06-25.csv"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "8a22b2bb4dd09ac75917f6ac9aece65d54795cac"
+   },
+   "created_at": "2025-07-10T14:35:33.106000+00:00",
+   "description": "Dans l’atlas, le SSMSI suit les principaux indicateurs de la délinquance entre 2016 et 2024 sur chacun des territoires de la République française : la France métropolitaine, tous les départements et régions d’outre-mer et les collectivités d’outre-mer. Avec ce nouvel outil, le service rénove et enrichit la mise à disposition de données départementales et régionales et en facilite les comparaisons dans le temps et dans l’espace.\n",
+   "extras": {
+    "analysis:check_id": 54659776,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-02T15:00:12+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-19T04:41:22.196000",
+    "check:headers:content-length": 83376956,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 42048624,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 83376956,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "db2a378a-e71a-4383-815c-163b4a3ddabd",
+   "internal": {
+    "created_at_internal": "2025-07-10T14:35:33.106000+00:00",
+    "last_modified_internal": "2026-07-09T11:05:22.655000+00:00"
+   },
+   "last_modified": "2026-07-09T11:05:22.655000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/db2a378a-e71a-4383-815c-163b4a3ddabd",
+   "metrics": {
+    "views": 12578
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": null,
+   "title": "Atlas départemental de la délinquance enregistrée en 2024 - Edition juillet 2025",
+   "type": "other",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20250710-143525/atlas-2024-edition-juillet-2025.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "75b840698e6641ecb275fb82e829160cc7d3913f"
+   },
+   "created_at": "2025-01-30T15:48:08.595000+00:00",
+   "description": "Dans l’atlas, le SSMSI suit les principaux indicateurs de la délinquance entre 2016 et 2024 sur chacun des territoires de la République française : la France métropolitaine, tous les départements et régions d’outre-mer et les collectivités d’outre-mer. Avec ce nouvel outil, le service rénove et enrichit la mise à disposition de données départementales et régionales et en facilite les comparaisons dans le temps et dans l’espace.\n",
+   "extras": {
+    "analysis:check_id": 54659596,
+    "analysis:checksum": "75b840698e6641ecb275fb82e829160cc7d3913f",
+    "analysis:content-length": 44376521,
+    "analysis:last-modified-at": "2026-07-02T15:00:08+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "analysis:mime-type": "application/pdf",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-14T02:37:18.031000",
+    "check:headers:content-length": 44376521,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 41497062,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 44376521,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "1c23c284-9725-4d76-ac69-33356f7e52c9",
+   "internal": {
+    "created_at_internal": "2025-01-30T15:48:08.595000+00:00",
+    "last_modified_internal": "2026-07-09T11:05:16.352000+00:00"
+   },
+   "last_modified": "2026-07-09T11:05:16.352000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/1c23c284-9725-4d76-ac69-33356f7e52c9",
+   "metrics": {
+    "views": 17502
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": null,
+   "title": "Atlas départemental de la délinquance enregistrée en 2024 - Edition janvier 2025",
+   "type": "other",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20250130-154804/atlas-2025.pdf"
+  },
+  {
+   "checksum": {
+    "type": "sha1",
+    "value": "fcbb5c9df7464699725baee81a72ebaf7b7423e0"
+   },
+   "created_at": "2024-07-18T12:36:54.913000+00:00",
+   "description": "Dans l’atlas, le SSMSI suit les principaux indicateurs de la délinquance entre 2016 et 2023 sur chacun des territoires de la République française : la France métropolitaine, tous les départements et régions d’outre-mer et les collectivités d’outre-mer. Avec ce nouvel outil, le service rénove et enrichit la mise à disposition de données départementales et régionales et en facilite les comparaisons dans le temps et dans l’espace.",
+   "extras": {
+    "analysis:check_id": 54660363,
+    "analysis:error": "File too large to download",
+    "analysis:last-modified-at": "2026-07-02T14:59:58+00:00",
+    "analysis:last-modified-detection": "last-modified-header",
+    "check:available": true,
+    "check:cors:allow-credentials": "true",
+    "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
+    "check:cors:allow-methods": "GET, OPTIONS",
+    "check:cors:allow-origin": "*",
+    "check:cors:max-age": "1728000",
+    "check:cors:status": 204,
+    "check:date": "2026-02-05T14:32:16.952000",
+    "check:headers:content-length": 93888743,
+    "check:headers:content-type": "application/pdf",
+    "check:id": 40929221,
+    "check:status": 200,
+    "check:timeout": false
+   },
+   "filesize": 93888743,
+   "filetype": "file",
+   "format": "pdf",
+   "geopf": null,
+   "harvest": null,
+   "id": "4558c4a8-1273-4b50-a30f-385e177561a2",
+   "internal": {
+    "created_at_internal": "2024-07-18T12:36:54.913000+00:00",
+    "last_modified_internal": "2026-07-09T11:05:09.498000+00:00"
+   },
+   "last_modified": "2026-07-09T11:05:09.498000+00:00",
+   "latest": "https://www.data.gouv.fr/api/1/datasets/r/4558c4a8-1273-4b50-a30f-385e177561a2",
+   "metrics": {
+    "views": 14479
+   },
+   "mime": "application/pdf",
+   "preview_url": null,
+   "schema": null,
+   "title": "Atlas départemental de la délinquance enregistrée en 2023 - Edition juillet 2024",
+   "type": "other",
+   "url": "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20240718-125304/atlas-departemental-2023.pdf"
+  }
+ ],
+ "schema": null,
+ "slug": "bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales",
+ "spatial": {
+  "geom": null,
+  "granularity": "fr:commune",
+  "zones": [
+   "country-subset:fr:metro"
+  ]
+ },
+ "tags": [
+  "communes",
+  "crime",
+  "crimes-et-delits",
+  "departement",
+  "insecurite",
+  "statistiques",
+  "territoires",
+  "violence",
+  "vol"
+ ],
+ "temporal_coverage": {
+  "end": "2025-12-31",
+  "start": "2016-01-01"
+ },
+ "title": "Bases statistiques communale, départementale et régionale de la délinquance enregistrée par la police et la gendarmerie nationales ",
+ "uri": "https://www.data.gouv.fr/api/1/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/"
+}

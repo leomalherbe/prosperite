@@ -1,0 +1,53 @@
+id: pauvrete_ressentie
+libelle: Part des personnes se considérant comme pauvres (pauvreté ressentie)
+dimension: niveau_de_vie
+sous_theme: pauvreté ressentie
+famille: pauvrete_subjective
+variante_principale: non
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui répondent « je me considère
+  déjà comme pauvre » à la question PE03 (« pensez-vous qu'il y a un risque que vous deveniez pauvre dans les cinq
+  prochaines années ? »), non-réponses incluses au dénominateur, avec la pondération de redressement de l'enquête.
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable PE03, modalités 3
+source_niveau: 2
+url_api: non trouvé
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 11
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000262
+hors_longlist: non
+raccordement: 'non : vagues 2014-2023 et 2025, pas de vague 2024 pour cette question'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Seule mesure de l'auto-identification comme pauvre (DREES, 11 vagues de 2014 à 2025), autre
+  lecture subjective de la pauvreté, substituable à la difficulté à joindre les deux bouts, principale de la famille.
+note_pertinence: 'Se dire pauvre n''est pas la même chose qu''avoir du mal à boucler son budget : la question mesure
+  le sentiment d''appartenir aux pauvres. La part passe de 7,87 % en 2014 à 19,24 % en 2023 et 17,41 % en 2025 (sortie
+  du robot M04, docs/sources/series/drees__barometre_2000_2025_distributions.csv). La modalité 1 de la même question
+  (« oui, plutôt » : risque de devenir pauvre) est la fiche securite/risque_pauvrete_ressenti, que la maintenance
+  n° 3 propose d''élargir à la modalité 3 : les deux fiches ne doivent pas compter deux fois la même modalité (NDV-4).'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- lacune_2024
+- calcul_sur_microdonnees
+- enquete_metropole
+- codes_modalites_a_verifier
+notes: 'geo FM et non FR : la fiche du jeu 431 indique un échantillon représentatif de la France métropolitaine
+  (maintenance n° 4). Valeurs : 7,87 (2014), 12,38 (2015), 17,12 (2018), 18,71 (2022), 19,24 (2023), 17,41 (2025).
+  Pas de vague 2024 pour PE03 (couverture du robot).'

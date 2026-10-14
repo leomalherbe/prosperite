@@ -1,0 +1,59 @@
+id: pauvrete_percue_hausse
+libelle: Part des personnes estimant que la pauvreté a augmenté en France depuis cinq ans
+dimension: niveau_de_vie
+sous_theme: pauvreté ressentie
+famille: pauvrete_percue_hausse
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui répondent que la pauvreté
+  et l'exclusion en France « ont augmenté » depuis cinq ans (question PE01, modalité 2), non-réponses incluses au
+  dénominateur, avec la pondération de redressement de l'enquête.
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable PE01, modalité 2
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+rattachement_propose: 'hors long-list : question PE01 du baromètre DREES calculée par le robot M04 mais non cataloguée,
+  à cataloguer (maintenance NDV-3)'
+raccordement: 'non : 25 vagues sans interruption hors 2003 (2000-2002, 2004-2025)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Opinion sur la société (D32) portant sur la pauvreté, posée chaque année depuis 2000 sauf
+  en 2003 (25 vagues), seule mesure de la perception collective de la pauvreté au catalogue.
+note_pertinence: 'La question ne demande pas si l''on est pauvre mais si la pauvreté progresse en France : c''est
+  une opinion sur la société, au même titre que les perceptions des inégalités d''egalites. La part qui répond «
+  ont augmenté » passe de 73,22 % en 2000 à 92,45 % en 2013 et reste proche de 90 % depuis (92,08 % en 2025, sortie
+  du robot M04). Le plafond atteint réduit sa capacité à discriminer les années récentes.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- calcul_sur_microdonnees
+- enquete_metropole
+- effet_plafond
+- codes_modalites_a_verifier
+notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (pe01 : 2000-2002, 2004-2025)
+  ; modalités lues dans le dictionnaire 2025 (1 « ont diminué », 2 « ont augmenté », 3 « sont restées stables »,
+  NSP). Questions voisines non retenues : PE02 (évolution future, même construction), OG04_3 (préoccupation pour
+  la pauvreté, sens ambigu : solidarité ou exposition), PE07 (revenu minimum jugé nécessaire, sens ambigu), CS27
+  (renoncements de dépenses, 2024-2025 seulement).'

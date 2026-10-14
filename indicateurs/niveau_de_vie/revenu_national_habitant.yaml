@@ -1,0 +1,142 @@
+id: revenu_national_habitant
+libelle: Revenu national brut réel par habitant
+dimension: niveau_de_vie
+sous_theme: production et revenu national
+famille: pib_habitant
+variante_principale: non
+definition: Revenu national brut (revenus primaires reçus par les résidents, y compris ceux qui viennent du reste
+  du monde) exprimé en termes réels et rapporté à la population (comptes nationaux de l'INSEE, base 2020).
+unite: euros par habitant (termes réels)
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_CNA_AGREGATS (comptes nationaux annuels, base 2020), mesure _RNB_REEL_HABITANT
+source_serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=_RNB_REEL_HABITANT&TRANSFORMATION=N&UNIT_MEASURE=XDC
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=_RNB_REEL_HABITANT&TRANSFORMATION=N&UNIT_MEASURE=XDC
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DD_CNA_AGREGATS
+frequence: annuelle
+premiere_annee: 1949
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-000030
+hors_longlist: non
+raccordement: 'non : série continue de 1949 à 2025 en base 2020'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Alternative au PIB recommandée par Stiglitz-Sen-Fitoussi (revenu national), publiée par l'INSEE
+  de 1949 à 2025 (26 points), substituable au PIB par habitant, principal de la famille.
+note_pertinence: 'Le revenu national compte ce que gagnent les résidents plutôt que ce qui est produit sur le territoire
+  : il ajoute les revenus reçus de l''étranger et retranche ceux qui y sont versés. Il se lit comme le PIB par habitant
+  et le remplace pour qui veut une mesure de revenu. La Banque mondiale publie un revenu national net ajusté (après
+  consommation de capital fixe et épuisement des ressources), en variante.'
+variantes:
+- serie_id: naida_10_gdp?freq=A&unit=CP_MEUR&na_item=B5G&geo=FR
+  source: Eurostat
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: estat-052612
+  eligible: oui
+- serie_id: naida_10_gdp?freq=A&unit=CP_MEUR&na_item=B5N&geo=FR
+  source: Eurostat
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: estat-052613
+  eligible: oui
+- serie_id: naida_10_gdp?freq=A&unit=CP_MEUR&na_item=B6N&geo=FR
+  source: Eurostat
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: estat-052614
+  eligible: oui
+- serie_id: https://api.worldbank.org/v2/country/FRA/indicator/NY.ADJ.NNTY.PC.KD?format=json
+  source: Banque mondiale — World Development Indicators (API v2)
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: m04-000399
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B5GQ&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000020
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B5NQ&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000022
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000023
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B6N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000024
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000025
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B7N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000026
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S10&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000036
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S10&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000037
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000123
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B6N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000124
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000125
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B7N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000126
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=_RNB_REEL&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000452
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000580
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total, net, disponible ; autre source (Banque mondiale)'
+  ligne_id: melodi-000585
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- revision_frequente_comptes_nationaux
+notes: 'Valeurs non lues (API Melodi fermée à l''outil). Variantes : RNB réel total, RNB et RNN nominaux, revenu
+  disponible de la nation (INSEE, Eurostat naida_10_gdp), revenu national net ajusté par habitant (Banque mondiale
+  NY.ADJ.NNTY.PC.KD, 1995-2021).'

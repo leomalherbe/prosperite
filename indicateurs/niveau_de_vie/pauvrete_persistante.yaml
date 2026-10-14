@@ -1,0 +1,164 @@
+id: pauvrete_persistante
+libelle: Taux de pauvreté persistante
+dimension: niveau_de_vie
+sous_theme: pauvreté monétaire
+famille: pauvrete_persistante
+variante_principale: oui
+definition: Part des personnes dont le revenu disponible équivalent est inférieur au seuil de pauvreté (60 % du
+  médian) l'année courante et au moins deux des trois années précédentes (volet longitudinal d'EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_li21 (taux de risque persistant de pauvreté, enquêtes EU-SILC)
+source_serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=T&age=TOTAL&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=T&age=TOTAL&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_li21/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2007
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-030522
+hors_longlist: non
+raccordement: 'non : lacune 2008-2010 et ruptures en 2007 et 2025, sans série de relais'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de la durée de la pauvreté, annuelle sur 2007 et 2011-2025 (16 points depuis
+  2000), concept distinct du taux annuel.
+note_pertinence: 'Être pauvre une année et l''être durablement n''ont pas les mêmes conséquences : la pauvreté persistante
+  repère les personnes enfermées dans la pauvreté. Le taux français passe de 7,1 % en 2011 à 10,4 % en 2024, avec
+  des mouvements heurtés (7,1 % en 2023, cause non documentée par Eurostat ; API lue le 14/10/2026). Aucune série
+  INSEE équivalente n''est au catalogue.'
+variantes:
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_40&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030516
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_40&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030517
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_40&sex=T&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y25-49&age=Y50-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030518
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_50&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030519
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_50&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030520
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_50&sex=T&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y25-49&age=Y50-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030521
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030523
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=T&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y25-49&age=Y50-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030524
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_70&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030525
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_70&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030526
+  eligible: oui
+- serie_id: ilc_li21?freq=A&statinfo=MED_EI&rskpovth=B_70&sex=T&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y25-49&age=Y50-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030527
+  eligible: oui
+- serie_id: ilc_li23?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&hhcomp=A1&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030531
+  eligible: oui
+- serie_id: ilc_li23?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&hhcomp=A1_DCH&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030532
+  eligible: oui
+- serie_id: ilc_li23?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&hhcomp=A_GE2_DCH&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030533
+  eligible: oui
+- serie_id: ilc_li23?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&hhcomp=A_GE2_NDCH&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030534
+  eligible: oui
+- serie_id: ilc_li23?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&hhcomp=DCH&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030535
+  eligible: oui
+- serie_id: ilc_li23?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030536
+  eligible: oui
+- serie_id: ilc_li24?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&isced11=ED0-2&sex=T&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030537
+  eligible: oui
+- serie_id: ilc_li24?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&isced11=ED0-2&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030538
+  eligible: oui
+- serie_id: ilc_li24?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&isced11=ED3_4&sex=T&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030539
+  eligible: oui
+- serie_id: ilc_li24?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&isced11=ED3_4&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030540
+  eligible: oui
+- serie_id: ilc_li24?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&isced11=ED5-8&sex=T&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030541
+  eligible: oui
+- serie_id: ilc_li24?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&isced11=ED5-8&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: autre seuil (40 %, 50 %) et ventilations
+  ligne_id: estat-030542
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2007
+- rupture_2025
+- lacune_2008_2010
+- volatilite_non_expliquee
+notes: 'Valeurs lues : 6,4 % (2007, b), 7,1 (2011), 8,5 (2015), 9,3 (2022), 7,1 (2023), 10,4 (2024), 10,3 (2025,
+  b). Variantes : seuils de 40 et 50 %, ventilations par sexe, âge, type de ménage et diplôme.'

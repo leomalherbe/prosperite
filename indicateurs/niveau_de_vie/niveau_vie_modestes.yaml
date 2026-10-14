@@ -1,0 +1,58 @@
+id: niveau_vie_modestes
+libelle: Niveau de vie des plus modestes (premier décile)
+dimension: niveau_de_vie
+sous_theme: revenus et pouvoir d'achat
+famille: niveau_vie_modestes
+variante_principale: oui
+definition: 'Premier décile du niveau de vie : niveau de vie au-dessous duquel vivent les 10 % de personnes les
+  plus modestes, en euros constants (enquête Revenus fiscaux et sociaux, données rétropolées, France métropolitaine).'
+unite: euros constants par an et par unité de consommation
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure D1_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=D1_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=D1_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005313
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure absolue du niveau de vie du bas de la distribution, publiée sans rupture de 1996
+  à 2024 (25 points depuis 2000), complémentaire du taux de pauvreté qui est relatif au médian.
+note_pertinence: 'Le taux de pauvreté monétaire peut rester stable alors que le niveau de vie réel des plus modestes
+  progresse ou recule : le premier décile en euros constants mesure directement ce que les 10 % les plus modestes
+  peuvent acheter. Il atteint 13 970 € par unité de consommation en 2024, en hausse de 1,7 % en euros constants
+  (Insee Première n° 2117, lue le 14/10/2026). C''est un niveau, pas un écart : il reste dans niveau_de_vie (R3),
+  le rapport D9/D1 étant en egalites.'
+variantes:
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'autre forme : série non rétropolée (1975-2024, ruptures 1996, 2010, 2012, 2020)'
+  ligne_id: melodi-005058
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=D1&statinfo=TC&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, seuil du premier décile (euros courants), long-list egalites'
+  ligne_id: estat-030727
+  eligible: oui
+  longlist: egalites
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_metropole_menages_ordinaires
+notes: 'Variantes : même statistique non rétropolée (1975-2024), seuil du premier décile EU-SILC (ilc_di01, ligne
+  de la long-list egalites). La fiche pauvrete_ancree_2008 (Eurostat) donne une lecture voisine en taux.'

@@ -1,0 +1,82 @@
+id: pouvoir_achat_uc
+libelle: Évolution du pouvoir d'achat du revenu disponible brut par unité de consommation
+dimension: niveau_de_vie
+sous_theme: revenus et pouvoir d'achat
+famille: revenu_disponible_menages
+variante_principale: non
+definition: Taux de variation annuel, en volume, du revenu disponible brut des ménages rapporté au nombre d'unités
+  de consommation, déflaté par le prix de la dépense de consommation des ménages (comptes nationaux de l'INSEE,
+  base 2020).
+unite: '% (évolution annuelle)'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_CNA_AGREGATS (comptes nationaux annuels, base 2020), mesure _PAM_UC
+source_serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAM_UC&TRANSFORMATION=GY&UNIT_MEASURE=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAM_UC&TRANSFORMATION=GY&UNIT_MEASURE=PT
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DD_CNA_AGREGATS
+frequence: annuelle
+premiere_annee: 1960
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-000462
+hors_longlist: non
+raccordement: 'non : série continue de 1960 à 2025 en base 2020'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Mesure de référence du débat public sur le pouvoir d'achat (INSEE, 1960-2025, 26 points depuis
+  2000), gardée à côté du niveau réel par habitant parce qu'elle se lit en évolution.
+note_pertinence: 'Le « pouvoir d''achat par unité de consommation » est le chiffre que l''INSEE et les médias commentent
+  chaque année ; il neutralise la croissance et le vieillissement de la population. Il mesure une évolution, pas
+  un niveau : une année à +0 % après une forte hausse reste une bonne situation, ce que la fiche principale en niveau
+  rend mieux. Les bornes devront donc être des taux de croissance (par exemple 0 % et +2 %).'
+variantes:
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAA&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000455
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAA_MENAGE&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000456
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAA_PERSONNE&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000457
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAA_UC&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000458
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAM&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000459
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAM_MENAGE&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000460
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_PAM_PERSONNE&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre unité : pouvoir d''achat global, par ménage, par personne ; revenu arbitrable'
+  ligne_id: melodi-000461
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- evolution_et_non_niveau
+notes: 'Valeurs non lues : l''API Melodi est fermée à l''outil de lecture (robots.txt). Variantes : pouvoir d''achat
+  global, par ménage, par personne et du revenu « arbitrable » (après dépenses pré-engagées).'

@@ -1,0 +1,154 @@
+id: depenses_pre_engagees
+libelle: Part des dépenses pré-engagées dans le revenu disponible des ménages
+dimension: niveau_de_vie
+sous_theme: consommation
+famille: depenses_pre_engagees
+variante_principale: oui
+definition: 'Part, dans le revenu disponible brut des ménages, des dépenses réalisées dans le cadre d''un contrat
+  difficilement renégociable à court terme : logement (y compris loyers imputés), eau, énergie, télécommunications,
+  assurances, services financiers, cantines, abonnements (comptes nationaux de l''INSEE, base 2020).'
+unite: '% du revenu disponible brut'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_CNA_AGREGATS (comptes nationaux annuels, base 2020), mesure _DEP_REVENU
+source_serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DD_CNA_AGREGATS
+frequence: annuelle
+premiere_annee: 1959
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-000475
+hors_longlist: non
+raccordement: 'non : série continue de 1959 à 2025 en base 2020'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure des dépenses contraintes, voisine de la « part des dépenses de base dans le budget
+  » du cadre Qualité de vie d'Eurostat, publiée par l'INSEE de 1959 à 2025 (26 points).
+note_pertinence: 'Plus la part des dépenses contraintes est forte, moins le ménage dispose librement de son revenu
+  : c''est l''origine de la notion de revenu « arbitrable », dont l''INSEE calcule aussi le pouvoir d''achat (variante
+  de pouvoir_achat_uc). Le logement en représente l''essentiel, y compris les loyers imputés aux propriétaires :
+  l''indicateur recoupe donc le coût du logement de logement_cadre_vie, à surveiller au contrôle de redondance.'
+variantes:
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000426
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000427
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000428
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000429
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000430
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000431
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000432
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000433
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP121P_122&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_ASSUR_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000473
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_CONSO&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000474
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000778
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000779
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000780
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000781
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000782
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000783
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000784
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPHDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000785
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP121P_122&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_ASSUR_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000794
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_CONSO&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000795
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDPE&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique ; autre dénominateur (dépense de consommation) ; composante
+  ligne_id: melodi-000796
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- recoupe_cout_du_logement
+- loyers_imputes_inclus
+notes: 'Valeurs non lues (API Melodi fermée à l''outil). Variantes : même mesure dans le jeu de la consommation
+  par fonction, part dans la dépense de consommation (_DEP_CONSO), montants pré-engagés et non pré-engagés, part
+  des assurances dans le revenu ; la part des seules dépenses de logement (_DEP_LOGT_REVENU) est renvoyée à logement_cadre_vie.'

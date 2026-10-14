@@ -1,0 +1,93 @@
+id: privation_alimentaire
+libelle: Renoncement à un repas avec viande, poisson ou équivalent pour raisons financières
+dimension: niveau_de_vie
+sous_theme: accès à l'alimentation
+famille: privation_alimentaire
+variante_principale: oui
+definition: Part des personnes vivant dans un ménage qui n'a pas les moyens de s'offrir un repas comportant de la
+  viande, du poulet ou du poisson (ou un équivalent végétarien) au moins un jour sur deux (enquête SRCV, indicateur
+  ODD 2.i1 « renoncement à consommer des protéines pour raisons financières »).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, indicateurs ODD, indicateur 2.i1
+source_serie_id: '010594393'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594393
+url_page: https://www.insee.fr/fr/statistiques/serie/010594393
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001054
+hors_longlist: non
+rattachement_propose: variantes EU-SILC (ilc_mdes03, hlth_dm030) importées de la long-list planete (étiquette v0
+  du jeu) ; rattachement à niveau_de_vie proposé (A2), déjà signalé (maintenance n° 35)
+raccordement: 'a_etudier : la même question EU-SILC (ilc_mdes03, 2004-2025, long-list planete) couvre 2004-2009
+  et 2025'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de l'accès à l'alimentation au catalogue (A2), indicateur ODD national
+  publié par l'INSEE de 2010 à 2024 (15 points).
+note_pertinence: 'L''accès à l''alimentation est rattaché à la dimension par l''arbitrage A2 ; faute de mesure de
+  l''insécurité alimentaire au catalogue (échelle FIES de la FAO, non trouvée), la privation de repas protéiné est
+  le meilleur indicateur disponible. C''est aussi l''un des 13 éléments de la privation matérielle et sociale :
+  il porte une préoccupation publique propre (aide alimentaire, prix de l''alimentation), d''où une fiche distincte
+  (D32).'
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=2.i1&PCS=_Z&SDG=SDG2&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique (Melodi)
+  ligne_id: melodi-005543
+  eligible: oui
+- serie_id: hlth_dm030?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list planete)'
+  ligne_id: estat-021835
+  eligible: oui
+  longlist: planete
+- serie_id: hlth_dm030?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list planete)'
+  ligne_id: estat-021836
+  eligible: oui
+  longlist: planete
+- serie_id: hlth_dm030?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list planete)'
+  ligne_id: estat-021837
+  eligible: oui
+  longlist: planete
+- serie_id: ilc_mdes03?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list planete)'
+  ligne_id: estat-031704
+  eligible: oui
+  longlist: planete
+- serie_id: ilc_mdes03?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list planete)'
+  ligne_id: estat-031705
+  eligible: oui
+  longlist: planete
+- serie_id: DS_SRCV_PMS?AGE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&PCS=_Z&QUANTILE_NIVVIE=_T&SEX=_T&SRCV_MEASURE=DIF_VIANDE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: INSEE SRCV (Melodi DS_SRCV_PMS, élément DIF_VIANDE), France métropolitaine, 2020-2025 ; écartée du catalogue
+    par M01 (6 points) ; un an de plus que la BDM
+  eligible: non
+  catalogue: insee_melodi_catalogue_non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- element_de_la_privation_materielle_et_sociale
+notes: 'Valeurs non lues (BDM fermée à l''outil le 14/10/2026). Variantes : copie Melodi (DS_NAT_SDG 2.i1), EU-SILC
+  ilc_mdes03 et hlth_dm030 (lignes de la long-list planete, rattachement proposé, maintenance n° 35), SRCV Melodi
+  2020-2025 (catalogue des séries écartées).'

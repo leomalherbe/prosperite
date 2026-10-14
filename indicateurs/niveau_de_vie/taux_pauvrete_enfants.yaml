@@ -1,0 +1,71 @@
+id: taux_pauvrete_enfants
+libelle: Taux de pauvreté des enfants (moins de 18 ans, seuil à 60 %)
+dimension: niveau_de_vie
+sous_theme: pauvreté monétaire
+famille: pauvrete_enfants
+variante_principale: oui
+definition: Part des personnes de moins de 18 ans vivant dans un ménage dont le niveau de vie est inférieur à 60
+  % du niveau de vie médian (enquête Revenus fiscaux et sociaux, données non rétropolées, France métropolitaine).
+unite: '% des moins de 18 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_NON_RETROPOLE (enquête ERFS), mesure PR_MD60, âge Y_LT18, valeurs hors rupture (COMPARE_TIME
+  = NB)
+source_serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 22
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-004907
+hors_longlist: non
+raccordement: 'a_etudier : ruptures de l''ERFS en 2010, 2012 et 2020 ; les valeurs aux années de rupture (BWA, BWB)
+  sont en variantes, la série rétropolée de l''INSEE n''est pas ventilée par âge'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Préoccupation publique propre (ODD 1.2, sous-objectif enfants de la cible européenne 2030),
+  série annuelle de l'INSEE de 1996 à 2024 (22 points depuis 2000), fiche distincte de la pauvreté d'ensemble (D32).
+note_pertinence: 'La pauvreté des enfants engage leur santé, leur scolarité et leur avenir ; elle fait l''objet
+  de stratégies nationales et européennes propres ; le suivi séparé montre si les familles avec enfants profitent
+  des évolutions d''ensemble. C''est une ventilation de la fiche taux_pauvrete_60 : la cocher avec elle compte deux
+  fois les mêmes ménages (contrôle de redondance).'
+variantes:
+- serie_id: '010594449'
+  source: INSEE BDM
+  nature: valeurs de rupture (BWA, BWB) et indicateur ODD 1.i1a, moins de 18 ans
+  ligne_id: bdm-000840
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_LT18&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: valeurs de rupture (BWA, BWB) et indicateur ODD 1.i1a, moins de 18 ans
+  ligne_id: melodi-005471
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: valeurs de rupture (BWA, BWB) et indicateur ODD 1.i1a, moins de 18 ans
+  ligne_id: melodi-004895
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: valeurs de rupture (BWA, BWB) et indicateur ODD 1.i1a, moins de 18 ans
+  ligne_id: melodi-004901
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2010
+- rupture_2012
+- rupture_2020
+- champ_metropole_menages_ordinaires
+notes: 'Valeurs non lues (API Melodi fermée à l''outil). Variantes : valeurs aux années de rupture et indicateur
+  ODD 1.i1a des moins de 18 ans (BDM 010594449, Melodi DS_NAT_SDG, 2010-2023).'

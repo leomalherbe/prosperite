@@ -82,5 +82,8 @@ socle_v1:
   objectif: null
   type_justification: null
   justification: ''
-qualite: []
-notes: ''
+qualite:
+- perimetre_geo_a_verifier
+notes: 'Périmètre géographique du total national transmis par la France (code FR d''Eurostat) à confirmer : les
+  niveaux sont proches de ceux que le Citepa publie pour la France hexagonale (ammoniac : 574 390 t en 2024 chez
+  Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote : 647 990 t et 631,9 kt).'

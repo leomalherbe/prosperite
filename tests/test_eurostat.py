@@ -788,6 +788,7 @@ def test_controle_qualite_v5_faux_amis_partenaire_origine():
     lignes, roles = cat.construire_series(_jeu_roles("citizen", ["TOTAL", "NAT", "FOR"]))
     assert roles.ventilations == ["citizen"] and [l["type_ligne"] for l in lignes] == ["defaut", "ventilation"]
     # captures de pêche : tous organismes (F00), toutes zones (0) ou la grande zone du jeu (27)
+    assert cat.code_total("partner", ["AD", "EU27_2020", "WRL_X_REP"]) == "WRL_X_REP"
     assert cat.code_total("species", ["AGN", "F00", "F01"]) == "F00"
     assert cat.code_total("fishreg", ["0", "27", "37"]) == "0"
     assert cat.code_total("fishreg", ["27", "27_8", "27_8_A"]) == "27"
@@ -848,7 +849,7 @@ def test_script_regles_catalogue_et_peremption(tmp_path, monkeypatch):
     ]).to_csv(tmp_path / "s.csv", index=False)
     pd.DataFrame({"code_jeu": ["nasa_10_f_bs"], "dimension_v0": ["niveau_de_vie"], "theme_source": ["T"], "candidat": ["oui"],
                   "statut_niveau2": [""], "nb_series_fr": [""], "nb_series_candidates": [""], "structure_fr": [""]}).to_csv(tmp_path / "j.csv", index=False)
-    etat = {"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 6,
+    etat = {"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 7,
                                    "jeux": {"nasa_10_f_bs": {"statut": "ok", "date": "2026-10-13T15:00:00Z", "nb_series": 2}}}}}
     bilan = script._appliquer_regles_catalogue(etat)
     assert bilan["lignes"] == 1 and bilan["lignes_ecartees"] == 1  # bd_size retiré (plus suivi), S11 écarté
@@ -860,8 +861,8 @@ def test_script_regles_catalogue_et_peremption(tmp_path, monkeypatch):
     suivi = {"a": {"statut": "ok", "date": "2020-01-01T00:00:00Z"}, "b": {"statut": "ok", "date": script.maintenant()},
              "c": {"statut": "erreur_donnees", "date": "2020-01-01T00:00:00Z"}}
     assert script.jeux_perimes(suivi) == ["a"]
-    assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 6, "jeux": suivi}}}, "niveau2")
-    assert not script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 6, "jeux": {"b": suivi["b"]}}}}, "niveau2")
+    assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 7, "jeux": suivi}}}, "niveau2")
+    assert not script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 7, "jeux": {"b": suivi["b"]}}}}, "niveau2")
     assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 4, "jeux": {}}}}, "niveau2")
     assert script.etape_a_faire({"etapes": {"niveau1": {"version": script.ETAPES["niveau1"], "termine": True, "date": "2020-01-01T00:00:00Z"}}}, "niveau1")
     assert not script.etape_a_faire({"etapes": {"niveau1": {"version": script.ETAPES["niveau1"], "termine": True, "date": script.maintenant()}}}, "niveau1")

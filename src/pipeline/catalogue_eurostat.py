@@ -579,7 +579,8 @@ def bilan_dossiers(toc_en: pd.DataFrame, catalogue: pd.DataFrame, toc_fr: Option
 
 CODES_TOTAL = ("TOTAL", "T", "_T", "TOT", "ALL", "TOTAL_HH")
 CODES_TOTAL_PAR_DIMENSION = {"wstatus": ("POP", "TOTAL"), "sex": ("T",), "age": ("TOTAL",), "ind_type": ("IND_TOTAL",),
-                             "partner": ("WORLD", "TOTAL"),  # v5 : pays partenaire fixé au monde entier
+                             # v5 : pays partenaire fixé au monde entier (WRL_X_REP : monde hors pays déclarant, mobilité étudiante)
+                             "partner": ("WORLD", "TOTAL", "WRL_X_REP"),
                              "species": ("F00",), "fishreg": ("0",)}  # v5 : captures de pêche, tous organismes, toutes zones
 
 #: Dimensions toujours énumérées (chaque modalité est un indicateur distinct), même si un total existe.
@@ -597,6 +598,8 @@ VENTILATIONS = {
 #: Dimensions dont l'énumération ou le traitement a changé en v5 : un jeu dont une série porte l'une d'elles
 #: est refait (recalcul ciblé), pour fixer le partenaire au monde entier ou ajouter la ventilation par origine.
 DIMENSIONS_REVISEES_V5 = ("partner", "citizen", "c_birth", "species", "fishreg")
+#: Dimensions à revoir par révision des règles du niveau 2 (`REGLES_NIVEAU2` du script) : 7 = total WRL_X_REP du partenaire.
+REVISIONS_DIMENSIONS = {6: DIMENSIONS_REVISEES_V5, 7: ("partner",)}
 PREFIXES_VENTILATION = {"isced": "niveau d'éducation"}
 
 DIMENSIONS_TECHNIQUES = {"freq", "geo", "unit", "time", "TIME_PERIOD"}

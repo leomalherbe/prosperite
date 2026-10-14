@@ -64,8 +64,8 @@ ETAPES = {"echantillons": 1, "amorce": 3, "niveau1": 6, "niveau2": 2}
 #: Révision des règles du niveau 2 appliquées **sans refaire tout le niveau 2** (v5, D26) : recalcul ciblé
 #: des jeux dont l'unité retenue change, séries des secteurs hors ménages écartées, étiquettes resynchronisées.
 #: 6 (contrôle qualité) : pays partenaire fixé au monde entier, ventilations par nationalité et pays de naissance
-#: (A8) : jeux concernés refaits.
-REGLES_NIVEAU2 = 6
+#: (A8) : jeux concernés refaits. 7 : partenaire « monde hors pays déclarant » (WRL_X_REP) reconnu comme total.
+REGLES_NIVEAU2 = 7
 
 DUREE_MAX = float(os.environ.get("EUROSTAT_DUREE_MAX_MINUTES", "270")) * 60
 NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "0") or 0)
@@ -615,7 +615,8 @@ def _revision_regles(info: dict) -> None:
         return
     series = _lire(FICHIER_SERIES)
     unites = cat.jeux_a_refaire_unites(series)
-    dimensions = cat.jeux_a_refaire_dimensions(series) if info.get("regles", 0) < 6 else {}
+    revues = sorted({d for v, dims in cat.REVISIONS_DIMENSIONS.items() if info.get("regles", 0) < v <= REGLES_NIVEAU2 for d in dims})
+    dimensions = cat.jeux_a_refaire_dimensions(series, revues) if revues else {}
     for code in set(unites) | set(dimensions):
         info["jeux"].pop(code, None)
     info["regles"] = REGLES_NIVEAU2

@@ -1,0 +1,59 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: solde_capacite_epargne_actuelle
+libelle: Opinion des ménages sur leur capacité d'épargne actuelle (solde)
+dimension: securite
+sous_theme: sécurité économique
+famille: capacite_epargne_percue
+variante_principale: oui
+autres_fiches_famille:
+- solde_capacite_epargne_future
+definition: >-
+  Solde des réponses (favorable moins défavorable) à la question sur la capacité actuelle du ménage à épargner,
+  enquête mensuelle de conjoncture auprès des ménages (Camme), France métropolitaine ; moyenne annuelle des 12 mois
+  à calculer.
+unite: solde d'opinion (points de %)
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+incontournable: non
+source_organisme: INSEE (enquête de conjoncture auprès des ménages)
+source_jeu: BDM, enquête mensuelle de conjoncture auprès des ménages (ENQ-CONJ-MENAGES)
+source_serie_id: "000857183"
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000857183
+url_page: https://www.insee.fr/fr/statistiques/serie/000857183
+frequence: mensuelle
+premiere_annee: 1970
+derniere_annee: 2026
+geo: FM
+nb_points_depuis_2000:
+eligibilite_longlist: oui
+ligne_longlist: bdm-000701
+raccordement: non
+raccordement_note: ''
+variantes:
+- serie_id: "000857195"
+  ligne_id: bdm-000711
+  source: INSEE BDM
+  nature: données CVS
+  eligible: oui
+  periode: 1970-2026
+recommandation: retenir
+motif_recommandation: >-
+  Solde d'opinion INSEE depuis 1970 sur la capacité à épargner, seule mesure annuelle et longue de la marge financière
+  ressentie des ménages, rattaché à la sécurité économique par D29 (P8) ; à agréger en moyenne annuelle.
+note_pertinence: >-
+  Pouvoir mettre de l'argent de côté est la condition de l'épargne de précaution, que la dimension cite et que la
+  série OCDE ne mesure que tous les trois ans. Le solde est déclaratif et dépend du climat conjoncturel, mais il
+  couvre toute la période sans rupture connue. La version CVS est une variante.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- agregation_annuelle
+notes: ''

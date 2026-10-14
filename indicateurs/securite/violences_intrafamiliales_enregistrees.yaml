@@ -1,0 +1,67 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: violences_intrafamiliales_enregistrees
+libelle: Victimes de violences physiques intrafamiliales enregistrées (nombre)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: violences_intrafamiliales
+variante_principale: non
+autres_fiches_famille:
+- victimes_violences_conjugales
+definition: >-
+  Nombre de victimes de violences physiques commises dans le cadre familial (conjugal ou non) enregistrées par la
+  police et la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
+unite: nombre de victimes (taux à calculer)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: non
+source_organisme: SSMSI (ministère de l'Intérieur)
+source_jeu: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+source_serie_id: >-
+  https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques intrafamiliales
+  enregistrées par les services de sécurité » ; Indicateur=Violences physiques ; Sous_indicateur=Ensemble des lieux
+  ; Statistique=Nombre ; Zone_geographique=France ; Champ=France ; Periodicite=Annuelle ; Unit)
+source_niveau: 2
+url_api: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f
+url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
+frequence: annuelle
+premiere_annee: 2016
+derniere_annee: 2025
+geo: FR
+nb_points_depuis_2000: 10
+eligibilite_longlist: oui
+ligne_longlist: m04-000274
+raccordement: non
+raccordement_note: ''
+variantes:
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_violences_intrafam)
+  ligne_id: m04-000301
+  source: SDES-INSEE
+  nature: 'ITDD : violences intrafamiliales pour 1 000 habitants, 2016-2024 (non éligible : 9 points)'
+  eligible: non
+  periode: 2016-2024
+recommandation: ecarter
+motif_recommandation: >-
+  Série en nombre disponible seulement depuis 2016 (10 points) et de sens ambigu, sa progression traduisant aussi
+  la hausse des plaintes (M04, autres_sources §2.4) ; la fréquence des violences conjugales est mesurée par l'enquête
+  (victimes_violences_conjugales).
+note_pertinence: >-
+  Comme les violences sexuelles enregistrées, les violences intrafamiliales enregistrées progressent avec la révélation
+  des faits (accueil des victimes, campagnes, Grenelle de 2019) : une hausse ne signale pas une dégradation de la
+  sécurité. La série sert à décrire l'activité des services, pas le résultat.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- delinquance_enregistree
+- sens_ambigu
+- en_nombre_taux_a_calculer
+- debut_2016
+notes: >-
+  Filtre dans la base SSMSI : Titre « Violences physiques intrafamiliales enregistrées par les services de sécurité
+  », Unite_de_compte = Victimes, Periodicite = Annuelle, Zone = France.

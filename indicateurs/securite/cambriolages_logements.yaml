@@ -1,0 +1,90 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: cambriolages_logements
+libelle: Cambriolages de logements enregistrés (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux biens
+famille: cambriolages
+variante_principale: oui
+autres_fiches_famille: []
+definition: >-
+  Nombre de cambriolages et tentatives de cambriolage de locaux d'habitation privés (catégorie ICCS 05012) enregistrés
+  par la police et la gendarmerie dans l'année, pour 100 000 habitants.
+unite: infractions pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: non
+source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
+source_jeu: crim_off_cat — Infractions enregistrées par la police par type d'infraction
+source_serie_id: crim_off_cat?freq=A&iccs=ICCS05012&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: >-
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS05012&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+geo: FR
+nb_points_depuis_2000: 14
+eligibilite_longlist: oui
+ligne_longlist: estat-000434
+raccordement: oui
+raccordement_note: >-
+  Lacune 2017-2019 dans la série Eurostat : à combler par la série SSMSI des cambriolages de logements (nombre,
+  2016-2025, ligne m04-000276) rapportée à la population, après contrôle de l'écart sur 2016 et 2020-2024. Pas de
+  série avant 2008 au catalogue.
+variantes:
+- serie_id: crim_off_cat?freq=A&iccs=ICCS0501&unit=P_HTHAB&geo=FR
+  ligne_id: estat-000433
+  source: Eurostat
+  nature: >-
+    champ élargi : ensemble des cambriolages (tous locaux), pour 100 000 habitants, 2008-2024 sans lacune
+  eligible: oui
+  periode: 2008-2024
+- serie_id: >-
+    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Cambriolages de logement
+    (résidences principales et secondaires) enregistrés par les services de sécurité (Données annuelles) » ; Indicateur=Cambriolages
+    et tentatives ; Sous_indicateur=Logements (résidences principales et secondaires) ; Statistique=Nombre ; Zone_geographique=France
+    ; Cham)
+  ligne_id: m04-000276
+  source: SSMSI
+  nature: 'SSMSI : cambriolages de logements enregistrés, en nombre, 2016-2025 (comble la lacune 2017-2019)'
+  eligible: oui
+  periode: 2016-2025
+- serie_id: >-
+    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Cambriolages et tentatives
+    de cambriolages de résidences principales » ; Indicateur=Cambriolages et tentatives ; Sous_indicateur=Cambriolages
+    et tentatives de cambriolages de résidences principales ; Statistique=Nombre ; Zone_geograp)
+  ligne_id: m04-000289
+  source: SSMSI
+  nature: 'enquête CVS (SSMSI) : ménages victimes de cambriolage ou tentative, en nombre, 2006-2020 (arrêtée)'
+  eligible: oui
+  periode: 2006-2020
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_cambriolages)
+  ligne_id: m04-000303
+  source: SDES-INSEE
+  nature: 'ITDD : cambriolages pour 1 000 logements, 2016-2024 (non éligible : 9 points)'
+  eligible: non
+  periode: 2016-2024
+recommandation: retenir
+motif_recommandation: >-
+  Cambriolages de logements enregistrés pour 100 000 habitants, 2008-2024 (260 en 2008, 382 en 2013, 295 en 2024),
+  lacune 2017-2019 comblable par la série SSMSI ; la plainte conditionne l'indemnisation par l'assurance, ce qui
+  rend la série enregistrée interprétable.
+note_pertinence: >-
+  Le cambriolage du logement est l'atteinte aux biens la plus redoutée par les ménages. L'enquête CVS, qui mesurait
+  les ménages victimes, s'arrête en 2020 et la série VRS n'est pas au catalogue : la série enregistrée devient la
+  mesure principale. Le jeu Eurostat donne aussi l'ensemble des cambriolages (tous locaux, sans lacune), moins centré
+  sur les ménages.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- delinquance_enregistree
+- lacune_2017_2019
+notes: ''

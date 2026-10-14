@@ -1,0 +1,111 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: violences_sexuelles_enregistrees
+libelle: Violences sexuelles enregistrées par la police (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: violences_sexuelles
+variante_principale: non
+autres_fiches_famille:
+- victimes_violences_sexuelles
+definition: >-
+  Nombre de violences sexuelles (catégorie ICCS 0301 : viols et agressions sexuelles) enregistrées par la police
+  et la gendarmerie dans l'année, pour 100 000 habitants.
+unite: infractions pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: non
+source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
+source_jeu: crim_off_cat — Infractions enregistrées par la police par type d'infraction
+source_serie_id: crim_off_cat?freq=A&iccs=ICCS0301&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: >-
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS0301&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+geo: FR
+nb_points_depuis_2000: 17
+eligibilite_longlist: oui
+ligne_longlist: estat-000427
+raccordement: non
+raccordement_note: ''
+variantes:
+- serie_id: crim_off_cat?freq=A&iccs=ICCS03011&unit=P_HTHAB&geo=FR
+  ligne_id: estat-000428
+  source: Eurostat
+  nature: 'sous-catégorie : viols enregistrés, pour 100 000 habitants'
+  eligible: oui
+  periode: 2008-2024
+- serie_id: crim_off_cat?freq=A&iccs=ICCS03012&unit=P_HTHAB&geo=FR
+  ligne_id: estat-000429
+  source: Eurostat
+  nature: 'sous-catégorie : agressions sexuelles enregistrées, pour 100 000 habitants'
+  eligible: oui
+  periode: 2008-2024
+- serie_id: crim_hom_soff?freq=A&iccs=ICCS03011&leg_stat=PER_VICT&sex=T&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032465
+  source: Eurostat
+  nature: >-
+    même source : Homicides volontaires et infractions sexuelles enregistrés, par statut juridique et sexe de la
+    personne impliquée — Viol ; Victime
+  eligible: oui
+  periode: 2008-2024
+- serie_id: crim_hom_soff?freq=A&iccs=ICCS03011&leg_stat=PER_VICT&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032466
+  source: Eurostat
+  nature: ventilation par sexe
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_soff?freq=A&iccs=ICCS03012&leg_stat=PER_VICT&sex=T&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032473
+  source: Eurostat
+  nature: >-
+    même source : Homicides volontaires et infractions sexuelles enregistrés, par statut juridique et sexe de la
+    personne impliquée — Agression sexuelle ; Victime
+  eligible: oui
+  periode: 2008-2024
+- serie_id: crim_hom_soff?freq=A&iccs=ICCS03012&leg_stat=PER_VICT&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032474
+  source: Eurostat
+  nature: ventilation par sexe
+  eligible: oui
+  periode: 2015-2024
+- serie_id: >-
+    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences sexuelles enregistrées
+    par les services de sécurité » ; Indicateur=Violences sexuelles ; Sous_indicateur=Ensemble des lieux ; Statistique=Nombre
+    ; Zone_geographique=France ; Champ=France ; Periodicite=Annuelle ; Unit)
+  ligne_id: m04-000275
+  source: SSMSI
+  nature: 'SSMSI : victimes de violences sexuelles enregistrées, en nombre, 2016-2025'
+  eligible: oui
+  periode: 2016-2025
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_violences_sex)
+  ligne_id: m04-000302
+  source: SDES-INSEE
+  nature: 'ITDD : violences sexuelles enregistrées pour 1 000 habitants (non éligible : 9 points)'
+  eligible: non
+  periode: 2016-2024
+recommandation: ecarter
+motif_recommandation: >-
+  Les violences sexuelles enregistrées sont multipliées par 4 entre 2010 et 2024 (35,5 à 140,8 pour 100 000 habitants,
+  accélération depuis 2018) alors que la part de victimes déclarées dans l'enquête reste entre 0,4 et 0,8 % : la
+  série mesure la révélation des faits, pas leur fréquence.
+note_pertinence: >-
+  La hausse des violences sexuelles enregistrées traduit d'abord une plus grande propension à porter plainte et
+  une meilleure prise en charge des victimes ; l'utiliser comme indicateur de sécurité conduirait à lire un progrès
+  de la parole comme une dégradation. Elle peut être montrée à titre d'information, à côté de l'enquête, mais pas
+  notée.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- delinquance_enregistree
+- sens_ambigu
+notes: ''

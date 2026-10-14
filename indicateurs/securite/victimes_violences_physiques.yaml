@@ -1,0 +1,83 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: victimes_violences_physiques
+libelle: Adultes victimes de violences physiques (enquête de victimation)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: violences_physiques
+variante_principale: oui
+autres_fiches_famille:
+- violences_physiques_enregistrees
+definition: >-
+  Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins une violence
+  physique dans l'année, qu'elles aient porté plainte ou non (enquêtes CVS puis VRS ; composante de l'indicateur
+  ODD 16.i2).
+unite: '% des 18-75 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: non
+source_organisme: INSEE (indicateurs ODD, d'après les enquêtes de victimation du SSMSI)
+source_jeu: BDM, indicateurs ODD (ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES)
+source_serie_id: "010596044"
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596044
+url_page: https://www.insee.fr/fr/statistiques/serie/010596044
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2023
+geo: FM
+nb_points_depuis_2000: 12
+eligibilite_longlist: oui
+ligne_longlist: bdm-000950
+raccordement: non
+raccordement_note: Même rupture CVS/VRS que victimes_violences (aucune valeur 2019-2020).
+variantes:
+- serie_id: 'odd_16 : 16_1_3_VC_VOV_PHY_ASLT._T._T._T._T._T.PT_POP'
+  ligne_id: m04-000136
+  source: OCDE
+  nature: 'ONUDC via OCDE : agression physique déclarée (% de la population), 2009-2022, autre définition'
+  eligible: oui
+  periode: 2009-2022
+- serie_id: >-
+    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques hors
+    ménage » ; Indicateur=Violences physiques ; Sous_indicateur=Hors ménage ; Statistique=Nombre ; Zone_geographique=France
+    métropolitaine ; Champ=France métropolitaine ; Peri)
+  ligne_id: m04-000290
+  source: SSMSI
+  nature: 'enquête CVS (SSMSI) : victimes de violences physiques hors ménage, en nombre, 2006-2020 (arrêtée)'
+  eligible: oui
+  periode: 2006-2020
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=VIOLENCE_TYP1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  ligne_id: melodi-005405
+  source: INSEE Melodi
+  nature: copie Melodi de la série BDM
+  eligible: oui
+  periode: 2010-2023
+- serie_id: 'odd_16 : 16_1_3_VC_VOV_PHYL._T._T._T._T._T.PT_POP'
+  ligne_id: m04-000139
+  source: OCDE
+  nature: 'ONUDC via OCDE : violence physique déclarée, 2013-2019 (non éligible : arrêtée avant 2020)'
+  eligible: non
+  periode: 2013-2019
+recommandation: retenir
+motif_recommandation: >-
+  Part des 18-75 ans déclarant des violences physiques (enquête), 2010-2023, indépendante de la plainte et stable
+  sur la période CVS (2,1 % en 2010 comme en 2018) ; même rupture que l'ensemble (1,0 à 1,2 % en 2021-2023).
+note_pertinence: >-
+  Composante principale de l'indicateur d'ensemble, elle permet de suivre les coups et blessures pour eux-mêmes
+  et de contrôler la série enregistrée correspondante, dont le doublement depuis 2008 ne se retrouve pas dans l'enquête.
+  Les valeurs sont arrondies au dixième de point. Mêmes limites de champ et de rupture que victimes_violences.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- rupture_enquete_cvs_vrs
+- lacune_2019_2020
+- champ_metropole_18_75_ans
+notes: ''

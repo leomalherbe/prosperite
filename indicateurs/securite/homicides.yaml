@@ -1,0 +1,173 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: homicides
+libelle: Victimes d'homicide volontaire (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: homicides
+variante_principale: oui
+autres_fiches_famille: []
+definition: >-
+  Nombre de victimes d'homicide volontaire (catégorie 0101 de la classification internationale des infractions ICCS,
+  hors tentatives) enregistrées par la police et la gendarmerie au cours de l'année, rapporté à la population, pour
+  100 000 habitants.
+unite: victimes pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: oui
+source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
+source_jeu: >-
+  crim_hom_soff — Homicides volontaires et infractions sexuelles enregistrés, par statut juridique et sexe de la
+  personne impliquée
+source_serie_id: crim_hom_soff?freq=A&iccs=ICCS0101&leg_stat=PER_VICT&sex=T&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: >-
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_hom_soff?freq=A&iccs=ICCS0101&leg_stat=PER_VICT&sex=T&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_hom_soff/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+geo: FR
+nb_points_depuis_2000: 17
+eligibilite_longlist: oui
+ligne_longlist: estat-032457
+raccordement: oui
+raccordement_note: >-
+  2000-2007 : taux ONUDC relayé par la Banque mondiale (VC.IHR.PSRC.P5, même concept : victimes d'homicide volontaire
+  pour 100 000 habitants, série 1995-2023, ligne m04-000395). Sur 2008-2023, l'écart avec Eurostat va de 0,01 à
+  0,035 point (Eurostat toujours plus bas, vraisemblablement le dénominateur de population) : raccordement par simple
+  juxtaposition ou par calage sur l'écart moyen 2008-2010.
+variantes:
+- serie_id: "010596040"
+  ligne_id: bdm-000946
+  source: INSEE BDM
+  nature: 'INSEE, indicateur ODD 16.i1 : nombre de victimes, France entière, 2010-2024 (taux à calculer)'
+  eligible: oui
+  periode: 2010-2024
+- serie_id: crim_off_cat?freq=A&iccs=ICCS0101&unit=P_HTHAB&geo=FR
+  ligne_id: estat-000423
+  source: Eurostat
+  nature: >-
+    autre unité de compte : infractions d'homicide enregistrées (et non victimes), pour 100 000 habitants, 2008-2024
+  eligible: oui
+  periode: 2008-2024
+- serie_id: crim_off_cat?freq=A&iccs=ICCS0102&unit=P_HTHAB&geo=FR
+  ligne_id: estat-000424
+  source: Eurostat
+  nature: 'concept voisin : tentatives d''homicide enregistrées, pour 100 000 habitants'
+  eligible: oui
+  periode: 2008-2024
+- serie_id: crim_hom_soff?freq=A&iccs=ICCS0101&leg_stat=PER_VICT&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032458
+  source: Eurostat
+  nature: ventilation par sexe (2015-2024)
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_vage?freq=A&iccs=ICCS0101&age=TOTAL&sex=T&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032481
+  source: Eurostat
+  nature: même mesure (victimes pour 100 000 habitants) dans le jeu par âge et sexe
+  eligible: oui
+  periode: 2008-2024
+- serie_id: >-
+    crim_hom_vage?freq=A&iccs=ICCS0101&age=Y_LT15&age=Y15-29&age=Y_LT18&age=Y_GE18&age=Y30-44&age=Y45-59&age=Y_GE60&sex=T&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032482
+  source: Eurostat
+  nature: ventilation par âge (2015-2024)
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_vage?freq=A&iccs=ICCS0101&age=TOTAL&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032483
+  source: Eurostat
+  nature: ventilation par sexe (2015-2024)
+  eligible: oui
+  periode: 2015-2024
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_1 UNIT_MEASURE=DT_10P5HB
+  ligne_id: m04-000064
+  source: OCDE
+  nature: >-
+    OCDE 10_1 : décès par agression (causes médicales de décès), autre définition, 2004-2022, valeurs arrondies
+    répétées
+  eligible: oui
+  periode: 2004-2022
+- serie_id: 'odd_16 : 16_1_1_OECD._T._T._T._T._T.DT_10P5HB'
+  ligne_id: m04-000134
+  source: OCDE
+  nature: 'OCDE ODD 16.1.1 : décès par agression (causes de décès), autre définition, 2000-2022'
+  eligible: oui
+  periode: 2000-2022
+- serie_id: 'odd_16 : 16_1_1_VC_IHR_PSRCN._T._T._T._T._T.PS'
+  ligne_id: m04-000135
+  source: OCDE
+  nature: 'ONUDC via OCDE : nombre de victimes d''homicide volontaire, 2000-2024'
+  eligible: oui
+  periode: 2000-2024
+- serie_id: >-
+    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Homicides enregistrés par
+    les services de sécurité » ; Indicateur=Homicides et tentatives d'homicide ; Sous_indicateur=Homicides ; Statistique=Nombre
+    ; Zone_geographique=France ; Champ=France ; Periodicite=Annuelle )
+  ligne_id: m04-000272
+  source: SSMSI
+  nature: 'SSMSI : nombre de victimes, France, 2016-2025 (une série « non renseigné » couvre 2008-2015)'
+  eligible: oui
+  periode: 2016-2025
+- serie_id: https://api.worldbank.org/v2/country/FRA/indicator/VC.IHR.PSRC.P5?format=json
+  ligne_id: m04-000395
+  source: Banque mondiale
+  nature: >-
+    ONUDC via Banque mondiale : taux pour 100 000 habitants, 1995-2023 ; partenaire du raccordement 2000-2007
+  eligible: oui
+  periode: 1995-2023
+- serie_id: >-
+    DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=16.i1&PCS=_Z&SDG=SDG16&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005710
+  source: INSEE Melodi
+  nature: même série INSEE ODD 16.i1 (Melodi), en nombre
+  eligible: oui
+  periode: 2010-2024
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_homicides)
+  ligne_id: m04-000299
+  source: SDES-INSEE
+  nature: 'ITDD : homicides pour 1 000 habitants, 2016-2024 (non éligible : 9 points)'
+  eligible: non
+  periode: 2016-2024
+- serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=T&age=TOTAL&geo=FR
+  ligne_id: estat-001985
+  source: Eurostat
+  nature: >-
+    autre définition : taux standardisé de mortalité par homicide (causes médicales de décès), 2001-2023 ; ligne
+    rattachée à sante dans la long-list (règle 9) : rattachement à corriger (R1)
+  eligible: oui
+  periode: 2001-2023
+  fichier: catalogues/longlist_sante.csv.gz
+- serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=M&sex=F&age=TOTAL&geo=FR
+  ligne_id: estat-001986
+  source: Eurostat
+  nature: 'même série ventilée par sexe ; ligne rattachée à sante : rattachement à corriger (R1)'
+  eligible: oui
+  periode: 2001-2023
+  fichier: catalogues/longlist_sante.csv.gz
+recommandation: retenir
+motif_recommandation: >-
+  Indicateur incontournable (Doughnut, OCDE 10_1, Eurostat QoL), taux annuel 2008-2024 sans lacune et à sens non
+  ambigu (les homicides sont presque tous connus des services), raccordable à 2000 par la série ONUDC.
+note_pertinence: >-
+  L'homicide est l'atteinte la plus grave et la mieux enregistrée : presque tous les homicides sont connus de la
+  police, si bien que la série enregistrée suit l'évolution réelle, contrairement aux autres violences. Le taux
+  français est faible (de 1,03 à 1,60 pour 100 000 entre 2008 et 2024) et ses variations annuelles tiennent souvent
+  à des événements exceptionnels (pic de 2015 à 1,55, année des attentats). Le Doughnut fixe un seuil de privation
+  à 5 pour 100 000, très au-dessus du niveau français, ce qui plaide pour une borne historique ou européenne.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- delinquance_enregistree
+- raccordement_2000_2007
+notes: >-
+  Variante de la long-list sante à rattacher ici (sdg_16_10, taux standardisé de mortalité par homicide, causes
+  de décès) : rattachement à corriger par la session mère (R1).

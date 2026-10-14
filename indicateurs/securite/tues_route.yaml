@@ -1,0 +1,256 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: tues_route
+libelle: Tués sur les routes (pour 100 000 habitants)
+dimension: securite
+sous_theme: sécurité routière
+famille: securite_routiere
+variante_principale: oui
+autres_fiches_famille: []
+definition: >-
+  Nombre de personnes tuées dans un accident de la circulation routière (décès dans les 30 jours), rapporté à la
+  population, pour 100 000 habitants (indicateur de développement durable de l'UE, sdg_11_40).
+unite: tués pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: oui
+source_organisme: Eurostat (statistiques de sécurité routière, d'après l'ONISR)
+source_jeu: sdg_11_40 — Décès sur les routes, par type de route
+source_serie_id: sdg_11_40?freq=A&tra_infr=TOTAL&unit=RT&geo=FR
+source_niveau: 1
+url_api: >-
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_40?freq=A&tra_infr=TOTAL&unit=RT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_11_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+geo: FR
+nb_points_depuis_2000: 25
+eligibilite_longlist: oui
+ligne_longlist: estat-002049
+raccordement: non
+raccordement_note: ''
+variantes:
+- serie_id: "010593288"
+  ligne_id: bdm-001007
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : nombre de tués, France métropolitaine, 2010-2024'
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593289"
+  ligne_id: bdm-001008
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593290"
+  ligne_id: bdm-001009
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593291"
+  ligne_id: bdm-001010
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593292"
+  ligne_id: bdm-001011
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593293"
+  ligne_id: bdm-001012
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593294"
+  ligne_id: bdm-001013
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593295"
+  ligne_id: bdm-001014
+  source: INSEE BDM
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: "010593296"
+  ligne_id: bdm-001015
+  source: INSEE BDM
+  nature: 'INSEE BDM : Nombre de tués par accident de la route - Autoroutes'
+  eligible: oui
+  periode: 2013-2024
+- serie_id: "010593297"
+  ligne_id: bdm-001016
+  source: INSEE BDM
+  nature: 'INSEE BDM : Nombre de tués par accident de la route - Routes hors agglomération'
+  eligible: oui
+  periode: 2013-2024
+- serie_id: "010593298"
+  ligne_id: bdm-001017
+  source: INSEE BDM
+  nature: 'INSEE BDM : Nombre de tués par accident de la route - Agglomération'
+  eligible: oui
+  periode: 2013-2024
+- serie_id: tran_sf_roadus?freq=A&sex=T&age=TOTAL&unit=P_MHAB&pers_cat=TOTAL&geo=FR
+  ligne_id: estat-001854
+  source: Eurostat
+  nature: 'autre unité : tués par million d''habitants (tran_sf_roadus), 2000-2024'
+  eligible: oui
+  periode: 2000-2024
+- serie_id: tran_sf_roadus?freq=A&sex=M&sex=F&sex=UNK&age=TOTAL&unit=P_MHAB&pers_cat=TOTAL&geo=FR
+  ligne_id: estat-001855
+  source: Eurostat
+  nature: tués par million d'habitants, ventilation par sexe
+  eligible: oui
+  periode: 2000-2024
+- serie_id: >-
+    tran_sf_roadus?freq=A&sex=T&age=Y_LT15&age=Y15-17&age=Y18-24&age=Y25-49&age=Y50-64&age=Y_GE65&age=UNK&unit=P_MHAB&pers_cat=TOTAL&geo=FR
+  ligne_id: estat-001856
+  source: Eurostat
+  nature: tués par million d'habitants, ventilation par âge
+  eligible: oui
+  periode: 2000-2024
+- serie_id: tran_r_acci?freq=A&victim=KIL&unit=P_MHAB&geo=FR
+  ligne_id: estat-004428
+  source: Eurostat
+  nature: tués par million d'habitants, valeur nationale du jeu régional tran_r_acci
+  eligible: oui
+  periode: 2000-2024
+- serie_id: tran_sf_roadro?freq=A&unit=NR&tra_infr=TOTAL&geo=FR
+  ligne_id: estat-037470
+  source: Eurostat
+  nature: 'en nombre : tués par catégorie de route (total), 2000-2024'
+  eligible: oui
+  periode: 2000-2024
+- serie_id: tran_sf_roadve?freq=A&unit=NR&vehicle=TOTAL&geo=FR
+  ligne_id: estat-037471
+  source: Eurostat
+  nature: 'en nombre : tués par type de véhicule (total), 2000-2024'
+  eligible: oui
+  periode: 2000-2024
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_3 UNIT_MEASURE=DT_10P5HB
+  ligne_id: m04-000071
+  source: OCDE
+  nature: 'OCDE 10_3 : décès sur la route pour 100 000 habitants, 2004-2024'
+  eligible: oui
+  periode: 2004-2024
+- serie_id: 'odd_3 : 3_6_1_OECD._T._T._T._T._T.DT_10P5HB'
+  ligne_id: m04-000125
+  source: OCDE
+  nature: 'OCDE ODD 3.6.1 : décès par accident de la route (causes de décès), autre définition, 2000-2022'
+  eligible: oui
+  periode: 2000-2022
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y14T17&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005359
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005387
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y25T44&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005422
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y45T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005435
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y65T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005444
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y_GE75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005468
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=Y_LT14&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005469
+  source: INSEE Melodi
+  nature: ventilation par âge
+  eligible: oui
+  periode: 2010-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ROUTE_TYP1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005520
+  source: INSEE Melodi
+  nature: >-
+    INSEE Melodi : Indicateurs d'objectifs de développement durable — Objectif 3 : Santé et bien-être ; Personnes
+    tuées par accident de la route ; Nombre ; France métropolitaine ; Autoroutes
+  eligible: oui
+  periode: 2013-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ROUTE_TYP2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005521
+  source: INSEE Melodi
+  nature: >-
+    INSEE Melodi : Indicateurs d'objectifs de développement durable — Objectif 3 : Santé et bien-être ; Personnes
+    tuées par accident de la route ; Nombre ; France métropolitaine ; Routes hors agglomération
+  eligible: oui
+  periode: 2013-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ROUTE_TYP3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005522
+  source: INSEE Melodi
+  nature: >-
+    INSEE Melodi : Indicateurs d'objectifs de développement durable — Objectif 3 : Santé et bien-être ; Personnes
+    tuées par accident de la route ; Nombre ; France métropolitaine ; Routes en agglomération
+  eligible: oui
+  periode: 2013-2024
+- serie_id: >-
+    DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  ligne_id: melodi-005544
+  source: INSEE Melodi
+  nature: >-
+    INSEE Melodi : Indicateurs d'objectifs de développement durable — Objectif 3 : Santé et bien-être ; Personnes
+    tuées par accident de la route ; Nombre ; France métropolitaine
+  eligible: oui
+  periode: 2010-2024
+recommandation: retenir
+motif_recommandation: >-
+  Indicateur des cadres OCDE (10_3), ODD 3.6 et objectif UE 2030 (diviser par deux tués et blessés graves), taux
+  pour 100 000 habitants 2000-2024 sans lacune (13,3 en 2000, 4,6 en 2024).
+note_pertinence: >-
+  La sécurité routière est rattachée à la dimension par l'arbitrage A6 du gel 1. Le taux de tués a été divisé par
+  près de trois depuis 2000, surtout entre 2002 et 2006 (de 12,4 à 7,4), puis stagne autour de 5 depuis 2013. Le
+  champ est à vérifier : rapporter les 3 193 tués de métropole de 2024 (INSEE) au taux de 4,6 pour 100 000 donne
+  une population d'environ 69 millions, celle de la France entière et non de la métropole (calcul de l'agent). Les
+  objectifs officiels (ODD 3.6, UE 2030) fournissent des bornes.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- rupture_2014
+- provisoire_2023_2024
+- champ_geo_a_verifier
+notes: Rupture signalée par Eurostat en 2014 (drapeau b) ; valeurs 2023-2024 provisoires.

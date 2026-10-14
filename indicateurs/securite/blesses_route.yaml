@@ -1,0 +1,61 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: blesses_route
+libelle: Blessés sur les routes (par million d'habitants)
+dimension: securite
+sous_theme: sécurité routière
+famille: blesses_route
+variante_principale: oui
+autres_fiches_famille: []
+definition: >-
+  Nombre de personnes blessées dans un accident de la circulation routière dans l'année, rapporté à la population,
+  par million d'habitants (valeur nationale du jeu régional tran_r_acci).
+unite: blessés par million d'habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: non
+source_organisme: Eurostat (statistiques régionales des transports)
+source_jeu: tran_r_acci — Victimes dans les accidents de la route par région NUTS 2
+source_serie_id: tran_r_acci?freq=A&victim=INJ&unit=P_MHAB&geo=FR
+source_niveau: 1
+url_api: >-
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_r_acci?freq=A&victim=INJ&unit=P_MHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/tran_r_acci/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+geo: FR
+nb_points_depuis_2000: 25
+eligibilite_longlist: oui
+ligne_longlist: estat-004427
+raccordement: non
+raccordement_note: ''
+variantes:
+- serie_id: tran_sf_roadnu?freq=A&unit=P_MHAB&geo=FR
+  ligne_id: estat-037472
+  source: Eurostat
+  nature: 'autre unité de compte : accidents corporels par million d''habitants (jeu régional, valeur nationale)'
+  eligible: oui
+  periode: 2000-2024
+recommandation: retenir
+motif_recommandation: >-
+  Seule série nationale des blessés de la route au catalogue (2 726 par million en 2000, 990 en 2024, sans lacune),
+  complément des tués visé par l'objectif UE 2030 ; issue d'un jeu régional que D30 prévoit d'exclure, d'où une
+  exception à prévoir.
+note_pertinence: >-
+  Les blessés sont bien plus nombreux que les tués et l'objectif européen 2030 porte sur les tués et les blessés
+  graves. La série compte tous les blessés, pas seulement les blessés graves, et la définition française des blessés
+  a changé au cours de la période (blessés hospitalisés depuis 2005, à vérifier) : Eurostat ne signale pourtant
+  aucune rupture. Si M02 exclut les jeux régionaux NUTS (D30), garder tran_r_acci au niveau national.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- jeu_regional_nuts
+- definition_blesses_a_verifier
+notes: ''

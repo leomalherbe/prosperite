@@ -1,0 +1,85 @@
+# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
+# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
+# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
+id: homicides_conjugaux
+libelle: Victimes d'homicide commis par le partenaire intime (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: homicides_conjugaux
+variante_principale: oui
+autres_fiches_famille: []
+definition: >-
+  Nombre de victimes d'homicide volontaire dont l'auteur est le partenaire intime (conjoint, concubin, partenaire
+  ou ancien partenaire), enregistrées par la police, rapporté à la population, pour 100 000 habitants.
+unite: victimes pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+incontournable: non
+source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
+source_jeu: crim_hom_vrel — Victimes d'homicides volontaires par relation victime-délinquant et sexe
+source_serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN&sex=T&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: >-
+  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_hom_vrel?freq=A&pers_cat=IPTN&sex=T&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_hom_vrel/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2015
+derniere_annee: 2024
+geo: FR
+nb_points_depuis_2000: 10
+eligibilite_longlist: oui
+ligne_longlist: estat-032477
+raccordement: non
+raccordement_note: Aucune série antérieure à 2015 dans les catalogues.
+variantes:
+- serie_id: crim_hom_vrel?freq=A&pers_cat=FAM&sex=T&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032475
+  source: Eurostat
+  nature: 'autre relation : victimes tuées par un membre de la famille'
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_vrel?freq=A&pers_cat=FAM&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032476
+  source: Eurostat
+  nature: membre de la famille, ventilation par sexe
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032478
+  source: Eurostat
+  nature: partenaire intime, ventilation par sexe (suivi des féminicides)
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN_FAM&sex=T&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032479
+  source: Eurostat
+  nature: 'agrégat : partenaire intime ou membre de la famille'
+  eligible: oui
+  periode: 2015-2024
+- serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN_FAM&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  ligne_id: estat-032480
+  source: Eurostat
+  nature: partenaire intime ou membre de la famille, ventilation par sexe
+  eligible: oui
+  periode: 2015-2024
+recommandation: retenir
+motif_recommandation: >-
+  Seule série annuelle des homicides conjugaux (ventilation par sexe disponible pour suivre les féminicides), 2015-2024
+  sans lacune et à sens non ambigu ; aucune donnée avant 2015.
+note_pertinence: >-
+  Les homicides conjugaux sont un enjeu public majeur (violences faites aux femmes) et, comme les autres homicides,
+  ils sont presque tous connus des services : la série n'a pas le biais de révélation des violences conjugales enregistrées.
+  Le taux est très faible (0,15 à 0,19 pour 100 000 de 2015 à 2024) et ses variations annuelles sont peu significatives.
+  Il recoupe en partie l'indicateur homicides.
+socle_v1:
+  seuil_minimal:
+  objectif:
+  type_justification:
+  justification:
+qualite:
+- debut_2015
+- faibles_effectifs
+- delinquance_enregistree
+notes: ''

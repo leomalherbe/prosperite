@@ -81,3 +81,29 @@ Périmètre du lancement en cours : **phase 1** (A1 fiche source + statut des s�
 - **Constat à corriger plus tard** : l'heuristique d'unité préfère `PC_EU27_2020_HAB_MEUR_CP` (indice relatif à l'UE) à `CLV20_EUR_HAB` pour `nama_10_pc` (préfixe `PC`) ; non corrigé maintenant car cela imposerait de refaire tout le niveau 2 ; noté dans les limites (§10.5) ; toutes les unités restent listées dans `unites_disponibles`.
 - **État des robots à 16 h 55** : passage 2 (run 38405905176) toujours en cours depuis 15 h 33 (≈ 1 h 22 ; aucun journal visible avant la fin, le robot ne commite qu'en fin de passage ; durée maximale 270 min, arrêt propre et reprise prévus) ; passage 3 (run 38412944475, v4) en attente. Temps d'attente maximal de l'agent atteint : les résultats complets du niveau 2 et le compte rendu final restent à faire après la fin des passages 2 et 3.
 - **Problèmes** : durée du passage 2 supérieure à l'estimation (≈ 1 s par jeu au passage 1, soit ≈ 45 min pour 2 480 jeux) : probablement des jeux volumineux découpés ou des réponses asynchrones (attente de 60 s par nouvel essai) — à vérifier dans le journal du passage 2.
+
+---
+
+# Phase 2, clôture — nouvel agent (14/10, nuit)
+
+## 2026-10-14 01:50 — Sous-tâche 2.6 : reprise, diagnostic du bogue de l'amorce
+
+- **Fait** : branche `m02-eurostat` reprise sur `origin/m02-eurostat` (c2b28f0) ; fusion de `origin/main` (gel 1 : charte v1.2, `indicateurs/dimensions.yaml` v1, `docs/methodo/31_correspondance_v0_v1.csv`, M03, M04) ; lecture de `CLAUDE.md`, charte (§3.4, §3.6, §4 v1, §5.3), journal des décisions (D13–D27, D26 en particulier), fiche M02, ce journal, fiche source, script, logique des catalogues, bilan, état, journaux des passages 2 et 3, compte rendu de M05-prep (branche `m05-longlist`, constats de bruit). 110 tests passent.
+- **Diagnostic** : l'`IndexError` des passages 2 et 3 vient de la vérification du remplaçant de `sdg_15_60` (`env_bio3`) : ce jeu n'a que l'agrégat UE, la réponse `geo=FR` est un cube vide (dimension `geo` de taille 0) et `attribuer_roles` prenait `codes[0]` sur une liste vide. Deuxième constat : les séries du niveau 2 gardaient l'étiquette `dimension_v0` de leur premier traitement (règles v2) : 2 832 lignes de 82 jeux en décalage avec le niveau 1 v4.
+- **Problèmes** : aucun.
+
+## 2026-10-14 02:00 — Sous-tâche 2.7 : règles v5 (bogue, D26), passage n° 4
+
+- **Fait** : (1) bogue : dimension sans modalité sans rôle, `construire_series` vide sur cube vide, `_verifier_remplacement` et l'amorce protégés (statut « structure inattendue »), remplaçant de `sdg_15_60` = `env_bio2` (seul indice national d'oiseaux chez Eurostat, milieux agricoles) ; tests de non-régression sur les fixtures réelles. (2) Niveau 1 v5 : statistiques d'entreprises et d'échanges extérieurs exclues même dans un dossier prioritaire (`bd_`, `bop_`, `sbs_`, `lc_n`/`lc_r`, `isoc_*` d'entreprises, `htec_`, `egi_`, R-D des entreprises) ; pêche et sylviculture réintégrées en `planete` (captures, stock sur pied, surfaces boisées, prélèvements) ; population sans mot-clé → `contexte` ; mots-clés R-D (→ `education`, A5). (3) Niveau 2 sans passage complet : unités relatives à l'UE ou base 100 reléguées (recalcul ciblé des 16 jeux concernés), secteurs hors ménages des comptes par secteur déplacés vers `eurostat_series_catalogue_non.csv.gz` (motif `secteur_hors_menages`, D26), étiquettes resynchronisées, catalogue toujours compressé. (4) Péremption : niveau 1 et amorce 30 jours, niveau 2 90 jours (600 jeux au plus par passage). Simulation hors ligne avant envoi.
+- **Résultat** : passage n° 4 (run 38487815549, 2,9 min) : amorce complète (66 statuts), 1 828 candidats, 39 jeux traités, 0 restant.
+- **Problèmes** : mon `git pull --rebase` a aplati la fusion de `main` (les commits de `main` sont recopiés sur la branche au lieu d'une fusion) ; à corriger avant la fusion de la PR (voir compte rendu).
+
+## 2026-10-14 02:05 — Sous-tâche 2.8 : contrôle qualité du niveau 2, passages n° 5 et 6
+
+- **Fait** : tirage fixe de 20 séries éligibles et 20 écartées par dimension v0 (catalogue simulé puis réel). Écartées : toutes à juste titre (moins de 10 années, fin < 2020). Erreurs systématiques corrigées : `naio_*` (« Tableaux des emplois » = *use tables*) en `travail` ; pays d'origine des étudiants et pays partenaires énumérés (total `WORLD` / `WRL_X_REP`) ; espèces et sous-zones de pêche énumérées (`F00`, zone `0` ou grande zone) ; secteur de contrepartie de `nasa_10_f_cp` ; faux amis « non satisfaits » (→ santé) et « sages-femmes » ; `cult_trd*` (commerce de biens culturels). Ventilations par nationalité et pays de naissance ajoutées (A8). Ventilations (D21) vérifiées : une ligne par série par défaut et par dimension ventilée, couverture de chaque modalité au bon format (100 %), aucun doublon.
+- **Résultat** : passage n° 5 (run 38488281026, 3,8 min, 174 jeux refaits) et n° 6 (run 38488832255, 0,7 min, 24 jeux) : 1 816 candidats ; 42 538 séries par défaut dont 31 375 éligibles ; 13 672 lignes de ventilation ; 20 114 séries écartées ; 0 série dont l'unité changerait.
+- **Problèmes** : défaut d'unité restant (monétaire avant physique à rang égal, ex. `for_area_efa`), noté dans les limites.
+
+## 2026-10-14 02:20 — Sous-tâche 2.9 : documentation et compte rendu
+
+- **Fait** : fiche source (§6 n° 16 à 19, §9 bilan final de l'amorce, §10 règles v5, bilan final, limites, rafraîchissement) ; ce journal ; compte rendu `docs/cr/M02_compte_rendu.md` ; copies dans le Projet (`claude/cr/M02_compte_rendu.md`, `claude/10_source_eurostat.md`) ; PR #2 mise à jour.

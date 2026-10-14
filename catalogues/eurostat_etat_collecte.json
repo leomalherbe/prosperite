@@ -179,7 +179,7 @@
   "niveau2": {
    "a_rafraichir": 0,
    "debut": "2026-10-13T13:34:35Z",
-   "fin": "2026-10-14T00:11:05Z",
+   "fin": "2026-10-14T00:13:31Z",
    "jeux": {
     "aei_fm_salpest09": {
      "date": "2026-10-13T15:47:43Z",
@@ -1303,8 +1303,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→TOTAL (103) [ventilation] ; geo→FR (1) [fixé]"
     },
     "demo_marcb": {
-     "date": "2026-10-14T00:08:39Z",
-     "duree_s": 0.7,
+     "date": "2026-10-14T00:13:01Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1318,8 +1318,8 @@
      "structure_fr": "freq→A (1) [fixé] ; partner→TOTAL (10) [fixé] ; c_birth→TOTAL (10) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "demo_marcz": {
-     "date": "2026-10-14T00:08:38Z",
-     "duree_s": 0.6,
+     "date": "2026-10-14T00:13:00Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -4651,34 +4651,34 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; iscedf13→TOTAL (70) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobg02": {
-     "date": "2026-10-14T00:09:00Z",
-     "duree_s": 1.2,
+     "date": "2026-10-14T00:13:07Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
      "nb_candidates": 0,
      "nb_observations": 27150,
-     "nb_series": 1135,
-     "nb_ventilations": 1135,
+     "nb_series": 5,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; partner (228) [contenu] ; sex→T (3) [ventilation] ; isced11 (5) [contenu] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; partner→WRL_X_REP (228) [fixé] ; sex→T (3) [ventilation] ; isced11 (5) [contenu] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobg03": {
-     "date": "2026-10-14T00:09:01Z",
-     "duree_s": 1.2,
+     "date": "2026-10-14T00:13:08Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
      "nb_candidates": 0,
      "nb_observations": 27150,
-     "nb_series": 1135,
-     "nb_ventilations": 1135,
+     "nb_series": 5,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; partner (228) [contenu] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; partner→WRL_X_REP (228) [fixé] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobg04": {
      "date": "2026-10-13T15:13:54Z",
@@ -4711,34 +4711,34 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; iscedf13→TOTAL (224) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs02": {
-     "date": "2026-10-14T00:08:55Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:13:02Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
-     "nb_candidates": 1125,
+     "nb_candidates": 5,
      "nb_observations": 40665,
-     "nb_series": 1140,
-     "nb_ventilations": 1140,
+     "nb_series": 5,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; partner (228) [contenu] ; sex→T (3) [ventilation] ; isced11 (5) [contenu] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; partner→WRL_X_REP (228) [fixé] ; sex→T (3) [ventilation] ; isced11 (5) [contenu] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs03": {
-     "date": "2026-10-14T00:08:57Z",
+     "date": "2026-10-14T00:13:04Z",
      "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
-     "nb_candidates": 1130,
+     "nb_candidates": 5,
      "nb_observations": 40845,
-     "nb_series": 1145,
-     "nb_ventilations": 1145,
+     "nb_series": 5,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (6) [contenu] ; partner (229) [contenu] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (6) [contenu] ; partner→WRL_X_REP (229) [fixé] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs04": {
      "date": "2026-10-13T15:13:35Z",
@@ -4756,19 +4756,19 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; iscedf13→TOTAL (228) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs06": {
-     "date": "2026-10-14T00:08:58Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:13:05Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
-     "nb_candidates": 1356,
+     "nb_candidates": 6,
      "nb_observations": 48987,
-     "nb_series": 1374,
-     "nb_ventilations": 1374,
+     "nb_series": 6,
+     "nb_ventilations": 6,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; partner (229) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; partner→WRL_X_REP (229) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_perd01": {
      "date": "2026-10-13T15:14:07Z",
@@ -5973,8 +5973,8 @@
      "statut": "sans_dimension_geo"
     },
     "env_trdrrm": {
-     "date": "2026-10-14T00:10:44Z",
-     "duree_s": 1.1,
+     "date": "2026-10-14T00:13:09Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -6183,8 +6183,8 @@
      "structure_fr": "freq→A (1) [fixé] ; wst_oper (10) [contenu] ; material→TOTAL (7) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "env_wasship": {
-     "date": "2026-10-14T00:10:46Z",
-     "duree_s": 0.9,
+     "date": "2026-10-14T00:13:12Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -6198,8 +6198,8 @@
      "structure_fr": "freq→A (1) [fixé] ; stk_flow (2) [contenu] ; partner→TOTAL (165) [fixé] ; hazard (3) [contenu] ; wst_oper (4) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "env_wastrdmp": {
-     "date": "2026-10-14T00:10:45Z",
-     "duree_s": 1.0,
+     "date": "2026-10-14T00:13:11Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -20977,8 +20977,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec→TOTAL (13) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ind_id3cf": {
-     "date": "2026-10-14T00:10:48Z",
-     "duree_s": 0.7,
+     "date": "2026-10-14T00:13:14Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -20992,7 +20992,7 @@
      "structure_fr": "freq→A (1) [fixé] ; siec→TOTAL (7) [fixé] ; partner→THRD (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ind_idooil": {
-     "date": "2026-10-14T00:10:47Z",
+     "date": "2026-10-14T00:13:13Z",
      "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
@@ -21322,8 +21322,8 @@
      "structure_fr": "freq→A (1) [fixé] ; stk_flow (2) [contenu] ; siec (40) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_bio": {
-     "date": "2026-10-14T00:10:59Z",
-     "duree_s": 1.1,
+     "date": "2026-10-14T00:13:26Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21337,8 +21337,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (6) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_eh": {
-     "date": "2026-10-14T00:10:57Z",
-     "duree_s": 0.8,
+     "date": "2026-10-14T00:13:24Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21352,8 +21352,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_gas": {
-     "date": "2026-10-14T00:10:55Z",
-     "duree_s": 0.9,
+     "date": "2026-10-14T00:13:22Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21367,8 +21367,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_oil": {
-     "date": "2026-10-14T00:10:52Z",
-     "duree_s": 3.0,
+     "date": "2026-10-14T00:13:18Z",
+     "duree_s": 3.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21382,8 +21382,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (38) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_sff": {
-     "date": "2026-10-14T00:11:02Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:13:29Z",
+     "duree_s": 1.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21397,8 +21397,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (14) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_bio": {
-     "date": "2026-10-14T00:10:58Z",
-     "duree_s": 1.1,
+     "date": "2026-10-14T00:13:25Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21412,8 +21412,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (6) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_eh": {
-     "date": "2026-10-14T00:10:56Z",
-     "duree_s": 0.8,
+     "date": "2026-10-14T00:13:23Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21427,8 +21427,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_gas": {
-     "date": "2026-10-14T00:10:55Z",
-     "duree_s": 0.8,
+     "date": "2026-10-14T00:13:21Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21442,8 +21442,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_oil": {
-     "date": "2026-10-14T00:10:48Z",
-     "duree_s": 3.1,
+     "date": "2026-10-14T00:13:14Z",
+     "duree_s": 3.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21457,8 +21457,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (38) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_sff": {
-     "date": "2026-10-14T00:11:00Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:13:28Z",
+     "duree_s": 1.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -23534,8 +23534,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; leg_stat→PER_VICT (1) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_17_10": {
-     "date": "2026-10-14T00:07:59Z",
-     "duree_s": 0.7,
+     "date": "2026-10-14T00:12:58Z",
+     "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -23564,8 +23564,8 @@
      "structure_fr": "freq→A (1) [fixé] ; fin_source→TOTAL (6) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_17_31": {
-     "date": "2026-10-14T00:08:00Z",
-     "duree_s": 0.8,
+     "date": "2026-10-14T00:13:00Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26767,13 +26767,13 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     }
    },
-   "regles": 6,
+   "regles": 7,
    "regles_catalogue": {
-    "lignes": 68016,
-    "lignes_avant": 69170,
-    "lignes_deplacees_ce_passage": 1154,
+    "lignes": 56210,
+    "lignes_avant": 56210,
+    "lignes_deplacees_ce_passage": 0,
     "lignes_ecartees": 20114,
-    "lignes_resynchronisees": 12
+    "lignes_resynchronisees": 0
    },
    "restants": 0,
    "revision_unites": {
@@ -26980,6 +26980,37 @@
      },
      "regles": 6,
      "unites": {}
+    },
+    {
+     "date": "2026-10-14T00:12:57Z",
+     "partenaire_origine": {
+      "demo_marcb": 1,
+      "demo_marcz": 1,
+      "educ_uoe_mobg02": 1135,
+      "educ_uoe_mobg03": 1135,
+      "educ_uoe_mobs02": 1140,
+      "educ_uoe_mobs03": 1145,
+      "educ_uoe_mobs06": 1374,
+      "env_trdrrm": 354,
+      "env_wasship": 23,
+      "env_wastrdmp": 358,
+      "nrg_ind_id3cf": 1,
+      "nrg_ind_idooil": 11,
+      "nrg_te_bio": 6,
+      "nrg_te_eh": 2,
+      "nrg_te_gas": 2,
+      "nrg_te_oil": 38,
+      "nrg_te_sff": 14,
+      "nrg_ti_bio": 6,
+      "nrg_ti_eh": 2,
+      "nrg_ti_gas": 2,
+      "nrg_ti_oil": 38,
+      "nrg_ti_sff": 14,
+      "sdg_17_10": 2,
+      "sdg_17_31": 2
+     },
+     "regles": 7,
+     "unites": {}
     }
    ],
    "termine": true,
@@ -27046,6 +27077,16 @@
    "nouveaux_essais": 0,
    "octets": 77956764,
    "requetes": 350
+  },
+  {
+   "debut": "2026-10-14T00:12:56Z",
+   "etapes": [
+    "niveau2"
+   ],
+   "fin": "2026-10-14T00:13:35Z",
+   "nouveaux_essais": 0,
+   "octets": 15315719,
+   "requetes": 48
   }
  ]
 }

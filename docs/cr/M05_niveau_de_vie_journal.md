@@ -28,3 +28,59 @@ Lecture **par jeu et par mesure**, pas ligne à ligne :
 | M04 (OCDE How's Life, DREES, PNUD, Banque mondiale, BCE) | 14 | |
 
 Recherche hors de la long-list (méthode §8, R1) : présélections des quatre dimensions déjà faites (104 lignes de `niveau_de_vie` reprises par `egalites`, 86 lignes d'`egalites` renvoyées ici) ; autres long-lists (`ilc_mdes03` et `hlth_dm030` dans `planete`, maintenance n° 35) ; catalogue `insee_melodi_catalogue_non.csv.gz` (SRCV `DS_SRCV_PMS` 2020-2025, maintenance n° 8) ; catalogue des jeux Eurostat (`ilc_li22` ancré 2019, `sdg_10_20` sans donnée France) ; sorties du robot M04 (baromètre DREES : PE01, PE02, PE03, OG04_3, PE07, CS27).
+
+## 2. Présélection (10 h 20 – 10 h 35)
+
+- `docs/validation/regles_preselection_niveau_de_vie.csv` : **140 règles** (ordre : lignes déjà reprises par `egalites`, séries principales exactes, variantes par jeu et par mesure, imports d'autres long-lists, renvois `autre_dimension`, puis écarts en bloc par jeu). Expressions régulières sur `serie_id` (paramètres Melodi `STO=`, `REF_SECTOR=`, `ERFS_MEASURE=` ; paramètres Eurostat `na_item=`, `statinfo=`, `rskpovth=`) et sur `ligne_id` pour la BDM (identifiants consécutifs par tableau).
+- `python scripts/preselection.py --dimension niveau_de_vie` → **11 942 lignes affectées** (les 11 821 de la long-list, aucune sans règle, aucune règle vide ; 121 importées : `egalites` 116, `planete` 5), **140 groupes** : 25 `fiche` (24 lignes + 1 hors long-list), 57 `variante_de` (1 271 lignes propres + 12 importées), 43 `ecarte_en_bloc` (9 831 lignes propres + 109 importées), 15 `autre_dimension` (695 lignes : `travail` 354, `egalites` 249, `logement_cadre_vie` 45, `education` 24, `securite` 19, `planete` 4).
+- Première exécution : 3 lignes sans règle (`nama_10_pc` P31_S13, P32_S13, P3_S13 : consommation des administrations par habitant) → ajoutées aux comptes des administrations (A5).
+
+### 2.1 Comptes nationaux (D30) : traitement par jeu et par mesure
+
+| Bloc | Lignes | Décision |
+|---|---|---|
+| Consommation par produit (COICOP), coefficients budgétaires, Budget de famille, dépense culturelle, consommation mensuelle de biens | 2 574 | écart en bloc : détail par produit, la consommation totale par habitant porte le concept |
+| Patrimoine et comptes financiers par actif (`DD_CNA_PATRIMOINE`, `DD_CNA_TEE` hors valeur nette, `nasa_10_f_*`, `naidsa_10_f_bs`, droits à pension) | 2 204 | écart en bloc : composantes techniques ; la valeur nette des ménages est une variante de `patrimoine_net_median` |
+| Parités de pouvoir d'achat et niveaux de prix par produit | 1 606 | écart en bloc ; les dépenses réelles par habitant du PIB et de la consommation individuelle effective sont des variantes |
+| Administrations publiques (`DD_CNA_APU`, secteur S13, `gov_10*`, BDM) | 634 | écart en bloc (A5, R6) |
+| Opérations des ménages (valeur ajoutée, excédent, revenu mixte, revenus primaires, salaires, cotisations, impôts, prestations, transferts en nature, CCF, capacité de financement ; `nasa_10_nf_tr`, `nama_10r_2hhinc`) | 381 | écart en bloc : composantes du revenu disponible sans lecture propre |
+| ISBLSM, total des secteurs résidents, économie totale hors PIB et revenu national, parts dans le PIB, comptes trimestriels | 453 | écart en bloc (D29 P6 ; conjoncture) |
+| Mesures retenues | 241 variantes et 9 fiches | revenu disponible ajusté réel par habitant (Eurostat), pouvoir d'achat par UC, PIB par habitant, revenu national réel par habitant, consommation individuelle effective par habitant, dépenses pré-engagées, taux d'épargne (écarté, sens ambigu), patrimoine (valeur nette des ménages en variante) |
+
+Le niveau réel par habitant du revenu disponible n'existe qu'à Eurostat (`nasa_10_nf_tr`, B7G_R_HAB et B6G_R_HAB) : l'INSEE ne publie dans les catalogues que des évolutions (`_PAM_UC`) et des montants totaux en euros courants. D'où une famille `revenu_disponible_menages` à principale Eurostat (niveau) et variante de fiche INSEE (évolution, la mesure du débat public). Même logique pour la consommation : niveau par habitant chez Eurostat (`nama_10_pc` P41), totaux seulement à l'INSEE.
+
+### 2.2 Familles INSEE / Eurostat (même définition)
+
+| Concept | Principale | Variante(s) Eurostat ou autre | Motif |
+|---|---|---|---|
+| Taux de pauvreté à 60 % | INSEE ERFS rétropolée (1996-2024, sans rupture) | EU-SILC `ilc_li02`, `sdg_01_20` (2000-2025, ruptures 2008, 2020, 2022) ; ODD BDM 2010-2023 | INSEE > Eurostat à définition égale, série sans rupture |
+| Taux de pauvreté à 50 % | INSEE ERFS rétropolée | EU-SILC, OCDE 1_4 | idem |
+| Intensité de la pauvreté | INSEE ERFS rétropolée | `ilc_li11`, `sdg_10_30` | idem |
+| Niveau de vie médian | INSEE ERFS rétropolée | `ilc_di03`, `ilc_di18` | idem |
+| Privation matérielle et sociale | INSEE BDM ODD 1.i2 (2013-2024) | `ilc_mdsd07` (2014-2025), SRCV Melodi 2020-2025 (`_non`) | Eurostat plus frais d'un an mais moins profond d'un an : INSEE gardé |
+| Privation alimentaire | INSEE BDM ODD 2.i1 (2010-2024) | `ilc_mdes03` (2004-2025, long-list `planete`) | INSEE ; raccordement 2004-2009 à étudier |
+| PIB par habitant | INSEE BDM 011779993 (1949-2025) | `sdg_08_10`, `nama_10_pc` | INSEE |
+| Privation sévère, AROPE, pauvreté persistante, ancrée, subjective, satisfaction financière | Eurostat | — | pas d'équivalent INSEE au catalogue |
+
+### 2.3 Lignes reprises par d'autres dimensions (R1)
+
+- 84 lignes de mesures de dispersion déjà reprises par `egalites` (S80/S20, parts de niveau de vie, S90/S50, parts du patrimoine) → `autre_dimension:egalites`.
+- 16 lignes composantes d'écarts construits d'`egalites` (`ilc_li02` par sexe et par âge, `ilc_li31` à `ilc_li34` par nationalité) gardées en ventilations de `taux_pauvrete_60` selon D32 (« les lignes sources restent des ventilations ») : 4 avertissements R1 attendus du vérificateur.
+- 4 lignes de salaires par sexe reprises par `egalites/ecart_salaire_eqtp_fh` → `autre_dimension:travail` avec l'ensemble des salaires.
+- 86 lignes d'`egalites` renvoyées ici par M05 `egalites` (maintenance n° 11) importées : 7 en variantes (`ilc_di04`, seuils D1 et D5 d'`ilc_di01`), 79 écartées en bloc (seuils des autres quantiles, revenu par intensité de travail, revenus avant transferts), plus 30 autres lignes `ilc_di01` et `ilc_di04` de la même long-list décrites par les mêmes règles.
+
+## 3. Fiches (10 h 35 – 11 h 05)
+
+25 fiches écrites par un générateur de travail (bac à sable), variantes injectées par `python scripts/preselection.py --dimension niveau_de_vie --maj-fiches` (1 283 variantes de la long-list + 3 ajouts manuels du catalogue `insee_melodi_catalogue_non`).
+
+Vérifications à la source (WebFetch, 14/10/2026) :
+- API Eurostat : `nasa_10_nf_tr` B7G_R_HAB et B6G_R_HAB, `nama_10_pc` P41, `sdg_01_10`, `ilc_mdsd11`, `ilc_mdsd07`, `ilc_li21`, `ilc_sbjp01`, `ilc_mdes09` (GRT et DIF : leur somme égale `ilc_sbjp01` à l'arrondi près sur 2010-2025), `ilc_pw01b` (FIN), `nasa_10_ki` SRG_S14_S15.
+- **Non lus** : `ilc_li22b` (l'API Eurostat a renvoyé une erreur 429, « trop de requêtes », et l'outil a demandé de ne plus réessayer : la fiche `pauvrete_ancree_2008` porte `valeurs_non_lues`) ; la BDM et Melodi de l'INSEE (robots.txt) ; l'API de la Banque mondiale pour l'insécurité alimentaire (erreur du serveur).
+- Page insee.fr de l'Insee Première n° 2117 (niveau de vie et pauvreté en 2024) : médiane, taux et seuil de pauvreté, intensité, premier décile, nombre de pauvres.
+- Sorties du robot M04 dans le dépôt : baromètre DREES (PE01, PE03 : distributions, couverture, dictionnaire 2025), PNUD (IDH).
+
+## 4. Contrôles
+
+- `python scripts/verifier_fiches.py --dimension niveau_de_vie --tableau` puis sans option : **0 erreur, 5 avertissements** (1 série principale hors catalogue avec preuve : `pauvrete_percue_hausse` ; 4 lignes déjà séries principales d'écarts construits d'`egalites`, attendues, §2.3).
+- Compteurs : 11 821 lignes de long-list, 695 renvoyées à d'autres dimensions, **25 fiches, 19 familles, 17 `retenir`, 6 `retenir_variante`, 2 `ecarter`**, 4 déclaratives, 2 composites, 2 à vérifier (D17), 1 hors long-list, 6 incontournables, 1 286 variantes.
+- `python -m pytest -q` : 397 réussis (aucun fichier de code modifié).

@@ -1,0 +1,90 @@
+id: liberte_presse_rsf
+libelle: Liberté de la presse (score RSF)
+dimension: democratie
+sous_theme: libertés
+famille: rsf
+variante_principale: oui
+definition: Score de la France au Classement mondial de la liberté de la presse de Reporters sans frontières (questionnaire
+  d'experts et relevé des exactions contre les journalistes) ; de 0 à 100, plus haut = mieux, depuis 2013 (les fichiers
+  2002-2012 utilisent une échelle inverse et non bornée) ; nouvelle méthode en cinq sous-scores depuis 2022.
+unite: score de 0 à 100 (plus haut = mieux, depuis 2013)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Reporters sans frontières
+source_jeu: Classement mondial de la liberté de la presse, fichiers CSV annuels
+source_serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv
+source_niveau: 2
+url_api: https://rsf.org/sites/default/files/import_classement/<année>.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2002
+derniere_annee: 2026
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000224
+hors_longlist: non
+raccordement: 'a_etudier : 2002-2012 sur une échelle inverse et non bornée (3,25 en 2002, 13,38 en 2010) ; rupture
+  de méthode en 2022'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Mesure de référence de la liberté de la presse, nommée dans le contenu de la dimension et
+  proposée pour le thème « démocratie et libertés » de Stiglitz-Sen-Fitoussi dans la table des cadres, annuelle
+  de 2002 à 2026 mais lisible sur une échelle commune seulement depuis 2013 (ruptures en 2013 et 2022).
+note_pertinence: La liberté de la presse conditionne l'information des citoyens et le contrôle des pouvoirs. Le
+  score français reste entre 76 et 79 depuis 2013 (78,4 en 2013, 77,4 en 2021, 78,53 en 2022, 76,68 en 2026). Les
+  trois échelles successives imposent soit de ne lire la série qu'à partir de 2013, soit d'étudier un raccordement
+  ; la licence n'a pas été trouvée.
+variantes:
+- serie_id: https://ourworldindata.org/grapher/press-freedom-index-rsf.csv (colonne press_freedom_score)
+  source: Our World in Data (relais)
+  nature: relais OWID arrêté en 2021 (ancienne échelle, plus bas = mieux) et cinq sous-scores de la méthode 2022
+    (contextes politique, économique, légal, social, sécurité des journalistes), 2022-2026, non éligibles
+  ligne_id: m04-000199
+  eligible: non
+- serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv (colonne Political Context)
+  source: Reporters sans frontières (source primaire)
+  nature: relais OWID arrêté en 2021 (ancienne échelle, plus bas = mieux) et cinq sous-scores de la méthode 2022
+    (contextes politique, économique, légal, social, sécurité des journalistes), 2022-2026, non éligibles
+  ligne_id: m04-000225
+  eligible: non
+- serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv (colonne Economic Context)
+  source: Reporters sans frontières (source primaire)
+  nature: relais OWID arrêté en 2021 (ancienne échelle, plus bas = mieux) et cinq sous-scores de la méthode 2022
+    (contextes politique, économique, légal, social, sécurité des journalistes), 2022-2026, non éligibles
+  ligne_id: m04-000226
+  eligible: non
+- serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv (colonne Legal Context)
+  source: Reporters sans frontières (source primaire)
+  nature: relais OWID arrêté en 2021 (ancienne échelle, plus bas = mieux) et cinq sous-scores de la méthode 2022
+    (contextes politique, économique, légal, social, sécurité des journalistes), 2022-2026, non éligibles
+  ligne_id: m04-000227
+  eligible: non
+- serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv (colonne Social Context)
+  source: Reporters sans frontières (source primaire)
+  nature: relais OWID arrêté en 2021 (ancienne échelle, plus bas = mieux) et cinq sous-scores de la méthode 2022
+    (contextes politique, économique, légal, social, sécurité des journalistes), 2022-2026, non éligibles
+  ligne_id: m04-000228
+  eligible: non
+- serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv (colonne Safety)
+  source: Reporters sans frontières (source primaire)
+  nature: relais OWID arrêté en 2021 (ancienne échelle, plus bas = mieux) et cinq sous-scores de la méthode 2022
+    (contextes politique, économique, légal, social, sécurité des journalistes), 2022-2026, non éligibles
+  ligne_id: m04-000229
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- rupture_2013
+- rupture_2022
+- licence_non_trouvee
+notes: 'Valeurs lues dans les extraits du robot M04 (docs/sources/series/rsf__classement_<année>.txt) : 3,25 (2002,
+  rang 11), 13,38 (2010), 9,5 (2011-2012), 78,4 (2013), 78,11 (2014), 77,4 (2021), 78,53 (2022, nouvelle méthode),
+  76,62 (2025), 76,68 (2026, rang 25). Pas de fichier 2011 (édition 2011-2012). Colonnes et encodage variables selon
+  les années : le script de collecte devra les gérer.'

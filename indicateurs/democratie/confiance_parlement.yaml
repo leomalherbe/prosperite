@@ -1,0 +1,48 @@
+id: confiance_parlement
+libelle: Confiance dans le Parlement
+dimension: democratie
+sous_theme: confiance dans les institutions
+famille: confiance_parlement
+variante_principale: oui
+definition: Part des personnes déclarant avoir confiance dans le Parlement, d'après les enquêtes sur les valeurs
+  (World Values Survey et European Values Study) relayées par Our World in Data (graphique trust-state-institutions-wvs)
+  ; regroupement exact des modalités de réponse non lu.
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: WVS/EVS (relais Our World in Data)
+source_jeu: Graphique OWID trust-state-institutions-wvs
+source_serie_id: https://ourworldindata.org/grapher/trust-state-institutions-wvs.csv (colonne confidence_parliament)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/trust-state-institutions-wvs.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/trust-state-institutions-wvs
+frequence: irreguliere
+premiere_annee: 1984
+derniere_annee: 2022
+nb_points_depuis_2000: 3
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000209
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de la confiance dans le Parlement, nommé dans le contenu de la dimension, avec
+  trois vagues des enquêtes sur les valeurs depuis 2000 (33,1 % en 2022), admise comme série irrégulière (D17).
+note_pertinence: 'Le Parlement est l''institution représentative par excellence et la confiance qu''il inspire est
+  faible (33,1 % en 2022). Les vagues sont espacées de douze ans entre 2010 et 2022 : la valeur reportée vieillit
+  vite et l''indicateur sert surtout à situer un niveau.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- trois_points
+- serie_irreguliere_D17
+notes: 'Valeur et années lues dans la sortie du robot M04 (docs/sources/series/owid__trust-state-institutions-wvs.csv)
+  : vagues datées 1984, 1993, 2004, 2010 et 2022 par le relais. Le baromètre du Cevipof mesure aussi la confiance
+  dans les députés mais n''est diffusé qu''en PDF (D9).'

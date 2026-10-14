@@ -1,0 +1,53 @@
+id: etat_de_droit_wgi
+libelle: État de droit (indicateurs de gouvernance de la Banque mondiale)
+dimension: democratie
+sous_theme: justice et État de droit
+famille: wgi
+variante_principale: non
+definition: 'Indicateur composite « Rule of Law » des WGI : perception du respect des règles de la société, notamment
+  l''exécution des contrats, la police et la justice (libellé M04), agrégée à partir de sources d''experts et d''enquêtes
+  ; estimation sur une échelle d''environ -2,5 à +2,5 (documentation WGI non lue).'
+unite: estimation (environ -2,5 à +2,5)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Banque mondiale (Worldwide Governance Indicators)
+source_jeu: WGI (API v2 de la Banque mondiale, source 3), GOV_WGI_RL.EST
+source_serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.EST?source=3
+source_niveau: 1
+url_api: https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.EST?source=3&format=json&per_page=100
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000148
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Sous-indice WGI de l'État de droit, plus long que l'indice du WJP (25 points depuis 2000 contre
+  12), proposé comme alternative dans la famille WGI (D18).
+note_pertinence: L'État de droit est nommé dans le contenu de la dimension ; l'indice du WJP en est la mesure spécialisée
+  mais ne commence qu'en 2012-2013. Cette série WGI couvre toute la période (0,97 en 2025). Elle mêle sécurité des
+  contrats et des biens, ce qui l'éloigne un peu des droits des citoyens.
+variantes:
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.SC?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autre échelle : score de 0 à 100 introduit en 2025'
+  ligne_id: m04-000149
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- lacune_2001
+notes: 'Dernière valeur (0,97 en 2025) lue dans la sortie du robot M04 ; définition résumée d''après le libellé
+  M04 (respect des contrats, police, justice). Exception à la règle des familles : fiche non principale d''une famille
+  de producteur, pour un concept qui a sa propre famille (WJP).'

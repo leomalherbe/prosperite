@@ -1,0 +1,72 @@
+id: signalement_police
+libelle: Taux de signalement à la police des agressions physiques
+dimension: democratie
+sous_theme: justice et État de droit
+famille: signalement_police
+variante_principale: oui
+definition: Part des victimes d'agression physique au cours des douze derniers mois qui ont signalé les faits à
+  la police (« Police reporting rate for physical assault », indicateur ODD 16.3.1, enquête de victimation, base
+  ODD de l'OCDE).
+unite: '% des victimes'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (base « Measuring distance to the SDG targets », ODD 16.3.1)
+source_jeu: DSD_SDG@DF_SDG_G_16, série 16_3_1_VC_PRR_PHYV
+source_serie_id: 'odd_16 : 16_3_1_VC_PRR_PHYV._T._T._T._T._T.PT_POP'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_16,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2022
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000140
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : une hausse du taux de signalement peut traduire une confiance accrue dans la
+  police comme un changement des faits subis ou des comportements de plainte (M04), et la série s''arrête en 2022.'
+note_pertinence: Le signalement à la police mesure l'accès à la justice des victimes, indicateur ODD 16.3.1. Il
+  se lit dans les deux sens et dépend du type d'atteinte, ce qui empêche d'en fixer des bornes. La fiche existe
+  pour rendre ce choix visible.
+variantes:
+- serie_id: 'odd_16 : 16_3_1_VC_PRR_ROBB._T._T._T._T._T.PT_POP'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'autres taux de signalement : vols avec violence (ODD 16.3.1, 2007-2022) et dépôt de plainte des victimes
+    de violences physiques et de cambriolage (enquête CVS, SSMSI, 2006-2020, arrêtées)'
+  ligne_id: m04-000141
+  eligible: oui
+- serie_id: 'https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Taux de dépôt
+    de plainte: proportion de victimes déclarées ayant déposé plainte » ; Indicateur=Dépôt de plainte (victime ou
+    ménage victime ayant déclaré avoir déposé plainte) ; Sous_indicateur=Violences physiques hors ménage ; Statistique=Taux
+    )'
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'autres taux de signalement : vols avec violence (ODD 16.3.1, 2007-2022) et dépôt de plainte des victimes
+    de violences physiques et de cambriolage (enquête CVS, SSMSI, 2006-2020, arrêtées)'
+  ligne_id: m04-000297
+  eligible: oui
+- serie_id: 'https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Taux de dépôt
+    de plainte: proportion de ménages victimes déclarés ayant déposé plainte » ; Indicateur=Dépôt de plainte (victime
+    ou ménage victime ayant déclaré avoir déposé plainte) ; Sous_indicateur=Cambriolages et tentatives de cambriolages
+    de résid)'
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'autres taux de signalement : vols avec violence (ODD 16.3.1, 2007-2022) et dépôt de plainte des victimes
+    de violences physiques et de cambriolage (enquête CVS, SSMSI, 2006-2020, arrêtées)'
+  ligne_id: m04-000298
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- serie_arretee_2022
+notes: Les taux de dépôt de plainte de l'enquête CVS (SSMSI, 2006-2020) et le signalement des vols avec violence
+  (2007-2022) sont listés en variantes. Le pilote securite a classé la victimation déclarée en declaratif non ;
+  même règle ici.

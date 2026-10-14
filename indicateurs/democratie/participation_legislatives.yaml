@@ -1,0 +1,65 @@
+id: participation_legislatives
+libelle: Taux de participation au premier tour des élections législatives
+dimension: democratie
+sous_theme: participation électorale
+famille: participation_electorale
+variante_principale: non
+definition: 'Part des électeurs inscrits ayant voté au premier tour des élections législatives (votants rapportés
+  aux inscrits, tous bureaux de vote du fichier agrégé du ministère de l''Intérieur). Champ : France entière ; l''inclusion
+  des Français de l''étranger avant 2012 est à vérifier.'
+unite: '% des inscrits'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Ministère de l'Intérieur (résultats électoraux), calcul du projet
+source_jeu: Données des élections agrégées (data.gouv.fr, fichier general_results au bureau de vote, Licence Ouverte
+  2.0)
+source_serie_id: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants
+  / somme inscrits)
+source_niveau: 2
+url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet
+url_page: https://www.data.gouv.fr/fr/datasets/6481e741d4cf002ec0efec9d/
+frequence: irreguliere
+formule: taux = somme des votants / somme des inscrits de l'ensemble des bureaux de vote du fichier pour le scrutin
+  ; série annuelle reconstruite en reportant la valeur du dernier scrutin jusqu'au scrutin suivant (D17)
+premiere_annee: 2002
+derniere_annee: 2024
+nb_points_depuis_2000: 6
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000248
+hors_longlist: non
+raccordement: 'a_etudier : scrutin de 1997 absent du fichier (2000-2001 sans valeur) ; champ des inscrits avant
+  2012 à vérifier'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Scrutin national qui désigne l'Assemblée nationale et seconde lecture de la participation
+  nationale, 6 scrutins de 2002 à 2024 (de 47,51 % en 2022 à 66,71 % en 2024 au premier tour).
+note_pertinence: 'Les législatives mesurent l''intérêt pour l''élection du Parlement, en net recul de 2002 (64,53
+  %) à 2022 (47,51 %) avant le rebond de 2024 (66,71 %), après la dissolution. Elles complètent la présidentielle,
+  dont elles suivent le calendrier depuis 2002 (sauf en 2024) : l''utilisateur choisira l''une ou l''autre, ou les
+  deux avec prudence.'
+variantes:
+- serie_id: '001778442'
+  source: INSEE BDM
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2012-2024'
+  ligne_id: bdm-001368
+  eligible: a_verifier
+- serie_id: '001778443'
+  source: INSEE BDM
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2012-2024'
+  ligne_id: bdm-001369
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- calcul_projet_a_recouper
+- champ_inscrits_a_verifier
+- lacune_2000_2001
+notes: Valeurs lues dans la sortie du robot M04. L'INSEE (BDM 001778442) publie 58,2 %, 49,6 %, 48,4 % et 67,9 %
+  pour 2012, 2017, 2022 et 2024 (lus le 14/10/2026), soit 0,9 à 1,2 point de plus que le fichier du ministère.

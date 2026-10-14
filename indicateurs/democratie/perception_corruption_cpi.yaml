@@ -1,0 +1,57 @@
+id: perception_corruption_cpi
+libelle: Indice de perception de la corruption (Transparency International)
+dimension: democratie
+sous_theme: corruption et intégrité
+famille: cpi
+variante_principale: oui
+definition: Indice de perception de la corruption dans le secteur public établi par Transparency International en
+  agrégeant des évaluations d'experts ; score de 0 à 100 (plus haut = moins de corruption perçue), comparable d'une
+  année à l'autre depuis 2012 ; indicateur ODD de l'UE sdg_16_50.
+unite: score de 0 à 100
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Eurostat (données Transparency International)
+source_jeu: sdg_16_50 — Indice de perception de la corruption
+source_serie_id: sdg_16_50?freq=A&unit=SC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_50?freq=A&unit=SC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_16_50/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002127
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille CPI (D18) par la voie Eurostat (niveau 1), annuelle et comparable
+  de 2012 à 2025 (14 points, de 72 à 66).
+note_pertinence: La corruption est nommée dans le contenu de la dimension et le CPI en est l'indicateur le plus
+  connu, retenu par l'OCDE (14_6) et par l'UE. Le score français oscille entre 69 et 72 de 2012 à 2023 puis recule
+  à 67 (2024) et 66 (2025). Les scores antérieurs à 2012 ne sont pas comparables, d'où l'absence de valeurs 2000-2011.
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_6 UNIT_MEASURE=0_TO_100
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'doublons : même indice relayé par l''OCDE (How''s Life 14_6, 2012-2025) et par OWID (2012-2024)'
+  ligne_id: m04-000107
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/ti-corruption-perception-index.csv (colonne cpi_score)
+  source: Our World in Data (relais)
+  nature: 'doublons : même indice relayé par l''OCDE (How''s Life 14_6, 2012-2025) et par OWID (2012-2024)'
+  ligne_id: m04-000198
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- debut_2012
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026, sans drapeau : 71 (2012), 72 (2018 et 2022), 67 (2024),
+  66 (2025). Licence Transparency International CC BY-ND 4.0 d''après M04 (page CPI).'

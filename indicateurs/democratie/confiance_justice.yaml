@@ -1,0 +1,60 @@
+id: confiance_justice
+libelle: Confiance dans la justice
+dimension: democratie
+sous_theme: confiance dans les institutions
+famille: confiance_justice
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus déclarant avoir « très confiance » ou « plutôt confiance » dans
+  la justice (question Q25 du baromètre de la confiance politique du Cevipof, environ 3 500 personnes inscrites
+  sur les listes électorales ; indicateur national ODD 16.i4 de l'INSEE).
+unite: '% des 18 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE (données du Cevipof, Sciences Po-CNRS)
+source_jeu: BDM, ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES, indicateur national ODD 16.i4
+source_serie_id: '010596052'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596052
+url_page: https://www.insee.fr/fr/statistiques/serie/010596052
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000958
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Confiance dans la justice nommée dans le contenu de la dimension (A11, R5), série annuelle
+  de l'INSEE (ODD 16.i4, baromètre du Cevipof) de 2013 à 2024 (12 points, entre 44 % et 48 %).
+note_pertinence: La confiance dans la justice est l'un des indicateurs du cadre Eurostat QoL (système judiciaire)
+  et une mesure directe de la légitimité de l'État de droit. Moins d'un Français sur deux fait confiance à la justice,
+  niveau stable depuis 2013. Elle se lit avec l'indépendance perçue de la justice (Eurobaromètre), qui mesure un
+  autre aspect.
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=INSTIT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=16.i4&PCS=_Z&SDG=SDG16&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi (DS_NAT_SDG, 16.i4) de la série BDM'
+  ligne_id: melodi-005628
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/trust-state-institutions-wvs.csv (colonne confidence_justice_system_courts)
+  source: Our World in Data (relais)
+  nature: 'autre source : enquêtes sur les valeurs (WVS/EVS) relayées par OWID, 3 vagues depuis 2000 (58,3 % en
+    2022)'
+  ligne_id: m04-000207
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2013
+- echantillon_inscrits_listes_electorales
+notes: 'Source, champ et calcul vérifiés dans la fiche de métadonnées INSEE 16.i4 (https://www.insee.fr/fr/statistiques/fichier/4997354/metadonnees-16.i4.pdf)
+  : baromètre lancé en 2009, vagues antérieures à 2013 publiées en PDF seulement (exclues, D9). Valeurs lues sur
+  la BDM le 14/10/2026 : 45 % (2013), 48 % (2015 et 2021), 44 % (2024, révisée).'

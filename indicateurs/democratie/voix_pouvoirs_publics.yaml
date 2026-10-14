@@ -1,0 +1,54 @@
+id: voix_pouvoirs_publics
+libelle: Sentiment d'avoir son mot à dire sur l'action des pouvoirs publics
+dimension: democratie
+sous_theme: voix et participation citoyenne
+famille: voix_pouvoirs_publics
+variante_principale: oui
+definition: Part des personnes de 16 à 65 ans déclarant avoir leur mot à dire sur ce que fait le gouvernement («
+  Having a say in government »), d'après l'enquête de l'OCDE sur les déterminants de la confiance dans les institutions
+  publiques (vagues 2021 et 2023), base How's Life de l'OCDE, mesure 8_1 ; libellé exact de la question non lu.
+unite: '% des 16-65 ans'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: OCDE
+source_jeu: How's Life? — bien-être actuel (DSD_HSL@DF_HSL_CWB), mesure 8_1
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=8_1 UNIT_MEASURE=PT_POP_Y16T65
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2021
+derniere_annee: 2023
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000058
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Seule mesure du sentiment d'avoir son mot à dire, nommé dans le contenu de la dimension et
+  indicateur OCDE 8_1, disponible pour la France en 2021 et 2023 (26,3 % en 2023), admise comme série irrégulière
+  (D17).
+note_pertinence: Avoir le sentiment d'être entendu par les pouvoirs publics est le versant subjectif de la voix
+  politique, que la participation électorale ne mesure pas. En 2023, 26,3 % des Français de 16 à 65 ans disent avoir
+  leur mot à dire et 57,6 % disent le contraire. Avec deux vagues seulement, l'indicateur montre un niveau plus
+  qu'une trajectoire.
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=8_1_DEP UNIT_MEASURE=PT_POP_Y16T65
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'complément : ne pas avoir son mot à dire (OCDE 8_1_DEP), 2021 et 2023'
+  ligne_id: m04-000059
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- deux_points
+- serie_irreguliere_D17
+notes: 'Valeurs lues dans la sortie du robot M04 (docs/sources/series/ocde__hsl_bien_etre_actuel.csv) : dernière
+  valeur 26,27 % (2023) ; complément 8_1_DEP 57,62 % (2023).'

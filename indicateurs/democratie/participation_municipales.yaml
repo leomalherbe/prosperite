@@ -1,0 +1,64 @@
+id: participation_municipales
+libelle: Taux de participation au premier tour des élections municipales
+dimension: democratie
+sous_theme: participation électorale
+famille: participation_electorale
+variante_principale: non
+definition: 'Part des électeurs inscrits ayant voté au premier tour des élections municipales (votants rapportés
+  aux inscrits, tous bureaux de vote du fichier agrégé du ministère de l''Intérieur). Champ : France entière.'
+unite: '% des inscrits'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Ministère de l'Intérieur (résultats électoraux), calcul du projet
+source_jeu: Données des élections agrégées (data.gouv.fr, fichier general_results au bureau de vote, Licence Ouverte
+  2.0)
+source_serie_id: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants
+  / somme inscrits)
+source_niveau: 2
+url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet
+url_page: https://www.data.gouv.fr/fr/datasets/6481e741d4cf002ec0efec9d/
+frequence: irreguliere
+formule: taux = somme des votants / somme des inscrits de l'ensemble des bureaux de vote du fichier pour le scrutin
+  ; série annuelle reconstruite en reportant la valeur du dernier scrutin jusqu'au scrutin suivant (D17)
+premiere_annee: 2008
+derniere_annee: 2026
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000252
+hors_longlist: non
+raccordement: 'a_etudier : scrutin de 2001 absent du fichier (2000-2007 sans valeur)'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Scrutin local de référence, 4 scrutins de 2008 à 2026 dont celui de mars 2020 tenu au début
+  de l'épidémie de covid-19 (44,66 %), sans valeur avant 2008 dans le fichier du ministère.
+note_pertinence: 'Les municipales mesurent la participation à la démocratie locale, la plus proche des habitants
+  : 58,86 % en 2008, 63,55 % en 2014, 44,66 % en 2020 et 57,12 % en 2026. Le creux de 2020, scrutin tenu au début
+  de l''épidémie de covid-19, complique la lecture de la tendance.'
+variantes:
+- serie_id: '001785274'
+  source: INSEE BDM
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2014
+    et 2020 (classées non éligibles par la long-list)'
+  ligne_id: bdm-001370
+  eligible: non
+- serie_id: '001785275'
+  source: INSEE BDM
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2014
+    et 2020 (classées non éligibles par la long-list)'
+  ligne_id: bdm-001371
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- calcul_projet_a_recouper
+- lacune_2000_2007
+notes: Valeurs lues dans la sortie du robot M04. Les séries de l'INSEE (BDM 001785274 et 001785275, 2014 et 2020)
+  sont classées non éligibles par la long-list alors que les séries analogues des autres scrutins sont « à vérifier
+  » (signalé dans docs/cr/maintenance_catalogues.md).

@@ -1,0 +1,48 @@
+id: democratie_participative_vdem
+libelle: Indice de démocratie participative (V-Dem)
+dimension: democratie
+sous_theme: qualité démocratique (indices composites)
+famille: vdem
+variante_principale: non
+definition: Indice composite de V-Dem (de 0 à 1) qui combine la démocratie électorale et la composante participative
+  (participation des citoyens aux organisations de la société civile, démocratie directe, élus locaux et régionaux),
+  à partir d'évaluations d'experts ; jeu V-Dem v16 relayé par Our World in Data (définition résumée, codebook V-Dem
+  non lu).
+unite: indice de 0 à 1
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: V-Dem (Varieties of Democracy), relais Our World in Data
+source_jeu: V-Dem v16 via le graphique OWID participatory-democracy-index (colonne participdem_vdem__estimate_best)
+source_serie_id: https://ourworldindata.org/grapher/participatory-democracy-index.csv (colonne participdem_vdem__estimate_best)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/participatory-democracy-index.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/participatory-democracy-index
+frequence: annuelle
+premiere_annee: 1900
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000162
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Indice global V-Dem le plus proche du thème participation, annuel de 2000 à 2025 (26 points,
+  0,597 en 2025), proposé en alternative à l'indice de démocratie libérale dans la famille V-Dem (D18).
+note_pertinence: La démocratie participative met l'accent sur l'implication directe des citoyens, au cœur de la
+  question de la dimension (« est-ce que les citoyens participent et sont entendus ? »). L'utilisateur choisira
+  cet indice ou l'indice libéral, pas les deux, pour éviter de compter deux fois la composante électorale.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- relais_owid
+notes: 'Dernière valeur (0,597 en 2025) lue dans la sortie du robot M04. Série disponible depuis 1789 dans le relais
+  OWID : premiere_annee ramenée à 1900, borne du contrôle de scripts/verifier_fiches.py (signalé à la session mère).'

@@ -1,0 +1,53 @@
+id: citoyennete_active
+libelle: Participation à des activités de citoyenneté active
+dimension: democratie
+sous_theme: voix et participation citoyenne
+famille: citoyennete_active
+variante_principale: oui
+definition: Part des personnes de 16 ans ou plus déclarant des activités de citoyenneté active (modalité AC43A «
+  citoyenneté active » du jeu Eurostat ilc_scp19, modules EU-SILC de 2015 et 2022) ; liste exacte des activités
+  couvertes et période de référence non lues dans les métadonnées.
+unite: '% des 16 ans ou plus'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_scp19 (EU-SILC, participation citoyenne et bénévolat)
+source_serie_id: ilc_scp19?freq=A&acl00=AC43A&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_scp19?geo=FR&sex=T&age=Y_GE16&isced11=TOTAL&acl00=AC43A
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_scp19/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2015
+derniere_annee: 2022
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+rattachement_propose: jeu ilc_scp19 étiqueté liens_bien_etre en v0 et hors catalogue de séries (début 2015) ; la
+  modalité citoyenneté active (AC43A) relève de democratie (participation), le bénévolat (AC41A, AC42A) de liens_bien_etre
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Seule mesure de la participation politique hors élections, indicateur de citoyenneté active
+  du cadre Eurostat QoL, mesurée en 2015 (24,8 %) et 2022 (11,9 %) et admise comme série irrégulière (D17).
+note_pertinence: La citoyenneté active couvre l'engagement politique en dehors du vote, que la participation électorale
+  ne capte pas. La division par deux entre 2015 et 2022 doit être contrôlée avant le gel (comparabilité des deux
+  modules, effet de l'épidémie). Avec deux points, l'indicateur montre un niveau plus qu'une trajectoire.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- deux_points
+- serie_irreguliere_D17
+- hors_catalogue_series
+- comparabilite_2015_2022_a_verifier
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (ilc_scp19, France, 16 ans ou plus, tous niveaux d''éducation)
+  : citoyenneté active 24,8 % (2015) et 11,9 % (2022) ; bénévolat formel 23,0 % et 15,6 %, informel 23,3 % et 11,1
+  %, sans drapeau. Jeu absent du catalogue des séries (hors filtre M02 : début 2015) : réintégration demandée dans
+  docs/cr/maintenance_catalogues.md.'

@@ -1,0 +1,91 @@
+id: voix_responsabilite_wgi
+libelle: Voix et responsabilité (indicateurs de gouvernance de la Banque mondiale)
+dimension: democratie
+sous_theme: qualité démocratique (indices composites)
+famille: wgi
+variante_principale: oui
+definition: 'Indicateur composite « Voice and Accountability » des WGI : perception de la participation des citoyens
+  au choix de leurs gouvernants et des libertés d''expression, d''association et des médias (libellé M04 : expression,
+  association, élections libres), agrégée à partir de plus de trente sources d''experts et d''enquêtes ; estimation
+  sur une échelle d''environ -2,5 à +2,5.'
+unite: estimation (environ -2,5 à +2,5)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Banque mondiale (Worldwide Governance Indicators)
+source_jeu: WGI (API v2 de la Banque mondiale, source 3), GOV_WGI_VA.EST
+source_serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_VA.EST?source=3
+source_niveau: 1
+url_api: https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_VA.EST?source=3&format=json&per_page=100
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000146
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Variante principale de la famille WGI (D18) et mesure existante de l'indicateur « voix et
+  responsabilité » du cadre Eurostat QoL, annuelle depuis 1996 sauf 1997, 1999 et 2001 (25 points depuis 2000, 1,16
+  en 2025).
+note_pertinence: Voix et responsabilité est la composante des WGI la plus proche de la dimension (participation
+  et libertés). La France recule de 1,48 (2005) à 1,16 (2025) ; l'échelle est relative à l'ensemble des pays, ce
+  qui invite à lire les évolutions avec prudence (documentation WGI non lue). Les autres sous-indices WGI sont listés
+  en variantes ou en fiches de la même famille.
+variantes:
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_VA.SC?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autre échelle : score de 0 à 100 introduit en 2025'
+  ligne_id: m04-000147
+  eligible: oui
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_GE.EST?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autres sous-indices WGI (estimation et score 0-100) : efficacité de l''action publique, qualité de la
+    réglementation (surtout climat des affaires), stabilité politique et absence de violence (plutôt sécurité)'
+  ligne_id: m04-000152
+  eligible: oui
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_GE.SC?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autres sous-indices WGI (estimation et score 0-100) : efficacité de l''action publique, qualité de la
+    réglementation (surtout climat des affaires), stabilité politique et absence de violence (plutôt sécurité)'
+  ligne_id: m04-000153
+  eligible: oui
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RQ.EST?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autres sous-indices WGI (estimation et score 0-100) : efficacité de l''action publique, qualité de la
+    réglementation (surtout climat des affaires), stabilité politique et absence de violence (plutôt sécurité)'
+  ligne_id: m04-000154
+  eligible: oui
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RQ.SC?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autres sous-indices WGI (estimation et score 0-100) : efficacité de l''action publique, qualité de la
+    réglementation (surtout climat des affaires), stabilité politique et absence de violence (plutôt sécurité)'
+  ligne_id: m04-000155
+  eligible: oui
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_PV.EST?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autres sous-indices WGI (estimation et score 0-100) : efficacité de l''action publique, qualité de la
+    réglementation (surtout climat des affaires), stabilité politique et absence de violence (plutôt sécurité)'
+  ligne_id: m04-000156
+  eligible: oui
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_PV.SC?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autres sous-indices WGI (estimation et score 0-100) : efficacité de l''action publique, qualité de la
+    réglementation (surtout climat des affaires), stabilité politique et absence de violence (plutôt sécurité)'
+  ligne_id: m04-000157
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- lacune_2001
+notes: 'Valeurs lues sur l''API de la Banque mondiale le 14/10/2026 : 0,95 (2000), 1,48 (2005), 1,31 (2010), 1,16
+  (2025) ; score 0-100 introduit en 2025 (variante) : 75,2 (2000), 79,0 (2025).'

@@ -1,0 +1,182 @@
+id: democratie_liberale_vdem
+libelle: Indice de démocratie libérale (V-Dem)
+dimension: democratie
+sous_theme: qualité démocratique (indices composites)
+famille: vdem
+variante_principale: oui
+definition: Indice composite de V-Dem (de 0 à 1) qui combine la démocratie électorale (élections libres et équitables,
+  suffrage, libertés d'association et d'expression) et la composante libérale (État de droit, contraintes judiciaires
+  et législatives sur l'exécutif, libertés individuelles), à partir d'évaluations d'experts ; jeu V-Dem v16 relayé
+  par Our World in Data (définition résumée, codebook V-Dem non lu).
+unite: indice de 0 à 1
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: V-Dem (Varieties of Democracy), relais Our World in Data
+source_jeu: V-Dem v16 via le graphique OWID liberal-democracy-index (colonne libdem_vdem__estimate_best)
+source_serie_id: https://ourworldindata.org/grapher/liberal-democracy-index.csv (colonne libdem_vdem__estimate_best)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/liberal-democracy-index.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/liberal-democracy-index
+frequence: annuelle
+premiere_annee: 1900
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000158
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Variante principale de la famille V-Dem (D18), proposée par la table des cadres comme version
+  continue de l'indicateur de régime du Doughnut, annuelle sans lacune de 2000 à 2025 (26 points, 0,80 en 2025).
+note_pertinence: L'indice de démocratie libérale est une mesure composite de référence de la qualité démocratique
+  ; le Doughnut classe les régimes avec des données de V-Dem (à vérifier d'après la table des cadres). Il agrège
+  de nombreux sous-indices listés en variantes, ce qui pose un risque de double compte avec les autres composites
+  de la dimension (D18).
+variantes:
+- serie_id: https://ourworldindata.org/grapher/electoral-democracy-index.csv (colonne electdem_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'autres indices globaux V-Dem : démocratie électorale, délibérative et égalitaire'
+  ligne_id: m04-000159
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/deliberative-democracy-index-vdem.csv (colonne delibdem_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'autres indices globaux V-Dem : démocratie électorale, délibérative et égalitaire'
+  ligne_id: m04-000160
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/egalitarian-democracy-index-vdem.csv (colonne egaldem_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'autres indices globaux V-Dem : démocratie électorale, délibérative et égalitaire'
+  ligne_id: m04-000161
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/freedom-of-association-index.csv (colonne freeassoc_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de la société civile : liberté d''association, vigueur de la société civile'
+  ligne_id: m04-000164
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/judicial-constraints-on-the-executive-index.csv (colonne judicial_constr_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000166
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/legislative-constraints-on-the-executive-index.csv (colonne legis_constr_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000167
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/rule-of-law-index.csv (colonne rule_of_law_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000168
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/human-rights-index-vdem.csv (colonne civ_libs_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000169
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/political-civil-liberties-index.csv (colonne pol_libs_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000170
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/private-civil-liberties-index.csv (colonne priv_libs_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000171
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/individual-liberties-and-equality-before-the-law-index.csv (colonne
+    indiv_libs_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000172
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/physical-integrity-rights-index-vdem.csv (colonne phys_integr_libs_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000173
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/equal-rights-protection-index.csv (colonne equal_rights_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit et des libertés : contraintes judiciaires et législatives sur
+    l''exécutif, État de droit, libertés civiles (ensemble, politiques, privées), libertés individuelles et égalité
+    devant la loi, intégrité physique, égale protection des droits'
+  ligne_id: m04-000174
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/strong-civil-society-index.csv (colonne civ_soc_str_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de la société civile : liberté d''association, vigueur de la société civile'
+  ligne_id: m04-000176
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/clientelism-index.csv (colonne v2xnp_client__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000178
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/political-corruption-index.csv (colonne corruption_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000179
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/executive-corruption-index.csv (colonne corr_exec_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000180
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/public-sector-corruption-index.csv (colonne corr_publsec_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000181
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/judicial-corruption-score.csv (colonne corr_jud_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000182
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/legislative-corruption-score.csv (colonne corr_leg_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000183
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/rigorous-and-impartial-public-administration-score.csv (colonne public_admin_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de corruption et d''impartialité : clientélisme, corruption politique, de l''exécutif,
+    du secteur public, judiciaire, législative, administration rigoureuse et impartiale'
+  ligne_id: m04-000185
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- relais_owid
+notes: 'Dernière valeur (0,8 en 2025) lue dans la sortie du robot M04 et sur la page OWID le 14/10/2026 ; licence
+  V-Dem CC BY-SA 4.0 d''après M04. Le jeu V-Dem n''est téléchargeable qu''après un formulaire (niveau exclu) : OWID
+  est la voie d''accès. Série disponible depuis 1789 dans le relais OWID : premiere_annee ramenée à 1900, borne
+  du contrôle de scripts/verifier_fiches.py (signalé à la session mère).'

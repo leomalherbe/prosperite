@@ -1,0 +1,66 @@
+id: occupation_carcerale
+libelle: Taux d'occupation des prisons (surpopulation carcérale)
+dimension: democratie
+sous_theme: justice et État de droit
+famille: occupation_carcerale
+variante_principale: oui
+definition: Nombre de personnes détenues pour 100 places opérationnelles des établissements pénitentiaires, au 31
+  décembre (population écrouée), France ; au-delà de 100, les prisons sont surpeuplées.
+unite: détenus pour 100 places
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (données du ministère de la Justice)
+source_jeu: BDM, tableau Population écrouée au 31 décembre (TCRED)
+source_serie_id: '001779317'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001779317
+url_page: https://www.insee.fr/fr/statistiques/serie/001779317
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2024
+nb_points_depuis_2000: 13
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001326
+hors_longlist: non
+raccordement: 'a_etudier : 2008-2011 par le rapport des séries Eurostat crim_pris_cap (détenus / capacité officielle
+  : 116,8 % en 2012 contre 116,3 % à l''INSEE, 129,3 % contre 129,5 % en 2024)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la surpopulation des prisons, annuelle de 2012 à 2024 (de 103,4 % en 2020 à 129,5
+  % en 2024), raccordable à 2008 par le rapport des deux séries Eurostat crim_pris_cap.
+note_pertinence: La surpopulation carcérale touche à la dignité des personnes détenues et au respect des droits
+  fondamentaux par l'État ; elle relève de l'État de droit plus que de la sécurité. Le taux français dépasse 100
+  % sur toute la période, avec un creux en 2020 (103,4 %, année de l'épidémie) et un maximum en 2024 (129,5 %).
+variantes:
+- serie_id: '001779318'
+  source: INSEE BDM
+  nature: même taux, France métropolitaine (BDM 001779318)
+  ligne_id: bdm-001327
+  eligible: oui
+- serie_id: crim_pris_cap?freq=A&indic_cr=PRIS_ACT_CAP&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat crim_pris_cap : détenus et capacité officielle pour 100 000 habitants, 2008-2024, dont le rapport
+    donne le taux d''occupation (partenaires du raccordement 2008-2011) ; lignes de la long-list securite'
+  ligne_id: estat-032525
+  eligible: oui
+  longlist: securite
+- serie_id: crim_pris_cap?freq=A&indic_cr=PRIS_OFF_CAP&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat crim_pris_cap : détenus et capacité officielle pour 100 000 habitants, 2008-2024, dont le rapport
+    donne le taux d''occupation (partenaires du raccordement 2008-2011) ; lignes de la long-list securite'
+  ligne_id: estat-032526
+  eligible: oui
+  longlist: securite
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2012
+notes: 'Valeurs lues sur la BDM le 14/10/2026 : 116,3 % (2012), 103,4 % (2020), 129,5 % (2024) ; séries Eurostat
+  crim_pris_cap lues sur l''API le même jour (sans drapeau). Le libellé « places opérationnelles » est la définition
+  usuelle de l''administration pénitentiaire, non relue dans les métadonnées BDM (à vérifier).'

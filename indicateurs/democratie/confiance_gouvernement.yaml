@@ -1,0 +1,62 @@
+id: confiance_gouvernement
+libelle: Confiance dans le gouvernement national
+dimension: democratie
+sous_theme: confiance dans les institutions
+famille: confiance_gouvernement
+variante_principale: oui
+definition: Part des personnes de 15 ans ou plus déclarant avoir confiance dans le gouvernement national (Gallup
+  World Poll, environ 1 000 personnes par an, moyennes sur deux ou trois ans répétées chaque année ; base How's
+  Life de l'OCDE, mesure 14_3).
+unite: '% des 15 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: OCDE (relais du Gallup World Poll)
+source_jeu: How's Life? — bien-être futur (DSD_HSL@DF_HSL_FWB), mesure 14_3
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_3 UNIT_MEASURE=PT_POP_Y_GE15
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000102
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Confiance dans le gouvernement nommée dans le contenu de la dimension et indicateur OCDE 14_3,
+  2006-2025 (37,3 % en 2025), mais 7 valeurs seulement (moyennes Gallup sur 2 à 3 ans) et licence de réutilisation
+  non trouvée (D26).
+note_pertinence: 'La confiance dans le gouvernement est la mesure la plus citée de la confiance politique (OCDE).
+  Aucune série publique annuelle n''a été trouvée pour la France : le baromètre du Cevipof n''est diffusé qu''en
+  PDF (D9) et l''indicateur 16.i4 de l''INSEE ne couvre pas le gouvernement. La série Gallup, lissée par blocs de
+  trois ans, est peu réactive et sa diffusion dépend de la réponse de l''OCDE sur les conditions de réutilisation
+  (D26).'
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_3 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation par sexe
+  ligne_id: m04-000103
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_3 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation par sexe
+  ligne_id: m04-000104
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyennes_pluriannuelles
+- licence_non_trouvee
+- serie_irreguliere_D17
+notes: 'Valeur lue dans la sortie du robot M04 (docs/sources/series/ocde__hsl_bien_etre_futur.csv) : 37,33 % (2025),
+  7 valeurs distinctes de 2006 à 2025. Les enquêtes sur les valeurs (WVS/EVS) donnent aussi la confiance dans le
+  gouvernement (2010 et 2022, 30,7 % en 2022 d''après le robot), série non cataloguée.'

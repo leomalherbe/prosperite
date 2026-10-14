@@ -1,0 +1,46 @@
+id: depenses_tribunaux
+libelle: Dépenses publiques pour les tribunaux (euros par habitant)
+dimension: democratie
+sous_theme: justice et État de droit
+famille: depenses_tribunaux
+variante_principale: oui
+definition: Dépenses totales des administrations publiques consacrées aux tribunaux, en euros courants par habitant
+  ; indicateur ODD de l'UE sdg_16_30.
+unite: euros courants par habitant
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_16_30 — Dépenses totales des administrations publiques pour les tribunaux
+source_serie_id: sdg_16_30?freq=A&unit=EUR_HAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_30?freq=A&unit=EUR_HAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_16_30/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002119
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Moyen budgétaire (charte §3.4) exprimé en euros courants par habitant, donc gonflé par l'inflation
+  (54,3 € en 2000, 120,6 € en 2024), sans cible officielle qui permettrait de fixer des bornes (D19).
+note_pertinence: La dépense pour les tribunaux mesure les moyens de la justice, pas son fonctionnement ni la confiance
+  qu'elle inspire. Elle est admissible comme indicateur de moyens (D19), mais une version en part du PIB ou en euros
+  constants serait nécessaire pour la lire dans le temps.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- provisoire_2023_2024
+- euros_courants
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 : 54,3 € (2000), 94,0 € (2020), 120,6 € (2024, provisoire).
+  Le jeu propose aussi l''unité MIO_EUR (millions d''euros).'

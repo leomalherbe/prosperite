@@ -1465,12 +1465,6 @@ variantes:
     réel 2010=100)'
   ligne_id: estat-054851
   eligible: non
-- serie_id: ilc_di01?freq=A&quant_inc=D5&statinfo=SHARE&unit=EUR&geo=FR
-  source: Eurostat
-  nature: 'autre source : EU-SILC (long-list egalites)'
-  ligne_id: estat-030735
-  eligible: oui
-  longlist: egalites
 - serie_id: ilc_di01?freq=A&quant_inc=D5&statinfo=TC&unit=EUR&geo=FR
   source: Eurostat
   nature: 'autre source : EU-SILC (long-list egalites)'

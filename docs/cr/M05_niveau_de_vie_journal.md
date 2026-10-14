@@ -32,7 +32,7 @@ Recherche hors de la long-list (méthode §8, R1) : présélections des quatre d
 ## 2. Présélection (10 h 20 – 10 h 35)
 
 - `docs/validation/regles_preselection_niveau_de_vie.csv` : **140 règles** (ordre : lignes déjà reprises par `egalites`, séries principales exactes, variantes par jeu et par mesure, imports d'autres long-lists, renvois `autre_dimension`, puis écarts en bloc par jeu). Expressions régulières sur `serie_id` (paramètres Melodi `STO=`, `REF_SECTOR=`, `ERFS_MEASURE=` ; paramètres Eurostat `na_item=`, `statinfo=`, `rskpovth=`) et sur `ligne_id` pour la BDM (identifiants consécutifs par tableau).
-- `python scripts/preselection.py --dimension niveau_de_vie` → **11 942 lignes affectées** (les 11 821 de la long-list, aucune sans règle, aucune règle vide ; 121 importées : `egalites` 116, `planete` 5), **140 groupes** : 25 `fiche` (24 lignes + 1 hors long-list), 57 `variante_de` (1 271 lignes propres + 12 importées), 43 `ecarte_en_bloc` (9 831 lignes propres + 109 importées), 15 `autre_dimension` (695 lignes : `travail` 354, `egalites` 249, `logement_cadre_vie` 45, `education` 24, `securite` 19, `planete` 4).
+- `python scripts/preselection.py --dimension niveau_de_vie` → **11 912 lignes affectées** (les 11 821 de la long-list, aucune sans règle, aucune règle vide ; 91 importées : `egalites` 86, `planete` 5), **140 groupes** : 25 `fiche` (24 lignes + 1 hors long-list), 57 `variante_de` (1 271 lignes propres + 11 importées), 43 `ecarte_en_bloc` (9 831 lignes propres + 80 importées), 15 `autre_dimension` (695 lignes : `travail` 354, `egalites` 249, `logement_cadre_vie` 45, `education` 24, `securite` 19, `planete` 4).
 - Première exécution : 3 lignes sans règle (`nama_10_pc` P31_S13, P32_S13, P3_S13 : consommation des administrations par habitant) → ajoutées aux comptes des administrations (A5).
 
 ### 2.1 Comptes nationaux (D30) : traitement par jeu et par mesure
@@ -67,11 +67,11 @@ Le niveau réel par habitant du revenu disponible n'existe qu'à Eurostat (`nasa
 - 84 lignes de mesures de dispersion déjà reprises par `egalites` (S80/S20, parts de niveau de vie, S90/S50, parts du patrimoine) → `autre_dimension:egalites`.
 - 16 lignes composantes d'écarts construits d'`egalites` (`ilc_li02` par sexe et par âge, `ilc_li31` à `ilc_li34` par nationalité) gardées en ventilations de `taux_pauvrete_60` selon D32 (« les lignes sources restent des ventilations ») : 4 avertissements R1 attendus du vérificateur.
 - 4 lignes de salaires par sexe reprises par `egalites/ecart_salaire_eqtp_fh` → `autre_dimension:travail` avec l'ensemble des salaires.
-- 86 lignes d'`egalites` renvoyées ici par M05 `egalites` (maintenance n° 11) importées : 7 en variantes (`ilc_di04`, seuils D1 et D5 d'`ilc_di01`), 79 écartées en bloc (seuils des autres quantiles, revenu par intensité de travail, revenus avant transferts), plus 30 autres lignes `ilc_di01` et `ilc_di04` de la même long-list décrites par les mêmes règles.
+- Les 86 lignes d'`egalites` renvoyées ici par M05 `egalites` (maintenance n° 11) sont importées, et elles seules : 6 en variantes (`ilc_di04`, seuils D1 et D5 d'`ilc_di01`, `statinfo = TC`), 80 écartées en bloc (seuils des autres quantiles, revenu par intensité de travail, revenus avant transferts). Une première version des règles importait aussi les parts `ilc_di01` `statinfo = SHARE` qu'`egalites` garde : corrigé (règles limitées à `statinfo = TC`).
 
 ## 3. Fiches (10 h 35 – 11 h 05)
 
-25 fiches écrites par un générateur de travail (bac à sable), variantes injectées par `python scripts/preselection.py --dimension niveau_de_vie --maj-fiches` (1 283 variantes de la long-list + 3 ajouts manuels du catalogue `insee_melodi_catalogue_non`).
+25 fiches écrites par un générateur de travail (bac à sable), variantes injectées par `python scripts/preselection.py --dimension niveau_de_vie --maj-fiches` (1 282 variantes de la long-list + 3 ajouts manuels du catalogue `insee_melodi_catalogue_non`).
 
 Vérifications à la source (WebFetch, 14/10/2026) :
 - API Eurostat : `nasa_10_nf_tr` B7G_R_HAB et B6G_R_HAB, `nama_10_pc` P41, `sdg_01_10`, `ilc_mdsd11`, `ilc_mdsd07`, `ilc_li21`, `ilc_sbjp01`, `ilc_mdes09` (GRT et DIF : leur somme égale `ilc_sbjp01` à l'arrondi près sur 2010-2025), `ilc_pw01b` (FIN), `nasa_10_ki` SRG_S14_S15.
@@ -82,5 +82,5 @@ Vérifications à la source (WebFetch, 14/10/2026) :
 ## 4. Contrôles
 
 - `python scripts/verifier_fiches.py --dimension niveau_de_vie --tableau` puis sans option : **0 erreur, 5 avertissements** (1 série principale hors catalogue avec preuve : `pauvrete_percue_hausse` ; 4 lignes déjà séries principales d'écarts construits d'`egalites`, attendues, §2.3).
-- Compteurs : 11 821 lignes de long-list, 695 renvoyées à d'autres dimensions, **25 fiches, 19 familles, 17 `retenir`, 6 `retenir_variante`, 2 `ecarter`**, 4 déclaratives, 2 composites, 2 à vérifier (D17), 1 hors long-list, 6 incontournables, 1 286 variantes.
+- Compteurs : 11 821 lignes de long-list, 695 renvoyées à d'autres dimensions, **25 fiches, 19 familles, 17 `retenir`, 6 `retenir_variante`, 2 `ecarter`**, 4 déclaratives, 2 composites, 2 à vérifier (D17), 1 hors long-list, 6 incontournables, 1 285 variantes.
 - `python -m pytest -q` : 397 réussis (aucun fichier de code modifié).

@@ -888,6 +888,11 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
             if a is None or a < cat.ANNEE_DERNIERE_MIN:
                 mexclusions[f"dernière période < {cat.ANNEE_DERNIERE_MIN} ou inconnue"] += 1
                 continue
+            if mel.libelle_geo_partiel(l["geo_libelle"]):
+                # FRANCE-FM_X_R11 « France métropolitaine hors île de France » (type FRANCE) : extrait le 13/10
+                # comme national ; écarté comme dans la BDM (passage du 14/10)
+                mexclusions["zone non nationale (périmètre partiel, ex. hors Île-de-France)"] += 1
+                continue
             dims = dict(kv.split("=", 1) for kv in l["dimensions"].split(";") if "=" in kv)
             nb = int(l["nb_annees_depuis_2000"]) if l["nb_annees_depuis_2000"] else None
             jeu = jeux_info.get(l["jeu"], {})

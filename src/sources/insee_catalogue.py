@@ -27,6 +27,9 @@ ANNEE_DERNIERE_MIN = 2020
 ANNEE_PREMIERE_MAX = 2010
 ANNEE_DEBUT_PROJET = 2000
 POINTS_MIN = 10
+#: Écart moyen minimal (en années) entre deux valeurs pour qu'une série courte soit traitée comme
+#: pluriannuelle (D17) plutôt que comme une série annuelle trop courte.
+ECART_MOYEN_PLURIANNUEL = 1.5
 
 FREQUENCES_RETENUES = {"A": "annuelle", "S": "semestrielle", "T": "trimestrielle", "B": "bimestrielle", "M": "mensuelle"}
 
@@ -105,6 +108,10 @@ REGLES_DIMENSIONS: list[tuple[str, list[re.Pattern]]] = [
     ("planete", _r(r"consommation (finale |primaire )?(brute )?d'energie", r"energies? renouvelables?", r"intensite (energetique|carbone|en ges)",
                    r"empreinte (carbone|matieres?|eau|environnementale)", r"gaz a effet de serre", r"changement climatique", r"economie circulaire",
                    r"transports? de marchandises", r"gaspillages?", r"antibiotiques", r"prelevements? (en |d')eau")),
+    # consommation des ménages par fonction (comptes nationaux) : un poste « Santé », « Logement… » ou
+    # « Enseignement » de la dépense de consommation reste un indicateur de niveau de vie (passage du 14/10)
+    ("niveau_de_vie", _r(r"consommation (finale |effective |individuelle |mensuelle )*(des menages|effective|individuelle)",
+                         r"depenses? de consommation")),
     ("logement_cadre_vie", _r(r"taux d'effort", r"precarite energetique", r"eau distribuee", r"eau potable (non )?conforme", r"qualite de l'air", r"pollution de l'air",
                               r"particules (fines|pm)", r"\bpm ?10\b", r"\bpm ?2[.,]5\b", r"dioxyde d'azote", r"\bno2\b", r"\bozone\b",
                               r"logement a (une )?bonne temperature", r"transports? (en commun|collectifs?) de voyageurs")),
@@ -115,13 +122,14 @@ REGLES_DIMENSIONS: list[tuple[str, list[re.Pattern]]] = [
     ("democratie", _r(r"participation (au|aux|a l'|a la) .*(election|scrutin|tour)", r"taux de participation .*(election|scrutin|tour|vote|referendum)",
                       r"abstention", r"electoral", r"electeurs?", r"confiance .*institutions?",
                       r"confiance (dans|envers|en) (la justice|la police|l'armee|l'ecole|l'hopital|les medias|le gouvernement|le parlement|les partis)",
-                      r"corruption", r"\bdetenus\b", r"\bprevenus\b", r"libertes?\b", r"\bvote\b", r"carceral", r"\becroue")),
+                      # « détenus » au sens carcéral seulement : « titres d'OPC détenus par les APU » n'est pas de la démocratie
+                      r"corruption", r"\bdetenus\b(?! par)", r"\bprevenus\b", r"libertes?\b", r"\bvote\b", r"carceral", r"\becroue")),
     ("securite_confiance", _r(r"victimes?", r"violences?", r"homicides?", r"cambriolages?", r"\bvols?\b", r"insecurite", r"delinquance", r"\bcrimes?\b",
                               r"infractions?", r"auteurs poursuivables", r"surendettement", r"confiance (envers|dans|en) les autres", r"confiance interpersonnelle",
                               r"confiance des menages", r"conjoncture aupres des menages", r"opinion (des menages|sur (leur|le|la))", r"capacite d'epargne",
                               r"situation financiere", r"impayes?", r"difficultes? (financieres|a boucler)", r"securite routiere")),
     ("liens_bien_etre", _r(r"satisfaction", r"bien-etre", r"bonheur", r"isolement", r"solitude", r"relations? (sociales|familiales|amicales)", r"soutien social",
-                           r"temps libre", r"loisirs?", r"vacances", r"depart en (voyage|vacances)", r"voyages?", r"touristique", r"tourisme",
+                           r"temps libre", r"loisirs?", r"vacances", r"depart en (voyage|vacances)", r"\bvoyages?\b", r"touristique", r"tourisme",
                            r"licences? sportives?", r"pratique sportive", r"benevol", r"vie associative", r"\bassociations?\b", r"sens (de|a) (la|sa) vie",
                            r"emotions?", r"\baffects?\b", r"emploi du temps")),
     ("sante", _r(r"mortalite", r"\bdeces\b", r"\bmorts?\b", r"\btues\b", r"accidents? (de la route|de la circulation|corporels)", r"suicides?",
@@ -144,7 +152,8 @@ REGLES_DIMENSIONS: list[tuple[str, list[re.Pattern]]] = [
                               r"assainissement", r"\bproprietaires?\b", r"\blocataires?\b", r"parc (de logements|locatif|social)", r"\bhabitat\b",
                               r"residences? principales?", r"menages? equipes?", r"equipement des menages")),
     ("planete", _r(r"\bges\b", r"\bco2\b", r"carbone", r"emissions?", r"empreinte", r"rechauffement", r"energie", r"energetique", r"renouvelables?",
-                   r"\benr\b", r"biodiversite", r"especes", r"oiseaux", r"artificialis", r"\bsols?\b", r"terres? agricoles", r"zones? (boisees|naturelles|humides)",
+                   # « espèces » au sens biologique : pas « prestations sociales en espèces »
+                   r"\benr\b", r"biodiversite", r"(?<!en )\bespeces\b", r"oiseaux", r"artificialis", r"\bsols?\b", r"terres? agricoles", r"zones? (boisees|naturelles|humides)",
                    r"forets?", r"surfaces? (boisees|agricoles)", r"dechets?", r"recycl", r"matieres? premieres? secondaires", r"ressources? naturelles",
                    r"\beaux?\b", r"nitrates?", r"pesticides?", r"phytosanitaires?", r"\bazote\b", r"phosphore", r"masses? d'eau", r"littora", r"\bmarins?\b",
                    r"aires? (marines |terrestres )?protegees?", r"agriculture biologique", r"\bbio\b", r"pollutions?", r"ocean", r"\bpeche\b", r"halieutiques?",
@@ -192,13 +201,51 @@ BRUIT_LIBELLE = re.compile(
 )
 
 
-def tagger(texte: str) -> Optional[str]:
-    """Dimension v0 (ou 'contexte') de la première règle qui correspond, None sinon."""
-    t = BRUIT_LIBELLE.sub(" ", normaliser(texte))
+#: Modalités de ventilation des libellés Melodi (« <titre du jeu> — <modalité> ; <modalité> ; … ») retirées
+#: avant le tagging : « Actif occupé ; Ouvriers ; Taux d'utilisation d'un compte bancaire en ligne » était
+#: classé `travail` (mot « actif ») et « … ; Fonction Publique Hospitalière ; Salaire net… » `sante`
+#: (passage du 14/10). Une partie n'est retirée que si elle est entièrement une modalité de ventilation.
+MODALITES_VENTILATION = re.compile(
+    r"(hommes?|femmes?|masculin|feminin|garcons|filles"
+    r"|(de )?\d+ (a|-) \d+ ans|\d+ ans (ou|et) plus|moins de \d+ ans|\d+ ans"
+    r"|actifs?( occupes?)?|chomeurs?|inactifs?|autres? inactifs?|retraites?( ou preretraites?)?|etudiants?|eleves?, etudiants?.*"
+    r"|agriculteurs.*|artisans.*|cadres.*|professions? intermediaires?.*|employes.*|ouvriers.*"
+    r"|fonction publique (hospitaliere|territoriale|de l'etat|d'etat)|fonctionnaires.*|contractuels?.*"
+    r"|aucun diplome.*|sans diplome.*|baccalaureat.*|diplome superieur.*|cap, bep.*|brevet.*"
+    r"|entre le \d+(er|e) et le \d+e decile|\d+(er|e) (decile|quartile|quintile)"
+    r"|personnes? seules?.*|famille monoparentale.*|menage avec .*|couples? (avec|sans) .*"
+    r"|etrangers?|francais de naissance|francais par acquisition|immigres?|non immigres?"
+    r"|proprietaires?( .*)?|locataires?( .*)?|loges? gratuitement"
+    r"|france( metropolitaine| hors mayotte| entiere)?|france y compris .*)"
+)
+
+
+def _sans_modalites(t: str) -> str:
+    """Retire d'un libellé normalisé de style Melodi les parties qui ne sont que des modalités de ventilation."""
+    if " ; " not in t:
+        return t
+    parties = t.split(" ; ")
+    tete, sep, premiere = parties[0].rpartition(" - ")
+    if not sep:
+        tete, premiere = "", parties[0]
+    gardees = [p for p in [premiere] + parties[1:] if not MODALITES_VENTILATION.fullmatch(p.strip())]
+    return (tete + " - " if tete else "") + " ; ".join(gardees)
+
+
+def _regle(t: str) -> Optional[str]:
     for dimension, motifs in REGLES_DIMENSIONS:
         if any(m.search(t) for m in motifs):
             return dimension
     return None
+
+
+def tagger(texte: str) -> Optional[str]:
+    """Dimension v0 (ou 'contexte') de la première règle qui correspond, None sinon.
+
+    Le libellé est d'abord lu sans ses modalités de ventilation (libellés Melodi) ; s'il ne dit plus rien,
+    il est relu en entier."""
+    t = BRUIT_LIBELLE.sub(" ", normaliser(texte))
+    return _regle(_sans_modalites(t)) or _regle(t)
 
 
 # --------------------------------------------------------------------------------------
@@ -231,7 +278,42 @@ FLUX_HORS_CHAMP: list[tuple[re.Pattern, str]] = [
     (re.compile(r"^TCRED-ENTREPRISES-"), "statistiques d'entreprises (tableaux de l'économie française)"),
     (re.compile(r"^TCRED-ECONOMIE-VAB-REG"), "structure régionale de la valeur ajoutée"),
     (re.compile(r"^TCRED-CONSTRUCTION-LOCAUX"), "construction de locaux non résidentiels"),
+    # ajouts du passage du 14/10 (contrôle sur le catalogue complet) : activité, équipements, moyens
+    # administratifs et barèmes, auparavant candidats par le tagging du regroupement ou d'un mot isolé
+    (re.compile(r"^TCRED-SERVICES-TOURISME-TRANSPORTS-RR"), "réseau routier (équipement, pas un résultat pour la population)"),
+    (re.compile(r"^TRANSPORTS$"), "statistiques d'activité des transports (trafic, fret, livraisons de carburants, immatriculations)"),
+    (re.compile(r"^TCRED-TRAVAIL-EMPLOI-EFF-FP"), "effectifs de la fonction publique (moyens administratifs, pas un résultat)"),
+    (re.compile(r"^TCRED-EDUCATION-ETAB-SCOL"), "nombre d'établissements scolaires (offre, pas un résultat)"),
+    (re.compile(r"^INDICE-TRAITEMENT-FP"), "indice de traitement de la fonction publique (barème)"),
 ]
+
+#: Motifs de libellé hors champ propres à un regroupement : (regroupement, libellé, motif). Passage du 14/10.
+FLUX_LIBELLES_HORS_CHAMP: list[tuple[re.Pattern, re.Pattern, str]] = [
+    # immatriculations de véhicules neufs : activité du marché automobile (étiquetées `liens_bien_etre` par le
+    # mot « tourisme » du regroupement), sauf la part de véhicules électriques (transition, planète)
+    (re.compile(r"^TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN"), re.compile(r"^(?!.*part de vehicules electriques)"),
+     "immatriculations de véhicules neufs (activité, pas un résultat pour la population)"),
+    # Melodi, recensement « Principaux indicateurs (dossier complet) » : trois millésimes de comparaison au
+    # plus (2012, 2017, 2023), décomptes de structure conçus pour les territoires, pas une série nationale
+    # (sans cette règle, l'admission des séries pluriannuelles D17 en ferait 1 144 candidates) ; on garde la
+    # suroccupation des logements, que l'INSEE ne publie pas autrement en série (surpeuplement : 2013, 2020)
+    (re.compile(r"^DS_RP_.*_(PRINC|COMP)$"), re.compile(r"^(?!.*(suroccup|surpeupl))"),
+     "recensement, dossier complet : trois millésimes de comparaison au plus (2012, 2017, 2023), pas une série nationale"),
+    # emploi par grand secteur : ventilation par branche (on garde « Tous secteurs »)
+    (re.compile(r"^TCRED-EMPLOI-31-DECEMBRE"), re.compile(r" - (agriculture|industrie|construction|tertiaire (non )?marchand) - "),
+     "ventilation par branche ou secteur (statistique d'entreprises)"),
+    # enquête de conjoncture auprès des ménages : les intentions d'achat ne sont pas un résultat (on garde
+    # les opinions sur le niveau de vie, la situation financière, l'épargne, le chômage, les prix)
+    (re.compile(r"^ENQ-CONJ-MENAGES"), re.compile(r"intentions? d'achats?|achats de biens d'equipement|depenses d'amenagement du logement"
+                                                  r"|opportunite de faire des achats"),
+     "intentions d'achat (conjoncture de la demande, pas un résultat)"),
+]
+
+#: Instruments détaillés de la dette publique (on garde l'ensemble, la dette nette et le total des passifs).
+DETTE_INSTRUMENT_DETAILLE = re.compile(
+    r"(^| - )(depots|credits( a (court|long) terme)?|titres( de (court|long) terme| autres qu'actions)|actions cotees"
+    r"|reserves techniques|autres comptes a payer|droits de tirage|total des passifs en (euros|devises))"
+)
 
 #: Motifs de libellé hors champ (s'appliquent à tous les regroupements et jeux).
 LIBELLES_HORS_CHAMP: list[tuple[re.Pattern, str]] = [
@@ -265,6 +347,11 @@ LIBELLES_HORS_CHAMP: list[tuple[re.Pattern, str]] = [
         (r"\bprenoms?\b", "prénoms"),
         (r"^(importations|exportations)\b", "commerce extérieur"),
         (r"aide publique au developpement|\bapd\b", "aide publique au développement (moyen de politique internationale, hors champ v1)"),
+        # ajouts du passage du 14/10
+        (r"minimum garanti|plafond (mensuel )?de (la )?securite sociale", "barème réglementaire (paramètre, pas un résultat)"),
+        (r"\(a(5|10|17|21|38|64|88)-[a-z0-9]{2}\)|\(\d{2}\.\d{2}[a-z]\)", "ventilation par branche (code NAF dans le libellé)"),
+        (r"trafic de fret|transports? fluviaux|livraisons? de (carburants|gazole|super)|parcours mensuel sur",
+         "trafic de transport (activité)"),
     ]
 ]
 
@@ -397,9 +484,19 @@ def motif_hors_champ(dataflow: str, texte: str) -> Optional[str]:
         if motif.search(dataflow or ""):
             return explication
     t = normaliser(texte)
+    for flux, motif, explication in FLUX_LIBELLES_HORS_CHAMP:
+        if flux.search(dataflow or "") and motif.search(t):
+            return explication
     for motif, explication in LIBELLES_HORS_CHAMP:
         if motif.search(t):
             return explication
+    return None
+
+
+def motif_dette_detaillee(dataflow: str, texte: str) -> Optional[str]:
+    """Instrument détaillé de la dette des APU (DETTE-TRIM-APU*) : déclinaison technique."""
+    if re.match(r"^DETTE-TRIM-APU", dataflow or "") and DETTE_INSTRUMENT_DETAILLE.search(normaliser(texte)):
+        return "instrument de dette détaillé (on garde l'ensemble, la dette nette et le total des passifs)"
     return None
 
 
@@ -520,6 +617,11 @@ def nombre_annees_estime(premiere: str, derniere: str) -> int:
     return max(0, b - max(a, ANNEE_DEBUT_PROJET) + 1)
 
 
+#: Nombre d'années couvertes de la première à la dernière période (bornée à 2000) : une série annuelle
+#: complète a autant de valeurs ; moins de valeurs = périodicité pluriannuelle ou lacunes.
+etendue_annees = nombre_annees_estime
+
+
 def decider(
     libelle: str,
     theme: str,
@@ -559,7 +661,7 @@ def decider(
     hors_champ = motif_hors_champ(theme, libelle)
     if hors_champ:
         return Decision(dim, "non", [f"hors champ : {hors_champ}"], ventilation)
-    bruit = motif_bruit_dimensions(theme, dimensions_bruit if dimensions_bruit is not None else dimensions)
+    bruit = motif_bruit_dimensions(theme, dimensions_bruit if dimensions_bruit is not None else dimensions) or motif_dette_detaillee(theme, libelle)
     if bruit:
         return Decision(dim, "non", [f"déclinaison technique : {bruit}"], ventilation)
     if serie_arretee:
@@ -588,6 +690,12 @@ def decider(
         if n >= POINTS_MIN:
             candidat = "a_verifier"
             motifs.append(f"première période {premiere} > {ANNEE_PREMIERE_MAX} : raccordement à prévoir (D16)")
+        elif exact and n >= 2 and etendue_annees(premiere, derniere) - 1 >= ECART_MOYEN_PLURIANNUEL * (n - 1):
+            # D17 : indicateur à périodicité pluriannuelle (PISA, participation électorale, état des masses
+            # d'eau, Gini du patrimoine…) admis malgré moins de 10 points ; une série annuelle courte, même avec
+            # une année manquante (écart moyen < 1,5 an), reste écartée
+            candidat = "a_verifier"
+            motifs.append(f"série pluriannuelle ou irrégulière : {n} valeurs de {premiere} à {derniere} (D17)")
         else:
             return Decision(dim, "non", [f"moins de {POINTS_MIN} points depuis {ANNEE_DEBUT_PROJET} ({n}, première période {premiere})"], ventilation)
     elif exact and n < POINTS_MIN:

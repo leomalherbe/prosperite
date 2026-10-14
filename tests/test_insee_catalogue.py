@@ -92,8 +92,40 @@ def test_decider_oui():
 def test_decider_premiere_periode_tardive():
     d = decider(premiere="2013", nb_annees_depuis_2000=12)
     assert d.candidat == "a_verifier" and "D16" in d.commentaire
-    d = decider(premiere="2020", nb_annees_depuis_2000=4)
+    # série annuelle courte et complète (2020-2024, 5 valeurs) : écartée
+    d = decider(premiere="2020", nb_annees_depuis_2000=5)
     assert d.candidat == "non" and "moins de 10 points" in d.commentaire
+    # une seule valeur : écartée
+    d = decider(premiere="2024", nb_annees_depuis_2000=1)
+    assert d.candidat == "non"
+
+
+@pytest.mark.parametrize(
+    "libelle,premiere,derniere,n",
+    [
+        # cas réels du catalogue complet du 13/10 (D17 : indicateurs pluriannuels admis)
+        ("Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture", "2012", "2022", 4),
+        ("Taux de participation au 1er tour des élections présidentielles - France", "2012", "2022", 3),
+        ("Inégalités du patrimoine - Patrimoine brut (indice de Gini)", "2015", "2021", 3),
+        ("Proportion des masses d’eau de surface selon l’état écologique – Bon", "2013", "2021", 4),
+    ],
+)
+def test_decider_serie_pluriannuelle_d17(libelle, premiere, derniere, n):
+    d = decider(libelle=libelle, premiere=premiere, derniere=derniere, nb_annees_depuis_2000=n)
+    assert d.candidat == "a_verifier" and "D17" in d.commentaire and "pluriannuelle" in d.commentaire
+
+
+def test_decider_serie_annuelle_courte_avec_lacune():
+    # cas réel DS_TICM_PRATIQUES : 2019-2025, 6 valeurs (une année manquante) : série annuelle courte, écartée
+    d = decider(libelle="Pratiques en ligne des personnes — Taux de personnes ayant envoyé ou reçu des e-mails dans les 3 mois",
+                premiere="2019", derniere="2025", nb_annees_depuis_2000=6)
+    assert d.candidat == "non"
+
+
+def test_decider_recensement_dossier_complet():
+    d = decider(libelle="Logements - Principaux indicateurs (dossier complet) — France ; Résidences principales ; Logements",
+                theme="DS_RP_LOGEMENT_PRINC", premiere="2012", derniere="2023", nb_annees_depuis_2000=3)
+    assert d.candidat == "non" and "recensement" in d.commentaire
 
 
 def test_decider_serie_irreguliere():
@@ -213,6 +245,80 @@ def test_motif_bruit_dimensions(theme, dims, ecarte):
 )
 def test_tagger_libelles_techniques(libelle, dimension):
     assert cat.tagger(libelle) == dimension
+
+
+# --- corrections du passage du 14/10 (contrôle d'échantillons sur les catalogues complets) ---
+
+@pytest.mark.parametrize(
+    "libelle,dimension",
+    [
+        # « détenus par les APU », « prestations en espèces » : faux déclenchements corrigés
+        ("Actions cotées et titres d'OPC détenus par les APU - Ensemble - Base 2020", None),
+        ("Proportion des personnes prévenues parmi les détenus", "democratie"),
+        ("Prestations sociales en espèces - Valeur aux prix courants - Série CVS-CJO", "niveau_de_vie"),
+        ("Evolution des populations d’oiseaux communs spécialistes : espèces généralistes", "planete"),
+        # « voyageurs » n'est pas « voyages »
+        ("Transport de voyageurs sur l'ensemble du réseau RATP", None),
+        # consommation des ménages par fonction : niveau de vie
+        ("Consommation mensuelle des ménages en biens - Équipement du logement - Volumes aux prix de l'année précédente", "niveau_de_vie"),
+        ("Comptes nationaux annuels base 2020 - Consommation finale effective - Ménages hors entrepreneurs individuels - Santé", "niveau_de_vie"),
+        ("Dépenses de consommation des ménages par fonction — Emploi ou débit ; Territoire national ; Services de l’enseignement ; "
+         "Dépense de consommation individuelle", "niveau_de_vie"),
+        ("Consommation finale d’énergie dans l’ensemble des secteurs", "planete"),
+        # libellés Melodi : les modalités de ventilation ne décident plus de la dimension
+        ("Pratiques en ligne des personnes — Actif occupé ; Ouvriers ; Taux d’utilisation d’un compte bancaire en ligne dans les 3 mois", "education"),
+        # (titre réel du jeu DS_DERA_PUBLIC_SERIES_LONGUES : « fonction publique » → travail, et non plus santé par « hospitalière »)
+        ("Séries longues des salaires dans la fonction publique — Salaire net EQTP mensuel moyen en euros constant ; "
+         "Fonction Publique Hospitalière ; Devise nationale (Euros)", "travail"),
+        ("Conditions de vie : confiance envers les autres — France métropolitaine ; 16 ans ou plus ; Locataire de logement parc social",
+         "securite_confiance"),
+        ("Activité, emploi et chômage - séries longues — Taux d’emploi ; Pourcentage ; Homme ; De 70 à 74 ans ; Actif occupé", "travail"),
+    ],
+)
+def test_tagger_passage_14_10(libelle, dimension):
+    assert cat.tagger(libelle) == dimension
+
+
+@pytest.mark.parametrize(
+    "libelle,theme",
+    [
+        ("Immatriculations de véhicules neufs - Ensemble - Évolution annuelle - France entière", "TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN"),
+        ("Réseau routier - Autoroutes - France métropolitaine", "TCRED-SERVICES-TOURISME-TRANSPORTS-RR"),
+        ("Transport de voyageurs sur l'ensemble du réseau RATP", "TRANSPORTS"),
+        ("Effectifs de la fonction publique hospitalière - Total - France hors Mayotte", "TCRED-TRAVAIL-EMPLOI-EFF-FP-RATIO"),
+        ("Nombre d'établissements scolaires du second degré - Enseignement public - Lycées - France", "TCRED-EDUCATION-ETAB-SCOL"),
+        ("Indice de traitement brut - Grille indiciaire pour la catégorie A - Base 100 en 2000", "INDICE-TRAITEMENT-FP"),
+        ("Montant du minimum garanti", "SMIC-COTISATIONS"),
+        ("Emploi salarié en fin de trimestre - Transports et entreposage (A17-HZ) - France métropolitaine", "TCRED-EMPLOI-SALARIE-TRIM"),
+        ("Emploi salarié en fin de trimestre - Intérim (78.20Z) - France hors Mayotte", "TCRED-EMPLOI-SALARIE-TRIM"),
+        ("Emploi salarié au 31 décembre - Agriculture - France métropolitaine", "TCRED-EMPLOI-31-DECEMBRE-BASE-2018"),
+        ("Enquête mensuelle de conjoncture auprès des ménages - Intentions d'achats de voitures : Solde des réponses", "ENQ-CONJ-MENAGES"),
+    ],
+)
+def test_hors_champ_passage_14_10(libelle, theme):
+    d = _decider(libelle, theme)
+    assert d.candidat == "non" and d.commentaire.startswith("hors champ")
+
+
+def test_exceptions_immatriculations_et_recensement():
+    d = _decider("Immatriculations de véhicules particuliers neufs - Part de véhicules électriques - France entière",
+                 "TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN")
+    assert d.candidat != "non" and d.dimension_v0 == "planete"
+    d = cat.decider(libelle="Logements - Principaux indicateurs (dossier complet) — France ; Suroccupation accentuée",
+                    theme="DS_RP_LOGEMENT_COMP", theme_libelle="", frequence="A", zone="principale",
+                    premiere="2012", derniere="2023", nb_annees_depuis_2000=3)
+    assert d.candidat == "a_verifier" and d.dimension_v0 == "logement_cadre_vie" and "D17" in d.commentaire
+
+
+def test_series_gardees_passage_14_10():
+    assert _decider("Emploi salarié au 31 décembre - Tous secteurs - France métropolitaine", "TCRED-EMPLOI-31-DECEMBRE-BASE-2018").candidat == "oui"
+    assert _decider("Enquête mensuelle de conjoncture auprès des ménages - Opinion sur leur situation financière personnelle - "
+                    "Évolution passée : Solde des réponses", "ENQ-CONJ-MENAGES").candidat == "oui"
+    # dette publique : l'ensemble est gardé, les instruments détaillés sont écartés
+    assert _decider("Dette trimestrielle des administrations publiques au sens de Maastricht - Ensemble - Base 2020", "DETTE-TRIM-APU-2020").candidat == "oui"
+    d = _decider("Dette trimestrielle des administrations publiques au sens de Maastricht - Crédits à long terme - Base 2020", "DETTE-TRIM-APU-2020")
+    assert d.candidat == "non" and "instrument de dette" in d.commentaire
+    assert _decider("Actions cotées et titres d'OPC détenus par les APU - Ensemble - Base 2020", "DETTE-TRIM-APU-2020").candidat == "non"
 
 
 def test_dimension_par_objectif_odd_melodi():

@@ -211,17 +211,29 @@ def _normaliser(t: str) -> str:
 TYPES_A_LIBELLE = {"OTHER", ""}
 
 
+#: Marques d'un périmètre partiel dans un libellé géographique (« France métropolitaine hors Île-de-France »).
+MARQUES_GEO_PARTIEL = ("province", "hors ile", "hors paris", "infra")
+
+
+def libelle_geo_partiel(libelle: str) -> bool:
+    """Vrai si le libellé désigne une partie de la France (province, hors Île-de-France…)."""
+    lib = _normaliser(libelle)
+    return any(m in lib for m in MARQUES_GEO_PARTIEL)
+
+
 def est_geo_nationale(type_code: str, libelle: str) -> bool:
     """Niveau national : type FRANCE/NAT, ou type OTHER (ou absent) dont le libellé désigne la France
-    entière (métropole, hors Mayotte…) et non une partie (province, hors Île-de-France, DOM…)."""
+    entière (métropole, hors Mayotte…) et non une partie (province, hors Île-de-France, DOM…).
+    Passage du 14/10 : le type FRANCE porte aussi « France métropolitaine hors île de France »
+    (FRANCE-FM_X_R11, 41 séries extraites le 13/10) ; ce périmètre partiel n'est plus national."""
     if type_code in TYPES_NATIONAUX:
-        return True
+        return not libelle_geo_partiel(libelle)
     if type_code not in TYPES_A_LIBELLE:
         return False
     lib = _normaliser(libelle)
     if not re.match(r"^france\b", lib):
         return False
-    return not any(m in lib for m in ("province", "hors ile", "hors paris", "outre-mer", "infra"))
+    return not libelle_geo_partiel(lib) and "outre-mer" not in lib
 
 
 def valeurs_geo_nationales(plage: dict[str, Concept]) -> list[tuple[str, str]]:

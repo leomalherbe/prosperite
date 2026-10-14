@@ -76,6 +76,9 @@ def test_analyser_plage_et_geo_nationale():
         ("COM", "Franceville", False),
         ("OTHER", "Franceville", False),
         ("REG", "France entière", False),
+        # passage du 14/10 : type FRANCE mais périmètre partiel (FRANCE-FM_X_R11)
+        ("FRANCE", "France métropolitaine hors île de France", False),
+        ("FRANCE", "France y compris les collectivités d'outre-mer", True),
     ],
 )
 def test_est_geo_nationale(type_code, libelle, attendu):

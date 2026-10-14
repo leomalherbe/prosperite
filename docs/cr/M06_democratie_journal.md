@@ -51,4 +51,4 @@ Fichiers du dépôt lus : `interieur_elections__participation_par_scrutin.csv`, 
 ## 5. Livraison
 
 - Fichiers créés : `docs/validation/audit_democratie.md` et ce journal. Aucune fiche, aucun tableau, aucun script ni aucun catalogue n'a été modifié ; ni la charte, ni le journal des décisions, ni `CLAUDE.md`, ni les fiches de mission.
-- Commits sur `m06-democratie`, push, PR vers `main` par l'API GitHub (« M06 — audit croisé : democratie ») ; rapport déposé dans le Projet sous `claude/cr/M06_democratie_audit.md`.
+- Commits sur `m06-democratie`, push, PR #14 vers `main` ouverte par l'API GitHub (« M06 — audit croisé : democratie ») ; rapport déposé dans le Projet sous `claude/cr/M06_democratie_audit.md`.

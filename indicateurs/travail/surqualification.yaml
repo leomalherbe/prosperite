@@ -1,0 +1,112 @@
+id: surqualification
+libelle: Taux de surqualification des diplômés du supérieur
+dimension: travail
+sous_theme: qualité et sécurité de l'emploi
+famille: surqualification
+variante_principale: oui
+definition: Part des diplômés de l'enseignement supérieur en emploi, de 15 ans ou plus, qui occupent un emploi ne
+  demandant pas ce niveau de diplôme (Eurostat, enquête sur les forces de travail).
+unite: '% des diplômés du supérieur en emploi'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_eoqgan (enquête sur les forces de travail), total toutes nationalités
+source_serie_id: lfsa_eoqgan?freq=A&citizen=TOTAL&age=Y_GE15&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_eoqgan?freq=A&citizen=TOTAL&age=Y_GE15&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_eoqgan/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054294
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Concept nommé dans le contenu de la dimension et indicateur du cadre Qualité de vie, série
+  Eurostat 2000-2025 (26 points).
+note_pertinence: 'La surqualification mesure l''adéquation entre diplôme et emploi : un emploi en dessous de sa
+  qualification est une forme de déclassement. Les valeurs vont de 18,0 % (2000) à 20,4 % (2025), avec des ruptures
+  en 2003, 2005, 2006, 2013, 2014, 2021 et 2024 (API Eurostat, 14/10/2026). Aucune série INSEE de même définition
+  n''est au catalogue.'
+variantes:
+- serie_id: lfsa_eoqgan2?freq=A&nace_r2=TOTAL&age=Y_GE15&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-025487
+  eligible: oui
+- serie_id: lfsa_eoqgan2?freq=A&nace_r2=TOTAL&age=Y15-64&age=Y20-34&age=Y20-64&age=Y25-34&age=Y25-64&age=Y35-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-025488
+  eligible: oui
+- serie_id: lfsa_eoqgan2?freq=A&nace_r2=TOTAL&age=Y_GE15&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-025489
+  eligible: oui
+- serie_id: lfsa_eoqgan?freq=A&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&age=Y_GE15&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054295
+  eligible: oui
+- serie_id: lfsa_eoqgan?freq=A&citizen=TOTAL&age=Y15-64&age=Y20-34&age=Y20-64&age=Y25-34&age=Y25-64&age=Y35-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054296
+  eligible: oui
+- serie_id: lfsa_eoqgan?freq=A&citizen=TOTAL&age=Y_GE15&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054297
+  eligible: oui
+- serie_id: lfsa_eoqgac?freq=A&c_birth=TOTAL&age=Y_GE15&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054298
+  eligible: oui
+- serie_id: lfsa_eoqgac?freq=A&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&age=Y_GE15&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054299
+  eligible: oui
+- serie_id: lfsa_eoqgac?freq=A&c_birth=TOTAL&age=Y15-64&age=Y20-34&age=Y20-64&age=Y25-34&age=Y25-64&age=Y35-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054300
+  eligible: oui
+- serie_id: lfsa_eoqgac?freq=A&c_birth=TOTAL&age=Y_GE15&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
+    lfsa_eoqgan2)'
+  ligne_id: estat-054301
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2005
+- rupture_2006
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021_2025
+notes: ''

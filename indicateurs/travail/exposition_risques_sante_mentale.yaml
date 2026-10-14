@@ -1,0 +1,202 @@
+id: exposition_risques_sante_mentale
+libelle: Personnes en emploi exposées à des risques pour la santé mentale au travail
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: risques_psychosociaux
+variante_principale: oui
+definition: Part des personnes en emploi de 15 à 64 ans qui déclarent être exposées au travail à au moins un facteur
+  de risque pouvant nuire à leur bien-être mental (pression des délais ou surcharge, harcèlement, violence…), d'après
+  le module ad hoc de l'enquête sur les forces de travail (Eurostat).
+unite: '% des personnes en emploi'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: hsw_exp1 (module ad hoc « accidents du travail et problèmes de santé liés au travail »), classe d'âge
+  15-64 ans
+source_serie_id: hsw_exp1?freq=A&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&age=Y65-74&isced11=TOTAL&unit=PC_EMP&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hsw_exp1?geo=FR&sex=T&age=Y15-64&isced11=TOTAL&unit=PC_EMP
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hsw_exp1/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2020
+nb_points_depuis_2000: 3
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-026544
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure des risques psychosociaux au travail au catalogue, citée par le cadre Qualité
+  de vie, observée en 2007, 2013 et 2020 (D17) avec des changements de définition entre chaque vague.
+note_pertinence: 'Les conditions de travail psychosociales (intensité, autonomie, harcèlement) sont citées par SSF
+  et Eurostat. Les trois valeurs (49,0 % en 2007, 60,8 % en 2013, 53,5 % en 2020) portent les drapeaux « définition
+  différente » puis « rupture » (API Eurostat, 14/10/2026) : elles ne forment pas une trajectoire comparable. L''enquête
+  Conditions de travail de la DARES serait la source nationale à rechercher (liste de maintenance).'
+variantes:
+- serie_id: hsw_exp1?freq=A&sex=T&age=Y15-74&isced11=TOTAL&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026542
+  eligible: non
+- serie_id: hsw_exp1?freq=A&sex=M&sex=F&age=Y15-74&isced11=TOTAL&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026543
+  eligible: non
+- serie_id: hsw_exp1?freq=A&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026545
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=HARS_BULLY&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026554
+  eligible: a_verifier
+- serie_id: hsw_exp3?freq=A&factor=HARS_BULLY&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026553
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=HARS_BULLY&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026555
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=TPR_OLWRK&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026569
+  eligible: a_verifier
+- serie_id: hsw_exp3?freq=A&factor=TPR_OLWRK&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026568
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=TPR_OLWRK&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026570
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=VLN_THRT&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026572
+  eligible: a_verifier
+- serie_id: hsw_exp3?freq=A&factor=VLN_THRT&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026571
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=VLN_THRT&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026573
+  eligible: non
+- serie_id: hsw_exp9?freq=A&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&age=Y65-74&sizes=TOTAL&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026606
+  eligible: a_verifier
+- serie_id: hsw_exp9?freq=A&sex=T&age=Y15-74&sizes=TOTAL&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026604
+  eligible: non
+- serie_id: hsw_exp9?freq=A&sex=M&sex=F&age=Y15-74&sizes=TOTAL&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026605
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=DEAL_DIFCUS&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026550
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=DEAL_DIFCUS&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026551
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=DEAL_DIFCUS&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026552
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=LAUTN_WPACE&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026556
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=LAUTN_WPACE&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026557
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=LAUTN_WPACE&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026558
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=LCOMM_ORG&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026559
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=LCOMM_ORG&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026560
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=LCOMM_ORG&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026561
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=NSECU_JOB&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026562
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=NSECU_JOB&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026563
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=NSECU_JOB&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026564
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=SGN_OTH&age=Y15-74&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026565
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=SGN_OTH&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026566
+  eligible: non
+- serie_id: hsw_exp3?freq=A&factor=SGN_OTH&age=Y15-74&unit=PC_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_exp1, hsw_exp3 (par facteur : pression des délais, harcèlement, violence…), hsw_exp9'
+  ligne_id: estat-026567
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- definition_differente_2007_2013
+- rupture_2020
+- module_ad_hoc
+- trajectoire_non_comparable
+notes: 'Série principale prise dans le paquet des classes d''âge (ligne estat-026544 : âges 15-34, 15-64, 35-54,
+  35-64, 55-64, 65-74) ; la modalité retenue est 15-64 ans (url_api).'

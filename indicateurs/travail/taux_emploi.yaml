@@ -1,0 +1,539 @@
+id: taux_emploi
+libelle: Taux d'emploi des 15-64 ans
+dimension: travail
+sous_theme: emploi
+famille: taux_emploi
+variante_principale: oui
+definition: Part des personnes de 15 à 64 ans qui ont un emploi au sens du Bureau international du travail (avoir
+  travaillé au moins une heure pendant la semaine de référence), en moyenne annuelle, d'après l'enquête Emploi de
+  l'INSEE ; séries longues rétropolées par l'INSEE (ruptures de 2003, 2013 et 2021 corrigées, champ France entière
+  y compris Mayotte).
+unite: '% de la population de 15 à 64 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_EEC_SERIES (enquête Emploi, séries longues), mesure EMPRATE
+source_serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+url_page: https://www.insee.fr/fr/statistiques/8977323
+frequence: annuelle
+premiere_annee: 1975
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-002516
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1975'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans trois cadres (OCDE, Eurostat, INSEE) et indicateur de richesse nationale
+  n° 1, publié par l'INSEE en série rétropolée de 1975 à 2025 (26 points depuis 2000), plus long et plus homogène
+  que les séries Eurostat marquées « définition différente » depuis 2021.
+note_pertinence: 'C''est l''indicateur central de l''accès à l''emploi, retenu par l''INSEE parmi les dix indicateurs
+  de richesse nationale. La série longue de l''INSEE corrige les ruptures de l''enquête Emploi (2003, 2013, 2021)
+  et couvre la France entière, ce que ne fait ni la série BDM de l''IRN 1 (France hors Mayotte, jusqu''en 2024)
+  ni la série européenne. La cible officielle de 78 % porte sur les 20-64 ans : elle est portée par la fiche taux_emploi_20_64.'
+variantes:
+- serie_id: '011818643'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000581
+  eligible: oui
+- serie_id: '011818645'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000583
+  eligible: oui
+- serie_id: '011818681'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000619
+  eligible: oui
+- serie_id: '011818720'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000658
+  eligible: oui
+- serie_id: '011818696'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000634
+  eligible: oui
+- serie_id: '011818706'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000644
+  eligible: oui
+- serie_id: '011818707'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000645
+  eligible: oui
+- serie_id: '011818709'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000647
+  eligible: oui
+- serie_id: '011818723'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000661
+  eligible: oui
+- serie_id: '011818745'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000683
+  eligible: oui
+- serie_id: '011818676'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000614
+  eligible: oui
+- serie_id: '011818685'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000623
+  eligible: oui
+- serie_id: '011818716'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000654
+  eligible: oui
+- serie_id: '011818718'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000656
+  eligible: oui
+- serie_id: '011818719'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000657
+  eligible: oui
+- serie_id: '011818726'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-000664
+  eligible: oui
+- serie_id: '010596081'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001087
+  eligible: oui
+- serie_id: lfsa_ergaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-000053
+  eligible: oui
+- serie_id: lfsa_ergaed?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-39&age=Y15-59&age=Y15-64&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y30-34&age=Y30-54&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y70-74&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-000055
+  eligible: oui
+- serie_id: lfsa_ergan?freq=A&unit=PC&sex=T&age=Y_GE15&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054242
+  eligible: oui
+- serie_id: lfsa_ergan?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y30-34&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y_GE75&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054244
+  eligible: oui
+- serie_id: lfsa_ergaedn?freq=A&citizen=TOTAL&isced11=TOTAL&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054246
+  eligible: oui
+- serie_id: lfsa_ergaedn?freq=A&citizen=EU27_2020&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=STLS&citizen=NRP&isced11=TOTAL&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054247
+  eligible: oui
+- serie_id: lfsa_ergaedn?freq=A&citizen=TOTAL&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&isced11=NRP&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054248
+  eligible: oui
+- serie_id: lfsa_ergaedn?freq=A&citizen=TOTAL&isced11=TOTAL&sex=T&age=Y15-24&age=Y15-39&age=Y15-59&age=Y15-64&age=Y20-64&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y_GE50&age=Y55-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054250
+  eligible: oui
+- serie_id: lfsa_ergacob?freq=A&unit=PC&sex=T&age=Y_GE15&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054251
+  eligible: oui
+- serie_id: lfsa_ergacob?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y30-34&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y_GE75&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054253
+  eligible: oui
+- serie_id: lfsa_ergaedcob?freq=A&c_birth=TOTAL&isced11=TOTAL&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054255
+  eligible: oui
+- serie_id: lfsa_ergaedcob?freq=A&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&isced11=TOTAL&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054256
+  eligible: oui
+- serie_id: lfsa_ergaedcob?freq=A&c_birth=TOTAL&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&isced11=NRP&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054257
+  eligible: oui
+- serie_id: lfsa_ergaedcob?freq=A&c_birth=TOTAL&isced11=TOTAL&sex=T&age=Y15-24&age=Y15-39&age=Y15-59&age=Y15-64&age=Y20-64&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y_GE50&age=Y55-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-054259
+  eligible: oui
+- serie_id: '010596084'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001090
+  eligible: oui
+- serie_id: '010596085'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001091
+  eligible: oui
+- serie_id: '010596086'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001092
+  eligible: oui
+- serie_id: '010777602'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001113
+  eligible: oui
+- serie_id: '010777603'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001114
+  eligible: oui
+- serie_id: '010777604'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi BIT trimestriel, taux d''emploi sous-jacent, indicateurs ODD et de richesse
+    nationale (IRN 1)'
+  ligne_id: bdm-001115
+  eligible: oui
+- serie_id: lfsi_emp_a?freq=A&indic_em=EMP_LFS&sex=T&age=Y15-64&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-025129
+  eligible: oui
+- serie_id: lfsi_emp_a_h?freq=A&age=Y15-64&unit=PC_POP&sex=T&indic_em=EMP_LFS&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-025108
+  eligible: oui
+- serie_id: yth_empl_020?freq=A&sex=T&unit=PC&age=Y15-29&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-055268
+  eligible: oui
+- serie_id: yth_empl_020?freq=A&sex=T&unit=PC&age=Y15-19&age=Y15-24&age=Y20-24&age=Y20-29&age=Y25-29&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-055270
+  eligible: oui
+- serie_id: yth_empl_020?freq=A&sex=T&unit=PC&age=Y15-29&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+  source: Eurostat
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: estat-055271
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_1 UNIT_MEASURE=PT_POP_Y25T64
+  source: OCDE — How's Life? (base du bien-être)
+  nature: Eurostat EFT (lfsi_emp_a, lfsi_emp_a_h, lfsa_erga*, jeunes par pays de naissance yth_empl_020) et OCDE
+    (25-64 ans)
+  ligne_id: m04-000008
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002154
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002345
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002570
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002591
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002789
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y30T34&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002958
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y35T39&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002973
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y40T44&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002988
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y45T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003003
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T54&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003018
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003096
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y55T59&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003126
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y55T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003141
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y60T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003156
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y65T69&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003171
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y70T74&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003222
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE75&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003541
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003670
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002187
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002495
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002624
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003045
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002208
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002498
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002645
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003054
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002229
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002501
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002666
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003063
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002250
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002504
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002687
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003072
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002271
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002507
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002708
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003081
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002348
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002519
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-002792
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : ventilations par âge et par diplôme (sexes réunis)'
+  ligne_id: melodi-003099
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y15T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i2&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG, indicateur ODD 8.i2 (sexes réunis)
+  ligne_id: melodi-005374
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y15T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i2&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG, indicateur ODD 8.i2 (sexes réunis)
+  ligne_id: melodi-005380
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y25T49&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i2&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG, indicateur ODD 8.i2 (sexes réunis)
+  ligne_id: melodi-005423
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y50T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i2&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG, indicateur ODD 8.i2 (sexes réunis)
+  ligne_id: melodi-005438
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_retropolee_insee
+- retropolation_hypotheses_insee
+notes: 'Rétropolation : page INSEE des séries longues (insee.fr/fr/statistiques/8977323, lue le 14/10/2026), qui
+  précise que ces corrections « sont toujours basées sur des hypothèses et des choix ». Ventilations par sexe signalées
+  à egalites (ecart_emploi_fh).'

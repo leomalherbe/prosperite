@@ -1,0 +1,182 @@
+id: accidents_travail
+libelle: Fréquence des accidents du travail avec arrêt
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: accidents_travail
+variante_principale: oui
+definition: Nombre d'accidents du travail avec arrêt reconnus dans l'année pour 1 000 salariés du régime général
+  de la Sécurité sociale (indice de fréquence de l'Assurance maladie, risques professionnels).
+unite: accidents pour 1 000 salariés
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Assurance maladie (risques professionnels)
+source_jeu: data.ameli.fr, sinistralité par secteur d'activité (NAF 1), tous secteurs
+source_serie_id: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1
+  (Accidents du travail.TOUS.Tous secteurs confondus.Tous secteurs confondus#indice_frequence_int)
+source_niveau: 1
+url_api: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2024
+nb_points_depuis_2000: 19
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000392
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Série nationale de référence des accidents du travail (2005-2024, 19 points, pas de valeur
+  en 2020), plus longue et plus stable que la série européenne ESAW, qui compte quatre ruptures.
+note_pertinence: Les accidents du travail sont la mesure de la santé au travail citée par SSF et par le cadre Qualité
+  de vie d'Eurostat. L'indice de l'Assurance maladie vaut 26,4 accidents pour 1 000 salariés en 2024 (extrait du
+  robot M04). La série européenne des accidents non mortels varie fortement d'une année à l'autre (3 443,59 pour
+  100 000 en 2008, 2 303,37 en 2009) et porte des ruptures en 2014, 2017, 2020 et 2022 (API Eurostat, 14/10/2026).
+variantes:
+- serie_id: hsw_mi08?freq=A&unit=RT_INC&sex=T&nace_r2=TOTAL&severity=D_GE4&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-001867
+  eligible: oui
+- serie_id: hsw_mi08?freq=A&unit=RT_INC&sex=M&sex=F&nace_r2=TOTAL&severity=D_GE4&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-001868
+  eligible: oui
+- serie_id: hsw_mi01?freq=A&unit=PC&age=TOTAL&sex=T&severity=D_GE4&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021629
+  eligible: oui
+- serie_id: hsw_mi01?freq=A&unit=PC&age=Y_LT18&age=Y18-24&age=Y_LT25&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE55&age=Y_GE65&age=UNK&sex=T&severity=D_GE4&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021630
+  eligible: oui
+- serie_id: hsw_mi01?freq=A&unit=PC&age=TOTAL&sex=M&sex=F&sex=UNK&severity=D_GE4&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021631
+  eligible: oui
+- serie_id: hsw_mi02?freq=A&unit=PC&age=TOTAL&sex=T&severity=TOTAL&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021635
+  eligible: oui
+- serie_id: hsw_mi02?freq=A&unit=PC&age=Y_LT18&age=Y18-24&age=Y_LT25&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE55&age=Y_GE65&age=UNK&sex=T&severity=TOTAL&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021636
+  eligible: oui
+- serie_id: hsw_mi02?freq=A&unit=PC&age=TOTAL&sex=M&sex=F&sex=UNK&severity=TOTAL&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021637
+  eligible: oui
+- serie_id: hsw_mi03?freq=A&unit=PC&age=TOTAL&sex=T&severity=D_GE4&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021638
+  eligible: oui
+- serie_id: hsw_mi03?freq=A&unit=PC&age=Y_LT18&age=Y18-24&age=Y_LT25&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE55&age=Y_GE65&age=UNK&sex=T&severity=D_GE4&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021639
+  eligible: oui
+- serie_id: hsw_mi03?freq=A&unit=PC&age=TOTAL&sex=M&sex=F&sex=UNK&severity=D_GE4&nace_r2=A_C-N&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021640
+  eligible: oui
+- serie_id: hsw_mi_emp01?freq=A&unit=RT_INC&sex=T&severity=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021648
+  eligible: oui
+- serie_id: hsw_mi_emp01?freq=A&unit=RT_INC&sex=M&sex=F&sex=UNK&severity=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021649
+  eligible: oui
+- serie_id: hsw_n2_01?freq=A&unit=RT_INC&nace_r2=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021650
+  eligible: oui
+- serie_id: hsw_n2_01?freq=A&unit=RT_INC&nace_r2=TOTAL&sex=M&sex=F&sex=UNK&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021651
+  eligible: oui
+- serie_id: hsw_n2_03?freq=A&unit=RT_INC&nace_r2=TOTAL&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021653
+  eligible: oui
+- serie_id: hsw_n2_03?freq=A&unit=RT_INC&nace_r2=TOTAL&age=Y_LT18&age=Y18-24&age=Y_LT25&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE55&age=Y_GE65&age=UNK&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021654
+  eligible: oui
+- serie_id: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1
+    (Accidents de trajet.TOUS.Tous secteurs confondus.Tous secteurs confondus#indice_frequence_int)
+  source: Assurance maladie — risques professionnels (data.ameli.fr)
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: m04-000393
+  eligible: oui
+- serie_id: hsw_ac1?freq=A&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&isced11=TOTAL&unit=PC_EMP_PREEMP_M12&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021715
+  eligible: a_verifier
+- serie_id: hsw_ac1?freq=A&sex=T&age=Y15-74&isced11=TOTAL&unit=PC_EMP_PREEMP_M12&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021713
+  eligible: non
+- serie_id: hsw_ac1?freq=A&sex=M&sex=F&age=Y15-74&isced11=TOTAL&unit=PC_EMP_PREEMP_M12&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021714
+  eligible: non
+- serie_id: hsw_ac1?freq=A&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&unit=PC_EMP_PREEMP_M12&geo=FR
+  source: Eurostat
+  nature: 'Assurance maladie (accidents de trajet) ; Eurostat ESAW (hsw_n2_01, hsw_n2_03, hsw_mi01, hsw_mi02, hsw_mi03,
+    hsw_mi08, hsw_mi_emp01 : accidents non mortels) ; EFT (personnes déclarant un accident, module ad hoc, hsw_ac1)'
+  ligne_id: estat-021716
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_regime_general
+- pas_de_valeur_2020
+- serie_administrative
+notes: 'Champ : salariés du régime général (salariés agricoles et fonctionnaires a priori hors champ, à vérifier).
+  Accidents de trajet en variante (même source).'

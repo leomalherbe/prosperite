@@ -1,0 +1,129 @@
+id: longues_durees_travail
+libelle: Personnes en emploi travaillant de longues heures
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: longues_durees_travail
+variante_principale: oui
+definition: Part des personnes en emploi de 15 ans ou plus dont la durée habituelle de travail hebdomadaire dans
+  l'activité principale dépasse le seuil des « longues heures » retenu par Eurostat (jeu de qualité de l'emploi,
+  enquête sur les forces de travail).
+unite: '% des personnes en emploi'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_qoe_3a2 (qualité de l'emploi, enquête sur les forces de travail)
+source_serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=EMP&isco08=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=EMP&isco08=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_qoe_3a2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-026413
+hors_longlist: non
+raccordement: 'a_etudier : saut de 2003 (8,0 % en 2002, 13,4 % en 2003, rupture) lié au passage à l''enquête en
+  continu'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans trois cadres (SSF, OCDE, Eurostat) et maintenu dans la dimension par
+  D27, série Eurostat 2000-2025 (26 points) avec ruptures en 2003, 2014, 2021 et 2024.
+note_pertinence: 'Les longues durées de travail pèsent sur la santé et la vie hors travail : c''est un incontournable
+  du crosswalk. La série baisse de 13,4 % (2003) à 9,4 % (2025), après un saut de 2003 dû au changement d''enquête
+  (API Eurostat, 14/10/2026). Le seuil horaire exact n''est pas donné par l''API (non trouvé) ; la variante de l''OCDE
+  fixe le seuil à 50 heures pour les salariés.'
+variantes:
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=CFAM&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026410
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=CFAM&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026411
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y15-64&age=Y15-74&age=Y20-64&wstatus=CFAM&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026412
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=EMP&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026414
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y15-64&age=Y15-74&age=Y20-64&wstatus=EMP&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026415
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SAL&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026416
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SAL&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026417
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y15-64&age=Y15-74&age=Y20-64&wstatus=SAL&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026418
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SELF_NS&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026419
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SELF_NS&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026420
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y15-64&age=Y15-74&age=Y20-64&wstatus=SELF_NS&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026421
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SELF_S&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026422
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SELF_S&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026423
+  eligible: oui
+- serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y15-64&age=Y15-74&age=Y20-64&wstatus=SELF_S&isco08=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: estat-026424
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_7 UNIT_MEASURE=PT_SAL
+  source: OCDE — How's Life? (base du bien-être)
+  nature: Eurostat lfsa_qoe_3a2 par statut, sexe et âge ; OCDE 2_7 (salariés travaillant au moins 50 heures)
+  ligne_id: m04-000014
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2005
+- rupture_2006
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021_2025
+- seuil_horaire_a_verifier
+notes: ''

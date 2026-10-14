@@ -1,0 +1,114 @@
+id: temps_partiel_subi
+libelle: Temps partiel involontaire (part des salariés à temps partiel)
+dimension: travail
+sous_theme: sous-emploi et temps partiel
+famille: sous_emploi
+variante_principale: non
+definition: Part des personnes en emploi à temps partiel qui le sont faute d'avoir trouvé un emploi à temps plein,
+  15 ans ou plus (Eurostat, enquête sur les forces de travail).
+unite: '% de l''emploi à temps partiel'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_eppgai (enquête sur les forces de travail)
+source_serie_id: lfsa_eppgai?freq=A&unit=PC&sex=T&age=Y_GE15&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_eppgai?freq=A&unit=PC&sex=T&age=Y_GE15&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_eppgai/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-025569
+hors_longlist: non
+raccordement: 'a_etudier : rupture de 2021 (36,9 % en 2020, 27,2 % en 2021) liée à la rénovation de l''enquête'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat rapporté aux seuls salariés à temps partiel,
+  série 2000-2025 (26 points) mais rompue en 2021, alors que le taux de sous-emploi de l'INSEE est rétropolé.
+note_pertinence: 'L''indicateur se lit autrement que le taux de sous-emploi : il dit quelle part du temps partiel
+  est subie, pas quelle part de l''emploi. Les valeurs vont de 26,7 % (2000) à 41,5 % (2014, rupture) puis 20,3
+  % (2025) ; la chute de 2021 est une rupture de série (API Eurostat, 14/10/2026). Il ne peut servir de trajectoire
+  longue qu''après raccordement.'
+variantes:
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_FTJOB&sex=T&age=Y_GE15&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025514
+  eligible: oui
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_FTJOB&sex=M&sex=F&age=Y_GE15&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025515
+  eligible: oui
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_FTJOB&sex=T&age=Y15-24&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025516
+  eligible: oui
+- serie_id: lfsa_epgar?freq=A&unit=PC&sex=T&age=Y_GE15&reason=NF_FTJOB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025557
+  eligible: oui
+- serie_id: lfsa_epgar?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&reason=NF_FTJOB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025558
+  eligible: oui
+- serie_id: lfsa_epgar?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&age=Y_GE65&age=Y_GE75&reason=NF_FTJOB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025559
+  eligible: oui
+- serie_id: lfsa_eppgai?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025570
+  eligible: oui
+- serie_id: lfsa_eppgai?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-025571
+  eligible: oui
+- serie_id: yth_empl_080?freq=A&sex=T&unit=PC&age=Y15-29&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-052372
+  eligible: oui
+- serie_id: yth_empl_080?freq=A&sex=M&sex=F&unit=PC&age=Y15-29&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-052373
+  eligible: oui
+- serie_id: yth_empl_080?freq=A&sex=T&unit=PC&age=Y15-19&age=Y15-24&age=Y20-24&age=Y20-29&age=Y25-29&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : temps partiel involontaire par sexe et âge, jeunes (yth_empl_080), en % des salariés (lfsa_eetpgar
+    NF_FTJOB), raison « temps plein non trouvé » (lfsa_epgar)'
+  ligne_id: estat-052374
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2014
+- rupture_2021
+- rupture_2024
+notes: ''

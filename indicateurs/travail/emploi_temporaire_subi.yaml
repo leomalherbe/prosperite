@@ -1,0 +1,73 @@
+id: emploi_temporaire_subi
+libelle: Salariés en emploi temporaire faute d'emploi permanent
+dimension: travail
+sous_theme: qualité et sécurité de l'emploi
+famille: emploi_temporaire
+variante_principale: non
+definition: Part des salariés de 15 ans ou plus en contrat temporaire qui déclarent ne pas avoir trouvé d'emploi
+  permanent (Eurostat, enquête sur les forces de travail).
+unite: '% des salariés'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_eetpgar (enquête sur les forces de travail)
+source_serie_id: lfsa_eetpgar?freq=A&reason=NF_PJOB&sex=T&age=Y_GE15&unit=PC_SAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_eetpgar?freq=A&reason=NF_PJOB&sex=T&age=Y_GE15&unit=PC_SAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_eetpgar/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2003
+derniere_annee: 2025
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-025520
+hors_longlist: non
+raccordement: 'a_etudier : rupture de 2021 (7,3 % en 2020, 5,8 % en 2021, puis 3,6 % en 2025) avec changement de
+  définition'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur du cadre Qualité de vie (contrats temporaires subis), série 2003-2025 (23 points)
+  dont le niveau est divisé par deux après la rupture de 2021, à lire avec la part des CDD et de l'intérim.
+note_pertinence: 'La part de l''emploi temporaire subi sépare les contrats courts choisis (études, préférence) de
+  ceux qu''on n''a pas pu éviter. La série est marquée « rupture et définition différente » en 2021 et 2024 : la
+  baisse de 7,3 % à 3,6 % entre 2020 et 2025 (API Eurostat, 14/10/2026) tient au moins en partie au nouveau questionnaire.'
+variantes:
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_FT_PJOB&sex=T&age=Y_GE15&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat lfsa_eetpgar : par sexe et âge, et « emploi permanent ou à temps plein non trouvé »'
+  ligne_id: estat-025517
+  eligible: oui
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_FT_PJOB&sex=M&sex=F&age=Y_GE15&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat lfsa_eetpgar : par sexe et âge, et « emploi permanent ou à temps plein non trouvé »'
+  ligne_id: estat-025518
+  eligible: oui
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_FT_PJOB&sex=T&age=Y15-24&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat lfsa_eetpgar : par sexe et âge, et « emploi permanent ou à temps plein non trouvé »'
+  ligne_id: estat-025519
+  eligible: oui
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_PJOB&sex=M&sex=F&age=Y_GE15&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat lfsa_eetpgar : par sexe et âge, et « emploi permanent ou à temps plein non trouvé »'
+  ligne_id: estat-025521
+  eligible: oui
+- serie_id: lfsa_eetpgar?freq=A&reason=NF_PJOB&sex=T&age=Y15-24&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_SAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat lfsa_eetpgar : par sexe et âge, et « emploi permanent ou à temps plein non trouvé »'
+  ligne_id: estat-025522
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2014
+- rupture_2021
+- definition_differente_2021_2025
+notes: ''

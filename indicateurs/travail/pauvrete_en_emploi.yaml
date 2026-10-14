@@ -1,0 +1,490 @@
+id: pauvrete_en_emploi
+libelle: Taux de risque de pauvreté des personnes en emploi
+dimension: travail
+sous_theme: rémunération
+famille: pauvrete_en_emploi
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus en emploi dont le niveau de vie est inférieur à 60 % du niveau
+  de vie médian (EU-SILC, enquête SRCV de l'INSEE pour la France).
+unite: '% des personnes en emploi de 18 ans ou plus'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_iw01 (EU-SILC)
+source_serie_id: ilc_iw01?freq=A&wstatus=EMP&sex=T&age=Y_GE18&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_iw01?freq=A&wstatus=EMP&sex=T&age=Y_GE18&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_iw01/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-030686
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure des travailleurs pauvres, de même définition que l'indicateur ODD européen sdg_01_41,
+  en série annuelle 2004-2025 (22 points).
+note_pertinence: 'Avoir un emploi ne protège pas toujours de la pauvreté : l''indicateur mesure si le travail permet
+  de vivre. Les valeurs vont de 5,4 % (2004) à 8,7 % (2025), avec des ruptures en 2008, 2020 et 2022 (API Eurostat,
+  14/10/2026). Il dépend aussi de la composition du ménage, ce qui le place à la frontière de niveau_de_vie : la
+  session mère tranchera.'
+variantes:
+- serie_id: ilc_iw01?freq=A&wstatus=EMP&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030687
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=EMP&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-24&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-54&age=Y55-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030688
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=NSAL&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030689
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=NSAL&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030690
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=NSAL&sex=T&age=Y16-24&age=Y16-29&age=Y18-24&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-54&age=Y55-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030691
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=SAL&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030692
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=SAL&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030693
+  eligible: oui
+- serie_id: ilc_iw01?freq=A&wstatus=SAL&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-24&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-54&age=Y55-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030694
+  eligible: oui
+- serie_id: ilc_iw02?freq=A&hhcomp=A1&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030695
+  eligible: oui
+- serie_id: ilc_iw02?freq=A&hhcomp=A1_DCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030696
+  eligible: oui
+- serie_id: ilc_iw02?freq=A&hhcomp=A_GE2_DCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030697
+  eligible: oui
+- serie_id: ilc_iw02?freq=A&hhcomp=A_GE2_NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030698
+  eligible: oui
+- serie_id: ilc_iw02?freq=A&hhcomp=DCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030699
+  eligible: oui
+- serie_id: ilc_iw02?freq=A&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030700
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI0-02&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030701
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI0-02&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030702
+  eligible: a_verifier
+- serie_id: ilc_iw03?freq=A&workint=WI0-05&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030703
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI0-05&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030704
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI02-045&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030705
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI02-045&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030706
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI02-1&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030707
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI02-1&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030708
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI045-055&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030709
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI045-055&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030710
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI055-085&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030711
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI055-085&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030712
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI085-1&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030713
+  eligible: oui
+- serie_id: ilc_iw03?freq=A&workint=WI085-1&hhcomp=DCH&hhcomp=NDCH&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030714
+  eligible: oui
+- serie_id: ilc_iw04?freq=A&isced11=ED0-2&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030715
+  eligible: oui
+- serie_id: ilc_iw04?freq=A&isced11=ED3_4&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030716
+  eligible: oui
+- serie_id: ilc_iw04?freq=A&isced11=ED5-8&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030717
+  eligible: oui
+- serie_id: ilc_iw05?freq=A&sex=T&wstatus=SAL_PERM&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030718
+  eligible: oui
+- serie_id: ilc_iw05?freq=A&sex=M&sex=F&wstatus=SAL_PERM&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030719
+  eligible: oui
+- serie_id: ilc_iw05?freq=A&sex=T&wstatus=SAL_TEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030720
+  eligible: oui
+- serie_id: ilc_iw05?freq=A&sex=M&sex=F&wstatus=SAL_TEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030721
+  eligible: oui
+- serie_id: ilc_iw06?freq=A&duration=Y1&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030722
+  eligible: oui
+- serie_id: ilc_iw06?freq=A&duration=Y_LT1&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030723
+  eligible: oui
+- serie_id: ilc_iw07?freq=A&worktime=FT&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030724
+  eligible: oui
+- serie_id: ilc_iw07?freq=A&worktime=PT&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-030725
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054717
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054718
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU27_2020_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054719
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054720
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054721
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU28_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054722
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054723
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054724
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054725
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054726
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NAT&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054727
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NAT&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054728
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054732
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054733
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU27_2020_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054734
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054735
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054736
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU28_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054737
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054741
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054742
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU27_2020_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054743
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054744
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054745
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU28_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054746
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054747
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054748
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054749
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054750
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NAT&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054751
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NAT&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054752
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054756
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054757
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU27_2020_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054758
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054759
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054760
+  eligible: oui
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU28_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054761
+  eligible: oui
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054714
+  eligible: non
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054715
+  eligible: non
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=EU27_2007_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054716
+  eligible: non
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054729
+  eligible: non
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054730
+  eligible: non
+- serie_id: ilc_iw15?freq=A&unit=PC&citizen=NEU27_2007_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054731
+  eligible: non
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054738
+  eligible: non
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054739
+  eligible: non
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=EU27_2007_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054740
+  eligible: non
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054753
+  eligible: non
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054754
+  eligible: non
+- serie_id: ilc_iw16?freq=A&unit=PC&c_birth=NEU27_2007_FOR&sex=T&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&geo=FR
+  source: Eurostat
+  nature: EU-SILC ilc_iw01 à ilc_iw07, ilc_iw15, ilc_iw16 (ventilations), sdg_01_41 (long-list niveau_de_vie)
+  ligne_id: estat-054755
+  eligible: non
+- serie_id: sdg_01_41?freq=A&wstatus=EMP&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_01_41 (indicateur ODD, même série que ilc_iw01)
+  ligne_id: estat-002024
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2008
+- rupture_2020
+- rupture_2022
+- frontiere_niveau_de_vie
+notes: Le taux de pauvreté des salariés de l'ERFS (INSEE) figure dans la long-list niveau_de_vie comme ventilation
+  du taux de pauvreté ; il n'est pas repris ici.

@@ -1,0 +1,128 @@
+id: salaire_net_moyen_reel
+libelle: Salaire net moyen en équivalent temps plein, en euros constants (secteur privé)
+dimension: travail
+sous_theme: rémunération
+famille: salaire_moyen
+variante_principale: oui
+definition: Salaire net mensuel moyen des salariés du secteur privé, tous volumes de travail convertis en équivalent
+  temps plein, exprimé en euros constants (INSEE, séries longues sur les salaires, base Tous salariés).
+unite: euros constants par mois
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_DERA_PRIVE_SERIES_LONGUES (séries longues de salaires du secteur privé)
+source_serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=XDC&WKTIME=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=XDC&WKTIME=_T
+url_page: https://www.insee.fr/fr/outil-interactif/5369554/series-longues-dans-le-secteur-prive
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FRANCE-F
+eligibilite_longlist: oui
+ligne_id: melodi-004140
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list niveau_de_vie : la rémunération fait partie de la qualité des emplois
+  (définition de travail, OCDE 2_8) ; à trancher avec niveau_de_vie au gel 2'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure du pouvoir d'achat du salaire, composante de la qualité de l'emploi selon la définition
+  de la dimension, en série annuelle INSEE de 1996 à 2024 (25 points depuis 2000).
+note_pertinence: 'Le salaire réel dit si le travail rapporte davantage au fil du temps. La moyenne est sensible
+  aux effets de structure (plus de cadres) : la médiane et le salaire des postes à temps complet (depuis 1951) restent
+  en variantes. Le revenu des ménages relève de niveau_de_vie, la dispersion des salaires d''egalites.'
+variantes:
+- serie_id: '010752333'
+  source: INSEE BDM
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: bdm-001230
+  eligible: oui
+- serie_id: '010752342'
+  source: INSEE BDM
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: bdm-001239
+  eligible: oui
+- serie_id: '010752366'
+  source: INSEE BDM
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: bdm-001263
+  eligible: oui
+- serie_id: '010752369'
+  source: INSEE BDM
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: bdm-001266
+  eligible: oui
+- serie_id: '010752396'
+  source: INSEE BDM
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: bdm-001293
+  eligible: oui
+- serie_id: nama_10_fte?freq=A&unit=EUR&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: estat-005737
+  eligible: oui
+- serie_id: DS_DERA_PUBLIC_SERIES_LONGUES?AGE=_T&CIVILSERVANT_STATUS=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&PUBLIC_LEGAL_FORM=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=XDC&WKTIME=_T
+  source: INSEE Melodi
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: melodi-004376
+  eligible: oui
+- serie_id: DS_DERA_PUBLIC_SERIES_LONGUES?AGE=_T&CIVILSERVANT_STATUS=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EVOLUTION_CONSTANT&FREQ=A&GEO=FRANCE-F&PUBLIC_LEGAL_FORM=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: melodi-004388
+  eligible: oui
+- serie_id: DS_DERA_PUBLIC_SERIES_LONGUES?AGE=_T&CIVILSERVANT_STATUS=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_INDICE_100_1996&FREQ=A&GEO=FRANCE-F&PUBLIC_LEGAL_FORM=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=IX&WKTIME=_T
+  source: INSEE Melodi
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: melodi-004391
+  eligible: oui
+- serie_id: earn_ses_pub2s?freq=A&sizeclas=GE10&sex=T&unit=EUR&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (salaire net annuel moyen et médian en euros courants, EQTP et temps complet), INSEE fonction
+    publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
+  ligne_id: estat-026680
+  eligible: a_verifier
+- serie_id: '010752375'
+  source: INSEE BDM
+  nature: INSEE séries longues (postes à temps complet, euros constants, 1951-2024), indice du pouvoir d'achat du
+    salaire (BDM), OCDE 2_8 (salaire brut moyen en PPA)
+  ligne_id: bdm-001272
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_8 UNIT_MEASURE=USD_PPP
+  source: OCDE — How's Life? (base du bien-être)
+  nature: INSEE séries longues (postes à temps complet, euros constants, 1951-2024), indice du pouvoir d'achat du
+    salaire (BDM), OCDE 2_8 (salaire brut moyen en PPA)
+  ligne_id: m04-000015
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=XDC&WKTIME=FT
+  source: INSEE Melodi
+  nature: INSEE séries longues (postes à temps complet, euros constants, 1951-2024), indice du pouvoir d'achat du
+    salaire (BDM), OCDE 2_8 (salaire brut moyen en PPA)
+  ligne_id: melodi-004139
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_secteur_prive
+- effet_de_structure
+notes: 'Le niveau du salaire moyen n''a pas été lu (API Melodi refusée à WebFetch) : non trouvé.'

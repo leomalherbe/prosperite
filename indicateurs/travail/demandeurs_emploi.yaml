@@ -1,0 +1,760 @@
+id: demandeurs_emploi
+libelle: Demandeurs d'emploi inscrits en catégorie A
+dimension: travail
+sous_theme: chômage
+famille: taux_chomage
+variante_principale: non
+definition: Nombre de demandeurs d'emploi inscrits à France Travail (ex-Pôle emploi) en catégorie A (sans emploi
+  et tenus de rechercher un emploi), France hors Mayotte, série trimestrielle corrigée des variations saisonnières
+  et des jours ouvrables (France Travail et DARES, diffusion BDM de l'INSEE).
+unite: nombre de personnes
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: France Travail et DARES (via INSEE BDM)
+source_jeu: BDM, demandeurs d'emploi inscrits (catégories A, B, C)
+source_serie_id: '010597456'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010597456
+url_page: https://www.insee.fr/fr/statistiques/serie/010597456
+frequence: trimestrielle
+premiere_annee: 1996
+derniere_annee: 2026
+geo: FR-D976
+eligibilite_longlist: oui
+ligne_id: bdm-000458
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Série administrative en nombre, sensible aux règles d''inscription et de radiation, dominée
+  par le taux de chômage au sens du BIT de l''enquête Emploi (méthode : enquête plutôt que série enregistrée).'
+note_pertinence: Le nombre de demandeurs d'emploi est très commenté, mais il dépend des règles d'inscription et
+  de radiation, qui changent avec les réformes, et il n'est pas rapporté à la population. Le taux de chômage au
+  sens du BIT mesure le même phénomène avec une définition stable.
+variantes:
+- serie_id: '010597455'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000457
+  eligible: oui
+- serie_id: '010596995'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000449
+  eligible: oui
+- serie_id: '010596996'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000450
+  eligible: oui
+- serie_id: '010597225'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000453
+  eligible: oui
+- serie_id: '010597226'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000454
+  eligible: oui
+- serie_id: '010597685'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000461
+  eligible: oui
+- serie_id: '010597686'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000462
+  eligible: oui
+- serie_id: '010597915'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000465
+  eligible: oui
+- serie_id: '010597916'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000466
+  eligible: oui
+- serie_id: '010598145'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000469
+  eligible: oui
+- serie_id: '010598146'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000470
+  eligible: oui
+- serie_id: '010597570'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000459
+  eligible: oui
+- serie_id: '010597110'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000451
+  eligible: oui
+- serie_id: '010597111'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000452
+  eligible: oui
+- serie_id: '010597340'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000455
+  eligible: oui
+- serie_id: '010597341'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000456
+  eligible: oui
+- serie_id: '010597571'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000460
+  eligible: oui
+- serie_id: '010597800'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000463
+  eligible: oui
+- serie_id: '010597801'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000464
+  eligible: oui
+- serie_id: '010598030'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000467
+  eligible: oui
+- serie_id: '010598031'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000468
+  eligible: oui
+- serie_id: '010598375'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000473
+  eligible: oui
+- serie_id: '010598376'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000474
+  eligible: oui
+- serie_id: '010598261'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000471
+  eligible: oui
+- serie_id: '010598262'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000472
+  eligible: oui
+- serie_id: '010598379'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000477
+  eligible: oui
+- serie_id: '010598387'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000485
+  eligible: oui
+- serie_id: '010598395'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000493
+  eligible: oui
+- serie_id: '010598380'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000478
+  eligible: oui
+- serie_id: '010598388'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000486
+  eligible: oui
+- serie_id: '010598396'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000494
+  eligible: oui
+- serie_id: '010598381'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000479
+  eligible: oui
+- serie_id: '010598389'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000487
+  eligible: oui
+- serie_id: '010598397'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000495
+  eligible: oui
+- serie_id: '010598382'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000480
+  eligible: oui
+- serie_id: '010598390'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000488
+  eligible: oui
+- serie_id: '010598398'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000496
+  eligible: oui
+- serie_id: '010598383'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000481
+  eligible: oui
+- serie_id: '010598377'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000475
+  eligible: oui
+- serie_id: '010598385'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000483
+  eligible: oui
+- serie_id: '010598391'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000489
+  eligible: oui
+- serie_id: '010598393'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000491
+  eligible: oui
+- serie_id: '010598399'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000497
+  eligible: oui
+- serie_id: '010598427'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000525
+  eligible: oui
+- serie_id: '010598384'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000482
+  eligible: oui
+- serie_id: '010598378'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000476
+  eligible: oui
+- serie_id: '010598386'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000484
+  eligible: oui
+- serie_id: '010598392'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000490
+  eligible: oui
+- serie_id: '010598394'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000492
+  eligible: oui
+- serie_id: '010598400'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000498
+  eligible: oui
+- serie_id: '010598428'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000526
+  eligible: oui
+- serie_id: '010598402'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000500
+  eligible: oui
+- serie_id: '010598406'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000504
+  eligible: oui
+- serie_id: '010598411'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000509
+  eligible: oui
+- serie_id: '010598403'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000501
+  eligible: oui
+- serie_id: '010598407'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000505
+  eligible: oui
+- serie_id: '010598412'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000510
+  eligible: oui
+- serie_id: '010598404'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000502
+  eligible: oui
+- serie_id: '010598401'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000499
+  eligible: oui
+- serie_id: '010598405'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000503
+  eligible: oui
+- serie_id: '010598408'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000506
+  eligible: oui
+- serie_id: '010598410'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000508
+  eligible: oui
+- serie_id: '010598413'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000511
+  eligible: oui
+- serie_id: '010598409'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000507
+  eligible: oui
+- serie_id: '010598415'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000513
+  eligible: oui
+- serie_id: '010598419'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000517
+  eligible: oui
+- serie_id: '010598424'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000522
+  eligible: oui
+- serie_id: '010598416'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000514
+  eligible: oui
+- serie_id: '010598420'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000518
+  eligible: oui
+- serie_id: '010598425'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000523
+  eligible: oui
+- serie_id: '010598417'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000515
+  eligible: oui
+- serie_id: '010598414'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000512
+  eligible: oui
+- serie_id: '010598418'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000516
+  eligible: oui
+- serie_id: '010598421'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000519
+  eligible: oui
+- serie_id: '010598423'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000521
+  eligible: oui
+- serie_id: '010598426'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000524
+  eligible: oui
+- serie_id: '010598422'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000520
+  eligible: oui
+- serie_id: '010598429'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000527
+  eligible: oui
+- serie_id: '010598430'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000528
+  eligible: oui
+- serie_id: '010598434'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000529
+  eligible: oui
+- serie_id: '010598435'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000530
+  eligible: oui
+- serie_id: '010598436'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000531
+  eligible: oui
+- serie_id: '010598437'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000532
+  eligible: oui
+- serie_id: '010598443'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000535
+  eligible: oui
+- serie_id: '010598458'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000543
+  eligible: oui
+- serie_id: '010598469'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000553
+  eligible: oui
+- serie_id: '010598444'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000536
+  eligible: oui
+- serie_id: '010598459'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000544
+  eligible: oui
+- serie_id: '010598470'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000554
+  eligible: oui
+- serie_id: '010598445'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000537
+  eligible: oui
+- serie_id: '010598460'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000545
+  eligible: oui
+- serie_id: '010598471'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000555
+  eligible: oui
+- serie_id: '010598446'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000538
+  eligible: oui
+- serie_id: '010598461'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000546
+  eligible: oui
+- serie_id: '010598472'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000556
+  eligible: oui
+- serie_id: '010598454'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000539
+  eligible: oui
+- serie_id: '010598441'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000533
+  eligible: oui
+- serie_id: '010598456'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000541
+  eligible: oui
+- serie_id: '010598462'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000547
+  eligible: oui
+- serie_id: '010598465'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000549
+  eligible: oui
+- serie_id: '010598467'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000551
+  eligible: oui
+- serie_id: '010598473'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000557
+  eligible: oui
+- serie_id: '010598490'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000561
+  eligible: oui
+- serie_id: '010598455'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000540
+  eligible: oui
+- serie_id: '010598442'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000534
+  eligible: oui
+- serie_id: '010598457'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000542
+  eligible: oui
+- serie_id: '010598464'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000548
+  eligible: oui
+- serie_id: '010598466'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000550
+  eligible: oui
+- serie_id: '010598468'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000552
+  eligible: oui
+- serie_id: '010598475'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000558
+  eligible: oui
+- serie_id: '010598491'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000562
+  eligible: oui
+- serie_id: '010598488'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000559
+  eligible: oui
+- serie_id: '010598489'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000560
+  eligible: oui
+- serie_id: '010598492'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000563
+  eligible: oui
+- serie_id: '010598500'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000564
+  eligible: oui
+- serie_id: '010598508'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000565
+  eligible: oui
+- serie_id: '010598516'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000566
+  eligible: oui
+- serie_id: '010607765'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000567
+  eligible: oui
+- serie_id: '010607766'
+  source: INSEE BDM
+  nature: 'France Travail et DARES via BDM : catégories A, B, C, D, E, ABC, par sexe, âge et ancienneté, séries
+    brutes et CVS'
+  ligne_id: bdm-000568
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_administrative
+- en_nombre
+- trimestrielle_agregation_annuelle
+notes: 'Changements récents des règles d''inscription non vérifiés ici : à documenter si la fiche était repêchée.'

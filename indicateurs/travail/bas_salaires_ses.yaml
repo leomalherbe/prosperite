@@ -1,0 +1,167 @@
+id: bas_salaires_ses
+libelle: Salariés à bas salaire (enquête européenne sur la structure des salaires)
+dimension: travail
+sous_theme: rémunération
+famille: bas_salaires
+variante_principale: non
+definition: Part des salariés (apprentis exclus) des entreprises de 10 salariés ou plus dont le salaire horaire
+  brut est inférieur ou égal aux deux tiers du salaire horaire brut médian national (Eurostat, enquête quadriennale
+  sur la structure des salaires).
+unite: '% des salariés'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: earn_ses_pub1s (enquête sur la structure des salaires)
+source_serie_id: earn_ses_pub1s?freq=A&unit=PC&sex=T&sizeclas=GE10&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_ses_pub1s?freq=A&unit=PC&sex=T&sizeclas=GE10&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/earn_ses_pub1s/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2022
+nb_points_depuis_2000: 5
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-026655
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat, harmonisé sur le salaire horaire, mais quadriennal
+  (5 points de 2006 à 2022) et moins frais que la série de l'OCDE.
+note_pertinence: La définition horaire neutralise le temps partiel, contrairement à la série de l'OCDE limitée au
+  temps plein. Les valeurs sont 7,13 % (2006), 6,08 % (2010), 8,81 % (2014), 8,61 % (2018) et 9,68 % (2022), sans
+  drapeau (API Eurostat, 14/10/2026). L'enquête n'a lieu que tous les quatre ans (D17).
+variantes:
+- serie_id: earn_ses_pub1s?freq=A&unit=PC&sex=M&sex=F&sizeclas=GE10&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026656
+  eligible: a_verifier
+- serie_id: earn_ses_pub1a?freq=A&unit=PC&sizeclas=GE10&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026657
+  eligible: a_verifier
+- serie_id: earn_ses_pub1a?freq=A&unit=PC&sizeclas=GE10&age=Y_LT30&age=Y30-49&age=Y_GE50&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026658
+  eligible: a_verifier
+- serie_id: earn_ses_pub1i?freq=A&unit=PC&sizeclas=GE10&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026659
+  eligible: a_verifier
+- serie_id: earn_ses_pub1i?freq=A&unit=PC&sizeclas=GE10&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026660
+  eligible: a_verifier
+- serie_id: earn_ses_pub1t?freq=A&unit=PC&sizeclas=GE10&emp_cont=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026661
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=B&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026662
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=B-S_X_O&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026663
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=C&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026664
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=D&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026665
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=E&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026666
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026667
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=G&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026668
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=H&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026669
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=I&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026670
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=J&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026671
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=K&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026672
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=L&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026673
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=M&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026674
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=N&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026675
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=P&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026676
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=Q&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026677
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=R&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026678
+  eligible: a_verifier
+- serie_id: earn_ses_pub1n?freq=A&unit=PC&sizeclas=GE10&nace_r2=S&geo=FR
+  source: Eurostat
+  nature: 'Eurostat earn_ses_pub1* : salariés à bas salaire par sexe, âge, diplôme, branche, contrat'
+  ligne_id: estat-026679
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- enquete_quadriennale
+- champ_entreprises_10_salaries_ou_plus
+notes: ''

@@ -1,0 +1,206 @@
+id: tues_route
+libelle: Tués sur les routes (pour 100 000 habitants)
+dimension: securite
+sous_theme: sécurité routière
+famille: securite_routiere
+variante_principale: oui
+definition: Nombre de personnes tuées dans un accident de la circulation routière (décès dans les 30 jours), rapporté
+  à la population, pour 100 000 habitants (indicateur de développement durable de l'UE, sdg_11_40).
+unite: tués pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (statistiques de sécurité routière, d'après l'ONISR)
+source_jeu: sdg_11_40 — Décès sur les routes, par type de route
+source_serie_id: sdg_11_40?freq=A&tra_infr=TOTAL&unit=RT&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_40?freq=A&tra_infr=TOTAL&unit=RT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_11_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002049
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur des cadres OCDE (10_3), ODD 3.6 et objectif UE 2030 (diviser par deux tués et blessés
+  graves), taux pour 100 000 habitants 2000-2024 sans lacune (13,3 en 2000, 4,6 en 2024).
+note_pertinence: 'La sécurité routière est rattachée à la dimension par l''arbitrage A6 du gel 1. Le taux de tués
+  a été divisé par près de trois depuis 2000, surtout entre 2002 et 2006 (de 12,4 à 7,4), puis stagne autour de
+  5 depuis 2013. Le champ est à vérifier : rapporter les 3 193 tués de métropole de 2024 (INSEE) au taux de 4,6
+  pour 100 000 donne une population d''environ 69 millions, celle de la France entière et non de la métropole (calcul
+  de l''agent). Les objectifs officiels (ODD 3.6, UE 2030) fournissent des bornes.'
+variantes:
+- serie_id: '010593288'
+  source: INSEE BDM
+  nature: 'INSEE, indicateur ODD 3.i6 (BDM et Melodi) : nombre de tués, France métropolitaine, 2010-2024'
+  ligne_id: bdm-001007
+  eligible: oui
+- serie_id: '010593289'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001008
+  eligible: oui
+- serie_id: '010593290'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001009
+  eligible: oui
+- serie_id: '010593291'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001010
+  eligible: oui
+- serie_id: '010593292'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001011
+  eligible: oui
+- serie_id: '010593293'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001012
+  eligible: oui
+- serie_id: '010593294'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001013
+  eligible: oui
+- serie_id: '010593295'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001014
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_3 UNIT_MEASURE=DT_10P5HB
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'OCDE : décès sur la route pour 100 000 habitants (10_3, 2004-2024) et décès par accident de la route
+    d''après les causes de décès (ODD 3.6.1, 2000-2022, autre définition)'
+  ligne_id: m04-000071
+  eligible: oui
+- serie_id: '010593296'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001015
+  eligible: oui
+- serie_id: '010593297'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001016
+  eligible: oui
+- serie_id: '010593298'
+  source: INSEE BDM
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: bdm-001017
+  eligible: oui
+- serie_id: tran_sf_roadus?freq=A&sex=T&age=TOTAL&unit=P_MHAB&pers_cat=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre unité : tués par million d''habitants (tran_sf_roadus, tran_r_acci), avec ventilations par sexe
+    et âge'
+  ligne_id: estat-001854
+  eligible: oui
+- serie_id: tran_sf_roadus?freq=A&sex=M&sex=F&sex=UNK&age=TOTAL&unit=P_MHAB&pers_cat=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre unité : tués par million d''habitants (tran_sf_roadus, tran_r_acci), avec ventilations par sexe
+    et âge'
+  ligne_id: estat-001855
+  eligible: oui
+- serie_id: tran_sf_roadus?freq=A&sex=T&age=Y_LT15&age=Y15-17&age=Y18-24&age=Y25-49&age=Y50-64&age=Y_GE65&age=UNK&unit=P_MHAB&pers_cat=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre unité : tués par million d''habitants (tran_sf_roadus, tran_r_acci), avec ventilations par sexe
+    et âge'
+  ligne_id: estat-001856
+  eligible: oui
+- serie_id: tran_r_acci?freq=A&victim=KIL&unit=P_MHAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : tués par million d''habitants (tran_sf_roadus, tran_r_acci), avec ventilations par sexe
+    et âge'
+  ligne_id: estat-004428
+  eligible: oui
+- serie_id: tran_sf_roadro?freq=A&unit=NR&tra_infr=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'en nombre : tués par catégorie de route et par type de véhicule (totaux), 2000-2024'
+  ligne_id: estat-037470
+  eligible: oui
+- serie_id: tran_sf_roadve?freq=A&unit=NR&vehicle=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'en nombre : tués par catégorie de route et par type de véhicule (totaux), 2000-2024'
+  ligne_id: estat-037471
+  eligible: oui
+- serie_id: 'odd_3 : 3_6_1_OECD._T._T._T._T._T.DT_10P5HB'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'OCDE : décès sur la route pour 100 000 habitants (10_3, 2004-2024) et décès par accident de la route
+    d''après les causes de décès (ODD 3.6.1, 2000-2022, autre définition)'
+  ligne_id: m04-000125
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y14T17&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005359
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ROUTE_TYP1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005520
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ROUTE_TYP2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005521
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ROUTE_TYP3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005522
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE, indicateur ODD 3.i6 (BDM et Melodi) : nombre de tués, France métropolitaine, 2010-2024'
+  ligne_id: melodi-005544
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005387
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y25T44&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005422
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y45T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005435
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y65T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005444
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005468
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_LT14&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i6&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
+  ligne_id: melodi-005469
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2014
+- provisoire_2023_2024
+- champ_geo_a_verifier
+notes: 'Rupture signalée par Eurostat en 2014 (drapeau b) ; valeurs 2023-2024 provisoires. Incontournable : non
+  selon la méthode commune (seuls les concepts du §5 de la synthèse du crosswalk), bien que trois cadres de la table
+  des cadres le citent (OCDE 10_3, ODD 3.6, objectif UE 2030) : à trancher.'

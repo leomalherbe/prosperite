@@ -1,0 +1,293 @@
+id: victimes_traite
+libelle: Victimes de la traite des êtres humains enregistrées (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: traite_etres_humains
+variante_principale: oui
+definition: Nombre de victimes de la traite des êtres humains (exploitation sexuelle, travail forcé, autres formes)
+  identifiées ou présumées par les autorités dans l'année, pour 100 000 habitants (indicateur de développement durable
+  de l'UE, ODD 16).
+unite: victimes pour 100 000 habitants
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (données des autorités nationales)
+source_jeu: sdg_16_70 — Victimes de la traite des êtres humains par sexe
+source_serie_id: sdg_16_70?freq=A&sex=T&leg_stat=PER_VICT&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_70?freq=A&sex=T&leg_stat=PER_VICT&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_16_70/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+nb_points_depuis_2000: 16
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-001995
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Les victimes de traite comptées sont celles que les autorités identifient : la série dépend
+  de l''effort de détection (sens ambigu) et ne reflète pas l''exposition de la population générale.'
+note_pertinence: La traite est une atteinte grave mais rare et largement cachée ; une hausse des victimes identifiées
+  peut traduire une meilleure détection. L'indicateur figure dans le suivi ODD de l'UE, ce qui justifie sa fiche,
+  mais il est peu adapté à un indice de sécurité de la population.
+variantes:
+- serie_id: sdg_16_70?freq=A&sex=M&sex=F&leg_stat=PER_VICT&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe (sdg_16_70)
+  ligne_id: estat-001996
+  eligible: oui
+- serie_id: crim_thb_vsage?freq=A&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032541
+  eligible: oui
+- serie_id: crim_thb_vsage?freq=A&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032542
+  eligible: oui
+- serie_id: crim_thb_vsage?freq=A&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032543
+  eligible: non
+- serie_id: crim_thb_sex?freq=A&sex=T&leg_stat=PER_VICT&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032536
+  eligible: oui
+- serie_id: crim_thb_sex?freq=A&sex=M&sex=F&leg_stat=PER_VICT&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032537
+  eligible: oui
+- serie_id: crim_thb_vexp?freq=A&iccs=ICCS02041&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032538
+  eligible: oui
+- serie_id: crim_thb_vexp?freq=A&iccs=ICCS02042&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032539
+  eligible: oui
+- serie_id: crim_thb_vexp?freq=A&iccs=ICCS02043_02044&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032540
+  eligible: oui
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02041&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032544
+  eligible: oui
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02041&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032545
+  eligible: oui
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02041&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032546
+  eligible: non
+- serie_id: crim_thb_vctz?freq=A&citizen=EU27_2020_FOR&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055250
+  eligible: oui
+- serie_id: crim_thb_vctzsex?freq=A&sex=T&citizen=EU27_2020_FOR&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055253
+  eligible: oui
+- serie_id: crim_thb_vctzsex?freq=A&sex=M&sex=F&citizen=EU27_2020_FOR&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055254
+  eligible: non
+- serie_id: crim_thb_vctz?freq=A&citizen=NAT&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055251
+  eligible: oui
+- serie_id: crim_thb_vctzsex?freq=A&sex=T&citizen=NAT&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055255
+  eligible: oui
+- serie_id: crim_thb_vctzsex?freq=A&sex=M&sex=F&citizen=NAT&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055256
+  eligible: non
+- serie_id: crim_thb_vctz?freq=A&citizen=NEU27_2020_FOR&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055252
+  eligible: oui
+- serie_id: crim_thb_vctzsex?freq=A&sex=T&citizen=NEU27_2020_FOR&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055257
+  eligible: oui
+- serie_id: crim_thb_vctzsex?freq=A&sex=M&sex=F&citizen=NEU27_2020_FOR&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-055258
+  eligible: non
+- serie_id: crim_off_cat?freq=A&iccs=ICCS0302&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'concept voisin : victimes et infractions d''exploitation sexuelle enregistrées (crim_hom_vage, crim_off_cat
+    ICCS 0302), non éligibles'
+  ligne_id: estat-000430
+  eligible: non
+- serie_id: crim_hom_vage?freq=A&iccs=ICCS0302&age=TOTAL&sex=T&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'concept voisin : victimes et infractions d''exploitation sexuelle enregistrées (crim_hom_vage, crim_off_cat
+    ICCS 0302), non éligibles'
+  ligne_id: estat-032484
+  eligible: non
+- serie_id: crim_hom_vage?freq=A&iccs=ICCS0302&age=Y_LT18&age=Y_GE18&sex=T&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'concept voisin : victimes et infractions d''exploitation sexuelle enregistrées (crim_hom_vage, crim_off_cat
+    ICCS 0302), non éligibles'
+  ligne_id: estat-032485
+  eligible: non
+- serie_id: crim_hom_vage?freq=A&iccs=ICCS0302&age=TOTAL&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'concept voisin : victimes et infractions d''exploitation sexuelle enregistrées (crim_hom_vage, crim_off_cat
+    ICCS 0302), non éligibles'
+  ligne_id: estat-032486
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02041_02042&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032547
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02041_02042&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032548
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02041_02042&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032549
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02042&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032550
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02042&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032551
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02042&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032552
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02043_02044&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032553
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02043_02044&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032554
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICCS02043_02044&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032555
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICSS02041_02043_02044&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032556
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICSS02041_02043_02044&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032557
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICSS02041_02043_02044&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032558
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICSS02042_02043_02044&sex=T&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032559
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICSS02042_02043_02044&sex=M&sex=F&age=TOTAL&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032560
+  eligible: non
+- serie_id: crim_thb_expsxa?freq=A&iccs=ICSS02042_02043_02044&sex=T&age=Y_LT18&age=Y_GE18&unit=NR&geo=FR
+  source: Eurostat
+  nature: 'mêmes victimes dans les jeux détaillés crim_thb_* : nombre ou taux, par sexe, âge, forme d''exploitation
+    et nationalité'
+  ligne_id: estat-032561
+  eligible: non
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Victimes de traite
+    et d'exploitation des êtres humains » ; Indicateur=Traite et exploitation des êtres humains ; Sous_indicateur=Ensemble
+    ; Statistique=Nombre ; Zone_geographique=France ; Champ=France ; Periodicite=Annu)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'SSMSI : victimes de traite et d''exploitation enregistrées, en nombre, 2016-2024 (non éligible : 9 points)'
+  ligne_id: m04-000285
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- delinquance_enregistree
+- sens_ambigu
+- faibles_effectifs
+notes: ''

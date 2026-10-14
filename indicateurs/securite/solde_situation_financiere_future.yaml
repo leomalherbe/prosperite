@@ -1,0 +1,51 @@
+id: solde_situation_financiere_future
+libelle: Opinion des ménages sur les perspectives de leur situation financière (solde)
+dimension: securite
+sous_theme: sécurité économique
+famille: situation_financiere_percue
+variante_principale: non
+definition: Solde des réponses (amélioration moins détérioration) à la question sur l'évolution attendue de leur
+  situation financière personnelle au cours des douze prochains mois, enquête Camme, France métropolitaine ; moyenne
+  annuelle à calculer.
+unite: solde d'opinion (points de %)
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE (enquête de conjoncture auprès des ménages)
+source_jeu: BDM, enquête mensuelle de conjoncture auprès des ménages (ENQ-CONJ-MENAGES)
+source_serie_id: '000857185'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000857185
+url_page: https://www.insee.fr/fr/statistiques/serie/000857185
+frequence: mensuelle
+premiere_annee: 1970
+derniere_annee: 2026
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-000703
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: 'Même enquête et même période (1970-2026), mais porte sur une anticipation et non sur la situation
+  vécue : variante de la situation financière passée (D29, P8).'
+note_pertinence: Les perspectives expriment l'inquiétude ou la confiance des ménages pour l'année à venir, proche
+  du sentiment d'insécurité économique. Elles sont plus volatiles et plus liées au climat général que la situation
+  passée. La version CVS (000857197) est elle aussi classée hors grille par erreur.
+variantes:
+- serie_id: '000857197'
+  source: INSEE BDM
+  nature: données CVS (ligne classée hors grille par erreur, même cause que 000857196)
+  ligne_id: bdm-000713
+  eligible: non
+  longlist: hors_grille
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- agregation_annuelle
+- solde_d_opinion_evolution
+notes: ''

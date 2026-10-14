@@ -1,0 +1,76 @@
+id: homicides_conjugaux
+libelle: Victimes d'homicide commis par le partenaire intime (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: homicides_conjugaux
+variante_principale: oui
+definition: Nombre de victimes d'homicide volontaire dont l'auteur est le partenaire intime (conjoint, concubin,
+  partenaire ou ancien partenaire), enregistrées par la police, rapporté à la population, pour 100 000 habitants.
+unite: victimes pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
+source_jeu: crim_hom_vrel — Victimes d'homicides volontaires par relation victime-délinquant et sexe
+source_serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN&sex=T&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_hom_vrel?freq=A&pers_cat=IPTN&sex=T&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_hom_vrel/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2015
+derniere_annee: 2024
+nb_points_depuis_2000: 10
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-032477
+hors_longlist: non
+raccordement: 'non : aucune série avant 2015 dans les catalogues'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série annuelle des homicides conjugaux (ventilation par sexe disponible pour suivre
+  les féminicides), 2015-2024 sans lacune et à sens non ambigu ; aucune donnée avant 2015.
+note_pertinence: 'Les homicides conjugaux sont un enjeu public majeur (violences faites aux femmes) et, comme les
+  autres homicides, ils sont presque tous connus des services : la série n''a pas le biais de révélation des violences
+  conjugales enregistrées. Le taux est très faible (0,15 à 0,19 pour 100 000 de 2015 à 2024) et ses variations annuelles
+  sont peu significatives. Il recoupe en partie l''indicateur homicides.'
+variantes:
+- serie_id: crim_hom_vrel?freq=A&pers_cat=FAM&sex=T&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'champ voisin : victimes tuées par un membre de la famille, ou par le partenaire ou la famille, et ventilations
+    par sexe'
+  ligne_id: estat-032475
+  eligible: oui
+- serie_id: crim_hom_vrel?freq=A&pers_cat=FAM&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'champ voisin : victimes tuées par un membre de la famille, ou par le partenaire ou la famille, et ventilations
+    par sexe'
+  ligne_id: estat-032476
+  eligible: oui
+- serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe (suivi des féminicides)
+  ligne_id: estat-032478
+  eligible: oui
+- serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN_FAM&sex=T&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'champ voisin : victimes tuées par un membre de la famille, ou par le partenaire ou la famille, et ventilations
+    par sexe'
+  ligne_id: estat-032479
+  eligible: oui
+- serie_id: crim_hom_vrel?freq=A&pers_cat=IPTN_FAM&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'champ voisin : victimes tuées par un membre de la famille, ou par le partenaire ou la famille, et ventilations
+    par sexe'
+  ligne_id: estat-032480
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2015
+- faibles_effectifs
+- delinquance_enregistree
+notes: ''

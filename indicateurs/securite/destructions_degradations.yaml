@@ -1,0 +1,55 @@
+id: destructions_degradations
+libelle: Destructions et dégradations volontaires enregistrées (nombre)
+dimension: securite
+sous_theme: atteintes aux biens
+famille: destructions_degradations
+variante_principale: oui
+definition: Nombre de destructions et dégradations volontaires de biens (véhicules, logements, biens publics…) enregistrées
+  par la police et la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
+unite: nombre d'infractions (taux à calculer)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SSMSI (ministère de l'Intérieur)
+source_jeu: base des séries chronologiques (data.gouv.fr)
+source_serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Destructions
+  et dégradations volontaires (ensemble) enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Destructions
+  et dégradations volontaires ; Sous_indicateur=Non Renseigné ; Statistique=Nombre ; Zone_geographique=France ;
+  Champ=France ; Periodicite)
+source_niveau: 2
+url_api: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f
+url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
+frequence: annuelle
+premiere_annee: 2016
+derniere_annee: 2025
+nb_points_depuis_2000: 10
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000281
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Série enregistrée en nombre disponible seulement depuis 2016 (10 points) ; les séries d'enquête
+  sur le vandalisme (CVS, 2006-2020, présentes dans la base SSMSI) ne sont pas au catalogue.
+note_pertinence: Le vandalisme contre le logement ou la voiture fait partie de l'insécurité du quotidien, mais la
+  série enregistrée est courte et mêle biens privés et publics. Les séries CVS « actes de vandalisme contre le logement
+  / la voiture » existent dans la base SSMSI jusqu'en 2020 ; leur suite VRS reste à cataloguer.
+variantes:
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_degrad)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'ITDD : destructions et dégradations pour 1 000 habitants (non éligible : 9 points)'
+  ligne_id: m04-000306
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- delinquance_enregistree
+- en_nombre_taux_a_calculer
+- debut_2016
+notes: 'Filtre dans la base SSMSI : Titre « Destructions et dégradations volontaires (ensemble) enregistrées par
+  les services de sécurité (Données annuelles) », Zone = France.'

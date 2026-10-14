@@ -1,0 +1,60 @@
+id: vols_violence_enregistres
+libelle: Vols avec violence enregistrés par la police (pour 100 000 habitants)
+dimension: securite
+sous_theme: atteintes aux personnes
+famille: vols_violence
+variante_principale: non
+definition: Nombre de vols commis avec violence ou menace (catégorie ICCS 0401, « robbery ») enregistrés par la
+  police et la gendarmerie dans l'année, pour 100 000 habitants.
+unite: infractions pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
+source_jeu: crim_off_cat — Infractions enregistrées par la police par type d'infraction
+source_serie_id: crim_off_cat?freq=A&iccs=ICCS0401&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS0401&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000432
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Série enregistrée continue 2008-2024 (de 167 à 190 pour 100 000 jusqu'en 2013, puis 83 en
+  2024), dont le sens n'est pas contredit par l'enquête ; variante de la série d'enquête, plus fraîche qu'elle.
+note_pertinence: 'Pour les vols avec violence, la plainte est fréquente et la série enregistrée a une évolution
+  plausible (baisse continue depuis 2013) : elle peut remplacer l''enquête si le relais ONUDC s''arrête. Le SSMSI
+  publie les vols violents sans arme et avec arme en nombre (2016-2025).'
+variantes:
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols violents sans
+    arme enregistrés par les services de sécurité (Données annuelles) » ; Indicateur=Vols et tentatives de vols
+    avec violence ; Sous_indicateur=Vols violents sans arme ; Statistique=Nombre ; Zone_geographique=France ; Champ=France
+    ; P)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'SSMSI : vols violents sans arme et vols avec armes enregistrés, en nombre, 2016-2025'
+  ligne_id: m04-000278
+  eligible: oui
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols avec armes
+    enregistrés par les services de sécurité (Données annuelles) » ; Indicateur=Vols et tentatives de vols avec
+    violence ; Sous_indicateur=Vols avec armes ; Statistique=Nombre ; Zone_geographique=France ; Champ=France ;
+    Periodici)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'SSMSI : vols violents sans arme et vols avec armes enregistrés, en nombre, 2016-2025'
+  ligne_id: m04-000279
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- delinquance_enregistree
+notes: ''

@@ -1,0 +1,53 @@
+id: risque_pauvrete_ressenti
+libelle: Personnes estimant risquer de devenir pauvres dans les cinq ans (baromètre DREES)
+dimension: securite
+sous_theme: sécurité économique
+famille: insecurite_economique_ressentie
+variante_principale: oui
+definition: 'Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui répondent « oui, plutôt
+  » à la question : « pensez-vous qu''il y a un risque que vous deveniez pauvre dans les cinq prochaines années
+  ? » (question PE03 du baromètre d''opinion de la DREES ; part pondérée).'
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable PE03, modalités 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 11
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000263
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série annuelle de l'insécurité économique ressentie (2014-2025), à condition de compter
+  aussi la réponse « je me considère déjà comme pauvre » (7,9 % en 2014, 17,4 % en 2025), sans quoi la baisse de
+  la série du catalogue (32,1 % à 16,1 %) est trompeuse.
+note_pertinence: 'La crainte de devenir pauvre exprime directement l''insécurité économique vécue. Mais la série
+  du catalogue (modalité 1 seule) exclut ceux qui se disent déjà pauvres, dont la part a doublé : la somme des deux
+  réponses (« risque » ou « déjà pauvre ») passe de 40,0 % en 2014 à 33,5 % en 2025. Les non-réponses sautent de
+  1,4 % à 6,1 % en 2018 (changement de protocole possible, à vérifier) et l''année 2024 manque.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- enquete_metropole
+- definition_a_corriger
+- rupture_possible_2018
+- lacune_2024
+- licence_a_confirmer
+notes: 'Correction proposée à M04 : définir l''indicateur comme la somme des modalités 1 et 3 de pe03. Parts recalculées
+  par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv.'

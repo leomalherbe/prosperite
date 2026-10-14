@@ -1,0 +1,148 @@
+id: empreinte_carbone
+libelle: Empreinte carbone de la France
+dimension: planete
+sous_theme: 'climat : empreinte'
+famille: empreinte_carbone
+variante_principale: oui
+definition: Émissions de gaz à effet de serre (CO2, CH4, N2O) induites par la demande finale intérieure (consommation
+  des ménages et des administrations, investissement), y compris celles émises à l'étranger pour produire les biens
+  et services importés et hors celles liées aux exportations, selon le calcul du SDES.
+unite: millions de tonnes équivalent CO2
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE-SDES
+source_jeu: Indicateur de richesse nationale n° 9 et ODD 13.i3a (BDM 010595981)
+source_serie_id: '010595981'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010595981
+url_page: https://www.insee.fr/fr/statistiques/serie/010595981
+frequence: annuelle
+premiere_annee: 1995
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM_D99_D978
+eligibilite_longlist: oui
+ligne_id: bdm-000911
+hors_longlist: non
+raccordement: 'non : série continue depuis 1995'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur de richesse nationale n° 9 et concept présent dans quatre cadres (Doughnut, SSF,
+  OCDE, INSEE), série annuelle de 1995 à 2024 (25 points depuis 2000) à laquelle la SNBC 3 associe des fourchettes
+  indicatives en millions de tonnes.
+note_pertinence: 'L''empreinte mesure la pression climatique du mode de vie français, où qu''elle s''exerce : elle
+  complète l''inventaire territorial, qui ignore les importations, et forme une famille distincte (méthode §8).
+  Le calcul combine l''inventaire national et des tableaux entrées-sorties internationaux pour les importations,
+  révisés à chaque édition. Les ventilations par gaz et par origine (ménages, production intérieure, importations)
+  sont en variantes.'
+variantes:
+- serie_id: '010777559'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O) : INSEE BDM 010777559 à 010777561, 1995-2023'
+  ligne_id: bdm-000923
+  eligible: oui
+- serie_id: '010777560'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O) : INSEE BDM 010777559 à 010777561, 1995-2023'
+  ligne_id: bdm-000924
+  eligible: oui
+- serie_id: '010777561'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O) : INSEE BDM 010777559 à 010777561, 1995-2023'
+  ligne_id: bdm-000925
+  eligible: oui
+- serie_id: '010777565'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000929
+  eligible: oui
+- serie_id: '010777566'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000930
+  eligible: oui
+- serie_id: '010777567'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000931
+  eligible: oui
+- serie_id: '010777568'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000932
+  eligible: oui
+- serie_id: '010777569'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000933
+  eligible: oui
+- serie_id: '010777578'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000942
+  eligible: oui
+- serie_id: '010777579'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000943
+  eligible: oui
+- serie_id: '010777580'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000944
+  eligible: oui
+- serie_id: '010777581'
+  source: INSEE BDM
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: bdm-000945
+  eligible: oui
+- serie_id: https://github.com/owid/co2-data (colonne trade_co2_share)
+  source: Our World in Data (relais)
+  nature: ventilation par origine des émissions (émissions directes des ménages, production intérieure, importations
+    pour la demande finale et pour les consommations intermédiaires) et émissions des exportations de la production
+    intérieure (INSEE BDM 010777565 à 010777569 et 010777578 à 010777581) ; part importée du CO2 de consommation
+    (OWID)
+  ligne_id: m04-000221
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i3a&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'INSEE Melodi, indicateur ODD 13.i3a : même série, voie Melodi'
+  ligne_id: melodi-005677
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- perimetre_kyoto
+notes: Valeurs BDM non relues (lecture de bdm.insee.fr refusée à l'outil le 14/10/2026).

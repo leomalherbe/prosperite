@@ -1,0 +1,86 @@
+id: emissions_oxydes_azote
+libelle: Émissions d'oxydes d'azote
+dimension: planete
+sous_theme: pollutions
+famille: emissions_oxydes_azote
+variante_principale: oui
+definition: Émissions d'oxydes d'azote (NOx, en équivalent NO2) dans l'air, total national retenu pour l'évaluation
+  du respect des plafonds d'émission de la directive (UE) 2016/2284.
+unite: tonnes
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: env_air_emis (polluants atmosphériques par secteur source)
+source_serie_id: env_air_emis?freq=A&unit=T&airpol=NOX&src_nfr=NFR_TOT_NAT_C&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=NOX&src_nfr=NFR_TOT_NAT_C&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/env_air_emis/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-036426
+hors_longlist: non
+raccordement: 'non : la source remonte à 1987'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Pression atmosphérique soumise à un plafond d'émission européen, série Eurostat sans drapeau
+  de 2000 à 2024 (1 570 700 t en 2005, 647 990 t en 2024).
+note_pertinence: 'Les oxydes d''azote acidifient et eutrophisent les milieux et forment de l''ozone : la fiche porte
+  la pression exercée, la pollution subie par la population relevant de logement_cadre_vie (R2). Les émissions ont
+  été divisées par plus de deux depuis 2005. Le Citepa (1990-2025), les agrégats sectoriels et les comptes d''émissions
+  sont en variantes.'
+variantes:
+- serie_id: env_air_emis?freq=A&unit=T&airpol=NOX&src_nfr=NFR_TOT_NAT&geo=FR
+  source: Eurostat
+  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
+    (principe de résidence) pour les oxydes d'azote
+  ligne_id: estat-036425
+  eligible: oui
+- serie_id: env_ac_ainah_r2?freq=A&airpol=NOX&nace_r2=TOTAL&unit=G_HAB&geo=FR
+  source: Eurostat
+  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
+    (principe de résidence) pour les oxydes d'azote
+  ligne_id: estat-037515
+  eligible: oui
+- serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NOX&src_nfr=NFR1A_TRA&geo=FR
+  source: Eurostat
+  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
+    (principe de résidence) pour les oxydes d'azote
+  ligne_id: estat-037945
+  eligible: oui
+- serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NOX&src_nfr=NFR3_AGR&geo=FR
+  source: Eurostat
+  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
+    (principe de résidence) pour les oxydes d'azote
+  ligne_id: estat-037946
+  eligible: oui
+- serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NOX&src_nfr=NFR3_MNR&geo=FR
+  source: Eurostat
+  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
+    (principe de résidence) pour les oxydes d'azote
+  ligne_id: estat-037947
+  eligible: oui
+- serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NOX&src_nfr=NFR_TOT_NAT&geo=FR
+  source: Eurostat
+  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
+    (principe de résidence) pour les oxydes d'azote
+  ligne_id: estat-037948
+  eligible: oui
+- serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+    BDD_Secten : AEPP (acidifiants, eutrophisants, polluants photochimiques).France hexagonale.NOX.kt)'
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'Citepa, inventaire Secten (1990-2025, niveau 2) : oxydes d''azote'
+  ligne_id: m04-000328
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

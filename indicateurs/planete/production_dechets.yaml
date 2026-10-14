@@ -1,0 +1,151 @@
+id: production_dechets
+libelle: Production de déchets par habitant (toutes activités et ménages)
+dimension: planete
+sous_theme: déchets et matières
+famille: production_dechets
+variante_principale: oui
+definition: Quantité totale de déchets, dangereux et non dangereux, produite par l'ensemble des activités économiques
+  et les ménages, déchets minéraux compris, en kg par habitant (statistique européenne biennale).
+unite: kg par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_12_51 (déchets générés par dangerosité)
+source_serie_id: sdg_12_51?freq=A&waste=TOTAL&hazard=HAZ_NHAZ&nace_r2=TOTAL_HH&unit=KG_HAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_51?freq=A&waste=TOTAL&hazard=HAZ_NHAZ&nace_r2=TOTAL_HH&unit=KG_HAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_12_51/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2004
+derniere_annee: 2022
+nb_points_depuis_2000: 10
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002005
+hors_longlist: non
+raccordement: 'non : statistique biennale depuis 2004'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la pression de toute l'économie sur les capacités de traitement, statistique biennale
+  d'Eurostat de 2004 à 2022 (10 points, D17), avec 5 034 kg par habitant en 2022.
+note_pertinence: Le total comprend les déchets minéraux du bâtiment et des travaux publics, sensibles à l'activité
+  de construction, ce qui en rend la lecture délicate. Les valeurs 2004 et 2006 sont imputées. Les déchets dangereux,
+  les séries de l'INSEE (ODD 12.i4 et 12.i5) et les principaux modes de traitement sont en variantes.
+variantes:
+- serie_id: sdg_12_51?freq=A&waste=TOTAL&hazard=HAZ&nace_r2=TOTAL_HH&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: estat-002004
+  eligible: oui
+- serie_id: sdg_12_51?freq=A&waste=TOTAL&hazard=NHAZ&nace_r2=TOTAL_HH&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: estat-002006
+  eligible: oui
+- serie_id: env_wasgen?freq=A&unit=KG_HAB&hazard=HAZ&nace_r2=TOTAL_HH&waste=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040890
+  eligible: oui
+- serie_id: env_wasgen?freq=A&unit=KG_HAB&hazard=HAZ_NHAZ&nace_r2=TOTAL_HH&waste=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040891
+  eligible: oui
+- serie_id: env_wasgen?freq=A&unit=KG_HAB&hazard=NHAZ&nace_r2=TOTAL_HH&waste=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040892
+  eligible: oui
+- serie_id: env_wastrt?freq=A&unit=KG_HAB&hazard=HAZ_NHAZ&wst_oper=DSP_L&waste=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040903
+  eligible: oui
+- serie_id: env_wastrt?freq=A&unit=KG_HAB&hazard=HAZ_NHAZ&wst_oper=RCV_R_B&waste=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040909
+  eligible: oui
+- serie_id: env_wastrt?freq=A&unit=KG_HAB&hazard=HAZ_NHAZ&wst_oper=TRT&waste=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040910
+  eligible: oui
+- serie_id: env_wassd?freq=A&wst_oper=DSP_L&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040982
+  eligible: oui
+- serie_id: env_wassd?freq=A&wst_oper=RCV_R&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040987
+  eligible: oui
+- serie_id: env_wassd?freq=A&wst_oper=TRT&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat env_wasgen (doublon), env_wastrt et env_wassd (traitement par opération, par habitant)
+  ligne_id: estat-040989
+  eligible: oui
+- serie_id: '010596199'
+  source: INSEE BDM
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: bdm-000735
+  eligible: a_verifier
+- serie_id: '010596209'
+  source: INSEE BDM
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: bdm-000741
+  eligible: a_verifier
+- serie_id: '010600333'
+  source: INSEE BDM
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: bdm-000745
+  eligible: a_verifier
+- serie_id: '010600334'
+  source: INSEE BDM
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: bdm-000746
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i4a&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: melodi-005696
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i4b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: melodi-005697
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i5a&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: melodi-005698
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i5b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: déchets dangereux et non dangereux (sdg_12_51, env_wasgen) ; INSEE ODD 12.i4 et 12.i5 (production et traitement,
+    dangereux et ensemble, 2010-2022, 7 points) ; traitement des déchets (env_wastrt, env_wassd)
+  ligne_id: melodi-005699
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- biennale
+- valeurs_imputees_2004_2006
+notes: ''

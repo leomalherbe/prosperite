@@ -1,0 +1,47 @@
+id: exposition_chaleur_extreme
+libelle: Part de la population exposée à des températures extrêmes
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: chaleur_extreme
+variante_principale: non
+definition: 'Part de la population exposée à des températures extrêmes, estimée par l''OCDE à partir de données
+  géospatiales (How''s Life, mesure 9_3 ; seuil de température et période de référence : non trouvés).'
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE
+source_jeu: How's Life? (bien-être actuel), mesure 9_3
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=9_3 UNIT_MEASURE=PT_POP
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2024
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000063
+hors_longlist: non
+rattachement_propose: ligne de la long-list logement_cadre_vie (environnement local) ; aléa climatique subi → planete
+  (A14, R2) ; à trancher au gel 2
+raccordement: 'non : série OCDE depuis 2004'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille chaleur_extreme (part de la population plutôt que nombre de jours),
+  série OCDE annuelle de 2004 à 2024 (21 points), 1,03 % en 2024 d'après l'extrait du robot M04.
+note_pertinence: L'indicateur rapporte l'exposition à la population, ce qui tient compte du lieu de vie des habitants,
+  mais sa méthode d'estimation n'est pas documentée dans les extraits disponibles. La long-list le range dans logement_cadre_vie
+  ; l'arbitrage A14 le rattache à la planète avec les canicules.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- definition_a_verifier
+- estimation_geospatiale
+notes: ''

@@ -1,0 +1,49 @@
+id: emissions_dioxines
+libelle: Émissions de dioxines et furanes
+dimension: planete
+sous_theme: pollutions
+famille: emissions_dioxines
+variante_principale: oui
+definition: Émissions dans l'air de dioxines et furanes (polychlorodibenzo-p-dioxines et dibenzofuranes), en grammes
+  d'équivalent toxique international, France hexagonale (inventaire Secten du Citepa).
+unite: grammes d'équivalent toxique (g I-TEQ)
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Citepa
+source_jeu: Inventaire Secten, édition 2026 (série longue)
+source_serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+  BDD_Secten : POP (polluants organiques persistants).France hexagonale.PCDD-F.g-ITEQ)'
+source_niveau: 2
+url_api: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille BDD_Secten
+  : POP (polluants organiques persistants).France hexagonale.PCDD-F.g-ITEQ)'
+url_page: https://www.citepa.org/donnees-air-climat/donnees-gaz-a-effet-de-serre/secten/
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000335
+hors_longlist: non
+raccordement: 'non : série continue depuis 1990'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série de polluants organiques persistants au catalogue, inventaire annuel du Citepa
+  de 1990 à 2025 (26 points depuis 2000), de niveau 2 et de licence non trouvée.
+note_pertinence: Les dioxines, issues de combustions (incinération, métallurgie, feux), s'accumulent dans les sols
+  et la chaîne alimentaire ; elles relèvent de la pollution chimique, que le Doughnut range parmi les limites planétaires
+  sans indicateur national. L'adresse du fichier du Citepa change à chaque édition.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- niveau_2
+- licence_non_trouvee
+- url_par_edition
+- champ_metropole
+notes: ''

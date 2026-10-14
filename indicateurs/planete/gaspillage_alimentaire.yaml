@@ -1,0 +1,111 @@
+id: gaspillage_alimentaire
+libelle: Pertes et gaspillages alimentaires par habitant
+dimension: planete
+sous_theme: déchets et matières
+famille: gaspillage_alimentaire
+variante_principale: oui
+definition: Quantité de pertes et gaspillages alimentaires sur toute la chaîne (production, transformation, distribution,
+  consommation à domicile et en restauration), en kg par habitant et par an (indicateur national ODD 12.i3).
+unite: kg par habitant et par an
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 12.i3 (BDM 010596198)
+source_serie_id: '010596198'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596198
+url_page: https://www.insee.fr/fr/statistiques/serie/010596198
+frequence: irreguliere
+premiere_annee: 2015
+derniere_annee: 2023
+nb_points_depuis_2000: 5
+geo: FE
+eligibilite_longlist: non
+ligne_id: bdm-000734
+hors_longlist: non
+raccordement: 'non : série depuis 2015'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD de la cible 12.3 (division par deux) et de la loi AGEC, 5 points de
+  2015 à 2023, non éligible dans la long-list mais candidat selon D28 (maintenance PLA-1).
+note_pertinence: Le gaspillage alimentaire gâche les ressources (sols, eau, énergie, émissions) mobilisées pour
+  produire la nourriture. La série est pluriannuelle, d'où le report de la dernière valeur (D17). La ventilation
+  par étape de la chaîne est en variantes.
+variantes:
+- serie_id: '010596193'
+  source: INSEE BDM
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: bdm-000729
+  eligible: non
+- serie_id: '010596194'
+  source: INSEE BDM
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: bdm-000730
+  eligible: non
+- serie_id: '010596195'
+  source: INSEE BDM
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: bdm-000731
+  eligible: non
+- serie_id: '010596196'
+  source: INSEE BDM
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: bdm-000732
+  eligible: non
+- serie_id: '010596197'
+  source: INSEE BDM
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: bdm-000733
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALIM_ETAP1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i3&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: melodi-005562
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALIM_ETAP2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i3&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: melodi-005563
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALIM_ETAP3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i3&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: melodi-005564
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALIM_ETAP4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i3&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: melodi-005565
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALIM_ETAP5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i3&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: melodi-005566
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i3&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: ventilation par étape de la chaîne (production, transformation, distribution, consommation à domicile
+    et en restauration) et voie Melodi
+  ligne_id: melodi-005676
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- exclusion_longlist_contraire_D28
+notes: ''

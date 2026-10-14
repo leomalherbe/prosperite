@@ -1,0 +1,49 @@
+id: nitrates_eaux_souterraines
+libelle: Teneur moyenne en nitrates des eaux souterraines
+dimension: planete
+sous_theme: eau
+famille: nitrates_eaux_souterraines
+variante_principale: oui
+definition: Concentration moyenne en nitrates des eaux souterraines sur les stations de mesure retenues, en milligrammes
+  par litre (indicateur ODD de l'UE).
+unite: mg/l
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_06_40 (teneur en nitrate dans l'eau souterraine)
+source_serie_id: sdg_06_40?freq=A&watpol=NO3_GW&unit=MG_L&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_06_40?freq=A&watpol=NO3_GW&unit=MG_L&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_06_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2007
+derniere_annee: 2023
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002038
+hors_longlist: non
+raccordement: 'non : série depuis 2007'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de la qualité des nappes au catalogue, série Eurostat de 2007 à 2023
+  (17 points).
+note_pertinence: Les nitrates d'origine agricole dégradent durablement les nappes qui alimentent l'eau potable ;
+  le seuil de 50 mg/l sert de repère réglementaire. Les valeurs et les drapeaux n'ont pas pu être relus (refus de
+  l'API le 14/10/2026). La part des stations au-dessus de 50 mg/l (ITDD, 2010-2022, 3,87 % en 2022) est en variante.
+variantes:
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_class_5_eau_sout_nit)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'SDES-INSEE ITDD : part des stations d''eaux souterraines au-dessus de 50 mg/l de nitrates (2010-2022)'
+  ligne_id: m04-000312
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_eurostat_non_lus
+notes: ''

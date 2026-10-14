@@ -1,0 +1,78 @@
+id: aires_protection_forte_terrestres
+libelle: Part du territoire terrestre en protection forte
+dimension: planete
+sous_theme: biodiversité
+famille: aires_protegees_terrestres
+variante_principale: non
+definition: Part des terres françaises (France entière) classées en aires terrestres sous protection forte (indicateur
+  national ODD 15.i5b).
+unite: '% des terres'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 15.i5b (BDM 010761992)
+source_serie_id: '010761992'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010761992
+url_page: https://www.insee.fr/fr/statistiques/serie/010761992
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2024
+nb_points_depuis_2000: 13
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001152
+hors_longlist: non
+raccordement: 'non : série depuis 2012'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille aires_protegees_terrestres, adossée à la cible légale de 10 %
+  de protection forte, série INSEE de 2012 à 2024 (13 points) en France entière.
+note_pertinence: La protection forte est la notion française qui garantit des contraintes réglementaires réelles
+  ; elle se lit à côté de la part totale d'aires protégées. La série métropolitaine (2011-2024), la voie Melodi
+  et les surfaces en km² sont en variantes (D15).
+variantes:
+- serie_id: '010596420'
+  source: INSEE BDM
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: bdm-001143
+  eligible: oui
+- serie_id: '010761991'
+  source: INSEE BDM
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: bdm-001151
+  eligible: oui
+- serie_id: '010596422'
+  source: INSEE BDM
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: bdm-001144
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=15.i5a&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KM2
+  source: INSEE Melodi
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: melodi-005708
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i5a&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KM2
+  source: INSEE Melodi
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: melodi-005746
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=15.i5b&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: melodi-005709
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i5b&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: France métropolitaine (BDM 010596422, 2011-2024), voie Melodi (15.i5b) et surfaces en km² (15.i5a)
+  ligne_id: melodi-005747
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

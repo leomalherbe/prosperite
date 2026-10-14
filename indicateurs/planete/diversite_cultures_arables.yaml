@@ -1,0 +1,47 @@
+id: diversite_cultures_arables
+libelle: Diversité des cultures arables (indice de Simpson)
+dimension: planete
+sous_theme: agriculture et pesticides
+famille: diversite_cultures_arables
+variante_principale: oui
+definition: Indice de Simpson de diversité des cultures sur les terres arables, moyenne nationale (indicateur national
+  ODD 2.i3) ; plus il est élevé, plus les assolements sont diversifiés.
+unite: indice de Simpson
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 2.i3 (BDM 010594422)
+source_serie_id: '010594422'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594422
+url_page: https://www.insee.fr/fr/statistiques/serie/010594422
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001057
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seul indicateur de diversité des paysages agricoles au catalogue, indicateur national ODD
+  2.i3 publié chaque année de 2010 à 2024 (15 points).
+note_pertinence: La diversité des cultures favorise la biodiversité des milieux agricoles et la régulation naturelle
+  des ravageurs. L'indice bouge lentement ; ses bornes devront s'appuyer sur l'historique.
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i3&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX_S
+  source: INSEE Melodi
+  nature: voie Melodi (2.i3)
+  ligne_id: melodi-005718
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

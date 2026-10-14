@@ -1,0 +1,98 @@
+id: part_energies_fossiles
+libelle: Part des combustibles fossiles dans l'énergie disponible brute
+dimension: planete
+sous_theme: énergie
+famille: part_energies_fossiles
+variante_principale: oui
+definition: Part du charbon, du pétrole, du gaz naturel et des autres combustibles fossiles dans l'énergie disponible
+  brute du pays.
+unite: '%'
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: nrg_ind_ffgae (part des combustibles fossiles dans l'énergie disponible brute)
+source_serie_id: nrg_ind_ffgae?freq=A&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_ffgae?freq=A&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_ffgae/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-041662
+hors_longlist: non
+raccordement: 'non : la source remonte à 1990 (59,69 %)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure directe de la dépendance aux énergies fossiles visée par l'article L100-4, série Eurostat
+  sans drapeau de 2000 à 2024 (54,89 % en 2000, 46,99 % en 2024).
+note_pertinence: La part des fossiles résume la dépendance du système énergétique au carbone fossile ; elle baisse
+  lentement et a remonté en 2022 (50,92 %), année de faible production nucléaire. La série INSEE (part des fossiles
+  dans la consommation primaire, 2011-2024) et la structure de la consommation finale par énergie sont en variantes.
+  L'objectif légal porte sur la consommation primaire de fossiles en volume, à calculer à partir des bilans.
+variantes:
+- serie_id: '010760757'
+  source: INSEE BDM
+  nature: 'INSEE ODD 7.i3c : part des énergies fossiles dans la consommation d''énergie primaire (BDM 010760757
+    et Melodi, 2011-2024)'
+  ligne_id: bdm-000829
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=C0000X0350-0370&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-041663
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=E7000&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-041664
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=G3000&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-041665
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=H8000&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-041666
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=O4000XBIO&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-041667
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=X9900&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-041669
+  eligible: oui
+- serie_id: nrg_ind_re?freq=A&nrg_bal=FC_E&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'structure de la consommation finale par énergie (nrg_ind_fecf : produits pétroliers, gaz, combustibles
+    solides, électricité, chaleur, autres) et taux d''électrification de la consommation finale (nrg_ind_re)'
+  ligne_id: estat-049637
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i3c&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE ODD 7.i3c : part des énergies fossiles dans la consommation d''énergie primaire (BDM 010760757
+    et Melodi, 2011-2024)'
+  ligne_id: melodi-005733
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

@@ -1,0 +1,80 @@
+id: flux_azote_mer
+libelle: Apports d'azote (nitrates) des fleuves à la mer
+dimension: planete
+sous_theme: eau
+famille: flux_azote_mer
+variante_principale: oui
+definition: Flux annuel d'azote lié aux nitrates apporté à la mer par les cours d'eau, toutes façades de France
+  métropolitaine (indicateur national ODD 14.i3a).
+unite: milliers de tonnes par an
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 14.i3a (BDM 010596774)
+source_serie_id: '010596774'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596774
+url_page: https://www.insee.fr/fr/statistiques/serie/010596774
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2021
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001124
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD des apports d'azote au milieu marin, série de 2010 à 2021 pour le
+  total (12 points) et jusqu'en 2023 pour la Manche et l'Atlantique.
+note_pertinence: Les flux d'azote à la mer dépendent des pratiques agricoles mais aussi des débits des fleuves,
+  d'où une forte variabilité d'une année à l'autre. Le total s'arrête en 2021, comme la façade méditerranéenne ;
+  les façades sont en variantes.
+variantes:
+- serie_id: '010596775'
+  source: INSEE BDM
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: bdm-001125
+  eligible: oui
+- serie_id: '010596776'
+  source: INSEE BDM
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: bdm-001126
+  eligible: oui
+- serie_id: '010596777'
+  source: INSEE BDM
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: bdm-001127
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=MER_FACADE1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: melodi-005638
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=MER_FACADE2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: melodi-005640
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=MER_FACADE3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: melodi-005643
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime (jusqu'en 2023 pour la Manche et l'Atlantique) et voie Melodi
+  ligne_id: melodi-005685
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- dependance_hydrologie
+- champ_metropole
+notes: ''

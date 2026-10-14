@@ -1,0 +1,86 @@
+id: captures_peche
+libelle: Captures de pêche de la flotte française
+dimension: planete
+sous_theme: biodiversité
+famille: captures_peche
+variante_principale: oui
+definition: Captures totales d'organismes aquatiques par la flotte française dans les principales zones de pêche,
+  en tonnes de poids vif.
+unite: tonnes de poids vif
+sens: ambigu
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: fish_ca_main (captures, principales zones de pêche)
+source_serie_id: fish_ca_main?freq=A&species=F00&fishreg=0&unit=TLW&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/fish_ca_main?freq=A&species=F00&fishreg=0&unit=TLW&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/fish_ca_main/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-055259
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : une baisse des captures (691 942 t en 2000, 442 800 t en 2025) peut traduire
+  une pression moindre comme l''épuisement des stocks, que la série ne mesure pas.'
+note_pertinence: 'La pression de pêche se juge par rapport à l''état des stocks, mesuré par l''Ifremer ou, au seul
+  niveau européen, par Eurostat (env_bio5, sdg_14_21 : pas de données pour la France). Ces jeux ont été réintégrés
+  comme candidats par D26 : la fiche les rend visibles, et la ventilation par zone de pêche est en variantes.'
+variantes:
+- serie_id: fish_ca_atl27?freq=A&species=F00&fishreg=27&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055261
+  eligible: oui
+- serie_id: fish_ca_atl34?freq=A&species=F00&fishreg=34&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055262
+  eligible: oui
+- serie_id: fish_ca_atl37?freq=A&species=F00&fishreg=37&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055263
+  eligible: oui
+- serie_id: fish_ca_atl41?freq=A&species=F00&fishreg=41&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055264
+  eligible: oui
+- serie_id: fish_ca_atl47?freq=A&species=F00&fishreg=47&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055265
+  eligible: oui
+- serie_id: fish_ca_ind51?freq=A&species=F00&fishreg=51&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055266
+  eligible: oui
+- serie_id: fish_ca_atl21?freq=A&species=F00&fishreg=21&unit=TLW&geo=FR
+  source: Eurostat
+  nature: ventilation par zone de pêche (Atlantique nord-est, Méditerranée, Atlantique centre-est et sud, océan
+    Indien ouest ; Atlantique nord-ouest arrêté en 2005)
+  ligne_id: estat-055260
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_provisoires_2018_2021
+notes: ''

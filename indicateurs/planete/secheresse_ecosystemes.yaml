@@ -1,0 +1,50 @@
+id: secheresse_ecosystemes
+libelle: Part du territoire touchée par une sécheresse affectant les écosystèmes
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: secheresse_ecosystemes
+variante_principale: oui
+definition: Superficie touchée dans l'année par une sécheresse ayant un impact sur les écosystèmes, en pourcentage
+  de la superficie du pays (indicateur ODD 15.42 de l'UE).
+unite: '% de la superficie'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_15_42 (superficie d'impact de la sécheresse sur les écosystèmes)
+source_serie_id: sdg_15_42?freq=A&statinfo=VAL_A&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_42?freq=A&statinfo=VAL_A&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_15_42/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002081
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure physique annuelle de la sécheresse subie par les écosystèmes (A14), série Eurostat
+  sans drapeau de 2000 à 2024, de 0,0 % à 30,7 % du territoire (2022).
+note_pertinence: 'L''indicateur rend visibles les années de sécheresse (14,7 % du territoire en 2003, 30,7 % en
+  2022) : il mesure un aléa subi, rangé dans la planète par A14. Sa forte variabilité rend la moyenne sur dix ans,
+  en variante, plus adaptée à la lecture d''une tendance. La méthode d''estimation est à lire dans les métadonnées
+  d''Eurostat.'
+variantes:
+- serie_id: sdg_15_42?freq=A&statinfo=AVG_10Y&unit=PC&geo=FR
+  source: Eurostat
+  nature: même source, moyenne sur dix ans
+  ligne_id: estat-002080
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- forte_variabilite_annuelle
+notes: ''

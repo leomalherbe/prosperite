@@ -1,0 +1,53 @@
+id: rendement_reseaux_eau
+libelle: Rendement des réseaux d'eau potable
+dimension: planete
+sous_theme: eau
+famille: rendement_reseaux_eau
+variante_principale: oui
+definition: Part du volume d'eau potable mis en distribution qui parvient aux usagers, le complément correspondant
+  aux fuites des réseaux (indicateur ODD 6.i4).
+unite: '%'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE
+source_jeu: Indicateurs territoriaux de développement durable, fichier France entière (DiDo), variable taux_rendmt_res_distr
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable taux_rendmt_res_distr)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FE
+eligibilite_longlist: oui
+ligne_id: m04-000316
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure annuelle des pertes d'eau potable publiée de 2010 à 2024 (15 points), 84 % en 2024
+  d'après l'extrait du robot M04, plus fraîche d'un an que la série INSEE de la BDM.
+note_pertinence: 'Les fuites obligent à prélever davantage d''eau qu''il n''en est consommé : le rendement des réseaux
+  est un moyen de réduire la pression sur la ressource. La série INSEE (BDM et Melodi, 2010-2023) est en variante.
+  La qualité de l''eau distribuée relève de logement_cadre_vie (R2).'
+variantes:
+- serie_id: '010595406'
+  source: INSEE BDM
+  nature: INSEE BDM 010595406 et Melodi 6.i4 (2010-2023)
+  ligne_id: bdm-000769
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i4&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE BDM 010595406 et Melodi 6.i4 (2010-2023)
+  ligne_id: melodi-005728
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

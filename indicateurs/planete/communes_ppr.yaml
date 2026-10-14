@@ -1,0 +1,49 @@
+id: communes_ppr
+libelle: Communes couvertes par un plan de prévention des risques naturels approuvé
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: communes_ppr
+variante_principale: oui
+definition: Nombre de communes faisant l'objet d'un plan de prévention des risques naturels approuvé, y compris
+  révisé et approuvé (indicateur national ODD 13.i2).
+unite: nombre de communes
+sens: ambigu
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 13.i2 (BDM 010595980)
+source_serie_id: '010595980'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010595980
+url_page: https://www.insee.fr/fr/statistiques/serie/010595980
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2025
+nb_points_depuis_2000: 13
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000910
+hors_longlist: non
+raccordement: 'non : série depuis 2013'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : une hausse du nombre de communes couvertes traduit à la fois un effort de prévention
+  et l''extension des risques reconnus, sur une série de 2013 à 2025.'
+note_pertinence: L'indicateur relève de l'adaptation (A14) mais mesure un moyen administratif dont l'interprétation
+  est double. Il ne dit rien de l'exposition effective ni de l'application des plans, et pourrait servir de contexte
+  aux mesures d'aléas subis.
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i2&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: voie Melodi (13.i2)
+  ligne_id: melodi-005703
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyen_administratif
+notes: ''

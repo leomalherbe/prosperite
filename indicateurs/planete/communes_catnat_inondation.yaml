@@ -1,0 +1,48 @@
+id: communes_catnat_inondation
+libelle: Part des communes reconnues en état de catastrophe naturelle pour inondation
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: communes_catnat_inondation
+variante_principale: oui
+definition: Proportion des communes ayant fait l'objet, dans l'année, d'au moins un arrêté de reconnaissance de
+  l'état de catastrophe naturelle pour inondation (indicateurs territoriaux de développement durable du SDES et
+  de l'INSEE).
+unite: '% des communes'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE
+source_jeu: Indicateurs territoriaux de développement durable, fichier France entière (DiDo), variable prop_com_catnat,
+  modalité inondation
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable prop_com_catnat.ino)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1991
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FE
+eligibilite_longlist: oui
+ligne_id: m04-000318
+hors_longlist: non
+raccordement: 'non : série continue depuis 1991'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure annuelle la plus longue de l'aléa d'inondation subi (A14), de 1991 à 2024 (25 points
+  depuis 2000), avec 4,86 % des communes touchées en 2024 d'après l'extrait du robot M04.
+note_pertinence: L'indicateur dit combien de communes ont subi une inondation reconnue comme catastrophe naturelle
+  ; c'est une mesure administrative, qui dépend aussi des demandes des communes et des critères de reconnaissance.
+  Il varie fortement d'une année à l'autre selon les crues. Le nombre d'événements naturels très graves (INSEE)
+  et les pertes économiques (Eurostat) en donnent d'autres lectures.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- mesure_administrative
+- forte_variabilite_annuelle
+notes: ''

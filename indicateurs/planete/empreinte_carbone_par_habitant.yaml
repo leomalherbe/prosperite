@@ -1,0 +1,123 @@
+id: empreinte_carbone_par_habitant
+libelle: Empreinte carbone par habitant
+dimension: planete
+sous_theme: 'climat : empreinte'
+famille: empreinte_carbone
+variante_principale: non
+definition: Empreinte carbone de la France (émissions de gaz à effet de serre induites par la demande finale intérieure,
+  importations comprises) rapportée à la population, en tonnes équivalent CO2 par personne.
+unite: tonnes équivalent CO2 par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE-SDES
+source_jeu: Indicateur de richesse nationale n° 9 et ODD 13.i3b (BDM 010595988)
+source_serie_id: '010595988'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010595988
+url_page: https://www.insee.fr/fr/statistiques/serie/010595988
+frequence: annuelle
+premiere_annee: 1995
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM_D99_D978
+eligibilite_longlist: oui
+ligne_id: bdm-000912
+hors_longlist: non
+raccordement: 'non : série continue depuis 1995'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Lecture par personne de la famille empreinte_carbone, directement comparable aux repères de
+  2,3 et 3,1 t par habitant en 2050 retenus par la SNBC 3, série annuelle de 1995 à 2024 (25 points depuis 2000).
+note_pertinence: 'C''est la forme la plus parlante de l''empreinte pour le public, qui peut la rapprocher de ses
+  propres émissions. Les séries de l''OCDE (2004-2020), d''Eurostat (modèle FIGARO, 2010-2023) et du Global Carbon
+  Project (CO2 seul) sont en variantes : elles reposent sur d''autres tableaux entrées-sorties et donnent d''autres
+  niveaux.'
+variantes:
+- serie_id: '010777562'
+  source: INSEE BDM
+  nature: 'INSEE Melodi, indicateur ODD 13.i3b : même série, voie Melodi ; ventilation par gaz par habitant (BDM
+    010777562 à 010777564)'
+  ligne_id: bdm-000926
+  eligible: oui
+- serie_id: '010777563'
+  source: INSEE BDM
+  nature: 'INSEE Melodi, indicateur ODD 13.i3b : même série, voie Melodi ; ventilation par gaz par habitant (BDM
+    010777562 à 010777564)'
+  ligne_id: bdm-000927
+  eligible: oui
+- serie_id: '010777564'
+  source: INSEE BDM
+  nature: 'INSEE Melodi, indicateur ODD 13.i3b : même série, voie Melodi ; ventilation par gaz par habitant (BDM
+    010777562 à 010777564)'
+  ligne_id: bdm-000928
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=CH4_CO2E&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052345
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=CO2&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052347
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=GHG&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052349
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=HFC_CO2E&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052351
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=N2O_CO2E&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052353
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=NF3_SF6_CO2E&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052355
+  eligible: oui
+- serie_id: cli_gge_foot?freq=A&airpol=PFC_CO2E&indic_env=AEMIS_CONS_FP&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat cli_gge_foot, perspective de consommation (modèle FIGARO), kg par habitant, total GES et par
+    gaz, 2010-2023
+  ligne_id: estat-052357
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_9 UNIT_MEASURE=T_CO2E_PS
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'relais internationaux : OCDE How''s Life 12_9 (2004-2020), Global Carbon Project via OWID (CO2 de consommation,
+    1990-2023)'
+  ligne_id: m04-000088
+  eligible: oui
+- serie_id: https://github.com/owid/co2-data (colonne consumption_co2_per_capita)
+  source: Our World in Data (relais)
+  nature: 'relais internationaux : OCDE How''s Life 12_9 (2004-2020), Global Carbon Project via OWID (CO2 de consommation,
+    1990-2023)'
+  ligne_id: m04-000220
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i3b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'INSEE Melodi, indicateur ODD 13.i3b : même série, voie Melodi ; ventilation par gaz par habitant (BDM
+    010777562 à 010777564)'
+  ligne_id: melodi-005678
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- perimetre_kyoto
+notes: ''

@@ -1,0 +1,73 @@
+id: pertes_economiques_climat
+libelle: Pertes économiques dues aux événements météorologiques et climatiques extrêmes
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: pertes_economiques_climat
+variante_principale: oui
+definition: Pertes économiques annuelles causées par les phénomènes météorologiques et climatiques extrêmes, en
+  euros par habitant aux prix constants (indicateur ODD 13.40 de l'UE).
+unite: euros par habitant (prix constants)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_13_40 (pertes économiques provoquées par les phénomènes météorologiques et climatiques extrêmes)
+source_serie_id: sdg_13_40?freq=A&statinfo=VAL_A&unit=EUR_HAB_KP&stk_flow=LOSS&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_13_40?freq=A&statinfo=VAL_A&unit=EUR_HAB_KP&stk_flow=LOSS&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_13_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002111
+hors_longlist: non
+raccordement: 'non : la source remonte à 1980 en millions d''euros'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure monétaire des aléas climatiques subis (A14), série Eurostat sans drapeau de 2000
+  à 2024, très variable (130,75 € par habitant en 2022, 28,33 € en 2024).
+note_pertinence: L'indicateur mesure le coût des aléas subis par le pays, que la grille range dans la planète (A14).
+  Sa valeur annuelle dépend de quelques événements majeurs (318,22 € par habitant en 1999, année des tempêtes de
+  décembre), si bien que la moyenne sur trente ans, en variante, se prête mieux à la lecture d'une tendance. Les
+  indemnisations du régime des catastrophes naturelles (INSEE, ODD 13.i5) ne couvrent que les dommages assurés relevant
+  du régime et sont en variante.
+variantes:
+- serie_id: '010596009'
+  source: INSEE BDM
+  nature: 'INSEE ODD 13.i5 : indemnisations versées au titre du régime des catastrophes naturelles (BDM 010596009,
+    millions d''euros de 2022 ; Melodi), 2010-2024'
+  ligne_id: bdm-000921
+  eligible: oui
+- serie_id: sdg_13_40?freq=A&statinfo=AVG_30Y&unit=EUR_HAB_KP&stk_flow=LOSS&geo=FR
+  source: Eurostat
+  nature: même source, moyenne mobile sur 30 ans (sdg_13_40 et cli_iad_loss), et cli_iad_loss valeur annuelle (doublon)
+  ligne_id: estat-002110
+  eligible: oui
+- serie_id: cli_iad_loss?freq=A&statinfo=AVG_30Y&stk_flow=LOSS&unit=EUR_HAB_KP&geo=FR
+  source: Eurostat
+  nature: même source, moyenne mobile sur 30 ans (sdg_13_40 et cli_iad_loss), et cli_iad_loss valeur annuelle (doublon)
+  ligne_id: estat-052359
+  eligible: oui
+- serie_id: cli_iad_loss?freq=A&statinfo=VAL_A&stk_flow=LOSS&unit=EUR_HAB_KP&geo=FR
+  source: Eurostat
+  nature: même source, moyenne mobile sur 30 ans (sdg_13_40 et cli_iad_loss), et cli_iad_loss valeur annuelle (doublon)
+  ligne_id: estat-052360
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i5&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'INSEE ODD 13.i5 : indemnisations versées au titre du régime des catastrophes naturelles (BDM 010596009,
+    millions d''euros de 2022 ; Melodi), 2010-2024'
+  ligne_id: melodi-005705
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- forte_variabilite_annuelle
+notes: ''

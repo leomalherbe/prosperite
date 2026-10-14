@@ -1,0 +1,98 @@
+id: exposition_animaux_antibiotiques
+libelle: Exposition des animaux d'élevage aux antibiotiques (ALEA)
+dimension: planete
+sous_theme: agriculture et pesticides
+famille: exposition_animaux_antibiotiques
+variante_principale: oui
+definition: 'Indicateur d''exposition des animaux aux antibiotiques (ALEA) : poids vif traité rapporté à la masse
+  animale potentiellement consommatrice, toutes espèces (indicateur national ODD 2.i5).'
+unite: '% (poids vif traité / masse animale)'
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 2.i5 (BDM 010599685)
+source_serie_id: '010599685'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010599685
+url_page: https://www.insee.fr/fr/statistiques/serie/010599685
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001070
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD 2.i5 publié chaque année de 2010 à 2024 (15 points), seule mesure
+  d'un intrant chimique de l'élevage au catalogue.
+note_pertinence: L'usage d'antibiotiques en élevage contribue à l'antibiorésistance et à la dissémination de résidus
+  dans l'environnement. Le rattachement à la planète (agriculture, A2) plutôt qu'à la santé est à confirmer au gel
+  2. Les ventilations par espèce sont en variantes.
+variantes:
+- serie_id: '010594426'
+  source: INSEE BDM
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: bdm-001060
+  eligible: oui
+- serie_id: '010594427'
+  source: INSEE BDM
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: bdm-001061
+  eligible: oui
+- serie_id: '010594428'
+  source: INSEE BDM
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: bdm-001062
+  eligible: oui
+- serie_id: '010594429'
+  source: INSEE BDM
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: bdm-001063
+  eligible: oui
+- serie_id: '010594430'
+  source: INSEE BDM
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: bdm-001064
+  eligible: oui
+- serie_id: '010594431'
+  source: INSEE BDM
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: bdm-001065
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ANIM1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i5&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=_Z
+  source: INSEE Melodi
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: melodi-005567
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ANIM3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i5&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=_Z
+  source: INSEE Melodi
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: melodi-005568
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ANIM5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i5&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=_Z
+  source: INSEE Melodi
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: melodi-005569
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ANIM6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i5&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=_Z
+  source: INSEE Melodi
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: melodi-005570
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i5&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=_Z
+  source: INSEE Melodi
+  nature: ventilation par espèce (bovins, porcs, volailles, lapins, poissons, ovins-caprins) et voie Melodi
+  ligne_id: melodi-005681
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

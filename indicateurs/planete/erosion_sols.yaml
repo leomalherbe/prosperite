@@ -1,0 +1,66 @@
+id: erosion_sols
+libelle: Part du territoire à risque d'érosion sévère des sols par l'eau
+dimension: planete
+sous_theme: sols et forêts
+famille: erosion_sols
+variante_principale: oui
+definition: Part des terres agricoles, forêts et milieux semi-naturels où l'érosion des sols par l'eau est estimée
+  sévère, d'après une modélisation du Centre commun de recherche de la Commission européenne.
+unite: '% de la superficie concernée'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (modèle du Centre commun de recherche)
+source_jeu: sdg_15_50 (superficie à risque d'érosion sévère des sols par l'eau)
+source_serie_id: sdg_15_50?freq=A&levels=SEV&clc18=CLC2_3X331_332_335&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_15_50?freq=A&levels=SEV&clc18=CLC2_3X331_332_335&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_15_50/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-002039
+hors_longlist: non
+raccordement: 'non : quatre estimations modélisées'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'état des sols au catalogue, 4 estimations (2000, 2010, 2016, 2023) passées
+  de 4,14 % à 3,08 % (2023 provisoire), admise comme série irrégulière (D17).
+note_pertinence: L'érosion détruit les sols fertiles et emporte sédiments et polluants vers les rivières. La série
+  est modélisée à quatre dates seulement, et ses variations reflètent aussi les révisions du modèle. La ventilation
+  par occupation du sol (2000-2016) est en variante.
+variantes:
+- serie_id: aei_pr_soiler?freq=A&levels=TOTAL&clc18=CLC23_321&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_soiler : érosion estimée par type d''occupation (2000-2016, non éligible)'
+  ligne_id: estat-002134
+  eligible: non
+- serie_id: aei_pr_soiler?freq=A&levels=TOTAL&clc18=CLC2X23&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_soiler : érosion estimée par type d''occupation (2000-2016, non éligible)'
+  ligne_id: estat-002135
+  eligible: non
+- serie_id: aei_pr_soiler?freq=A&levels=TOTAL&clc18=CLC2_321&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_soiler : érosion estimée par type d''occupation (2000-2016, non éligible)'
+  ligne_id: estat-002136
+  eligible: non
+- serie_id: aei_pr_soiler?freq=A&levels=TOTAL&clc18=CLC2_3X331_332_335&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_soiler : érosion estimée par type d''occupation (2000-2016, non éligible)'
+  ligne_id: estat-002137
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- modele
+- derniere_valeur_provisoire
+notes: ''

@@ -1,0 +1,104 @@
+id: artificialisation_sols
+libelle: Part du territoire artificialisé
+dimension: planete
+sous_theme: sols et forêts
+famille: usage_sols
+variante_principale: oui
+definition: Part du territoire de France métropolitaine occupée par des sols artificialisés (bâtis, revêtus ou stabilisés,
+  autres sols artificialisés), d'après l'enquête Teruti sur l'utilisation du territoire.
+unite: '% du territoire'
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (d'après l'enquête Teruti du ministère de l'agriculture)
+source_jeu: Indicateur de richesse nationale n° 10 et ODD 11.i2a (BDM 010596134)
+source_serie_id: '010596134'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596134
+url_page: https://www.insee.fr/fr/statistiques/serie/010596134
+frequence: annuelle
+premiere_annee: 1982
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001153
+hors_longlist: non
+raccordement: 'non : série depuis 1982'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur de richesse nationale n° 10 et concept présent dans trois cadres (Doughnut, OCDE,
+  INSEE), série annuelle de 1982 à 2023 (24 points depuis 2000) en France métropolitaine.
+note_pertinence: L'artificialisation détruit des sols vivants de façon presque irréversible et fragmente les habitats
+  ; c'est la cible de l'objectif « zéro artificialisation nette » en 2050. L'objectif légal intermédiaire porte
+  sur le flux de consommation d'espaces naturels, agricoles et forestiers, absent du catalogue (maintenance PLA-4)
+  ; le stock Teruti en donne une lecture voisine. Les mesures européennes de l'enquête LUCAS (imperméabilisation,
+  5 à 6 points) sont en variantes.
+variantes:
+- serie_id: '010596146'
+  source: INSEE BDM
+  nature: surface artificialisée en milliers d'hectares (BDM 010596146) et voie Melodi (11.i2a, % et hectares)
+  ligne_id: bdm-001159
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=11.i2a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=HA
+  source: INSEE Melodi
+  nature: surface artificialisée en milliers d'hectares (BDM 010596146) et voie Melodi (11.i2a, % et hectares)
+  ligne_id: melodi-005743
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=11.i2a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: surface artificialisée en milliers d'hectares (BDM 010596146) et voie Melodi (11.i2a, % et hectares)
+  ligne_id: melodi-005744
+  eligible: oui
+- serie_id: sdg_11_32?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, enquête LUCAS (5 à 6 points, 2006 ou 2009 à 2022) : imperméabilisation (sdg_11_32), sols artificiels
+    (part et indice), zones de peuplement, vue d''ensemble de l''occupation et de l''utilisation des sols (valeurs
+    nationales de jeux régionaux)'
+  ligne_id: estat-002102
+  eligible: a_verifier
+- serie_id: lan_lcv_ovw?freq=A&unit=PC&landcover=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, enquête LUCAS (5 à 6 points, 2006 ou 2009 à 2022) : imperméabilisation (sdg_11_32), sols artificiels
+    (part et indice), zones de peuplement, vue d''ensemble de l''occupation et de l''utilisation des sols (valeurs
+    nationales de jeux régionaux)'
+  ligne_id: estat-005698
+  eligible: a_verifier
+- serie_id: lan_lcv_art?freq=A&unit=PC&landcover=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, enquête LUCAS (5 à 6 points, 2006 ou 2009 à 2022) : imperméabilisation (sdg_11_32), sols artificiels
+    (part et indice), zones de peuplement, vue d''ensemble de l''occupation et de l''utilisation des sols (valeurs
+    nationales de jeux régionaux)'
+  ligne_id: estat-005699
+  eligible: a_verifier
+- serie_id: lan_lcv_arti?freq=A&unit=I09&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, enquête LUCAS (5 à 6 points, 2006 ou 2009 à 2022) : imperméabilisation (sdg_11_32), sols artificiels
+    (part et indice), zones de peuplement, vue d''ensemble de l''occupation et de l''utilisation des sols (valeurs
+    nationales de jeux régionaux)'
+  ligne_id: estat-005700
+  eligible: a_verifier
+- serie_id: lan_use_ovw?freq=A&unit=PC&landuse=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, enquête LUCAS (5 à 6 points, 2006 ou 2009 à 2022) : imperméabilisation (sdg_11_32), sols artificiels
+    (part et indice), zones de peuplement, vue d''ensemble de l''occupation et de l''utilisation des sols (valeurs
+    nationales de jeux régionaux)'
+  ligne_id: estat-005701
+  eligible: a_verifier
+- serie_id: lan_settl?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, enquête LUCAS (5 à 6 points, 2006 ou 2009 à 2022) : imperméabilisation (sdg_11_32), sols artificiels
+    (part et indice), zones de peuplement, vue d''ensemble de l''occupation et de l''utilisation des sols (valeurs
+    nationales de jeux régionaux)'
+  ligne_id: estat-005703
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- enquete_teruti
+- champ_metropole
+notes: ''

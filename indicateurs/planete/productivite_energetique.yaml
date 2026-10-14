@@ -1,0 +1,157 @@
+id: productivite_energetique
+libelle: Productivité de l'énergie
+dimension: planete
+sous_theme: énergie
+famille: productivite_energetique
+variante_principale: oui
+definition: 'Produit intérieur brut en volume (euros, volumes chaînés de référence 2010) rapporté à l''énergie disponible
+  brute, en euros par kilogramme équivalent pétrole : l''inverse de l''intensité énergétique.'
+unite: euros (volumes chaînés 2010) par kg équivalent pétrole
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_07_30 (productivité de l'énergie)
+source_serie_id: sdg_07_30?freq=A&unit=EUR_KGOE&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_30?freq=A&unit=EUR_KGOE&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_07_30/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002014
+hors_longlist: non
+raccordement: 'non : série continue depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de découplage de la cible ODD 7.3, série Eurostat sans drapeau de 2000 à 2024 (6,76
+  € par kgep en 2000, 10,72 € en 2024).
+note_pertinence: 'La productivité mesure l''efficacité énergétique de l''économie : elle peut augmenter alors que
+  la consommation totale stagne, d''où sa lecture comme indicateur de moyens. L''intensité énergétique du PIB (Eurostat)
+  et les intensités finales par secteur de l''INSEE (ODD 7.i4) sont en variantes.'
+variantes:
+- serie_id: '010760758'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000830
+  eligible: oui
+- serie_id: '010760759'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000831
+  eligible: oui
+- serie_id: '010760760'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000832
+  eligible: oui
+- serie_id: '010760761'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000833
+  eligible: oui
+- serie_id: '010760762'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000834
+  eligible: oui
+- serie_id: '010760763'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000835
+  eligible: oui
+- serie_id: '010760764'
+  source: INSEE BDM
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: bdm-000836
+  eligible: oui
+- serie_id: nrg_ind_ep?freq=A&unit=EUR_KGOE&geo=FR
+  source: Eurostat
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: estat-041966
+  eligible: oui
+- serie_id: nrg_ind_ei?freq=A&nrg_bal=EI_GDP_CLV05&unit=KGOE_TEUR&geo=FR
+  source: Eurostat
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: estat-041962
+  eligible: oui
+- serie_id: nrg_ind_ei?freq=A&nrg_bal=EI_GDP_CLV10&unit=KGOE_TEUR&geo=FR
+  source: Eurostat
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: estat-041963
+  eligible: oui
+- serie_id: nrg_ind_ei?freq=A&nrg_bal=EI_GDP_CLV15&unit=KGOE_TEUR&geo=FR
+  source: Eurostat
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: estat-041964
+  eligible: oui
+- serie_id: nrg_ind_ei?freq=A&nrg_bal=EI_GDP_PPS&unit=KGOE_TEUR_PPS&geo=FR
+  source: Eurostat
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: estat-041965
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2000&COMPOSITE_BREAKDOWN=ECO_SECT1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005555
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2000&COMPOSITE_BREAKDOWN=ECO_SECT21&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005556
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2000&COMPOSITE_BREAKDOWN=ECO_SECT22&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005557
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2000&COMPOSITE_BREAKDOWN=ECO_SECT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005558
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2000&COMPOSITE_BREAKDOWN=ECO_SECT4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005559
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2000&COMPOSITE_BREAKDOWN=ECO_SECT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005560
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i4a&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=MWH_6XDC
+  source: INSEE Melodi
+  nature: doublon nrg_ind_ep ; intensité énergétique du PIB (nrg_ind_ei, quatre bases) ; INSEE ODD 7.i4a et 7.i4b
+    (intensité finale, ensemble et par secteur, 2010-2024)
+  ligne_id: melodi-005734
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

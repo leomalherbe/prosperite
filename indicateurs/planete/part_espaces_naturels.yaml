@@ -1,0 +1,82 @@
+id: part_espaces_naturels
+libelle: Part du territoire en espaces boisés, naturels, humides ou en eau
+dimension: planete
+sous_theme: sols et forêts
+famille: usage_sols
+variante_principale: non
+definition: Part du territoire de France métropolitaine occupée par des zones boisées, naturelles, humides ou en
+  eau, d'après l'enquête Teruti.
+unite: '% du territoire'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (d'après l'enquête Teruti du ministère de l'agriculture)
+source_jeu: BDM 010776377
+source_serie_id: '010776377'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010776377
+url_page: https://www.insee.fr/fr/statistiques/serie/010776377
+frequence: annuelle
+premiere_annee: 1982
+derniere_annee: 2022
+nb_points_depuis_2000: 23
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001170
+hors_longlist: non
+raccordement: 'non : série depuis 1982'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille usage_sols (état des espaces naturels plutôt que pression), série
+  Teruti de 1982 à 2022 (23 points depuis 2000), concept présent dans trois cadres.
+note_pertinence: L'indicateur suit les espaces qui portent l'essentiel de la biodiversité terrestre ; il se lit
+  avec la part artificialisée et la part agricole (en variante), les trois couvrant le territoire. La couverture
+  naturelle et semi-naturelle de l'OCDE (5 points de 2005 à 2022, 52,2 % en 2022 d'après l'extrait du robot M04)
+  et ses pertes et gains sont en variantes.
+variantes:
+- serie_id: '010776375'
+  source: INSEE BDM
+  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
+    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  ligne_id: bdm-001168
+  eligible: oui
+- serie_id: '010776376'
+  source: INSEE BDM
+  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
+    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  ligne_id: bdm-001169
+  eligible: oui
+- serie_id: '010776378'
+  source: INSEE BDM
+  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
+    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  ligne_id: bdm-001171
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_1 UNIT_MEASURE=PT_LAR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
+    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  ligne_id: m04-000081
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_2 UNIT_MEASURE=PT_LND_NTR_SNTR_BP
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
+    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  ligne_id: m04-000082
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_3 UNIT_MEASURE=PT_LND_NTR_SNTR_BP
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
+    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  ligne_id: m04-000083
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- enquete_teruti
+- champ_metropole
+notes: ''

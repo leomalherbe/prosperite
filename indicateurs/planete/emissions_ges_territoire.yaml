@@ -1,0 +1,466 @@
+id: emissions_ges_territoire
+libelle: Émissions de gaz à effet de serre du territoire (hors UTCATF)
+dimension: planete
+sous_theme: 'climat : émissions du territoire'
+famille: emissions_ges_territoire
+variante_principale: oui
+definition: Émissions de gaz à effet de serre (CO2, CH4, N2O et gaz fluorés, en équivalent CO2) des activités situées
+  sur le territoire national, hors utilisation des terres, changement d'affectation des terres et foresterie (UTCATF),
+  selon l'inventaire national du Citepa, sur le périmètre du protocole de Kyoto (métropole, départements d'outre-mer
+  et Saint-Martin).
+unite: millions de tonnes équivalent CO2
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (d'après l'inventaire national du Citepa)
+source_jeu: Indicateur complémentaire de richesse nationale et ODD 13.i4b (BDM 010596008)
+source_serie_id: '010596008'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596008
+url_page: https://www.insee.fr/fr/statistiques/serie/010596008
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM_D99_D978
+eligibilite_longlist: oui
+ligne_id: bdm-000920
+hors_longlist: non
+raccordement: 'non : série continue depuis 1990'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans quatre cadres (Doughnut, SSF, OCDE, INSEE), série INSEE annuelle de 1990
+  à 2024 (25 points depuis 2000) et grandeur visée par les budgets carbone et l'objectif de baisse de 50 % en 2030
+  par rapport à 1990 de la SNBC 3.
+note_pertinence: C'est l'indicateur de pression climatique de référence, publié par l'INSEE à partir de l'inventaire
+  officiel du Citepa ; le Citepa diffuse une année de plus (359,4 Mt CO2e en 2025 hors UTCATF d'après l'extrait
+  du robot M04, niveau 2). Les ventilations par gaz et par secteur sont en variantes, de même que les émissions
+  nettes (UTCATF inclus) visées par la neutralité carbone en 2050. L'empreinte carbone, qui inclut les importations,
+  forme une famille distincte (méthode §8).
+variantes:
+- serie_id: '010767298'
+  source: INSEE BDM
+  nature: 'autre unité : intensité en GES de l''économie (INSEE ODD 9.i3, t CO2e par million de dollars de valeur
+    ajoutée ; Eurostat env_ac_aeint_r2, grammes par euro de valeur ajoutée et de production)'
+  ligne_id: bdm-000906
+  eligible: oui
+- serie_id: '010595994'
+  source: INSEE BDM
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: bdm-000914
+  eligible: oui
+- serie_id: '010595995'
+  source: INSEE BDM
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: bdm-000915
+  eligible: oui
+- serie_id: '010595996'
+  source: INSEE BDM
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: bdm-000916
+  eligible: oui
+- serie_id: '010595997'
+  source: INSEE BDM
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: bdm-000917
+  eligible: oui
+- serie_id: '010595998'
+  source: INSEE BDM
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: bdm-000918
+  eligible: oui
+- serie_id: '010595999'
+  source: INSEE BDM
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: bdm-000919
+  eligible: oui
+- serie_id: '010600316'
+  source: INSEE BDM
+  nature: 'émissions nettes, UTCATF inclus (objectif de neutralité carbone en 2050) : INSEE BDM 010600316 et Melodi
+    13.i4a (2010-2024), Eurostat env_air_gge total hors seuls éléments pour mémoire'
+  ligne_id: bdm-000922
+  eligible: oui
+- serie_id: '010777574'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: bdm-000938
+  eligible: oui
+- serie_id: '010777575'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: bdm-000939
+  eligible: oui
+- serie_id: '010777576'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: bdm-000940
+  eligible: oui
+- serie_id: '010777577'
+  source: INSEE BDM
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: bdm-000941
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=CH4&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000565
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=CH4&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000566
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=CH4_CO2E&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000684
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=CH4_CO2E&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000685
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=CO2&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000792
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=CO2&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000793
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000794
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1A&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000795
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1A1&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000796
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1A2&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000800
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1A3&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000808
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1A4&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000818
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1A5&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000822
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF1B&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000824
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF2&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000832
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF3&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000869
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF5&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000922
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF6&geo=FR
+  source: Eurostat
+  nature: 'ventilation par grand secteur de l''inventaire (CRF 1 énergie et ses sous-secteurs 1A1 à 1A5 et 1B, 2
+    procédés, 3 agriculture, 5 déchets, 6 autres) : Eurostat env_air_gge, tous GES'
+  ligne_id: estat-000935
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF_INDCO2&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : total des GES hors UTCATF et éléments pour mémoire (inventaire transmis à l''UE),
+    et CO2 indirect'
+  ligne_id: estat-000936
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : total des GES hors UTCATF et éléments pour mémoire (inventaire transmis à l''UE),
+    et CO2 indirect'
+  ligne_id: estat-000937
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'émissions nettes, UTCATF inclus : Eurostat env_air_gge total hors éléments pour mémoire (Mt)'
+  ligne_id: estat-000938
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=HFC_CO2E&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000961
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=HFC_CO2E&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-000962
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=N2O&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001085
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=N2O&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001086
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=N2O_CO2E&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001193
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=N2O_CO2E&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001194
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=NF3_CO2E&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001212
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=NF3_CO2E&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001213
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=PFC_CO2E&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001237
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=PFC_CO2E&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001238
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=SF6_CO2E&src_crf=TOTX4_MEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001257
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=SF6_CO2E&src_crf=TOTXMEMO&geo=FR
+  source: Eurostat
+  nature: 'ventilation par gaz : Eurostat env_air_gge, totaux par gaz avec et sans UTCATF (tonnes et équivalent
+    CO2)'
+  ligne_id: estat-001258
+  eligible: oui
+- serie_id: env_ac_aeint_r2?freq=A&airpol=GHG&nace_r2=TOTAL&na_item=B1G&unit=G_EUR_CLV20&geo=FR
+  source: Eurostat
+  nature: 'autre unité : intensité en GES (Eurostat env_ac_aeint_r2, grammes par euro)'
+  ligne_id: estat-037905
+  eligible: oui
+- serie_id: env_ac_aeint_r2?freq=A&airpol=GHG&nace_r2=TOTAL&na_item=P1&unit=G_EUR_CLV20&geo=FR
+  source: Eurostat
+  nature: 'autre unité : intensité en GES (Eurostat env_ac_aeint_r2, grammes par euro)'
+  ligne_id: estat-037906
+  eligible: oui
+- serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+    BDD_Secten : GES.France hexagonale + Outre-mer inclus dans l''UE.total GES.MtCO2e)'
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'Citepa, inventaire Secten (édition 2026) : total hors UTCATF, périmètre UE, 1990-2025 (niveau 2, une
+    année de plus)'
+  ligne_id: m04-000323
+  eligible: oui
+- serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+    BDD_Secten : GES.France hexagonale + Outre-mer inclus dans l''UE.CO2.Mt)'
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: m04-000324
+  eligible: oui
+- serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+    BDD_Secten : GES.France hexagonale + Outre-mer inclus dans l''UE.CH4.kt)'
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: m04-000325
+  eligible: oui
+- serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+    BDD_Secten : GES.France hexagonale + Outre-mer inclus dans l''UE.N2O.kt)'
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: m04-000326
+  eligible: oui
+- serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
+    BDD_Secten : GES.France hexagonale + Outre-mer inclus dans l''UE.Total gaz fluorés.kt CO2e)'
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par gaz (CO2, CH4, N2O, gaz fluorés) : INSEE BDM 010777574 à 010777577, Citepa, Eurostat
+    env_air_gge (totaux par gaz)'
+  ligne_id: m04-000327
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.Transport.France
+    hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: m04-000337
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.Usage
+    des bâtiments et activités résidentiels/tertiaires.France hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: m04-000338
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.Agriculture
+    / sylviculture.France hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: m04-000339
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.Industrie
+    manufacturière et construction.France hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: m04-000340
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.Industrie
+    de l'énergie.France hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: m04-000341
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.Déchets
+    centralisés.France hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: m04-000342
+  eligible: oui
+- serie_id: https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/EDGAR/datasets/EDGAR_2025_GHG/EDGAR_AR5_GHG_1970_2024.zip
+    (feuille TOTALS BY COUNTRY)
+  source: Commission européenne (JRC) — EDGAR 2025
+  nature: 'EDGAR 2025 (Commission européenne, JRC) : GES en PRG100 AR5, 1970-2024, estimation indépendante (niveau
+    2)'
+  ligne_id: m04-000344
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT12&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: melodi-005587
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT13&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: melodi-005589
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: melodi-005590
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: melodi-005591
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT4-5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: melodi-005593
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'ventilation par secteur (transports, bâtiments, agriculture, industrie, énergie, déchets) : INSEE BDM
+    010595994 à 010595999, Melodi 13.i4b, Citepa Secten'
+  ligne_id: melodi-005595
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4a&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'émissions nettes, UTCATF inclus (objectif de neutralité carbone en 2050) : INSEE BDM 010600316 et Melodi
+    13.i4a (2010-2024), Eurostat env_air_gge total hors seuls éléments pour mémoire'
+  ligne_id: melodi-005679
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=TCO2E
+  source: INSEE Melodi
+  nature: 'INSEE Melodi, indicateur ODD 13.i4b (total) : même série, voie Melodi (zone FRANCE-F)'
+  ligne_id: melodi-005680
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=9.i3&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TCO2E_MUSD
+  source: INSEE Melodi
+  nature: 'autre unité : intensité en GES de l''économie (INSEE ODD 9.i3, t CO2e par million de dollars de valeur
+    ajoutée ; Eurostat env_ac_aeint_r2, grammes par euro de valeur ajoutée et de production)'
+  ligne_id: melodi-005737
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- perimetre_kyoto
+notes: 'Zone BDM FM_D99_D978 : France métropolitaine, Drom et Saint-Martin (périmètre du protocole de Kyoto). Valeurs
+  BDM non relues (lecture de bdm.insee.fr refusée à l''outil le 14/10/2026).'

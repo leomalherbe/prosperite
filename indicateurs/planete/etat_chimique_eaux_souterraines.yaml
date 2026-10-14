@@ -1,0 +1,100 @@
+id: etat_chimique_eaux_souterraines
+libelle: Part des masses d'eau souterraine en bon état chimique
+dimension: planete
+sous_theme: eau
+famille: etat_chimique_eaux_souterraines
+variante_principale: oui
+definition: Part des masses d'eau souterraine (nappes) en bon état chimique au sens de la directive-cadre sur l'eau,
+  d'après les états des lieux des bassins (indicateur national ODD 6.i2c).
+unite: '% des masses d''eau souterraine'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 6.i2c (BDM 010595394)
+source_serie_id: '010595394'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010595394
+url_page: https://www.insee.fr/fr/statistiques/serie/010595394
+frequence: irreguliere
+premiere_annee: 2013
+derniere_annee: 2021
+nb_points_depuis_2000: 4
+geo: FE
+eligibilite_longlist: non
+ligne_id: bdm-000761
+hors_longlist: non
+raccordement: 'non : quatre états des lieux de 2013 à 2021'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de référence de la qualité des nappes (directive-cadre sur l'eau), 4 points de
+  2013 à 2021, non éligible dans la long-list mais candidat selon D28 (maintenance PLA-1).
+note_pertinence: Le mauvais état chimique des nappes, lié notamment aux nitrates et aux pesticides, se corrige très
+  lentement. La série ne bouge qu'aux états des lieux, d'où le report de la dernière valeur (D17). L'état quantitatif
+  des nappes, autre composante de leur état, est en variante.
+variantes:
+- serie_id: '010595395'
+  source: INSEE BDM
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: bdm-000762
+  eligible: non
+- serie_id: '010595396'
+  source: INSEE BDM
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: bdm-000763
+  eligible: non
+- serie_id: '010595397'
+  source: INSEE BDM
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: bdm-000764
+  eligible: non
+- serie_id: '010595398'
+  source: INSEE BDM
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: bdm-000765
+  eligible: non
+- serie_id: '010595399'
+  source: INSEE BDM
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: bdm-000766
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2c&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: melodi-005603
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2d&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: melodi-005604
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2c&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: melodi-005611
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2d&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: melodi-005612
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2c&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: melodi-005617
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2d&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état chimique, voie Melodi (6.i2c) et état quantitatif des nappes (6.i2d)
+  ligne_id: melodi-005618
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- exclusion_longlist_contraire_D28
+notes: ''

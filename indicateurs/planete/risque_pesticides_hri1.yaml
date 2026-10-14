@@ -1,0 +1,225 @@
+id: risque_pesticides_hri1
+libelle: Indicateur de risque harmonisé des pesticides (HRI1)
+dimension: planete
+sous_theme: agriculture et pesticides
+famille: usage_pesticides
+variante_principale: oui
+definition: Indice des quantités de substances actives phytopharmaceutiques mises sur le marché, pondérées selon
+  leur classe de danger (indicateur de risque harmonisé 1 de la directive 2009/128/CE), base 100 en moyenne 2011-2013.
+unite: indice (moyenne 2011-2013 = 100)
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: aei_hri (indicateurs de risque harmonisés pour les pesticides)
+source_serie_id: aei_hri?freq=A&subst_cat=HRI1&unit=I11-13_AVG&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/aei_hri?freq=A&subst_cat=HRI1&unit=I11-13_AVG&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/aei_hri/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2024
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-035795
+hors_longlist: non
+raccordement: 'non : série depuis 2011'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de la stratégie Ecophyto 2030, qui vise une baisse de 50 % en 2030 par rapport
+  à 2011-2013, série Eurostat sans drapeau de 2011 à 2024 (99 en 2011, 53 en 2024).
+note_pertinence: Le HRI1 pondère les ventes de substances par leur dangerosité ; sa chute de 111 à 59 entre 2018
+  et 2019 est à expliquer (substances autorisées, pondération ou déclaration) avant de fixer des bornes. Les quantités
+  vendues non pondérées (INSEE et Eurostat) et l'indice européen voisin sdg_02_53 sont en variantes. Le NODU, mesure
+  de l'intensité des traitements, forme l'autre fiche de la famille.
+variantes:
+- serie_id: '011800708'
+  source: INSEE BDM
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: bdm-001071
+  eligible: oui
+- serie_id: '011800709'
+  source: INSEE BDM
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: bdm-001072
+  eligible: oui
+- serie_id: '011800710'
+  source: INSEE BDM
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: bdm-001073
+  eligible: oui
+- serie_id: '011800711'
+  source: INSEE BDM
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: bdm-001074
+  eligible: oui
+- serie_id: '011800712'
+  source: INSEE BDM
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: bdm-001075
+  eligible: oui
+- serie_id: '011800713'
+  source: INSEE BDM
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: bdm-001076
+  eligible: oui
+- serie_id: '011800714'
+  source: INSEE BDM
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: bdm-001077
+  eligible: oui
+- serie_id: '011800715'
+  source: INSEE BDM
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: bdm-001078
+  eligible: oui
+- serie_id: '011800716'
+  source: INSEE BDM
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: bdm-001079
+  eligible: oui
+- serie_id: '011800717'
+  source: INSEE BDM
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: bdm-001080
+  eligible: oui
+- serie_id: '011812229'
+  source: INSEE BDM
+  nature: INSEE ODD 2.i6d (BDM 011812229 et Melodi, 2011-2023) ; Eurostat sdg_02_53 (utilisation et risque des pesticides
+    chimiques, base 2015-2017)
+  ligne_id: bdm-001081
+  eligible: oui
+- serie_id: sdg_02_53?freq=A&subst_cat=PES&unit=I15-17_AVG&geo=FR
+  source: Eurostat
+  nature: INSEE ODD 2.i6d (BDM 011812229 et Melodi, 2011-2023) ; Eurostat sdg_02_53 (utilisation et risque des pesticides
+    chimiques, base 2015-2017)
+  ligne_id: estat-002036
+  eligible: oui
+- serie_id: aei_fm_salpest09?freq=A&pesticid=TOTAL&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-032727
+  eligible: oui
+- serie_id: aei_pestsal_rsk?freq=A&subst_cat=CHAS&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-035796
+  eligible: oui
+- serie_id: aei_pestsal_rsk?freq=A&subst_cat=GRP1&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-035797
+  eligible: oui
+- serie_id: aei_pestsal_rsk?freq=A&subst_cat=GRP2&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-035798
+  eligible: oui
+- serie_id: aei_pestsal_rsk?freq=A&subst_cat=GRP3&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-035799
+  eligible: oui
+- serie_id: aei_pestsal_rsk?freq=A&subst_cat=GRP4&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-035800
+  eligible: oui
+- serie_id: aei_pestsal_rsk?freq=A&subst_cat=NCHAS&unit=KG&geo=FR
+  source: Eurostat
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: estat-035801
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=2011_2013&COMPOSITE_BREAKDOWN=PHYTO0&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6d&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: INSEE ODD 2.i6d (BDM 011812229 et Melodi, 2011-2023) ; Eurostat sdg_02_53 (utilisation et risque des pesticides
+    chimiques, base 2015-2017)
+  ligne_id: melodi-005561
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6b&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: melodi-005653
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6c&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: melodi-005654
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6b&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: melodi-005655
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6c&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: melodi-005656
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6b&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: melodi-005657
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6c&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: melodi-005658
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6b&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: melodi-005659
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=PHYTO4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6c&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: melodi-005660
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6b&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'quantités de substances actives vendues (QSA) non pondérées : conventionnelles, ensemble et par type
+    (INSEE ODD 2.i6b, BDM et Melodi, 2010-2023), ventes Eurostat totales et par groupe de risque (2011-2024)'
+  ligne_id: melodi-005682
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6c&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'QSA utilisables en biocontrôle et en agriculture biologique (ODD 2.i6c, BDM et Melodi) : sens ambigu
+    (substitution aux produits conventionnels)'
+  ligne_id: melodi-005683
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- saut_2019_a_expliquer
+notes: ''

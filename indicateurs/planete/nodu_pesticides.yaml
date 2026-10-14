@@ -1,0 +1,49 @@
+id: nodu_pesticides
+libelle: Nombre de doses unités de produits phytosanitaires (NODU)
+dimension: planete
+sous_theme: agriculture et pesticides
+famille: usage_pesticides
+variante_principale: non
+definition: Nombre de doses unités de produits phytosanitaires vendus, hors produits de biocontrôle, c'est-à-dire
+  la surface qui serait traitée à la dose de référence (indicateur historique du plan Ecophyto, ODD 2.i6a).
+unite: millions d'hectares de doses unités
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 2.i6a (BDM 010594432)
+source_serie_id: '010594432'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594432
+url_page: https://www.insee.fr/fr/statistiques/serie/010594432
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2021
+nb_points_depuis_2000: 12
+geo: FE_HPBIO
+eligibilite_longlist: oui
+ligne_id: bdm-001066
+hors_longlist: non
+raccordement: 'non : dernière valeur 2021'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille usage_pesticides (intensité des traitements plutôt que risque),
+  indicateur historique d'Ecophyto publié de 2010 à 2021 (12 points).
+note_pertinence: 'Le NODU rapporte les ventes à des doses de référence, ce qui mesure l''intensité des traitements
+  indépendamment du poids des substances. Sa dernière valeur date de 2021 : la poursuite de la série est à vérifier,
+  la stratégie Ecophyto 2030 retenant le HRI1 comme indicateur principal.'
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i6a&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: voie Melodi (2.i6a)
+  ligne_id: melodi-005721
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- poursuite_a_verifier
+notes: ''

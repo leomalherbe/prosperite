@@ -1,0 +1,127 @@
+id: empreinte_matieres
+libelle: Empreinte matières par habitant
+dimension: planete
+sous_theme: déchets et matières
+famille: empreinte_matieres
+variante_principale: oui
+definition: Consommation de matières premières (biomasse, minerais métalliques, minéraux non métalliques, combustibles
+  fossiles) mobilisées dans le monde pour satisfaire la demande finale du pays, importations comptées en équivalent
+  matières premières, en tonnes par habitant.
+unite: tonnes par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_12_21 (empreinte matérielle)
+source_serie_id: sdg_12_21?freq=A&indic_env=RMC&material=TOTAL&unit=T_HAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_21?freq=A&indic_env=RMC&material=TOTAL&unit=T_HAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_12_21/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002007
+hors_longlist: non
+raccordement: 'non : série depuis 2008'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la pression matérielle de la consommation, série Eurostat de 2008 à 2025 (17,2 t
+  par habitant en 2008, 11,9 t en 2025 imputée), plus longue et plus fraîche que la série INSEE (2010-2022).
+note_pertinence: L'empreinte matières compte les matières extraites à l'étranger pour produire les biens importés,
+  à la différence de la consommation intérieure de matières, qui forme une famille distincte. Les deux dernières
+  années sont imputées par Eurostat. Les séries de l'INSEE (ODD 12.i2), de l'OCDE (12_14) et du PNUD sont en variantes.
+variantes:
+- serie_id: '010596190'
+  source: INSEE BDM
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: bdm-000726
+  eligible: oui
+- serie_id: '010596191'
+  source: INSEE BDM
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: bdm-000727
+  eligible: oui
+- serie_id: '010596192'
+  source: INSEE BDM
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: bdm-000728
+  eligible: oui
+- serie_id: env_ac_rme?freq=A&unit=T_HAB&material=TOTAL&indic_env=DE&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_ac_rme : agrégats en équivalent matières premières'
+  ligne_id: estat-041460
+  eligible: oui
+- serie_id: env_ac_rme?freq=A&unit=T_HAB&material=TOTAL&indic_env=EXP_RME&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_ac_rme : agrégats en équivalent matières premières'
+  ligne_id: estat-041461
+  eligible: oui
+- serie_id: env_ac_rme?freq=A&unit=T_HAB&material=TOTAL&indic_env=IMP_RME&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_ac_rme : agrégats en équivalent matières premières'
+  ligne_id: estat-041462
+  eligible: oui
+- serie_id: env_ac_rme?freq=A&unit=T_HAB&material=TOTAL&indic_env=RMC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_ac_rme : agrégats en équivalent matières premières'
+  ligne_id: estat-041463
+  eligible: oui
+- serie_id: env_ac_rme?freq=A&unit=T_HAB&material=TOTAL&indic_env=RMI&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_ac_rme : agrégats en équivalent matières premières'
+  ligne_id: estat-041464
+  eligible: oui
+- serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
+    mf_<année>)
+  source: PNUD — Rapport sur le développement humain 2025 (séries composites)
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: m04-000357
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_14 UNIT_MEASURE=T_PS
+  source: OCDE — How's Life? (base du bien-être)
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: m04-000093
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i2a&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: melodi-005693
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i2b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: melodi-005694
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i2c&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=EUR_KG
+  source: INSEE Melodi
+  nature: Eurostat env_ac_rme (RMC, importations et exportations en équivalent matières premières, extraction intérieure)
+    ; INSEE ODD 12.i2a à 12.i2c (empreinte totale, par habitant et productivité, BDM et Melodi) ; OCDE How's Life
+    12_14 ; PNUD
+  ligne_id: melodi-005695
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_imputees_2024_2025
+notes: ''

@@ -1,0 +1,162 @@
+id: part_vehicules_electriques_neufs
+libelle: Part des voitures électriques dans les immatriculations neuves
+dimension: planete
+sous_theme: énergie
+famille: part_vehicules_electriques_neufs
+variante_principale: oui
+definition: 'Part des voitures particulières électriques dans les immatriculations de voitures particulières neuves
+  de l''année, France entière (indicateur national ODD ; prise en compte des hybrides rechargeables : à vérifier).'
+unite: '% des immatriculations neuves'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: BDM 010775965
+source_serie_id: '010775965'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010775965
+url_page: https://www.insee.fr/fr/statistiques/serie/010775965
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001489
+hors_longlist: non
+raccordement: 'non : série depuis 2013'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Levier de décarbonation des transports admis comme moyen (D19), série INSEE annuelle de 2013
+  à 2024 (12 points) en France entière.
+note_pertinence: Le transport routier est le premier secteur émetteur, et l'électrification du parc en est le principal
+  levier ; l'indicateur suit le flux des voitures neuves. Les autres catégories de véhicules, la France métropolitaine
+  (D15), la définition européenne « zéro émission » (Eurostat, jusqu'en 2025) et la part du parc en Crit'Air 1 ou
+  électrique sont en variantes. La définition exacte des véhicules électriques retenue par la source est à vérifier.
+variantes:
+- serie_id: '010775848'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001487
+  eligible: oui
+- serie_id: '010775849'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001488
+  eligible: oui
+- serie_id: '010775966'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001490
+  eligible: oui
+- serie_id: '010776082'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001491
+  eligible: oui
+- serie_id: '010776083'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001492
+  eligible: oui
+- serie_id: '010776199'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001493
+  eligible: oui
+- serie_id: '010776200'
+  source: INSEE BDM
+  nature: même indicateur en France métropolitaine et pour les deux-roues, utilitaires légers et véhicules industriels
+    (INSEE BDM)
+  ligne_id: bdm-001494
+  eligible: oui
+- serie_id: road_eqs_zev?freq=A&mot_nrg=TOTAL&vehicle=BUS_MCO_TRO&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036896
+  eligible: oui
+- serie_id: road_eqs_zev?freq=A&mot_nrg=TOTAL&vehicle=CAR&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036897
+  eligible: oui
+- serie_id: road_eqs_zev?freq=A&mot_nrg=TOTAL&vehicle=LOR_GT3P5&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036898
+  eligible: oui
+- serie_id: road_eqs_zev?freq=A&mot_nrg=TOTAL&vehicle=TRC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036899
+  eligible: oui
+- serie_id: road_eqs_zev?freq=A&mot_nrg=TOTAL&vehicle=VG_LE3P5&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036900
+  eligible: oui
+- serie_id: road_eqr_zev?freq=A&mot_nrg=TOTAL&vehicle=BUS_MCO_TRO&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036901
+  eligible: oui
+- serie_id: road_eqr_zev?freq=A&mot_nrg=TOTAL&vehicle=CAR&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036902
+  eligible: oui
+- serie_id: road_eqr_zev?freq=A&mot_nrg=TOTAL&vehicle=LOR_GT3P5&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036903
+  eligible: oui
+- serie_id: road_eqr_zev?freq=A&mot_nrg=TOTAL&vehicle=TRC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036904
+  eligible: oui
+- serie_id: road_eqr_zev?freq=A&mot_nrg=TOTAL&vehicle=VG_LE3P5&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des véhicules à émissions nulles dans les immatriculations neuves (road_eqr_zev) et dans
+    le parc (road_eqs_zev), par catégorie, 2013-2025 ; SDES : part des voitures Crit''Air 1 ou électriques dans
+    le parc (2011-2024)'
+  ligne_id: estat-036905
+  eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_critair_1_0_vp)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'SDES-INSEE ITDD : part des voitures particulières Crit''Air 1 ou électriques dans le parc, 2011-2024'
+  ligne_id: m04-000320
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- definition_a_verifier
+notes: ''

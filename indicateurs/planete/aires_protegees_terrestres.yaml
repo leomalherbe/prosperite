@@ -1,0 +1,86 @@
+id: aires_protegees_terrestres
+libelle: Part du territoire terrestre en aires protégées
+dimension: planete
+sous_theme: biodiversité
+famille: aires_protegees_terrestres
+variante_principale: oui
+definition: Part de la surface terrestre couverte par des aires protégées, France (base des indicateurs ODD de l'OCDE,
+  indicateur 15.1.2).
+unite: '% de la surface terrestre'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: OCDE (base des indicateurs ODD)
+source_jeu: Indicateurs ODD de l'OCDE, objectif 15, aires protégées en part de la surface terrestre
+source_serie_id: 'odd_15 : 15_1_2_OECD._T._T._T._T._T.PT_LAR'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_15,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000132
+hors_longlist: non
+raccordement: 'non : série continue depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Moyen admis (D19) adossé à la cible légale de 30 % d'aires protégées (article L110-4 du code
+  de l'environnement), série OCDE de 2000 à 2024 (25 points), 31,84 % en 2024 d'après l'extrait du robot M04.
+note_pertinence: La protection d'espaces est le premier levier de préservation de la biodiversité, et la cible légale
+  fournira une borne. Une aire protégée ne garantit pas un bon état écologique, d'où la fiche sur la protection
+  forte (cible de 10 %) et les variantes sur les zones clés de biodiversité. Les relais How's Life, OWID et Natura
+  2000 (Eurostat) sont en variantes.
+variantes:
+- serie_id: sdg_15_20?freq=A&areaprot=TPA&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'même concept : OCDE How''s Life 12_5 (2004-2024), WDPA via OWID (2013-2025), Eurostat sdg_15_20 et env_bio4
+    (sites Natura 2000 terrestres, 2011-2023)'
+  ligne_id: estat-002118
+  eligible: oui
+- serie_id: env_bio4?freq=A&unit=PC&areaprot=TPA&geo=FR
+  source: Eurostat
+  nature: 'même concept : OCDE How''s Life 12_5 (2004-2024), WDPA via OWID (2013-2025), Eurostat sdg_15_20 et env_bio4
+    (sites Natura 2000 terrestres, 2011-2023)'
+  ligne_id: estat-041459
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_5 UNIT_MEASURE=PT_LAR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'même concept : OCDE How''s Life 12_5 (2004-2024), WDPA via OWID (2013-2025), Eurostat sdg_15_20 et env_bio4
+    (sites Natura 2000 terrestres, 2011-2023)'
+  ligne_id: m04-000084
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/terrestrial-protected-areas.csv (colonne er_lnd_ptld_zs)
+  source: Our World in Data (relais)
+  nature: 'même concept : OCDE How''s Life 12_5 (2004-2024), WDPA via OWID (2013-2025), Eurostat sdg_15_20 et env_bio4
+    (sites Natura 2000 terrestres, 2011-2023)'
+  ligne_id: m04-000216
+  eligible: oui
+- serie_id: 'odd_15 : 15_1_2_ER_PTD_TERR._T._T._T._T._T.PT_AR_BIOD_K_TERR'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'OCDE ODD 15.1.2 et 15.4.1 : part des zones clés de biodiversité terrestres, d''eau douce et de montagne
+    couvertes par des aires protégées (2000-2024)'
+  ligne_id: m04-000129
+  eligible: oui
+- serie_id: 'odd_15 : 15_1_2_ER_PTD_FRHWTR._T._T._T._T._T.PT_AR_BIOD_K_WAT_FRSH'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'OCDE ODD 15.1.2 et 15.4.1 : part des zones clés de biodiversité terrestres, d''eau douce et de montagne
+    couvertes par des aires protégées (2000-2024)'
+  ligne_id: m04-000130
+  eligible: oui
+- serie_id: 'odd_15 : 15_4_1_ER_PTD_MTN._T._T._T._T._T.PT_AR_BIOD_K_MTN'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'OCDE ODD 15.1.2 et 15.4.1 : part des zones clés de biodiversité terrestres, d''eau douce et de montagne
+    couvertes par des aires protégées (2000-2024)'
+  ligne_id: m04-000131
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

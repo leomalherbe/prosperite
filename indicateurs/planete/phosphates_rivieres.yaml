@@ -1,0 +1,44 @@
+id: phosphates_rivieres
+libelle: Teneur moyenne en phosphates des rivières
+dimension: planete
+sous_theme: eau
+famille: phosphates_rivieres
+variante_principale: oui
+definition: Concentration moyenne en phosphates des cours d'eau sur les stations de mesure retenues, en milligrammes
+  par litre (indicateur ODD de l'UE).
+unite: mg/l
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_06_50 (teneur en phosphate dans les rivières)
+source_serie_id: sdg_06_50?freq=A&watpol=PO4_RIV&unit=MG_L&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_06_50?freq=A&watpol=PO4_RIV&unit=MG_L&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_06_50/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2007
+derniere_annee: 2023
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002072
+hors_longlist: non
+raccordement: 'non : série depuis 2007'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de la charge des rivières en phosphore au catalogue, série Eurostat
+  sans drapeau de 2007 à 2023 (0,056 mg/l en 2007, 0,060 mg/l en 2023).
+note_pertinence: Les phosphates (rejets urbains, industriels et agricoles) nourrissent l'eutrophisation des cours
+  d'eau. La série a baissé jusqu'en 2012-2014 (0,047 mg/l) puis remonté chaque année jusqu'en 2023, évolution à
+  documenter (réseau de stations, débits). Les flux de phosphore à la mer (INSEE) forment une fiche distincte.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- evolution_a_documenter
+notes: ''

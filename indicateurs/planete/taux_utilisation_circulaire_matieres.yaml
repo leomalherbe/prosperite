@@ -1,0 +1,48 @@
+id: taux_utilisation_circulaire_matieres
+libelle: Taux d'utilisation circulaire des matières
+dimension: planete
+sous_theme: déchets et matières
+famille: taux_utilisation_circulaire_matieres
+variante_principale: oui
+definition: Part des matières recyclées et réinjectées dans l'économie dans l'ensemble des matières utilisées (indicateur
+  de l'UE pour l'économie circulaire).
+unite: '%'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_12_41 (taux d'utilisation circulaire de matières)
+source_serie_id: sdg_12_41?freq=A&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_41?freq=A&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_12_41/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002105
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur européen de circularité, série Eurostat annuelle de 2010 à 2024 (15 points).
+note_pertinence: Le taux mesure la part des besoins en matières couverte par le recyclage, objectif du plan d'action
+  européen pour l'économie circulaire. Il dépend du recyclage mais aussi du volume total de matières consommées.
+  Les drapeaux d'Eurostat n'ont pas été relus ; le doublon env_ac_cur est en variante.
+variantes:
+- serie_id: env_ac_cur?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon technique env_ac_cur
+  ligne_id: estat-037971
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_eurostat_non_lus
+notes: ''

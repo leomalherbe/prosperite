@@ -265,6 +265,10 @@ def test_tagger_libelles_techniques(libelle, dimension):
         ("Dépenses de consommation des ménages par fonction — Emploi ou débit ; Territoire national ; Services de l’enseignement ; "
          "Dépense de consommation individuelle", "niveau_de_vie"),
         ("Consommation finale d’énergie dans l’ensemble des secteurs", "planete"),
+        # flux de matières et diversité des cultures (écarts au repérage de phase 1)
+        ("Consommation intérieure de matière par habitant (DMC/hab)", "planete"),
+        ("Productivité matières (PIB/RMC) ", "planete"),
+        ("Diversité moyenne des cultures arables", "planete"),
         # libellés Melodi : les modalités de ventilation ne décident plus de la dimension
         ("Pratiques en ligne des personnes — Actif occupé ; Ouvriers ; Taux d’utilisation d’un compte bancaire en ligne dans les 3 mois", "education"),
         # (titre réel du jeu DS_DERA_PUBLIC_SERIES_LONGUES : « fonction publique » → travail, et non plus santé par « hospitalière »)

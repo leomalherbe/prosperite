@@ -107,7 +107,10 @@ REGLES_DIMENSIONS: list[tuple[str, list[re.Pattern]]] = [
                          r"credits? budgetaires? publics? de r ?& ?d", r"recherche et developpement", r"effort de recherche", r"\bdird\b")),
     ("planete", _r(r"consommation (finale |primaire )?(brute )?d'energie", r"energies? renouvelables?", r"intensite (energetique|carbone|en ges)",
                    r"empreinte (carbone|matieres?|eau|environnementale)", r"gaz a effet de serre", r"changement climatique", r"economie circulaire",
-                   r"transports? de marchandises", r"gaspillages?", r"antibiotiques", r"prelevements? (en |d')eau")),
+                   r"transports? de marchandises", r"gaspillages?", r"antibiotiques", r"prelevements? (en |d')eau",
+                   # flux de matières (DMC, RMC) et diversité des cultures : étiquetés niveau de vie (« consommation »,
+                   # « productivité ») et éducation (« cultures ») avant le passage du 14/10
+                   r"consommation interieure de matiere", r"productivite matieres", r"\b(dmc|rmc)\b", r"cultures arables")),
     # consommation des ménages par fonction (comptes nationaux) : un poste « Santé », « Logement… » ou
     # « Enseignement » de la dépense de consommation reste un indicateur de niveau de vie (passage du 14/10)
     ("niveau_de_vie", _r(r"consommation (finale |effective |individuelle |mensuelle )*(des menages|effective|individuelle)",

@@ -1,5 +1,5 @@
 {
- "date": "2026-10-13T15:33:27+00:00",
+ "date": "2026-10-14T00:05:16+00:00",
  "bdm": {
   "dataflows": 226,
   "series_listees": 182082,
@@ -24,9 +24,9 @@
    "périodes inconnues …": 99
   },
   "candidat": {
-   "non": 77835,
-   "oui": 1345,
-   "a_verifier": 305
+   "non": 77977,
+   "oui": 1211,
+   "a_verifier": 297
   },
   "catalogue_par_frequence": {
    "annuelle": 50136,
@@ -52,59 +52,58 @@
  },
  "bdm_par_dimension": {
   "(aucune)": {
-   "non": 12290
+   "non": 12326
   },
   "contexte": {
    "non": 122
   },
   "democratie": {
-   "non": 20,
-   "oui": 2,
-   "a_verifier": 13
+   "oui": 1,
+   "a_verifier": 25,
+   "non": 4
   },
   "education": {
-   "non": 2099,
-   "oui": 43,
-   "a_verifier": 46
+   "non": 1775,
+   "a_verifier": 70,
+   "oui": 15
   },
   "egalites": {
    "oui": 39,
-   "a_verifier": 6,
-   "non": 1
+   "a_verifier": 7
   },
   "liens_bien_etre": {
-   "non": 1639,
-   "oui": 17,
-   "a_verifier": 39
+   "non": 1416,
+   "oui": 12,
+   "a_verifier": 16
   },
   "logement_cadre_vie": {
-   "non": 2578,
-   "oui": 104,
-   "a_verifier": 12
+   "non": 2156,
+   "oui": 99,
+   "a_verifier": 11
   },
   "niveau_de_vie": {
-   "non": 38266,
-   "oui": 277,
-   "a_verifier": 17
+   "non": 40324,
+   "oui": 279,
+   "a_verifier": 16
   },
   "planete": {
-   "non": 6351,
-   "oui": 114,
-   "a_verifier": 59
+   "non": 5791,
+   "oui": 110,
+   "a_verifier": 79
   },
   "sante": {
-   "non": 4538,
-   "oui": 191,
-   "a_verifier": 69
+   "non": 4084,
+   "oui": 180,
+   "a_verifier": 63
   },
   "securite_confiance": {
-   "non": 416,
-   "oui": 44
+   "non": 426,
+   "oui": 34
   },
   "travail": {
-   "non": 9515,
-   "oui": 514,
-   "a_verifier": 44
+   "non": 9553,
+   "oui": 442,
+   "a_verifier": 10
   }
  },
  "melodi": {
@@ -114,17 +113,18 @@
    "traité": 61
   },
   "series_nationales": 66287,
-  "catalogue": 52296,
+  "catalogue": 52262,
   "exclusions": {
    "aucune valeur numérique": 9992,
    "dernière période < 2020 ou inconnue": 2196,
    "fréquence Q non retenue": 1698,
-   "fréquence D non retenue": 105
+   "fréquence D non retenue": 105,
+   "zone non nationale (périmètre partiel, ex. hors Île-de-France)": 34
   },
   "candidat": {
-   "non": 45842,
-   "oui": 5427,
-   "a_verifier": 1027
+   "non": 45666,
+   "oui": 5413,
+   "a_verifier": 1183
   }
  },
  "melodi_par_dimension": {
@@ -132,53 +132,54 @@
    "non": 321
   },
   "contexte": {
-   "non": 645
+   "non": 649
   },
   "democratie": {
    "a_verifier": 5,
    "oui": 1
   },
   "education": {
-   "non": 2612,
-   "oui": 344
+   "non": 2305,
+   "a_verifier": 24,
+   "oui": 395
   },
   "egalites": {
-   "non": 22,
-   "a_verifier": 15,
+   "non": 20,
+   "a_verifier": 17,
    "oui": 28
   },
   "liens_bien_etre": {
-   "non": 1604,
-   "oui": 414
+   "non": 1337,
+   "oui": 405
   },
   "logement_cadre_vie": {
-   "non": 2171,
-   "oui": 145,
-   "a_verifier": 10
+   "non": 1773,
+   "oui": 117,
+   "a_verifier": 15
   },
   "niveau_de_vie": {
-   "non": 32601,
-   "oui": 2334,
-   "a_verifier": 703
+   "non": 34400,
+   "oui": 2421,
+   "a_verifier": 790
   },
   "planete": {
-   "non": 2108,
-   "oui": 134,
-   "a_verifier": 36
+   "non": 1599,
+   "oui": 129,
+   "a_verifier": 72
   },
   "sante": {
-   "non": 1765,
-   "oui": 225,
-   "a_verifier": 70
+   "non": 1347,
+   "oui": 173,
+   "a_verifier": 41
   },
   "securite_confiance": {
    "oui": 12,
    "non": 144
   },
   "travail": {
-   "non": 1849,
-   "oui": 1790,
-   "a_verifier": 188
+   "non": 1771,
+   "oui": 1732,
+   "a_verifier": 219
   }
  },
  "comparaison_phase1": {
@@ -191,22 +192,21 @@
    "Melodi:jeu_absent": 4,
    "Melodi:jeu_sans_serie_au_catalogue": 9,
    "Melodi:non_retrouvee": 14,
-   "candidat_different": 442,
+   "candidat_different": 474,
    "dimension_differente": 49,
    "fichier:hors_robot": 13
   },
-  "bdm_nouvelles_oui_ou_a_verifier": 1203,
+  "bdm_nouvelles_oui_ou_a_verifier": 984,
   "bdm_nouvelles_par_dimension": {
-   "travail": 508,
+   "travail": 402,
    "niveau_de_vie": 213,
-   "sante": 196,
-   "logement_cadre_vie": 99,
-   "education": 74,
-   "liens_bien_etre": 28,
-   "planete": 28,
-   "securite_confiance": 27,
+   "sante": 177,
+   "logement_cadre_vie": 92,
+   "education": 46,
    "egalites": 22,
-   "democratie": 8
+   "securite_confiance": 17,
+   "planete": 8,
+   "democratie": 7
   }
  },
  "collecte": {

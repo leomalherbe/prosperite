@@ -161,33 +161,33 @@ BDM SDMX,010594481,Taux de pauvreté monétaire - Seuil de 50 % du niveau de vie
 BDM SDMX,010594462,Taux de pauvreté monétaire - Seuil de 60 % du niveau de vie médian selon la catégorie socioprofessionnelle - Employés,confirmee,ventilation : pcs,niveau_de_vie,niveau_de_vie,oui,oui
 BDM SDMX,010594749,"Nombre de projets d’éducation au développement durable dans les écoles, collèges et lycées - Série arrêtée",ecartee_par_filtre,dernière période 2016 < 2020,education,,non,
 BDM SDMX,010594779,Nombre d’établissements ayant obtenu le label E3D (école-établissement en démarche de développement durable) - Série arrêtée,ecartee_par_filtre,dernière période 2016 < 2020,education,,non,
-BDM SDMX,010594810,Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitude minimale en lecture,confirmee,"moins de 10 points depuis 2000 (3, première période 2011)",education,education,non,non
-BDM SDMX,010594824,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par sexe - Filles,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594834,Personnes n’ayant pas utilisé internet au cours des trois derniers mois ou sans aucune compétence,confirmee,"moins de 10 points depuis 2000 (7, première période 2015)",education,education,oui,non
+BDM SDMX,010594810,Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitude minimale en lecture,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 3 valeurs de 2011 à 2021 (D17),education,education,non,a_verifier
+BDM SDMX,010594824,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par sexe - Filles,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17) ; ventilation : sexe,education,education,non,a_verifier
+BDM SDMX,010594834,Personnes n’ayant pas utilisé internet au cours des trois derniers mois ou sans aucune compétence,confirmee,série pluriannuelle ou irrégulière : 7 valeurs de 2015 à 2025 (D17),education,education,oui,a_verifier
 BDM SDMX,010599819,Taux de sorties précoces du système scolaire des 18-24 ans - Hommes,confirmee,ventilation : sexe,education,education,oui,oui
-BDM SDMX,010594823,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - ensemble,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594822,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - très favorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594819,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - très défavorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594813,Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitude minimale en mathématiques,confirmee,"moins de 10 points depuis 2000 (3, première période 2015)",education,education,non,non
-BDM SDMX,010594816,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - ensemble,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594831,Proportion de personnes ayant de faibles compétences numériques générales,confirmee,"moins de 10 points depuis 2000 (7, première période 2015)",education,education,oui,non
+BDM SDMX,010594823,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - ensemble,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594822,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - très favorisés,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594819,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - très défavorisés,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594813,Proportion d’enfants en CM1 qui maîtrisent au moins les normes d’aptitude minimale en mathématiques,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 3 valeurs de 2015 à 2023 (D17),education,education,non,a_verifier
+BDM SDMX,010594816,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - ensemble,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594831,Proportion de personnes ayant de faibles compétences numériques générales,confirmee,série pluriannuelle ou irrégulière : 7 valeurs de 2015 à 2025 (D17),education,education,oui,a_verifier
 BDM SDMX,010599820,Taux de sorties précoces du système scolaire des 18-24 ans - Femmes,confirmee,ventilation : sexe,education,education,oui,oui
-BDM SDMX,010594825,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par sexe - Garçons,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594820,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - défavorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594826,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - très défavorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594737,Taux de participation des jeunes et des adultes à une formation formelle et non formelle - Hommes,confirmee,"moins de 10 points depuis 2000 (2, première période 2016)",education,education,oui,non
-BDM SDMX,010594833,Proportion de personnes ayant des compétences numériques générales plus avancées,confirmee,"moins de 10 points depuis 2000 (7, première période 2015)",education,education,oui,non
-BDM SDMX,010594827,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - défavorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594832,Proportion de personnes ayant des compétences numériques générales de base,confirmee,"moins de 10 points depuis 2000 (7, première période 2015)",education,education,oui,non
-BDM SDMX,010594829,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - très favorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594830,Taux de participation des jeunes et des adultes à une formation formelle et non formelle - Ensemble,confirmee,"moins de 10 points depuis 2000 (2, première période 2016)",education,education,oui,non
-BDM SDMX,010594736,Taux de participation des jeunes et des adultes à une formation formelle et non formelle - Femmes,confirmee,"moins de 10 points depuis 2000 (2, première période 2016)",education,education,oui,non
-BDM SDMX,010594821,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - favorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594817,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par sexe - Filles,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
+BDM SDMX,010594825,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par sexe - Garçons,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17) ; ventilation : sexe,education,education,non,a_verifier
+BDM SDMX,010594820,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - défavorisés,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594826,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - très défavorisés,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594737,Taux de participation des jeunes et des adultes à une formation formelle et non formelle - Hommes,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2016 à 2022 (D17) ; ventilation : sexe,education,education,oui,a_verifier
+BDM SDMX,010594833,Proportion de personnes ayant des compétences numériques générales plus avancées,confirmee,série pluriannuelle ou irrégulière : 7 valeurs de 2015 à 2025 (D17),education,education,oui,a_verifier
+BDM SDMX,010594827,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - défavorisés,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594832,Proportion de personnes ayant des compétences numériques générales de base,confirmee,série pluriannuelle ou irrégulière : 7 valeurs de 2015 à 2025 (D17),education,education,oui,a_verifier
+BDM SDMX,010594829,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - très favorisés,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594830,Taux de participation des jeunes et des adultes à une formation formelle et non formelle - Ensemble,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2016 à 2022 (D17),education,education,oui,a_verifier
+BDM SDMX,010594736,Taux de participation des jeunes et des adultes à une formation formelle et non formelle - Femmes,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2016 à 2022 (D17) ; ventilation : sexe,education,education,oui,a_verifier
+BDM SDMX,010594821,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par statut socio-économique (SESC) - favorisés,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
+BDM SDMX,010594817,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par sexe - Filles,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17) ; ventilation : sexe,education,education,non,a_verifier
 BDM SDMX,010594746,Taux de sorties précoces du système scolaire des 18-24 ans,confirmee,,education,education,oui,oui
-BDM SDMX,010754776,Nombre d'écoles et d’établissements scolaires engagés dans une démarche globale de développement durable (label E3D),confirmee,"moins de 10 points depuis 2000 (6, première période 2016)",education,education,non,non
-BDM SDMX,010594818,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par sexe - Garçons,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
-BDM SDMX,010594828,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - favorisés,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",education,education,non,non
+BDM SDMX,010754776,Nombre d'écoles et d’établissements scolaires engagés dans une démarche globale de développement durable (label E3D),confirmee,série pluriannuelle ou irrégulière : 6 valeurs de 2016 à 2025 (D17),education,education,non,a_verifier
+BDM SDMX,010594818,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en lecture - Par sexe - Garçons,confirmee,périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17) ; ventilation : sexe,education,education,non,a_verifier
+BDM SDMX,010594828,Proportion de jeunes à l’âge de 15 ans qui maîtrisent au moins les normes d’aptitude minimale en mathématiques - Par statut socio-économique - favorisés,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; périmètre national particulier (pas FE/FM/FR-D976) ; série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2022 (D17),education,education,non,a_verifier
 BDM SDMX,010594723,Part des femmes dans les disciplines scientifiques à l’université - Santé,confirmee,ventilation : sexe,egalites,egalites,oui,oui
 BDM SDMX,010594729,Proportion des femmes cadres dirigeants - Encadrement supérieur et de direction dans la fonction publique d’État,confirmee,ventilation : sexe,egalites,egalites,oui,oui
 BDM SDMX,010760765,Part des femmes parmi l’encadrement supérieur et de direction dans la fonction publique - Total,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16) ; ventilation : sexe,egalites,egalites,oui,a_verifier
@@ -235,7 +235,7 @@ BDM SDMX,010596069,Taux de fréquence des accidents du travail par secteur d’a
 BDM SDMX,010596082,Taux d’emploi par sexe - Hommes,confirmee,ventilation : sexe,travail,travail,oui,oui
 BDM SDMX,010596065,Taux de fréquence des accidents du travail par secteur d’activité - Autres activités liées au sport,ecartee_par_filtre,dernière période 2019 < 2020,travail,,a_verifier,
 BDM SDMX,010596075,Part des emplois aidés dans l'emploi des jeunes de moins de 26 ans,confirmee,type moyen (D19),travail,travail,non,oui
-BDM SDMX,010596094,"Proportion d’adultes possédant un compte dans une banque, ou dans une autre institution financière, ou faisant appel à des services monétaires mobiles",confirmee,"moins de 10 points depuis 2000 (5, première période 2011)",travail,niveau_de_vie,oui,non
+BDM SDMX,010596094,"Proportion d’adultes possédant un compte dans une banque, ou dans une autre institution financière, ou faisant appel à des services monétaires mobiles",confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2011 à 2024 (D17),travail,niveau_de_vie,oui,a_verifier
 BDM SDMX,010596058,Taux de fréquence des accidents du travail par catégorie socio-professionnelle - Cadres,ecartee_par_filtre,dernière période 2019 < 2020,travail,,a_verifier,
 BDM SDMX,010596079,Part des emplois aidés dans l'emploi des jeunes de moins de 26 ans - Contrats aidés du secteur non marchand,confirmee,type moyen (D19),travail,travail,non,oui
 BDM SDMX,010596072,Intensité du travail,ecartee_par_filtre,dernière période 2019 < 2020,travail,,a_verifier,
@@ -268,7 +268,7 @@ BDM SDMX,010776366,Inégalités des revenus - Rapport interquintile des masses d
 BDM SDMX,010776362,Inégalités des revenus - Rapport interquintile des masses de niveau de vie (100-S80)/S20 - Après redistribution - Femme,confirmee,ventilation : sexe;revenu,egalites,egalites,oui,oui
 BDM SDMX,010776363,Inégalités des revenus - Rapport interquintile des masses de niveau de vie (100-S80)/S20 - Après redistribution - Homme,confirmee,ventilation : sexe;revenu,egalites,egalites,oui,oui
 BDM SDMX,010776365,Inégalités des revenus - Rapport interquintile des masses de niveau de vie (100-S80)/S20 - Après redistribution - 18 à 64 ans,confirmee,ventilation : age;revenu,egalites,egalites,oui,oui
-BDM SDMX,010594683,Inégalités du patrimoine - Patrimoine brut (indice de Gini),confirmee,"moins de 10 points depuis 2000 (3, première période 2015)",egalites,egalites,oui,non
+BDM SDMX,010594683,Inégalités du patrimoine - Patrimoine brut (indice de Gini),confirmee,série pluriannuelle ou irrégulière : 3 valeurs de 2015 à 2021 (D17),egalites,egalites,oui,a_verifier
 BDM SDMX,010594692,Part des individus s'étant connectés à internet au cours des trois derniers mois - 45 à 59 ans,confirmee,ventilation : age,education,education,oui,oui
 BDM SDMX,010594686,Part des individus disposant du haut débit à leur domicile - Femmes,confirmee,ventilation : sexe,education,education,oui,oui
 BDM SDMX,010594681,Inégalités des revenus - Rapport interdécile D9/D1,confirmee,ventilation : revenu,egalites,egalites,oui,oui
@@ -291,7 +291,7 @@ BDM SDMX,010776378,"Surface de zones boisées, naturelles, humides ou en eau",co
 BDM SDMX,010596138,Nombre de stations de mesure ayant dépassé dans l’année le seuil réglementaire journalier de la qualité de l’air pour la protection de la santé humaine pour les particules PM10 dans les agglomérations de plus de 250000 habitants,confirmee,,logement_cadre_vie,logement_cadre_vie,oui,oui
 BDM SDMX,010600338,Taux de recyclage des déchets municipaux,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596134,Proportion de sols artificialisés,confirmee,,planete,planete,oui,oui
-BDM SDMX,010596142,Taux de surpeuplement des logements,confirmee,"moins de 10 points depuis 2000 (2, première période 2013)",logement_cadre_vie,logement_cadre_vie,oui,non
+BDM SDMX,010596142,Taux de surpeuplement des logements,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2013 à 2020 (D17),logement_cadre_vie,logement_cadre_vie,oui,a_verifier
 BDM SDMX,010600337,Déchets municipaux traités par habitant,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596162,Déchets municipaux traités par type de traitement – Incinération avec récupération d’énergie,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596146,Surface des sols artificialisés,confirmee,,planete,planete,oui,oui
@@ -433,7 +433,7 @@ BDM SDMX,011800716,Consommation de produits phytosanitaires - Quantités de subs
 BDM SDMX,011800708,Consommation de produits phytosanitaires - Quantités de substances actives (QSA) dites « conventionnelles »… [libellé tronqué à la lecture],confirmee,,planete,planete,oui,oui
 BDM SDMX,010594398,Prévalence du surpoids en grande section de maternelle,ecartee_par_filtre,dernière période 2013 < 2020,sante,,a_verifier,
 BDM SDMX,010594395,Prévalence du surpoids chez les adultes - hommes,ecartee_par_filtre,dernière période 2019 < 2020,sante,,a_verifier,
-BDM SDMX,010594404,Prévalence du surpoids en 3ème,confirmee,"moins de 10 points depuis 2000 (2, première période 2017)",sante,sante,oui,non
+BDM SDMX,010594404,Prévalence du surpoids en 3ème,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2017 à 2022 (D17),sante,sante,oui,a_verifier
 BDM SDMX,010594410,Prévalence de l’obésité en grande section de maternelle,ecartee_par_filtre,dernière période 2013 < 2020,sante,,a_verifier,
 BDM SDMX,010594399,Prévalence du surpoids en grande section de maternelle par groupe socioprofessionnel des parents - cadres et professions intellectuelles supérieures,ecartee_par_filtre,dernière période 2013 < 2020,sante,,a_verifier,
 BDM SDMX,010594401,"Prévalence du surpoids en grande section de maternelle par groupe socioprofessionnel des parents - agriculteurs, artisans, commerçants et chefs d’entreprise",ecartee_par_filtre,dernière période 2013 < 2020,sante,,a_verifier,
@@ -449,7 +449,7 @@ BDM SDMX,010594402,Prévalence du surpoids en grande section de maternelle par g
 BDM SDMX,010594406,Prévalence du surpoids en 3ème par groupe socioprofessionnel des parents – professions intermédiaires,ecartee_par_filtre,dernière période 2017 < 2020,sante,,a_verifier,
 BDM SDMX,010594420,Prévalence de l’obésité en 3ème par groupe socioprofessionnel des parents - employés,ecartee_par_filtre,dernière période 2017 < 2020,sante,,a_verifier,
 BDM SDMX,010594412,Prévalence de l’obésité en grande section de maternelle par groupe socioprofessionnel des parents – professions intermédiaires,ecartee_par_filtre,dernière période 2013 < 2020,sante,,a_verifier,
-BDM SDMX,010594416,Prévalence de l’obésité en 3ème,confirmee,"moins de 10 points depuis 2000 (2, première période 2017)",sante,sante,oui,non
+BDM SDMX,010594416,Prévalence de l’obésité en 3ème,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2017 à 2022 (D17),sante,sante,oui,a_verifier
 BDM SDMX,010594409,Prévalence du surpoids en 3ème par groupe socioprofessionnel des parents – ouvriers,ecartee_par_filtre,dernière période 2017 < 2020,sante,,a_verifier,
 BDM SDMX,010594422,Diversité moyenne des cultures arables,confirmee,,planete,education,non,oui
 BDM SDMX,010594397,Prévalence de l’obésité chez les adultes - hommes,ecartee_par_filtre,dernière période 2019 < 2020,sante,,a_verifier,
@@ -502,48 +502,48 @@ BDM SDMX,010596863,Aide publique au développement (APD) bilatérale brute - Par
 BDM SDMX,010596859,Aide publique au développement (APD) totale équivalent-don - Distribution de l’APD totale équivalent-don par zone géographique : Vers l’Afrique subsaharienne,confirmee,"hors champ : aide publique au développement (moyen de politique internationale, hors champ v1)",planete,niveau_de_vie,non,non
 BDM SDMX,010596867,Aide publique au développement (APD) bilatérale brute - Par secteur : Agriculture (Code secteur CAD : 311),confirmee,"hors champ : aide publique au développement (moyen de politique internationale, hors champ v1)",planete,niveau_de_vie,non,non
 BDM SDMX,010596289,Taux de boisement,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé),planete,planete,oui,a_verifier
-BDM SDMX,010596303,Etat de conservation des habitats naturels - Défavorable mauvais,confirmee,"moins de 10 points depuis 2000 (3, première période 2012)",planete,planete,oui,non
+BDM SDMX,010596303,Etat de conservation des habitats naturels - Défavorable mauvais,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; série pluriannuelle ou irrégulière : 3 valeurs de 2012 à 2024 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596722,Evolution des populations d’oiseaux communs spécialistes : espèces des milieux agricoles,confirmee,,planete,planete,oui,oui
 BDM SDMX,010761994,Surfaces terrestres françaises classées en aires terrestres protégées en Outre-mer (objectif 30 % SNAP),ecartee_par_filtre,zone non nationale (DOM-COM),planete,,non,
 BDM SDMX,010761991,Surfaces terrestres françaises classées en aires terrestres protégées en France (protection forte),confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),planete,planete,oui,a_verifier
 BDM SDMX,010596708,Evolution des populations d’oiseaux communs spécialistes : espèces spécialistes,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596710,Nombre d’espèces parmi les plus envahissantes au monde en Outre-Mer,ecartee_par_filtre,zone non nationale (DOM-COM),planete,,non,
 BDM SDMX,010596422,Part des terres françaises en aires terrestres protégées en métropole,confirmee,première période 2011 > 2010 : raccordement à prévoir (D16),planete,planete,oui,a_verifier
-BDM SDMX,010596301,Etat de conservation des habitats naturels - Favorable,confirmee,"moins de 10 points depuis 2000 (3, première période 2012)",planete,planete,oui,non
+BDM SDMX,010596301,Etat de conservation des habitats naturels - Favorable,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; série pluriannuelle ou irrégulière : 3 valeurs de 2012 à 2024 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596429,Part des terres françaises en aires terrestres protégées en Outre-Mer,ecartee_par_filtre,zone non nationale (DOM-COM),planete,,non,
 BDM SDMX,010596723,Evolution des populations d’oiseaux communs spécialistes : espèces des milieux forestiers,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596322,Surface totale du territoire occupé par les écosystèmes peu anthropisés - France Métropolitaine,ecartee_par_filtre,dernière période 2018 < 2020,planete,,a_verifier,
 BDM SDMX,010761992,Part des terres françaises en aires terrestres protégées en France (protection forte),confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),planete,planete,oui,a_verifier
 BDM SDMX,010761997,Part des terres françaises en aires terrestres protégées en Outre-mer (objectif 30 % SNAP),ecartee_par_filtre,zone non nationale (DOM-COM),planete,,non,
 BDM SDMX,010596724,Evolution des populations d’oiseaux communs spécialistes : espèces des milieux bâtis,confirmee,,planete,planete,oui,oui
-BDM SDMX,010596304,Etat de conservation des habitats naturels - Défavorable inconnu,confirmee,"moins de 10 points depuis 2000 (3, première période 2012)",planete,planete,oui,non
+BDM SDMX,010596304,Etat de conservation des habitats naturels - Défavorable inconnu,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; série pluriannuelle ou irrégulière : 3 valeurs de 2012 à 2024 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596421,Surfaces terrestres françaises classées en aires terrestres protégées en Outre-Mer,ecartee_par_filtre,zone non nationale (DOM-COM),planete,,non,
 BDM SDMX,010761993,Surfaces terrestres françaises classées en aires terrestres protégées en France métropolitaine (objectif 30 % SNAP),confirmee,"moins de 10 points depuis 2000 (5, première période 2020)",planete,planete,oui,non
 BDM SDMX,010596420,Surfaces terrestres françaises classées en aires terrestres protégées en métropole,confirmee,première période 2012 > 2010 : raccordement à prévoir (D16),planete,planete,oui,a_verifier
 BDM SDMX,010596323,Surface totale du territoire occupé par les écosystèmes peu anthropisés - DOM,ecartee_par_filtre,zone non nationale (DOM),planete,,non,
 BDM SDMX,010761995,Surfaces terrestres françaises classées en aires terrestres protégées en France (objectif 30 % SNAP),confirmee,"moins de 10 points depuis 2000 (8, première période 2017)",planete,planete,oui,non
-BDM SDMX,010596532,Nombre moyen d’espèces exotiques envahissantes en métropole,confirmee,"moins de 10 points depuis 2000 (2, première période 2014)",planete,planete,oui,non
+BDM SDMX,010596532,Nombre moyen d’espèces exotiques envahissantes en métropole,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2014 à 2024 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010761996,Part des terres françaises en aires terrestres protégées en France métropolitaine (objectif 30 % SNAP),confirmee,"moins de 10 points depuis 2000 (5, première période 2020)",planete,planete,oui,non
 BDM SDMX,010596709,Evolution des populations d’oiseaux communs spécialistes : espèces généralistes,confirmee,,planete,planete,oui,oui
-BDM SDMX,010596302,Etat de conservation des habitats naturels - Défavorable inadéquat,confirmee,"moins de 10 points depuis 2000 (3, première période 2012)",planete,planete,oui,non
+BDM SDMX,010596302,Etat de conservation des habitats naturels - Défavorable inadéquat,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé) ; série pluriannuelle ou irrégulière : 3 valeurs de 2012 à 2024 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010761998,Part des terres françaises en aires terrestres protégées en France (objectif 30 % SNAP),confirmee,"moins de 10 points depuis 2000 (8, première période 2017)",planete,planete,oui,non
 BDM SDMX,010596221,Répartition de l'emploi par piliers de l'économie circulaire - Extraction/Exploitation et achats durables - Série arrêtée,ecartee_par_filtre,dernière période 2013 < 2020,planete,,non,
 BDM SDMX,010596225,Répartition de l'emploi par piliers de l'économie circulaire - Pilier « connexe » - Série arrêtée,ecartee_par_filtre,dernière période 2013 < 2020,planete,,non,
 BDM SDMX,010600334,Production de déchets dangereux et non dangereux,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010605035,Traitement des déchets dangereux et non dangereux par type de matière - Caoutchouc,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
-BDM SDMX,010596196,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Consommation à domicile,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
+BDM SDMX,010596196,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Consommation à domicile,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596191,Empreinte matières par habitant (RMC/hab),confirmee,,planete,planete,oui,oui
-BDM SDMX,010596197,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Consommation en restauration collective et commerciale,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
+BDM SDMX,010596197,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Consommation en restauration collective et commerciale,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596199,Production de déchets dangereux,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596223,Répartition de l'emploi par piliers de l'économie circulaire - Allongement de la durée d'usage,confirmee,,planete,planete,oui,oui
-BDM SDMX,010596198,Pertes et gaspillages alimentaires - Total,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
+BDM SDMX,010596198,Pertes et gaspillages alimentaires - Total,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596224,Répartition de l'emploi par piliers de l'économie circulaire - Recyclage et valorisation des déchets,confirmee,,planete,planete,oui,oui
-BDM SDMX,010596193,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Production,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
+BDM SDMX,010596193,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Production,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596222,Répartition de l'emploi par piliers de l'économie circulaire - Consommation responsable,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596206,Traitement des déchets dangereux et non dangereux par type de matière - Bois,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596208,Traitement des déchets dangereux et non dangereux par type de matière - Métalliques,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596188,Consommation intérieure de matière par habitant (DMC/hab),confirmee,,planete,niveau_de_vie,oui,oui
-BDM SDMX,010596195,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Distribution,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
+BDM SDMX,010596195,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Distribution,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596209,Traitement des déchets dangereux et non dangereux - Total,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596205,Traitement des déchets dangereux et non dangereux par type de matière - Papiers et cartons,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596187,Consommation intérieure de matière (DMC),confirmee,,planete,niveau_de_vie,oui,oui
@@ -553,10 +553,10 @@ BDM SDMX,010600336,Nombre d’emplois de l'économie circulaire,confirmee,,plane
 BDM SDMX,010754820,Répartition de l'emploi par piliers de l'économie circulaire - Approvisionnement durable,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596189,Productivité matières (PIB/DMC),confirmee,,planete,niveau_de_vie,oui,oui
 BDM SDMX,010600335,Traitement des déchets dangereux et non dangereux par type de matière - Plastique,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
-BDM SDMX,010751597,Nombre de projets d'écologie industrielle et territoriale,confirmee,"moins de 10 points depuis 2000 (7, première période 2013)",planete,planete,non,non
+BDM SDMX,010751597,Nombre de projets d'écologie industrielle et territoriale,confirmee,série pluriannuelle ou irrégulière : 7 valeurs de 2013 à 2023 (D17),planete,planete,non,a_verifier
 BDM SDMX,010596190,Empreinte matières (RMC),confirmee,,planete,planete,oui,oui
 BDM SDMX,010596207,Traitement des déchets dangereux et non dangereux par type de matière - Végétaux,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
-BDM SDMX,010596194,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Transformation,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
+BDM SDMX,010596194,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Transformation,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596192,Empreinte matières par unité de PIB (PIB/RMC),confirmee,,planete,niveau_de_vie,oui,oui
 BDM SDMX,010596809,Évolution de l’état des récifs coralliens dans les Outre-mer français - en augmentation - Série arrêtée,ecartee_par_filtre,zone non nationale (D99),planete,,non,
 BDM SDMX,010596810,Évolution de l’état des récifs coralliens dans les Outre-mer français - stable - Série arrêtée,ecartee_par_filtre,zone non nationale (D99),planete,,non,
@@ -582,7 +582,7 @@ BDM SDMX,010596790,Nombre de rapports POLREP (Pollution Report) confirmé par le
 BDM SDMX,010754814,État des récifs coralliens par aires de répartition : Pacifique et îles Éparses - dégradé,ecartee_par_filtre,zone non nationale (PACIFIQUE-ILES-EPARSES),planete,,non,
 BDM SDMX,010754810,"Évolution de l’état des récifs coralliens par aire de répartition : Antilles, Mayotte, La Réunion - stable",ecartee_par_filtre,zone non nationale (ANTILLES-MAYOTTE-REUNION),planete,,non,
 BDM SDMX,010754807,Évolution de l’état des récifs coralliens par aire de répartition : Pacifique - stable,ecartee_par_filtre,zone non nationale (PACIFIQUE),planete,,non,
-BDM SDMX,011800532,Déchets marins en France métropolitaine - Micro-déchets flottants en mer (densité moyenne) en Mer Méditerranée,confirmee,"moins de 10 points depuis 2000 (3, première période 2015)",planete,planete,oui,non
+BDM SDMX,011800532,Déchets marins en France métropolitaine - Micro-déchets flottants en mer (densité moyenne) en Mer Méditerranée,confirmee,série pluriannuelle ou irrégulière : 3 valeurs de 2015 à 2020 (D17) ; ventilation : territoire,planete,planete,oui,a_verifier
 BDM SDMX,010596774,Flux à la mer d'azote lié aux nitrates par façade - Total,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596784,Flux à la mer de phosphore par façade - Atlantique,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596783,Flux à la mer de phosphore par façade - Manche-Mer du Nord,confirmee,,planete,planete,oui,oui
@@ -593,57 +593,57 @@ BDM SDMX,010754811,"Évolution de l’état des récifs coralliens par aire de r
 BDM SDMX,010754818,"État des récifs coralliens par aires de répartition : Antilles, Mayotte, La Réunion - dégradé",ecartee_par_filtre,zone non nationale (ANTILLES-MAYOTTE-REUNION),planete,,non,
 BDM SDMX,010596833,État d'avancement d'une approche écosystémique - Outre Mer (4 façades) - Façades ne disposant d'aucun document stratégique,ecartee_par_filtre,zone non nationale (D99),planete,,non,
 BDM SDMX,010754819,"État des récifs coralliens par aires de répartition : Antilles, Mayotte, La Réunion - très dégradé",ecartee_par_filtre,zone non nationale (ANTILLES-MAYOTTE-REUNION),planete,,non,
-BDM SDMX,010596767,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Mauvais,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010596767,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Mauvais,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,011800527,Déchets marins en France métropolitaine - Macro-déchets sur les fonds marins (densité moyenne) dans le Golfe de Gascogne,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,011800525,Déchets marins en France métropolitaine - Macro-déchets sur les fonds marins (densité moyenne) en Manche - Mer du Nord,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,011800523,Déchets marins en France métropolitaine - Macro-déchets flottants (densité moyenne) dans le Golfe de Gascogne,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,011800707,Déchets marins en France métropolitaine - Macro-déchets sur le littoral (abondance médiane) - Ensemble des façades,confirmee,"moins de 10 points depuis 2000 (6, première période 2019)",planete,planete,oui,non
 BDM SDMX,011800522,Déchets marins en France métropolitaine - Macro-déchets flottants (densité moyenne) en Mer celtique,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
-BDM SDMX,010596770,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Moyen,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010596770,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Moyen,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,011800524,Déchets marins en France métropolitaine - Macro-déchets flottants (densité moyenne) en Mer Méditerranée,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,011800518,Déchets marins en France métropolitaine - Macro-déchets sur le littoral (abondance médiane) en Mer celtique,confirmee,"moins de 10 points depuis 2000 (6, première période 2019)",planete,planete,oui,non
-BDM SDMX,010596772,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Médiocre,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010596768,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Inconnu,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010596772,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Médiocre,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010596768,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Inconnu,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,011800530,Déchets marins en France métropolitaine - Micro-déchets flottants en mer (densité moyenne) en Mer celtique,confirmee,"moins de 10 points depuis 2000 (3, première période 2018)",planete,planete,oui,non
 BDM SDMX,011800531,Déchets marins en France métropolitaine - Micro-déchets flottants en mer (densité moyenne) dans le Golfe de Gascogne,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
-BDM SDMX,010596766,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Moyen,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010596766,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Moyen,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,011800519,Déchets marins en France métropolitaine - Macro-déchets sur le littoral (abondance médiane) dans le Golfe de Gascogne,confirmee,"moins de 10 points depuis 2000 (6, première période 2019)",planete,planete,oui,non
 BDM SDMX,011800521,Déchets marins en France métropolitaine - Macro-déchets flottants (densité moyenne) en Manche - Mer du Nord,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,011800520,Déchets marins en France métropolitaine - Macro-déchets sur le littoral (abondance médiane) en Mer Méditerranée,confirmee,"moins de 10 points depuis 2000 (6, première période 2019)",planete,planete,oui,non
 BDM SDMX,011800526,Déchets marins en France métropolitaine - Macro-déchets sur les fonds marins (densité moyenne) en Mer celtique,confirmee,"moins de 10 points depuis 2000 (5, première période 2015)",planete,planete,oui,non
-BDM SDMX,010596769,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Très bon et bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010596765,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Très bon et bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010596771,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Mauvais,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010596769,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Très bon et bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010596765,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau de transition : Très bon et bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010596771,Qualité ou potentiel écologique des masses d’eau littorales - masses d'eau côtières : Mauvais,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,011800517,Déchets marins en France métropolitaine - Macro-déchets sur le littoral (abondance médiane) en Manche - Mer du Nord,confirmee,"moins de 10 points depuis 2000 (6, première période 2019)",planete,planete,oui,non
 BDM SDMX,011800528,Déchets marins en France métropolitaine - Macro-déchets sur les fonds marins (densité moyenne) en Mer Méditerranée,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,011800529,Déchets marins en France métropolitaine - Micro-déchets flottants en mer (densité moyenne) en Manche - Mer du Nord,confirmee,"moins de 10 points depuis 2000 (6, première période 2015)",planete,planete,oui,non
 BDM SDMX,010600313,Prélèvements en eau selon les grands usages - Alimentation des canaux,confirmee,,planete,planete,oui,oui
 BDM SDMX,010600312,Proportion de la population desservie par une eau non conforme pour la physico-chimie,confirmee,,planete,logement_cadre_vie,oui,oui
-BDM SDMX,010595395,Proportion des masses d’eau souterraine selon l’état chimique – Mauvais,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595395,Proportion des masses d’eau souterraine selon l’état chimique – Mauvais,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595608,Prélèvements en eau selon les grands usages - Eau potable,confirmee,,planete,planete,oui,oui
-BDM SDMX,010595385,Proportion des masses d’eau de surface selon l’état écologique - Très bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595385,Proportion des masses d’eau de surface selon l’état écologique - Très bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595808,Prélèvements en eau selon les grands usages – Usage agricole dont irrigation,confirmee,,planete,planete,oui,oui
-BDM SDMX,010595391,Proportion des masses d’eau de surface selon l’état chimique – Bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595391,Proportion des masses d’eau de surface selon l’état chimique – Bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595909,Proportion de services publics locaux de l'eau ayant des Commissions Consultatives (CCSPL) parmi ceux ayant obligation légale d'en disposer,confirmee,première période 2013 > 2010 : raccordement à prévoir (D16),planete,planete,non,a_verifier
-BDM SDMX,010595389,Proportion des masses d’eau de surface selon l’état écologique – Mauvais,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595389,Proportion des masses d’eau de surface selon l’état écologique – Mauvais,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595405,Taux de conformité des dispositifs d’assainissement non collectif,confirmee,,planete,logement_cadre_vie,oui,oui
-BDM SDMX,010595388,Proportion des masses d’eau de surface selon l’état écologique – Médiocre,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595388,Proportion des masses d’eau de surface selon l’état écologique – Médiocre,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010600315,Prélèvements en eau – Total,confirmee,,planete,planete,oui,oui
 BDM SDMX,010595406,Rendement des réseaux d'eau potable,confirmee,,planete,planete,oui,oui
-BDM SDMX,010595393,Proportion des masses d’eau de surface selon l’état chimique – Indéterminé,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595393,Proportion des masses d’eau de surface selon l’état chimique – Indéterminé,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010600314,Proportion de la population desservie par une eau non conforme pour la micro-biologie,confirmee,,planete,logement_cadre_vie,oui,oui
-BDM SDMX,010595386,Proportion des masses d’eau de surface selon l’état écologique – Bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010595397,Proportion des masses d’eau souterraine selon l’état quantitatif – Bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010595394,Proportion des masses d’eau souterraine selon l’état chimique – Bon,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010595398,Proportion des masses d’eau souterraine selon l’état quantitatif – Mauvais,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595386,Proportion des masses d’eau de surface selon l’état écologique – Bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010595397,Proportion des masses d’eau souterraine selon l’état quantitatif – Bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010595394,Proportion des masses d’eau souterraine selon l’état chimique – Bon,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010595398,Proportion des masses d’eau souterraine selon l’état quantitatif – Mauvais,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595400,Taux de conformité de la performance des ouvrages d’assainissement collectif,confirmee,,planete,logement_cadre_vie,oui,oui
-BDM SDMX,010595392,Proportion des masses d’eau de surface selon l’état chimique – Mauvais,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595392,Proportion des masses d’eau de surface selon l’état chimique – Mauvais,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595708,Prélèvements en eau selon les grands usages - Usage industriel,confirmee,,planete,planete,oui,oui
-BDM SDMX,010595399,Proportion des masses d’eau souterraine selon l’état quantitatif – Indéterminé,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010595390,Proportion des masses d’eau de surface selon l’état écologique – Indéterminé,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
-BDM SDMX,010595396,Proportion des masses d’eau souterraine selon l’état chimique – Indéterminé,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595399,Proportion des masses d’eau souterraine selon l’état quantitatif – Indéterminé,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010595390,Proportion des masses d’eau de surface selon l’état écologique – Indéterminé,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
+BDM SDMX,010595396,Proportion des masses d’eau souterraine selon l’état chimique – Indéterminé,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010595908,Prélèvements en eau selon les grands usages - Refroidissement des centrales électriques,confirmee,,planete,planete,oui,oui
-BDM SDMX,010595387,Proportion des masses d’eau de surface selon l’état écologique – Moyen,confirmee,"moins de 10 points depuis 2000 (4, première période 2013)",planete,planete,oui,non
+BDM SDMX,010595387,Proportion des masses d’eau de surface selon l’état écologique – Moyen,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2013 à 2021 (D17),planete,planete,oui,a_verifier
 BDM SDMX,000067681,Démographie - Taux de mortalité infantile pour 1000 enfants nés vivants - France métropolitaine,confirmee,,sante,sante,oui,oui
 BDM SDMX,001641594,Démographie - Taux de mortalité infantile pour 1000 enfants nés vivants - France (inclus Mayotte à partir de 2014),confirmee,,sante,sante,oui,oui
 BDM SDMX,001686946,Espérance de vie à la naissance - Hommes - France métropolitaine,confirmee,ventilation : sexe,sante,sante,oui,oui
@@ -684,18 +684,18 @@ BDM SDMX,001742934,Taux de pauvreté : 30 à 39 ans - France métropolitaine,eca
 BDM SDMX,001741516,Revenu disponible par unité de consommation : 9e décile - France métropolitaine,ecartee_par_filtre,dernière mise à jour 2018-06-19 antérieure à 2020,niveau_de_vie,,oui,
 BDM SDMX,001741897,Revenu disponible par unité de consommation : Médiane - France métropolitaine,ecartee_par_filtre,dernière mise à jour 2018-06-19 antérieure à 2020,niveau_de_vie,,non,
 BDM SDMX,001742024,Revenu disponible par unité de consommation : 1er décile - France métropolitaine,ecartee_par_filtre,dernière mise à jour 2018-06-19 antérieure à 2020,niveau_de_vie,,oui,
-BDM SDMX,001777817,Taux de participation au 1er tour des élections régionales - France,confirmee,"moins de 10 points depuis 2000 (2, première période 2015)",democratie,democratie,oui,non
-BDM SDMX,001777818,Taux de participation au 1er tour des élections régionales - France métropolitaine,confirmee,"moins de 10 points depuis 2000 (2, première période 2015)",democratie,democratie,oui,non
-BDM SDMX,001778052,Taux de participation au 1er tour des élections départementales - France,confirmee,"moins de 10 points depuis 2000 (2, première période 2015)",democratie,democratie,oui,non
-BDM SDMX,001778053,Taux de participation au 1er tour des élections départementales - France métropolitaine,confirmee,"moins de 10 points depuis 2000 (2, première période 2015)",democratie,democratie,oui,non
-BDM SDMX,001778185,Taux de participation aux élections européennes (tour unique) - France,confirmee,"moins de 10 points depuis 2000 (3, première période 2014)",democratie,democratie,oui,non
-BDM SDMX,001778186,Taux de participation aux élections européennes (tour unique) - France métropolitaine,confirmee,"moins de 10 points depuis 2000 (3, première période 2014)",democratie,democratie,oui,non
-BDM SDMX,001778320,Taux de participation au 1er tour des élections présidentielles - France,confirmee,"moins de 10 points depuis 2000 (3, première période 2012)",democratie,democratie,oui,non
-BDM SDMX,001778322,Taux de participation au 1er tour des élections présidentielles - France métropolitaine,confirmee,"moins de 10 points depuis 2000 (3, première période 2012)",democratie,democratie,oui,non
-BDM SDMX,001778442,Taux de participation au 1er tour des élections législatives - France,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",democratie,democratie,oui,non
-BDM SDMX,001778443,Taux de participation au 1er tour des élections législatives - France métropolitaine,confirmee,"moins de 10 points depuis 2000 (4, première période 2012)",democratie,democratie,oui,non
-BDM SDMX,001785274,Taux de participation au 1er tour des élections municipales - France,confirmee,"moins de 10 points depuis 2000 (2, première période 2014)",democratie,democratie,oui,non
-BDM SDMX,001785275,Taux de participation au 1er tour des élections municipales - France métropolitaine,confirmee,"moins de 10 points depuis 2000 (2, première période 2014)",democratie,democratie,oui,non
+BDM SDMX,001777817,Taux de participation au 1er tour des élections régionales - France,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2015 à 2021 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001777818,Taux de participation au 1er tour des élections régionales - France métropolitaine,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2015 à 2021 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778052,Taux de participation au 1er tour des élections départementales - France,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2015 à 2021 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778053,Taux de participation au 1er tour des élections départementales - France métropolitaine,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2015 à 2021 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778185,Taux de participation aux élections européennes (tour unique) - France,confirmee,série pluriannuelle ou irrégulière : 3 valeurs de 2014 à 2024 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778186,Taux de participation aux élections européennes (tour unique) - France métropolitaine,confirmee,série pluriannuelle ou irrégulière : 3 valeurs de 2014 à 2024 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778320,Taux de participation au 1er tour des élections présidentielles - France,confirmee,série pluriannuelle ou irrégulière : 3 valeurs de 2012 à 2022 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778322,Taux de participation au 1er tour des élections présidentielles - France métropolitaine,confirmee,série pluriannuelle ou irrégulière : 3 valeurs de 2012 à 2022 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778442,Taux de participation au 1er tour des élections législatives - France,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2024 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001778443,Taux de participation au 1er tour des élections législatives - France métropolitaine,confirmee,série pluriannuelle ou irrégulière : 4 valeurs de 2012 à 2024 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001785274,Taux de participation au 1er tour des élections municipales - France,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2014 à 2020 (D17),democratie,democratie,oui,a_verifier
+BDM SDMX,001785275,Taux de participation au 1er tour des élections municipales - France métropolitaine,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2014 à 2020 (D17),democratie,democratie,oui,a_verifier
 BDM SDMX,001756938,Taux de bénéficiaires du minimum vieillesse pour 1 000 personnes de 60 ans ou plus - France hors Mayotte,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé),niveau_de_vie,niveau_de_vie,a_verifier,a_verifier
 BDM SDMX,001756939,Taux de bénéficiaires du minimum vieillesse pour 1 000 personnes de 60 ans ou plus - France métropolitaine,confirmee,dimension déduite du regroupement (aucun mot-clé dans le libellé),niveau_de_vie,niveau_de_vie,a_verifier,a_verifier
 BDM SDMX,001760901,Bénéficiaires d'allocations familiales - Taux d'allocataires pour 1 000 ménages - France,ecartee_par_filtre,dernière période 2018 < 2020,niveau_de_vie,,non,
@@ -872,12 +872,12 @@ Melodi,DS_DERA_PUBLIC_SERIES_LONGUES,Séries longues des salaires dans la foncti
 Melodi,DS_DEVDUR,Indicateurs d'objectifs de développement durable,jeu_absent,jeu absent du catalogue Melodi actuel,non_classe,,a_verifier,
 Melodi,DS_EACEI,Enquête annuelle sur les consommations d'énergie dans l'industrie (EACEI),jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté enquête auprès des entreprises,planete,,non,
 Melodi,DS_ELECTORAL,Caractéristiques du corps électoral,jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : traité,democratie,,a_verifier,
-Melodi,DS_ENQPAT_DET,Détention et montants du patrimoine des ménages,confirmee,4009 séries au catalogue ; jeu : traité,egalites,,a_verifier,a_verifier=49;non=3960
+Melodi,DS_ENQPAT_DET,Détention et montants du patrimoine des ménages,confirmee,4009 séries au catalogue ; jeu : traité,egalites,,a_verifier,a_verifier=136;non=3873
 Melodi,DS_ENQPAT_TRANSM,Transmissions intergénérationnelles,jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté un seul millésime (2024) : pas de série temporelle,egalites,,non,
 Melodi,DS_ERFS_CHAMP_CONST_SL,Indicateurs de pauvreté et de niveau de vie (séries longues à champ constant),jeu_absent,jeu absent du catalogue Melodi actuel,niveau_de_vie,,oui,
 Melodi,DS_ERFS_INDIVIDU_SL,Indicateurs de niveau de vie et de pauvreté (pour les individus en série longue),jeu_absent,jeu absent du catalogue Melodi actuel,niveau_de_vie,,oui,
 Melodi,DS_ERFS_MENAGE_SL,Indicateurs de revenu disponible et de pauvreté (pour les ménages en série longue),jeu_absent,jeu absent du catalogue Melodi actuel,niveau_de_vie,,oui,
-Melodi,DS_ESTIMATION_POPULATION,Les estimations de population,confirmee,243 séries au catalogue ; jeu : traité,contexte,,non,non=243
+Melodi,DS_ESTIMATION_POPULATION,Les estimations de population,confirmee,230 séries au catalogue ; jeu : traité,contexte,,non,non=230
 Melodi,DS_FECONDITE,Fécondité,jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : traité,contexte,,non,
 Melodi,DS_FILOSOFI_CC,"Principaux indicateurs sur la pauvreté en 2021 : niveau de vie, taux de pauvreté, part des ménages imposés et décomposition du revenu disponible",jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : écarté un seul millésime (2023) : pas de série temporelle,niveau_de_vie,,non,
 Melodi,DS_MORTALITE,Mortalité,jeu_sans_serie_au_catalogue,0 séries au catalogue ; jeu : traité,sante,,oui,
@@ -900,7 +900,7 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=1.i5,Nombre de situations de surendettement soum
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i1,Renoncement à consommer des protéines pour raisons financières,confirmee,1 série(s) du catalogue correspondent,niveau_de_vie,niveau_de_vie,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2a,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),non_retrouvee,traité,sante,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2b,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),non_retrouvee,traité,sante,,non,
-Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2c,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),confirmee,1 série(s) du catalogue correspondent,sante,sante,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2c,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),confirmee,1 série(s) du catalogue correspondent,sante,sante,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i3,Diversité moyenne des cultures arables,confirmee,1 série(s) du catalogue correspondent,planete,education,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i4a,Part de l'agriculture biologique dans la SAU (correspondance inférée),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i4b,Nombre d'exploitations de haute valeur environnementale (correspondance inférée),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
@@ -920,12 +920,12 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i6,Personnes tuées par accident de la route,c
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i7a,Renoncement aux soins pour raisons financières - examen ou traitement médical,confirmee,2 série(s) du catalogue correspondent,sante,sante,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i7b,Renoncement aux soins pour raisons financières - soins dentaires,confirmee,2 série(s) du catalogue correspondent,sante,sante,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=3.i8,Prévalence du tabagisme quotidien,confirmee,21 série(s) du catalogue correspondent,sante,sante,a_verifier,a_verifier
-Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i1a,"Compétences en lecture et mathématiques (PISA, PIRLS, TIMSS) (correspondance non précisée)",confirmee,1 série(s) du catalogue correspondent,education,education,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i1b,"Compétences en lecture et mathématiques (PISA, PIRLS, TIMSS) (correspondance non précisée)",confirmee,1 série(s) du catalogue correspondent,education,education,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i2,Taux de participation à une formation formelle et non formelle,confirmee,3 série(s) du catalogue correspondent,education,education,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i3,Compétences numériques,confirmee,4 série(s) du catalogue correspondent,education,education,a_verifier,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i1a,"Compétences en lecture et mathématiques (PISA, PIRLS, TIMSS) (correspondance non précisée)",confirmee,1 série(s) du catalogue correspondent,education,education,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i1b,"Compétences en lecture et mathématiques (PISA, PIRLS, TIMSS) (correspondance non précisée)",confirmee,1 série(s) du catalogue correspondent,education,education,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i2,Taux de participation à une formation formelle et non formelle,confirmee,3 série(s) du catalogue correspondent,education,education,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i3,Compétences numériques,confirmee,4 série(s) du catalogue correspondent,education,education,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i4,Taux de sorties précoces du système scolaire des 18-24 ans,confirmee,3 série(s) du catalogue correspondent,education,education,oui,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i5,Écoles et établissements engagés dans une démarche de développement durable (E3D),confirmee,1 série(s) du catalogue correspondent,education,education,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=4.i5,Écoles et établissements engagés dans une démarche de développement durable (E3D),confirmee,1 série(s) du catalogue correspondent,education,education,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i1,Écart de rémunération entre femmes et hommes,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i2,Part des femmes dans les disciplines scientifiques à l'université,confirmee,4 série(s) du catalogue correspondent,egalites,egalites,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i3a,Victimes de violences intrafamiliales physiques et/ou sexuelles (nombre),confirmee,1 série(s) du catalogue correspondent,securite_confiance,securite_confiance,a_verifier,oui
@@ -936,10 +936,10 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i5a,Part des femmes parmi les cadres dirigeant
 Melodi,DS_NAT_SDG?INDICATOR_SDG=5.i5b,Part des femmes parmi les cadres dirigeants dans la fonction publique,confirmee,4 série(s) du catalogue correspondent,egalites,egalites,a_verifier,a_verifier;oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i1a,Eau distribuée non conforme pour la microbiologie,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i1b,Eau distribuée non conforme pour la physico-chimie,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2a,Proportion des masses d'eau de surface selon l'état écologique,confirmee,6 série(s) du catalogue correspondent,planete,planete,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2b,Proportion des masses d'eau de surface selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2c,Proportion des masses d'eau souterraine selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2d,Proportion des masses d'eau souterraine selon l'état quantitatif,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2a,Proportion des masses d'eau de surface selon l'état écologique,confirmee,6 série(s) du catalogue correspondent,planete,planete,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2b,Proportion des masses d'eau de surface selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2c,Proportion des masses d'eau souterraine selon l'état chimique,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i2d,Proportion des masses d'eau souterraine selon l'état quantitatif,confirmee,3 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i3a,Taux de conformité des dispositifs d'assainissement non collectif,confirmee,1 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i3b,Taux de conformité de la performance des ouvrages d'assainissement collectif,confirmee,1 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=6.i4,Rendement des réseaux d'eau potable,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
@@ -959,7 +959,7 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i3,Taux de sous-emploi,confirmee,6 série(s) d
 Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i4,Jeunes de 15-24 ans ne travaillant pas et ne suivant ni études ni formation,confirmee,1 série(s) du catalogue correspondent,travail,travail,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i5,Accidents du travail (taux de fréquence),non_retrouvee,traité,travail,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i6,Intensité du travail,non_retrouvee,traité,travail,,non,
-Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i7,Proportion d'adultes possédant un compte bancaire (Findex),confirmee,1 série(s) du catalogue correspondent,niveau_de_vie,niveau_de_vie,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i7,Proportion d'adultes possédant un compte bancaire (Findex),confirmee,1 série(s) du catalogue correspondent,niveau_de_vie,niveau_de_vie,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=8.i8,Emplois aidés dans l'emploi des jeunes,confirmee,7 série(s) du catalogue correspondent,travail,travail,non,a_verifier;non;oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=9.i1a,Part modale des transports de marchandises (correspondance inférée),confirmee,2 série(s) du catalogue correspondent,planete,logement_cadre_vie,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=9.i1b,Part modale des transports collectifs de voyageurs (hors aérien) (correspondance inférée),confirmee,3 série(s) du catalogue correspondent,logement_cadre_vie,planete,a_verifier,oui
@@ -974,10 +974,10 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i1,Part du niveau de vie perçu par les 40 % 
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i2a,Rapport interquintile des masses de niveau de vie (100-S80)/S20,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i2b,Rapport interdécile D9/D1,confirmee,1 série(s) du catalogue correspondent,egalites,egalites,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i3a,Inégalités de patrimoine brut hors reste (indice de Gini),confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,a_verifier
-Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i3b,Inégalités de patrimoine brut (indice de Gini),confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i3b,Inégalités de patrimoine brut (indice de Gini),confirmee,1 série(s) du catalogue correspondent,egalites,egalites,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i4,Part des individus disposant du haut débit à leur domicile,confirmee,3 série(s) du catalogue correspondent,education,education,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=10.i5,Personnes s'étant connectées à internet au cours des trois derniers mois,confirmee,8 série(s) du catalogue correspondent,education,education,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i1,Taux de surpeuplement des logements,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i1,Taux de surpeuplement des logements,confirmee,1 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i2a,Surface des sols artificialisés (correspondance probable),confirmee,2 série(s) du catalogue correspondent,planete,planete,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i2b,Proportion de sols artificialisés (correspondance probable),non_retrouvee,traité,planete,,oui,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i3a,"Déchets municipaux (recyclage, traitement par habitant) (correspondance non précisée)",confirmee,6 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
@@ -990,7 +990,7 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1c,Productivité matières (PIB/DMC),confirm
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i2a,Empreinte matières (RMC),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i2b,Empreinte matières par habitant (RMC/hab),confirmee,1 série(s) du catalogue correspondent,planete,planete,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i2c,Productivité matières (PIB/RMC),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i3,Pertes et gaspillages alimentaires,confirmee,6 série(s) du catalogue correspondent,planete,planete,a_verifier,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i3,Pertes et gaspillages alimentaires,confirmee,6 série(s) du catalogue correspondent,planete,planete,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i4a,Production de déchets dangereux,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i4b,Traitement de déchets dangereux,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i5a,Traitement des déchets dangereux et non dangereux,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
@@ -998,7 +998,7 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i5b,Production de déchets dangereux et non d
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i5c,Traitement des déchets par type de matières,confirmee,7 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i6a,Nombre d'emplois de l'économie circulaire,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i6b,Répartition de l'emploi par piliers de l'économie circulaire,confirmee,4 série(s) du catalogue correspondent,planete,travail,non,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i7,Projets d'écologie industrielle et territoriale,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i7,Projets d'écologie industrielle et territoriale,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i1a,Nombre d'évènements naturels très graves,confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i1b,Nombre d'évènements naturels très graves - dont inondations,confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i2,Communes avec un plan de prévention des risques naturels approuvé,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
@@ -1008,12 +1008,12 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i4a,Émissions françaises de gaz à effet de
 Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i4b,Émissions de GES par secteur hors UTCATF,confirmee,7 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i4c,Émissions de GES par habitant hors UTCATF,confirmee,1 série(s) du catalogue correspondent,planete,planete,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=13.i5,Indemnisations versées au titre des catastrophes naturelles,confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i1a,Qualité écologique des masses d'eau de transition,confirmee,4 série(s) du catalogue correspondent,planete,planete,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i1b,Qualité écologique des masses d'eau côtières,confirmee,4 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i1a,Qualité écologique des masses d'eau de transition,confirmee,4 série(s) du catalogue correspondent,planete,planete,non,a_verifier
+Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i1b,Qualité écologique des masses d'eau côtières,confirmee,4 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i2a,Macro-déchets sur le littoral (correspondance inférée),confirmee,5 série(s) du catalogue correspondent,planete,planete,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i2b,Macro-déchets flottants (correspondance inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,non,non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i2c,Macro-déchets sur les fonds marins (correspondance inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,non,non
-Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i2d,Micro-déchets flottants en mer (correspondance inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i2d,Micro-déchets flottants en mer (correspondance inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,non,a_verifier;non
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i3a,Flux à la mer d'azote lié aux nitrates (correspondance inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i3b,Flux à la mer de phosphore (correspondance inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i4,Rapports POLREP confirmés,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
@@ -1025,14 +1025,14 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i6a,Approche écosystémique (métropole),con
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i6b,Approche écosystémique (outre-mer),confirmee,3 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=14.i7,Aires marines protégées,confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i1,Taux de boisement (moyenne sur 5 ans),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,a_verifier
-Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i2,État de conservation des habitats naturels,confirmee,4 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i2,État de conservation des habitats naturels,confirmee,4 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i3a,Écosystèmes peu anthropisés (métropole),non_retrouvee,traité,planete,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i3b,Écosystèmes peu anthropisés (DROM),non_retrouvee,traité,planete,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i5a,Aires terrestres protégées - protection forte (attribution inférée),confirmee,2 série(s) du catalogue correspondent,planete,planete,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i5b,Aires terrestres protégées - objectif 30 % SNAP (attribution inférée),confirmee,2 série(s) du catalogue correspondent,planete,planete,a_verifier,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i6a,Populations d'oiseaux communs spécialistes (attribution inférée),confirmee,4 série(s) du catalogue correspondent,planete,planete,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i6b,Populations d'oiseaux communs (attribution inférée),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i7a,Espèces exotiques envahissantes (métropole),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,non
+Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i7a,Espèces exotiques envahissantes (métropole),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=15.i7b,Espèces exotiques envahissantes (outre-mer),non_retrouvee,traité,planete,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=16.i1,Nombre d'homicides,confirmee,1 série(s) du catalogue correspondent,securite_confiance,securite_confiance,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=16.i2,Proportion des adultes victimes de violences physiques et/ou sexuelles,confirmee,8 série(s) du catalogue correspondent,securite_confiance,securite_confiance,a_verifier,oui

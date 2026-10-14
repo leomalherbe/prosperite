@@ -72,7 +72,7 @@ DEMANDES-EMPLOIS-NATIONALES,Demandeurs d'emploi inscrits à Pôle Emploi,2833,28
 DETTE-NEGOCIABLE-ETAT,Dette négociable de l’État,17,17,17,0,0,17,,1,0,,https://www.insee.fr/fr/statistiques/series/102765717
 DETTE-TRIM-APU,Dette des administrations publiques au sens de Maastricht,19,19,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102770522
 DETTE-TRIM-APU-2014,Dette des administrations publiques au sens de Maastricht,21,21,21,0,0,21,2020,1,0,,https://www.insee.fr/fr/statistiques/series/113008288
-DETTE-TRIM-APU-2020,Dette des administrations publiques au sens de Maastricht,21,21,21,17,0,4,,1,0,,https://www.insee.fr/fr/statistiques/series/117863316
+DETTE-TRIM-APU-2020,Dette des administrations publiques au sens de Maastricht,21,21,21,4,0,17,,1,0,,https://www.insee.fr/fr/statistiques/series/117863316
 EMP,,1,1,0,0,0,0,,1,0,,https://www.insee.fr
 EMPLOI-BIT-TRIM,"Activité, emploi, sous-emploi au sens du BIT et autres indicateurs",365,365,245,121,1,123,,1,0,,https://www.insee.fr/fr/statistiques/series/102412458
 EMPLOI-SALARIE-TRIM-NATIONAL,Estimations d'emploi salarié par secteur d'activité,80,80,79,0,0,79,,1,0,,https://www.insee.fr/fr/statistiques/series/103167884
@@ -82,7 +82,7 @@ ENQ-CONJ-COM-DET,Conjoncture dans le commerce de détail et le commerce et la r�
 ENQ-CONJ-COM-GROS,Conjoncture dans le commerce de gros,786,786,786,0,0,786,,1,0,,https://www.insee.fr/fr/statistiques/series/102392971
 ENQ-CONJ-IND-BAT,Conjoncture dans l'industrie du bâtiment,213,213,205,0,0,205,,1,0,,https://www.insee.fr/fr/statistiques/series/102411948
 ENQ-CONJ-INV-IND,Investissements dans l’industrie,337,337,336,0,0,336,,1,0,,https://www.insee.fr/fr/statistiques/series/102410343
-ENQ-CONJ-MENAGES,Conjoncture auprès des ménages,34,34,32,32,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102414547
+ENQ-CONJ-MENAGES,Conjoncture auprès des ménages,34,34,32,22,0,10,,1,0,,https://www.insee.fr/fr/statistiques/series/102414547
 ENQ-CONJ-PROMO-IMMO,Conjoncture dans la promotion immobilière,180,180,96,0,0,96,,1,0,,https://www.insee.fr/fr/statistiques/series/102874954
 ENQ-CONJ-SERV,Conjoncture dans les services,1514,1514,1458,0,0,1458,,1,0,,https://www.insee.fr/fr/statistiques/series/102391902
 ENQ-CONJ-TP,Conjoncture dans les travaux publics,41,41,39,0,0,39,,1,0,,https://www.insee.fr/fr/statistiques/series/102874976
@@ -116,7 +116,7 @@ ILC-ILAT-ICC,Indices pour la révision d’un bail commercial ou professionnel,6
 IND,,4,1,0,0,0,0,,1,0,,https://www.insee.fr
 INDEX-BT-TP-DIV-ANCIENNES-BASES,"Index bâtiment, travaux publics et divers de la construction",68,68,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/105239213
 INDEX-BT-TP-DIV-IM-2010,"Index bâtiment, travaux publics et divers de la construction",84,84,84,0,0,84,,1,0,,https://www.insee.fr/fr/statistiques/series/103173847
-INDICE-TRAITEMENT-FP,Indice de traitement brut dans la fonction publique de l'État,8,8,8,0,8,0,,1,0,,https://www.insee.fr/fr/statistiques/series/103212731
+INDICE-TRAITEMENT-FP,Indice de traitement brut dans la fonction publique de l'État,8,8,8,0,0,8,,1,0,,https://www.insee.fr/fr/statistiques/series/103212731
 INDICES_LOYERS,Indices des loyers - Base 2019,66,66,18,6,0,12,,1,0,,https://www.insee.fr/fr/statistiques/series/113554489
 IP-PROD-CONS-N-HAB-2010,Indice des prix de production de la construction neuve à usage d’habitation,1,1,0,0,0,0,2021,1,0,,https://www.insee.fr/fr/statistiques/series/103212779
 IP-PROD-CONS-N-HAB-2015,Indice des prix de production de la construction neuve à usage d'habitation,1,1,1,0,0,1,2021,1,0,,https://www.insee.fr/fr/statistiques/series/110551853
@@ -161,9 +161,9 @@ MARIAGES-NUPTIALITE-PACS-DIVORCES,"Mariages, nuptialité et Pactes civils de sol
 MET,,3,1,0,0,0,0,,1,0,,https://www.insee.fr
 NAG_GNA,,21,1,0,0,0,0,,1,0,,https://www.insee.fr
 NAISSANCES-FECONDITE,Naissances et fécondité,841,841,34,0,0,34,,1,0,,https://www.insee.fr/fr/statistiques/series/102928992
-ODD-CONSOMMATION-PRODUCTION,Objectif de développement durable n°12 : Consommation et production responsable,31,31,29,11,11,7,,1,0,,https://www.insee.fr/fr/statistiques/series/112956139
-ODD-EAU-PROPRE-ASSAINISSEMENT,Objectif de développement durable n°6 : Eau propre et assainissement,27,27,27,11,1,15,,1,0,,https://www.insee.fr/fr/statistiques/series/112885917
-ODD-EDUCATION-QUALITE,Objectif de développement durable n°4 : Education de qualité,29,29,27,3,0,24,,1,0,,https://www.insee.fr/fr/statistiques/series/112895221
+ODD-CONSOMMATION-PRODUCTION,Objectif de développement durable n°12 : Consommation et production responsable,31,31,29,11,18,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112956139
+ODD-EAU-PROPRE-ASSAINISSEMENT,Objectif de développement durable n°6 : Eau propre et assainissement,27,27,27,11,16,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112885917
+ODD-EDUCATION-QUALITE,Objectif de développement durable n°4 : Education de qualité,29,29,27,3,24,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112895221
 ODD-EGALITE-SEXES,Objectif de développement durable n°5 : Égalité entre les sexes,14,14,14,13,1,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112895257
 ODD-ENERGIE-PROPRE-COUT-ABORDABLE,Objectif de développement durable n°7 : Energie propre et d'un coût abordable,32,32,28,8,9,11,,1,0,,https://www.insee.fr/fr/statistiques/series/112952823
 ODD-ERADICATION-PAUVRETE,Objectif de développement durable n°1 : Éradication de la pauvreté,65,65,60,49,2,9,,1,0,,https://www.insee.fr/fr/statistiques/series/112814407
@@ -171,13 +171,13 @@ ODD-INFRASTRUCTURES-RESILIENTES-INNOVATION,Objectif de développement durable n�
 ODD-LUTTE-CHANGEMENT-CLIMATIQUE,Objectif de développement durable n°13 : Mesures relatives à la lutte contre le changement climatique,38,38,38,37,1,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112938957
 ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES,"Objectif de développement durable n°16 : Paix, justice et institutions efficaces",15,15,15,10,5,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112953165
 ODD-PARTENARIATS-REALISATION,Objectif de développement durable n°17 : Partenariats pour la réalisation des objectifs,27,27,27,4,0,23,,1,0,,https://www.insee.fr/fr/statistiques/series/113011849
-ODD-REDUCTION-INEGALITES,Objectif de développement durable n°10 : Réduction des inégalités,25,25,23,21,1,1,,1,0,,https://www.insee.fr/fr/statistiques/series/112937561
+ODD-REDUCTION-INEGALITES,Objectif de développement durable n°10 : Réduction des inégalités,25,25,23,21,2,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112937561
 ODD-SANTE-BIEN-ETRE,Objectif de développement durable n°3 : Santé et bien-être,95,95,93,36,30,27,,1,0,,https://www.insee.fr/fr/statistiques/series/112821568
-ODD-SECURITE-ALIMENTAIRE-AGRICULTURE-DURABLE,Objectif de développement durable n°2 : Sécurité alimentaire et agriculture durable,60,60,32,22,4,6,,1,0,,https://www.insee.fr/fr/statistiques/series/112885951
-ODD-TRAVAIL-CROISSANCE,Objectif de développement durable n°8 : Travail décent et croissance durable,57,57,35,31,2,2,,1,0,,https://www.insee.fr/fr/statistiques/series/112940505
-ODD-VIE-AQUATIQUE,Objectif de développement durable n°14 : Vie aquatique,59,59,38,9,4,25,,1,0,,https://www.insee.fr/fr/statistiques/series/112971339
-ODD-VIE-TERRESTRE,Objectif de développement durable n°15 : Vie terrestre,26,26,19,5,5,9,,1,0,,https://www.insee.fr/fr/statistiques/series/112963796
-ODD-VILLES-COMMUNAUTES-DURABLES,Objectif de développement durable n°11 : Villes et communautés durables,19,19,19,18,0,1,,1,0,,https://www.insee.fr/fr/statistiques/series/112958508
+ODD-SECURITE-ALIMENTAIRE-AGRICULTURE-DURABLE,Objectif de développement durable n°2 : Sécurité alimentaire et agriculture durable,60,60,32,22,6,4,,1,0,,https://www.insee.fr/fr/statistiques/series/112885951
+ODD-TRAVAIL-CROISSANCE,Objectif de développement durable n°8 : Travail décent et croissance durable,57,57,35,31,3,1,,1,0,,https://www.insee.fr/fr/statistiques/series/112940505
+ODD-VIE-AQUATIQUE,Objectif de développement durable n°14 : Vie aquatique,59,59,38,9,13,16,,1,0,,https://www.insee.fr/fr/statistiques/series/112971339
+ODD-VIE-TERRESTRE,Objectif de développement durable n°15 : Vie terrestre,26,26,19,5,10,4,,1,0,,https://www.insee.fr/fr/statistiques/series/112963796
+ODD-VILLES-COMMUNAUTES-DURABLES,Objectif de développement durable n°11 : Villes et communautés durables,19,19,19,18,1,0,,1,0,,https://www.insee.fr/fr/statistiques/series/112958508
 PARC-LOGEMENTS,Estimations annuelles du parc de logements (EAPL),32,32,32,32,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/103212763
 POP,,1,1,0,0,0,0,,1,0,,https://www.insee.fr
 POPULATION-STRUCTURE,Population et structure de la population,50,50,50,0,0,50,,1,0,,https://www.insee.fr/fr/statistiques/series/103088458
@@ -185,10 +185,10 @@ PPI,,1,1,0,0,0,0,,1,0,,https://www.insee.fr
 REVALORISATION-PENSIONS,IPC utilisés par la calculette de revalorisation des pensions alimentaires,4,4,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102848871
 SALAIRES-ACEMO,Indices trimestriels de salaires dans le secteur privé - Résultats par secteur d’activité,129,129,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102730868
 SALAIRES-ACEMO-2017,Indices trimestriels de salaires dans le secteur privé,129,129,129,0,0,129,,1,0,,https://www.insee.fr/fr/statistiques/series/110333801
-SALAIRES-ANNUELS,Salaires annuels,246,246,116,116,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/103212723
+SALAIRES-ANNUELS,Salaires annuels,246,246,116,112,0,4,,1,0,,https://www.insee.fr/fr/statistiques/series/103212723
 SERIES_BDM,Séries chronologiques de la BDM,187146,,0,0,0,0,,,,,https://www.insee.fr/fr/statistiques?categorie=10
 SERIES_LOYERS,Variation des loyers,8,8,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/113554460
-SMIC-COTISATIONS,Taux de cotisations et salaires minima garantis,74,74,40,4,4,32,,1,0,,https://www.insee.fr/fr/statistiques/series/103212739
+SMIC-COTISATIONS,Taux de cotisations et salaires minima garantis,74,74,40,4,2,34,,1,0,,https://www.insee.fr/fr/statistiques/series/103212739
 STES_COLLECT,,93,1,0,0,0,0,,1,0,,https://www.insee.fr
 SUIVI-DEMANDE-TOURISTIQUE,Suivi de la demande touristique,55,55,55,0,0,55,,1,0,,https://www.insee.fr/fr/statistiques/series/116147542
 TAUX-CHOMAGE,Taux de chômage localisé,115,115,2,1,1,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102760732
@@ -199,8 +199,8 @@ TCRED-AGRICULTURE-PROD-VEG,TCRED - Productions végétales,456,456,0,0,0,0,,1,0,
 TCRED-CONDITIONSDEVIE-APE-PEC,TCRED - Affaires pénales et population écrouée,704,704,12,0,8,4,,1,0,,https://www.insee.fr/fr/statistiques/series/102811607
 TCRED-CONDITIONSDEVIE-LICENCES-SPORTIVES,TCRED - Licences sportives de la fédération française,936,936,16,0,16,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102411040
 TCRED-CONDITIONSDEVIE-LOG-SOC,TCRED - Logements sociaux,468,468,8,0,8,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102824185
-TCRED-CONDITIONSDEVIE-NMU-MOH,TCRED - Nombre de musées de France et de monuments historiques,232,232,4,0,0,4,,1,0,,https://www.insee.fr/fr/statistiques/series/102796439
-TCRED-CONDITIONSDEVIE-TXP-CDE,TCRED - Taux de participation au 1er tour des différentes élections,701,701,12,0,0,12,,1,0,,https://www.insee.fr/fr/statistiques/series/102799549
+TCRED-CONDITIONSDEVIE-NMU-MOH,TCRED - Nombre de musées de France et de monuments historiques,232,232,4,0,4,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102796439
+TCRED-CONDITIONSDEVIE-TXP-CDE,TCRED - Taux de participation au 1er tour des différentes élections,701,701,12,0,12,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102799549
 TCRED-CONSTRUCTION-LOCAUX,TCRED - Construction de locaux,1170,1170,20,0,0,20,,1,0,,https://www.insee.fr/fr/statistiques/series/105017420
 TCRED-ECONOMIE-DEP-REC,TCRED - Dépenses et recettes des régions,120,120,6,0,2,4,,1,0,,https://www.insee.fr/fr/statistiques/series/102408368
 TCRED-ECONOMIE-PIB-REG,TCRED - Produits intérieurs bruts,66,66,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102774338
@@ -211,11 +211,11 @@ TCRED-EDUCATION-APP-JEN,TCRED - Apprentissage chez les jeunes,351,351,6,0,6,0,,1
 TCRED-EDUCATION-DIPLOMES-TECHNIQUES,"TCRED - Réussite aux Brevet, CAP, BEP et BTS",936,936,16,0,4,12,,1,0,,https://www.insee.fr/fr/statistiques/series/102375849
 TCRED-EDUCATION-EFF-PSS,TCRED - Effectifs scolaires du premier et second degré et du supérieur,1212,1212,16,0,12,4,,1,0,,https://www.insee.fr/fr/statistiques/series/102378636
 TCRED-EDUCATION-ENS-PSD,TCRED - Enseignants du premier et du second degrés,808,808,8,0,8,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102391087
-TCRED-EDUCATION-ETAB-SCOL,TCRED - Établissements scolaires du premier et second degré,1521,1521,26,26,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102374311
+TCRED-EDUCATION-ETAB-SCOL,TCRED - Établissements scolaires du premier et second degré,1521,1521,26,0,0,26,,1,0,,https://www.insee.fr/fr/statistiques/series/102374311
 TCRED-EDUCATION-REU-BAC,TCRED - Réussite aux différents baccalauréats,936,936,16,0,16,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102383597
 TCRED-EMPLOI-31-DECEMBRE,TCRED - Emploi au 31 décembre,2070,2070,36,0,0,36,,50,9,,https://www.insee.fr/fr/statistiques/series/102738928
-TCRED-EMPLOI-31-DECEMBRE-BASE-2018,TCRED - Emploi au 31 décembre - Base 2018,2070,2070,36,26,10,0,,49,9,,https://www.insee.fr/fr/statistiques/series/116333758
-TCRED-EMPLOI-SALARIE-TRIM,Estimations d'emploi salarié par secteur d'activité,1473,1473,54,54,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102759768
+TCRED-EMPLOI-31-DECEMBRE-BASE-2018,TCRED - Emploi au 31 décembre - Base 2018,2070,2070,36,6,0,30,,49,9,,https://www.insee.fr/fr/statistiques/series/116333758
+TCRED-EMPLOI-SALARIE-TRIM,Estimations d'emploi salarié par secteur d'activité,1473,1473,54,12,0,42,,1,0,,https://www.insee.fr/fr/statistiques/series/102759768
 TCRED-ENTREPRISES-EFF-OPE,TCRED - Effectifs de recherche et développement des organismes publics et des entreprises,288,288,16,0,0,16,,1,0,,https://www.insee.fr/fr/statistiques/series/102860791
 TCRED-ENTREPRISES-EMP-SAL-AN-TAILLE,TCRED - Effectif salarié par catégorie d'entreprise,200,200,0,0,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102860783
 TCRED-ESTIMATIONS-POPULATION,TCRED - Estimations de population,819,819,14,0,0,14,,1,0,,https://www.insee.fr/fr/statistiques/series/102775111
@@ -230,15 +230,15 @@ TCRED-SANTE-CAUSES-DECES,TCRED - Causes de décès,2096,2096,36,0,0,36,,41,8,,ht
 TCRED-SANTE-EQUIP-HOP,TCRED - Équipements hospitaliers,351,351,6,6,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102322690
 TCRED-SANTE-EQUIP-SPE,TCRED - Ratio d'équipement par spécialité,351,351,6,0,6,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102327278
 TCRED-SANTE-PERSONNELS,TCRED - Personnels de santé,1989,1989,16,0,13,3,,1,0,,https://www.insee.fr/fr/statistiques/series/102322864
-TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN,TCRED - Immatriculations de véhicules neufs,1872,1872,32,2,30,0,,1,0,,https://www.insee.fr/fr/statistiques/series/105004667
-TCRED-SERVICES-TOURISME-TRANSPORTS-RR,TCRED - Réseau routier,333,333,3,0,3,0,,1,0,,https://www.insee.fr/fr/statistiques/series/105004901
-TCRED-TRAVAIL-EMPLOI-EFF-FP-RATIO,TCRED - Effectifs de la fonction publique,817,817,14,14,0,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102875603
-TCRED-TRAVAIL-EMPLOI-EFF-FPE,TCRED - Effectifs de la fonction publique de l'État,1053,1053,18,0,18,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102875755
-TCRED-TRAVAIL-EMPLOI-EFF-FPH,TCRED - Effectifs de la fonction publique hospitalière,351,351,6,0,6,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102877794
-TCRED-TRAVAIL-EMPLOI-EFF-FPT,TCRED - Effectifs de la fonction publique territoriale,351,351,6,0,6,0,,1,0,,https://www.insee.fr/fr/statistiques/series/102877806
+TCRED-SERVICES-TOURISME-TRANSPORTS-IMM-VN,TCRED - Immatriculations de véhicules neufs,1872,1872,32,0,10,22,,1,0,,https://www.insee.fr/fr/statistiques/series/105004667
+TCRED-SERVICES-TOURISME-TRANSPORTS-RR,TCRED - Réseau routier,333,333,3,0,0,3,,1,0,,https://www.insee.fr/fr/statistiques/series/105004901
+TCRED-TRAVAIL-EMPLOI-EFF-FP-RATIO,TCRED - Effectifs de la fonction publique,817,817,14,0,0,14,,1,0,,https://www.insee.fr/fr/statistiques/series/102875603
+TCRED-TRAVAIL-EMPLOI-EFF-FPE,TCRED - Effectifs de la fonction publique de l'État,1053,1053,18,0,0,18,,1,0,,https://www.insee.fr/fr/statistiques/series/102875755
+TCRED-TRAVAIL-EMPLOI-EFF-FPH,TCRED - Effectifs de la fonction publique hospitalière,351,351,6,0,0,6,,1,0,,https://www.insee.fr/fr/statistiques/series/102877794
+TCRED-TRAVAIL-EMPLOI-EFF-FPT,TCRED - Effectifs de la fonction publique territoriale,351,351,6,0,0,6,,1,0,,https://www.insee.fr/fr/statistiques/series/102877806
 TCRED-TRAVAIL-EMPLOI-TCHOMA-SA,"TCRED - Taux de chômage localisés par sexe et âge, en moyenne annuelle",702,702,12,6,6,0,,1,0,,https://www.insee.fr/fr/statistiques/series/105003011
 TOURISME-FRANCE-METHODE-REDRESSEMENT-2019,"Fréquentation touristique (nuitées, arrivées)",3944,3944,424,0,0,424,,29,2,,https://www.insee.fr/fr/statistiques/series/113990189
-TRANSPORTS,"Transports de marchandises, voyageurs et autres indicateurs - Immatriculations de véhicules",97,97,76,3,16,57,,1,0,,https://www.insee.fr/fr/statistiques/series/102775080
+TRANSPORTS,"Transports de marchandises, voyageurs et autres indicateurs - Immatriculations de véhicules",97,97,76,0,0,76,,1,0,,https://www.insee.fr/fr/statistiques/series/102775080
 UEM,,1,1,0,0,0,0,,1,0,,https://www.insee.fr
 VOV-2015-COMMERCE,Volumes des ventes dans le commerce,232,232,232,0,0,232,2021,1,0,,https://www.insee.fr/fr/statistiques/series/109939810
 VOV-2021-COMMERCE,Volumes des ventes dans le commerce,232,232,232,0,0,232,,1,0,,https://www.insee.fr/fr/statistiques/series/117645881

@@ -1,5 +1,5 @@
 {
- "date": "2026-10-14T00:11:23+00:00",
+ "date": "2026-10-14T00:14:39+00:00",
  "bdm": {
   "dataflows": 226,
   "series_listees": 182082,
@@ -113,16 +113,16 @@
    "traité": 61
   },
   "series_nationales": 66287,
-  "catalogue": 52262,
+  "catalogue": 52283,
   "exclusions": {
    "aucune valeur numérique": 9992,
    "dernière période < 2020 ou inconnue": 2196,
-   "fréquence Q non retenue": 1698,
+   "comptes trimestriels : doublon des dataflows BDM CNT-2020-*": 1677,
    "fréquence D non retenue": 105,
    "zone non nationale (périmètre partiel, ex. hors Île-de-France)": 34
   },
   "candidat": {
-   "non": 45666,
+   "non": 45687,
    "oui": 5413,
    "a_verifier": 1183
   }
@@ -149,7 +149,7 @@
    "oui": 28
   },
   "liens_bien_etre": {
-   "non": 1337,
+   "non": 1358,
    "oui": 405
   },
   "logement_cadre_vie": {

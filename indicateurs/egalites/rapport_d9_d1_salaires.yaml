@@ -1,0 +1,164 @@
+id: rapport_d9_d1_salaires
+libelle: Rapport interdécile D9/D1 des salaires nets en équivalent temps plein (secteur privé)
+dimension: egalites
+sous_theme: inégalités de salaire
+famille: inegalite_salaires
+variante_principale: oui
+definition: Rapport entre le salaire net annuel en équivalent temps plein au-dessus duquel se situent les 10 % les
+  mieux payés et celui au-dessous duquel se situent les 10 % les moins payés, salariés du secteur privé (base Tous
+  salariés ; France métropolitaine jusqu'en 1999, France ensuite).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, salaires du secteur privé (base Tous salariés)
+source_serie_id: '010752357'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010752357
+url_page: https://www.insee.fr/fr/statistiques/serie/010752357
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM99_FR00
+eligibilite_longlist: oui
+ligne_id: bdm-001254
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Série annuelle de l'INSEE sans lacune de 1996 à 2024 (2,99 en 2000, 3,06 en 2020, 2,91 en
+  2024), plus longue et plus fréquente que la série de l'OCDE (2_8_VER, 10 valeurs).
+note_pertinence: 'La dispersion des salaires est l''une des sources des inégalités de niveau de vie, mais elle ne
+  tient compte ni du temps de travail réel ni de la redistribution : c''est un indicateur distinct du S80/S20. Elle
+  bouge peu (entre 2,87 et 3,06 depuis 1996), ce qui appellera des bornes resserrées.'
+variantes:
+- serie_id: '010752355'
+  source: INSEE BDM
+  nature: ventilation par sexe
+  ligne_id: bdm-001252
+  eligible: oui
+- serie_id: '010752356'
+  source: INSEE BDM
+  nature: ventilation par sexe
+  ligne_id: bdm-001253
+  eligible: oui
+- serie_id: '010752360'
+  source: INSEE BDM
+  nature: décomposition D9/D5 (haut) et D5/D1 (bas), avec ventilations par sexe
+  ligne_id: bdm-001257
+  eligible: oui
+- serie_id: '010752358'
+  source: INSEE BDM
+  nature: décomposition D9/D5 (haut) et D5/D1 (bas), avec ventilations par sexe
+  ligne_id: bdm-001255
+  eligible: oui
+- serie_id: '010752359'
+  source: INSEE BDM
+  nature: décomposition D9/D5 (haut) et D5/D1 (bas), avec ventilations par sexe
+  ligne_id: bdm-001256
+  eligible: oui
+- serie_id: '010752363'
+  source: INSEE BDM
+  nature: décomposition D9/D5 (haut) et D5/D1 (bas), avec ventilations par sexe
+  ligne_id: bdm-001260
+  eligible: oui
+- serie_id: '010752361'
+  source: INSEE BDM
+  nature: décomposition D9/D5 (haut) et D5/D1 (bas), avec ventilations par sexe
+  ligne_id: bdm-001258
+  eligible: oui
+- serie_id: '010752362'
+  source: INSEE BDM
+  nature: décomposition D9/D5 (haut) et D5/D1 (bas), avec ventilations par sexe
+  ligne_id: bdm-001259
+  eligible: oui
+- serie_id: '010752411'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001308
+  eligible: oui
+- serie_id: '010752409'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001306
+  eligible: oui
+- serie_id: '010752410'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001307
+  eligible: oui
+- serie_id: '010752414'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001311
+  eligible: oui
+- serie_id: '010752412'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001309
+  eligible: oui
+- serie_id: '010752413'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001310
+  eligible: oui
+- serie_id: '010752417'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001314
+  eligible: oui
+- serie_id: '010752415'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001312
+  eligible: oui
+- serie_id: '010752416'
+  source: INSEE BDM
+  nature: mêmes rapports pour les postes à temps complet (séries depuis 1950), avec ventilations par sexe
+  ligne_id: bdm-001313
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_8_VER UNIT_MEASURE=FCTR_D1_EARN
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'OCDE How''s Life 2_8_VER : D9/D1 des salaires à temps plein (2006-2024, 10 valeurs)'
+  ligne_id: m04-000017
+  eligible: oui
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=PARTMS_10&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE : part de la masse salariale du privé perçue par les 10 %, 1 %, 0,1 % et 0,01 % les mieux rémunérés
+    (1967-2024 ; long-list travail)'
+  ligne_id: melodi-004059
+  eligible: oui
+  longlist: travail
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=PARTMS_100&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE : part de la masse salariale du privé perçue par les 10 %, 1 %, 0,1 % et 0,01 % les mieux rémunérés
+    (1967-2024 ; long-list travail)'
+  ligne_id: melodi-004060
+  eligible: oui
+  longlist: travail
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=PARTMS_1000&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE : part de la masse salariale du privé perçue par les 10 %, 1 %, 0,1 % et 0,01 % les mieux rémunérés
+    (1967-2024 ; long-list travail)'
+  ligne_id: melodi-004061
+  eligible: oui
+  longlist: travail
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=PARTMS_10000&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE : part de la masse salariale du privé perçue par les 10 %, 1 %, 0,1 % et 0,01 % les mieux rémunérés
+    (1967-2024 ; long-list travail)'
+  ligne_id: melodi-004062
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_secteur_prive
+- champ_geo_1999_2000
+notes: 'Code géographique BDM FM99_FR00 : France métropolitaine jusqu''en 1999, France entière ensuite.'

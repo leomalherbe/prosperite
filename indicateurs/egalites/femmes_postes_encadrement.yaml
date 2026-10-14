@@ -1,0 +1,42 @@
+id: femmes_postes_encadrement
+libelle: Part des femmes dans les postes d'encadrement (définition OIT)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_postes_direction
+variante_principale: non
+definition: Part des femmes parmi les personnes occupant un poste d'encadrement au sens de l'Organisation internationale
+  du travail (groupe 1 de la classification des professions), d'après l'enquête Emploi (indicateur ODD 5.5.2).
+unite: '% des postes d''encadrement'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (relais OIT)
+source_jeu: Measuring distance to the SDG targets (ODD 5)
+source_serie_id: 'odd_5 : 5_5_2_IC_GEN_MGTL.Y_GE15.F._T._T._T.PT_W'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_5,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000143
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Définition plus large que celle de l'INSEE mais série plus longue (2000-2023, 24 points),
+  proposée comme alternative dans la famille femmes_postes_direction.
+note_pertinence: 'L''encadrement au sens de l''OIT inclut des postes intermédiaires : la part des femmes y est plus
+  élevée que parmi les cadres dirigeants. Elle couvre les années 2000-2009 absentes de l''indicateur de l''INSEE.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

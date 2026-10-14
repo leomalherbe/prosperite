@@ -1,0 +1,50 @@
+id: egalite_libertes_groupes_sociaux
+libelle: Égalité des libertés civiles entre groupes sociaux (V-Dem)
+dimension: egalites
+sous_theme: discriminations
+famille: egalite_libertes_groupes_sociaux
+variante_principale: oui
+definition: Score du projet V-Dem mesurant si les libertés civiles sont garanties de la même façon à tous les groupes
+  sociaux (origine, religion, langue…), estimé à partir d'évaluations d'experts.
+unite: score (échelle du modèle de mesure V-Dem)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: V-Dem (relais Our World in Data)
+source_jeu: equality-of-civil-liberties-across-social-groups-score (OWID)
+source_serie_id: https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-score.csv (colonne
+  socgr_civ_libs_vdem__estimate_best)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-score.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-score
+frequence: annuelle
+premiere_annee: 1900
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000175
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Score presque constant (14 valeurs distinctes sur 237 ans, 1,042 en 2025), sans borne fixe
+  et fondé sur des évaluations d'experts, donc peu informatif sur l'évolution des discriminations en France.
+note_pertinence: Les discriminations selon l'origine sont un contenu explicite de la dimension (A8), mais aucune
+  série annuelle mesurée n'est au catalogue. Les candidats à cataloguer sont la question CS16_1 du baromètre DREES
+  (témoins de discriminations liées à l'origine, 2015-2025) et les enquêtes TeO et du Défenseur des droits (non
+  annuelles).
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite
+- niveau_2
+- evaluation_experts
+- peu_variable
+notes: 'Série OWID : 1789-2025 ; premiere_annee ramenée à 1900, borne basse du contrôle de scripts/verifier_fiches.py
+  (1900-2100), à élargir.'

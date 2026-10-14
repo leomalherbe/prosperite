@@ -1,0 +1,53 @@
+id: ecart_reussite_bac_origine_sociale
+libelle: Écart de réussite au baccalauréat entre enfants de cadres et enfants d'ouvriers
+dimension: egalites
+sous_theme: origine sociale et mobilité
+famille: ecart_reussite_origine_sociale
+variante_principale: oui
+definition: Taux de réussite au baccalauréat (toutes séries) des candidats dont le parent de référence est cadre
+  ou de profession intellectuelle supérieure moins celui des candidats enfants d'ouvriers, en points (DEPP).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DEPP
+source_jeu: fr-en-reussite-au-baccalaureat-origine-sociale (data.education.gouv.fr)
+source_serie_id: 'fr-en-reussite-au-baccalaureat-origine-sociale : Cadres, professions intellectuelles supérieures
+  - Ouvriers (pourcentage_d_admis_au_baccalaureat)'
+composantes:
+- https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale
+  (Cadres, professions intellectuelles supérieures#pourcentage_d_admis_au_baccalaureat)
+- https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale
+  (Ouvriers#pourcentage_d_admis_au_baccalaureat)
+formule: taux de réussite des enfants de cadres - taux de réussite des enfants d'ouvriers
+source_niveau: 1
+url_api: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale/exports/csv?delimiter=%3B
+url_page: https://data.education.gouv.fr/explore/dataset/fr-en-reussite-au-baccalaureat-origine-sociale/
+frequence: annuelle
+premiere_annee: 1997
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000389 ; m04-000388
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de la réussite scolaire selon l'origine sociale, contenu explicite de
+  la dimension, calculée sur deux séries de la DEPP de 1997 à 2025 (97,1 % contre 87,5 % en 2025).
+note_pertinence: 'L''écart mesure la réussite des candidats qui se présentent, pas l''accès au baccalauréat : les
+  enfants d''ouvriers se présentent moins souvent et davantage en voie professionnelle. Il vaut 9,6 points en 2025.
+  Les réformes du baccalauréat (2021) peuvent affecter la comparabilité.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- champ_candidats
+- reforme_bac_2021
+notes: Valeurs 2025 lues dans l'extrait du robot M04 (docs/sources/series/depp__fr-en-reussite-au-baccalaureat-origine-sociale.csv).

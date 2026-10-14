@@ -1,0 +1,60 @@
+id: coefficient_inegalite_humaine
+libelle: Coefficient d'inégalité humaine (PNUD)
+dimension: egalites
+sous_theme: inégalités multidimensionnelles
+famille: coefficient_inegalite_humaine
+variante_principale: oui
+definition: Moyenne arithmétique des inégalités (indices d'Atkinson) de durée de vie, d'éducation et de revenu calculées
+  par le PNUD, en pourcentage.
+unite: '%'
+sens: bas
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: PNUD (Rapport sur le développement humain 2025)
+source_jeu: séries composites, colonnes coef_ineq_<année>
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes coef_ineq_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2023
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000350
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seul indicateur synthétique des inégalités dans plusieurs domaines, composite admis par D18,
+  annuel de 2010 à 2023 (14 points ; 8,97 en 2023).
+note_pertinence: 'Le coefficient réunit les inégalités de santé, d''éducation et de revenu ; la composante revenu
+  (17,9 en 2023) pèse le plus. Il recoupe les fiches de la famille inegalite_revenu et inegalite_esperance_vie :
+  double compte à traiter au contrôle de redondance (D18).'
+variantes:
+- serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
+    ihdi_<année>)
+  source: PNUD — Rapport sur le développement humain 2025 (séries composites)
+  nature: IDH ajusté aux inégalités et composante éducation (indice d'Atkinson) du même rapport du PNUD
+  ligne_id: m04-000349
+  eligible: oui
+- serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
+    ineq_edu_<année>)
+  source: PNUD — Rapport sur le développement humain 2025 (séries composites)
+  nature: IDH ajusté aux inégalités et composante éducation (indice d'Atkinson) du même rapport du PNUD
+  ligne_id: m04-000353
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite
+- niveau_2
+- url_par_edition
+- licence_a_confirmer
+notes: ''

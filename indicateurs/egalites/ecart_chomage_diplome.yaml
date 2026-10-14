@@ -1,0 +1,55 @@
+id: ecart_chomage_diplome
+libelle: Écart de taux de chômage entre peu diplômés et diplômés du supérieur
+dimension: egalites
+sous_theme: origine sociale et mobilité
+famille: ecart_chomage_diplome
+variante_principale: oui
+definition: Taux de chômage des 15-74 ans dont le diplôme le plus élevé est au plus le premier cycle du secondaire
+  (CITE 0-2) moins celui des diplômés du supérieur (CITE 5-8), en points (enquête Forces de travail, jeu Eurostat
+  lfsa_urgaed).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_urgaed (taux de chômage par niveau d'éducation)
+source_serie_id: lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&geo=FR
+formule: taux de chômage (isced11=ED0-2) - taux de chômage (isced11=ED5-8)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_urgaed/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-024853
+hors_longlist: non
+rattachement_propose: ligne de la long-list travail (ventilation par diplôme) ; l'écart construit relève d'egalites
+  (R3) ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur une série annuelle de 2000 à 2025 (26 points), qui mesure la pénalité
+  des peu diplômés sur le marché du travail, de signe constant.
+note_pertinence: Le diplôme reste le premier déterminant du risque de chômage ; l'écart mesure cette inégalité sans
+  dire si elle vient de compétences ou de signal. Il est sensible à la conjoncture (les peu diplômés subissent davantage
+  les récessions).
+variantes:
+- serie_id: lfsa_ergaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&geo=FR
+  source: Eurostat
+  nature: écart de taux d'emploi selon le diplôme (lfsa_ergaed, 15-74 ans ; long-list travail)
+  ligne_id: estat-000056
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- composantes_autre_longlist
+notes: ''

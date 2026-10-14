@@ -1,0 +1,46 @@
+id: indice_developpement_genre
+libelle: Indice de développement de genre (rapport IDH des femmes / IDH des hommes, PNUD)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: indice_composite_genre
+variante_principale: non
+definition: Rapport entre l'indice de développement humain calculé pour les femmes et celui calculé pour les hommes
+  (PNUD) ; 1 signifie l'égalité.
+unite: rapport (sans unité)
+sens: ambigu
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: PNUD (Rapport sur le développement humain 2025)
+source_jeu: séries composites, colonnes gdi_<année>
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes gdi_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000355
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu (optimum à 1, écart possible dans les deux sens) et série peu informative : 11
+  valeurs distinctes sur 34 ans, 0,993 en 2023.'
+note_pertinence: Un rapport dont l'optimum est 1 ne peut pas être normalisé entre un seuil et un objectif sans perdre
+  son sens. L'indice d'inégalité de genre, de sens clair, est préféré.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- composite
+- niveau_2
+notes: ''

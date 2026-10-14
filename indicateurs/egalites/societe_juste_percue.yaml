@@ -1,0 +1,47 @@
+id: societe_juste_percue
+libelle: Part des personnes jugeant la société française plutôt juste
+dimension: egalites
+sous_theme: perceptions des inégalités
+famille: perception_inegalites
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus répondant que la société française leur paraît « plutôt juste »
+  (baromètre d'opinion de la DREES, question IN01, non-réponses au dénominateur).
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable IN01, modalités 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000265
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure déclarative annuelle du jugement porté sur les inégalités, de 2000 à 2025 sans
+  la seule année 2003 (26,5 % en 2000, 18,7 % en 2025).
+note_pertinence: 'L''indicateur apporte la dimension subjective des inégalités, que les mesures statistiques ne
+  disent pas : les inégalités de revenu ont peu bougé alors que le sentiment d''injustice a progressé. Il dépend
+  aussi du climat politique.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- perception
+- lacune_2003
+- champ_geo_a_corriger
+notes: 'Catalogue M04 : geo FR à corriger en FM (maintenance n° 4).'

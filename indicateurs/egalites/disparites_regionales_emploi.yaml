@@ -1,0 +1,81 @@
+id: disparites_regionales_emploi
+libelle: Disparités régionales des taux d'emploi (coefficient de variation entre régions NUTS 2)
+dimension: egalites
+sous_theme: territoires
+famille: disparites_regionales
+variante_principale: oui
+definition: Coefficient de variation des taux d'emploi des 15-64 ans entre les régions de niveau NUTS 2, en pourcentage
+  (enquête Forces de travail, jeu Eurostat lfst_r_lmder).
+unite: '% (coefficient de variation)'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfst_r_lmder (disparités régionales des taux d'emploi)
+source_serie_id: lfst_r_lmder?freq=A&age=Y15-64&unit=PC&statinfo=DISP_NUTS2&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfst_r_lmder?freq=A&age=Y15-64&unit=PC&statinfo=DISP_NUTS2&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lmder/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-004525
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle des inégalités territoriales au catalogue, sans lacune de 2000 à 2025
+  (6,9 % en 2000, 5,1 % en 2025).
+note_pertinence: 'Les inégalités territoriales sont un contenu explicite de la dimension ; la dispersion des taux
+  d''emploi entre régions en est la mesure la plus longue. Le découpage NUTS 2 (anciennes régions) masque les écarts
+  infrarégionaux (quartiers, villes moyennes). La série est une valeur nationale issue d''un jeu régional : l''exclusion
+  prévue des jeux NUTS (D30) doit l''épargner.'
+variantes:
+- serie_id: lfst_r_lmder?freq=A&age=Y20-64&unit=PC&statinfo=DISP_NUTS2&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (20-64 ans, par sexe), niveau NUTS 3 (dont lignes non éligibles) et dispersion régionale
+    de l'écart d'emploi femmes-hommes (lfst_r_lmdgeg)
+  ligne_id: estat-004526
+  eligible: oui
+- serie_id: lfst_r_lmder?freq=A&age=Y15-64&unit=PC&statinfo=DISP_NUTS2&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (20-64 ans, par sexe), niveau NUTS 3 (dont lignes non éligibles) et dispersion régionale
+    de l'écart d'emploi femmes-hommes (lfst_r_lmdgeg)
+  ligne_id: estat-004527
+  eligible: oui
+- serie_id: lfst_r_lmder?freq=A&age=Y15-64&unit=PC&statinfo=DISP_NUTS3&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (20-64 ans, par sexe), niveau NUTS 3 (dont lignes non éligibles) et dispersion régionale
+    de l'écart d'emploi femmes-hommes (lfst_r_lmdgeg)
+  ligne_id: estat-004528
+  eligible: oui
+- serie_id: lfst_r_lmder?freq=A&age=Y20-64&unit=PC&statinfo=DISP_NUTS3&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (20-64 ans, par sexe), niveau NUTS 3 (dont lignes non éligibles) et dispersion régionale
+    de l'écart d'emploi femmes-hommes (lfst_r_lmdgeg)
+  ligne_id: estat-004529
+  eligible: non
+- serie_id: lfst_r_lmder?freq=A&age=Y15-64&unit=PC&statinfo=DISP_NUTS3&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (20-64 ans, par sexe), niveau NUTS 3 (dont lignes non éligibles) et dispersion régionale
+    de l'écart d'emploi femmes-hommes (lfst_r_lmdgeg)
+  ligne_id: estat-004530
+  eligible: a_verifier
+- serie_id: lfst_r_lmdgeg?freq=A&statinfo=DISP_NUTS2&unit=PC&age=Y20-64&geo=FR
+  source: Eurostat
+  nature: ventilations (20-64 ans, par sexe), niveau NUTS 3 (dont lignes non éligibles) et dispersion régionale
+    de l'écart d'emploi femmes-hommes (lfst_r_lmdgeg)
+  ligne_id: estat-004537
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- jeu_regional_nuts
+notes: ''

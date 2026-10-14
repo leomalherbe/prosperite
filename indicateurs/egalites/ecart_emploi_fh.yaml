@@ -1,0 +1,84 @@
+id: ecart_emploi_fh
+libelle: Écart de taux d'emploi entre hommes et femmes (20-64 ans)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: ecart_emploi_fh
+variante_principale: oui
+definition: Différence, en points de pourcentage, entre le taux d'emploi des hommes et celui des femmes de 20 à
+  64 ans (enquête Forces de travail ; jeu Eurostat sdg_05_30, personnes en emploi).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_05_30 (indicateurs ODD de l'UE, enquête Forces de travail)
+source_serie_id: sdg_05_30?freq=A&wstatus=EMP&age=Y20-64&unit=PC_PNT&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_30?freq=A&wstatus=EMP&age=Y20-64&unit=PC_PNT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_05_30/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2009
+derniere_annee: 2025
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002061
+hors_longlist: non
+raccordement: 'a_etudier : 2003-2008 par les taux d''emploi par sexe de lfsi_emp_a (15-64 ans) ou de l''INSEE'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans quatre cadres (écarts femmes-hommes) et objet d'une cible de l'UE pour
+  2030 (réduire de moitié l'écart de 2019), série annuelle de 2009 à 2025 (8,0 points en 2009, 5,7 en 2025).
+note_pertinence: L'écart d'emploi est la mesure de base des inégalités femmes-hommes sur le marché du travail. Il
+  a baissé de 8,0 à 5,7 points entre 2009 et 2025 (drapeau d, définition différente, de 2021 à 2025). L'objectif
+  européen (réduire de moitié l'écart de 2019, fixé pour l'UE) donnerait 3,0 points pour la France.
+variantes:
+- serie_id: https://api.worldbank.org/v2/country/FRA/indicator/SL.TLF.CACT.FM.ZS?format=json
+  source: Banque mondiale — World Development Indicators (API v2)
+  nature: 'Banque mondiale (OIT modélisé) : rapport des taux d''activité femmes / hommes, 1995-2025'
+  ligne_id: m04-000401
+  eligible: oui
+- serie_id: '011818672'
+  source: INSEE BDM
+  nature: 'INSEE, enquête Emploi : taux d''emploi des femmes et des hommes de 15 à 64 ans (trimestriel CVS, 2003-2026
+    ; long-list travail)'
+  ligne_id: bdm-000610
+  eligible: oui
+  longlist: travail
+- serie_id: '011818695'
+  source: INSEE BDM
+  nature: 'INSEE, enquête Emploi : taux d''emploi des femmes et des hommes de 15 à 64 ans (trimestriel CVS, 2003-2026
+    ; long-list travail)'
+  ligne_id: bdm-000633
+  eligible: oui
+  longlist: travail
+- serie_id: sdg_08_30?freq=A&indic_em=EMP_LFS&sex=M&sex=F&age=Y20-64&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'composantes : taux d''emploi par sexe (sdg_08_30, 20-64 ans, 2009-2025 ; lfsi_emp_a, 15-64 ans, 2003-2025)
+    et taux d''activité par sexe (long-list travail)'
+  ligne_id: estat-002091
+  eligible: oui
+  longlist: travail
+- serie_id: lfsi_emp_a?freq=A&indic_em=ACT&sex=M&sex=F&age=Y15-64&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'composantes : taux d''emploi par sexe (sdg_08_30, 20-64 ans, 2009-2025 ; lfsi_emp_a, 15-64 ans, 2003-2025)
+    et taux d''activité par sexe (long-list travail)'
+  ligne_id: estat-025127
+  eligible: oui
+  longlist: travail
+- serie_id: lfsi_emp_a?freq=A&indic_em=EMP_LFS&sex=M&sex=F&age=Y15-64&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'composantes : taux d''emploi par sexe (sdg_08_30, 20-64 ans, 2009-2025 ; lfsi_emp_a, 15-64 ans, 2003-2025)
+    et taux d''activité par sexe (long-list travail)'
+  ligne_id: estat-025130
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- definition_differente_2021
+notes: ''

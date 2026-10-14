@@ -1,0 +1,70 @@
+id: ecart_temps_partiel_fh
+libelle: Écart de taux d'emploi à temps partiel entre hommes et femmes (20-64 ans)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: ecart_temps_partiel_fh
+variante_principale: oui
+definition: Différence, en points, entre le taux d'emploi à temps partiel des hommes et celui des femmes de 20 à
+  64 ans (jeu Eurostat sdg_05_30, personnes en emploi à temps partiel) ; la valeur est négative parce que les femmes
+  travaillent plus souvent à temps partiel.
+unite: points de pourcentage (hommes moins femmes, négatif)
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_05_30 (indicateurs ODD de l'UE, enquête Forces de travail)
+source_serie_id: sdg_05_30?freq=A&wstatus=EMP_PT&age=Y20-64&unit=PC_PNT&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_30?freq=A&wstatus=EMP_PT&age=Y20-64&unit=PC_PNT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_05_30/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2009
+derniere_annee: 2025
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002062
+hors_longlist: non
+raccordement: 'a_etudier : 2003-2008 par la part du temps partiel par sexe de l''INSEE (enquête Emploi)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Inégalité de durée d'emploi distincte de l'écart d'emploi, annuelle de 2009 à 2025, dont l'ampleur
+  a nettement baissé (-25,2 points en 2009, -17,5 en 2025).
+note_pertinence: 'Le temps partiel, surtout féminin, explique une grande part des écarts de revenu salarial entre
+  femmes et hommes. Comme la série est négative (hommes moins femmes), le sens est « haut » : la valeur remonte
+  vers 0 quand l''écart se réduit. Une partie du temps partiel est choisie, ce qui nuance la lecture.'
+variantes:
+- serie_id: sdg_05_30?freq=A&wstatus=EMP_TEMP&age=Y20-64&unit=PC_PNT&geo=FR
+  source: Eurostat
+  nature: écarts femmes-hommes pour l'emploi temporaire et le sous-emploi à temps partiel (même jeu sdg_05_30)
+  ligne_id: estat-002063
+  eligible: oui
+- serie_id: sdg_05_30?freq=A&wstatus=UEMP_PT&age=Y20-64&unit=PC_PNT&geo=FR
+  source: Eurostat
+  nature: écarts femmes-hommes pour l'emploi temporaire et le sous-emploi à temps partiel (même jeu sdg_05_30)
+  ligne_id: estat-002064
+  eligible: oui
+- serie_id: '011818641'
+  source: INSEE BDM
+  nature: 'INSEE : part du temps partiel dans l''emploi des femmes et des hommes (trimestriel, 2003-2026 ; long-list
+    travail)'
+  ligne_id: bdm-000579
+  eligible: oui
+  longlist: travail
+- serie_id: '011818656'
+  source: INSEE BDM
+  nature: 'INSEE : part du temps partiel dans l''emploi des femmes et des hommes (trimestriel, 2003-2026 ; long-list
+    travail)'
+  ligne_id: bdm-000594
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_negatives
+- definition_differente_2021
+notes: ''

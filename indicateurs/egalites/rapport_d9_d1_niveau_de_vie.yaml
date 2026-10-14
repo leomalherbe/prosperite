@@ -1,0 +1,110 @@
+id: rapport_d9_d1_niveau_de_vie
+libelle: Rapport interdécile D9/D1 du niveau de vie
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: inegalite_revenu
+variante_principale: non
+definition: Rapport entre le niveau de vie plancher des 10 % les plus aisés (9e décile) et le niveau de vie plafond
+  des 10 % les plus modestes (1er décile) (enquête ERFS, données rétropolées, France métropolitaine).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure IR_D9_D1_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D1_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D1_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005332
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Statistique de seuils citée dans le contenu de la dimension et indicateur ODD national 10.i2b,
+  publiée par l'INSEE de 1996 à 2024 (25 points depuis 2000), proposée comme alternative au S80/S20.
+note_pertinence: 'Le D9/D1 compare des seuils et non des masses : il ignore ce qui se passe au-delà du 9e décile,
+  en particulier les très hauts revenus. Sa décomposition en D9/D5 et D5/D1, listée en variantes, permet de distinguer
+  l''écart par le haut et l''écart par le bas.'
+variantes:
+- serie_id: '010594681'
+  source: INSEE BDM
+  nature: INSEE, indicateur ODD 10.i2b (BDM 010594681 et copie Melodi), 2010-2023
+  ligne_id: bdm-000966
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D5_D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-005067
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-005068
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D5_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-005069
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D5_D1_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-005331
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D5_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-005334
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=10.i2b&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE, indicateur ODD 10.i2b (BDM 010594681 et copie Melodi), 2010-2023
+  ligne_id: melodi-005541
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D5_D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-004917
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-004918
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D5_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-004919
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D5_D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-004992
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D1_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-004993
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D5_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'décomposition : D9/D5 (haut de la distribution) et D5/D1 (bas), rétropolés et non rétropolés'
+  ligne_id: melodi-004994
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_FM
+- serie_retropolee
+notes: ''

@@ -1,0 +1,142 @@
+id: rapport_s80_s20_avant_redistribution
+libelle: Rapport interquintile S80/S20 du niveau de vie avant redistribution
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: inegalite_revenu_avant_redistribution
+variante_principale: oui
+definition: Rapport S80/S20 calculé sur le niveau de vie avant impôts directs et prestations sociales (revenus d'activité,
+  de remplacement et du patrimoine) (enquête ERFS, données rétropolées, France métropolitaine).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure S80S20_SL_BR
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL_BR&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL_BR&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005351
+hors_longlist: non
+rattachement_propose: ligne de la long-list niveau_de_vie (étiquette v0 « niveau_de_vie » du jeu INSEE) ; rattachement
+  proposé à egalites (indicateur de dispersion, R3), à trancher au gel 2
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: non
+recommandation: retenir
+motif_recommandation: 'Indicateur complémentaire de l''indicateur de richesse nationale n° 6, qui mesure les inégalités
+  « primaires » que la redistribution corrige, publié de 1996 à 2024 (la série BDM s''arrête en 2022 : 7,0 en 1996,
+  8,2 en 2022).'
+note_pertinence: Rapproché du S80/S20 après redistribution (4,62 en 2024), il montre ce que font les impôts et les
+  prestations ; avant redistribution, le rapport est passé de 7,0 en 1996 à 8,2 en 2022 (BDM). Il intéresse l'utilisateur
+  qui juge les inégalités de marché en tant que telles ; il ne doit pas être additionné au S80/S20 sans réflexion
+  sur le double compte.
+variantes:
+- serie_id: '010776367'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010776367 : même rapport avant redistribution, 1996-2022'
+  ligne_id: bdm-000986
+  eligible: oui
+- serie_id: ilc_di11a?freq=A&sex=T&age=TOTAL&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030037
+  eligible: oui
+- serie_id: ilc_di11a?freq=A&sex=M&sex=F&age=TOTAL&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030038
+  eligible: oui
+- serie_id: ilc_di11a?freq=A&sex=T&age=Y_LT65&age=Y_GE65&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030039
+  eligible: oui
+- serie_id: ilc_di11b?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030040
+  eligible: oui
+- serie_id: ilc_di11b?freq=A&age=Y_LT65&age=Y_GE65&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030041
+  eligible: oui
+- serie_id: ilc_di11b?freq=A&age=TOTAL&sex=M&sex=F&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030042
+  eligible: oui
+- serie_id: ilc_di11c?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030043
+  eligible: oui
+- serie_id: ilc_di11c?freq=A&age=Y_LT65&age=Y_GE65&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030044
+  eligible: oui
+- serie_id: ilc_di11c?freq=A&age=TOTAL&sex=M&sex=F&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030045
+  eligible: oui
+- serie_id: ilc_di12b?freq=A&statinfo=GINI_HND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030058
+  eligible: oui
+- serie_id: ilc_di12c?freq=A&statinfo=GINI_HND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu de marché brut et net et du revenu disponible brut total (ilc_di11a,
+    b, c, avec ventilations), Gini avant transferts sociaux, pensions comprises ou non (ilc_di12b, c)'
+  ligne_id: estat-030059
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/gini-coefficient-wid.csv (colonne gini__welfare_type_before_tax__extrapolated_no)
+  source: Our World in Data (relais)
+  nature: 'WID via OWID : Gini et ratio de Palma du revenu national avant impôt (sources fiscales et comptes nationaux,
+    1910-2022)'
+  ligne_id: m04-000212
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/palma-ratio-wid.csv (colonne palma_ratio__welfare_type_before_tax__extrapolated_no)
+  source: Our World in Data (relais)
+  nature: 'WID via OWID : Gini et ratio de Palma du revenu national avant impôt (sources fiscales et comptes nationaux,
+    1910-2022)'
+  ligne_id: m04-000213
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=GI_SL_BR&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'autres statistiques avant redistribution (INSEE ERFS rétropolé) : indice de Gini et rapport D9/D1'
+  ligne_id: melodi-005330
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=IR_D9_D1_SL_BR&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'autres statistiques avant redistribution (INSEE ERFS rétropolé) : indice de Gini et rapport D9/D1'
+  ligne_id: melodi-005333
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_FM
+- serie_retropolee
+notes: ''

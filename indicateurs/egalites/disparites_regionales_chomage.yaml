@@ -1,0 +1,74 @@
+id: disparites_regionales_chomage
+libelle: Disparités régionales des taux de chômage (coefficient de variation entre régions NUTS 2)
+dimension: egalites
+sous_theme: territoires
+famille: disparites_regionales
+variante_principale: non
+definition: Coefficient de variation des taux de chômage des 15 ans ou plus entre les régions de niveau NUTS 2,
+  en pourcentage (enquête Forces de travail, jeu Eurostat lfst_r_lmdur).
+unite: '% (coefficient de variation)'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfst_r_lmdur (disparités régionales des taux de chômage)
+source_serie_id: lfst_r_lmdur?freq=A&statinfo=DISP_NUTS2&sex=T&age=Y_GE15&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfst_r_lmdur?freq=A&statinfo=DISP_NUTS2&sex=T&age=Y_GE15&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lmdur/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-004531
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Même mesure appliquée au chômage, annuelle de 2000 à 2025 (26 points), proposée comme alternative
+  dans la famille disparites_regionales.
+note_pertinence: 'Le coefficient de variation du chômage réagit à la conjoncture : quand le chômage baisse partout,
+  la dispersion relative peut monter. La dispersion des taux d''emploi, plus stable, est préférée comme variante
+  principale.'
+variantes:
+- serie_id: lfst_r_lmdur?freq=A&statinfo=DISP_NUTS2&sex=M&sex=F&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge), niveau NUTS 3 et chômage de longue durée (lfst_r_lmdltu)
+  ligne_id: estat-004532
+  eligible: oui
+- serie_id: lfst_r_lmdur?freq=A&statinfo=DISP_NUTS2&sex=T&age=Y15-74&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge), niveau NUTS 3 et chômage de longue durée (lfst_r_lmdltu)
+  ligne_id: estat-004533
+  eligible: oui
+- serie_id: lfst_r_lmdur?freq=A&statinfo=DISP_NUTS3&sex=T&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge), niveau NUTS 3 et chômage de longue durée (lfst_r_lmdltu)
+  ligne_id: estat-004534
+  eligible: oui
+- serie_id: lfst_r_lmdur?freq=A&statinfo=DISP_NUTS3&sex=M&sex=F&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge), niveau NUTS 3 et chômage de longue durée (lfst_r_lmdltu)
+  ligne_id: estat-004535
+  eligible: oui
+- serie_id: lfst_r_lmdur?freq=A&statinfo=DISP_NUTS3&sex=T&age=Y15-74&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge), niveau NUTS 3 et chômage de longue durée (lfst_r_lmdltu)
+  ligne_id: estat-004536
+  eligible: non
+- serie_id: lfst_r_lmdltu?freq=A&unit=PC&statinfo=DISP_NUTS2&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge), niveau NUTS 3 et chômage de longue durée (lfst_r_lmdltu)
+  ligne_id: estat-004538
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- jeu_regional_nuts
+notes: ''

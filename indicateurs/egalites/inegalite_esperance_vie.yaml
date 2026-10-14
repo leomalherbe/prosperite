@@ -1,0 +1,47 @@
+id: inegalite_esperance_vie
+libelle: Inégalité de durée de vie (indice d'Atkinson, PNUD)
+dimension: egalites
+sous_theme: santé
+famille: inegalite_esperance_vie
+variante_principale: oui
+definition: Indice d'Atkinson de la distribution des âges au décès calculé par le PNUD à partir des tables de mortalité,
+  en pourcentage (0 = tout le monde vit aussi longtemps).
+unite: '%'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: PNUD (Rapport sur le développement humain 2025)
+source_jeu: séries composites, colonnes ineq_le_<année>
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes ineq_le_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2023
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000352
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure cataloguée de la dispersion de la durée de vie, annuelle de 2010 à 2023 (14 points
+  ; 3,71 en 2023).
+note_pertinence: L'indice mesure l'inégalité devant la mort sans référence à la position sociale ; il dépend surtout
+  de la mortalité prématurée. Il complète les écarts de santé selon le revenu, faute d'espérance de vie par niveau
+  de vie publiée chaque année. Le fichier change d'URL à chaque édition.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- niveau_2
+- url_par_edition
+- licence_a_confirmer
+notes: ''

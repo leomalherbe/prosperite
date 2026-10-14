@@ -1,0 +1,50 @@
+id: indice_inegalite_genre
+libelle: Indice d'inégalité de genre (PNUD)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: indice_composite_genre
+variante_principale: oui
+definition: Indice composite du PNUD, de 0 (égalité) à 1, qui combine la santé reproductive (mortalité maternelle,
+  natalité des adolescentes), l'autonomisation (sièges au Parlement, études secondaires) et la participation au
+  marché du travail des femmes et des hommes.
+unite: indice (0 à 1)
+sens: bas
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: PNUD (Rapport sur le développement humain 2025)
+source_jeu: séries composites, colonnes gii_<année>
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes gii_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000354
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur retenu par le Doughnut pour les inégalités femmes-hommes, composite admis par D18,
+  annuel de 1990 à 2023 (0,034 en 2023, 11e rang mondial).
+note_pertinence: L'indice résume plusieurs dimensions des inégalités de genre, mais la France est déjà proche de
+  0 et certaines composantes (mortalité maternelle, natalité des adolescentes) relèvent de la santé. Il recoupe
+  la part des femmes au Parlement, comptée aussi à part (double compte à traiter au contrôle de redondance, D18).
+  Le fichier change d'URL à chaque édition du rapport.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite
+- niveau_2
+- url_par_edition
+- licence_a_confirmer
+notes: ''

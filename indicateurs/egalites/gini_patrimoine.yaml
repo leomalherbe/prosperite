@@ -1,0 +1,84 @@
+id: gini_patrimoine
+libelle: Indice de Gini du patrimoine des ménages
+dimension: egalites
+sous_theme: inégalités de patrimoine
+famille: inegalite_patrimoine
+variante_principale: oui
+definition: Indice de concentration du patrimoine brut hors reste des ménages (biens immobiliers, financiers et
+  professionnels), de 0 (égalité) à 1, d'après l'enquête Histoire de vie et Patrimoine (France métropolitaine, comparable
+  depuis 2010).
+unite: indice (0 à 1)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ENQPAT_DET (enquête Patrimoine), mesure GINI_PATBRUT_HR
+source_serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=GINI_PATBRUT_HR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=GINI_PATBRUT_HR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/7941491
+frequence: irreguliere
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 5
+geo: FM
+eligibilite_longlist: a_verifier
+ligne_id: melodi-004395
+hors_longlist: non
+raccordement: 'a_etudier : vagues 1998 et 2004 de l''enquête Patrimoine (jeu Melodi, comparabilité à vérifier)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle ou pluriannuelle de la concentration du patrimoine publiée par l'INSEE,
+  cinq vagues de 2010 à 2024 admises par D17 (écart moyen de 3,5 ans entre valeurs).
+note_pertinence: 'Le patrimoine est beaucoup plus concentré que le revenu ; son inégalité est un besoin explicite
+  de la dimension. L''enquête est triennale : la valeur doit être reportée entre deux vagues (D17). Le libellé du
+  catalogue (« patrimoine net hors reste, en euros constants ») contredit le code de la mesure (GINI_PATBRUT_HR,
+  patrimoine brut hors reste) : à vérifier sur Melodi avant usage.'
+variantes:
+- serie_id: '010594682'
+  source: INSEE BDM
+  nature: 'INSEE : Gini du patrimoine brut (Melodi, France hors Mayotte, 2015-2024) et indicateurs ODD 10.i3a et
+    10.i3b (BDM et Melodi, 2010-2021 ; 10.i3b non éligible)'
+  ligne_id: bdm-000967
+  eligible: a_verifier
+- serie_id: icw_sr_05?freq=A&stk_flow=WLTH_NET&unit=INX&geo=FR
+  source: Eurostat
+  nature: 'Eurostat, statistiques expérimentales des comptes distributionnels (icw_sr_05) : Gini du patrimoine net,
+    3 points'
+  ligne_id: estat-032202
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=GINI_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE : Gini du patrimoine brut (Melodi, France hors Mayotte, 2015-2024) et indicateurs ODD 10.i3a et
+    10.i3b (BDM et Melodi, 2010-2021 ; 10.i3b non éligible)'
+  ligne_id: melodi-004394
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=10.i3a&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE : Gini du patrimoine brut (Melodi, France hors Mayotte, 2015-2024) et indicateurs ODD 10.i3a et
+    10.i3b (BDM et Melodi, 2010-2021 ; 10.i3b non éligible)'
+  ligne_id: melodi-005546
+  eligible: a_verifier
+- serie_id: '010594683'
+  source: INSEE BDM
+  nature: 'INSEE : Gini du patrimoine brut (Melodi, France hors Mayotte, 2015-2024) et indicateurs ODD 10.i3a et
+    10.i3b (BDM et Melodi, 2010-2021 ; 10.i3b non éligible)'
+  ligne_id: bdm-000968
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=10.i3b&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE : Gini du patrimoine brut (Melodi, France hors Mayotte, 2015-2024) et indicateurs ODD 10.i3a et
+    10.i3b (BDM et Melodi, 2010-2021 ; 10.i3b non éligible)'
+  ligne_id: melodi-005547
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- libelle_a_verifier
+- champ_FM
+notes: Variante ODD 10.i3a (BDM 010594682, patrimoine brut hors reste, France hors Mayotte, 2010-2021) de même concept.

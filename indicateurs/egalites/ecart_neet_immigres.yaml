@@ -1,0 +1,56 @@
+id: ecart_neet_immigres
+libelle: Écart de taux de jeunes ni en emploi ni en formation entre jeunes nés hors de l'UE et jeunes nés en France
+  (15-34 ans)
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_insertion_jeunes_origine
+variante_principale: oui
+definition: Part des jeunes de 15 à 34 ans ni en emploi, ni en études, ni en formation parmi les jeunes nés hors
+  de l'UE moins la même part parmi les jeunes nés en France, en points (jeu Eurostat edat_lfse_28).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: edat_lfse_28 (jeunes NEET par pays de naissance)
+source_serie_id: edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&training=NO_FE_NO_NFE&unit=PC&geo=FR
+formule: taux NEET (c_birth=NEU27_2020_FOR) - taux NEET (c_birth=NAT)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&training=NO_FE_NO_NFE&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_28/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054187
+hors_longlist: non
+rattachement_propose: ligne de la long-list travail (ventilation par pays de naissance du taux NEET) ; l'écart construit
+  relève d'egalites (A8, R3) ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur une série annuelle de 2004 à 2025 (22 points au catalogue), qui mesure
+  l'insertion des jeunes selon l'origine, contenu explicite de la dimension (A8).
+note_pertinence: 'Le décrochage scolaire et professionnel des jeunes nés à l''étranger est un indicateur avancé
+  des écarts selon l''origine. Les effectifs d''enquête sont faibles : les drapeaux de fiabilité d''Eurostat sont
+  à lire sur l''API avant usage.'
+variantes:
+- serie_id: edat_lfse_23?freq=A&sex=T&age=Y15-34&wstatus=NEMP&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: même écart selon la nationalité (edat_lfse_23 ; long-list travail)
+  ligne_id: estat-054183
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- faible_precision
+- composantes_autre_longlist
+notes: ''

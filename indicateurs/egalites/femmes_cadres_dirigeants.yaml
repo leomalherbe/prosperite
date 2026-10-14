@@ -1,0 +1,49 @@
+id: femmes_cadres_dirigeants
+libelle: Part des femmes parmi les cadres dirigeants du secteur privé
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_postes_direction
+variante_principale: oui
+definition: Part des femmes parmi les cadres dirigeants des entreprises du secteur privé (indicateur ODD national
+  5.i5a).
+unite: '% des cadres dirigeants'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, indicateurs ODD (objectif 5)
+source_serie_id: '010594728'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594728
+url_page: https://www.insee.fr/fr/statistiques/serie/010594728
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2023
+nb_points_depuis_2000: 14
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000811
+hors_longlist: non
+raccordement: 'a_etudier : 2000-2009 par la part des femmes dans les postes d''encadrement (OIT, ODD 5.5.2)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur ODD national de l'accès des femmes aux postes de direction, annuel de 2010 à 2023
+  (21,5 % en 2010, 30,1 % en 2023), objet d'objectifs légaux (loi du 24 décembre 2021, à vérifier).
+note_pertinence: La part des femmes au sommet des entreprises mesure le « plafond de verre ». Les valeurs 2024 et
+  2025 manquent à la BDM (lues le 14/10/2026). La loi Rixain fixe des objectifs de 30 % puis 40 % de femmes parmi
+  les cadres dirigeants des grandes entreprises (statut à vérifier au socle des bornes).
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=5.i5a&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi de l''indicateur ODD 5.i5a'
+  ligne_id: melodi-005537
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- derniere_valeur_2023
+notes: ''

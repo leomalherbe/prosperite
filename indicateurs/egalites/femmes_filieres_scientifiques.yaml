@@ -1,0 +1,93 @@
+id: femmes_filieres_scientifiques
+libelle: Part des femmes dans les formations scientifiques de l'université (ingénieurs compris)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_filieres_scientifiques
+variante_principale: oui
+definition: Part des femmes parmi les étudiants des formations scientifiques de l'enseignement supérieur, écoles
+  d'ingénieurs comprises (indicateur ODD national 5.i2).
+unite: '% des étudiants'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (SIES)
+source_jeu: BDM, indicateurs ODD (objectif 5)
+source_serie_id: '010594719'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594719
+url_page: https://www.insee.fr/fr/statistiques/serie/010594719
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000808
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur ODD national de la ségrégation des filières, annuel de 2010 à 2025 (39,0 % en 2010,
+  46,4 % en 2025, valeur provisoire), sur le seul champ où la part des femmes reste sous la parité.
+note_pertinence: 'La sous-représentation des femmes dans les filières scientifiques prépare les écarts de salaire
+  futurs. Le total de l''indicateur ODD (toutes disciplines scientifiques, santé comprise) dépasse 50 % depuis 2023
+  (50,6 %) : il n''a plus de sens univoque, d''où le choix du champ « formations scientifiques ». L''objectif naturel
+  est la parité ; au-delà, le sens deviendrait ambigu.'
+variantes:
+- serie_id: '010594717'
+  source: INSEE BDM
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: bdm-000806
+  eligible: oui
+- serie_id: '010594718'
+  source: INSEE BDM
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: bdm-000807
+  eligible: oui
+- serie_id: '010594723'
+  source: INSEE BDM
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: bdm-000809
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=SC_DISC1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=5.i2&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: melodi-005523
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=SC_DISC2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=5.i2&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: melodi-005524
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=SC_DISC3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=5.i2&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: melodi-005525
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=5.i2&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres champs de l'indicateur ODD 5.i2 (ensemble des disciplines scientifiques, DUT production, santé)
+    et copies Melodi
+  ligne_id: melodi-005526
+  eligible: oui
+- serie_id: rd_p_femres?freq=A&sectperf=TOTAL&unit=PC_FTE&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part des femmes parmi les chercheurs (rd_p_femres, 2010-2017, non éligible)'
+  ligne_id: estat-052226
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- provisoire_2025
+- sens_limite_parite
+notes: ''

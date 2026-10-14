@@ -1,0 +1,72 @@
+id: ecart_chomage_immigres
+libelle: Écart de taux de chômage entre personnes nées hors de l'UE et personnes nées en France
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_emploi_origine
+variante_principale: oui
+definition: Taux de chômage des personnes de 15 à 74 ans nées dans un pays hors de l'Union européenne moins celui
+  des personnes nées en France, en points (enquête Forces de travail, jeu Eurostat lfsa_urgacob).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_urgacob (taux de chômage par pays de naissance)
+source_serie_id: lfsa_urgacob?freq=A&unit=PC&sex=T&age=Y15-74&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+formule: taux de chômage (c_birth=NEU27_2020_FOR) - taux de chômage (c_birth=NAT)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_urgacob?freq=A&unit=PC&sex=T&age=Y15-74&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_urgacob/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054349
+hors_longlist: non
+rattachement_propose: ligne de la long-list travail (ventilation par pays de naissance) ; l'écart construit relève
+  d'egalites (écarts selon l'origine, A8, R3) ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur une série annuelle de 2000 à 2025, de signe constant (19,7 % contre 9,4
+  % en 2000, 13,1 % contre 7,0 % en 2025), seule mesure longue des écarts d'insertion selon l'origine (A8).
+note_pertinence: L'écart de chômage selon le pays de naissance reflète à la fois des différences de qualification
+  et des discriminations à l'embauche ; il ne les distingue pas. Le taux de chômage, rapporté aux actifs, est moins
+  sensible à la structure par âge que le taux d'emploi, publié au catalogue seulement pour les 15 ans ou plus. Ruptures
+  en 2003, 2005, 2006, 2014, 2021 et 2024 (drapeaux b).
+variantes:
+- serie_id: lfsa_ergan?freq=A&unit=PC&sex=T&age=Y_GE15&citizen=EU27_2020&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=STLS&citizen=NRP&geo=FR
+  source: Eurostat
+  nature: écarts de taux d'emploi selon le pays de naissance et la nationalité (lfsa_ergacob, lfsa_ergan ; 15 ans
+    ou plus, écart biaisé par la structure par âge ; long-list travail)
+  ligne_id: estat-054245
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergacob?freq=A&unit=PC&sex=T&age=Y_GE15&c_birth=EU27_2020&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+  source: Eurostat
+  nature: écarts de taux d'emploi selon le pays de naissance et la nationalité (lfsa_ergacob, lfsa_ergan ; 15 ans
+    ou plus, écart biaisé par la structure par âge ; long-list travail)
+  ligne_id: estat-054254
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_urgan?freq=A&unit=PC&sex=T&age=Y15-74&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=STLS&citizen=NRP&geo=FR
+  source: Eurostat
+  nature: même écart selon la nationalité (lfsa_urgan, ressortissants hors UE contre nationaux ; long-list travail)
+  ligne_id: estat-054345
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- composantes_autre_longlist
+notes: ''

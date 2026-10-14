@@ -1,5 +1,5 @@
 {
- "date": "2026-10-14T00:30:15Z",
+ "date": "2026-10-14T00:38:22Z",
  "script": "src/pipeline/longlist.py v1.0",
  "grille": {
   "version": "v1",
@@ -10,22 +10,22 @@
   "fichier": "docs/methodo/31_correspondance_v0_v1.csv",
   "regles": 39
  },
- "remarque": "Exécution M05-prep du 2026-10-14 (table v0→v1 corrigée P1–P8, 39 règles ; exceptions de la table prioritaires sur M04) sur des catalogues PARTIELS ou provisoires : INSEE BDM et Melodi copiés de la branche non fusionnée m01-insee (cc33f25, passage complet du 13/10) ; Eurostat séries et jeux copiés de m02-eurostat (c2b28f0, niveau 2 non terminé : 1 jeu restant ; recalcul des unités annoncé, D26) ; M04 de la branche m05-longlist (Gini corrigé, dimension v1 recalculée). À régénérer après la fusion des PR #1 et #2.",
+ "remarque": "régénérée par le robot de collecte",
  "catalogues": {
   "insee_bdm": {
    "fichier": "catalogues/insee_bdm_catalogue.csv",
    "present": true,
-   "lignes": 1650
+   "lignes": 1508
   },
   "insee_melodi": {
    "fichier": "catalogues/insee_melodi_catalogue.csv",
    "present": true,
-   "lignes": 6454
+   "lignes": 6596
   },
   "eurostat_series": {
-   "fichier": "catalogues/eurostat_series_catalogue.csv",
+   "fichier": "catalogues/eurostat_series_catalogue.csv.gz",
    "present": true,
-   "lignes": 191707
+   "lignes": 56210
   },
   "autres_sources_m04": {
    "fichier": "docs/sources/10_indicateurs_candidats_hors_insee_eurostat.csv",
@@ -35,74 +35,68 @@
  },
  "etat_des_collectes": {
   "insee": {
-   "date": "2026-10-13T15:33:27+00:00",
+   "date": "2026-10-14T00:14:39+00:00",
    "collecte_terminee": true
   },
   "eurostat": {
-   "date": "2026-10-13T17:15:44Z",
-   "niveau2_termine": false,
-   "niveau2_jeux_restants": 1,
+   "date": "2026-10-14T00:13:35Z",
+   "niveau2_termine": true,
+   "niveau2_jeux_restants": 0,
    "niveau2_statuts": {
-    "ok": 1793,
+    "ok": 1722,
     "sans_dimension_geo": 58,
-    "sans_donnee_fr": 45,
-    "erreur_donnees": 1
+    "sans_donnee_fr": 36
    }
   }
  },
  "avertissements": [],
  "total": {
-  "lignes": 200216,
-  "eligibles": 97556,
-  "a_verifier": 15687,
-  "non_eligibles": 86973,
+  "lignes": 64719,
+  "eligibles": 47367,
+  "a_verifier": 5497,
+  "non_eligibles": 11855,
   "motifs": {
    "hors_v1": {
-    "non": 20409,
+    "non": 2132,
     "a_verifier": 0,
     "oui": 0
    },
    "hors_grille": {
-    "non": 27,
-    "a_verifier": 0,
-    "oui": 0
-   },
-   "a_classer": {
-    "non": 3,
+    "non": 339,
     "a_verifier": 0,
     "oui": 0
    },
    "geo_non_nationale": {
-    "non": 14,
+    "non": 16,
     "a_verifier": 0,
     "oui": 0
    },
    "derniere_periode_avant_2020": {
-    "non": 27602,
+    "non": 3788,
     "a_verifier": 0,
     "oui": 0
    },
    "moins_de_10_points": {
-    "non": 65844,
-    "a_verifier": 15687,
+    "non": 9211,
+    "a_verifier": 5497,
     "oui": 0
    }
   },
   "declaratifs": {
    "oui": 99,
-   "presume": 2011
+   "presume": 1626
   },
-  "declaratifs_eligibles_ou_a_verifier": 1586,
+  "declaratifs_eligibles_ou_a_verifier": 1426,
   "composites": 83,
-  "ventilations": 24044,
+  "ventilations": 18361,
   "statistiques_entreprises_signalees": {
-   "lignes": 102070,
-   "eligibles": 39026
+   "lignes": 2489,
+   "eligibles": 1501
   },
-  "concepts_distincts": 166715,
-  "concepts_distincts_eligibles": 75916,
-  "concepts_distincts_eligibles_ou_a_verifier": 89346,
-  "lignes_de_reference": 166715,
+  "concepts_distincts": 45015,
+  "concepts_distincts_eligibles": 31595,
+  "concepts_distincts_eligibles_ou_a_verifier": 35883,
+  "lignes_de_reference": 45015,
   "par_source": {
    "autres_sources_m04": {
     "lignes": 405,
@@ -110,51 +104,51 @@
     "a_verifier": 83
    },
    "eurostat_series": {
-    "lignes": 191707,
-    "eligibles": 90722,
-    "a_verifier": 14949
+    "lignes": 56210,
+    "eligibles": 40734,
+    "a_verifier": 4614
    },
    "insee_bdm": {
-    "lignes": 1650,
-    "eligibles": 1558,
-    "a_verifier": 36
+    "lignes": 1508,
+    "eligibles": 1357,
+    "a_verifier": 63
    },
    "insee_melodi": {
-    "lignes": 6454,
+    "lignes": 6596,
     "eligibles": 5002,
-    "a_verifier": 619
+    "a_verifier": 737
    }
   },
   "rattachement": {
    "par_regle": {
-    "13": 80895,
-    "25": 39513,
-    "17": 21423,
-    "21": 20002,
-    "9": 14586,
-    "24": 13128,
-    "11": 3843,
-    "32": 2514,
-    "6": 827,
-    "18": 820,
-    "31": 584,
-    "10": 501,
-    "22": 385,
+    "17": 21456,
+    "9": 14140,
+    "24": 11787,
+    "25": 6392,
+    "13": 4392,
+    "21": 1686,
+    "6": 834,
+    "18": 805,
+    "11": 660,
+    "31": 536,
+    "22": 424,
     "catalogue": 383,
-    "33": 296,
-    "12": 198,
+    "38": 322,
+    "33": 289,
+    "32": 149,
     "27": 114,
+    "12": 88,
+    "10": 73,
     "28": 40,
-    "23": 27,
-    "5": 26,
+    "23": 25,
     "7": 25,
     "26": 22,
     "30": 20,
+    "5": 16,
     "19": 13,
     "1": 10,
     "15": 9,
     "4": 6,
-    "39": 3,
     "14": 2,
     "20": 1
    },
@@ -164,19 +158,19 @@
  },
  "par_dimension": {
   "niveau_de_vie": {
-   "lignes": 13162,
-   "eligibles": 9292,
-   "a_verifier": 3033,
-   "non_eligibles": 837,
+   "lignes": 11821,
+   "eligibles": 7874,
+   "a_verifier": 3124,
+   "non_eligibles": 823,
    "motifs": {
     "derniere_periode_avant_2020": {
-     "non": 298,
+     "non": 252,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 781,
-     "a_verifier": 3033,
+     "non": 813,
+     "a_verifier": 3124,
      "oui": 0
     }
    },
@@ -186,15 +180,15 @@
    },
    "declaratifs_eligibles_ou_a_verifier": 42,
    "composites": 1,
-   "ventilations": 2375,
+   "ventilations": 2445,
    "statistiques_entreprises_signalees": {
-    "lignes": 177,
-    "eligibles": 121
+    "lignes": 45,
+    "eligibles": 33
    },
-   "concepts_distincts": 10746,
-   "concepts_distincts_eligibles": 7514,
-   "concepts_distincts_eligibles_ou_a_verifier": 10022,
-   "lignes_de_reference": 10720,
+   "concepts_distincts": 9484,
+   "concepts_distincts_eligibles": 6208,
+   "concepts_distincts_eligibles_ou_a_verifier": 8774,
+   "lignes_de_reference": 9460,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 14,
@@ -202,24 +196,24 @@
      "a_verifier": 1
     },
     "eurostat_series": {
-     "lignes": 10690,
-     "eligibles": 7380,
-     "a_verifier": 2474
+     "lignes": 9169,
+     "eligibles": 5870,
+     "a_verifier": 2477
     },
     "insee_bdm": {
-     "lignes": 252,
-     "eligibles": 252,
-     "a_verifier": 0
+     "lignes": 261,
+     "eligibles": 260,
+     "a_verifier": 1
     },
     "insee_melodi": {
-     "lignes": 2206,
-     "eligibles": 1648,
-     "a_verifier": 558
+     "lignes": 2377,
+     "eligibles": 1732,
+     "a_verifier": 645
     }
    },
    "rattachement": {
     "par_regle": {
-     "24": 13128,
+     "24": 11787,
      "30": 20,
      "catalogue": 14
     },
@@ -228,19 +222,19 @@
    }
   },
   "travail": {
-   "lignes": 39641,
-   "eligibles": 17282,
-   "a_verifier": 6840,
-   "non_eligibles": 15519,
+   "lignes": 6520,
+   "eligibles": 5327,
+   "a_verifier": 253,
+   "non_eligibles": 940,
    "motifs": {
     "derniere_periode_avant_2020": {
-     "non": 3297,
+     "non": 612,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 15461,
-     "a_verifier": 6840,
+     "non": 924,
+     "a_verifier": 253,
      "oui": 0
     }
    },
@@ -250,15 +244,15 @@
    },
    "declaratifs_eligibles_ou_a_verifier": 79,
    "composites": 1,
-   "ventilations": 4395,
+   "ventilations": 4506,
    "statistiques_entreprises_signalees": {
-    "lignes": 30337,
-    "eligibles": 9831
+    "lignes": 840,
+    "eligibles": 657
    },
-   "concepts_distincts": 32115,
-   "concepts_distincts_eligibles": 12530,
-   "concepts_distincts_eligibles_ou_a_verifier": 18273,
-   "lignes_de_reference": 32105,
+   "concepts_distincts": 2256,
+   "concepts_distincts_eligibles": 1789,
+   "concepts_distincts_eligibles_ou_a_verifier": 1944,
+   "lignes_de_reference": 2246,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 14,
@@ -266,24 +260,24 @@
      "a_verifier": 2
     },
     "eurostat_series": {
-     "lignes": 37028,
-     "eligibles": 14673,
-     "a_verifier": 6838
+     "lignes": 4040,
+     "eligibles": 2851,
+     "a_verifier": 251
     },
     "insee_bdm": {
-     "lignes": 558,
-     "eligibles": 558,
+     "lignes": 452,
+     "eligibles": 452,
      "a_verifier": 0
     },
     "insee_melodi": {
-     "lignes": 2041,
-     "eligibles": 2041,
+     "lignes": 2014,
+     "eligibles": 2014,
      "a_verifier": 0
     }
    },
    "rattachement": {
     "par_regle": {
-     "25": 39513,
+     "25": 6392,
      "27": 114,
      "catalogue": 14
     },
@@ -292,19 +286,19 @@
    }
   },
   "logement_cadre_vie": {
-   "lignes": 4725,
-   "eligibles": 1699,
-   "a_verifier": 538,
-   "non_eligibles": 2488,
+   "lignes": 1527,
+   "eligibles": 1255,
+   "a_verifier": 53,
+   "non_eligibles": 219,
    "motifs": {
     "derniere_periode_avant_2020": {
-     "non": 379,
+     "non": 135,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 2444,
-     "a_verifier": 538,
+     "non": 213,
+     "a_verifier": 53,
      "oui": 0
     }
    },
@@ -314,15 +308,15 @@
    },
    "declaratifs_eligibles_ou_a_verifier": 2,
    "composites": 0,
-   "ventilations": 731,
+   "ventilations": 805,
    "statistiques_entreprises_signalees": {
-    "lignes": 3244,
-    "eligibles": 480
+    "lignes": 11,
+    "eligibles": 11
    },
-   "concepts_distincts": 3971,
-   "concepts_distincts_eligibles": 1140,
-   "concepts_distincts_eligibles_ou_a_verifier": 1643,
-   "lignes_de_reference": 3965,
+   "concepts_distincts": 862,
+   "concepts_distincts_eligibles": 688,
+   "concepts_distincts_eligibles_ou_a_verifier": 727,
+   "lignes_de_reference": 856,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 25,
@@ -330,25 +324,25 @@
      "a_verifier": 1
     },
     "eurostat_series": {
-     "lignes": 4087,
-     "eligibles": 1073,
-     "a_verifier": 527
+     "lignes": 858,
+     "eligibles": 604,
+     "a_verifier": 37
     },
     "insee_bdm": {
-     "lignes": 127,
-     "eligibles": 127,
-     "a_verifier": 0
+     "lignes": 121,
+     "eligibles": 120,
+     "a_verifier": 1
     },
     "insee_melodi": {
-     "lignes": 486,
-     "eligibles": 476,
-     "a_verifier": 10
+     "lignes": 523,
+     "eligibles": 508,
+     "a_verifier": 14
     }
    },
    "rattachement": {
     "par_regle": {
-     "11": 3843,
-     "18": 820,
+     "18": 805,
+     "11": 660,
      "28": 40,
      "catalogue": 20,
      "14": 2
@@ -358,42 +352,37 @@
    }
   },
   "sante": {
-   "lignes": 14614,
-   "eligibles": 12939,
-   "a_verifier": 462,
-   "non_eligibles": 1213,
+   "lignes": 14168,
+   "eligibles": 12547,
+   "a_verifier": 461,
+   "non_eligibles": 1160,
    "motifs": {
-    "geo_non_nationale": {
-     "non": 14,
-     "a_verifier": 0,
-     "oui": 0
-    },
     "derniere_periode_avant_2020": {
-     "non": 481,
+     "non": 466,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 956,
-     "a_verifier": 462,
+     "non": 920,
+     "a_verifier": 461,
      "oui": 0
     }
    },
    "declaratifs": {
     "oui": 13,
-    "presume": 877
+    "presume": 879
    },
-   "declaratifs_eligibles_ou_a_verifier": 760,
+   "declaratifs_eligibles_ou_a_verifier": 762,
    "composites": 0,
-   "ventilations": 8226,
+   "ventilations": 8107,
    "statistiques_entreprises_signalees": {
     "lignes": 8,
     "eligibles": 7
    },
-   "concepts_distincts": 4896,
-   "concepts_distincts_eligibles": 4259,
-   "concepts_distincts_eligibles_ou_a_verifier": 4438,
-   "lignes_de_reference": 4896,
+   "concepts_distincts": 4579,
+   "concepts_distincts_eligibles": 3981,
+   "concepts_distincts_eligibles_ou_a_verifier": 4159,
+   "lignes_de_reference": 4579,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 28,
@@ -401,24 +390,24 @@
      "a_verifier": 6
     },
     "eurostat_series": {
-     "lignes": 14053,
-     "eligibles": 12452,
-     "a_verifier": 406
+     "lignes": 13705,
+     "eligibles": 12148,
+     "a_verifier": 405
     },
     "insee_bdm": {
-     "lignes": 249,
-     "eligibles": 225,
+     "lignes": 232,
+     "eligibles": 206,
      "a_verifier": 24
     },
     "insee_melodi": {
-     "lignes": 284,
-     "eligibles": 244,
+     "lignes": 203,
+     "eligibles": 175,
      "a_verifier": 26
     }
    },
    "rattachement": {
     "par_regle": {
-     "9": 14586,
+     "9": 14140,
      "catalogue": 28
     },
     "desaccords_catalogue_retenu": 0,
@@ -426,37 +415,42 @@
    }
   },
   "education": {
-   "lignes": 81436,
-   "eligibles": 38142,
-   "a_verifier": 3832,
-   "non_eligibles": 39462,
+   "lignes": 4503,
+   "eligibles": 2844,
+   "a_verifier": 757,
+   "non_eligibles": 902,
    "motifs": {
+    "geo_non_nationale": {
+     "non": 16,
+     "a_verifier": 0,
+     "oui": 0
+    },
     "derniere_periode_avant_2020": {
-     "non": 20816,
+     "non": 146,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 39129,
-     "a_verifier": 3832,
+     "non": 895,
+     "a_verifier": 757,
      "oui": 0
     }
    },
    "declaratifs": {
     "oui": 0,
-    "presume": 385
+    "presume": 2
    },
-   "declaratifs_eligibles_ou_a_verifier": 162,
+   "declaratifs_eligibles_ou_a_verifier": 2,
    "composites": 0,
-   "ventilations": 7397,
+   "ventilations": 1556,
    "statistiques_entreprises_signalees": {
-    "lignes": 65109,
-    "eligibles": 27814
+    "lignes": 314,
+    "eligibles": 54
    },
-   "concepts_distincts": 72331,
-   "concepts_distincts_eligibles": 32763,
-   "concepts_distincts_eligibles_ou_a_verifier": 36475,
-   "lignes_de_reference": 72330,
+   "concepts_distincts": 2849,
+   "concepts_distincts_eligibles": 1864,
+   "concepts_distincts_eligibles_ou_a_verifier": 2565,
+   "lignes_de_reference": 2849,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 17,
@@ -464,26 +458,26 @@
      "a_verifier": 7
     },
     "eurostat_series": {
-     "lignes": 81304,
-     "eligibles": 38019,
-     "a_verifier": 3825
+     "lignes": 4362,
+     "eligibles": 2764,
+     "a_verifier": 721
     },
     "insee_bdm": {
-     "lignes": 90,
-     "eligibles": 90,
-     "a_verifier": 0
+     "lignes": 85,
+     "eligibles": 57,
+     "a_verifier": 9
     },
     "insee_melodi": {
-     "lignes": 25,
-     "eligibles": 25,
-     "a_verifier": 0
+     "lignes": 39,
+     "eligibles": 15,
+     "a_verifier": 20
     }
    },
    "rattachement": {
     "par_regle": {
-     "13": 80895,
-     "10": 501,
-     "23": 27,
+     "13": 4392,
+     "10": 73,
+     "23": 25,
      "catalogue": 13
     },
     "desaccords_catalogue_retenu": 0,
@@ -491,10 +485,10 @@
    }
   },
   "liens_bien_etre": {
-   "lignes": 826,
-   "eligibles": 470,
-   "a_verifier": 209,
-   "non_eligibles": 147,
+   "lignes": 668,
+   "eligibles": 389,
+   "a_verifier": 208,
+   "non_eligibles": 71,
    "motifs": {
     "derniere_periode_avant_2020": {
      "non": 63,
@@ -502,26 +496,26 @@
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 146,
-     "a_verifier": 209,
+     "non": 70,
+     "a_verifier": 208,
      "oui": 0
     }
    },
    "declaratifs": {
     "oui": 34,
-    "presume": 512
+    "presume": 510
    },
-   "declaratifs_eligibles_ou_a_verifier": 485,
+   "declaratifs_eligibles_ou_a_verifier": 483,
    "composites": 0,
-   "ventilations": 565,
+   "ventilations": 560,
    "statistiques_entreprises_signalees": {
-    "lignes": 115,
-    "eligibles": 39
+    "lignes": 5,
+    "eligibles": 5
    },
-   "concepts_distincts": 492,
-   "concepts_distincts_eligibles": 353,
-   "concepts_distincts_eligibles_ou_a_verifier": 401,
-   "lignes_de_reference": 492,
+   "concepts_distincts": 353,
+   "concepts_distincts_eligibles": 289,
+   "concepts_distincts_eligibles_ou_a_verifier": 336,
+   "lignes_de_reference": 353,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 36,
@@ -529,25 +523,25 @@
      "a_verifier": 24
     },
     "eurostat_series": {
-     "lignes": 383,
-     "eligibles": 54,
-     "a_verifier": 185
+     "lignes": 262,
+     "eligibles": 10,
+     "a_verifier": 184
     },
     "insee_bdm": {
-     "lignes": 56,
-     "eligibles": 56,
+     "lignes": 28,
+     "eligibles": 28,
      "a_verifier": 0
     },
     "insee_melodi": {
-     "lignes": 351,
-     "eligibles": 351,
+     "lignes": 342,
+     "eligibles": 342,
      "a_verifier": 0
     }
    },
    "rattachement": {
     "par_regle": {
-     "31": 584,
-     "12": 198,
+     "31": 536,
+     "12": 88,
      "catalogue": 34,
      "1": 10
     },
@@ -556,8 +550,8 @@
    }
   },
   "securite": {
-   "lignes": 921,
-   "eligibles": 761,
+   "lignes": 928,
+   "eligibles": 768,
    "a_verifier": 19,
    "non_eligibles": 141,
    "motifs": {
@@ -578,7 +572,7 @@
    },
    "declaratifs_eligibles_ou_a_verifier": 26,
    "composites": 0,
-   "ventilations": 107,
+   "ventilations": 111,
    "statistiques_entreprises_signalees": {
     "lignes": 0,
     "eligibles": 0
@@ -594,8 +588,8 @@
      "a_verifier": 7
     },
     "eurostat_series": {
-     "lignes": 816,
-     "eligibles": 678,
+     "lignes": 823,
+     "eligibles": 685,
      "a_verifier": 12
     },
     "insee_bdm": {
@@ -611,7 +605,7 @@
    },
    "rattachement": {
     "par_regle": {
-     "6": 827,
+     "6": 834,
      "catalogue": 50,
      "7": 25,
      "19": 13,
@@ -622,19 +616,19 @@
    }
   },
   "democratie": {
-   "lignes": 2615,
-   "eligibles": 681,
-   "a_verifier": 178,
-   "non_eligibles": 1756,
+   "lignes": 250,
+   "eligibles": 129,
+   "a_verifier": 32,
+   "non_eligibles": 89,
    "motifs": {
     "derniere_periode_avant_2020": {
-     "non": 138,
+     "non": 27,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 1755,
-     "a_verifier": 178,
+     "non": 88,
+     "a_verifier": 32,
      "oui": 0
     }
    },
@@ -646,13 +640,13 @@
    "composites": 64,
    "ventilations": 50,
    "statistiques_entreprises_signalees": {
-    "lignes": 1781,
+    "lignes": 0,
     "eligibles": 0
    },
-   "concepts_distincts": 2547,
-   "concepts_distincts_eligibles": 676,
-   "concepts_distincts_eligibles_ou_a_verifier": 847,
-   "lignes_de_reference": 2543,
+   "concepts_distincts": 232,
+   "concepts_distincts_eligibles": 124,
+   "concepts_distincts_eligibles_ou_a_verifier": 144,
+   "lignes_de_reference": 232,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 101,
@@ -660,14 +654,14 @@
      "a_verifier": 22
     },
     "eurostat_series": {
-     "lignes": 2493,
-     "eligibles": 590,
-     "a_verifier": 156
+     "lignes": 117,
+     "eligibles": 39,
+     "a_verifier": 0
     },
     "insee_bdm": {
-     "lignes": 15,
-     "eligibles": 15,
-     "a_verifier": 0
+     "lignes": 26,
+     "eligibles": 14,
+     "a_verifier": 10
     },
     "insee_melodi": {
      "lignes": 6,
@@ -677,7 +671,7 @@
    },
    "rattachement": {
     "par_regle": {
-     "32": 2514,
+     "32": 149,
      "catalogue": 101
     },
     "desaccords_catalogue_retenu": 0,
@@ -685,19 +679,19 @@
    }
   },
   "egalites": {
-   "lignes": 337,
-   "eligibles": 298,
-   "a_verifier": 30,
-   "non_eligibles": 9,
+   "lignes": 330,
+   "eligibles": 289,
+   "a_verifier": 31,
+   "non_eligibles": 10,
    "motifs": {
     "derniere_periode_avant_2020": {
-     "non": 7,
+     "non": 6,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 7,
-     "a_verifier": 30,
+     "non": 9,
+     "a_verifier": 31,
      "oui": 0
     }
    },
@@ -712,10 +706,10 @@
     "lignes": 0,
     "eligibles": 0
    },
-   "concepts_distincts": 238,
-   "concepts_distincts_eligibles": 203,
-   "concepts_distincts_eligibles_ou_a_verifier": 231,
-   "lignes_de_reference": 237,
+   "concepts_distincts": 231,
+   "concepts_distincts_eligibles": 194,
+   "concepts_distincts_eligibles_ou_a_verifier": 223,
+   "lignes_de_reference": 230,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 41,
@@ -723,24 +717,24 @@
      "a_verifier": 10
     },
     "eurostat_series": {
-     "lignes": 208,
-     "eligibles": 199,
+     "lignes": 198,
+     "eligibles": 190,
      "a_verifier": 5
     },
     "insee_bdm": {
-     "lignes": 45,
+     "lignes": 46,
      "eligibles": 44,
      "a_verifier": 1
     },
     "insee_melodi": {
-     "lignes": 43,
+     "lignes": 45,
      "eligibles": 29,
-     "a_verifier": 14
+     "a_verifier": 15
     }
    },
    "rattachement": {
     "par_regle": {
-     "33": 296,
+     "33": 289,
      "catalogue": 41
     },
     "desaccords_catalogue_retenu": 0,
@@ -748,19 +742,19 @@
    }
   },
   "planete": {
-   "lignes": 21500,
-   "eligibles": 15992,
-   "a_verifier": 546,
-   "non_eligibles": 4962,
+   "lignes": 21533,
+   "eligibles": 15945,
+   "a_verifier": 559,
+   "non_eligibles": 5029,
    "motifs": {
     "derniere_periode_avant_2020": {
-     "non": 2054,
+     "non": 2055,
      "a_verifier": 0,
      "oui": 0
     },
     "moins_de_10_points": {
-     "non": 4951,
-     "a_verifier": 546,
+     "non": 5018,
+     "a_verifier": 559,
      "oui": 0
     }
    },
@@ -770,15 +764,15 @@
    },
    "declaratifs_eligibles_ou_a_verifier": 0,
    "composites": 7,
-   "ventilations": 35,
+   "ventilations": 15,
    "statistiques_entreprises_signalees": {
     "lignes": 1265,
     "eligibles": 734
    },
-   "concepts_distincts": 21223,
-   "concepts_distincts_eligibles": 15945,
-   "concepts_distincts_eligibles_ou_a_verifier": 16478,
-   "lignes_de_reference": 21223,
+   "concepts_distincts": 21280,
+   "concepts_distincts_eligibles": 15920,
+   "concepts_distincts_eligibles_ou_a_verifier": 16466,
+   "lignes_de_reference": 21280,
    "par_source": {
     "autres_sources_m04": {
      "lignes": 71,
@@ -786,24 +780,24 @@
      "a_verifier": 3
     },
     "eurostat_series": {
-     "lignes": 21086,
-     "eligibles": 15604,
-     "a_verifier": 521
+     "lignes": 21063,
+     "eligibles": 15573,
+     "a_verifier": 522
     },
     "insee_bdm": {
-     "lignes": 173,
-     "eligibles": 162,
-     "a_verifier": 11
+     "lignes": 194,
+     "eligibles": 147,
+     "a_verifier": 17
     },
     "insee_melodi": {
-     "lignes": 170,
-     "eligibles": 159,
-     "a_verifier": 11
+     "lignes": 205,
+     "eligibles": 158,
+     "a_verifier": 17
     }
    },
    "rattachement": {
     "par_regle": {
-     "17": 21423,
+     "17": 21456,
      "catalogue": 68,
      "15": 9
     },
@@ -813,52 +807,47 @@
   }
  },
  "hors_grille": {
-  "lignes": 20439,
+  "lignes": 2471,
   "eligibles": 0,
   "a_verifier": 0,
-  "non_eligibles": 20439,
+  "non_eligibles": 2471,
   "motifs": {
    "hors_v1": {
-    "non": 20409,
+    "non": 2132,
     "a_verifier": 0,
     "oui": 0
    },
    "hors_grille": {
-    "non": 27,
-    "a_verifier": 0,
-    "oui": 0
-   },
-   "a_classer": {
-    "non": 3,
+    "non": 339,
     "a_verifier": 0,
     "oui": 0
    },
    "derniere_periode_avant_2020": {
-    "non": 49,
+    "non": 6,
     "a_verifier": 0,
     "oui": 0
    },
    "moins_de_10_points": {
-    "non": 87,
+    "non": 134,
     "a_verifier": 0,
     "oui": 0
    }
   },
   "declaratifs": {
    "oui": 2,
-   "presume": 37
+   "presume": 35
   },
   "declaratifs_eligibles_ou_a_verifier": 0,
   "composites": 0,
-  "ventilations": 23,
+  "ventilations": 66,
   "statistiques_entreprises_signalees": {
-   "lignes": 34,
+   "lignes": 1,
    "eligibles": 0
   },
-  "concepts_distincts": 17500,
+  "concepts_distincts": 2227,
   "concepts_distincts_eligibles": 0,
   "concepts_distincts_eligibles_ou_a_verifier": 0,
-  "lignes_de_reference": 17500,
+  "lignes_de_reference": 2226,
   "par_source": {
    "autres_sources_m04": {
     "lignes": 5,
@@ -866,12 +855,12 @@
     "a_verifier": 0
    },
    "eurostat_series": {
-    "lignes": 19559,
+    "lignes": 1613,
     "eligibles": 0,
     "a_verifier": 0
    },
    "insee_bdm": {
-    "lignes": 56,
+    "lignes": 34,
     "eligibles": 0,
     "a_verifier": 0
    },
@@ -883,11 +872,11 @@
   },
   "rattachement": {
    "par_regle": {
-    "21": 20002,
-    "22": 385,
-    "5": 26,
+    "21": 1686,
+    "22": 424,
+    "38": 322,
     "26": 22,
-    "39": 3,
+    "5": 16,
     "20": 1
    },
    "desaccords_catalogue_retenu": 0,
@@ -895,9 +884,8 @@
   }
  },
  "hors_grille_par_statut": {
-  "hors_v1": 20409,
-  "hors_grille": 27,
-  "a_classer": 3
+  "hors_v1": 2132,
+  "hors_grille": 339
  },
- "concepts_sur_plusieurs_dimensions": 48
+ "concepts_sur_plusieurs_dimensions": 42
 }

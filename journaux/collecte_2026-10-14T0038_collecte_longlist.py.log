@@ -1,0 +1,35 @@
+
+===== collecte_longlist.py =====
+INFO insee_bdm : 1508 lignes
+INFO insee_melodi : 6596 lignes
+INFO eurostat_series : 56210 lignes
+INFO autres_sources_m04 : 405 lignes
+INFO rattachement v1 (39 règles)
+INFO clés de concept
+INFO éligibilité
+INFO longlist_niveau_de_vie.csv.gz : 11821 lignes (7874 éligibles, 3124 à vérifier)
+INFO longlist_travail.csv.gz : 6520 lignes (5327 éligibles, 253 à vérifier)
+INFO longlist_logement_cadre_vie.csv.gz : 1527 lignes (1255 éligibles, 53 à vérifier)
+INFO longlist_sante.csv.gz : 14168 lignes (12547 éligibles, 461 à vérifier)
+INFO longlist_education.csv.gz : 4503 lignes (2844 éligibles, 757 à vérifier)
+INFO longlist_liens_bien_etre.csv.gz : 668 lignes (389 éligibles, 208 à vérifier)
+INFO longlist_securite.csv.gz : 928 lignes (768 éligibles, 19 à vérifier)
+INFO longlist_democratie.csv.gz : 250 lignes (129 éligibles, 32 à vérifier)
+INFO longlist_egalites.csv.gz : 330 lignes (289 éligibles, 31 à vérifier)
+INFO longlist_planete.csv.gz : 21533 lignes (15945 éligibles, 559 à vérifier)
+INFO longlist_hors_grille.csv.gz : 2471 lignes (0 éligibles, 0 à vérifier)
+écrit : catalogues/longlist_niveau_de_vie.csv.gz (0.4 Mo)
+écrit : catalogues/longlist_travail.csv.gz (0.2 Mo)
+écrit : catalogues/longlist_logement_cadre_vie.csv.gz (0.1 Mo)
+écrit : catalogues/longlist_sante.csv.gz (0.5 Mo)
+écrit : catalogues/longlist_education.csv.gz (0.2 Mo)
+écrit : catalogues/longlist_liens_bien_etre.csv.gz (0.0 Mo)
+écrit : catalogues/longlist_securite.csv.gz (0.0 Mo)
+écrit : catalogues/longlist_democratie.csv.gz (0.0 Mo)
+écrit : catalogues/longlist_egalites.csv.gz (0.0 Mo)
+écrit : catalogues/longlist_planete.csv.gz (0.6 Mo)
+écrit : catalogues/longlist_hors_grille.csv.gz (0.1 Mo)
+écrit : catalogues/longlist_bilan.json (0.0 Mo)
+----- collecte_longlist.py : OK en 20 s
+
+Bilan : tous les scripts ont réussi

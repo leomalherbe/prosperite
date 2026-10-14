@@ -1,0 +1,345 @@
+id: surcharge_couts_logement
+libelle: Taux de surcharge des coûts du logement
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: surcharge_couts_logement
+variante_principale: oui
+definition: Part de la population vivant dans un ménage dont les coûts totaux du logement (loyer ou intérêts d'emprunt,
+  charges, énergie, entretien), nets des allocations logement, dépassent 40 % du revenu disponible, lui aussi net
+  des allocations logement (EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_lvho07a (taux de surcharge des coûts du logement par âge, sexe et statut de pauvreté, EU-SILC)
+source_serie_id: ilc_lvho07a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho07a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho07a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031390
+hors_longlist: non
+raccordement: 'non : série EU-SILC continue depuis 2004, ruptures signalées en 2020 et 2022'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du suivi des ODD de l'UE (sdg_01_50) et de l'OCDE (How's Life 3_3), annuel de 2004
+  à 2025 (21 points, 2021 manquant), l'INSEE n'en publiant pas le niveau par API (D35).
+note_pertinence: Le taux de surcharge repère les ménages pour qui le logement absorbe une part excessive du revenu,
+  ce que la moyenne du taux d'effort ne montre pas. Il passe de 5,4 % en 2004 à 4,0 % en 2009, puis remonte à 7,0
+  % en 2024 et 6,4 % en 2025 (API Eurostat, lue le 14/10/2026). Les ruptures de 2020 et 2022 (drapeau b) imposent
+  la prudence sur la hausse récente.
+variantes:
+- serie_id: sdg_01_50?freq=A&sex=T&rskpovth=TOTAL&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-002025
+  eligible: oui
+- serie_id: ilc_lvho29?freq=A&unit=PC&deg_urb=DEG1&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-005366
+  eligible: oui
+- serie_id: ilc_lvho29?freq=A&unit=PC&deg_urb=DEG2&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-005371
+  eligible: oui
+- serie_id: ilc_lvho29?freq=A&unit=PC&deg_urb=DEG3&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-005376
+  eligible: oui
+- serie_id: hlth_dhc060?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-021892
+  eligible: oui
+- serie_id: hlth_dhc060?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-021893
+  eligible: oui
+- serie_id: hlth_dhc060?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-021894
+  eligible: oui
+- serie_id: ilc_lvho07a?freq=A&unit=PC&rskpovth=TOTAL&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031391
+  eligible: oui
+- serie_id: ilc_lvho07a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031392
+  eligible: oui
+- serie_id: ilc_lvho07b?freq=A&unit=PC&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031393
+  eligible: oui
+- serie_id: ilc_lvho07d?freq=A&unit=PC&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-005363
+  eligible: a_verifier
+- serie_id: ilc_lvho07d?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-005364
+  eligible: oui
+- serie_id: ilc_lvho07b?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031394
+  eligible: oui
+- serie_id: ilc_lvho07e?freq=A&unit=PC&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031396
+  eligible: a_verifier
+- serie_id: ilc_lvho07e?freq=A&unit=PC&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031397
+  eligible: oui
+- serie_id: ilc_lvho07c?freq=A&unit=PC&tenure=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031395
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=T&percent=PC_GT25&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031401
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=M&sex=F&percent=PC_GT25&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031402
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=T&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031403
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=M&sex=F&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031404
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=T&percent=PC_GT50&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031405
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=M&sex=F&percent=PC_GT50&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031406
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=T&percent=PC_GT60&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031407
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=M&sex=F&percent=PC_GT60&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031408
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=T&percent=PC_GT75&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031409
+  eligible: oui
+- serie_id: ilc_lvho27?freq=A&unit=PC&sex=M&sex=F&percent=PC_GT75&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031410
+  eligible: oui
+- serie_id: ilc_lvho28?freq=A&unit=PC&tenure=OWN_L&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031412
+  eligible: oui
+- serie_id: ilc_lvho28?freq=A&unit=PC&tenure=OWN_NL&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031417
+  eligible: oui
+- serie_id: ilc_lvho28?freq=A&unit=PC&tenure=RENT_FR&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031422
+  eligible: oui
+- serie_id: ilc_lvho28?freq=A&unit=PC&tenure=RENT_MKT&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031427
+  eligible: oui
+- serie_id: ilc_lvho30?freq=A&unit=PC&hhcomp=A1&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031432
+  eligible: oui
+- serie_id: ilc_lvho30?freq=A&unit=PC&hhcomp=A2&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031437
+  eligible: oui
+- serie_id: ilc_lvho30?freq=A&unit=PC&hhcomp=DCH&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031442
+  eligible: oui
+- serie_id: ilc_lvho30?freq=A&unit=PC&hhcomp=NDCH&percent=PC_GT40&geo=FR
+  source: Eurostat
+  nature: seuils alternatifs (plus de 25, 40, 50, 60 et 75 % du revenu, ilc_lvho27) ; seuil de 40 % par statut d'occupation,
+    urbanisation et type de ménage (ilc_lvho28 à 30)
+  ligne_id: estat-031447
+  eligible: oui
+- serie_id: ilc_chg04?freq=A&yn_arope=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_01_50) ; ventilations (âge, sexe, quintile, statut d'occupation, urbanisation, type de ménage,
+    handicap, enfants)
+  ligne_id: estat-031506
+  eligible: oui
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055089
+  eligible: oui
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055092
+  eligible: oui
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055095
+  eligible: oui
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055098
+  eligible: oui
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055104
+  eligible: oui
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055107
+  eligible: oui
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055113
+  eligible: oui
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055116
+  eligible: oui
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055119
+  eligible: oui
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055122
+  eligible: oui
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055128
+  eligible: oui
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055131
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=3_3 UNIT_MEASURE=PT_POP
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre source (OCDE How's Life 3_3, même enquête EU-SILC, 2015-2024)
+  ligne_id: m04-000021
+  eligible: a_verifier
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055086
+  eligible: non
+- serie_id: ilc_lvho25?freq=A&unit=PC&citizen=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055101
+  eligible: non
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055110
+  eligible: non
+- serie_id: ilc_lvho26?freq=A&unit=PC&c_birth=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055125
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- annee_manquante_2021
+notes: 'Valeurs lues (ilc_lvho07a, ensemble) : 5,4 (2004), 4,0 (2009), 5,2 (2013), 5,5 (2019), 5,6 (2020, b), 6,5
+  (2022, b), 7,0 (2024), 6,4 (2025) ; aucune valeur en 2021. Variantes : table ODD sdg_01_50, ventilations, seuils
+  de 25 à 75 % (ilc_lvho27 à 30), nationalité et pays de naissance, enfants, handicap, OCDE How''s Life 3_3.'

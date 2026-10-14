@@ -1,0 +1,88 @@
+id: sous_occupation
+libelle: Taux de sous-occupation des logements
+dimension: logement_cadre_vie
+sous_theme: surpeuplement et qualité du logement
+famille: sous_occupation
+variante_principale: oui
+definition: Part de la population vivant dans un logement sous-occupé, c'est-à-dire comptant plus de pièces que
+  la norme de peuplement ne l'exige pour le ménage (EU-SILC).
+unite: '% de la population'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_lvho50a (logements sous-occupés par âge, sexe et statut de pauvreté, EU-SILC)
+source_serie_id: ilc_lvho50a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho50a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho50a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031383
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2004'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Sens ambigu (confort pour le ménage ou usage peu efficace du parc, relevé par le crosswalk
+  M03), malgré une série Eurostat annuelle de 2004 à 2025 (22 points).
+note_pertinence: 'La sous-occupation concerne surtout des ménages restés dans un logement devenu grand pour eux
+  : elle traduit un confort mais aussi un parc mal ajusté aux besoins. Ni une hausse ni une baisse ne sont un progrès
+  univoque ; la fiche est écartée comme l''exige la charte (§3.4).'
+variantes:
+- serie_id: ilc_lvho50d?freq=A&unit=PC&deg_urb=DEG1&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-005360
+  eligible: oui
+- serie_id: ilc_lvho50d?freq=A&unit=PC&deg_urb=DEG2&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-005361
+  eligible: oui
+- serie_id: ilc_lvho50d?freq=A&unit=PC&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-005362
+  eligible: oui
+- serie_id: ilc_lvho50a?freq=A&unit=PC&rskpovth=TOTAL&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-031384
+  eligible: oui
+- serie_id: ilc_lvho50a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-031385
+  eligible: oui
+- serie_id: ilc_lvho50b?freq=A&unit=PC&quant_inc=TOTAL&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-031386
+  eligible: oui
+- serie_id: ilc_lvho50b?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-031387
+  eligible: oui
+- serie_id: ilc_lvho50b?freq=A&unit=PC&quant_inc=TOTAL&hhcomp=A1_DCH&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-031388
+  eligible: oui
+- serie_id: ilc_lvho50c?freq=A&unit=PC&tenure=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (sexe, âge, type de ménage, quintile, statut d'occupation, urbanisation)
+  ligne_id: estat-031389
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: 'Variantes : ventilations par sexe, âge, type de ménage, quintile, statut d''occupation et urbanisation.'

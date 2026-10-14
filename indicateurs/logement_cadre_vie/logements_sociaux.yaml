@@ -1,0 +1,52 @@
+id: logements_sociaux
+libelle: Logements sociaux pour 10 000 habitants
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: logements_sociaux
+variante_principale: oui
+definition: Nombre de logements du parc locatif social (répertoire des logements locatifs des bailleurs sociaux,
+  RPLS) pour 10 000 habitants, France.
+unite: logements pour 10 000 habitants
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (données SDES, RPLS)
+source_jeu: BDM, parc locatif social, série 001779870
+source_serie_id: '001779870'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001779870
+url_page: https://www.insee.fr/fr/statistiques/serie/001779870
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001350
+hors_longlist: non
+raccordement: 'non : répertoire RPLS depuis 2012'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'offre de logements à loyer encadré, série INSEE annuelle de 2012 à 2025
+  (14 points d'après la long-list), admise comme indicateur de moyens (D19).
+note_pertinence: 'Le parc social offre des loyers inférieurs à ceux du marché : sa taille rapportée à la population
+  mesure la capacité à loger les ménages modestes à un coût supportable. C''est un indicateur de moyens sans cible
+  nationale par habitant (l''objectif de la loi SRU porte sur une part des résidences principales, commune par commune).
+  La série ne commence qu''en 2012.'
+variantes:
+- serie_id: '001779871'
+  source: INSEE BDM
+  nature: même série, France métropolitaine
+  ligne_id: bdm-001351
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- indicateur_de_moyens
+- debut_2012
+notes: 'Variante : même série, France métropolitaine. Écartés : loyer moyen du parc social (montant nominal), part
+  des logements sociaux individuels ou collectifs (structure).'

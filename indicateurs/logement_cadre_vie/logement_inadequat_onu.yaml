@@ -1,0 +1,49 @@
+id: logement_inadequat_onu
+libelle: Population urbaine vivant dans un logement inadéquat (ODD 11.1.1)
+dimension: logement_cadre_vie
+sous_theme: surpeuplement et qualité du logement
+famille: privation_severe_logement
+variante_principale: non
+definition: Part de la population urbaine vivant dans un logement inadéquat au sens de l'indicateur mondial ODD
+  11.1.1 (bidonvilles, habitat informel ou logement inadéquat), moyenne sur les villes, estimation reprise par l'OCDE.
+unite: '% de la population urbaine'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (estimation ONU-Habitat)
+source_jeu: Base « Measuring distance to the SDG targets », objectif 11, série 11_1_1_EN_LND_INDQTHSNG
+source_serie_id: 'odd_11 : 11_1_1_EN_LND_INDQTHSNG._T._T._T._T._T.PT_POP_URB'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_11,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2024
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000127
+hors_longlist: non
+raccordement: 'non : série OCDE depuis 2004'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille privation_severe_logement, indicateur mondial des ODD estimé de
+  2004 à 2024 (20 points, 13 valeurs distinctes d'après l'extrait du robot M04), utile aux comparaisons avec le
+  Doughnut.
+note_pertinence: 'L''indicateur mondial du logement inadéquat est la référence du Doughnut pour le logement ; pour
+  la France, il repose sur une estimation par ville peu variable d''une année à l''autre (7 % en 2024 d''après l''extrait
+  du robot M04). Sa méthode n''est pas documentée dans les extraits disponibles : il est proposé en variante de
+  la privation sévère mesurée par EU-SILC.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- estimation_modelisee
+- faible_variabilite
+- annee_manquante_2021
+notes: 'Extrait du robot M04 (docs/sources/series/ocde__odd_11.csv) : périodes 2004-2020 et 2022-2024, dernière
+  valeur 7.'

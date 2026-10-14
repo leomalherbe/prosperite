@@ -1,0 +1,117 @@
+id: privation_internet
+libelle: Personnes n'ayant pas les moyens d'une connexion internet à domicile
+dimension: logement_cadre_vie
+sous_theme: numérique
+famille: privation_internet
+variante_principale: oui
+definition: Part de la population vivant dans un ménage qui n'a pas de connexion internet à domicile pour un usage
+  personnel parce qu'il n'en a pas les moyens (EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mddu07a (personnes n'ayant pas les moyens d'une connexion internet à domicile, EU-SILC)
+source_serie_id: ilc_mddu07a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mddu07a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mddu07a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031807
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2014'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de la privation numérique pour raisons financières, série Eurostat annuelle de
+  2014 à 2025 (12 points d'après la long-list).
+note_pertinence: L'indicateur isole les personnes exclues du numérique faute de moyens, une privation devenue pénalisante
+  quand les démarches passent en ligne. L'élément entre dans la privation matérielle et sociale suivie en niveau_de_vie,
+  ce que le contrôle de redondance devra noter. Les valeurs n'ont pas été relues sur l'API.
+variantes:
+- serie_id: ilc_mddu07a?freq=A&unit=PC&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031808
+  eligible: oui
+- serie_id: ilc_mddu07a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031809
+  eligible: oui
+- serie_id: ilc_mddu07b?freq=A&unit=PC&wstatus=POP&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031810
+  eligible: oui
+- serie_id: ilc_mddu07b?freq=A&unit=PC&wstatus=POP&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031811
+  eligible: oui
+- serie_id: ilc_mddu07c?freq=A&isced11=TOTAL&deg_urb=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031812
+  eligible: oui
+- serie_id: ilc_mddu07c?freq=A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&deg_urb=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031813
+  eligible: oui
+- serie_id: ilc_mddu07c?freq=A&isced11=TOTAL&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031814
+  eligible: oui
+- serie_id: ilc_mddu07c?freq=A&isced11=TOTAL&deg_urb=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031815
+  eligible: oui
+- serie_id: ilc_mddu07c?freq=A&isced11=TOTAL&deg_urb=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031816
+  eligible: oui
+- serie_id: ilc_mddu07d?freq=A&yn_arope=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031817
+  eligible: oui
+- serie_id: ilc_mddu07d?freq=A&yn_arope=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031818
+  eligible: oui
+- serie_id: ilc_mddu07d?freq=A&yn_arope=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, statut d'activité, quintile, diplôme, urbanisation, risque
+    de pauvreté ou d'exclusion)
+  ligne_id: estat-031819
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_non_lus
+notes: 'Capacité financière déclarée : déclaratif non (méthode §4). Variantes : ventilations par âge, sexe, statut
+  d''activité, quintile, diplôme, urbanisation et risque de pauvreté ou d''exclusion.'

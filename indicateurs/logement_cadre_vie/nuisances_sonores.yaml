@@ -1,0 +1,86 @@
+id: nuisances_sonores
+libelle: Nuisances sonores des voisins ou de la rue
+dimension: logement_cadre_vie
+sous_theme: nuisances autour du logement
+famille: nuisances_sonores
+variante_principale: oui
+definition: Part de la population vivant dans un ménage qui déclare souffrir dans son logement du bruit des voisins
+  ou de la rue (trafic, activités) (EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mddw01 (nuisances sonores provenant des voisins ou de la voie publique, EU-SILC)
+source_serie_id: ilc_mddw01?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mddw01?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mddw01/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2023
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031889
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2004'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure disponible du bruit subi au logement (cadre Qualité de vie d'Eurostat, suivi
+  ODD 11 de l'UE), série annuelle de 2004 à 2023 (18 points d'après la long-list).
+note_pertinence: 'Le bruit des transports et du voisinage nuit au sommeil et à la santé. Aucune mesure objective
+  de l''exposition au bruit n''est cataloguée : la déclaration des ménages est la seule série annuelle. Les valeurs
+  n''ont pas été relues sur l''API.'
+variantes:
+- serie_id: sdg_11_20?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-002048
+  eligible: oui
+- serie_id: ilc_mddw04?freq=A&unit=PC&deg_urb=DEG1&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-005399
+  eligible: oui
+- serie_id: ilc_mddw04?freq=A&unit=PC&deg_urb=DEG2&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-005400
+  eligible: oui
+- serie_id: ilc_mddw04?freq=A&unit=PC&deg_urb=DEG3&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-005401
+  eligible: oui
+- serie_id: hlth_dhc110?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-021916
+  eligible: oui
+- serie_id: hlth_dhc110?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-021917
+  eligible: oui
+- serie_id: hlth_dhc110?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-021918
+  eligible: oui
+- serie_id: ilc_mddw01?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_20) ; ventilations (type de ménage, urbanisation, handicap)
+  ligne_id: estat-031890
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- declaratif
+- drapeaux_non_lus
+notes: 'Déclaratif oui : gêne déclarée. Variantes : table ODD sdg_11_20, ventilations par type de ménage, urbanisation
+  (ilc_mddw04) et handicap (hlth_dhc110).'

@@ -1,0 +1,76 @@
+id: concentration_pm10
+libelle: Concentration moyenne de particules PM10 en fond urbain
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: concentration_pm10
+variante_principale: oui
+definition: Moyenne annuelle des concentrations de particules de diamètre inférieur à 10 µm mesurées par les stations
+  de fond urbain et périurbain (SDES, base Geod'air).
+unite: µg/m³
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Concentrations moyennes annuelles de polluants (fichier DiDo 9db8c875), PM10 fond urbain et périurbain
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/9db8c875-10d8-49b3-ac30-1e6f358ab6b0/csv
+  (PM10.fond_urbain_periurbain)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/9db8c875-10d8-49b3-ac30-1e6f358ab6b0/csv
+  (PM10.fond_urbain_periurbain)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2007
+derniere_annee: 2024
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000368
+hors_longlist: non
+raccordement: 'non : série du SDES depuis 2007 ; INSEE (ODD 11) depuis 2010'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Variante principale de la famille concentration_pm10, série du SDES annuelle de 2007 à 2024
+  (18 points), plus longue que la même série republiée par l'INSEE de 2010 à 2024 (indicateur ODD 11).
+note_pertinence: 'Les PM10 regroupent les particules fines et plus grossières (trafic, chauffage au bois, chantiers)
+  ; leur concentration de fond reflète l''air respiré en ville hors de la proximité immédiate des sources. La dernière
+  valeur est de 13,26 µg/m³ en 2024, et de 17,3 près du trafic (extrait du robot M04). Les PM2,5, plus nocives,
+  sont suivies par la famille exposition_pm25 : le contrôle de redondance devra comparer les deux familles.'
+variantes:
+- serie_id: '010596140'
+  source: INSEE BDM
+  nature: INSEE BDM 010596141 et Melodi ODD 11 (fond urbain, 2010-2024, même source) ; proximité du trafic (BDM
+    010596140, Melodi)
+  ligne_id: bdm-001156
+  eligible: oui
+- serie_id: '010596141'
+  source: INSEE BDM
+  nature: INSEE BDM 010596141 et Melodi ODD 11 (fond urbain, 2010-2024, même source) ; proximité du trafic (BDM
+    010596140, Melodi)
+  ligne_id: bdm-001157
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=URBA3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i4b&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=uGM3
+  source: INSEE Melodi
+  nature: INSEE BDM 010596141 et Melodi ODD 11 (fond urbain, 2010-2024, même source) ; proximité du trafic (BDM
+    010596140, Melodi)
+  ligne_id: melodi-005673
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=URBA4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i4b&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=uGM3
+  source: INSEE Melodi
+  nature: INSEE BDM 010596141 et Melodi ODD 11 (fond urbain, 2010-2024, même source) ; proximité du trafic (BDM
+    010596140, Melodi)
+  ligne_id: melodi-005674
+  eligible: oui
+- serie_id: sdes_air_concentrations_indice:PM10.Fond_urbain
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: indice base 100 en 2000, fond urbain (hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_concentrations_indice.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: 'Variantes : INSEE BDM 010596141 et Melodi ODD 11 (fond urbain), proximité du trafic (BDM 010596140, Melodi),
+  indice base 100 en 2000 (49,76 en 2024, hors long-list, preuve du robot).'

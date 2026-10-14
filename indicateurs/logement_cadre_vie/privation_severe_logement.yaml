@@ -1,0 +1,228 @@
+id: privation_severe_logement
+libelle: Privation sévère liée au logement
+dimension: logement_cadre_vie
+sous_theme: surpeuplement et qualité du logement
+famille: privation_severe_logement
+variante_principale: oui
+definition: 'Part de la population vivant dans un logement surpeuplé qui présente en outre au moins un défaut grave
+  : toit qui fuit ou humidité, absence de baignoire ou de douche, absence de toilettes intérieures, logement trop
+  sombre (EU-SILC).'
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mdho06a (taux de privation sévère liée au logement par âge, sexe et statut de pauvreté, EU-SILC)
+source_serie_id: ilc_mdho06a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdho06a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdho06a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2023
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031838
+hors_longlist: non
+rattachement_propose: ligne de la long-list niveau_de_vie (groupe privation_logement) renvoyée à logement_cadre_vie
+  ; qualité du logement → logement_cadre_vie ; à trancher au gel 2
+raccordement: 'non : série EU-SILC depuis 2004'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur incontournable qui croise surpeuplement et défauts du logement (suivi ODD 11 de
+  l'UE, sdg_11_11), série Eurostat de 2004 à 2023 (18 points d'après la long-list).
+note_pertinence: L'indicateur cible les situations de mal-logement les plus graves, au croisement du manque d'espace
+  et des défauts du logement. Il dépend de composantes déjà présentes dans la dimension (surpeuplement, humidité,
+  sanitaires, éclairement), ce que le contrôle de redondance devra prendre en compte. Les valeurs n'ont pas été
+  relues (refus 429 du proxy le 14/10/2026).
+variantes:
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=TOTAL&tenure=OWN_L&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005388
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&tenure=OWN_L&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005389
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=TOTAL&tenure=OWN_NL&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005390
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&tenure=OWN_NL&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005391
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=TOTAL&tenure=RENT_FR&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005392
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&tenure=RENT_FR&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005393
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=TOTAL&tenure=RENT_MKT&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005394
+  eligible: oui
+- serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&tenure=RENT_MKT&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005395
+  eligible: oui
+- serie_id: ilc_mdho06d?freq=A&unit=PC&deg_urb=DEG1&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005396
+  eligible: oui
+- serie_id: ilc_mdho06d?freq=A&unit=PC&deg_urb=DEG2&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005397
+  eligible: oui
+- serie_id: ilc_mdho06d?freq=A&unit=PC&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-005398
+  eligible: oui
+- serie_id: hlth_dhc030?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-021868
+  eligible: oui
+- serie_id: hlth_dhc030?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-021869
+  eligible: oui
+- serie_id: hlth_dhc030?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-021870
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A1&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031841
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A1_DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031842
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A1_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031843
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A1_LT65&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031844
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A2&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031845
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A2_2LT65&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031846
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A2_DCH1&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031847
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A2_DCH2&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031848
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A2_DCH_GE3&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031849
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A2_GE1_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031850
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A_GE2_DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031851
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A_GE2_NDCH&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031852
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A_GE3&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031853
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=A_GE3_DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031854
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031855
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=F1&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031856
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=M1&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031857
+  eligible: oui
+- serie_id: ilc_mdho06b?freq=A&unit=PC&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, statut d'occupation, urbanisation, handicap)
+  ligne_id: estat-031858
+  eligible: oui
+- serie_id: sdg_11_11?freq=A&age=TOTAL&rskpovth=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_11) ; ventilations par sexe et par âge (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-002029
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mdho06a?freq=A&unit=PC&rskpovth=TOTAL&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_11) ; ventilations par sexe et par âge (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-031839
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mdho06a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_11_11) ; ventilations par sexe et par âge (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-031840
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_non_lus
+- recoupe_composantes
+notes: 'Variantes : table ODD sdg_11_11 et ventilations par sexe et âge (lignes de niveau_de_vie), ventilations
+  par type de ménage, statut d''occupation et urbanisation (ilc_mdho06b à d), handicap (hlth_dhc030).'

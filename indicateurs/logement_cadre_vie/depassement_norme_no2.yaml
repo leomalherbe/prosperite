@@ -1,0 +1,57 @@
+id: depassement_norme_no2
+libelle: Agglomérations dépassant la norme de NO2 pour la santé
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: concentration_no2
+variante_principale: non
+definition: Part des agglomérations surveillées où la norme réglementaire de protection de la santé pour le dioxyde
+  d'azote est dépassée dans l'année (SDES, base Geod'air).
+unite: '% des agglomérations'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Dépassements des normes de protection de la santé (fichier DiDo a956734e), NO2
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/a956734e-0f63-4629-821e-669f477d5f53/csv
+  (NO2)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/a956734e-0f63-4629-821e-669f477d5f53/csv
+  (NO2)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000371
+hors_longlist: non
+raccordement: 'non : série du SDES depuis 2000'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la famille concentration_no2 (respect de la norme sanitaire), série du
+  SDES annuelle de 2000 à 2024 (25 points), 1,21 % des agglomérations en 2024 d'après l'extrait du robot M04.
+note_pertinence: Le respect de la norme de NO2 est la grandeur suivie par la réglementation européenne de la qualité
+  de l'air. La part des agglomérations en dépassement est devenue faible, mais 3,10 % des stations des grandes agglomérations
+  dépassent encore la norme en 2024 (extrait du robot M04), ce que suit la variante par taille d'agglomération.
+variantes:
+- serie_id: sdes_air_depassements_taille_agglomeration:NO2#POURC_STATION_DEP_GDE_AGGLO
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: part des stations en dépassement, grandes agglomérations (hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_depassements_taille_agglomeration.csv
+- serie_id: sdes_air_depassements_taille_agglomeration:NO2#POURC_STATION_DEP_AGGLO_MOY
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: part des stations en dépassement, agglomérations moyennes (hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_depassements_taille_agglomeration.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- peu_discriminant_recent
+notes: 'Variantes : part des stations en dépassement dans les grandes et moyennes agglomérations (hors long-list,
+  preuve du robot).'

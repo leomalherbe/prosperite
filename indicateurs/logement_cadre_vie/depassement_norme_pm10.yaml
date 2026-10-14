@@ -1,0 +1,82 @@
+id: depassement_norme_pm10
+libelle: Agglomérations dépassant la norme de PM10 pour la santé
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: concentration_pm10
+variante_principale: non
+definition: Part des agglomérations surveillées où la norme réglementaire de protection de la santé pour les particules
+  PM10 est dépassée dans l'année (SDES, base Geod'air).
+unite: '% des agglomérations'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Dépassements des normes de protection de la santé (fichier DiDo a956734e), PM10
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/a956734e-0f63-4629-821e-669f477d5f53/csv
+  (PM10)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/a956734e-0f63-4629-821e-669f477d5f53/csv
+  (PM10)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2007
+derniere_annee: 2024
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000372
+hors_longlist: non
+raccordement: 'non : série du SDES depuis 2007'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la famille concentration_pm10 (respect de la norme sanitaire), série
+  du SDES annuelle de 2007 à 2024 (18 points), 1,80 % des agglomérations en 2024 d'après l'extrait du robot M04.
+note_pertinence: Le dépassement de la norme est la grandeur visée par la réglementation européenne de la qualité
+  de l'air. Devenu rare pour les PM10, il distingue peu les années récentes ; la concentration moyenne reste la
+  mesure principale.
+variantes:
+- serie_id: '010596138'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010596138 et 010596139 et Melodi ODD 11 : part des stations dépassant le seuil journalier,
+    agglomérations de plus de 250 000 et de 50 000 à 250 000 habitants, 2010-2024'
+  ligne_id: bdm-001154
+  eligible: oui
+- serie_id: '010596139'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010596138 et 010596139 et Melodi ODD 11 : part des stations dépassant le seuil journalier,
+    agglomérations de plus de 250 000 et de 50 000 à 250 000 habitants, 2010-2024'
+  ligne_id: bdm-001155
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=URBA1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i4a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010596138 et 010596139 et Melodi ODD 11 : part des stations dépassant le seuil journalier,
+    agglomérations de plus de 250 000 et de 50 000 à 250 000 habitants, 2010-2024'
+  ligne_id: melodi-005671
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=URBA2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i4a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010596138 et 010596139 et Melodi ODD 11 : part des stations dépassant le seuil journalier,
+    agglomérations de plus de 250 000 et de 50 000 à 250 000 habitants, 2010-2024'
+  ligne_id: melodi-005672
+  eligible: oui
+- serie_id: sdes_air_depassements_taille_agglomeration:PM10#POURC_STATION_DEP_GDE_AGGLO
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: part des stations en dépassement, grandes agglomérations (hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_depassements_taille_agglomeration.csv
+- serie_id: sdes_air_depassements_taille_agglomeration:PM10#POURC_STATION_DEP_AGGLO_MOY
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: part des stations en dépassement, agglomérations moyennes (hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_depassements_taille_agglomeration.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- peu_discriminant_recent
+notes: 'Variantes : INSEE BDM 010596138 et 010596139 et Melodi ODD 11 (part des stations en dépassement dans les
+  agglomérations de plus de 250 000 et de 50 000 à 250 000 habitants) ; part des stations en dépassement par taille
+  d''agglomération (hors long-list, preuve du robot).'

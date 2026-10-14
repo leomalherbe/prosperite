@@ -1,0 +1,46 @@
+id: concentration_ozone
+libelle: Concentration d'ozone en fond urbain (indice)
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: depassement_norme_ozone
+variante_principale: non
+definition: Indice de la concentration moyenne annuelle d'ozone mesurée par les stations de fond urbain, base 100
+  en 2000 (SDES, base Geod'air).
+unite: indice base 100 en 2000
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Concentrations de polluants en indice (fichier DiDo b10a6294), O3 fond urbain
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/b10a6294-7f55-47be-b2e7-2ea2a856e564/csv
+  (O3.Fond_urbain)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/b10a6294-7f55-47be-b2e7-2ea2a856e564/csv
+  (O3.Fond_urbain)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000370
+hors_longlist: non
+raccordement: 'non : série du SDES depuis 2000'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la famille depassement_norme_ozone (niveau de fond plutôt que dépassement
+  de norme), série du SDES annuelle de 2000 à 2024 (25 points d'après la long-list).
+note_pertinence: L'indice suit le niveau de fond de l'ozone, indépendamment du seuil réglementaire ; il vaut 98,96
+  en 2024 (base 100 en 2000, extrait du robot M04). Exprimé en indice et non en µg/m³, il se prête mal à des bornes
+  sanitaires.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- indice
+notes: ''

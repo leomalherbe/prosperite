@@ -1,0 +1,92 @@
+id: hausse_loyers
+libelle: Évolution annuelle des loyers
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: hausse_loyers
+variante_principale: oui
+definition: Taux de variation annuel moyen de l'indice des prix à la consommation harmonisé (IPCH) des loyers d'habitation
+  effectifs (poste COICOP 04.1), France.
+unite: '% par an'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: prc_hicp_aind (IPCH, données annuelles), poste CP041 loyers d'habitation effectifs
+source_serie_id: prc_hicp_aind?freq=A&unit=RCH_A_AVG&coicop=CP041&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_aind?freq=A&unit=RCH_A_AVG&coicop=CP041&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-052758
+hors_longlist: non
+rattachement_propose: ligne de la long-list education (IPCH, rattachement par défaut erroné) ; loyers → logement_cadre_vie
+  (contenu de la dimension) ; à trancher au gel 2
+raccordement: 'non : série IPCH depuis 1996'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série annuelle de l'évolution des loyers payés par les locataires, IPCH de 2000 à 2025
+  (26 points d'après la long-list), les séries de l'INSEE (enquête Loyers et charges) étant trimestrielles (D35).
+note_pertinence: 'Les loyers sont la principale dépense des locataires : leur hausse, comparée à celle des prix
+  et des revenus, renseigne sur la tension du marché locatif. L''indicateur est un taux de variation nominal, sans
+  rapport au revenu ; les bornes devront tenir compte de l''inflation générale. Les valeurs n''ont pas été relues
+  sur l''API.'
+variantes:
+- serie_id: '010600372'
+  source: INSEE BDM
+  nature: 'INSEE BDM : variation trimestrielle et annuelle des loyers (secteur libre, secteur social, ensemble),
+    France métropolitaine, 1987-2026 (trimestrielle, D35)'
+  ligne_id: bdm-000717
+  eligible: oui
+- serie_id: '010600379'
+  source: INSEE BDM
+  nature: 'INSEE BDM : variation trimestrielle et annuelle des loyers (secteur libre, secteur social, ensemble),
+    France métropolitaine, 1987-2026 (trimestrielle, D35)'
+  ligne_id: bdm-000718
+  eligible: oui
+- serie_id: '010600386'
+  source: INSEE BDM
+  nature: 'INSEE BDM : variation trimestrielle et annuelle des loyers (secteur libre, secteur social, ensemble),
+    France métropolitaine, 1987-2026 (trimestrielle, D35)'
+  ligne_id: bdm-000719
+  eligible: oui
+- serie_id: '010600393'
+  source: INSEE BDM
+  nature: 'INSEE BDM : variation trimestrielle et annuelle des loyers (secteur libre, secteur social, ensemble),
+    France métropolitaine, 1987-2026 (trimestrielle, D35)'
+  ligne_id: bdm-000720
+  eligible: oui
+- serie_id: '010600400'
+  source: INSEE BDM
+  nature: 'INSEE BDM : variation trimestrielle et annuelle des loyers (secteur libre, secteur social, ensemble),
+    France métropolitaine, 1987-2026 (trimestrielle, D35)'
+  ligne_id: bdm-000721
+  eligible: oui
+- serie_id: '010600407'
+  source: INSEE BDM
+  nature: 'INSEE BDM : variation trimestrielle et annuelle des loyers (secteur libre, secteur social, ensemble),
+    France métropolitaine, 1987-2026 (trimestrielle, D35)'
+  ligne_id: bdm-000722
+  eligible: oui
+- serie_id: prc_hicp_aind?freq=A&unit=RCH_A_AVG&coicop=CP0411&geo=FR
+  source: Eurostat
+  nature: 'sous-poste : loyers effectivement payés par les locataires (CP0411)'
+  ligne_id: estat-052759
+  eligible: oui
+  longlist: education
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- taux_de_variation_nominal
+- drapeaux_non_lus
+notes: 'Variantes : loyers effectivement payés par les locataires (CP0411) ; INSEE BDM, variation trimestrielle
+  et annuelle des loyers des secteurs libre et social et de l''ensemble (France métropolitaine, 1987-2026). L''indice
+  de référence des loyers (IRL) est écarté du catalogue INSEE comme indice de révision de contrats.'

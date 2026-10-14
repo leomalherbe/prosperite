@@ -1,0 +1,98 @@
+id: couverture_fibre
+libelle: Ménages couverts par la fibre optique
+dimension: logement_cadre_vie
+sous_theme: numérique
+famille: couverture_fibre
+variante_principale: oui
+definition: Part des ménages dont le logement est couvert par un réseau en fibre optique jusqu'aux locaux (FTTP)
+  (Eurostat, couverture du haut débit).
+unite: '% des ménages'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: isoc_cbt (couverture internet à haut débit par technologie)
+source_serie_id: isoc_cbt?freq=A&unit=PC_HH&inet_tec=FTTP&terrtypo=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_cbt?freq=A&unit=PC_HH&inet_tec=FTTP&terrtypo=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/isoc_cbt/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2025
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-052305
+hors_longlist: non
+raccordement: 'non : série Eurostat depuis 2013'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de l'infrastructure numérique (A5, A7), série Eurostat de 2013 à 2025
+  (13 points d'après la long-list), admise comme indicateur de moyens adossé à des objectifs publics de couverture
+  (D19).
+note_pertinence: 'La couverture mesure l''infrastructure disponible et non son usage : elle dit si chaque ménage
+  peut accéder à un internet de qualité où qu''il habite. Les objectifs publics (plan France Très haut débit, décennie
+  numérique de l''UE) sont exprimés en couverture, ce qui facilitera le choix des bornes. Les valeurs n''ont pas
+  été relues sur l''API.'
+variantes:
+- serie_id: isoc_cbs?freq=A&unit=PC_HH&inet_spd=MBPS_GT100&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par débit (plus de 30 et 100 Mbit/s, 1 Gbit/s)
+  ligne_id: estat-052295
+  eligible: oui
+- serie_id: isoc_cbs?freq=A&unit=PC_HH&inet_spd=MBPS_GT30&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par débit (plus de 30 et 100 Mbit/s, 1 Gbit/s)
+  ligne_id: estat-052297
+  eligible: oui
+- serie_id: isoc_cbt?freq=A&unit=PC_HH&inet_tec=BB_FX&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par les réseaux d'accès de nouvelle génération (NGA), à très haute capacité (VHCN), haut débit
+    fixe et 5G
+  ligne_id: estat-052301
+  eligible: oui
+- serie_id: isoc_cbt?freq=A&unit=PC_HH&inet_tec=NGA&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par les réseaux d'accès de nouvelle génération (NGA), à très haute capacité (VHCN), haut débit
+    fixe et 5G
+  ligne_id: estat-052311
+  eligible: oui
+- serie_id: isoc_cbs?freq=A&unit=PC_HH&inet_spd=GBPS_GT1&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par débit (plus de 30 et 100 Mbit/s, 1 Gbit/s)
+  ligne_id: estat-052293
+  eligible: non
+- serie_id: isoc_cbs?freq=A&unit=PC_HH&inet_spd=GBPS_GT1_UD&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par débit (plus de 30 et 100 Mbit/s, 1 Gbit/s)
+  ligne_id: estat-052294
+  eligible: non
+- serie_id: isoc_cbt?freq=A&unit=PC_HH&inet_tec=5G&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par les réseaux d'accès de nouvelle génération (NGA), à très haute capacité (VHCN), haut débit
+    fixe et 5G
+  ligne_id: estat-052298
+  eligible: non
+- serie_id: isoc_cbt?freq=A&unit=PC_HH&inet_tec=VHCN_BEREC&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par les réseaux d'accès de nouvelle génération (NGA), à très haute capacité (VHCN), haut débit
+    fixe et 5G
+  ligne_id: estat-052314
+  eligible: non
+- serie_id: isoc_cbt?freq=A&unit=PC_HH&inet_tec=VHCN_FX&terrtypo=TOTAL&geo=FR
+  source: Eurostat
+  nature: couverture par les réseaux d'accès de nouvelle génération (NGA), à très haute capacité (VHCN), haut débit
+    fixe et 5G
+  ligne_id: estat-052315
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- indicateur_de_moyens
+- drapeaux_non_lus
+notes: 'Variantes : couverture par les réseaux d''accès de nouvelle génération (NGA), à très haute capacité (VHCN),
+  haut débit fixe, 5G ; couverture par débit (plus de 30 et 100 Mbit/s, 1 Gbit/s).'

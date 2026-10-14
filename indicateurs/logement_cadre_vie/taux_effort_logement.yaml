@@ -1,0 +1,98 @@
+id: taux_effort_logement
+libelle: Taux d'effort médian pour le logement
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: surcharge_couts_logement
+variante_principale: non
+definition: Médiane, dans la population, de la part des coûts totaux du logement (nets des allocations logement)
+  dans le revenu disponible du ménage (EU-SILC).
+unite: '% du revenu disponible'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_lvho08a (médiane de la charge des coûts du logement par âge, sexe et statut de pauvreté, EU-SILC)
+source_serie_id: ilc_lvho08a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho08a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho08a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031398
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2004'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille surcharge_couts_logement (charge du ménage médian plutôt que part
+  au-delà d'un seuil), série Eurostat annuelle de 2004 à 2025 (21 points d'après la long-list).
+note_pertinence: 'Le taux d''effort médian décrit la charge du logement pour un ménage ordinaire, quand le taux
+  de surcharge se concentre sur les situations extrêmes. Les valeurs et les drapeaux n''ont pas pu être relus sur
+  l''API Eurostat le 14/10/2026 (refus 429 du proxy) : la fiche s''appuie sur les métadonnées de la long-list.'
+variantes:
+- serie_id: ilc_lvho08b?freq=A&unit=PC&deg_urb=DEG1&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, urbanisation)
+  ligne_id: estat-005380
+  eligible: oui
+- serie_id: ilc_lvho08b?freq=A&unit=PC&deg_urb=DEG2&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, urbanisation)
+  ligne_id: estat-005381
+  eligible: oui
+- serie_id: ilc_lvho08b?freq=A&unit=PC&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, urbanisation)
+  ligne_id: estat-005382
+  eligible: oui
+- serie_id: ilc_lvho08a?freq=A&unit=PC&rskpovth=TOTAL&age=Y_LT18&age=Y18-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, urbanisation)
+  ligne_id: estat-031399
+  eligible: oui
+- serie_id: ilc_lvho08a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, statut de pauvreté, urbanisation)
+  ligne_id: estat-031400
+  eligible: oui
+- serie_id: ilc_mded01?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: part moyenne du coût du logement (ilc_mded01) et du loyer (ilc_mded02) dans le revenu disponible, par
+    type de ménage (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-031743
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded01?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: part moyenne du coût du logement (ilc_mded01) et du loyer (ilc_mded02) dans le revenu disponible, par
+    type de ménage (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-031744
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded02?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: part moyenne du coût du logement (ilc_mded01) et du loyer (ilc_mded02) dans le revenu disponible, par
+    type de ménage (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-031745
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded02?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: part moyenne du coût du logement (ilc_mded01) et du loyer (ilc_mded02) dans le revenu disponible, par
+    type de ménage (lignes renvoyées par niveau_de_vie)
+  ligne_id: estat-031746
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_non_lus
+notes: 'Variantes : ilc_lvho08b (urbanisation) ; parts moyennes du coût du logement (ilc_mded01) et du loyer (ilc_mded02)
+  dans le revenu disponible, lignes renvoyées par niveau_de_vie.'

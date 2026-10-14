@@ -1,0 +1,71 @@
+id: charge_logement_lourde
+libelle: Coût du logement ressenti comme une lourde charge
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: charge_logement_lourde
+variante_principale: oui
+definition: 'Part de la population vivant dans un ménage qui déclare que le coût total du logement représente une
+  lourde charge financière (EU-SILC ; autres réponses : une charge dans une certaine mesure, pas une charge).'
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mded04 (charge financière du coût total du logement, EU-SILC)
+source_serie_id: ilc_mded04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mded04/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2023
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031749
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2004'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure du poids ressenti du coût du logement, série Eurostat annuelle de 2004 à 2023
+  (18 points d'après la long-list), dernière valeur postérieure à 2020.
+note_pertinence: 'La question recueille l''appréciation du ménage sur son budget logement : elle complète les ratios
+  coût sur revenu en captant des situations tendues qu''ils ne montrent pas (charges contraintes, endettement).
+  La série s''arrête en 2023 dans la long-list ; sa poursuite dans l''enquête EU-SILC est à vérifier.'
+variantes:
+- serie_id: ilc_mded04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (charge « dans une certaine mesure », « pas une charge »)
+  ligne_id: estat-031750
+  eligible: oui
+- serie_id: ilc_mded04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=NONE&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (charge « dans une certaine mesure », « pas une charge »)
+  ligne_id: estat-031751
+  eligible: oui
+- serie_id: ilc_mded04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=NONE&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (charge « dans une certaine mesure », « pas une charge »)
+  ligne_id: estat-031752
+  eligible: oui
+- serie_id: ilc_mded04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (charge « dans une certaine mesure », « pas une charge »)
+  ligne_id: estat-031753
+  eligible: oui
+- serie_id: ilc_mded04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (charge « dans une certaine mesure », « pas une charge »)
+  ligne_id: estat-031754
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- declaratif
+- drapeaux_non_lus
+notes: 'Déclaratif oui : appréciation du ménage sur sa charge (méthode §4). Variantes : ventilation par type de
+  ménage, modalités « dans une certaine mesure » et « pas une charge ».'

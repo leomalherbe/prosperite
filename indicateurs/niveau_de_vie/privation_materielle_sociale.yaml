@@ -29,8 +29,9 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000871
 hors_longlist: non
-raccordement: 'a_etudier : 2013-2024 ; l''ancien taux de privation matérielle sévère d''Eurostat (ilc_mddd11, 2004-2020)
-  pourrait couvrir 2004-2012 avec une autre définition'
+raccordement: 'a_etudier : la série commence en 2013 et aucune série de même définition ne la précède au catalogue
+  ; le taux de « pauvreté en conditions de vie » de l''INSEE (SRCV, hors catalogue, maintenance NDV-9) serait le
+  prédécesseur à raccorder (D16)'
 incontournable: oui
 recommandation: retenir
 motif_recommandation: Concept présent dans trois cadres (Stiglitz-Sen-Fitoussi, Eurostat, INSEE ; §5 du crosswalk),

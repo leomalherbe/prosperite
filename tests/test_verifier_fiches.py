@@ -161,6 +161,39 @@ def test_erreurs_detectees(depot: Path, surcharges: dict, attendu: str):
     assert any(attendu in e for e in rapport.erreurs), rapport.erreurs
 
 
+def test_borne_premiere_annee_1700():
+    assert ver._controle_valeur("premiere_annee", "annee", 1750) is None          # V-Dem (D32)
+    assert ver._controle_valeur("premiere_annee", "annee", 1650) is not None
+
+
+def test_hors_longlist_avec_preuve(depot: Path):
+    _fiches_valides(depot)
+    pre.main(["--dimension", "dimtest", "--racine", str(depot), "--maj-fiches"])
+    preuve = depot / "docs" / "sources" / "series" / "sortie_robot.csv"
+    preuve.parent.mkdir(parents=True, exist_ok=True)
+    preuve.write_text("variable,annee\nq1,2020\n", encoding="utf-8")
+    fiche_h = yaml.safe_load((depot / "indicateurs/dimtest/indic_h.yaml").read_text(encoding="utf-8"))
+    fiche_h.update({"source_serie_id": "baromètre, variable Q1", "preuve": "docs/sources/series/sortie_robot.csv",
+                    "statut_serie": "a_calculer"})
+    _ecrire_fiche(depot, fiche_h)
+    rapport = ver.verifier_dimension(depot, "dimtest")
+    assert rapport.erreurs == [] and any("valeurs à calculer" in a for a in rapport.avertissements)
+    fiche_h["preuve"] = "docs/sources/series/absente.csv"
+    _ecrire_fiche(depot, fiche_h)
+    assert any("absente des catalogues" in e for e in ver.verifier_dimension(depot, "dimtest").erreurs)
+
+
+def test_ligne_deja_prise_par_une_autre_dimension(depot: Path):
+    _fiches_valides(depot)
+    pre.main(["--dimension", "dimtest", "--racine", str(depot), "--maj-fiches"])
+    _csv(depot / "docs/validation/preselection_autre_lignes.csv", pre.COLONNES_LIGNES,
+         [["l2", "dimtest", "indic_femmes", "fiche", "indic_femmes", "série principale", "jeu_a?sex=F&geo=FR",
+           "Eurostat", "eurostat_series", "Indicateur A — femmes", "oui", "", "10"]])
+    rapport = ver.verifier_dimension(depot, "dimtest")
+    assert rapport.erreurs == [] and rapport.compteurs["lignes_prises_ailleurs"] == 1
+    assert any("déjà série principale de autre/indic_femmes" in a for a in rapport.avertissements)
+
+
 def test_raccordement_formats_admis():
     for valeur in ("non", "non : rien avant 2010", "oui : série X raccordée en 2010", "a_etudier : série Y à comparer"):
         assert ver._controle_valeur("raccordement", "raccordement", valeur) is None, valeur

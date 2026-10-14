@@ -1,0 +1,64 @@
+id: vie_associative
+libelle: Part des personnes membres d'une association
+dimension: liens_bien_etre
+sous_theme: engagement
+famille: vie_associative
+variante_principale: oui
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui déclarent être membres d''une
+  association (question SDASSYND_2 : « Vous personnellement, êtes-vous membre d''une association ? », réponse «
+  oui »), non-réponses incluses au dénominateur, avec la pondération de redressement de l''enquête.'
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDASSYND_2, modalité 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: a_calculer
+preuve: docs/sources/series/drees__barometre_2000_2025_couverture.csv
+rattachement_propose: 'hors long-list : question SDASSYND_2 du baromètre DREES non cataloguée par M04 (oubli O2
+  de l''audit M06) ; vie associative, contenu de la dimension'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure publique et annuelle de la vie associative depuis 2000 (question posée 25 années
+  sur 2000-2025), concept nommé dans le contenu de la dimension, sous réserve du calcul des valeurs par le robot
+  M04.
+note_pertinence: Être membre d'une association mesure l'insertion dans la vie collective, distincte du bénévolat
+  (donner de son temps). La série couvre toute la période 2000-2025 sur une source publique, alors que la série
+  de bénévolat n'a que 7 valeurs distinctes et repose sur des données Gallup. Les valeurs ne sont pas encore produites
+  (liste de maintenance, n° 29).
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- a_calculer
+- calcul_sur_microdonnees
+- codes_modalites_a_verifier
+- enquete_metropole
+- pas_d_enquete_2003
+notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (années 2000-2002 et 2004-2025,
+  taux de réponse 2025 : 1,000) ; distribution non calculée par le robot : valeurs non trouvé à ce jour. Indicateur
+  calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses incluses
+  au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à vérifier)
+  ; pièce jointe unique barometre2000_2025_diff_csv (vérifiée par le robot le 13/10/2026 ; l''identifiant change
+  à chaque édition) ; échantillon représentatif de la population vivant en France métropolitaine (page du jeu, variable
+  SDREG) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer). L''adhésion syndicale (SDASSYND_1)
+  est un candidat democratie (D33).'

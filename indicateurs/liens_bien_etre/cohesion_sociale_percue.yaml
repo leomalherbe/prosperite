@@ -17,13 +17,13 @@ source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable CS01, modalités 1+2
 source_niveau: 2
-url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2024_diff_csv
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
 frequence: annuelle
 premiere_annee: 2014
 derniere_annee: 2025
 nb_points_depuis_2000: 12
-geo: FR
+geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000260
 hors_longlist: non
@@ -34,7 +34,9 @@ motif_recommandation: Série annuelle de 12 points (2014-2025) sur la perception
   complémentaire de la confiance envers les autres qui n'a que 7 vagues.
 note_pertinence: 'L''indicateur porte sur la société et non sur la personne interrogée : c''est une opinion, sensible
   au climat politique et à l''actualité. Il ne figure comme indicateur dans aucun cadre de référence (le Doughnut
-  a une dimension « cohésion sociale » mesurée autrement).'
+  a une dimension « cohésion sociale » mesurée autrement). Les « ne sait pas », comptés au dénominateur, passent
+  de 0,63 % (2017) à 5,31 % (2018) puis restent entre 2,26 et 4,25 % (2019-2025) : rupture possible de protocole
+  en 2018, comme pour securite/risque_pauvrete_ressenti.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -44,9 +46,10 @@ socle_v1:
 qualite:
 - calcul_sur_microdonnees
 - codes_modalites_a_verifier
-- champ_geographique_a_verifier
-- pas_d_enquete_2003
-notes: 'Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+- enquete_metropole
+- rupture_possible_2018
+notes: Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
   incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
-  vérifier) ; fichier 2025 : pièce jointe barometre2025_diff_csv du même jeu (l''identifiant de pièce jointe change
-  à chaque édition) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'
+  vérifier) ; pièce jointe unique barometre2000_2025_diff_csv (vérifiée par le robot le 13/10/2026 ; l'identifiant
+  change à chaque édition) ; échantillon représentatif de la population vivant en France métropolitaine (page du
+  jeu, variable SDREG) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).

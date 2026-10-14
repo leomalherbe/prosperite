@@ -12,10 +12,14 @@ Contrôles (erreurs bloquantes, code de sortie 1) :
 4. **Catalogues** : l'identifiant de la série principale (ou chacune de ses `composantes`) et celui de chaque
    variante figurent dans un catalogue du dépôt (long-lists, catalogues INSEE et Eurostat, y compris les
    séries écartées `*_non`). Exception documentée : une fiche ou une variante hors catalogue de séries
-   (`hors_longlist: oui`, ou variante sans `ligne_id`) dont le jeu Eurostat figure dans le catalogue des jeux.
+   (`hors_longlist: oui`, ou variante sans `ligne_id`) dont le jeu Eurostat figure dans le catalogue des jeux,
+   ou dont le champ `preuve` désigne un fichier du dépôt (sortie du robot, ex. `docs/sources/series/…`) :
+   avertissement, la série est à cataloguer (liste de maintenance, D32).
 5. **Couverture** (si `docs/validation/preselection_<dimension>_lignes.csv` existe) : chaque ligne de la
    long-list de la dimension est affectée ; chaque groupe `fiche` a sa fiche ; les variantes des fiches
-   correspondent à la présélection (sinon relancer `scripts/preselection.py --maj-fiches`).
+   correspondent à la présélection (sinon relancer `scripts/preselection.py --maj-fiches`) ; avertissement si
+   une ligne utilisée ici (fiche ou variante) est déjà la série principale d'une fiche d'une autre dimension
+   (lecture des `docs/validation/preselection_*_lignes.csv`, R1).
 6. **Tableau de validation** (si `docs/validation/validation_<dimension>.csv` existe) : une ligne par fiche,
    colonnes attendues, valeurs cohérentes avec les fiches, `decision_leo` vide ou dans la liste admise.
 
@@ -55,7 +59,8 @@ OBLIGATOIRES = {
 FACULTATIFS = {
     "composantes": "liste", "formule": "texte", "nb_points_depuis_2000": "entier",
     "eligibilite_longlist": {"oui", "a_verifier", "non", "hors_longlist"}, "ligne_id": "texte_vide",
-    "hors_longlist": OUI_NON, "rattachement_propose": "texte",
+    "hors_longlist": OUI_NON, "rattachement_propose": "texte", "preuve": "texte",
+    "statut_serie": {"disponible", "a_calculer"},
 }
 COLONNES_TABLEAU = ["id", "libelle", "famille", "variante_principale", "definition_courte", "sens", "unite", "source",
                     "serie_id", "periode", "type", "declaratif", "composite", "incontournable", "recommandation",
@@ -113,7 +118,7 @@ def _controle_valeur(nom: str, attendu, valeur) -> str | None:
         ok = isinstance(valeur, str) and (valeur.startswith(("http://", "https://")) or valeur == "non trouvé")
         return None if ok else f"{nom} doit être une URL ou « non trouvé »"
     if attendu == "annee":
-        ok = (isinstance(valeur, int) and 1900 <= valeur <= 2100) or valeur == "non trouvé"
+        ok = (isinstance(valeur, int) and 1700 <= valeur <= 2100) or valeur == "non trouvé"
         return None if ok else f"{nom} doit être une année ou « non trouvé »"
     if attendu == "entier":
         return None if isinstance(valeur, int) and valeur >= 0 else f"{nom} doit être un entier positif"
@@ -199,7 +204,16 @@ def index_catalogues(racine: Path) -> tuple[set[str], set[str]]:
     return series, jeux
 
 
-def controler_catalogues(fiche: dict, rapport: Rapport, series: set[str], jeux: set[str]) -> None:
+def _preuve(racine: Path | None, element: dict) -> str | None:
+    """Chemin de preuve (fichier du dépôt) déclaré par une fiche ou une variante, s'il existe."""
+    chemin = element.get("preuve")
+    if racine is not None and isinstance(chemin, str) and chemin and (racine / chemin).is_file():
+        return chemin
+    return None
+
+
+def controler_catalogues(fiche: dict, rapport: Rapport, series: set[str], jeux: set[str],
+                         racine: Path | None = None) -> None:
     nom = fiche.get("id", "?")
     hors = fiche.get("hors_longlist") == "oui"
     principales = fiche.get("composantes") or [fiche.get("source_serie_id", "")]
@@ -210,6 +224,11 @@ def controler_catalogues(fiche: dict, rapport: Rapport, series: set[str], jeux: 
             rapport.avertir(nom, f"série principale hors catalogue de séries (jeu {serie.split('?')[0]} au catalogue "
                                  "des jeux) : à réintégrer au catalogue")
             continue
+        if hors and _preuve(racine, fiche):
+            etat = " ; valeurs à calculer" if fiche.get("statut_serie") == "a_calculer" else ""
+            rapport.avertir(nom, f"série principale hors catalogue (preuve : {_preuve(racine, fiche)}){etat} : "
+                                 "à cataloguer")
+            continue
         rapport.erreur(nom, f"série principale absente des catalogues : {serie}")
     for v in fiche.get("variantes") or []:
         serie = v.get("serie_id", "")
@@ -217,7 +236,35 @@ def controler_catalogues(fiche: dict, rapport: Rapport, series: set[str], jeux: 
             continue
         if not v.get("ligne_id") and serie.split("?")[0] in jeux and "vérifi" in v.get("catalogue", ""):
             continue
+        if not v.get("ligne_id") and _preuve(racine, v):
+            continue
         rapport.erreur(nom, f"variante absente des catalogues : {serie}")
+
+
+def controler_lignes_croisees(racine: Path, dimension: str, rapport: Rapport) -> None:
+    """Avertit si une ligne utilisée par la dimension (fiche ou variante) est la série principale d'une fiche
+    d'une autre dimension (rattachements croisés, R1, D32)."""
+    dossier = racine / "docs" / "validation"
+    propre = dossier / f"preselection_{dimension}_lignes.csv"
+    if not propre.exists():
+        return
+    lignes = pd.read_csv(propre, dtype=str, keep_default_na=False)
+    utilisees = lignes[(lignes["decision"] == "fiche") | lignes["decision"].str.startswith("variante_de:")]
+    prises = {}
+    for chemin in sorted(dossier.glob("preselection_*_lignes.csv")):
+        autre = chemin.name[len("preselection_"):-len("_lignes.csv")]
+        if autre == dimension:
+            continue
+        df = pd.read_csv(chemin, dtype=str, keep_default_na=False)
+        for r in df[df["decision"] == "fiche"].to_dict("records"):
+            prises.setdefault(r["ligne_id"], (autre, r["groupe"]))
+    n = 0
+    for r in utilisees.to_dict("records"):
+        if r["ligne_id"] in prises:
+            autre, groupe = prises[r["ligne_id"]]
+            rapport.avertir(r["fiche"], f"ligne {r['ligne_id']} déjà série principale de {autre}/{groupe} (R1)")
+            n += 1
+    rapport.compteurs["lignes_prises_ailleurs"] = n
 
 
 def controler_familles(fiches: list[dict], rapport: Rapport) -> None:
@@ -359,8 +406,9 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
     if catalogues:
         series, jeux = index_catalogues(racine)
         for f in fiches:
-            controler_catalogues(f, rapport, series, jeux)
+            controler_catalogues(f, rapport, series, jeux, racine)
     controler_couverture(racine, dimension, fiches, rapport)
+    controler_lignes_croisees(racine, dimension, rapport)
     controler_tableau(racine, dimension, fiches, rapport)
     reco = Counter(f.get("recommandation") for f in fiches)
     rapport.compteurs.update({

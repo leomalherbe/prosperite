@@ -6,6 +6,7 @@ name: Collecte
 #   - manuel (onglet Actions, ou `python scripts/actions.py lancer --branche <b> --cible <script>`) ;
 #   - automatique à chaque push sur une branche de mission `mNN-<sujet>` qui modifie
 #     scripts/ ou src/ : la cible est déduite du nom de branche (m01-insee → collecte_insee.py) ;
+#     s'il n'existe pas de scripts/collecte_<sujet>.py, rien n'est lancé (plus de « tous » par défaut) ;
 #   - le 1er de chaque mois sur main (tous les scripts).
 
 on:
@@ -48,7 +49,7 @@ jobs:
             cible="${{ github.event.inputs.cible }}"
           elif [ "${{ github.event_name }}" = "push" ]; then
             suffixe="${GITHUB_REF_NAME#*-}"
-            if [ -f "scripts/collecte_${suffixe}.py" ]; then cible="collecte_${suffixe}.py"; else cible="tous"; fi
+            if [ -f "scripts/collecte_${suffixe}.py" ]; then cible="collecte_${suffixe}.py"; else cible="aucune"; fi
           else
             cible="tous"
           fi
@@ -56,6 +57,7 @@ jobs:
           echo "Cible : ${cible:-tous}"
       - name: Lancer la collecte
         id: collecte
+        if: steps.cible.outputs.cible != 'aucune'
         continue-on-error: true
         run: |
           set -o pipefail
@@ -63,6 +65,7 @@ jobs:
           horodatage=$(date -u +%Y-%m-%dT%H%M)
           python scripts/lancer_collecte.py --cible "${{ steps.cible.outputs.cible }}" 2>&1 | tee "journaux/collecte_${horodatage}_${{ steps.cible.outputs.cible }}.log"
       - name: Commiter les résultats et le journal
+        if: steps.cible.outputs.cible != 'aucune'
         run: |
           git config user.name "robot-collecte"
           git config user.email "robot-collecte@users.noreply.github.com"

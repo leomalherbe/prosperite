@@ -1,6 +1,6 @@
 # cnaf / ods_catalogue_json
 # URL : https://data.caf.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T14:46:14Z — HTTP 200 — application/json; charset=utf-8 — 8081 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-14T09:07:08Z — HTTP 200 — application/json; charset=utf-8 — 8262 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 210,
@@ -11,66 +11,83 @@
     {
      "name": "dtreffre",
      "description": "Mois de droit",
-     "annotations": {},
+     "annotations": {
+      "facet": true
+     },
      "label": "Date référence",
      "type": "date"
     },
     {
-     "name": "numqp24",
-     "description": "Numéro de quartier prioritaire de la ville du domicile",
+     "name": "numdep",
+     "description": "Numéro du département de résidence",
      "annotations": {},
-     "label": "Numéro de QPV",
+     "label": "Numéro département",
      "type": "text"
     },
     {
-     "name": "nomqpv",
-     "description": "Nom de quartier prioritaire de la ville du domicile",
+     "name": "nomdep",
+     "description": "Nom du département de résidence",
      "annotations": {},
-     "label": "Nom de QPV",
+     "label": "Nom département",
      "type": "text"
     },
     {
-     "name": "numcomdo",
-     "description": "Numéro de commune du domicile",
-     "annotations": {},
-     "label": "Numéro commune",
+     "name": "numregi",
+     "description": "Numéro de la région de résidence",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "Numéro région",
      "type": "text"
     },
     {
-     "name": "nomcom",
-     "description": "Nom de la commune de résidence",
+     "name": "nomregi",
+     "description": "Nom de la région de résidence",
      "annotations": {},
-     "label": "Nom commune",
+     "label": "Nom région",
      "type": "text"
     },
     {
-     "name": "rsa_ppa_agg",
-     "description": "Bénéficiaire du RSA ou de la PA",
-     "annotations": {},
-     "label": "RSA ou PA",
+     "name": "ppa_type",
+     "description": "Type de PPA",
+     "annotations": {
+      "facet": true
+     },
+     "label": "Type PPA",
      "type": "text"
     },
     {
-     "name": "indfoy_rsa_ppa",
-     "description": "Nombre de foyers bénéficiaires de l'RSA_PPA",
+     "name": "ppa_mtt_200",
+     "description": "Montant de la PPA",
+     "annotations": {
+      "facet": true
+     },
+     "label": "Montant versé PPA",
+     "type": "text"
+    },
+    {
+     "name": "indfoy_ppa",
+     "description": "Nombre de foyers bénéficiaires de la PPA selon le type et selon le montant versé",
      "annotations": {},
-     "label": "Nombre foyers RSA_PPA",
+     "label": "Nombre foyers PPA",
      "type": "int"
     },
     {
-     "name": "indnbp_rsa_ppa",
-     "description": "Nombre de personnes appartenant à un foyer bénéficiaire de l'RSA_PPA",
-     "annotations": {},
-     "label": "Nombre personnes RSA_PPA",
-     "type": "int"
+     "name": "lieures",
+     "description": "Lieu de résidence",
+     "annotations": {
+      "facet": true
+     },
+     "label": "Lieu résidence",
+     "type": "text"
     }
    ],
-   "dataset_id": "rsa_ppa_s_agg_qpv_f",
-   "dataset_uid": "da_cmghxp",
+   "dataset_id": "ppa_s_type_mtt_200_dep",
+   "dataset_uid": "da_r93xxx",
    "has_records": true,
    "features": [
-    "timeserie",
-    "analyze"
+    "analyze",
+    "timeserie"
    ],
    "attachments": [],
    "alternative_exports": [],
@@ -83,27 +100,26 @@
      "contributor": null,
      "contact_name": null,
      "contact_email": null,
-     "accrualperiodicity": "annually",
+     "accrualperiodicity": "monthly",
      "spatial": "France",
      "temporal": null,
      "granularity": null,
      "dataquality": null,
      "publisher_type": null,
      "conforms_to": null,
-     "temporal_coverage_start": "2024-12-31T10:00:00+00:00",
-     "temporal_coverage_end": "2099-12-31T09:46:00+00:00",
+     "temporal_coverage_start": "2016-06-01T09:52:00+00:00",
+     "temporal_coverage_end": "2099-12-31T09:50:00+00:00",
      "accessRights": null,
      "relation": null
     },
     "default": {
-     "title": "RSA et PA - Répartition des allocataires [QPV]",
-     "description": "Bénéficiaires au titre de décembre du revenu de solidartité active (RSA) ou de la prime d'activité (PA) à l'échelle du quartier prioritaire de la ville depuis 2024 selon le type de prestations. Ce jeu présente les foyers allocataires, les personnes couvertes et le montant total de prestations versées. Sous conditions de ressources, le revenu de solidarité active assure un revenu minimum aux personnes les plus démunies ou à celles ayant des ressources faibles (<a href=\"https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/le-revenu-de-solidarite-active-rsa\" target=\"_blank\">https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/le-revenu-de-solidarite-active-rsa</a>). La prime d'activité peut être touchée par les personnes ayant une activité professionnelle (salariée ou indépendante) ou par les personnes indemnisées au titre du chômage partiel/technique et que leurs ressources sont modestes (<a href=\"https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/la-prime-d-activite\" target=\"_blank\">https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/la-prime-d-activite</a>). ",
+     "title": "PA - Répartition des allocataires selon le type de PA et le montant de la PA [Département]",
+     "description": "Bénéficiaires mensuels de la prime d'activité (PA) selon le montant de droit, à l'échelle départementale, depuis 2016. Ce jeu présente les foyers allocataires, les personnes couvertes et le montant total de prestation versée. La prime d'activité peut être touchée par les personnes ayant une activité professionnelle (salariée ou indépendante) ou par les personnes indemnisées au titre du chômage partiel/technique et que leurs ressources sont modestes (<a href=\"https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/la-prime-d-activite\" target=\"_blank\">https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/la-prime-d-activite</a>). ",
      "theme": [
       "Solidarité et soutien à l'activité"
      ],
      "keyword": [
-      "revenu de solidarité active",
-      " RSA",
+      "prime d'activité",
       " PA",
       " minima sociaux"
      ],
@@ -114,11 +130,11 @@
       "fr"
      ],
      "timezone": null,
-     "modified": "2026-06-15T16:38:42+00:00",
+     "modified": "2026-09-28T01:08:00+00:00",
      "modified_updates_on_metadata_change": false,
      "modified_updates_on_data_change": true,
-     "data_processed": "2026-06-15T16:38:42+00:00",
-     "metadata_processed": "2026-06-15T16:38:42.620000+00:00",
+     "data_processed": "2026-09-28T01:08:00+00:00",
+     "metadata_processed": "2026-10-09T15:23:12.066000+00:00",
      "geographic_reference": [
       "world_fr"
      ],
@@ -130,7 +146,7 @@
      "bbox": null,
      "publisher": "Caisse nationale des Allocations familiales",
      "references": null,
-     "records_count": 4993,
+     "records_count": 73005,
      "attributions": null,
      "source_domain": null,
      "source_domain_title": null,
@@ -142,10 +158,10 @@
      "update_frequency": null
     },
     "custom": {
-     "date-debut": "2024-12-31",
-     "labellisation": false,
-     "periodicite": "Annuelle",
-     "niveau-geographique": "QPV"
+     "date-debut": "2016-01-06",
+     "labellisation": true,
+     "periodicite": "Mensuelle",
+     "niveau-geographique": "Département"
     }
    }
   },
@@ -156,37 +172,55 @@
      "name": "dtreffre",
      "description": "Mois de droit",
      "annotations": {
+      "facet": true,
       "facetsort": "-alphanum",
-      "timeserie_precision": "month",
-      "facet": true
+      "timeserie_precision": "month"
      },
      "label": "Date référence",
      "type": "date"
     },
     {
-     "name": "prepare_tx",
-     "description": "Taux de la PREPARE",
+     "name": "numdep",
+     "description": "Numéro du département de résidence",
      "annotations": {
-      "facet": true,
-      "facetsort": "alphanum",
-      "disjunctive": true
+      "facetsort": "alphanum"
      },
-     "label": "Taux PREPARE",
+     "label": "Numéro département",
      "type": "text"
     },
     {
-     "name": "sitfam_d",
-     "description": "Situation familiale en fonction de la prestation perçue",
+     "name": "nomdep",
+     "description": "Nom du département de résidence",
      "annotations": {
       "facet": true,
-      "facetsort": "alphanum",
-      "disjunctive": true
+      "facetsort": "alphanum"
      },
-     "label": "Situation familiale",
+     "label": "Nom département",
      "type": "text"
     },
     {
-     "name": "indfoy_prepare",
-     "description": "Nombre de foyers bénéficiaires de la PREPARE selon le taux et selon la situation familiale",
-     "annotations": {},
-     "label": "Nombre foyers PREPAR
+     "name": "numregi",
+     "description": "Numéro de la région de résidence",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "Numéro région",
+     "type": "text"
+    },
+    {
+     "name": "nomregi",
+     "description": "Nom de la région de résidence",
+     "annotations": {
+      "facet": true,
+      "facetsort": "alphanum"
+     },
+     "label": "Nom région",
+     "type": "text"
+    },
+    {
+     "name": "aah_typ_com",
+     "description": "Type de complément AAH",
+     "annotations": {
+      "facet": true
+     },
+     "label": "Type complément A

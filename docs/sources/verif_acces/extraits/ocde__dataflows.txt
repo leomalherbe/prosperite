@@ -1,8 +1,8 @@
 # ocde / dataflows
 # URL : https://sdmx.oecd.org/public/rest/dataflow/all
-# Vérifié le 2026-10-14T09:08:03Z — HTTP 200 — application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8 — 8936571 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:47:00Z — HTTP 200 — application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8 — 8917087 octets lus (taille annoncée : inconnue)
 
-1549 correspondances distinctes du motif 'Dataflow id="([^"]+)" agencyID="([^"]+)" version="([^"]+)"[^>]*>(?:(?!</structure:Dataflow>)[\\s\\S])*?<common:Name xml:lang="en">([^<]+)<' :
+1547 correspondances distinctes du motif 'Dataflow id="([^"]+)" agencyID="([^"]+)" version="([^"]+)"[^>]*>(?:(?!</structure:Dataflow>)[\\s\\S])*?<common:Name xml:lang="en">([^<]+)<' :
 SEEA_AEA_A	ESTAT	1.4	Air Emissions Accounts
 DF_SDG_GLC	IAEG-SDGs	1.20	SDG Country Global Dataflow
 DF_SDG_GLH	IAEG-SDGs	1.20	SDG Harmonized Global Dataflow
@@ -520,8 +520,8 @@ DSD_FFS@DF_FFS_MNE	OECD.DEV.RSDS	1.0	Inventory of Energy Subsidies and Support M
 DSD_FFS@DF_FFS_SRB	OECD.DEV.RSDS	1.0	Inventory of Energy Subsidies and Support Measures in the Western Balkans - Serbia
 DSD_FFS@DF_FFS_WBC	OECD.DEV.RSDS	1.0	Inventory of Energy Subsidies and Support Measures in the Western Balkans
 DSD_FFS@DF_FFS_XKV	OECD.DEV.RSDS	1.0	Inventory of Energy Subsidies and Support Measures in the Western Balkans - Kosovo
-DSD_PMR@DF_PMR	OECD.ECO.GCRD	1.4	Product market regulation
-DSD_PMR@DF_PMR_WBG	OECD.ECO.GCRD	1.4	Product market regulation OECD-WBG (World Bank Group)
+DSD_PMR@DF_PMR	OECD.ECO.GCRD	1.3	Product market regulation
+DSD_PMR@DF_PMR_WBG	OECD.ECO.GCRD	1.3	Product market regulation OECD-WBG (World Bank Group)
 DSD_CPU@DF_CPU	OECD.ECO.MAD	1.0	Climate Policy Uncertainty
 DSD_EO@DF_EO	OECD.ECO.MAD	1.5	Economic Outlook 119
 DSD_EO_114@DF_EO_114	OECD.ECO.MAD	1.0	Economic Outlook No 114
@@ -843,8 +843,6 @@ DSD_PU_P@DF_PU_P	OECD.ENV.EEI	1.0	Projections of Plastics Use
 DSD_PW@DF_PW	OECD.ENV.EEI	1.0	Plastic Waste  - Estimations from 1990 to 2019
 DSD_PW_2019@DF_PW_2019	OECD.ENV.EEI	1.0	Plastic Waste in 2019
 DSD_PW_P@DF_PW_P	OECD.ENV.EEI	1.0	Projections of Plastic Waste
-DSD_SWACHE@DF_SWACHE_PRIMARY	OECD.ENV.EEI	1.0	Surveys on Willingness-to-Pay to Avoid Negative Chemicals-Related Health Effects (SWACHE) values, primary estimates
-DSD_SWACHE@DF_SWACHE_TRANSFERRED	OECD.ENV.EEI	1.0	Surveys on Willingness-to-Pay to Avoid Negative Chemicals-Related Health Effects (SWACHE) values, transferred estimates
 DSD_VSL@DF_VSL_ALTERNATIVE	OECD.ENV.EEI	1.0	Value of Statistical Life (VSL), alternative estimates (for sensitivity analysis)
 DSD_VSL@DF_VSL_RECOMMENDED	OECD.ENV.EEI	1.0	Value of Statistical Life (VSL), recommended estimates
 DSD_AIR_EMISSIONS@DF_AIR_EMISSIONS	OECD.ENV.EPI	1.0	Air emissions - Air pollutants Inventories

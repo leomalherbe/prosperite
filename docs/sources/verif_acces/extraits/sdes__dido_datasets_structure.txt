@@ -1,6 +1,6 @@
 # sdes / dido_datasets_structure
 # URL : https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datasets?page=1&pageSize=10
-# Vérifié le 2026-10-14T09:07:19Z — HTTP 200 — application/json; charset=utf-8 — 400000 octets lus (taille annoncée : 1610771)
+# Vérifié le 2026-10-13T14:46:25Z — HTTP 200 — application/json; charset=utf-8 — 400000 octets lus (taille annoncée : 1610769)
 
 {
   "total": 41,
@@ -40,7 +40,7 @@
         "acronym": "CGDD/SDES/SDSE/BSOE"
       },
       "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=dataset&datasetId=6102466697d9291fc5ce2d70",
-      "views": 58647,
+      "views": 58542,
       "attachments": [
         {
           "rid": "61d1bf0c-b549-4a9b-bab7-74c5ba8976d0",
@@ -51,7 +51,7 @@
           "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/61d1bf0c-b549-4a9b-bab7-74c5ba8976d0",
           "created_at": "2023-10-02T16:14:27.824Z",
           "last_modified": "2024-10-02T07:05:28.139Z",
-          "downloads": 1006
+          "downloads": 1001
         },
         {
           "rid": "225da583-3f5b-4253-8333-ef1715b65749",
@@ -62,7 +62,7 @@
           "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/225da583-3f5b-4253-8333-ef1715b65749",
           "created_at": "2023-10-02T16:14:34.596Z",
           "last_modified": "2024-10-02T07:04:11.444Z",
-          "downloads": 1341
+          "downloads": 1336
         },
         {
           "rid": "3f440b90-7ba5-4d28-9f17-2cbe240ec9c1",
@@ -73,7 +73,7 @@
           "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/3f440b90-7ba5-4d28-9f17-2cbe240ec9c1",
           "created_at": "2023-10-02T16:14:35.581Z",
           "last_modified": "2024-10-02T07:03:51.283Z",
-          "downloads": 1176
+          "downloads": 1171
         }
       ],
       "datafiles": [

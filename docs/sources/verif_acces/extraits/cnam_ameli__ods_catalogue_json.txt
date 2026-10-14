@@ -1,6 +1,6 @@
 # cnam_ameli / ods_catalogue_json
 # URL : https://data.ameli.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-14T09:06:56Z — HTTP 200 — application/json; charset=utf-8 — 13257 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:06Z — HTTP 200 — application/json; charset=utf-8 — 17957 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 51,
@@ -12,9 +12,9 @@
      "name": "annee",
      "description": "année",
      "annotations": {
+      "facetsort": "-count",
       "timeserie_precision": "year",
-      "facet": true,
-      "facetsort": "alphanum"
+      "facet": true
      },
      "label": "﻿annee",
      "type": "date"
@@ -23,8 +23,7 @@
      "name": "profession_sante",
      "description": "profession de santé",
      "annotations": {
-      "facet": true,
-      "sortable": true
+      "facet": true
      },
      "label": "profession_sante",
      "type": "text"
@@ -52,7 +51,6 @@
      "name": "departement",
      "description": "numéro du département",
      "annotations": {
-      "facetsort": "-count",
       "facet": true,
       "disjunctive": true
      },
@@ -69,29 +67,22 @@
      "type": "text"
     },
     {
-     "name": "secteur_conventionnel",
-     "description": "libellé technique du secteur conventionnel",
+     "name": "nombre_patients_uniques",
+     "description": "nombre moyen de patients uniques (file active moyenne)",
      "annotations": {
       "facetsort": "-count"
      },
-     "label": "secteur_conventionnel",
+     "label": "nombre_patients_uniques",
      "type": "text"
     },
     {
-     "name": "libelle_secteur_conventionnel",
-     "description": "libellé du secteur conventionnel",
+     "name": "nombre_patients_medecin_traitant",
+     "description": "nombre moyen de patients dont le médecin est déclaré en tant que médecin traitant",
      "annotations": {
-      "facet": true
+      "facetsort": "-count"
      },
-     "label": "libelle_secteur_conventionnel",
+     "label": "nombre_patients_medecin_traitant",
      "type": "text"
-    },
-    {
-     "name": "effectif",
-     "description": "effectif",
-     "annotations": {},
-     "label": "effectif",
-     "type": "int"
     },
     {
      "name": "vision_generale_all",
@@ -113,10 +104,28 @@
      "annotations": {},
      "label": "vision profession territoire",
      "type": "text"
+    },
+    {
+     "name": "patients_medecin_traitant_integer",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "patients_medecin_traitant_integer",
+     "type": "int"
+    },
+    {
+     "name": "patients_uniques_integer",
+     "description": "colonne utile uniquement pour les visuels du site",
+     "annotations": {
+      "facetsort": "-count"
+     },
+     "label": "patients_uniques_integer",
+     "type": "int"
     }
    ],
-   "dataset_id": "demographie-secteurs-conventionnels",
-   "dataset_uid": "da_auz94x",
+   "dataset_id": "patientele",
+   "dataset_uid": "da_naqxb0",
    "has_records": true,
    "features": [
     "analyze",
@@ -127,7 +136,5 @@
    "data_visible": true,
    "metas": {
     "default": {
-     "title": "Professionnels de santé libéraux : effectif par secteur conventionnel et par territoire (département, région)",
-     "description": "<p>Ce jeu de données est une des sources de datavisualisations disponibles sur le site <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux/\">Data professionnels de santé libéraux</a>.</p><h3><span>Informations générales :</span></h3>\n<p>Les professions de santé libérales disponibles dans ce jeu de données sont : les <b>médecins</b> (avec plus d’une vingtaine de spécialités médicales).</p>\n<p>Il s'agit de professionnels de santé actifs au 31 décembre de l’année concernée et :</p>\n<ul>\n<li>exerçant leur activité en libéral ;</li>\n<li>en France métropolitaine, Guadeloupe, Guyane, La Réunion, Martinique et Mayotte ;</li>\n<li>ayant perçu au moins 1 euro d’honoraires ;</li>\n<li>qu’ils soient conventionnés avec l’Assurance Maladie  ou non conventionnés (lorsqu’ils génèrent une prescription remboursée par l’Assurance Maladie) ;</li>\n<li>les professionnels en cumul emploi-retraite sont décomptés dans les effectifs dès lors qu’ils remplissent les conditions précédentes.</li>\n</ul>\n<p>Ce jeu de données présente des informations sur le secteur conventionnel des médecins libéraux :</p>\n<ul>\n<li>conventionnés en secteur 1 ;</li>\n<li>conventionnés en secteur 2 ;</li>\n<ul>\n<li>avec adhésion à l’Optam/Optam-CO ;</li>\n<li>sans adhésion à l’Optam/Optam-CO ;</li>\n</ul>\n<li>non conventionnés.</li>\n</ul>\n<p>Pour plus d'informations (source, champ, définitions des \nmodalités), consulter la page <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux-methode/\">Méthode</a> du site.</p><h3><span>Couverture spatiale et granularité :<br></span></h3><p></p><p>Ce jeu de données couvre la France entière.</p><p>En termes de granularité spatiale, plusieurs niveaux territoriaux sont disponibles : niveau national (France entière), niveau régional, niveau départemental.</p><h3><span>Mises à jour des données :</span></h3>\n<ul><li>Mise à jour du 19/06/2023 : première mise en ligne des données, de l'année 2010 à l'année 2021</li><li>Mise à jour du 23/01/2024 : ajout des données de l'année 2022</li><li>Mise à jour du 04/11/2024 : ajout des données de l'année 2023</li><li>Mise\nà jour du 06/10/2025 : ajout des données de l'année 2024</li><li>Mise\nà jour du 12/10/2026 : ajout des données de l'année 2025</li></ul>\n<p>Pour\n plus d'informations et détails sur les mises à jour et changements \nopérés dans les données (périmètre, mode de calcul, correctif, etc.), \nconsulter la page <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux-methode/\">Méthode</a> du site.</p><p></p>\n<h3><span>Fréquence de mise à jour des données :</span></h3>\n<p>Les données proposées en téléchargement dans l’onglet « Export » sont mises à jour chaque année (données de la France entière depuis 2010).</p><h3><span>Source :</span></h3><p></p>\n<p>Les données sont issues du système national des données de santé \n(SNDS). <br></p><p></p><h3><span>Autres informations :<br></span></h3><p></p>",
-     "theme": [
-      "Professi
+     "title": "Professionnels de santé libéraux : patientèle par territoire (département, région)",
+     "description": "<p>Ce jeu de données est une des sources de datavisualisations disponibles sur le site <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux/\">Data professionnels de santé libéraux</a>.</p><h3><span>Informations générales :</span></h3>\n<p>Les professions de santé libérales disponibles dans ce jeu de données sont :</p>\n<ul>\n<li>les <b>médecins</b> (avec plus d’une vingtaine de spécialités médicales) ;</li>\n<li>les <b>chirurgiens-dentistes</b> (dont les spécialistes d'orthopédie dento-faciale – ODF) ;</li>\n<li>les <b>sages-femmes</b> ;</li>\n<li>les auxiliaires médicaux avec cinq professions : <b>infirmiers, masseur-kinésithérapeutes, orthophonistes, orthoptistes, pédicures-podologues</b>.</li>\n</ul>\n<p>Il s'agit de professionnels de santé actifs au 31 décembre de l’année concernée et :</p>\n<ul>\n<li>exerçant leur activité en libéral ;</li>\n<li>en France métropolitaine, Guadeloupe, Guyane, La Réunion, Martinique et Mayotte ;</li>\n<li>ayant perçu au moins 1 euro d’honoraires ;</li>\n<li>qu’ils soient conventionnés avec l’Assurance Maladie  ou non conventionnés (lorsqu’ils génèrent une prescription remboursée par l’Assurance Maladie) ;</li>\n<li>les professionnels en cumul emploi-retraite sont décomptés dans les effectifs dès lors qu’ils remplissent les conditions précédentes.</li>\n</ul>\n<p>Ce jeu de données présente des informations sur la patientèle des professionnels de santé libéraux :</p>\n<ul>\n<li>nombre de patients uniques (file active) ;</li>\n<li>nombre de patients « médecin traitant » (uniquement pour les <b>médecins généralistes</b> et les <b>pédiatres</b>).</li>\n</ul>\n<p>Les données sont issues du système national des données de santé (SNDS). Pour plus d'informations (source, champ, définitions des modalités), consulter la page <a href=\"https://data.ameli.fr/pages/data-professionnels-sante-liberaux-methode/\">Méthode</a> du site.</p>\n<h3><span>Secret statistique :</span></h3>\n<p>Par respect pour le secret statistique (loi du 7 juin 1951) et afin que l’identification directe ou indirecte des individus soit impossible, aucune information sur les honoraires, les prescriptions et la patientèle n'est communiquée lorsque le nombre de professionnels de santé libéraux est strictement inférieur à 5.</p>\n<p>La valeur de l'indicateur est alors indiquée par « NS » (non significatif) dans le jeu de données.</p>\n<h3><span>Abréviations présentes dans les données :</span></h3>\n<ul>\n<li>« NS » = non significatif (application du secret statistique)</li>\n<li>« NC » = non calculé (profession non concernée, etc.)</li></ul><h3><span>Couverture spatiale et granularité :<b

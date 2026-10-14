@@ -4,8 +4,9 @@ dimension: securite
 sous_theme: atteintes aux biens
 famille: vols_vehicules
 variante_principale: oui
-definition: Nombre de vols de véhicules à moteur ou de leurs pièces (catégorie ICCS 05021) enregistrés par la police
-  et la gendarmerie dans l'année, pour 100 000 habitants.
+definition: Nombre de vols de véhicules à moteur ou de leurs pièces détachées (catégorie ICCS 05021, « vol de véhicule
+  motorisé ou de ses pièces détachées ») enregistrés par la police et la gendarmerie dans l'année, pour 100 000
+  habitants.
 unite: infractions pour 100 000 habitants
 sens: bas
 type: resultat
@@ -25,14 +26,19 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-000436
 hors_longlist: non
-raccordement: 'a_etudier : lacune 2017-2019, série SSMSI des vols de véhicules (2016-2025) à cataloguer puis raccorder'
+raccordement: 'a_etudier : lacune 2017-2019, série SSMSI des vols de véhicules (2016-2025, non cataloguée, maintenance
+  n° 6) à rapporter à la population moyenne (× 100 000) puis à recouper avec Eurostat sur 2016 et 2020-2024 (D34)'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Vols de véhicules enregistrés pour 100 000 habitants, 2008-2024 (330 en 2008, 198 en 2024),
-  lacune 2017-2019 ; la plainte, nécessaire à l'assurance, rend la série interprétable.
-note_pertinence: Le vol de voiture ou de deux-roues est une atteinte aux biens fréquente, généralement déclarée
-  puisque la plainte conditionne l'indemnisation, ce qui donne à la série enregistrée un sens clair. Elle a nettement
-  baissé de 2008 à 2021, puis remonte légèrement. Elle complète les cambriolages pour les atteintes aux biens.
+  lacune 2017-2019 ; environ une victime sur deux porte plainte (47,2 % pour les vols ou tentatives de vol de voiture
+  en 2019 selon l'INSEE, 51 % en 2020 selon le SSMSI) et le sens bas repose sur l'hypothèse, non vérifiée, d'un
+  taux de plainte stable.
+note_pertinence: 'Le vol de voiture ou de deux-roues est une atteinte aux biens fréquente ; la catégorie ICCS 05021
+  compte aussi les vols de pièces détachées. Environ la moitié seulement des victimes porte plainte, si bien que
+  la série enregistrée ne suit les vols que si ce taux reste stable : la série SSMSI des taux de plainte (enquête
+  CVS, 2006-2020) permettra de le vérifier une fois cataloguée. La série a nettement baissé de 2008 à 2021, puis
+  remonte légèrement ; elle complète les cambriolages pour les atteintes aux biens.'
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_vols_vehic)
   source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
@@ -47,4 +53,10 @@ socle_v1:
 qualite:
 - delinquance_enregistree
 - lacune_2017_2019
-notes: ''
+- sens_hypothese_plainte_stable
+- champ_pieces_detachees
+notes: 'Valeurs relues sur l''API Eurostat le 14/10/2026 (330,41 en 2008, 241,93 en 2016, 179,54 en 2020, 198,41
+  en 2024, aucune valeur 2017-2019, aucun drapeau). Taux de plainte : INSEE, enquête CVS 2019 (page insee.fr 2526026,
+  lue le 14/10/2026 : 47,2 % pour les vols ou tentatives de vol de voiture, 26,5 % pour les vols dans ou sur la
+  voiture) ; SSMSI, dernière valeur 2020 de la série « Vols et tentatives de vol de voiture » (51 %, docs/sources/series/ssmsi__series_chronologiques.csv).
+  Stabilité 2006-2020 non vérifiée : série complète à cataloguer (SEC-3).'

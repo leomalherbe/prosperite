@@ -1,13 +1,14 @@
 id: destructions_degradations
-libelle: Destructions et dégradations volontaires enregistrées (nombre)
+libelle: Destructions et dégradations volontaires enregistrées (pour 100 000 habitants)
 dimension: securite
 sous_theme: atteintes aux biens
 famille: destructions_degradations
 variante_principale: oui
 definition: Nombre de destructions et dégradations volontaires de biens (véhicules, logements, biens publics…) enregistrées
-  par la police et la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
-unite: nombre d'infractions (taux à calculer)
-sens: bas
+  par la police et la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI), rapporté
+  à la population moyenne de la France entière, pour 100 000 habitants (taux calculé par le projet).
+unite: infractions pour 100 000 habitants (à calculer)
+sens: ambigu
 type: resultat
 declaratif: non
 composite: non
@@ -17,6 +18,13 @@ source_serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-
   et dégradations volontaires (ensemble) enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Destructions
   et dégradations volontaires ; Sous_indicateur=Non Renseigné ; Statistique=Nombre ; Zone_geographique=France ;
   Champ=France ; Periodicite)
+composantes:
+- https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Destructions et dégradations
+  volontaires (ensemble) enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Destructions
+  et dégradations volontaires ; Sous_indicateur=Non Renseigné ; Statistique=Nombre ; Zone_geographique=France ;
+  Champ=France ; Periodicite)
+- '001641584'
+formule: infractions enregistrées (SSMSI, France) / population moyenne de la France entière (001641584) × 100 000
 source_niveau: 2
 url_api: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f
 url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
@@ -31,11 +39,15 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: ecarter
-motif_recommandation: Série enregistrée en nombre disponible seulement depuis 2016 (10 points) ; les séries d'enquête
-  sur le vandalisme (CVS, 2006-2020, présentes dans la base SSMSI) ne sont pas au catalogue.
+motif_recommandation: 'Les destructions et dégradations sont rarement déclarées (taux de plainte de 16,3 % pour
+  celles visant la voiture en 2019 selon l''INSEE, de 9,0 % pour le vandalisme contre le logement en 2018 selon
+  le SSMSI) et aucune enquête vivante ne permet de contrôler la série enregistrée (2016-2025, 10 points) : sens
+  ambigu.'
 note_pertinence: Le vandalisme contre le logement ou la voiture fait partie de l'insécurité du quotidien, mais la
-  série enregistrée est courte et mêle biens privés et publics. Les séries CVS « actes de vandalisme contre le logement
-  / la voiture » existent dans la base SSMSI jusqu'en 2020 ; leur suite VRS reste à cataloguer.
+  série enregistrée mêle biens privés et publics et ne compte que les faits déclarés, une minorité. Les séries de
+  l'enquête CVS sur le vandalisme (2006-2020) existent dans la base SSMSI mais ne sont pas au catalogue (maintenance
+  n° 6) et leur suite VRS reste à cataloguer. Le motif d'écart n'est plus la brièveté de la série, éligible depuis
+  2016 (D32), mais son sens ambigu.
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_degrad)
   source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
@@ -49,7 +61,14 @@ socle_v1:
   justification: ''
 qualite:
 - delinquance_enregistree
+- sens_ambigu
 - en_nombre_taux_a_calculer
 - debut_2016
 notes: 'Filtre dans la base SSMSI : Titre « Destructions et dégradations volontaires (ensemble) enregistrées par
-  les services de sécurité (Données annuelles) », Zone = France.'
+  les services de sécurité (Données annuelles) », Zone = France. Composantes : m04-000281 (2016-2025) et population
+  moyenne 001641584 (1982-2025, Mayotte incluse depuis 2014) ; champ « France » de la base SSMSI à confirmer ; recoupement
+  (D34) avec le taux ITDD des destructions et dégradations (m04-000306, pour 1 000 habitants, 2016-2024) à faire
+  si la fiche était retenue. Taux de plainte : INSEE, enquête CVS 2019 (page insee.fr 2526026, lue le 14/10/2026
+  : 16,3 % pour les destructions ou dégradations de la voiture, valeur non diffusée pour le logement) ; SSMSI, «
+  Actes de vandalisme contre le logement » (2006-2018, dernière valeur 9,0 % en 2018). La dernière valeur SSMSI
+  pour la voiture (51 % en 2020) s''écarte fortement de la valeur INSEE de 2019 : à vérifier (SEC-3).'

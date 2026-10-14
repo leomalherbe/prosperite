@@ -1,13 +1,14 @@
 id: escroqueries
-libelle: Victimes d'escroqueries et de fraudes aux moyens de paiement enregistrées (nombre)
+libelle: Victimes d'escroqueries et de fraudes aux moyens de paiement enregistrées (pour 100 000 habitants)
 dimension: securite
 sous_theme: atteintes aux biens
 famille: escroqueries
 variante_principale: oui
 definition: Nombre de victimes d'escroqueries et de fraudes aux moyens de paiement enregistrées par la police et
-  la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
-unite: nombre de victimes (taux à calculer)
-sens: bas
+  la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI), rapporté à la population
+  moyenne de la France entière, pour 100 000 habitants (taux calculé par le projet).
+unite: victimes pour 100 000 habitants (à calculer)
+sens: ambigu
 type: resultat
 declaratif: non
 composite: non
@@ -17,6 +18,13 @@ source_serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-
   et les fraudes aux moyens de paiements enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Escroqueries
   et les fraudes aux moyens de paiements ; Sous_indicateur=Ensemble des lieux ; Statistique=Nombre ; Zone_geographique=France
   ; Champ=Fran)
+composantes:
+- https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Escroqueries et les fraudes
+  aux moyens de paiements enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Escroqueries
+  et les fraudes aux moyens de paiements ; Sous_indicateur=Ensemble des lieux ; Statistique=Nombre ; Zone_geographique=France
+  ; Champ=Fran)
+- '001641584'
+formule: victimes enregistrées (SSMSI, France) / population moyenne de la France entière (001641584) × 100 000
 source_niveau: 2
 url_api: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f
 url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
@@ -31,12 +39,14 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: ecarter
-motif_recommandation: Série enregistrée disponible seulement depuis 2016 (10 points, en nombre) et sans série d'enquête
-  vivante pour en contrôler le sens ; l'enquête CVS (escroqueries bancaires) s'arrête en 2020.
-note_pertinence: Les escroqueries, en particulier en ligne, sont une atteinte aux biens en forte progression et
-  touchent de nombreux ménages ; mais la série enregistrée dépend des canaux de signalement (plateformes de plainte
-  en ligne créées ces dernières années, à documenter) et ne couvre que 2016-2025. À reconsidérer avec les séries
-  de l'enquête VRS.
+motif_recommandation: 'Le taux de plainte des ménages victimes d''escroquerie bancaire n''est que de 12,8 % (2020,
+  enquête CVS, SSMSI) et aucune enquête vivante ne permet de contrôler la série enregistrée (2016-2025, 10 points)
+  : son évolution dépend autant des canaux de signalement que des faits (sens ambigu).'
+note_pertinence: Les escroqueries, en particulier en ligne, sont une atteinte aux biens en forte progression qui
+  touche de nombreux ménages. Mais une petite partie seulement des victimes porte plainte, et la série enregistrée
+  dépend des canaux de signalement (plateformes de plainte en ligne créées ces dernières années, à documenter).
+  Le motif d'écart n'est plus la brièveté de la série, éligible depuis 2016 (D32), mais son sens ambigu ; le concept
+  pourra revenir avec les séries de l'enquête VRS.
 variantes:
 - serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Escroqueries bancaires
     » ; Indicateur=Escroqueries et les fraudes aux moyens de paiements ; Sous_indicateur=Escroqueries bancaires
@@ -64,7 +74,13 @@ socle_v1:
   justification: ''
 qualite:
 - delinquance_enregistree
+- sens_ambigu
 - en_nombre_taux_a_calculer
 - debut_2016
 notes: 'Filtre dans la base SSMSI : Titre « Escroqueries et les fraudes aux moyens de paiements enregistrées par
-  les services de sécurité (Données annuelles) », Zone = France.'
+  les services de sécurité (Données annuelles) », Zone = France. Composantes : m04-000280 (2016-2025) et population
+  moyenne 001641584 (1982-2025, Mayotte incluse depuis 2014) ; champ « France » de la base SSMSI (métropole et DROM)
+  à confirmer ; recoupement (D34) avec le taux ITDD des fraudes aux moyens de paiement (m04-000307, pour 1 000 habitants,
+  2016-2024, champ plus étroit) à faire si la fiche était retenue. Taux de plainte : série SSMSI « Escroqueries
+  bancaires » (enquête CVS, 2010-2020, dernière valeur 12,8 % en 2020 ; docs/sources/series/ssmsi__series_chronologiques.csv,
+  non cataloguée, SEC-3).'

@@ -17,6 +17,8 @@ source_jeu: base des séries chronologiques (data.gouv.fr)
 source_serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment
   d'insécurité dans le quartier ou le village » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Dans le quartier
   ou le village ; Statistique=Nombre ; Zone_geographique=France métropolitaine ; Champ=France)
+formule: personnes de 14 ans ou plus se sentant en insécurité dans leur quartier ou village (SSMSI, CVS) / population
+  de 14 ans ou plus de France métropolitaine × 100 (dénominateur non trouvé dans les catalogues)
 source_niveau: 2
 url_api: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f
 url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
@@ -28,15 +30,20 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000286
 hors_longlist: non
-raccordement: 'a_etudier : suite VRS (2022 et suivantes) à cataloguer et à raccorder à la série CVS arrêtée en 2021'
+raccordement: 'a_etudier : suite VRS publiée par l''INSEE (2022-2024, « souvent ou parfois », 18 ans ou plus, métropole,
+  Guadeloupe, Martinique et La Réunion, par sexe et par âge sans ensemble), non comparable à la série CVS (14 ans
+  ou plus, métropole) et non cataloguée (maintenance n° 5)'
 incontournable: oui
 recommandation: ecarter
-motif_recommandation: 'Mesure officielle du sentiment d''insécurité (2007-2021), arrêtée en 2021 : la série de l''enquête
-  VRS qui lui succède n''est pas au catalogue, si bien qu''aucune valeur n''est disponible après 2021.'
-note_pertinence: C'est la mesure française de référence du sentiment d'insécurité, que la dimension cite explicitement.
-  Elle ne peut être retenue qu'à condition de cataloguer les séries VRS (2022 et suivantes) et d'obtenir ou de construire
-  un raccordement ; à demander à M04 (maintenance) et au SSMSI. La modalité de réponse comptée (fréquence du sentiment)
-  est à vérifier dans la documentation de l'enquête.
+motif_recommandation: 'Mesure officielle historique du sentiment d''insécurité (enquête CVS, 2007-2021), arrêtée
+  en 2021 sans relais comparable (D32) : la suite VRS publiée par l''INSEE (2022-2024) a un autre champ et pas de
+  total d''ensemble, et la vague 2021 a été collectée à 99 % par téléphone.'
+note_pertinence: 'C''est la mesure française de référence du sentiment d''insécurité, que la dimension cite explicitement.
+  L''INSEE publie depuis décembre 2025 la suite issue de l''enquête VRS (au domicile, dans le quartier ou le village,
+  renoncement à sortir ; 2022-2024), mais seulement par sexe et par âge, pour les 18 ans ou plus de la métropole
+  et de trois DROM : elle n''est ni au catalogue ni raccordable sans traitement. La vague CVS de 2021, collectée
+  presque entièrement par téléphone, n''est pas comparable aux précédentes selon le SSMSI ; le concept reste couvert
+  par delinquance_quartier et preoccupation_insecurite_quartier.'
 variantes:
 - serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment d'insécurité
     au domicile » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Au domicile ; Statistique=Nombre ; Zone_geographique=France
@@ -55,5 +62,10 @@ qualite:
 - rupture_enquete_cvs_vrs
 - en_nombre_taux_a_calculer
 - lacune_2020
+- collecte_telephonique_2021
 notes: 'Filtre dans la base SSMSI : Titre « Sentiment d''insécurité dans le quartier ou le village », Unite_de_compte
-  = Personnes de 14 ans ou plus.'
+  = Personnes de 14 ans ou plus. Suite VRS : INSEE, « Sentiment d''insécurité selon l''âge et le sexe — Données
+  annuelles de 2022 à 2024 » (19/12/2025, page insee.fr 2526402 lue le 14/10/2026), fichier https://www.insee.fr/fr/statistiques/fichier/2526402/cond-sec-just-insecur.xlsx.
+  Vague 2021 : jeu data.gouv.fr 62029493ff5c2e6d510b42b6 (« collecte réalisée quasi exclusivement (99 %) par téléphone
+  », le SSMSI recommande de ne pas commenter les évolutions ; lu le 14/10/2026). Part à calculer : le dénominateur
+  (population de 14 ans ou plus de France métropolitaine) n''est dans aucun catalogue, d''où une formule sans composantes.'

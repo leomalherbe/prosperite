@@ -29,14 +29,15 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: ecarter
-motif_recommandation: 'Les agressions graves enregistrées passent de 294 à 613 pour 100 000 habitants entre 2008
-  et 2024 alors que la part de victimes de violences physiques dans l''enquête ne progresse pas (2,1 % en 2010 comme
-  en 2018) : la série mesure surtout l''évolution des plaintes et de leur enregistrement.'
+motif_recommandation: 'Sur une même période, les agressions graves enregistrées augmentent de 26 % (358,7 à 450,8
+  pour 100 000 habitants de 2010 à 2018) quand la part de victimes de violences physiques dans l''enquête CVS reste
+  à 2,1 %, et moins d''une victime sur trois porte plainte (29,7 % en 2020, SSMSI) : la série suit surtout les plaintes
+  et leur enregistrement (sens ambigu).'
 note_pertinence: La délinquance enregistrée dépend de la propension des victimes à porter plainte et de l'activité
   des services ; pour les violences physiques, la hausse est portée en partie par les violences intrafamiliales,
-  mieux révélées qu'avant (analyse M04, docs/sources/autres_sources.md §2.4). La série reste utile pour la conjoncture,
-  mais pas comme indicateur de résultat sans l'enquête. Le SSMSI publie l'équivalent national en nombre de victimes
-  (2016-2025).
+  mieux révélées qu'avant (analyse M04, docs/sources/autres_sources.md §2.4). Sur 2021-2023 (enquête VRS), les deux
+  séries montent ensemble (+17 % pour la série enregistrée, de 1,0 à 1,2 % dans l'enquête), ce qui ne suffit pas
+  à lever l'ambiguïté. La série reste utile pour la conjoncture, mais pas comme indicateur de résultat sans l'enquête.
 variantes:
 - serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques
     enregistrées par les services de sécurité » ; Indicateur=Violences physiques ; Sous_indicateur=Ensemble des
@@ -58,4 +59,8 @@ socle_v1:
 qualite:
 - delinquance_enregistree
 - sens_ambigu
-notes: ''
+notes: 'Valeurs relues sur l''API Eurostat le 14/10/2026 : 293,62 (2008), 358,67 (2010), 450,77 (2018), 523,08 (2021),
+  611,41 (2023), 613,21 (2024), sans drapeau. Taux de plainte : SSMSI, victimes de violences physiques hors ménage
+  (enquête CVS, 2006-2020, dernière valeur 29,7 % en 2020), catalogué dans la long-list democratie (m04-000297)
+  ; ONUDC via l''OCDE, ODD 16.3.1, taux de signalement à la police des agressions physiques (22 % en 2022, m04-000140,
+  long-list democratie). Le SSMSI publie l''équivalent national en nombre de victimes (2016-2025).'

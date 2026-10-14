@@ -1,4 +1,4 @@
-# Méthode commune des fiches indicateurs (mission M05)
+# Méthode commune des fiches indicateurs (mission M05) — v1.2
 
 Version 1.1 — 14 octobre 2026. Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions (D31), complétée par les règles actées au pilote `securite` et par les règles issues des audits M06 (D32, D33 ; §9). Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py` (tests : `tests/test_verifier_fiches.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
 
@@ -117,3 +117,28 @@ Colonnes, dans l'ordre : `id, libelle, famille, variante_principale, definition_
 - **Écarts construits** (D32) : un indicateur d'écart calculé par formule (rapport, différence entre deux groupes) est admis en `egalites` avec `formule` et `composantes`, même si ses lignes sources restent des ventilations dans d'autres dimensions.
 - **Rattachements tranchés** (D33) : administration en ligne → `logement_cadre_vie` ; parité politique → `egalites` ; prisons et détention provisoire → `democratie` ; adhésion syndicale (DREES SDASSYND_1) → candidat `democratie` ; corruption et confiance dans les institutions : `incontournable: non` (règle des 3 cadres) mais `retenir`. Famille de composites : un concept distinct (ex. WGI « État de droit » et « contrôle de la corruption ») = une famille distincte.
 - **Bornes du vérificateur** : `premiere_annee` ≥ 1700 (D32).
+
+
+## 9. Compléments v1.2 (décisions D34 à D36 du 14/10/2026, issues des audits et des missions niveau_de_vie, planete, travail)
+
+**Familles et variantes (D35)**
+- **Famille = concept substituable.** Deux séries sont de la même famille si l'une peut remplacer l'autre pour l'utilisateur (même concept, lectures voisines). Les indices composites qui mesurent le même concept global (qualité de la démocratie : V-Dem libéral, Freedom House, WGI « voix et responsabilité ») forment **une** famille avec une variante principale ; un sous-indice qui mesure un concept distinct (État de droit, contrôle de la corruption, liberté de la presse) forme sa propre famille. Le producteur n'est pas un critère de famille.
+- **Total principal, par habitant en variante** quand la cible officielle est exprimée en volume (émissions, SNBC) ; inversement, par habitant principal quand la lecture publique est par tête (empreinte, consommation).
+- **Ventilations de second rang** (par produit, par branche, par sous-catégorie) : écartées en bloc par règle motivée quand une variante de premier rang porte déjà l'information.
+- **Ventilations par sexe** : renvoyées à `egalites` (`autre_dimension:egalites`) quand l'écart correspondant y existe déjà ; sinon gardées en variantes dans la dimension du concept.
+- **Séries trimestrielles ou mensuelles** : variante principale seulement s'il n'existe aucune série annuelle de même définition ; sinon variante.
+- **Eurostat principal quand l'INSEE ne publie pas le niveau** (ex. revenu disponible ajusté par habitant) : l'INSEE reste principal à définition égale quand il publie le niveau.
+
+**Écarts construits et séries calculées (D34)**
+- Toute fiche calculée par le projet (écart, rapport, taux recalculé, agrégation d'un fichier) porte `composantes` (liste des `serie_id` utilisés, avec leurs modalités) et `formule` (expression normalisée : `A - B`, `A / B * 100`, `somme(…) / somme(…)`), plus la première année lue de **chaque** composante.
+- Les écarts dont l'optimum est la parité (femmes-hommes, origine) sont exprimés en **valeur absolue** `|A − B|`, sens `bas`, sauf exception motivée dans la fiche.
+- « Série quasi constante » n'est pas un motif d'écart : la fiche est `retenir_variante` ou `sens: ambigu` avec motif.
+- **Recoupement obligatoire** : une série calculée par le projet est recoupée avec au moins trois valeurs officielles publiées avant d'être `retenir` ; le champ du fichier source (description du jeu) est lu avant tout calcul ; les points non recoupés sont signalés dans `qualite`.
+- **Composites** : champ `annee_reference: observation|edition` obligatoire (année couverte vs année de publication).
+
+**Vérifications (D36)**
+- Avant de déclarer une série « non cataloguée », chercher dans **toutes** les long-lists et dans `catalogues/*_non.csv.gz` ; le vérificateur avertit quand une ligne de maintenance cite un jeu présent dans un catalogue.
+- Chaque variante porte un `serie_id` unique.
+- Quand une décision change une règle, la session mère joint la liste des fiches déjà fusionnées à reprendre.
+- Frontière rémunération : salaire moyen réel, bas salaires et pauvreté en emploi → `travail` (qualité de l'emploi) ; revenus et niveau de vie des ménages → `niveau_de_vie`.
+- Chaque agent travaille dans un sous-dossier de travail propre (`tmp/<mission>/`, ignoré par git) : le bac à sable est partagé entre agents parallèles.

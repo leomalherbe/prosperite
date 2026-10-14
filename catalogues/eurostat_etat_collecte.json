@@ -21,29 +21,29 @@
   },
   "niveau1": {
    "bilan": {
-    "candidats": 1828,
+    "candidats": 1816,
     "candidats_par_dimension": {
      "contexte": 47,
      "democratie": 8,
-     "education": 383,
-     "egalites": 45,
-     "liens_bien_etre": 18,
+     "education": 381,
+     "egalites": 44,
+     "liens_bien_etre": 17,
      "logement_cadre_vie": 113,
      "niveau_de_vie": 301,
      "planete": 264,
-     "sante": 195,
+     "sante": 197,
      "securite_confiance": 57,
-     "travail": 397
+     "travail": 387
     },
     "candidats_par_dossier": {
-     "(mots-clés)": 237,
+     "(mots-clés)": 229,
      "comptes_nationaux": 10,
      "criminalite": 24,
-     "culture": 21,
+     "culture": 19,
      "education_formation": 300,
      "energie": 62,
      "environnement": 109,
-     "marche_du_travail": 288,
+     "marche_du_travail": 286,
      "numerique": 27,
      "population": 70,
      "qualite_de_vie": 16,
@@ -68,6 +68,7 @@
     },
     "jeux_prioritaires_non_candidats_par_motif": {
      "entreprises ou échanges extérieurs (balance des paiements et position extérieure)": 1,
+     "entreprises ou échanges extérieurs (commerce extérieur de biens culturels)": 2,
      "entreprises ou échanges extérieurs (commerce extérieur)": 1,
      "entreprises ou échanges extérieurs (commerce électronique des entreprises)": 8,
      "entreprises ou échanges extérieurs (démographie des entreprises)": 12,
@@ -78,6 +79,7 @@
      "entreprises ou échanges extérieurs (intensité numérique des entreprises)": 2,
      "entreprises ou échanges extérieurs (intégration numérique des entreprises)": 14,
      "entreprises ou échanges extérieurs (médias sociaux des entreprises)": 4,
+     "entreprises ou échanges extérieurs (pondérations de l'indice du coût de la main-d'œuvre)": 2,
      "entreprises ou échanges extérieurs (secteur des TIC (R-D))": 1,
      "entreprises ou échanges extérieurs (secteur des TIC (valeur ajoutée, emploi, R-D))": 4,
      "entreprises ou échanges extérieurs (sites web des entreprises)": 2,
@@ -170,14 +172,14 @@
     },
     "jeux_retenus_par_filtres": 3053
    },
-   "date": "2026-10-14T00:03:40Z",
+   "date": "2026-10-14T00:07:53Z",
    "termine": true,
-   "version": 5
+   "version": 6
   },
   "niveau2": {
    "a_rafraichir": 0,
    "debut": "2026-10-13T13:34:35Z",
-   "fin": "2026-10-14T00:05:24Z",
+   "fin": "2026-10-14T00:11:05Z",
    "jeux": {
     "aei_fm_salpest09": {
      "date": "2026-10-13T15:47:43Z",
@@ -550,8 +552,8 @@
      "structure_fr": "freq→A (1) [fixé] ; leg_stat (3) [contenu] ; age→TOTAL (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "crim_just_ctz": {
-     "date": "2026-10-13T15:37:35Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:10:14Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -559,10 +561,10 @@
      "nb_candidates": 3,
      "nb_observations": 288,
      "nb_series": 3,
-     "nb_ventilations": 0,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; leg_stat (3) [contenu] ; citizen→TOTAL (3) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; leg_stat (3) [contenu] ; citizen→TOTAL (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "crim_just_job": {
      "date": "2026-10-13T15:37:36Z",
@@ -640,8 +642,8 @@
      "structure_fr": "freq→A (1) [fixé] ; indic_cr (2) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "crim_pris_ctz": {
-     "date": "2026-10-13T15:37:44Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:10:15Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -649,10 +651,10 @@
      "nb_candidates": 1,
      "nb_observations": 102,
      "nb_series": 1,
-     "nb_ventilations": 0,
+     "nb_ventilations": 1,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (3) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "crim_pris_off": {
      "date": "2026-10-13T15:37:40Z",
@@ -715,8 +717,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; leg_stat (3) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "crim_thb_vctz": {
-     "date": "2026-10-13T15:37:49Z",
-     "duree_s": 1.3,
+     "date": "2026-10-14T00:10:15Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -730,8 +732,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (3) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "crim_thb_vctzsex": {
-     "date": "2026-10-13T15:37:53Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:10:16Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -954,36 +956,6 @@
      "statut": "ok",
      "structure_fr": "freq→A (1) [fixé] ; quantile→TOTAL (6) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
-    "cult_trd_prd": {
-     "date": "2026-10-13T15:37:07Z",
-     "duree_s": 1.6,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 6,
-     "nb_observations": 4356,
-     "nb_series": 6,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; prod_ct→TOTAL (12) [fixé] ; partner (3) [contenu] ; stk_flow (2) [contenu] ; unit (4) [unité] ; geo→FR (1) [fixé]"
-    },
-    "cult_trd_prt": {
-     "date": "2026-10-13T15:37:08Z",
-     "duree_s": 4.6,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 410,
-     "nb_observations": 65323,
-     "nb_series": 476,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; prod_ct→TOTAL (12) [fixé] ; partner (243) [contenu] ; stk_flow (2) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
-    },
     "demo_divcb": {
      "date": "2026-10-13T14:58:32Z",
      "duree_s": 0.6,
@@ -1046,8 +1018,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (11) [ventilation] ; ord_brth→TOTAL (9) [fixé] ; geo→FR (1) [fixé]"
     },
     "demo_facbc": {
-     "date": "2026-10-13T14:57:44Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:08:35Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1055,14 +1027,14 @@
      "nb_candidates": 1,
      "nb_observations": 3312,
      "nb_series": 1,
-     "nb_ventilations": 1,
+     "nb_ventilations": 2,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (46) [ventilation] ; c_birth→TOTAL (8) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (46) [ventilation] ; c_birth→TOTAL (8) [ventilation] ; geo→FR (1) [fixé]"
     },
     "demo_faczc": {
-     "date": "2026-10-13T14:57:42Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:08:35Z",
+     "duree_s": 0.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1070,10 +1042,10 @@
      "nb_candidates": 1,
      "nb_observations": 3864,
      "nb_series": 1,
-     "nb_ventilations": 1,
+     "nb_ventilations": 2,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (46) [ventilation] ; citizen→TOTAL (9) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (46) [ventilation] ; citizen→TOTAL (9) [ventilation] ; geo→FR (1) [fixé]"
     },
     "demo_faeduc": {
      "date": "2026-10-13T14:57:39Z",
@@ -1256,8 +1228,8 @@
      "structure_fr": "freq→A (1) [fixé] ; indic_de (28) [contenu] ; geo→FR (1) [fixé]"
     },
     "demo_macbc": {
-     "date": "2026-10-13T14:58:08Z",
-     "duree_s": 2.6,
+     "date": "2026-10-14T00:08:37Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1265,14 +1237,14 @@
      "nb_candidates": 1,
      "nb_observations": 22221,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (103) [ventilation] ; sex→T (3) [ventilation] ; c_birth→TOTAL (8) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (103) [ventilation] ; sex→T (3) [ventilation] ; c_birth→TOTAL (8) [ventilation] ; geo→FR (1) [fixé]"
     },
     "demo_maczc": {
-     "date": "2026-10-13T14:58:05Z",
-     "duree_s": 3.4,
+     "date": "2026-10-14T00:08:36Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1280,10 +1252,10 @@
      "nb_candidates": 1,
      "nb_observations": 25920,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (103) [ventilation] ; sex→T (3) [ventilation] ; citizen→TOTAL (9) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; age→TOTAL (103) [ventilation] ; sex→T (3) [ventilation] ; citizen→TOTAL (9) [ventilation] ; geo→FR (1) [fixé]"
     },
     "demo_maeduc": {
      "date": "2026-10-13T14:58:01Z",
@@ -1331,8 +1303,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→TOTAL (103) [ventilation] ; geo→FR (1) [fixé]"
     },
     "demo_marcb": {
-     "date": "2026-10-13T14:58:27Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:08:39Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1340,14 +1312,14 @@
      "nb_candidates": 0,
      "nb_observations": 256,
      "nb_series": 1,
-     "nb_ventilations": 0,
+     "nb_ventilations": 1,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; partner→TOTAL (10) [fixé] ; c_birth→TOTAL (10) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; partner→TOTAL (10) [fixé] ; c_birth→TOTAL (10) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "demo_marcz": {
-     "date": "2026-10-13T14:58:26Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:08:38Z",
+     "duree_s": 0.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -1355,10 +1327,10 @@
      "nb_candidates": 0,
      "nb_observations": 174,
      "nb_series": 1,
-     "nb_ventilations": 0,
+     "nb_ventilations": 1,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; partner→TOTAL (11) [fixé] ; citizen→TOTAL (11) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; partner→TOTAL (11) [fixé] ; citizen→TOTAL (11) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "demo_marstac": {
      "date": "2026-10-13T14:58:03Z",
@@ -2771,8 +2743,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; nace_r2→TOTAL (23) [fixé] ; isced11 (6) [contenu] ; age→Y15-74 (16) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9911": {
-     "date": "2026-10-13T15:15:37Z",
-     "duree_s": 3.9,
+     "date": "2026-10-14T00:09:02Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2780,14 +2752,14 @@
      "nb_candidates": 4,
      "nb_observations": 26657,
      "nb_series": 6,
-     "nb_ventilations": 12,
+     "nb_ventilations": 18,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; citizen→TOTAL (7) [fixé] ; age→Y15-74 (17) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; citizen→TOTAL (7) [ventilation] ; age→Y15-74 (17) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9912": {
-     "date": "2026-10-13T15:15:41Z",
-     "duree_s": 3.6,
+     "date": "2026-10-14T00:09:03Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2795,10 +2767,10 @@
      "nb_candidates": 4,
      "nb_observations": 26892,
      "nb_series": 6,
-     "nb_ventilations": 12,
+     "nb_ventilations": 18,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; c_birth→TOTAL (6) [fixé] ; age→Y15-74 (17) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; c_birth→TOTAL (6) [ventilation] ; age→Y15-74 (17) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9913": {
      "date": "2026-10-13T13:44:40Z",
@@ -2816,8 +2788,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (6) [contenu] ; sex→T (3) [ventilation] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-74 (17) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9915": {
-     "date": "2026-10-13T13:44:43Z",
-     "duree_s": 3.5,
+     "date": "2026-10-14T00:08:11Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2825,14 +2797,14 @@
      "nb_candidates": 4,
      "nb_observations": 14261,
      "nb_series": 6,
-     "nb_ventilations": 18,
+     "nb_ventilations": 24,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; c_birth→TOTAL (10) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; c_birth→TOTAL (10) [ventilation] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9916": {
-     "date": "2026-10-13T13:44:46Z",
-     "duree_s": 3.1,
+     "date": "2026-10-14T00:08:12Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2840,14 +2812,14 @@
      "nb_candidates": 4,
      "nb_observations": 14036,
      "nb_series": 6,
-     "nb_ventilations": 18,
+     "nb_ventilations": 24,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; citizen→TOTAL (11) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; citizen→TOTAL (11) [ventilation] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9917": {
-     "date": "2026-10-13T15:15:45Z",
-     "duree_s": 3.1,
+     "date": "2026-10-14T00:09:04Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2855,14 +2827,14 @@
      "nb_candidates": 4,
      "nb_observations": 3649,
      "nb_series": 6,
-     "nb_ventilations": 12,
+     "nb_ventilations": 18,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; c_birth→TOTAL (10) [fixé] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11 (6) [contenu] ; c_birth→TOTAL (10) [ventilation] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfs_9918": {
-     "date": "2026-10-13T15:15:48Z",
-     "duree_s": 3.7,
+     "date": "2026-10-14T00:09:05Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2870,14 +2842,14 @@
      "nb_candidates": 4,
      "nb_observations": 3639,
      "nb_series": 6,
-     "nb_ventilations": 12,
+     "nb_ventilations": 18,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; isced11 (6) [contenu] ; unit (1) [unité] ; sex→T (3) [ventilation] ; citizen→TOTAL (11) [fixé] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; isced11 (6) [contenu] ; unit (1) [unité] ; sex→T (3) [ventilation] ; citizen→TOTAL (11) [ventilation] ; age→Y15-64 (2) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_01": {
-     "date": "2026-10-13T15:16:56Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:10Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2885,14 +2857,14 @@
      "nb_candidates": 1,
      "nb_observations": 849,
      "nb_series": 1,
-     "nb_ventilations": 1,
+     "nb_ventilations": 2,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; wstatus→POP (3) [fixé] ; citizen→TOTAL (7) [fixé] ; age→Y18-24 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; wstatus→POP (3) [fixé] ; citizen→TOTAL (7) [ventilation] ; age→Y18-24 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_02": {
-     "date": "2026-10-13T15:16:57Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:10Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -2900,10 +2872,10 @@
      "nb_candidates": 1,
      "nb_observations": 860,
      "nb_series": 1,
-     "nb_ventilations": 1,
+     "nb_ventilations": 2,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; wstatus→POP (3) [fixé] ; c_birth→TOTAL (6) [fixé] ; age→Y18-24 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; wstatus→POP (3) [fixé] ; c_birth→TOTAL (6) [ventilation] ; age→Y18-24 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_03": {
      "date": "2026-10-13T13:34:49Z",
@@ -3071,8 +3043,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (4) [ventilation] ; training→NO_FE_NO_NFE (1) [fixé] ; wstatus→NEMP (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_23": {
-     "date": "2026-10-13T15:16:44Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:06Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3080,10 +3052,10 @@
      "nb_candidates": 1,
      "nb_observations": 3662,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-34 (12) [ventilation] ; wstatus→NEMP (1) [fixé] ; citizen→TOTAL (7) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-34 (12) [ventilation] ; wstatus→NEMP (1) [fixé] ; citizen→TOTAL (7) [ventilation] ; training→NO_FE_NO_NFE (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_24": {
      "date": "2026-10-13T15:17:00Z",
@@ -3146,8 +3118,8 @@
      "structure_fr": "freq→A (1) [fixé] ; duration→TOTAL (6) [fixé] ; isced11→TOTAL (9) [ventilation] ; age→Y15-34 (3) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_28": {
-     "date": "2026-10-13T15:16:46Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:09:07Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3155,10 +3127,10 @@
      "nb_candidates": 1,
      "nb_observations": 3690,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-34 (12) [ventilation] ; wstatus→NEMP (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-34 (12) [ventilation] ; wstatus→NEMP (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; training→NO_FE_NO_NFE (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_29": {
      "date": "2026-10-13T13:44:50Z",
@@ -3191,8 +3163,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; wstatus→POP (3) [fixé] ; sex→T (3) [ventilation] ; age→Y18-24 (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_31": {
-     "date": "2026-10-13T15:17:02Z",
-     "duree_s": 5.0,
+     "date": "2026-10-14T00:09:11Z",
+     "duree_s": 1.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3200,14 +3172,14 @@
      "nb_candidates": 1,
      "nb_observations": 33003,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11→TOTAL (9) [ventilation] ; duration→TOTAL (6) [fixé] ; age→Y15-34 (3) [ventilation] ; citizen→TOTAL (11) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11→TOTAL (9) [ventilation] ; duration→TOTAL (6) [fixé] ; age→Y15-34 (3) [ventilation] ; citizen→TOTAL (11) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_32": {
-     "date": "2026-10-13T15:17:07Z",
-     "duree_s": 4.9,
+     "date": "2026-10-14T00:09:13Z",
+     "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3215,10 +3187,10 @@
      "nb_candidates": 1,
      "nb_observations": 36012,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11→TOTAL (9) [ventilation] ; duration→TOTAL (6) [fixé] ; age→Y15-34 (3) [ventilation] ; c_birth→TOTAL (10) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11→TOTAL (9) [ventilation] ; duration→TOTAL (6) [fixé] ; age→Y15-34 (3) [ventilation] ; c_birth→TOTAL (10) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_33": {
      "date": "2026-10-13T13:39:25Z",
@@ -3251,8 +3223,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isced11→TOTAL (9) [ventilation] ; duration→TOTAL (6) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-34 (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_35": {
-     "date": "2026-10-13T13:44:52Z",
-     "duree_s": 2.4,
+     "date": "2026-10-14T00:08:13Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3260,14 +3232,14 @@
      "nb_candidates": 1,
      "nb_observations": 4763,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; wstatus→NEMP (1) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; age→Y15-34 (4) [ventilation] ; c_birth→TOTAL (6) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; wstatus→NEMP (1) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; age→Y15-34 (4) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; deg_urb→TOTAL (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_36": {
-     "date": "2026-10-13T13:44:54Z",
-     "duree_s": 2.8,
+     "date": "2026-10-14T00:08:14Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3275,14 +3247,14 @@
      "nb_candidates": 1,
      "nb_observations": 4666,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; wstatus→NEMP (1) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; age→Y15-34 (4) [ventilation] ; citizen→TOTAL (7) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; wstatus→NEMP (1) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; age→Y15-34 (4) [ventilation] ; citizen→TOTAL (7) [ventilation] ; deg_urb→TOTAL (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_37": {
-     "date": "2026-10-13T15:16:49Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:09:08Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3290,14 +3262,14 @@
      "nb_candidates": 1,
      "nb_observations": 1321,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; training→NO_FE_NO_NFE (1) [fixé] ; wstatus→NEMP (1) [fixé] ; age→Y15-34 (4) [ventilation] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; training→NO_FE_NO_NFE (1) [fixé] ; wstatus→NEMP (1) [fixé] ; age→Y15-34 (4) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "edat_lfse_38": {
-     "date": "2026-10-13T15:16:52Z",
-     "duree_s": 2.6,
+     "date": "2026-10-14T00:09:09Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -3305,10 +3277,10 @@
      "nb_candidates": 1,
      "nb_observations": 1322,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; wstatus→NEMP (1) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; age→Y15-34 (4) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; wstatus→NEMP (1) [fixé] ; training→NO_FE_NO_NFE (1) [fixé] ; age→Y15-34 (4) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_outc_pisa": {
      "date": "2026-10-13T15:17:18Z",
@@ -4679,8 +4651,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; iscedf13→TOTAL (70) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobg02": {
-     "date": "2026-10-13T15:13:46Z",
-     "duree_s": 4.3,
+     "date": "2026-10-14T00:09:00Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -4694,8 +4666,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; partner (228) [contenu] ; sex→T (3) [ventilation] ; isced11 (5) [contenu] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobg03": {
-     "date": "2026-10-13T15:13:50Z",
-     "duree_s": 4.0,
+     "date": "2026-10-14T00:09:01Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -4739,8 +4711,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; iscedf13→TOTAL (224) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs02": {
-     "date": "2026-10-13T15:13:26Z",
-     "duree_s": 3.9,
+     "date": "2026-10-14T00:08:55Z",
+     "duree_s": 1.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -4754,8 +4726,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; partner (228) [contenu] ; sex→T (3) [ventilation] ; isced11 (5) [contenu] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs03": {
-     "date": "2026-10-13T15:13:30Z",
-     "duree_s": 4.6,
+     "date": "2026-10-14T00:08:57Z",
+     "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -4784,8 +4756,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; isced11 (5) [contenu] ; iscedf13→TOTAL (228) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "educ_uoe_mobs06": {
-     "date": "2026-10-13T15:13:38Z",
-     "duree_s": 4.7,
+     "date": "2026-10-14T00:08:58Z",
+     "duree_s": 1.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -6001,8 +5973,8 @@
      "statut": "sans_dimension_geo"
     },
     "env_trdrrm": {
-     "date": "2026-10-13T17:06:17Z",
-     "duree_s": 3.3,
+     "date": "2026-10-14T00:10:44Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -6211,8 +6183,8 @@
      "structure_fr": "freq→A (1) [fixé] ; wst_oper (10) [contenu] ; material→TOTAL (7) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "env_wasship": {
-     "date": "2026-10-13T17:08:00Z",
-     "duree_s": 2.2,
+     "date": "2026-10-14T00:10:46Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -6226,8 +6198,8 @@
      "structure_fr": "freq→A (1) [fixé] ; stk_flow (2) [contenu] ; partner→TOTAL (165) [fixé] ; hazard (3) [contenu] ; wst_oper (4) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "env_wastrdmp": {
-     "date": "2026-10-13T17:07:46Z",
-     "duree_s": 3.4,
+     "date": "2026-10-14T00:10:45Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -6438,124 +6410,124 @@
      "structure_fr": "freq→A (1) [fixé] ; ww_tpar (7) [contenu] ; ww_tp→URB_TP (2) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_atl21": {
-     "date": "2026-10-14T00:04:26Z",
-     "duree_s": 2.8,
+     "date": "2026-10-14T00:10:24Z",
+     "duree_s": 2.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux) ; découpage en 6 requêtes sur species",
+     "message": "dimensions à total fixées à la requête (jeu volumineux)",
      "nb_candidates": 0,
-     "nb_observations": 4638,
-     "nb_series": 773,
+     "nb_observations": 6,
+     "nb_series": 1,
      "nb_ventilations": 0,
-     "requetes": 7,
+     "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (208) [contenu] ; fishreg (58) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (1) [fixé] ; fishreg→21 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_atl27": {
-     "date": "2026-10-14T00:04:29Z",
-     "duree_s": 16.1,
+     "date": "2026-10-14T00:10:26Z",
+     "duree_s": 5.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux) ; découpage en 35 requêtes sur species",
-     "nb_candidates": 3928,
-     "nb_observations": 128463,
-     "nb_series": 12904,
+     "message": "dimensions à total fixées à la requête (jeu volumineux)",
+     "nb_candidates": 1,
+     "nb_observations": 26,
+     "nb_series": 1,
      "nb_ventilations": 0,
-     "requetes": 36,
+     "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (1385) [contenu] ; fishreg (127) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (1) [fixé] ; fishreg→27 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_atl34": {
-     "date": "2026-10-14T00:04:45Z",
-     "duree_s": 8.1,
+     "date": "2026-10-14T00:10:32Z",
+     "duree_s": 3.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux) ; découpage en 19 requêtes sur species",
-     "nb_candidates": 169,
-     "nb_observations": 5571,
-     "nb_series": 912,
+     "message": "dimensions à total fixées à la requête (jeu volumineux)",
+     "nb_candidates": 1,
+     "nb_observations": 26,
+     "nb_series": 1,
      "nb_ventilations": 0,
-     "requetes": 20,
+     "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (760) [contenu] ; fishreg (31) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (1) [fixé] ; fishreg→34 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_atl37": {
-     "date": "2026-10-14T00:04:54Z",
-     "duree_s": 11.1,
+     "date": "2026-10-14T00:10:36Z",
+     "duree_s": 4.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux) ; découpage en 26 requêtes sur species",
-     "nb_candidates": 951,
-     "nb_observations": 21874,
-     "nb_series": 2257,
+     "message": "dimensions à total fixées à la requête (jeu volumineux)",
+     "nb_candidates": 1,
+     "nb_observations": 26,
+     "nb_series": 1,
      "nb_ventilations": 0,
-     "requetes": 27,
+     "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (1016) [contenu] ; fishreg (18) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (1) [fixé] ; fishreg→37 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_atl41": {
-     "date": "2026-10-14T00:05:05Z",
+     "date": "2026-10-14T00:10:40Z",
+     "duree_s": 1.2,
+     "essais": 0,
+     "geo": "FR",
+     "jeu_source": "",
+     "message": "",
+     "nb_candidates": 1,
+     "nb_observations": 2044,
+     "nb_series": 1,
+     "nb_ventilations": 0,
+     "requetes": 2,
+     "statut": "ok",
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (268) [fixé] ; fishreg→41 (19) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+    },
+    "fish_ca_atl47": {
+     "date": "2026-10-14T00:10:41Z",
      "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
-     "nb_candidates": 83,
-     "nb_observations": 2044,
-     "nb_series": 388,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (268) [contenu] ; fishreg (19) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
-    },
-    "fish_ca_atl47": {
-     "date": "2026-10-14T00:05:06Z",
-     "duree_s": 0.9,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 39,
+     "nb_candidates": 1,
      "nb_observations": 1923,
-     "nb_series": 395,
+     "nb_series": 1,
      "nb_ventilations": 0,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (311) [contenu] ; fishreg (28) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (311) [fixé] ; fishreg→47 (28) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_ind51": {
-     "date": "2026-10-14T00:05:07Z",
-     "duree_s": 1.0,
+     "date": "2026-10-14T00:10:42Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
-     "nb_candidates": 193,
+     "nb_candidates": 1,
      "nb_observations": 5376,
-     "nb_series": 865,
+     "nb_series": 1,
      "nb_ventilations": 0,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (373) [contenu] ; fishreg (16) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (373) [fixé] ; fishreg→51 (16) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "fish_ca_main": {
-     "date": "2026-10-14T00:04:06Z",
-     "duree_s": 20.7,
+     "date": "2026-10-14T00:10:17Z",
+     "duree_s": 6.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux) ; découpage en 48 requêtes sur species",
-     "nb_candidates": 1099,
-     "nb_observations": 27845,
-     "nb_series": 2259,
+     "message": "dimensions à total fixées à la requête (jeu volumineux)",
+     "nb_candidates": 1,
+     "nb_observations": 26,
+     "nb_series": 1,
      "nb_ventilations": 0,
-     "requetes": 49,
+     "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (1882) [contenu] ; fishreg (8) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (1) [fixé] ; fishreg→0 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "for_area": {
      "date": "2026-10-13T15:48:41Z",
@@ -9336,8 +9308,8 @@
      "structure_fr": "freq→A (1) [fixé] ; reason (10) [contenu] ; deg_urb→TOTAL (4) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE16 (16) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_23": {
-     "date": "2026-10-13T14:59:30Z",
-     "duree_s": 4.2,
+     "date": "2026-10-14T00:08:40Z",
+     "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9351,8 +9323,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (18) [ventilation] ; c_birth (8) [contenu] ; lev_perc (7) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_24": {
-     "date": "2026-10-13T14:59:34Z",
-     "duree_s": 4.0,
+     "date": "2026-10-14T00:08:41Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9366,8 +9338,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (18) [ventilation] ; citizen (8) [contenu] ; lev_perc (7) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_25": {
-     "date": "2026-10-13T14:59:56Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:08:44Z",
+     "duree_s": 0.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9381,8 +9353,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (19) [ventilation] ; c_birth (8) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_26": {
-     "date": "2026-10-13T14:59:58Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:08:45Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9396,8 +9368,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (19) [ventilation] ; citizen (8) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_27": {
-     "date": "2026-10-13T14:59:46Z",
-     "duree_s": 2.0,
+     "date": "2026-10-14T00:08:42Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9411,8 +9383,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (18) [ventilation] ; c_birth (8) [contenu] ; lev_limit (4) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_28": {
-     "date": "2026-10-13T14:59:48Z",
-     "duree_s": 2.4,
+     "date": "2026-10-14T00:08:43Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9426,8 +9398,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (18) [ventilation] ; citizen (8) [contenu] ; lev_limit (4) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_29": {
-     "date": "2026-10-13T15:05:19Z",
-     "duree_s": 4.9,
+     "date": "2026-10-14T00:08:45Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9441,8 +9413,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (19) [ventilation] ; c_birth (8) [contenu] ; reason→TOTAL (11) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_30": {
-     "date": "2026-10-13T15:05:24Z",
-     "duree_s": 5.3,
+     "date": "2026-10-14T00:08:47Z",
+     "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9456,8 +9428,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (19) [ventilation] ; citizen (8) [contenu] ; reason→TOTAL (11) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_31": {
-     "date": "2026-10-13T15:05:30Z",
-     "duree_s": 5.1,
+     "date": "2026-10-14T00:08:48Z",
+     "duree_s": 1.4,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9471,8 +9443,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE16 (19) [ventilation] ; c_birth (8) [contenu] ; reason→TOTAL (11) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hlth_silc_32": {
-     "date": "2026-10-13T15:05:35Z",
-     "duree_s": 5.1,
+     "date": "2026-10-14T00:08:50Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9666,8 +9638,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; frequenc→TOTAL (4) [fixé] ; age→Y15-74 (2) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "hsw_ac12": {
-     "date": "2026-10-13T15:07:20Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:08:51Z",
+     "duree_s": 0.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9675,14 +9647,14 @@
      "nb_candidates": 0,
      "nb_observations": 43,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (2) [ventilation] ; c_birth→TOTAL (5) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (2) [ventilation] ; c_birth→TOTAL (5) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "hsw_ac13": {
-     "date": "2026-10-13T15:07:23Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:08:51Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -9690,10 +9662,10 @@
      "nb_candidates": 0,
      "nb_observations": 78,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (2) [ventilation] ; c_birth→TOTAL (5) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (2) [ventilation] ; c_birth→TOTAL (5) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hsw_ac14": {
      "date": "2026-10-13T15:07:34Z",
@@ -10193,8 +10165,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; worktime→TOTAL (3) [fixé] ; age→Y15-74 (7) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "hsw_pb11": {
-     "date": "2026-10-13T15:07:37Z",
-     "duree_s": 1.3,
+     "date": "2026-10-14T00:08:52Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -10202,14 +10174,14 @@
      "nb_candidates": 0,
      "nb_observations": 213,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (7) [ventilation] ; c_birth→TOTAL (5) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (7) [ventilation] ; c_birth→TOTAL (5) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "hsw_pb12": {
-     "date": "2026-10-13T15:07:40Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:08:53Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -10217,10 +10189,10 @@
      "nb_candidates": 0,
      "nb_observations": 338,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (7) [ventilation] ; c_birth→TOTAL (5) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (7) [ventilation] ; c_birth→TOTAL (5) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "hsw_pb13": {
      "date": "2026-10-13T15:07:51Z",
@@ -11468,8 +11440,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (3) [unité] ; hhcomp→TOTAL (6) [ventilation] ; statinfo (2) [contenu] ; geo→FR (1) [fixé]"
     },
     "ilc_di15": {
-     "date": "2026-10-13T15:29:06Z",
-     "duree_s": 3.6,
+     "date": "2026-10-14T00:10:00Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -11483,8 +11455,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (3) [unité] ; statinfo (2) [contenu] ; citizen (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (11) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_di16": {
-     "date": "2026-10-13T15:29:10Z",
-     "duree_s": 3.3,
+     "date": "2026-10-14T00:10:01Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -11738,8 +11710,8 @@
      "structure_fr": "freq→A (1) [fixé] ; worktime (2) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_iw15": {
-     "date": "2026-10-13T15:28:40Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:58Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -11753,8 +11725,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_iw16": {
-     "date": "2026-10-13T15:28:42Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:59Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -11903,8 +11875,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; hhcomp→TOTAL (19) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_li09c": {
-     "date": "2026-10-13T15:27:34Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:09:54Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12098,8 +12070,8 @@
      "structure_fr": "freq→A (1) [fixé] ; statinfo→MED_EI (1) [fixé] ; unit (1) [unité] ; rskpovth→B_60 (1) [fixé] ; isced11 (3) [contenu] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_li31": {
-     "date": "2026-10-13T15:27:53Z",
-     "duree_s": 1.9,
+     "date": "2026-10-14T00:09:55Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12113,8 +12085,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (8) [contenu] ; age→Y_GE18 (12) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_li32": {
-     "date": "2026-10-13T15:27:55Z",
-     "duree_s": 1.9,
+     "date": "2026-10-14T00:09:55Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12128,8 +12100,8 @@
      "structure_fr": "freq→A (1) [fixé] ; statinfo→MED_EI (1) [fixé] ; rskpovth→B_60 (1) [fixé] ; c_birth (4) [contenu] ; age→TOTAL (20) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_li33": {
-     "date": "2026-10-13T15:28:04Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:56Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12143,8 +12115,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen (2) [contenu] ; geo→FR (1) [fixé]"
     },
     "ilc_li34": {
-     "date": "2026-10-13T15:28:05Z",
-     "duree_s": 1.2,
+     "date": "2026-10-14T00:09:57Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12323,8 +12295,8 @@
      "structure_fr": "freq→A (1) [fixé] ; percent (2) [contenu] ; rskpovth→TOTAL (2) [fixé] ; age→Y18-64 (1) [fixé] ; workint→TOTAL (2) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_li80": {
-     "date": "2026-10-13T15:28:11Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:09:58Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12548,8 +12520,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; isced11→TOTAL (4) [ventilation] ; age→Y18-64 (12) [ventilation] ; unit (3) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_lvhl15": {
-     "date": "2026-10-13T15:30:30Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:10:05Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12563,8 +12535,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (8) [contenu] ; age→Y18-59 (7) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_lvhl15n": {
-     "date": "2026-10-13T15:30:05Z",
-     "duree_s": 2.2,
+     "date": "2026-10-14T00:10:04Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12578,8 +12550,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (6) [contenu] ; age→Y18-64 (11) [ventilation] ; sex→T (3) [ventilation] ; unit (3) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_lvhl16": {
-     "date": "2026-10-13T15:30:31Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:10:06Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -12593,8 +12565,8 @@
      "structure_fr": "freq→A (1) [fixé] ; c_birth (8) [contenu] ; sex→T (3) [ventilation] ; age→Y18-59 (12) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_lvhl16n": {
-     "date": "2026-10-13T15:30:07Z",
-     "duree_s": 2.1,
+     "date": "2026-10-14T00:10:04Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13118,8 +13090,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb (3) [contenu] ; geo→FR (1) [fixé]"
     },
     "ilc_lvho15": {
-     "date": "2026-10-13T15:30:45Z",
-     "duree_s": 2.0,
+     "date": "2026-10-14T00:10:07Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13133,8 +13105,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_lvho16": {
-     "date": "2026-10-13T15:30:47Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:10:07Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13148,8 +13120,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_lvho25": {
-     "date": "2026-10-13T15:31:01Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:10:08Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13163,8 +13135,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_lvho26": {
-     "date": "2026-10-13T15:31:03Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:10:09Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13493,8 +13465,8 @@
      "structure_fr": "freq→A (1) [fixé] ; wstatus (2) [contenu] ; age→Y18-34 (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_lvps15": {
-     "date": "2026-10-13T15:29:42Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:10:02Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13508,8 +13480,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; tenure (2) [contenu] ; citizen (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (11) [ventilation] ; geo→FR (1) [fixé]"
     },
     "ilc_lvps16": {
-     "date": "2026-10-13T15:29:44Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:10:03Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13718,8 +13690,8 @@
      "structure_fr": "freq→A (1) [fixé] ; isced11→TOTAL (4) [ventilation] ; age→Y_GE18 (15) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_mddd15": {
-     "date": "2026-10-13T15:32:30Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:10:12Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -13733,8 +13705,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (8) [contenu] ; age→Y_GE18 (12) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_mddd16": {
-     "date": "2026-10-13T15:32:32Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:10:13Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -14843,8 +14815,8 @@
      "structure_fr": "freq→A (1) [fixé] ; isced11→TOTAL (4) [ventilation] ; age→Y_GE16 (27) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_mdsd04": {
-     "date": "2026-10-13T15:31:51Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:10:10Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -14858,8 +14830,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (6) [contenu] ; age→Y_GE16 (27) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_mdsd05": {
-     "date": "2026-10-13T15:31:52Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:10:10Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -14993,8 +14965,8 @@
      "structure_fr": "freq→A (1) [fixé] ; isced11→TOTAL (4) [ventilation] ; age→Y_GE16 (27) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_mdsd15": {
-     "date": "2026-10-13T15:32:02Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:10:11Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15008,8 +14980,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (4) [contenu] ; age→Y_GE16 (27) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_mdsd16": {
-     "date": "2026-10-13T15:32:03Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:10:12Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15203,8 +15175,8 @@
      "structure_fr": "freq→A (1) [fixé] ; yn_rskpov (2) [contenu] ; lev_depr (2) [contenu] ; workint (2) [contenu] ; isced11 (3) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_pees06": {
-     "date": "2026-10-13T15:26:57Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:09:53Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15218,8 +15190,8 @@
      "structure_fr": "freq→A (1) [fixé] ; yn_rskpov (2) [contenu] ; lev_depr (2) [contenu] ; workint (2) [contenu] ; citizen (8) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_pees07": {
-     "date": "2026-10-13T15:26:59Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:53Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15368,8 +15340,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; isced11→TOTAL (4) [ventilation] ; age→Y_GE18 (15) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_peps05": {
-     "date": "2026-10-13T15:26:42Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:51Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15383,8 +15355,8 @@
      "structure_fr": "freq→A (1) [fixé] ; citizen (8) [contenu] ; age→Y_GE18 (12) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_peps05n": {
-     "date": "2026-10-13T15:26:26Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:09:50Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15398,8 +15370,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; citizen (6) [contenu] ; age→Y_GE18 (12) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_peps06": {
-     "date": "2026-10-13T15:26:44Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:09:52Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -15413,8 +15385,8 @@
      "structure_fr": "freq→A (1) [fixé] ; c_birth (8) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE18 (17) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "ilc_peps06n": {
-     "date": "2026-10-13T15:26:28Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:09:50Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16568,36 +16540,6 @@
      "statut": "ok",
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; nace_r2 (26) [contenu] ; lcstruct (4) [contenu] ; geo→FR (1) [fixé]"
     },
-    "lc_lci_r2_cow": {
-     "date": "2026-10-13T15:25:27Z",
-     "duree_s": 1.5,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 3,
-     "nb_observations": 63,
-     "nb_series": 4,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; statinfo (4) [contenu] ; geo→FR (1) [fixé]"
-    },
-    "lc_lci_r2_itw": {
-     "date": "2026-10-13T15:25:28Z",
-     "duree_s": 1.4,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 29,
-     "nb_observations": 522,
-     "nb_series": 29,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; statinfo→IWBS (1) [fixé] ; lcstruct→D1_D4_MD5 (1) [fixé] ; nace_r2 (29) [contenu] ; geo→FR (1) [fixé]"
-    },
     "lfsa_agaed": {
      "date": "2026-10-13T15:18:41Z",
      "duree_s": 2.0,
@@ -16614,8 +16556,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (29) [ventilation] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_agan": {
-     "date": "2026-10-13T15:18:38Z",
-     "duree_s": 2.4,
+     "date": "2026-10-14T00:09:18Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16623,14 +16565,14 @@
      "nb_candidates": 1,
      "nb_observations": 13421,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_argacob": {
-     "date": "2026-10-13T15:18:50Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:09:21Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16638,10 +16580,10 @@
      "nb_candidates": 1,
      "nb_observations": 14426,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (37) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (37) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_argaed": {
      "date": "2026-10-13T15:16:13Z",
@@ -16659,8 +16601,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (30) [ventilation] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_argaedcob": {
-     "date": "2026-10-13T15:18:52Z",
-     "duree_s": 4.6,
+     "date": "2026-10-14T00:09:22Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16668,14 +16610,14 @@
      "nb_candidates": 1,
      "nb_observations": 33331,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_argaedn": {
-     "date": "2026-10-13T15:18:45Z",
-     "duree_s": 4.8,
+     "date": "2026-10-14T00:09:19Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16683,14 +16625,14 @@
      "nb_candidates": 1,
      "nb_observations": 32665,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_argan": {
-     "date": "2026-10-13T15:18:43Z",
-     "duree_s": 2.5,
+     "date": "2026-10-14T00:09:19Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16698,10 +16640,10 @@
      "nb_candidates": 1,
      "nb_observations": 14675,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (38) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (38) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_e2ged": {
      "date": "2026-10-13T15:16:36Z",
@@ -16884,8 +16826,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (23) [ventilation] ; wstatus (4) [contenu] ; isco08→TOTAL (12) [fixé] ; geo→FR (1) [fixé]"
     },
     "lfsa_egan": {
-     "date": "2026-10-13T15:19:18Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:09:28Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -16893,10 +16835,10 @@
      "nb_candidates": 1,
      "nb_observations": 13247,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_egan2": {
      "date": "2026-10-13T15:19:24Z",
@@ -17019,8 +16961,8 @@
      "structure_fr": "freq→A (1) [fixé] ; age→Y_GE15 (2) [ventilation] ; sex→T (3) [ventilation] ; nace_r2→TOTAL (23) [fixé] ; isco08→TOTAL (12) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_enewasc": {
-     "date": "2026-10-13T15:19:58Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:09:29Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17028,14 +16970,14 @@
      "nb_candidates": 4,
      "nb_observations": 2907,
      "nb_series": 5,
-     "nb_ventilations": 5,
+     "nb_ventilations": 10,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; wstatus (5) [contenu] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; wstatus (5) [contenu] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_enewasn": {
-     "date": "2026-10-13T15:19:57Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:29Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17043,14 +16985,14 @@
      "nb_candidates": 4,
      "nb_observations": 2802,
      "nb_series": 5,
-     "nb_ventilations": 5,
+     "nb_ventilations": 10,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [fixé] ; wstatus (5) [contenu] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [ventilation] ; wstatus (5) [contenu] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_eoqgac": {
-     "date": "2026-10-13T15:20:16Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:09:31Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17058,14 +17000,14 @@
      "nb_candidates": 1,
      "nb_observations": 2639,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; age→Y_GE15 (7) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; age→Y_GE15 (7) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_eoqgan": {
-     "date": "2026-10-13T15:20:14Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:09:30Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17073,10 +17015,10 @@
      "nb_candidates": 1,
      "nb_observations": 2577,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [fixé] ; age→Y_GE15 (7) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [ventilation] ; age→Y_GE15 (7) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_eoqgan2": {
      "date": "2026-10-13T15:20:18Z",
@@ -17184,8 +17126,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (24) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_eppgacob": {
-     "date": "2026-10-13T15:21:26Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:09:38Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17193,10 +17135,10 @@
      "nb_candidates": 1,
      "nb_observations": 3066,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (8) [ventilation] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (8) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_eppgai": {
      "date": "2026-10-13T15:21:28Z",
@@ -17214,8 +17156,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (24) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_eppgan": {
-     "date": "2026-10-13T15:21:24Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:09:37Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17223,14 +17165,14 @@
      "nb_candidates": 1,
      "nb_observations": 2966,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (8) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (8) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_ergacob": {
-     "date": "2026-10-13T15:19:10Z",
-     "duree_s": 2.4,
+     "date": "2026-10-14T00:09:25Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17238,10 +17180,10 @@
      "nb_candidates": 1,
      "nb_observations": 16659,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; c_birth→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; c_birth→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_ergaed": {
      "date": "2026-10-13T13:34:43Z",
@@ -17259,8 +17201,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (32) [ventilation] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_ergaedcob": {
-     "date": "2026-10-13T15:19:12Z",
-     "duree_s": 5.9,
+     "date": "2026-10-14T00:09:26Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17268,14 +17210,14 @@
      "nb_candidates": 1,
      "nb_observations": 33119,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_ergaedn": {
-     "date": "2026-10-13T15:19:05Z",
-     "duree_s": 5.1,
+     "date": "2026-10-14T00:09:24Z",
+     "duree_s": 1.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17283,14 +17225,14 @@
      "nb_candidates": 1,
      "nb_observations": 38964,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (8) [fixé] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (8) [ventilation] ; isced11→TOTAL (8) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (18) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_ergan": {
-     "date": "2026-10-13T15:19:01Z",
-     "duree_s": 4.0,
+     "date": "2026-10-14T00:09:23Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17298,10 +17240,10 @@
      "nb_candidates": 1,
      "nb_observations": 16442,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; citizen→TOTAL (8) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; citizen→TOTAL (8) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_esega": {
      "date": "2026-10-13T15:20:07Z",
@@ -17409,8 +17351,8 @@
      "structure_fr": "freq→A (1) [fixé] ; emp_cont→TOTAL (4) [fixé] ; age→Y_GE15 (6) [ventilation] ; eseg→TOTAL (40) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_esgacob": {
-     "date": "2026-10-13T15:20:26Z",
-     "duree_s": 6.6,
+     "date": "2026-10-14T00:09:34Z",
+     "duree_s": 2.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17418,10 +17360,10 @@
      "nb_candidates": 3,
      "nb_observations": 65642,
      "nb_series": 3,
-     "nb_ventilations": 6,
+     "nb_ventilations": 9,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; wstatus (3) [contenu] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; wstatus (3) [contenu] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_esgaed": {
      "date": "2026-10-13T15:16:24Z",
@@ -17454,8 +17396,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (24) [ventilation] ; wstatus (3) [contenu] ; isco08→TOTAL (12) [fixé] ; geo→FR (1) [fixé]"
     },
     "lfsa_esgan": {
-     "date": "2026-10-13T15:20:20Z",
-     "duree_s": 6.3,
+     "date": "2026-10-14T00:09:32Z",
+     "duree_s": 2.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17463,10 +17405,10 @@
      "nb_candidates": 3,
      "nb_observations": 59662,
      "nb_series": 3,
-     "nb_ventilations": 6,
+     "nb_ventilations": 9,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; wstatus (3) [contenu] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; wstatus (3) [contenu] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_esgan2": {
      "date": "2026-10-13T15:20:32Z",
@@ -17559,8 +17501,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (27) [ventilation] ; reason→TOTAL (8) [fixé] ; geo→FR (1) [fixé]"
     },
     "lfsa_etpgacob": {
-     "date": "2026-10-13T15:21:06Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:09:36Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17568,14 +17510,14 @@
      "nb_candidates": 1,
      "nb_observations": 3828,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (10) [ventilation] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (10) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_etpgan": {
-     "date": "2026-10-13T15:21:04Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:09:36Z",
+     "duree_s": 0.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17583,10 +17525,10 @@
      "nb_candidates": 1,
      "nb_observations": 3681,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (10) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (10) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_ewh2n2": {
      "date": "2026-10-13T15:22:09Z",
@@ -17754,8 +17696,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (18) [ventilation] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_igan": {
-     "date": "2026-10-13T15:22:45Z",
-     "duree_s": 2.5,
+     "date": "2026-10-14T00:09:44Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17763,10 +17705,10 @@
      "nb_candidates": 1,
      "nb_observations": 14038,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_igar": {
      "date": "2026-10-13T15:22:49Z",
@@ -17814,8 +17756,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (35) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_pgacws": {
-     "date": "2026-10-13T15:18:30Z",
-     "duree_s": 6.3,
+     "date": "2026-10-14T00:09:16Z",
+     "duree_s": 1.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17823,10 +17765,10 @@
      "nb_candidates": 1,
      "nb_observations": 63372,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; wstatus→POP (6) [fixé] ; age→Y_GE15 (33) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; wstatus→POP (6) [fixé] ; age→Y_GE15 (33) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_pgaed": {
      "date": "2026-10-13T15:15:31Z",
@@ -17859,8 +17801,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (18) [ventilation] ; training→TOTAL (4) [fixé] ; geo→FR (1) [fixé]"
     },
     "lfsa_pganws": {
-     "date": "2026-10-13T15:18:24Z",
-     "duree_s": 5.9,
+     "date": "2026-10-14T00:09:14Z",
+     "duree_s": 1.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -17868,10 +17810,10 @@
      "nb_candidates": 1,
      "nb_observations": 64948,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; citizen→TOTAL (7) [fixé] ; age→Y_GE15 (34) [ventilation] ; wstatus→POP (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; citizen→TOTAL (7) [ventilation] ; age→Y_GE15 (34) [ventilation] ; wstatus→POP (6) [fixé] ; geo→FR (1) [fixé]"
     },
     "lfsa_pgauws": {
      "date": "2026-10-13T13:47:37Z",
@@ -17994,8 +17936,8 @@
      "structure_fr": "freq→A (1) [fixé] ; wstatus (4) [contenu] ; sex→T (3) [ventilation] ; age→Y15-74 (6) [ventilation] ; unit (5) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_sup_cob": {
-     "date": "2026-10-13T15:22:43Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:09:44Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18003,10 +17945,10 @@
      "nb_candidates": 4,
      "nb_observations": 1425,
      "nb_series": 4,
-     "nb_ventilations": 4,
+     "nb_ventilations": 8,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; wstatus (4) [contenu] ; c_birth→TOTAL (6) [fixé] ; age→Y15-74 (1) [fixé] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; wstatus (4) [contenu] ; c_birth→TOTAL (6) [ventilation] ; age→Y15-74 (1) [fixé] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_sup_edu": {
      "date": "2026-10-13T15:22:40Z",
@@ -18024,8 +17966,8 @@
      "structure_fr": "freq→A (1) [fixé] ; wstatus (4) [contenu] ; isced11→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y15-74 (2) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_sup_nat": {
-     "date": "2026-10-13T15:22:41Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:43Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18033,10 +17975,10 @@
      "nb_candidates": 4,
      "nb_observations": 1421,
      "nb_series": 4,
-     "nb_ventilations": 4,
+     "nb_ventilations": 8,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; wstatus (4) [contenu] ; citizen→TOTAL (7) [fixé] ; age→Y15-74 (1) [fixé] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; wstatus (4) [contenu] ; citizen→TOTAL (7) [ventilation] ; age→Y15-74 (1) [fixé] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfsa_ugad": {
      "date": "2026-10-13T15:22:20Z",
@@ -18069,8 +18011,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (18) [ventilation] ; regis_es (6) [contenu] ; duration (13) [contenu] ; geo→FR (1) [fixé]"
     },
     "lfsa_ugan": {
-     "date": "2026-10-13T15:22:18Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:09:40Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18078,10 +18020,10 @@
      "nb_candidates": 1,
      "nb_observations": 9740,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (30) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (30) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_ugates": {
      "date": "2026-10-13T15:22:29Z",
@@ -18129,8 +18071,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; isco08→TOTAL (13) [fixé] ; geo→FR (1) [fixé]"
     },
     "lfsa_upgacob": {
-     "date": "2026-10-13T15:22:36Z",
-     "duree_s": 2.1,
+     "date": "2026-10-14T00:09:42Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18138,14 +18080,14 @@
      "nb_candidates": 1,
      "nb_observations": 10772,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (36) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_upgan": {
-     "date": "2026-10-13T15:22:34Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:09:41Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18153,14 +18095,14 @@
      "nb_candidates": 1,
      "nb_observations": 11064,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (38) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (38) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_urgacob": {
-     "date": "2026-10-13T15:22:14Z",
-     "duree_s": 3.4,
+     "date": "2026-10-14T00:09:39Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18168,10 +18110,10 @@
      "nb_candidates": 1,
      "nb_observations": 10349,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (31) [ventilation] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (31) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_urgaed": {
      "date": "2026-10-13T15:16:15Z",
@@ -18189,8 +18131,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (29) [ventilation] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsa_urgan": {
-     "date": "2026-10-13T15:22:12Z",
-     "duree_s": 2.6,
+     "date": "2026-10-14T00:09:38Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -18198,10 +18140,10 @@
      "nb_candidates": 1,
      "nb_observations": 11685,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (35) [ventilation] ; citizen→TOTAL (7) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y15-74 (35) [ventilation] ; citizen→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfsi_dwl_a": {
      "date": "2026-10-13T15:18:57Z",
@@ -19005,8 +18947,8 @@
      "statut": "sans_dimension_geo"
     },
     "lfst_r_aredcobu": {
-     "date": "2026-10-13T13:46:21Z",
-     "duree_s": 4.7,
+     "date": "2026-10-14T00:08:18Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19014,14 +18956,14 @@
      "nb_candidates": 1,
      "nb_observations": 26744,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_arednu": {
-     "date": "2026-10-13T13:46:15Z",
-     "duree_s": 5.6,
+     "date": "2026-10-14T00:08:17Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19029,14 +18971,14 @@
      "nb_candidates": 1,
      "nb_observations": 25673,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_e2pgaedcu": {
-     "date": "2026-10-13T13:46:34Z",
-     "duree_s": 6.6,
+     "date": "2026-10-14T00:08:19Z",
+     "duree_s": 1.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19044,14 +18986,14 @@
      "nb_candidates": 1,
      "nb_observations": 43998,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_e2pgaednu": {
-     "date": "2026-10-13T13:46:41Z",
-     "duree_s": 6.6,
+     "date": "2026-10-14T00:08:21Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19059,14 +19001,14 @@
      "nb_candidates": 1,
      "nb_observations": 40860,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_e2sgacu": {
-     "date": "2026-10-13T13:46:47Z",
-     "duree_s": 4.4,
+     "date": "2026-10-14T00:08:23Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19074,14 +19016,14 @@
      "nb_candidates": 3,
      "nb_observations": 32390,
      "nb_series": 3,
-     "nb_ventilations": 9,
+     "nb_ventilations": 12,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; wstatus (3) [contenu] ; c_birth→TOTAL (6) [fixé] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; wstatus (3) [contenu] ; c_birth→TOTAL (6) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_e2sganu": {
-     "date": "2026-10-13T13:46:52Z",
-     "duree_s": 5.0,
+     "date": "2026-10-14T00:08:24Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19089,14 +19031,14 @@
      "nb_candidates": 3,
      "nb_observations": 29054,
      "nb_series": 3,
-     "nb_ventilations": 9,
+     "nb_ventilations": 12,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; wstatus (3) [contenu] ; citizen→TOTAL (7) [fixé] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; wstatus (3) [contenu] ; citizen→TOTAL (7) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_e2tgaedcu": {
-     "date": "2026-10-13T13:46:57Z",
-     "duree_s": 7.4,
+     "date": "2026-10-14T00:08:25Z",
+     "duree_s": 1.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19104,14 +19046,14 @@
      "nb_candidates": 1,
      "nb_observations": 41342,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_e2tgaednu": {
-     "date": "2026-10-13T13:47:04Z",
-     "duree_s": 7.0,
+     "date": "2026-10-14T00:08:27Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19119,10 +19061,10 @@
      "nb_candidates": 1,
      "nb_observations": 38372,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_edatd_16": {
      "date": "2026-10-13T13:42:56Z",
@@ -19185,8 +19127,8 @@
      "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; duration→TOTAL (6) [fixé] ; age→Y_GE15 (11) [ventilation] ; sex→T (3) [ventilation] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_eredcobu": {
-     "date": "2026-10-13T13:46:10Z",
-     "duree_s": 5.0,
+     "date": "2026-10-14T00:08:16Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19194,14 +19136,14 @@
      "nb_candidates": 1,
      "nb_observations": 26563,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_erednu": {
-     "date": "2026-10-13T13:46:05Z",
-     "duree_s": 4.9,
+     "date": "2026-10-14T00:08:14Z",
+     "duree_s": 1.3,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19209,10 +19151,10 @@
      "nb_candidates": 1,
      "nb_observations": 25250,
      "nb_series": 1,
-     "nb_ventilations": 4,
+     "nb_ventilations": 5,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_ergau": {
      "date": "2026-10-13T13:46:26Z",
@@ -19320,8 +19262,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfe2emprc": {
-     "date": "2026-10-13T13:42:20Z",
-     "duree_s": 3.4,
+     "date": "2026-10-14T00:08:06Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19329,10 +19271,10 @@
      "nb_candidates": 1,
      "nb_observations": 7196,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfe2emprt": {
      "date": "2026-10-13T13:42:23Z",
@@ -19350,8 +19292,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfe2emprtn": {
-     "date": "2026-10-13T13:42:16Z",
-     "duree_s": 3.7,
+     "date": "2026-10-14T00:08:05Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19359,10 +19301,10 @@
      "nb_candidates": 1,
      "nb_observations": 7161,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfe2en2": {
      "date": "2026-10-13T13:41:58Z",
@@ -19425,8 +19367,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (12) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfp2actrc": {
-     "date": "2026-10-13T13:41:47Z",
-     "duree_s": 3.3,
+     "date": "2026-10-14T00:08:04Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19434,10 +19376,10 @@
      "nb_candidates": 1,
      "nb_observations": 7261,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfp2actrt": {
      "date": "2026-10-13T13:41:51Z",
@@ -19455,8 +19397,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; age→Y_GE15 (11) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfp2actrtn": {
-     "date": "2026-10-13T13:41:43Z",
-     "duree_s": 4.0,
+     "date": "2026-10-14T00:08:03Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19464,10 +19406,10 @@
      "nb_candidates": 1,
      "nb_observations": 7305,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [fixé] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [ventilation] ; isced11→TOTAL (5) [ventilation] ; age→Y15-64 (4) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfsd2hh": {
      "date": "2026-10-13T13:47:23Z",
@@ -19500,8 +19442,8 @@
      "structure_fr": "freq→A (1) [fixé] ; isced11→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (12) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfsd2pwc": {
-     "date": "2026-10-13T13:41:34Z",
-     "duree_s": 3.8,
+     "date": "2026-10-14T00:08:02Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19509,14 +19451,14 @@
      "nb_candidates": 1,
      "nb_observations": 13078,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; wstatus→POP (6) [fixé] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; wstatus→POP (6) [fixé] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfsd2pwn": {
-     "date": "2026-10-13T13:41:30Z",
-     "duree_s": 4.1,
+     "date": "2026-10-14T00:08:00Z",
+     "duree_s": 1.2,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19524,14 +19466,14 @@
      "nb_candidates": 1,
      "nb_observations": 13337,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; wstatus→POP (6) [fixé] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; wstatus→POP (6) [fixé] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfu2gac": {
-     "date": "2026-10-13T13:42:38Z",
-     "duree_s": 2.6,
+     "date": "2026-10-14T00:08:07Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19539,14 +19481,14 @@
      "nb_candidates": 1,
      "nb_observations": 2000,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [fixé] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; c_birth→TOTAL (6) [ventilation] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfu2gacu": {
-     "date": "2026-10-13T13:47:14Z",
-     "duree_s": 2.7,
+     "date": "2026-10-14T00:08:29Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19554,14 +19496,14 @@
      "nb_candidates": 1,
      "nb_observations": 7106,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [fixé] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfu2gan": {
-     "date": "2026-10-13T13:42:43Z",
-     "duree_s": 3.0,
+     "date": "2026-10-14T00:08:09Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19569,14 +19511,14 @@
      "nb_candidates": 1,
      "nb_observations": 2030,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [fixé] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; citizen→TOTAL (7) [ventilation] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfu2ganu": {
-     "date": "2026-10-13T13:47:19Z",
-     "duree_s": 2.1,
+     "date": "2026-10-14T00:08:30Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19584,10 +19526,10 @@
      "nb_candidates": 1,
      "nb_observations": 6856,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [fixé] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [ventilation] ; age→Y15-74 (5) [ventilation] ; sex→T (3) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfu2ltu": {
      "date": "2026-10-13T13:42:34Z",
@@ -19635,8 +19577,8 @@
      "structure_fr": "freq→A (1) [fixé] ; isced11→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (10) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfur2gac": {
-     "date": "2026-10-13T13:42:40Z",
-     "duree_s": 2.9,
+     "date": "2026-10-14T00:08:08Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19644,14 +19586,14 @@
      "nb_candidates": 1,
      "nb_observations": 2000,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfur2gacu": {
-     "date": "2026-10-13T13:47:17Z",
-     "duree_s": 2.0,
+     "date": "2026-10-14T00:08:29Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19659,14 +19601,14 @@
      "nb_candidates": 1,
      "nb_observations": 7106,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfur2gan": {
-     "date": "2026-10-13T13:42:46Z",
-     "duree_s": 2.7,
+     "date": "2026-10-14T00:08:10Z",
+     "duree_s": 1.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19674,14 +19616,14 @@
      "nb_candidates": 1,
      "nb_observations": 2030,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lfur2ganu": {
-     "date": "2026-10-13T13:47:21Z",
-     "duree_s": 2.2,
+     "date": "2026-10-14T00:08:31Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19689,10 +19631,10 @@
      "nb_candidates": 1,
      "nb_observations": 6856,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y15-74 (5) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_lmder": {
      "date": "2026-10-13T13:42:51Z",
@@ -19755,8 +19697,8 @@
      "structure_fr": "freq→A (1) [fixé] ; statinfo (2) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE15 (2) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "lfst_r_pgauwsc": {
-     "date": "2026-10-13T13:47:31Z",
-     "duree_s": 5.9,
+     "date": "2026-10-14T00:08:33Z",
+     "duree_s": 1.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19764,14 +19706,14 @@
      "nb_candidates": 1,
      "nb_observations": 48134,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; wstatus→POP (6) [fixé] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; wstatus→POP (6) [fixé] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_pgauwsn": {
-     "date": "2026-10-13T13:47:26Z",
-     "duree_s": 5.8,
+     "date": "2026-10-14T00:08:32Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19779,10 +19721,10 @@
      "nb_candidates": 1,
      "nb_observations": 47033,
      "nb_series": 1,
-     "nb_ventilations": 3,
+     "nb_ventilations": 4,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; wstatus→POP (6) [fixé] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; wstatus→POP (6) [fixé] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y_GE15 (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_r_sla_ga": {
      "date": "2026-10-13T13:42:49Z",
@@ -19815,8 +19757,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; deg_urb→TOTAL (5) [ventilation] ; age→Y15-74 (29) [ventilation] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_rimgacga": {
-     "date": "2026-10-13T15:24:31Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:09:48Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19830,8 +19772,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; sex→T (3) [ventilation] ; c_birth (3) [contenu] ; age→Y_GE15 (4) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_rimganga": {
-     "date": "2026-10-13T15:24:29Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:47Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19845,8 +19787,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; sex→T (3) [ventilation] ; citizen (3) [contenu] ; age→Y_GE15 (4) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_rimgecga": {
-     "date": "2026-10-13T15:24:34Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:09:49Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19860,8 +19802,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; sex→T (3) [ventilation] ; c_birth (3) [contenu] ; age→Y_GE15 (4) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_rimgenga": {
-     "date": "2026-10-13T15:24:32Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:48Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19875,8 +19817,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; citizen (3) [contenu] ; sex→T (3) [ventilation] ; age→Y_GE15 (4) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_rimgpcga": {
-     "date": "2026-10-13T15:24:28Z",
-     "duree_s": 1.4,
+     "date": "2026-10-14T00:09:46Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -19890,8 +19832,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; sex→T (3) [ventilation] ; c_birth (3) [contenu] ; age→Y_GE15 (4) [ventilation] ; geo→FR (1) [fixé]"
     },
     "lfst_rimgpnga": {
-     "date": "2026-10-13T15:24:26Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:09:45Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -20028,126 +19970,6 @@
      "requetes": 2,
      "statut": "ok",
      "structure_fr": "freq→A (1) [fixé] ; unit (2) [unité] ; co_nco (2) [contenu] ; sector (30) [contenu] ; finpos (2) [contenu] ; na_item (37) [contenu] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_cp16": {
-     "date": "2026-10-13T13:51:33Z",
-     "duree_s": 1.9,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux)",
-     "nb_candidates": 72,
-     "nb_observations": 2036,
-     "nb_series": 113,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (3) [unité] ; stk_flow→TOTAL (1) [fixé] ; ind_use→TOTAL (1) [fixé] ; prd_ava (120) [contenu] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_cp1610": {
-     "date": "2026-10-13T13:51:35Z",
-     "duree_s": 2.0,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux)",
-     "nb_candidates": 74,
-     "nb_observations": 2090,
-     "nb_series": 115,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (3) [unité] ; ind_use→TOTAL (1) [fixé] ; stk_flow→TOTAL (1) [fixé] ; prd_ava (122) [contenu] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_fgdee": {
-     "date": "2026-10-13T13:51:42Z",
-     "duree_s": 3.5,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux)",
-     "nb_candidates": 672,
-     "nb_observations": 10440,
-     "nb_series": 672,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; nace_r2→TOTAL (1) [fixé] ; c_exp (28) [contenu] ; c_imp (24) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_fgdem": {
-     "date": "2026-10-13T13:51:45Z",
-     "duree_s": 5.3,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 1,
-     "nb_observations": 60060,
-     "nb_series": 1,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; nace_r2→TOTAL (76) [fixé] ; c_imp→TOTAL (53) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_fgdfe": {
-     "date": "2026-10-13T13:51:50Z",
-     "duree_s": 5.1,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 1,
-     "nb_observations": 60060,
-     "nb_series": 1,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; nace_r2→TOTAL (76) [fixé] ; c_dest→TOTAL (53) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_fgdfef": {
-     "date": "2026-10-13T13:51:56Z",
-     "duree_s": 5.2,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "",
-     "nb_candidates": 1,
-     "nb_observations": 61215,
-     "nb_series": 1,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; nace_r2→TOTAL (76) [fixé] ; c_dest→TOTAL (53) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_pyp16": {
-     "date": "2026-10-13T13:51:37Z",
-     "duree_s": 2.1,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux)",
-     "nb_candidates": 69,
-     "nb_observations": 1812,
-     "nb_series": 108,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (3) [unité] ; stk_flow→TOTAL (1) [fixé] ; ind_use→TOTAL (1) [fixé] ; prd_ava (120) [contenu] ; geo→FR (1) [fixé]"
-    },
-    "naio_10_pyp1610": {
-     "date": "2026-10-13T13:51:40Z",
-     "duree_s": 2.0,
-     "essais": 0,
-     "geo": "FR",
-     "jeu_source": "",
-     "message": "dimensions à total fixées à la requête (jeu volumineux)",
-     "nb_candidates": 71,
-     "nb_observations": 1860,
-     "nb_series": 110,
-     "nb_ventilations": 0,
-     "requetes": 2,
-     "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (3) [unité] ; ind_use→TOTAL (1) [fixé] ; stk_flow→TOTAL (1) [fixé] ; prd_ava (121) [contenu] ; geo→FR (1) [fixé]"
     },
     "nama_10_a10": {
      "date": "2026-10-14T00:03:48Z",
@@ -21155,8 +20977,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec→TOTAL (13) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ind_id3cf": {
-     "date": "2026-10-13T17:09:09Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:10:48Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21170,8 +20992,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec→TOTAL (7) [fixé] ; partner→THRD (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ind_idooil": {
-     "date": "2026-10-13T17:09:08Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:10:47Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21500,8 +21322,8 @@
      "structure_fr": "freq→A (1) [fixé] ; stk_flow (2) [contenu] ; siec (40) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_bio": {
-     "date": "2026-10-13T17:10:22Z",
-     "duree_s": 3.7,
+     "date": "2026-10-14T00:10:59Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21515,8 +21337,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (6) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_eh": {
-     "date": "2026-10-13T17:09:53Z",
-     "duree_s": 2.0,
+     "date": "2026-10-14T00:10:57Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21530,8 +21352,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_gas": {
-     "date": "2026-10-13T17:09:44Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:10:55Z",
+     "duree_s": 0.9,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21545,8 +21367,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_oil": {
-     "date": "2026-10-13T17:09:30Z",
-     "duree_s": 7.8,
+     "date": "2026-10-14T00:10:52Z",
+     "duree_s": 3.0,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21560,8 +21382,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (38) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_te_sff": {
-     "date": "2026-10-13T17:10:43Z",
-     "duree_s": 5.2,
+     "date": "2026-10-14T00:11:02Z",
+     "duree_s": 1.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21575,8 +21397,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (14) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_bio": {
-     "date": "2026-10-13T17:10:19Z",
-     "duree_s": 3.6,
+     "date": "2026-10-14T00:10:58Z",
+     "duree_s": 1.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21590,8 +21412,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (6) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_eh": {
-     "date": "2026-10-13T17:09:51Z",
-     "duree_s": 2.0,
+     "date": "2026-10-14T00:10:56Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21605,8 +21427,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_gas": {
-     "date": "2026-10-13T17:09:42Z",
-     "duree_s": 2.3,
+     "date": "2026-10-14T00:10:55Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21620,8 +21442,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (2) [contenu] ; partner→TOTAL (167) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_oil": {
-     "date": "2026-10-13T17:09:23Z",
-     "duree_s": 7.6,
+     "date": "2026-10-14T00:10:48Z",
+     "duree_s": 3.1,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21635,8 +21457,8 @@
      "structure_fr": "freq→A (1) [fixé] ; siec (38) [contenu] ; partner→TOTAL (167) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "nrg_ti_sff": {
-     "date": "2026-10-13T17:10:37Z",
-     "duree_s": 5.7,
+     "date": "2026-10-14T00:11:00Z",
+     "duree_s": 1.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -21665,19 +21487,19 @@
      "structure_fr": "freq→A (1) [fixé] ; agriprod (23) [contenu] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "org_aqtspec": {
-     "date": "2026-10-13T16:00:17Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:10:43Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
      "message": "",
      "nb_candidates": 0,
      "nb_observations": 16,
-     "nb_series": 7,
+     "nb_series": 1,
      "nb_ventilations": 0,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; species (11) [contenu] ; unit (1) [unité] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; species→F00 (11) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "org_coptyp": {
      "date": "2026-10-13T15:47:34Z",
@@ -22251,8 +22073,8 @@
      "structure_fr": "freq→A (1) [fixé] ; statinfo→MED_EI (1) [fixé] ; age→TOTAL (1) [fixé] ; rskpovth→B_60 (1) [fixé] ; sex→T (1) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_01_20a": {
-     "date": "2026-10-13T13:35:25Z",
-     "duree_s": 1.3,
+     "date": "2026-10-14T00:07:57Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "ilc_li31",
@@ -22551,8 +22373,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; wstatus→POP (1) [fixé] ; age→Y18-24 (1) [fixé] ; sex→T (3) [ventilation] ; geo→FR (1) [fixé]"
     },
     "sdg_04_10a": {
-     "date": "2026-10-13T13:35:51Z",
-     "duree_s": 1.3,
+     "date": "2026-10-14T00:07:57Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "edat_lfse_01",
@@ -22950,8 +22772,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_08_20a": {
-     "date": "2026-10-13T13:36:11Z",
-     "duree_s": 1.2,
+     "date": "2026-10-14T00:07:58Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "edat_lfse_23",
@@ -22980,8 +22802,8 @@
      "structure_fr": "freq→A (1) [fixé] ; indic_em→EMP_LFS (1) [fixé] ; sex→T (3) [ventilation] ; age→Y20-64 (1) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_08_30a": {
-     "date": "2026-10-13T13:35:08Z",
-     "duree_s": 1.3,
+     "date": "2026-10-14T00:07:56Z",
+     "duree_s": 0.5,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "lfsa_ergan",
@@ -23712,8 +23534,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; leg_stat→PER_VICT (1) [fixé] ; unit (2) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_17_10": {
-     "date": "2026-10-13T13:36:43Z",
-     "duree_s": 1.2,
+     "date": "2026-10-14T00:07:59Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -23742,8 +23564,8 @@
      "structure_fr": "freq→A (1) [fixé] ; fin_source→TOTAL (6) [fixé] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "sdg_17_31": {
-     "date": "2026-10-13T13:36:46Z",
-     "duree_s": 1.2,
+     "date": "2026-10-14T00:08:00Z",
+     "duree_s": 0.8,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26301,8 +26123,8 @@
      "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; training (5) [contenu] ; wstatus→POP (7) [fixé] ; sex→T (3) [ventilation] ; age→Y15-74 (24) [ventilation] ; geo→FR (1) [fixé]"
     },
     "trng_lfs_12": {
-     "date": "2026-10-13T15:11:18Z",
-     "duree_s": 2.1,
+     "date": "2026-10-14T00:08:54Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26310,14 +26132,14 @@
      "nb_candidates": 1,
      "nb_observations": 3590,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [fixé] ; sex→T (3) [ventilation] ; age→Y18-74 (11) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; citizen→TOTAL (7) [ventilation] ; sex→T (3) [ventilation] ; age→Y18-74 (11) [ventilation] ; geo→FR (1) [fixé]"
     },
     "trng_lfs_13": {
-     "date": "2026-10-13T15:11:20Z",
-     "duree_s": 1.7,
+     "date": "2026-10-14T00:08:54Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26325,10 +26147,10 @@
      "nb_candidates": 1,
      "nb_observations": 3695,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; sex→T (3) [ventilation] ; age→Y18-74 (11) [ventilation] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; sex→T (3) [ventilation] ; age→Y18-74 (11) [ventilation] ; geo→FR (1) [fixé]"
     },
     "trng_lfs_14": {
      "date": "2026-10-13T13:44:33Z",
@@ -26780,8 +26602,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; unit (2) [unité] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "yth_empl_020": {
-     "date": "2026-10-13T17:13:37Z",
-     "duree_s": 1.6,
+     "date": "2026-10-14T00:11:03Z",
+     "duree_s": 0.6,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26789,10 +26611,10 @@
      "nb_candidates": 1,
      "nb_observations": 2290,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; unit (1) [unité] ; age→Y15-29 (6) [ventilation] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; unit (1) [unité] ; age→Y15-29 (6) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "yth_empl_030": {
      "date": "2026-10-13T17:13:38Z",
@@ -26825,8 +26647,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; isced11→TOTAL (7) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     },
     "yth_empl_060": {
-     "date": "2026-10-13T17:13:42Z",
-     "duree_s": 1.5,
+     "date": "2026-10-14T00:11:04Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26834,10 +26656,10 @@
      "nb_candidates": 1,
      "nb_observations": 1947,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; unit (1) [unité] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; unit (1) [unité] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "yth_empl_080": {
      "date": "2026-10-13T17:13:44Z",
@@ -26870,8 +26692,8 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; unit (2) [unité] ; isced11→TOTAL (7) [ventilation] ; geo→FR (1) [fixé]"
     },
     "yth_empl_100": {
-     "date": "2026-10-13T17:13:47Z",
-     "duree_s": 1.8,
+     "date": "2026-10-14T00:11:05Z",
+     "duree_s": 0.7,
      "essais": 0,
      "geo": "FR",
      "jeu_source": "",
@@ -26879,10 +26701,10 @@
      "nb_candidates": 1,
      "nb_observations": 2018,
      "nb_series": 1,
-     "nb_ventilations": 2,
+     "nb_ventilations": 3,
      "requetes": 2,
      "statut": "ok",
-     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; unit (1) [unité] ; age→Y15-29 (6) [ventilation] ; c_birth→TOTAL (6) [fixé] ; geo→FR (1) [fixé]"
+     "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; unit (1) [unité] ; age→Y15-29 (6) [ventilation] ; c_birth→TOTAL (6) [ventilation] ; geo→FR (1) [fixé]"
     },
     "yth_empl_110": {
      "date": "2026-10-13T17:13:49Z",
@@ -26945,13 +26767,13 @@
      "structure_fr": "freq→A (1) [fixé] ; sex→T (3) [ventilation] ; age→Y15-29 (6) [ventilation] ; unit (1) [unité] ; geo→FR (1) [fixé]"
     }
    },
-   "regles": 5,
+   "regles": 6,
    "regles_catalogue": {
-    "lignes": 91414,
-    "lignes_avant": 110374,
-    "lignes_deplacees_ce_passage": 18960,
-    "lignes_ecartees": 18960,
-    "lignes_resynchronisees": 1058
+    "lignes": 68016,
+    "lignes_avant": 69170,
+    "lignes_deplacees_ce_passage": 1154,
+    "lignes_ecartees": 20114,
+    "lignes_resynchronisees": 12
    },
    "restants": 0,
    "revision_unites": {
@@ -26975,6 +26797,191 @@
      "tipsho60": 1
     }
    },
+   "revisions": [
+    {
+     "date": "2026-10-14T00:07:54Z",
+     "partenaire_origine": {
+      "crim_just_ctz": 3,
+      "crim_pris_ctz": 1,
+      "crim_thb_vctz": 3,
+      "crim_thb_vctzsex": 3,
+      "cult_trd_prd": 6,
+      "cult_trd_prt": 476,
+      "demo_facbc": 1,
+      "demo_faczc": 1,
+      "demo_macbc": 1,
+      "demo_maczc": 1,
+      "demo_marcb": 1,
+      "demo_marcz": 1,
+      "edat_lfs_9911": 6,
+      "edat_lfs_9912": 6,
+      "edat_lfs_9915": 6,
+      "edat_lfs_9916": 6,
+      "edat_lfs_9917": 6,
+      "edat_lfs_9918": 6,
+      "edat_lfse_01": 1,
+      "edat_lfse_02": 1,
+      "edat_lfse_23": 1,
+      "edat_lfse_28": 1,
+      "edat_lfse_31": 1,
+      "edat_lfse_32": 1,
+      "edat_lfse_35": 1,
+      "edat_lfse_36": 1,
+      "edat_lfse_37": 1,
+      "edat_lfse_38": 1,
+      "educ_uoe_mobg02": 1135,
+      "educ_uoe_mobg03": 1135,
+      "educ_uoe_mobs02": 1140,
+      "educ_uoe_mobs03": 1145,
+      "educ_uoe_mobs06": 1374,
+      "env_trdrrm": 354,
+      "env_wasship": 23,
+      "env_wastrdmp": 358,
+      "fish_ca_atl21": 773,
+      "fish_ca_atl27": 12904,
+      "fish_ca_atl34": 912,
+      "fish_ca_atl37": 2257,
+      "fish_ca_atl41": 388,
+      "fish_ca_atl47": 395,
+      "fish_ca_ind51": 865,
+      "fish_ca_main": 2259,
+      "hlth_silc_23": 56,
+      "hlth_silc_24": 56,
+      "hlth_silc_25": 8,
+      "hlth_silc_26": 8,
+      "hlth_silc_27": 32,
+      "hlth_silc_28": 32,
+      "hlth_silc_29": 8,
+      "hlth_silc_30": 8,
+      "hlth_silc_31": 8,
+      "hlth_silc_32": 8,
+      "hsw_ac12": 1,
+      "hsw_ac13": 1,
+      "hsw_pb11": 1,
+      "hsw_pb12": 1,
+      "ilc_di15": 16,
+      "ilc_di16": 16,
+      "ilc_iw15": 8,
+      "ilc_iw16": 8,
+      "ilc_li09c": 4,
+      "ilc_li31": 8,
+      "ilc_li32": 4,
+      "ilc_li33": 2,
+      "ilc_li34": 2,
+      "ilc_li80": 4,
+      "ilc_lvhl15": 8,
+      "ilc_lvhl15n": 6,
+      "ilc_lvhl16": 8,
+      "ilc_lvhl16n": 6,
+      "ilc_lvho15": 8,
+      "ilc_lvho16": 8,
+      "ilc_lvho25": 8,
+      "ilc_lvho26": 8,
+      "ilc_lvps15": 16,
+      "ilc_lvps16": 16,
+      "ilc_mddd15": 8,
+      "ilc_mddd16": 8,
+      "ilc_mdsd04": 6,
+      "ilc_mdsd05": 6,
+      "ilc_mdsd15": 4,
+      "ilc_mdsd16": 4,
+      "ilc_pees06": 64,
+      "ilc_pees07": 64,
+      "ilc_peps05": 8,
+      "ilc_peps05n": 6,
+      "ilc_peps06": 8,
+      "ilc_peps06n": 4,
+      "lfsa_agan": 1,
+      "lfsa_argacob": 1,
+      "lfsa_argaedcob": 1,
+      "lfsa_argaedn": 1,
+      "lfsa_argan": 1,
+      "lfsa_egan": 1,
+      "lfsa_enewasc": 5,
+      "lfsa_enewasn": 5,
+      "lfsa_eoqgac": 1,
+      "lfsa_eoqgan": 1,
+      "lfsa_eppgacob": 1,
+      "lfsa_eppgan": 1,
+      "lfsa_ergacob": 1,
+      "lfsa_ergaedcob": 1,
+      "lfsa_ergaedn": 1,
+      "lfsa_ergan": 1,
+      "lfsa_esgacob": 3,
+      "lfsa_esgan": 3,
+      "lfsa_etpgacob": 1,
+      "lfsa_etpgan": 1,
+      "lfsa_igan": 1,
+      "lfsa_pgacws": 1,
+      "lfsa_pganws": 1,
+      "lfsa_sup_cob": 4,
+      "lfsa_sup_nat": 4,
+      "lfsa_ugan": 1,
+      "lfsa_upgacob": 1,
+      "lfsa_upgan": 1,
+      "lfsa_urgacob": 1,
+      "lfsa_urgan": 1,
+      "lfst_r_aredcobu": 1,
+      "lfst_r_arednu": 1,
+      "lfst_r_e2pgaedcu": 1,
+      "lfst_r_e2pgaednu": 1,
+      "lfst_r_e2sgacu": 3,
+      "lfst_r_e2sganu": 3,
+      "lfst_r_e2tgaedcu": 1,
+      "lfst_r_e2tgaednu": 1,
+      "lfst_r_eredcobu": 1,
+      "lfst_r_erednu": 1,
+      "lfst_r_lfe2emprc": 1,
+      "lfst_r_lfe2emprtn": 1,
+      "lfst_r_lfp2actrc": 1,
+      "lfst_r_lfp2actrtn": 1,
+      "lfst_r_lfsd2pwc": 1,
+      "lfst_r_lfsd2pwn": 1,
+      "lfst_r_lfu2gac": 1,
+      "lfst_r_lfu2gacu": 1,
+      "lfst_r_lfu2gan": 1,
+      "lfst_r_lfu2ganu": 1,
+      "lfst_r_lfur2gac": 1,
+      "lfst_r_lfur2gacu": 1,
+      "lfst_r_lfur2gan": 1,
+      "lfst_r_lfur2ganu": 1,
+      "lfst_r_pgauwsc": 1,
+      "lfst_r_pgauwsn": 1,
+      "lfst_rimgacga": 3,
+      "lfst_rimganga": 3,
+      "lfst_rimgecga": 3,
+      "lfst_rimgenga": 3,
+      "lfst_rimgpcga": 3,
+      "lfst_rimgpnga": 3,
+      "nrg_ind_id3cf": 1,
+      "nrg_ind_idooil": 11,
+      "nrg_te_bio": 6,
+      "nrg_te_eh": 2,
+      "nrg_te_gas": 2,
+      "nrg_te_oil": 38,
+      "nrg_te_sff": 14,
+      "nrg_ti_bio": 6,
+      "nrg_ti_eh": 2,
+      "nrg_ti_gas": 2,
+      "nrg_ti_oil": 38,
+      "nrg_ti_sff": 14,
+      "org_aqtspec": 7,
+      "sdg_01_20a": 3,
+      "sdg_04_10a": 3,
+      "sdg_08_20a": 3,
+      "sdg_08_30a": 3,
+      "sdg_17_10": 2,
+      "sdg_17_31": 2,
+      "trng_lfs_12": 1,
+      "trng_lfs_13": 1,
+      "yth_empl_020": 1,
+      "yth_empl_060": 1,
+      "yth_empl_100": 1
+     },
+     "regles": 6,
+     "unites": {}
+    }
+   ],
    "termine": true,
    "version": 2
   }
@@ -27028,6 +27035,17 @@
    "nouveaux_essais": 0,
    "octets": 19023565,
    "requetes": 279
+  },
+  {
+   "debut": "2026-10-14T00:07:23Z",
+   "etapes": [
+    "niveau1",
+    "niveau2"
+   ],
+   "fin": "2026-10-14T00:11:09Z",
+   "nouveaux_essais": 0,
+   "octets": 77956764,
+   "requetes": 350
   }
  ]
 }

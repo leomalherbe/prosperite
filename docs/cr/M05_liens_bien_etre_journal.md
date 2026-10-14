@@ -69,7 +69,7 @@ API Eurostat (lecture JSON) : `ilc_pw08` (années 2013, 2018, 2022 ; valeurs par
 
 ### 1.8 Contraintes techniques rencontrées
 
-- **Workflow « Collecte »** : tout push sur `mNN-*` qui touche `scripts/` ou `src/` le déclenche ; sans `scripts/collecte_<sujet>.py`, la cible devient **« tous »** (toutes les collectes, jusqu'à 5 h, commits de catalogues sur la branche). Les commits qui touchent `scripts/` portent donc `[skip ci]` (le dernier commit poussé, sans `scripts/`, laisse tourner les tests). **À reprendre par toutes les missions M05**, ou à corriger dans le workflow (proposition au compte rendu).
+- **Workflow « Collecte »** : avant sa correction sur `main` (commit `cbf1a60`, fusionné dans la branche), un push sur `mNN-*` touchant `scripts/` sans `scripts/collecte_<sujet>.py` lançait la cible « tous » ; les trois premiers commits de la branche portent donc `[skip ci]`. Depuis la correction, un tel push ne lance plus rien : `[skip ci]` n'est plus nécessaire.
 - La long-list commitée (`.csv.gz`) est lue telle quelle ; aucune régénération n'a été nécessaire (catalogues inchangés depuis l'exécution finale du 14/10).
 
 ### 1.9 Mode d'emploi pour une nouvelle dimension
@@ -96,11 +96,11 @@ Relire aussi les long-lists voisines (recherche par mots-clés du contenu de la 
 
 ## 3. Résultats chiffrés
 
-- **Présélection** : 66 groupes — 21 `fiche`, 34 `variante_de`, 11 `ecarte_en_bloc` ; 685 lignes affectées = les 668 de la long-list + 17 importées de `travail`.
-  - Lignes de la long-list : 20 en série principale (12 éligibles, 8 à vérifier), 448 en variantes (296 éligibles, 152 à vérifier), 200 écartées en bloc (81 éligibles : 65 catégories « moyen » 6-8 de Melodi et 16 licences par fédération ; 48 à vérifier : catégories « moyen » Eurostat, non-réponses, classes de fréquence ; 71 non éligibles).
+- **Présélection** : 67 groupes — 21 `fiche`, 34 `variante_de`, 10 `ecarte_en_bloc`, 2 `autre_dimension:logement_cadre_vie` (40 lignes, satisfaction des domaines « lieu de résidence » et « temps de trajet », non éligibles) ; 685 lignes affectées = les 668 de la long-list + 17 importées de `travail`.
+  - Lignes de la long-list : 20 en série principale (12 éligibles, 8 à vérifier), 448 en variantes (296 éligibles, 152 à vérifier), 160 écartées en bloc (81 éligibles : 65 catégories « moyen » 6-8 de Melodi et 16 licences par fédération ; 48 à vérifier : catégories « moyen » Eurostat, non-réponses, classes de fréquence ; 31 non éligibles), 40 renvoyées à `logement_cadre_vie` (non éligibles).
   - Importées de `travail` : 1 série principale (`ilc_mdes02`), 11 variantes, 5 écartées (catégorie 6-8).
 - **Fiches : 21** (17 familles) — **16 `retenir`**, 3 `retenir_variante` (`satisfaction_vie_faible`, `situation_personnelle_bonne`, `optimisme_generations_futures`), 2 `ecarter` (`evaluation_vie_cantril` : dominée ; `aidance_personne_agee` : sens ambigu et A4).
-- Déclaratives : 15 ; composites : 0 ; séries « à vérifier » (D17) : 7 (`bonheur_ressenti`, `bilan_emotionnel_negatif`, `soutien_social`, `solitude`, `confiance_autrui`, `benevolat`, `participation_culturelle_sportive`) ; hors long-list : 1 (`depart_vacances`) ; rattachement proposé depuis `travail` : 1 fiche (`privation_vacances`) et 2 groupes de variantes ; incontournables : 2 sur 2 présents.
+- Déclaratives : 14 (`benevolat` passé à `non` : fait déclaré) ; composites : 0 ; séries « à vérifier » (D17) : 7 (`bonheur_ressenti`, `bilan_emotionnel_negatif`, `soutien_social`, `solitude`, `confiance_autrui`, `benevolat`, `participation_culturelle_sportive`) ; hors long-list : 1 (`depart_vacances`) ; rattachement proposé depuis `travail` : 1 fiche (`privation_vacances`) et 2 groupes de variantes ; incontournables : 2 sur 2 présents.
 - Variantes listées dans les fiches : 465 (dont 6 ajoutées à la main hors long-list : INSEE `DS_SRCV_CONFIANCE`, 3 items `DS_SRCV_PMS`, 2 durées `tour_dem_totot`).
 - Sources des 21 séries principales : INSEE 3, Eurostat 7, OCDE 4 (dont 3 Gallup), DREES 6, WHR 1. Niveau 2 (fichiers) : 7.
 
@@ -129,12 +129,12 @@ Concepts à deux cadres présents : confiance dans les autres (`confiance_autrui
 ## 6. Contrôles (sortie de `verifier_fiches.py`)
 
 ```
-Dimension liens_bien_etre : lignes_longlist 668, fiches 21, familles 17, retenir 16, retenir_variante 3, ecarter 2,
-declaratifs 15, composites 0, a_verifier 7, hors_longlist 1, incontournables ['satisfaction_vie', 'soutien_social'], variantes 465
+Dimension liens_bien_etre : lignes_longlist 668, lignes_autre_dimension 40, fiches 21, familles 17, retenir 16, retenir_variante 3, ecarter 2,
+declaratifs 14, composites 0, a_verifier 7, hors_longlist 1, incontournables ['satisfaction_vie', 'soutien_social'], variantes 465
 avertissement — depart_vacances : série principale hors catalogue de séries (jeu tour_dem_totot au catalogue des jeux) : à réintégrer au catalogue
 0 erreur(s), 1 avertissement(s)
 ```
-Aucun identifiant en double dans `indicateurs/` ; chaque série principale et chaque variante est présente dans un catalogue du dépôt (sauf `depart_vacances`, jeu présent au catalogue des jeux, série vérifiée à la source) ; toutes les lignes de la long-list sont affectées ; tableau de validation cohérent avec les fiches. Tests : 390 réussis (18 nouveaux).
+Aucun identifiant en double dans `indicateurs/` ; chaque série principale et chaque variante est présente dans un catalogue du dépôt (sauf `depart_vacances`, jeu présent au catalogue des jeux, série vérifiée à la source) ; toutes les lignes de la long-list sont affectées ; tableau de validation cohérent avec les fiches. Tests : 394 réussis (22 nouveaux).
 
 ## 7. Points ouverts
 
@@ -144,3 +144,11 @@ Aucun identifiant en double dans `indicateurs/` ; chaque série principale et ch
 - `satisfaction_relations` : série métropolitaine arrêtée en 2022 dans le catalogue ; poursuite à vérifier.
 - `depart_vacances` : décrochage 2016-2017 sans drapeau ; champ d'âge à vérifier.
 - Baromètre DREES (6 fiches) : stabilité des codes de modalités 2000-2025, champ géographique et licence à confirmer.
+
+## 8. Décisions de la session mère (14/10/2026) et mises à jour
+
+1. Méthode adoptée pour les neuf autres dimensions ; rédigée dans `docs/methodo/33_methode_fiches_M05.md` (vocabulaire, schéma complet, déroulé, conventions), avec les règles du pilote `securite` : code `autre_dimension:<dim>` (ajouté à `preselection.py`, contrôlé contre `dimensions.yaml`) ; `declaratif = oui` pour les perceptions et opinions, `non` pour les faits ou capacités déclarés (`benevolat` passe à `non`) ; `sens: ambigu` ⇒ `ecarter` ; `raccordement` au format « oui|non|a_etudier : note courte » (contrôlé par le vérificateur ; `confiance_autrui` = `a_etudier`, `satisfaction_vie` = `non : …`, autres fiches `non`) ; variante principale : taux plutôt que nombre, enquête plutôt que série enregistrée (aucune fiche concernée ici).
+2. Tableau de validation : colonnes `sens` et `unite` ajoutées après `definition_courte` ; tableau régénéré.
+3. `privation_vacances` et `depart_vacances` restent au tableau avec `rattachement_propose` ; décision au gel 2.
+4. `origin/main` fusionné (correction du workflow Collecte) ; plus de `[skip ci]`.
+5. Présélection : la satisfaction des domaines « lieu de résidence » et « temps de trajet » passe d'un écart en bloc à `autre_dimension:logement_cadre_vie`.

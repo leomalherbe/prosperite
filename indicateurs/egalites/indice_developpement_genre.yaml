@@ -4,17 +4,21 @@ dimension: egalites
 sous_theme: écarts femmes-hommes
 famille: indice_composite_genre
 variante_principale: non
-definition: Rapport entre l'indice de développement humain calculé pour les femmes et celui calculé pour les hommes
-  (PNUD) ; 1 signifie l'égalité.
-unite: rapport (sans unité)
-sens: ambigu
+definition: Écart absolu à 1 du rapport entre l'indice de développement humain calculé pour les femmes et celui
+  calculé pour les hommes (PNUD) ; 0 signifie l'égalité.
+unite: écart absolu à 1 (sans unité)
+sens: bas
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: PNUD (Rapport sur le développement humain 2025)
 source_jeu: séries composites, colonnes gdi_<année>
 source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
   (colonnes gdi_<année>)
+composantes:
+- https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes gdi_<année>)
+formule: abs(A - 1)
 source_niveau: 2
 url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
 url_page: non trouvé
@@ -27,12 +31,13 @@ eligibilite_longlist: oui
 ligne_id: m04-000355
 hors_longlist: non
 raccordement: non
-incontournable: oui
+incontournable: non
 recommandation: ecarter
-motif_recommandation: 'Sens ambigu (optimum à 1, écart possible dans les deux sens) et série peu informative : 11
-  valeurs distinctes sur 34 ans, 0,993 en 2023.'
-note_pertinence: Un rapport dont l'optimum est 1 ne peut pas être normalisé entre un seuil et un objectif sans perdre
-  son sens. L'indice d'inégalité de genre, de sens clair, est préféré.
+motif_recommandation: 'Dominé (méthode §3) par l''indice d''inégalité de genre, principal de la famille : même source,
+  mêmes années (1990-2023) et même fréquence ; l''écart à la parité vaut 0,007 en 2023 (indice 0,993).'
+note_pertinence: Le rapport des IDH des femmes et des hommes a pour optimum la parité (1) ; exprimé en écart absolu
+  à 1 (D34), son sens devient clair. Il n'apporte ni années ni fraîcheur de plus que l'indice d'inégalité de genre,
+  retenu comme principal (concept du Doughnut).
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -40,7 +45,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- sens_ambigu
 - composite
 - niveau_2
-notes: ''
+- valeur_absolue_d34
+- peu_variable
+notes: 'A = indice publié (colonnes gdi), lu dans docs/sources/series/pnud__hdr25_series_composites_france.csv :
+  1990-2023, 34 périodes, 11 valeurs distinctes, 0,993 en 2023. incontournable : non, le concept du crosswalk étant
+  l''indice d''inégalité de genre (décision de la session mère : par concept).'

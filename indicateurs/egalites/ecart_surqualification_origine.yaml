@@ -1,0 +1,67 @@
+id: ecart_surqualification_origine
+libelle: Écart de taux de surqualification entre personnes nées hors de l'UE et personnes nées en France
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_surqualification_origine
+variante_principale: oui
+definition: Écart, en valeur absolue et en points, entre le taux de surqualification (part des diplômés de l'enseignement
+  supérieur en emploi, de 15 ans ou plus, qui occupent un emploi ne demandant pas ce niveau de diplôme) des personnes
+  nées hors de l'UE et celui des personnes nées en France (enquête Forces de travail, jeu Eurostat lfsa_eoqgac).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_eoqgac (taux de surqualification par pays de naissance)
+source_serie_id: lfsa_eoqgac?freq=A&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&age=Y_GE15&sex=T&unit=PC&geo=FR
+composantes:
+- lfsa_eoqgac?freq=A&c_birth=NEU27_2020_FOR&age=Y_GE15&sex=T&unit=PC&geo=FR
+- lfsa_eoqgac?freq=A&c_birth=NAT&age=Y_GE15&sex=T&unit=PC&geo=FR
+formule: abs(A - B)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_eoqgac?freq=A&c_birth=NEU27_2020_FOR&c_birth=NAT&age=Y_GE15&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_eoqgac/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054299
+hors_longlist: non
+rattachement_propose: ligne de la long-list travail (ventilation par pays de naissance, variante de travail/surqualification)
+  ; l'écart construit relève d'egalites (A8, R3), le niveau reste dans travail ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur deux séries annuelles de 2000 à 2025 (26 points), de signe constant (1,5
+  point en 2000, 12,9 en 2015, 11,2 en 2025), seule mesure au catalogue du déclassement des diplômés selon l'origine.
+note_pertinence: Le déclassement des diplômés nés hors de l'UE traduit des difficultés de reconnaissance des diplômes,
+  de langue et des discriminations à l'embauche, sans les distinguer. L'écart a fortement augmenté jusqu'en 2015,
+  avec des ruptures de série en 2003, 2005, 2006, 2013, 2014, 2021 et 2024 qui imposent la prudence. Le niveau de
+  la surqualification reste suivi dans travail ; l'écart selon l'origine relève d'egalites (A8, R3).
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- valeur_absolue_d34
+- rupture_2003
+- rupture_2005
+- rupture_2006
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021
+- composantes_autre_longlist
+- champ_15_ans_ou_plus
+notes: 'Composantes (A = nés hors UE, B = nés en France) lues sur l''API Eurostat le 14/10/2026 : 1995-2025 pour
+  les deux (long-list : 2000), mêmes drapeaux (b en 1998, 2003, 2005, 2006, 2013 et 2014 ; bd en 2021 et 2024 ;
+  d de 2021 à 2025) ; recoupement (D34) : 19,3 - 17,8 = 1,5 (2000), 33,9 - 21,0 = 12,9 (2015), 27,3 - 19,8 = 7,5
+  (2021), 30,5 - 19,3 = 11,2 (2025). Champ : 15 ans ou plus (pas de tranche d''âge croisée avec le pays de naissance
+  au catalogue). Oubli O4 de l''audit M06.'

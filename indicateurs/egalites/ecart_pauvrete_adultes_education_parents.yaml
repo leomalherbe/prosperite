@@ -1,0 +1,64 @@
+id: ecart_pauvrete_adultes_education_parents
+libelle: Écart de taux de pauvreté des adultes selon le diplôme de leurs parents (25-59 ans)
+dimension: egalites
+sous_theme: origine sociale et mobilité
+famille: mobilite_intergenerationnelle
+variante_principale: oui
+definition: Écart, en valeur absolue et en points, entre le taux de risque de pauvreté des adultes de 25 à 59 ans
+  dont les parents ont au plus un diplôme du premier cycle du secondaire (CITE 0-2) et celui des adultes dont les
+  parents sont diplômés du supérieur (CITE 5-8) (EU-SILC, jeu Eurostat ilc_igtp03).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_igtp03 (taux de risque de pauvreté des adultes de 25 à 59 ans par niveau d'éducation de leurs parents)
+source_serie_id: ilc_igtp03?freq=A&isced11=ED0-2&isced11=ED5-8&unit=PC&geo=FR
+composantes:
+- ilc_igtp03?freq=A&isced11=ED0-2&unit=PC&geo=FR
+- ilc_igtp03?freq=A&isced11=ED5-8&unit=PC&geo=FR
+formule: abs(A - B)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_igtp03?geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_igtp03/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2019
+derniere_annee: 2023
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+rattachement_propose: 'hors long-list : jeu Eurostat ilc_igtp03 au catalogue des jeux mais hors filtre (début des
+  données 2019), oubli O6 de l''audit M06 ; à cataloguer (maintenance EGA-4)'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure trouvée de la transmission de la pauvreté entre générations (mobilité sociale,
+  contenu explicite de la dimension), deux valeurs en 2019 et 2023 (7,6 puis 10,8 points ; D17, D28), jamais écartée
+  pour sa seule brièveté (D32).
+note_pertinence: 'L''écart compare le risque de pauvreté à l''âge adulte selon le diplôme des parents : c''est une
+  mesure directe de la reproduction des inégalités, que les autres fiches n''approchent qu''indirectement (pauvreté
+  des enfants, réussite au baccalauréat). Deux valeurs seulement, dont la comparabilité entre 2019 et 2023 reste
+  à vérifier. Le jeu voisin ilc_igtp01 (diplôme des adultes selon celui des parents) varie trop entre 2019 et 2023
+  pour être utilisé sans lecture des métadonnées.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- serie_irreguliere_D17
+- deux_valeurs
+- comparabilite_2019_2023_a_verifier
+- ecart_construit
+- valeur_absolue_d34
+- recoupement_deux_valeurs
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (aucun drapeau) : parents CITE 0-2 : 14,3 % (2019) et 18,6
+  % (2023) ; CITE 3-4 : 9,1 et 10,5 % ; CITE 5-8 : 6,7 et 7,8 % ; écart A - B (A = parents CITE 0-2, B = parents
+  CITE 5-8) : 7,6 (2019) et 10,8 points (2023) ; le recoupement (D34) ne peut porter que sur ces deux années publiées.
+  ilc_igtp01 : la part des adultes de niveau CITE 3-4 dont les parents sont de niveau CITE 0-2 passe de 77,3 % (2019)
+  à 46,8 % (2023), variation à expliquer avant tout usage.'

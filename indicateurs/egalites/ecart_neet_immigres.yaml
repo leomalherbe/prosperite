@@ -5,8 +5,9 @@ dimension: egalites
 sous_theme: écarts selon l'origine
 famille: ecart_insertion_jeunes_origine
 variante_principale: oui
-definition: Part des jeunes de 15 à 34 ans ni en emploi, ni en études, ni en formation parmi les jeunes nés hors
-  de l'UE moins la même part parmi les jeunes nés en France, en points (jeu Eurostat edat_lfse_28).
+definition: Écart, en valeur absolue et en points, entre la part des jeunes de 15 à 34 ans ni en emploi, ni en études,
+  ni en formation parmi les jeunes nés hors de l'UE et la même part parmi les jeunes nés en France (jeu Eurostat
+  edat_lfse_28).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -15,14 +16,17 @@ composite: non
 source_organisme: Eurostat
 source_jeu: edat_lfse_28 (jeunes NEET par pays de naissance)
 source_serie_id: edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&training=NO_FE_NO_NFE&unit=PC&geo=FR
-formule: taux NEET (c_birth=NEU27_2020_FOR) - taux NEET (c_birth=NAT)
+composantes:
+- edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=NEU27_2020_FOR&training=NO_FE_NO_NFE&unit=PC&geo=FR
+- edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=NAT&training=NO_FE_NO_NFE&unit=PC&geo=FR
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&training=NO_FE_NO_NFE&unit=PC&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_28/default/table?lang=fr
 frequence: annuelle
-premiere_annee: 2004
+premiere_annee: 2006
 derniere_annee: 2025
-nb_points_depuis_2000: 22
+nb_points_depuis_2000: 20
 geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-054187
@@ -32,11 +36,13 @@ rattachement_propose: ligne de la long-list travail (ventilation par pays de nai
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Écart construit sur une série annuelle de 2004 à 2025 (22 points au catalogue), qui mesure
-  l'insertion des jeunes selon l'origine, contenu explicite de la dimension (A8).
-note_pertinence: 'Le décrochage scolaire et professionnel des jeunes nés à l''étranger est un indicateur avancé
-  des écarts selon l''origine. Les effectifs d''enquête sont faibles : les drapeaux de fiabilité d''Eurostat sont
-  à lire sur l''API avant usage.'
+motif_recommandation: Écart absolu (D34) de taux NEET entre jeunes de 15 à 34 ans nés hors de l'UE et nés en France,
+  annuel de 2006 à 2025 (20 points ; 16,4 points en 2006, 13,1 en 2025, lus sur l'API), qui mesure l'insertion des
+  jeunes selon l'origine (A8).
+note_pertinence: Le décrochage scolaire et professionnel des jeunes nés hors de l'UE est un indicateur avancé des
+  écarts selon l'origine. La modalité « nés hors UE » n'a pas de valeur en 2004 et 2005, bien que le paquet de modalités
+  du catalogue commence en 2004. Ruptures en 2014, 2021 et 2024 (drapeaux b) ; aucun drapeau de faible fiabilité
+  (u).
 variantes:
 - serie_id: edat_lfse_23?freq=A&sex=T&age=Y15-34&wstatus=NEMP&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&training=NO_FE_NO_NFE&unit=PC&geo=FR
   source: Eurostat
@@ -51,6 +57,13 @@ socle_v1:
   justification: ''
 qualite:
 - ecart_construit
-- faible_precision
+- valeur_absolue_d34
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021
 - composantes_autre_longlist
-notes: ''
+notes: 'Composantes (A = nés hors UE, B = nés en France) lues sur l''API Eurostat le 14/10/2026 : A de 2006 à 2025
+  (aucune valeur en 2004 et 2005), B de 2004 à 2025 ; drapeaux b en 2014, bd en 2021 et 2024, d de 2021 à 2025,
+  aucun u ; recoupement (D34) : 29,8 - 13,4 = 16,4 (2006), 33,9 - 14,0 = 19,9 (2011), 25,3 - 12,2 = 13,1 (2025)
+  ; signe constant. Période de la modalité signalée à la maintenance (n° 17, EGA-1).'

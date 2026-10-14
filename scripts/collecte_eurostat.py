@@ -11,7 +11,10 @@ Script reprenable : l'avancement est conservé dans `catalogues/eurostat_etat_co
   c. niveau2     : pour chaque jeu candidat, structure SDMX puis séries FR vérifiées par l'API
                    → catalogues/eurostat_series_catalogue.csv (écriture incrémentale).
 
-Une étape dont la version (ETAPES ci-dessous) dépasse celle de l'état est refaite.
+Une étape dont la version (ETAPES ci-dessous) dépasse celle de l'état est refaite. Rafraîchissement (v5) :
+le niveau 1 et l'amorce sont refaits au-delà de 30 jours ; au niveau 2, un jeu vérifié il y a plus de 90 jours
+est revérifié (au plus 600 jeux par passage, les plus anciens d'abord). Les séries de jeux candidats écartées
+par une règle de périmètre (secteurs hors ménages) vont dans catalogues/eurostat_series_catalogue_non.csv.gz.
 Le passage s'arrête proprement avant la limite de durée du robot (DUREE_MAX_MINUTES),
 le passage suivant reprend où il s'est arrêté (relancer :
 `python scripts/actions.py lancer --branche m02-eurostat --cible collecte_eurostat.py`).
@@ -49,11 +52,23 @@ from src.sources import eurostat as es  # noqa: E402
 #: v3 niveau 1 (13/10) : exclusion des jeux hors France (voisinage, candidats) et des projections, mots-clés affinés.
 #: v4 niveau 1 (13/10) : candidature par mots-clés seulement si le mot-clé est dans le titre principal, domaines
 #: sectoriels hors périmètre (agriculture, pêche, transport de marchandises, tourisme…), bilan des dossiers par emplacement.
-ETAPES = {"echantillons": 1, "amorce": 2, "niveau1": 4, "niveau2": 2}
+#: v3 amorce (14/10) : cube vide d'un code de remplacement traité (bogue IndexError des passages 2 et 3),
+#: remplaçant de sdg_15_60 corrigé (env_bio3 n'a que l'agrégat UE), une erreur sur une série n'arrête plus l'étape.
+#: v5 niveau 1 (14/10, D26) : entreprises et échanges extérieurs exclus même dans les dossiers prioritaires,
+#: pêche et sylviculture réintégrées en `planete`, jeux de population sans mot-clé étiquetés `contexte`, mots-clés R-D.
+ETAPES = {"echantillons": 1, "amorce": 3, "niveau1": 5, "niveau2": 2}
+
+#: Révision des règles du niveau 2 appliquées **sans refaire tout le niveau 2** (v5, D26) : recalcul ciblé
+#: des jeux dont l'unité retenue change, séries des secteurs hors ménages écartées, étiquettes resynchronisées.
+REGLES_NIVEAU2 = 5
 
 DUREE_MAX = float(os.environ.get("EUROSTAT_DUREE_MAX_MINUTES", "270")) * 60
 NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "0") or 0)
-TAILLE_MAX_CSV = 90_000_000  # au-delà, le catalogue des séries est compressé (limite GitHub : 100 Mo par fichier)
+#: Péremption (rafraîchissement) : le niveau 1 et l'amorce sont refaits au-delà de 30 jours ; un jeu du niveau 2
+#: est revérifié au-delà de 90 jours, au plus RAFRAICHIR_MAX_JEUX par passage (les plus anciens d'abord).
+PEREMPTION_NIVEAU1_JOURS = int(os.environ.get("EUROSTAT_PEREMPTION_NIVEAU1_JOURS", "30") or 30)
+PEREMPTION_NIVEAU2_JOURS = int(os.environ.get("EUROSTAT_PEREMPTION_JOURS", "90") or 90)
+RAFRAICHIR_MAX_JEUX = int(os.environ.get("EUROSTAT_RAFRAICHIR_MAX_JEUX", "600") or 600)
 ETAPES_DEMANDEES = [e.strip() for e in os.environ.get("EUROSTAT_ETAPES", "").split(",") if e.strip()] or list(ETAPES)
 
 CATALOGUES = RACINE / "catalogues"
@@ -65,6 +80,8 @@ FICHIER_JEUX = CATALOGUES / "eurostat_jeux_catalogue.csv"
 FICHIER_DOSSIERS = CATALOGUES / "eurostat_dossiers_toc.csv"
 FICHIER_SERIES = CATALOGUES / "eurostat_series_catalogue.csv"
 FICHIER_SERIES_GZ = CATALOGUES / "eurostat_series_catalogue.csv.gz"
+#: Séries de jeux candidats écartées par une règle de périmètre, avec motif (D26 : catalogues scindés).
+FICHIER_SERIES_NON = CATALOGUES / "eurostat_series_catalogue_non.csv.gz"
 FICHIER_AMORCE = DOCS_SOURCES / "eurostat_amorce_prototypes.csv"
 FICHIER_PROTOTYPES = RACINE / "docs" / "archives" / "prototypes_indicateurs.csv"
 
@@ -105,7 +122,9 @@ REMPLACEMENTS_AMORCE = {
     "sdg_05_60": ("sdg_05_61", "code changé", "sdg_05_60 n'est plus diffusé ; successeur : sdg_05_61 « Positions held by women in senior management »"),
     "sdg_15_10": ("sdg_15_11", "code changé", "sdg_15_10 n'est plus diffusé ; successeur : sdg_15_11 « Forest area » (depuis 2015) ; série longue possible : for_area (FAO, 1990–2025)"),
     "sdg_13_11": ("sdg_13_10", "à remplacer", "sdg_13_11 = émissions nettes de l'UE (agrégat UE seulement) ; pour la France : sdg_13_10 « Domestic net greenhouse gas emissions »"),
-    "sdg_15_60": ("env_bio3", "à remplacer", "sdg_15_60 = indice UE agrégé (code typé « table », absent des jeux) ; indices nationaux : env_bio3 « Common bird indices by type of estimate »"),
+    "sdg_15_60": ("env_bio2", "à remplacer", "sdg_15_60 = indice UE agrégé seulement ; env_bio3 (indices par type d'estimation) n'a lui aussi que l'agrégat UE "
+                  "(cube vide pour la France, cause du bogue des passages 2 et 3) ; seul indice national chez Eurostat : env_bio2 "
+                  "« Common farmland bird index » (oiseaux des milieux agricoles seulement) ; indice de tous les oiseaux communs : source nationale (Vigie-Nature, M04)"),
     "sdg_10_20": ("", "sans donnée FR", "aucune valeur France (dispersion des régions NUTS 2 non publiée pour FR) ; à recalculer à partir de nama_10r_2hhinc si l'indicateur est conservé"),
 }
 
@@ -149,9 +168,33 @@ def ecrire_etat(etat: dict) -> None:
     tmp.replace(FICHIER_ETAT)
 
 
+def age_jours(date_iso: str) -> float:
+    """Âge en jours d'une date ISO (« 2026-10-13T17:15:35Z » ou « 2026-10-13 ») ; infini si illisible."""
+    try:
+        d = datetime.fromisoformat((date_iso or "").replace("Z", "+00:00"))
+    except ValueError:
+        return float("inf")
+    if d.tzinfo is None:
+        d = d.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - d).total_seconds() / 86400
+
+
+def jeux_perimes(suivi: dict, jours: int = PEREMPTION_NIVEAU2_JOURS) -> list[str]:
+    """Jeux du niveau 2 au statut final vérifiés il y a plus de `jours` jours, du plus ancien au plus récent."""
+    perimes = [(s.get("date", ""), c) for c, s in suivi.items()
+               if s.get("statut") in STATUTS_FINALS and age_jours(s.get("date", "")) > jours]
+    return [c for _, c in sorted(perimes)]
+
+
 def etape_a_faire(etat: dict, nom: str) -> bool:
     info = etat["etapes"].get(nom, {})
-    return info.get("version", 0) < ETAPES[nom] or not info.get("termine", False)
+    if info.get("version", 0) < ETAPES[nom] or not info.get("termine", False):
+        return True
+    if nom in ("amorce", "niveau1") and age_jours(info.get("date", "")) > PEREMPTION_NIVEAU1_JOURS:
+        return True  # rafraîchissement mensuel du TOC et de l'amorce
+    if nom == "niveau2":
+        return info.get("regles", 0) < REGLES_NIVEAU2 or bool(jeux_perimes(info.get("jeux", {})))
+    return False
 
 
 def toc(lang: str) -> str:
@@ -271,12 +314,20 @@ def _commentaires_manuels() -> dict[str, str]:
 
 
 def _verifier_remplacement(code: str) -> str:
-    """Couverture France de la série par défaut d'un code de remplacement (texte pour le commentaire)."""
+    """Couverture France de la série par défaut d'un code de remplacement (texte pour le commentaire).
+
+    Ne lève pas d'exception : un cube vide (HTTP 200 de taille 0, cas de env_bio3 qui n'a que l'agrégat UE)
+    donne « aucune valeur pour la France » ; une réponse de forme inattendue, « structure inattendue »."""
     try:
         jeu = es.obtenir_jeu(code, {"geo": "FR"}, "fr", CLIENT)
     except es.ErreurEurostat as exc:
         return f"{code} non vérifiable ({type(exc).__name__})"
-    lignes, _ = cat.construire_series(jeu, annee_min=0)
+    if not jeu.observations:
+        return f"{code} : aucune valeur pour la France (cube vide)"
+    try:
+        lignes, _ = cat.construire_series(jeu, annee_min=0)
+    except Exception as exc:  # garde-fou : l'amorce ne doit pas échouer pour une série
+        return f"{code} : structure inattendue ({type(exc).__name__} : {exc})"
     defaut = [l for l in lignes if l["type_ligne"] == "defaut"]
     if not defaut:
         return f"{code} : aucune valeur pour la France"
@@ -302,7 +353,11 @@ def etape_amorce(etat: dict) -> None:
                 jeu, erreur = None, "réponse sans aucune valeur pour la France"
         except es.ErreurEurostat as exc:
             erreur = f"{type(exc).__name__} : {exc}"
-        ligne = cat.ligne_amorce(proto, jeu, erreur, DEFAUTS_AMORCE.get(code), aujourdhui(), code in codes_toc)
+        try:
+            ligne = cat.ligne_amorce(proto, jeu, erreur, DEFAUTS_AMORCE.get(code), aujourdhui(), code in codes_toc)
+        except Exception as exc:  # garde-fou : une réponse de forme inattendue n'arrête plus l'étape
+            ligne = cat.ligne_amorce(proto, None, f"structure inattendue ({type(exc).__name__} : {exc})", None, aujourdhui(), code in codes_toc)
+            ligne["statut"] = "structure inattendue"
         if code in REMPLACEMENTS_AMORCE and ligne["statut"] not in ("disponible",):
             nouveau, statut, note = REMPLACEMENTS_AMORCE[code]
             ligne["statut"], ligne["nouveau_code"] = statut, nouveau
@@ -366,9 +421,44 @@ def _preparer_fichier_series() -> None:
         FICHIER_SERIES_GZ.unlink()
 
 
+def _lire(chemin: Path) -> pd.DataFrame:
+    if chemin.exists():
+        return pd.read_csv(chemin, dtype=str, keep_default_na=False)
+    return pd.DataFrame(columns=cat.COLONNES_SERIES)
+
+
+def _appliquer_regles_catalogue(etat: dict) -> dict:
+    """Règles v5 appliquées au catalogue écrit, sans requête : (1) une seule vérification par jeu (la plus
+    récente : jeux rafraîchis) ; (2) jeux non traités ou plus candidats retirés ; (3) étiquette et chemin
+    resynchronisés sur le niveau 1 ; (4) séries écartées par une règle de périmètre (secteurs hors ménages)
+    déplacées vers `eurostat_series_catalogue_non.csv.gz` avec leur motif. Renvoie un petit bilan."""
+    if not FICHIER_SERIES.exists():
+        return {}
+    series = _lire(FICHIER_SERIES)
+    non = _lire(FICHIER_SERIES_NON)
+    suivi = etat["etapes"].get("niveau2", {}).get("jeux", {})
+    ok = {c for c, s in suivi.items() if s.get("statut") == "ok"}
+    avant = len(series)
+    series = cat.garder_derniere_verification(series[series["code_jeu"].isin(ok)])
+    jeux = pd.read_csv(FICHIER_JEUX, dtype=str, keep_default_na=False) if FICHIER_JEUX.exists() else pd.DataFrame(columns=["code_jeu"])
+    resynchronisees = cat.resynchroniser_series(series, jeux) if len(jeux) else 0
+    series, exclues = cat.separer_series_exclues(series)
+    non = pd.concat([non, exclues], ignore_index=True) if len(exclues) else non
+    if len(non):
+        non = cat.garder_derniere_verification(non[non["code_jeu"].isin(ok)])
+        if len(jeux):
+            cat.resynchroniser_series(non, jeux)
+    series.to_csv(FICHIER_SERIES, index=False, lineterminator="\n", columns=cat.COLONNES_SERIES)
+    non.to_csv(FICHIER_SERIES_NON, index=False, lineterminator="\n", columns=cat.COLONNES_SERIES, compression="gzip")
+    bilan = {"lignes_avant": avant, "lignes": len(series), "lignes_ecartees": len(non),
+             "lignes_deplacees_ce_passage": len(exclues), "lignes_resynchronisees": resynchronisees}
+    journal(f"  Règles appliquées au catalogue : {json.dumps(bilan, ensure_ascii=False)}")
+    return bilan
+
+
 def _finaliser_fichier_series() -> None:
-    """Compresse le catalogue des séries s'il dépasse TAILLE_MAX_CSV (sinon le push du robot échouerait)."""
-    if FICHIER_SERIES.exists() and FICHIER_SERIES.stat().st_size > TAILLE_MAX_CSV:
+    """Compresse toujours le catalogue des séries (fichier volumineux : limite de 50 Mo non compressé)."""
+    if FICHIER_SERIES.exists():
         import gzip
         FICHIER_SERIES_GZ.write_bytes(gzip.compress(FICHIER_SERIES.read_bytes(), compresslevel=9))
         FICHIER_SERIES.unlink()
@@ -485,15 +575,46 @@ def _ordre_traitement(candidats: pd.DataFrame) -> list[dict]:
 
 
 def mettre_a_jour_catalogue_jeux(etat: dict) -> None:
+    """Colonnes de niveau 2 du catalogue des jeux ; les nombres de séries sont recomptés sur le catalogue des
+    séries gardées (après les règles de périmètre), à défaut repris du suivi."""
     if not FICHIER_JEUX.exists():
         return
     jeux = pd.read_csv(FICHIER_JEUX, dtype=str, keep_default_na=False)
     suivi = etat["etapes"].get("niveau2", {}).get("jeux", {})
+    nb_series, nb_eligibles = {}, {}
+    if FICHIER_SERIES.exists():
+        s = _lire(FICHIER_SERIES)
+        d = s[s["type_ligne"] == "defaut"]
+        nb_series = d["code_jeu"].value_counts().to_dict()
+        nb_eligibles = d[d["candidat"] == "oui"]["code_jeu"].value_counts().to_dict()
+
+    def compte(c: str, cle: str, table: dict) -> str:
+        if c not in suivi:
+            return ""
+        if suivi[c].get("statut") == "ok" and table is not None and (nb_series or nb_eligibles):
+            return str(table.get(c, 0))
+        return str(suivi[c].get(cle, ""))
+
     jeux["statut_niveau2"] = jeux["code_jeu"].map(lambda c: suivi.get(c, {}).get("statut", "")).fillna("")
-    jeux["nb_series_fr"] = jeux["code_jeu"].map(lambda c: str(suivi.get(c, {}).get("nb_series", "")) if c in suivi else "")
-    jeux["nb_series_candidates"] = jeux["code_jeu"].map(lambda c: str(suivi.get(c, {}).get("nb_candidates", "")) if c in suivi else "")
+    jeux["nb_series_fr"] = jeux["code_jeu"].map(lambda c: compte(c, "nb_series", nb_series))
+    jeux["nb_series_candidates"] = jeux["code_jeu"].map(lambda c: compte(c, "nb_candidates", nb_eligibles))
     jeux["structure_fr"] = jeux["code_jeu"].map(lambda c: suivi.get(c, {}).get("structure_fr", "") or suivi.get(c, {}).get("message", "") if c in suivi else "")
     jeux.to_csv(FICHIER_JEUX, index=False, lineterminator="\n")
+
+
+def _revision_regles(info: dict) -> None:
+    """Recalcul ciblé (v5, D26) : les jeux dont l'unité retenue change avec la règle actuelle (indices relatifs
+    à l'UE ou à une année de base écartés quand une unité absolue existe) sont retirés du suivi pour être
+    refaits ; les autres jeux gardent leurs séries (pas de nouveau passage complet)."""
+    if info.get("regles", 0) >= REGLES_NIVEAU2 or not FICHIER_SERIES.exists():
+        return
+    a_refaire = cat.jeux_a_refaire_unites(_lire(FICHIER_SERIES))
+    for code in a_refaire:
+        info["jeux"].pop(code, None)
+    info["regles"] = REGLES_NIVEAU2
+    info["revision_unites"] = {"date": maintenant(), "jeux": a_refaire}
+    journal(f"  Révision des règles du niveau 2 (v{REGLES_NIVEAU2}) : {len(a_refaire)} jeux à refaire pour l'unité "
+            f"({sum(a_refaire.values())} séries par défaut) : {', '.join(sorted(a_refaire))}")
 
 
 def etape_niveau2(etat: dict) -> None:
@@ -501,12 +622,13 @@ def etape_niveau2(etat: dict) -> None:
     info = etat["etapes"].get("niveau2", {})
     if info.get("version", 0) < ETAPES["niveau2"]:
         journal("  Nouvelle version de l'étape : reprise de zéro")
-        info = {"version": ETAPES["niveau2"], "termine": False, "debut": maintenant(), "jeux": {}}
-        for f in (FICHIER_SERIES, FICHIER_SERIES_GZ):
+        info = {"version": ETAPES["niveau2"], "termine": False, "debut": maintenant(), "jeux": {}, "regles": REGLES_NIVEAU2}
+        for f in (FICHIER_SERIES, FICHIER_SERIES_GZ, FICHIER_SERIES_NON):
             if f.exists():
                 f.unlink()
     etat["etapes"]["niveau2"] = info
     _preparer_fichier_series()
+    _revision_regles(info)
     jeux = pd.read_csv(FICHIER_JEUX, dtype=str, keep_default_na=False)
     candidats = jeux[jeux["candidat"] == "oui"]
     codes_candidats = set(candidats["code_jeu"])
@@ -516,7 +638,13 @@ def etape_niveau2(etat: dict) -> None:
     _nettoyer_series({c for c, s in suivi.items() if s.get("statut") == "ok"})
     a_faire = [l for l in _ordre_traitement(candidats)
                if suivi.get(l["code_jeu"], {}).get("statut") not in STATUTS_FINALS and suivi.get(l["code_jeu"], {}).get("essais", 0) < 3]
-    journal(f"  {len(candidats)} jeux candidats ; {len(codes_candidats) - len(a_faire)} déjà traités ; {len(a_faire)} à traiter"
+    # péremption : jeux vérifiés il y a plus de PEREMPTION_NIVEAU2_JOURS jours, les plus anciens d'abord
+    perimes = jeux_perimes(suivi)[:RAFRAICHIR_MAX_JEUX]
+    par_code = {l["code_jeu"]: l for l in candidats.to_dict("records")}
+    a_faire += [par_code[c] for c in perimes if c in par_code]
+    rafraichis = set(perimes)
+    journal(f"  {len(candidats)} jeux candidats ; {len(codes_candidats) - len(a_faire) + len(rafraichis)} déjà traités ; "
+            f"{len(a_faire) - len(rafraichis)} à traiter ; {len(rafraichis)} à rafraîchir (vérifiés il y a plus de {PEREMPTION_NIVEAU2_JOURS} jours)"
             + (f" (au plus {NIVEAU2_MAX_JEUX} dans ce passage)" if NIVEAU2_MAX_JEUX else ""))
     traites = 0
     for i, ligne_jeu in enumerate(a_faire, start=1):
@@ -535,7 +663,12 @@ def etape_niveau2(etat: dict) -> None:
         if etat_jeu["statut"] == "interrompu":
             journal(f"  {code} interrompu (durée) : repris au prochain passage")
             break
-        etat_jeu["essais"] = precedent.get("essais", 0) + (0 if etat_jeu["statut"] in STATUTS_FINALS else 1)
+        if code in rafraichis and etat_jeu["statut"] not in STATUTS_FINALS:
+            # rafraîchissement en échec (erreur passagère) : on garde la vérification précédente et ses séries
+            precedent["rafraichissement_echoue"] = {"date": maintenant(), "statut": etat_jeu["statut"], "message": etat_jeu.get("message", "")[:200]}
+            journal(f"  [{i}/{len(a_faire)}] {code:<22} rafraîchissement en échec ({etat_jeu['statut']}) : vérification précédente gardée")
+            continue
+        etat_jeu["essais"] = (0 if code in rafraichis else precedent.get("essais", 0)) + (0 if etat_jeu["statut"] in STATUTS_FINALS else 1)
         if lignes:
             _ecrire_series(lignes)
         suivi[code] = etat_jeu
@@ -549,12 +682,15 @@ def etape_niveau2(etat: dict) -> None:
                 if suivi.get(c, {}).get("statut") not in STATUTS_FINALS and suivi.get(c, {}).get("essais", 0) < 3]
     info["termine"] = not restants
     info["restants"] = len(restants)
+    info["a_rafraichir"] = len(jeux_perimes(suivi))
     if info["termine"]:
         info["fin"] = maintenant()
     ecrire_etat(etat)
+    info["regles_catalogue"] = _appliquer_regles_catalogue(etat)
+    ecrire_etat(etat)
     mettre_a_jour_catalogue_jeux(etat)
     _finaliser_fichier_series()
-    journal(f"  Passage terminé : {traites} jeux traités, {len(restants)} restants")
+    journal(f"  Passage terminé : {traites} jeux traités, {len(restants)} restants, {info['a_rafraichir']} à rafraîchir")
 
 
 # ------------------------------------------------------------------ bilan
@@ -580,6 +716,16 @@ def ecrire_bilan(etat: dict) -> None:
             "series_defaut_par_dimension": defaut["dimension_v0"].value_counts().to_dict(),
             "series_eligibles_par_dimension": defaut[defaut["candidat"] == "oui"]["dimension_v0"].value_counts().to_dict(),
             "jeux_avec_serie_eligible_par_dimension": defaut[defaut["candidat"] == "oui"].groupby("dimension_v0")["code_jeu"].nunique().to_dict(),
+            "lignes_ventilation_par_dimension_de_ventilation": series[series["type_ligne"] == "ventilation"]["ventilation"].value_counts().to_dict(),
+            "lignes_ventilation_par_dimension_v0": series[series["type_ligne"] == "ventilation"]["dimension_v0"].value_counts().to_dict(),
+            "unites_retenues_relatives": int(defaut["unite_code"].str.contains(cat.MOTIF_INDICE_RELATIF.pattern, regex=True).sum()),
+        }
+    if FICHIER_SERIES_NON.exists():
+        non = pd.read_csv(FICHIER_SERIES_NON, dtype=str, keep_default_na=False)
+        bilan["series_ecartees"] = {
+            "fichier": FICHIER_SERIES_NON.name, "lignes": int(len(non)),
+            "par_motif": non["commentaire"].str.split(" :").str[0].value_counts().to_dict(),
+            "par_jeu": non["code_jeu"].value_counts().to_dict(),
         }
     FICHIER_BILAN.write_text(json.dumps(bilan, ensure_ascii=False, indent=1, default=str), encoding="utf-8")
     journal("Bilan : " + json.dumps(bilan.get("series", {}), ensure_ascii=False, default=str))
@@ -609,6 +755,8 @@ def main() -> int:
             code_retour = 1
             if nom in ("niveau1",):
                 break
+    if FICHIER_SERIES.exists():  # étape interrompue par une erreur : ne jamais laisser le gros CSV non compressé
+        _finaliser_fichier_series()
     passage.update(fin=maintenant(), requetes=CLIENT.nb_requetes, nouveaux_essais=CLIENT.nb_nouveaux_essais, octets=CLIENT.octets)
     etat["passages"] = etat["passages"][-30:]
     ecrire_etat(etat)

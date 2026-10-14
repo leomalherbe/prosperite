@@ -39,16 +39,59 @@ DOSSIERS_HORS_FRANCE = ("Non EU countries",)
 PREFIXES_HORS_PERIMETRE = {
     "apro_": "production agricole", "apri_": "prix agricoles", "aact_": "comptes économiques de l'agriculture",
     "ef_": "structure des exploitations agricoles", "vit_": "viticulture", "orch_": "vergers",
-    "fish_": "pêche et aquaculture", "for_": "produits et comptes de la sylviculture",
+    "fish_": "pêche : débarquements, flotte et aquaculture", "for_": "produits, échanges et comptes de la sylviculture",
     "iww_": "transport fluvial", "pipe_": "transport par oléoduc", "rail_": "transport ferroviaire (hors sécurité)",
     "mar_": "transport maritime", "avia_": "transport aérien", "road_eq": "parc de véhicules",
     "road_go": "transport routier de marchandises", "road_tf": "trafic routier", "road_ec": "investissements routiers",
-    "tran_im_": "transport intermodal de marchandises", "tour_": "tourisme",
-    "bop_fdi": "investissements directs étrangers", "bop_euins": "institutions de l'UE", "ext_": "commerce extérieur",
-    "sbs_": "statistiques structurelles d'entreprises", "bd_": "démographie des entreprises", "fats_": "filiales étrangères",
-    "met_bd": "démographie des entreprises", "urt_bd": "démographie des entreprises", "migr_res": "titres de séjour",
+    "tran_im_": "transport intermodal de marchandises", "tour_": "tourisme", "migr_res": "titres de séjour",
 }
-EXCEPTIONS_HORS_PERIMETRE = ("for_area", "road_eqr_zev", "road_eqs_zev")
+EXCEPTIONS_HORS_PERIMETRE = ("road_eqr_zev", "road_eqs_zev")
+
+#: v5 (D26) : statistiques d'entreprises et d'échanges extérieurs, exclues **même dans un dossier
+#: prioritaire** (les dossiers « numérique », « culture » et « marché du travail » du TOC contiennent des
+#: jeux d'entreprises : démographie, enquêtes TIC des entreprises, coût de la main-d'œuvre par activité…).
+PREFIXES_ENTREPRISES_ECHANGES = {
+    "bd_": "démographie des entreprises", "met_bd": "démographie des entreprises", "urt_bd": "démographie des entreprises",
+    "sbs_": "statistiques structurelles d'entreprises", "fats_": "filiales étrangères",
+    "bop_": "balance des paiements et position extérieure", "ext_": "commerce extérieur",
+    "lc_n": "enquête sur le coût de la main-d'œuvre (par activité NACE)",
+    "lc_r": "enquête sur le coût de la main-d'œuvre (par région NUTS 1)",
+    "isoc_ci_in_e": "usage des TIC par les entreprises", "isoc_ci_cm_p": "usage des TIC par les entreprises",
+    "isoc_ci_it_e": "usage des TIC par les entreprises", "isoc_ci_ra": "usage des TIC par les entreprises",
+    "isoc_cimob": "usage des TIC par les entreprises", "isoc_it_ict": "échanges extérieurs de biens et services TIC",
+    "isoc_ec_e": "commerce électronique des entreprises", "isoc_eb_": "intégration numérique des entreprises",
+    "isoc_ske_": "spécialistes TIC dans les entreprises", "isoc_cisce": "sécurité informatique des entreprises",
+    "isoc_cicce": "informatique en nuage des entreprises", "isoc_ciweb": "sites web des entreprises",
+    "isoc_cism": "médias sociaux des entreprises", "isoc_e_dii": "intensité numérique des entreprises",
+    "isoc_bde15": "secteur des TIC (valeur ajoutée, emploi, R-D)", "isoc_ic_bi": "secteur des TIC (R-D)",
+    "isoc_env_ict": "émissions du secteur des TIC",
+    "htec_": "secteurs de haute technologie", "egi_": "groupes d'entreprises multinationaux",
+    "rd_p_bemp": "R-D des entreprises par activité", "rd_p_perssize": "R-D des entreprises par taille",
+}
+#: Jeux `isoc_*` d'entreprises non couverts par les préfixes : repérés par le titre anglais.
+MOTIF_ISOC_ENTREPRISES = re.compile(r"\benterprises?\b|\bNACE\b|\bICT sector\b|international trade", re.IGNORECASE)
+
+#: v5 (D26) : pêche et sylviculture réintégrées comme candidats `planete` (pression sur les ressources
+#: et état des forêts) ; la production, les échanges et les comptes économiques restent exclus.
+REINTEGRES_PLANETE = {
+    "fish_ca_": "captures de pêche par zone", "for_area": "surfaces boisées",
+    "for_vol": "volume de bois sur pied (stock)", "for_remov": "prélèvements de bois rond",
+    "for_owner": "prélèvements de bois par type de propriété",
+}
+
+
+def exclusion_entreprises(code: str, titre_en: str = "") -> str:
+    """Domaine « entreprises ou échanges extérieurs » d'un jeu (v5, D26), ou chaîne vide."""
+    c = (code or "").lower()
+    lib = next((lib for prefixe, lib in PREFIXES_ENTREPRISES_ECHANGES.items() if c.startswith(prefixe)), "")
+    if not lib and c.startswith("isoc_") and MOTIF_ISOC_ENTREPRISES.search(titre_en or ""):
+        lib = "enquête TIC auprès des entreprises ou secteur des TIC"
+    return lib
+
+
+def reintegration_planete(code: str) -> str:
+    c = (code or "").lower()
+    return next((lib for prefixe, lib in REINTEGRES_PLANETE.items() if c.startswith(prefixe)), "")
 NB_ANNEES_MIN = 10        # au moins 10 points depuis 2000 (charte §3.4)
 
 DIMENSIONS_V0 = [
@@ -175,6 +218,7 @@ MOTS_CLES = {
         r"learning", r"skills", r"literacy", r"pisa\b", r"enrol", r"graduat", r"teacher", r"digital skills", r"internet",
         r"\bict\b", r"e-skills", r"cultural", r"museum", r"reading", r"\bbooks?\b", r"language", r"lifelong",
         r"vocational", r"apprentic", r"isced", r"computer",
+        r"r&d\b", r"research and (experimental )?development", r"\bgerd\b", r"recherche et developpement", r"\bdird\b",
         r"education", r"enseignement", r"ecole", r"eleve", r"etudiant", r"superieur", r"sortie precoce",
         r"jeunes ayant quitte", r"formation", r"apprentissage", r"competence", r"scolari", r"diplome",
         r"culturel", r"musee", r"lecture", r"langue", r"internet", r"ordinateur", r"numerique",
@@ -248,13 +292,17 @@ ODD_DIMENSION = {
     "12": "planete", "13": "planete", "14": "planete", "15": "planete", "16": "securite_confiance", "17": "niveau_de_vie",
 }
 
-#: Repli par dossier prioritaire.
+#: Repli par dossier prioritaire. v5 : les jeux de population sans mot-clé (effectifs, structure par âge,
+#: naissances, fécondité, mariages, divorces) sont étiquetés `contexte` (dénominateurs et séries de contexte ;
+#: la table de correspondance v0→v1 les range hors grille).
 DOSSIER_DIMENSION = {
     "qualite_de_vie": "liens_bien_etre", "revenus_conditions_de_vie": "niveau_de_vie", "marche_du_travail": "travail",
     "sante": "sante", "education_formation": "education", "criminalite": "securite_confiance",
     "environnement": "planete", "energie": "planete", "comptes_nationaux": "niveau_de_vie",
     "numerique": "education", "culture": "education", "securite_transports": "securite_confiance",
+    "population": "contexte",
 }
+ETIQUETTE_CONTEXTE = "contexte"
 
 _MOTIFS = {dim: [re.compile(r"(?<![a-z0-9])" + m) for m in motifs] for dim, motifs in MOTS_CLES.items()}
 
@@ -348,8 +396,12 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
     Le chemin principal est celui de la « Database by themes » s'il existe ;
     les autres emplacements du même code sont listés dans `autres_chemins`.
     Règle `candidat` (dans cet ordre) :
-      - non pour les jeux sans France par construction (voisinage, candidats), les domaines hors
-        périmètre hors dossiers prioritaires (`PREFIXES_HORS_PERIMETRE`) et les projections (fin > 2027) ;
+      - non pour les jeux sans France par construction (voisinage, candidats), les statistiques
+        d'entreprises et d'échanges extérieurs même dans un dossier prioritaire (v5, D26 :
+        `PREFIXES_ENTREPRISES_ECHANGES`, `isoc_*` d'entreprises), les domaines hors périmètre hors
+        dossiers prioritaires (`PREFIXES_HORS_PERIMETRE`) et les projections (fin > 2027) ;
+      - oui (étiquette `planete`) pour la pêche et la sylviculture réintégrées (v5, D26 : captures,
+        stock sur pied, surfaces boisées, prélèvements) si les filtres de dates le permettent ;
       - tableaux (`type = table`) : non (vues prédéfinies d'un jeu, filtre de la fiche), **sauf les
         indicateurs ODD `sdg_*`**, typés « table » dans le TOC mais servis comme jeux par l'API ;
       - non si le jeu est infra-annuel ou échoue aux filtres de dates (sauf rattrapage ci-dessous) ;
@@ -383,10 +435,17 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
         pertinent = bool(dossier) or par_mots_cles
         hors_france = code.lower().startswith(PREFIXES_HORS_FRANCE) or any(
             f" > {d}" in " > " + tous_chemins or tous_chemins.startswith(d) for d in DOSSIERS_HORS_FRANCE)
-        domaine = "" if dossier or code.lower().startswith(EXCEPTIONS_HORS_PERIMETRE) else next(
+        entreprises = exclusion_entreprises(code, p["titre"])
+        reintegre = reintegration_planete(code)
+        if reintegre:
+            etiquette = Etiquette("planete", [], f"réintégration D26 ({reintegre})", etiquette.scores, True)
+        domaine = "" if dossier or reintegre or code.lower().startswith(EXCEPTIONS_HORS_PERIMETRE) else next(
             (lib for prefixe, lib in PREFIXES_HORS_PERIMETRE.items() if code.lower().startswith(prefixe)), "")
         if hors_france:
             candidat, motif = "non", "pays hors UE (voisinage, candidats) : pas de France par construction"
+        elif entreprises:
+            candidat, motif = "non", (f"entreprises ou échanges extérieurs ({entreprises}) : statistique d'entreprises, "
+                                      "hors périmètre même dans un dossier prioritaire (D26)")
         elif domaine:
             candidat, motif = "non", f"domaine hors périmètre ({domaine}) : statistique sectorielle, pas un résultat pour la population"
         elif (annee(p["fin"]) or 0) > ANNEE_FIN_MAX:
@@ -397,6 +456,9 @@ def construire_catalogue_jeux(toc_en: pd.DataFrame, toc_fr: Optional[pd.DataFram
             candidat, motif = "non", ("tableau rangé sous le jeu " + parent if sous_jeu else "tableau (vue prédéfinie) : filtre type = dataset")
         elif frequence and frequence != "annuelle":
             candidat, motif = "non", f"infra-annuel ({frequence}) : une version annuelle existe en général"
+        elif reintegre and (filtre == "retenu" or rattrapable):
+            candidat, motif = "oui", f"pêche et sylviculture réintégrées (D26) : {reintegre}" + (
+                "" if filtre == "retenu" else " ; rattrapage : début > 2010 mais ≥ 10 années possibles (charte §3.4)")
         elif filtre == "retenu" and dossier:
             candidat, motif = "oui", f"dossier prioritaire ({dossier})"
         elif filtre == "retenu" and par_mots_cles:
@@ -594,12 +656,21 @@ def age_par_defaut(codes: Iterable[str], titre: str = "") -> Optional[str]:
     return codes[0] if codes else None
 
 
-def score_unite(code: str) -> tuple[int, str]:
-    """Rang de préférence d'une unité (plus petit = préféré) : taux et parts, puis par habitant,
-    années, indices, niveaux absolus ; les variations (PCH…) en dernier."""
+#: v5 (D26) : indices relatifs (à la moyenne ou au total de l'UE, ou base 100 une année donnée) ; ils ne
+#: sont retenus que si aucune unité absolue (euros, personnes, %, volumes…) n'existe pour la série.
+MOTIF_INDICE_RELATIF = re.compile(r"^PC_EU\d|^PC_EA\d|^(?:EUR|PPS)_HAB_E[UA]\d|^(?:CLV_|PTIR_)?I\d\d|^INX")
+_ANNEE_REFERENCE = re.compile(r"(?:CLV|KP|PD)(\d\d)")
+
+
+def score_unite(code: str) -> tuple:
+    """Clé de préférence d'une unité (plus petite = préférée) : taux et parts, puis par habitant,
+    années, niveaux, indices ; puis (v5) indices relatifs à l'UE ou à une année de base ; les
+    variations (PCH…) en dernier. À rang égal, l'année de référence la plus récente (CLV20 avant CLV10)."""
     c = code.upper()
     if "PCH" in c or c.startswith("CH_") or "_CH_" in c or c.endswith("_CH"):
         rang = 9
+    elif MOTIF_INDICE_RELATIF.search(c):
+        rang = 8
     elif c.startswith("PC") or c in ("PERCENT", "PC_POP"):
         rang = 0
     elif c.startswith("RT") or "_RT" in c or c.startswith("P_") or "HAB" in c or "_PER_" in c or c.endswith("_PER") and not c.startswith("THS"):
@@ -612,12 +683,25 @@ def score_unite(code: str) -> tuple[int, str]:
         rang = 6
     else:
         rang = 3
-    return rang, c
+    m = _ANNEE_REFERENCE.search(c)
+    reference = (int(m.group(1)) + (1900 if int(m.group(1)) > 50 else 2000)) if m else 0
+    return rang, -reference, c
 
 
 def choisir_unite(codes: Iterable[str]) -> Optional[str]:
     codes = list(codes)
     return min(codes, key=score_unite) if codes else None
+
+
+def jeux_a_refaire_unites(series: pd.DataFrame) -> dict[str, int]:
+    """Jeux dont l'unité retenue changerait avec la règle actuelle (`choisir_unite` sur `unites_disponibles`),
+    avec le nombre de séries par défaut concernées : recalcul ciblé du niveau 2 (v5, D26)."""
+    if series.empty or "unites_disponibles" not in series.columns:
+        return {}
+    d = series[(series["type_ligne"] == "defaut") & (series["unites_disponibles"] != "")]
+    nouvelle = d["unites_disponibles"].map(lambda x: choisir_unite(u for u in x.split(" ; ") if u) or "")
+    changees = d[nouvelle != d["unite_code"]]
+    return {k: int(v) for k, v in changees["code_jeu"].value_counts().items()}
 
 
 @dataclass
@@ -658,6 +742,10 @@ def attribuer_roles(jeu: JeuJsonStat, codes_avec_donnees: dict[str, set[str]], d
     unite = "unit" if "unit" in ordre else None
     for d in jeu.dimensions_hors_temps:
         codes = [c for c in d.codes if c in codes_avec_donnees.get(d.id, set())] or list(d.codes)
+        if not codes:
+            # dimension sans aucune modalité (cube vide : HTTP 200 de taille 0, par ex. geo=FR absent du jeu) :
+            # aucun rôle à attribuer, aucune série ne sera produite
+            continue
         if d.id == unite and d.id not in defauts_imposes:
             continue
         if d.id in defauts_imposes:
@@ -775,6 +863,8 @@ def construire_series(
     lues dans la réponse (aucune combinaison théorique).
     """
     contexte = contexte or ContexteJeu()
+    if not jeu.observations:  # cube vide (aucune valeur pour la France) : rien à décrire
+        return [], Roles([d.id for d in jeu.dimensions_hors_temps], {}, [], [], None)
     series = regrouper_series(jeu)
     ordre = [d.id for d in jeu.dimensions_hors_temps]
     dims = {d.id: d for d in jeu.dimensions_hors_temps}
@@ -887,6 +977,70 @@ def construire_series(
             )
             lignes.append(ligne)
     return lignes, roles
+
+
+# ---------------------------------------------------------------- niveau 2 : règles appliquées au catalogue écrit
+
+#: v5 (D26) : comptes par secteur institutionnel : seuls l'ensemble de l'économie (S1) et les ménages
+#: (S14, S14_S15 avec les ISBLSM) sont gardés ; les autres secteurs vont au catalogue des séries écartées.
+MOTIF_JEUX_SECTEURS = re.compile(r"^(nasa_10_f_|naidsa_10_f_|nasa_10_nf_tr$|nasa_10_ki$)")
+SECTEURS_GARDES = ("S1", "S14", "S14_S15")
+MOTIF_SECTEUR_HORS_MENAGES = "secteur_hors_menages"
+_SECTEUR = re.compile(r"[?&]sector=([^&]+)")
+
+
+def motif_exclusion_serie(code_jeu: str, serie_id: str) -> str:
+    """Motif d'exclusion d'une série d'un jeu candidat (v5), ou chaîne vide si elle est gardée."""
+    if MOTIF_JEUX_SECTEURS.match(code_jeu or ""):
+        m = _SECTEUR.search(serie_id or "")
+        if m and m.group(1) not in SECTEURS_GARDES:
+            return MOTIF_SECTEUR_HORS_MENAGES
+    return ""
+
+
+def separer_series_exclues(series: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """(séries gardées, séries écartées avec motif) ; les écartées passent à `candidat = non`, motif en tête du commentaire."""
+    if series.empty:
+        return series, series.iloc[0:0]
+    motifs = [motif_exclusion_serie(c, s) for c, s in zip(series["code_jeu"], series["serie_id"])]
+    masque = pd.Series([bool(m) for m in motifs], index=series.index)
+    exclues = series[masque].copy()
+    if not exclues.empty:
+        secteurs = exclues["serie_id"].str.extract(_SECTEUR.pattern)[0].fillna("?")
+        exclues["commentaire"] = [
+            (f"{MOTIF_SECTEUR_HORS_MENAGES} : secteur {s} (ni l'ensemble de l'économie S1, ni les ménages S14/S14_S15)"
+             + (f" ; {c}" if c and not c.startswith(MOTIF_SECTEUR_HORS_MENAGES) else ""))
+            if not c.startswith(MOTIF_SECTEUR_HORS_MENAGES) else c
+            for s, c in zip(secteurs, exclues["commentaire"])
+        ]
+        exclues["candidat"] = "non"
+    return series[~masque], exclues
+
+
+def resynchroniser_series(series: pd.DataFrame, jeux: pd.DataFrame, colonnes=("dimension_v0", "theme_source")) -> int:
+    """Recopie dans les séries les informations de niveau 1 de leur jeu (étiquette, chemin), qui ont pu
+    changer depuis le traitement du jeu (recalcul du niveau 1). Modifie `series` ; renvoie le nombre de lignes changées."""
+    if series.empty:
+        return 0
+    ref = jeux.drop_duplicates("code_jeu").set_index("code_jeu")
+    changees = pd.Series(False, index=series.index)
+    for col in colonnes:
+        nouveau = series["code_jeu"].map(ref[col])
+        diff = nouveau.notna() & (nouveau != series[col])
+        series.loc[diff, col] = nouveau[diff]
+        changees |= diff
+    return int(changees.sum())
+
+
+def garder_derniere_verification(series: pd.DataFrame) -> pd.DataFrame:
+    """Pour chaque jeu, ne garde que les lignes de sa vérification la plus récente (`date_verification`) :
+    un jeu rafraîchi (péremption du niveau 2) a ses nouvelles lignes ajoutées à la suite des anciennes ;
+    puis une seule ligne par `serie_id` (la dernière écrite)."""
+    if series.empty:
+        return series
+    plus_recente = series.groupby("code_jeu")["date_verification"].transform("max")
+    garde = series[series["date_verification"] == plus_recente]
+    return garde.drop_duplicates("serie_id", keep="last")
 
 
 def codes_de_ligne(ligne: dict) -> tuple[str, ...]:

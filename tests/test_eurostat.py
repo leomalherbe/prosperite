@@ -671,3 +671,173 @@ def test_type_d_individus_isoc_en_ventilation():
     lignes, roles = cat.construire_series(_jeu_roles("ind_type", ["IND_TOTAL", "Y16_24", "F_Y16_74"]))
     assert roles.ventilations == ["ind_type"] and roles.defauts["ind_type"] == "IND_TOTAL"
     assert [l["type_ligne"] for l in lignes] == ["defaut", "ventilation"]
+
+
+# ------------------------------------------------------------------ v5 (14/10) : bogue de l'amorce, D26
+
+
+def _script():
+    """Module du script de collecte, importé sans l'exécuter (aucun appel réseau à l'import)."""
+    import importlib.util
+    chemin = Path(__file__).resolve().parent.parent / "scripts" / "collecte_eurostat.py"
+    spec = importlib.util.spec_from_file_location("collecte_eurostat_test", chemin)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def test_non_regression_cube_vide_geo_sans_modalite():
+    # bogue des passages 2 et 3 : env_bio3 n'a que l'agrégat UE ; geo=FR renvoie HTTP 200 avec une dimension
+    # geo de taille 0 → IndexError dans attribuer_roles (liste `codes` vide)
+    jeu = es.charger_jsonstat(FIX / "sdg_10_20_FR_fr.json")
+    lignes, roles = cat.construire_series(jeu, annee_min=0)
+    assert lignes == [] and roles.defauts == {}
+    roles = cat.attribuer_roles(jeu, {})
+    assert "geo" not in roles.defauts
+    vide = es.charger_jsonstat(FIX / "erreur_modalite_inexistante.json")  # dimension unit de taille 0
+    assert cat.construire_series(vide)[0] == []
+    l = cat.ligne_amorce(PROTO, None, "réponse sans aucune valeur pour la France", present_toc=True)
+    assert l["statut"] == "sans donnée FR"
+
+
+def test_verifier_remplacement_cube_vide_et_structure_inattendue(monkeypatch):
+    script = _script()
+    vide = es.charger_jsonstat(FIX / "sdg_10_20_FR_fr.json")
+    monkeypatch.setattr(script.es, "obtenir_jeu", lambda *a, **k: vide)
+    assert script._verifier_remplacement("env_bio3") == "env_bio3 : aucune valeur pour la France (cube vide)"
+    plein = es.charger_jsonstat(FIX / "sdg_01_10_FR_fr.json")
+    monkeypatch.setattr(script.es, "obtenir_jeu", lambda *a, **k: plein)
+    assert script._verifier_remplacement("sdg_01_10").startswith("sdg_01_10 vérifié pour la France : 2015–2025")
+
+    def casse(*a, **k):
+        raise ValueError("forme inconnue")
+    monkeypatch.setattr(script.cat, "construire_series", casse)
+    assert script._verifier_remplacement("sdg_01_10").startswith("sdg_01_10 : structure inattendue (ValueError")
+
+
+def _ligne_toc(code, titre, chemin, debut="2000", fin="2024", type_="dataset"):
+    return {"code": code, "titre": titre, "type": type_, "profondeur": chemin.count(">") + 1, "theme_source": chemin,
+            "theme_codes": "", "parent": "", "derniere_maj": "", "derniere_modif_structure": "", "debut": debut, "fin": fin, "nb_valeurs": 1}
+
+
+def test_niveau1_v5_entreprises_peche_sylviculture_contexte():
+    numerique = "Database by themes > Science, technology, digital society > Digital economy and society"
+    agri = "Database by themes > Agriculture, forestry and fisheries > Fisheries"
+    demo = "Database by themes > Population and social conditions > Demography"
+    toc = pd.DataFrame([
+        _ligne_toc("bd_size", "Business demography by size class and NACE Rev. 2 activity", numerique),
+        _ligne_toc("isoc_ci_in_es", "Internet access by size class of enterprise", numerique),
+        _ligne_toc("isoc_xyz_n2", "Something new by NACE Rev. 2 activity", numerique),
+        _ligne_toc("isoc_ci_ifp_iu", "Individuals - internet use", numerique),
+        _ligne_toc("bop_rem6", "Personal transfers and compensation of employees", "Database by themes > Economy"),
+        _ligne_toc("lc_ncost_r2", "Labour cost, wages and salaries by NACE Rev. 2 activity", "Database by themes > Labour market"),
+        _ligne_toc("fish_ca_main", "Catches - major fishing areas (from 2000 onwards)", agri),
+        _ligne_toc("fish_ld_fr", "Landings of fishery products in France", agri),
+        _ligne_toc("fish_aq2a", "Production from aquaculture excluding hatcheries", agri, debut="2008"),
+        _ligne_toc("for_remov", "Roundwood removals by type of wood and assortment", agri, debut="1988"),
+        _ligne_toc("for_vol", "Volume of timber (FAO)", agri, debut="1990"),
+        _ligne_toc("for_basic", "Roundwood, fuelwood and other basic products", agri, debut="1988"),
+        _ligne_toc("apro_cpsh1", "Crop production in EU standard humidity", agri),
+        _ligne_toc("demo_pjan", "Population on 1 January by age and sex", demo),
+        _ligne_toc("rd_e_gerdtot", "GERD by sector of performance", "Database by themes > Science"),
+        _ligne_toc("htec_emp_nat2", "Employed persons in technology and knowledge-intensive sectors by NACE Rev. 2 activity", "Database by themes > Science"),
+    ])
+    c = cat.construire_catalogue_jeux(toc).set_index("code_jeu")
+    for code in ("bd_size", "isoc_ci_in_es", "isoc_xyz_n2", "bop_rem6", "lc_ncost_r2", "htec_emp_nat2"):
+        assert c.loc[code, "candidat"] == "non", code
+        assert c.loc[code, "motif_candidat"].startswith("entreprises ou échanges extérieurs"), code
+    assert c.loc["isoc_ci_ifp_iu", "candidat"] == "oui"  # particuliers : gardé
+    for code in ("fish_ca_main", "for_remov", "for_vol"):
+        assert c.loc[code, "candidat"] == "oui" and c.loc[code, "dimension_v0"] == "planete", code
+        assert c.loc[code, "motif_candidat"].startswith("pêche et sylviculture réintégrées (D26)"), code
+    for code in ("fish_ld_fr", "fish_aq2a", "for_basic", "apro_cpsh1"):
+        assert c.loc[code, "candidat"] == "non" and c.loc[code, "motif_candidat"].startswith("domaine hors périmètre"), code
+    assert c.loc["demo_pjan", "candidat"] == "oui" and c.loc["demo_pjan", "dimension_v0"] == "contexte"
+    assert c.loc["rd_e_gerdtot", "candidat"] == "oui" and c.loc["rd_e_gerdtot", "dimension_v0"] == "education"
+
+
+def test_unites_absolues_preferees_aux_indices_relatifs():
+    assert cat.choisir_unite(["PC_EU27_2020_HAB_MEUR_CP", "CLV10_EUR_HAB", "CLV20_EUR_HAB", "CP_EUR_HAB", "CLV_PCH_PRE_HAB"]) == "CLV20_EUR_HAB"
+    assert cat.choisir_unite(["PC_EU27_2020_MEUR_CP", "PC_GDP", "CP_MEUR"]) == "PC_GDP"
+    assert cat.choisir_unite(["INX_A_AVG", "RCH_A_AVG"]) == "RCH_A_AVG"
+    assert cat.choisir_unite(["I15", "THS_T"]) == "THS_T"
+    assert cat.choisir_unite(["CLV_I10", "CP_MEUR"]) == "CP_MEUR"
+    assert cat.choisir_unite(["I15", "PCH_PRE"]) == "I15"  # pas d'unité absolue : l'indice reste préférable à une variation
+    assert cat.choisir_unite(["PPS_EU27_2020_HAB", "PC_EU27_2020_HAB_MPPS_CP"]) == "PPS_EU27_2020_HAB"  # SPA par habitant : absolu
+    assert cat.choisir_unite(["CLV15_MEUR", "CLV20_MEUR", "CLV05_MEUR"]) == "CLV20_MEUR"  # année de référence la plus récente
+    assert cat.choisir_unite(["THS_PER", "PC"]) == "PC"
+    series = pd.DataFrame([
+        {"code_jeu": "nama_10_pc", "type_ligne": "defaut", "unite_code": "PC_EU27_2020_HAB_MEUR_CP", "unites_disponibles": "CLV20_EUR_HAB ; PC_EU27_2020_HAB_MEUR_CP"},
+        {"code_jeu": "nama_10_pc", "type_ligne": "ventilation", "unite_code": "PC_EU27_2020_HAB_MEUR_CP", "unites_disponibles": "CLV20_EUR_HAB ; PC_EU27_2020_HAB_MEUR_CP"},
+        {"code_jeu": "ilc_li02", "type_ligne": "defaut", "unite_code": "PC", "unites_disponibles": "PC ; THS_PER"},
+        {"code_jeu": "env_x", "type_ligne": "defaut", "unite_code": "I15", "unites_disponibles": "I15"},
+    ])
+    assert cat.jeux_a_refaire_unites(series) == {"nama_10_pc": 1}
+
+
+def _series_df(lignes):
+    base = {c: "" for c in cat.COLONNES_SERIES}
+    return pd.DataFrame([dict(base, **l) for l in lignes], columns=cat.COLONNES_SERIES)
+
+
+def test_secteurs_hors_menages_ecartes():
+    s = _series_df([
+        {"code_jeu": "nasa_10_f_bs", "serie_id": "nasa_10_f_bs?freq=A&unit=MIO_EUR&sector=S11&geo=FR", "candidat": "oui"},
+        {"code_jeu": "nasa_10_f_bs", "serie_id": "nasa_10_f_bs?freq=A&unit=MIO_EUR&sector=S14_S15&geo=FR", "candidat": "oui"},
+        {"code_jeu": "nasa_10_nf_tr", "serie_id": "nasa_10_nf_tr?freq=A&sector=S1&geo=FR", "candidat": "oui"},
+        {"code_jeu": "nasa_10_nf_tr", "serie_id": "nasa_10_nf_tr?freq=A&sector=S13&geo=FR", "candidat": "oui", "commentaire": "note"},
+        {"code_jeu": "gov_10a_main", "serie_id": "gov_10a_main?freq=A&sector=S13&geo=FR", "candidat": "oui"},
+    ])
+    gardees, exclues = cat.separer_series_exclues(s)
+    assert list(gardees["serie_id"].str.extract(r"sector=(\w+)")[0]) == ["S14_S15", "S1", "S13"]
+    assert list(gardees["code_jeu"]) == ["nasa_10_f_bs", "nasa_10_nf_tr", "gov_10a_main"]
+    assert len(exclues) == 2 and set(exclues["candidat"]) == {"non"}
+    assert all(c.startswith("secteur_hors_menages : secteur S1") for c in exclues["commentaire"])
+    assert exclues["commentaire"].iloc[1].endswith(" ; note")
+    # idempotent : une ligne déjà écartée garde son motif
+    assert list(cat.separer_series_exclues(exclues)[1]["commentaire"]) == list(exclues["commentaire"])
+
+
+def test_resynchronisation_et_derniere_verification():
+    s = _series_df([
+        {"code_jeu": "demo_pjan", "serie_id": "demo_pjan?a", "dimension_v0": "sante", "date_verification": "2026-10-13"},
+        {"code_jeu": "ilc_li02", "serie_id": "ilc_li02?a", "dimension_v0": "niveau_de_vie", "date_verification": "2026-07-01"},
+        {"code_jeu": "ilc_li02", "serie_id": "ilc_li02?b", "dimension_v0": "niveau_de_vie", "date_verification": "2026-07-01"},
+        {"code_jeu": "ilc_li02", "serie_id": "ilc_li02?a", "dimension_v0": "niveau_de_vie", "date_verification": "2026-10-13"},
+    ])
+    jeux = pd.DataFrame({"code_jeu": ["demo_pjan", "ilc_li02"], "dimension_v0": ["contexte", "niveau_de_vie"], "theme_source": ["P", "R"]})
+    assert cat.resynchroniser_series(s, jeux) == 4  # étiquette de demo_pjan et chemins
+    assert s.loc[0, "dimension_v0"] == "contexte" and set(s["theme_source"]) == {"P", "R"}
+    d = cat.garder_derniere_verification(s)
+    assert list(d["serie_id"]) == ["demo_pjan?a", "ilc_li02?a"] and list(d["date_verification"]) == ["2026-10-13", "2026-10-13"]
+
+
+def test_script_regles_catalogue_et_peremption(tmp_path, monkeypatch):
+    script = _script()
+    monkeypatch.setattr(script, "FICHIER_SERIES", tmp_path / "s.csv")
+    monkeypatch.setattr(script, "FICHIER_SERIES_NON", tmp_path / "s_non.csv.gz")
+    monkeypatch.setattr(script, "FICHIER_JEUX", tmp_path / "j.csv")
+    _series_df([
+        {"code_jeu": "nasa_10_f_bs", "serie_id": "nasa_10_f_bs?sector=S11&geo=FR", "type_ligne": "defaut", "candidat": "oui", "date_verification": "2026-10-13"},
+        {"code_jeu": "nasa_10_f_bs", "serie_id": "nasa_10_f_bs?sector=S14&geo=FR", "type_ligne": "defaut", "candidat": "oui", "date_verification": "2026-10-13"},
+        {"code_jeu": "bd_size", "serie_id": "bd_size?geo=FR", "type_ligne": "defaut", "candidat": "oui", "date_verification": "2026-10-13"},
+    ]).to_csv(tmp_path / "s.csv", index=False)
+    pd.DataFrame({"code_jeu": ["nasa_10_f_bs"], "dimension_v0": ["niveau_de_vie"], "theme_source": ["T"], "candidat": ["oui"],
+                  "statut_niveau2": [""], "nb_series_fr": [""], "nb_series_candidates": [""], "structure_fr": [""]}).to_csv(tmp_path / "j.csv", index=False)
+    etat = {"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 5,
+                                   "jeux": {"nasa_10_f_bs": {"statut": "ok", "date": "2026-10-13T15:00:00Z", "nb_series": 2}}}}}
+    bilan = script._appliquer_regles_catalogue(etat)
+    assert bilan["lignes"] == 1 and bilan["lignes_ecartees"] == 1  # bd_size retiré (plus suivi), S11 écarté
+    non = pd.read_csv(tmp_path / "s_non.csv.gz", dtype=str, keep_default_na=False)
+    assert list(non["serie_id"]) == ["nasa_10_f_bs?sector=S11&geo=FR"] and non["commentaire"][0].startswith("secteur_hors_menages")
+    script.mettre_a_jour_catalogue_jeux(etat)
+    assert pd.read_csv(tmp_path / "j.csv", dtype=str)["nb_series_fr"][0] == "1"
+    # péremption : 90 jours pour le niveau 2, 30 jours pour le niveau 1
+    suivi = {"a": {"statut": "ok", "date": "2020-01-01T00:00:00Z"}, "b": {"statut": "ok", "date": script.maintenant()},
+             "c": {"statut": "erreur_donnees", "date": "2020-01-01T00:00:00Z"}}
+    assert script.jeux_perimes(suivi) == ["a"]
+    assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 5, "jeux": suivi}}}, "niveau2")
+    assert not script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 5, "jeux": {"b": suivi["b"]}}}}, "niveau2")
+    assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 4, "jeux": {}}}}, "niveau2")
+    assert script.etape_a_faire({"etapes": {"niveau1": {"version": 5, "termine": True, "date": "2020-01-01T00:00:00Z"}}}, "niveau1")
+    assert not script.etape_a_faire({"etapes": {"niveau1": {"version": 5, "termine": True, "date": script.maintenant()}}}, "niveau1")

@@ -36,17 +36,17 @@ note_pertinence: C'est la mesure de référence de l'évaluation globale de la v
   de la dimension (arbitrage A1). La voie Melodi est retenue parce qu'elle va jusqu'en 2025, alors que la BDM s'arrête
   en 2024. La série bouge peu (de 6,8 à 7,5 sur 2010-2024 d'après la BDM), ce qui appellera des bornes resserrées.
 variantes:
-- serie_id: 010593281
+- serie_id: '010593281'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001001
   eligible: oui
-- serie_id: 010593282
+- serie_id: '010593282'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001002
   eligible: oui
-- serie_id: 010593283
+- serie_id: '010593283'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001003
@@ -66,12 +66,12 @@ variantes:
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001047
   eligible: oui
-- serie_id: 010777538
+- serie_id: '010777538'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001048
   eligible: oui
-- serie_id: 010777539
+- serie_id: '010777539'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001049
@@ -81,17 +81,17 @@ variantes:
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001050
   eligible: oui
-- serie_id: 010777584
+- serie_id: '010777584'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001051
   eligible: oui
-- serie_id: 010777585
+- serie_id: '010777585'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001052
   eligible: oui
-- serie_id: 010777586
+- serie_id: '010777586'
   source: INSEE BDM
   nature: même indicateur, voie BDM (idbank de l'indicateur de richesse nationale) et ventilations sexe et âge
   ligne_id: bdm-001053

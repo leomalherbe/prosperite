@@ -191,6 +191,13 @@ def test_tableau_conserve_les_decisions_de_leo(depot: Path):
     assert any("decision_leo" in e for e in ver.verifier_dimension(depot, "dimtest").erreurs)
 
 
+def test_identifiants_numeriques_entre_guillemets():
+    texte = pre.texte_yaml({"serie_id": "010593281", "autre": "001755278", "mot": "oui", "annee": 2010})
+    assert "serie_id: '010593281'" in texte and "autre: '001755278'" in texte
+    assert "mot: oui" in texte and "annee: 2010" in texte
+    assert yaml.safe_load(texte)["serie_id"] == "010593281"
+
+
 def test_nb_phrases():
     assert ver.nb_phrases("Indicateur de richesse nationale n° 5, série 2010-2025.") == 1
     assert ver.nb_phrases("Une phrase (D17). Une autre « citée ».") == 2

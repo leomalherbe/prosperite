@@ -180,9 +180,26 @@ def variantes_depuis_lignes(lignes: pd.DataFrame, fiche: str, dimension: str) ->
     return variantes
 
 
+class _Dumper(yaml.SafeDumper):
+    """Met entre guillemets les chaînes d'allure numérique (idbank « 010593281 ») : un lecteur YAML 1.2
+    (JavaScript, ruamel) les lirait sinon comme des nombres et perdrait le zéro initial."""
+
+
+def _representer_texte(dumper: yaml.SafeDumper, texte: str):
+    style = "'" if re.fullmatch(r"[0-9+\-.][0-9_.:+\-eE]*", texte) else None
+    return dumper.represent_scalar("tag:yaml.org,2002:str", texte, style=style)
+
+
+_Dumper.add_representer(str, _representer_texte)
+
+
+def texte_yaml(donnees: dict) -> str:
+    return yaml.dump(donnees, Dumper=_Dumper, allow_unicode=True, sort_keys=False, width=110,
+                     default_flow_style=False)
+
+
 def ecrire_yaml(chemin: Path, donnees: dict) -> None:
-    texte = yaml.safe_dump(donnees, allow_unicode=True, sort_keys=False, width=110, default_flow_style=False)
-    chemin.write_text(texte, encoding="utf-8")
+    chemin.write_text(texte_yaml(donnees), encoding="utf-8")
 
 
 def maj_fiches(racine: Path, dimension: str, lignes: pd.DataFrame) -> list[str]:
@@ -194,8 +211,8 @@ def maj_fiches(racine: Path, dimension: str, lignes: pd.DataFrame) -> list[str]:
         fiche = yaml.safe_load(chemin.read_text(encoding="utf-8")) or {}
         manuelles = [v for v in (fiche.get("variantes") or []) if not v.get("ligne_id")]
         nouvelles = variantes_depuis_lignes(lignes, fiche.get("id", chemin.stem), dimension) + manuelles
-        if nouvelles != (fiche.get("variantes") or []):
-            fiche["variantes"] = nouvelles
+        fiche["variantes"] = nouvelles
+        if texte_yaml(fiche) != chemin.read_text(encoding="utf-8"):
             ecrire_yaml(chemin, fiche)
             modifiees.append(chemin.name)
     return modifiees

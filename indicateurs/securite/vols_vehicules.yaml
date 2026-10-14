@@ -1,58 +1,49 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: vols_vehicules
 libelle: Vols de véhicules enregistrés (pour 100 000 habitants)
 dimension: securite
 sous_theme: atteintes aux biens
 famille: vols_vehicules
 variante_principale: oui
-definition: >-
-  Nombre de vols de véhicules à moteur ou de leurs pièces (catégorie ICCS 05021) enregistrés par la police et la
-  gendarmerie dans l'année, pour 100 000 habitants.
+definition: Nombre de vols de véhicules à moteur ou de leurs pièces (catégorie ICCS 05021) enregistrés par la police
+  et la gendarmerie dans l'année, pour 100 000 habitants.
 unite: infractions pour 100 000 habitants
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
 source_jeu: crim_off_cat — Infractions enregistrées par la police par type d'infraction
 source_serie_id: crim_off_cat?freq=A&iccs=ICCS05021&unit=P_HTHAB&geo=FR
 source_niveau: 1
-url_api: >-
-  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS05021&unit=P_HTHAB&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS05021&unit=P_HTHAB&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2008
 derniere_annee: 2024
-geo: FR
 nb_points_depuis_2000: 14
+geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-000436
-raccordement: >-
-  oui : Lacune 2017-2019 : à combler par la série SSMSI des vols de véhicules (nombre, 2016-2025, base des séries
-  chronologiques, non cataloguée par M04 ; la variante ITDD en taux couvre 2016-2024).
+hors_longlist: non
+raccordement: 'a_etudier : lacune 2017-2019, série SSMSI des vols de véhicules (2016-2025) à cataloguer puis raccorder'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Vols de véhicules enregistrés pour 100 000 habitants, 2008-2024 (330 en 2008, 198 en 2024),
+  lacune 2017-2019 ; la plainte, nécessaire à l'assurance, rend la série interprétable.
+note_pertinence: Le vol de voiture ou de deux-roues est une atteinte aux biens fréquente, généralement déclarée
+  puisque la plainte conditionne l'indemnisation, ce qui donne à la série enregistrée un sens clair. Elle a nettement
+  baissé de 2008 à 2021, puis remonte légèrement. Elle complète les cambriolages pour les atteintes aux biens.
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_vols_vehic)
-  ligne_id: m04-000305
-  source: SDES-INSEE
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
   nature: 'ITDD : vols de véhicules pour 1 000 habitants, 2016-2024 (non éligible : 9 points)'
+  ligne_id: m04-000305
   eligible: non
-  periode: 2016-2024
-recommandation: retenir
-motif_recommandation: >-
-  Vols de véhicules enregistrés pour 100 000 habitants, 2008-2024 (330 en 2008, 198 en 2024), lacune 2017-2019 ;
-  la plainte, nécessaire à l'assurance, rend la série interprétable.
-note_pertinence: >-
-  Le vol de voiture ou de deux-roues est une atteinte aux biens fréquente, généralement déclarée puisque la plainte
-  conditionne l'indemnisation, ce qui donne à la série enregistrée un sens clair. Elle a nettement baissé de 2008
-  à 2021, puis remonte légèrement. Elle complète les cambriolages pour les atteintes aux biens.
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - delinquance_enregistree
 - lacune_2017_2019

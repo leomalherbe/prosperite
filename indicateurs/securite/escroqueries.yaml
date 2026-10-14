@@ -1,26 +1,20 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: escroqueries
 libelle: Victimes d'escroqueries et de fraudes aux moyens de paiement enregistrées (nombre)
 dimension: securite
 sous_theme: atteintes aux biens
 famille: escroqueries
 variante_principale: oui
-definition: >-
-  Nombre de victimes d'escroqueries et de fraudes aux moyens de paiement enregistrées par la police et la gendarmerie
-  dans l'année, France entière (base des séries chronologiques du SSMSI).
+definition: Nombre de victimes d'escroqueries et de fraudes aux moyens de paiement enregistrées par la police et
+  la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
 unite: nombre de victimes (taux à calculer)
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: SSMSI (ministère de l'Intérieur)
 source_jeu: base des séries chronologiques (data.gouv.fr)
-source_serie_id: >-
-  https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Escroqueries et les fraudes
-  aux moyens de paiements enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Escroqueries
+source_serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Escroqueries
+  et les fraudes aux moyens de paiements enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Escroqueries
   et les fraudes aux moyens de paiements ; Sous_indicateur=Ensemble des lieux ; Statistique=Nombre ; Zone_geographique=France
   ; Champ=Fran)
 source_niveau: 2
@@ -29,50 +23,48 @@ url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
 frequence: annuelle
 premiere_annee: 2016
 derniere_annee: 2025
-geo: FR
 nb_points_depuis_2000: 10
+geo: FR
 eligibilite_longlist: oui
 ligne_id: m04-000280
+hors_longlist: non
 raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Série enregistrée disponible seulement depuis 2016 (10 points, en nombre) et sans série d'enquête
+  vivante pour en contrôler le sens ; l'enquête CVS (escroqueries bancaires) s'arrête en 2020.
+note_pertinence: Les escroqueries, en particulier en ligne, sont une atteinte aux biens en forte progression et
+  touchent de nombreux ménages ; mais la série enregistrée dépend des canaux de signalement (plateformes de plainte
+  en ligne créées ces dernières années, à documenter) et ne couvre que 2016-2025. À reconsidérer avec les séries
+  de l'enquête VRS.
 variantes:
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Escroqueries bancaires
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Escroqueries bancaires
     » ; Indicateur=Escroqueries et les fraudes aux moyens de paiements ; Sous_indicateur=Escroqueries bancaires
     ; Statistique=Nombre ; Zone_geographique=France métropol)
-  ligne_id: m04-000296
-  source: SSMSI
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
   nature: 'enquête CVS (SSMSI) : ménages victimes d''escroqueries bancaires, en nombre, 2010-2020 (arrêtée)'
+  ligne_id: m04-000296
   eligible: oui
-  periode: 2010-2020
 - serie_id: crim_off_cat?freq=A&iccs=ICCS0701&unit=P_HTHAB&geo=FR
-  ligne_id: estat-000438
   source: Eurostat
-  nature: 'Eurostat : fraudes enregistrées pour 100 000 habitants, 2016-2024 (non éligible : 9 points)'
+  nature: 'taux non éligibles (9 points) : fraudes enregistrées pour 100 000 habitants (Eurostat ICCS 0701) et fraudes
+    aux moyens de paiement pour 1 000 habitants (ITDD)'
+  ligne_id: estat-000438
   eligible: non
-  periode: 2016-2024
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_fraudpaie)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'taux non éligibles (9 points) : fraudes enregistrées pour 100 000 habitants (Eurostat ICCS 0701) et fraudes
+    aux moyens de paiement pour 1 000 habitants (ITDD)'
   ligne_id: m04-000307
-  source: SDES-INSEE
-  nature: 'ITDD : fraudes aux moyens de paiement pour 1 000 habitants (non éligible : 9 points)'
   eligible: non
-  periode: 2016-2024
-recommandation: ecarter
-motif_recommandation: >-
-  Série enregistrée disponible seulement depuis 2016 (10 points, en nombre) et sans série d'enquête vivante pour
-  en contrôler le sens ; l'enquête CVS (escroqueries bancaires) s'arrête en 2020.
-note_pertinence: >-
-  Les escroqueries, en particulier en ligne, sont une atteinte aux biens en forte progression et touchent de nombreux
-  ménages ; mais la série enregistrée dépend des canaux de signalement (plateformes de plainte en ligne créées ces
-  dernières années, à documenter) et ne couvre que 2016-2025. À reconsidérer avec les séries de l'enquête VRS.
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - delinquance_enregistree
 - en_nombre_taux_a_calculer
 - debut_2016
-notes: >-
-  Filtre dans la base SSMSI : Titre « Escroqueries et les fraudes aux moyens de paiements enregistrées par les services
-  de sécurité (Données annuelles) », Zone = France.
+notes: 'Filtre dans la base SSMSI : Titre « Escroqueries et les fraudes aux moyens de paiements enregistrées par
+  les services de sécurité (Données annuelles) », Zone = France.'

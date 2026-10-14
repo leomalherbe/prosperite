@@ -1,58 +1,50 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: preoccupation_insecurite_quartier
 libelle: Personnes préoccupées par l'insécurité dans leur quartier ou village (baromètre DREES)
 dimension: securite
 sous_theme: sentiment d'insécurité
 famille: insecurite_quartier
 variante_principale: non
-definition: >-
-  Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui se disent « beaucoup » ou « assez
-  » préoccupées par l'insécurité dans leur quartier ou leur village (question OG04_4 du baromètre d'opinion de la
-  DREES ; part pondérée calculée sur les microdonnées).
+definition: Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui se disent « beaucoup
+  » ou « assez » préoccupées par l'insécurité dans leur quartier ou leur village (question OG04_4 du baromètre d'opinion
+  de la DREES ; part pondérée calculée sur les microdonnées).
 unite: '% des répondants'
 sens: bas
 type: resultat
 declaratif: oui
 composite: non
-incontournable: oui
 source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
-source_serie_id: >-
-  data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable OG04_4, modalités 1+2
 source_niveau: 2
-url_api: >-
-  https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
 frequence: annuelle
 premiere_annee: 2014
 derniere_annee: 2025
-geo: FM
 nb_points_depuis_2000: 12
+geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000264
+hors_longlist: non
 raccordement: non
-variantes: []
+incontournable: oui
 recommandation: retenir_variante
-motif_recommandation: >-
-  Seule série annuelle vivante sur l'insécurité ressentie dans le quartier (2014-2025, de 37,5 à 47,6 % de préoccupés),
-  mais elle mesure une préoccupation plutôt qu'un sentiment d'insécurité vécu.
-note_pertinence: >-
-  Le baromètre DREES pose chaque année depuis 2014 la question de la préoccupation pour l'insécurité du quartier
-  ; la part de préoccupés augmente (40,8 % en 2014, 47,1 % en 2025). Un saut en 2018 (+5,6 points) coïncide avec
-  une hausse des non-réponses à d'autres questions du baromètre : un changement de protocole est possible, à vérifier.
-  Le champ est la métropole (fiche du jeu), et non la France entière comme l'indique le catalogue M04.
+motif_recommandation: Seule série annuelle vivante sur l'insécurité ressentie dans le quartier (2014-2025, de 37,5
+  à 47,6 % de préoccupés), mais elle mesure une préoccupation plutôt qu'un sentiment d'insécurité vécu.
+note_pertinence: 'Le baromètre DREES pose chaque année depuis 2014 la question de la préoccupation pour l''insécurité
+  du quartier ; la part de préoccupés augmente (40,8 % en 2014, 47,1 % en 2025). Un saut en 2018 (+5,6 points) coïncide
+  avec une hausse des non-réponses à d''autres questions du baromètre : un changement de protocole est possible,
+  à vérifier. Le champ est la métropole (fiche du jeu), et non la France entière comme l''indique le catalogue M04.'
+variantes: []
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - enquete_metropole
 - rupture_possible_2018
 - licence_a_confirmer
-notes: >-
-  Parts recalculées par l'agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (modalités
+notes: Parts recalculées par l'agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (modalités
   1 et 2 de og04_4).

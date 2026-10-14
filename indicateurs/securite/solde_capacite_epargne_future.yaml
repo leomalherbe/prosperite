@@ -1,24 +1,19 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: solde_capacite_epargne_future
 libelle: Opinion des ménages sur leur capacité d'épargne future (solde)
 dimension: securite
 sous_theme: sécurité économique
 famille: capacite_epargne_percue
 variante_principale: non
-definition: >-
-  Solde des réponses (amélioration moins détérioration) à la question sur la capacité du ménage à épargner dans
-  les mois à venir, enquête Camme, France métropolitaine ; moyenne annuelle à calculer.
+definition: Solde des réponses (amélioration moins détérioration) à la question sur la capacité du ménage à épargner
+  dans les mois à venir, enquête Camme, France métropolitaine ; moyenne annuelle à calculer.
 unite: solde d'opinion (points de %)
 sens: haut
 type: resultat
 declaratif: oui
 composite: non
-incontournable: non
 source_organisme: INSEE (enquête de conjoncture auprès des ménages)
 source_jeu: BDM, enquête mensuelle de conjoncture auprès des ménages (ENQ-CONJ-MENAGES)
-source_serie_id: "000857186"
+source_serie_id: '000857186'
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000857186
 url_page: https://www.insee.fr/fr/statistiques/serie/000857186
@@ -28,25 +23,25 @@ derniere_annee: 2026
 geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000704
+hors_longlist: non
 raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: 'Même enquête (1972-2026), mais porte sur une anticipation : variante de la capacité d''épargne
+  actuelle (D29, P8).'
+note_pertinence: La capacité d'épargne future traduit les anticipations des ménages ; elle évolue en général comme
+  la capacité actuelle et sert surtout de variante. Données brutes et CVS disponibles.
 variantes:
-- serie_id: "000857198"
-  ligne_id: bdm-000714
+- serie_id: '000857198'
   source: INSEE BDM
   nature: données CVS
+  ligne_id: bdm-000714
   eligible: oui
-  periode: 1972-2026
-recommandation: retenir_variante
-motif_recommandation: >-
-  Même enquête (1972-2026), mais porte sur une anticipation : variante de la capacité d'épargne actuelle (D29, P8).
-note_pertinence: >-
-  La capacité d'épargne future traduit les anticipations des ménages ; elle évolue en général comme la capacité
-  actuelle et sert surtout de variante. Données brutes et CVS disponibles.
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - agregation_annuelle
 notes: ''

@@ -1,69 +1,60 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: violences_physiques_enregistrees
 libelle: Agressions graves enregistrées par la police (pour 100 000 habitants)
 dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_physiques
 variante_principale: non
-definition: >-
-  Nombre d'agressions graves (catégorie ICCS 020111, « serious assault » ; correspondance avec les coups et blessures
-  volontaires de la nomenclature française à vérifier) enregistrées par la police et la gendarmerie dans l'année,
-  pour 100 000 habitants.
+definition: Nombre d'agressions graves (catégorie ICCS 020111, « serious assault » ; correspondance avec les coups
+  et blessures volontaires de la nomenclature française à vérifier) enregistrées par la police et la gendarmerie
+  dans l'année, pour 100 000 habitants.
 unite: infractions pour 100 000 habitants
 sens: ambigu
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
 source_jeu: crim_off_cat — Infractions enregistrées par la police par type d'infraction
 source_serie_id: crim_off_cat?freq=A&iccs=ICCS020111&unit=P_HTHAB&geo=FR
 source_niveau: 1
-url_api: >-
-  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS020111&unit=P_HTHAB&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS020111&unit=P_HTHAB&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2008
 derniere_annee: 2024
-geo: FR
 nb_points_depuis_2000: 17
+geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-000425
+hors_longlist: non
 raccordement: non
-variantes:
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques enregistrées
-    par les services de sécurité » ; Indicateur=Violences physiques ; Sous_indicateur=Ensemble des lieux ; Statistique=Nombre
-    ; Zone_geographique=France ; Champ=France ; Periodicite=Annuelle ; Unit)
-  ligne_id: m04-000273
-  source: SSMSI
-  nature: 'SSMSI : victimes de violences physiques enregistrées, en nombre, France, 2016-2025'
-  eligible: oui
-  periode: 2016-2025
-- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_violences_horsfam)
-  ligne_id: m04-000300
-  source: SDES-INSEE
-  nature: >-
-    ITDD : violences physiques hors cadre familial pour 1 000 habitants, 2016-2024 (non éligible : 9 points)
-  eligible: non
-  periode: 2016-2024
+incontournable: non
 recommandation: ecarter
-motif_recommandation: >-
-  Les agressions graves enregistrées passent de 294 à 613 pour 100 000 habitants entre 2008 et 2024 alors que la
-  part de victimes de violences physiques dans l'enquête ne progresse pas (2,1 % en 2010 comme en 2018) : la série
-  mesure surtout l'évolution des plaintes et de leur enregistrement.
-note_pertinence: >-
-  La délinquance enregistrée dépend de la propension des victimes à porter plainte et de l'activité des services
-  ; pour les violences physiques, la hausse est portée en partie par les violences intrafamiliales, mieux révélées
-  qu'avant (analyse M04, docs/sources/autres_sources.md §2.4). La série reste utile pour la conjoncture, mais pas
-  comme indicateur de résultat sans l'enquête. Le SSMSI publie l'équivalent national en nombre de victimes (2016-2025).
+motif_recommandation: 'Les agressions graves enregistrées passent de 294 à 613 pour 100 000 habitants entre 2008
+  et 2024 alors que la part de victimes de violences physiques dans l''enquête ne progresse pas (2,1 % en 2010 comme
+  en 2018) : la série mesure surtout l''évolution des plaintes et de leur enregistrement.'
+note_pertinence: La délinquance enregistrée dépend de la propension des victimes à porter plainte et de l'activité
+  des services ; pour les violences physiques, la hausse est portée en partie par les violences intrafamiliales,
+  mieux révélées qu'avant (analyse M04, docs/sources/autres_sources.md §2.4). La série reste utile pour la conjoncture,
+  mais pas comme indicateur de résultat sans l'enquête. Le SSMSI publie l'équivalent national en nombre de victimes
+  (2016-2025).
+variantes:
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques
+    enregistrées par les services de sécurité » ; Indicateur=Violences physiques ; Sous_indicateur=Ensemble des
+    lieux ; Statistique=Nombre ; Zone_geographique=France ; Champ=France ; Periodicite=Annuelle ; Unit)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'SSMSI : victimes de violences physiques enregistrées, en nombre, France, 2016-2025'
+  ligne_id: m04-000273
+  eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_violences_horsfam)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'ITDD : violences physiques hors cadre familial pour 1 000 habitants, 2016-2024 (non éligible : 9 points)'
+  ligne_id: m04-000300
+  eligible: non
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - delinquance_enregistree
 - sens_ambigu

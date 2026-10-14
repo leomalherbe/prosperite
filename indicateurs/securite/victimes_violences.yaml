@@ -1,101 +1,83 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: victimes_violences
 libelle: Adultes victimes de violences physiques ou sexuelles (enquête de victimation)
 dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_personnes
 variante_principale: oui
-definition: >-
-  Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins une violence
-  physique ou sexuelle dans l'année, qu'elles aient porté plainte ou non (enquêtes de victimation Cadre de vie et
-  sécurité, puis Vécu et ressenti en matière de sécurité). Indicateur national ODD 16.i2.
+definition: Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins
+  une violence physique ou sexuelle dans l'année, qu'elles aient porté plainte ou non (enquêtes de victimation Cadre
+  de vie et sécurité, puis Vécu et ressenti en matière de sécurité). Indicateur national ODD 16.i2.
 unite: '% des 18-75 ans'
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: INSEE (indicateurs ODD, d'après les enquêtes de victimation du SSMSI)
 source_jeu: BDM, indicateurs ODD (ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES)
-source_serie_id: "010596041"
+source_serie_id: '010596041'
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596041
 url_page: https://www.insee.fr/fr/statistiques/serie/010596041
 frequence: annuelle
 premiere_annee: 2010
 derniere_annee: 2023
-geo: FM
 nb_points_depuis_2000: 12
+geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000947
-raccordement: >-
-  non : Pas de série avant 2010 au catalogue. Rupture d'enquête : valeurs 2010-2018 (CVS) et 2021-2023 (VRS), aucune
-  valeur 2019-2020 ; rétropolation à demander au SSMSI.
-variantes:
-- serie_id: "010596042"
-  ligne_id: bdm-000948
-  source: INSEE BDM
-  nature: 'ventilation par sexe : femmes'
-  eligible: oui
-  periode: 2010-2023
-- serie_id: "010596043"
-  ligne_id: bdm-000949
-  source: INSEE BDM
-  nature: 'ventilation par sexe : hommes'
-  eligible: oui
-  periode: 2010-2023
-- serie_id: "010596048"
-  ligne_id: bdm-000954
-  source: INSEE BDM
-  nature: 'ventilation par auteur : hors sphère intrafamiliale'
-  eligible: oui
-  periode: 2010-2023
-- serie_id: >-
-    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=VIOLENCE_TYP5&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  ligne_id: melodi-005409
-  source: INSEE Melodi
-  nature: copie Melodi, auteur hors sphère intrafamiliale
-  eligible: oui
-  periode: 2010-2023
-- serie_id: >-
-    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  ligne_id: melodi-005413
-  source: INSEE Melodi
-  nature: copie Melodi, femmes
-  eligible: oui
-  periode: 2010-2023
-- serie_id: >-
-    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  ligne_id: melodi-005414
-  source: INSEE Melodi
-  nature: copie Melodi, hommes
-  eligible: oui
-  periode: 2010-2023
-- serie_id: >-
-    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  ligne_id: melodi-005415
-  source: INSEE Melodi
-  nature: copie Melodi, ensemble
-  eligible: oui
-  periode: 2010-2023
+hors_longlist: non
+raccordement: 'non : pas de série avant 2010 ; rupture CVS/VRS sans valeur 2019-2020'
+incontournable: non
 recommandation: retenir
-motif_recommandation: >-
-  Mesure de référence de la victimation (enquête, indépendante du dépôt de plainte), indicateur ODD 16.i2 publié
-  par l'INSEE pour 2010-2023 ; rupture entre l'enquête CVS (2,2 à 2,7 % en 2010-2018) et l'enquête VRS (1,4 à 1,7
-  % en 2021-2023).
-note_pertinence: >-
-  L'enquête de victimation mesure les violences subies qu'elles aient ou non donné lieu à une plainte : c'est la
-  mesure à privilégier pour juger de l'évolution des violences, une hausse des plaintes n'étant pas une hausse des
-  violences. La série change d'enquête entre 2018 et 2021, sans valeur pour 2019-2020 : la baisse apparente ne doit
-  pas être lue comme une amélioration tant qu'aucune rétropolation n'est publiée. Le champ est limité à la métropole
-  et aux 18-75 ans.
+motif_recommandation: Mesure de référence de la victimation (enquête, indépendante du dépôt de plainte), indicateur
+  ODD 16.i2 publié par l'INSEE pour 2010-2023 ; rupture entre l'enquête CVS (2,2 à 2,7 % en 2010-2018) et l'enquête
+  VRS (1,4 à 1,7 % en 2021-2023).
+note_pertinence: 'L''enquête de victimation mesure les violences subies qu''elles aient ou non donné lieu à une
+  plainte : c''est la mesure à privilégier pour juger de l''évolution des violences, une hausse des plaintes n''étant
+  pas une hausse des violences. La série change d''enquête entre 2018 et 2021, sans valeur pour 2019-2020 : la baisse
+  apparente ne doit pas être lue comme une amélioration tant qu''aucune rétropolation n''est publiée. Le champ est
+  limité à la métropole et aux 18-75 ans.'
+variantes:
+- serie_id: '010596042'
+  source: INSEE BDM
+  nature: ventilation par sexe (BDM et copies Melodi)
+  ligne_id: bdm-000948
+  eligible: oui
+- serie_id: '010596043'
+  source: INSEE BDM
+  nature: ventilation par sexe (BDM et copies Melodi)
+  ligne_id: bdm-000949
+  eligible: oui
+- serie_id: '010596048'
+  source: INSEE BDM
+  nature: 'ventilation par auteur : hors sphère intrafamiliale (BDM et Melodi)'
+  ligne_id: bdm-000954
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=VIOLENCE_TYP5&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'ventilation par auteur : hors sphère intrafamiliale (BDM et Melodi)'
+  ligne_id: melodi-005409
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: ventilation par sexe (BDM et copies Melodi)
+  ligne_id: melodi-005413
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: ventilation par sexe (BDM et copies Melodi)
+  ligne_id: melodi-005414
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi de la série BDM'
+  ligne_id: melodi-005415
+  eligible: oui
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - rupture_enquete_cvs_vrs
 - lacune_2019_2020

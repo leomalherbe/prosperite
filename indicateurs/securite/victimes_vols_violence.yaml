@@ -1,67 +1,57 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: victimes_vols_violence
 libelle: Population victime de vol avec violence ou menace (enquête de victimation)
 dimension: securite
 sous_theme: atteintes aux personnes
 famille: vols_violence
 variante_principale: oui
-definition: >-
-  Part de la population ayant subi dans les 12 derniers mois un vol commis avec violence ou menace, d'après l'enquête
-  de victimation française relayée par l'ONUDC (indicateur ODD 16.1.3, série VC_VOV_ROBB de la base ODD de l'OCDE).
+definition: Part de la population ayant subi dans les 12 derniers mois un vol commis avec violence ou menace, d'après
+  l'enquête de victimation française relayée par l'ONUDC (indicateur ODD 16.1.3, série VC_VOV_ROBB de la base ODD
+  de l'OCDE).
 unite: '% de la population'
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: OCDE (relais de l'ONUDC, d'après l'enquête de victimation du SSMSI)
 source_jeu: indicateurs ODD (base « Measuring distance to the SDG targets »)
 source_serie_id: 'odd_16 : 16_1_3_VC_VOV_ROBB._T._T._T._T._T.PT_POP'
 source_niveau: 1
-url_api: >-
-  https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_16,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_16,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
 url_page: non trouvé
 frequence: annuelle
 premiere_annee: 2007
 derniere_annee: 2022
-geo: FR
 nb_points_depuis_2000: 15
+geo: FR
 eligibilite_longlist: oui
 ligne_id: m04-000137
-raccordement: >-
-  non : Valeurs 2007-2019 puis 2021-2022 ; rupture d'enquête probable en 2021-2022 (CVS puis VRS), non documentée
-  par le relais.
-variantes:
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols et tentatives de vols
-    avec violence » ; Indicateur=Vols et tentatives de vols avec violence ; Sous_indicateur=Non Renseigné ; Statistique=Nombre
-    ; Zone_geographique=France métropolitaine ; Champ=Franc)
-  ligne_id: m04-000293
-  source: SSMSI
-  nature: 'enquête CVS (SSMSI) : victimes de vols ou tentatives avec violence, en nombre, 2006-2020 (arrêtée)'
-  eligible: oui
-  periode: 2006-2020
+hors_longlist: non
+raccordement: 'non : rupture probable CVS/VRS en 2021-2022, non documentée par le relais ONUDC'
+incontournable: non
 recommandation: retenir
-motif_recommandation: >-
-  Seule série d'enquête sur les vols avec violence (2007-2022, 15 points), indépendante de la plainte ; la poursuite
-  du relais ONUDC après 2022 n'est pas assurée.
-note_pertinence: >-
-  Les vols avec violence sont l'atteinte qui mêle biens et personnes et pèse le plus sur le sentiment d'insécurité
-  dans l'espace public. L'enquête est préférée à la série enregistrée, mais elle n'est accessible ici que par le
-  relais ONUDC/OCDE, dont la documentation ne précise pas le champ (âge, métropole) ; la série enregistrée (vols_violence_enregistres),
-  qui baisse continûment depuis 2013, en est une variante solide.
+motif_recommandation: Seule série d'enquête sur les vols avec violence (2007-2022, 15 points), indépendante de la
+  plainte ; la poursuite du relais ONUDC après 2022 n'est pas assurée.
+note_pertinence: Les vols avec violence sont l'atteinte qui mêle biens et personnes et pèse le plus sur le sentiment
+  d'insécurité dans l'espace public. L'enquête est préférée à la série enregistrée, mais elle n'est accessible ici
+  que par le relais ONUDC/OCDE, dont la documentation ne précise pas le champ (âge, métropole) ; la série enregistrée
+  (vols_violence_enregistres), qui baisse continûment depuis 2013, en est une variante solide.
+variantes:
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols et tentatives
+    de vols avec violence » ; Indicateur=Vols et tentatives de vols avec violence ; Sous_indicateur=Non Renseigné
+    ; Statistique=Nombre ; Zone_geographique=France métropolitaine ; Champ=Franc)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'enquête CVS (SSMSI) : victimes de vols ou tentatives avec violence, en nombre, 2006-2020 (arrêtée)'
+  ligne_id: m04-000293
+  eligible: oui
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - relais_international
 - rupture_enquete_cvs_vrs
 - lacune_2020
 - continuite_incertaine
-notes: >-
-  Filtre dans le flux OCDE : SDG_SERIES = 16_1_3_VC_VOV_ROBB, AGE, SEX, INCOME_WEALTH_QUANTILE, EDUCATION_LEV, DEG_URB
-  = total, UNIT_MEASURE = PT_POP.
+notes: 'Filtre dans le flux OCDE : SDG_SERIES = 16_1_3_VC_VOV_ROBB, AGE, SEX, INCOME_WEALTH_QUANTILE, EDUCATION_LEV,
+  DEG_URB = total, UNIT_MEASURE = PT_POP.'

@@ -1,64 +1,56 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: surendettement
 libelle: Situations de surendettement soumises aux commissions (nombre de dossiers)
 dimension: securite
 sous_theme: sécurité économique
 famille: surendettement
 variante_principale: oui
-definition: >-
-  Nombre de dossiers de surendettement déposés dans l'année auprès des commissions de surendettement de la Banque
-  de France, France métropolitaine (indicateur national ODD 1.i5).
+definition: Nombre de dossiers de surendettement déposés dans l'année auprès des commissions de surendettement de
+  la Banque de France, France métropolitaine (indicateur national ODD 1.i5).
 unite: nombre de dossiers déposés (taux à calculer)
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: INSEE (indicateurs ODD, d'après la Banque de France)
 source_jeu: BDM, indicateurs ODD (ODD-ERADICATION-PAUVRETE)
-source_serie_id: "010594499"
+source_serie_id: '010594499'
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594499
 url_page: https://www.insee.fr/fr/statistiques/serie/010594499
 frequence: annuelle
 premiere_annee: 2010
 derniere_annee: 2024
-geo: FM
 nb_points_depuis_2000: 15
+geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000874
-raccordement: >-
-  a_etudier : 2000-2009 : séries de la Banque de France (dépôts de dossiers, Webstat), dont l'API d'observations
-  exige un compte (D21) ; non cataloguées.
+hors_longlist: non
+raccordement: 'a_etudier : 2000-2009 par les dépôts de dossiers de la Banque de France (Webstat, API avec compte,
+  D21)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure administrative des ménages en grande difficulté financière, annuelle 2010-2024
+  (218 102 dossiers en 2010, 108 748 en 2020, 134 807 en 2024) ; en nombre, à rapporter au nombre de ménages.
+note_pertinence: Le surendettement est l'issue extrême de l'insécurité économique et la dimension le cite explicitement.
+  Le nombre de dépôts dépend aussi des règles de la procédure et de l'accès au crédit (à documenter avec la Banque
+  de France). La baisse jusqu'en 2020 puis la remontée sont cohérentes avec les retards de paiement de l'enquête
+  SILC.
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable nb_dossiers_deposes)
-  ligne_id: m04-000308
-  source: SDES-INSEE
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
   nature: 'ITDD (Banque de France) : dossiers déposés, France entière, 2014-2024'
+  ligne_id: m04-000308
   eligible: oui
-  periode: 2014-2024
-- serie_id: >-
-    DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=1.i5&PCS=_Z&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
-  ligne_id: melodi-005539
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=1.i5&PCS=_Z&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
   source: INSEE Melodi
-  nature: copie Melodi de la série BDM (ODD 1.i5)
+  nature: 'doublon technique : copie Melodi de la série BDM (ODD 1.i5)'
+  ligne_id: melodi-005539
   eligible: oui
-  periode: 2010-2024
-recommandation: retenir
-motif_recommandation: >-
-  Seule mesure administrative des ménages en grande difficulté financière, annuelle 2010-2024 (218 102 dossiers
-  en 2010, 108 748 en 2020, 134 807 en 2024) ; en nombre, à rapporter au nombre de ménages.
-note_pertinence: >-
-  Le surendettement est l'issue extrême de l'insécurité économique et la dimension le cite explicitement. Le nombre
-  de dépôts dépend aussi des règles de la procédure et de l'accès au crédit (à documenter avec la Banque de France).
-  La baisse jusqu'en 2020 puis la remontée sont cohérentes avec les retards de paiement de l'enquête SILC.
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - en_nombre_taux_a_calculer
 - dependance_reglementaire

@@ -1,87 +1,76 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: victimes_violences_sexuelles
 libelle: Adultes victimes de violences sexuelles (enquête de victimation)
 dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_sexuelles
 variante_principale: oui
-definition: >-
-  Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins une violence
-  sexuelle dans l'année, qu'elles aient porté plainte ou non (enquêtes CVS puis VRS ; composante de l'indicateur
-  ODD 16.i2).
+definition: Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins
+  une violence sexuelle dans l'année, qu'elles aient porté plainte ou non (enquêtes CVS puis VRS ; composante de
+  l'indicateur ODD 16.i2).
 unite: '% des 18-75 ans'
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: INSEE (indicateurs ODD, d'après les enquêtes de victimation du SSMSI)
 source_jeu: BDM, indicateurs ODD (ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES)
-source_serie_id: "010596045"
+source_serie_id: '010596045'
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596045
 url_page: https://www.insee.fr/fr/statistiques/serie/010596045
 frequence: annuelle
 premiere_annee: 2010
 derniere_annee: 2023
-geo: FM
 nb_points_depuis_2000: 12
+geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000951
-raccordement: 'non : Même rupture CVS/VRS que victimes_violences (aucune valeur 2019-2020).'
-variantes:
-- serie_id: "010594733"
-  ligne_id: bdm-000816
-  source: INSEE BDM
-  nature: >-
-    INSEE ODD 5.i4a : nombre de victimes de violences sexuelles hors cadre familial (18-75 ans), 2010-2023
-  eligible: oui
-  periode: 2010-2023
-- serie_id: 'odd_16 : 16_1_3_VC_VOV_SEX_ASLT._T._T._T._T._T.PT_POP'
-  ligne_id: m04-000138
-  source: OCDE
-  nature: 'ONUDC via OCDE : agression sexuelle déclarée (% de la population), 2008-2022'
-  eligible: oui
-  periode: 2008-2022
-- serie_id: >-
-    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=VIOLENCE_TYP2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  ligne_id: melodi-005406
-  source: INSEE Melodi
-  nature: copie Melodi de la série BDM
-  eligible: oui
-  periode: 2010-2023
-- serie_id: >-
-    DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=5.i4a&PCS=_Z&SDG=SDG5&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
-  ligne_id: melodi-005418
-  source: INSEE Melodi
-  nature: copie Melodi de l'indicateur ODD 5.i4a (nombre)
-  eligible: oui
-  periode: 2010-2023
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences sexuelles hors
-    ménage » ; Indicateur=Violences sexuelles ; Sous_indicateur=Hors ménage ; Statistique=Nombre ; Zone_geographique=France
-    métropolitaine ; Champ=France métropolitaine ; Peri)
-  ligne_id: m04-000292
-  source: SSMSI
-  nature: 'enquête CVS (SSMSI) : violences sexuelles hors ménage, en nombre, 2008-2018 (non éligible : arrêtée)'
-  eligible: non
-  periode: 2008-2018
+hors_longlist: non
+raccordement: 'non : pas de série avant 2010 ; rupture CVS/VRS sans valeur 2019-2020'
+incontournable: non
 recommandation: retenir
-motif_recommandation: >-
-  Seule mesure de la fréquence des violences sexuelles indépendante de la plainte (enquête, 2010-2023) ; valeurs
-  faibles (0,4 à 0,8 %) arrondies au dixième, donc peu sensibles aux évolutions.
-note_pertinence: >-
-  Les violences sexuelles sont celles pour lesquelles l'écart entre faits subis et faits enregistrés est le plus
-  grand : la série enregistrée a quadruplé depuis 2010 quand l'enquête reste stable. L'enquête est donc la seule
-  base pour juger de leur fréquence. Sa précision est limitée (petits effectifs, arrondi au dixième de point) et
-  elle subit la même rupture CVS/VRS que l'indicateur d'ensemble.
+motif_recommandation: Seule mesure de la fréquence des violences sexuelles indépendante de la plainte (enquête,
+  2010-2023) ; valeurs faibles (0,4 à 0,8 %) arrondies au dixième, donc peu sensibles aux évolutions.
+note_pertinence: 'Les violences sexuelles sont celles pour lesquelles l''écart entre faits subis et faits enregistrés
+  est le plus grand : la série enregistrée a quadruplé depuis 2010 quand l''enquête reste stable. L''enquête est
+  donc la seule base pour juger de leur fréquence. Sa précision est limitée (petits effectifs, arrondi au dixième
+  de point) et elle subit la même rupture CVS/VRS que l''indicateur d''ensemble.'
+variantes:
+- serie_id: '010594733'
+  source: INSEE BDM
+  nature: 'INSEE ODD 5.i4a (BDM et Melodi) : nombre de victimes de violences sexuelles hors cadre familial, 18-75
+    ans, 2010-2023'
+  ligne_id: bdm-000816
+  eligible: oui
+- serie_id: 'odd_16 : 16_1_3_VC_VOV_SEX_ASLT._T._T._T._T._T.PT_POP'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'autre source : agression sexuelle déclarée (% de la population), enquête relayée par l''ONUDC via l''OCDE,
+    2008-2022'
+  ligne_id: m04-000138
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=VIOLENCE_TYP2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=16.i2&PCS=_Z&SDG=SDG16&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi de la série BDM'
+  ligne_id: melodi-005406
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=5.i4a&PCS=_Z&SDG=SDG5&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 5.i4a (BDM et Melodi) : nombre de victimes de violences sexuelles hors cadre familial, 18-75
+    ans, 2010-2023'
+  ligne_id: melodi-005418
+  eligible: oui
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences sexuelles
+    hors ménage » ; Indicateur=Violences sexuelles ; Sous_indicateur=Hors ménage ; Statistique=Nombre ; Zone_geographique=France
+    métropolitaine ; Champ=France métropolitaine ; Peri)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'enquête CVS (SSMSI) : violences sexuelles hors ménage, en nombre, 2008-2018 (non éligible : arrêtée)'
+  ligne_id: m04-000292
+  eligible: non
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - rupture_enquete_cvs_vrs
 - lacune_2019_2020

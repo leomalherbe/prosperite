@@ -1,14 +1,10 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: sentiment_insecurite_quartier
 libelle: Personnes se sentant en insécurité dans leur quartier ou village (enquête CVS)
 dimension: securite
 sous_theme: sentiment d'insécurité
 famille: insecurite_quartier
 variante_principale: non
-definition: >-
-  Nombre de personnes de 14 ans ou plus résidant en France métropolitaine qui déclarent se sentir en insécurité
+definition: Nombre de personnes de 14 ans ou plus résidant en France métropolitaine qui déclarent se sentir en insécurité
   dans leur quartier ou leur village (enquête Cadre de vie et sécurité), à rapporter à la population de 14 ans ou
   plus.
 unite: nombre de personnes de 14 ans ou plus (part à calculer)
@@ -16,55 +12,48 @@ sens: bas
 type: resultat
 declaratif: oui
 composite: non
-incontournable: oui
 source_organisme: SSMSI (ministère de l'Intérieur)
 source_jeu: base des séries chronologiques (data.gouv.fr)
-source_serie_id: >-
-  https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment d'insécurité dans
-  le quartier ou le village » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Dans le quartier ou le village
-  ; Statistique=Nombre ; Zone_geographique=France métropolitaine ; Champ=France)
+source_serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment
+  d'insécurité dans le quartier ou le village » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Dans le quartier
+  ou le village ; Statistique=Nombre ; Zone_geographique=France métropolitaine ; Champ=France)
 source_niveau: 2
 url_api: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f
 url_page: https://www.data.gouv.fr/fr/datasets/62b02e970a264df3467b6c42/
 frequence: annuelle
 premiere_annee: 2007
 derniere_annee: 2021
-geo: FM
 nb_points_depuis_2000: 14
+geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000286
-raccordement: >-
-  non : Série arrêtée en 2021 (enquête CVS) ; la suite (enquête VRS depuis 2022) n'est pas dans la base des séries
-  chronologiques ni au catalogue.
-variantes:
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment d'insécurité
-    au domicile » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Au domicile ; Statistique=Nombre ; Zone_geographique=France
-    métropolitaine ; Champ=France métropolitaine ; P)
-  ligne_id: m04-000287
-  source: SSMSI
-  nature: 'même enquête CVS : sentiment d''insécurité au domicile, en nombre, 2007-2021 (arrêtée)'
-  eligible: oui
-  periode: 2007-2021
+hors_longlist: non
+raccordement: 'a_etudier : suite VRS (2022 et suivantes) à cataloguer et à raccorder à la série CVS arrêtée en 2021'
+incontournable: oui
 recommandation: ecarter
-motif_recommandation: >-
-  Mesure officielle du sentiment d'insécurité (2007-2021), arrêtée en 2021 : la série de l'enquête VRS qui lui succède
-  n'est pas au catalogue, si bien qu'aucune valeur n'est disponible après 2021.
-note_pertinence: >-
-  C'est la mesure française de référence du sentiment d'insécurité, que la dimension cite explicitement. Elle ne
-  peut être retenue qu'à condition de cataloguer les séries VRS (2022 et suivantes) et d'obtenir ou de construire
+motif_recommandation: 'Mesure officielle du sentiment d''insécurité (2007-2021), arrêtée en 2021 : la série de l''enquête
+  VRS qui lui succède n''est pas au catalogue, si bien qu''aucune valeur n''est disponible après 2021.'
+note_pertinence: C'est la mesure française de référence du sentiment d'insécurité, que la dimension cite explicitement.
+  Elle ne peut être retenue qu'à condition de cataloguer les séries VRS (2022 et suivantes) et d'obtenir ou de construire
   un raccordement ; à demander à M04 (maintenance) et au SSMSI. La modalité de réponse comptée (fréquence du sentiment)
   est à vérifier dans la documentation de l'enquête.
+variantes:
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment d'insécurité
+    au domicile » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Au domicile ; Statistique=Nombre ; Zone_geographique=France
+    métropolitaine ; Champ=France métropolitaine ; P)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'même enquête CVS : sentiment d''insécurité au domicile, en nombre, 2007-2021 (arrêtée)'
+  ligne_id: m04-000287
+  eligible: oui
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - serie_arretee_2021
 - rupture_enquete_cvs_vrs
 - en_nombre_taux_a_calculer
 - lacune_2020
-notes: >-
-  Filtre dans la base SSMSI : Titre « Sentiment d'insécurité dans le quartier ou le village », Unite_de_compte =
-  Personnes de 14 ans ou plus.
+notes: 'Filtre dans la base SSMSI : Titre « Sentiment d''insécurité dans le quartier ou le village », Unite_de_compte
+  = Personnes de 14 ans ou plus.'

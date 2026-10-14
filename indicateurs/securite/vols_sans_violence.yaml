@@ -1,67 +1,58 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: vols_sans_violence
 libelle: Vols sans violence enregistrés (pour 100 000 habitants)
 dimension: securite
 sous_theme: atteintes aux biens
 famille: vols
 variante_principale: oui
-definition: >-
-  Nombre de vols sans violence (catégorie ICCS 0502 : vols de biens, y compris de véhicules) enregistrés par la
-  police et la gendarmerie dans l'année, pour 100 000 habitants.
+definition: 'Nombre de vols sans violence (catégorie ICCS 0502 : vols de biens, y compris de véhicules) enregistrés
+  par la police et la gendarmerie dans l''année, pour 100 000 habitants.'
 unite: infractions pour 100 000 habitants
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: Eurostat (données policières transmises par le ministère de l'Intérieur)
 source_jeu: crim_off_cat — Infractions enregistrées par la police par type d'infraction
 source_serie_id: crim_off_cat?freq=A&iccs=ICCS0502&unit=P_HTHAB&geo=FR
 source_niveau: 1
-url_api: >-
-  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS0502&unit=P_HTHAB&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?freq=A&iccs=ICCS0502&unit=P_HTHAB&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2008
 derniere_annee: 2024
-geo: FR
 nb_points_depuis_2000: 17
+geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-000435
+hors_longlist: non
 raccordement: non
-variantes:
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols sans violence enregistrés
-    par les services de sécurité (Données annuelles) » ; Indicateur=Vols et tentatives de vols sans violence ; Sous_indicateur=Non
-    Renseigné ; Statistique=Nombre ; Zone_geographique=France ; Champ=France ; Periodicite)
-  ligne_id: m04-000277
-  source: SSMSI
-  nature: 'SSMSI : victimes de vols sans violence enregistrés, en nombre, 2016-2025'
-  eligible: oui
-  periode: 2016-2025
-- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_vols_pers)
-  ligne_id: m04-000304
-  source: SDES-INSEE
-  nature: 'ITDD : vols sans violence contre des personnes pour 1 000 habitants (non éligible : 9 points)'
-  eligible: non
-  periode: 2016-2024
+incontournable: non
 recommandation: ecarter
-motif_recommandation: >-
-  Série irrégulière sans drapeau de rupture : +43 % en 2009 (1 504 à 2 150 pour 100 000), -16 % en 2010, +18 % en
-  2013, sauts qui traduisent des changements d'enregistrement plus qu'une évolution des vols ; pas de série d'enquête
-  au catalogue pour la contrôler.
-note_pertinence: >-
-  Les vols sans violence sont la délinquance la plus fréquente, mais une part importante n'est pas déclarée et la
-  série Eurostat présente des sauts inexpliqués. Une fois que la série SSMSI (victimes de vols sans violence, 2016-2025)
-  aura assez de recul, ou si les séries VRS sont cataloguées, le concept pourra revenir. Les vols de véhicules,
-  mieux déclarés, ont leur propre fiche.
+motif_recommandation: 'Série irrégulière sans drapeau de rupture : +43 % en 2009 (1 504 à 2 150 pour 100 000), -16
+  % en 2010, +18 % en 2013, sauts qui traduisent des changements d''enregistrement plus qu''une évolution des vols
+  ; pas de série d''enquête au catalogue pour la contrôler.'
+note_pertinence: Les vols sans violence sont la délinquance la plus fréquente, mais une part importante n'est pas
+  déclarée et la série Eurostat présente des sauts inexpliqués. Une fois que la série SSMSI (victimes de vols sans
+  violence, 2016-2025) aura assez de recul, ou si les séries VRS sont cataloguées, le concept pourra revenir. Les
+  vols de véhicules, mieux déclarés, ont leur propre fiche.
+variantes:
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols sans violence
+    enregistrés par les services de sécurité (Données annuelles) » ; Indicateur=Vols et tentatives de vols sans
+    violence ; Sous_indicateur=Non Renseigné ; Statistique=Nombre ; Zone_geographique=France ; Champ=France ; Periodicite)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: SSMSI (victimes, en nombre, 2016-2025) et ITDD (vols contre des personnes pour 1 000 habitants, non éligible)
+  ligne_id: m04-000277
+  eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_vols_pers)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: SSMSI (victimes, en nombre, 2016-2025) et ITDD (vols contre des personnes pour 1 000 habitants, non éligible)
+  ligne_id: m04-000304
+  eligible: non
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - delinquance_enregistree
 - ruptures_non_signalees

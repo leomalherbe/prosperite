@@ -1,88 +1,75 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: tues_ferroviaire
 libelle: Tués dans les accidents ferroviaires (nombre)
 dimension: securite
 sous_theme: sécurité des transports hors route
 famille: securite_ferroviaire
 variante_principale: oui
-definition: >-
-  Nombre de personnes tuées dans des accidents ferroviaires significatifs survenus en France dans l'année, toutes
-  catégories de personnes (voyageurs, personnel, usagers de passages à niveau, intrus), hors suicides.
+definition: Nombre de personnes tuées dans des accidents ferroviaires significatifs survenus en France dans l'année,
+  toutes catégories de personnes (voyageurs, personnel, usagers de passages à niveau, intrus), hors suicides.
 unite: nombre de tués
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-incontournable: non
 source_organisme: Eurostat (statistiques de sécurité ferroviaire)
-source_jeu: >-
-  tran_sf_railvi — Victimes des accidents ferroviaires, par type d'accident et catégorie de personne impliquée
+source_jeu: tran_sf_railvi — Victimes des accidents ferroviaires, par type d'accident et catégorie de personne impliquée
 source_serie_id: tran_sf_railvi?freq=A&unit=NR&accident=TOTAL&victim=KIL&pers_cat=TOTAL&geo=FR
 source_niveau: 1
-url_api: >-
-  https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_sf_railvi?freq=A&unit=NR&accident=TOTAL&victim=KIL&pers_cat=TOTAL&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_sf_railvi?freq=A&unit=NR&accident=TOTAL&victim=KIL&pers_cat=TOTAL&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/tran_sf_railvi/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2006
 derniere_annee: 2024
-geo: FR
 nb_points_depuis_2000: 19
+geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-037465
+hors_longlist: non
 raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Hors du contenu de la dimension, qui ne retient pour les transports que la sécurité routière
+  (arbitrage A6) ; série en nombre absolu commençant en 2006.
+note_pertinence: Le risque ferroviaire est faible et concerne surtout les passages à niveau et les personnes circulant
+  sur les voies ; il pèse peu dans la sécurité perçue des ménages. La fiche existe pour que l'arbitrage soit visible
+  ; les accidents aériens ont été écartés en bloc pour le même motif. La mention « hors suicides » suit la définition
+  européenne et reste à vérifier.
 variantes:
 - serie_id: tran_sf_railac?freq=A&unit=NR&accident=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'mêmes jeux ferroviaires, autres unités de compte : accidents, blessés graves, accidents de transport
+    de marchandises dangereuses (nombre)'
   ligne_id: estat-037463
-  source: Eurostat
-  nature: accidents ferroviaires (nombre)
   eligible: oui
-  periode: 2006-2024
 - serie_id: tran_sf_railvi?freq=A&unit=NR&accident=TOTAL&victim=INJ_SRL&pers_cat=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'mêmes jeux ferroviaires, autres unités de compte : accidents, blessés graves, accidents de transport
+    de marchandises dangereuses (nombre)'
   ligne_id: estat-037464
-  source: Eurostat
-  nature: blessés graves dans les accidents ferroviaires (nombre)
   eligible: oui
-  periode: 2006-2024
 - serie_id: tran_sf_raildg?freq=A&unit=NR&accident=DGD&geo=FR
+  source: Eurostat
+  nature: 'mêmes jeux ferroviaires, autres unités de compte : accidents, blessés graves, accidents de transport
+    de marchandises dangereuses (nombre)'
   ligne_id: estat-037466
-  source: Eurostat
-  nature: >-
-    même source : Accidents ferroviaires mettant en cause le transport des produits dangereux — Accidents lors du
-    transport de marchandises dangereuses
   eligible: oui
-  periode: 2009-2024
 - serie_id: tran_sf_raildg?freq=A&unit=NR&accident=DGD_NRL&geo=FR
+  source: Eurostat
+  nature: 'mêmes jeux ferroviaires, autres unités de compte : accidents, blessés graves, accidents de transport
+    de marchandises dangereuses (nombre)'
   ligne_id: estat-037467
-  source: Eurostat
-  nature: >-
-    même source : Accidents ferroviaires mettant en cause le transport des produits dangereux — Accidents n'entraînant
-    pas la liberation de substances dangereuses
   eligible: oui
-  periode: 2011-2024
 - serie_id: tran_sf_raildg?freq=A&unit=NR&accident=DGD_RL&geo=FR
-  ligne_id: estat-037468
   source: Eurostat
-  nature: >-
-    même source : Accidents ferroviaires mettant en cause le transport des produits dangereux — Accidents entraînant
-    la liberation de sunbstances dangereuses
+  nature: 'mêmes jeux ferroviaires, autres unités de compte : accidents, blessés graves, accidents de transport
+    de marchandises dangereuses (nombre)'
+  ligne_id: estat-037468
   eligible: oui
-  periode: 2011-2024
-recommandation: ecarter
-motif_recommandation: >-
-  Hors du contenu de la dimension, qui ne retient pour les transports que la sécurité routière (arbitrage A6) ;
-  série en nombre absolu commençant en 2006.
-note_pertinence: >-
-  Le risque ferroviaire est faible et concerne surtout les passages à niveau et les personnes circulant sur les
-  voies ; il pèse peu dans la sécurité perçue des ménages. La fiche existe pour que l'arbitrage soit visible ; les
-  accidents aériens ont été écartés en bloc pour le même motif. La mention « hors suicides » suit la définition
-  européenne et reste à vérifier.
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - en_nombre_taux_a_calculer
 - debut_2006

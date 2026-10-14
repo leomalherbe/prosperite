@@ -1,95 +1,82 @@
-# Fiche indicateur — dimension securite — mission M05 (agent securite), 2026-10-14.
-# Schéma charte §5.1 + champs M05 (famille, variante_principale, variantes, composite, raccordement,
-# incontournable, recommandation, motif_recommandation, note_pertinence). socle_v1 vide à ce stade.
 id: securite_nuit
 libelle: Personnes se sentant en sécurité en marchant seules la nuit dans leur quartier
 dimension: securite
 sous_theme: sentiment d'insécurité
 famille: securite_nuit
 variante_principale: oui
-definition: >-
-  Part des personnes de 15 ans ou plus qui déclarent se sentir en sécurité lorsqu'elles marchent seules la nuit
-  dans la ville ou le quartier où elles vivent (Gallup World Poll, relayé par l'OCDE, base How's Life?, mesure 10_2).
+definition: Part des personnes de 15 ans ou plus qui déclarent se sentir en sécurité lorsqu'elles marchent seules
+  la nuit dans la ville ou le quartier où elles vivent (Gallup World Poll, relayé par l'OCDE, base How's Life?,
+  mesure 10_2).
 unite: '% des 15 ans ou plus'
 sens: haut
 type: resultat
 declaratif: oui
 composite: non
-incontournable: oui
 source_organisme: OCDE (relais du Gallup World Poll)
 source_jeu: How's Life? (base du bien-être)
 source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2 UNIT_MEASURE=PT_POP_Y_GE15
 source_niveau: 1
-url_api: >-
-  https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
 url_page: non trouvé
 frequence: irreguliere
 premiere_annee: 2006
 derniere_annee: 2025
-geo: FR
 nb_points_depuis_2000: 7
+geo: FR
 eligibilite_longlist: a_verifier
 ligne_id: m04-000065
+hors_longlist: non
 raccordement: non
-variantes:
-- serie_id: >-
-    https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Renoncement à sortir seul
-    de chez soi pour des raisons de sécurité » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Renoncement
-    à sortir seul de chez soi pour des raisons de sécurité ; Statistique=Nombre ; Zone_geographique=)
-  ligne_id: m04-000288
-  source: SSMSI
-  nature: >-
-    enquête CVS (SSMSI) : renoncement à sortir seul pour des raisons de sécurité, en nombre, 2007-2021 (arrêtée)
-  eligible: oui
-  periode: 2007-2021
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
-  ligne_id: m04-000066
-  source: OCDE
-  nature: 'ventilation par sexe : femmes'
-  eligible: a_verifier
-  periode: 2006-2025
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
-  ligne_id: m04-000067
-  source: OCDE
-  nature: 'ventilation par sexe : hommes'
-  eligible: a_verifier
-  periode: 2006-2025
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2_DEP UNIT_MEASURE=PT_POP_Y_GE15
-  ligne_id: m04-000068
-  source: OCDE
-  nature: 'mesure inverse (OCDE 10_2_DEP) : ne pas se sentir en sécurité la nuit'
-  eligible: a_verifier
-  periode: 2006-2025
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2_DEP UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
-  ligne_id: m04-000069
-  source: OCDE
-  nature: mesure inverse, femmes
-  eligible: a_verifier
-  periode: 2006-2025
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2_DEP UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
-  ligne_id: m04-000070
-  source: OCDE
-  nature: mesure inverse, hommes
-  eligible: a_verifier
-  periode: 2006-2025
+incontournable: oui
 recommandation: retenir
-motif_recommandation: >-
-  Indicateur des cadres OCDE (10_2) et Eurostat QoL, 2006-2025 (72,0 % en 2025), mais 7 valeurs seulement (moyennes
-  Gallup sur 2 à 3 ans) et licence de réutilisation non trouvée (D26).
-note_pertinence: >-
-  Se sentir en sécurité la nuit est l'une des mesures du sentiment d'insécurité les plus utilisées internationalement
-  et la dimension la cite explicitement. La série française est une moyenne d'environ 1 000 entretiens Gallup par
-  an, regroupés par blocs de trois ans : elle est peu réactive. Sa diffusion dépend de la réponse de l'OCDE sur
-  les conditions de réutilisation (courriel proposé à Léo, D26).
+motif_recommandation: Indicateur des cadres OCDE (10_2) et Eurostat QoL, 2006-2025 (72,0 % en 2025), mais 7 valeurs
+  seulement (moyennes Gallup sur 2 à 3 ans) et licence de réutilisation non trouvée (D26).
+note_pertinence: 'Se sentir en sécurité la nuit est l''une des mesures du sentiment d''insécurité les plus utilisées
+  internationalement et la dimension la cite explicitement. La série française est une moyenne d''environ 1 000
+  entretiens Gallup par an, regroupés par blocs de trois ans : elle est peu réactive. Sa diffusion dépend de la
+  réponse de l''OCDE sur les conditions de réutilisation (courriel proposé à Léo, D26).'
+variantes:
+- serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Renoncement à sortir
+    seul de chez soi pour des raisons de sécurité » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Renoncement
+    à sortir seul de chez soi pour des raisons de sécurité ; Statistique=Nombre ; Zone_geographique=)
+  source: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+  nature: 'mesure voisine : renoncement à sortir seul pour des raisons de sécurité (enquête CVS, SSMSI), en nombre,
+    2007-2021 (arrêtée)'
+  ligne_id: m04-000288
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation par sexe
+  ligne_id: m04-000066
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation par sexe
+  ligne_id: m04-000067
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2_DEP UNIT_MEASURE=PT_POP_Y_GE15
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'complément à 100 (OCDE 10_2_DEP : ne pas se sentir en sécurité la nuit) et ventilation par sexe'
+  ligne_id: m04-000068
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2_DEP UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'complément à 100 (OCDE 10_2_DEP : ne pas se sentir en sécurité la nuit) et ventilation par sexe'
+  ligne_id: m04-000069
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2_DEP UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'complément à 100 (OCDE 10_2_DEP : ne pas se sentir en sécurité la nuit) et ventilation par sexe'
+  ligne_id: m04-000070
+  eligible: a_verifier
 socle_v1:
-  seuil_minimal:
-  objectif:
-  type_justification:
-  justification:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
 qualite:
 - irreguliere
 - moyennes_pluriannuelles
 - licence_non_trouvee
 - source_proprietaire
-notes: >-
-  Filtre dans le flux OCDE : MEASURE = 10_2, UNIT_MEASURE = PT_POP_Y_GE15, AGE, SEX, EDUCATION_LEV = _T.
+notes: 'Filtre dans le flux OCDE : MEASURE = 10_2, UNIT_MEASURE = PT_POP_Y_GE15, AGE, SEX, EDUCATION_LEV = _T.'

@@ -451,7 +451,7 @@ BDM SDMX,010594420,Prévalence de l’obésité en 3ème par groupe socioprofess
 BDM SDMX,010594412,Prévalence de l’obésité en grande section de maternelle par groupe socioprofessionnel des parents – professions intermédiaires,ecartee_par_filtre,dernière période 2013 < 2020,sante,,a_verifier,
 BDM SDMX,010594416,Prévalence de l’obésité en 3ème,confirmee,série pluriannuelle ou irrégulière : 2 valeurs de 2017 à 2022 (D17),sante,sante,oui,a_verifier
 BDM SDMX,010594409,Prévalence du surpoids en 3ème par groupe socioprofessionnel des parents – ouvriers,ecartee_par_filtre,dernière période 2017 < 2020,sante,,a_verifier,
-BDM SDMX,010594422,Diversité moyenne des cultures arables,confirmee,,planete,education,non,oui
+BDM SDMX,010594422,Diversité moyenne des cultures arables,confirmee,,planete,planete,non,oui
 BDM SDMX,010594397,Prévalence de l’obésité chez les adultes - hommes,ecartee_par_filtre,dernière période 2019 < 2020,sante,,a_verifier,
 BDM SDMX,010594442,Nombre de races locales classées comme étant non-à-risque d’extinction,confirmee,,planete,planete,non,oui
 BDM SDMX,010594421,Prévalence de l’obésité en 3ème par groupe socioprofessionnel des parents - ouvriers,ecartee_par_filtre,dernière période 2017 < 2020,sante,,a_verifier,
@@ -542,22 +542,22 @@ BDM SDMX,010596193,Pertes et gaspillages alimentaires par étape de la chaîne a
 BDM SDMX,010596222,Répartition de l'emploi par piliers de l'économie circulaire - Consommation responsable,confirmee,,planete,planete,oui,oui
 BDM SDMX,010596206,Traitement des déchets dangereux et non dangereux par type de matière - Bois,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596208,Traitement des déchets dangereux et non dangereux par type de matière - Métalliques,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
-BDM SDMX,010596188,Consommation intérieure de matière par habitant (DMC/hab),confirmee,,planete,niveau_de_vie,oui,oui
+BDM SDMX,010596188,Consommation intérieure de matière par habitant (DMC/hab),confirmee,,planete,planete,oui,oui
 BDM SDMX,010596195,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Distribution,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596209,Traitement des déchets dangereux et non dangereux - Total,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596205,Traitement des déchets dangereux et non dangereux par type de matière - Papiers et cartons,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
-BDM SDMX,010596187,Consommation intérieure de matière (DMC),confirmee,,planete,niveau_de_vie,oui,oui
+BDM SDMX,010596187,Consommation intérieure de matière (DMC),confirmee,,planete,planete,oui,oui
 BDM SDMX,010600333,Traitement de déchets dangereux,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596204,Traitement des déchets dangereux et non dangereux par type de matière - Verre,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010600336,Nombre d’emplois de l'économie circulaire,confirmee,,planete,planete,oui,oui
 BDM SDMX,010754820,Répartition de l'emploi par piliers de l'économie circulaire - Approvisionnement durable,confirmee,,planete,planete,oui,oui
-BDM SDMX,010596189,Productivité matières (PIB/DMC),confirmee,,planete,niveau_de_vie,oui,oui
+BDM SDMX,010596189,Productivité matières (PIB/DMC),confirmee,,planete,planete,oui,oui
 BDM SDMX,010600335,Traitement des déchets dangereux et non dangereux par type de matière - Plastique,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010751597,Nombre de projets d'écologie industrielle et territoriale,confirmee,série pluriannuelle ou irrégulière : 7 valeurs de 2013 à 2023 (D17),planete,planete,non,a_verifier
 BDM SDMX,010596190,Empreinte matières (RMC),confirmee,,planete,planete,oui,oui
 BDM SDMX,010596207,Traitement des déchets dangereux et non dangereux par type de matière - Végétaux,confirmee,série irrégulière : 7 années avec valeur depuis 2000 (D17),planete,planete,oui,a_verifier
 BDM SDMX,010596194,Pertes et gaspillages alimentaires par étape de la chaîne alimentaire - Transformation,confirmee,série pluriannuelle ou irrégulière : 5 valeurs de 2015 à 2023 (D17),planete,planete,oui,a_verifier
-BDM SDMX,010596192,Empreinte matières par unité de PIB (PIB/RMC),confirmee,,planete,niveau_de_vie,oui,oui
+BDM SDMX,010596192,Empreinte matières par unité de PIB (PIB/RMC),confirmee,,planete,planete,oui,oui
 BDM SDMX,010596809,Évolution de l’état des récifs coralliens dans les Outre-mer français - en augmentation - Série arrêtée,ecartee_par_filtre,zone non nationale (D99),planete,,non,
 BDM SDMX,010596810,Évolution de l’état des récifs coralliens dans les Outre-mer français - stable - Série arrêtée,ecartee_par_filtre,zone non nationale (D99),planete,,non,
 BDM SDMX,010596811,Évolution de l’état des récifs coralliens dans les Outre-mer français - en diminution - Série arrêtée,ecartee_par_filtre,zone non nationale (D99),planete,,non,
@@ -901,7 +901,7 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i1,Renoncement à consommer des protéines pou
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2a,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),non_retrouvee,traité,sante,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2b,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),non_retrouvee,traité,sante,,non,
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i2c,Prévalence du surpoids et de l'obésité (correspondance du code non précisée sur la page),confirmee,1 série(s) du catalogue correspondent,sante,sante,non,a_verifier
-Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i3,Diversité moyenne des cultures arables,confirmee,1 série(s) du catalogue correspondent,planete,education,non,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i3,Diversité moyenne des cultures arables,confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i4a,Part de l'agriculture biologique dans la SAU (correspondance inférée),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i4b,Nombre d'exploitations de haute valeur environnementale (correspondance inférée),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,a_verifier
 Melodi,DS_NAT_SDG?INDICATOR_SDG=2.i5,Exposition des animaux aux antibiotiques (ALEA),confirmee,5 série(s) du catalogue correspondent,planete,planete,non,oui
@@ -984,9 +984,9 @@ Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i3a,"Déchets municipaux (recyclage, traiteme
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i3b,Déchets municipaux traités par type de traitement (correspondance non précisée),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i4a,Particules PM10 (correspondance non précisée),confirmee,2 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=11.i4b,Particules PM10 : stations dépassant la norme (correspondance non précisée),confirmee,2 série(s) du catalogue correspondent,logement_cadre_vie,logement_cadre_vie,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1a,Consommation intérieure de matières (DMC),confirmee,1 série(s) du catalogue correspondent,planete,niveau_de_vie,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1b,Consommation intérieure de matière par habitant,confirmee,1 série(s) du catalogue correspondent,planete,niveau_de_vie,a_verifier,oui
-Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1c,Productivité matières (PIB/DMC),confirmee,1 série(s) du catalogue correspondent,planete,niveau_de_vie,non,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1a,Consommation intérieure de matières (DMC),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1b,Consommation intérieure de matière par habitant,confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
+Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i1c,Productivité matières (PIB/DMC),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i2a,Empreinte matières (RMC),confirmee,1 série(s) du catalogue correspondent,planete,planete,a_verifier,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i2b,Empreinte matières par habitant (RMC/hab),confirmee,1 série(s) du catalogue correspondent,planete,planete,oui,oui
 Melodi,DS_NAT_SDG?INDICATOR_SDG=12.i2c,Productivité matières (PIB/RMC),confirmee,1 série(s) du catalogue correspondent,planete,planete,non,oui

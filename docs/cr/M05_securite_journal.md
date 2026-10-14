@@ -118,7 +118,11 @@ declaratifs 9, composites 0, a_verifier 2, hors_longlist 0, incontournables ['de
 
 Contrôles complémentaires (script jetable de l'agent) : identifiants ASCII uniques, égaux au nom de fichier, et sans collision avec les 21 fiches de `origin/m05-liens_bien_etre` ; `socle_v1` vide ; chaque `source_serie_id` et chaque variante présents dans un catalogue INSEE, Eurostat ou M04 (y compris catalogues « non ») ; une variante principale par famille ; `sens: ambigu` ⇒ `ecarter` ; 928 lignes de la long-list affectées, somme des groupes = 932 ; chaque ligne `fiche` ou `variante_de` présente dans une fiche ; tableau de validation = fiches, colonnes de la fiche M05, `decision_leo` et `commentaire_leo` vides → **0 erreur**. Incontournables : les 4 concepts du crosswalk (homicides, sentiment d'insécurité / délinquance perçue, sécurité économique) et les tués sur la route ont une fiche `retenir`. Déclaratifs présents (9).
 
-## 6. Points ouverts
+## 6. Livraison
+
+PR #7 « M05 — fiches indicateurs : securite (pilote) » vers `main` (branche à jour de `main` au moment de l'ouverture) ; compte rendu copié dans le Projet (`claude/cr/M05_securite_compte_rendu.md`) et tableau de validation (`claude/40_validation_securite.csv`).
+
+## 7. Points ouverts
 
 - Léo : licence des séries Gallup relayées par l'OCDE (`securite_nuit`, D26) ; choix du principal pour les vols avec violence (enquête ONUDC jusqu'en 2022 ou série enregistrée jusqu'en 2024) ; maintien des soldes d'opinion Camme (4 fiches, D29 P8).
 - Session mère : code de décision `autre_dimension:<dim>` ; convention `declaratif` (§2.4) ; correction de la règle 4 et de `sdg_16_10` ; demande à M04 de cataloguer les séries VRS et de corriger PE03 ; exception `tran_r_acci` à D30.

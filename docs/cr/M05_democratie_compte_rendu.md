@@ -1,6 +1,6 @@
 # Compte rendu — M05, fiches indicateurs de la dimension `democratie` (Démocratie et institutions)
 
-Agent M05 democratie, 14 octobre 2026, branche `m05-democratie`. Méthode commune suivie (`docs/methodo/33_methode_fiches_M05.md`) ; méthode détaillée, vérifications et contrôles : `docs/cr/M05_democratie_journal.md`.
+Agent M05 democratie, 14 octobre 2026, branche `m05-democratie`, PR #11. Méthode commune suivie (`docs/methodo/33_methode_fiches_M05.md`) ; méthode détaillée, vérifications et contrôles : `docs/cr/M05_democratie_journal.md`.
 
 ## 1. Fait
 

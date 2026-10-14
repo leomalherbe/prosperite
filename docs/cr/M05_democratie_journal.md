@@ -131,4 +131,4 @@ avertissement — citoyennete_active : série principale hors catalogue de séri
 
 ## 8. Livraison
 
-Commits sur `m05-democratie`, PR « M05 — fiches indicateurs : democratie » vers `main` ; compte rendu `docs/cr/M05_democratie_compte_rendu.md`, copié dans le Projet (`claude/cr/M05_democratie_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_democratie.csv`).
+Commits sur `m05-democratie` (branche à jour de `main`, `48e2381`), PR #11 « M05 — fiches indicateurs : democratie » vers `main` ; compte rendu `docs/cr/M05_democratie_compte_rendu.md`, copié dans le Projet (`claude/cr/M05_democratie_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_democratie.csv`).

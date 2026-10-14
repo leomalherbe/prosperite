@@ -37,7 +37,7 @@ Règle 4 de la table (soldes CVS 000857196/000857197 hors grille) ; `sdg_16_10` 
 - Léo : licence Gallup (`securite_nuit`) ; principal des vols avec violence (enquête ONUDC jusqu'en 2022 ou série enregistrée jusqu'en 2024) ; maintien des 4 soldes d'opinion Camme (D29, P8).
 - Session mère : statut `incontournable` des tués sur la route.
 
-## 6. Corrections après audit (M06, D32-D36) — branche `m05-securite-corr`
+## 6. Corrections après audit (M06, D32-D36) — branche `m05-securite-corr`, PR #18
 
 Audit : `docs/validation/audit_securite.md` (22 fiches auditées, 16 conformes, 6 à corriger, 10 corrections au §9). Les dix corrections sont appliquées ; détail, fichiers et limites : `docs/cr/M05_securite_corrections_journal.md`.
 

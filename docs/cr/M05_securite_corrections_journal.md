@@ -1,6 +1,6 @@
 # Journal des corrections après audit M06 — dimension `securite`
 
-Agent correcteur (session lancée par la session mère), 14 octobre 2026, branche `m05-securite-corr` créée depuis `origin/main` (`b689b03` : méthode des fiches v1.2 et D34-D36). Rapport d'audit appliqué : `docs/validation/audit_securite.md` (§9, 10 corrections), complété par la consigne de la session mère (règles v1.2 de `docs/methodo/33_methode_fiches_M05.md` §9, D32-D36 ; prisons → `democratie`, D33 ; coordination NDV-4 avec `niveau_de_vie`). Modèle suivi : corrections `liens_bien_etre` (commit `4d07019`).
+Agent correcteur (session lancée par la session mère), 14 octobre 2026, branche `m05-securite-corr` (PR #18) créée depuis `origin/main` (`b689b03` : méthode des fiches v1.2 et D34-D36). Rapport d'audit appliqué : `docs/validation/audit_securite.md` (§9, 10 corrections), complété par la consigne de la session mère (règles v1.2 de `docs/methodo/33_methode_fiches_M05.md` §9, D32-D36 ; prisons → `democratie`, D33 ; coordination NDV-4 avec `niveau_de_vie`). Modèle suivi : corrections `liens_bien_etre` (commit `4d07019`).
 
 ## 0. Mise en route et état de référence
 

@@ -53,3 +53,9 @@ Ruptures constatées (drapeaux lus) : Eurostat EFT « d » ou « bd » depuis 20
 ## 3. Maintenance
 
 `docs/cr/maintenance_catalogues_travail.md` : 10 lignes `TRA-1` à `TRA-10` (DREES OG04_6 et SDRICHOM, formules du pipeline, unité des mesures `PT_*` de Melodi, rattachements de la table v0→v1, salaires, pauvreté en emploi, Assurance maladie, conditions de travail DARES, métadonnées Eurostat, chute de 2013 du travail de nuit). Le fichier partagé `maintenance_catalogues.md` n'est pas modifié.
+
+## 4. Clôture (11:15 UTC)
+
+- PR **#15** « M05 — fiches indicateurs : travail » ouverte vers `main` par l'API GitHub (`POST /repos/leomalherbe/prosperite/pulls`).
+- Compte rendu `docs/cr/M05_travail_compte_rendu.md`, copié dans le Projet (`claude/cr/M05_travail_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_travail.csv`).
+- Aucun fichier sous `scripts/` ni `src/` modifié ; `.claude/` non commité ; charte, journal des décisions, `dimensions.yaml`, table de correspondance, méthode 33 et liste de maintenance partagée non modifiés.

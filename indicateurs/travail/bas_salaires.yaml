@@ -1,0 +1,47 @@
+id: bas_salaires
+libelle: Salariés à temps plein à bas salaire
+dimension: travail
+sous_theme: rémunération
+famille: bas_salaires
+variante_principale: oui
+definition: Part des salariés à temps plein dont le salaire brut est inférieur aux deux tiers du salaire médian
+  (OCDE, base du bien-être How's Life, indicateur 2_8_DEP).
+unite: '% des salariés à temps plein'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (How's Life)
+source_jeu: OECD.WISE.WDP DSD_HSL@DF_HSL_CWB (base du bien-être), indicateur 2_8_DEP
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_8_DEP UNIT_MEASURE=PT_SAL_FT
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.2_8_DEP.PT_SAL_FT._T._T._T.?startPeriod=2000&format=jsondata
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2024
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000016
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Concept nommé dans le contenu de la dimension (bas salaires), série OCDE la plus fraîche et
+  la plus fournie (7 points de 2006 à 2024) devant l'enquête européenne sur la structure des salaires (5 points
+  jusqu'en 2022).
+note_pertinence: La part des bas salaires mesure la qualité de la rémunération en bas de l'échelle, que le salaire
+  moyen ne montre pas. La série OCDE couvre 2006, 2010, 2014, 2018 et 2022 à 2024, dernière valeur 5,83 % (extrait
+  du robot M04). Elle est irrégulière (D17) et sa source nationale n'est pas documentée dans l'extrait.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- source_nationale_non_documentee
+- licence_a_confirmer
+notes: Périodes et dernière valeur lues dans docs/sources/series/ocde__hsl_bien_etre_actuel.csv.

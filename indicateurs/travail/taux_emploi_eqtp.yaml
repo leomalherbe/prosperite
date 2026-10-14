@@ -1,0 +1,115 @@
+id: taux_emploi_eqtp
+libelle: Taux d'emploi en équivalent temps plein des 15-64 ans
+dimension: travail
+sous_theme: emploi
+famille: taux_emploi
+variante_principale: non
+definition: Taux d'emploi des 15-64 ans dans lequel chaque emploi est pondéré par sa durée de travail rapportée
+  à un temps plein (INSEE, enquête Emploi, série trimestrielle corrigée des variations saisonnières, champ France
+  entière).
+unite: '% de la population de 15 à 64 ans (en équivalent temps plein)'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, enquête Emploi trimestrielle (taux d'emploi en EQTP)
+source_serie_id: '011818669'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011818669
+url_page: https://www.insee.fr/fr/statistiques/serie/011818669
+frequence: trimestrielle
+premiere_annee: 2003
+derniere_annee: 2026
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000607
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Lecture du taux d'emploi corrigée du temps partiel, sans série annuelle de même définition,
+  disponible en trimestriel de 2003 à 2026 (agrégation annuelle à prévoir).
+note_pertinence: 'Le taux en équivalent temps plein distingue un emploi à mi-temps d''un emploi à temps plein :
+  il complète le taux d''emploi quand la part du temps partiel varie. La série est trimestrielle et corrigée des
+  variations saisonnières ; la moyenne des quatre trimestres donnera la valeur annuelle (2026 incomplet).'
+variantes:
+- serie_id: '011818649'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000587
+  eligible: oui
+- serie_id: '011818686'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000624
+  eligible: oui
+- serie_id: '011818714'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000652
+  eligible: oui
+- serie_id: '011818750'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000688
+  eligible: oui
+- serie_id: '011818657'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000595
+  eligible: oui
+- serie_id: '011818662'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000600
+  eligible: oui
+- serie_id: '011818667'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000605
+  eligible: oui
+- serie_id: '011818674'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000612
+  eligible: oui
+- serie_id: '011818703'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000641
+  eligible: oui
+- serie_id: '011818722'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000660
+  eligible: oui
+- serie_id: '011818728'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000666
+  eligible: oui
+- serie_id: '011818741'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000679
+  eligible: oui
+- serie_id: '011818743'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000681
+  eligible: oui
+- serie_id: '011818744'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux d''emploi en EQTP par âge et par sexe'
+  ligne_id: bdm-000682
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- trimestrielle_agregation_annuelle
+- derniere_annee_partielle
+notes: Retenue comme série trimestrielle faute de série annuelle de même définition (consigne de la session mère).

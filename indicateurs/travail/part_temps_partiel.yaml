@@ -1,0 +1,172 @@
+id: part_temps_partiel
+libelle: Part du temps partiel dans l'emploi
+dimension: travail
+sous_theme: sous-emploi et temps partiel
+famille: part_temps_partiel
+variante_principale: oui
+definition: Part des personnes en emploi qui travaillent à temps partiel, en moyenne annuelle (INSEE, enquête Emploi,
+  séries longues rétropolées).
+unite: '% des personnes en emploi'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_EEC_SERIES (enquête Emploi, séries longues), mesure PT_WKTIME_IN_EMP_BY_SEX_AGE
+source_serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_WKTIME_IN_EMP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_WKTIME_IN_EMP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=PT
+url_page: https://www.insee.fr/fr/statistiques/8977323
+frequence: annuelle
+premiere_annee: 1975
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-003753
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : le temps partiel peut être choisi ou subi, et sa part subie est mesurée par
+  le taux de sous-emploi et le temps partiel involontaire, retenus dans la famille sous_emploi.'
+note_pertinence: 'Une hausse du temps partiel n''est ni bonne ni mauvaise en soi : elle dépend de la part choisie.
+  La série reste utile pour l''écart femmes-hommes, traité par egalites (ecart_temps_partiel_fh), à qui les ventilations
+  par sexe sont signalées.'
+variantes:
+- serie_id: '011818675'
+  source: INSEE BDM
+  nature: 'INSEE BDM : part du temps partiel dans l''emploi (trimestrielle) par âge'
+  ligne_id: bdm-000613
+  eligible: oui
+- serie_id: '011818731'
+  source: INSEE BDM
+  nature: 'INSEE BDM : part du temps partiel dans l''emploi (trimestrielle) par âge'
+  ligne_id: bdm-000669
+  eligible: oui
+- serie_id: '011818732'
+  source: INSEE BDM
+  nature: 'INSEE BDM : part du temps partiel dans l''emploi (trimestrielle) par âge'
+  ligne_id: bdm-000670
+  eligible: oui
+- serie_id: '011818746'
+  source: INSEE BDM
+  nature: 'INSEE BDM : part du temps partiel dans l''emploi (trimestrielle) par âge'
+  ligne_id: bdm-000684
+  eligible: oui
+- serie_id: lfsi_pt_a_h?freq=A&worktime=PT&age=Y15-74&unit=THS_PER&sex=T&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-025120
+  eligible: oui
+- serie_id: lfsi_pt_a_h?freq=A&worktime=PT&age=Y15-24&age=Y15-64&age=Y20-64&age=Y25-54&age=Y55-64&unit=THS_PER&sex=T&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-025121
+  eligible: oui
+- serie_id: lfsi_pt_a?freq=A&wstatus=EMP_PT&sex=T&age=Y15-64&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-025141
+  eligible: oui
+- serie_id: lfsi_pt_a?freq=A&wstatus=EMP_PT&sex=T&age=Y15-24&age=Y15-29&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-025143
+  eligible: oui
+- serie_id: lfsa_eppga?freq=A&unit=PC&sex=T&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-025566
+  eligible: oui
+- serie_id: lfsa_eppga?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-025568
+  eligible: oui
+- serie_id: lfsa_eppgan?freq=A&unit=PC&sex=T&age=Y15-74&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054334
+  eligible: oui
+- serie_id: lfsa_eppgan?freq=A&unit=PC&sex=M&sex=F&age=Y15-74&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054335
+  eligible: oui
+- serie_id: lfsa_eppgan?freq=A&unit=PC&sex=T&age=Y15-24&age=Y15-29&age=Y15-64&age=Y20-64&age=Y25-54&age=Y55-64&age=Y55-74&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054336
+  eligible: oui
+- serie_id: lfsa_eppgan?freq=A&unit=PC&sex=T&age=Y15-74&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054337
+  eligible: oui
+- serie_id: lfsa_eppgacob?freq=A&unit=PC&sex=T&age=Y15-74&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054338
+  eligible: oui
+- serie_id: lfsa_eppgacob?freq=A&unit=PC&sex=M&sex=F&age=Y15-74&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054339
+  eligible: oui
+- serie_id: lfsa_eppgacob?freq=A&unit=PC&sex=T&age=Y15-24&age=Y15-29&age=Y15-64&age=Y20-64&age=Y25-54&age=Y55-64&age=Y55-74&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054340
+  eligible: oui
+- serie_id: lfsa_eppgacob?freq=A&unit=PC&sex=T&age=Y15-74&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-054341
+  eligible: oui
+- serie_id: yth_empl_060?freq=A&sex=T&age=Y15-29&unit=PC&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-055272
+  eligible: oui
+- serie_id: yth_empl_060?freq=A&sex=M&sex=F&age=Y15-29&unit=PC&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-055273
+  eligible: oui
+- serie_id: yth_empl_060?freq=A&sex=T&age=Y15-19&age=Y15-24&age=Y20-24&age=Y20-29&age=Y25-29&unit=PC&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-055274
+  eligible: oui
+- serie_id: yth_empl_060?freq=A&sex=T&age=Y15-29&unit=PC&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues, BDM) et Eurostat (lfsi_pt_a, lfsi_pt_a_h, lfsa_eppga, lfsa_eppgan, lfsa_eppgacob,
+    yth_empl_060) : part du temps partiel par âge'
+  ligne_id: estat-055275
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_retropolee_insee
+notes: ''

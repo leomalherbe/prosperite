@@ -1,0 +1,47 @@
+id: maladies_professionnelles
+libelle: Maladies professionnelles reconnues (régime général)
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: maladies_professionnelles
+variante_principale: oui
+definition: Nombre de maladies professionnelles reconnues dans l'année par le régime général de la Sécurité sociale
+  (Assurance maladie, risques professionnels).
+unite: nombre
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Assurance maladie (risques professionnels)
+source_jeu: data.ameli.fr, sinistralité par secteur d'activité (NAF 1), tous secteurs
+source_serie_id: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1
+  (Maladies professionnelles.TOUS.Tous secteurs confondus.Tous secteurs confondus#nb_sinistres_int)
+source_niveau: 1
+url_api: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2024
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000394
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : le nombre de maladies reconnues suit autant l''extension des tableaux et la
+  démarche de reconnaissance que l''état de santé des travailleurs (M04).'
+note_pertinence: Une hausse des reconnaissances peut signifier une meilleure prise en charge plutôt qu'une dégradation
+  des conditions de travail. La série est en nombre (50 598 en 2024 d'après l'extrait du robot) et devrait au moins
+  être rapportée aux salariés, colonne disponible dans la même source.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- en_nombre
+- champ_regime_general
+- serie_administrative
+notes: ''

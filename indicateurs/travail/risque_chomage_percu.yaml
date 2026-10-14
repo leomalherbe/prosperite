@@ -1,0 +1,56 @@
+id: risque_chomage_percu
+libelle: Personnes voyant un risque de chômage pour elles ou un proche (baromètre DREES)
+dimension: travail
+sous_theme: qualité et sécurité de l'emploi
+famille: insecurite_emploi_percue
+variante_principale: non
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui répondent « oui » à la question
+  SDRICHOM : « Y a-t-il un risque de chômage dans les mois à venir pour vous-même ou l''un de vos proches ? », non-réponses
+  au dénominateur, pondération de redressement.'
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDRICHOM, modalité 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: a_calculer
+preuve: docs/sources/series/drees__barometre_2000_2025_couverture.csv
+rattachement_propose: 'hors long-list : question SDRICHOM du baromètre DREES non cataloguée par M04 ; sécurité de
+  l''emploi ressentie (A15)'
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Question plus proche de l'insécurité de l'emploi vécue que la préoccupation pour le chômage,
+  posée 16 années de 2010 à 2025, mais dont les valeurs restent à calculer par le robot M04.
+note_pertinence: La question porte sur un risque concret à court terme, pour soi ou un proche, plutôt que sur une
+  préoccupation générale. Elle commence en 2010 et ses valeurs ne sont pas encore produites (liste de maintenance).
+  Elle pourrait devenir la variante principale de la famille une fois calculée, si la session mère préfère une mesure
+  plus personnelle.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- a_calculer
+- calcul_sur_microdonnees
+- enquete_metropole
+- codes_modalites_a_verifier
+notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (16 années 2010-2025,
+  taux de réponse 2025 : 1,000) ; distribution non calculée par le robot : valeurs non trouvé à ce jour.'

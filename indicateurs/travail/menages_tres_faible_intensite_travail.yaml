@@ -1,0 +1,758 @@
+id: menages_tres_faible_intensite_travail
+libelle: Personnes vivant dans un ménage à très faible intensité de travail
+dimension: travail
+sous_theme: emploi
+famille: intensite_travail
+variante_principale: oui
+definition: Part des personnes de moins de 60 ans vivant dans un ménage dont les membres en âge de travailler ont
+  travaillé moins de 20 % de leur temps potentiel au cours de l'année de référence (EU-SILC, définition de la stratégie
+  Europe 2020).
+unite: '% des personnes de moins de 60 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_lvhl11 (EU-SILC, enquête SRCV de l'INSEE pour la France)
+source_serie_id: ilc_lvhl11?freq=A&unit=PC&age=Y_LT60&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvhl11?freq=A&unit=PC&age=Y_LT60&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_lvhl11/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031333
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat (activité productive), série annuelle 2004-2025
+  (22 points) qui mesure l'exclusion de l'emploi à l'échelle du ménage, ce que les taux individuels ne montrent
+  pas.
+note_pertinence: 'Un ménage sans travail ou presque cumule les risques de pauvreté et d''isolement : l''indicateur
+  complète le taux d''emploi individuel. La série va de 10,3 % (2004) à 9,0 % (2025), avec des ruptures en 2020
+  et 2022 (API Eurostat, 14/10/2026). La nouvelle définition européenne (moins de 65 ans, sdg_01_40) ne commence
+  qu''en 2015 et reste en variante ; l''indicateur est aussi une composante du taux de risque de pauvreté ou d''exclusion,
+  ce que la session mère pourra arbitrer avec niveau_de_vie.'
+variantes:
+- serie_id: sdg_01_40?freq=A&sex=T&age=Y_LT65&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-002022
+  eligible: oui
+- serie_id: sdg_01_40?freq=A&sex=T&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-002023
+  eligible: oui
+- serie_id: hlth_dpe040?freq=A&unit=PC&lev_limit=TOTAL&age=Y_LT65&sex=T&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-021817
+  eligible: oui
+- serie_id: hlth_dpe040?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-59&age=Y55-64&age=Y_LT60&sex=T&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-021818
+  eligible: oui
+- serie_id: hlth_dpe040?freq=A&unit=PC&lev_limit=TOTAL&age=Y_LT65&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-021819
+  eligible: oui
+- serie_id: lfsi_jhh_a?freq=A&indic_em=SC071&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-026534
+  eligible: oui
+- serie_id: lfsi_jhh_a?freq=A&indic_em=SC072&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-026535
+  eligible: oui
+- serie_id: lfsi_jhh_a?freq=A&indic_em=SC073&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-026536
+  eligible: oui
+- serie_id: lfsi_jhh_a?freq=A&indic_em=SC074&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-026537
+  eligible: oui
+- serie_id: ilc_lvhl11n?freq=A&unit=PC&age=Y_LT65&sex=T&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031142
+  eligible: oui
+- serie_id: ilc_lvhl11n?freq=A&unit=PC&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-24&age=Y18-59&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y55-59&age=Y_LT60&age=Y60-64&sex=T&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031143
+  eligible: oui
+- serie_id: ilc_lvhl11n?freq=A&unit=PC&age=Y_LT65&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031144
+  eligible: oui
+- serie_id: ilc_lvhl13n?freq=A&hhcomp=TOTAL&quant_inc=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031148
+  eligible: oui
+- serie_id: ilc_lvhl13n?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&quant_inc=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031149
+  eligible: oui
+- serie_id: ilc_lvhl13n?freq=A&hhcomp=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031150
+  eligible: oui
+- serie_id: ilc_lvhl12n?freq=A&wstatus=POP&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031145
+  eligible: oui
+- serie_id: ilc_lvhl12n?freq=A&wstatus=POP&age=Y18-24&age=Y25-34&age=Y25-54&age=Y25-64&age=Y35-44&age=Y45-54&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031146
+  eligible: oui
+- serie_id: ilc_lvhl12n?freq=A&wstatus=POP&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031147
+  eligible: oui
+- serie_id: ilc_lvhl14n?freq=A&sex=T&isced11=TOTAL&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031151
+  eligible: oui
+- serie_id: ilc_lvhl14n?freq=A&sex=M&sex=F&isced11=TOTAL&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031152
+  eligible: oui
+- serie_id: ilc_lvhl14n?freq=A&sex=T&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031153
+  eligible: oui
+- serie_id: ilc_lvhl14n?freq=A&sex=T&isced11=TOTAL&age=Y18-24&age=Y18-59&age=Y25-34&age=Y25-54&age=Y25-59&age=Y25-64&age=Y35-44&age=Y45-54&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031154
+  eligible: oui
+- serie_id: ilc_lvhl11?freq=A&unit=PC&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-24&age=Y18-59&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y55-59&sex=T&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031334
+  eligible: oui
+- serie_id: ilc_lvhl11?freq=A&unit=PC&age=Y_LT60&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031335
+  eligible: oui
+- serie_id: ilc_lvhl13?freq=A&hhcomp=TOTAL&quant_inc=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031339
+  eligible: oui
+- serie_id: ilc_lvhl13?freq=A&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&quant_inc=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031340
+  eligible: oui
+- serie_id: ilc_lvhl13?freq=A&hhcomp=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031341
+  eligible: oui
+- serie_id: ilc_lvhl12?freq=A&wstatus=POP&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031336
+  eligible: oui
+- serie_id: ilc_lvhl12?freq=A&wstatus=POP&age=Y18-24&age=Y25-34&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031337
+  eligible: oui
+- serie_id: ilc_lvhl12?freq=A&wstatus=POP&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031338
+  eligible: oui
+- serie_id: ilc_lvhl14?freq=A&isced11=TOTAL&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031342
+  eligible: oui
+- serie_id: ilc_lvhl14?freq=A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031343
+  eligible: oui
+- serie_id: ilc_lvhl14?freq=A&isced11=TOTAL&age=Y18-24&age=Y25-34&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031344
+  eligible: oui
+- serie_id: ilc_lvhl14?freq=A&isced11=TOTAL&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-031345
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=EU27_2020_FOR&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054954
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=EU27_2020_FOR&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-59&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054955
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=EU27_2020_FOR&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054956
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=EU28_FOR&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054957
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=EU28_FOR&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-59&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054958
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=EU28_FOR&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054959
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=FOR&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054960
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=FOR&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-59&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054961
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=FOR&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054962
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NAT&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054963
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NAT&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-59&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054964
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NAT&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054965
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NEU27_2020_FOR&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054966
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NEU27_2020_FOR&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-59&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054967
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NEU27_2020_FOR&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054968
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NEU28_FOR&age=Y18-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054969
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NEU28_FOR&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-59&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054970
+  eligible: oui
+- serie_id: ilc_lvhl15n?freq=A&citizen=NEU28_FOR&age=Y18-64&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054971
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=EU27_2020_FOR&sex=T&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054972
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=EU27_2020_FOR&sex=M&sex=F&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054973
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=EU27_2020_FOR&sex=T&age=Y16-24&age=Y16-29&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-24&age=Y20-29&age=Y20-59&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054974
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=EU28_FOR&sex=T&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054975
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=EU28_FOR&sex=M&sex=F&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054976
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=EU28_FOR&sex=T&age=Y16-24&age=Y16-29&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-24&age=Y20-29&age=Y20-59&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054977
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=FOR&sex=T&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054978
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=FOR&sex=M&sex=F&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054979
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-24&age=Y20-29&age=Y20-59&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054980
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NAT&sex=T&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054981
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NAT&sex=M&sex=F&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054982
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NAT&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-24&age=Y20-29&age=Y20-59&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054983
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NEU27_2020_FOR&sex=T&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054984
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NEU27_2020_FOR&sex=M&sex=F&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054985
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NEU27_2020_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-24&age=Y20-29&age=Y20-59&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054986
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NEU28_FOR&sex=T&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054987
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NEU28_FOR&sex=M&sex=F&age=Y18-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054988
+  eligible: oui
+- serie_id: ilc_lvhl16n?freq=A&c_birth=NEU28_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y20-24&age=Y20-29&age=Y20-59&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y25-64&age=Y55-59&age=Y55-64&age=Y60-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054989
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU27_2020_FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054993
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU27_2020_FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054994
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU27_2020_FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054995
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU28_FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054996
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU28_FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054997
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU28_FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054998
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054999
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055000
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055001
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NAT&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055002
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NAT&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055003
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NAT&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055004
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU27_2020_FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055008
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU27_2020_FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055009
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU27_2020_FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055010
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU28_FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055011
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU28_FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055012
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU28_FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055013
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU27_2020_FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055017
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU27_2020_FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055018
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU27_2020_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055019
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU28_FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055020
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU28_FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055021
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU28_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055022
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055023
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055024
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055025
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NAT&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055026
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NAT&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055027
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NAT&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055028
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU27_2020_FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055032
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU27_2020_FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055033
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU27_2020_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055034
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU28_FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055035
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU28_FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055036
+  eligible: oui
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU28_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055037
+  eligible: oui
+- serie_id: ilc_lvhl15?freq=A&citizen=EU27_2007_FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054990
+  eligible: non
+- serie_id: ilc_lvhl15?freq=A&citizen=EU27_2007_FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054991
+  eligible: non
+- serie_id: ilc_lvhl15?freq=A&citizen=EU27_2007_FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-054992
+  eligible: non
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU27_2007_FOR&age=Y18-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055005
+  eligible: non
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU27_2007_FOR&age=Y16-29&age=Y18-54&age=Y20-59&age=Y25-54&age=Y25-59&age=Y55-59&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055006
+  eligible: non
+- serie_id: ilc_lvhl15?freq=A&citizen=NEU27_2007_FOR&age=Y18-59&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055007
+  eligible: non
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU27_2007_FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055014
+  eligible: non
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU27_2007_FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055015
+  eligible: non
+- serie_id: ilc_lvhl16?freq=A&c_birth=EU27_2007_FOR&sex=T&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055016
+  eligible: non
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU27_2007_FOR&sex=T&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055029
+  eligible: non
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU27_2007_FOR&sex=M&sex=F&age=Y18-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055030
+  eligible: non
+- serie_id: ilc_lvhl16?freq=A&c_birth=NEU27_2007_FOR&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y18-54&age=Y20-24&age=Y20-29&age=Y20-59&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-59&unit=PC&geo=FR
+  source: Eurostat
+  nature: EU-SILC (nouvelle définition 0-64 ans sdg_01_40, ilc_lvhl11n, ventilations ilc_lvhl12 à 16, handicap hlth_dpe040)
+    et EFT (ménages sans emploi lfsi_jhh_a)
+  ligne_id: estat-055031
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+notes: 'Rattachement à travail conforme à la long-list (cadre Qualité de vie, activité productive) ; composante
+  de l''AROPE (niveau_de_vie) : à surveiller au contrôle de redondance.'

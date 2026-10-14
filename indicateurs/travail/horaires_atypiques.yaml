@@ -1,0 +1,217 @@
+id: horaires_atypiques
+libelle: Personnes en emploi travaillant à des horaires atypiques
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: horaires_atypiques
+variante_principale: oui
+definition: Part des personnes en emploi de 15 ans ou plus qui travaillent à des horaires atypiques au sens d'Eurostat
+  (enquête sur les forces de travail) ; la liste des horaires comptés (soir, nuit, fin de semaine, travail posté)
+  est à vérifier dans les métadonnées.
+unite: '% de l''emploi total'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_esegatyp (enquête sur les forces de travail)
+source_serie_id: lfsa_esegatyp?freq=A&eseg=TOTAL&age=Y_GE15&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_esegatyp?freq=A&eseg=TOTAL&age=Y_GE15&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_esegatyp/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2025
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-026015
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure d'ensemble des horaires atypiques maintenus dans la dimension par D27 et cités par
+  le cadre Qualité de vie, série Eurostat 2011-2025 (13 points, enquête bisannuelle depuis 2021).
+note_pertinence: 'Travailler le soir, la nuit ou en fin de semaine désorganise la vie familiale et sociale et pèse
+  sur la santé. Les valeurs vont de 37,9 % (2011) à 34,2 % (2025), sans valeur en 2022 ni 2024 (API Eurostat, 14/10/2026).
+  La liste exacte des horaires comptés n''est pas donnée par l''API : à lire dans les métadonnées.'
+variantes:
+- serie_id: lfsa_ewpshi?freq=A&unit=PC&sex=T&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025727
+  eligible: oui
+- serie_id: lfsa_ewpshi?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025728
+  eligible: oui
+- serie_id: lfsa_ewpshi?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025729
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=EMP&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025958
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=EMP&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025959
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&age=Y_GE65&wstatus=EMP&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025960
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=NCFAM&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025967
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=NCFAM&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025968
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&age=Y_GE65&wstatus=NCFAM&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025969
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=NSAL&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025976
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=NSAL&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025977
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&wstatus=NSAL&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025978
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SAL&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025985
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SAL&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025986
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&wstatus=SAL&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025987
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SELF&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025994
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SELF&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025995
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&wstatus=SELF&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025996
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SELF_NS&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026003
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SELF_NS&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026004
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&wstatus=SELF_NS&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026005
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=SELF_S&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026012
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=SELF_S&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026013
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-64&age=Y55-74&wstatus=SELF_S&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026014
+  eligible: oui
+- serie_id: lfsa_esegatyp?freq=A&eseg=TOTAL&age=Y15-24&age=Y15-64&age=Y15-74&age=Y20-64&age=Y_GE25&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-026016
+  eligible: oui
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=CFAM&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025949
+  eligible: non
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&wstatus=CFAM&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025950
+  eligible: non
+- serie_id: lfsa_ewpeve?freq=A&unit=PC&sex=T&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-64&age=Y25-49&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y40-59&age=Y40-64&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&wstatus=CFAM&frequenc=USU&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : horaires atypiques par âge (lfsa_esegatyp), travail le soir (habituellement), travail posté
+    (lfsa_ewpshi)'
+  ligne_id: estat-025951
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2014
+- rupture_2021
+- definition_differente_2021_2025
+- bisannuelle_depuis_2021
+- definition_a_verifier
+notes: ''

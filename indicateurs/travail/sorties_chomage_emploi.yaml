@@ -1,0 +1,95 @@
+id: sorties_chomage_emploi
+libelle: Passages du chômage à l'emploi
+dimension: travail
+sous_theme: qualité et sécurité de l'emploi
+famille: sorties_chomage_emploi
+variante_principale: oui
+definition: Part des chômeurs une année qui sont en emploi l'année suivante (Eurostat, transitions sur le marché
+  du travail estimées sur l'enquête sur les forces de travail).
+unite: '% des chômeurs'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsi_long_a (transitions sur le marché du travail, résultats annuels)
+source_serie_id: lfsi_long_a?freq=A&unit=PC_UNE&wstatus=UNE_EMP&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_long_a?freq=A&unit=PC_UNE&wstatus=UNE_EMP&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsi_long_a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-025255
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure du retour à l'emploi des chômeurs, complémentaire du chômage de longue durée, série
+  Eurostat 2011-2025 (14 points).
+note_pertinence: 'Un chômage dont on sort vite pèse moins qu''un chômage durable : la probabilité de retrouver un
+  emploi en un an complète le taux de chômage. Les valeurs et drapeaux de la série n''ont pas pu être relus (refus
+  de l''outil, 429) ; la série des passages de l''emploi au chômage, du même jeu, n''a pas de valeur en 2021.'
+variantes:
+- serie_id: lfsi_long_e03?freq=A&deg_urb=TOTAL&age=Y15-74&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-005426
+  eligible: oui
+- serie_id: lfsi_long_e03?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&age=Y15-74&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-005427
+  eligible: oui
+- serie_id: lfsi_long_e03?freq=A&deg_urb=TOTAL&age=Y15-24&age=Y25-54&age=Y55-74&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-005428
+  eligible: oui
+- serie_id: lfsi_long_a?freq=A&unit=PC_UNE&wstatus=UNE_EMP&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025256
+  eligible: oui
+- serie_id: lfsi_long_e01?freq=A&duration=TOTAL&sex=T&age=Y15-74&unit=PC_UNE&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025261
+  eligible: oui
+- serie_id: lfsi_long_e01?freq=A&duration=TOTAL&sex=M&sex=F&age=Y15-74&unit=PC_UNE&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025262
+  eligible: oui
+- serie_id: lfsi_long_e01?freq=A&duration=TOTAL&sex=T&age=Y15-24&age=Y25-54&age=Y55-74&unit=PC_UNE&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025263
+  eligible: oui
+- serie_id: lfsi_long_e02?freq=A&expernce=TOTAL&sex=T&age=Y15-74&unit=PC_UNE&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025264
+  eligible: oui
+- serie_id: lfsi_long_e02?freq=A&expernce=TOTAL&sex=M&sex=F&age=Y15-74&unit=PC_UNE&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025265
+  eligible: oui
+- serie_id: lfsi_long_e02?freq=A&expernce=TOTAL&sex=T&age=Y15-24&age=Y25-54&age=Y55-74&unit=PC_UNE&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsi_long_a par sexe ; lfsi_long_e01 à e03 (par durée de chômage, expérience, urbanisation)
+  ligne_id: estat-025266
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_non_lus
+- pas_de_valeur_2021_a_verifier
+notes: ''

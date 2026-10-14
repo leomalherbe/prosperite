@@ -1,0 +1,412 @@
+id: taux_chomage_longue_duree
+libelle: Taux de chômage de longue durée
+dimension: travail
+sous_theme: chômage
+famille: chomage_longue_duree
+variante_principale: oui
+definition: Part des chômeurs au sens du BIT depuis un an ou plus parmi les actifs de 15 ans ou plus, en moyenne
+  annuelle ; calculée sur les séries longues rétropolées de l'enquête Emploi (nombre de chômeurs de longue durée
+  divisé par la population active).
+unite: '% de la population active de 15 ans ou plus'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_EEC_SERIES (enquête Emploi, séries longues), mesures UNEMP (UNEMPDUR=LT) et ACTPOP
+source_serie_id: 'DD_EEC_SERIES : UNEMP (UNEMPDUR=LT, AGE=_T) / ACTPOP (AGE=_T) x 100'
+composantes:
+- DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+- DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=ACTPOP&EMPFORM=_T&EMPSTA=1T2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+formule: chômeurs depuis un an ou plus / population active x 100
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+url_page: https://www.insee.fr/fr/statistiques/8977323
+frequence: annuelle
+premiere_annee: 1975
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-003790 ; melodi-003610
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur des cadres OCDE et Qualité de vie d'Eurostat, calculable sur deux séries annuelles
+  rétropolées de l'INSEE de 1975 à 2025, alors que la série européenne une_ltu_a porte le drapeau « définition différente
+  » de 2021 à 2025.
+note_pertinence: Le chômage de longue durée mesure l'enfermement dans le chômage, plus grave pour les personnes
+  que le chômage frictionnel. Au catalogue, l'INSEE ne publie ce taux qu'en série trimestrielle (BDM 011818581,
+  2003-2026) ; le calcul sur les séries longues donne une série annuelle homogène depuis 1975. La série Eurostat
+  (une_ltu_a) va de 2,3 % en 2003 à 1,8 % en 2025, avec le drapeau « d » de 2021 à 2025 (API, 14/10/2026).
+variantes:
+- serie_id: '011818577'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000047
+  eligible: oui
+- serie_id: '011818581'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000051
+  eligible: oui
+- serie_id: '011818578'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000048
+  eligible: oui
+- serie_id: '011818579'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000049
+  eligible: oui
+- serie_id: '011818580'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000050
+  eligible: oui
+- serie_id: '011818585'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000055
+  eligible: oui
+- serie_id: '011818589'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000059
+  eligible: oui
+- serie_id: sdg_08_40?freq=A&indic_em=LTU&age=Y15-74&unit=PC_ACT&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-002092
+  eligible: oui
+- serie_id: sdg_08_40?freq=A&indic_em=LTU&age=Y15-74&unit=PC_ACT&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-002093
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_3 UNIT_MEASURE=PT_LF
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: m04-000010
+  eligible: oui
+- serie_id: '011818582'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000052
+  eligible: oui
+- serie_id: '011818583'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000053
+  eligible: oui
+- serie_id: '011818584'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000054
+  eligible: oui
+- serie_id: '011818586'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000056
+  eligible: oui
+- serie_id: '011818587'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000057
+  eligible: oui
+- serie_id: '011818588'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux et nombre de chômeurs de longue durée (trimestriels, 2003-2026)'
+  ligne_id: bdm-000058
+  eligible: oui
+- serie_id: une_ltu_a?freq=A&indic_em=LTU&age=Y15-74&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025198
+  eligible: oui
+- serie_id: une_ltu_a_h?freq=A&indic_em=LTU&age=Y15-74&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025153
+  eligible: oui
+- serie_id: une_ltu_a_h?freq=A&indic_em=LTU&age=Y20-64&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025154
+  eligible: oui
+- serie_id: une_ltu_a_h?freq=A&indic_em=LTU&age=Y15-74&sex=M&sex=F&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025155
+  eligible: oui
+- serie_id: une_ltu_a?freq=A&indic_em=LTU&age=Y20-64&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025199
+  eligible: oui
+- serie_id: une_ltu_a?freq=A&indic_em=LTU&age=Y15-74&sex=M&sex=F&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025200
+  eligible: oui
+- serie_id: yth_empl_120?freq=A&sex=T&age=Y15-29&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-052382
+  eligible: oui
+- serie_id: yth_empl_120?freq=A&sex=M&sex=F&age=Y15-29&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-052383
+  eligible: oui
+- serie_id: yth_empl_120?freq=A&sex=T&age=Y15-19&age=Y15-24&age=Y20-24&age=Y20-29&age=Y25-29&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-052384
+  eligible: oui
+- serie_id: lfsa_upgan?freq=A&unit=PC&citizen=TOTAL&sex=T&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054354
+  eligible: oui
+- serie_id: lfsa_upgan?freq=A&unit=PC&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&sex=T&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054355
+  eligible: oui
+- serie_id: lfsa_upgan?freq=A&unit=PC&citizen=TOTAL&sex=M&sex=F&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054356
+  eligible: oui
+- serie_id: lfsa_upgan?freq=A&unit=PC&citizen=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y30-34&age=Y30-64&age=Y30-74&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054357
+  eligible: oui
+- serie_id: lfsa_upgacob?freq=A&unit=PC&c_birth=TOTAL&sex=T&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054358
+  eligible: oui
+- serie_id: lfsa_upgacob?freq=A&unit=PC&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&sex=T&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054359
+  eligible: oui
+- serie_id: lfsa_upgacob?freq=A&unit=PC&c_birth=TOTAL&sex=M&sex=F&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054360
+  eligible: oui
+- serie_id: lfsa_upgacob?freq=A&unit=PC&c_birth=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y15-74&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y_GE25&age=Y30-34&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y_GE50&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-054361
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002420
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002422
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002424
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002871
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002873
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002875
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003430
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003432
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003434
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003740
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003742
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_UNEMPDUR_IN_UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003744
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002458
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002461
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002464
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002915
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002918
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-002921
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003474
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003477
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003480
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003784
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: melodi-003787
+  eligible: oui
+- serie_id: une_ltu_a?freq=A&indic_em=VLTU&age=Y15-74&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025201
+  eligible: a_verifier
+- serie_id: une_ltu_a_h?freq=A&indic_em=VLTU&age=Y15-74&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025156
+  eligible: non
+- serie_id: une_ltu_a_h?freq=A&indic_em=VLTU&age=Y20-64&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025157
+  eligible: non
+- serie_id: une_ltu_a_h?freq=A&indic_em=VLTU&age=Y15-74&sex=M&sex=F&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025158
+  eligible: non
+- serie_id: une_ltu_a?freq=A&indic_em=VLTU&age=Y20-64&sex=T&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025202
+  eligible: a_verifier
+- serie_id: une_ltu_a?freq=A&indic_em=VLTU&age=Y15-74&sex=M&sex=F&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Taux de chômage de longue durée : INSEE BDM trimestriel, INSEE séries longues (part parmi les chômeurs,
+    chômeurs de longue durée par âge et sexe), Eurostat une_ltu_a, sdg_08_40, yth_empl_120, lfsa_upg*, OCDE 2_3'
+  ligne_id: estat-025203
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_retropolee_insee
+- a_calculer_formule
+notes: Indicateur à calculer par le pipeline sur les deux composantes ; contrôler le résultat avec la série trimestrielle
+  BDM 011818581 (moyenne annuelle) au premier passage du robot.

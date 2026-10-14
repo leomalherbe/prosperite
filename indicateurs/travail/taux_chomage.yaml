@@ -1,0 +1,630 @@
+id: taux_chomage
+libelle: Taux de chômage au sens du BIT
+dimension: travail
+sous_theme: chômage
+famille: taux_chomage
+variante_principale: oui
+definition: Part des chômeurs au sens du BIT (sans emploi, disponibles, ayant cherché activement un emploi) parmi
+  les actifs de 15 ans ou plus, en moyenne annuelle (INSEE, enquête Emploi, séries longues rétropolées, champ France
+  entière).
+unite: '% de la population active de 15 ans ou plus'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_EEC_SERIES (enquête Emploi, séries longues), mesure UNEMPRATE
+source_serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+url_page: https://www.insee.fr/fr/statistiques/8977323
+frequence: annuelle
+premiere_annee: 1975
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-003812
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1975'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de référence du chômage, présent dans le cadre Qualité de vie d'Eurostat, publié
+  par l'INSEE en série annuelle rétropolée de 1975 à 2025 (26 points depuis 2000).
+note_pertinence: 'C''est la mesure du chômage la plus connue du public, comparable dans le temps grâce à la rétropolation
+  de l''INSEE. Le taux de chômage n''atteint pas trois cadres au §5 du crosswalk (incontournable : non), mais il
+  est indispensable à la question de la dimension. Les demandeurs d''emploi inscrits à France Travail forment une
+  série voisine, administrative, gardée dans la même famille.'
+variantes:
+- serie_id: '001688527'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000001
+  eligible: oui
+- serie_id: '001688529'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000002
+  eligible: oui
+- serie_id: '001688531'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000003
+  eligible: oui
+- serie_id: '001688537'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000006
+  eligible: oui
+- serie_id: '011818543'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000013
+  eligible: oui
+- serie_id: '011818544'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000014
+  eligible: oui
+- serie_id: '011818545'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000015
+  eligible: oui
+- serie_id: '011818548'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-000018
+  eligible: oui
+- serie_id: '001515842'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001322
+  eligible: oui
+- serie_id: '010754822'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001323
+  eligible: oui
+- serie_id: '001787711'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001497
+  eligible: oui
+- serie_id: '001787714'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001500
+  eligible: oui
+- serie_id: '001787715'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001501
+  eligible: oui
+- serie_id: '001787716'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001502
+  eligible: oui
+- serie_id: '001787717'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001503
+  eligible: oui
+- serie_id: '001787720'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001506
+  eligible: oui
+- serie_id: '001787721'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001507
+  eligible: oui
+- serie_id: '001787722'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de chômage BIT trimestriel (France hors Mayotte puis France entière), moyenne annuelle
+    (métropole, hors Mayotte), taux localisés'
+  ligne_id: bdm-001508
+  eligible: oui
+- serie_id: une_rt_a?freq=A&age=Y15-74&unit=PC_ACT&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-000057
+  eligible: oui
+- serie_id: une_rt_a?freq=A&age=Y15-24&age=Y15-29&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&unit=PC_ACT&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-000058
+  eligible: oui
+- serie_id: une_rt_a_h?freq=A&age=Y15-74&unit=PC_ACT&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025150
+  eligible: oui
+- serie_id: une_rt_a_h?freq=A&age=Y15-24&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&unit=PC_ACT&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025151
+  eligible: oui
+- serie_id: lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-024850
+  eligible: oui
+- serie_id: lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-39&age=Y15-59&age=Y15-64&age=Y20-24&age=Y20-64&age=Y25-29&age=Y25-39&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y30-34&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-024852
+  eligible: oui
+- serie_id: lfsa_urgan?freq=A&unit=PC&sex=T&age=Y15-74&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-054342
+  eligible: oui
+- serie_id: lfsa_urgan?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y30-34&age=Y30-54&age=Y30-64&age=Y30-74&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y70-74&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-054344
+  eligible: oui
+- serie_id: lfsa_urgacob?freq=A&unit=PC&sex=T&age=Y15-74&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-054346
+  eligible: oui
+- serie_id: lfsa_urgacob?freq=A&unit=PC&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-39&age=Y15-59&age=Y15-64&age=Y20-24&age=Y20-64&age=Y25-29&age=Y25-49&age=Y25-54&age=Y25-59&age=Y25-64&age=Y25-74&age=Y30-34&age=Y35-39&age=Y40-44&age=Y40-59&age=Y40-64&age=Y45-49&age=Y50-54&age=Y50-59&age=Y50-64&age=Y50-74&age=Y55-59&age=Y55-64&age=Y60-64&age=Y65-69&age=Y65-74&age=Y70-74&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-054348
+  eligible: oui
+- serie_id: une_educ_a?freq=A&sex=T&isced11=ED0-2&age=Y15-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025204
+  eligible: oui
+- serie_id: une_educ_a_h?freq=A&sex=T&isced11=ED0-2&age=Y15-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025159
+  eligible: a_verifier
+- serie_id: une_educ_a_h?freq=A&sex=T&isced11=ED0-2&age=Y20-64&age=Y25-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025161
+  eligible: a_verifier
+- serie_id: une_educ_a?freq=A&sex=T&isced11=ED0-2&age=Y20-64&age=Y25-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025206
+  eligible: oui
+- serie_id: une_educ_a?freq=A&sex=T&isced11=ED3_4&age=Y15-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025207
+  eligible: oui
+- serie_id: une_educ_a_h?freq=A&sex=T&isced11=ED3_4&age=Y15-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025162
+  eligible: a_verifier
+- serie_id: une_educ_a_h?freq=A&sex=T&isced11=ED3_4&age=Y20-64&age=Y25-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025164
+  eligible: a_verifier
+- serie_id: une_educ_a?freq=A&sex=T&isced11=ED3_4&age=Y20-64&age=Y25-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025209
+  eligible: oui
+- serie_id: une_educ_a?freq=A&sex=T&isced11=ED5-8&age=Y15-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025210
+  eligible: oui
+- serie_id: une_educ_a_h?freq=A&sex=T&isced11=ED5-8&age=Y15-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025165
+  eligible: a_verifier
+- serie_id: une_educ_a_h?freq=A&sex=T&isced11=ED5-8&age=Y20-64&age=Y25-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025167
+  eligible: a_verifier
+- serie_id: une_educ_a?freq=A&sex=T&isced11=ED5-8&age=Y20-64&age=Y25-74&unit=PC_ACT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-025212
+  eligible: oui
+- serie_id: yth_empl_100?freq=A&sex=T&unit=PC&age=Y15-29&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-055276
+  eligible: oui
+- serie_id: yth_empl_100?freq=A&sex=T&unit=PC&age=Y15-19&age=Y15-24&age=Y20-24&age=Y20-29&age=Y25-29&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-055278
+  eligible: oui
+- serie_id: yth_empl_100?freq=A&sex=T&unit=PC&age=Y15-29&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : taux de chômage 15-74 ans et par âge, par diplôme, par nationalité et pays de naissance
+    (totaux), jeunes par pays de naissance'
+  ligne_id: estat-055279
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002166
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002480
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002525
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002582
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002603
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002943
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y30T34&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002964
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y35T39&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002979
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y40T44&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002994
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y45T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003009
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T54&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003024
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003117
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y55T59&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003132
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y55T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003147
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y60T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003162
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y65T69&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003177
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y70T74&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003228
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003502
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE75&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003547
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002202
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002639
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003261
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=EEC0T1&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003556
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002223
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002660
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003273
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=EEC2&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003568
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002244
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002681
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003285
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=EEC3&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003580
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002265
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002702
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003297
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003592
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002286
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002723
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003309
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003604
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=4&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002469
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=4&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002931
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=4&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003490
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=4&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003800
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=5&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002472
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=5&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002934
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=5&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003493
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=5&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003803
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6N&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002475
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6N&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002937
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6N&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003496
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6N&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003806
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6Q&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002477
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6Q&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002940
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6Q&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003499
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=6Q&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003809
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002483
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002946
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003505
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003815
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=2&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002925
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=2&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003484
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=2&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003794
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=3&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-002928
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE50&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=3&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003487
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=3&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
+  ligne_id: melodi-003797
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_retropolee_insee
+notes: 'Ventilations par sexe signalées à egalites (ecart_chomage_fh) ; variantes : séries BDM trimestrielles et
+  annuelles (métropole 001787711, 1982-2025), Eurostat une_rt_a.'

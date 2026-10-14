@@ -1,0 +1,371 @@
+id: neet
+libelle: Jeunes de 15 à 29 ans ni en emploi, ni en études, ni en formation (NEET)
+dimension: travail
+sous_theme: chômage
+famille: neet
+variante_principale: oui
+definition: Part des jeunes de 15 à 29 ans qui ne sont ni en emploi, ni en études, ni en formation, en moyenne annuelle
+  (INSEE, enquête Emploi, séries longues).
+unite: '% des jeunes de 15 à 29 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_EEC_SERIES (enquête Emploi, séries longues), mesure PT_SEX_AGE_IN_NEET
+source_serie_id: DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+url_page: https://www.insee.fr/fr/statistiques/8977323
+frequence: annuelle
+premiere_annee: 2003
+derniere_annee: 2025
+nb_points_depuis_2000: 23
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-002492
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Concept nommé dans le contenu de la dimension et cité par deux cadres (Doughnut, OCDE), doté
+  d'une cible européenne de 9 % en 2030 pour les 15-29 ans, en série annuelle INSEE de 2003 à 2025 (23 points).
+note_pertinence: 'Le taux de NEET mesure les jeunes à l''écart à la fois de l''emploi et de la formation : c''est
+  l''indicateur d''insertion des jeunes retenu par l''Union. La cible européenne de 9 % en 2030 fournit une borne
+  officielle. Le libellé Melodi de la mesure est ambigu (« part du sexe et de l''âge dans le nombre de jeunes NEET
+  ») ; le tableau t310 de l''INSEE la présente comme la part de jeunes NEET, à confirmer sur les valeurs.'
+variantes:
+- serie_id: '011818639'
+  source: INSEE BDM
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: bdm-000577
+  eligible: oui
+- serie_id: '010596093'
+  source: INSEE BDM
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: bdm-001099
+  eligible: oui
+- serie_id: edat_lfse_23?freq=A&sex=T&age=Y15-34&wstatus=NEMP&citizen=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-054180
+  eligible: oui
+- serie_id: edat_lfse_23?freq=A&sex=M&sex=F&age=Y15-34&wstatus=NEMP&citizen=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-054181
+  eligible: oui
+- serie_id: edat_lfse_23?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=NEMP&citizen=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-054182
+  eligible: oui
+- serie_id: edat_lfse_28?freq=A&sex=T&age=Y15-34&wstatus=NEMP&c_birth=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-054184
+  eligible: oui
+- serie_id: edat_lfse_28?freq=A&sex=M&sex=F&age=Y15-34&wstatus=NEMP&c_birth=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-054185
+  eligible: oui
+- serie_id: edat_lfse_28?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=NEMP&c_birth=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-054186
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-34&training=NO_FE_NO_NFE&wstatus=INAC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024909
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=M&sex=F&age=Y15-34&training=NO_FE_NO_NFE&wstatus=INAC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024910
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&training=NO_FE_NO_NFE&wstatus=INAC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024911
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-34&training=NO_FE_NO_NFE&wstatus=NEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024912
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=M&sex=F&age=Y15-34&training=NO_FE_NO_NFE&wstatus=NEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024913
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&training=NO_FE_NO_NFE&wstatus=NEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024914
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-34&training=NO_FE_NO_NFE&wstatus=NWANT&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024915
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=M&sex=F&age=Y15-34&training=NO_FE_NO_NFE&wstatus=NWANT&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024916
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&training=NO_FE_NO_NFE&wstatus=NWANT&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024917
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-34&training=NO_FE_NO_NFE&wstatus=UNE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024918
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=M&sex=F&age=Y15-34&training=NO_FE_NO_NFE&wstatus=UNE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024919
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&training=NO_FE_NO_NFE&wstatus=UNE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024920
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-34&training=NO_FE_NO_NFE&wstatus=WANT&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024921
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=M&sex=F&age=Y15-34&training=NO_FE_NO_NFE&wstatus=WANT&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024922
+  eligible: oui
+- serie_id: edat_lfse_20?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&training=NO_FE_NO_NFE&wstatus=WANT&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-024923
+  eligible: oui
+- serie_id: lfsi_neet_a?freq=A&sex=T&age=Y15-29&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-025240
+  eligible: oui
+- serie_id: lfsi_neet_a_h?freq=A&sex=T&unit=PC_POP&age=Y15-29&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-025195
+  eligible: a_verifier
+- serie_id: lfsi_neet_a_h?freq=A&sex=M&sex=F&unit=PC_POP&age=Y15-29&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-025196
+  eligible: a_verifier
+- serie_id: lfsi_neet_a_h?freq=A&sex=T&unit=PC_POP&age=Y15-24&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-025197
+  eligible: a_verifier
+- serie_id: lfsi_neet_a?freq=A&sex=M&sex=F&age=Y15-29&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-025241
+  eligible: oui
+- serie_id: lfsi_neet_a?freq=A&sex=T&age=Y15-24&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: estat-025242
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_4 UNIT_MEASURE=PT_POP_Y15T24
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: m04-000011
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002155
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002156
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002157
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002487
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002488
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002489
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002571
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002572
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002573
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002592
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002593
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002594
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002158
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002159
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T19&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002160
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002490
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002491
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002574
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002575
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y20T24&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002576
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002595
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002596
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y25T29&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_NEET&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-002597
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y15T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i4&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE (séries longues : part et nombre par âge et sexe ; BDM trimestrielle ; ODD 8.i4), Eurostat (lfsi_neet_a,
+    lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
+  ligne_id: melodi-005376
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- libelle_melodi_ambigu
+- unite_a_confirmer
+notes: 'Variantes de contrôle : BDM 011818639 (même définition, trimestrielle, 2003-2026) et Eurostat lfsi_neet_a
+  (15-29 ans, 2003-2025) ; l''ODD national 8.i4 et l''OCDE portent sur les 15-24 ans.'

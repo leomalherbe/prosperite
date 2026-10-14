@@ -1,0 +1,689 @@
+id: duree_hebdomadaire_travail
+libelle: Durée hebdomadaire habituelle du travail
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: duree_travail
+variante_principale: oui
+definition: Nombre moyen d'heures habituellement travaillées par semaine dans l'activité principale par les personnes
+  en emploi de 15 ans ou plus (Eurostat, enquête sur les forces de travail).
+unite: heures par semaine
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_ewhuis (enquête sur les forces de travail)
+source_serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_ewhuis/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-026047
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : une durée moyenne plus courte peut traduire plus de temps libre comme plus
+  de temps partiel subi, alors que les longues durées et le sous-emploi sont mesurés par des fiches retenues.'
+note_pertinence: 'La durée moyenne mélange deux phénomènes opposés pour le bien-être : le surtravail et le sous-emploi.
+  Le cadre Qualité de vie la cite, mais ses extrêmes sont mieux lus par les fiches longues_durees_travail et taux_sous_emploi.
+  Les valeurs vont de 37,2 heures (2000) à 36,8 heures (2025) (API Eurostat, 14/10/2026).'
+variantes:
+- serie_id: '011793626'
+  source: INSEE BDM
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: bdm-000163
+  eligible: oui
+- serie_id: '011818653'
+  source: INSEE BDM
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: bdm-000591
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026017
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026018
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026019
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026020
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026021
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026022
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026023
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026024
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026025
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026029
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026030
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026031
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026032
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026033
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026034
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026035
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026036
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026037
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026038
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026039
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026040
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026041
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026042
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026043
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026044
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026045
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026046
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026048
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026049
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026050
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026051
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026052
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026056
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026057
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026058
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026059
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026060
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026061
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026062
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026063
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026064
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026065
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026066
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026067
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026068
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026069
+  eligible: oui
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026070
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026071
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026072
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026073
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026074
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026075
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026076
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026077
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026078
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026079
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026082
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026083
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026084
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026085
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026086
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026087
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026088
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026089
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026090
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026091
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026092
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026093
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026094
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026095
+  eligible: oui
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026096
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026097
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026098
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=CFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026099
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026100
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026101
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=EMP&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026102
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026103
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026104
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NCFAM&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026105
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026108
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026109
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NSAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026110
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026111
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026112
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SAL&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026113
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026114
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026115
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026116
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026117
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026118
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF_NS&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026119
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026120
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y35-49&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026121
+  eligible: oui
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=SELF_S&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026122
+  eligible: oui
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026026
+  eligible: a_verifier
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026027
+  eligible: a_verifier
+- serie_id: lfsa_ewhun2?freq=A&nace_r2=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026028
+  eligible: a_verifier
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026053
+  eligible: a_verifier
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y15-24&age=Y15-34&age=Y15-64&age=Y20-64&age=Y25-54&age=Y25-64&age=Y_GE50&age=Y55-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026054
+  eligible: a_verifier
+- serie_id: lfsa_ewhuis?freq=A&isco08=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y_GE15&sex=M&sex=F&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026055
+  eligible: a_verifier
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026080
+  eligible: non
+- serie_id: lfsa_ewhan2?freq=A&nace_r2=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y15-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026081
+  eligible: non
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y_GE15&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026106
+  eligible: non
+- serie_id: lfsa_ewhais?freq=A&isco08=TOTAL&wstatus=NRP&worktime=TOTAL&age=Y15-64&sex=T&unit=HR&geo=FR
+  source: Eurostat
+  nature: Eurostat durées habituelles et effectives (lfsa_ewhuis, lfsa_ewhun2, lfsa_ewhais, lfsa_ewhan2) ; INSEE
+    BDM heures par emploi (2014-2026) et durée annuelle effective des comptes nationaux
+  ligne_id: estat-026107
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2014
+- rupture_2021
+- rupture_2024
+notes: ''

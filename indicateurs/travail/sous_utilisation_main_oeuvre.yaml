@@ -1,0 +1,217 @@
+id: sous_utilisation_main_oeuvre
+libelle: Part des personnes contraintes dans leur offre de travail (chômage, halo, sous-emploi)
+dimension: travail
+sous_theme: chômage
+famille: sous_utilisation
+variante_principale: oui
+definition: Part des personnes de 15 à 64 ans au chômage, dans le halo autour du chômage ou en sous-emploi parmi
+  les participants au marché du travail (personnes en emploi, au chômage ou dans le halo) ; INSEE, enquête Emploi,
+  série trimestrielle corrigée des variations saisonnières, champ France entière.
+unite: '% des participants au marché du travail de 15 à 64 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, enquête Emploi trimestrielle (indicateurs complémentaires)
+source_serie_id: '011818634'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011818634
+url_page: https://www.insee.fr/fr/statistiques/serie/011818634
+frequence: trimestrielle
+premiere_annee: 2003
+derniere_annee: 2026
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000104
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure synthétique de la sous-utilisation du travail retenue par l'OCDE (13_2), série INSEE
+  trimestrielle de 2003 à 2026 sans équivalent annuel de même définition, alors que la série Eurostat lfsi_sla_a
+  ne commence qu'en 2014 et porte le drapeau « définition différente » depuis 2021.
+note_pertinence: 'L''indicateur additionne chômage, halo et sous-emploi : il résume en un chiffre l''écart entre
+  le travail souhaité et le travail obtenu. Il recoupe les fiches taux_chomage, halo_chomage et taux_sous_emploi
+  : à surveiller au contrôle de redondance (ensemble ou composantes). Les variantes européennes (capacités excédentaires,
+  de 20,0 % en 2014 à 15,0 % en 2025) et de l''OCDE (2007-2025) ont des définitions voisines.'
+variantes:
+- serie_id: '011818632'
+  source: INSEE BDM
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: bdm-000102
+  eligible: oui
+- serie_id: '011818633'
+  source: INSEE BDM
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: bdm-000103
+  eligible: oui
+- serie_id: lfsi_sla_a?freq=A&wstatus=SLACK&sex=T&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025231
+  eligible: oui
+- serie_id: lfsi_sla_a_h?freq=A&age=Y15-74&wstatus=SLACK&unit=PC_ELF&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025186
+  eligible: non
+- serie_id: lfsi_sla_a_h?freq=A&age=Y15-24&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&wstatus=SLACK&unit=PC_ELF&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025187
+  eligible: non
+- serie_id: lfsi_sla_a_h?freq=A&age=Y15-74&wstatus=SLACK&unit=PC_ELF&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025188
+  eligible: non
+- serie_id: lfsi_sla_a?freq=A&wstatus=SLACK&sex=M&sex=F&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025232
+  eligible: oui
+- serie_id: lfsi_sla_a?freq=A&wstatus=SLACK&sex=T&age=Y15-24&age=Y15-29&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025233
+  eligible: oui
+- serie_id: lfsi_sla_a?freq=A&wstatus=UNE&sex=T&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025237
+  eligible: oui
+- serie_id: lfsi_sla_a_h?freq=A&age=Y15-74&wstatus=UNE&unit=PC_ELF&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025192
+  eligible: oui
+- serie_id: lfsi_sla_a_h?freq=A&age=Y15-24&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&wstatus=UNE&unit=PC_ELF&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025193
+  eligible: oui
+- serie_id: lfsi_sla_a_h?freq=A&age=Y15-74&wstatus=UNE&unit=PC_ELF&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025194
+  eligible: oui
+- serie_id: lfsi_sla_a?freq=A&wstatus=UNE&sex=M&sex=F&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025238
+  eligible: oui
+- serie_id: lfsi_sla_a?freq=A&wstatus=UNE&sex=T&age=Y15-24&age=Y15-29&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-025239
+  eligible: oui
+- serie_id: lfsa_sup_age?freq=A&wstatus=SLACK&sex=T&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026355
+  eligible: oui
+- serie_id: lfsa_sup_age?freq=A&wstatus=SLACK&sex=M&sex=F&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026356
+  eligible: oui
+- serie_id: lfsa_sup_age?freq=A&wstatus=SLACK&sex=T&age=Y15-24&age=Y20-64&age=Y25-54&age=Y25-74&age=Y55-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026357
+  eligible: oui
+- serie_id: lfsa_sup_edu?freq=A&wstatus=SLACK&isced11=TOTAL&sex=T&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026369
+  eligible: oui
+- serie_id: lfsa_sup_edu?freq=A&wstatus=SLACK&isced11=ED0-2&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&sex=T&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026370
+  eligible: oui
+- serie_id: lfsa_sup_edu?freq=A&wstatus=SLACK&isced11=TOTAL&sex=M&sex=F&age=Y15-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026371
+  eligible: oui
+- serie_id: lfsa_sup_edu?freq=A&wstatus=SLACK&isced11=TOTAL&sex=T&age=Y25-74&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-026372
+  eligible: oui
+- serie_id: lfsa_sup_nat?freq=A&wstatus=SLACK&citizen=TOTAL&age=Y15-74&sex=T&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-054368
+  eligible: oui
+- serie_id: lfsa_sup_nat?freq=A&wstatus=SLACK&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&age=Y15-74&sex=T&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-054369
+  eligible: oui
+- serie_id: lfsa_sup_nat?freq=A&wstatus=SLACK&citizen=TOTAL&age=Y15-74&sex=M&sex=F&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-054370
+  eligible: oui
+- serie_id: lfsa_sup_cob?freq=A&wstatus=SLACK&c_birth=TOTAL&age=Y15-74&sex=T&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-054380
+  eligible: oui
+- serie_id: lfsa_sup_cob?freq=A&wstatus=SLACK&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&age=Y15-74&sex=T&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-054381
+  eligible: oui
+- serie_id: lfsa_sup_cob?freq=A&wstatus=SLACK&c_birth=TOTAL&age=Y15-74&sex=M&sex=F&unit=PC_ELF&geo=FR
+  source: Eurostat
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: estat-054382
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=13_2 UNIT_MEASURE=PT_LF
+  source: OCDE — How's Life? (base du bien-être)
+  nature: INSEE BDM (part des chômeurs, part chômage et halo), Eurostat capacités excédentaires (lfsi_sla_a, lfsa_sup_*),
+    OCDE 13_2
+  ligne_id: m04-000096
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- trimestrielle_agregation_annuelle
+- derniere_annee_partielle
+- recoupe_autres_fiches
+notes: Valeurs Eurostat lues sur l'API le 14/10/2026 (lfsi_sla_a, SLACK, 15-74 ans). Série trimestrielle retenue
+  faute de série annuelle de même définition (consigne de la session mère).

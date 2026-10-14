@@ -1,0 +1,60 @@
+id: contrats_tres_courts
+libelle: Emploi précaire (contrats très courts) au sens d'Eurostat
+dimension: travail
+sous_theme: qualité et sécurité de l'emploi
+famille: emploi_temporaire
+variante_principale: non
+definition: Part des personnes en emploi titulaires d'un contrat de travail de très courte durée (« emploi précaire
+  » du jeu Eurostat de qualité de l'emploi), 15 ans ou plus, toutes branches.
+unite: '% de l''emploi total'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: lfsa_qoe_4ax1r2 (qualité de l'emploi, enquête sur les forces de travail)
+source_serie_id: lfsa_qoe_4ax1r2?freq=A&unit=PC&sex=T&age=Y_GE15&nace_r2=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_qoe_4ax1r2?freq=A&unit=PC&sex=T&age=Y_GE15&nace_r2=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_qoe_4ax1r2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-026473
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Seule mesure des contrats très courts nommés dans le contenu de la dimension, série Eurostat
+  2008-2025 (18 points) marquée « définition différente » depuis 2021.
+note_pertinence: 'La multiplication des contrats de quelques semaines est une forme d''insécurité que la part des
+  CDD ne montre pas. La durée maximale qui définit l''« emploi précaire » n''est pas donnée par l''API (non trouvé)
+  : à lire dans les métadonnées Eurostat avant le gel. Les valeurs vont de 4,8 % (2008) à 3,9 % (2025), ruptures
+  en 2014, 2021 et 2024 (API, 14/10/2026).'
+variantes:
+- serie_id: lfsa_qoe_4ax1r2?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&nace_r2=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_4ax1r2 par sexe et âge
+  ligne_id: estat-026474
+  eligible: oui
+- serie_id: lfsa_qoe_4ax1r2?freq=A&unit=PC&sex=T&age=Y15-64&age=Y20-64&nace_r2=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat lfsa_qoe_4ax1r2 par sexe et âge
+  ligne_id: estat-026475
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- definition_a_verifier
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021_2025
+notes: 'La long-list signale un « champ à vérifier : statistiques d''entreprises » (mot NACE du libellé) : il s''agit
+  bien d''une statistique de l''enquête sur les forces de travail, toutes branches (nace_r2=TOTAL).'

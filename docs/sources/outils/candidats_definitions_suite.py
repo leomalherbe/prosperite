@@ -144,7 +144,7 @@ ITDD_LIGNES = [
     ("taux_rendmt_res_distr.nan", "Rendement des réseaux d'eau potable (part de l'eau non perdue en fuites)", "planete", "haut", "moyen", "non", "", "SISPEA ; 2010-2024"),
     ("vol_prelev.total", "Prélèvements d'eau douce, tous usages (volume)", "planete", "bas", "pression", "partiel", "Eurostat env_wat_abs", "BNPE ; 2014-2022"),
     ("prop_com_catnat.ino", "Part des communes ayant fait l'objet d'un arrêté de catastrophe naturelle pour inondation", "planete", "bas", "resultat", "non", "",
-     "Exposition aux aléas (A14 : cadre de vie en v1) ; dépend aussi des procédures de reconnaissance"),
+     "Exposition aux aléas (A14 : planète en v1, décision du gel 1) ; dépend aussi des procédures de reconnaissance"),
     ("prop_com_catnat.sec", "Part des communes ayant fait l'objet d'un arrêté de catastrophe naturelle pour sécheresse (retrait-gonflement des argiles)", "planete", "bas", "resultat", "non", "",
      "Exposition aux aléas climatiques"),
     ("part_critair_1_0_vp.nan", "Part des voitures particulières Crit'Air 1 ou électriques dans le parc", "planete", "haut", "moyen", "non", "", "SDES (parc automobile) ; 2011-2024"),
@@ -262,7 +262,7 @@ for fichier, ident, lib, unite, rid, com in SDES_LIGNES:
 ODISSE = "Santé publique France — Odissé (Opendatasoft)"
 ODISSE_LIGNES = [
     ("spf_odisse__canicules-nombres-de-jours-de-canicule-france", None, "Nombre de jours-départements en canicule", "planete", "bas", "non", "resultat", "non", "",
-     "canicules-nombres-de-jours-de-canicule-france (nb_jdep_can)", "Exposition aux vagues de chaleur (A14 : cadre de vie en v1) ; 2004-2025 (2003 non couvert)"),
+     "canicules-nombres-de-jours-de-canicule-france (nb_jdep_can)", "Exposition aux vagues de chaleur (A14 : planète en v1, décision du gel 1) ; 2004-2025 (2003 non couvert)"),
     ("spf_odisse__tabagisme-prevalence-selon-le-sexe", "Hommes et Femmes#taux", "Prévalence du tabagisme quotidien (Baromètre de Santé publique France)", "sante", "bas", "oui", "resultat", "oui", "INSEE 010593303",
      "tabagisme-prevalence-selon-le-sexe (taux)", "Enquête Baromètre (18-75 ans) ; 2000, 2005, 2010 puis annuelle depuis 2014 ; l'INSEE reprend la même source"),
     ("spf_odisse__perinatalite-prematurite-france", "FR#tx_prematurite_inf37sa", "Taux de naissances prématurées (< 37 semaines d'aménorrhée)", "sante", "bas", "non", "resultat", "non", "",
@@ -334,7 +334,9 @@ BM_LIGNES = [
     ("SL.TLF.CACT.FM.ZS", "Rapport des taux d'activité femmes / hommes (OIT modélisé)", "egalites", "haut", "resultat", "partiel", "Eurostat lfsa_ergaed", "Estimation modélisée OIT"),
     ("IT.NET.USER.ZS", "Personnes utilisant internet (% de la population)", "education", "haut", "moyen", "oui", "Eurostat isoc_ci_ifp_iu", "UIT"),
     ("SL.GDP.PCAP.EM.KD", "PIB par personne employée (productivité du travail, PPA)", "niveau_de_vie", "haut", "moyen", "partiel", "", "Productivité ; repère économique (A12)"),
-    ("SI.POV.GINI", "Indice de Gini du revenu (Banque mondiale)", "egalites", "bas", "resultat", "oui", "INSEE 010594680", "Reprend EU-SILC : préférer la source nationale"),
+    # Doublon corrigé par M05-prep (14/10/2026, décision de la session mère) : l'idbank 010594680 citée
+    # auparavant est le rapport S80/S20, pas un indice de Gini.
+    ("SI.POV.GINI", "Indice de Gini du revenu (Banque mondiale)", "egalites", "bas", "resultat", "partiel", "", "Reprend EU-SILC : préférer la source nationale ; Gini INSEE dans Melodi, pas d'idbank BDM"),
 ]
 for code, lib, dim, sens, typ, doub, ref, com in BM_LIGNES:
     s = serie_banque_mondiale_phase1(code)

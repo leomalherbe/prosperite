@@ -1,0 +1,79 @@
+id: part_revenu_1_pourcent_riches
+libelle: Part du revenu avant impôt détenue par les 1 % les plus riches
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: concentration_hauts_revenus
+variante_principale: oui
+definition: Part du revenu national avant impôt (après pensions et assurance chômage) perçue par le centile des
+  adultes les plus riches, estimée à partir des données fiscales et des comptes nationaux (World Inequality Database,
+  relayée par Our World in Data).
+unite: '% du revenu national avant impôt'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: World Inequality Database (relais Our World in Data)
+source_jeu: incomes-of-the-richest (OWID), colonne share__welfare_type_before_tax__quantile_richest_1pct
+source_serie_id: https://ourworldindata.org/grapher/incomes-of-the-richest.csv (colonne share__welfare_type_before_tax__quantile_richest_1pct__extrapolated_no)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/incomes-of-the-richest.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/incomes-of-the-richest
+frequence: annuelle
+premiere_annee: 1910
+derniere_annee: 2022
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000214
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de la concentration au sommet fondée sur les données fiscales, annuelle de 2000
+  à 2022 (11,3 % en 2000, 9,6 % en 2013, 12,1 % en 2022), alors que l'enquête EU-SILC saisit mal les très hauts
+  revenus.
+note_pertinence: 'Les enquêtes auprès des ménages sous-estiment les très hauts revenus ; le WID les reconstitue
+  à partir des déclarations fiscales. La série est de niveau 2 (fichier OWID) et s''arrête en 2022 : la fraîcheur
+  devra être surveillée. Elle déroge à la règle « niveau 1 avant niveau 2 » parce que la variante EU-SILC (part
+  du dernier centile, ilc_di01) mesure mal ce concept.'
+variantes:
+- serie_id: ilc_di01?freq=A&quant_inc=P100&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC (ilc_di01) : part du revenu détenue par le dernier centile et par les centiles 95 à 99 (2004-2025)'
+  ligne_id: estat-030747
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=P95&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC (ilc_di01) : part du revenu détenue par le dernier centile et par les centiles 95 à 99 (2004-2025)'
+  ligne_id: estat-030756
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=P96&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC (ilc_di01) : part du revenu détenue par le dernier centile et par les centiles 95 à 99 (2004-2025)'
+  ligne_id: estat-030758
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=P97&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC (ilc_di01) : part du revenu détenue par le dernier centile et par les centiles 95 à 99 (2004-2025)'
+  ligne_id: estat-030760
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=P98&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC (ilc_di01) : part du revenu détenue par le dernier centile et par les centiles 95 à 99 (2004-2025)'
+  ligne_id: estat-030762
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=P99&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC (ilc_di01) : part du revenu détenue par le dernier centile et par les centiles 95 à 99 (2004-2025)'
+  ligne_id: estat-030764
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- niveau_2
+- licence_a_confirmer
+- derniere_annee_2022
+notes: Licence du WID (CC BY) et des fichiers OWID à confirmer dans la fiche source.

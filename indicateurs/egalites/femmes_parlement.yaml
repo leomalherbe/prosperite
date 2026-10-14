@@ -1,0 +1,70 @@
+id: femmes_parlement
+libelle: Part des femmes parmi les membres du Parlement
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_parlement
+variante_principale: oui
+definition: Part des femmes parmi les membres du Parlement national (données de l'Institut européen pour l'égalité
+  entre les hommes et les femmes, jeu Eurostat sdg_05_50).
+unite: '% des membres'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (EIGE)
+source_jeu: sdg_05_50 (indicateurs ODD de l'UE)
+source_serie_id: sdg_05_50?freq=A&org_inst=PARL_NAT&sex=F&unit=PC_WMN&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_50?freq=A&org_inst=PARL_NAT&sex=F&unit=PC_WMN&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_05_50/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2003
+derniere_annee: 2025
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002068
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list democratie ; parité politique rattachée à egalites par le gel 1 (exclusion
+  de democratie : « parité politique et discriminations → egalites », A8) ; à trancher au gel 2'
+raccordement: 'a_etudier : 2000-2002 par le nombre de sièges détenus par des femmes (ODD 5.5.1, OCDE)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de parité politique explicitement rattaché à la dimension (A8), annuel de 2003
+  à 2025 (11,6 % en 2003, 37,2 % en 2025).
+note_pertinence: La part des femmes au Parlement mesure l'accès au pouvoir politique. Elle progresse par paliers
+  aux élections (26,2 % en 2016, 36,3 % en 2017), ce qui en fait une série en escalier. Le sens « haut » vaut jusqu'à
+  la parité, qui fournit un objectif naturel (50 %).
+variantes:
+- serie_id: 'odd_5 : 5_5_1_SG_GEN_PARLN._T.F._T._T._T.PARL_MEM'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'autres sources : OCDE How''s Life 14_5 (2012-2026), ODD 5.5.1 en nombre de sièges (OCDE, 2000-2025),
+    V-Dem via OWID (chambre basse, 1900-2025)'
+  ligne_id: m04-000144
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/share-of-women-in-parliament.csv (colonne wom_parl_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'autres sources : OCDE How''s Life 14_5 (2012-2026), ODD 5.5.1 en nombre de sièges (OCDE, 2000-2025),
+    V-Dem via OWID (chambre basse, 1900-2025)'
+  ligne_id: m04-000194
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_5 UNIT_MEASURE=PT_PARL_MEM
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'autres sources : OCDE How''s Life 14_5 (2012-2026), ODD 5.5.1 en nombre de sièges (OCDE, 2000-2025),
+    V-Dem via OWID (chambre basse, 1900-2025)'
+  ligne_id: m04-000106
+  eligible: a_verifier
+- serie_id: sdg_05_50?freq=A&org_inst=GOV_NAT&sex=F&unit=PC_WMN&geo=FR
+  source: Eurostat
+  nature: 'même jeu : part des femmes au gouvernement (long-list democratie)'
+  ligne_id: estat-002067
+  eligible: oui
+  longlist: democratie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_en_paliers
+notes: ''

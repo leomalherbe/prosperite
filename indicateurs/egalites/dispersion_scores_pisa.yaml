@@ -1,0 +1,66 @@
+id: dispersion_scores_pisa
+libelle: Dispersion des scores PISA en mathématiques (rapport du 9e au 1er décile)
+dimension: egalites
+sous_theme: origine sociale et mobilité
+famille: dispersion_scores_pisa
+variante_principale: oui
+definition: Rapport entre le score en mathématiques au-dessus duquel se situent les 10 % meilleurs élèves de 15
+  ans et celui au-dessous duquel se situent les 10 % les plus faibles (enquête PISA, OCDE How's Life, 6_2_VER).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (How's Life, d'après PISA)
+source_jeu: How's Life? (inégalités verticales, DF_HSL_CWB_INEQ)
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_2_VER UNIT_MEASURE=FCTR_D1_SCR
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB_INEQ,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2018
+derniere_annee: 2022
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000039
+hors_longlist: non
+raccordement: 'a_etudier : cycles PISA 2003-2015 à reprendre dans la base PISA de l''OCDE (non cataloguée)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure cataloguée des inégalités de compétences des élèves (cadre SSF), enquête triennale
+  admise par D17 et D28 (2 valeurs, 2018 et 2022 ; 1,68 en 2022).
+note_pertinence: La dispersion des scores mesure l'écart entre élèves forts et faibles, pas directement l'effet
+  de l'origine sociale ; l'écart de score selon le statut socio-économique (PISA) serait plus pertinent mais n'est
+  pas catalogué. Avec deux valeurs, la série doit être raccordée aux cycles antérieurs.
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_1_VER UNIT_MEASURE=FCTR_D1_SCR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: mêmes rapports en compréhension de l'écrit et en sciences (2018-2022)
+  ligne_id: m04-000037
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_3_VER UNIT_MEASURE=FCTR_D1_SCR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: mêmes rapports en compréhension de l'écrit et en sciences (2018-2022)
+  ligne_id: m04-000041
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_4_VER UNIT_MEASURE=FCTR_D1_SCR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: dispersion des compétences des adultes en calcul et en littératie (PIAAC, 2012 seulement, non éligible)
+  ligne_id: m04-000044
+  eligible: non
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_5_VER UNIT_MEASURE=FCTR_D1_SCR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: dispersion des compétences des adultes en calcul et en littératie (PIAAC, 2012 seulement, non éligible)
+  ligne_id: m04-000046
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- deux_valeurs
+- raccordement_a_etudier
+notes: 'Candidat à cataloguer : écart de score PISA lié au statut économique, social et culturel (base PISA de l''OCDE).'

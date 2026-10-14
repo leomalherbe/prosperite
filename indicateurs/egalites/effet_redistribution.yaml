@@ -1,0 +1,56 @@
+id: effet_redistribution
+libelle: Effet des impôts et des transferts sociaux sur le rapport S80/S20
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: effet_redistribution
+variante_principale: oui
+definition: Réduction du rapport interquintile S80/S20 obtenue par les impôts et les transferts sociaux (EU-SILC,
+  jeu ilc_di11i).
+unite: rapport (sans unité)
+sens: ambigu
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_di11i (EU-SILC)
+source_serie_id: ilc_di11i?freq=A&unit=RAT&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di11i?freq=A&unit=RAT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_di11i/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-030057
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Sens ambigu (l'effet grandit aussi quand les inégalités avant redistribution augmentent) et
+  rupture en 2020 lue sur l'API (3,4 à 4,0 de 2010 à 2019, 5,5 à 6,7 de 2020 à 2025, drapeaux b en 2020 et 2022).
+note_pertinence: L'effet de la redistribution figure dans le contenu de la dimension, mais c'est un indicateur de
+  moyens dont l'interprétation dépend des inégalités primaires. L'information est portée sans ambiguïté par le couple
+  S80/S20 avant et après redistribution, tous deux proposés.
+variantes:
+- serie_id: ilc_di11g?freq=A&unit=RAT&geo=FR
+  source: Eurostat
+  nature: effets séparés des impôts (ilc_di11g) et des transferts sociaux (ilc_di11h) sur le S80/S20
+  ligne_id: estat-030055
+  eligible: oui
+- serie_id: ilc_di11h?freq=A&unit=RAT&geo=FR
+  source: Eurostat
+  nature: effets séparés des impôts (ilc_di11g) et des transferts sociaux (ilc_di11h) sur le S80/S20
+  ligne_id: estat-030056
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- rupture_2020
+- rupture_2022
+notes: ''

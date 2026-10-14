@@ -1,0 +1,62 @@
+id: autonomisation_politique_femmes
+libelle: Indice d'autonomisation politique des femmes (V-Dem)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: indice_composite_genre
+variante_principale: non
+definition: Indice composite du projet V-Dem, de 0 à 1, qui combine les libertés civiles des femmes, leur participation
+  à la société civile et leur représentation politique, à partir d'évaluations d'experts.
+unite: indice (0 à 1)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: V-Dem (relais Our World in Data)
+source_jeu: women-political-empowerment-index (OWID)
+source_serie_id: https://ourworldindata.org/grapher/women-political-empowerment-index.csv (colonne wom_emp_vdem__estimate_best)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/women-political-empowerment-index.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/women-political-empowerment-index
+frequence: annuelle
+premiere_annee: 1900
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000190
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: ecarter
+motif_recommandation: 'Dominé : proche du plafond pour la France (0,929 en 2025), fondé sur des évaluations d''experts,
+  et sa composante mesurable (part des femmes au Parlement) a sa propre fiche.'
+note_pertinence: Les indices V-Dem sont conçus pour comparer des régimes très différents ; pour la France, ils varient
+  peu (52 valeurs distinctes sur 127 ans). Les mesures directes (Parlement, postes de direction) sont plus lisibles
+  et plus sensibles.
+variantes:
+- serie_id: https://ourworldindata.org/grapher/women-civil-liberties-index.csv (colonne wom_civ_libs_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem : libertés civiles des femmes, participation à la société civile, participation politique'
+  ligne_id: m04-000191
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/women-civil-society-participation-index.csv (colonne wom_civ_soc_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem : libertés civiles des femmes, participation à la société civile, participation politique'
+  ligne_id: m04-000192
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/women-political-participation-index.csv (colonne wom_pol_par_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem : libertés civiles des femmes, participation à la société civile, participation politique'
+  ligne_id: m04-000193
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite
+- niveau_2
+- evaluation_experts
+notes: 'Série OWID : 1851 puis 1900-2025 ; premiere_annee ramenée à 1900, borne basse du contrôle de scripts/verifier_fiches.py
+  (1900-2100), à élargir.'

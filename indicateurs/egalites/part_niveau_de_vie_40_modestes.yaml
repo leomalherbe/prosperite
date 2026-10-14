@@ -1,0 +1,410 @@
+id: part_niveau_de_vie_40_modestes
+libelle: Part du niveau de vie total détenue par les 40 % les plus modestes
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: inegalite_revenu
+variante_principale: non
+definition: Part de la masse totale des niveaux de vie détenue par les 40 % de personnes aux niveaux de vie les
+  plus faibles (enquête ERFS, données rétropolées, France métropolitaine).
+unite: '% de la masse des niveaux de vie'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure S40_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S40_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S40_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005348
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Mesure liée à la cible ODD 10.1 (revenus des 40 % les plus modestes) et indicateur ODD national
+  10.i1, publiée par l'INSEE de 1996 à 2024 (25 points depuis 2000), proposée comme alternative au S80/S20.
+note_pertinence: 'Cette part se lit directement comme la place des plus modestes dans le revenu national, ce qui
+  la rend intelligible pour le public. C''est le dénominateur du ratio de Palma : les deux ne doivent pas être retenus
+  ensemble.'
+variantes:
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S20_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005115
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S50_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005117
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S80_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005119
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S90_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005122
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D0TD1&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005123
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D1TD2&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005124
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D2TD3&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005125
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D3TD4&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005126
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D4TD5&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005127
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5TD6&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005128
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D6TD7&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005129
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D7TD8&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005130
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D8TD9&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005131
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D9TD10&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005132
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S20_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005347
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S50_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005349
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S80_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005352
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S90_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005355
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S20_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-004965
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S50_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-004967
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S80_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-004969
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S90_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-004972
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D0TD1&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004973
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D1TD2&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004974
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D2TD3&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004975
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D3TD4&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004976
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D4TD5&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004977
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5TD6&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004978
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D6TD7&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004979
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D7TD8&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004980
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D8TD9&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004981
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D9TD10&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-004982
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S20_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005040
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S50_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005042
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S80_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005044
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S90_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autres parts cumulées du niveau de vie (20 %, 50 %, 80 % et 90 % les plus modestes), rétropolées et non
+    rétropolées (long-list niveau_de_vie)
+  ligne_id: melodi-005047
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D0TD1&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005048
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D1TD2&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005049
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D2TD3&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005050
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D3TD4&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005051
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D4TD5&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005052
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5TD6&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005053
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D6TD7&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005054
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D7TD8&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005055
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D8TD9&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005056
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S_SL_D&GEO=FRANCE-FM&PCS=_T&QUANTILE=D9TD10&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: part de la masse de niveau de vie détenue par chaque décile (INSEE, non rétropolé ; long-list niveau_de_vie)
+  ligne_id: melodi-005057
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: '010754805'
+  source: INSEE BDM
+  nature: INSEE, indicateur ODD 10.i1 (BDM 010754805 et copie Melodi), 2010-2023
+  ligne_id: bdm-000980
+  eligible: oui
+- serie_id: sdg_10_50?freq=A&statinfo=SHARE&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-002099
+  eligible: oui
+- serie_id: ilc_di11f?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030052
+  eligible: oui
+- serie_id: ilc_di11f?freq=A&age=Y_LT65&age=Y_GE65&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030053
+  eligible: oui
+- serie_id: ilc_di11f?freq=A&age=TOTAL&sex=M&sex=F&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030054
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=D1&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030726
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=D2&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030729
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=D3&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030731
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=D4&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : part du revenu des 40 % inférieurs (sdg_10_50, 2000-2025), rapport S40/S100 (ilc_di11f) avec
+    ventilations, parts des quatre premiers déciles (ilc_di01)'
+  ligne_id: estat-030733
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S40_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-005116
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S40&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=10.i1&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE, indicateur ODD 10.i1 (BDM 010754805 et copie Melodi), 2010-2023
+  ligne_id: melodi-005485
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S40_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-004966
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S40_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-005041
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_FM
+- serie_retropolee
+notes: ''

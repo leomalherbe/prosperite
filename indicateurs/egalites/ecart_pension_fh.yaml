@@ -1,0 +1,114 @@
+id: ecart_pension_fh
+libelle: Écart de pension moyenne entre hommes et femmes (65 ans ou plus)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: ecart_pension_fh
+variante_principale: oui
+definition: Écart relatif entre la pension moyenne des hommes et celle des femmes de 65 ans ou plus percevant une
+  pension, en pourcentage de la pension des hommes (EU-SILC, jeu ilc_pnp13).
+unite: '% de la pension moyenne des hommes'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_pnp13 (EU-SILC, adéquation des pensions)
+source_serie_id: ilc_pnp13?freq=A&age=Y_GE65&unit=PC&statinfo=AVG&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pnp13?freq=A&age=Y_GE65&unit=PC&statinfo=AVG&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_pnp13/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2015
+derniere_annee: 2025
+nb_points_depuis_2000: 11
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-030680
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure cataloguée de l'écart de retraite, qui cumule les écarts de carrière, annuelle
+  de 2015 à 2025 (34,1 % en 2015, 26,6 % en 2025, rupture en 2022).
+note_pertinence: L'écart de pension est l'aboutissement des écarts d'emploi, de temps de travail et de salaire tout
+  au long de la vie, et il pèse sur la pauvreté des femmes âgées. Il baisse d'environ 0,7 point par an. La série
+  ne commence qu'en 2015 (11 points), sans raccordement possible au catalogue.
+variantes:
+- serie_id: ilc_pnp10?freq=A&statinfo=R_MED_I&hhcomp=A1&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: différence femmes-hommes du rapport entre le revenu médian des 65 ans ou plus (ou 60 ans ou plus) et celui
+    des plus jeunes (ilc_pnp10, ilc_pns11), avec ventilations
+  ligne_id: estat-030669
+  eligible: oui
+- serie_id: ilc_pnp10?freq=A&statinfo=R_MED_I&hhcomp=A1&age=Y_GE65&sex=M&sex=F&sex=DIFF&geo=FR
+  source: Eurostat
+  nature: différence femmes-hommes du rapport entre le revenu médian des 65 ans ou plus (ou 60 ans ou plus) et celui
+    des plus jeunes (ilc_pnp10, ilc_pns11), avec ventilations
+  ligne_id: estat-030670
+  eligible: oui
+- serie_id: ilc_pns11?freq=A&statinfo=R_MED_I&hhcomp=TOTAL&age=Y_GE60&sex=T&geo=FR
+  source: Eurostat
+  nature: différence femmes-hommes du rapport entre le revenu médian des 65 ans ou plus (ou 60 ans ou plus) et celui
+    des plus jeunes (ilc_pnp10, ilc_pns11), avec ventilations
+  ligne_id: estat-030671
+  eligible: oui
+- serie_id: ilc_pns11?freq=A&statinfo=R_MED_I&hhcomp=A1&age=Y_GE60&sex=T&geo=FR
+  source: Eurostat
+  nature: différence femmes-hommes du rapport entre le revenu médian des 65 ans ou plus (ou 60 ans ou plus) et celui
+    des plus jeunes (ilc_pnp10, ilc_pns11), avec ventilations
+  ligne_id: estat-030672
+  eligible: oui
+- serie_id: ilc_pns11?freq=A&statinfo=R_MED_I&hhcomp=TOTAL&age=Y_GE65&age=Y_GE75&sex=T&geo=FR
+  source: Eurostat
+  nature: différence femmes-hommes du rapport entre le revenu médian des 65 ans ou plus (ou 60 ans ou plus) et celui
+    des plus jeunes (ilc_pnp10, ilc_pns11), avec ventilations
+  ligne_id: estat-030673
+  eligible: oui
+- serie_id: ilc_pns11?freq=A&statinfo=R_MED_I&hhcomp=TOTAL&age=Y_GE60&sex=M&sex=F&sex=DIFF&geo=FR
+  source: Eurostat
+  nature: différence femmes-hommes du rapport entre le revenu médian des 65 ans ou plus (ou 60 ans ou plus) et celui
+    des plus jeunes (ilc_pnp10, ilc_pns11), avec ventilations
+  ligne_id: estat-030674
+  eligible: oui
+- serie_id: ilc_pnp11?freq=A&unit=NR&geo=FR
+  source: Eurostat
+  nature: écart femmes-hommes de taux de couverture des retraites (ilc_pnp14) et de taux de remplacement agrégé
+    (ilc_pnp11)
+  ligne_id: estat-030677
+  eligible: oui
+- serie_id: ilc_pnp13?freq=A&age=Y65-74&age=Y65-79&unit=PC&statinfo=AVG&geo=FR
+  source: Eurostat
+  nature: ventilation par âge (65-74 ans, 65-79 ans) et écart médian (ilc_pnp13m)
+  ligne_id: estat-030681
+  eligible: oui
+- serie_id: ilc_pnp13m?freq=A&statinfo=MED&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par âge (65-74 ans, 65-79 ans) et écart médian (ilc_pnp13m)
+  ligne_id: estat-030682
+  eligible: oui
+- serie_id: ilc_pnp13m?freq=A&statinfo=MED&age=Y65-74&age=Y65-79&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par âge (65-74 ans, 65-79 ans) et écart médian (ilc_pnp13m)
+  ligne_id: estat-030683
+  eligible: oui
+- serie_id: ilc_pnp14?freq=A&age=Y_GE65&unit=NR&geo=FR
+  source: Eurostat
+  nature: écart femmes-hommes de taux de couverture des retraites (ilc_pnp14) et de taux de remplacement agrégé
+    (ilc_pnp11)
+  ligne_id: estat-030684
+  eligible: oui
+- serie_id: ilc_pnp14?freq=A&age=Y65-74&age=Y65-79&unit=NR&geo=FR
+  source: Eurostat
+  nature: écart femmes-hommes de taux de couverture des retraites (ilc_pnp14) et de taux de remplacement agrégé
+    (ilc_pnp11)
+  ligne_id: estat-030685
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2022
+- debut_2015
+notes: ''

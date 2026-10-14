@@ -1,0 +1,56 @@
+id: inegalite_satisfaction_vie
+libelle: Inégalité de satisfaction dans la vie (rapport entre les quintiles supérieur et inférieur des notes)
+dimension: egalites
+sous_theme: perceptions des inégalités
+famille: inegalite_satisfaction_vie
+variante_principale: oui
+definition: Rapport entre la note moyenne de satisfaction dans la vie des 20 % les plus satisfaits et celle des
+  20 % les moins satisfaits (OCDE How's Life, 11_1_VER, d'après EU-SILC).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: OCDE (How's Life, d'après EU-SILC)
+source_jeu: How's Life? (inégalités verticales, DF_HSL_CWB_INEQ)
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_1_VER UNIT_MEASURE=FCTR_Q1_SCR_LIFE_SATISFACTION
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB_INEQ,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 6
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000074
+hors_longlist: non
+raccordement: 'a_etudier : recalcul possible sur la distribution des notes de satisfaction d''EU-SILC (ilc_pw01)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de l'inégalité de bien-être de l'OCDE, six valeurs de 2013 à 2024 (2013, 2018, 2021
+  à 2024 ; 2,08 en 2024), admise par D17.
+note_pertinence: L'inégalité de satisfaction dans la vie mesure la dispersion du bien-être lui-même, et non de ses
+  déterminants. Le niveau moyen reste dans liens_bien_etre (A1, R3). Avec six valeurs, la série gagnerait à être
+  recalculée chaque année à partir d'EU-SILC.
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=4_4_VER UNIT_MEASURE=FCTR_Q1_SCR_TIME_USE
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même rapport pour la satisfaction à l'égard des relations personnelles (7_3_VER) et de l'emploi du temps
+    (4_4_VER, thème hors v1, A4), 3 valeurs chacun
+  ligne_id: m04-000029
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_3_VER UNIT_MEASURE=FCTR_Q1_SCR_PERS_REL_SATISFACTION
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même rapport pour la satisfaction à l'égard des relations personnelles (7_3_VER) et de l'emploi du temps
+    (4_4_VER, thème hors v1, A4), 3 valeurs chacun
+  ligne_id: m04-000056
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+notes: ''

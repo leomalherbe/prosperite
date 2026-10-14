@@ -1,0 +1,110 @@
+id: ratio_palma
+libelle: Ratio de Palma du niveau de vie (masse des 10 % les plus aisés rapportée à celle des 40 % les plus modestes)
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: inegalite_revenu
+variante_principale: non
+definition: Rapport entre la masse des niveaux de vie détenue par les 10 % de personnes les plus aisées et celle
+  détenue par les 40 % les plus modestes, après impôts directs et prestations sociales (enquête ERFS, données rétropolées,
+  France métropolitaine).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure S90S40_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S40_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S40_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005353
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Statistique retenue par le Doughnut, qui fixe un seuil de privation à un ratio de Palma de
+  2, publiée par l'INSEE de 1996 à 2024 (25 points depuis 2000) et proposée comme alternative au S80/S20.
+note_pertinence: 'Le Palma compare directement le haut et le bas de la distribution, là où se concentrent les variations
+  des inégalités. Calculé sur EU-SILC (ilc_di01 : part du 10e décile rapportée aux parts des deux premiers quintiles),
+  il vaut environ 1,04 en 2018 et 1,14 en 2025, bien sous le seuil de 2 du Doughnut ; mesuré avant impôts par le
+  WID, il atteint 2,64 en 2022. Le seuil du Doughnut, défini pour des comparaisons mondiales, ne convient donc pas
+  tel quel comme borne en France.'
+variantes:
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S50_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: rapport voisin S90/S50 (10 % les plus aisés contre 50 % les plus modestes), rétropolé et non rétropolé
+    (lignes de la long-list niveau_de_vie)
+  ligne_id: melodi-005121
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S50_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: rapport voisin S90/S50 (10 % les plus aisés contre 50 % les plus modestes), rétropolé et non rétropolé
+    (lignes de la long-list niveau_de_vie)
+  ligne_id: melodi-005354
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S50_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: rapport voisin S90/S50 (10 % les plus aisés contre 50 % les plus modestes), rétropolé et non rétropolé
+    (lignes de la long-list niveau_de_vie)
+  ligne_id: melodi-004971
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S50_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: rapport voisin S90/S50 (10 % les plus aisés contre 50 % les plus modestes), rétropolé et non rétropolé
+    (lignes de la long-list niveau_de_vie)
+  ligne_id: melodi-005046
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: ilc_di01?freq=A&quant_inc=D10&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'composantes EU-SILC (ilc_di01) : part du 10e décile et parts des deux premiers quintiles du revenu ;
+    Palma = D10 / (QU1 + QU2)'
+  ligne_id: estat-030728
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=QU1&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'composantes EU-SILC (ilc_di01) : part du 10e décile et parts des deux premiers quintiles du revenu ;
+    Palma = D10 / (QU1 + QU2)'
+  ligne_id: estat-030773
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=QU2&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'composantes EU-SILC (ilc_di01) : part du 10e décile et parts des deux premiers quintiles du revenu ;
+    Palma = D10 / (QU1 + QU2)'
+  ligne_id: estat-030775
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S40_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-005120
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S40_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-004970
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S90S40_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-005045
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_FM
+- serie_retropolee
+notes: 'Valeurs EU-SILC calculées à partir des parts ilc_di01 lues sur l''API Eurostat le 14/10/2026 (D10 : 23,9
+  et 24,6 ; QU1 : 8,9 et 8,2 ; QU2 : 14,0 et 13,4, en 2018 et 2025).'

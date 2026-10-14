@@ -1,0 +1,55 @@
+id: ecart_besoins_soins_revenu
+libelle: Écart de renoncement aux soins médicaux entre les 20 % les plus modestes et les 20 % les plus aisés
+dimension: egalites
+sous_theme: santé
+famille: ecart_acces_soins_revenu
+variante_principale: oui
+definition: Part des personnes de 16 ans ou plus déclarant un besoin d'examen ou de traitement médical non satisfait
+  pour des raisons de coût, de distance ou d'attente dans le quintile de revenu le plus bas moins la même part dans
+  le quintile le plus élevé, en points (EU-SILC, jeu hlth_silc_08).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: hlth_silc_08 (besoins médicaux non satisfaits par quintile de revenu)
+source_serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&reason=TXP_TFAR_WLIST&age=Y_GE16&sex=T&geo=FR
+formule: part déclarant un besoin non satisfait (quant_inc=QU1) - même part (quant_inc=QU5)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_silc_08?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&reason=TXP_TFAR_WLIST&age=Y_GE16&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_silc_08/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-020068
+hors_longlist: non
+rattachement_propose: ligne de la long-list sante (ventilation par quintile de revenu) ; l'écart construit relève
+  d'egalites (accès aux soins, R3), le niveau reste dans sante ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur une série annuelle de 2008 à 2025 (18 points) qui mesure l'inégalité d'accès
+  aux soins selon le revenu, distincte du niveau de renoncement suivi dans sante.
+note_pertinence: Le renoncement aux soins pour raisons financières touche d'abord les plus modestes ; l'écart entre
+  quintiles mesure cette inégalité. Les valeurs sont faibles en France, ce qui rend l'écart sensible aux aléas d'échantillon.
+variantes:
+- serie_id: hlth_silc_09?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&reason=TXP_TFAR_WLIST&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même écart pour les soins dentaires (hlth_silc_09 ; long-list sante)
+  ligne_id: estat-020178
+  eligible: oui
+  longlist: sante
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- faible_precision
+- composantes_autre_longlist
+notes: ''

@@ -1,0 +1,139 @@
+id: ecart_pauvrete_etrangers
+libelle: Écart de taux de pauvreté entre étrangers et Français (18 ans ou plus)
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_pauvrete_origine
+variante_principale: oui
+definition: Taux de pauvreté monétaire (seuil de 60 % du revenu médian) des personnes de 18 ans ou plus de nationalité
+  étrangère moins celui des personnes de nationalité française, en points (EU-SILC, jeu ilc_li31).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_li31 (taux de risque de pauvreté par nationalité)
+source_serie_id: ilc_li31?freq=A&citizen=FOR&citizen=NAT&age=Y_GE18&sex=T&unit=PC&geo=FR
+composantes:
+- ilc_li31?freq=A&citizen=FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+- ilc_li31?freq=A&citizen=NAT&age=Y_GE18&sex=T&unit=PC&geo=FR
+formule: taux de pauvreté (citizen=FOR) - taux de pauvreté (citizen=NAT)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li31?freq=A&citizen=FOR&citizen=NAT&age=Y_GE18&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_li31/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054671 ; estat-054674
+hors_longlist: non
+rattachement_propose: lignes de la long-list niveau_de_vie (taux de pauvreté par nationalité) ; l'écart construit
+  relève d'egalites (A8, R3), les niveaux restent dans niveau_de_vie ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur deux séries annuelles de 2004 à 2025 (22 points), très stable et de signe
+  constant (32,8 % contre 11,8 % en 2004, 34,0 % contre 12,8 % en 2025).
+note_pertinence: 'Les étrangers ont un risque de pauvreté presque trois fois plus élevé que les Français, sans réduction
+  depuis vingt ans. La nationalité exclut les immigrés devenus Français ; la variante par pays de naissance (ilc_li32)
+  ne commence qu''en 2015 au catalogue. Petits effectifs : la série est heurtée (37,8 % en 2013 et 2019, 39,7 %
+  en 2020).'
+variantes:
+- serie_id: ilc_li31?freq=A&citizen=EU27_2020_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054665
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li31?freq=A&citizen=EU28_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054668
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2020_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054680
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li31?freq=A&citizen=NEU28_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054683
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=EU27_2020_FOR&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054686
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=FOR&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054689
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NAT&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054692
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NEU27_2020_FOR&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054695
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li33?freq=A&unit=PC&citizen=FOR&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054698
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li34?freq=A&unit=PC&c_birth=FOR&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054700
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li33?freq=A&unit=PC&citizen=NAT&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054699
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_li34?freq=A&unit=PC&c_birth=NAT&geo=FR
+  source: Eurostat
+  nature: autres groupes de nationalité (UE, hors UE) (ilc_li31), pays de naissance (ilc_li32, 2015-2025) et enfants
+    selon la nationalité ou le pays de naissance de leurs parents (ilc_li33, ilc_li34) (long-list niveau_de_vie)
+  ligne_id: estat-054701
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- faible_precision
+- rupture_2020
+- rupture_2022
+- composantes_autre_longlist
+notes: ''

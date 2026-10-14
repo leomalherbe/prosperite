@@ -1,0 +1,68 @@
+id: ecart_salaire_eqtp_fh
+libelle: Écart de salaire net moyen en équivalent temps plein entre hommes et femmes (secteur privé)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: ecart_salaire_fh
+variante_principale: non
+definition: Écart relatif entre le salaire net mensuel moyen en équivalent temps plein des hommes et celui des femmes,
+  en pourcentage du salaire des hommes, salariés du secteur privé (base Tous salariés, tous volumes de travail convertis
+  en équivalent temps plein).
+unite: '% du salaire net moyen des hommes'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_DERA_PRIVE_SERIES_LONGUES (séries longues de salaires du privé)
+source_serie_id: 'DS_DERA_PRIVE_SERIES_LONGUES : (SEX=M - SEX=F) / SEX=M, mesure SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS,
+  WKTIME=_T'
+composantes:
+- DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=M&UNIT_MEASURE=XDC&WKTIME=_T
+- DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=F&UNIT_MEASURE=XDC&WKTIME=_T
+formule: (salaire net EQTP moyen des hommes - salaire net EQTP moyen des femmes) / salaire net EQTP moyen des hommes
+  x 100
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=M&UNIT_MEASURE=XDC&WKTIME=_T
+url_page: https://www.insee.fr/fr/outil-interactif/5369554/series-longues-dans-le-secteur-prive
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-004138 ; melodi-004136
+hors_longlist: non
+rattachement_propose: lignes de la long-list niveau_de_vie (salaires moyens par sexe) ; l'écart construit relève
+  d'egalites (R3), les niveaux restent dans niveau_de_vie ; à trancher au gel 2
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Écart calculé sur deux séries annuelles de l'INSEE de 1996 à 2024 (25 points depuis 2000),
+  plus longues que l'indicateur européen, proposé comme alternative dans la famille ecart_salaire_fh.
+note_pertinence: 'C''est la mesure que l''INSEE commente chaque année pour le secteur privé ; elle neutralise le
+  temps partiel mais pas les différences de poste. Elle couvre 2000-2005, absent de l''indicateur européen, et peut
+  servir à le raccorder. L''écart est à calculer : il ne figure pas tel quel au catalogue.'
+variantes:
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=F&UNIT_MEASURE=XDC&WKTIME=FT
+  source: INSEE Melodi
+  nature: salaires nets moyens des postes à temps complet par sexe, depuis 1951 (INSEE ; long-list niveau_de_vie)
+  ligne_id: melodi-004135
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=M&UNIT_MEASURE=XDC&WKTIME=FT
+  source: INSEE Melodi
+  nature: salaires nets moyens des postes à temps complet par sexe, depuis 1951 (INSEE ; long-list niveau_de_vie)
+  ligne_id: melodi-004137
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- champ_secteur_prive
+- composantes_autre_longlist
+- champ_geo_1999_2000
+notes: 'Champ du jeu Melodi : France métropolitaine jusqu''en 1999, France ensuite (description du catalogue Melodi).'

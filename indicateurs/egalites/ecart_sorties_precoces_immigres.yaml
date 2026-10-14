@@ -1,0 +1,59 @@
+id: ecart_sorties_precoces_immigres
+libelle: Écart de sorties précoces du système scolaire entre jeunes nés hors de l'UE et jeunes nés en France (18-24
+  ans)
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_education_origine
+variante_principale: oui
+definition: Part des 18-24 ans sans diplôme du second cycle du secondaire et hors formation parmi les jeunes nés
+  hors de l'UE moins la même part parmi les jeunes nés en France, en points (jeu Eurostat edat_lfse_02).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: edat_lfse_02 (sorties précoces par pays de naissance)
+source_serie_id: edat_lfse_02?freq=A&sex=T&wstatus=POP&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&age=Y18-24&unit=PC&geo=FR
+formule: taux de sortie précoce (c_birth=NEU27_2020_FOR) - taux de sortie précoce (c_birth=NAT)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_02?freq=A&sex=T&wstatus=POP&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&age=Y18-24&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_02/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054201
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list education (ventilation par pays de naissance) ; l''écart construit
+  relève d''egalites (exclusion d''education : écarts selon l''origine → egalites) ; à trancher au gel 2'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Écart construit sur une série annuelle de 2006 à 2025 pour les jeunes nés hors de l'UE (21,4
+  % en 2006, 12,7 % en 2025, lu sur l'API), qui mesure la réussite scolaire selon l'origine (A8).
+note_pertinence: Le taux de sortie précoce des jeunes nés hors de l'UE a beaucoup baissé, avec des ruptures en 2013,
+  2014, 2021 et 2024 (drapeaux b) qui imposent la prudence. Le catalogue indique 2004 comme première année pour
+  le paquet de modalités, mais la modalité « nés hors UE » ne commence qu'en 2006.
+variantes:
+- serie_id: edat_lfse_01?freq=A&sex=T&wstatus=POP&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: même écart selon la nationalité (edat_lfse_01 ; long-list education)
+  ligne_id: estat-054198
+  eligible: oui
+  longlist: education
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- rupture_2013
+- rupture_2021
+- rupture_2024
+- faible_precision
+- composantes_autre_longlist
+notes: Période et nombre de points de la modalité « nés hors UE » lus sur l'API Eurostat le 14/10/2026 (2006-2025).

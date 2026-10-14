@@ -1,0 +1,60 @@
+id: revenu_relatif_seniors
+libelle: Revenu médian des 65 ans ou plus rapporté à celui des moins de 65 ans
+dimension: egalites
+sous_theme: générations
+famille: revenu_relatif_seniors
+variante_principale: oui
+definition: Rapport entre le revenu disponible équivalent médian des personnes de 65 ans ou plus et celui des moins
+  de 65 ans (EU-SILC, jeu ilc_pnp2).
+unite: rapport (sans unité)
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_pnp2 (EU-SILC et PCM)
+source_serie_id: ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_pnp2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-030665
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : le rapport passe au-dessus puis au-dessous de 1 (0,90 en 2000, 1,04 en 2015
+  et 2018, 0,97 en 2025), et un écart dans un sens ou dans l''autre n''a pas la même lecture.'
+note_pertinence: Un rapport dont la parité (1) est l'optimum ne peut pas être normalisé entre un seuil et un objectif.
+  L'écart de pauvreté entre jeunes et seniors, de signe constant, est préféré pour les générations.
+variantes:
+- serie_id: ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe et même rapport pour les 60 ans ou plus (ilc_pns2)
+  ligne_id: estat-030666
+  eligible: oui
+- serie_id: ilc_pns2?freq=A&statinfo=R_MED_I&age=Y_GE60&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe et même rapport pour les 60 ans ou plus (ilc_pns2)
+  ligne_id: estat-030667
+  eligible: oui
+- serie_id: ilc_pns2?freq=A&statinfo=R_MED_I&age=Y_GE60&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe et même rapport pour les 60 ans ou plus (ilc_pns2)
+  ligne_id: estat-030668
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- rupture_2020
+- rupture_2022
+notes: ''

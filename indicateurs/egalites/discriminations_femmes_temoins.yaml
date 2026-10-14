@@ -1,0 +1,48 @@
+id: discriminations_femmes_temoins
+libelle: Part des personnes témoins de discriminations envers les femmes au cours des douze derniers mois
+dimension: egalites
+sous_theme: discriminations
+famille: discriminations_femmes_temoins
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus déclarant avoir été témoins, au cours des douze derniers mois,
+  de discriminations liées au fait d'être une femme (baromètre d'opinion de la DREES, question CS09, modalité «
+  oui », non-réponses au dénominateur).
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable CS09, modalités 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: irreguliere
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 10
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000267
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure cataloguée des discriminations envers les femmes, 10 valeurs de 2014 à 2025 (D17
+  ; 17,3 % en 2014, 15,7 % en 2025, creux de 14,1 % en 2020).
+note_pertinence: 'Être témoin de discriminations dépend aussi de la sensibilité au sujet, qui a pu augmenter après
+  2017 : une hausse ne signifie pas forcément plus de discriminations. La même enquête interroge sur les discriminations
+  liées à l''origine ethnique (CS16_1, 2015-2025), non cataloguées : à ajouter (voir la liste de maintenance).'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- perception
+- champ_geo_a_corriger
+notes: 'Catalogue M04 : geo FR à corriger en FM (maintenance n° 4).'

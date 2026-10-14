@@ -1,0 +1,196 @@
+id: rapport_s80_s20
+libelle: Rapport interquintile S80/S20 du niveau de vie (masses détenues par les 20 % les plus aisés et les 20 %
+  les plus modestes)
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: inegalite_revenu
+variante_principale: oui
+definition: Rapport entre la masse des niveaux de vie détenue par les 20 % de personnes les plus aisées et celle
+  détenue par les 20 % les plus modestes, après impôts directs et prestations sociales (enquête Revenus fiscaux
+  et sociaux, données rétropolées, France métropolitaine, ménages ordinaires).
+unite: rapport (sans unité)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure S80S20_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005350
+hors_longlist: non
+rattachement_propose: ligne de la long-list niveau_de_vie (étiquette v0 « niveau_de_vie » du jeu INSEE) ; rattachement
+  proposé à egalites (indicateur de dispersion, R3), à trancher au gel 2
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans les cinq cadres de référence (inégalité de revenu) et indicateur de richesse
+  nationale n° 6, publié sans rupture de 1996 à 2024 (25 points depuis 2000) dans la version rétropolée de l'INSEE,
+  plus récente d'un an que la série ODD de la BDM.
+note_pertinence: 'C''est l''indicateur d''inégalité le plus lisible : en 2024, les 20 % les plus aisés détiennent
+  4,62 fois la masse de niveau de vie des 20 % les plus modestes (note de lecture du jeu Melodi). La série rétropolée
+  neutralise les ruptures de 2010, 2012 et 2020 de l''enquête ERFS. Les autres statistiques de la famille (Gini,
+  Palma, D9/D1, part des 40 % les plus modestes) mesurent la même chose sous d''autres angles : en choisir une seule
+  évite le double compte.'
+variantes:
+- serie_id: ilc_di11_r?freq=A&unit=INX&geo=FR
+  source: Eurostat
+  nature: 'doublon technique : valeur nationale du jeu régional ilc_di11_r (ligne de la long-list niveau_de_vie)'
+  ligne_id: estat-004572
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024 ; deux valeurs aux années de rupture 1996, 2010, 2012 et 2020)
+  ligne_id: melodi-005118
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024 ; deux valeurs aux années de rupture 1996, 2010, 2012 et 2020)
+  ligne_id: melodi-004968
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=S80S20_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024 ; deux valeurs aux années de rupture 1996, 2010, 2012 et 2020)
+  ligne_id: melodi-005043
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: '010594680'
+  source: INSEE BDM
+  nature: 'INSEE, indicateur ODD 10.i2a (BDM 010594680 et copie Melodi) : même rapport des masses de niveau de vie,
+    1996-2023'
+  ligne_id: bdm-000965
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=1_2 UNIT_MEASURE=FCTR_Q1_INC
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'OCDE How''s Life 1_2 : S80/S20 du revenu disponible (2020-2023, 4 points)'
+  ligne_id: m04-000002
+  eligible: a_verifier
+- serie_id: '010776362'
+  source: INSEE BDM
+  nature: INSEE, rapport (100-S80)/S20 après redistribution de l'étude sur la redistribution (2002-2022), ensemble
+    et ventilations par sexe et par âge
+  ligne_id: bdm-000981
+  eligible: oui
+- serie_id: '010776363'
+  source: INSEE BDM
+  nature: INSEE, rapport (100-S80)/S20 après redistribution de l'étude sur la redistribution (2002-2022), ensemble
+    et ventilations par sexe et par âge
+  ligne_id: bdm-000982
+  eligible: oui
+- serie_id: '010776364'
+  source: INSEE BDM
+  nature: INSEE, rapport (100-S80)/S20 après redistribution de l'étude sur la redistribution (2002-2022), ensemble
+    et ventilations par sexe et par âge
+  ligne_id: bdm-000983
+  eligible: oui
+- serie_id: '010776365'
+  source: INSEE BDM
+  nature: INSEE, rapport (100-S80)/S20 après redistribution de l'étude sur la redistribution (2002-2022), ensemble
+    et ventilations par sexe et par âge
+  ligne_id: bdm-000984
+  eligible: oui
+- serie_id: '010776366'
+  source: INSEE BDM
+  nature: INSEE, rapport (100-S80)/S20 après redistribution de l'étude sur la redistribution (2002-2022), ensemble
+    et ventilations par sexe et par âge
+  ligne_id: bdm-000985
+  eligible: oui
+- serie_id: '010776368'
+  source: INSEE BDM
+  nature: INSEE, rapport (100-S80)/S20 après redistribution de l'étude sur la redistribution (2002-2022), ensemble
+    et ventilations par sexe et par âge
+  ligne_id: bdm-000987
+  eligible: oui
+- serie_id: sdg_10_41?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu disponible équivalent (ilc_di11 et indicateur ODD sdg_10_41, 2004-2025),
+    ventilations par âge et par sexe'
+  ligne_id: estat-002098
+  eligible: oui
+- serie_id: ilc_di11?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu disponible équivalent (ilc_di11 et indicateur ODD sdg_10_41, 2004-2025),
+    ventilations par âge et par sexe'
+  ligne_id: estat-030034
+  eligible: oui
+- serie_id: ilc_di11?freq=A&age=Y_LT65&age=Y_GE65&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu disponible équivalent (ilc_di11 et indicateur ODD sdg_10_41, 2004-2025),
+    ventilations par âge et par sexe'
+  ligne_id: estat-030035
+  eligible: oui
+- serie_id: ilc_di11?freq=A&age=TOTAL&sex=M&sex=F&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : S80/S20 du revenu disponible équivalent (ilc_di11 et indicateur ODD sdg_10_41, 2004-2025),
+    ventilations par âge et par sexe'
+  ligne_id: estat-030036
+  eligible: oui
+- serie_id: ilc_di11d?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030046
+  eligible: oui
+- serie_id: ilc_di11d?freq=A&age=Y_LT65&age=Y_GE65&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030047
+  eligible: oui
+- serie_id: ilc_di11d?freq=A&age=TOTAL&sex=M&sex=F&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030048
+  eligible: oui
+- serie_id: ilc_di11e?freq=A&age=TOTAL&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030049
+  eligible: oui
+- serie_id: ilc_di11e?freq=A&age=Y_LT65&age=Y_GE65&sex=T&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030050
+  eligible: oui
+- serie_id: ilc_di11e?freq=A&age=TOTAL&sex=M&sex=F&unit=RAT&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030051
+  eligible: oui
+- serie_id: ilc_di01?freq=A&quant_inc=QU5&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'décomposition EU-SILC : rapports S80/S50 (haut de la distribution) et S50/S20 (bas), avec ventilations,
+    et part du dernier quintile dans le revenu (ilc_di01)'
+  ligne_id: estat-030781
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=10.i2a&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE, indicateur ODD 10.i2a (BDM 010594680 et copie Melodi) : même rapport des masses de niveau de vie,
+    1996-2023'
+  ligne_id: melodi-005540
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_FM
+- serie_retropolee
+notes: Le niveau (taux de pauvreté, déciles) reste dans niveau_de_vie (R3). La version EU-SILC (ilc_di11) a des
+  ruptures en 2008, 2020 et 2022.

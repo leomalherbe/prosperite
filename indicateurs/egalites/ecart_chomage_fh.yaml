@@ -1,0 +1,78 @@
+id: ecart_chomage_fh
+libelle: Écart de taux de chômage entre femmes et hommes
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: ecart_chomage_fh
+variante_principale: oui
+definition: Taux de chômage des femmes de 15 à 74 ans moins celui des hommes, en points (enquête Forces de travail,
+  jeu Eurostat une_rt_a).
+unite: points de pourcentage
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: une_rt_a (chômage par sexe et âge, données annuelles)
+source_serie_id: une_rt_a?freq=A&age=Y15-74&unit=PC_ACT&sex=M&sex=F&geo=FR
+formule: taux de chômage des femmes (sex=F) - taux de chômage des hommes (sex=M)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/une_rt_a?freq=A&age=Y15-74&unit=PC_ACT&sex=M&sex=F&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2003
+derniere_annee: 2025
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000059
+hors_longlist: non
+rattachement_propose: ligne de la long-list travail ; l'écart construit relève d'egalites (exclusion « écarts femmes-hommes
+  d'emploi et de salaire → egalites », R3), le niveau reste dans travail ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : l''écart change de signe en 2012 (femmes 9,3 % contre hommes 7,8 % en 2003,
+  9,7 % contre 9,8 % en 2012, 7,6 % contre 7,8 % en 2025), si bien qu''une valeur proche de 0 ne dit pas qui est
+  désavantagé.'
+note_pertinence: Les femmes ont longtemps eu un taux de chômage plus élevé ; depuis 2012 c'est l'inverse, de peu.
+  Un écart qui change de signe ne peut pas être normalisé entre deux bornes sans perdre son sens. L'écart d'emploi,
+  de signe constant, est préféré.
+variantes:
+- serie_id: '001688533'
+  source: INSEE BDM
+  nature: 'INSEE : taux de chômage des femmes et des hommes (trimestriel CVS, France hors Mayotte depuis 1975 et
+    France entière depuis 2003 ; long-list travail)'
+  ligne_id: bdm-000004
+  eligible: oui
+  longlist: travail
+- serie_id: '001688535'
+  source: INSEE BDM
+  nature: 'INSEE : taux de chômage des femmes et des hommes (trimestriel CVS, France hors Mayotte depuis 1975 et
+    France entière depuis 2003 ; long-list travail)'
+  ligne_id: bdm-000005
+  eligible: oui
+  longlist: travail
+- serie_id: '011818546'
+  source: INSEE BDM
+  nature: 'INSEE : taux de chômage des femmes et des hommes (trimestriel CVS, France hors Mayotte depuis 1975 et
+    France entière depuis 2003 ; long-list travail)'
+  ligne_id: bdm-000016
+  eligible: oui
+  longlist: travail
+- serie_id: '011818547'
+  source: INSEE BDM
+  nature: 'INSEE : taux de chômage des femmes et des hommes (trimestriel CVS, France hors Mayotte depuis 1975 et
+    France entière depuis 2003 ; long-list travail)'
+  ligne_id: bdm-000017
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- ecart_construit
+- definition_differente_2021
+notes: ''

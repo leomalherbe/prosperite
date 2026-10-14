@@ -1,0 +1,241 @@
+id: part_patrimoine_10_pourcent_riches
+libelle: Part du patrimoine brut détenue par les 10 % de ménages les mieux dotés
+dimension: egalites
+sous_theme: inégalités de patrimoine
+famille: inegalite_patrimoine
+variante_principale: non
+definition: Part de la masse totale du patrimoine brut des ménages détenue par les 10 % de ménages les mieux dotés
+  (enquête Histoire de vie et Patrimoine, France hors Mayotte, comparable depuis 2010).
+unite: '% du patrimoine brut total'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ENQPAT_DET (enquête Patrimoine), mesure MASSE_PATBRUT, quantile D9TD10
+source_serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D9TD10&QUANTILE_MEASURE=PATBRUT&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D9TD10&QUANTILE_MEASURE=PATBRUT&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/7941491
+frequence: irreguliere
+premiere_annee: 2015
+derniere_annee: 2024
+nb_points_depuis_2000: 4
+geo: FR-D976
+eligibilite_longlist: a_verifier
+ligne_id: melodi-004402
+hors_longlist: non
+rattachement_propose: ligne de la long-list niveau_de_vie (étiquette v0 « niveau_de_vie » du jeu INSEE) ; rattachement
+  proposé à egalites (concentration du patrimoine, R3), à trancher au gel 2
+raccordement: 'a_etudier : part du patrimoine net des 10 % les plus riches publiée par l''OCDE pour 2009 et 2014'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Statistique plus lisible que le Gini (part détenue par le haut), publiée pour quatre vagues
+  de 2015 à 2024 (D17), proposée comme alternative dans la famille inegalite_patrimoine.
+note_pertinence: La part détenue par les 10 % les mieux dotés parle davantage au public que le Gini. L'OCDE publie
+  la même statistique en patrimoine net (49,9 % en 2020, vagues 2009, 2014, 2017 et 2020). Les parts des 1 % et
+  5 % les mieux dotés et la décomposition par type de patrimoine sont listées en variantes.
+variantes:
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C95TC100&QUANTILE_MEASURE=PATBRUT&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004396
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C99TC100&QUANTILE_MEASURE=PATBRUT&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004397
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5TD10&QUANTILE_MEASURE=PATBRUT&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004398
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D6TD10&QUANTILE_MEASURE=PATBRUT&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004399
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D7TD10&QUANTILE_MEASURE=PATBRUT&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004400
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATBRUT&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D8TD10&QUANTILE_MEASURE=PATBRUT&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004401
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C95TC100&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004403
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C99TC100&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004404
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5TD10&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004405
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D6TD10&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004406
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D7TD10&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004407
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D8TD10&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004408
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATFIN&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D9TD10&QUANTILE_MEASURE=PATFIN&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004409
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C95TC100&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004410
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C99TC100&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004411
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5TD10&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004412
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D6TD10&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004413
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D7TD10&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004414
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D8TD10&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004415
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATIMM&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D9TD10&QUANTILE_MEASURE=PATIMMO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004416
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C95TC100&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004417
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=C99TC100&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004418
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5TD10&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004419
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D6TD10&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004420
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D7TD10&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004421
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D8TD10&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004422
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MASSE_PATPRO&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D9TD10&QUANTILE_MEASURE=PATPRO&TPH=_T
+  source: INSEE Melodi
+  nature: 'INSEE, enquête Patrimoine : parts du patrimoine brut détenues par les 1 %, 5 % et 20 % à 50 % les mieux
+    dotés, et mêmes parts pour le patrimoine financier, immobilier et professionnel (long-list niveau_de_vie)'
+  ligne_id: melodi-004423
+  eligible: a_verifier
+  longlist: niveau_de_vie
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=1_3_VER UNIT_MEASURE=PT_B90_S14
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'OCDE How''s Life 1_3_VER : part du patrimoine net détenue par les 10 % les plus riches (2009-2020, 4
+    valeurs)'
+  ligne_id: m04-000004
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+notes: ''

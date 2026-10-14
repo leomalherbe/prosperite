@@ -1,0 +1,91 @@
+id: gini_niveau_de_vie
+libelle: Indice de Gini du niveau de vie
+dimension: egalites
+sous_theme: inégalités de revenu
+famille: inegalite_revenu
+variante_principale: non
+definition: Indice de concentration des niveaux de vie, de 0 (égalité parfaite) à 1 (une personne détient tout),
+  après impôts directs et prestations sociales (enquête ERFS, données rétropolées, France métropolitaine).
+unite: indice (0 à 1)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure GI_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=GI_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=GI_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005329
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Statistique la plus répandue dans les comparaisons internationales, publiée par l'INSEE de
+  1996 à 2024 (25 points depuis 2000), proposée comme alternative au S80/S20 dans la même famille.
+note_pertinence: Le Gini résume toute la distribution, mais il est peu sensible aux extrémités et difficile à expliquer
+  au public. La version EU-SILC (ilc_di12) passe de 29,2 en 2014 à 30,4 en 2025 (sur 100), avec ruptures en 2020
+  et 2022. À utiliser à la place du S80/S20, pas en plus.
+variantes:
+- serie_id: ilc_di12?freq=A&age=TOTAL&statinfo=GINI_HND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : Gini du revenu disponible équivalent (ilc_di12, version par âge, 2014-2025), ensemble
+    et moins de 18 ans'
+  ligne_id: estat-000038
+  eligible: oui
+- serie_id: ilc_di12?freq=A&age=Y_LT18&statinfo=GINI_HND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EU-SILC : Gini du revenu disponible équivalent (ilc_di12, version par âge, 2014-2025), ensemble
+    et moins de 18 ans'
+  ligne_id: estat-000039
+  eligible: oui
+- serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
+    ineq_inc_<année>)
+  source: PNUD — Rapport sur le développement humain 2025 (séries composites)
+  nature: 'autres sources : Gini de la Banque mondiale (reprise d''EU-SILC, 1996-2023), indice d''Atkinson du revenu
+    (PNUD, 2010-2023), Gini expérimental des comptes distributionnels (Eurostat icw_sr_05, 3 points, non éligible)'
+  ligne_id: m04-000351
+  eligible: oui
+- serie_id: https://api.worldbank.org/v2/country/FRA/indicator/SI.POV.GINI?format=json
+  source: Banque mondiale — World Development Indicators (API v2)
+  nature: 'autres sources : Gini de la Banque mondiale (reprise d''EU-SILC, 1996-2023), indice d''Atkinson du revenu
+    (PNUD, 2010-2023), Gini expérimental des comptes distributionnels (Eurostat icw_sr_05, 3 points, non éligible)'
+  ligne_id: m04-000404
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=GI_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-005066
+  eligible: oui
+- serie_id: icw_sr_05?freq=A&stk_flow=INC&unit=INX&geo=FR
+  source: Eurostat
+  nature: 'autres sources : Gini de la Banque mondiale (reprise d''EU-SILC, 1996-2023), indice d''Atkinson du revenu
+    (PNUD, 2010-2023), Gini expérimental des comptes distributionnels (Eurostat icw_sr_05, 3 points, non éligible)'
+  ligne_id: estat-032200
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWA&EMPSTA_ENQ=_T&ERFS_MEASURE=GI_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-004916
+  eligible: a_verifier
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=BWB&EMPSTA_ENQ=_T&ERFS_MEASURE=GI_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: INSEE, données non rétropolées (1975-2024, deux valeurs aux années de rupture)
+  ligne_id: melodi-004991
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_FM
+- serie_retropolee
+notes: ''

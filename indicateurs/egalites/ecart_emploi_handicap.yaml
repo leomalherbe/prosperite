@@ -1,0 +1,79 @@
+id: ecart_emploi_handicap
+libelle: Écart de taux d'emploi entre personnes sans limitation et personnes limitées dans leurs activités
+dimension: egalites
+sous_theme: handicap
+famille: ecart_emploi_handicap
+variante_principale: oui
+definition: Taux d'emploi des personnes sans limitation d'activité moins celui des personnes déclarant une limitation
+  modérée ou forte dans les activités habituelles, en points (EU-SILC, jeu hlth_dlm200 ; tranche d'âge à confirmer
+  dans les métadonnées).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: hlth_dlm200 (écart d'emploi lié au handicap, EU-SILC)
+source_serie_id: hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SM_SEV&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SM_SEV&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_dlm200/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-021927
+hors_longlist: non
+rattachement_propose: ligne de la long-list sante (étiquette v0 du jeu santé-handicap) ; écart entre groupes rattaché
+  à egalites (R3) ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur européen de l'écart d'emploi lié au handicap (stratégie de l'UE 2021-2030), annuel
+  de 2014 à 2025 (20,4 points en 2014, 21,6 en 2025, ruptures en 2020 et 2022).
+note_pertinence: Le handicap n'est pas cité dans le contenu de la dimension, mais c'est un écart entre groupes au
+  sens de sa définition. L'écart ne se réduit pas sur la période (entre 15,7 et 24,1 points). La tranche d'âge et
+  la définition de la limitation sont à confirmer dans les métadonnées Eurostat.
+variantes:
+- serie_id: hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SEV&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations par degré de limitation (forte, modérée) et par sexe (long-list sante)
+  ligne_id: estat-021925
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SEV&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations par degré de limitation (forte, modérée) et par sexe (long-list sante)
+  ligne_id: estat-021926
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SM_SEV&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations par degré de limitation (forte, modérée) et par sexe (long-list sante)
+  ligne_id: estat-021928
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SOME&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations par degré de limitation (forte, modérée) et par sexe (long-list sante)
+  ligne_id: estat-021929
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_dlm200?freq=A&unit=PC_PNT&lev_limit=SOME&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations par degré de limitation (forte, modérée) et par sexe (long-list sante)
+  ligne_id: estat-021930
+  eligible: oui
+  longlist: sante
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- champ_age_a_verifier
+notes: ''

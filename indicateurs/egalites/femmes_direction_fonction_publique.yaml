@@ -1,0 +1,77 @@
+id: femmes_direction_fonction_publique
+libelle: Part des femmes dans l'encadrement supérieur et de direction de la fonction publique
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_postes_direction
+variante_principale: non
+definition: Part des femmes parmi les emplois d'encadrement supérieur et de direction des trois versants de la fonction
+  publique (indicateur ODD national 5.i5b).
+unite: '% des emplois de direction'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (DGAFP)
+source_jeu: BDM, indicateurs ODD (objectif 5)
+source_serie_id: '010760765'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010760765
+url_page: https://www.insee.fr/fr/statistiques/serie/010760765
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2023
+nb_points_depuis_2000: 12
+geo: FR-D976
+eligibilite_longlist: oui
+ligne_id: bdm-000819
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Champ public soumis à une obligation légale de nominations équilibrées, annuel de 2012 à 2023
+  (12 points), proposé comme alternative dans la famille femmes_postes_direction.
+note_pertinence: 'L''État employeur est soumis depuis 2012 à des quotas de primo-nominations : la série mesure surtout
+  l''effet de cette politique. Les ventilations par versant (État, hospitalière, territoriale) sont listées en variantes.'
+variantes:
+- serie_id: '010594729'
+  source: INSEE BDM
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: bdm-000812
+  eligible: oui
+- serie_id: '010594730'
+  source: INSEE BDM
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: bdm-000813
+  eligible: oui
+- serie_id: '010594731'
+  source: INSEE BDM
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: bdm-000814
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=FPE&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=5.i5b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: melodi-005482
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=FPH&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=5.i5b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: melodi-005483
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=FPT&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=5.i5b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: melodi-005484
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=5.i5b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: ventilation par versant (État, hospitalière, territoriale ; BDM et Melodi) et copie Melodi du total
+  ligne_id: melodi-005549
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

@@ -1,0 +1,60 @@
+id: part_femmes_victimes_violences
+libelle: Part des femmes parmi les victimes de violences physiques ou sexuelles au sein du ménage (18-75 ans)
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: part_femmes_victimes_violences
+variante_principale: oui
+definition: Part des femmes parmi les personnes de 18 à 75 ans déclarant avoir subi des violences physiques ou sexuelles
+  de la part d'un membre de leur ménage (enquêtes de victimation ; indicateur ODD national 5.i3b).
+unite: '% des victimes'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (SSMSI)
+source_jeu: BDM, indicateurs ODD (objectif 5)
+source_serie_id: '010594734'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594734
+url_page: https://www.insee.fr/fr/statistiques/serie/010594734
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2023
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-000817
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : une part ne dit rien du niveau des violences (elle monte si les violences contre
+  les hommes baissent), et la série, 2010-2023 (12 points), traverse la rupture de l''enquête de victimation de
+  2022.'
+note_pertinence: Les violences faites aux femmes sont mesurées en niveau dans securite (victimes de violences conjugales,
+  ventilées par sexe, R3). La part des femmes parmi les victimes est un indicateur de structure, pas de résultat.
+variantes:
+- serie_id: '010594735'
+  source: INSEE BDM
+  nature: indicateur ODD 5.i4b (violences sexuelles hors ménage) et copies Melodi
+  ligne_id: bdm-000818
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=5.i3b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 5.i4b (violences sexuelles hors ménage) et copies Melodi
+  ligne_id: melodi-005417
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=5.i4b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 5.i4b (violences sexuelles hors ménage) et copies Melodi
+  ligne_id: melodi-005419
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- rupture_enquete_cvs_vrs
+notes: ''

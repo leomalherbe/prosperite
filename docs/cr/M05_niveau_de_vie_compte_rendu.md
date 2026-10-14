@@ -1,6 +1,6 @@
 # Compte rendu — M05, fiches indicateurs de la dimension `niveau_de_vie`
 
-Agent de mission M05 (Niveau de vie), 14 octobre 2026, branche `m05-niveau_de_vie`, PR « M05 — fiches indicateurs : niveau_de_vie » (numéro au §8). Méthode commune `docs/methodo/33_methode_fiches_M05.md` (v1.1) appliquée sans modification des scripts communs. Détail dans `docs/cr/M05_niveau_de_vie_journal.md`.
+Agent de mission M05 (Niveau de vie), 14 octobre 2026, branche `m05-niveau_de_vie`, PR #16 « M05 — fiches indicateurs : niveau_de_vie ». Méthode commune `docs/methodo/33_methode_fiches_M05.md` (v1.1) appliquée sans modification des scripts communs. Détail dans `docs/cr/M05_niveau_de_vie_journal.md`.
 
 ## 1. Livrables
 
@@ -67,4 +67,4 @@ Unité erronée des mesures par habitant de `nasa_10_nf_tr` (NDV-1) ; table de c
 
 ## 8. Pull request
 
-PR à créer vers `main` ; numéro reporté ci-dessous après création.
+PR #16 vers `main` (https://github.com/leomalherbe/prosperite/pull/16), ouverte le 14/10/2026 par l'API GitHub ; à ne pas fusionner pendant un run du robot (D26).

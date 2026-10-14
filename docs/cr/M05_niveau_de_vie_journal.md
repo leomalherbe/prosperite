@@ -84,3 +84,14 @@ Vérifications à la source (WebFetch, 14/10/2026) :
 - `python scripts/verifier_fiches.py --dimension niveau_de_vie --tableau` puis sans option : **0 erreur, 5 avertissements** (1 série principale hors catalogue avec preuve : `pauvrete_percue_hausse` ; 4 lignes déjà séries principales d'écarts construits d'`egalites`, attendues, §2.3).
 - Compteurs : 11 821 lignes de long-list, 695 renvoyées à d'autres dimensions, **25 fiches, 19 familles, 17 `retenir`, 6 `retenir_variante`, 2 `ecarter`**, 4 déclaratives, 2 composites, 2 à vérifier (D17), 1 hors long-list, 6 incontournables, 1 285 variantes.
 - `python -m pytest -q` : 397 réussis (aucun fichier de code modifié).
+
+## 5. Incidents
+
+- **Bac à sable partagé** : le dossier de travail est commun aux agents M05 parallèles ; un premier générateur de règles de cet agent (`gen_regles.py`) a été écrasé par celui de l'agent `travail`. Travail repris dans un sous-dossier privé ; aucun effet sur le dépôt (proposition au compte rendu, §7.5).
+- **API Eurostat** : réponse 429 (« trop de requêtes ») sur `ilc_li22b` après une dizaine de lectures ; consigne de l'outil : ne pas réessayer. Valeurs de `pauvrete_ancree_2008` non lues (drapeau `valeurs_non_lues`).
+- **INSEE BDM et Melodi** : lecture refusée (robots.txt) ; valeurs INSEE citées d'après la page insee.fr de l'Insee Première n° 2117 et les métadonnées Melodi présentes dans le dépôt, sinon « non lues ».
+
+## 6. Pull request (11 h 20)
+
+- PR **#16** « M05 — fiches indicateurs : niveau_de_vie » ouverte vers `main` par l'API GitHub (`POST /repos/leomalherbe/prosperite/pulls`) : https://github.com/leomalherbe/prosperite/pull/16.
+- Compte rendu copié dans le Projet claude.ai (`claude/cr/M05_niveau_de_vie_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_niveau_de_vie.csv`).

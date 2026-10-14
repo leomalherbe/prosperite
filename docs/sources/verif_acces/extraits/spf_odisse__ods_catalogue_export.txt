@@ -1,395 +1,395 @@
 # spf_odisse / ods_catalogue_export
 # URL : https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-13T14:46:04Z — HTTP 200 — text/csv; charset=utf-8 — 2447603 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-14T09:23:22Z — HTTP 200 — text/csv; charset=utf-8 — 2447603 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['dcat.created', 'dcat.issued', 'dcat.creator', 'dcat.contributor', 'dcat.contact_name', 'dcat.contact_email', 'dcat.accrualperiodicity', 'dcat.spatial', 'dcat.temporal', 'dcat.granularity', 'dcat.dataquality', 'dcat.publisher_type', 'dcat.conforms_to', 'dcat.temporal_coverage_start', 'dcat.temporal_coverage_end', 'dcat.accessRights', 'dcat.relation', 'default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'standard-insee.sous-titre', 'standard-insee.source', 'standard-insee.avertissement', 'standard-insee.documentation', 'standard-insee.unite-statistique', 'standard-insee.couverture-geographique', 'standard-insee.mailles-geographiques', 'standard-insee.mailles-geographiques-multi', 'standard-insee.millesime-de-la-geographie', 'standard-insee.population-s-de-reference', 'standard-insee.standardisation', 'standard-insee.nature-indicateur', 'standard-insee.non-disponible-sur-data-gouv-fr', 'datasetid']
 388 lignes ; 388 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
 datasetid	default.title	default.modified	default.records_count	default.publisher
-expositions-professionnelles-produits-phytopharmaceutiques-ppp-france	Expositions professionnelles : Produits phytopharmaceutiques PPP (France)	2026-09-15T08:08:32+00:00	132	Santé publique France
-tub-issues-de-traitement-region	Tuberculose : Issues de traitement (Région)	2026-01-26T20:10:01+00:00	126	Santé publique France
-sida-diagnostics-dinfection-de-sida-france	SIDA : Diagnostics de sida (France)	2026-03-18T09:29:55+00:00	15	Santé publique France
 pesticides-exposition-professionnelle-aux-insecticides-region	Pesticides : exposition professionnelle aux insecticides (Région)	2025-02-27T14:40:16+00:00	52	Santé publique France
 pesticides-exposition-environnementale-aux-insecticides-region	Pesticides : exposition environnementale aux insecticides (Région)	2025-02-27T14:03:54+00:00	52	Santé publique France
-tiques-borreliose-lyme-indicateurs-du-barometre-2024	Tiques et borréliose de Lyme : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	82	Santé publique France
-perinatalite-accouchements-et-naissances-departement	Périnatalité : Accouchements et naissances (Département)	2026-07-17T20:10:57+00:00	1339	Santé publique France
 pollution-de-l-air-impact-sur-la-survenue-de-maladie-du-no2-et-des-pm2-5-anthro_region	Pollution de l'air : impact sur la survenue de maladie du NO2 et des PM2,5 (scénario : atteinte des niveaux sans pollution d'origine anthropique) (Région)	2025-03-04T15:42:54+00:00	13	Santé publique France
-vih-depistages-dep	VIH : Dépistages (Département)	2026-03-18T09:27:31+00:00	1545	Santé publique France
-episodes-depressifs-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Épisodes dépressifs : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	357	Santé publique France
-gestes-auto-infliges-passages-aux-urgences-region	Gestes auto-infligés : Passages aux urgences (Région)	2025-12-09T15:50:02+00:00	1890	Santé publique France
 mort-inattendue-du-nourrisson-effectifs-region	Mort inattendue du nourrisson : Effectifs (Région)	2025-04-04T13:53:17+00:00	90	Santé publique France
-gestes-auto-infliges-hospitalisations-infradepartemental	Gestes auto-infligés : Hospitalisations (infradépartemental)	2026-05-27T12:29:34+00:00	11124	Santé publique France
-antibiotiques-consommation-en-ehpad_reg	Antibiotiques : Consommation en EHPAD sans pharmacie à usage intérieur (Région)	2025-11-18T09:32:46+00:00	153	Santé publique France
 pesticides-exposition-environnementale-aux-insecticides-departement	Pesticides : exposition environnementale aux insecticides (Département)	2025-02-27T15:52:25+00:00	384	Santé publique France
 depistage-neonatal-surdite-region	Dépistage néonatal : Surdité permanente néonatale (Région)	2025-04-04T13:49:03+00:00	36	Santé publique France
 pesticides-exposition-professionnelle-aux-herbicides-france	Pesticides : exposition professionnelle aux herbicides (France)	2025-02-27T14:32:16+00:00	4	Santé publique France
-hernie-discale-lombaire-reg	Hernie discale lombaire (Région)	2024-12-10T15:14:48+00:00	1716	Santé publique France
 hepatites-b-et-c-depistages-et-diagnostics-france	Hépatites B et C : Dépistages et Diagnostics (France)	2026-03-18T09:48:10+00:00	3	Santé publique France
 gestes-auto-infliges-passages-aux-urgences-france	Gestes auto-infligés : Passages aux urgences (France)	2025-12-09T16:13:03+00:00	135	Santé publique France
 maladies-cardio-neuro-vasculaires-taux-brut-region	Maladies Cardio-Neuro-Vasculaires : Taux brut (Région)	2025-06-30T09:29:37+00:00	2142	Santé publique France
-hernie-discale-lombaire-dep	Hernie discale lombaire (Département)	2024-12-10T15:19:34+00:00	10182	Santé publique France
-fragilite-prevalence-departement	Fragilité : Prévalence (Département)	2026-03-17T16:15:29+00:00	960	Santé publique France
 anomalies-congenitales-prev_annuelle_anofocus_bulletin	Anomalies congénitales : Evolution de la prévalence de la trisomie 21, d’anomalies de fermeture du tube neural, et de l’hypospadias (Registres)	2026-07-08T07:45:21+00:00	33	Santé publique France
 syndrome-du-canal-carpien-incidence	Syndrome du canal carpien : Incidence (Département)	2025-01-23T13:56:25+00:00	9588	Santé publique France
-vih-depistages-rembourses-region	VIH : Dépistages remboursés (Région)	2025-11-26T10:32:56+00:00	2970	Santé publique France
-tuberculose-donnees-declaration-obligatoire_dep	Tuberculose : Données de la déclaration obligatoire (Département)	2026-05-18T08:38:59+00:00	2121	Santé publique France
 chutes-accidents-trauma-indicateurs-du-barometre-2024	Chutes/Accidents/Traumatismes : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	201	Santé publique France
-pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_reg	Pollution de l'air : impact du NO2 et des PM2,5 sur la mortalité (Région)	2025-03-04T12:56:46+00:00	13	Santé publique France
 pesticides-exposition-professionnelle-aux-insecticides-canton	Pesticides : exposition professionnelle aux insecticides (Canton)	2025-02-27T14:35:09+00:00	7956	Santé publique France
 pesticides-exposition-environnementale-aux-herbicides-departement	Pesticides : exposition environnementale aux herbicides (Département)	2025-02-21T11:18:32+00:00	384	Santé publique France
-accouchements_naissances_fra	Périnatalité : Accouchements et naissances (France)	2026-07-17T20:05:44+00:00	13	Santé publique France
-saturnisme-depistage-departement	Saturnisme : Dépistage, prévalence, rendement du dépistage (Département)	2025-12-09T16:01:48+00:00	8787	Santé publique France
 anomalies-congenitales-prev_agemat_gen_rapport	Anomalies congénitales : Prévalence selon l’âge maternel et la composante génétique (Registres)	2026-07-08T06:48:29+00:00	15	Santé publique France
-exposition-professionnelle-travail-de-nuit	Exposition professionnelle : Travail de nuit	2025-06-06T09:48:03+00:00	4680	Santé publique France
-pesticides-exposition-professionnelle-aux-herbicides-departement	Pesticides : exposition professionnelle aux herbicides (Département)	2025-02-27T14:30:39+00:00	384	Santé publique France
 vih-depistages-rembourses-departement	VIH : Dépistages remboursés (Département)	2025-11-26T10:48:06+00:00	16995	Santé publique France
-sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_reg	Santé mentale : Episodes dépressifs caractérisés dans les 12 derniers mois (Région)	2024-12-09T10:34:43+00:00	144	Santé publique France
-infections-sexuellement-transmissibles-donnees-de-depistages-rembourses-dep	Infections sexuellement transmissibles : Données de dépistages remboursés	2025-03-04T08:39:07+00:00	33732	Santé publique France
 pesticides-exposition-professionnelle-aux-insecticides-france	Pesticides : exposition professionnelle aux insecticides (France)	2025-02-27T14:41:57+00:00	4	Santé publique France
-anevrisme-aorte-abdominale-rompu-incidence-hospitaliere-dep	Anévrisme de l'aorte abdominale rompu : Incidence hospitalière (Département)	2025-01-15T13:04:08+00:00	5345	Santé publique France
-antibiotiques-resistance-en-secteur-de-ville-ou-ehpad_reg	Antibiotiques : Résistance en secteur de ville ou en EHPAD (Région)	2025-11-17T14:08:00+00:00	540	Santé publique France
 exposition-professionnelle-bruit-france	Exposition professionnelle : Bruit (France)	2025-07-01T08:27:52+00:00	132	Santé publique France
-pollution-de-l-air-impact-sur-la-survenue-de-maladie-du-no2-et-des-pm2-5-scenario-vi_oms_region	Pollution de l'air : impact sur la survenue de maladie du NO2 et des PM2,5 (scenario : atteinte des valeurs intermédiaires de l'OMS) (Région)	2025-03-04T14:00:54+00:00	13	Santé publique France
-tous-les-troubles-du-rythme-et-dela-conduction-incidence-hospitaliere	Tous les troubles du rythme et de la conduction : Incidence hospitalière	2025-02-20T14:22:19+00:00	14382	Santé publique France
 pesticides-exposition-environnementale-aux-herbicides-canton	Pesticides : exposition environnementale aux herbicides (Canton)	2025-02-21T11:16:34+00:00	7956	Santé publique France
 dissection-aortique-incidence-hospitaliere-dep	Dissection aortique : Incidence hospitalière (Département)	2026-06-09T09:59:32+00:00	8491	Santé publique France
-cancer-new-depistage-du-cancer-du-col-de-l-uterus-region	Cancer : Dépistage du cancer du col de l'utérus (Région)	2025-11-10T10:29:27+00:00	144	Santé publique France
-pesticides-exposition-professionnelle-aux-fongicides-departement	Pesticides : exposition professionnelle aux fongicides (Département)	2025-02-27T14:21:49+00:00	384	Santé publique France
-gestes-auto-infliges-passages-aux-urgences-departement	Gestes auto-infligés : Passages aux urgences (Département)	2025-12-09T09:31:42+00:00	9270	Santé publique France
-sedentarite-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Sédentarité : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	969	Santé publique France
 anomalies-congenitales-prev_annuelle_group_bulletin	Anomalies congénitales : Évolution de la prévalence par groupe d’anomalie (Registres)	2026-07-08T07:39:45+00:00	143	Santé publique France
 diabete-incidence-du-diabete-type-1-chez-lenfant-par-periode-reg	Diabète : Incidence du diabète type 1 chez l'enfant (Région)	2024-12-10T14:04:35+00:00	34	Santé publique France
 expositions-professionnelles-poussieres-de-bois	Exposition professionnelle : Poussières de bois	2025-06-06T09:22:24+00:00	11520	Santé publique France
 pesticides-exposition-professionnelle-aux-herbicides-canton	Pesticides : exposition professionnelle aux herbicides (Canton)	2025-02-27T14:28:01+00:00	7956	Santé publique France
 gestes-auto-infliges-moyens-utilises-ayant-mene-a-une-hospitalisation-france	Gestes auto-infligés : Moyens utilisés ayant mené à une hospitalisation (France)	2026-09-09T10:05:53+00:00	234	Santé publique France
 hepatite-a-donnees-de-la-declarations-obligatoire-region	Hépatite A : Données de la déclarations obligatoire (Région)	2026-06-05T15:34:07+00:00	1965	Santé publique France
-tuberculose-issues-de-traitement_dep	Tuberculose : Issues de traitement (Département)	2026-02-10T15:29:24+00:00	1515	Santé publique France
-noyades-donnees-depuis-2023-departement	Noyades : Données depuis 2023 (Département)	2026-07-03T15:11:32+00:00	290	Santé publique France
-legionellose-donnees-declaration-obligatoire	Légionellose : Données de la déclaration obligatoire (Département)	2026-09-04T09:33:40+00:00	2812	Santé publique France
-episodes-depressif-indicateurs-du-barometre-2024	Épisodes dépressifs : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	104	Santé publique France
 anomalies-congenitales-prev_registre_group_rapport	Anomalies congénitales : Prévalence totale et par groupe d’anomalie par registre (Registres)	2026-07-08T07:00:40+00:00	65	Santé publique France
 anomalies-congenitales_prop_group_gen_rapport	Anomalies congénitales : Proportion de cas génétiques selon le groupe d’anomalie (Registres)	2026-07-08T06:16:53+00:00	12	Santé publique France
-hepatites-b-et-c-donnees-des-ald-departement	Hépatites B et C : Personnes en affection de longue durée (Département)	2025-02-22T12:55:10+00:00	2828	Santé publique France
-hepatites-b-et-c-depistages-et-diagnostics-departement	Hépatites B et C : Dépistages et Diagnostics (Département)	2026-03-18T09:53:25+00:00	202	Santé publique France
 vih-depistages-rembourses-france	VIH : Dépistages remboursés (France)	2025-11-26T10:18:53+00:00	165	Santé publique France
-hepatites-b-et-c-depistages-et-diagnostics-region	Hépatites B et C : Dépistages et Diagnostics (Région)	2026-03-18T09:49:45+00:00	54	Santé publique France
 prev_group_issue_rapport	Anomalies congénitales : Prévalence totale et par groupe d’anomalie selon l’issue de grossesse (Registres)	2026-07-05T07:15:19+00:00	52	Santé publique France
 anomalies-congenitales_diag_group_rapport	Anomalies congénitales : Diagnostic prénatal ou postnatal par groupe d’anomalie (Registres)	2026-07-08T06:29:25+00:00	13	Santé publique France
-hepatite-a-donnees-declaration-obligatoire	Hépatite A : Données de la déclarations obligatoire(Département)	2026-06-23T09:17:17+00:00	1802	Santé publique France
-antibiotiques-resistance-en-etablissement-de-sante_fra	Antibiotiques : Résistance en établissements de santé (France)	2025-11-18T09:24:41+00:00	9	Santé publique France
 pesticides-exposition-professionnelle-aux-herbicides-region	Pesticides : exposition professionnelle aux herbicides (Région)	2025-02-27T14:34:45+00:00	52	Santé publique France
-couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-departement	Couvertures vaccinales issues des certificats de santé du 24ème mois depuis 2004 (Département)	2026-04-23T12:37:39+00:00	2106	Santé publique France
 depistage-neonatal-region	Périnatalité : Dépistage biologique néonatal (Région)	2026-07-08T16:07:53+00:00	54	Santé publique France
-trouble-anxieux-generalise-indicateurs-du-barometre-2024	Trouble anxieux généralisé : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	104	Santé publique France
-asthme-hospitalisations-region	Asthme : Hospitalisations (Région)	2025-01-07T11:28:00+00:00	6045	Santé publique France
-suicides-moyens-utilises-france	Suicides : Moyens utilisés (France)	2026-09-10T11:32:06+00:00	195	
-changement-climatique-indicateurs-du-barometre-2024	Changement climatique : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	161	Santé publique France
 tabagisme-prevalence-selon-la-situation-professionnelle	Tabac : Prévalence selon la situation professionnelle	2025-01-10T10:26:58+00:00	36	Santé publique France
 canicules-taille-de-la-population-concernee-par-une-canicule-region	Canicules : Taille de la population concernée par une canicule (Région)	2026-05-04T11:56:32+00:00	286	Santé publique France
-gestes-auto-infliges-patients-hospitalises-infradepartemental	Gestes auto-infligés : Patients hospitalisés (infradépartemental)	2026-09-09T09:24:23+00:00	11124	Santé publique France
-maladies-a-caractere-professionnel-mcp-region	Maladies à caractère professionnel (MCP) (Région)	2026-06-21T16:15:04+00:00	150	Santé publique France
-perinatalite-donnees-socio-demographiques-departement	Périnatalité : Données socio-démographiques (Département)	2026-07-07T18:55:14+00:00	1339	Santé publique France
-traumatisme-passages-aux-urgences-et-actes-sos-medecins-region	Traumatisme : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:20:19+00:00	21600	Santé publique France
-perinatalite-post-partum-departement	Périnatalité : Post-partum (Département)	2026-07-20T18:32:20+00:00	1339	Santé publique France
 syndrome-du-canal-carpien-incidence_reg	Syndrome du canal carpien : Incidence (Région)	2024-12-10T11:44:22+00:00	1620	Santé publique France
-syndrome-coronarien-aigu-incidence-hospitaliere-dep	Syndrome coronarien aigu : Incidence hospitalière (Département)	2025-02-26T10:34:09+00:00	12442	Santé publique France
 perinatalite-accouchements-et-naissances-region	Périnatalité : Accouchements et naissances (Région)	2026-07-17T20:04:35+00:00	234	Santé publique France
 facteurs-de-risque-en-pre-conceptionnel-departement	Périnatalité : Facteurs de risque en pré-conceptionnel (Département)	2026-07-07T21:08:04+00:00	206	Santé publique France
-couvertures-vaccinales-archives-departement	Couvertures vaccinales : archives depuis 2004 (Département)	2026-04-23T12:22:06+00:00	2100	Santé publique France
-tabac-inscription-a-mois-sans-tabac-france	Tabac : Inscription à Mois sans tabac (France)	2025-12-18T15:17:43+00:00	10	Santé publique France
 facteurs-de-risque-en-pre-conceptionnel-et-addiction-region	Périnatalité : Facteurs de risque en pré-conceptionnel et addiction (Région)	2026-07-07T20:51:47+00:00	234	Santé publique France
-canicules-nombres-de-jours-de-canicule-region	Canicules : Nombres de jours de canicule (Région)	2026-05-04T11:41:10+00:00	286	Santé publique France
-bronchite-passages-aux-urgences-et-actes-sos-medecins-region	Bronchite : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:15:27+00:00	32400	Santé publique France
 cancer-new-depistage-du-cancer-du-col-de-l-uterus-selon-l-age-france	Cancer : Dépistage du cancer du col de l'utérus selon l'âge (France)	2025-11-12T09:28:51+00:00	64	Santé publique France
-perinatalite-donnees-socio-demographiques-region-copie	Périnatalité : Données socio-démographiques (Région)	2026-07-06T20:58:27+00:00	234	Santé publique France
-grossesse-dep	Périnatalité : Suivi et pathologies durant la grossesse (Département)	2026-07-08T12:37:45+00:00	1339	Santé publique France
-vih-depistages-region	VIH : Dépistages (Région)	2026-03-18T09:27:47+00:00	270	Santé publique France
-expositions-professionnelles-formaldehyde	Exposition professionnelle : Formaldéhyde	2026-07-17T07:14:42+00:00	1560	Santé publique France
-activite-physique-indicateurs-du-barometre-de-sante-publique-detail-region	Activité physique : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	1224	Santé publique France
-canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-region	Canicules : Décès attribuables à la chaleur pendant l'été et pendant les vagues de chaleur (Région)	2026-05-06T15:27:34+00:00	312	Santé publique France
-covid-19-synthese-des-indicateurs-de-suivi-de-la-pandemie-dep	COVID-19 : Synthèse des indicateurs de suivi de la pandémie	2024-12-16T10:42:35+00:00	121200	Santé publique France
-maladies-du-motoneurone-dont-sclerose-laterale-amyotrophique-region	Maladies du motoneurone dont sclérose latérale amyotrophique (Région)	2026-04-03T13:23:14+00:00	204	Santé publique France
-couvertures-vaccinales-archives-depuis-2004-region	Couvertures vaccinales : archives depuis 2004 (Région)	2026-04-23T12:19:10+00:00	323	Santé publique France
 antibiotiques-consommation-en-ehpad_fra	Antibiotiques : Consommation en EHPAD sans pharmacie à usage intérieur (France)	2025-11-18T09:34:28+00:00	9	Santé publique France
-parkinson-incidence-et-prevalence_reg	Parkinson : Incidence et prévalence (Région)	2024-12-05T15:41:42+00:00	247	Santé publique France
-hantavirus	Hantavirus : Incidence	2026-01-19T11:03:40+00:00	1938	Santé publique France
-arteriopathie-obliterante-membre-inferieur-incidence-hospitaliere-dep	Artériopathie oblitérante des membres inférieurs : Incidence hospitalière (Département)	2026-06-09T09:59:34+00:00	11987	Santé publique France
-maladies-cardio-neuro-vasculaires-taux-standardises-dep	Maladies Cardio-Neuro-Vasculaires : Taux standardisés (Département)	2025-06-30T09:52:50+00:00	900	Santé publique France
 sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_reg	Santé mentale : Pensées suicidaires et tentatives de suicide (Région)	2025-03-21T11:20:44+00:00	144	Santé publique France
 hepatite-a-donnees-de-la-declarations-obligatoire-france	Hépatite A : Données de la déclarations obligatoire (France)	2026-06-05T14:58:27+00:00	140	Santé publique France
-maladies-cardiaques-hospitalisations	Maladies cardiovasculaires : Hospitalisations (département)	2025-04-07T13:53:39+00:00	220784	Santé publique France
-suicides-deces-infradepartemental	Suicides : Décès (infradépartemental)	2026-05-27T13:07:01+00:00	9270	Santé publique France
 maladie-veineuse-thrombo-embolique-incidence-hospitaliere-dep	Maladie veineuse thromboembolique : Incidence hospitalière (Département)	2026-06-09T09:59:55+00:00	25650	Santé publique France
-antibiotiques-consommation-en-medecine-de-ville-departement	Antibiotiques : Consommation en médecine de ville (Département)	2025-11-17T13:51:38+00:00	14400	Santé publique France
-departement_france_dom_2016	Fond de carte : Départements dont Drom	2025-01-16T15:32:17+00:00	101	
-rougeole-donnees-declaration-obligatoire	Rougeole : Données de la déclaration obligatoire	2026-05-18T08:26:58+00:00	19017	Santé publique France
 infection-invasive-a-meningocoque-notifications-region	Infection Invasive à Méningocoque : Notifications (Région)	2024-12-06T14:38:42+00:00	16485	Santé publique France
-diabete-complications-et-suivi-france	Diabète : Complications et suivi (France)	2025-12-03T09:32:22+00:00	8	Santé publique France
 vaccination-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Vaccination : Indicateurs du Baromètre de Santé publique France 2024 - Détail géographique	2025-12-11T09:30:00+00:00	1020	Santé publique France
-ira-cepidc	IRA National - Décès certifiés électroniquement	2026-10-09T13:01:23+00:00	45688	
 pollution-de-l-air-impact-sur-la-survenue-de-maladie-du-no2-et-des-pm2-5-scenario-vg_oms	Pollution de l'air : impact sur la survenue de maladie du NO2 et des PM2,5 (scenario : atteinte des valeurs guides de l'OMS) (Région)	2025-03-04T13:28:07+00:00	13	Santé publique France
-maladies-du-motoneurone-dont-sclerose-laterale-amyotrophique-departement	Maladies du motoneurone dont sclérose latérale amyotrophique (Département)	2026-04-03T13:24:30+00:00	1200	Santé publique France
-cancer-incidence-et-mortalite-estimees-region	Cancer : Incidence et mortalité estimées (Région)	2025-02-18T10:38:28+00:00	1120	Santé publique France
-antibiotiques-consommation-en-medecine-de-ville-france	Antibiotiques : Consommation en médecine de ville (France)	2025-11-17T13:57:35+00:00	144	Santé publique France
-perinatalite-mortalite-infantile-et-mortinatalite-departement	Périnatalité : Mortalité infantile et mortinatalité (Département)	2026-07-06T15:03:06+00:00	202	Santé publique France
-diabete-incidence-du-diabete-type-1-chez-lenfant-france	Diabète : Incidence du diabète type 1 chez l'enfant (France)	2024-12-10T14:01:05+00:00	2	Santé publique France
-couvertures-vaccinales-du-nourrisson-depuis-2018-france	Couvertures vaccinales du nourrisson depuis 2018 (France)	2026-05-12T13:53:17+00:00	8	Santé publique France
 cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-france-copie	Cancer : Participation au dépistage organisé du cancer du côlon-rectum (France)	2025-02-20T15:40:30+00:00	39	Santé publique France
 chutes-hospitalisations-et-deces-pour-les-plus-de-65-ans-region-copie	Chutes : Hospitalisations et Décès pour les plus de 65 ans (France)	2026-03-10T10:38:06+00:00	120	Santé publique France
-traumatisme-passages-aux-urgences-et-actes-sos-medecins-departement	Traumatisme : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:02:58+00:00	121200	Santé publique France
-asthme-passages-aux-urgences-et-actes-sos-medecins-region	Asthme : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:00:43+00:00	21600	Santé publique France
-pathologies-orl-passages-aux-urgences-et-actes-sos-medecins-region	Pathologies ORL : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:01:11+00:00	21600	Santé publique France
-ira-methodologies	IRA - Méthodologies	2025-09-04T14:10:44+00:00	16	
-vapotage-indicateurs-du-barometre-2024	Vapotage : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	89	Santé publique France
-tabagisme-indicateurs-du-barometre-2024	Tabagisme : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	194	Santé publique France
-mort-inattendue-du-nourrisson-taux-deces-dep	Mort inattendue du nourrisson : Taux de décès (Département)	2025-04-04T13:54:08+00:00	303	Santé publique France
 asthme-mortalite-france	Asthme : Mortalité (France)	2026-03-19T13:20:24+00:00	345	Santé publique France
 perinatalite-prematurite-france	Périnatalité : Prématurité et autres marqueurs de risque à la naissance (France)	2026-07-18T05:01:02+00:00	13	Santé publique France
-ma-region-environnement-canicule	Ma région : Environnement - Canicule	2026-05-07T09:14:57+00:00	15400	Santé publique France
-ira-virologie-relab	IRA National - Virologie - RELAB	2026-07-16T07:43:46+00:00	18144	
-spf-odisse-ma-region-documents	SPF - Odisse - Ma région - Documents	2025-09-04T14:11:41+00:00	99	
-cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-departement-copie	Cancer : Participation au dépistage organisé du cancer du côlon-rectum (Département)	2026-03-18T09:51:02+00:00	3915	Santé publique France
-maladies-cardio-neuro-vasculaires-taux-standardises-epci	Maladies Cardio-Neuro-Vasculaires : Taux standardisés (EPCI)	2025-06-30T09:34:38+00:00	11250	Santé publique France
 maladies-cardio-neuro-vasculaires-taux-standardises-france	Maladies Cardio-Neuro-Vasculaires : Taux standardisés (France)	2025-06-30T09:06:21+00:00	9	Santé publique France
+cancer-new-depistage-du-cancer-du-col-de-l-uterus-selon-l-age-departement	Cancer : dépistage du cancer du col de l'utérus selon l'âge (Département)	2025-11-12T09:46:58+00:00	6464	Santé publique France
+tabagisme-prevalence-selon-le-sexe	Tabac : Prévalence selon le sexe	2025-01-10T10:32:30+00:00	39	Santé publique France
+alcool-alcoolisation-ponctuelle-importante-api-mensuel-et-hebdomadaire-region	Alcool : Alcoolisation ponctuelle importante (API) - mensuel et hebdomadaire (Région)	2025-01-16T11:46:10+00:00	196	Santé publique France
+alcool-indicateurs-du-barometre-2024	Alcool : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	89	Santé publique France
+sante-sexuelle-ventes-autotests-et-preservatifs-masculins_reg	Santé sexuelle : Ventes autotests et préservatifs masculins (Région)	2026-04-21T14:17:36+00:00	136	Santé publique France
+pesticides-exposition-environnementale-aux-insecticides-canton	Pesticides : exposition environnementale aux insecticides (Canton)	2025-02-27T15:42:45+00:00	7956	Santé publique France
+hepatites-b-et-c-donnees-des-ald-region	Hépatites B et C : Personnes en affection de longue durée (Région)	2025-01-10T14:51:21+00:00	504	Santé publique France
+accouchements_naissances_fra	Périnatalité : Accouchements et naissances (France)	2026-07-17T20:05:44+00:00	13	Santé publique France
+gestes-auto-infliges-hospitalisations-departement	Gestes auto-infligés : Hospitalisations (Département)	2025-12-10T09:28:04+00:00	11124	Santé publique France
+tiques-borreliose-lyme-indicateurs-du-barometre-2024	Tiques et borréliose de Lyme : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	82	Santé publique France
+tabagisme-indicateurs-du-barometre-2024	Tabagisme : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	194	Santé publique France
+perinatalite-donnees-socio-demographiques-departement	Périnatalité : Données socio-démographiques (Département)	2026-07-07T18:55:14+00:00	1339	Santé publique France
+infections-sexuellement-transmissibles-donnees-de-depistages-rembourses-dep	Infections sexuellement transmissibles : Données de dépistages remboursés	2025-03-04T08:39:07+00:00	33732	Santé publique France
+sedentarite-indicateurs-du-barometre-2024	Sédentarité : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	245	Santé publique France
+perinatalite-mortalite-infantile-et-mortinatalite-departement	Périnatalité : Mortalité infantile et mortinatalité (Département)	2026-07-06T15:03:06+00:00	202	Santé publique France
+tub-issues-de-traitement-region	Tuberculose : Issues de traitement (Région)	2026-01-26T20:10:01+00:00	126	Santé publique France
+hepatites-b-et-c-donnees-des-ald-departement	Hépatites B et C : Personnes en affection de longue durée (Département)	2025-02-22T12:55:10+00:00	2828	Santé publique France
+hernie-discale-lombaire-reg	Hernie discale lombaire (Région)	2024-12-10T15:14:48+00:00	1716	Santé publique France
+alcool-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Alcool : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	1037	Santé publique France
+couvertures-vaccinales-archives-departement	Couvertures vaccinales : archives depuis 2004 (Département)	2026-04-23T12:22:06+00:00	2100	Santé publique France
+trouble-anxieux-generalise-indicateurs-du-barometre-2024	Trouble anxieux généralisé : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	104	Santé publique France
+episodes-depressifs-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Épisodes dépressifs : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	357	Santé publique France
+antibiotiques-consommation-en-medecine-de-ville-departement	Antibiotiques : Consommation en médecine de ville (Département)	2025-11-17T13:51:38+00:00	14400	Santé publique France
+tuberculose-donnees-declaration-obligatoire_dep	Tuberculose : Données de la déclaration obligatoire (Département)	2026-05-18T08:38:59+00:00	2121	Santé publique France
+antibiotiques-resistance-en-secteur-de-ville-ou-ehpad_reg	Antibiotiques : Résistance en secteur de ville ou en EHPAD (Région)	2025-11-17T14:08:00+00:00	540	Santé publique France
+pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_reg	Pollution de l'air : impact du NO2 et des PM2,5 sur la mortalité (Région)	2025-03-04T12:56:46+00:00	13	Santé publique France
+saturnisme-depistage-departement	Saturnisme : Dépistage, prévalence, rendement du dépistage (Département)	2025-12-09T16:01:48+00:00	8787	Santé publique France
+hepatites-b-et-c-depistages-et-diagnostics-departement	Hépatites B et C : Dépistages et Diagnostics (Département)	2026-03-18T09:53:25+00:00	202	Santé publique France
+syndrome-coronarien-aigu-incidence-hospitaliere-dep	Syndrome coronarien aigu : Incidence hospitalière (Département)	2025-02-26T10:34:09+00:00	12442	Santé publique France
+sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra	Santé mentale : Pensées suicidaires et tentatives de suicide (France)	2025-01-24T14:32:40+00:00	12	Santé publique France
+perinatalite-accouchements-et-naissances-departement	Périnatalité : Accouchements et naissances (Département)	2026-07-17T20:10:57+00:00	1339	Santé publique France
 bien-etre-indicateurs-du-barometre-2024	Bien-être : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	104	Santé publique France
-bronchiolite-passages-aux-urgences-et-actes-sos-medecins-departement	Bronchiolite : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:00:49+00:00	36280	Santé publique France
+mort-inattendue-du-nourrisson-taux-deces-dep	Mort inattendue du nourrisson : Taux de décès (Département)	2025-04-04T13:54:08+00:00	303	Santé publique France
+antibiotiques-consommation-en-medecine-de-ville-france	Antibiotiques : Consommation en médecine de ville (France)	2025-11-17T13:57:35+00:00	144	Santé publique France
+arteriopathie-obliterante-membre-inferieur-incidence-hospitaliere-dep	Artériopathie oblitérante des membres inférieurs : Incidence hospitalière (Département)	2026-06-09T09:59:34+00:00	11987	Santé publique France
+diabete-incidence-du-diabete-type-1-chez-lenfant-france	Diabète : Incidence du diabète type 1 chez l'enfant (France)	2024-12-10T14:01:05+00:00	2	Santé publique France
+changement-climatique-indicateurs-du-barometre-2024	Changement climatique : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	161	Santé publique France
+tuberculose-issues-de-traitement_dep	Tuberculose : Issues de traitement (Département)	2026-02-10T15:29:24+00:00	1515	Santé publique France
+mortalite-infantile-et-mortinatalite-france	Périnatalité : Mortalité infantile et mortinatalité (France)	2026-07-06T12:34:40+00:00	13	
+legionellose-donnees-declaration-obligatoire	Légionellose : Données de la déclaration obligatoire (Département)	2026-09-04T09:33:40+00:00	2812	Santé publique France
+episodes-depressif-indicateurs-du-barometre-2024	Épisodes dépressifs : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	104	Santé publique France
+hepatite-a-donnees-declaration-obligatoire	Hépatite A : Données de la déclarations obligatoire(Département)	2026-06-23T09:17:17+00:00	1802	Santé publique France
+antibiotiques-consommation-en-ehpad_reg	Antibiotiques : Consommation en EHPAD sans pharmacie à usage intérieur (Région)	2025-11-18T09:32:46+00:00	153	Santé publique France
+hernie-discale-lombaire-dep	Hernie discale lombaire (Département)	2024-12-10T15:19:34+00:00	10182	Santé publique France
+expositions-professionnelles-produits-phytopharmaceutiques-ppp-france	Expositions professionnelles : Produits phytopharmaceutiques PPP (France)	2026-09-15T08:08:32+00:00	132	Santé publique France
+maladies-a-caractere-professionnel-mcp-region	Maladies à caractère professionnel (MCP) (Région)	2026-06-21T16:15:04+00:00	150	Santé publique France
+pollution-de-l-air-impact-sur-la-survenue-de-maladie-du-no2-et-des-pm2-5-scenario-vi_oms_region	Pollution de l'air : impact sur la survenue de maladie du NO2 et des PM2,5 (scenario : atteinte des valeurs intermédiaires de l'OMS) (Région)	2025-03-04T14:00:54+00:00	13	Santé publique France
+hepatites-b-et-c-depistages-et-diagnostics-region	Hépatites B et C : Dépistages et Diagnostics (Région)	2026-03-18T09:49:45+00:00	54	Santé publique France
+vapotage-indicateurs-du-barometre-2024	Vapotage : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	89	Santé publique France
+asthme-passages-aux-urgences-et-actes-sos-medecins-region	Asthme : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:00:43+00:00	21600	Santé publique France
+pathologies-orl-passages-aux-urgences-et-actes-sos-medecins-region	Pathologies ORL : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:01:11+00:00	21600	Santé publique France
+anevrisme-aorte-abdominale-rompu-incidence-hospitaliere-dep	Anévrisme de l'aorte abdominale rompu : Incidence hospitalière (Département)	2025-01-15T13:04:08+00:00	5345	Santé publique France
+traumatisme-passages-aux-urgences-et-actes-sos-medecins-region	Traumatisme : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:20:19+00:00	21600	Santé publique France
+bronchite-passages-aux-urgences-et-actes-sos-medecins-region	Bronchite : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:15:27+00:00	32400	Santé publique France
+sida-diagnostics-dinfection-de-sida-france	SIDA : Diagnostics de sida (France)	2026-03-18T09:29:55+00:00	15	Santé publique France
+ira-methodologies	IRA - Méthodologies	2025-09-04T14:10:44+00:00	16	
+vih-depistages-region	VIH : Dépistages (Région)	2026-03-18T09:27:47+00:00	270	Santé publique France
+vih-depistages-dep	VIH : Dépistages (Département)	2026-03-18T09:27:31+00:00	1545	Santé publique France
+expositions-professionnelles-formaldehyde	Exposition professionnelle : Formaldéhyde	2026-07-17T07:14:42+00:00	1560	Santé publique France
+vih-depistages-rembourses-region	VIH : Dépistages remboursés (Région)	2025-11-26T10:32:56+00:00	2970	Santé publique France
+diabete-complications-et-suivi-france	Diabète : Complications et suivi (France)	2025-12-03T09:32:22+00:00	8	Santé publique France
+pesticides-exposition-professionnelle-aux-herbicides-departement	Pesticides : exposition professionnelle aux herbicides (Département)	2025-02-27T14:30:39+00:00	384	Santé publique France
+cancer-new-depistage-du-cancer-du-col-de-l-uterus-region	Cancer : Dépistage du cancer du col de l'utérus (Région)	2025-11-10T10:29:27+00:00	144	Santé publique France
+tabac-inscription-a-mois-sans-tabac-france	Tabac : Inscription à Mois sans tabac (France)	2025-12-18T15:17:43+00:00	10	Santé publique France
+cancer-incidence-et-mortalite-estimees-region	Cancer : Incidence et mortalité estimées (Région)	2025-02-18T10:38:28+00:00	1120	Santé publique France
+parkinson-incidence-et-prevalence_reg	Parkinson : Incidence et prévalence (Région)	2024-12-05T15:41:42+00:00	247	Santé publique France
+perinatalite-donnees-socio-demographiques-region-copie	Périnatalité : Données socio-démographiques (Région)	2026-07-06T20:58:27+00:00	234	Santé publique France
+allergie-passages-aux-urgences-et-actes-sos-medecins-france	Allergie : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:00:25+00:00	1200	Santé publique France
+traumatisme-passages-aux-urgences-et-actes-sos-medecins-departement	Traumatisme : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:02:58+00:00	121200	Santé publique France
 tabagisme-prevalence-selon-le-revenu	Tabac : Prévalence selon le revenu	2025-01-10T10:37:34+00:00	36	Santé publique France
 corpulence-surpoids-et-obesite-reg	Corpulence : Surpoids et obésité (Région)	2024-12-11T13:32:27+00:00	32	Santé publique France
 gestes-auto-infliges-hospitalisations-france	Gestes auto-infligés : Hospitalisations (France)	2025-12-10T15:37:43+00:00	162	Santé publique France
-cancer-new-depistage-du-cancer-du-col-de-l-uterus-selon-l-age-departement	Cancer : dépistage du cancer du col de l'utérus selon l'âge (Département)	2025-11-12T09:46:58+00:00	6464	Santé publique France
-hepatites-b-et-c-donnees-des-ald-region	Hépatites B et C : Personnes en affection de longue durée (Région)	2025-01-10T14:51:21+00:00	504	Santé publique France
+fragilite-prevalence-departement	Fragilité : Prévalence (Département)	2026-03-17T16:15:29+00:00	960	Santé publique France
+activite-physique-indicateurs-du-barometre-de-sante-publique-detail-region	Activité physique : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	1224	Santé publique France
+suicides-moyens-utilises-france	Suicides : Moyens utilisés (France)	2026-09-10T11:32:06+00:00	195	
+maladies-du-motoneurone-dont-sclerose-laterale-amyotrophique-region	Maladies du motoneurone dont sclérose latérale amyotrophique (Région)	2026-04-03T13:23:14+00:00	204	Santé publique France
+canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-region	Canicules : Décès attribuables à la chaleur pendant l'été et pendant les vagues de chaleur (Région)	2026-05-06T15:27:34+00:00	312	Santé publique France
+exposition-professionnelle-travail-de-nuit	Exposition professionnelle : Travail de nuit	2025-06-06T09:48:03+00:00	4680	Santé publique France
+maladies-du-motoneurone-dont-sclerose-laterale-amyotrophique-departement	Maladies du motoneurone dont sclérose latérale amyotrophique (Département)	2026-04-03T13:24:30+00:00	1200	Santé publique France
+allergie-passages-aux-urgences-et-actes-sos-medecins-dep	Allergie : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T11:01:43+00:00	121200	Santé publique France
+canicules-nombres-de-jours-de-canicule-region	Canicules : Nombres de jours de canicule (Région)	2026-05-04T11:41:10+00:00	286	Santé publique France
+pesticides-exposition-professionnelle-aux-fongicides-departement	Pesticides : exposition professionnelle aux fongicides (Département)	2025-02-27T14:21:49+00:00	384	Santé publique France
+gestes-auto-infliges-passages-aux-urgences-departement	Gestes auto-infligés : Passages aux urgences (Département)	2025-12-09T09:31:42+00:00	9270	Santé publique France
+sedentarite-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Sédentarité : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	969	Santé publique France
+bronchite-passages-aux-urgences-et-actes-sos-medecins-departement	Bronchite : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T12:55:33+00:00	181800	Santé publique France
+maladies-cardio-neuro-vasculaires-taux-standardises-dep	Maladies Cardio-Neuro-Vasculaires : Taux standardisés (Département)	2025-06-30T09:52:50+00:00	900	Santé publique France
+gestes-auto-infliges-patients-hospitalises-infradepartemental	Gestes auto-infligés : Patients hospitalisés (infradépartemental)	2026-09-09T09:24:23+00:00	11124	Santé publique France
+couvertures-vaccinales-du-nourrisson-depuis-2018-france	Couvertures vaccinales du nourrisson depuis 2018 (France)	2026-05-12T13:53:17+00:00	8	Santé publique France
+couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-departement	Couvertures vaccinales issues des certificats de santé du 24ème mois depuis 2004 (Département)	2026-04-23T12:37:39+00:00	2106	Santé publique France
+grippe-passages-urgences-et-actes-sos-medecin_reg	Grippe : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T13:00:37+00:00	32400	Santé publique France
+gestes-auto-infliges-hospitalisations-infradepartemental	Gestes auto-infligés : Hospitalisations (infradépartemental)	2026-05-27T12:29:34+00:00	11124	Santé publique France
+maladies-cardio-neuro-vasculaires-taux-standardises-epci	Maladies Cardio-Neuro-Vasculaires : Taux standardisés (EPCI)	2025-06-30T09:34:38+00:00	11250	Santé publique France
+gestes-auto-infliges-passages-aux-urgences-region	Gestes auto-infligés : Passages aux urgences (Région)	2025-12-09T15:50:02+00:00	1890	Santé publique France
+maladies-cardiaques-hospitalisations	Maladies cardiovasculaires : Hospitalisations (département)	2025-04-07T13:53:39+00:00	220784	Santé publique France
+ma-region-environnement-canicule	Ma région : Environnement - Canicule	2026-05-07T09:14:57+00:00	15400	Santé publique France
+ira-virologie-relab	IRA National - Virologie - RELAB	2026-07-16T07:43:46+00:00	18144	
+spf-odisse-ma-region-documents	SPF - Odisse - Ma région - Documents	2025-09-04T14:11:41+00:00	99	
+suicides-deces-infradepartemental	Suicides : Décès (infradépartemental)	2026-05-27T13:07:01+00:00	9270	Santé publique France
+cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-departement-copie	Cancer : Participation au dépistage organisé du cancer du côlon-rectum (Département)	2026-03-18T09:51:02+00:00	3915	Santé publique France
+bronchiolite-passages-aux-urgences-et-actes-sos-medecins-departement	Bronchiolite : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:00:49+00:00	36280	Santé publique France
 cancer-participation-au-depistage-organise-du-cancer-du-sein_fra	Cancer : Participation au dépistage organisé du cancer du sein (France)	2026-07-04T13:23:02+00:00	9	Santé publique France
 canicules-nombres-de-jours-de-canicule-departement	Canicules : Nombres de jours de canicule (Département)	2026-05-04T11:44:08+00:00	2112	Santé publique France
-tabagisme-prevalence-selon-le-sexe	Tabac : Prévalence selon le sexe	2025-01-10T10:32:30+00:00	39	Santé publique France
 sumeau_stations	SUM'eau : Stations	2026-10-07T10:30:11+00:00	55	Santé publique France
 ma-region-maladies-a-signalements-obligatoires	Ma région : Maladies à Signalements Obligatoires	2026-09-23T09:09:00+00:00	137273	
-ira-virologie-renal	IRA National - Virologie - RENAL	2026-10-09T13:09:08+00:00	124740	
+departement_france_dom_2016	Fond de carte : Départements dont Drom	2025-01-16T15:32:17+00:00	101	
 ira-seuils	IRA National - seuils d'intensité	2026-07-17T14:35:34+00:00	61	
 couvertures-vaccinales-du-nourrisson-dep	Couvertures vaccinales du nourrisson depuis 2018 (Département)	2026-05-12T13:52:34+00:00	808	Santé publique France
 suicides-deces-france	Suicides : Décès (France)	2026-01-09T13:01:11+00:00	135	
-alcool-alcoolisation-ponctuelle-importante-api-mensuel-et-hebdomadaire-region	Alcool : Alcoolisation ponctuelle importante (API) - mensuel et hebdomadaire (Région)	2025-01-16T11:46:10+00:00	196	Santé publique France
-alcool-indicateurs-du-barometre-2024	Alcool : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	89	Santé publique France
 bronchiolite-passages-aux-urgences-et-actes-sos-medecins-region	Bronchiolite : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T12:56:15+00:00	6354	Santé publique France
+asthme-hospitalisations-region	Asthme : Hospitalisations (Région)	2025-01-07T11:28:00+00:00	6045	Santé publique France
 asthme-passages-aux-urgences-et-actes-sos-medecins-france	Asthme : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:00:25+00:00	1200	Santé publique France
 bronchite-passages-aux-urgences-et-actes-sos-medecins-france	Bronchite : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:15:03+00:00	1800	Santé publique France
+rougeole-donnees-declaration-obligatoire	Rougeole : Données de la déclaration obligatoire	2026-05-18T08:26:58+00:00	19017	Santé publique France
+ira-virologie-renal	IRA National - Virologie - RENAL	2026-10-13T15:03:51+00:00	125048	
 ira-commentaires	IRA - Commentaires	2026-09-09T08:55:26+00:00	42	
-gestes-auto-infliges-hospitalisations-departement	Gestes auto-infligés : Hospitalisations (Département)	2025-12-10T09:28:04+00:00	11124	Santé publique France
-infections-respiratoires-aigues-ira-passages-aux-urgences-et-actes-sos-medecins-region	Infections respiratoires aiguës (IRA) : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:03:27+00:00	32400	Santé publique France
-allergie-passages-aux-urgences-et-actes-sos-medecins-dep	Allergie : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T11:01:43+00:00	121200	Santé publique France
-sante-sexuelle-ventes-autotests-et-preservatifs-masculins_reg	Santé sexuelle : Ventes autotests et préservatifs masculins (Région)	2026-04-21T14:17:36+00:00	136	Santé publique France
+covid-19-synthese-des-indicateurs-de-suivi-de-la-pandemie-dep	COVID-19 : Synthèse des indicateurs de suivi de la pandémie	2024-12-16T10:42:35+00:00	121200	Santé publique France
+sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_reg	Santé mentale : Episodes dépressifs caractérisés dans les 12 derniers mois (Région)	2024-12-09T10:34:43+00:00	144	Santé publique France
+ira-cepidc	IRA National - Décès certifiés électroniquement	2026-10-09T13:01:23+00:00	45688	
 ira-ville-rusmg	IRA National - Ville - Réseau Sentinelles	2026-07-16T08:13:07+00:00	4470	
 ma-region-grandes-pathologies-asthme	Ma région : Grandes Pathologies - Asthme	2026-03-25T14:52:24+00:00	50796	
 ira-virologie-rusmg	IRA National - Virologie - Réseau Sentinelles	2026-07-16T08:32:53+00:00	4114	
-alcool-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Alcool : Indicateurs du Baromètre de Santé publique France 2024 - Détail Région	2025-12-11T09:30:00+00:00	1037	Santé publique France
+tous-les-troubles-du-rythme-et-dela-conduction-incidence-hospitaliere	Tous les troubles du rythme et de la conduction : Incidence hospitalière	2025-02-20T14:22:19+00:00	14382	Santé publique France
+infections-respiratoires-aigues-ira-passages-aux-urgences-et-actes-sos-medecins-region	Infections respiratoires aiguës (IRA) : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:03:27+00:00	32400	Santé publique France
+couvertures-vaccinales-archives-depuis-2004-region	Couvertures vaccinales : archives depuis 2004 (Région)	2026-04-23T12:19:10+00:00	323	Santé publique France
+perinatalite-post-partum-departement	Périnatalité : Post-partum (Département)	2026-07-20T18:32:20+00:00	1339	Santé publique France
+sum-eau-indicateurs	SUM'eau : Surveillance du COVID-19 dans les eaux usées	2026-10-07T12:09:19+00:00	217	Santé publique France
+maregion-grandes-pathologies-cancer	Ma région : Principales pathologies - Cancer	2026-04-08T14:10:49+00:00	13661	
 infections-respiratoires-aigues-ira-passages-aux-urgences-et-actes-sos-medecins-departement	Infections respiratoires aiguës (IRA) : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T12:01:01+00:00	181800	Santé publique France
 covid-19-passages-aux-urgences-et-actes-sos-medecins-departement	COVID-19 : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:10:45+00:00	181800	Santé publique France
-bronchite-passages-aux-urgences-et-actes-sos-medecins-departement	Bronchite : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T12:55:33+00:00	181800	Santé publique France
-sum-eau-indicateurs	SUM'eau : Surveillance du COVID-19 dans les eaux usées	2026-10-07T12:09:19+00:00	217	Santé publique France
-mortalite-infantile-et-mortinatalite-france	Périnatalité : Mortalité infantile et mortinatalité (France)	2026-07-06T12:34:40+00:00	13	
-maregion-grandes-pathologies-cancer	Ma région : Principales pathologies - Cancer	2026-04-08T14:10:49+00:00	13661	
-pesticides-exposition-environnementale-aux-insecticides-canton	Pesticides : exposition environnementale aux insecticides (Canton)	2025-02-27T15:42:45+00:00	7956	Santé publique France
-sedentarite-indicateurs-du-barometre-2024	Sédentarité : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	245	Santé publique France
-allergie-passages-aux-urgences-et-actes-sos-medecins-france	Allergie : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:00:25+00:00	1200	Santé publique France
 bronchiolite-passages-aux-urgences-et-actes-sos-medecins-france	Bronchiolite : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:00:30+00:00	353	Santé publique France
-sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra	Santé mentale : Pensées suicidaires et tentatives de suicide (France)	2025-01-24T14:32:40+00:00	12	Santé publique France
+hantavirus	Hantavirus : Incidence	2026-01-19T11:03:40+00:00	1938	Santé publique France
 couvertures-vaccinales-des-adolescents-et-adultes-depuis-2011-france	Couvertures vaccinales des adolescents et adultes depuis 2011 (France)	2026-10-08T12:23:50+00:00	15	Santé publique France
+noyades-donnees-depuis-2023-departement	Noyades : Données depuis 2023 (Département)	2026-07-03T15:11:32+00:00	290	Santé publique France
 ma-region-sante-mentale	Ma région : Santé Mentale	2026-04-22T14:04:03+00:00	61611	
 ira-sequencage-interpretation	IRA National - Interprétation des séquençages des virus respiratoires	2026-09-15T11:48:04+00:00	3	
+antibiotiques-resistance-en-etablissement-de-sante_fra	Antibiotiques : Résistance en établissements de santé (France)	2025-11-18T09:24:41+00:00	9	Santé publique France
 couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-france	Couvertures vaccinales issues des certificats de santé du 24ème mois depuis 2004 (France)	2026-04-23T12:40:27+00:00	21	Santé publique France
 perinatalite-suivi-et-pathologies-durant-la-grossesse-france	Périnatalité : Suivi et pathologies durant la grossesse (France)	2026-07-07T21:35:55+00:00	13	Santé publique France
-cancer-new-depistage-du-cancer-du-col-de-l-uterus-departement	Cancer : Dépistage du cancer du col de l'utérus (Département)	2025-10-20T15:58:23+00:00	808	Santé publique France
 cancer-participation-au-depistage-organise-du-cancer-du-sein_reg	Cancer : Participation au dépistage organisé du cancer du sein (Région)	2026-07-04T13:07:41+00:00	153	Santé publique France
 covid-19-passages-aux-urgences-et-actes-sos-medecins-france	COVID-19 : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:10:13+00:00	1800	Santé publique France
 arboviroses-donnees-declaration-obligatoire	Arboviroses : Données de la déclaration obligatoire	2026-08-24T13:41:55+00:00	50400	Santé publique France
 indice-de-defavorisation-sociale-fdep-par-commune	Indice de défavorisation sociale (FDep) par commune	2026-05-26T13:36:22+00:00	34910	
 ma-region-epidemies-hivernales-grippe	Ma Région : Épidémies Hivernales - Grippe	2026-10-06T09:46:33+00:00	444020	
-grippe-passages-urgences-et-actes-sos-medecin_reg	Grippe : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T13:00:37+00:00	32400	Santé publique France
-pneumopathie-passages-aux-urgences-et-actes-sos-medecins-region	Pneumopathie : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:05:28+00:00	32400	Santé publique France
+cancer-new-depistage-du-cancer-du-col-de-l-uterus-departement	Cancer : Dépistage du cancer du col de l'utérus (Département)	2025-10-20T15:58:23+00:00	808	Santé publique France
+grossesse-dep	Périnatalité : Suivi et pathologies durant la grossesse (Département)	2026-07-08T12:37:45+00:00	1339	Santé publique France
 gestes-auto-infliges-moyens-utilises-ayant-mene-a-une-hospitalisation-region	Gestes auto-infligés : Moyens utilisés ayant mené à une hospitalisation (Région)	2026-09-09T13:40:41+00:00	4212	Santé publique France
 pesticides-exposition-professionnelle-aux-fongicides-canton	Pesticides : exposition professionnelle aux fongicides (Canton)	2025-02-27T14:19:43+00:00	7956	Santé publique France
 tachycardie-ventriculaire-et-arret-cardiaque-incidence-hospitaliere-departement	Tachycardie ventriculaire et arrêt cardiaque : Incidence hospitalière (Département)	2026-06-09T10:00:12+00:00	13287	Santé publique France
 depistage_neonatal_fra	Périnatalité : Dépistage biologique néonatal (France)	2026-07-07T19:25:05+00:00	15	Santé publique France
 pesticides-exposition-environnementale-aux-herbicides-region	Pesticides : exposition environnementale aux herbicides (Région)	2025-02-21T11:21:27+00:00	52	Santé publique France
 hepatites-b-c-et-d-depistages-rembourses-region	Hépatites B, C et D : Dépistages remboursés  (Région)	2026-03-18T09:39:41+00:00	8910	Santé publique France
-leptospirose-donnees-a-declaration-obligatoire	Léptospirose : Données à déclaration obligatoire	2026-06-10T10:01:40+00:00	96	Santé publique France
-pesticides-exposition-environnementale-aux-insecticides-france	Pesticides : exposition environnementale aux insecticides (France)	2025-02-27T13:59:10+00:00	4	Santé publique France
-chutes-hospitalisations-et-deces-region	Chutes : Hospitalisations et Décès pour les plus de 65 ans (Région)	2026-03-10T10:40:58+00:00	360	Santé publique France
 fragilite-prevalence-region	Fragilité : Prévalence (Région)	2026-03-17T16:22:43+00:00	130	Santé publique France
-tabac-consommation-quotidienne_reg	Tabac : Consommation quotidienne (Région)	2025-01-23T09:56:05+00:00	216	Santé publique France
-tabagisme-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Tabagisme : Indicateurs du Baromètre de Santé publique France 2024 - Detail Région	2025-12-11T09:30:00+00:00	676	Santé publique France
 hepatite-b-diagnostics-dhepatite-b-aigue-france	Hépatite B : Diagnostics d'hépatite B aiguë (France)	2025-11-24T08:50:39+00:00	22	Santé publique France
-hepatite-b-diagnostics-dhepatite-b-aigue-region	Hépatite B : Diagnostics d'hépatite B aiguë (Région)	2025-10-09T13:09:22+00:00	396	Santé publique France
-canicules-severite-region	Canicules : Sévérité (Région)	2026-05-12T14:37:42+00:00	286	Santé publique France
 perinatalite-mortalite-maternelle-region	Périnatalité : Mortalité maternelle (Région)	2026-07-06T15:33:24+00:00	18	
 pesticides-exposition-professionnelle-aux-fongicides-region	Pesticides : exposition professionnelle aux fongicides (Région)	2025-02-27T14:25:50+00:00	52	Santé publique France
-pesticides-exposition-environnementale-aux-fongicides-canton	Pesticides : exposition environnementale aux fongicides (Canton)	2025-02-20T13:19:14+00:00	7956	Santé publique France
-suicides-moyens-utilises-region	Suicides : Moyens utilisés (Région)	2026-09-10T12:04:32+00:00	3510	Santé publique France
 anevrisme-aorte-thoracique-rompu-incidence-hospitaliere-dep	Anévrisme de l'aorte thoracique rompu : Incidence hospitalière (Département)	2026-06-09T09:59:37+00:00	2576	Santé publique France
-canicules-severite-france	Canicules : Sévérité (France)	2026-05-05T12:56:47+00:00	22	Santé publique France
-perinatalite-post-partum-france	Périnatalité : Post-partum (France)	2026-07-20T08:14:39+00:00	13	Santé publique France
-vih-diagnostics-dinfection-a-vih-france	VIH : Diagnostics d'infection à VIH (France)	2026-03-18T09:34:30+00:00	60	Santé publique France
-mois-sans-tabac-nombre-d-inscriptions-departement	Tabac : Inscription à Mois sans tabac (Département)	2025-12-18T15:21:32+00:00	1007	Santé publique France
-resistance-aux-antibiotiques-vaccination-indicateurs-du-barometre-2024	Résistance aux antibiotiques : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	90	Santé publique France
-diabete-indicateurs-du-barometre-2024	Diabète : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	128	Santé publique France
 cancer-new-depistage-du-cancer-du-col-de-l-uterus-selon-l-age-region	Cancer : Dépistage du cancer du col de l'utérus selon l'âge (Région)	2025-10-20T16:11:35+00:00	1152	Santé publique France
 anevrisme-aorte-thoracique-incidence-hospitaliere-dep	Anévrisme de l'aorte thoracique : Incidence hospitalière (Département)	2025-01-15T13:11:56+00:00	11102	Santé publique France
-activite-physique-indicateurs-du-barometre-2024	Activité physique : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	206	Santé publique France
-bpco-mortalite-region	BPCO : Mortalité (Région)	2026-03-24T10:40:19+00:00	1173	Santé publique France
-exposition-professionnelle-solvants	Expositions professionnelles : Solvants	2025-06-06T10:04:05+00:00	3672	Santé publique France
-legionellose-donnees-de-la-declaration-obligatoire-region	Légionellose : Données de la déclaration obligatoire (Région)	2026-09-04T14:40:18+00:00	3074	Santé publique France
 pesticides-exposition-environnementale-aux-fongicides-departement	Pesticides : exposition environnementale aux fongicides (Département)	2025-02-27T14:07:51+00:00	384	Santé publique France
-grossesse-reg	Périnatalité : Suivi et pathologies durant la grossesse (Région)	2026-07-08T10:37:18+00:00	234	Santé publique France
 pesticides-exposition-environnementale-aux-fongicides-france	Pesticides : exposition environnementale aux fongicides (France)	2025-02-20T14:11:58+00:00	4	Santé publique France
-diabete-prevalence-annuelle-du-diabete-type-1-chez-les-moins-de-20-ans_fra	Diabète : Prévalence annuelle du diabète type 1 chez les moins de 20 ans (France)	2024-12-09T11:09:53+00:00	12	Santé publique France
-suicides-moyens-utilises-departement	Suicides : Moyens utilisés (Département)	2026-09-10T12:12:30+00:00	20007	Santé publique France
 perinatalite-mortalite-maternelle-france	Périnatalité : Mortalité maternelle (France)	2026-07-06T15:25:49+00:00	1	
 pesticides-exposition-environnementale-aux-fongicides-region	Pesticides : exposition environnementale aux fongicides (Région)	2025-02-27T14:01:42+00:00	52	Santé publique France
 pesticides-exposition-professionnelle-aux-fongicides-france	Pesticides : exposition professionnelle aux fongicides (France)	2025-02-27T14:22:53+00:00	4	Santé publique France
-cancer-incidence-estimee-france-hexagonale	Cancer : Incidence estimée (France hexagonale)	2026-02-20T16:06:33+00:00	23522	Santé publique France - Le réseau Francim des registres des cancers, les Hospices Civils de Lyon, l'Institut national du cancer et Santé publique France
 tuberculose-issues-de-traitement_fra	Tuberculose : Issues de traitement (France)	2026-01-26T19:36:35+00:00	15	Santé publique France
-chutes-hospitalisations-et-deces-departement	Chutes : Hospitalisations et Décès pour les plus de 65 ans (Département)	2026-03-23T09:00:24+00:00	2020	Santé publique France
-accident-vasculaire-cerebral-incidence-hospitaliere-dep	Accident Vasculaire Cérébral : Incidence hospitalière (Département)	2025-01-14T15:14:30+00:00	26729	Santé publique France
-diabete-prevalence-region	Diabète : Prévalence (Région)	2026-04-01T09:00:18+00:00	714	Santé publique France
 noyade-nombre-de-noyades-et-deces	Noyade : Données enquêtes de 2003 à 2021	2025-02-03T14:26:51+00:00	806	Santé publique France
 anevrisme-aorte-abdominale-incidence-hospitaliere-dep	Anévrisme de l'aorte abdominale : Incidence hospitalière (Département)	2025-01-14T15:30:33+00:00	11102	Santé publique France
 mort-inattendue-du-nourrisson-effectifs-selon-le-sexe-region	Mort inattendue du nourrisson : Effectifs selon le sexe (Région)	2025-04-04T13:53:49+00:00	54	Santé publique France
-couvertures-vaccinales-archives-depuis-2004-france	Couvertures vaccinales : archives depuis 2004 (France)	2026-04-23T12:17:07+00:00	21	Santé publique France
 depistage-neonatal-surdite-france	Dépistage néonatal : Surdité permanente néonatale (France)	2025-04-04T13:47:30+00:00	2	Santé publique France
 insuffisance-cardiaque-incidence-hospitaliere-dep	Insuffisance cardiaque : Incidence hospitalière (Département)	2026-06-09T09:59:43+00:00	13472	Santé publique France
 antibiotiques-resistance-en-secteur-de-ville-ou-ehpad_fra	Antibiotiques : Résistance en secteur de ville ou en EHPAD (France)	2025-11-17T14:35:48+00:00	30	Santé publique France
-sommeil-indicateurs-du-barometre-2024	Sommeil : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	267	Santé publique France
-hepatites-b-et-c-donnees-des-ald-france	Hépatites B et C : Personnes en affection de longue durée (France)	2024-12-24T08:31:04+00:00	28	Santé publique France
-hepatites-b-c-et-d-depistages-rembourses-departement	Hépatites B, C et D : Dépistages remboursés (Département)	2026-03-18T09:41:38+00:00	49995	Santé publique France
-saturnisme-depistage-prevalence-rendement-du-depistage-region	Saturnisme : Taux de dépistage, prévalence, rendement du dépistage (Région)	2025-12-11T15:09:19+00:00	522	Santé publique France
 perinatalite-facteurs-de-risque-en-pre-conceptionnel-et-addiction-france	Périnatalité : Facteurs de risque en pré-conceptionnel et addiction (France)	2026-07-07T06:43:59+00:00	13	Santé publique France
 mois-sans-tabac-nombre-d-inscriptions-region	Tabac : Inscription à Mois sans tabac (Région)	2025-12-23T10:50:13+00:00	180	Santé publique France
 syndrome-du-canal-carpien-incidence_fra	Syndrome du canal carpien : Incidence (France)	2024-12-10T11:39:08+00:00	96	Santé publique France
-vih-diagnostics-dinfection-a-vih-region	VIH : Diagnostics d'infection à VIH (Région)	2026-03-18T09:32:59+00:00	1140	Santé publique France
 maladies-cardio-neuro-vasculaires-taux-brut-france	Maladies Cardio-Neuro-Vasculaires : Taux brut (France)	2025-06-30T09:03:07+00:00	126	Santé publique France
-maladies-du-motoneurone-dont-sclerose-laterale-amyotrophique-france	Maladies du motoneurone dont sclérose latérale amyotrophique (France)	2025-02-20T08:42:18+00:00	12	Santé publique France
-exposition-professionnelle-silice	Exposition professionnelle : Silice	2025-06-06T09:38:12+00:00	1560	Santé publique France
 perinatalite-caracteristiques-socio-demographiques-france	Périnatalité : Données socio-démographiques (France)	2026-07-07T17:57:53+00:00	13	Santé publique France
 fibrillation-ou-flutter-atrial-incidence-hospitaliere-departement	Fibrillation ou flutter atrial : Incidence hospitalière (Département)	2025-02-26T10:34:09+00:00	12506	Santé publique France
-maladies-cardio-neuro-vasculaires-taux-brut-dep	Maladies Cardio-Neuro-Vasculaires : Taux brut (Département)	2025-06-30T09:37:56+00:00	4200	Santé publique France
-canicules-exces-de-deces-pendant-les-vagues-de-chaleur-region	Canicules : Excès de décès pendant les vagues de chaleur (Région)	2026-05-05T13:27:30+00:00	195	Santé publique France
-diabete-prevalence-annuelle-du-diabete-type-1-chez-les-moins-de-20-ans_reg	Diabète : Prévalence annuelle du diabète type 1 chez les moins de 20 ans (Région)	2024-12-03T14:36:53+00:00	204	Santé publique France
-pesticides-exposition-professionnelle-aux-insecticides-departement	Pesticides : exposition professionnelle aux insecticides (Département)	2025-02-27T14:44:38+00:00	384	Santé publique France
 conduites-suicidaires-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Conduites suicidaires : Indicateurs du Baromètre de Santé publique France 2024 - Detail Région	2025-12-11T09:30:00+00:00	714	Santé publique France
-asthme-hospitalisations-france	Asthme : Hospitalisations (France)	2025-01-07T15:36:51+00:00	360	Santé publique France
-bpco-mortalite-departement	BPCO : Mortalité (Département)	2026-03-24T10:49:27+00:00	6900	Santé publique France
-couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-region	Couvertures vaccinales issues des certificats de santé du 24ème mois depuis 2004 (Région)	2026-04-23T12:39:35+00:00	329	Santé publique France
 valvulopathies-incidence-hospitaliere-departement	Valvulopathies : Incidence hospitalière (Département)	2025-02-26T10:34:09+00:00	14283	Santé publique France
 pesticides-exposition-environnementale-aux-herbicides-france	Pesticides : exposition environnementale aux herbicides (France)	2025-02-21T11:19:32+00:00	4	Santé publique France
 dissection-arteres-de-moyen-calibre-incidence-hospitaliere-dep	Dissection des artères de moyen calibre : Incidence hospitalière (Département)	2026-06-09T09:59:35+00:00	11168	Santé publique France
-anomalies-congenitales-prev_annuelle_issue_bulletin	Anomalies congénitales : Evolution de la prévalence totale selon l’issue de grossesse (Registres)	2026-07-08T07:13:27+00:00	44	Santé publique France
 maladies-cardio-neuro-vasculaires-taux-standardises-region	Maladies Cardio-Neuro-Vasculaires : Taux standardisés (Région)	2025-06-30T09:13:14+00:00	153	Santé publique France
-exposition-professionnelle-bruit-dep	Exposition professionnelle : Bruit (Département)	2026-10-12T08:46:17+00:00	15552	Santé publique France
 antibiotiques-resistance-en-etablissement-de-sante_reg	Antibiotiques : Résistance en établissements de santé (Région)	2025-11-18T09:22:42+00:00	159	Santé publique France
-diabete-prevalence-france	Diabète : Prévalence (France)	2026-04-01T09:02:56+00:00	42	Santé publique France
 gestes-auto-infliges-patients-hospitalises-region	Gestes auto-infligés : Patients hospitalisés (Région)	2026-09-09T07:52:36+00:00	2268	Santé publique France
-bpco-hospitalisations-france	BPCO : Hospitalisations (France)	2026-04-03T09:37:08+00:00	360	Santé publique France
-troubles-probables-de-sante-mentale-parmi-les-enfants-du-cp-au-cm2-indicateurs-d-enabee-2022	Troubles probables de santé mentale parmi les enfants du CP au CM2 : Indicateurs d'Enabee 2022	2026-09-10T13:31:13+00:00	32	Santé publique France
 expositions-professionnelles-produits-phytopharmaceutiques-dep	Expositions professionnelles : Produits phytopharmaceutiques PPP (Département)	2026-09-09T08:21:57+00:00	15552	Santé publique France
-hepatites-b-c-et-d-depistages-rembourses-france	Hépatites B, C et D : Dépistages remboursés (France)	2026-03-18T09:41:23+00:00	495	Santé publique France
 canicules-taille-de-la-population-concernee-par-une-canicule-france	Canicules : Taille de la population concernée par une canicule (France)	2026-05-04T11:57:38+00:00	22	Santé publique France
-tuberculose-donnees-declaration-obligatoire_reg	Tuberculose : Données de la déclaration obligatoire (Région)	2026-05-18T08:43:01+00:00	378	Santé publique France
-antibiotiques-consommation-en-etablissements-sante_reg	Antibiotiques : Consommation en établissements de santé (Région)	2025-11-18T09:13:38+00:00	204	Santé publique France
 prevention-canicule-indicateurs-du-barometre-2024	Prévention Canicule : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	140	Santé publique France
-diabete-complications-et-suivi-region	Diabète : Complications et suivi (Région )	2025-12-02T09:24:15+00:00	136	Santé publique France
 hypertension-arterielle-indicateurs-du-barometre-2024	Hypertension artérielle : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	87	Santé publique France
-asthme-hospitalisations-departement	Asthme : Hospitalisations (Département)	2026-03-25T14:01:06+00:00	35925	Santé publique France
-gestes-auto-infliges-patients-hospitalises-france	Gestes auto-infligés : Patients hospitalisés (France)	2026-09-09T07:34:02+00:00	162	Santé publique France
 gestes-auto-infliges-patients-hospitalises-departement	Gestes auto-infligés : Patients hospitalisés (Département)	2026-09-09T09:02:38+00:00	11124	Santé publique France
 mpox-incidence-selon-lage-france	Mpox : Incidence selon l'âge (France)	2026-10-07T10:10:04+00:00	985	Santé publique France
-tabagisme-prevalence-selon-le-niveau-d-etude	Tabac : Prévalence selon le niveau d'étude	2025-01-10T10:41:51+00:00	36	Santé publique France
 perinatalite-prematurite-region	Périnatalité : Prématurité et autres marqueurs de risque à la naissance (Région)	2026-07-18T05:08:51+00:00	234	Santé publique France
 perinatalite-prematurite-departement	Périnatalité : Prématurité et autres marqueurs de risque à la naissance (Département)	2026-07-18T05:19:06+00:00	1339	Santé publique France
-sante_generale_indicateurs_barometre_2024	Santé générale : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	148	
-saturnisme-depistage-prevalence-rendement-du-depistage-dep	Saturnisme : Taux de dépistage, prévalence, rendement du dépistage (Département)	2025-10-23T14:18:58+00:00	2916	Santé publique France
 perinatalite-mortalite-infantile-et-mortinatalite-region	Périnatalité : Mortalité infantile et mortinatalité (Région)	2026-07-06T14:23:10+00:00	234	Santé publique France
-canicules-taille-de-la-population-concernee-par-une-canicule-departement	Canicules : Taille de la population concernée par une canicule (Département)	2026-05-04T12:00:37+00:00	2112	Santé publique France
-traumatisme-passages-aux-urgences-et-actes-sos-medecins-france	Traumatisme : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:02:57+00:00	1200	Santé publique France
-saturnisme-depistage-region	Saturnisme : Dépistage, prévalence, rendement du dépistage (Région)	2025-12-11T15:06:38+00:00	1566	Santé publique France
-bpco-mortalite-france	BPCO : Mortalité (France)	2026-03-24T09:19:44+00:00	69	Santé publique France
 mpox-incidence-selon-le-sexe-france	Mpox : Incidence selon le sexe (France)	2026-10-07T10:10:22+00:00	591	Santé publique France
-suicides-deces-region	Suicides : Décès (Région)	2026-01-12T11:10:41+00:00	1890	Santé publique France
 canicules-exces-de-deces-pendant-les-vagues-de-chaleur-france	Canicules : Excès de décès pendant les vagues de chaleur (France)	2026-05-05T13:31:41+00:00	18	Santé publique France
-couvertures-vaccinales-du-nourrisson-depuis-2018-region	Couvertures vaccinales du nourrisson depuis 2018 (Région)	2026-05-12T13:53:04+00:00	136	Santé publique France
-canicules-deces-attribuables-a-la-chaleur-pendant-l-ete-et-pendant-les-vagues-de-chaleur-departement	Canicules : Décès attribuables à la chaleur pendant l'été et pendant les vagues de chaleur (Département)	2026-05-05T14:00:51+00:00	2304	Santé publique France
-cardiopathie-ischemique-departement-incidence-hospitaliere-dep	Cardiopathie ischémique : Incidence hospitalière  (Département)	2025-02-26T10:34:09+00:00	12694	Santé publique France
 infections-sexuellement-transmissibles-donnees-de-diagnostic	Infections sexuellement transmissibles : Données de diagnostic	2025-02-27T09:43:30+00:00	19986	Santé publique France
 troubles-de-la-conduction-incidence-hospitaliere	Troubles de la conduction : Incidence hospitalière	2025-02-20T14:12:13+00:00	13568	Santé publique France
-cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-region-copie	Cancer : Participation au dépistage organisé du cancer du côlon-rectum (Région)	2026-03-18T09:28:08+00:00	663	Santé publique France
-hernie-discale-lombaire-france	Hernie discale lombaire (France)	2024-12-10T15:06:00+00:00	102	Santé publique France
-tabac-deces-attribuables-au-tabac_reg	Tabac :  Décès attribuables au tabac	2026-06-26T11:31:58+00:00	228	Santé publique France
-antibiotiques-consommation-en-medecine-de-ville-region	Antibiotiques : Consommation en médecine de ville (Région)	2025-11-17T13:55:38+00:00	2448	Santé publique France
-antibiotiques-consommation-en-medecine-de-ville-epci	Antibiotiques : Consommation en médecine de ville (EPCI)	2026-09-07T10:00:59+00:00	22329	Santé publique France
-canicules-severite-departement	Canicules : Sévérité (Département)	2026-05-05T12:43:15+00:00	2112	Santé publique France
-infection-invasive-a-meningocoque-notifications-france	Infection Invasive à Méningocoque : Notifications (France)	2024-12-06T14:38:42+00:00	950	Santé publique France
-infection-invasive-a-meningocoque-notifications	Infection Invasive à Méningocoque : Notifications (Département)	2024-12-06T14:38:42+00:00	15565	Santé publique France
-spf-odisse-ma-region-methodologies	SPF - Odisse - Ma région - Méthodologies	2025-09-04T14:10:44+00:00	36	
-vaccination-indicateurs-du-barometre-2024	Vaccination : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	50	Santé publique France
 gestes-auto-infliges-moyens-utilises-ayant-mene-a-une-hospitalisation-departement	Gestes auto-infligés : Moyens utilisés ayant mené à une hospitalisation (Département)	2026-09-09T14:04:33+00:00	24102	Santé publique France
 vih-depistages-france	VIH : Dépistages (France)	2026-03-18T09:27:08+00:00	15	Santé publique France
 gestes-auto-infliges-hospitalisations-region	Gestes auto-infligés : Hospitalisations (Région)	2025-12-10T13:42:34+00:00	2268	Santé publique France
-canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france	Canicules : Décès attribuables à la chaleur pendant l'été et pendant les vagues de chaleur (France)	2026-05-06T15:32:38+00:00	24	Santé publique France
-mpox-incidence-selon-le-sexe-region	Mpox : Incidence selon le sexe (Région)	2026-10-07T10:11:05+00:00	12411	Santé publique France
-french-european-deprivation-index-f-edi-2021-par-iris	French european deprivation index (F-EDI) 2021 par IRIS	2023-01-01T13:55:34+00:00	48577	MapInMed et Anticipe
-pneumopathie-passages-aux-urgences-et-actes-sos-medecins-france	Pneumopathie : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T12:05:03+00:00	1800	Santé publique France
-diabete-prevalence-departement	Diabète : Prévalence (Département)	2025-01-31T13:40:48+00:00	4200	Santé publique France
-corpulence-surpoids-et-obesite-fra	Corpulence : Surpoids et obésité (France)	2024-12-10T14:07:14+00:00	2	Santé publique France
-ma-region-grandes-pathologies-cardio	Ma région : Principales Pathologies - Maladies cardio-neuro-vasculaire	2026-03-20T15:11:56+00:00	257072	
-ma-region-epidemies-hivernales-bronchiolite	Ma Région : Épidémies Hivernales - Bronchiolite	2026-10-06T09:50:04+00:00	102622	
-tuberculose-donnees-declaration-obligatoire_fra	Tuberculose : Données de la déclaration obligatoire (France)	2026-01-26T19:54:47+00:00	21	Santé publique France
-alcool-consommation-quotidienne-region	Alcool : Consommation quotidienne  (Région)	2025-01-14T14:15:25+00:00	228	Santé publique France
-pathologies-orl-passages-aux-urgences-et-actes-sos-medecins-departement	Pathologies ORL : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:01:01+00:00	121200	Santé publique France
-gastro-enterite-aigue-passages-aux-urgences-et-actes-sos-medecins-france	Gastro-entérite aiguë : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:02:21+00:00	1200	Santé publique France
-parkinson-incidence-et-prevalence_fra	Parkinson : Incidence et prévalence (France)	2024-12-06T08:08:30+00:00	14	Santé publique France
-vapotage-prevalence	Vapotage : Prévalence	2025-01-09T13:18:38+00:00	20	Santé publique France
-ira-hospit-casgraves	IRA National - Hospitalier - Cas graves	2026-10-05T12:44:16+00:00	0	Santé publique France
-ira-national-sursaud-bronchio-par-age	IRA National - Sursaud - Bronchio par âge	2026-09-02T14:29:32+00:00	55660	
-antibiotiques-consommation-en-etablissements-sante-france	Antibiotiques : Consommation en établissements de santé (France)	2025-11-18T09:18:40+00:00	12	Santé publique France
-canicules-nombres-de-jours-de-canicule-france	Canicules : Nombres de jours de canicule (France)	2026-05-04T11:41:50+00:00	22	Santé publique France
-mpox-incidence-selon-l-age-region	Mpox : Incidence selon l'âge (Région)	2026-10-07T10:11:58+00:00	20685	Santé publique France
-legionellose-donnees-de-la-declaration-obligatoire-france	Légionellose : Données de la déclaration obligatoire (France)	2026-09-04T14:41:11+00:00	220	Santé publique France
-ma-region-environnement-pollution-atmospherique	Ma région : Environnement - Pollution atmosphérique	2026-04-24T14:08:31+00:00	702	
-ma-region-vaccination	Ma région : Vaccinations	2026-02-18T11:14:11+00:00	11460	
-ma-region-addictions-tabac	Ma région : Addictions - Tabac	2026-05-20T09:02:26+00:00	1054	
-ira-point-de-situation	IRA National - point de situation	2026-10-07T12:13:47+00:00	11	
 pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_fra	Pollution de l'air : impact du NO2 et des PM2,5 sur la mortalité (France)	2025-03-04T12:55:54+00:00	1	Santé publique France
-cancer-participation-au-depistage-organise-du-cancer-du-sein_dep	Cancer : Participation au dépistage organisé du cancer du sein (Département)	2026-07-04T13:23:02+00:00	900	Santé publique France
 sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_fra	Santé mentale : Episodes dépressifs caractérisés dans les 12 derniers mois (France)	2024-12-11T10:52:30+00:00	12	Santé publique France
-pneumopathie-passages-aux-urgences-et-actes-sos-medecins-departement	Pneumopathie : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:05:38+00:00	181800	Santé publique France
-canicules-exces-de-deces-pendant-les-vagues-de-chaleur-departement	Canicules : Excès de décès pendant les vagues de chaleur (Département)	2026-05-05T13:24:14+00:00	1054	Santé publique France
-infections-respiratoires-aigues-ira-passages-aux-urgences-et-actes-sos-medecins-france	Infections respiratoires aiguës (IRA) : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:00:41+00:00	1800	Santé publique France
-ma-region-addictions-alcool	Ma région : Addictions - Alcool	2026-05-20T09:28:46+00:00	615	
-cancer-incidence-et-mortalite-estimees-departement	Cancer : Incidence et mortalité estimées (Département)	2025-02-18T10:43:09+00:00	6860	Santé publique France
-covid-19-passages-aux-urgences-et-actes-sos-medecins-region	COVID-19 : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:10:32+00:00	32400	Santé publique France
-perinatalite-post-partum-region	Périnatalité : Post-partum (Région)	2026-07-20T18:17:37+00:00	234	Santé publique France
-ma-region-grandes-pathologies-diabete0	Ma région : Principales Pathologies - Diabète	2026-04-01T09:12:30+00:00	4956	
-ira-sumeau	IRA National - SUM'EAU	2026-07-16T08:42:50+00:00	5742	
-ira-virologie-variants-covid	IRA National - Virologie - Variants SARS-CoV-2	2026-07-16T08:47:13+00:00	438	
-ma-region-grandes-pathologies-bpco	Ma région : Grandes Pathologies - BPCO	2026-03-30T07:28:53+00:00	58922	
-ira-esms	IRA National - ESMS - Cas groupés d'IRA	2026-10-09T13:01:29+00:00	812	
-couvertures-vaccinales-des-adolescents-et-adultes-depuis-2011-region	Couvertures vaccinales des adolescents et adultes depuis 2011 (Région)	2026-10-08T12:21:59+00:00	255	Santé publique France
 fragilite-prevalence-france	Fragilité : Prévalence (France)	2026-03-17T16:21:26+00:00	150	Santé publique France
-pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_dep	Pollution de l'air : impact du NO2 et des PM2,5 sur la mortalité (Département)	2026-06-09T09:58:07+00:00	96	Santé publique France
 conduites-sucidaires-indicateurs-du-barometre-2024	Conduites suicidaires : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	231	Santé publique France
 cancer-new-depistage-du-cancer-du-col-de-l-uterus-france	Cancer : Dépistage du cancer du col de l'utérus (France)	2025-11-01T07:11:31+00:00	8	Santé publique France
-ma-region-epidemies-hivernales-ira	Ma Région : Épidémies Hivernales - IRA	2026-10-06T11:02:20+00:00	444020	
+sante-sexuelle-ventes-autotests-et-preservatifs-masculins_fra	Santé sexuelle : Ventes autotests et préservatifs masculins (France)	2024-12-03T14:42:37+00:00	8	Santé publique France
+leptospirose-donnees-a-declaration-obligatoire	Léptospirose : Données à déclaration obligatoire	2026-06-10T10:01:40+00:00	96	Santé publique France
+antibiotiques-consommation-en-medecine-de-ville-region	Antibiotiques : Consommation en médecine de ville (Région)	2025-11-17T13:55:38+00:00	2448	Santé publique France
+canicules-exces-de-deces-pendant-les-vagues-de-chaleur-region	Canicules : Excès de décès pendant les vagues de chaleur (Région)	2026-05-05T13:27:30+00:00	195	Santé publique France
+vapotage-prevalence	Vapotage : Prévalence	2025-01-09T13:18:38+00:00	20	Santé publique France
+canicules-taille-de-la-population-concernee-par-une-canicule-departement	Canicules : Taille de la population concernée par une canicule (Département)	2026-05-04T12:00:37+00:00	2112	Santé publique France
+saturnisme-depistage-prevalence-rendement-du-depistage-dep	Saturnisme : Taux de dépistage, prévalence, rendement du dépistage (Département)	2025-10-23T14:18:58+00:00	2916	Santé publique France
+hepatites-b-et-c-donnees-des-ald-france	Hépatites B et C : Personnes en affection de longue durée (France)	2024-12-24T08:31:04+00:00	28	Santé publique France
+exposition-professionnelle-bruit-dep	Exposition professionnelle : Bruit (Département)	2026-10-12T08:46:17+00:00	15552	Santé publique France
+chutes-hospitalisations-et-deces-region	Chutes : Hospitalisations et Décès pour les plus de 65 ans (Région)	2026-03-10T10:40:58+00:00	360	Santé publique France
+sante_generale_indicateurs_barometre_2024	Santé générale : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	148	
+cardiopathie-ischemique-departement-incidence-hospitaliere-dep	Cardiopathie ischémique : Incidence hospitalière  (Département)	2025-02-26T10:34:09+00:00	12694	Santé publique France
+ira-esms	IRA National - ESMS - Cas groupés d'IRA	2026-10-09T13:01:29+00:00	812	
+diabete-prevalence-annuelle-du-diabete-type-1-chez-les-moins-de-20-ans_fra	Diabète : Prévalence annuelle du diabète type 1 chez les moins de 20 ans (France)	2024-12-09T11:09:53+00:00	12	Santé publique France
+mpox-incidence-selon-le-sexe-region	Mpox : Incidence selon le sexe (Région)	2026-10-07T10:11:05+00:00	12411	Santé publique France
+saturnisme-depistage-region	Saturnisme : Dépistage, prévalence, rendement du dépistage (Région)	2025-12-11T15:06:38+00:00	1566	Santé publique France
+accident-vasculaire-cerebral-incidence-hospitaliere-dep	Accident Vasculaire Cérébral : Incidence hospitalière (Département)	2025-01-14T15:14:30+00:00	26729	Santé publique France
+mpox-incidence-selon-l-age-region	Mpox : Incidence selon l'âge (Région)	2026-10-07T10:11:58+00:00	20685	Santé publique France
+hepatites-b-c-et-d-depistages-rembourses-departement	Hépatites B, C et D : Dépistages remboursés (Département)	2026-03-18T09:41:38+00:00	49995	Santé publique France
+diabete-prevalence-annuelle-du-diabete-type-1-chez-les-moins-de-20-ans_reg	Diabète : Prévalence annuelle du diabète type 1 chez les moins de 20 ans (Région)	2024-12-03T14:36:53+00:00	204	Santé publique France
+hernie-discale-lombaire-france	Hernie discale lombaire (France)	2024-12-10T15:06:00+00:00	102	Santé publique France
+hepatite-b-diagnostics-dhepatite-b-aigue-region	Hépatite B : Diagnostics d'hépatite B aiguë (Région)	2025-10-09T13:09:22+00:00	396	Santé publique France
+tabac-deces-attribuables-au-tabac_reg	Tabac :  Décès attribuables au tabac	2026-06-26T11:31:58+00:00	228	Santé publique France
+suicides-moyens-utilises-region	Suicides : Moyens utilisés (Région)	2026-09-10T12:04:32+00:00	3510	Santé publique France
+legionellose-donnees-de-la-declaration-obligatoire-france	Légionellose : Données de la déclaration obligatoire (France)	2026-09-04T14:41:11+00:00	220	Santé publique France
+resistance-aux-antibiotiques-vaccination-indicateurs-du-barometre-2024	Résistance aux antibiotiques : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	90	Santé publique France
+diabete-prevalence-france	Diabète : Prévalence (France)	2026-04-01T09:02:56+00:00	42	Santé publique France
+tuberculose-donnees-declaration-obligatoire_reg	Tuberculose : Données de la déclaration obligatoire (Région)	2026-05-18T08:43:01+00:00	378	Santé publique France
+sommeil-indicateurs-du-barometre-2024	Sommeil : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	267	Santé publique France
+maladies-cardio-neuro-vasculaires-taux-brut-dep	Maladies Cardio-Neuro-Vasculaires : Taux brut (Département)	2025-06-30T09:37:56+00:00	4200	Santé publique France
+couvertures-vaccinales-archives-depuis-2004-france	Couvertures vaccinales : archives depuis 2004 (France)	2026-04-23T12:17:07+00:00	21	Santé publique France
+infection-invasive-a-meningocoque-notifications	Infection Invasive à Méningocoque : Notifications (Département)	2024-12-06T14:38:42+00:00	15565	Santé publique France
+pesticides-exposition-environnementale-aux-fongicides-canton	Pesticides : exposition environnementale aux fongicides (Canton)	2025-02-20T13:19:14+00:00	7956	Santé publique France
+saturnisme-depistage-prevalence-rendement-du-depistage-region	Saturnisme : Taux de dépistage, prévalence, rendement du dépistage (Région)	2025-12-11T15:09:19+00:00	522	Santé publique France
+anomalies-congenitales-prev_annuelle_issue_bulletin	Anomalies congénitales : Evolution de la prévalence totale selon l’issue de grossesse (Registres)	2026-07-08T07:13:27+00:00	44	Santé publique France
+traumatisme-passages-aux-urgences-et-actes-sos-medecins-france	Traumatisme : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:02:57+00:00	1200	Santé publique France
+pathologies-orl-passages-aux-urgences-et-actes-sos-medecins-france	Pathologies ORL : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:01:27+00:00	1200	Santé publique France
+diabete-prevalence-departement	Diabète : Prévalence (Département)	2025-01-31T13:40:48+00:00	4200	Santé publique France
+hepatites-b-c-et-d-depistages-rembourses-france	Hépatites B, C et D : Dépistages remboursés (France)	2026-03-18T09:41:23+00:00	495	Santé publique France
+bpco-mortalite-region	BPCO : Mortalité (Région)	2026-03-24T10:40:19+00:00	1173	Santé publique France
+exposition-professionnelle-solvants	Expositions professionnelles : Solvants	2025-06-06T10:04:05+00:00	3672	Santé publique France
+legionellose-donnees-de-la-declaration-obligatoire-region	Légionellose : Données de la déclaration obligatoire (Région)	2026-09-04T14:40:18+00:00	3074	Santé publique France
+suicides-deces-region	Suicides : Décès (Région)	2026-01-12T11:10:41+00:00	1890	Santé publique France
+pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_dep	Pollution de l'air : impact du NO2 et des PM2,5 sur la mortalité (Département)	2026-06-09T09:58:07+00:00	96	Santé publique France
+bpco-mortalite-departement	BPCO : Mortalité (Département)	2026-03-24T10:49:27+00:00	6900	Santé publique France
+antibiotiques-consommation-en-etablissements-sante_reg	Antibiotiques : Consommation en établissements de santé (Région)	2025-11-18T09:13:38+00:00	204	Santé publique France
+tabagisme-prevalence-selon-le-niveau-d-etude	Tabac : Prévalence selon le niveau d'étude	2025-01-10T10:41:51+00:00	36	Santé publique France
+parkinson-incidence-et-prevalence_dep	Parkinson : Incidence et prévalence (Département)	2026-06-09T09:58:24+00:00	1408	Santé publique France
+pesticides-exposition-environnementale-aux-insecticides-france	Pesticides : exposition environnementale aux insecticides (France)	2025-02-27T13:59:10+00:00	4	Santé publique France
+tabac-consommation-quotidienne_reg	Tabac : Consommation quotidienne (Région)	2025-01-23T09:56:05+00:00	216	Santé publique France
+antibiotiques-consommation-en-etablissements-sante-france	Antibiotiques : Consommation en établissements de santé (France)	2025-11-18T09:18:40+00:00	12	Santé publique France
+alcool-consommation-quotidienne-region	Alcool : Consommation quotidienne  (Région)	2025-01-14T14:15:25+00:00	228	Santé publique France
+troubles-probables-de-sante-mentale-parmi-les-enfants-du-cp-au-cm2-indicateurs-d-enabee-2022	Troubles probables de santé mentale parmi les enfants du CP au CM2 : Indicateurs d'Enabee 2022	2026-09-10T13:31:13+00:00	32	Santé publique France
+vaccination-indicateurs-du-barometre-2024	Vaccination : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	50	Santé publique France
+diabete-prevalence-region	Diabète : Prévalence (Région)	2026-04-01T09:00:18+00:00	714	Santé publique France
+ira-virologie-variants-covid	IRA National - Virologie - Variants SARS-CoV-2	2026-07-16T08:47:13+00:00	438	
+pesticides-exposition-professionnelle-aux-insecticides-departement	Pesticides : exposition professionnelle aux insecticides (Département)	2025-02-27T14:44:38+00:00	384	Santé publique France
+diabete-complications-et-suivi-region	Diabète : Complications et suivi (Région )	2025-12-02T09:24:15+00:00	136	Santé publique France
+cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-region-copie	Cancer : Participation au dépistage organisé du cancer du côlon-rectum (Région)	2026-03-18T09:28:08+00:00	663	Santé publique France
+parkinson-incidence-et-prevalence_fra	Parkinson : Incidence et prévalence (France)	2024-12-06T08:08:30+00:00	14	Santé publique France
+corpulence-surpoids-et-obesite-fra	Corpulence : Surpoids et obésité (France)	2024-12-10T14:07:14+00:00	2	Santé publique France
+tabagisme-indicateurs-du-barometre-de-sante-publique-france-2024-detail-region	Tabagisme : Indicateurs du Baromètre de Santé publique France 2024 - Detail Région	2025-12-11T09:30:00+00:00	676	Santé publique France
+couvertures-vaccinales-du-nourrisson-depuis-2018-region	Couvertures vaccinales du nourrisson depuis 2018 (Région)	2026-05-12T13:53:04+00:00	136	Santé publique France
+pathologies-orl-passages-aux-urgences-et-actes-sos-medecins-departement	Pathologies ORL : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:01:01+00:00	121200	Santé publique France
+canicules-deces-attribuables-a-la-chaleur-pendant-l-ete-et-pendant-les-vagues-de-chaleur-departement	Canicules : Décès attribuables à la chaleur pendant l'été et pendant les vagues de chaleur (Département)	2026-05-05T14:00:51+00:00	2304	Santé publique France
+canicules-severite-region	Canicules : Sévérité (Région)	2026-05-12T14:37:42+00:00	286	Santé publique France
+ira-national-sursaud-bronchio-par-age	IRA National - Sursaud - Bronchio par âge	2026-09-02T14:29:32+00:00	55660	
+canicules-severite-france	Canicules : Sévérité (France)	2026-05-05T12:56:47+00:00	22	Santé publique France
+mois-sans-tabac-nombre-d-inscriptions-departement	Tabac : Inscription à Mois sans tabac (Département)	2025-12-18T15:21:32+00:00	1007	Santé publique France
+antibiotiques-consommation-en-medecine-de-ville-epci	Antibiotiques : Consommation en médecine de ville (EPCI)	2026-09-07T10:00:59+00:00	22329	Santé publique France
+canicules-severite-departement	Canicules : Sévérité (Département)	2026-05-05T12:43:15+00:00	2112	Santé publique France
+cancer-incidence-estimee-france-hexagonale	Cancer : Incidence estimée (France hexagonale)	2026-02-20T16:06:33+00:00	23522	Santé publique France - Le réseau Francim des registres des cancers, les Hospices Civils de Lyon, l'Institut national du cancer et Santé publique France
+bpco-mortalite-france	BPCO : Mortalité (France)	2026-03-24T09:19:44+00:00	69	Santé publique France
+suicides-moyens-utilises-departement	Suicides : Moyens utilisés (Département)	2026-09-10T12:12:30+00:00	20007	Santé publique France
+cancer-incidence-et-mortalite-estimees-departement	Cancer : Incidence et mortalité estimées (Département)	2025-02-18T10:43:09+00:00	6860	Santé publique France
+pneumopathie-passages-aux-urgences-et-actes-sos-medecins-departement	Pneumopathie : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:05:38+00:00	181800	Santé publique France
+chutes-hospitalisations-et-deces-departement	Chutes : Hospitalisations et Décès pour les plus de 65 ans (Département)	2026-03-23T09:00:24+00:00	2020	Santé publique France
+maladies-du-motoneurone-dont-sclerose-laterale-amyotrophique-france	Maladies du motoneurone dont sclérose latérale amyotrophique (France)	2025-02-20T08:42:18+00:00	12	Santé publique France
+ira-sumeau	IRA National - SUM'EAU	2026-07-16T08:42:50+00:00	5742	
 cancer-incidence-observee-en-zone-registres-departement	Cancer : Incidence observée en zone registres (Département)	2026-04-27T12:56:51+00:00	8337	Santé publique France - Le réseau Francim des registres des cancers, les Hospices Civils de Lyon, l'Institut national du cancer et Santé publique France
 suicides-deces-departement	Suicides : Décès (Département)	2026-01-09T09:55:06+00:00	9270	Santé publique France
-sante-sexuelle-ventes-autotests-et-preservatifs-masculins_fra	Santé sexuelle : Ventes autotests et préservatifs masculins (France)	2024-12-03T14:42:37+00:00	8	Santé publique France
+asthme-hospitalisations-france	Asthme : Hospitalisations (France)	2025-01-07T15:36:51+00:00	360	Santé publique France
+asthme-hospitalisations-departement	Asthme : Hospitalisations (Département)	2026-03-25T14:01:06+00:00	35925	Santé publique France
+canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france	Canicules : Décès attribuables à la chaleur pendant l'été et pendant les vagues de chaleur (France)	2026-05-06T15:32:38+00:00	24	Santé publique France
+gestes-auto-infliges-patients-hospitalises-france	Gestes auto-infligés : Patients hospitalisés (France)	2026-09-09T07:34:02+00:00	162	Santé publique France
+allergie-passages-aux-urgences-et-actes-sos-medecins-region	Allergie : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:03:07+00:00	21600	Santé publique France
+gastro-enterite-aigue-passages-aux-urgences-et-actes-sos-medecins-region	Gastro-entérite aiguë : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:01:28+00:00	21600	Santé publique France
+french-european-deprivation-index-f-edi-2021-par-iris	French european deprivation index (F-EDI) 2021 par IRIS	2023-01-01T13:55:34+00:00	48577	MapInMed et Anticipe
+gastro-enterite-aigue-passages-aux-urgences-et-actes-sos-medecins-france	Gastro-entérite aiguë : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:02:21+00:00	1200	Santé publique France
+pneumopathie-passages-aux-urgences-et-actes-sos-medecins-france	Pneumopathie : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T12:05:03+00:00	1800	Santé publique France
+ira-hospit-casgraves	IRA National - Hospitalier - Cas graves	2026-10-05T12:44:16+00:00	0	Santé publique France
+ma-region-grandes-pathologies-cardio	Ma région : Principales Pathologies - Maladies cardio-neuro-vasculaire	2026-03-20T15:11:56+00:00	257072	
+ma-region-epidemies-hivernales-bronchiolite	Ma Région : Épidémies Hivernales - Bronchiolite	2026-10-06T09:50:04+00:00	102622	
+vih-diagnostics-dinfection-a-vih-france	VIH : Diagnostics d'infection à VIH (France)	2026-03-18T09:34:30+00:00	60	Santé publique France
+bpco-hospitalisations-france	BPCO : Hospitalisations (France)	2026-04-03T09:37:08+00:00	360	Santé publique France
+tuberculose-donnees-declaration-obligatoire_fra	Tuberculose : Données de la déclaration obligatoire (France)	2026-01-26T19:54:47+00:00	21	Santé publique France
+diabete-indicateurs-du-barometre-2024	Diabète : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	128	Santé publique France
+perinatalite-post-partum-france	Périnatalité : Post-partum (France)	2026-07-20T08:14:39+00:00	13	Santé publique France
+ma-region-addictions-tabac	Ma région : Addictions - Tabac	2026-05-20T09:02:26+00:00	1054	
+ira-point-de-situation	IRA National - point de situation	2026-10-07T12:13:47+00:00	11	
+grossesse-reg	Périnatalité : Suivi et pathologies durant la grossesse (Région)	2026-07-08T10:37:18+00:00	234	Santé publique France
+canicules-nombres-de-jours-de-canicule-france	Canicules : Nombres de jours de canicule (France)	2026-05-04T11:41:50+00:00	22	Santé publique France
+activite-physique-indicateurs-du-barometre-2024	Activité physique : Indicateurs du Baromètre de Santé publique France 2024	2025-12-11T09:30:00+00:00	206	Santé publique France
+cancer-participation-au-depistage-organise-du-cancer-du-sein_dep	Cancer : Participation au dépistage organisé du cancer du sein (Département)	2026-07-04T13:23:02+00:00	900	Santé publique France
+pneumopathie-passages-aux-urgences-et-actes-sos-medecins-region	Pneumopathie : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:05:28+00:00	32400	Santé publique France
+canicules-exces-de-deces-pendant-les-vagues-de-chaleur-departement	Canicules : Excès de décès pendant les vagues de chaleur (Département)	2026-05-05T13:24:14+00:00	1054	Santé publique France
+ma-region-environnement-pollution-atmospherique	Ma région : Environnement - Pollution atmosphérique	2026-04-24T14:08:31+00:00	702	
+ma-region-vaccination	Ma région : Vaccinations	2026-02-18T11:14:11+00:00	11460	
+spf-odisse-ma-region-methodologies	SPF - Odisse - Ma région - Méthodologies	2025-09-04T14:10:44+00:00	36	
+covid-19-passages-aux-urgences-et-actes-sos-medecins-region	COVID-19 : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:10:32+00:00	32400	Santé publique France
+perinatalite-post-partum-region	Périnatalité : Post-partum (Région)	2026-07-20T18:17:37+00:00	234	Santé publique France
+infections-respiratoires-aigues-ira-passages-aux-urgences-et-actes-sos-medecins-france	Infections respiratoires aiguës (IRA) : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:00:41+00:00	1800	Santé publique France
+infection-invasive-a-meningocoque-notifications-france	Infection Invasive à Méningocoque : Notifications (France)	2024-12-06T14:38:42+00:00	950	Santé publique France
+ma-region-grandes-pathologies-diabete0	Ma région : Principales Pathologies - Diabète	2026-04-01T09:12:30+00:00	4956	
+ma-region-addictions-alcool	Ma région : Addictions - Alcool	2026-05-20T09:28:46+00:00	615	
+couvertures-vaccinales-des-adolescents-et-adultes-depuis-2011-region	Couvertures vaccinales des adolescents et adultes depuis 2011 (Région)	2026-10-08T12:21:59+00:00	255	Santé publique France
+vih-diagnostics-dinfection-a-vih-region	VIH : Diagnostics d'infection à VIH (Région)	2026-03-18T09:32:59+00:00	1140	Santé publique France
+exposition-professionnelle-silice	Exposition professionnelle : Silice	2025-06-06T09:38:12+00:00	1560	Santé publique France
+ma-region-grandes-pathologies-bpco	Ma région : Grandes Pathologies - BPCO	2026-03-30T07:28:53+00:00	58922	
+ma-region-epidemies-hivernales-ira	Ma Région : Épidémies Hivernales - IRA	2026-10-06T11:02:20+00:00	444020	
+couvertures-vaccinales-des-adolescent-et-adultes-departement	Couvertures vaccinales des adolescents et adultes depuis 2011 (Département)	2026-10-08T12:09:54+00:00	1515	Santé publique France
+couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-region	Couvertures vaccinales issues des certificats de santé du 24ème mois depuis 2004 (Région)	2026-04-23T12:39:35+00:00	329	Santé publique France
+french-european-deprivation-index-f-edi-2021-par-commune	French european deprivation index (F-EDI) 2021 par commune	2023-01-01T13:55:34+00:00	34848	MapInMed et Anticipe
 asthme-passages-aux-urgences-et-actes-sos-medecins-dep	Asthme : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T11:01:41+00:00	121200	Santé publique France
 grippe-passages-aux-urgences-et-actes-sos-medecins-departement	Grippe : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:01:53+00:00	181800	Santé publique France
+grippe-passages-aux-urgences-et-actes-sos-medecins-france	Grippe : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T12:01:44+00:00	1800	Santé publique France
 gastro-enterite-aigue-passages-aux-urgences-et-actes-sos-medecins-departement	Gastro-entérite aiguë : Passages aux urgences et Actes SOS Médecins (Département)	2026-10-07T10:01:21+00:00	121200	Santé publique France
 ma-region-epidemies-hivernales-covid	Ma Région : Épidémies Hivernales - COVID-19	2026-10-06T12:09:48+00:00	444020	
 ma-region-maladies-a-signalements-obligatoires-arboviroses	Ma région : Maladies à Signalements Obligatoires - Arboviroses	2026-06-02T08:20:57+00:00	257712	
-couvertures-vaccinales-des-adolescent-et-adultes-departement	Couvertures vaccinales des adolescents et adultes depuis 2011 (Département)	2026-10-08T12:09:54+00:00	1515	Santé publique France
-french-european-deprivation-index-f-edi-2021-par-commune	French european deprivation index (F-EDI) 2021 par commune	2023-01-01T13:55:34+00:00	34848	MapInMed et Anticipe
-allergie-passages-aux-urgences-et-actes-sos-medecins-region	Allergie : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:03:07+00:00	21600	Santé publique France
-grippe-passages-aux-urgences-et-actes-sos-medecins-france	Grippe : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T12:01:44+00:00	1800	Santé publique France
-gastro-enterite-aigue-passages-aux-urgences-et-actes-sos-medecins-region	Gastro-entérite aiguë : Passages aux urgences et Actes SOS Médecins (Région)	2026-10-07T10:01:28+00:00	21600	Santé publique France
-pathologies-orl-passages-aux-urgences-et-actes-sos-medecins-france	Pathologies ORL : Passages aux urgences et Actes SOS Médecins (France)	2026-10-07T10:01:27+00:00	1200	Santé publique France
-ma_region_epidemies_hivernales_alertes	Ma Région : Épidémies Hivernales - Alertes épidémiques	2026-10-07T15:00:06+00:00	3407	
 syndrome-hemolytique-et-uremique-shu-pediatrique-notifications_reg	Syndrome hémolytique et urémique (SHU) pédiatrique : Notifications (Région)	2026-10-12T09:14:56+00:00	630	Santé publique France
-parkinson-incidence-et-prevalence_dep	Parkinson : Incidence et prévalence (Département)	2026-06-09T09:58:24+00:00	1408	Santé publique France
+ma_region_epidemies_hivernales_alertes	Ma Région : Épidémies Hivernales - Alertes épidémiques	2026-10-07T15:00:06+00:00	3407	

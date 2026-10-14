@@ -1,42 +1,142 @@
 # mesr / ods_catalogue_json
 # URL : https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T14:45:56Z — HTTP 200 — application/json; charset=utf-8 — 31158 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-14T09:23:16Z — HTTP 200 — application/json; charset=utf-8 — 27439 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 217,
  "results": [
   {
    "visibility": "domain",
-   "fields": [],
-   "dataset_id": "barometre-sante-de-la-science-ouverte",
-   "dataset_uid": "da_snqrgj",
-   "has_records": false,
-   "features": [],
+   "fields": [
+    {
+     "name": "siren",
+     "description": "Numéro SIREN",
+     "annotations": {
+      "facet": true
+     },
+     "label": "siren",
+     "type": "text",
+     "label_fr": "siren",
+     "label_en": "siren",
+     "description_fr": "Numéro SIREN",
+     "description_en": "Numéro SIREN"
+    },
+    {
+     "name": "denomination_employeur",
+     "description": "Dénomination de l'employeur",
+     "annotations": {
+      "facet": true
+     },
+     "label": "denomination_employeur",
+     "type": "text",
+     "label_fr": "denomination_employeur",
+     "label_en": "denomination_employeur",
+     "description_fr": "Dénomination de l'employeur",
+     "description_en": "Dénomination de l'employeur"
+    },
+    {
+     "name": "annee",
+     "description": "Année",
+     "annotations": {
+      "facet": true,
+      "facetsort": "-num"
+     },
+     "label": "annee",
+     "type": "int",
+     "label_fr": "annee",
+     "label_en": "annee",
+     "description_fr": "Année",
+     "description_en": "Année"
+    },
+    {
+     "name": "somme_10_plus_hautes_remunerations",
+     "description": "Somme des 10 plus hautes rémunérations brutes en euros",
+     "label": "somme_10_plus_hautes_remunerations",
+     "type": "double",
+     "annotations": {},
+     "label_fr": "somme_10_plus_hautes_remunerations",
+     "label_en": "somme_10_plus_hautes_remunerations",
+     "description_fr": "Somme des 10 plus hautes rémunérations brutes en euros",
+     "description_en": "Somme des 10 plus hautes rémunérations brutes en euros"
+    },
+    {
+     "name": "nb_femmes_beneficiaires",
+     "description": "Nombre de femmes bénéficiaires",
+     "label": "nb_femmes_beneficiaires",
+     "type": "double",
+     "annotations": {},
+     "label_fr": "nb_femmes_beneficiaires",
+     "label_en": "nb_femmes_beneficiaires",
+     "description_fr": "Nombre de femmes bénéficiaires",
+     "description_en": "Nombre de femmes bénéficiaires"
+    },
+    {
+     "name": "nb_hommes_beneficiaires",
+     "description": "Nombre d'hommes bénéficiaires",
+     "label": "nb_hommes_beneficiaires",
+     "type": "double",
+     "annotations": {},
+     "label_fr": "nb_hommes_beneficiaires",
+     "label_en": "nb_hommes_beneficiaires",
+     "description_fr": "Nombre d'hommes bénéficiaires",
+     "description_en": "Nombre d'hommes bénéficiaires"
+    },
+    {
+     "name": "duree_cumulee_mois",
+     "description": "Durée cumulée en nombre de mois",
+     "label": "duree_cumulee_mois",
+     "type": "double",
+     "annotations": {},
+     "label_fr": "duree_cumulee_mois",
+     "label_en": "duree_cumulee_mois",
+     "description_fr": "Durée cumulée en nombre de mois",
+     "description_en": "Durée cumulée en nombre de mois"
+    },
+    {
+     "name": "commentaires",
+     "description": "Commentaires",
+     "label": "commentaires",
+     "type": "text",
+     "annotations": {},
+     "label_fr": "commentaires",
+     "label_en": "commentaires",
+     "description_fr": "Commentaires",
+     "description_en": "Commentaires"
+    }
+   ],
+   "dataset_id": "fr-en-dix-plus-hautes-remunerations",
+   "dataset_uid": "da_n1etun",
+   "has_records": true,
+   "features": [
+    "analyze"
+   ],
    "attachments": [],
    "alternative_exports": [],
    "data_visible": true,
    "metas": {
     "dcat": {
-     "created": "2022-01-28",
-     "issued": "2022-01-28",
-     "creator": "Département des outils d'aide à la décision",
+     "created": "2020-07-13",
+     "issued": "2021-04-27",
+     "creator": null,
      "contributor": null,
      "contact_name": null,
-     "contact_email": "bso@recherche.gouv.fr",
+     "contact_email": null,
      "accrualperiodicity": "Annuelle",
-     "spatial": null,
-     "temporal": null,
-     "granularity": "NCTId",
+     "spatial": "France",
+     "temporal": "2018-2022",
+     "granularity": null,
      "dataquality": null,
      "publisher_type": null,
      "conforms_to": null,
-     "temporal_coverage_start": null,
-     "temporal_coverage_end": null,
+     "temporal_coverage_start": "2017-12-31T23:00:00+00:00",
+     "temporal_coverage_end": "2022-12-30T23:00:00+00:00",
      "accessRights": null,
      "relation": null
     },
     "default": {
-     "title": "Baromètre santé de la science ouverte",
-     "title_fr": "Baromètre santé de la science ouverte",
-     "title_en": "Baromètre santé de la science ouverte",
-     "description": "Ce jeu de données recense les données sous-jacentes au baromètre santé de la Science Ouverte, concernant les essais cliniques et les études observationnelles.<br><br>Le site https://barometredelascienceouverte.esr.gouv.fr/sante offre une vision globale des résultats du baromètre santé de la science ouverte.<br><br>Ce jeu de données liste les essais cliniques et études observationnelles présentes dans les registres clinicaltrials.org, EUCTR et CTIS, et ayant été conduits, au moins en partie, en France.<br><br>Les détails de la méthode sont exposés sur https://barometredelascienceouverte.esr.gouv.fr/a-propos/methodologie.<br><br>Les données sont disponibles au format CSV :<br><br>https://storage.gra.cloud.ovh.net/v1/AUTH_32c5d10cb0fe4519b957064a111717e3/bso_dump/bso-clinical-trials.csv.gz<br><br>et au format JSONL (json lines) :<br><br>https://storage.gra.cloud.ovh.net/v1/AUTH_32c5d10cb0fe4519b957064a111717e3/bso_dump/bso-clinical-trials.jsonl.gz<br><br>Le fichier JSONL est plus riche que le fichier CSV.<br><br>- id: identifiant unique par essai clinique ou étude observationnelle (NCTId &gt; CTIS &gt; eudraCT)<br>- ISRCTN : identifiant dans le registre ISRCTN<br>- NCTId : identifiant NCT dans clinicaltrials.gov<br>- CTIS : identifiant CTIS<br>- WHO : identifiant WHO (OMS)<br>- acronym : acronyme de l'essai<br>- all_sources : sources utilisées (\"clinical_trials\", \"euctr\" et / ou \"ctis)<br>- delay_first_results_completion : nombre de jours entre la fin de l'essai (completion) et la première date de communication des résultats (publication dans une revue ou dépôt d'une synthèse)<br>- delay_start_completion : nombre de jours entre le début et la fin de l'essai<br>- delay_submission_start : nombre de jours entre le début de l'essai et la première date de communication des résultats (publication dans une revue ou dépôt d'une synthèse)<br>- design_allocation : randomisé / non randomisé<br>- enrollment_count : nombre de participants<br>- enrollment_type: type de recrutement<br>- eudraCT : identifiant eudraCT<br>- first_publication_date : première date de communication des résultats dans une publication scientifique<br>- first_results_or_publication_date : première date de communication des résultats (dépôt de synthèse ou publication scientifique)<br>- french_location_only : booléen, VRAI si tous les sites mentionnés sont en France, FAUX sinon<br>- has_publication_oa : booléen, si communication des résultats dans une publication, VRAI si au moins une publication en accès ouvert, FAUX sinon<br>- results_details.2025Q4.has_results: booléen, VRAI si communication des résultats avec dépôt d'une synthèse<br>- results_details.2025Q4.has_publications_result: booléen, VRAI si communication des résultats dans une publication scientifique<br>- results_details.2025Q4.has_results_or_publications: booléen, VRAI si communication des résultats (publication et/ou dépot de synthèse)<br>- results_details.2025Q4.has_results_or_publications_within_3y: booléen, VRAI sicommunication des résultats dans les 3 ans après la fin de l'essai clinique<br>- results_details.2025Q4.has_results_or_publications_within_1y<br>- intervention_type : type d'essai clinique<br>- ipd_sharing : Individual Participant Data (IPD) Sharing<br>- ipd_sharing_description : texte décrivant Individual Participant Data (IPD) Sharing <br>- lead_sponsor : nom du promoteur<br>- lead_sponsor_type : type de promoteur (industriel / académique)<br>- lead_sponsor_normalized : nom du prometeur normalisé<br>- sponsor_collaborators<br>- location_country : liste (séparée par des ';') des pays où s'est déroulé l'essai<br>- location_facility : liste (séparée par des ';') des établissements ou s'est déroulé l'essai<br>- other_ids : autres identifiants<br>- primary_purpose : but principal de l'essai<br>- publication_access : non renseigné<br>- publications_result : liste (séparée par des ';') des publications faisant communication des résultats de l'essai<br>- references : non renseigné dans le CSV<br>- results_first_submit_date : première date ou le promoteur ou PI a soumis le dépôt d'une synthèse de résultats<br>- results_first_submit_qc_date : première date ou le promoteur ou PI a soumis le dépot d'une synthèse de résultats vérifiant les critères de controles (cf doc clinical trials)<br>- snapshot_date : date de moissonage des données<br>- status : statut de l'essai<br>- status_simplified : statut de l'essai (version simplifiée avec moins de modalités)<br>- study_completion_date : date de fin de l'essai<br>- study_completion_date_type : type de date de fin d'essai (réelle ou prévue)<br>- study_completion_year : année de fin de l'essai<br>- study_first_submit_date : première date de soumission par le promoteur ou PI d'un enregistrement dans le registre<br>- study_first_submit_qc_date : première date de soumission par le promoteur ou PI d'un enregistrement qui vérifie les controles de qualité dans le reg
+     "title": "Dix plus hautes rémunérations",
+     "title_fr": "Dix plus hautes rémunérations",
+     "title_en": "Dix plus hautes rémunérations",
+     "description": "<p>Fichier des 10 plus hautes rémunérations du département ministériel</p><p>Prévu par l'article 37 de la loi n°2019-828 du 6 août 2019 sur la transformation de la fonction publique : </p><p>\"Les départements ministériels, les régions, les départements, les \ncollectivités territoriales de plus de 80 000 habitants, les \nétablissements publics de coopération intercommunale à fiscalité propre \nde plus de 80 000 habitants et les établissements publics hospitaliers \ndotés d'un budget de plus de 200 millions d'euros publient chaque année,\n sur leur site internet, la somme des dix rémunérations les plus élevées\n des agents relevant de leur périmètre, en précisant également le nombre\n de femmes et d'hommes figurant parmi ces dix rémunérations les plus \nélevées.\"</p>",
+     "description_fr": "<p>Fichier des 10 plus hautes rémunérations du département ministériel</p><p>Prévu par l'article 37 de la loi n°2019-828 du 6 août 2019 sur la transformation de la fonction publique : </p><p>\"Les départements ministériels, les régions, les départements, les \ncollectivités territoriales de plus de 80 000 habitants, les \nétablissements publics de coopération intercommunale à fiscalité propre \nde plus de 80 000 habitants et les établissements publics hospitaliers \ndotés d'un budget de plus de 200 millions d'euros publient chaque année,\n sur leur site internet, la somme des dix rémunérations les plus élevées\n des agents relevant de leur périmètre, en précisant également le nombre\n de femmes et d'hommes figurant parmi ces dix rémunérations les plus \nélevées.\"</p>",
+     "description_en": "<p>Fichier des 10 plus hautes rémunérations du département ministériel</p><p>Prévu par l'article 37 de la loi n°2019-828 du 6 août 2019 sur la transformation de la fonction publique : </p><p>\"Les départements ministériels, les régions, les départements, les \ncollectivités territoriales de plus de 80 000 habitants, les \nétablissements publics d

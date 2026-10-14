@@ -1,0 +1,61 @@
+id: bilan_emotionnel_negatif
+libelle: Bilan émotionnel négatif (plus d'émotions négatives que positives la veille)
+dimension: liens_bien_etre
+sous_theme: émotions ressenties
+famille: bilan_emotionnel_negatif
+variante_principale: oui
+definition: Part des personnes de 15 ans ou plus déclarant avoir ressenti la veille plus d'émotions négatives (colère,
+  tristesse, inquiétude) que d'émotions positives (plaisir, repos, rire ou sourire) (Gallup World Poll, base How's
+  Life de l'OCDE, mesure 11_2).
+unite: '% des 15 ans ou plus'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: OCDE (données Gallup World Poll)
+source_jeu: How's Life? — bien-être actuel (DSD_HSL@DF_HSL_CWB), mesure 11_2
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_2 UNIT_MEASURE=PT_POP_Y_GE15
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.11_2......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000075
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série d'affect négatif disponible pour la France (7 valeurs distinctes de 2006 à 2025),
+  les émotions ressenties faisant partie du contenu de la dimension ; réutilisation des données Gallup à confirmer
+  auprès de l'OCDE (D26).
+note_pertinence: 'Indicateur symétrique du bonheur ressenti : il repère la part de la population dont la journée
+  a été dominée par des émotions négatives. Les moyennes de blocs de trois ans lissent les évolutions et réagissent
+  avec retard.'
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_2 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation (sexe)
+  ligne_id: m04-000076
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_2 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation (sexe)
+  ligne_id: m04-000077
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- donnees_gallup_reutilisation_a_confirmer
+- moyennes_groupees_repetees
+- serie_irreguliere_D17
+notes: 'Source primaire Gallup World Poll (environ 1 000 personnes par an, 15 ans ou plus) ; l''OCDE publie des
+  moyennes groupées (2006-07, puis 2008-10, 2011-13, 2014-16, 2017-19, 2020-22, 2023-25) répétées chaque année du
+  bloc, d''où 7 valeurs distinctes ; conditions de réutilisation non trouvées (courriel à l''OCDE proposé, D26).
+  Page web de la base How''s Life : non trouvé (pages OCDE non lisibles par l''outil).'

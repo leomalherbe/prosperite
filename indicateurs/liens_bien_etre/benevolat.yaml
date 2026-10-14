@@ -1,0 +1,61 @@
+id: benevolat
+libelle: Bénévolat dans une association (au cours du mois écoulé)
+dimension: liens_bien_etre
+sous_theme: engagement
+famille: benevolat
+variante_principale: oui
+definition: Part des personnes de 15 ans ou plus déclarant avoir donné de leur temps à une organisation au cours
+  du mois écoulé (Gallup World Poll, base How's Life de l'OCDE, mesure 14_7 « Volunteering through organisations
+  »).
+unite: '% des 15 ans ou plus'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (données Gallup World Poll)
+source_jeu: How's Life? — bien-être futur (DSD_HSL@DF_HSL_FWB), mesure 14_7
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_7 UNIT_MEASURE=PT_POP_Y_GE15
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1/FRA.14_7......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000108
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série de bénévolat de la long-list (7 valeurs distinctes, 2007-2025), alors que la vie
+  associative est nommée dans le contenu de la dimension ; réutilisation des données Gallup à confirmer (D26).
+note_pertinence: 'Le bénévolat mesure l''engagement dans la vie collective, retenu par l''OCDE (capital social)
+  et Eurostat (interactions sociales). Les modules EU-SILC 2015 et 2022 (ilc_scp19, ilc_scp20) mesurent aussi le
+  bénévolat formel et informel, mais ces jeux ont été exclus du catalogue Eurostat au niveau 1 (début des données
+  après 2010) : ils seraient des variantes publiques.'
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_7 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation (sexe)
+  ligne_id: m04-000109
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_7 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation (sexe)
+  ligne_id: m04-000110
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- donnees_gallup_reutilisation_a_confirmer
+- moyennes_groupees_repetees
+- serie_irreguliere_D17
+notes: 'Source primaire Gallup World Poll (environ 1 000 personnes par an, 15 ans ou plus) ; l''OCDE publie des
+  moyennes groupées (2006-07, puis 2008-10, 2011-13, 2014-16, 2017-19, 2020-22, 2023-25) répétées chaque année du
+  bloc, d''où 7 valeurs distinctes ; conditions de réutilisation non trouvées (courriel à l''OCDE proposé, D26).
+  Page web de la base How''s Life : non trouvé (pages OCDE non lisibles par l''outil).'

@@ -120,6 +120,23 @@ def test_agregat(tmp_path):
     assert lignes["2024_euro_t1"]["n_lignes"] == 1
 
 
+def test_agregat_cle_multiple_et_manquants(tmp_path):
+    f = tmp_path / "elections.csv"
+    f.write_text("id_election;code_departement;inscrits;votants\n"
+                 "2002_pres_t1;01;100;80\n2002_pres_t1;01;100;\n2002_pres_t1;ZZ;50;20\n2002_pres_t1;;10;5\n"
+                 "2012_pres_t1;01;100;70\n", encoding="utf-8")
+    lignes = st.agreger(f, {"cle": "id_election|code_departement", "sommes": "inscrits|votants",
+                            "ratio": "votants/inscrits", "manquants": "oui"}, taille_morceau=2)
+    par_cle = {(l["id_election"], l["code_departement"]): l for l in lignes}
+    assert set(par_cle) == {("2002_pres_t1", "01"), ("2002_pres_t1", "ZZ"), ("2002_pres_t1", ""),
+                            ("2012_pres_t1", "01")}
+    l01 = par_cle[("2002_pres_t1", "01")]
+    assert (l01["n_lignes"], l01["inscrits"], l01["votants"], l01["manquants_votants"]) == (2, 200, 80, 1)
+    assert l01["ratio_votants_inscrits"] == "40.00"
+    assert par_cle[("2002_pres_t1", "")]["inscrits"] == 10
+    assert list(lignes[0])[:3] == ["id_election", "code_departement", "n_lignes"]
+
+
 def test_colonne_correspondante():
     wb = openpyxl.Workbook()
     ws = wb.active

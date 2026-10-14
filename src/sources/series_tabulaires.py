@@ -590,31 +590,45 @@ def series_banque_mondiale(contenu: bytes, source: str = "", requete: str = "") 
 
 
 def agreger(chemin: Path, p: dict, taille_morceau: int = 500_000) -> list[dict]:
-    """Somme de colonnes par clé sur un gros CSV lu par morceaux (ex. résultats électoraux)."""
+    """Somme de colonnes par clé sur un gros CSV lu par morceaux (ex. résultats électoraux).
+
+    ``cle`` peut réunir plusieurs colonnes séparées par « | » (ex. ``id_election|code_departement`` : une ligne
+    par scrutin et par département) ; une clé vide est gardée (valeur « »). ``manquants=oui`` ajoute, pour
+    chaque colonne sommée, le nombre de lignes où elle est vide ou non numérique (``manquants_<colonne>``)."""
     import pandas as pd
 
     with open(chemin, "rb") as f:
         echantillon = f.read(2_000_000)
     encodage = p.get("encodage") or detecter_encodage(echantillon)
     sep = p.get("sep") or detecter_separateur(echantillon.decode(encodage, errors="replace").split("\n", 1)[0])
-    cle = p["cle"]
+    cles = p["cle"].split("|")
     sommes = p["sommes"].split("|")
+    manquants = p.get("manquants", "") == "oui"
     total = None
-    for morceau in pd.read_csv(chemin, sep=sep, dtype=str, encoding=encodage, usecols=[cle] + sommes,
+    for morceau in pd.read_csv(chemin, sep=sep, dtype=str, encoding=encodage, usecols=cles + sommes,
                                chunksize=taille_morceau, on_bad_lines="skip"):
+        for c in cles:
+            morceau[c] = morceau[c].fillna("").astype(str).str.strip()
         for c in sommes:
             morceau[c] = en_nombre(morceau[c])
-        s = morceau.groupby(cle)[sommes].sum()
-        n = morceau.groupby(cle).size().rename("n_lignes")
-        s = s.join(n)
+            if manquants:
+                morceau[f"manquants_{c}"] = morceau[c].isna().astype(int)
+        colonnes = sommes + ([f"manquants_{c}" for c in sommes] if manquants else [])
+        groupes = morceau.groupby(cles if len(cles) > 1 else cles[0], dropna=False)
+        s = groupes[colonnes].sum().join(groupes.size().rename("n_lignes"))
         total = s if total is None else total.add(s, fill_value=0)
     lignes = []
     if total is None:
         return lignes
     for k, r in total.sort_index().iterrows():
-        ligne = {cle: k, "n_lignes": int(r["n_lignes"])}
+        valeurs_cle = k if isinstance(k, tuple) else (k,)
+        ligne = dict(zip(cles, valeurs_cle))
+        ligne["n_lignes"] = int(r["n_lignes"])
         for c in sommes:
             ligne[c] = int(r[c]) if r[c] == r[c] else ""
+        if manquants:
+            for c in sommes:
+                ligne[f"manquants_{c}"] = int(r[f"manquants_{c}"])
         if p.get("ratio"):
             num, den = p["ratio"].split("/")
             ligne[f"ratio_{num}_{den}"] = f"{100 * r[num] / r[den]:.2f}" if r[den] else ""

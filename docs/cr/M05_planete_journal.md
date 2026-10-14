@@ -86,3 +86,9 @@ Lues sur l'API Eurostat (WebFetch, 14/10/2026), valeurs et drapeaux des séries 
 - Séries irrégulières (D17) : 7 (habitats, espèces exotiques, érosion, état des eaux de surface et des nappes, gaspillage alimentaire, déchets toutes activités).
 - Tests : 397 réussis ; vérificateur des quatre autres dimensions inchangé.
 - Maintenance : `docs/cr/maintenance_catalogues_planete.md`, lignes PLA-1 à PLA-8 (statut `a_faire`).
+
+## 6. Clôture (11 h 00)
+
+- PR **#17** « M05 — fiches indicateurs : planete » ouverte vers `main` par l'API GitHub (`gh` indisponible) : https://github.com/leomalherbe/prosperite/pull/17.
+- Compte rendu `docs/cr/M05_planete_compte_rendu.md`, copié dans le Projet claude.ai (`claude/cr/M05_planete_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_planete.csv`).
+- Avant chaque poussée : `git fetch origin main` (aucun nouveau commit sur `main` pendant la mission, pas de rebasage nécessaire).

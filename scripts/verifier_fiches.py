@@ -4,7 +4,8 @@ Contrôles (erreurs bloquantes, code de sortie 1) :
 1. **Schéma** de chaque fiche `indicateurs/<dimension>/<id>.yaml` : champs de la charte §5.1 et de la fiche M05
    (famille, variante_principale, variantes, composite, raccordement, incontournable, recommandation,
    motif_recommandation, note_pertinence, socle_v1 vide), valeurs admises, identifiant ASCII = nom du fichier,
-   motif en une phrase, note de pertinence de 2 à 4 phrases.
+   motif en une phrase, note de pertinence de 2 à 4 phrases, `raccordement` au format
+   « oui|non|a_etudier : note courte » (note obligatoire pour oui et a_etudier), `sens: ambigu` → `ecarter`.
 2. **Identifiants** uniques dans tout `indicateurs/*/` (aucun indicateur dans deux dimensions).
 3. **Familles** : une seule variante principale par famille ; principale → `retenir` ou `ecarter` ;
    autre fiche de la famille → `retenir_variante` ou `ecarter`.
@@ -46,7 +47,7 @@ OBLIGATOIRES = {
     "source_organisme": "texte", "source_jeu": "texte", "source_serie_id": "texte", "source_niveau": {1, 2},
     "url_api": "url", "url_page": "url",
     "frequence": {"annuelle", "irreguliere", "semestrielle", "trimestrielle", "mensuelle", "ponctuelle"},
-    "premiere_annee": "annee", "derniere_annee": "annee", "geo": "texte", "raccordement": "texte",
+    "premiere_annee": "annee", "derniere_annee": "annee", "geo": "texte", "raccordement": "raccordement",
     "incontournable": OUI_NON, "recommandation": {"retenir", "retenir_variante", "ecarter"},
     "motif_recommandation": "phrase", "note_pertinence": "note", "variantes": "liste", "socle_v1": "socle",
     "qualite": "liste", "notes": "texte_vide",
@@ -56,11 +57,12 @@ FACULTATIFS = {
     "eligibilite_longlist": {"oui", "a_verifier", "non", "hors_longlist"}, "ligne_id": "texte_vide",
     "hors_longlist": OUI_NON, "rattachement_propose": "texte",
 }
-COLONNES_TABLEAU = ["id", "libelle", "famille", "variante_principale", "definition_courte", "source", "serie_id",
-                    "periode", "type", "declaratif", "composite", "incontournable", "recommandation", "motif",
-                    "decision_leo", "commentaire_leo"]
+COLONNES_TABLEAU = ["id", "libelle", "famille", "variante_principale", "definition_courte", "sens", "unite", "source",
+                    "serie_id", "periode", "type", "declaratif", "composite", "incontournable", "recommandation",
+                    "motif", "decision_leo", "commentaire_leo"]
 DECISIONS_LEO = {"", "retenu", "retenu_socle", "ecarte", "a_discuter"}
 _RE_ID = re.compile(r"^[a-z][a-z0-9_]*$")
+_RE_RACCORDEMENT = re.compile(r"^(oui|non|a_etudier)(?: : (\S.*))?$", re.DOTALL)
 _RE_FIN_PHRASE = re.compile(r"[.!?…](?=\s+[A-ZÀÂÉÈÊÎÔÛÇ«])")
 
 
@@ -117,6 +119,13 @@ def _controle_valeur(nom: str, attendu, valeur) -> str | None:
         return None if isinstance(valeur, int) and valeur >= 0 else f"{nom} doit être un entier positif"
     if attendu == "liste":
         return None if isinstance(valeur, list) else f"{nom} doit être une liste"
+    if attendu == "raccordement":
+        m = _RE_RACCORDEMENT.match(valeur) if isinstance(valeur, str) else None
+        if not m:
+            return f"{nom} doit suivre le format « oui|non|a_etudier : note courte »"
+        if m.group(1) != "non" and not m.group(2):
+            return f"{nom} = {m.group(1)} : note courte obligatoire après « : »"
+        return None
     if attendu == "socle":
         return None if socle_vide(valeur) else f"{nom} doit rester vide au stade M05"
     return f"{nom} : type de contrôle inconnu"
@@ -245,6 +254,8 @@ def controler_couverture(racine: Path, dimension: str, fiches: list[dict], rappo
             rapport.erreur("présélection", f"{len(manquantes)} ligne(s) de la long-list non affectée(s) : "
                                            f"{', '.join(manquantes[:10])}")
         rapport.compteurs["lignes_longlist"] = len(longlist)
+    decisions = lignes["decision"].str.split(":").str[0]
+    rapport.compteurs["lignes_autre_dimension"] = int((decisions == "autre_dimension").sum())
     par_id = {f.get("id"): f for f in fiches}
     groupes_fiche = set(lignes.loc[lignes["decision"] == "fiche", "groupe"])
     for groupe in sorted(groupes_fiche - set(par_id)):
@@ -276,6 +287,7 @@ def ligne_tableau(f: dict) -> dict:
     return {
         "id": f.get("id"), "libelle": f.get("libelle"), "famille": f.get("famille"),
         "variante_principale": f.get("variante_principale"), "definition_courte": premiere_phrase(f.get("definition", "")),
+        "sens": f.get("sens"), "unite": f.get("unite"),
         "source": f"{f.get('source_organisme')} — {f.get('source_jeu')}", "serie_id": f.get("source_serie_id"),
         "periode": periode, "type": f.get("type"), "declaratif": f.get("declaratif"), "composite": f.get("composite"),
         "incontournable": f.get("incontournable"), "recommandation": f.get("recommandation"),

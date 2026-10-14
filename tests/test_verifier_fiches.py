@@ -149,6 +149,8 @@ def test_chaine_complete_sans_erreur(depot: Path):
     ({"source_serie_id": "absente?geo=FR"}, "absente des catalogues"),
     ({"type": "impact"}, "type ="),
     ({"url_page": "www.exemple.org"}, "URL"),
+    ({"raccordement": "possible"}, "format « oui|non|a_etudier"),
+    ({"raccordement": "a_etudier"}, "note courte obligatoire"),
 ])
 def test_erreurs_detectees(depot: Path, surcharges: dict, attendu: str):
     _fiches_valides(depot)
@@ -157,6 +159,26 @@ def test_erreurs_detectees(depot: Path, surcharges: dict, attendu: str):
                           **surcharges})
     rapport = ver.verifier_dimension(depot, "dimtest")
     assert any(attendu in e for e in rapport.erreurs), rapport.erreurs
+
+
+def test_raccordement_formats_admis():
+    for valeur in ("non", "non : rien avant 2010", "oui : série X raccordée en 2010", "a_etudier : série Y à comparer"):
+        assert ver._controle_valeur("raccordement", "raccordement", valeur) is None, valeur
+
+
+def test_decision_autre_dimension(depot: Path):
+    chemin = depot / "docs/validation/regles_preselection_dimtest.csv"
+    with chemin.open("a", encoding="utf-8") as f:
+        f.write("15,indic_a_inconnu_ailleurs,autre_dimension:sante,,Relève de la santé.,,,,unk=,,\n")
+    regles = pre.lire_regles(chemin, "dimtest", {"dimtest", "sante"})
+    assert any(r["decision"] == "autre_dimension:sante" for r in regles)
+    assert pre.main(["--dimension", "dimtest", "--racine", str(depot)]) == 0
+    lignes = {l["ligne_id"]: l for l in csv.DictReader((depot / "docs/validation/preselection_dimtest_lignes.csv").open(encoding="utf-8"))}
+    assert lignes["l3"]["decision"] == "autre_dimension:sante" and lignes["l3"]["fiche"] == ""
+    with pytest.raises(pre.ErreurRegles):
+        pre.lire_regles(chemin, "dimtest", {"dimtest"})        # dimension inconnue
+    with pytest.raises(pre.ErreurRegles):
+        pre.lire_regles(chemin, "sante", {"dimtest", "sante"})  # renvoi vers la dimension traitée
 
 
 def test_identifiant_en_double_entre_dimensions(depot: Path):

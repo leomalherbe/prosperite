@@ -7,7 +7,9 @@ la **première** règle qui la décrit. Une règle définit un **groupe** de lig
 - `fiche` : le groupe porte la série principale d'une fiche indicateur (`fiche` = identifiant de la fiche) ;
 - `variante_de:<id>` : le groupe réunit des variantes de la fiche `<id>` (ventilations, autre source,
   autre unité, complément…) ; elles seront listées dans le champ `variantes` de la fiche ;
-- `ecarte_en_bloc` : sous-séries sans intérêt propre ou non éligibles, écartées avec un motif.
+- `ecarte_en_bloc` : sous-séries sans intérêt propre ou non éligibles, écartées avec un motif ;
+- `autre_dimension:<dim>` : lignes qui relèvent d'une autre dimension v1 (rattachement à corriger,
+  la session mère tranche) ; `<dim>` doit être une dimension de `indicateurs/dimensions.yaml`.
 
 Colonnes du fichier de règles (CSV UTF-8, virgule) :
     ordre, groupe, decision, nature, motif, longlist, catalogue, motif_ligne_id, motif_serie_id,
@@ -51,7 +53,7 @@ COLONNES_PRESELECTION = ["groupe", "decision", "fiche", "nature", "motif", "nb_l
                          "regle"]
 COLONNES_LIGNES = ["ligne_id", "longlist", "groupe", "decision", "fiche", "nature", "serie_id", "source",
                    "catalogue_origine", "libelle", "eligible", "motif_exclusion", "regle"]
-_RE_DECISION = re.compile(r"^(fiche|ecarte_en_bloc|variante_de:[a-z0-9_]+)$")
+_RE_DECISION = re.compile(r"^(fiche|ecarte_en_bloc|variante_de:[a-z0-9_]+|autre_dimension:[a-z0-9_]+)$")
 _RE_ID = re.compile(r"^[a-z][a-z0-9_]*$")
 
 
@@ -70,7 +72,18 @@ def lire_longlist(racine: Path, dimension: str) -> pd.DataFrame:
     raise FileNotFoundError(f"long-list introuvable pour la dimension {dimension}")
 
 
-def lire_regles(chemin: Path) -> list[dict]:
+def dimensions_v1(racine: Path) -> set[str]:
+    """Identifiants des dimensions de la grille (`indicateurs/dimensions.yaml`), vide si le fichier manque."""
+    chemin = racine / "indicateurs" / "dimensions.yaml"
+    if not chemin.exists():
+        return set()
+    grille = yaml.safe_load(chemin.read_text(encoding="utf-8")) or {}
+    return {d["id"] for d in grille.get("dimensions", []) if isinstance(d, dict) and "id" in d}
+
+
+def lire_regles(chemin: Path, dimension: str | None = None, dimensions: set[str] | None = None) -> list[dict]:
+    """Lit et contrôle les règles. `dimension` : dimension traitée ; `dimensions` : ids admis pour
+    `autre_dimension:<dim>` (contrôle ignoré si vide)."""
     df = pd.read_csv(chemin, dtype=str, keep_default_na=False)
     manquantes = [c for c in COLONNES_REGLES if c not in df.columns]
     if manquantes:
@@ -89,6 +102,12 @@ def lire_regles(chemin: Path) -> list[dict]:
         vus.add(r["groupe"])
         if not _RE_DECISION.match(r["decision"]):
             raise ErreurRegles(f"décision invalide pour {r['groupe']} : {r['decision']!r}")
+        if r["decision"].startswith("autre_dimension:"):
+            cible = r["decision"].split(":", 1)[1]
+            if cible == dimension:
+                raise ErreurRegles(f"{r['groupe']} : autre_dimension vers la dimension traitée")
+            if dimensions and cible not in dimensions:
+                raise ErreurRegles(f"{r['groupe']} : dimension inconnue ({cible})")
         if not r["motif"]:
             raise ErreurRegles(f"motif vide pour le groupe {r['groupe']}")
         if r["hors_longlist"] not in ("", "oui", "non"):
@@ -229,7 +248,7 @@ def main(argv: list[str] | None = None) -> int:
     racine = Path(args.racine)
     dossier = racine / "docs" / "validation"
     chemin_regles = Path(args.regles) if args.regles else dossier / f"regles_preselection_{args.dimension}.csv"
-    regles = lire_regles(chemin_regles)
+    regles = lire_regles(chemin_regles, args.dimension, dimensions_v1(racine))
     lignes, orphelines = affecter(racine, args.dimension, regles)
     if orphelines:
         print(f"{len(orphelines)} ligne(s) de la long-list sans règle : {', '.join(orphelines[:20])}"

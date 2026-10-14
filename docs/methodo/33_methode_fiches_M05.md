@@ -1,6 +1,6 @@
 # Méthode commune des fiches indicateurs (mission M05)
 
-Version 1.0 — 14 octobre 2026. Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions, complétée par les règles actées au pilote `securite`. Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py` (tests : `tests/test_verifier_fiches.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
+Version 1.1 — 14 octobre 2026. Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions (D31), complétée par les règles actées au pilote `securite` et par les règles issues des audits M06 (D32, D33 ; §9). Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py` (tests : `tests/test_verifier_fiches.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
 
 ## 1. Vocabulaire
 
@@ -30,7 +30,7 @@ Règles (`docs/validation/regles_preselection_<dim>.csv`) : colonnes `ordre, gro
 
 - `retenir` : variante principale d'une famille, éligible (y compris dérogations D16, D17), sens clair, source publique documentée (licence incertaine signalée dans `qualite`).
 - `retenir_variante` : fiche non principale qui apporte ce que la principale n'a pas (autre lecture, années manquantes, objet voisin).
-- `ecarter` : sens ambigu, hors champ v1 (A4, R4, R6), ou dominée (même concept, pas meilleure en profondeur, fraîcheur, fréquence ni licence).
+- `ecarter` : sens ambigu, hors champ v1 (A4, R4, R6), dominée (même concept, pas meilleure en profondeur, fraîcheur, fréquence ni licence) ou série arrêtée sans relais (D32 ; si un successeur existe : `raccordement: a_etudier : …`). **Jamais pour la seule brièveté** : une série éligible (D16, D17) est soit `sens: ambigu`, soit retenue, au besoin en variante (D32).
 - `motif_recommandation` : **une** phrase vérifiable (années, nombre de points, décision citée) ; `note_pertinence` : 2 à 4 phrases.
 
 ## 4. Conventions
@@ -43,7 +43,8 @@ Règles (`docs/validation/regles_preselection_<dim>.csv`) : colonnes `ordre, gro
 - **Incontournable** : `oui` seulement pour les concepts du §5 de `docs/methodo/30_crosswalk_synthese.md` (≥ 3 cadres).
 - **Données lues, jamais saisies** : périodes, nombre de points et URL d'API de la série principale viennent de la long-list ; toute valeur citée dans une note est vérifiée (fixture, API lue par WebFetch) ; sinon « non trouvé ».
 - **YAML** : écrit par `preselection.texte_yaml` (identifiants d'allure numérique entre guillemets : `'010593281'`).
-- **Rattachement** : une ligne d'une autre long-list reprise en fiche porte `rattachement_propose` ; elle reste dans le tableau de validation, la session mère tranche au gel 2.
+- **Rattachement** : une ligne d'une autre long-list reprise en fiche porte `rattachement_propose` ; elle reste dans le tableau de validation, la session mère tranche au gel 2. **Avant de commencer**, lire les `docs/validation/preselection_*_lignes.csv` des dimensions déjà traitées et les règles `autre_dimension:*` qui visent la sienne (R1, D32) ; le vérificateur avertit si une ligne utilisée est déjà la série principale d'une fiche d'une autre dimension.
+- **Champ mixte** : un taux dont numérateur et dénominateur n'ont pas le même champ (métropole / France entière) est admis s'il est documenté (`qualite: champ_mixte`) ; le pipeline recalculera un taux homogène (D32).
 
 ## 5. Schéma de fiche
 
@@ -62,11 +63,13 @@ Règles (`docs/validation/regles_preselection_<dim>.csv`) : colonnes `ordre, gro
 | `source_niveau` | oui | `1` (API) \| `2` (fichier) |
 | `url_api`, `url_page` | oui | URL `http(s)://…` ou `non trouvé` |
 | `frequence` | oui | `annuelle` \| `irreguliere` \| `semestrielle` \| `trimestrielle` \| `mensuelle` \| `ponctuelle` |
-| `premiere_annee`, `derniere_annee` | oui | année ou `non trouvé` |
+| `premiere_annee`, `derniere_annee` | oui | année de 1700 à 2100 (séries V-Dem, D32) ou `non trouvé` |
 | `nb_points_depuis_2000` | conseillé | entier |
 | `eligibilite_longlist` | conseillé | `oui` \| `a_verifier` \| `non` \| `hors_longlist` |
 | `ligne_id` | conseillé | `ligne_id` de la série principale (vide si hors long-list) |
-| `hors_longlist` | conseillé | `oui` \| `non` ; `oui` : le jeu doit figurer au catalogue des jeux |
+| `hors_longlist` | conseillé | `oui` \| `non` ; `oui` : jeu Eurostat au catalogue des jeux **ou** `preuve` (§9) |
+| `preuve` | si hors catalogue | chemin d'un fichier du dépôt qui atteste la série (sortie du robot, ex. `docs/sources/series/drees__…csv`) |
+| `statut_serie` | si hors catalogue | `disponible` (valeurs déjà produites) \| `a_calculer` (à calculer par un robot, ligne de maintenance) |
 | `rattachement_propose` | si besoin | origine et dimension proposée |
 | `raccordement` | oui | `oui\|non\|a_etudier : note courte` |
 | `recommandation` | oui | `retenir` \| `retenir_variante` \| `ecarter` (principale : pas `retenir_variante` ; non principale : pas `retenir`) |
@@ -104,3 +107,13 @@ Colonnes, dans l'ordre : `id, libelle, famille, variante_principale, definition_
 - Le total d'un jeu Melodi est souvent répété sous chaque mesure de ventilation : une seule ligne en série principale, les autres en doublons techniques.
 - Les drapeaux Eurostat (`b` rupture, `u` faible fiabilité) ne sont pas dans la long-list : les lire sur l'API pour les séries principales.
 - Ne pas écarter un indicateur parce qu'il recoupe une autre dimension : `autre_dimension:<dim>` ou `rattachement_propose`, la session mère tranche.
+- Chercher hors de la long-list les concepts nommés par le contenu de la dimension : sorties du robot M04 (`docs/sources/series/*`, ex. toutes les questions du baromètre DREES), catalogues `*_non.csv.gz`, catalogue des jeux Eurostat (jeux exclus au niveau 1).
+
+## 9. Règles complémentaires (D32, D33)
+
+- **Fiches hors long-list** (D32) : admises si la série est vérifiée à la source ; `hors_longlist: oui`, `eligibilite_longlist: hors_longlist`, `ligne_id` vide, `rattachement_propose` (origine de l'oubli), et soit un jeu Eurostat présent au catalogue des jeux, soit un champ `preuve` vers la sortie du robot ; `statut_serie: a_calculer` si les valeurs ne sont pas encore produites. Une ligne est ajoutée à `docs/cr/maintenance_catalogues.md` (calcul ou réintégration du jeu, numérotation continue). Règle de présélection associée : `hors_longlist = oui`. Les variantes hors long-list (sans `ligne_id`) portent `catalogue` ou `preuve`.
+- **Composantes ou fiches** (D32) : la composante d'un concept (une forme de violence, une catégorie de sortie) est une variante de la fiche parente, sauf si elle porte une préoccupation publique propre (ex. violences conjugales) : fiche propre.
+- **Opinions sur la société** (D32) : cohésion perçue, optimisme pour les générations futures… sont des fiches de familles distinctes, recommandées comme les autres opinions de la dimension (pas en variante d'une mesure personnelle).
+- **Écarts construits** (D32) : un indicateur d'écart calculé par formule (rapport, différence entre deux groupes) est admis en `egalites` avec `formule` et `composantes`, même si ses lignes sources restent des ventilations dans d'autres dimensions.
+- **Rattachements tranchés** (D33) : administration en ligne → `logement_cadre_vie` ; parité politique → `egalites` ; prisons et détention provisoire → `democratie` ; adhésion syndicale (DREES SDASSYND_1) → candidat `democratie` ; corruption et confiance dans les institutions : `incontournable: non` (règle des 3 cadres) mais `retenir`. Famille de composites : un concept distinct (ex. WGI « État de droit » et « contrôle de la corruption ») = une famille distincte.
+- **Bornes du vérificateur** : `premiere_annee` ≥ 1700 (D32).

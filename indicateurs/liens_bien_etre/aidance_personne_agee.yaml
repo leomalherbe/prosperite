@@ -1,0 +1,53 @@
+id: aidance_personne_agee
+libelle: Part des personnes aidant régulièrement et bénévolement une personne âgée dépendante
+dimension: liens_bien_etre
+sous_theme: engagement
+famille: aidance_personne_agee
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui apportent une aide régulière
+  et bénévole à une personne âgée dépendante vivant chez elles, chez elle ou ailleurs (question DE07, réponse «
+  oui »), non-réponses incluses au dénominateur, avec la pondération.
+unite: '% des répondants'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable DE07, modalités 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2024_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000261
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Sens d'interprétation ambigu (solidarité de proximité ou charge supportée par les aidants,
+  charte §3.4) et thème du travail non rémunéré non traité en v1 (A4).
+note_pertinence: 'Une hausse de l''aidance peut traduire plus de solidarité comme un besoin accru d''aide ou un
+  recul d''autres prises en charge : l''indicateur ne dit pas si la situation s''améliore. Il pourrait être réexaminé
+  en v2 avec le thème du temps et du travail non rémunéré.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- calcul_sur_microdonnees
+- codes_modalites_a_verifier
+- champ_geographique_a_verifier
+- pas_d_enquete_2003
+- pas_d_enquete_2012
+notes: 'Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+  incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
+  vérifier) ; fichier 2025 : pièce jointe barometre2025_diff_csv du même jeu (l''identifiant de pièce jointe change
+  à chaque édition) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'

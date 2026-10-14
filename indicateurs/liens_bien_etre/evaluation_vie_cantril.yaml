@@ -1,0 +1,50 @@
+id: evaluation_vie_cantril
+libelle: Évaluation de la vie (échelle de Cantril, World Happiness Report)
+dimension: liens_bien_etre
+sous_theme: satisfaction et évaluation de la vie
+famille: satisfaction_vie
+variante_principale: non
+definition: Moyenne sur trois ans des réponses à l'échelle de Cantril (se situer entre 0, la pire vie possible,
+  et 10, la meilleure vie possible), posée chaque année à environ 1 000 personnes en France par le Gallup World
+  Poll et diffusée par le World Happiness Report (l'année N couvre N-2 à N).
+unite: note (0 à 10)
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: World Happiness Report (données Gallup World Poll)
+source_jeu: WHR 2026, données de la figure 2.1 (colonne « Life evaluation (3-year average) »)
+source_serie_id: https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx (colonne « Life evaluation (3-year
+  average) »)
+source_niveau: 2
+url_api: https://files.worldhappiness.report/WHR26_Data_Figure_2.1.xlsx
+url_page: https://worldhappiness.report/data-sharing/
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000271
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Même concept que satisfaction_vie, couvert par l'INSEE sur une période équivalente (2010-2025
+  contre 2011-2025), alors que cette série est une moyenne glissante sur trois ans, sans valeur 2013 et sans licence
+  de réutilisation trouvée.
+note_pertinence: L'échelle de Cantril mesure l'évaluation de la vie, comme la satisfaction SRCV, mais avec une autre
+  question et un échantillon plus petit. Elle sert surtout aux comparaisons internationales, hors périmètre v1 ;
+  elle pourra être reprise pour calibrer les bornes (référence européenne).
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyenne_glissante_3_ans
+- licence_non_trouvee
+- nom_de_fichier_change_chaque_annee
+- pas_de_valeur_2013
+notes: Relais possible par Our World in Data (happiness-cantril-ladder, même source).

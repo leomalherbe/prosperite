@@ -1,0 +1,57 @@
+id: integration_sociale
+libelle: Part des personnes se sentant intégrées dans la société
+dimension: liens_bien_etre
+sous_theme: relations et soutien
+famille: integration_sociale
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui se sentent très bien ou assez
+  bien intégrées dans la société (question CS05), non-réponses incluses au dénominateur, avec la pondération de
+  redressement de l'enquête.
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable CS05, modalités 1+2
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2024_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000258
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Série annuelle de 12 points (2014-2025) mesurant l'inclusion sociale ressentie, concept du
+  cadre Eurostat (« perception de l'inclusion sociale ») sans autre source annuelle pour la France.
+note_pertinence: Le sentiment d'intégration décrit le lien entre la personne et la société, au-delà du cercle des
+  proches. Eurostat ne publie qu'une vague (2022) de l'indicateur voisin « se sentir exclu de la société » (ilc_pw10).
+variantes:
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+    et barometre2025_diff_csv ; variable CS05, modalités 3+4
+  source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
+  nature: complément (ne pas se sentir intégré)
+  ligne_id: m04-000259
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- calcul_sur_microdonnees
+- codes_modalites_a_verifier
+- champ_geographique_a_verifier
+- pas_d_enquete_2003
+notes: 'Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+  incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
+  vérifier) ; fichier 2025 : pièce jointe barometre2025_diff_csv du même jeu (l''identifiant de pièce jointe change
+  à chaque édition) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'

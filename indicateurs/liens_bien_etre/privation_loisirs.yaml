@@ -1,0 +1,73 @@
+id: privation_loisirs
+libelle: Ne pas avoir les moyens de participer régulièrement à une activité de loisirs
+dimension: liens_bien_etre
+sous_theme: loisirs, culture, sport et vacances
+famille: privation_loisirs
+variante_principale: oui
+definition: Part des personnes déclarant ne pas avoir les moyens financiers de participer régulièrement à une activité
+  de loisirs (item de la privation matérielle et sociale d'EU-SILC ; jeu Eurostat ilc_mdes11a, âge « total »).
+unite: '%'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mdes11a (EU-SILC, privation matérielle et sociale)
+source_serie_id: ilc_mdes11a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdes11a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdes11a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031733
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Série annuelle de 12 points (2014-2025) mesurant l'accès aux loisirs sous contrainte financière,
+  les loisirs relevant de cette dimension (A13) et les items de privation de leur domaine (R3).
+note_pertinence: 'L''indicateur relie loisirs et ressources : il mesure une privation, pas une préférence. Il fait
+  partie des 13 items du taux de privation matérielle et sociale (niveau_de_vie) ; le rattachement des items par
+  domaine (R3) le place ici, à confirmer par la session mère. Eurostat signale des ruptures de série en 2020 et
+  2022.'
+variantes:
+- serie_id: ilc_mdes11a?freq=A&unit=PC&rskpovth=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y20-24&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, statut d'activité, revenu)
+  ligne_id: estat-031734
+  eligible: oui
+- serie_id: ilc_mdes11a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, statut d'activité, revenu)
+  ligne_id: estat-031735
+  eligible: oui
+- serie_id: ilc_mdes11b?freq=A&unit=PC&wstatus=POP&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, statut d'activité, revenu)
+  ligne_id: estat-031736
+  eligible: oui
+- serie_id: ilc_mdes11b?freq=A&unit=PC&wstatus=POP&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, statut d'activité, revenu)
+  ligne_id: estat-031737
+  eligible: oui
+- serie_id: DS_SRCV_PMS?AGE=Y_GE16&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&PCS=_Z&QUANTILE_NIVVIE=_T&SEX=_T&SRCV_MEASURE=DIF_LOISIRS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: même item publié par l'INSEE (Melodi DS_SRCV_PMS, France métropolitaine, annuel 2020-2025, 6 points ;
+    catalogue des séries écartées pour moins de 10 points)
+  catalogue: insee_melodi_catalogue_non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- champ_age_a_verifier
+notes: Valeurs et drapeaux lus sur l'API Eurostat le 14/10/2026. L'INSEE publie le même item depuis 2020 (DS_SRCV_PMS,
+  mesure DIF_LOISIRS, 6 points, catalogue des séries écartées).

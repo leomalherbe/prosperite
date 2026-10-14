@@ -1,0 +1,285 @@
+id: bonheur_ressenti
+libelle: Part des personnes heureuses tout le temps ou la plupart du temps (4 dernières semaines)
+dimension: liens_bien_etre
+sous_theme: émotions ressenties
+famille: bonheur_ressenti
+variante_principale: oui
+definition: 'Part des personnes de 16 ans ou plus déclarant avoir été heureuses tout le temps ou la plupart du temps
+  au cours des quatre dernières semaines (module bien-être d''EU-SILC, dont SRCV est le volet français) : somme
+  des modalités « toujours » et « la plupart du temps » du jeu Eurostat ilc_pw08.'
+unite: '% des 16 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_pw08 (EU-SILC, module bien-être)
+source_serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=ALW&frequenc=MOST&sex=T&age=Y_GE16&geo=FR
+composantes:
+- ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=ALW&sex=T&age=Y_GE16&geo=FR
+- ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=MOST&sex=T&age=Y_GE16&geo=FR
+formule: ALW + MOST (somme des deux composantes)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=ALW&frequenc=MOST&sex=T&age=Y_GE16&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_pw08/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2013
+derniere_annee: 2022
+nb_points_depuis_2000: 3
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-032079 ; estat-032083
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: 'Seule mesure publique d''affect positif pour la France (3 vagues : 2013, 2018, 2022), admise
+  comme série irrégulière (D17), alors que les émotions ressenties font partie du contenu de la dimension.'
+note_pertinence: 'Les émotions complètent l''évaluation de la vie : elles décrivent le vécu récent plutôt qu''un
+  jugement d''ensemble. Les valeurs vérifiées à la source (62,1 % en 2013, 67,8 % en 2018, 66,4 % en 2022) varient
+  peu ; la valeur 2022 serait reportée jusqu''à la vague suivante du module.'
+variantes:
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=ALW&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005086
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&frequenc=ALW&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005087
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&frequenc=ALW&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005088
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=ALW&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005089
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&frequenc=ALW&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032080
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=ALW&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032081
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=ALW&sex=T&age=Y16-24&age=Y16-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032082
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=MOST&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005090
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&frequenc=MOST&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005091
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&frequenc=MOST&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005092
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=MOST&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005093
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&frequenc=MOST&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032084
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=MOST&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032085
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=MOST&sex=T&age=Y16-24&age=Y16-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032086
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=NVR&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005094
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&frequenc=NVR&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005095
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&frequenc=NVR&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005096
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=NVR&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005097
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=NVR&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032087
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&frequenc=NVR&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032088
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=NVR&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032089
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=NVR&sex=T&age=Y16-24&age=Y16-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032090
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=RAR&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005098
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&frequenc=RAR&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005099
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&frequenc=RAR&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005100
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=RAR&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005101
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=RAR&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032091
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&frequenc=RAR&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032092
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=RAR&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032093
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=RAR&sex=T&age=Y16-24&age=Y16-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032094
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=SMT&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005102
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&frequenc=SMT&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005103
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&frequenc=SMT&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005104
+  eligible: a_verifier
+- serie_id: ilc_pw09?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&frequenc=SMT&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-005105
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=SMT&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032095
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&frequenc=SMT&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032096
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=SMT&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032097
+  eligible: a_verifier
+- serie_id: ilc_pw08?freq=A&unit=PC&isced11=TOTAL&frequenc=SMT&sex=T&age=Y16-24&age=Y16-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation) et autres fréquences (parfois, rarement,
+    jamais)
+  ligne_id: estat-032098
+  eligible: a_verifier
+- serie_id: https://ourworldindata.org/grapher/share-of-people-who-say-they-are-happy.csv (colonne happy)
+  source: Our World in Data (relais)
+  nature: 'autre source et autre question (WVS/EVS : se dire heureux, 3 vagues depuis 2000)'
+  ligne_id: m04-000205
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- somme_de_deux_modalites
+notes: 'Affects cités par SSF, OCDE et Eurostat sous des formes différentes (positifs, négatifs, solde) ; non comptés
+  parmi les concepts communs à trois cadres au §5 du crosswalk, d''où incontournable = non. Date de la prochaine
+  vague du module : non trouvé. Valeurs et années lues sur l''API Eurostat le 14/10/2026.'

@@ -1,0 +1,422 @@
+id: satisfaction_vie_faible
+libelle: Part des personnes peu satisfaites de leur vie (note de 0 à 5)
+dimension: liens_bien_etre
+sous_theme: satisfaction et évaluation de la vie
+famille: satisfaction_vie
+variante_principale: non
+definition: Part des personnes de 16 ans ou plus de France métropolitaine qui donnent une note de 0 à 5 sur 10 à
+  leur satisfaction concernant la vie qu'elles mènent actuellement (enquête SRCV).
+unite: '% des 16 ans ou plus'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_SRCV_SATISFACTION (enquête SRCV), mesure PT_NOTE_IN_VIESATISF_BY_AGE, note 0-5
+source_serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_SRCV_SATISFACTION
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-006096
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Même question SRCV que satisfaction_vie sur la même période (16 points, 2010-2025), lue comme
+  la part de la population sous un seuil, ce qui correspond au type plancher de la dimension.
+note_pertinence: 'La moyenne peut masquer la situation des personnes les moins satisfaites ; la part des notes 0
+  à 5 la rend visible et se prête à des bornes du type « au plus x % ». Le seuil de l''INSEE (0 à 5) diffère de
+  celui de l''OCDE (note inférieure à 5) : les deux séries ne sont pas interchangeables.'
+variantes:
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y16T24&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005800
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y25T34&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005812
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y35T49&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005824
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y50T64&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005836
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y65T74&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005848
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=F&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_SEX&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006094
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=M&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_SEX&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006095
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EDUC&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006098
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NAT&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006102
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_SEX&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006104
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE75&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_AGE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006208
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D0TD1&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005857
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D1TD2&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005863
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D2TD3&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005869
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D3TD4&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005875
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D4TD5&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005881
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D5TD6&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005887
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D6TD7&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005893
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D7TD8&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005899
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D8TD9&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005905
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=D9TD10&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005911
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=0_SRCV&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EDUC&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005917
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=1T2_SRCV&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EDUC&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005923
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=3_SRCV&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EDUC&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005929
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=4T5_SRCV&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EDUC&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005935
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=6T8_SRCV&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EDUC&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005941
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=1&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_GALI&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005968
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=2&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_GALI&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005974
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=3&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_GALI&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005980
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=1&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_SPH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005986
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=2&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_SPH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005992
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=3&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_SPH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-005998
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=4&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_SPH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006004
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=100&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NAT&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006010
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=250_B&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NAT&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006016
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=250_N&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NAT&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006022
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=0&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006028
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=1&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006034
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=2&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006040
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=3&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006046
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=4&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006052
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=GE5&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006058
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=1T2&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_PCS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006064
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=3&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_PCS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006070
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=4&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_PCS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006076
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=5&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_PCS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006082
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=6&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_PCS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006088
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006097
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_GALI&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006100
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_HLTH_SPH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006101
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_NB_DIFF&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006103
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=11&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006105
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=21&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006106
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=221&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006107
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=222_CH1&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006108
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=222_CH2&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006109
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=222_CH_GE3&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006110
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=OTH_SRCV&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006111
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TPH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006112
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TSH&TPH=_T&TSH=12
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006113
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TSH&TPH=_T&TSH=13
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006114
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TSH&TPH=_T&TSH=21
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006115
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TSH&TPH=_T&TSH=22
+  source: INSEE Melodi
+  nature: ventilation (sexe, âge, diplôme, décile, PCS, ménage, logement, santé, nationalité, difficultés)
+  ligne_id: melodi-006116
+  eligible: oui
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_TSH&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: doublon technique (même total publié sous une autre mesure de ventilation)
+  ligne_id: melodi-006117
+  eligible: oui
+- serie_id: ilc_pw05?freq=A&unit=PC&lev_satis=LOW&isced11=TOTAL&life_sat=LIFE&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: autre source (Eurostat EU-SILC, niveau de satisfaction « bas »)
+  ligne_id: estat-031527
+  eligible: a_verifier
+- serie_id: ilc_pw05?freq=A&unit=PC&lev_satis=LOW&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&life_sat=LIFE&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: autre source (Eurostat EU-SILC, niveau de satisfaction « bas »)
+  ligne_id: estat-031528
+  eligible: a_verifier
+- serie_id: ilc_pw05?freq=A&unit=PC&lev_satis=LOW&isced11=TOTAL&life_sat=LIFE&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: autre source (Eurostat EU-SILC, niveau de satisfaction « bas »)
+  ligne_id: estat-031529
+  eligible: a_verifier
+- serie_id: ilc_pw05?freq=A&unit=PC&lev_satis=LOW&isced11=TOTAL&life_sat=LIFE&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y20-24&age=Y25-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: autre source (Eurostat EU-SILC, niveau de satisfaction « bas »)
+  ligne_id: estat-031530
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_1_DEP UNIT_MEASURE=PT_POP_Y_GE16
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre source (OCDE, note inférieure à 5)
+  ligne_id: m04-000073
+  eligible: a_verifier
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=1&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EMPSTA&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation par statut d'activité (ligne de la long-list travail, rattachement proposé)
+  ligne_id: melodi-005947
+  eligible: oui
+  longlist: travail
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=2&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EMPSTA&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation par statut d'activité (ligne de la long-list travail, rattachement proposé)
+  ligne_id: melodi-005953
+  eligible: oui
+  longlist: travail
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=31&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EMPSTA&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation par statut d'activité (ligne de la long-list travail, rattachement proposé)
+  ligne_id: melodi-005958
+  eligible: oui
+  longlist: travail
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=36&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EMPSTA&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation par statut d'activité (ligne de la long-list travail, rattachement proposé)
+  ligne_id: melodi-005963
+  eligible: oui
+  longlist: travail
+- serie_id: DS_SRCV_SATISFACTION?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=0T5&SEX=_T&SRCV_MEASURE=PT_NOTE_IN_VIESATISF_BY_EMPSTA&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: ventilation par statut d'activité (ligne de la long-list travail, rattachement proposé)
+  ligne_id: melodi-006099
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_france_metropolitaine
+notes: 'Le total « 16 ans ou plus » est publié sous chaque mesure de ventilation du jeu (âge, sexe, diplôme, décile…)
+  ; la ligne retenue est celle de la ventilation par âge, les autres sont des doublons techniques. La ventilation
+  par statut d''activité figure dans la long-list travail : rattachement à liens_bien_etre proposé (R4). La part
+  des notes 9-10 est listée comme variante de satisfaction_vie ; la catégorie 6-8 est écartée en bloc.'

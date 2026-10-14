@@ -31,7 +31,7 @@ Lignes à signaler : les masses d'eau (ODD 6.i2, 14.i1 : 4 points 2013-2021) et 
 
 - `docs/validation/regles_preselection_planete.csv` écrit par un générateur (bac à sable) : séries principales exactes (`ligne_id`), variantes précises, un import (`logement_cadre_vie`), écarts en bloc par expression sur `serie_id`, renvois.
 - `python scripts/preselection.py --dimension planete` → **21 534 lignes affectées** (21 533 de la long-list, aucune sans règle, aucune règle vide ; 1 importée : OCDE 9_3 « population exposée à des températures extrêmes » de `logement_cadre_vie`, rattachement proposé au titre d'A14), **219 groupes** : 73 `fiche`, 120 `variante_de`, 23 `ecarte_en_bloc`, 3 `autre_dimension`.
-- Après ajout des deux concepts hors long-list (§3.4) : **221 groupes** (75 `fiche`, 120 `variante_de`, 23 `ecarte_en_bloc`, 3 `autre_dimension`).
+- Après ajout des deux concepts hors long-list (§3.3) : **221 groupes** (75 `fiche`, 120 `variante_de`, 23 `ecarte_en_bloc`, 3 `autre_dimension`).
 - Lignes de la long-list `planete` : **73 en `fiche`** (72 fiches, dont une somme de deux classes), **697 en `variante_de`**, **20 747 écartées en bloc** (15 261 éligibles, 524 à vérifier, 4 962 non éligibles), **16 renvoyées** à une autre dimension.
 - Variantes regroupées par concept : les ventilations très fines (sous-catégories CRF/NFR, croisements gaz × secteur, secteur × origine de l'eau, composantes du bilan nutritif, détail des déchets par matériau et opération) sont écartées en bloc pour garder des listes de variantes lisibles ; les totaux par gaz, par grand secteur, par polluant, par usage et par mode de traitement restent en variantes.
 

@@ -7,10 +7,13 @@ ou extraits de phase 1 dans docs/sources/verif_acces/extraits/). Les années (pr
 nombre de points depuis 2000) sont lues dans ces fichiers, jamais saisies à la main ; une série non
 retrouvée fait échouer la construction (aucune ligne « non trouvé » n'est écrite sans le dire).
 
-La dimension v1 proposée est calculée par la table de correspondance v0 → v1 de la mission M03
-(copie : correspondance_v0_v1_m03.csv, branche m03-grille, commit 7dd7fcb) : première règle dont la
-dimension v0 correspond et dont le motif est trouvé dans le libellé ; une définition peut la forcer
-(paramètre dim_v1) en le motivant dans le commentaire.
+La dimension v1 proposée est calculée par la table de correspondance v0 → v1 du gel 1
+(docs/methodo/31_correspondance_v0_v1.csv, avec les corrections P1–P8 de M05-prep du 14/10/2026 ;
+l'ancienne copie de la table M03, correspondance_v0_v1_m03.csv, n'est plus lue) : première règle dont
+la dimension v0 correspond (ou vaut « * ») et dont le motif est trouvé dans le libellé (apostrophes
+simplifiées, avec ou sans accents), comme dans src/pipeline/longlist.py. Une définition peut la forcer
+(paramètre dim_v1) en le motivant, **sauf** quand la table applique une règle d'exception (motif non
+vide) : l'exception l'emporte, comme dans la long-list.
 
 Ce script est rangé hors de scripts/ pour ne pas déclencher le robot « Collecte » à chaque
 modification. Exécution (hors ligne) :
@@ -25,6 +28,7 @@ import csv
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 import pandas as pd
@@ -33,7 +37,7 @@ RACINE = Path(__file__).resolve().parents[3]
 SERIES = RACINE / "docs" / "sources" / "series"
 EXTRAITS = RACINE / "docs" / "sources" / "verif_acces" / "extraits"
 SORTIE = RACINE / "docs" / "sources" / "10_indicateurs_candidats_hors_insee_eurostat.csv"
-CORRESPONDANCE = Path(__file__).resolve().parent / "correspondance_v0_v1_m03.csv"
+CORRESPONDANCE = RACINE / "docs" / "methodo" / "31_correspondance_v0_v1.csv"
 
 COLONNES = ["indicateur", "dimension_v0", "source", "identifiant_ou_url", "unite", "sens", "declaratif",
             "frequence", "premiere_annee", "derniere_annee", "doublon_insee_eurostat", "commentaire",
@@ -164,16 +168,20 @@ def annees_liste(annees: list[int], preuve: str, n_distinctes: int = 0) -> dict:
 # --------------------------------------------------------------------------- dimension v1
 
 
-def dimension_v1(dim_v0: str, libelle: str) -> tuple[str, str]:
+def dimension_v1(dim_v0: str, libelle: str) -> tuple[str, str, bool]:
+    """(dimension v1, code de règle, règle d'exception ?) — même logique que src/pipeline/longlist.py."""
     if not _REGLES:
         with CORRESPONDANCE.open(encoding="utf-8") as f:
             _REGLES.extend(sorted(csv.DictReader(f), key=lambda r: int(r["ordre"])))
+    texte = libelle.replace("’", "'").replace("‘", "'")
+    sans_accents = "".join(c for c in unicodedata.normalize("NFKD", texte) if not unicodedata.combining(c))
     for r in _REGLES:
-        if r["dimension_v0"] != dim_v0:
+        if r["dimension_v0"] not in (dim_v0, "*"):
             continue
-        if not r["motif_libelle"] or re.search(r["motif_libelle"], libelle, flags=re.I):
-            return r["dimension_v1"], r["regle"]
-    return "a_classer", "—"
+        motif = r["motif_libelle"]
+        if not motif or re.search(motif, texte, flags=re.I) or re.search(motif, sans_accents, flags=re.I):
+            return r["dimension_v1"], r["regle"], bool(motif)
+    return "a_classer", "—", False
 
 
 # --------------------------------------------------------------------------- construction des lignes
@@ -225,12 +233,15 @@ def ajouter(indicateur: str, dimension: str, source: str, identifiant: str, unit
         notes.append(f"dernière valeur {depuis_2000[-1]} (< 2020)")
     if ref_doublon:
         notes.append(f"doublon : {ref_doublon}")
-    v1, regle = dimension_v1(dimension, indicateur)
+    v1, regle, exception = dimension_v1(dimension, indicateur)
     if dim_v1:
         assert dim_v1 in DIMENSIONS_V1, dim_v1
-        if dim_v1 != v1:
-            notes.append(f"dimension v1 forcée ({v1} par la table M03)")
-        v1 = dim_v1
+        if dim_v1 != v1 and exception:
+            notes.append(f"forçage en {dim_v1} ignoré : exception de la table (règle {regle})")
+        elif dim_v1 != v1:
+            notes.append(f"dimension v1 forcée ({v1} par la table)")
+        if not exception:
+            v1 = dim_v1
     elif regle not in ("—", ""):
         notes.append(f"v1 : règle {regle}")
     com = " ; ".join([commentaire.strip()] + notes if commentaire.strip() else notes)

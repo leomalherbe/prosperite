@@ -6,3 +6,7 @@ __pycache__/
 .env
 .DS_Store
 .claude/
+
+# Long-list (M05) : sorties de travail en clair non commitées ; seuls longlist_bilan.json
+# et les .csv.gz d'une exécution finale (--compresser) le sont.
+catalogues/longlist_*.csv

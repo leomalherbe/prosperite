@@ -1,0 +1,117 @@
+id: soutien_social
+libelle: Soutien social (avoir quelqu'un sur qui compter en cas de difficulté)
+dimension: liens_bien_etre
+sous_theme: relations et soutien
+famille: soutien_social
+variante_principale: oui
+definition: Part des personnes de 15 ans ou plus qui répondent oui à la question « Si vous aviez des ennuis, avez-vous
+  des parents ou des amis sur lesquels vous pouvez compter pour vous aider chaque fois que vous en avez besoin ?
+  » (Gallup World Poll, base How's Life de l'OCDE, mesure 7_1).
+unite: '% des 15 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: OCDE (données Gallup World Poll)
+source_jeu: How's Life? — bien-être actuel (DSD_HSL@DF_HSL_CWB), mesure 7_1
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_1 UNIT_MEASURE=PT_POP_Y_GE15
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.7_1......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000047
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Incontournable (Doughnut, OCDE How's Life, Eurostat Qualité de vie) et seule série couvrant
+  2006-2025 (7 valeurs distinctes), l'équivalent public EU-SILC n'ayant que 3 vagues (2013, 2018, 2022).
+note_pertinence: Le soutien social est l'indicateur de liens le plus partagé par les cadres de référence et l'indicateur
+  social retenu par le Doughnut (« manque de soutien social »). Le niveau est élevé (87,6 % sur 2023-2025), ce qui
+  demandera des bornes proches du plafond. Si la réutilisation des données Gallup était refusée, la variante EU-SILC
+  (ilc_pw06, 2013-2022) prendrait le relais.
+variantes:
+- serie_id: ilc_pw07?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-005082
+  eligible: a_verifier
+- serie_id: ilc_pw07?freq=A&unit=PC&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-005083
+  eligible: a_verifier
+- serie_id: ilc_pw07?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-005084
+  eligible: a_verifier
+- serie_id: ilc_pw07?freq=A&unit=PC&deg_urb=TOTAL&quant_inc=TOTAL&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-005085
+  eligible: a_verifier
+- serie_id: ilc_pw06?freq=A&unit=PC&isced11=TOTAL&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-032075
+  eligible: a_verifier
+- serie_id: ilc_pw06?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&isced11=ED5_6&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-032076
+  eligible: a_verifier
+- serie_id: ilc_pw06?freq=A&unit=PC&isced11=TOTAL&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-032077
+  eligible: a_verifier
+- serie_id: ilc_pw06?freq=A&unit=PC&isced11=TOTAL&sex=T&age=Y16-24&age=Y25-34&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: autre source publique (EU-SILC, 3 vagues 2013-2022) et ventilations
+  ligne_id: estat-032078
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_1 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation (sexe)
+  ligne_id: m04-000048
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_1 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation (sexe)
+  ligne_id: m04-000049
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_1_DEP UNIT_MEASURE=PT_POP_Y_GE15
+  source: OCDE — How's Life? (base du bien-être)
+  nature: complément (absence de soutien social, 7_1_DEP) et sa ventilation par sexe
+  ligne_id: m04-000050
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_1_DEP UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: complément (absence de soutien social, 7_1_DEP) et sa ventilation par sexe
+  ligne_id: m04-000051
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_1_DEP UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: complément (absence de soutien social, 7_1_DEP) et sa ventilation par sexe
+  ligne_id: m04-000052
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- donnees_gallup_reutilisation_a_confirmer
+- moyennes_groupees_repetees
+- serie_irreguliere_D17
+notes: 'Source primaire Gallup World Poll (environ 1 000 personnes par an, 15 ans ou plus) ; l''OCDE publie des
+  moyennes groupées (2006-07, puis 2008-10, 2011-13, 2014-16, 2017-19, 2020-22, 2023-25) répétées chaque année du
+  bloc, d''où 7 valeurs distinctes ; conditions de réutilisation non trouvées (courriel à l''OCDE proposé, D26).
+  Page web de la base How''s Life : non trouvé (pages OCDE non lisibles par l''outil). Question traduite de l''anglais
+  (définition OCDE, p. 21 du document de métadonnées).'

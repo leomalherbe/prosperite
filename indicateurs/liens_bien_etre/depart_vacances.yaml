@@ -1,0 +1,59 @@
+id: depart_vacances
+libelle: Taux de départ en vacances (voyage personnel d'au moins 4 nuits dans l'année)
+dimension: liens_bien_etre
+sous_theme: loisirs, culture, sport et vacances
+famille: depart_vacances
+variante_principale: oui
+definition: Part de la population ayant fait dans l'année au moins un voyage pour motifs personnels d'au moins quatre
+  nuitées, en France ou à l'étranger (enquête sur la demande touristique ; jeu Eurostat tour_dem_totot, durée «
+  4 nuits ou plus », destination « tous les pays du monde », unité « pourcentage de la population totale »).
+unite: '% de la population'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: tour_dem_totot (demande touristique des résidents)
+source_serie_id: tour_dem_totot?freq=A&duration=N_GE4&c_dest=WORLD&unit=PC_POP&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tour_dem_totot?freq=A&duration=N_GE4&c_dest=WORLD&unit=PC_POP&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/tour_dem_totot/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure du départ effectif en vacances, contenu explicite de la dimension (A13), annuelle
+  de 2012 à 2025 (14 points vérifiés à la source), à réintégrer au catalogue Eurostat dont le jeu a été exclu comme
+  « statistique sectorielle ».
+note_pertinence: 'Partir en vacances est un marqueur de bien-être et d''inclusion sociale. L''enquête interroge
+  les résidents sur leurs voyages : c''est un résultat pour les personnes, pas une statistique d''entreprises. La
+  série décroche en 2017 (63,1 % en 2016, 57,4 % en 2017) sans drapeau de rupture : à éclaircir avant usage.'
+variantes:
+- serie_id: tour_dem_totot?freq=A&duration=N_GE1&c_dest=WORLD&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: autre durée (au moins une nuit), 2012-2025
+  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 14/10/2026)
+- serie_id: tour_dem_totot?freq=A&duration=N1-3&c_dest=WORLD&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: autre durée (1 à 3 nuits), 2012-2025
+  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 14/10/2026)
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- rupture_possible_2017_a_verifier
+- champ_age_a_verifier
+notes: 'Jeu tour_dem_totot présent dans catalogues/eurostat_jeux_catalogue.csv avec candidat = non (« domaine hors
+  périmètre (tourisme) : statistique sectorielle ») ; série, années et valeurs lues sur l''API Eurostat le 14/10/2026
+  (aucun drapeau ; dernière mise à jour du jeu le 09/10/2026). Correction proposée à M02 : admettre les jeux tour_dem_to*
+  (participation des personnes au tourisme).'

@@ -1,0 +1,103 @@
+id: confiance_autrui
+libelle: Confiance envers les autres (note moyenne de 0 à 10)
+dimension: liens_bien_etre
+sous_theme: confiance et cohésion
+famille: confiance_autrui
+variante_principale: oui
+definition: Note moyenne, sur une échelle de 0 à 10, donnée par les personnes de 16 ans ou plus à leur confiance
+  envers les autres (EU-SILC, dont SRCV est le volet français ; jeu Eurostat ilc_pw03).
+unite: note moyenne (0 à 10)
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_pw03 (EU-SILC, bien-être)
+source_serie_id: ilc_pw03?freq=A&statinfo=AVG&unit=RTG&isced11=TOTAL&domain=OTH&sex=T&age=Y_GE16&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pw03?freq=A&statinfo=AVG&unit=RTG&isced11=TOTAL&domain=OTH&sex=T&age=Y_GE16&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_pw03/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2013
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-031519
+hors_longlist: non
+raccordement: 'possible (D16) : la série INSEE DS_SRCV_CONFIANCE (même enquête, annuelle 2020-2025) prolonge ilc_pw03
+  ; définitions à comparer autour de la rupture Eurostat de 2022'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Confiance interpersonnelle rattachée à cette dimension (A11, R5), série la plus longue disponible
+  (7 vagues, 2013-2025), bien que toutes les valeurs françaises portent le drapeau Eurostat de faible fiabilité
+  « u ».
+note_pertinence: 'La confiance envers les autres est un pilier du capital social (OCDE) et des interactions sociales
+  (Eurostat). Eurostat signale des ruptures en 2018 et 2022 et une faible fiabilité pour toutes les années : la
+  baisse de 5,9 (2018) à 4,5 (2021) ne peut pas être interprétée sans précaution. La série annuelle de l''INSEE
+  (2020-2025) pourrait devenir la variante principale.'
+variantes:
+- serie_id: ilc_pw04?freq=A&statinfo=AVG&unit=RTG&deg_urb=TOTAL&quant_inc=TOTAL&domain=OTH&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-005078
+  eligible: a_verifier
+- serie_id: ilc_pw04?freq=A&statinfo=AVG&unit=RTG&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&quant_inc=TOTAL&domain=OTH&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-005079
+  eligible: a_verifier
+- serie_id: ilc_pw04?freq=A&statinfo=AVG&unit=RTG&deg_urb=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&domain=OTH&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-005080
+  eligible: a_verifier
+- serie_id: ilc_pw04?freq=A&statinfo=AVG&unit=RTG&deg_urb=TOTAL&quant_inc=TOTAL&domain=OTH&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-005081
+  eligible: a_verifier
+- serie_id: ilc_pw03?freq=A&statinfo=AVG&unit=RTG&isced11=ED0-2&isced11=ED3_4&isced11=ED5_6&domain=OTH&sex=T&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-031520
+  eligible: a_verifier
+- serie_id: ilc_pw03?freq=A&statinfo=AVG&unit=RTG&isced11=TOTAL&domain=OTH&sex=M&sex=F&age=Y_GE16&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-031521
+  eligible: a_verifier
+- serie_id: ilc_pw03?freq=A&statinfo=AVG&unit=RTG&isced11=TOTAL&domain=OTH&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y20-24&age=Y25-29&age=Y25-34&age=Y30-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme, revenu, ménage, urbanisation)
+  ligne_id: estat-031522
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_1 UNIT_MEASURE=0_TO_10
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre source (OCDE How's Life 14_1, reprise d'EU-SILC)
+  ligne_id: m04-000100
+  eligible: a_verifier
+- serie_id: https://ourworldindata.org/grapher/self-reported-trust-attitudes.csv (colonne trust)
+  source: Our World in Data (relais)
+  nature: 'autre source et autre question (WVS/EVS : « on peut faire confiance à la plupart des gens », 3 vagues
+    depuis 2000)'
+  ligne_id: m04-000204
+  eligible: a_verifier
+- serie_id: DS_SRCV_CONFIANCE?AGE=Y_GE16&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SEX=_T&SRCV_MEASURE=CONFIANCE&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: 'même mesure publiée par l''INSEE (Melodi DS_SRCV_CONFIANCE, France métropolitaine, annuelle 2020-2025,
+    6 points ; catalogue des séries écartées pour moins de 10 points) : candidate au raccordement (D16) et à la
+    place de variante principale'
+  catalogue: insee_melodi_catalogue_non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- faible_fiabilite_eurostat_u
+- rupture_2018
+- rupture_2022
+- serie_irreguliere_D17
+notes: 'Valeurs, années et drapeaux lus sur l''API Eurostat le 14/10/2026 : 2013, 2018, 2021-2025. Deux cadres seulement
+  (OCDE, Eurostat) : incontournable = non.'

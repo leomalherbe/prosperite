@@ -1,0 +1,58 @@
+id: situation_personnelle_bonne
+libelle: Part des personnes jugeant leur situation personnelle actuelle bonne
+dimension: liens_bien_etre
+sous_theme: satisfaction et évaluation de la vie
+famille: satisfaction_vie
+variante_principale: non
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui jugent leur situation actuelle
+  très bonne ou assez bonne (question OG01 : « Vous personnellement, comment qualifieriez-vous votre situation actuelle
+  ? »), non-réponses incluses au dénominateur, avec la pondération de redressement de l''enquête.'
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable OG01, modalités 1+2
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2024_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2002
+derniere_annee: 2025
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000254
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Seule évaluation globale annuelle disponible avant 2010 (23 points, 2002-2025), mais sa question
+  porte sur la « situation actuelle » et non sur la satisfaction dans la vie.
+note_pertinence: La question est plus large que la satisfaction dans la vie et peut refléter la situation matérielle
+  autant que le bien-être ressenti. Son intérêt est de couvrir 2002-2009, que la série INSEE ne couvre pas. Le complément
+  (situation jugée mauvaise) est listé en variante.
+variantes:
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+    et barometre2025_diff_csv ; variable OG01, modalités 3+4
+  source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
+  nature: 'complément (modalités 3+4 : situation jugée mauvaise)'
+  ligne_id: m04-000255
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- calcul_sur_microdonnees
+- codes_modalites_a_verifier
+- champ_geographique_a_verifier
+- pas_d_enquete_2003
+notes: 'Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+  incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
+  vérifier) ; fichier 2025 : pièce jointe barometre2025_diff_csv du même jeu (l''identifiant de pièce jointe change
+  à chaque édition) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'

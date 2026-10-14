@@ -1,0 +1,324 @@
+id: participation_culturelle_sportive
+libelle: Participation à des sorties culturelles ou sportives (12 derniers mois)
+dimension: liens_bien_etre
+sous_theme: loisirs, culture, sport et vacances
+famille: participation_culturelle_sportive
+variante_principale: oui
+definition: Part des personnes de 16 ans ou plus ayant participé au moins une fois au cours des douze derniers mois
+  à une activité culturelle ou sportive (cinéma, spectacle vivant, site culturel ou événement sportif, d'après le
+  détail du jeu ilc_scp03) (modules d'EU-SILC 2006, 2015 et 2022 ; jeu Eurostat ilc_scp01).
+unite: '% des 16 ans ou plus'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_scp01 (EU-SILC, participation sociale et culturelle)
+source_serie_id: ilc_scp01?freq=A&frequenc=GE1&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_scp01?freq=A&frequenc=GE1&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_scp01/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2022
+nb_points_depuis_2000: 3
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-032103
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: 'Seule mesure publique de participation culturelle et sportive pour la France (3 vagues :
+  2006, 2015, 2022), contenu explicite de la dimension (A13), admise comme série irrégulière (D17).'
+note_pertinence: Aller au cinéma, au spectacle, au musée ou à un événement sportif mesure l'accès effectif aux loisirs
+  culturels et sportifs. La baisse de 2022 (59,1 % contre 80,6 % en 2015) est à interpréter avec prudence, la période
+  de référence recoupant peut-être les restrictions sanitaires (à vérifier). L'indicateur ne couvre pas la pratique
+  sportive elle-même, faute de série nationale.
+variantes:
+- serie_id: ilc_scp01?freq=A&frequenc=GE1&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032104
+  eligible: a_verifier
+- serie_id: ilc_scp01?freq=A&frequenc=GE1&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032105
+  eligible: a_verifier
+- serie_id: ilc_scp01?freq=A&frequenc=GE1&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032106
+  eligible: a_verifier
+- serie_id: ilc_scp01?freq=A&frequenc=NM12&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032107
+  eligible: a_verifier
+- serie_id: ilc_scp01?freq=A&frequenc=NM12&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032108
+  eligible: a_verifier
+- serie_id: ilc_scp01?freq=A&frequenc=NM12&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032109
+  eligible: a_verifier
+- serie_id: ilc_scp01?freq=A&frequenc=NM12&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (sexe, âge, diplôme) et complément (aucune sortie en 12 mois)
+  ligne_id: estat-032110
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC521&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032131
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC521&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032132
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC521&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032133
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC521&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032134
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC522A&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032135
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC522A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032136
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC522A&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032137
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC522A&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032138
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC523H&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032139
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC523H&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032140
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC523H&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032141
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC523H&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032142
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC525&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032143
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC525&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032144
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC525&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032145
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC525&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032146
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC52A&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032147
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC52A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032148
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC52A&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032149
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=GE1&acl00=AC52A&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032150
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC521&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032171
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC521&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032172
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC521&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032173
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC521&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032174
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC522A&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032175
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC522A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032176
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC522A&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032177
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC522A&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032178
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC523H&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032179
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC523H&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032180
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC523H&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032181
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC523H&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032182
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC525&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032183
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC525&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032184
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC525&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032185
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC525&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032186
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC52A&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032187
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC52A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032188
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC52A&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE18&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y30-54&age=Y35-44&age=Y35-49&age=Y45-54&age=Y45-64&age=Y50-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032189
+  eligible: a_verifier
+- serie_id: ilc_scp03?freq=A&frequenc=NM12&acl00=AC52A&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation par type de sortie (cinéma, spectacles vivants, sites culturels, événements sportifs) : au
+    moins une fois, ou jamais'
+  ligne_id: estat-032190
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- periode_de_reference_2022_a_verifier
+notes: Valeurs et années lues sur l'API Eurostat le 14/10/2026. Les licences sportives de la BDM ne couvrent que
+  8 fédérations sans total (écartées en bloc) ; un taux de licences toutes fédérations (INJEP) reste à rechercher
+  par M04.

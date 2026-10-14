@@ -1,0 +1,59 @@
+id: privation_vacances
+libelle: Ne pas pouvoir se payer une semaine de vacances par an hors du domicile
+dimension: liens_bien_etre
+sous_theme: loisirs, culture, sport et vacances
+famille: privation_vacances
+variante_principale: oui
+definition: Part des personnes vivant dans un ménage qui n'a pas les moyens de s'offrir une semaine de vacances
+  par an hors du domicile (item de la privation matérielle et sociale d'EU-SILC ; jeu Eurostat ilc_mdes02).
+unite: '%'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mdes02 (EU-SILC, privation matérielle)
+source_serie_id: ilc_mdes02?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdes02?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdes02/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031702
+hors_longlist: non
+rattachement_propose: ligne de la long-list travail (règle 25, étiquette v0 « travail » du jeu Eurostat) → liens_bien_etre
+  (vacances, A13 ; items de privation rattachés à leur domaine, R3)
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Série annuelle la plus longue sur les vacances (22 points, 2004-2025), contenu explicite de
+  la dimension (A13), rattachée aujourd'hui à travail par l'étiquette du jeu Eurostat.
+note_pertinence: Les vacances font partie des loisirs de la dimension (A13). L'indicateur mesure une contrainte
+  financière plutôt que le départ effectif (voir depart_vacances) ; il recule de 33,4 % (2004) à 22,0 % (2024),
+  avec des ruptures signalées par Eurostat en 2020 et 2022.
+variantes:
+- serie_id: ilc_mdes02?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation (type de ménage) (long-list travail, rattachement proposé)
+  ligne_id: estat-031703
+  eligible: oui
+  longlist: travail
+- serie_id: DS_SRCV_PMS?AGE=Y_GE16&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&PCS=_Z&QUANTILE_NIVVIE=_T&SEX=_T&SRCV_MEASURE=DIF_VACANCES&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: même item publié par l'INSEE (Melodi DS_SRCV_PMS, France métropolitaine, annuel 2020-2025, 6 points ;
+    catalogue des séries écartées pour moins de 10 points)
+  catalogue: insee_melodi_catalogue_non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+notes: Valeurs et drapeaux lus sur l'API Eurostat le 14/10/2026. L'INSEE publie le même item depuis 2020 (DS_SRCV_PMS,
+  mesure DIF_VACANCES, 6 points, catalogue des séries écartées).

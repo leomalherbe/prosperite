@@ -1,0 +1,45 @@
+{
+  "observations" : [ {
+    "attributes" : {
+      "OBS_STATUS" : "A",
+      "DECIMALS" : "2",
+      "CONF_STATUS" : "F"
+    },
+    "dimensions" : {
+      "GEO" : "2025-DEP-974",
+      "SEASONAL_ADJUST" : "N",
+      "BASE_PER" : "2025",
+      "PRODUCT_GROUP" : "4000",
+      "COICOP_2018" : "_Z",
+      "IDX_TYPE" : "CPI",
+      "TPH_CPI" : "_T",
+      "FREQ" : "M",
+      "TIME_PERIOD" : "2026-01",
+      "UNIT_MEASURE" : "IX",
+      "IND_TYPE" : "IX"
+    },
+    "measures" : {
+      "OBS_VALUE_INDICE_DE_PRIX" : {
+        "value" : 99.14
+      }
+    }
+  } ],
+  "identifier" : "DS_IPC_PRINC",
+  "paging" : {
+    "first" : "https://api.insee.fr/melodi/data/DS_IPC_PRINC?IND_TYPE=IX&GEO=DEP-974&TIME_PERIOD=2026-01&PRODUCT_GROUP=4000&idTerritoire=TRUE&maxResult=100000&page=1"
+  },
+  "publisher" : {
+    "id" : "INSEE",
+    "label" : [ {
+      "content" : "Institut national de la statistique et des etudes economiques (INSEE)",
+      "lang" : "fr"
+    }, {
+      "content" : "National Institute of Statistics and Economic Studies",
+      "lang" : "en"
+    } ]
+  },
+  "title" : {
+    "en" : "Consumption Price Index (CPI) - main dataset",
+    "fr" : "Indice des prix à la consommation - jeu de données principal"
+  }
+}

@@ -1,0 +1,891 @@
+{
+  "code" : "DS_SRCV_SATISFACTION",
+  "label" : {
+    "en" : "Life Satisfaction ",
+    "fr" : "Conditions de vie : niveau de satisfaction"
+  },
+  "range" : [ {
+    "concept" : {
+      "code" : "DECILE_NIVVIE",
+      "label" : {
+        "en" : "Decile of equivalised disposable income",
+        "fr" : "Décile de niveau de vie"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "D1TD2",
+      "label" : {
+        "en" : "Between the 1st and the 2nd decile",
+        "fr" : "Entre le 1er et le 2e décile"
+      }
+    }, {
+      "code" : "D2TD3",
+      "label" : {
+        "en" : "Between the 2nd and the 3nd decile",
+        "fr" : "Entre le 2e et le 3e décile"
+      }
+    }, {
+      "code" : "D6TD7",
+      "label" : {
+        "en" : "Between the 6th and the 7th decile",
+        "fr" : "Entre le 6e et le 7e décile"
+      }
+    }, {
+      "code" : "D4TD5",
+      "label" : {
+        "en" : "Between the 4th and the 5th decile",
+        "fr" : "Entre le 4e et le 5e décile"
+      }
+    }, {
+      "code" : "D9TD10",
+      "label" : {
+        "en" : "Between the 9th and the 10th decile",
+        "fr" : "Entre le 9e et le 10e décile"
+      }
+    }, {
+      "code" : "D3TD4",
+      "label" : {
+        "en" : "Between the 3rd and the 4th decile",
+        "fr" : "Entre le 3e et le 4e décile"
+      }
+    }, {
+      "code" : "D7TD8",
+      "label" : {
+        "en" : "Between the 7th and the 8th decile",
+        "fr" : "Entre le 7e et le 8e décile"
+      }
+    }, {
+      "code" : "D8TD9",
+      "label" : {
+        "en" : "Between the 8th and the 9th decile",
+        "fr" : "Entre le 8e et le 9e décile"
+      }
+    }, {
+      "code" : "D0TD1",
+      "label" : {
+        "en" : "Less than the 1st decile",
+        "fr" : "Inférieur au 1er décile"
+      }
+    }, {
+      "code" : "D5TD6",
+      "label" : {
+        "en" : "Between the 5th and the 6th decile",
+        "fr" : "Entre le 5e et le 6e décile"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "HLTH_GALI",
+      "label" : {
+        "en" : "General activity limitation indicator (GALI)",
+        "fr" : "Indicateur de limitation d'activité générale (GALI)"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "3",
+      "label" : {
+        "en" : "Not limited at all",
+        "fr" : "Pas limité du tout"
+      }
+    }, {
+      "code" : "2",
+      "label" : {
+        "en" : "Limited but not severely",
+        "fr" : "Limité mais pas fortement"
+      }
+    }, {
+      "code" : "1",
+      "label" : {
+        "en" : "Severely limited in usual activities",
+        "fr" : "Fortement limité dans ses activités courantes"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "SEX",
+      "label" : {
+        "en" : "Sex",
+        "fr" : "Sexe"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "F",
+      "label" : {
+        "en" : "Female",
+        "fr" : "Femme"
+      }
+    }, {
+      "code" : "M",
+      "label" : {
+        "en" : "Male",
+        "fr" : "Homme"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "SRCV_MEASURE",
+      "label" : {
+        "en" : "Income living cost measure",
+        "fr" : "Mesure des ressources et conditions de vie"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_SEX",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le sexe",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le sexe"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_TSH",
+      "label" : {
+        "en" : "Proportion of population by level of overall life satisfaction and tenure status",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le statut d'occupation du logement"
+      }
+    }, {
+      "code" : "TRAVSATISF",
+      "label" : {
+        "en" : "Satisfaction moyenne concernant l'emploi principal",
+        "fr" : "Satisfaction moyenne concernant l'emploi principal"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_HLTH_SPH",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le jugement de l'état de santé en général, de la personne interrogée",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le jugement de l'état de santé en général, de la personne interrogée"
+      }
+    }, {
+      "code" : "RELSATISF",
+      "label" : {
+        "en" : "Satisfaction moyenne concernant les relations sociales",
+        "fr" : "Satisfaction moyenne concernant les relations sociales"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_PCS",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon la catégorie socio-professionnelle",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon la catégorie socio-professionnelle"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_TPH",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le type de ménage et nombre d'enfants",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le type de ménage et nombre d'enfants"
+      }
+    }, {
+      "code" : "VIESATISF",
+      "label" : {
+        "en" : "Satisfaction moyenne concernant la vie menée actuellement",
+        "fr" : "Satisfaction moyenne concernant la vie menée actuellement"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_DECILE_NIVVIE",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon les déciles",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon les déciles"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_EDUC",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le diplôme",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le diplôme"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_NAT",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon la nationalité",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon la nationalité"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_EMPSTA",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le statut face à l'emploi",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le statut face à l'emploi"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_AGE",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon l'âge",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon l'âge"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_NB_DIFF",
+      "label" : {
+        "en" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le nombre de difficultés matérielles ou sociales rencontrées",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon le nombre de difficultés matérielles ou sociales rencontrées"
+      }
+    }, {
+      "code" : "PT_NOTE_IN_VIESATISF_BY_HLTH_GALI",
+      "label" : {
+        "en" : "Proportion of population by level of overall life satisfaction and global activity limitation indicator",
+        "fr" : "Part du niveau de satisfaction concernant la vie menée actuellement selon l'indicateur de limitation d'activité générale"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "TSH",
+      "label" : {
+        "en" : "Tenure status of households",
+        "fr" : "Statut d’occupation du logement"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "13",
+      "label" : {
+        "en" : "Owner-occupiers with an outstanding mortgage",
+        "fr" : "Propriétaire accédant à la propriété"
+      }
+    }, {
+      "code" : "12",
+      "label" : {
+        "en" : "Outright owner",
+        "fr" : "Propriétaire non accédant"
+      }
+    }, {
+      "code" : "21",
+      "label" : {
+        "en" : "Tenant in private housing market",
+        "fr" : "Locataire de logement parc privé"
+      }
+    }, {
+      "code" : "22",
+      "label" : {
+        "en" : "Tenant in social housing",
+        "fr" : "Locataire de logement parc social"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "TPH",
+      "label" : {
+        "en" : "Household type and number of children",
+        "fr" : "Type de ménage et nombre d'enfants"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "OTH_SRCV",
+      "label" : {
+        "en" : "Other type of household",
+        "fr" : "Autre type de ménage"
+      }
+    }, {
+      "code" : "222_CH1",
+      "label" : {
+        "en" : "Household with couple and one residing child",
+        "fr" : "Ménage avec couple et un enfant résident"
+      }
+    }, {
+      "code" : "222_CH2",
+      "label" : {
+        "en" : "Household with couple and two residing children",
+        "fr" : "Ménage avec couple et deux enfants résidents"
+      }
+    }, {
+      "code" : "21",
+      "label" : {
+        "en" : "Household with single parent family",
+        "fr" : "Ménage avec famille monoparentale"
+      }
+    }, {
+      "code" : "221",
+      "label" : {
+        "en" : "Household with couple without residing children",
+        "fr" : "Ménage avec couple sans enfant résident"
+      }
+    }, {
+      "code" : "11",
+      "label" : {
+        "en" : "Household with only one person",
+        "fr" : "Ménage à une personne"
+      }
+    }, {
+      "code" : "222_CH_GE3",
+      "label" : {
+        "en" : "Household with couple and three residing children or more",
+        "fr" : "Ménage avec couple et trois enfants résidents ou plus"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "HLTH_SPH",
+      "label" : {
+        "en" : "Health condition perception",
+        "fr" : "Jugement de l'état de santé en général"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "2",
+      "label" : {
+        "en" : "Good",
+        "fr" : "Bon"
+      }
+    }, {
+      "code" : "3",
+      "label" : {
+        "en" : "Average",
+        "fr" : "Assez bon"
+      }
+    }, {
+      "code" : "4",
+      "label" : {
+        "en" : "Bad or very bad",
+        "fr" : "Mauvais ou très mauvais"
+      }
+    }, {
+      "code" : "1",
+      "label" : {
+        "en" : "Very good",
+        "fr" : "Très bon"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "EDUC",
+      "label" : {
+        "en" : "Education level (diploma)",
+        "fr" : "Diplôme"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "3_SRCV",
+      "label" : {
+        "en" : "Upper secondary education – French Baccalauréat",
+        "fr" : "Baccalauréat ou brevet professionnel ou autre diplôme de ce niveau"
+      }
+    }, {
+      "code" : "4T5_SRCV",
+      "label" : {
+        "en" : "Post-secondary non-tertiary or Short-cycle tertiary education",
+        "fr" : "Diplôme bac+2 (Deug, DUT, BTS…)"
+      }
+    }, {
+      "code" : "1T2_SRCV",
+      "label" : {
+        "en" : "Upper secondary education – French CAP, BEP or equivalent",
+        "fr" : "CEP, CAP, BEP, brevet des collèges ou autre diplôme de ce niveau"
+      }
+    }, {
+      "code" : "6T8_SRCV",
+      "label" : {
+        "en" : "Bachelor’s or equivalent level or above",
+        "fr" : "Diplôme supérieur à bac+2"
+      }
+    }, {
+      "code" : "0_SRCV",
+      "label" : {
+        "en" : "Early childhood education",
+        "fr" : "Aucun diplôme"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "CONF_STATUS",
+      "label" : {
+        "en" : "Confidentiality status",
+        "fr" : "Statut de confidentialité"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "F",
+      "label" : {
+        "en" : "Free for publication",
+        "fr" : "Diffusable"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "NB_DIFF",
+      "label" : {
+        "en" : "Number of material or social difficulties",
+        "fr" : "Nombre de difficultés matérielles ou sociales rencontrées"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "2",
+      "label" : {
+        "en" : "Two difficulties encountered",
+        "fr" : "Deux difficultés rencontrées"
+      }
+    }, {
+      "code" : "3",
+      "label" : {
+        "en" : "Three difficulties encountered",
+        "fr" : "Trois difficultés rencontrées"
+      }
+    }, {
+      "code" : "4",
+      "label" : {
+        "en" : "Four difficulties encountered",
+        "fr" : "Quatre difficultés rencontrées"
+      }
+    }, {
+      "code" : "1",
+      "label" : {
+        "en" : "One difficulties encountered",
+        "fr" : "Une difficulté rencontrée"
+      }
+    }, {
+      "code" : "0",
+      "label" : {
+        "en" : "No difficulty encountered",
+        "fr" : "Pas de difficultés rencontrées"
+      }
+    }, {
+      "code" : "GE5",
+      "label" : {
+        "en" : "Five difficulties encountered or more",
+        "fr" : "Cinq difficultés rencontrées ou plus"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "OBS_STATUS",
+      "label" : {
+        "en" : "Observation status",
+        "fr" : "Statut de l'observation"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "L",
+      "label" : {
+        "en" : "Missing value : data exist but were not collected",
+        "fr" : "Valeur manquante : les données existent mais ne sont pas collectées (non disponible : nd)"
+      }
+    }, {
+      "code" : "M",
+      "label" : {
+        "en" : "Missing value : data cannot exist",
+        "fr" : "Valeur manquante : les données n’existent pas (sans objet : so)"
+      }
+    }, {
+      "code" : "A",
+      "label" : {
+        "en" : "Normal",
+        "fr" : "Normale"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "GEO",
+      "label" : {
+        "en" : "Geography",
+        "fr" : "Géographie"
+      }
+    },
+    "type" : "geo",
+    "values" : [ {
+      "code" : "F_X_D976",
+      "id" : "2026-FRANCE-F_X_D976",
+      "iri" : "http://id.insee.fr/geo/france/F_X_D976",
+      "label" : {
+        "en" : "France except Mayotte",
+        "fr" : "France hors Mayotte"
+      },
+      "type" : {
+        "code" : "FRANCE",
+        "en" : "France",
+        "fr" : "France"
+      }
+    }, {
+      "code" : "FM",
+      "id" : "2026-FRANCE-FM",
+      "iri" : "http://id.insee.fr/geo/france/FM",
+      "label" : {
+        "en" : "Metropolitan France",
+        "fr" : "France métropolitaine"
+      },
+      "type" : {
+        "code" : "FRANCE",
+        "en" : "France",
+        "fr" : "France"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "FREQ",
+      "label" : {
+        "en" : "Frequency",
+        "fr" : "Fréquence"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "A",
+      "iri" : "A",
+      "label" : {
+        "en" : "Annual",
+        "fr" : "Annuel"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "NATIONALITY_TYPE",
+      "label" : {
+        "en" : "Nationality (type)",
+        "fr" : "Nationalité (type)"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "100",
+      "label" : {
+        "en" : "Foreigner",
+        "fr" : "Etranger"
+      }
+    }, {
+      "code" : "250_B",
+      "label" : {
+        "en" : "French by birth",
+        "fr" : "Français de naissance"
+      }
+    }, {
+      "code" : "250_N",
+      "label" : {
+        "en" : "French by acquisition",
+        "fr" : "Français par acquisition"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "TIME_PERIOD",
+      "label" : {
+        "en" : "Time period",
+        "fr" : "Période temporelle"
+      }
+    },
+    "type" : "date",
+    "values" : [ {
+      "code" : "2013",
+      "label" : {
+        "en" : "2013",
+        "fr" : "2013"
+      }
+    }, {
+      "code" : "2024",
+      "label" : {
+        "en" : "2024",
+        "fr" : "2024"
+      }
+    }, {
+      "code" : "2012",
+      "label" : {
+        "en" : "2012",
+        "fr" : "2012"
+      }
+    }, {
+      "code" : "2023",
+      "label" : {
+        "en" : "2023",
+        "fr" : "2023"
+      }
+    }, {
+      "code" : "2011",
+      "label" : {
+        "en" : "2011",
+        "fr" : "2011"
+      }
+    }, {
+      "code" : "2022",
+      "label" : {
+        "en" : "2022",
+        "fr" : "2022"
+      }
+    }, {
+      "code" : "2010",
+      "label" : {
+        "en" : "2010",
+        "fr" : "2010"
+      }
+    }, {
+      "code" : "2021",
+      "label" : {
+        "en" : "2021",
+        "fr" : "2021"
+      }
+    }, {
+      "code" : "2020",
+      "label" : {
+        "en" : "2020",
+        "fr" : "2020"
+      }
+    }, {
+      "code" : "2019",
+      "label" : {
+        "en" : "2019",
+        "fr" : "2019"
+      }
+    }, {
+      "code" : "2018",
+      "label" : {
+        "en" : "2018",
+        "fr" : "2018"
+      }
+    }, {
+      "code" : "2017",
+      "label" : {
+        "en" : "2017",
+        "fr" : "2017"
+      }
+    }, {
+      "code" : "2016",
+      "label" : {
+        "en" : "2016",
+        "fr" : "2016"
+      }
+    }, {
+      "code" : "2015",
+      "label" : {
+        "en" : "2015",
+        "fr" : "2015"
+      }
+    }, {
+      "code" : "2014",
+      "label" : {
+        "en" : "2014",
+        "fr" : "2014"
+      }
+    }, {
+      "code" : "2025",
+      "label" : {
+        "en" : "2025",
+        "fr" : "2025"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "EMPSTA_ENQ",
+      "label" : {
+        "en" : "Employment status depending on survey",
+        "fr" : "Statut d'emploi variable selon l'enquête"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "1",
+      "label" : {
+        "en" : "Occupied active",
+        "fr" : "Actif occupé"
+      }
+    }, {
+      "code" : "2",
+      "label" : {
+        "en" : "Unemployed",
+        "fr" : "Chômeur"
+      }
+    }, {
+      "code" : "31",
+      "label" : {
+        "en" : "Retired or pre-retired",
+        "fr" : "Retraité ou préretraité"
+      }
+    }, {
+      "code" : "36",
+      "label" : {
+        "en" : "Other inactives ",
+        "fr" : "Autre inactif"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "SATISFNOTE",
+      "label" : {
+        "en" : "Satisfaction mark",
+        "fr" : "Note de satisfaction"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "6T8",
+      "label" : {
+        "en" : "Average (6-8)",
+        "fr" : "Moyen (6-8)"
+      }
+    }, {
+      "code" : "9T10",
+      "label" : {
+        "en" : "High (9-10)",
+        "fr" : "Elevé (9-10)"
+      }
+    }, {
+      "code" : "0T5",
+      "label" : {
+        "en" : "Weak (0-5)",
+        "fr" : "Faible (0-5)"
+      }
+    }, {
+      "code" : "_T",
+      "label" : {
+        "en" : "Total",
+        "fr" : "Total"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "AGE",
+      "label" : {
+        "en" : "Age",
+        "fr" : "Âge"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "Y65T74",
+      "label" : {
+        "en" : "From 65 to 74 years",
+        "fr" : "De 65 à 74 ans"
+      }
+    }, {
+      "code" : "Y25T34",
+      "label" : {
+        "en" : "From 25 to 34 years",
+        "fr" : "De 25 à 34 ans"
+      }
+    }, {
+      "code" : "Y35T49",
+      "label" : {
+        "en" : "From 35 to 49 years",
+        "fr" : "De 35 à 49 ans"
+      }
+    }, {
+      "code" : "Y50T64",
+      "label" : {
+        "en" : "From 50 to 64 years",
+        "fr" : "De 50 à 64 ans"
+      }
+    }, {
+      "code" : "Y_GE75",
+      "label" : {
+        "en" : "75 years old or older",
+        "fr" : "75 ans ou plus"
+      }
+    }, {
+      "code" : "Y16T24",
+      "label" : {
+        "en" : "From 16 to 24 years",
+        "fr" : "De 16 à 24 ans"
+      }
+    }, {
+      "code" : "Y_GE16",
+      "label" : {
+        "en" : "16 years old or older",
+        "fr" : "16 ans ou plus"
+      }
+    } ]
+  }, {
+    "concept" : {
+      "code" : "PCS",
+      "label" : {
+        "en" : "Occupation and socio-economic group",
+        "fr" : "Profession et catégorie socioprofessionnelle (PCS)"
+      }
+    },
+    "type" : "modalites",
+    "values" : [ {
+      "code" : "5",
+      "label" : {
+        "en" : "Office employees",
+        "fr" : "Employés"
+      }
+    }, {
+      "code" : "6",
+      "label" : {
+        "en" : "Workers",
+        "fr" : "Ouvriers"
+      }
+    }, {
+      "code" : "3",
+      "label" : {
+        "en" : "Executives and higher-level intellectual professions",
+        "fr" : "Cadres et professions intellectuelles supérieures"
+      }
+    }, {
+      "code" : "4",
+      "label" : {
+        "en" : "Technicians and associate professionals",
+        "fr" : "Professions intermédiaires"
+      }
+    }, {
+      "code" : "_Z",
+      "label" : {
+        "en" : "Not applicable",
+        "fr" : "Non applicable "
+      }
+    }, {
+      "code" : "1T2",
+      "label" : {
+        "en" : "Farmers, Craftsmen, merchants, and business owners",
+        "fr" : "Agriculteurs, artisans, commerçants, chefs d'entreprise"
+      }
+    } ]
+  } ]
+}

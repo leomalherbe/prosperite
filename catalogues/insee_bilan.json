@@ -1,0 +1,226 @@
+{
+ "date": "2026-10-14T00:14:39+00:00",
+ "bdm": {
+  "dataflows": 226,
+  "series_listees": 182082,
+  "par_frequence": {
+   "A": 126772,
+   "M": 37098,
+   "T": 17044,
+   "B": 832,
+   "S": 336
+  },
+  "par_zone": {
+   "principale": 130172,
+   "hors_nationale": 51638,
+   "nationale": 271,
+   "sans_objet": 1
+  },
+  "catalogue": 79485,
+  "exclusions": {
+   "zone non nationale …": 51638,
+   "dernière mise à jour … antérieure à …": 50368,
+   "dernière période … < …": 492,
+   "périodes inconnues …": 99
+  },
+  "candidat": {
+   "non": 77977,
+   "oui": 1211,
+   "a_verifier": 297
+  },
+  "catalogue_par_frequence": {
+   "annuelle": 50136,
+   "mensuelle": 20899,
+   "trimestrielle": 7440,
+   "bimestrielle": 832,
+   "semestrielle": 178
+  },
+  "catalogue_par_geo": {
+   "FE": 47978,
+   "FR-D976": 16794,
+   "FM": 14555,
+   "FM99_FR00": 99,
+   "FM_D99_D978": 35,
+   "FHREUN15_FREUN18_PUBPRIVSSC_EL15TTECL": 7,
+   "FMDOMHREUN15_FMDOMCOMREUN18_EL15TTECL": 7,
+   "FM_H_CORSE_2018": 6,
+   "FMGUADMART16_FHMAY21_PUBPRIVSSC_ELEVCM1TTAGE": 1,
+   "FMGUADMART15_FHMAY19_PUBPRIVSSC_ELEVCM1TTAGE": 1,
+   "FR-SPM-WF": 1,
+   "FE_HPBIO": 1
+  }
+ },
+ "bdm_par_dimension": {
+  "(aucune)": {
+   "non": 12326
+  },
+  "contexte": {
+   "non": 122
+  },
+  "democratie": {
+   "oui": 1,
+   "a_verifier": 25,
+   "non": 4
+  },
+  "education": {
+   "non": 1775,
+   "a_verifier": 70,
+   "oui": 14
+  },
+  "egalites": {
+   "oui": 39,
+   "a_verifier": 7
+  },
+  "liens_bien_etre": {
+   "non": 1416,
+   "oui": 12,
+   "a_verifier": 16
+  },
+  "logement_cadre_vie": {
+   "non": 2156,
+   "oui": 99,
+   "a_verifier": 11
+  },
+  "niveau_de_vie": {
+   "non": 40324,
+   "oui": 275,
+   "a_verifier": 16
+  },
+  "planete": {
+   "non": 5791,
+   "oui": 115,
+   "a_verifier": 79
+  },
+  "sante": {
+   "non": 4084,
+   "oui": 180,
+   "a_verifier": 63
+  },
+  "securite_confiance": {
+   "non": 426,
+   "oui": 34
+  },
+  "travail": {
+   "non": 9553,
+   "oui": 442,
+   "a_verifier": 10
+  }
+ },
+ "melodi": {
+  "jeux": 145,
+  "jeux_par_statut": {
+   "écarté": 84,
+   "traité": 61
+  },
+  "series_nationales": 66287,
+  "catalogue": 52283,
+  "exclusions": {
+   "aucune valeur numérique": 9992,
+   "dernière période < 2020 ou inconnue": 2196,
+   "comptes trimestriels : doublon des dataflows BDM CNT-2020-*": 1677,
+   "fréquence D non retenue": 105,
+   "zone non nationale (périmètre partiel, ex. hors Île-de-France)": 34
+  },
+  "candidat": {
+   "non": 45687,
+   "oui": 5413,
+   "a_verifier": 1183
+  }
+ },
+ "melodi_par_dimension": {
+  "(aucune)": {
+   "non": 321
+  },
+  "contexte": {
+   "non": 649
+  },
+  "democratie": {
+   "a_verifier": 5,
+   "oui": 1
+  },
+  "education": {
+   "non": 2305,
+   "a_verifier": 24,
+   "oui": 394
+  },
+  "egalites": {
+   "non": 20,
+   "a_verifier": 17,
+   "oui": 28
+  },
+  "liens_bien_etre": {
+   "non": 1358,
+   "oui": 405
+  },
+  "logement_cadre_vie": {
+   "non": 1773,
+   "oui": 117,
+   "a_verifier": 15
+  },
+  "niveau_de_vie": {
+   "non": 34400,
+   "oui": 2418,
+   "a_verifier": 790
+  },
+  "planete": {
+   "non": 1599,
+   "oui": 133,
+   "a_verifier": 72
+  },
+  "sante": {
+   "non": 1347,
+   "oui": 173,
+   "a_verifier": 41
+  },
+  "securite_confiance": {
+   "oui": 12,
+   "non": 144
+  },
+  "travail": {
+   "non": 1771,
+   "oui": 1732,
+   "a_verifier": 219
+  }
+ },
+ "comparaison_phase1": {
+  "phase1": 1063,
+  "statuts": {
+   "BDM:absente_de_la_bdm": 10,
+   "BDM:confirmee": 704,
+   "BDM:ecartee_par_filtre": 144,
+   "Melodi:confirmee": 165,
+   "Melodi:jeu_absent": 4,
+   "Melodi:jeu_sans_serie_au_catalogue": 9,
+   "Melodi:non_retrouvee": 14,
+   "candidat_different": 474,
+   "dimension_differente": 40,
+   "fichier:hors_robot": 13
+  },
+  "bdm_nouvelles_oui_ou_a_verifier": 984,
+  "bdm_nouvelles_par_dimension": {
+   "travail": 402,
+   "niveau_de_vie": 213,
+   "sante": 177,
+   "logement_cadre_vie": 92,
+   "education": 46,
+   "egalites": 22,
+   "securite_confiance": 17,
+   "planete": 8,
+   "democratie": 7
+  }
+ },
+ "collecte": {
+  "debut": "2026-10-13T14:22:22+00:00",
+  "maj": "2026-10-13T15:32:02+00:00",
+  "termine": true,
+  "passages": [
+   {
+    "debut": "2026-10-13T14:22:22+00:00",
+    "fin": "2026-10-13T15:32:02+00:00",
+    "issue": "cycle terminé",
+    "appels": 1976,
+    "mo": 1029.7
+   }
+  ]
+ }
+}

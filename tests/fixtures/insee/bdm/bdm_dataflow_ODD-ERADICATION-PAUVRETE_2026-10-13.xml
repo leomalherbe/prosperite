@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+  <mes:Header>
+    <mes:ID>dataflows_ODD-ERADICATION-PAUVRETE_1791898393771</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2026-10-13T15:33:13.771+02:00</mes:Prepared>
+    <mes:Sender id="FR1">
+      <com:Name xml:lang="fr">Institut national de la statistique et des études économiques</com:Name>
+    </mes:Sender>
+    <mes:Receiver id="unknown"/>
+    <mes:Source xml:lang="fr">Banque de données macro-économiques</mes:Source>
+  </mes:Header>
+  <mes:Structures>
+    <str:Dataflows>
+      <str:Dataflow id="ODD-ERADICATION-PAUVRETE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=FR1:ODD-ERADICATION-PAUVRETE(1.0)" agencyID="FR1" version="1.0">
+        <com:Annotations>
+          <com:Annotation>
+            <com:AnnotationURL>https://www.insee.fr/fr/statistiques/series/112814407</com:AnnotationURL>
+          </com:Annotation>
+          <com:Annotation>
+            <com:AnnotationText xml:lang="fr">Nombre de séries : 65</com:AnnotationText>
+          </com:Annotation>
+        </com:Annotations>
+        <com:Name xml:lang="fr">Objectif de développement durable n°1 : Éradication de la pauvreté</com:Name>
+        <com:Name xml:lang="en">Sustainable Development Goal n°1 : Poverty eradication</com:Name>
+        <str:Structure>
+          <Ref id="ODD-ERADICATION-PAUVRETE" version="1.0" agencyID="FR1" package="datastructure" class="DataStructure"/>
+        </str:Structure>
+      </str:Dataflow>
+    </str:Dataflows>
+  </mes:Structures>
+</mes:Structure>

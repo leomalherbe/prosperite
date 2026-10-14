@@ -1,0 +1,269 @@
+{
+  "abstract" : [ {
+    "content" : "Données annuelles sur la satisfaction subjective des personnes.",
+    "lang" : "fr"
+  }, {
+    "content" : "Annual data on individuals’ subjective satisfaction.",
+    "lang" : "en"
+  } ],
+  "accessRights" : [ {
+    "content" : "Public",
+    "lang" : "fr"
+  }, {
+    "content" : "Free",
+    "lang" : "en"
+  } ],
+  "accessURLParquet" : "https://api.insee.fr/melodi/file/DS_SRCV_SATISFACTION_2025/PARQUET",
+  "accrualPeriodicity" : {
+    "label" : [ {
+      "content" : "Annuel",
+      "lang" : "fr"
+    }, {
+      "content" : "Annual",
+      "lang" : "en"
+    } ]
+  },
+  "confidentialityStatus" : [ {
+    "content" : "Libre",
+    "lang" : "fr"
+  }, {
+    "content" : "Free",
+    "lang" : "en"
+  } ],
+  "creator" : "Insee",
+  "description" : [ {
+    "content" : "Données annuelles sur la satisfaction subjective des personnes. Sur une échelle allant de 0 (pas du tout satisfait) à 10 (entièrement satisfait), la satisfaction est évaluée dans trois domaines : la vie en général, les relations sociales, le travail. Ces indicateurs sont notamment déclinés selon le sexe, l'âge, le niveau de vie du ménage, le diplôme, la profession et catégorie socio-professionnelle (PCS), la situation vis-à-vis de l'emploi, la nationalité, la composition de la famille, le statut d'occupation du logement, l'indicateur de limitation d'activité générale, la note donnée à l'état de santé en général et le nombre de difficultés matérielles rencontrées dans le ménage.",
+    "lang" : "fr"
+  }, {
+    "content" : "Annual data on subjective well-being. On a scale from 0 (not at all satisfied) to 10 (completely satisfied), satisfaction is evaluated across three domains: life in general, social relationships, and work. These indicators are broken down in particular by sex, age, household income, educational attainment, socio-professional category, employment status, nationality, family composition, housing tenure status, global activity limitation indicator, self-rated general health, and the number of material deprivation items experienced by the household.",
+    "lang" : "en"
+  } ],
+  "identifier" : "DS_SRCV_SATISFACTION",
+  "issued" : "2026-09-28T17:01:26.000437306",
+  "landingPage" : [ [ {
+    "lang" : "fr",
+    "url" : ""
+  }, {
+    "lang" : "en",
+    "url" : ""
+  } ] ],
+  "modified" : "2026-09-29T14:00:38.029328094",
+  "numObservations" : 8520,
+  "numSeries" : 0,
+  "ordreComposants" : [ "TIME_PERIOD", "GEO", "SEX", "AGE", "PCS", "EDUC", "EMPSTA_ENQ", "TPH", "TSH", "HLTH_SPH", "HLTH_GALI", "NATIONALITY_TYPE", "NB_DIFF", "DECILE_NIVVIE", "SATISFNOTE", "SRCV_MEASURE", "OBS_VALUE", "OBS_STATUS", "CONF_STATUS", "FREQ" ],
+  "processStep" : [ {
+    "content" : "inseeApi",
+    "lang" : "fr"
+  }, {
+    "content" : "inseeApi",
+    "lang" : "en"
+  } ],
+  "product" : [ {
+    "accessURL" : "https://api.insee.fr/melodi/file/DS_SRCV_SATISFACTION/DS_SRCV_SATISFACTION_2025_CSV_FR",
+    "byteSize" : 51447,
+    "format" : "CSV",
+    "id" : "DS_SRCV_SATISFACTION_2025_CSV_FR",
+    "issued" : "2026-09-29T09:42:12.245608341",
+    "language" : "FR",
+    "mediaType" : "text/csv",
+    "modified" : "2026-09-29T09:42:12.245608341",
+    "packageFormat" : "application/zip",
+    "title" : "Conditions de vie : niveau de satisfaction"
+  } ],
+  "publisher" : {
+    "id" : "INSEE",
+    "label" : [ {
+      "content" : "Institut national de la statistique et des etudes economiques (INSEE)",
+      "lang" : "fr"
+    }, {
+      "content" : "National Institute of Statistics and Economic Studies",
+      "lang" : "en"
+    } ]
+  },
+  "relations" : [ {
+    "title" : [ {
+      "content" : "Insee Résultats",
+      "lang" : "fr"
+    }, {
+      "content" : "Insee Results",
+      "lang" : "en"
+    } ],
+    "titleComplement" : [ {
+      "content" : "\"Satisfaction dans la vie de 2010 à 2025\"",
+      "lang" : "fr"
+    }, {
+      "lang" : "en"
+    } ],
+    "url" : [ {
+      "content" : "https://www.insee.fr/fr/statistiques/9051904",
+      "lang" : "fr"
+    }, {
+      "lang" : "en"
+    } ]
+  }, {
+    "title" : [ {
+      "content" : "Documentation",
+      "lang" : "fr"
+    }, {
+      "content" : "Documentation",
+      "lang" : "en"
+    } ],
+    "titleComplement" : [ {
+      "content" : "\"Statistiques sur les ressources et conditions de vie (SRCV)\"",
+      "lang" : "fr"
+    }, {
+      "lang" : "en"
+    } ],
+    "url" : [ {
+      "content" : "https://www.insee.fr/fr/metadonnees/source/serie/s1220",
+      "lang" : "fr"
+    }, {
+      "lang" : "en"
+    } ]
+  }, {
+    "title" : [ {
+      "content" : "Insee Références",
+      "lang" : "fr"
+    }, {
+      "content" : "Insee References",
+      "lang" : "en"
+    } ],
+    "titleComplement" : [ {
+      "content" : "\"France, portrait social : satisfaction dans la vie et confiance envers les autres\"",
+      "lang" : "fr"
+    }, {
+      "lang" : "en"
+    } ],
+    "url" : [ {
+      "content" : "https://www.insee.fr/fr/statistiques/8612562?sommaire=8612596&q=satisfaction",
+      "lang" : "fr"
+    }, {
+      "lang" : "en"
+    } ]
+  } ],
+  "scopeNote" : [ {
+    "content" : "Depuis 2022, le champ géographique de l’enquête a été élargi aux départements d’outre-mer hors Mayotte.\n\nPour le statut d'occupation du logement, la modalité total comprend les personnes logées à titre gratuit.",
+    "lang" : "fr"
+  }, {
+    "content" : "As of 2022, the survey’s geographical coverage has been expanded to include the overseas departments, except Mayotte.\n\nFor housing tenure status, the total category includes rent-free tenants.",
+    "lang" : "en"
+  } ],
+  "spatial" : {
+    "id" : "FEHM",
+    "label" : [ {
+      "content" : "France hors Mayotte",
+      "lang" : "fr"
+    }, {
+      "content" : "France excluding Mayotte",
+      "lang" : "en"
+    } ]
+  },
+  "spatialResolution" : [ {
+    "id" : "FRANCE",
+    "label" : [ {
+      "content" : "France",
+      "lang" : "fr"
+    }, {
+      "content" : "France",
+      "lang" : "en"
+    } ]
+  } ],
+  "spatialTemporal" : "2026-01-01T01:00:00",
+  "statisticalUnit" : [ {
+    "label" : [ {
+      "content" : "Individu",
+      "lang" : "fr"
+    }, {
+      "content" : "Person",
+      "lang" : "en"
+    } ]
+  } ],
+  "status" : {
+    "id" : "publie",
+    "label" : [ {
+      "content" : "Publié",
+      "lang" : "fr"
+    }, {
+      "content" : "Completed",
+      "lang" : "en"
+    } ]
+  },
+  "structure" : {
+    "dsd" : "DSD_SRCV_SATISF_2025"
+  },
+  "subtitle" : [ {
+    "content" : "Enquête statistiques sur les ressources et les conditions de vie (SRCV)",
+    "lang" : "fr"
+  }, {
+    "content" : "Statistics on Income and Living Conditions survey (SILC)",
+    "lang" : "en"
+  } ],
+  "tailleFichierParquetEnOctets" : 22338,
+  "temporal" : {
+    "endPeriod" : "2025-01-01T00:00:00",
+    "startPeriod" : "2010-01-01T00:00:00"
+  },
+  "temporalResolution" : [ {
+    "label" : [ {
+      "content" : "Annuel",
+      "lang" : "fr"
+    }, {
+      "content" : "Annual",
+      "lang" : "en"
+    } ]
+  } ],
+  "theme" : [ {
+    "label" : [ {
+      "content" : "3.3.1 Conditions de vie et pauvreté ",
+      "lang" : "fr"
+    }, {
+      "content" : "3.3.1 Living conditions, poverty and cross-cutting social issues",
+      "lang" : "en"
+    } ],
+    "themeTaxonomy" : "classificationOfStatisticalDomain"
+  }, {
+    "label" : [ {
+      "content" : "Pauvreté – Précarité",
+      "lang" : "fr"
+    }, {
+      "content" : "Poverty – precarity",
+      "lang" : "en"
+    } ],
+    "themeTaxonomy" : "inseeTheme"
+  } ],
+  "title" : [ {
+    "content" : "Conditions de vie : niveau de satisfaction",
+    "lang" : "fr"
+  }, {
+    "content" : "Life Satisfaction ",
+    "lang" : "en"
+  } ],
+  "type" : [ {
+    "content" : "Générique",
+    "lang" : "fr"
+  }, {
+    "content" : "Generic",
+    "lang" : "en"
+  } ],
+  "uri" : "http://id.insee.fr/catalogues/jeuDeDonnees/057a22da-bfa3-40c4-8764-25fe31a5620a",
+  "uuid" : "2311357c-3202-48f6-9fdd-cdb0f3276506",
+  "wasGeneratedBy" : [ {
+    "id" : "s1220",
+    "label" : [ {
+      "content" : "Statistiques sur les ressources et conditions de vie",
+      "lang" : "fr"
+    }, {
+      "content" : "Statistics on income and living conditions",
+      "lang" : "en"
+    } ]
+  }, {
+    "id" : "s11",
+    "label" : [ {
+      "content" : "Ressources et conditions de vie",
+      "lang" : "fr"
+    }, {
+      "content" : "Resources and living conditions",
+      "lang" : "en"
+    } ]
+  } ]
+}

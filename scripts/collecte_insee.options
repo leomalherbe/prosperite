@@ -1,0 +1,8 @@
+# Options du prochain passage du robot pour scripts/collecte_insee.py
+# (lues seulement quand le script est lancé sans argument, ce que fait le workflow « Collecte »).
+# Passage complet : tous les dataflows BDM, tous les jeux Melodi nationaux.
+# --cycle mois : un cycle par mois civil. Un passage interrompu par le budget est repris au passage suivant
+# (push sur scripts/ ou src/, ou `python scripts/actions.py lancer --branche m01-insee --cible collecte_insee.py`) ;
+# un cycle terminé n'est pas recommencé dans le mois : le passage refait seulement le catalogage (règles à jour).
+# Budget : 255 min, sous le timeout-minutes: 300 du workflow (marge pour la consolidation, le catalogage et le commit).
+--cycle mois --budget-minutes 255

@@ -1,0 +1,52 @@
+id: independance_justice_percue
+libelle: Indépendance de la justice jugée bonne
+dimension: democratie
+sous_theme: justice et État de droit
+famille: independance_justice_percue
+variante_principale: oui
+definition: Part de la population qui juge très bonne ou plutôt bonne l'indépendance des tribunaux et des juges
+  de son pays (« From what you know, how would you rate the justice system… »), enquêtes Flash Eurobaromètre annuelles
+  réalisées pour la Commission européenne (DG Justice) depuis 2016 ; indicateur ODD de l'UE sdg_16_40.
+unite: '% de la population'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat (enquêtes Flash Eurobaromètre de la Commission européenne)
+source_jeu: sdg_16_40 — Indépendance perçue du système judiciaire
+source_serie_id: sdg_16_40?freq=A&lev_perc=VG_FG&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_16_40?freq=A&lev_perc=VG_FG&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_16_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2016
+derniere_annee: 2025
+nb_points_depuis_2000: 10
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002126
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur ODD de l'UE sur l'indépendance des tribunaux et des juges telle que la perçoit
+  le public, annuel de 2016 à 2025 (10 points, de 59 % en 2019 à 51 % en 2025).
+note_pertinence: L'indépendance de la justice est une condition de l'État de droit ; cette série en donne la perception
+  par le public, distincte de la confiance générale dans la justice. Elle recule de 59 % (2019) à 51 % (2025). La
+  source n'appartient pas au système statistique européen et Eurostat renvoie à l'enquête d'origine pour la précision.
+variantes:
+- serie_id: sdg_16_40?freq=A&lev_perc=VB_FB&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'complément : indépendance jugée très ou assez mauvaise (lev_perc=VB_FB)'
+  ligne_id: estat-002124
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- source_hors_sse
+- debut_2016
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026, sans drapeau : 54 % (2016), 59 % (2019), 56 % (2022), 51
+  % (2025). Source et question lues dans les métadonnées Eurostat (sdg_16_40_esmsip2).'

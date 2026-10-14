@@ -1,0 +1,58 @@
+id: confiance_armee
+libelle: Confiance dans l'armée
+dimension: democratie
+sous_theme: confiance dans les institutions
+famille: confiance_armee
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus déclarant avoir « très confiance » ou « plutôt confiance » dans
+  l'armée (question Q25 du baromètre de la confiance politique du Cevipof, environ 3 500 personnes inscrites sur
+  les listes électorales ; indicateur national ODD 16.i4 de l'INSEE).
+unite: '% des 18 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE (données du Cevipof, Sciences Po-CNRS)
+source_jeu: BDM, ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES, indicateur national ODD 16.i4
+source_serie_id: '010596050'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596050
+url_page: https://www.insee.fr/fr/statistiques/serie/010596050
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000956
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Confiance dans une institution régalienne retenue par l'INSEE pour l'ODD 16.i4, série annuelle
+  de 2013 à 2024 (12 points, de 72 % à 83 %).
+note_pertinence: L'armée est, avec l'hôpital, l'institution qui inspire le plus confiance (de 72 % à 83 %). Sa place
+  dans une dimension consacrée à la vie démocratique est discutable, mais l'INSEE la retient parmi les fonctions
+  régaliennes de l'État et la confiance dans les institutions relève de cette dimension (A11).
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=INSTIT1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=16.i4&PCS=_Z&SDG=SDG16&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi (DS_NAT_SDG, 16.i4) de la série BDM'
+  ligne_id: melodi-005626
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/trust-state-institutions-wvs.csv (colonne confidence_armed_forces)
+  source: Our World in Data (relais)
+  nature: 'autre source : enquêtes sur les valeurs (WVS/EVS) relayées par OWID, 3 vagues depuis 2000'
+  ligne_id: m04-000211
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2013
+- echantillon_inscrits_listes_electorales
+notes: 'Source, champ et calcul vérifiés dans la fiche de métadonnées INSEE 16.i4 (https://www.insee.fr/fr/statistiques/fichier/4997354/metadonnees-16.i4.pdf)
+  : baromètre lancé en 2009, vagues antérieures à 2013 publiées en PDF seulement (exclues, D9). Valeurs lues sur
+  la BDM le 14/10/2026 : 73 % (2013), 82 % (2016), 83 % (2017), 72 % (2023), 74 % (2024).'

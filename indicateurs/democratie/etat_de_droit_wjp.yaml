@@ -1,0 +1,101 @@
+id: etat_de_droit_wjp
+libelle: Indice de l'État de droit (World Justice Project)
+dimension: democratie
+sous_theme: justice et État de droit
+famille: wjp
+variante_principale: oui
+definition: Score global (de 0 à 1) du Rule of Law Index du World Justice Project, moyenne de huit facteurs (limitation
+  des pouvoirs du gouvernement, absence de corruption, gouvernement ouvert, droits fondamentaux, ordre et sécurité,
+  application de la réglementation, justice civile, justice pénale) établis par enquêtes auprès des ménages et d'experts.
+unite: score de 0 à 1
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: World Justice Project
+source_jeu: Rule of Law Index, fichier historique 2025 (une feuille par édition)
+source_serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+source_niveau: 2
+url_api: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+url_page: non trouvé
+frequence: irreguliere
+formule: valeur de l'édition rattachée à son année de fin (éditions 2012-2013 et 2017-2018 regroupées) ; années
+  manquantes comblées par report de la dernière valeur (D17)
+premiere_annee: 2013
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000237
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille WJP (D18) et seul indice consacré à l'État de droit et à
+  la justice, 12 éditions de 2012-2013 à 2025 (de 0,764 à 0,724).
+note_pertinence: Le WJP mesure l'État de droit tel que le vivent les citoyens et les experts, y compris l'accès
+  à la justice civile et pénale que la dimension cite explicitement. Le score français recule lentement de 0,764
+  (2012-2013) à 0,724 (2025). Les scores antérieurs à 2015 ne sont pas strictement comparables et la licence n'a
+  pas été trouvée.
+variantes:
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000238
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000239
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000240
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000241
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000242
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000243
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000244
+  eligible: oui
+- serie_id: https://worldjusticeproject.org/rule-of-law-index/downloads/2025_wjp_rule_of_law_index_HISTORICAL_DATA_FILE.xlsx
+  source: World Justice Project (source primaire)
+  nature: 'huit facteurs du WJP : limitation des pouvoirs, absence de corruption, gouvernement ouvert, droits fondamentaux,
+    ordre et sécurité, application de la réglementation, justice civile, justice pénale'
+  ligne_id: m04-000245
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- editions_regroupees
+- comparabilite_avant_2015
+- licence_non_trouvee
+- debut_2013
+notes: 'Scores lus dans l''extrait du fichier historique 2025 (docs/sources/series/wjp__historique_2025_essai_c.txt)
+  : 0,764 (2012-2013), 0,742 (2014), 0,752 (2015), 0,720 (2016), 0,738 (2017-2018), 0,721 (2021), 0,724 (2025).'

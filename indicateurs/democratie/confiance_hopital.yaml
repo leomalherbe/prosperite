@@ -1,0 +1,52 @@
+id: confiance_hopital
+libelle: Confiance dans l'hôpital
+dimension: democratie
+sous_theme: confiance dans les institutions
+famille: confiance_hopital
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus déclarant avoir « très confiance » ou « plutôt confiance » dans
+  l'hôpital (question Q25 du baromètre de la confiance politique du Cevipof, environ 3 500 personnes inscrites sur
+  les listes électorales ; indicateur national ODD 16.i4 de l'INSEE).
+unite: '% des 18 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE (données du Cevipof, Sciences Po-CNRS)
+source_jeu: BDM, ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES, indicateur national ODD 16.i4
+source_serie_id: '010596054'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596054
+url_page: https://www.insee.fr/fr/statistiques/serie/010596054
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000960
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Confiance dans une institution sociale de l'État retenue par l'INSEE pour l'ODD 16.i4 et rattachée
+  ici par A11 et R5, série annuelle de 2013 à 2024 (12 points, de 76 % à 83 %).
+note_pertinence: L'hôpital est l'institution qui inspire le plus confiance, mais la série recule depuis 2022 (82
+  %) jusqu'en 2024 (76 %). Elle pourrait aussi se lire dans la dimension santé ; la règle R5 la rattache à la démocratie.
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=INSTIT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=16.i4&PCS=_Z&SDG=SDG16&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi (DS_NAT_SDG, 16.i4) de la série BDM'
+  ligne_id: melodi-005630
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2013
+- echantillon_inscrits_listes_electorales
+notes: 'Source, champ et calcul vérifiés dans la fiche de métadonnées INSEE 16.i4 (https://www.insee.fr/fr/statistiques/fichier/4997354/metadonnees-16.i4.pdf)
+  : baromètre lancé en 2009, vagues antérieures à 2013 publiées en PDF seulement (exclues, D9). Valeurs lues sur
+  la BDM le 14/10/2026 : 82 % (2013), 83 % (2015 et 2017), 76 % (2018 et 2024).'

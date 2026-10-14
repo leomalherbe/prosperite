@@ -1,0 +1,54 @@
+id: controle_corruption_wgi
+libelle: Contrôle de la corruption (indicateurs de gouvernance de la Banque mondiale)
+dimension: democratie
+sous_theme: corruption et intégrité
+famille: wgi
+variante_principale: non
+definition: 'Indicateur composite « Control of Corruption » des WGI : perception de l''usage du pouvoir public à
+  des fins privées, dont la corruption, agrégée à partir de sources d''experts et d''enquêtes ; estimation sur une
+  échelle d''environ -2,5 à +2,5 (documentation WGI non lue).'
+unite: estimation (environ -2,5 à +2,5)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Banque mondiale (Worldwide Governance Indicators)
+source_jeu: WGI (API v2 de la Banque mondiale, source 3), GOV_WGI_CC.EST
+source_serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_CC.EST?source=3
+source_niveau: 1
+url_api: https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_CC.EST?source=3&format=json&per_page=100
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000150
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Sous-indice WGI du contrôle de la corruption, disponible depuis 1996 quand l'indice de perception
+  de la corruption n'est comparable que depuis 2012, proposé comme alternative dans la famille WGI (D18).
+note_pertinence: 'La corruption est nommée dans le contenu de la dimension ; l''indice de perception de la corruption
+  (CPI) en est la mesure la plus connue mais n''est comparable que depuis 2012. Le contrôle de la corruption des
+  WGI couvre 2000-2025 mais recoupe le CPI (évaluations d''experts du même type) : les deux ne devraient pas être
+  pris ensemble.'
+variantes:
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_CC.SC?source=3
+  source: Banque mondiale — Worldwide Governance Indicators
+  nature: 'autre échelle : score de 0 à 100 introduit en 2025'
+  ligne_id: m04-000151
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- lacune_2001
+notes: 'Score 0-100 (variante) : 73,1 en 2025 d''après la sortie du robot M04. La liste des sources agrégées par
+  les WGI (dont, peut-être, le CPI) est à confirmer dans la documentation WGI (non lue). Exception à la règle des
+  familles : fiche non principale d''une famille de producteur, pour un concept qui a sa propre famille (CPI).'

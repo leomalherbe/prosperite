@@ -1,0 +1,63 @@
+id: participation_europeennes
+libelle: Taux de participation aux élections européennes
+dimension: democratie
+sous_theme: participation électorale
+famille: participation_electorale
+variante_principale: non
+definition: 'Part des électeurs inscrits ayant voté aux élections européennes (tour unique ; votants rapportés aux
+  inscrits, tous bureaux de vote du fichier agrégé du ministère de l''Intérieur). Champ : France entière ; l''inclusion
+  des Français de l''étranger est à vérifier.'
+unite: '% des inscrits'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Ministère de l'Intérieur (résultats électoraux), calcul du projet
+source_jeu: Données des élections agrégées (data.gouv.fr, fichier general_results au bureau de vote, Licence Ouverte
+  2.0)
+source_serie_id: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants
+  / somme inscrits)
+source_niveau: 2
+url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet
+url_page: https://www.data.gouv.fr/fr/datasets/6481e741d4cf002ec0efec9d/
+frequence: irreguliere
+formule: taux = somme des votants / somme des inscrits de l'ensemble des bureaux de vote du fichier pour le scrutin
+  ; série annuelle reconstruite en reportant la valeur du dernier scrutin jusqu'au scrutin suivant (D17)
+premiere_annee: 1999
+derniere_annee: 2024
+nb_points_depuis_2000: 5
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000249
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Seul scrutin dont la série couvre l'année 2000 par report de la valeur de 1999, 6 scrutins
+  de 1999 à 2024 (de 40,63 % en 2009 à 51,49 % en 2024).
+note_pertinence: La participation aux européennes est la plus basse des scrutins nationaux mais remonte nettement
+  depuis 2019 (50,12 %, puis 51,49 % en 2024). Son rythme régulier de cinq ans et la présence du scrutin de 1999
+  donnent une série complète de 2000 à aujourd'hui avec le report de la dernière valeur.
+variantes:
+- serie_id: '001778185'
+  source: INSEE BDM
+  nature: 'INSEE (BDM, tableau TCRED) : même taux, champ « France » et France métropolitaine, 2014-2024'
+  ligne_id: bdm-001364
+  eligible: a_verifier
+- serie_id: '001778186'
+  source: INSEE BDM
+  nature: 'INSEE (BDM, tableau TCRED) : même taux, champ « France » et France métropolitaine, 2014-2024'
+  ligne_id: bdm-001365
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- calcul_projet_a_recouper
+- champ_inscrits_a_verifier
+notes: 'Valeurs lues dans la sortie du robot M04 : 47,06 % (1999), 42,83 % (2004), 40,63 % (2009), 42,43 % (2014),
+  50,12 % (2019), 51,49 % (2024). L''INSEE (BDM 001778185) publie 43,4 %, 51,3 % et 53,0 % pour 2014, 2019 et 2024
+  (lus le 14/10/2026), soit 1,0 à 1,5 point de plus.'

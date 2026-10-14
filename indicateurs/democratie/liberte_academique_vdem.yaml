@@ -1,0 +1,49 @@
+id: liberte_academique_vdem
+libelle: Liberté académique (V-Dem)
+dimension: democratie
+sous_theme: libertés
+famille: liberte_academique_vdem
+variante_principale: oui
+definition: Indice composite de V-Dem (de 0 à 1) de la liberté académique (liberté de recherche et d'enseignement,
+  échanges académiques, autonomie des établissements, intégrité des campus, liberté d'expression académique et culturelle),
+  à partir d'évaluations d'experts ; jeu V-Dem v16 relayé par Our World in Data.
+unite: indice de 0 à 1
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: V-Dem (Varieties of Democracy), relais Our World in Data
+source_jeu: V-Dem v16 via le graphique OWID academic-freedom-index (colonne v2xca_academ__estimate_best)
+source_serie_id: https://ourworldindata.org/grapher/academic-freedom-index.csv (colonne v2xca_academ__estimate_best)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/academic-freedom-index.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/academic-freedom-index
+frequence: annuelle
+premiere_annee: 1900
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000165
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de la liberté académique, nommée dans le contenu de la dimension, indice V-Dem
+  annuel de 2000 à 2025 (26 points, 0,800 en 2025).
+note_pertinence: 'La liberté académique protège la production et la transmission indépendantes des connaissances,
+  condition d''un débat public éclairé. L''indice ne prend que 27 valeurs distinctes depuis 1900 pour la France
+  : il signale des inflexions rares plutôt qu''une tendance continue.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- relais_owid
+- faible_variation
+notes: Dernière valeur (0,8 en 2025) et nombre de valeurs distinctes (27 sur 126 années) lus dans la sortie du robot
+  M04. Les sous-composantes de l'indice ne sont pas cataloguées. Définition résumée d'après le titre de l'indice
+  et M04 ; composantes exactes à relire dans le codebook V-Dem (non lu).

@@ -1,0 +1,104 @@
+id: libertes_freedom_house
+libelle: Score global de liberté (Freedom House)
+dimension: democratie
+sous_theme: libertés
+famille: freedom_house
+variante_principale: oui
+definition: 'Score global de Freedom in the World (de 0 à 100), somme des droits politiques (0 à 40 : processus
+  électoral, pluralisme, fonctionnement du gouvernement) et des libertés civiles (0 à 60 : expression, association,
+  État de droit, autonomie personnelle), notés par des analystes de Freedom House ; relais Our World in Data (années
+  = éditions du rapport).'
+unite: score de 0 à 100
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Freedom House, relais Our World in Data
+source_jeu: Freedom in the World via le graphique OWID freedom-score-fh (colonne total_score)
+source_serie_id: https://ourworldindata.org/grapher/freedom-score-fh.csv (colonne total_score)
+source_niveau: 2
+url_api: https://ourworldindata.org/grapher/freedom-score-fh.csv?v=1&csvType=full&useColumnShortNames=true
+url_page: https://ourworldindata.org/grapher/freedom-score-fh
+frequence: annuelle
+premiere_annee: 2002
+derniere_annee: 2025
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000195
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille Freedom House (D18), score annuel de 2002 à 2025 (24 points,
+  89 sur 100 en 2025), mais 7 valeurs distinctes seulement et licence non trouvée.
+note_pertinence: 'Freedom House mesure les droits politiques et les libertés civiles, au cœur de la dimension. Le
+  score français varie très peu (89 ou 90 de 2018 à 2024 dans le fichier source) : il distingue mal les années et
+  recoupe largement l''indice V-Dem. Freedom House ne diffuse les éditions 2025 et 2026 que sur demande ; OWID relaie
+  l''édition 2025.'
+variantes:
+- serie_id: https://ourworldindata.org/grapher/political-rights-score-fh.csv (colonne polrights_score)
+  source: Our World in Data (relais)
+  nature: 'composantes du score global : droits politiques (0-40) et libertés civiles (0-60), relais OWID'
+  ligne_id: m04-000196
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/civil-liberties-score-fh.csv (colonne civlibs_score)
+  source: Our World in Data (relais)
+  nature: 'composantes du score global : droits politiques (0-40) et libertés civiles (0-60), relais OWID'
+  ligne_id: m04-000197
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne A)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000230
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne B)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000231
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne C)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000232
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne D)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000233
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne E)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000234
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne F)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000235
+  eligible: oui
+- serie_id: https://freedomhouse.org/sites/default/files/2024-02/All_data_FIW_2013-2024.xlsx (colonne G)
+  source: Freedom House (source primaire)
+  nature: sept catégories A à G de Freedom in the World (processus électoral, pluralisme, fonctionnement du gouvernement,
+    expression et croyance, association, État de droit, autonomie personnelle), fichier Freedom House 2013-2024
+  ligne_id: m04-000236
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- relais_owid
+- faible_variation
+- licence_non_trouvee
+- annee_edition
+notes: Dernière valeur (89 en 2025) et nombre de valeurs distinctes (7 sur 24) lus dans la sortie du robot M04 ;
+  scores 2018-2024 (90, puis 89 en 2022-2024) lus dans l'extrait du fichier All_data_FIW_2013-2024.xlsx (docs/sources/series/freedom_house__fiw_2013_2024_france.txt).

@@ -1,0 +1,65 @@
+id: confiance_police
+libelle: Confiance dans la police
+dimension: democratie
+sous_theme: confiance dans les institutions
+famille: confiance_police
+variante_principale: oui
+definition: Part des personnes de 18 ans ou plus déclarant avoir « très confiance » ou « plutôt confiance » dans
+  la police (question Q25 du baromètre de la confiance politique du Cevipof, environ 3 500 personnes inscrites sur
+  les listes électorales ; indicateur national ODD 16.i4 de l'INSEE).
+unite: '% des 18 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE (données du Cevipof, Sciences Po-CNRS)
+source_jeu: BDM, ODD-PAIX-JUSTICE-INSTITUTIONS-EFFICACES, indicateur national ODD 16.i4
+source_serie_id: '010596051'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596051
+url_page: https://www.insee.fr/fr/statistiques/serie/010596051
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000957
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Confiance dans la police nommée dans le contenu de la dimension (A11, R5), série annuelle
+  de l'INSEE (ODD 16.i4, baromètre du Cevipof) de 2013 à 2024 (12 points, de 66 % en 2013 et 2020 à 78 % en 2017).
+note_pertinence: 'La confiance dans la police figure dans les cadres OCDE (14_2) et Eurostat QoL ; elle relève de
+  la démocratie et non de la sécurité (A10, A11). La série réagit au contexte : 75 % en 2016 et 78 % en 2017, après
+  les attentats de 2015, puis 66 % en 2020.'
+variantes:
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=INSTIT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=16.i4&PCS=_Z&SDG=SDG16&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'doublon technique : copie Melodi (DS_NAT_SDG, 16.i4) de la série BDM'
+  ligne_id: melodi-005627
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/trust-state-institutions-wvs.csv (colonne confidence_police)
+  source: Our World in Data (relais)
+  nature: 'autres sources : enquêtes sur les valeurs (WVS/EVS via OWID, 3 vagues depuis 2000) et OCDE 14_2 (note
+    de 0 à 10, 2013 seulement, non éligible)'
+  ligne_id: m04-000208
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=14_2 UNIT_MEASURE=0_TO_10
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'autres sources : enquêtes sur les valeurs (WVS/EVS via OWID, 3 vagues depuis 2000) et OCDE 14_2 (note
+    de 0 à 10, 2013 seulement, non éligible)'
+  ligne_id: m04-000101
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2013
+- echantillon_inscrits_listes_electorales
+notes: 'Source, champ et calcul vérifiés dans la fiche de métadonnées INSEE 16.i4 (https://www.insee.fr/fr/statistiques/fichier/4997354/metadonnees-16.i4.pdf)
+  : baromètre lancé en 2009, vagues antérieures à 2013 publiées en PDF seulement (exclues, D9). Valeurs lues sur
+  la BDM le 14/10/2026 : 66 % (2013), 75 % (2016), 78 % (2017), 66 % (2020), 71 % (2024).'

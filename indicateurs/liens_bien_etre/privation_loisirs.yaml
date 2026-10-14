@@ -4,9 +4,10 @@ dimension: liens_bien_etre
 sous_theme: loisirs, culture, sport et vacances
 famille: privation_loisirs
 variante_principale: oui
-definition: Part des personnes déclarant ne pas avoir les moyens financiers de participer régulièrement à une activité
-  de loisirs (item de la privation matérielle et sociale d'EU-SILC ; jeu Eurostat ilc_mdes11a, âge « total »).
-unite: '%'
+definition: Part des personnes de 16 ans ou plus déclarant ne pas avoir les moyens de participer régulièrement à
+  une activité de loisirs (item de la privation matérielle et sociale d'EU-SILC ; jeu Eurostat ilc_mdes11a, âge
+  « total »).
+unite: '% des 16 ans ou plus'
 sens: bas
 type: resultat
 declaratif: non
@@ -68,6 +69,7 @@ socle_v1:
 qualite:
 - rupture_2020
 - rupture_2022
-- champ_age_a_verifier
-notes: Valeurs et drapeaux lus sur l'API Eurostat le 14/10/2026. L'INSEE publie le même item depuis 2020 (DS_SRCV_PMS,
-  mesure DIF_LOISIRS, 6 points, catalogue des séries écartées).
+notes: 'Champ : l''âge « total » de ilc_mdes11a vaut 16 ans ou plus (valeurs identiques à la modalité Y_GE16 pour
+  chaque année 2014-2025, API Eurostat lue le 14/10/2026 ; audit M06). Valeurs et drapeaux lus sur l''API Eurostat
+  le 14/10/2026. L''INSEE publie le même item depuis 2020 (DS_SRCV_PMS, mesure DIF_LOISIRS, 6 points, catalogue
+  des séries écartées).'

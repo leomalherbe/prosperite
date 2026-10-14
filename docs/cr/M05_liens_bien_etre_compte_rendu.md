@@ -17,7 +17,7 @@ Agent de mission M05, 14 octobre 2026 (mis à jour après les décisions de la s
 | Journal de bord (méthode pilote) | `docs/cr/M05_liens_bien_etre_journal.md` |
 | Méthode commune des fiches (adoptée pour les dix dimensions) | `docs/methodo/33_methode_fiches_M05.md` |
 
-## 2. Chiffres
+## 2. Chiffres (avant l'audit ; chiffres à jour au §9)
 
 - Long-list : 668 lignes, toutes affectées ; 17 lignes de la long-list `travail` importées (rattachement proposé).
 - Présélection : 67 concepts — 21 `fiche`, 34 `variante_de`, 10 `ecarte_en_bloc` (160 lignes, dont 31 non éligibles), 2 `autre_dimension:logement_cadre_vie` (40 lignes non éligibles : satisfaction des domaines « lieu de résidence » et « temps de trajet »).
@@ -66,3 +66,29 @@ Agent de mission M05, 14 octobre 2026 (mis à jour après les décisions de la s
 - Tableau de validation régénéré avec `sens` et `unite` (18 colonnes).
 - **`privation_vacances`** (ligne de la long-list `travail`, rattachement proposé à `liens_bien_etre`) et **`depart_vacances`** (hors long-list, jeu Eurostat `tour_dem_totot` à réintégrer) restent au tableau avec `rattachement_propose` renseigné ; la session mère tranche au gel 2.
 - `origin/main` fusionné (workflow Collecte corrigé) ; plus de `[skip ci]`.
+
+## 9. Corrections après audit (M06, D31-D33) — branche `m05-liens_bien_etre-corr`
+
+Audit : `docs/validation/audit_liens_bien_etre.md` (15 fiches auditées, 9 conformes, 6 à corriger, 6 oublis). Toutes les corrections `a_corriger` sont appliquées :
+
+| Fiche | Correction |
+|---|---|
+| 6 fiches du baromètre DREES (`situation_personnelle_bonne`, `optimisme_avenir_personnel`, `optimisme_generations_futures`, `integration_sociale`, `cohesion_sociale_percue`, `aidance_personne_agee`) | `geo: FM` (enquête métropolitaine), `url_api` sur la pièce jointe unique `barometre2000_2025_diff_csv`, drapeau `enquete_metropole` au lieu de `champ_geographique_a_verifier`, `pas_d_enquete_2003` retiré des séries qui commencent après 2003 |
+| `aidance_personne_agee` | `question_non_posee_2012` au lieu de `pas_d_enquete_2012` (le baromètre 2012 existe) |
+| `cohesion_sociale_percue` | `rupture_possible_2018` et note (« ne sait pas » : 0,63 % en 2017, 5,31 % en 2018) |
+| `optimisme_generations_futures` | famille propre, variante principale, `retenir` (D32 : opinions sur la société en familles distinctes, comme `cohesion_sociale_percue`) |
+| `depart_vacances` | champ « résidents de 15 ans ou plus » de France métropolitaine (`geo: FM`), `rupture_2020`, panel non aléatoire, questionnaire révisé en 2023-2024, `raccordement: a_etudier`, variante INSEE `DS_SUIVI_DDE_TOUR` (métadonnées Eurostat `tour_dem_esms` et `tour_dem_esmsdm_fr` relues le 14/10/2026) |
+| `privation_vacances` | + 3 variantes `hlth_dm020` (long-list `travail`, même item pour les 16 ans ou plus, 2010-2025) |
+| `privation_loisirs`, `privation_sorties_proches` | champ « 16 ans ou plus » (âge « total » = `Y_GE16` chaque année, API relue), `champ_age_a_verifier` levé |
+| `solitude` | série principale = **baromètre DREES CS12** (« se sentir souvent seul », 7 vagues 2014-2025, valeurs disponibles dans `docs/sources/series/`), hors long-list ; la série OCDE 7_4 (2018, 2022) passe en variante ; motif de présélection aligné (fréquence OCDE « non trouvée ») |
+| **`vie_associative`** (nouvelle) | adhésion à une association (DREES SDASSYND_2, question posée 2000-2025), hors long-list, `statut_serie: a_calculer`, `retenir` |
+
+Chiffres après corrections : **22 fiches** en 19 familles — **18 `retenir`**, 2 `retenir_variante` (`satisfaction_vie_faible`, `situation_personnelle_bonne`), 2 `ecarter` ; 14 déclaratives ; 6 séries « à vérifier » (D17) ; **3 hors long-list** (`depart_vacances`, `solitude`, `vie_associative`) ; présélection : 69 groupes (22 `fiche`, 35 `variante_de`, 10 `ecarte_en_bloc`, 2 `autre_dimension`), 688 lignes dont 20 importées de `travail`. Vérificateur : 0 erreur, 3 avertissements (les trois fiches hors long-list, à cataloguer). Tests : 397 réussis.
+
+Rattachements proposés, à trancher au gel 2 : `privation_vacances` (ligne de la long-list `travail`) et `depart_vacances`, `solitude`, `vie_associative` (hors long-list), tous avec `rattachement_propose`.
+
+Liste de maintenance (`docs/cr/maintenance_catalogues.md`) : n° 28 (cataloguer CS12), 29 (calculer et cataloguer SDASSYND_2), 30 (`ilc_scp09`), 31 (`ilc_scp19`, bénévolat), 32 (`ilc_scp20`), 33 (`tour_dem_to*` et `DS_SUIVI_DDE_TOUR`), 34 (`DS_SRCV_CONFIANCE` en candidat D16), 35 (exceptions de la table de correspondance pour les 20 lignes `travail` et `ilc_mdes03`).
+
+Méthode commune (`docs/methodo/33_methode_fiches_M05.md`, v1.1) : règles D32-D33 ajoutées (série arrêtée sans relais ; pas d'écart pour brièveté seule ; champ mixte ; composantes ou fiches propres ; opinions sur la société ; fiches hors long-list avec `preuve` et `statut_serie` ; lecture préalable des présélections des autres dimensions ; écarts construits ; borne 1700). `scripts/verifier_fiches.py` : première année ≥ 1700, fiches et variantes hors catalogue admises avec `preuve` (avertissement), avertissement si une ligne utilisée est déjà la série principale d'une fiche d'une autre dimension (aucune aujourd'hui).
+
+Non fait (non demandé) : fiche hors long-list « rencontres avec les proches » (`ilc_scp09`, proposition O5 de l'audit), en attente de la réintégration du jeu (n° 30).

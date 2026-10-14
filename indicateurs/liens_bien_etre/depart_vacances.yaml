@@ -4,10 +4,10 @@ dimension: liens_bien_etre
 sous_theme: loisirs, culture, sport et vacances
 famille: depart_vacances
 variante_principale: oui
-definition: Part de la population ayant fait dans l'année au moins un voyage pour motifs personnels d'au moins quatre
-  nuitées, en France ou à l'étranger (enquête sur la demande touristique ; jeu Eurostat tour_dem_totot, durée «
-  4 nuits ou plus », destination « tous les pays du monde », unité « pourcentage de la population totale »).
-unite: '% de la population'
+definition: Part des résidents de 15 ans ou plus de France métropolitaine ayant fait dans l'année au moins un voyage
+  pour motifs personnels d'au moins quatre nuitées, en France ou à l'étranger (enquête Suivi de la demande touristique
+  ; jeu Eurostat tour_dem_totot, durée « 4 nuits ou plus », destination « tous les pays du monde », unité PC_POP).
+unite: '% des résidents de 15 ans ou plus'
 sens: haut
 type: resultat
 declaratif: non
@@ -22,21 +22,23 @@ frequence: annuelle
 premiere_annee: 2012
 derniere_annee: 2025
 nb_points_depuis_2000: 14
-geo: FR
+geo: FM
 eligibilite_longlist: hors_longlist
 ligne_id: ''
 hors_longlist: oui
 rattachement_propose: 'hors long-list : jeu Eurostat tour_dem_totot exclu au niveau 1 par M02 (« domaine hors périmètre
   (tourisme) ») ; rattachement proposé à liens_bien_etre (vacances, A13), à trancher au gel 2'
-raccordement: non
+raccordement: 'a_etudier : rupture de 2020 (reprise de l''enquête par l''INSEE) ; Eurostat n''a recalculé le coefficient
+  d''extrapolation que depuis 2018, 2012-2017 restent sur l''ancienne méthode'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure du départ effectif en vacances, contenu explicite de la dimension (A13), annuelle
-  de 2012 à 2025 (14 points vérifiés à la source), à réintégrer au catalogue Eurostat dont le jeu a été exclu comme
-  « statistique sectorielle ».
-note_pertinence: 'Partir en vacances est un marqueur de bien-être et d''inclusion sociale. L''enquête interroge
-  les résidents sur leurs voyages : c''est un résultat pour les personnes, pas une statistique d''entreprises. La
-  série décroche en 2017 (63,1 % en 2016, 57,4 % en 2017) sans drapeau de rupture : à éclaircir avant usage.'
+  de 2012 à 2025 (14 points vérifiés à la source), malgré une rupture de série en 2020 documentée par Eurostat.
+note_pertinence: 'Partir en vacances est un marqueur de bien-être et d''inclusion sociale ; l''enquête interroge
+  les résidents sur leurs voyages, c''est un résultat pour les personnes et non une statistique d''entreprises.
+  Eurostat documente une rupture en 2020 (reprise de l''enquête par l''INSEE, niveaux relevés), un questionnaire
+  révisé en 2023 et 2024 et un échantillon tiré d''un panel non aléatoire. La série décroche aussi entre 2016 (63,1
+  %) et 2017 (57,4 %) sans explication dans les métadonnées : elle ne s''utilise qu''avec ces réserves.'
 variantes:
 - serie_id: tour_dem_totot?freq=A&duration=N_GE1&c_dest=WORLD&unit=PC_POP&geo=FR
   source: Eurostat
@@ -46,6 +48,11 @@ variantes:
   source: Eurostat
   nature: autre durée (1 à 3 nuits), 2012-2025
   catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 14/10/2026)
+- serie_id: DS_SUIVI_DDE_TOUR?FREQ=A&GEO=FRANCE-FM&MODE_TRANSPORT=_T&SEASONAL_ADJUST=N&TOUR_MEASURE=DEPARTURE_TRAVEL_RATE&TRAVEL_DEST=_T&TRAVEL_REASON=VST_PERSO&TYPE_TOUR_ACCOMODATION=_T&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même enquête publiée par l'INSEE (taux de départ en voyage pour motif personnel, France métropolitaine,
+    annuel 2022-2025, 4 points ; seuil de durée non précisé ; catalogue des séries écartées)
+  catalogue: insee_melodi_catalogue_non
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -53,9 +60,17 @@ socle_v1:
   justification: ''
 qualite:
 - hors_longlist
-- rupture_possible_2017_a_verifier
-- champ_age_a_verifier
-notes: 'Jeu tour_dem_totot présent dans catalogues/eurostat_jeux_catalogue.csv avec candidat = non (« domaine hors
-  périmètre (tourisme) : statistique sectorielle ») ; série, années et valeurs lues sur l''API Eurostat le 14/10/2026
-  (aucun drapeau ; dernière mise à jour du jeu le 09/10/2026). Correction proposée à M02 : admettre les jeux tour_dem_to*
-  (participation des personnes au tourisme).'
+- rupture_2020
+- panel_non_aleatoire
+- questionnaire_revise_2023_2024
+- decrochage_2017_non_explique
+- enquete_metropole
+notes: 'Métadonnées Eurostat lues le 14/10/2026 : tour_dem_esms (« Participation in tourism: All residents aged
+  15 or over ») et fiche nationale tour_dem_esmsdm_fr (enquête Suivi de la demande touristique, gérée par l''INSEE
+  depuis 2020, auparavant par la DGE ; « break in series in 2020 » ; niveaux relevés par rapport aux publications
+  de la DGE ; coefficient d''extrapolation recalculé depuis 2018 ; questionnaire révisé en 2023 et 2024 ; « not
+  a random sample. It is a client panel » ; lieu de résidence : France métropolitaine, d''où geo FM pour une série
+  codée FR). Valeurs de l''API (14/10/2026) : aucun drapeau, dernière mise à jour le 09/10/2026. Jeu tour_dem_totot
+  au catalogue des jeux avec candidat = non (« domaine hors périmètre (tourisme) ») : réintégration demandée (liste
+  de maintenance, n° 33). Variante INSEE DS_SUIVI_DDE_TOUR (taux de départ en voyage pour motif personnel, annuel
+  2022-2025) : seuil de durée non précisé dans le catalogue.'

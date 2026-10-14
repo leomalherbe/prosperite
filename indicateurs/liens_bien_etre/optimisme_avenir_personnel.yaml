@@ -17,13 +17,13 @@ source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable OG03_1, modalités 1+2
 source_niveau: 2
-url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2024_diff_csv
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
 frequence: annuelle
 premiere_annee: 2000
 derniere_annee: 2025
 nb_points_depuis_2000: 25
-geo: FR
+geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000256
 hors_longlist: non
@@ -44,9 +44,10 @@ socle_v1:
 qualite:
 - calcul_sur_microdonnees
 - codes_modalites_a_verifier
-- champ_geographique_a_verifier
+- enquete_metropole
 - pas_d_enquete_2003
-notes: 'Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+notes: Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
   incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
-  vérifier) ; fichier 2025 : pièce jointe barometre2025_diff_csv du même jeu (l''identifiant de pièce jointe change
-  à chaque édition) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'
+  vérifier) ; pièce jointe unique barometre2000_2025_diff_csv (vérifiée par le robot le 13/10/2026 ; l'identifiant
+  change à chaque édition) ; échantillon représentatif de la population vivant en France métropolitaine (page du
+  jeu, variable SDREG) ; licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).

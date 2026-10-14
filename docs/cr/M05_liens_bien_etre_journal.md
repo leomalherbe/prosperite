@@ -152,3 +152,9 @@ Aucun identifiant en double dans `indicateurs/` ; chaque série principale et ch
 3. `privation_vacances` et `depart_vacances` restent au tableau avec `rattachement_propose` ; décision au gel 2.
 4. `origin/main` fusionné (correction du workflow Collecte) ; plus de `[skip ci]`.
 5. Présélection : la satisfaction des domaines « lieu de résidence » et « temps de trajet » passe d'un écart en bloc à `autre_dimension:logement_cadre_vie`.
+
+## 9. Corrections après audit M06 (branche `m05-liens_bien_etre-corr`)
+
+Branche partie d'`origin/main` après la fusion de la PR #6, de l'audit M06 et de D31-D33. Vérifications refaites à la source le 14/10/2026 : métadonnées Eurostat `tour_dem_esmsdm_fr` (reprise INSEE 2020, rupture 2020, panel non aléatoire, questionnaire révisé 2023-2024, champ 15 ans ou plus et métropole) ; `ilc_mdes10a` (âge « total » = `Y_GE16` chaque année 2014-2025) ; `ilc_scp09`, `ilc_scp19`, `ilc_scp20` (modalités et valeurs 2015 et 2022, pour la liste de maintenance) ; sorties du robot DREES (CS12 : distribution disponible ; SDASSYND_2 : couverture seulement ; CS01 : « ne sait pas » 0,63 % en 2017, 5,31 % en 2018). Catalogues : `DS_SUIVI_DDE_TOUR` (taux de départ, 2022-2025) et `hlth_dm020` (3 lignes `travail`).
+
+Méthode : les règles `solitude` et `vie_associative` deviennent `hors_longlist = oui` (la série OCDE 7_4 passe en `variante_de:solitude`) ; une règle `longlist = travail` importe `hlth_dm020` en variantes de `privation_vacances`. Les fiches hors long-list portent `preuve` (sortie du robot) et `statut_serie` (`disponible` pour CS12, `a_calculer` pour SDASSYND_2), champs ajoutés au schéma et au vérificateur. Détail des corrections et chiffres : compte rendu §9.

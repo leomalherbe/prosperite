@@ -1,58 +1,87 @@
 id: solitude
-libelle: Sentiment de solitude
+libelle: Part des personnes se sentant souvent seules
 dimension: liens_bien_etre
 sous_theme: relations et soutien
 famille: solitude
 variante_principale: oui
-definition: Part des personnes de 16 ans ou plus déclarant se sentir seules (modules d'EU-SILC 2018 et 2022, base
-  How's Life de l'OCDE, mesure 7_4 « Feeling lonely ») ; fréquence de référence retenue par l'OCDE (par exemple
-  « tout le temps ou la plupart du temps ») non trouvée dans les extraits lus.
-unite: '% des 16 ans ou plus'
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui déclarent se sentir souvent
+  seules (question CS12 : « Vous arrive-t-il de vous sentir seul.e ? », réponse « souvent »), non-réponses incluses
+  au dénominateur, avec la pondération de redressement de l''enquête.'
+unite: '% des répondants'
 sens: bas
 type: resultat
 declaratif: oui
 composite: non
-source_organisme: OCDE (données EU-SILC)
-source_jeu: How's Life? — bien-être actuel (DSD_HSL@DF_HSL_CWB), mesure 7_4
-source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_4 UNIT_MEASURE=PT_POP_Y_GE16
-source_niveau: 1
-url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.7_4......?startPeriod=2000&format=csvfilewithlabels
-url_page: non trouvé
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable CS12, modalité 1
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
 frequence: irreguliere
-premiere_annee: 2018
-derniere_annee: 2022
-nb_points_depuis_2000: 2
-geo: FR
-eligibilite_longlist: a_verifier
-ligne_id: m04-000057
-hors_longlist: non
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+rattachement_propose: 'hors long-list : question CS12 du baromètre DREES non cataloguée par M04 (oubli O1 de l''audit
+  M06), à cataloguer (liste de maintenance, n° 28)'
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure de la solitude, nommée dans le contenu de la dimension, disponible pour la France
-  (2018 et 2022), admise comme série irrégulière (D17).
+motif_recommandation: Seule série publique de solitude ressentie couvrant plus de deux années (7 vagues de 2014
+  à 2025, enquête métropolitaine), concept nommé dans le contenu de la dimension, admise comme série irrégulière
+  (D17).
 note_pertinence: 'La solitude est l''envers du soutien social : elle repère les personnes isolées que les moyennes
-  masquent. Avec deux points seulement, l''indicateur montre un niveau plus qu''une trajectoire ; la valeur 2022
-  (10,8 %) serait reportée jusqu''à la vague suivante.'
+  masquent. Les parts calculées par le robot sur les microdonnées passent de 13,36 % (2014) à 9,08 % (2025) pour
+  « souvent », et de 49,23 % à 47,90 % pour « souvent ou parfois » (variante). La série EU-SILC relayée par l''OCDE
+  (2018 et 2022) devient une variante.'
 variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_4 UNIT_MEASURE=PT_POP_Y_GE16
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre source (EU-SILC via OCDE How's Life, mesure 7_4 « Feeling lonely », 2018 et 2022) et ventilation
+    par sexe
+  ligne_id: m04-000057
+  eligible: a_verifier
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_4 SEX=F
   source: OCDE — How's Life? (base du bien-être)
-  nature: ventilation (sexe)
+  nature: autre source (EU-SILC via OCDE How's Life, mesure 7_4 « Feeling lonely », 2018 et 2022) et ventilation
+    par sexe
   ligne_id: m04-000121
   eligible: a_verifier
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=7_4 SEX=M
   source: OCDE — How's Life? (base du bien-être)
-  nature: ventilation (sexe)
+  nature: autre source (EU-SILC via OCDE How's Life, mesure 7_4 « Feeling lonely », 2018 et 2022) et ventilation
+    par sexe
   ligne_id: m04-000122
   eligible: a_verifier
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable CS12, modalités 1+2
+  source: DREES
+  nature: 'autre seuil : se sentir seul souvent ou parfois (complément de « jamais »), mêmes vagues'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+  statut: disponible
 socle_v1:
   seuil_minimal: null
   objectif: null
   type_justification: null
   justification: ''
 qualite:
-- deux_points
+- hors_longlist
 - serie_irreguliere_D17
-- definition_a_verifier
-notes: 'Aucun jeu Eurostat « solitude » repéré dans le catalogue M02 : la série passe par l''OCDE. Le jeu Eurostat
-  ilc_pw10 (« se sentir exclu de la société », 2022 seulement) est un concept voisin, hors long-list.'
+- calcul_sur_microdonnees
+- codes_modalites_a_verifier
+- enquete_metropole
+notes: 'Vagues 2014, 2016 et 2021-2025, lues dans docs/sources/series/drees__barometre_2000_2025_couverture.csv
+  ; valeurs dans docs/sources/series/drees__barometre_2000_2025_distributions.csv. Indicateur calculé par le robot
+  de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses incluses au dénominateur ;
+  codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à vérifier) ; pièce jointe unique
+  barometre2000_2025_diff_csv (vérifiée par le robot le 13/10/2026 ; l''identifiant change à chaque édition) ; échantillon
+  représentatif de la population vivant en France métropolitaine (page du jeu, variable SDREG) ; licence non indiquée
+  sur la page du jeu (Licence Ouverte à confirmer). Mesure OCDE 7_4 (variante) : fréquence de référence non trouvée
+  dans les métadonnées.'

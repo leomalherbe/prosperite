@@ -7,19 +7,17 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_intrafamiliales
 variante_principale: non
-autres_fiches_famille:
-- victimes_violences_conjugales
 definition: >-
   Nombre de victimes de violences physiques commises dans le cadre familial (conjugal ou non) enregistrées par la
   police et la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
 unite: nombre de victimes (taux à calculer)
-sens: bas
+sens: ambigu
 type: resultat
 declaratif: non
 composite: non
 incontournable: non
 source_organisme: SSMSI (ministère de l'Intérieur)
-source_jeu: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+source_jeu: base des séries chronologiques (data.gouv.fr)
 source_serie_id: >-
   https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques intrafamiliales
   enregistrées par les services de sécurité » ; Indicateur=Violences physiques ; Sous_indicateur=Ensemble des lieux
@@ -33,9 +31,8 @@ derniere_annee: 2025
 geo: FR
 nb_points_depuis_2000: 10
 eligibilite_longlist: oui
-ligne_longlist: m04-000274
+ligne_id: m04-000274
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_violences_intrafam)
   ligne_id: m04-000301

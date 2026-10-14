@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_personnes
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins une violence
   physique ou sexuelle dans l'année, qu'elles aient porté plainte ou non (enquêtes de victimation Cadre de vie et
@@ -30,11 +29,10 @@ derniere_annee: 2023
 geo: FM
 nb_points_depuis_2000: 12
 eligibilite_longlist: oui
-ligne_longlist: bdm-000947
-raccordement: non
-raccordement_note: >-
-  Pas de série avant 2010 au catalogue. Rupture d'enquête : valeurs 2010-2018 (CVS) et 2021-2023 (VRS), aucune valeur
-  2019-2020 ; rétropolation à demander au SSMSI.
+ligne_id: bdm-000947
+raccordement: >-
+  non : Pas de série avant 2010 au catalogue. Rupture d'enquête : valeurs 2010-2018 (CVS) et 2021-2023 (VRS), aucune
+  valeur 2019-2020 ; rétropolation à demander au SSMSI.
 variantes:
 - serie_id: "010596042"
   ligne_id: bdm-000948

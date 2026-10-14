@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: epargne_precaution
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Part de la population dont les actifs financiers liquides (dépôts, épargne disponible), par unité de consommation,
   sont inférieurs à trois mois de revenu au seuil de pauvreté relative (OCDE, base How's Life?, mesure 1_6).
@@ -18,7 +17,7 @@ declaratif: non
 composite: non
 incontournable: oui
 source_organisme: OCDE (base How's Life?, d'après les enquêtes patrimoine)
-source_jeu: OCDE — How's Life? (base du bien-être)
+source_jeu: How's Life? (base du bien-être)
 source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=1_6 UNIT_MEASURE=PT_POP
 source_niveau: 1
 url_api: >-
@@ -29,10 +28,9 @@ premiere_annee: 2009
 derniere_annee: 2020
 geo: FR
 nb_points_depuis_2000: 4
-eligibilite_longlist: a_verifier (moins_de_10_points)
-ligne_longlist: m04-000007
+eligibilite_longlist: a_verifier
+ligne_id: m04-000007
 raccordement: non
-raccordement_note: ''
 variantes: []
 recommandation: retenir
 motif_recommandation: >-

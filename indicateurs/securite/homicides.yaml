@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: homicides
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de victimes d'homicide volontaire (catégorie 0101 de la classification internationale des infractions ICCS,
   hors tentatives) enregistrées par la police et la gendarmerie au cours de l'année, rapporté à la population, pour
@@ -33,13 +32,12 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 17
 eligibilite_longlist: oui
-ligne_longlist: estat-032457
-raccordement: oui
-raccordement_note: >-
-  2000-2007 : taux ONUDC relayé par la Banque mondiale (VC.IHR.PSRC.P5, même concept : victimes d'homicide volontaire
-  pour 100 000 habitants, série 1995-2023, ligne m04-000395). Sur 2008-2023, l'écart avec Eurostat va de 0,01 à
-  0,035 point (Eurostat toujours plus bas, vraisemblablement le dénominateur de population) : raccordement par simple
-  juxtaposition ou par calage sur l'écart moyen 2008-2010.
+ligne_id: estat-032457
+raccordement: >-
+  oui : 2000-2007 : taux ONUDC relayé par la Banque mondiale (VC.IHR.PSRC.P5, même concept : victimes d'homicide
+  volontaire pour 100 000 habitants, série 1995-2023, ligne m04-000395). Sur 2008-2023, l'écart avec Eurostat va
+  de 0,01 à 0,035 point (Eurostat toujours plus bas, vraisemblablement le dénominateur de population) : raccordement
+  par simple juxtaposition ou par calage sur l'écart moyen 2008-2010.
 variantes:
 - serie_id: "010596040"
   ligne_id: bdm-000946
@@ -60,6 +58,22 @@ variantes:
   nature: 'concept voisin : tentatives d''homicide enregistrées, pour 100 000 habitants'
   eligible: oui
   periode: 2008-2024
+- serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=T&age=TOTAL&geo=FR
+  ligne_id: estat-001985
+  source: Eurostat
+  nature: >-
+    autre définition : taux standardisé de mortalité par homicide (causes médicales de décès), 2001-2023 ; ligne
+    de la long-list sante (règle 9) : rattachement à corriger (R1)
+  eligible: oui
+  periode: 2001-2023
+  longlist: sante
+- serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=M&sex=F&age=TOTAL&geo=FR
+  ligne_id: estat-001986
+  source: Eurostat
+  nature: 'même série ventilée par sexe ; ligne de la long-list sante : rattachement à corriger (R1)'
+  eligible: oui
+  periode: 2001-2023
+  longlist: sante
 - serie_id: crim_hom_soff?freq=A&iccs=ICCS0101&leg_stat=PER_VICT&sex=M&sex=F&unit=P_HTHAB&geo=FR
   ligne_id: estat-032458
   source: Eurostat
@@ -134,22 +148,6 @@ variantes:
   nature: 'ITDD : homicides pour 1 000 habitants, 2016-2024 (non éligible : 9 points)'
   eligible: non
   periode: 2016-2024
-- serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=T&age=TOTAL&geo=FR
-  ligne_id: estat-001985
-  source: Eurostat
-  nature: >-
-    autre définition : taux standardisé de mortalité par homicide (causes médicales de décès), 2001-2023 ; ligne
-    rattachée à sante dans la long-list (règle 9) : rattachement à corriger (R1)
-  eligible: oui
-  periode: 2001-2023
-  fichier: catalogues/longlist_sante.csv.gz
-- serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=M&sex=F&age=TOTAL&geo=FR
-  ligne_id: estat-001986
-  source: Eurostat
-  nature: 'même série ventilée par sexe ; ligne rattachée à sante : rattachement à corriger (R1)'
-  eligible: oui
-  periode: 2001-2023
-  fichier: catalogues/longlist_sante.csv.gz
 recommandation: retenir
 motif_recommandation: >-
   Indicateur incontournable (Doughnut, OCDE 10_1, Eurostat QoL), taux annuel 2008-2024 sans lacune et à sens non

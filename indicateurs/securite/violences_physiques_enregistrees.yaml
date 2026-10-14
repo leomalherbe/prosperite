@@ -7,14 +7,12 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_physiques
 variante_principale: non
-autres_fiches_famille:
-- victimes_violences_physiques
 definition: >-
   Nombre d'agressions graves (catégorie ICCS 020111, « serious assault » ; correspondance avec les coups et blessures
   volontaires de la nomenclature française à vérifier) enregistrées par la police et la gendarmerie dans l'année,
   pour 100 000 habitants.
 unite: infractions pour 100 000 habitants
-sens: bas
+sens: ambigu
 type: resultat
 declaratif: non
 composite: non
@@ -32,9 +30,8 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 17
 eligibilite_longlist: oui
-ligne_longlist: estat-000425
+ligne_id: estat-000425
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: >-
     https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Violences physiques enregistrées

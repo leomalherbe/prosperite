@@ -7,9 +7,6 @@ dimension: securite
 sous_theme: sentiment d'insécurité
 famille: insecurite_quartier
 variante_principale: non
-autres_fiches_famille:
-- delinquance_quartier
-- sentiment_insecurite_quartier
 definition: >-
   Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui se disent « beaucoup » ou « assez
   » préoccupées par l'insécurité dans leur quartier ou leur village (question OG04_4 du baromètre d'opinion de la
@@ -21,7 +18,7 @@ declaratif: oui
 composite: non
 incontournable: oui
 source_organisme: DREES (baromètre d'opinion)
-source_jeu: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
+source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
 source_serie_id: >-
   data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable OG04_4, modalités 1+2
@@ -35,9 +32,8 @@ derniere_annee: 2025
 geo: FM
 nb_points_depuis_2000: 12
 eligibilite_longlist: oui
-ligne_longlist: m04-000264
+ligne_id: m04-000264
 raccordement: non
-raccordement_note: ''
 variantes: []
 recommandation: retenir_variante
 motif_recommandation: >-

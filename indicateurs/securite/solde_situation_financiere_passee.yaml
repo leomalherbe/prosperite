@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: situation_financiere_percue
 variante_principale: oui
-autres_fiches_famille:
-- solde_situation_financiere_future
 definition: >-
   Solde des réponses (part des ménages déclarant une amélioration moins part déclarant une détérioration) à la question
   sur l'évolution de leur situation financière personnelle au cours des douze derniers mois, enquête mensuelle de
@@ -29,11 +27,9 @@ frequence: mensuelle
 premiere_annee: 1970
 derniere_annee: 2026
 geo: FM
-nb_points_depuis_2000:
 eligibilite_longlist: oui
-ligne_longlist: bdm-000702
+ligne_id: bdm-000702
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: "000857196"
   ligne_id: bdm-000712
@@ -43,7 +39,7 @@ variantes:
     », ce libellé dit « situation financière passée »)
   eligible: non
   periode: 1970-2026
-  fichier: catalogues/longlist_hors_grille.csv.gz
+  longlist: hors_grille
 recommandation: retenir
 motif_recommandation: >-
   Solde d'opinion mensuel de l'INSEE depuis 1970 sur l'évolution de la situation financière personnelle, rattaché

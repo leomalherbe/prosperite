@@ -7,13 +7,12 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: traite_etres_humains
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de victimes de la traite des êtres humains (exploitation sexuelle, travail forcé, autres formes) identifiées
   ou présumées par les autorités dans l'année, pour 100 000 habitants (indicateur de développement durable de l'UE,
   ODD 16).
 unite: victimes pour 100 000 habitants
-sens: bas
+sens: ambigu
 type: resultat
 declaratif: non
 composite: non
@@ -31,9 +30,8 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 16
 eligibilite_longlist: oui
-ligne_longlist: estat-001995
+ligne_id: estat-001995
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: sdg_16_70?freq=A&sex=M&sex=F&leg_stat=PER_VICT&unit=P_HTHAB&geo=FR
   ligne_id: estat-001996

@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: capacite_epargne_percue
 variante_principale: non
-autres_fiches_famille:
-- solde_capacite_epargne_actuelle
 definition: >-
   Solde des réponses (amélioration moins détérioration) à la question sur la capacité du ménage à épargner dans
   les mois à venir, enquête Camme, France métropolitaine ; moyenne annuelle à calculer.
@@ -28,11 +26,9 @@ frequence: mensuelle
 premiere_annee: 1972
 derniere_annee: 2026
 geo: FM
-nb_points_depuis_2000:
 eligibilite_longlist: oui
-ligne_longlist: bdm-000704
+ligne_id: bdm-000704
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: "000857198"
   ligne_id: bdm-000714

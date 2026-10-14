@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux biens
 famille: vols
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de vols sans violence (catégorie ICCS 0502 : vols de biens, y compris de véhicules) enregistrés par la
   police et la gendarmerie dans l'année, pour 100 000 habitants.
@@ -30,9 +29,8 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 17
 eligibilite_longlist: oui
-ligne_longlist: estat-000435
+ligne_id: estat-000435
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: >-
     https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols sans violence enregistrés

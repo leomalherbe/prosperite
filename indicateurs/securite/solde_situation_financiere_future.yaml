@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: situation_financiere_percue
 variante_principale: non
-autres_fiches_famille:
-- solde_situation_financiere_passee
 definition: >-
   Solde des réponses (amélioration moins détérioration) à la question sur l'évolution attendue de leur situation
   financière personnelle au cours des douze prochains mois, enquête Camme, France métropolitaine ; moyenne annuelle
@@ -29,11 +27,9 @@ frequence: mensuelle
 premiere_annee: 1970
 derniere_annee: 2026
 geo: FM
-nb_points_depuis_2000:
 eligibilite_longlist: oui
-ligne_longlist: bdm-000703
+ligne_id: bdm-000703
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: "000857197"
   ligne_id: bdm-000713
@@ -41,7 +37,7 @@ variantes:
   nature: données CVS ; ligne classée hors grille par erreur (même cause que 000857196)
   eligible: non
   periode: 1970-2026
-  fichier: catalogues/longlist_hors_grille.csv.gz
+  longlist: hors_grille
 recommandation: retenir_variante
 motif_recommandation: >-
   Même enquête et même période (1970-2026), mais porte sur une anticipation et non sur la situation vécue : variante

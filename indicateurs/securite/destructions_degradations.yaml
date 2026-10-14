@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux biens
 famille: destructions_degradations
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de destructions et dégradations volontaires de biens (véhicules, logements, biens publics…) enregistrées
   par la police et la gendarmerie dans l'année, France entière (base des séries chronologiques du SSMSI).
@@ -18,7 +17,7 @@ declaratif: non
 composite: non
 incontournable: non
 source_organisme: SSMSI (ministère de l'Intérieur)
-source_jeu: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+source_jeu: base des séries chronologiques (data.gouv.fr)
 source_serie_id: >-
   https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Destructions et dégradations
   volontaires (ensemble) enregistrées par les services de sécurité (Données annuelles) » ; Indicateur=Destructions
@@ -33,9 +32,8 @@ derniere_annee: 2025
 geo: FR
 nb_points_depuis_2000: 10
 eligibilite_longlist: oui
-ligne_longlist: m04-000281
+ligne_id: m04-000281
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_degrad)
   ligne_id: m04-000306

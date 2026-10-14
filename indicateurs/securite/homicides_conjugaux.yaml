@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: homicides_conjugaux
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de victimes d'homicide volontaire dont l'auteur est le partenaire intime (conjoint, concubin, partenaire
   ou ancien partenaire), enregistrées par la police, rapporté à la population, pour 100 000 habitants.
@@ -30,9 +29,8 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 10
 eligibilite_longlist: oui
-ligne_longlist: estat-032477
-raccordement: non
-raccordement_note: Aucune série antérieure à 2015 dans les catalogues.
+ligne_id: estat-032477
+raccordement: 'non : Aucune série antérieure à 2015 dans les catalogues.'
 variantes:
 - serie_id: crim_hom_vrel?freq=A&pers_cat=FAM&sex=T&unit=P_HTHAB&geo=FR
   ligne_id: estat-032475

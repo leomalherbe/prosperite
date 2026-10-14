@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: insecurite_economique_ressentie
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui répondent « oui, plutôt » à la
   question : « pensez-vous qu'il y a un risque que vous deveniez pauvre dans les cinq prochaines années ? » (question
@@ -19,7 +18,7 @@ declaratif: oui
 composite: non
 incontournable: non
 source_organisme: DREES (baromètre d'opinion)
-source_jeu: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
+source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
 source_serie_id: >-
   data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable PE03, modalités 1
@@ -33,9 +32,8 @@ derniere_annee: 2025
 geo: FM
 nb_points_depuis_2000: 11
 eligibilite_longlist: oui
-ligne_longlist: m04-000263
+ligne_id: m04-000263
 raccordement: non
-raccordement_note: ''
 variantes: []
 recommandation: retenir
 motif_recommandation: >-

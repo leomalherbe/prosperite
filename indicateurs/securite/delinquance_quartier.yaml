@@ -7,9 +7,6 @@ dimension: securite
 sous_theme: sentiment d'insécurité
 famille: insecurite_quartier
 variante_principale: oui
-autres_fiches_famille:
-- sentiment_insecurite_quartier
-- preoccupation_insecurite_quartier
 definition: >-
   Part de la population vivant dans un ménage qui déclare des problèmes de délinquance, de violence ou de vandalisme
   dans son quartier (enquête européenne EU-SILC, volet français SRCV).
@@ -32,11 +29,10 @@ derniere_annee: 2023
 geo: FR
 nb_points_depuis_2000: 18
 eligibilite_longlist: oui
-ligne_longlist: estat-031893
-raccordement: non
-raccordement_note: >-
-  Question annuelle jusqu'en 2020, puis posée tous les trois ans (aucune valeur 2021-2022) : report de la dernière
-  valeur (D17).
+ligne_id: estat-031893
+raccordement: >-
+  non : Question annuelle jusqu'en 2020, puis posée tous les trois ans (aucune valeur 2021-2022) : report de la
+  dernière valeur (D17).
 variantes:
 - serie_id: sdg_16_20?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
   ligne_id: estat-002104

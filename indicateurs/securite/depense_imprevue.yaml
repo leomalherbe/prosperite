@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: depense_imprevue
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Part de la population vivant dans un ménage qui déclare ne pas pouvoir faire face, sur ses propres ressources,
   à une dépense imprévue d'un montant donné (fixé par pays, proche du seuil mensuel de pauvreté) (EU-SILC, volet
@@ -31,9 +30,8 @@ derniere_annee: 2025
 geo: FR
 nb_points_depuis_2000: 22
 eligibilite_longlist: oui
-ligne_longlist: estat-031706
+ligne_id: estat-031706
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: hlth_dm040?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
   ligne_id: estat-021838
@@ -63,14 +61,13 @@ variantes:
   periode: 2004-2025
 - serie_id: >-
     DS_SRCV_PMS?AGE=Y_GE16&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&PCS=_Z&QUANTILE_NIVVIE=_T&SEX=_T&SRCV_MEASURE=DIF_NON_PREVUE&TPH=_T&TSH=_T
-  ligne_id: ''
   source: INSEE Melodi
   nature: >-
     INSEE SRCV, 16 ans ou plus, dépense d'environ 1 000 €, 2020-2025 ; écartée du catalogue par M01 (6 points) ;
     raccordable à la série Eurostat (D16)
-  eligible: non (catalogue M01 « non »)
+  eligible: non (catalogue M01 des séries écartées)
   periode: 2020-2025
-  fichier: catalogues/insee_melodi_catalogue_non.csv.gz
+  catalogue: catalogues/insee_melodi_catalogue_non.csv.gz
 recommandation: retenir
 motif_recommandation: >-
   Indicateur phare de la sécurité économique (Eurostat QoL ; SSF, OCDE), annuel 2004-2025 sans lacune (34,2 % en

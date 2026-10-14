@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: sécurité routière
 famille: blesses_route
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de personnes blessées dans un accident de la circulation routière dans l'année, rapporté à la population,
   par million d'habitants (valeur nationale du jeu régional tran_r_acci).
@@ -30,9 +29,8 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 25
 eligibilite_longlist: oui
-ligne_longlist: estat-004427
+ligne_id: estat-004427
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: tran_sf_roadnu?freq=A&unit=P_MHAB&geo=FR
   ligne_id: estat-037472

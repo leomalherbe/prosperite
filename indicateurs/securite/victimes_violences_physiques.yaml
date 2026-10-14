@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_physiques
 variante_principale: oui
-autres_fiches_famille:
-- violences_physiques_enregistrees
 definition: >-
   Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi au moins une violence
   physique dans l'année, qu'elles aient porté plainte ou non (enquêtes CVS puis VRS ; composante de l'indicateur
@@ -31,9 +29,8 @@ derniere_annee: 2023
 geo: FM
 nb_points_depuis_2000: 12
 eligibilite_longlist: oui
-ligne_longlist: bdm-000950
-raccordement: non
-raccordement_note: Même rupture CVS/VRS que victimes_violences (aucune valeur 2019-2020).
+ligne_id: bdm-000950
+raccordement: 'non : Même rupture CVS/VRS que victimes_violences (aucune valeur 2019-2020).'
 variantes:
 - serie_id: 'odd_16 : 16_1_3_VC_VOV_PHY_ASLT._T._T._T._T._T.PT_POP'
   ligne_id: m04-000136

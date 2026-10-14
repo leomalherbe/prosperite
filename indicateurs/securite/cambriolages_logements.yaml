@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux biens
 famille: cambriolages
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de cambriolages et tentatives de cambriolage de locaux d'habitation privés (catégorie ICCS 05012) enregistrés
   par la police et la gendarmerie dans l'année, pour 100 000 habitants.
@@ -30,10 +29,9 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 14
 eligibilite_longlist: oui
-ligne_longlist: estat-000434
-raccordement: oui
-raccordement_note: >-
-  Lacune 2017-2019 dans la série Eurostat : à combler par la série SSMSI des cambriolages de logements (nombre,
+ligne_id: estat-000434
+raccordement: >-
+  oui : Lacune 2017-2019 dans la série Eurostat : à combler par la série SSMSI des cambriolages de logements (nombre,
   2016-2025, ligne m04-000276) rapportée à la population, après contrôle de l'écart sur 2016 et 2020-2024. Pas de
   série avant 2008 au catalogue.
 variantes:

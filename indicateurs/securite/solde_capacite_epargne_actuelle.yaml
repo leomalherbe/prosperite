@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: capacite_epargne_percue
 variante_principale: oui
-autres_fiches_famille:
-- solde_capacite_epargne_future
 definition: >-
   Solde des réponses (favorable moins défavorable) à la question sur la capacité actuelle du ménage à épargner,
   enquête mensuelle de conjoncture auprès des ménages (Camme), France métropolitaine ; moyenne annuelle des 12 mois
@@ -29,11 +27,9 @@ frequence: mensuelle
 premiere_annee: 1970
 derniere_annee: 2026
 geo: FM
-nb_points_depuis_2000:
 eligibilite_longlist: oui
-ligne_longlist: bdm-000701
+ligne_id: bdm-000701
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: "000857195"
   ligne_id: bdm-000711

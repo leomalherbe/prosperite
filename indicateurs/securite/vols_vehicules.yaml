@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: atteintes aux biens
 famille: vols_vehicules
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de vols de véhicules à moteur ou de leurs pièces (catégorie ICCS 05021) enregistrés par la police et la
   gendarmerie dans l'année, pour 100 000 habitants.
@@ -30,11 +29,10 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 14
 eligibilite_longlist: oui
-ligne_longlist: estat-000436
-raccordement: oui
-raccordement_note: >-
-  Lacune 2017-2019 : à combler par la série SSMSI des vols de véhicules (nombre, 2016-2025, base des séries chronologiques,
-  non cataloguée par M04 ; la variante ITDD en taux couvre 2016-2024).
+ligne_id: estat-000436
+raccordement: >-
+  oui : Lacune 2017-2019 : à combler par la série SSMSI des vols de véhicules (nombre, 2016-2025, base des séries
+  chronologiques, non cataloguée par M04 ; la variante ITDD en taux couvre 2016-2024).
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable infrac_tx_vols_vehic)
   ligne_id: m04-000305

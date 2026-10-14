@@ -7,9 +7,6 @@ dimension: securite
 sous_theme: sentiment d'insécurité
 famille: insecurite_quartier
 variante_principale: non
-autres_fiches_famille:
-- delinquance_quartier
-- preoccupation_insecurite_quartier
 definition: >-
   Nombre de personnes de 14 ans ou plus résidant en France métropolitaine qui déclarent se sentir en insécurité
   dans leur quartier ou leur village (enquête Cadre de vie et sécurité), à rapporter à la population de 14 ans ou
@@ -21,7 +18,7 @@ declaratif: oui
 composite: non
 incontournable: oui
 source_organisme: SSMSI (ministère de l'Intérieur)
-source_jeu: SSMSI (Interstats) — base des séries chronologiques (data.gouv.fr)
+source_jeu: base des séries chronologiques (data.gouv.fr)
 source_serie_id: >-
   https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment d'insécurité dans
   le quartier ou le village » ; Indicateur=Sentiment d'insécurité ; Sous_indicateur=Dans le quartier ou le village
@@ -35,11 +32,10 @@ derniere_annee: 2021
 geo: FM
 nb_points_depuis_2000: 14
 eligibilite_longlist: oui
-ligne_longlist: m04-000286
-raccordement: non
-raccordement_note: >-
-  Série arrêtée en 2021 (enquête CVS) ; la suite (enquête VRS depuis 2022) n'est pas dans la base des séries chronologiques
-  ni au catalogue.
+ligne_id: m04-000286
+raccordement: >-
+  non : Série arrêtée en 2021 (enquête CVS) ; la suite (enquête VRS depuis 2022) n'est pas dans la base des séries
+  chronologiques ni au catalogue.
 variantes:
 - serie_id: >-
     https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Sentiment d'insécurité

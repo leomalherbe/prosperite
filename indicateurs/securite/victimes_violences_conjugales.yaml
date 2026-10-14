@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: violences_intrafamiliales
 variante_principale: oui
-autres_fiches_famille:
-- violences_intrafamiliales_enregistrees
 definition: >-
   Part des personnes de 18 à 75 ans résidant en France métropolitaine qui déclarent avoir subi dans l'année au moins
   une violence physique ou sexuelle commise par leur conjoint ou ex-conjoint, qu'elles aient porté plainte ou non
@@ -31,9 +29,8 @@ derniere_annee: 2023
 geo: FM
 nb_points_depuis_2000: 12
 eligibilite_longlist: oui
-ligne_longlist: bdm-000952
-raccordement: non
-raccordement_note: Même rupture CVS/VRS que victimes_violences (aucune valeur 2019-2020).
+ligne_id: bdm-000952
+raccordement: 'non : Même rupture CVS/VRS que victimes_violences (aucune valeur 2019-2020).'
 variantes:
 - serie_id: "010594732"
   ligne_id: bdm-000815

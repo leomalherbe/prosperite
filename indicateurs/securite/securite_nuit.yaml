@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: sentiment d'insécurité
 famille: securite_nuit
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Part des personnes de 15 ans ou plus qui déclarent se sentir en sécurité lorsqu'elles marchent seules la nuit
   dans la ville ou le quartier où elles vivent (Gallup World Poll, relayé par l'OCDE, base How's Life?, mesure 10_2).
@@ -18,7 +17,7 @@ declaratif: oui
 composite: non
 incontournable: oui
 source_organisme: OCDE (relais du Gallup World Poll)
-source_jeu: OCDE — How's Life? (base du bien-être)
+source_jeu: How's Life? (base du bien-être)
 source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=10_2 UNIT_MEASURE=PT_POP_Y_GE15
 source_niveau: 1
 url_api: >-
@@ -29,10 +28,9 @@ premiere_annee: 2006
 derniere_annee: 2025
 geo: FR
 nb_points_depuis_2000: 7
-eligibilite_longlist: a_verifier (moins_de_10_points)
-ligne_longlist: m04-000065
+eligibilite_longlist: a_verifier
+ligne_id: m04-000065
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: >-
     https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Renoncement à sortir seul

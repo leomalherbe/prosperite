@@ -7,8 +7,6 @@ dimension: securite
 sous_theme: atteintes aux personnes
 famille: vols_violence
 variante_principale: non
-autres_fiches_famille:
-- victimes_vols_violence
 definition: >-
   Nombre de vols commis avec violence ou menace (catégorie ICCS 0401, « robbery ») enregistrés par la police et
   la gendarmerie dans l'année, pour 100 000 habitants.
@@ -31,9 +29,8 @@ derniere_annee: 2024
 geo: FR
 nb_points_depuis_2000: 17
 eligibilite_longlist: oui
-ligne_longlist: estat-000432
+ligne_id: estat-000432
 raccordement: non
-raccordement_note: ''
 variantes:
 - serie_id: >-
     https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols violents sans arme

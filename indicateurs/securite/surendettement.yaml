@@ -7,7 +7,6 @@ dimension: securite
 sous_theme: sécurité économique
 famille: surendettement
 variante_principale: oui
-autres_fiches_famille: []
 definition: >-
   Nombre de dossiers de surendettement déposés dans l'année auprès des commissions de surendettement de la Banque
   de France, France métropolitaine (indicateur national ODD 1.i5).
@@ -29,11 +28,10 @@ derniere_annee: 2024
 geo: FM
 nb_points_depuis_2000: 15
 eligibilite_longlist: oui
-ligne_longlist: bdm-000874
-raccordement: a_etudier
-raccordement_note: >-
-  2000-2009 : séries de la Banque de France (dépôts de dossiers, Webstat), dont l'API d'observations exige un compte
-  (D21) ; non cataloguées.
+ligne_id: bdm-000874
+raccordement: >-
+  a_etudier : 2000-2009 : séries de la Banque de France (dépôts de dossiers, Webstat), dont l'API d'observations
+  exige un compte (D21) ; non cataloguées.
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable nb_dossiers_deposes)
   ligne_id: m04-000308

@@ -196,10 +196,10 @@ observatoire-prosperite/
 | Phase | Contenu | Statut |
 |---|---|---|
 | 0 | Cadrage : charte, journal, arborescence, architecture, dépôt `leomalherbe/prosperite` (public), robots Tests et Collecte | **Fait (13/10/2026)** |
-| 1 | Inventaire des sources et API (M01 INSEE, M02 Eurostat, M04 autres sources) | **Phase 1 faite (13/10/2026)** : PR #1, #2, #4 |
-| 2 | Moissonnage des catalogues (M01/M02 phase 2, M04 phase 2, exécution GitHub Actions) | En cours |
-| 3 | Crosswalk des cadres (M03 phase 1, PR #3) **fait** ; grille v1 (M03 phase 2) puis **gel 1** | En cours |
-| 4 | Fiches indicateurs (M05), audit croisé (M06), validation par classeurs, **gel 2** ; puis socle v1 des bornes | Fiches M05/M06 publiées |
+| 1 | Inventaire des sources et API (M01 INSEE, M02 Eurostat, M04 autres sources) | **Fait (13/10/2026)** |
+| 2 | Moissonnage des catalogues (M01/M02 phase 2, M04 phase 2, exécution GitHub Actions) | **Fait (14/10/2026)** : 8 104 candidates INSEE, 31 375 séries éligibles Eurostat, 405 candidats autres sources ; collecte mensuelle automatique |
+| 3 | Crosswalk des cadres (M03), grille v1, **gel 1**, long-list (M05-prep) | **Fait** : gel 1 le 13/10/2026 (D23–D27), long-list opérationnelle le 14/10 |
+| 4 | Fiches indicateurs (M05), audit croisé (M06), validation par classeurs, **gel 2** ; puis socle v1 des bornes | Prochaine étape |
 | 5 | Pipeline de données et millésimes | À venir |
 | 6 | Front refondu (3 modes + jeu) | À venir |
 | 7 | Collecte des réponses, indice intersubjectif | À venir (recrutement des répondants à traiter plus tard) |

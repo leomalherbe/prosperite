@@ -1,0 +1,86 @@
+id: mortalite_cardiovasculaire
+libelle: Mortalité par maladies cardiovasculaires
+dimension: sante
+sous_theme: causes de décès
+famille: mortalite_cardiovasculaire
+variante_principale: oui
+definition: Taux standardisé de mortalité par maladies de l'appareil circulatoire (CIM-10 I00-I99), tous âges, France
+  (population standard européenne 2013).
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE-CépiDc)
+source_jeu: hlth_cd_asdr2 (causes de décès, taux standardisés)
+source_serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=I&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=I&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_cd_asdr2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000258
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Deuxième grande cause de décès après les cancers en taux standardisé, série annuelle de 2011
+  à 2023 (224,76 pour 100 000 en 2011, 163,26 en 2023) sans drapeau.
+note_pertinence: Les maladies cardiovasculaires sont une cible de la prévention (tabac, alimentation, activité physique)
+  et de la prise en charge (urgences, traitements). Leur taux standardisé baisse de 27 % entre 2011 et 2023. Les
+  cardiopathies ischémiques et les maladies cérébrovasculaires sont en variantes ; la série 1994-2010 (ancien jeu
+  hlth_cd_asdr) n'est pas au catalogue.
+variantes:
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=I&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000259
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=I&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000260
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=I20-I25&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000261
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=I20-I25&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000262
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=I20-I25&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000263
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=I60-I69&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000273
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=I60-I69&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000274
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=I60-I69&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000275
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2011
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 : en taux standardisé, les tumeurs malignes (253,11 en 2011,
+  218,58 en 2023) dépassent les maladies circulatoires sur toute la période lue.'

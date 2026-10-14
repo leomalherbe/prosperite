@@ -1,0 +1,56 @@
+id: reste_a_charge_menages
+libelle: Part des paiements directs des ménages dans la dépense de santé
+dimension: sante
+sous_theme: accès aux soins
+famille: reste_a_charge_menages
+variante_principale: oui
+definition: Paiements directs des ménages (reste à charge après assurance maladie obligatoire et complémentaire)
+  en pourcentage de la dépense courante de santé, France (comptes de la santé, système SHA).
+unite: '% de la dépense courante de santé'
+sens: bas
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après la DREES, comptes de la santé)
+source_jeu: hlth_sha11_hf (dépenses de santé par mécanisme de financement), HF3
+source_serie_id: hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF3&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF3&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_sha11_hf/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-011496
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la protection financière des ménages face aux soins, annuelle de 2006 à 2025 (20
+  points), qui complète le renoncement pour raisons financières.
+note_pertinence: 'La part des paiements directs mesure ce qui reste à la charge des ménages après remboursements
+  ; elle conditionne le renoncement aux soins des plus modestes. C''est une moyenne de financement, pas une mesure
+  par personne : la DREES publie aussi le reste à charge par habitant, non catalogué.'
+variantes:
+- serie_id: hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF31&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-011497
+  eligible: oui
+- serie_id: hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF32&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-011498
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_non_lues
+- moyen_financement
+notes: 'Valeurs non relues à la source (périodes de la long-list : 2006-2025, 20 points). Seul indicateur retenu
+  des comptes de la santé (les autres dépenses sont des moyens budgétaires, charte §3.4).'

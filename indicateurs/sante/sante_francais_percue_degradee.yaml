@@ -1,0 +1,66 @@
+id: sante_francais_percue_degradee
+libelle: Personnes estimant que l'état de santé des Français s'est détérioré
+dimension: sante
+sous_theme: perceptions
+famille: sante_francais_percue
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui estiment que l'état de santé
+  des Français s'est « un peu » ou « beaucoup » détérioré au cours des dernières années (question SA05, modalités
+  3 et 4, non-réponses au dénominateur).
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées,
+  question SA05
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA05, modalités 3+4
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA05, modalité 3
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA05, modalité 4
+formule: SA05 modalité 3 + SA05 modalité 4 (parts pondérées)
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+statut_serie: a_calculer
+rattachement_propose: 'hors long-list : question SA05 du baromètre DREES non cataloguée par M04 ; opinion sur la
+  société (D32) ; à cataloguer (maintenance SAN-3)'
+raccordement: 'non : pas d''enquête en 2003'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Opinion sur la société (D32) posée chaque année depuis 2000 sauf en 2003 (25 vagues ; 26,9
+  % en 2000, 61,2 % en 2025), valeur 2025 recoupée sur le tableau officiel de la DREES (61,24 %).
+note_pertinence: 'La question porte sur l''état de santé de la population et non sur sa propre santé : elle mesure
+  un pessimisme collectif qui a doublé en 25 ans, avec un saut en 2020 (40,3 % en 2019, 53,6 % en 2020). Elle évolue
+  bien plus que la santé perçue personnelle (68,8 % en bonne santé en 2005, 64,7 % en 2025 selon EU-SILC). La part
+  estimant que l''état de santé s''est amélioré (62,1 % en 2000, 11,4 % en 2025) en est le complément.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- a_calculer
+- calcul_sur_microdonnees
+- enquete_metropole
+- recoupement_partiel_D34
+- pas_d_enquete_2003
+notes: 'Parts calculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
+  des modalités 3 et 4, dictionnaire 2025 : 1 « beaucoup amélioré », 2 « un peu amélioré », 3 « un peu détérioré
+  », 4 « beaucoup détérioré », 5 « est resté identique »). Recoupement D34 : 2025 identique au tableau croisé officiel
+  (61,24 %) ; deux autres valeurs officielles à trouver.'

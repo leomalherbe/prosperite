@@ -1,0 +1,62 @@
+id: esperance_vie_sans_incapacite_65
+libelle: Années de vie en bonne santé à 65 ans
+dimension: sante
+sous_theme: espérance de vie
+famille: esperance_vie_sans_incapacite
+variante_principale: non
+definition: Nombre d'années qu'une personne de 65 ans peut espérer vivre sans limitation d'activité durable due
+  à un problème de santé (indicateur GALI), ensemble des sexes, France.
+unite: années
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat (d'après l'INSEE, SRCV et état civil)
+source_jeu: hlth_hlye (années de vie en bonne santé par sexe), modalité HLY_Y65
+source_serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=HLY_Y65&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=HLY_Y65&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_hlye/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2024
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-011314
+hors_longlist: non
+raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV (question GALI)'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Lecture aux âges de la retraite, annuelle de 2004 à 2024 (9,3 ans en 2004, 11,0 ans en 2019,
+  10,9 ans en 2024, provisoire), complément de l'espérance de vie à 65 ans.
+note_pertinence: La part de l'espérance de vie à 65 ans vécue sans incapacité est l'information la plus utile pour
+  les politiques du grand âge. La série progresse de 9,3 à 11,0 ans entre 2004 et 2019, culmine à 12,0 ans en 2021
+  après la rupture de 2020 et redescend à 10,9 ans en 2024.
+variantes:
+- serie_id: hlth_hlye?freq=A&unit=PC&sex=T&hlth_hle=HLY_LE_Y65_PC&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe et part de l'espérance de vie à 65 ans
+  ligne_id: estat-011308
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=PC&sex=M&sex=F&hlth_hle=HLY_LE_Y65_PC&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe et part de l'espérance de vie à 65 ans
+  ligne_id: estat-011309
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=HLY_Y65&geo=FR
+  source: Eurostat
+  nature: ventilation par sexe et part de l'espérance de vie à 65 ans
+  ligne_id: estat-011315
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- provisoire_2022_2024
+- composante_declarative_gali
+notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (hlth_hlye, HLY_Y65, sex=T).

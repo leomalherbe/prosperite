@@ -1,0 +1,115 @@
+id: suicide
+libelle: Taux de décès par suicide
+dimension: sante
+sous_theme: santé mentale
+famille: suicide
+variante_principale: oui
+definition: Taux standardisé de décès par suicide (lésions auto-infligées), France, indicateur national ODD 3.i3
+  (données du CépiDc de l'Inserm).
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (d'après l'Inserm-CépiDc)
+source_jeu: Indicateurs ODD nationaux (BDM)
+source_serie_id: '010599567'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010599567
+url_page: https://www.insee.fr/fr/statistiques/serie/010599567
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001043
+hors_longlist: non
+raccordement: 'a_etudier : série OCDE (ODD 3.4.2, 2000-2022, 13,1 en 2022) pour couvrir 2000-2010 (D16), standardisation
+  à vérifier'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD 3.i3 et mesure de santé mentale du cadre SSF, annuel de 2011 à 2023
+  (16,9 pour 100 000 en 2011, 13,0 en 2023).
+note_pertinence: Le suicide est l'issue la plus grave des troubles psychiques et l'une des rares mesures annuelles
+  de santé mentale. Le taux baisse de 16,9 à 13,0 pour 100 000 entre 2011 et 2023, avec des à-coups (15,8 en 2012,
+  14,2 en 2022). Les séries Eurostat, OCDE (2000-2022) et Santé publique France sont en variantes.
+variantes:
+- serie_id: '010593279'
+  source: INSEE BDM
+  nature: sexe, autres sources et définitions
+  ligne_id: bdm-000999
+  eligible: oui
+- serie_id: '010593280'
+  source: INSEE BDM
+  nature: sexe, autres sources et définitions
+  ligne_id: bdm-001000
+  eligible: oui
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/suicides-deces-france (taux_standardise)
+  source: Santé publique France — Odissé (Opendatasoft)
+  nature: sexe, autres sources et définitions
+  ligne_id: m04-000385
+  eligible: a_verifier
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=X60-X84_Y870&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-000390
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=X60-X84_Y870&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-000391
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=X60-X84_Y870&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-000392
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=X60-X64&unit=RT&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-021539
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=X60-X64&unit=RT&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-021540
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=X66-X84&unit=RT&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-021541
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=X66-X84&unit=RT&geo=FR
+  source: Eurostat
+  nature: sexe, autres sources et définitions
+  ligne_id: estat-021542
+  eligible: oui
+- serie_id: 'odd_3 : 3_4_2_OECD._T._T._T._T._T.DT_10P5HB'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: sexe, autres sources et définitions
+  ligne_id: m04-000123
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i3&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=P100000
+  source: INSEE Melodi
+  nature: sexe, autres sources et définitions
+  ligne_id: melodi-005535
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i3&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=P100000
+  source: INSEE Melodi
+  nature: sexe, autres sources et définitions
+  ligne_id: melodi-005722
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i3&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=P100000
+  source: INSEE Melodi
+  nature: sexe, autres sources et définitions
+  ligne_id: melodi-005723
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2011
+notes: Valeurs lues sur la BDM le 14/10/2026 (010599567, champ FE ; 2024 et 2025 sans valeur).

@@ -1,0 +1,48 @@
+id: natalite_adolescentes
+libelle: Taux de natalité des adolescentes
+dimension: sante
+sous_theme: périnatalité
+famille: natalite_adolescentes
+variante_principale: oui
+definition: Nombre de naissances pour 1 000 femmes de 15 à 19 ans (PNUD, d'après les Nations unies).
+unite: naissances pour 1 000 femmes de 15 à 19 ans
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: PNUD (d'après la Division de la population des Nations unies)
+source_jeu: Rapport sur le développement humain 2025, séries des indices composites (colonnes abr)
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes abr_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: https://hdr.undp.org/data-center/documentation-and-downloads
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000362
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de la cible ODD 3.7 (santé sexuelle et reproductive), annuel de 1990 à 2023 (3,5
+  pour 1 000 en 2023), à la limite du contenu de la dimension.
+note_pertinence: 'La natalité des adolescentes renseigne sur l''accès à la contraception et à l''éducation à la
+  sexualité ; elle est très basse en France. La santé reproductive n''est pas citée dans le contenu de la dimension
+  : la fiche est soumise à Léo pour décision.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- estimation_modelisee
+- niveau_2
+- licence_a_confirmer
+- hors_contenu_cite
+notes: 'Dernière valeur lue dans docs/sources/series/pnud__hdr25_series_composites_france.csv (3,507 en 2023). Variante
+  possible hors long-list : OCDE ODD 3.7.2 (2000-2021, 6,36 pour 1 000 en 2021, autre estimation).'

@@ -1,0 +1,53 @@
+id: naissances_prematurees
+libelle: Naissances prématurées
+dimension: sante
+sous_theme: périnatalité
+famille: naissances_prematurees
+variante_principale: oui
+definition: Part des naissances vivantes survenues avant 37 semaines d'aménorrhée, France (Santé publique France,
+  d'après le PMSI).
+unite: '% des naissances'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Santé publique France
+source_jeu: Odissé, jeu perinatalite-prematurite-france (tx_prematurite_inf37sa)
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/perinatalite-prematurite-france
+  (tx_prematurite_inf37sa)
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/perinatalite-prematurite-france/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/perinatalite-prematurite-france/information/
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2024
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000377
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de la santé à la naissance au catalogue, 13 années de 2012 à 2024 (6,69
+  % en 2024).
+note_pertinence: La prématurité est associée à la mortalité néonatale et aux handicaps de l'enfant. Une partie des
+  naissances prématurées est médicalement provoquée pour protéger la mère ou l'enfant, ce qui nuance la lecture.
+  Le taux de naissances de faible poids (7,45 % en 2024) est en variante.
+variantes:
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/perinatalite-prematurite-france
+    (tx_poids_naissance_inf_2500g)
+  source: Santé publique France — Odissé (Opendatasoft)
+  nature: concept voisin
+  ligne_id: m04-000378
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2012
+- source_administrative_pmsi
+notes: Dernières valeurs lues dans docs/sources/series/spf_odisse__perinatalite-prematurite-france.csv (6,688 %
+  en 2024 ; faible poids 7,447 %).

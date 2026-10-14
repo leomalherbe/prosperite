@@ -1,0 +1,87 @@
+id: obesite
+libelle: Obésité des adultes
+dimension: sante
+sous_theme: comportements et prévention
+famille: obesite
+variante_principale: oui
+definition: Part des adultes dont l'indice de masse corporelle (poids sur taille au carré) est au moins égal à 30,
+  d'après le poids et la taille déclarés (enquêtes EHIS et modules santé d'EU-SILC).
+unite: '% des adultes'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_02_10 (taux d'obésité selon l'IMC), modalité BMI_GE30
+source_serie_id: sdg_02_10?freq=A&unit=PC&bmi=BMI_GE30&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_02_10?freq=A&unit=PC&bmi=BMI_GE30&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_02_10/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 6
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-002032
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série nationale récente de l'obésité des adultes, 6 vagues de 2008 à 2025 (12,2 % en
+  2008, 16,3 % en 2025) admises comme série irrégulière (D17).
+note_pertinence: L'obésité est un facteur de risque majeur (diabète, maladies cardiovasculaires) lié à l'alimentation
+  et à l'activité physique (A2). Les vagues proviennent d'enquêtes différentes (EHIS et modules santé d'EU-SILC)
+  et reposent sur des déclarations, qui sous-estiment l'obésité mesurée. La surcharge pondérale, la série OCDE (2004-2019)
+  et l'obésité des élèves de 3e sont en variantes.
+variantes:
+- serie_id: sdg_02_10?freq=A&unit=PC&bmi=BMI25-29&geo=FR
+  source: Eurostat
+  nature: surcharge pondérale, autres sources
+  ligne_id: estat-002030
+  eligible: a_verifier
+- serie_id: sdg_02_10?freq=A&unit=PC&bmi=BMI_GE25&geo=FR
+  source: Eurostat
+  nature: surcharge pondérale, autres sources
+  ligne_id: estat-002031
+  eligible: a_verifier
+- serie_id: '010594404'
+  source: INSEE BDM
+  nature: surcharge pondérale, autres sources
+  ligne_id: bdm-001055
+  eligible: non
+- serie_id: '010594416'
+  source: INSEE BDM
+  nature: surcharge pondérale, autres sources
+  ligne_id: bdm-001056
+  eligible: non
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=13_5 UNIT_MEASURE=PT_POP_Y_GE15
+  source: OCDE — How's Life? (base du bien-être)
+  nature: surcharge pondérale, autres sources
+  ligne_id: m04-000099
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i2c&PCS=_T&SDG=SDG2&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: surcharge pondérale, autres sources
+  ligne_id: melodi-005716
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i2d&PCS=_T&SDG=SDG2&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: surcharge pondérale, autres sources
+  ligne_id: melodi-005717
+  eligible: non
+- serie_id: corpulence-surpoids-et-obesite-fra#obesite
+  source: Santé publique France (Esteban)
+  nature: obésité mesurée (étude Esteban 2015-2017, ponctuelle), hors long-list
+  preuve: docs/sources/series/spf_odisse__corpulence-surpoids-et-obesite-fra.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- poids_taille_declares
+- sources_d_enquete_multiples
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (sdg_02_10 : 2008, 2014, 2017, 2019, 2022, 2025 ; aucun drapeau).
+  L''attribution des vagues 2017 et 2022 aux modules santé d''EU-SILC est une hypothèse à vérifier dans les métadonnées.'

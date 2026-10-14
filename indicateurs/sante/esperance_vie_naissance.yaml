@@ -1,0 +1,156 @@
+id: esperance_vie_naissance
+libelle: Espérance de vie à la naissance
+dimension: sante
+sous_theme: espérance de vie
+famille: esperance_vie
+variante_principale: oui
+definition: Nombre moyen d'années que vivrait un nouveau-né soumis toute sa vie aux conditions de mortalité par
+  âge de l'année considérée, ensemble des sexes, France (Eurostat, d'après l'état civil de l'INSEE).
+unite: années
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE)
+source_jeu: demo_mlexpec (espérance de vie par âge et sexe)
+source_serie_id: demo_mlexpec?freq=A&unit=YR&sex=T&age=Y_LT1&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec?freq=A&unit=YR&sex=T&age=Y_LT1&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000399
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur retenu par quatre cadres de bien-être (§5 du crosswalk), annuel de 2000 à 2024
+  (79,2 ans en 2000, 83,0 ans en 2024, provisoire) et publié par Eurostat pour l'ensemble des sexes, alors que l'INSEE
+  ne publie ce niveau que par sexe (D35).
+note_pertinence: 'L''espérance de vie résume la mortalité à tous les âges : c''est l''indicateur de santé commun
+  aux cadres SSF, OCDE, Eurostat et INSEE. L''API Eurostat porte une rupture de série (« b ») en 2012 et en 2014
+  et des valeurs provisoires en 2023 et 2024 ; la baisse de 82,7 ans en 2019 à 82,2 ans en 2020-2022 traduit l''épidémie
+  de Covid-19. Les séries INSEE par sexe, plus longues (1946-2025 en métropole) et plus fraîches (2025 provisoire),
+  sont en variantes.'
+variantes:
+- serie_id: '001686946'
+  source: INSEE BDM
+  nature: 'INSEE : espérance de vie à la naissance par sexe'
+  ligne_id: bdm-000423
+  eligible: oui
+- serie_id: '001686951'
+  source: INSEE BDM
+  nature: 'INSEE : espérance de vie à la naissance par sexe'
+  ligne_id: bdm-000428
+  eligible: oui
+- serie_id: '001686956'
+  source: INSEE BDM
+  nature: 'INSEE : espérance de vie à la naissance par sexe'
+  ligne_id: bdm-000433
+  eligible: oui
+- serie_id: '001686961'
+  source: INSEE BDM
+  nature: 'INSEE : espérance de vie à la naissance par sexe'
+  ligne_id: bdm-000438
+  eligible: oui
+- serie_id: '010593270'
+  source: INSEE BDM
+  nature: 'INSEE : espérance de vie à la naissance par sexe'
+  ligne_id: bdm-000990
+  eligible: oui
+- serie_id: '010593271'
+  source: INSEE BDM
+  nature: 'INSEE : espérance de vie à la naissance par sexe'
+  ligne_id: bdm-000991
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=5_1 UNIT_MEASURE=Y
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autres voies et ventilations
+  ligne_id: m04-000030
+  eligible: oui
+- serie_id: demo_mlexpec?freq=A&unit=YR&sex=M&sex=F&age=Y_LT1&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-000400
+  eligible: oui
+- serie_id: demo_r_mlifexp?freq=A&unit=YR&sex=T&age=Y_LT1&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-002317
+  eligible: oui
+- serie_id: demo_r_mlifexp?freq=A&unit=YR&sex=M&sex=F&age=Y_LT1&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-002318
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y0&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-011316
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=LE_Y0&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-011317
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y0&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=F&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: 'INSEE Melodi : doublons techniques'
+  ligne_id: melodi-003819
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y0&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=M&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: 'INSEE Melodi : doublons techniques'
+  ligne_id: melodi-003820
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y0&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=F&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: 'INSEE Melodi : doublons techniques'
+  ligne_id: melodi-003821
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y0&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=M&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: 'INSEE Melodi : doublons techniques'
+  ligne_id: melodi-003822
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i1b&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: 'INSEE Melodi : doublons techniques'
+  ligne_id: melodi-005529
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i1b&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: 'INSEE Melodi : doublons techniques'
+  ligne_id: melodi-005530
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=TOTAL&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-000357
+  eligible: a_verifier
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=TOTAL&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-000358
+  eligible: a_verifier
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=TOTAL&geo=FR
+  source: Eurostat
+  nature: autres voies et ventilations
+  ligne_id: estat-000359
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2012
+- rupture_2014
+- provisoire_2023_2024
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (demo_mlexpec, sex=T, age=Y_LT1, geo=FR) : la série France
+  commence en 1998 ; cause des ruptures de 2012 et 2014 non documentée dans la réponse (l''entrée de Mayotte dans
+  le champ en 2014 est une hypothèse non vérifiée).'

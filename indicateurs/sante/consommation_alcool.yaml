@@ -1,0 +1,74 @@
+id: consommation_alcool
+libelle: Consommation d'alcool par habitant
+dimension: sante
+sous_theme: comportements et prévention
+famille: alcool
+variante_principale: oui
+definition: Consommation annuelle d'alcool pur par habitant de 15 ans ou plus, estimée d'après les ventes (indicateur
+  ODD 3.5.2, OCDE).
+unite: litres d'alcool pur par habitant de 15 ans ou plus
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: OCDE (d'après l'OMS et les données nationales de ventes)
+source_jeu: Base ODD de l'OCDE, objectif 3 (indicateur 3.5.2)
+source_serie_id: 'odd_3 : 3_5_2_OECD._T._T._T._T._T.L_PS'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_3,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000124
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de la cible ODD 3.5, annuel de 2000 à 2023 (10,4 litres en 2023), seule mesure
+  annuelle de la consommation d'alcool au catalogue.
+note_pertinence: L'alcool est un facteur de risque de cancers, de maladies du foie et d'accidents. Les ventes mesurent
+  le volume consommé mais pas sa répartition (consommations à risque) ; les modes de consommation déclarés de l'enquête
+  Baromètre (ODD national 3.i5, 4 vagues 2010-2021) sont en variantes.
+variantes:
+- serie_id: '010593284'
+  source: INSEE BDM
+  nature: consommation déclarée (enquête)
+  ligne_id: bdm-001004
+  eligible: a_verifier
+- serie_id: '010593285'
+  source: INSEE BDM
+  nature: consommation déclarée (enquête)
+  ligne_id: bdm-001005
+  eligible: a_verifier
+- serie_id: '010593286'
+  source: INSEE BDM
+  nature: consommation déclarée (enquête)
+  ligne_id: bdm-001006
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALCOOL_CONS1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i5&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: consommation déclarée (enquête)
+  ligne_id: melodi-005401
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALCOOL_CONS2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i5&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: consommation déclarée (enquête)
+  ligne_id: melodi-005402
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ALCOOL_CONS3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=3.i5&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: consommation déclarée (enquête)
+  ligne_id: melodi-005403
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- estimation_ventes
+notes: Dernière valeur lue dans docs/sources/series/ocde__odd_3.csv (10,4 en 2023, 24 périodes 2000-2023).

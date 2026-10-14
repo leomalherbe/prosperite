@@ -1,0 +1,51 @@
+id: mortalite_prematuree_mnt
+libelle: Mortalité prématurée par maladies non transmissibles (30-69 ans)
+dimension: sante
+sous_theme: mortalité
+famille: mortalite_prematuree
+variante_principale: non
+definition: Probabilité de décéder entre 30 et 70 ans d'une maladie cardiovasculaire, d'un cancer, du diabète ou
+  d'une maladie respiratoire chronique (indicateur ODD 3.4.1, estimations de l'OMS reprises par l'OCDE).
+unite: '% (probabilité de décès entre 30 et 70 ans)'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (d'après l'OMS)
+source_jeu: Base ODD de l'OCDE, objectif 3 (indicateur 3.4.1)
+source_serie_id: 'odd_3 : 3_4_1_SH_DTH_NCOM.Y30T69._T._T._T._T.FCTR_POP_MORT'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_3,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2000
+derniere_annee: 2021
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/ocde__odd_3.csv
+statut_serie: disponible
+rattachement_propose: 'hors long-list : série extraite par le robot M04 (docs/sources/series/ocde__odd_3.csv) mais
+  absente du catalogue des candidats M04 ; à cataloguer (maintenance SAN-1)'
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur de la cible ODD 3.4 (réduire d'un tiers en 2030 par rapport à 2015), 7 années de
+  2000 à 2021 (2000, 2005, 2010, 2015, 2019-2021 ; 10,2 % en 2021), admis comme série irrégulière (D17).
+note_pertinence: La cible ODD 3.4 fournit une borne officielle que la mortalité prématurée de l'INSEE n'a pas. Les
+  valeurs sont des estimations de l'OMS, révisées à chaque édition et publiées tous les cinq ans jusqu'en 2015.
+  La dernière valeur date de 2021.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- serie_irreguliere_D17
+- estimation_modelisee
+notes: Périodes lues dans docs/sources/series/ocde__odd_3.csv (2000, 2005, 2010, 2015, 2019-2021 ; dernière valeur
+  10,2 en 2021 ; 7,3 pour les femmes et 13,3 pour les hommes).

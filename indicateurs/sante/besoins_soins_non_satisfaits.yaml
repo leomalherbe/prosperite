@@ -1,0 +1,550 @@
+id: besoins_soins_non_satisfaits
+libelle: Besoins de soins médicaux non satisfaits
+dimension: sante
+sous_theme: accès aux soins
+famille: besoins_soins_non_satisfaits
+variante_principale: oui
+definition: Part des personnes de 16 ans ou plus déclarant avoir eu besoin d'un examen ou d'un traitement médical
+  au cours des 12 derniers mois sans l'obtenir parce qu'il était trop cher, trop éloigné ou à cause d'une liste
+  d'attente (enquête SRCV, volet français d'EU-SILC).
+unite: '% des 16 ans ou plus'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE, enquête SRCV)
+source_jeu: sdg_03_60 (besoins auto-déclarés de traitement médical non satisfaits)
+source_serie_id: sdg_03_60?freq=A&age=Y_GE16&sex=T&reason=TXP_TFAR_WLIST&unit=PC&quant_inc=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_60?freq=A&age=Y_GE16&sex=T&reason=TXP_TFAR_WLIST&unit=PC&quant_inc=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_03_60/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002026
+hors_longlist: non
+raccordement: 'a_etudier : chute non signalée de 2015 (2,8 % en 2014, 1,2 % en 2015) et ruptures de 2020 et 2022'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du tableau de bord ODD de l'UE et du cadre Qualité de vie d'Eurostat, annuel de
+  2008 à 2025 (1,9 % en 2008, 4,1 % en 2024, 3,7 % en 2025).
+note_pertinence: 'Les besoins non satisfaits pour raison de coût, de distance ou d''attente mesurent l''accès effectif
+  aux soins, y compris les délais (raison « liste d''attente »). La série a deux ruptures de fait : une chute non
+  signalée en 2015 et une remontée à 2,7 % en 2020 (rupture « b »), puis 4,1 % en 2024. Les raisons « trop loin
+  » et « liste d''attente » et la série par degré d''urbanisation (2004-2025) sont en variantes.'
+variantes:
+- serie_id: sdg_03_60?freq=A&age=Y_GE16&sex=M&sex=F&reason=TXP_TFAR_WLIST&unit=PC&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-002027
+  eligible: oui
+- serie_id: hlth_silc_08_r?freq=A&reason=TFAR&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004423
+  eligible: oui
+- serie_id: hlth_silc_08_r?freq=A&reason=TXP_TFAR_WLIST&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004425
+  eligible: oui
+- serie_id: hlth_silc_08_r?freq=A&reason=WLIST&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004426
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TFAR&deg_urb=TOTAL&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004945
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TFAR&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004946
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TFAR&deg_urb=TOTAL&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004947
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TFAR&deg_urb=TOTAL&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004948
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TXP_TFAR_WLIST&deg_urb=TOTAL&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004953
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TXP_TFAR_WLIST&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004954
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TXP_TFAR_WLIST&deg_urb=TOTAL&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004955
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=TXP_TFAR_WLIST&deg_urb=TOTAL&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004956
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=WLIST&deg_urb=TOTAL&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004957
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=WLIST&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004958
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=WLIST&deg_urb=TOTAL&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004959
+  eligible: oui
+- serie_id: hlth_silc_21?freq=A&reason=WLIST&deg_urb=TOTAL&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-004960
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=TFAR&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020059
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&reason=TFAR&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020060
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=TFAR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020061
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=TFAR&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020062
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=TXP_TFAR_WLIST&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020067
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=TXP_TFAR_WLIST&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020069
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=TXP_TFAR_WLIST&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020070
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=WLIST&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020071
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&reason=WLIST&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020072
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=WLIST&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020073
+  eligible: oui
+- serie_id: hlth_silc_08?freq=A&unit=PC&quant_inc=TOTAL&reason=WLIST&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020074
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020093
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020094
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020095
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020099
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020100
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020101
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020102
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020103
+  eligible: oui
+- serie_id: hlth_silc_13?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020104
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020129
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020130
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020131
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&reason=TFAR&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020132
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020137
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020138
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020139
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&reason=TXP_TFAR_WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020140
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020141
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020142
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020143
+  eligible: oui
+- serie_id: hlth_silc_14?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&reason=WLIST&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-020144
+  eligible: oui
+- serie_id: hlth_dh030?freq=A&unit=PC&reason=TXP_TFAR_WLIST&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-021937
+  eligible: oui
+- serie_id: hlth_dh030?freq=A&unit=PC&reason=TXP_TFAR_WLIST&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-021938
+  eligible: oui
+- serie_id: hlth_dh030?freq=A&unit=PC&reason=TXP_TFAR_WLIST&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-021939
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053967
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053968
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053969
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053970
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053971
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053972
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053973
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053974
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053975
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=NAT&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053976
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053977
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053978
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053982
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053983
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053984
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053985
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053986
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053987
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053991
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053992
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053993
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053994
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053995
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053996
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053997
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053998
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053999
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=NAT&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054000
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054001
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054002
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054006
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054007
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU27_2020_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054008
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054009
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054010
+  eligible: oui
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054011
+  eligible: oui
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053964
+  eligible: non
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053965
+  eligible: non
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053966
+  eligible: non
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053979
+  eligible: non
+- serie_id: hlth_silc_29?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053980
+  eligible: non
+- serie_id: hlth_silc_29?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&c_birth=NEU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053981
+  eligible: non
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053988
+  eligible: non
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053989
+  eligible: non
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-053990
+  eligible: non
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054003
+  eligible: non
+- serie_id: hlth_silc_30?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054004
+  eligible: non
+- serie_id: hlth_silc_30?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&reason=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure, raisons d'accès, autres jeux, handicap
+  ligne_id: estat-054005
+  eligible: non
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion ; variable SA27, modalité 2
+  source: DREES (baromètre d'opinion)
+  nature: 'autre source : renoncement à un examen ou traitement médical (2019-2025), hors long-list'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- chute_2015_non_signalee
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (sdg_03_60 et hlth_silc_21 : mêmes valeurs depuis 2008 ;
+  hlth_silc_21 donne 1,7 % en 2004). Déclaratif « non » : fait déclaré (méthode §4). Variante hors long-list : baromètre
+  DREES SA27 (renoncement à un examen ou traitement, 2019-2025, 11,3 % en 2025, calculé sur les distributions du
+  robot).'

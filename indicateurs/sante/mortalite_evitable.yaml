@@ -1,0 +1,71 @@
+id: mortalite_evitable
+libelle: Mortalité évitable (prévention et traitements)
+dimension: sante
+sous_theme: mortalité
+famille: mortalite_evitable
+variante_principale: oui
+definition: Taux standardisé de mortalité des moins de 75 ans pour les causes de décès évitables par la prévention
+  primaire ou par des soins appropriés et rapides (liste commune OCDE-Eurostat), France.
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE-CépiDc)
+source_jeu: sdg_03_42 (mortalité évitable par prévention et traitements)
+source_serie_id: sdg_03_42?freq=A&mortalit=TOTAL&sex=T&icd10=TOTAL&unit=RT&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_42?freq=A&mortalit=TOTAL&sex=T&icd10=TOTAL&unit=RT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_03_42/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002044
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du tableau de bord ODD de l'UE, annuel de 2011 à 2023 (214,83 pour 100 000 en 2011,
+  185,84 en 2019, 204,06 en 2021, 185,97 en 2023), sans drapeau.
+note_pertinence: 'La mortalité évitable mesure les décès qu''une prévention efficace ou des soins de qualité auraient
+  dû éviter : elle relie l''état de santé aux comportements et au système de soins. Elle a baissé jusqu''en 2019
+  puis remonté en 2020-2021 par sa composante « prévention » (125,53 en 2019, 145,24 en 2021), dont la liste de
+  causes comprend le Covid-19 (cause U_COV19 du jeu hlth_cd_apr). Sa composante traitable fait l''objet d''une fiche
+  variante.'
+variantes:
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=TOTAL&unit=RT&geo=FR
+  source: Eurostat
+  nature: même total (autre jeu) et années de vie perdues
+  ligne_id: estat-021531
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=TOTAL&unit=RT&geo=FR
+  source: Eurostat
+  nature: même total (autre jeu) et années de vie perdues
+  ligne_id: estat-021532
+  eligible: oui
+- serie_id: hlth_cd_ptpyll?freq=A&unit=YR&sex=T&mortalit=TOTAL&geo=FR
+  source: Eurostat
+  nature: même total (autre jeu) et années de vie perdues
+  ligne_id: estat-021627
+  eligible: oui
+- serie_id: hlth_cd_ptpyll?freq=A&unit=YR&sex=M&sex=F&mortalit=TOTAL&geo=FR
+  source: Eurostat
+  nature: même total (autre jeu) et années de vie perdues
+  ligne_id: estat-021628
+  eligible: oui
+- serie_id: sdg_03_42?freq=A&mortalit=PRVT&sex=T&icd10=TOTAL&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'composante : mortalité évitable par la prévention (2011-2023), hors catalogue des séries'
+  catalogue: jeu sdg_03_42 au catalogue des jeux, série vérifiée sur l'API Eurostat le 14/10/2026
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- covid_2020_2021
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (sdg_03_42 : TOTAL = PRVT + TRT, par exemple 147,19 + 67,64
+  = 214,83 en 2011). La modalité PRVT (prévention) n''est pas au catalogue des séries : variante ajoutée à la main.'

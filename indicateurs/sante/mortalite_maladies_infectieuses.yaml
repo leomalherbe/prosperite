@@ -1,0 +1,58 @@
+id: mortalite_maladies_infectieuses
+libelle: Mortalité par tuberculose, VIH et hépatites
+dimension: sante
+sous_theme: causes de décès
+famille: mortalite_maladies_infectieuses
+variante_principale: oui
+definition: Taux standardisé de mortalité dû à la tuberculose, au VIH et aux hépatites virales, France (indicateur
+  ODD de l'UE 3.41).
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE-CépiDc)
+source_jeu: sdg_03_41 (mortalité due à la tuberculose, au VIH et à l'hépatite)
+source_serie_id: sdg_03_41?freq=A&icd10=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_41?freq=A&icd10=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_03_41/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2001
+derniere_annee: 2023
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-001984
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de la cible ODD 3.3 (mettre fin aux épidémies), annuel de 2001 à 2023 (23 points),
+  seule mesure annuelle des maladies infectieuses au catalogue.
+note_pertinence: La cible ODD 3.3 vise la fin des épidémies de sida, de tuberculose et d'hépatites. Ces décès sont
+  rares en France, ce qui rend la série peu discriminante ; ses trois composantes sont en variantes.
+variantes:
+- serie_id: sdg_03_41?freq=A&icd10=A15-A19_B90&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-001981
+  eligible: oui
+- serie_id: sdg_03_41?freq=A&icd10=B15-B19_B942&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-001982
+  eligible: oui
+- serie_id: sdg_03_41?freq=A&icd10=B20-B24&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-001983
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_non_lues
+notes: 'Valeurs non relues à la source (périodes de la long-list : 2001-2023, 23 points).'

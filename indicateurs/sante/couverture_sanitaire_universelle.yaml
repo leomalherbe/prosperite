@@ -1,0 +1,55 @@
+id: couverture_sanitaire_universelle
+libelle: Indice de couverture des services de santé essentiels (OMS)
+dimension: sante
+sous_theme: accès aux soins
+famille: besoins_soins_non_satisfaits
+variante_principale: non
+definition: Indice de 0 à 100 de couverture des services de santé essentiels (santé reproductive et infantile, maladies
+  infectieuses, maladies non transmissibles, capacité et accès aux services), indicateur ODD 3.8.1 calculé par l'OMS
+  et repris par l'OCDE.
+unite: indice (0 à 100)
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+annee_reference: observation
+source_organisme: OCDE (d'après l'OMS)
+source_jeu: Base ODD de l'OCDE, objectif 3 (indicateur 3.8.1)
+source_serie_id: 'odd_3 : 3_8_1_SH_ACS_UNHC._T._T._T._T._T.IX'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_3,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2000
+derniere_annee: 2021
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/ocde__odd_3.csv
+statut_serie: disponible
+rattachement_propose: 'hors long-list : série extraite par le robot M04 (docs/sources/series/ocde__odd_3.csv) mais
+  absente du catalogue des candidats M04 ; indicateur du Doughnut (manque de services de santé) ; à cataloguer (maintenance
+  SAN-1)'
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur du Doughnut (seuil de privation à 60) et de la cible ODD 3.8, 7 années de 2000
+  à 2021 (85 en 2021) admises comme série irrégulière (D17).
+note_pertinence: L'indice résume l'accès aux services essentiels dans une perspective mondiale ; la France est très
+  au-dessus du seuil du Doughnut, ce qui le rend peu discriminant. Il complète les besoins non satisfaits déclarés,
+  plus sensibles aux difficultés d'accès en France.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- serie_irreguliere_D17
+- composite
+- estimation_modelisee
+notes: Périodes lues dans docs/sources/series/ocde__odd_3.csv (2000, 2005, 2010, 2015, 2017, 2019, 2021 ; 5 valeurs
+  distinctes ; dernière 85). Seuil du Doughnut lu dans docs/methodo/30_indicateurs_cadres_reference.csv.

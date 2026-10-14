@@ -1,0 +1,58 @@
+id: vaccination_ror
+libelle: Couverture vaccinale rougeole-oreillons-rubéole (deux doses) à 24 mois
+dimension: sante
+sous_theme: comportements et prévention
+famille: vaccination_enfants
+variante_principale: oui
+definition: Part des enfants de 24 mois ayant reçu deux doses de vaccin contre la rougeole, les oreillons et la
+  rubéole (certificats de santé du 24e mois, Santé publique France).
+unite: '% des enfants de 24 mois'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Santé publique France
+source_jeu: Odissé, jeu couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-france
+  (cs24_ror2)
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/couvertures-vaccinales-…-24eme-mois
+  (cs24_ror2)
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-france/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-france/information/
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000379
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de prévention annuel de 2010 à 2024 (92,7 % en 2024), la couverture la plus basse
+  des vaccins du nourrisson au catalogue, admis comme moyen (D19).
+note_pertinence: La couverture vaccinale des jeunes enfants mesure l'efficacité de la prévention ; la deuxième dose
+  de ROR (92,7 % en 2024) reste en dessous des autres vaccins du nourrisson. La couverture DTP-coqueluche-Hib (96,4
+  % en 2024, 2004-2024) et la série OCDE (ODD 3.b.1) sont en variantes.
+variantes:
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/couvertures-vaccinales-…-24eme-mois
+    (cs24_dtpch3)
+  source: Santé publique France — Odissé (Opendatasoft)
+  nature: autre vaccin, même source
+  ligne_id: m04-000380
+  eligible: oui
+- serie_id: 'odd_3 : 3_B_1_SH_ACS_MCV2._T._T._T._T._T.PT_POP_SUB'
+  source: OCDE (ODD 3.b.1)
+  nature: 'autre source : deuxième dose de vaccin contre la rougeole (2010-2023, 93 % en 2023), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- source_administrative
+notes: 'Valeurs lues dans docs/sources/series/spf_odisse__couvertures-vaccinales-issues-des-certificats-de-sante-du-24eme-mois-depuis-2004-france.csv
+  (cs24_ror2 2010-2024, 92,7 % ; cs24_dtpch3 96,4 % ; cs24_hep3 96,1 % ; cs24_pneu3 95,8 % en 2024). Cible d''élimination
+  de la rougeole (95 % selon l''OMS, de mémoire) : à vérifier.'

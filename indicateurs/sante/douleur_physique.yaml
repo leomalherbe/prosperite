@@ -1,0 +1,59 @@
+id: douleur_physique
+libelle: Personnes ayant ressenti une douleur physique la veille
+dimension: sante
+sous_theme: santé perçue et limitations
+famille: douleur_physique
+variante_principale: oui
+definition: Part des personnes de 15 ans ou plus déclarant avoir ressenti beaucoup de douleur physique la veille
+  de l'entretien (Gallup World Poll, moyennes pluriannuelles diffusées par l'OCDE, mesure 11_3).
+unite: '% des 15 ans ou plus'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: OCDE (d'après Gallup)
+source_jeu: How's Life? Well-being Database (bien-être actuel), mesure 11_3
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_3 UNIT_MEASURE=PT_POP_Y_GE15
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000078
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de la douleur ressentie au catalogue, 7 valeurs de 2006 à 2025 (32,96 % pour
+  2023-2025) admises comme série irrégulière (D17).
+note_pertinence: La douleur physique est une dimension du mal-être que la santé perçue ne capte qu'en partie. Les
+  valeurs sont des moyennes groupées sur deux ou trois ans d'un sondage international, répétées chaque année par
+  l'OCDE ; les conditions de réutilisation des données Gallup ne sont pas précisées.
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_3 UNIT_MEASURE=PT_POP_Y_GE15 SEX=F
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation par sexe
+  ligne_id: m04-000079
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=11_3 UNIT_MEASURE=PT_POP_Y_GE15 SEX=M
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation par sexe
+  ligne_id: m04-000080
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- source_gallup
+- moyennes_pluriannuelles
+- licence_a_confirmer
+notes: 'Lu dans docs/sources/series/ocde__hsl_bien_etre_actuel.csv (20 périodes 2006-2025, 7 valeurs distinctes,
+  dernière 32,9627) et docs/sources/autres_sources.md §7.4 (origine Gallup, moyennes groupées). Taille d''échantillon
+  : non trouvé.'

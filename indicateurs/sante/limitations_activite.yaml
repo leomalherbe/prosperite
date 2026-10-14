@@ -1,0 +1,994 @@
+id: limitations_activite
+libelle: Personnes limitées dans leurs activités par un problème de santé
+dimension: sante
+sous_theme: santé perçue et limitations
+famille: limitations_activite
+variante_principale: oui
+definition: Part des personnes de 16 ans ou plus limitées (fortement ou un peu) depuis au moins six mois, à cause
+  d'un problème de santé, dans les activités que les gens font habituellement (indicateur GALI, enquête SRCV).
+unite: '% des 16 ans ou plus'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat (d'après l'INSEE, enquête SRCV)
+source_jeu: hlth_silc_06 (limitation de longue durée perçue dans les activités usuelles), population totale, modalité
+  « quelque ou grave »
+source_serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&lev_limit=SM_SEV&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&lev_limit=SM_SEV&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_silc_06/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-011390
+hors_longlist: non
+raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept « limitations » du §5 du crosswalk et base de l'espérance de vie sans incapacité,
+  annuel de 2008 à 2025 (23,2 % en 2008, 25,8 % en 2025).
+note_pertinence: La limitation d'activité (GALI) mesure les conséquences fonctionnelles des problèmes de santé.
+  La série oscille entre 24 % et 26 % de 2009 à 2020, tombe à 22,7 % en 2021 puis remonte à 26,8 % en 2023 après
+  la rupture de 2022. Les limitations fortes (9,8 % en 2025) et la série du baromètre DREES sont en variantes.
+variantes:
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SEV&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004909
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&lev_limit=SEV&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004910
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SEV&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004911
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SEV&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004912
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011400
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011401
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011402
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011403
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011416
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&age=Y_GE16&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011417
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011418
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011419
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SM_SEV&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004913
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&lev_limit=SM_SEV&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004914
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SM_SEV&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004915
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SM_SEV&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004916
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011404
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011405
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011406
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011407
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011420
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&age=Y_GE16&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011421
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011422
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011423
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SOME&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004917
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&lev_limit=SOME&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004918
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SOME&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004919
+  eligible: oui
+- serie_id: hlth_silc_20?freq=A&deg_urb=TOTAL&lev_limit=SOME&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-004920
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011408
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011409
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011410
+  eligible: oui
+- serie_id: hlth_silc_07?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011411
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011424
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&age=Y_GE16&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011425
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011426
+  eligible: oui
+- serie_id: hlth_silc_12?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011427
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011387
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011388
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&lev_limit=SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011389
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011391
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&lev_limit=SM_SEV&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011392
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011393
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011394
+  eligible: oui
+- serie_id: hlth_silc_06?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&lev_limit=SOME&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-011395
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053739
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053740
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053741
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053835
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053836
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053837
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053742
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053743
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053744
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053838
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053839
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053840
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053745
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053746
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053747
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053841
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053842
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053843
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053751
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053752
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053753
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053847
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053848
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053849
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053754
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053755
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053756
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053850
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053851
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053852
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053757
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053758
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053759
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053853
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053854
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053855
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053763
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053764
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053765
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053859
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053860
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053861
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053766
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053767
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053768
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053862
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053863
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053864
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053769
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053770
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053771
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053865
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053866
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053867
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NAT&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053775
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053776
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053777
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NAT&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053871
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053872
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053873
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NAT&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053778
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053779
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053780
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NAT&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053874
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053875
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053876
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NAT&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053781
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053782
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053783
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NAT&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053877
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053878
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053879
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053799
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053800
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053801
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053895
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053896
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NEU27_2020_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053897
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053802
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053803
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053804
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053898
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053899
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NEU27_2020_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053900
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053805
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053806
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053807
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053901
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053902
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NEU27_2020_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053903
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053811
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053812
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053813
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053907
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053908
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053909
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053814
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053815
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053816
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053910
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053911
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053912
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053817
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053818
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053819
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053913
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053914
+  eligible: oui
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053915
+  eligible: oui
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+    et barometre2025_diff_csv ; variable SA03, modalités 1
+  source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: m04-000269
+  eligible: oui
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053727
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053728
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053729
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053823
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053824
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053825
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053730
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053731
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053732
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053826
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053827
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053828
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053733
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053734
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053735
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053829
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053830
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053831
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053787
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053788
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053789
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053883
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053884
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&lev_limit=SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053885
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053790
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053791
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053792
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053886
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053887
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&lev_limit=SM_SEV&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053888
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053793
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053794
+  eligible: non
+- serie_id: hlth_silc_27?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053795
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053889
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053890
+  eligible: non
+- serie_id: hlth_silc_28?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&lev_limit=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: limitations fortes, ventilations, autre source
+  ligne_id: estat-053891
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- non_standardise_age
+notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (hlth_silc_06, wstatus=POP). Série DREES SA03 instable (25,7
+  % en 2014, 17,5 % en 2018, calculés sur les distributions du robot).

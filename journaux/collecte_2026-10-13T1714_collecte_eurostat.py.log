@@ -1,0 +1,96 @@
+
+===== collecte_eurostat.py =====
+[17:14:49] Collecte Eurostat — étapes demandées : echantillons, amorce, niveau1, niveau2 ; durée max 270 min ; niveau 2 : sans limite jeux par passage
+[17:14:49] === Étape a : amorce (séries Eurostat des prototypes) ===
+[17:14:49] Téléchargement du TOC (en)…
+[17:14:52] TOC en : 1,967,646 caractères, 12,235 lignes
+[17:14:52]   gdp_pc               sdg_08_10    disponible                 2000–2025 (26)
+[17:14:52]   investment           sdg_08_11    disponible                 2000–2024 (25)
+[17:14:53]   employment           sdg_08_30    disponible                 2009–2025 (17)
+[17:14:53]   longunemp            sdg_08_40    disponible                 2009–2025 (17)
+[17:14:54]   neet                 sdg_08_20    disponible                 2003–2025 (23)
+[17:14:54]   inworkpoverty        sdg_01_41    disponible                 2004–2025 (22)
+[17:14:54]   fatalwork            sdg_08_60    disponible                 2010–2024 (15)
+[17:14:55]   arope                sdg_01_10    disponible                 2015–2025 (11)
+[17:14:55]   income_poverty       sdg_01_20    disponible                 2000–2025 (25)
+[17:14:55]   smsd                 sdg_01_31    disponible                 2015–2025 (11)
+[17:14:56]   lowwork              sdg_01_40    disponible                 2015–2025 (11)
+[17:14:56]   povertygap           sdg_10_30    disponible                 2000–2025 (25)
+[17:14:57]   s80s20               sdg_10_41    disponible                 2004–2025 (22)
+[17:14:57]   bottom40             sdg_10_50    disponible                 2000–2025 (24)
+[17:14:57]   regionalincome       sdg_10_20    sans donnée FR             – ()
+[17:14:58]   healthy_life         sdg_03_12    disponible                 2004–2024 (21)
+[17:14:58]   unmetcare            sdg_03_60    disponible                 2008–2025 (18)
+[17:14:59]   selfhealth           sdg_03_20    disponible                 2005–2025 (21)
+[17:14:59]   smoking              sdg_03_30    disponible (série courte)  2006–2023 (7)
+[17:14:59]   earlyleave           sdg_04_10    disponible                 2000–2025 (26)
+[17:15:00]   tertiary             sdg_04_20    disponible                 2000–2025 (26)
+[17:15:00]   lowpisa              sdg_04_40    disponible (série courte)  2000–2025 (9)
+[17:15:00]   adultlearning        sdg_04_60    disponible                 2000–2025 (26)
+[17:15:01]   digitalskills        sdg_04_70    disponible (série courte)  2021–2025 (3)
+[17:15:01]   paygap               sdg_05_20    disponible                 2006–2024 (19)
+[17:15:02]   empgap               sdg_05_30    disponible                 2009–2025 (17)
+[17:15:02]   womenparl            sdg_05_50    disponible                 2003–2025 (23)
+[17:15:02]   caregap              sdg_05_40    disponible                 2006–2025 (20)
+[17:15:03]   womenmanagers        sdg_05_60    code changé                – ()
+[17:15:03]   housecost2           sdg_01_50    disponible                 2004–2025 (21)
+[17:15:04]   severehousing        sdg_11_11    disponible                 2004–2023 (18)
+[17:15:04]   heatpoverty          sdg_07_60    disponible                 2004–2025 (22)
+[17:15:05]   noise                sdg_11_20    disponible                 2004–2023 (18)
+[17:15:05]   overcrowding         ilc_lvho05a  disponible                 2004–2025 (22)
+[17:15:05]   rooms                ilc_lvho03   disponible                 2004–2025 (22)
+[17:15:06]   roaddeaths           sdg_11_40    disponible                 2000–2024 (25)
+[17:15:06]   crimearea            sdg_16_20    disponible                 2004–2023 (18)
+[17:15:06]   publictransport      sdg_09_50    disponible                 2000–2024 (25)
+[17:15:07]   homicide             sdg_16_10    disponible                 2001–2023 (23)
+[17:15:07]   rdgdp                sdg_09_10    disponible                 2000–2024 (25)
+[17:15:08]   rdstaff              sdg_09_30    disponible                 2003–2024 (22)
+[17:15:08]   patents              sdg_09_40    disponible                 2004–2025 (22)
+[17:15:08]   fastnet              sdg_17_60    disponible (série courte)  2019–2025 (7)
+[17:15:09]   renewables           sdg_07_40    disponible                 2004–2025 (22)
+[17:15:09]   energyproductivity   sdg_07_30    disponible                 2000–2024 (25)
+[17:15:09]   energydependency     sdg_07_50    disponible                 2000–2024 (25)
+[17:15:10]   primaryenergy        sdg_07_10    disponible                 2005–2024 (20)
+[17:15:10]   finalenergy          sdg_07_11    disponible                 2005–2024 (20)
+[17:15:11]   houseenergy          sdg_07_20    disponible                 2000–2024 (25)
+[17:15:11]   ghgnet               sdg_13_11    à remplacer                – ()
+[17:15:12]   pmdeaths             sdg_11_52    disponible                 2005–2023 (18)
+[17:15:12]   lulucf               sdg_13_21    disponible                 1990–2024 (35)
+[17:15:12]   materialfoot         sdg_12_21    disponible                 2008–2025 (18)
+[17:15:13]   circularity          sdg_12_41    disponible                 2010–2024 (15)
+[17:15:13]   recycling            sdg_11_60    disponible                 2000–2024 (25)
+[17:15:14]   consumptionfoot      sdg_12_31    disponible                 2010–2024 (15)
+[17:15:14]   municipalwaste       cei_pc031    disponible                 2000–2024 (25)
+[17:15:14]   wasteops             env_wasmun   disponible                 1995–2024 (30)
+[17:15:15] ÉCHEC de l'étape amorce : IndexError('list index out of range')
+Traceback (most recent call last):
+  File "/home/runner/work/prosperite/prosperite/scripts/collecte_eurostat.py", line 602, in main
+    fonction(etat)
+  File "/home/runner/work/prosperite/prosperite/scripts/collecte_eurostat.py", line 310, in etape_amorce
+    note += " ; " + _verifier_remplacement(nouveau)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/prosperite/prosperite/scripts/collecte_eurostat.py", line 279, in _verifier_remplacement
+    lignes, _ = cat.construire_series(jeu, annee_min=0)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/prosperite/prosperite/src/pipeline/catalogue_eurostat.py", line 787, in construire_series
+    roles = attribuer_roles(jeu, avec_donnees, defauts_imposes)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/prosperite/prosperite/src/pipeline/catalogue_eurostat.py", line 672, in attribuer_roles
+    defauts[d.id] = "FR" if "FR" in codes else ("FX" if "FX" in codes else codes[0])
+                                                                           ~~~~~^^^
+IndexError: list index out of range
+[17:15:15] === Étape b : niveau 1 (jeux du TOC) ===
+[17:15:15] Téléchargement du TOC (fr)…
+[17:15:17] TOC fr : 2,120,378 caractères, 12,235 lignes
+[17:15:35]   {"entrees_toc": 12234, "codes_distincts_par_type": {"dataset": 6649, "folder": 1878, "table": 911}, "jeux": 7560, "jeux_par_filtre": {"retenu": 3053, "hors filtre": 2278, "exclu": 2229}, "jeux_retenus_par_filtres": 3053, "jeux_infra_annuels": 349, "candidats": 1897, "candidats_par_rattrapage": 401, "candidats_par_dimension": {"education": 428, "travail": 426, "niveau_de_vie": 305, "planete": 253, "sante": 195, "logement_cadre_vie": 113, "securite_confiance": 57, "": 49, "egalites": 45, "liens_bien_etre": 18, "democratie": 8}, "candidats_par_dossier": {"revenus_conditions_de_vie": 338, "education_formation": 300, "marche_du_travail": 300, "(mots-clés)": 226, "sante": 191, "sdg": 117, "environnement": 109, "numerique": 92, "population": 70, "energie": 62, "criminalite": 24, "culture": 24, "securite_transports": 18, "qualite_de_vie": 16, "comptes_nationaux": 10}, "jeux_prioritaires_non_candidats_par_motif": {"exclu": 1164, "hors filtre": 561, "infra-annuel (trimestrielle)": 125, "tableau (vue prédéfinie)": 45, "pays hors UE (voisinage, candidats)": 45, "infra-annuel (mensuelle)": 27, "infra-annuel (hebdomadaire)": 14, "tableau rangé sous le jeu isoc_ci_ac_i": 9, "tableau rangé sous le jeu hlth_cd_asdr2": 6, "tableau rangé sous le jeu edat_lfse_03": 6, "tableau rangé sous le jeu hlth_cd_ysdr2": 5, "infra-annuel (semestrielle)": 5, "tableau rangé sous le jeu nrg_bal_s": 5, "tableau rangé sous le jeu isoc_sk_dskl_i21": 4, "tableau rangé sous le jeu ilc_li02": 4, "tableau rangé sous le jeu hlth_rs_prs1": 3, "tableau rangé sous le jeu env_wasgen": 3, "tableau rangé sous le jeu nrg_bal_c": 3, "tableau rangé sous le jeu nama_10r_2hhinc": 2, "tableau rangé sous le jeu hlth_hlye": 2, "tableau rangé sous le jeu hlth_sha11_hc": 2, "tableau rangé sous le jeu lfsi_jhh_a": 2, "tableau rangé sous le jeu jvs_q_nace2": 2, "tableau rangé sous le jeu ilc_sip8": 2, "tableau rangé sous le jeu env_wat_abs": 2, "tableau rangé sous le jeu isoc_ci_ifp_iu": 2, "tableau rangé sous le jeu isoc_ci_ifp_fu": 2, "tableau rangé sous le jeu edat_lfse_04": 1, "tableau rangé sous le jeu hlth_cd_acdr2": 1, "tableau rangé sous le jeu lfst_r_lfe2emprt": 1, "tableau rangé sous le jeu isoc_r_iuse_i": 1, "tableau rangé sous le jeu isoc_r_blt12_i": 1, "tableau rangé sous le jeu ilc_peps11n": 1, "tableau rangé sous le jeu lfst_r_ergau": 1, "tableau rangé sous le jeu isoc_ec_ib20": 1, "tableau rangé sous le jeu hlth_rs_bds1": 1, "tableau rangé sous le jeu hlth_co_disch2": 1, "tableau rangé sous le jeu educ_uoe_grad10": 1, "tableau rangé sous le jeu lfsa_urgaed": 1, "tableau rangé sous le jeu edat_lfse_16": 1, "tableau rangé sous le jeu edat_lfse_24": 1, "tableau rangé sous le jeu lfsi_pt_a": 1, "tableau rangé sous le jeu lfsa_ergan": 1, "tableau rangé sous le jeu lfsa_ergaed": 1, "tableau rangé sous le jeu lfsa_egais": 1, "tableau rangé sous le jeu lfsa_e2gps": 1, "tableau rangé sous le jeu lfsa_ewhuis": 1, "tableau rangé sous le jeu lfst_r_lfu3rt": 1, "tableau rangé sous le jeu lfso_10fvareco": 1, "tableau rangé sous le jeu earn_mw_cur": 1, "tableau rangé sous le jeu lc_lci_lev": 1, "tableau rangé sous le jeu ilc_di11": 1, "tableau rangé sous le jeu ilc_di12": 1, "tableau rangé sous le jeu ilc_li07": 1, "tableau rangé sous le jeu ilc_mdsd11": 1, "tableau rangé sous le jeu ilc_mddd21": 1, "tableau rangé sous le jeu apro_cpsh1": 1, "tableau rangé sous le jeu env_ac_ainah_r2": 1, "tableau rangé sous le jeu env_air_emis_ind": 1, "tableau rangé sous le jeu env_air_gge": 1, "tableau rangé sous le jeu env_ac_mfa": 1, "tableau rangé sous le jeu env_ac_tax": 1, "tableau rangé sous le jeu env_ac_taxind2": 1, "tableau rangé sous le jeu env_epea_neep": 1, "tableau rangé sous le jeu env_epea_invte": 1, "tableau rangé sous le jeu env_wasfw": 1, "tableau rangé sous le jeu env_waspac": 1, "tableau rangé sous le jeu env_waspacr": 1, "tableau rangé sous le jeu env_wat_res": 1, "tableau rangé sous le jeu env_ww_spd": 1, "tableau rangé sous le jeu env_ac_rme": 1, "tableau rangé sous le jeu nrg_d_serq_n": 1, "tableau rangé sous le jeu nrg_ind_market": 1, "tableau rangé sous le jeu isoc_ci_in_h": 1, "tableau rangé sous le jeu isoc_ec_eseln2": 1, "tableau rangé sous le jeu isoc_ec_evaln2": 1, "tableau rangé sous le jeu isoc_eb_iip": 1, "tableau rangé sous le jeu isoc_bde15ag": 1, "tableau rangé sous le jeu isoc_bde15ap": 1, "tableau rangé sous le jeu isoc_bde15av": 1, "tableau rangé sous le jeu ilc_lvho07d": 1}}
+[17:15:35] === Étape c : niveau 2 (séries FR des jeux candidats) ===
+[17:15:42]   149826 lignes retirées (jeux à refaire ou non candidats)
+[17:15:42]   1897 jeux candidats ; 1896 déjà traités ; 1 à traiter
+[17:15:43]   [1/1] bop_iip6_q             erreur_donnees     séries     0 (éligibles 0, ventilations 0) 3 req. 1.2 s 413 413 EXTRACTION_TOO_BIG: The requested extraction is too big, estimated 15986880 rows, max authorised is 5000000, ple
+[17:15:44]   Catalogue des séries compressé : eurostat_series_catalogue.csv.gz (5.0 Mo)
+[17:15:44]   Passage terminé : 1 jeux traités, 1 restants
+[17:15:46] Bilan : {"fichier": "eurostat_series_catalogue.csv.gz", "octets": 4999107, "lignes": 191707, "series_defaut": 172272, "series_eligibles": 95836, "lignes_ventilation": 19435, "jeux_avec_series": 1791, "series_defaut_par_dimension": {"education": 77433, "travail": 34850, "niveau_de_vie": 29018, "planete": 21058, "sante": 6205, "democratie": 2445, "securite_confiance": 734, "logement_cadre_vie": 312, "egalites": 131, "liens_bien_etre": 84, "": 2}, "series_eligibles_par_dimension": {"education": 34108, "niveau_de_vie": 25792, "planete": 15578, "travail": 13192, "sante": 5533, "securite_confiance": 626, "democratie": 580, "logement_cadre_vie": 291, "egalites": 125, "liens_bien_etre": 9, "": 2}, "jeux_avec_serie_eligible_par_dimension": {"": 2, "democratie": 14, "education": 250, "egalites": 42, "liens_bien_etre": 9, "logement_cadre_vie": 101, "niveau_de_vie": 251, "planete": 201, "sante": 184, "securite_confiance": 44, "travail": 334}}
+[17:15:46] Fin : 67 requêtes (0 nouveaux essais), 4.8 Mo, 1.0 min
+----- collecte_eurostat.py : ÉCHEC (code 1) en 58 s
+
+Bilan : échecs : collecte_eurostat.py

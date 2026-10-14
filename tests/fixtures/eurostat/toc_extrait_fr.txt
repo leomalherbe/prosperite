@@ -1,0 +1,110 @@
+"title"	"code"	"type"	"last update of data"	"last table structure change"	"data start"	"data end"	"values"
+"Base de données par thèmes"	"data"	"folder"	" "	" "	" "	" "	
+"    Statistiques générales et régionales"	"general"	"folder"	" "	" "	" "	" "	
+"        Indicateurs européens et nationaux pour l'analyse à court terme"	"euroind"	"folder"	" "	" "	" "	" "	
+"            Balance des paiements"	"ei_bp"	"folder"	" "	" "	" "	" "	
+"                Compte courant - données trimestrielles"	"ei_bpm6ca_q"	"table"	"02.10.2026"	"02.10.2026"	"1991-Q1"	"2026-Q2"	314789
+"                Compte financier - données trimestrielles"	"ei_bpm6fa_q"	"table"	"02.10.2026"	"01.10.2026"	"1991-Q1"	"2026-Q2"	55918
+"                Compte courant - données mensuelles"	"ei_bpm6ca_m"	"table"	"18.09.2026"	"18.09.2026"	"1991-01"	"2026-07"	260325
+"                Compte financier - données mensuelles"	"ei_bpm6fa_m"	"table"	"18.09.2026"	"18.09.2026"	"1991-01"	"2026-07"	89327
+"                Position extérieure de l'investissement - données trimestrielles"	"ei_bpm6iip_q"	"table"	"02.10.2026"	"02.10.2026"	"1992-Q4"	"2026-Q2"	70743
+"            Enquêtes de conjoncture et de consommation"	"ei_bcs"	"folder"	" "	" "	" "	" "	
+"                Enquêtes de conjoncture et de consommation - indicateurs composites"	"ei_bcs_mi"	"folder"	" "	" "	" "	" "	
+"                    Indicateurs de confiance et du climat économique - données mensuelles"	"ei_bssi_m_r2"	"dataset"	"29.09.2026"	"29.09.2026"	"1980-01"	"2026-09"	142312
+"    Économie et finances"	"economy"	"folder"	" "	" "	" "	" "	
+"        Comptes nationaux (SEC 2010)"	"na10"	"folder"	" "	" "	" "	" "	
+"            Comptes nationaux annuels"	"nama10"	"folder"	" "	" "	" "	" "	
+"                PIB et composantes"	"nama_10_ma"	"folder"	" "	" "	" "	" "	
+"                    Produit intérieur brut (PIB) et principales composantes par habitant - données annuelles"	"nama_10_pc"	"dataset"	"09.10.2026"	"08.09.2026"	"1975"	"2025"	142261
+"                        PIB réel par habitant"	"sdg_08_10"	"table"	"09.10.2026"	"08.09.2026"	"2000"	"2025"	2062
+"    Population et conditions sociales"	"popul"	"folder"	" "	" "	" "	" "	
+"        Démographie, stock et bilan démographique"	"demo"	"folder"	" "	" "	" "	" "	
+"            Principaux indicateurs de population"	"demo_ind"	"folder"	" "	" "	" "	" "	
+"                Evolution de la population - Bilan démographique et taux bruts au niveau national"	"demo_gind"	"dataset"	"30.09.2026"	"30.09.2026"	"1960"	"2026"	64805
+"                    Population au 1er janvier"	"tps00001"	"table"	"30.09.2026"	"30.09.2026"	"2015"	"2026"	581
+"        Santé"	"hlth"	"folder"	" "	" "	" "	" "	
+"            Etat de santé"	"hlth_state"	"folder"	" "	" "	" "	" "	
+"                Santé perçue par soi-même et bien-être"	"hlth_sph"	"folder"	" "	" "	" "	" "	
+"                    Santé perçue par soi-même, par sexe, âge et quintile de revenu"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"        Marché du travail"	"labour"	"folder"	" "	" "	" "	" "	
+"            Emploi et chômage (Enquête sur les forces de travail)"	"employ"	"folder"	" "	" "	" "	" "	
+"                EFT - indicateurs principaux"	"lfsi"	"folder"	" "	" "	" "	" "	
+"                    Chômage - séries EFT ajustées"	"une"	"folder"	" "	" "	" "	" "	
+"                        Chômage par sexe et âge - données annuelles"	"une_rt_a"	"dataset"	"10.09.2026"	"12.03.2026"	"2003"	"2025"	39708
+"                Enquête sur les forces de travail (EFT) - données trimestrielles detaillées"	"lfsq"	"folder"	" "	" "	" "	" "	
+"                    Emploi"	"lfsq_emp"	"folder"	" "	" "	" "	" "	
+"                        Personnes en emploi par statut professionnel et profession - données trimestrielles"	"lfsq_egais"	"dataset"	"11.09.2026"	"11.09.2026"	"1998-Q1"	"2026-Q2"	14336337
+"        Conditions de vie et bien-être"	"livcon"	"folder"	" "	" "	" "	" "	
+"            Revenu et conditions de vie"	"ilc"	"folder"	" "	" "	" "	" "	
+"                Personnes en risque de pauvreté ou d'exclusion sociale (UE 2030 objectif)"	"ilc_pe"	"folder"	" "	" "	" "	" "	
+"                    -----"	"ilc_pe_"	"folder"	" "	" "	" "	" "	
+"                        Personnes en risque de pauvreté ou d'exclusion sociale - objectif UE2030"	"ilc_pecs01"	"dataset"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1536
+"                            Personnes en risque de pauvreté ou d'exclusion sociale"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"                Répartition du revenu et pauvreté monétaire"	"ilc_ip"	"folder"	" "	" "	" "	" "	
+"                    Pauvreté monétaire"	"ilc_li"	"folder"	" "	" "	" "	" "	
+"                        Taux de risque de pauvreté par seuil de pauvreté, âge et sexe - enquêtes EU-SILC et PCM"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"                Conditions de vie"	"ilc_lv"	"folder"	" "	" "	" "	" "	
+"                    Conditions de logement"	"ilc_lvho"	"folder"	" "	" "	" "	" "	
+"                        Taux de surpeuplement"	"ilc_lvho_or"	"folder"	" "	" "	" "	" "	
+"                            Taux de surpeuplement par âge, sexe et statut de pauvreté - population totale"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"                    Satisfaction de la vie et confiance"	"ilc_lst"	"folder"	" "	" "	" "	" "	
+"                        Satisfaction globale de la vie par sexe, âge et niveau d'éducation atteint"	"ilc_pw01"	"dataset"	"17.09.2026"	"08.06.2026"	"2013"	"2025"	36618
+"Thèmes transversaux"	"data"	"folder"	" "	" "	" "	" "	
+"    Politiques de l'UE"	"tb_eu"	"folder"	" "	" "	" "	" "	
+"        Indicateurs de développement durable"	"sdg"	"folder"	" "	" "	" "	" "	
+"            Objectif 1 - Pas de pauvreté"	"sdg_01"	"folder"	" "	" "	" "	" "	
+"                Personnes en risque de pauvreté ou d'exclusion sociale"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"            Objectif 8 - Travail décent et croissance économique"	"sdg_08"	"folder"	" "	" "	" "	" "	
+"                PIB réel par habitant"	"sdg_08_10"	"table"	"09.10.2026"	"08.09.2026"	"2000"	"2025"	2062
+"        Indicateurs de la politique de l'emploi et de la politique sociale"	"es"	"folder"	" "	" "	" "	" "	
+"            Relevé des résultats en matière de protection sociale - indicateurs"	"tespm"	"folder"	" "	" "	" "	" "	
+"                Personnes en risque de pauvreté ou d'exclusion sociale"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"            Indicateurs de l'intégration sociale et de la politique sociale"	"tesip"	"folder"	" "	" "	" "	" "	
+"                Investir dans les enfants"	"tesic"	"folder"	" "	" "	" "	" "	
+"                    Accés aux services de qualite"	"tesicq"	"folder"	" "	" "	" "	" "	
+"                        Indicateurs primaires"	"tesicqprim"	"folder"	" "	" "	" "	" "	
+"                            Taux de surpeuplement par âge, sexe et statut de pauvreté - population totale"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"        Socle européen des droits sociaux (SEDS)"	"tepsr"	"folder"	" "	" "	" "	" "	
+"            Protection et inclusion sociales"	"tepsr_spi"	"folder"	" "	" "	" "	" "	
+"                Protection et inclusion sociales-Indicateurs principaux"	"tepsr_spi_hi"	"folder"	" "	" "	" "	" "	
+"                    Risque de pauvreté ou d'exclusion social (AROPE) composantes et objectifs 2030"	"tepsr_spi_aro"	"folder"	" "	" "	" "	" "	
+"                        Personnes en risque de pauvreté ou d'exclusion sociale - objectif UE2030"	"ilc_pecs01"	"dataset"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1536
+"                            Personnes en risque de pauvreté ou d'exclusion sociale"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"    Thèmes transversaux"	"cc"	"folder"	" "	" "	" "	" "	
+"        Qualite de vie"	"qol"	"folder"	" "	" "	" "	" "	
+"            Conditions de vie matérielles"	"qol_mlc"	"folder"	" "	" "	" "	" "	
+"                Revenus"	"qol_mlc_i"	"folder"	" "	" "	" "	" "	
+"                    Taux de risque de pauvreté par seuil de pauvreté, âge et sexe - enquêtes EU-SILC et PCM"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"                Consommation"	"qol_mlc_c"	"folder"	" "	" "	" "	" "	
+"                    Produit intérieur brut (PIB) et principales composantes par habitant - données annuelles"	"nama_10_pc"	"dataset"	"09.10.2026"	"08.09.2026"	"1975"	"2025"	142261
+"                Conditions matérielles"	"qol_mlc_m"	"folder"	" "	" "	" "	" "	
+"                    Conditions de logement"	"qol_mlc_mh"	"folder"	" "	" "	" "	" "	
+"                        Taux de surpeuplement par âge, sexe et statut de pauvreté - population totale"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"            Santé"	"qol_hlt"	"folder"	" "	" "	" "	" "	
+"                État de santé"	"qol_hlt_st"	"folder"	" "	" "	" "	" "	
+"                    Santé perçue par soi-même, par sexe, âge et quintile de revenu"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"            Expérience générale de la vie"	"qol_lif"	"folder"	" "	" "	" "	" "	
+"                Satisfaction à l’égard de la vie"	"qol_life_sat"	"folder"	" "	" "	" "	" "	
+"                    Satisfaction globale de la vie par sexe, âge et niveau d'éducation atteint"	"ilc_pw01"	"dataset"	"17.09.2026"	"08.06.2026"	"2013"	"2025"	36618
+"        Egalité et non-discrimination"	"eq"	"folder"	" "	" "	" "	" "	
+"            Revenue et conditions de vie"	"eq_ilc"	"folder"	" "	" "	" "	" "	
+"                Inégalités de revenu et protection sociale"	"eq_in"	"folder"	" "	" "	" "	" "	
+"                    Taux de risque de pauvreté par seuil de pauvreté, âge et sexe - enquêtes EU-SILC et PCM"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"            Santé"	"eq_hlth"	"folder"	" "	" "	" "	" "	
+"                État de santé"	"eq_hstat"	"folder"	" "	" "	" "	" "	
+"                    Santé perçue par soi-même, par sexe, âge et quintile de revenu"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"            Marché du travail et salaires"	"eq_labour_earn"	"folder"	" "	" "	" "	" "	
+"                Chomage"	"eq_une"	"folder"	" "	" "	" "	" "	
+"                    Chômage par sexe et âge - données annuelles"	"une_rt_a"	"dataset"	"10.09.2026"	"12.03.2026"	"2003"	"2025"	39708
+"        Enfants et jeunesse"	"chldyth"	"folder"	" "	" "	" "	" "	
+"            Jeunesse"	"yth"	"folder"	" "	" "	" "	" "	
+"                Sante et bien-etre des jeunes"	"yth_health"	"folder"	" "	" "	" "	" "	
+"                    Santé perçue par soi-même, par sexe, âge et quintile de revenu"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"                Inclusion sociale des jeunes"	"yth_incl"	"folder"	" "	" "	" "	" "	
+"                    Taux de risque de pauvreté par seuil de pauvreté, âge et sexe - enquêtes EU-SILC et PCM"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"                    Taux de surpeuplement par âge, sexe et statut de pauvreté - population totale"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"        Logement"	"hous"	"folder"	" "	" "	" "	" "	
+"            Population et conditions sociales"	"hous_pop"	"folder"	" "	" "	" "	" "	
+"                Conditions de vie et bien-être"	"hous_ilc"	"folder"	" "	" "	" "	" "	
+"                    Conditions de logement"	"hous_ilc_con"	"folder"	" "	" "	" "	" "	
+"                        Taux de surpeuplement par âge, sexe et statut de pauvreté - population totale"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471

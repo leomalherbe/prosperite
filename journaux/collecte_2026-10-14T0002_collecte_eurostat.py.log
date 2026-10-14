@@ -1,0 +1,128 @@
+
+===== collecte_eurostat.py =====
+[00:02:38] Collecte Eurostat — étapes demandées : echantillons, amorce, niveau1, niveau2 ; durée max 270 min ; niveau 2 : sans limite jeux par passage
+[00:02:38] === Étape a : amorce (séries Eurostat des prototypes) ===
+[00:02:38] Téléchargement du TOC (en)…
+[00:02:42] TOC en : 1,967,646 caractères, 12,235 lignes
+[00:02:42]   gdp_pc               sdg_08_10    disponible                 2000–2025 (26)
+[00:02:43]   investment           sdg_08_11    disponible                 2000–2024 (25)
+[00:02:43]   employment           sdg_08_30    disponible                 2009–2025 (17)
+[00:02:43]   longunemp            sdg_08_40    disponible                 2009–2025 (17)
+[00:02:44]   neet                 sdg_08_20    disponible                 2003–2025 (23)
+[00:02:44]   inworkpoverty        sdg_01_41    disponible                 2004–2025 (22)
+[00:02:45]   fatalwork            sdg_08_60    disponible                 2010–2024 (15)
+[00:02:45]   arope                sdg_01_10    disponible                 2015–2025 (11)
+[00:02:45]   income_poverty       sdg_01_20    disponible                 2000–2025 (25)
+[00:02:46]   smsd                 sdg_01_31    disponible                 2015–2025 (11)
+[00:02:46]   lowwork              sdg_01_40    disponible                 2015–2025 (11)
+[00:02:47]   povertygap           sdg_10_30    disponible                 2000–2025 (25)
+[00:02:47]   s80s20               sdg_10_41    disponible                 2004–2025 (22)
+[00:02:48]   bottom40             sdg_10_50    disponible                 2000–2025 (24)
+[00:02:48]   regionalincome       sdg_10_20    sans donnée FR             – ()
+[00:02:49]   healthy_life         sdg_03_12    disponible                 2004–2024 (21)
+[00:02:49]   unmetcare            sdg_03_60    disponible                 2008–2025 (18)
+[00:02:49]   selfhealth           sdg_03_20    disponible                 2005–2025 (21)
+[00:02:50]   smoking              sdg_03_30    disponible (série courte)  2006–2023 (7)
+[00:02:50]   earlyleave           sdg_04_10    disponible                 2000–2025 (26)
+[00:02:51]   tertiary             sdg_04_20    disponible                 2000–2025 (26)
+[00:02:51]   lowpisa              sdg_04_40    disponible (série courte)  2000–2025 (9)
+[00:02:51]   adultlearning        sdg_04_60    disponible                 2000–2025 (26)
+[00:02:52]   digitalskills        sdg_04_70    disponible (série courte)  2021–2025 (3)
+[00:02:52]   paygap               sdg_05_20    disponible                 2006–2024 (19)
+[00:02:53]   empgap               sdg_05_30    disponible                 2009–2025 (17)
+[00:02:53]   womenparl            sdg_05_50    disponible                 2003–2025 (23)
+[00:02:54]   caregap              sdg_05_40    disponible                 2006–2025 (20)
+[00:02:54]   womenmanagers        sdg_05_60    code changé                – ()
+[00:02:55]   housecost2           sdg_01_50    disponible                 2004–2025 (21)
+[00:02:55]   severehousing        sdg_11_11    disponible                 2004–2023 (18)
+[00:02:56]   heatpoverty          sdg_07_60    disponible                 2004–2025 (22)
+[00:02:56]   noise                sdg_11_20    disponible                 2004–2023 (18)
+[00:02:57]   overcrowding         ilc_lvho05a  disponible                 2004–2025 (22)
+[00:02:57]   rooms                ilc_lvho03   disponible                 2004–2025 (22)
+[00:02:57]   roaddeaths           sdg_11_40    disponible                 2000–2024 (25)
+[00:02:58]   crimearea            sdg_16_20    disponible                 2004–2023 (18)
+[00:02:58]   publictransport      sdg_09_50    disponible                 2000–2024 (25)
+[00:02:59]   homicide             sdg_16_10    disponible                 2001–2023 (23)
+[00:02:59]   rdgdp                sdg_09_10    disponible                 2000–2024 (25)
+[00:02:59]   rdstaff              sdg_09_30    disponible                 2003–2024 (22)
+[00:03:00]   patents              sdg_09_40    disponible                 2004–2025 (22)
+[00:03:00]   fastnet              sdg_17_60    disponible (série courte)  2019–2025 (7)
+[00:03:01]   renewables           sdg_07_40    disponible                 2004–2025 (22)
+[00:03:01]   energyproductivity   sdg_07_30    disponible                 2000–2024 (25)
+[00:03:02]   energydependency     sdg_07_50    disponible                 2000–2024 (25)
+[00:03:02]   primaryenergy        sdg_07_10    disponible                 2005–2024 (20)
+[00:03:02]   finalenergy          sdg_07_11    disponible                 2005–2024 (20)
+[00:03:03]   houseenergy          sdg_07_20    disponible                 2000–2024 (25)
+[00:03:04]   ghgnet               sdg_13_11    à remplacer                – ()
+[00:03:04]   pmdeaths             sdg_11_52    disponible                 2005–2023 (18)
+[00:03:05]   lulucf               sdg_13_21    disponible                 1990–2024 (35)
+[00:03:05]   materialfoot         sdg_12_21    disponible                 2008–2025 (18)
+[00:03:06]   circularity          sdg_12_41    disponible                 2010–2024 (15)
+[00:03:06]   recycling            sdg_11_60    disponible                 2000–2024 (25)
+[00:03:06]   consumptionfoot      sdg_12_31    disponible                 2010–2024 (15)
+[00:03:07]   municipalwaste       cei_pc031    disponible                 2000–2024 (25)
+[00:03:07]   wasteops             env_wasmun   disponible                 1995–2024 (30)
+[00:03:08]   birds                sdg_15_60    à remplacer                – ()
+[00:03:09]   protectedland        sdg_15_20    disponible                 2011–2023 (13)
+[00:03:09]   erosion              sdg_15_50    disponible (série courte)  2000–2023 (4)
+[00:03:10]   forest               sdg_15_10    code changé                – ()
+[00:03:11]   drought              sdg_15_42    disponible                 2009–2024 (16)
+[00:03:11]   sealing              sdg_11_32    disponible (série courte)  2006–2021 (6)
+[00:03:12]   justiceind           sdg_16_40    disponible                 2016–2025 (10)
+[00:03:12]   cpi                  sdg_16_50    disponible                 2012–2025 (14)
+[00:03:12]   Bilan amorce : {'disponible': 55, 'disponible (série courte)': 6, 'code changé': 2, 'à remplacer': 2, 'sans donnée FR': 1}
+[00:03:12] === Étape b : niveau 1 (jeux du TOC) ===
+[00:03:12] Téléchargement du TOC (fr)…
+[00:03:15] TOC fr : 2,120,378 caractères, 12,235 lignes
+[00:03:40]   {"entrees_toc": 12234, "codes_distincts_par_type": {"dataset": 6649, "folder": 1878, "table": 911}, "jeux": 7560, "jeux_par_filtre": {"retenu": 3053, "hors filtre": 2278, "exclu": 2229}, "jeux_retenus_par_filtres": 3053, "jeux_infra_annuels": 346, "candidats": 1828, "candidats_par_rattrapage": 373, "candidats_par_dimension": {"travail": 397, "education": 383, "niveau_de_vie": 301, "planete": 264, "sante": 195, "logement_cadre_vie": 113, "securite_confiance": 57, "contexte": 47, "egalites": 45, "liens_bien_etre": 18, "democratie": 8}, "candidats_par_dossier": {"revenus_conditions_de_vie": 338, "education_formation": 300, "marche_du_travail": 288, "(mots-clés)": 237, "sante": 191, "sdg": 117, "environnement": 109, "population": 70, "energie": 62, "numerique": 27, "criminalite": 24, "culture": 21, "securite_transports": 18, "qualite_de_vie": 16, "comptes_nationaux": 10}, "jeux_prioritaires_non_candidats_par_motif": {"exclu": 1132, "hors filtre": 523, "infra-annuel (trimestrielle)": 125, "tableau (vue prédéfinie)": 45, "pays hors UE (voisinage, candidats)": 45, "infra-annuel (mensuelle)": 27, "entreprises ou échanges extérieurs (enquête sur le coût de la main-d'œuvre (par activité NACE))": 26, "entreprises ou échanges extérieurs (enquête TIC auprès des entreprises ou secteur des TIC)": 22, "entreprises ou échanges extérieurs (enquête sur le coût de la main-d'œuvre (par région NUTS 1))": 15, "infra-annuel (hebdomadaire)": 14, "entreprises ou échanges extérieurs (intégration numérique des entreprises)": 14, "entreprises ou échanges extérieurs (démographie des entreprises)": 12, "entreprises ou échanges extérieurs (usage des TIC par les entreprises)": 12, "tableau rangé sous le jeu isoc_ci_ac_i": 9, "entreprises ou échanges extérieurs (commerce électronique des entreprises)": 8, "entreprises ou échanges extérieurs (spécialistes TIC dans les entreprises)": 8, "tableau rangé sous le jeu hlth_cd_asdr2": 6, "tableau rangé sous le jeu edat_lfse_03": 6, "entreprises ou échanges extérieurs (statistiques structurelles d'entreprises)": 6, "tableau rangé sous le jeu hlth_cd_ysdr2": 5, "infra-annuel (semestrielle)": 5, "tableau rangé sous le jeu nrg_bal_s": 5, "tableau rangé sous le jeu isoc_sk_dskl_i21": 4, "tableau rangé sous le jeu ilc_li02": 4, "entreprises ou échanges extérieurs (émissions du secteur des TIC)": 4, "entreprises ou échanges extérieurs (médias sociaux des entreprises)": 4, "entreprises ou échanges extérieurs (sécurité informatique des entreprises)": 4, "entreprises ou échanges extérieurs (secteur des TIC (valeur ajoutée, emploi, R-D))": 4, "tableau rangé sous le jeu hlth_rs_prs1": 3, "tableau rangé sous le jeu env_wasgen": 3, "tableau rangé sous le jeu nrg_bal_c": 3, "entreprises ou échanges extérieurs (échanges extérieurs de biens et services TIC)": 3, "tableau rangé sous le jeu nama_10r_2hhinc": 2, "tableau rangé sous le jeu hlth_hlye": 2, "tableau rangé sous le jeu hlth_sha11_hc": 2, "tableau rangé sous le jeu lfsi_jhh_a": 2, "tableau rangé sous le jeu jvs_q_nace2": 2, "tableau rangé sous le jeu ilc_sip8": 2, "tableau rangé sous le jeu env_wat_abs": 2, "tableau rangé sous le jeu isoc_ci_ifp_iu": 2, "tableau rangé sous le jeu isoc_ci_ifp_fu": 2, "entreprises ou échanges extérieurs (sites web des entreprises)": 2, "entreprises ou échanges extérieurs (informatique en nuage des entreprises)": 2, "entreprises ou échanges extérieurs (intensité numérique des entreprises)": 2, "tableau rangé sous le jeu edat_lfse_04": 1, "tableau rangé sous le jeu hlth_cd_acdr2": 1, "tableau rangé sous le jeu lfst_r_lfe2emprt": 1, "tableau rangé sous le jeu isoc_r_iuse_i": 1, "tableau rangé sous le jeu isoc_r_blt12_i": 1, "tableau rangé sous le jeu ilc_peps11n": 1, "tableau rangé sous le jeu lfst_r_ergau": 1, "tableau rangé sous le jeu isoc_ec_ib20": 1, "entreprises ou échanges extérieurs (balance des paiements et position extérieure)": 1, "tableau rangé sous le jeu hlth_rs_bds1": 1, "tableau rangé sous le jeu hlth_co_disch2": 1, "tableau rangé sous le jeu educ_uoe_grad10": 1, "tableau rangé sous le jeu lfsa_urgaed": 1, "tableau rangé sous le jeu edat_lfse_16": 1, "tableau rangé sous le jeu edat_lfse_24": 1, "tableau rangé sous le jeu lfsi_pt_a": 1, "tableau rangé sous le jeu lfsa_ergan": 1, "tableau rangé sous le jeu lfsa_ergaed": 1, "tableau rangé sous le jeu lfsa_egais": 1, "tableau rangé sous le jeu lfsa_e2gps": 1, "tableau rangé sous le jeu lfsa_ewhuis": 1, "tableau rangé sous le jeu lfst_r_lfu3rt": 1, "tableau rangé sous le jeu lfso_10fvareco": 1, "tableau rangé sous le jeu earn_mw_cur": 1, "tableau rangé sous le jeu lc_lci_lev": 1, "tableau rangé sous le jeu ilc_di11": 1, "tableau rangé sous le jeu ilc_di12": 1, "tableau rangé sous le jeu ilc_li07": 1, "tableau rangé sous le jeu ilc_mdsd11": 1, "tableau rangé sous le jeu ilc_mddd21": 1, "tableau rangé sous le jeu apro_cpsh1": 1, "entreprises ou échanges extérieurs (commerce extérieur)": 1, "tableau rangé sous le jeu env_ac_ainah_r2": 1, "tableau rangé sous le jeu env_air_emis_ind": 1, "tableau rangé sous le jeu env_air_gge": 1, "tableau rangé sous le jeu env_ac_mfa": 1, "tableau rangé sous le jeu env_ac_tax": 1, "tableau rangé sous le jeu env_ac_taxind2": 1, "tableau rangé sous le jeu env_epea_neep": 1, "tableau rangé sous le jeu env_epea_invte": 1, "tableau rangé sous le jeu env_wasfw": 1, "tableau rangé sous le jeu env_waspac": 1, "tableau rangé sous le jeu env_waspacr": 1, "tableau rangé sous le jeu env_wat_res": 1, "tableau rangé sous le jeu env_ww_spd": 1, "tableau rangé sous le jeu env_ac_rme": 1, "tableau rangé sous le jeu nrg_ind_market": 1, "tableau rangé sous le jeu isoc_ci_in_h": 1, "tableau rangé sous le jeu isoc_ec_eseln2": 1, "tableau rangé sous le jeu isoc_ec_evaln2": 1, "tableau rangé sous le jeu isoc_eb_iip": 1, "tableau rangé sous le jeu isoc_bde15ag": 1, "tableau rangé sous le jeu isoc_bde15ap": 1, "tableau rangé sous le jeu isoc_bde15av": 1, "entreprises ou échanges extérieurs (secteur des TIC (R-D))": 1, "tableau rangé sous le jeu ilc_lvho07d": 1}}
+[00:03:40] === Étape c : niveau 2 (séries FR des jeux candidats) ===
+[00:03:43]   Révision des règles du niveau 2 (v5) : 16 jeux à refaire pour l'unité (582 séries par défaut) : env_ac_rp, naida_10_gdp, nama_10_a10, nama_10_a64_p5, nama_10_an6, nama_10_gdp, nama_10_lp_a21, nama_10_lp_ulc, nama_10_nfa_st, nama_10_pc, nama_10r_2lp10, nama_10r_2nlp, nama_10r_3nlp, prc_hicp_aind, prc_hicp_ainr, tipsho60
+[00:03:46]   102836 lignes retirées (jeux à refaire ou non candidats)
+[00:03:46]   1828 jeux candidats ; 1789 déjà traités ; 39 à traiter ; 0 à rafraîchir (vérifiés il y a plus de 90 jours)
+[00:03:46]   [1/39] nama_10_pc             ok                 séries     9 (éligibles 9, ventilations 0) 2 req. 0.6 s 
+[00:03:48]   [2/39] nama_10_gdp            ok                 séries    39 (éligibles 39, ventilations 0) 2 req. 1.2 s 
+[00:03:49]   [3/39] nama_10_a10            ok                 séries     4 (éligibles 4, ventilations 0) 2 req. 1.1 s 
+[00:03:50]   [4/39] nama_10_an6            ok                 séries    10 (éligibles 10, ventilations 0) 2 req. 0.8 s 
+[00:03:51]   [5/39] nama_10_a64_p5         ok                 séries    18 (éligibles 18, ventilations 0) 2 req. 1.1 s dimensions à total fixées à la requête (jeu volumineux)
+[00:03:52]   [6/39] nama_10_nfa_st         ok                 séries    28 (éligibles 28, ventilations 0) 2 req. 1.0 s dimensions à total fixées à la requête (jeu volumineux)
+[00:03:52]   [7/39] nama_10_lp_ulc         ok                 séries    11 (éligibles 11, ventilations 0) 2 req. 0.8 s 
+[00:03:53]   [8/39] nama_10_lp_a21         ok                 séries    95 (éligibles 95, ventilations 0) 2 req. 1.0 s 
+[00:03:55]   [9/39] nama_10r_2nlp          ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.1 s 
+[00:03:57]   [10/39] nama_10r_3nlp          ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 2.0 s 
+[00:03:58]   [11/39] nama_10r_2lp10         ok                 séries     3 (éligibles 3, ventilations 0) 2 req. 1.1 s 
+[00:03:59]   [12/39] naida_10_gdp           ok                 séries    29 (éligibles 29, ventilations 0) 2 req. 1.0 s 
+[00:04:00]   [13/39] prc_hicp_ainr          ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.6 s 
+[00:04:02]   [14/39] prc_hicp_aind          ok                 séries   440 (éligibles 408, ventilations 0) 2 req. 1.4 s 
+[00:04:02]   [15/39] tipsho60               ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 0.7 s 
+[00:04:03]   [16/39] for_remov              ok                 séries    12 (éligibles 12, ventilations 0) 2 req. 0.8 s 
+[00:04:04]   [17/39] for_owner              ok                 séries     3 (éligibles 3, ventilations 0) 2 req. 0.8 s 
+[00:04:05]   [18/39] for_vol_efa            ok                 séries    28 (éligibles 11, ventilations 0) 2 req. 0.8 s 
+[00:04:06]   [19/39] for_vol                ok                 séries     1 (éligibles 0, ventilations 0) 2 req. 0.8 s 
+[00:04:26]   [20/39] fish_ca_main           ok                 séries  2259 (éligibles 1099, ventilations 0) 49 req. 20.7 s dimensions à total fixées à la requête (jeu volumineux) ; découpage en 48 requêtes sur species
+[00:04:29]   [21/39] fish_ca_atl21          ok                 séries   773 (éligibles 0, ventilations 0) 7 req. 2.8 s dimensions à total fixées à la requête (jeu volumineux) ; découpage en 6 requêtes sur species
+[00:04:45]   [22/39] fish_ca_atl27          ok                 séries 12904 (éligibles 3928, ventilations 0) 36 req. 16.1 s dimensions à total fixées à la requête (jeu volumineux) ; découpage en 35 requêtes sur species
+[00:04:54]   [23/39] fish_ca_atl34          ok                 séries   912 (éligibles 169, ventilations 0) 20 req. 8.1 s dimensions à total fixées à la requête (jeu volumineux) ; découpage en 19 requêtes sur species
+[00:05:05]   [24/39] fish_ca_atl37          ok                 séries  2257 (éligibles 951, ventilations 0) 27 req. 11.1 s dimensions à total fixées à la requête (jeu volumineux) ; découpage en 26 requêtes sur species
+[00:05:06]   [25/39] fish_ca_atl41          ok                 séries   388 (éligibles 83, ventilations 0) 2 req. 0.8 s 
+[00:05:07]   [26/39] fish_ca_atl47          ok                 séries   395 (éligibles 39, ventilations 0) 2 req. 0.9 s 
+[00:05:08]   [27/39] fish_ca_ind51          ok                 séries   865 (éligibles 193, ventilations 0) 2 req. 1.0 s 
+[00:05:08]   [28/39] env_ac_rp              ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 0.8 s 
+[00:05:10]   [29/39] rd_e_gerdtot           ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.2 s 
+[00:05:11]   [30/39] rd_e_gerdsc            ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.6 s 
+[00:05:12]   [31/39] rd_e_fundgerd          ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.3 s 
+[00:05:14]   [32/39] rd_e_gerdfund          ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.7 s 
+[00:05:16]   [33/39] rd_e_gerdcost          ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.5 s 
+[00:05:17]   [34/39] rd_e_gerdact           ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.5 s 
+[00:05:19]   [35/39] rd_e_gerdsobj07        ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 1.3 s 
+[00:05:20]   [36/39] rd_p_persocc           ok                 séries     1 (éligibles 1, ventilations 1) 2 req. 1.7 s 
+[00:05:21]   [37/39] rd_p_persqual11        ok                 séries     1 (éligibles 1, ventilations 1) 2 req. 1.2 s 
+[00:05:23]   [38/39] rd_p_perssci           ok                 séries     1 (éligibles 1, ventilations 1) 2 req. 2.1 s 
+[00:05:24]   [39/39] gba_tncoor             ok                 séries     1 (éligibles 0, ventilations 0) 2 req. 0.8 s 
+[00:05:27]   Règles appliquées au catalogue : {"lignes_avant": 110374, "lignes": 91414, "lignes_ecartees": 18960, "lignes_deplacees_ce_passage": 18960, "lignes_resynchronisees": 1058}
+[00:05:29]   Catalogue des séries compressé : eurostat_series_catalogue.csv.gz (2.3 Mo)
+[00:05:29]   Passage terminé : 39 jeux traités, 0 restants, 0 à rafraîchir
+[00:05:31] Bilan : {"fichier": "eurostat_series_catalogue.csv.gz", "octets": 2273033, "lignes": 91414, "series_defaut": 71982, "series_eligibles": 43988, "lignes_ventilation": 19432, "jeux_avec_series": 1732, "series_defaut_par_dimension": {"planete": 41808, "niveau_de_vie": 10387, "education": 9391, "sante": 5933, "travail": 2858, "securite_confiance": 737, "logement_cadre_vie": 312, "contexte": 277, "egalites": 131, "liens_bien_etre": 79, "democratie": 69}, "series_eligibles_par_dimension": {"planete": 22022, "niveau_de_vie": 7208, "education": 5924, "sante": 5298, "travail": 2216, "securite_confiance": 629, "logement_cadre_vie": 291, "contexte": 241, "egalites": 125, "democratie": 29, "liens_bien_etre": 5}, "jeux_avec_serie_eligible_par_dimension": {"contexte": 38, "democratie": 8, "education": 230, "egalites": 42, "liens_bien_etre": 5, "logement_cadre_vie": 101, "niveau_de_vie": 248, "planete": 191, "sante": 152, "securite_confiance": 45, "travail": 341}, "lignes_ventilation_par_dimension_de_ventilation": {"sex": 11059, "age": 7390, "isced11": 255, "hhcomp": 203, "deg_urb": 150, "ind_type": 130, "iscedf13": 124, "quant_inc": 110, "hhtyp": 10, "quantile": 1}, "lignes_ventilation_par_dimension_v0": {"sante": 7757, "education": 7570, "travail": 2200, "niveau_de_vie": 1199, "logement_cadre_vie": 237, "liens_bien_etre": 220, "egalites": 77, "securite_confiance": 77, "democratie": 48, "contexte": 41, "planete": 6}, "unites_retenues_relatives": 180}
+[00:05:31] Fin : 279 requêtes (0 nouveaux essais), 19.0 Mo, 2.9 min
+----- collecte_eurostat.py : OK en 173 s
+
+Bilan : tous les scripts ont réussi

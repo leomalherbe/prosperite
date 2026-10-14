@@ -1,0 +1,110 @@
+"title"	"code"	"type"	"last update of data"	"last table structure change"	"data start"	"data end"	"values"
+"Database by themes"	"data"	"folder"	" "	" "	" "	" "	
+"    General and regional statistics"	"general"	"folder"	" "	" "	" "	" "	
+"        European and national indicators for short-term analysis"	"euroind"	"folder"	" "	" "	" "	" "	
+"            Balance of payments"	"ei_bp"	"folder"	" "	" "	" "	" "	
+"                Current account - quarterly data"	"ei_bpm6ca_q"	"table"	"02.10.2026"	"02.10.2026"	"1991-Q1"	"2026-Q2"	314789
+"                Financial account - quarterly data"	"ei_bpm6fa_q"	"table"	"02.10.2026"	"01.10.2026"	"1991-Q1"	"2026-Q2"	55918
+"                Current account - monthly data"	"ei_bpm6ca_m"	"table"	"18.09.2026"	"18.09.2026"	"1991-01"	"2026-07"	260325
+"                Financial account - monthly data"	"ei_bpm6fa_m"	"table"	"18.09.2026"	"18.09.2026"	"1991-01"	"2026-07"	89327
+"                International investment position - quarterly data"	"ei_bpm6iip_q"	"table"	"02.10.2026"	"02.10.2026"	"1992-Q4"	"2026-Q2"	70743
+"            Business and consumer surveys"	"ei_bcs"	"folder"	" "	" "	" "	" "	
+"                Business and consumer survey - composite indicators"	"ei_bcs_mi"	"folder"	" "	" "	" "	" "	
+"                    Economic sentiment and confidence indicators by sector - monthly data"	"ei_bssi_m_r2"	"dataset"	"29.09.2026"	"29.09.2026"	"1980-01"	"2026-09"	142312
+"    Economy and finance"	"economy"	"folder"	" "	" "	" "	" "	
+"        National accounts (ESA 2010)"	"na10"	"folder"	" "	" "	" "	" "	
+"            Annual national accounts"	"nama10"	"folder"	" "	" "	" "	" "	
+"                GDP and components"	"nama_10_ma"	"folder"	" "	" "	" "	" "	
+"                    Gross domestic product (GDP) and main components per capita - annual data"	"nama_10_pc"	"dataset"	"09.10.2026"	"08.09.2026"	"1975"	"2025"	142261
+"                        Real GDP per capita"	"sdg_08_10"	"table"	"09.10.2026"	"08.09.2026"	"2000"	"2025"	2062
+"    Population and social conditions"	"popul"	"folder"	" "	" "	" "	" "	
+"        Demography, population stock and balance"	"demo"	"folder"	" "	" "	" "	" "	
+"            Main population indicators"	"demo_ind"	"folder"	" "	" "	" "	" "	
+"                Population change - Demographic balance and crude rates at national level"	"demo_gind"	"dataset"	"30.09.2026"	"30.09.2026"	"1960"	"2026"	64805
+"                    Population on 1 January"	"tps00001"	"table"	"30.09.2026"	"30.09.2026"	"2015"	"2026"	581
+"        Health"	"hlth"	"folder"	" "	" "	" "	" "	
+"            Health status"	"hlth_state"	"folder"	" "	" "	" "	" "	
+"                Self-perceived health and well-being"	"hlth_sph"	"folder"	" "	" "	" "	" "	
+"                    Self-perceived health by sex, age and income quintile"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"        Labour market"	"labour"	"folder"	" "	" "	" "	" "	
+"            Employment and unemployment (Labour force survey)"	"employ"	"folder"	" "	" "	" "	" "	
+"                LFS main indicators"	"lfsi"	"folder"	" "	" "	" "	" "	
+"                    Unemployment - LFS adjusted series"	"une"	"folder"	" "	" "	" "	" "	
+"                        Unemployment by sex and age - annual data"	"une_rt_a"	"dataset"	"10.09.2026"	"12.03.2026"	"2003"	"2025"	39708
+"                Labour force survey (LFS) series - detailed quarterly data"	"lfsq"	"folder"	" "	" "	" "	" "	
+"                    Employment - LFS series"	"lfsq_emp"	"folder"	" "	" "	" "	" "	
+"                        Employed persons by professional status and occupation - quarterly data"	"lfsq_egais"	"dataset"	"11.09.2026"	"11.09.2026"	"1998-Q1"	"2026-Q2"	14336337
+"        Living conditions and welfare"	"livcon"	"folder"	" "	" "	" "	" "	
+"            Income and living conditions"	"ilc"	"folder"	" "	" "	" "	" "	
+"                Persons at risk of poverty or social exclusion (EU 2030 target)"	"ilc_pe"	"folder"	" "	" "	" "	" "	
+"                    -----"	"ilc_pe_"	"folder"	" "	" "	" "	" "	
+"                        Persons at risk of poverty or social exclusion - EU2030 target"	"ilc_pecs01"	"dataset"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1536
+"                            Persons at risk of poverty or social exclusion"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"                Income distribution and monetary poverty"	"ilc_ip"	"folder"	" "	" "	" "	" "	
+"                    Monetary poverty"	"ilc_li"	"folder"	" "	" "	" "	" "	
+"                        At-risk-of-poverty rate by poverty threshold, age and sex - EU-SILC and ECHP surveys"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"                Living conditions"	"ilc_lv"	"folder"	" "	" "	" "	" "	
+"                    Housing conditions"	"ilc_lvho"	"folder"	" "	" "	" "	" "	
+"                        Overcrowding rate"	"ilc_lvho_or"	"folder"	" "	" "	" "	" "	
+"                            Overcrowding rate by age, sex and poverty status - total population"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"                    Life satisfaction and trust"	"ilc_lst"	"folder"	" "	" "	" "	" "	
+"                        Overall life satisfaction by sex, age and educational attainment"	"ilc_pw01"	"dataset"	"17.09.2026"	"08.06.2026"	"2013"	"2025"	36618
+"Cross cutting topics"	"data"	"folder"	" "	" "	" "	" "	
+"    EU policies"	"tb_eu"	"folder"	" "	" "	" "	" "	
+"        Sustainable development indicators"	"sdg"	"folder"	" "	" "	" "	" "	
+"            Goal 1 - No poverty"	"sdg_01"	"folder"	" "	" "	" "	" "	
+"                Persons at risk of poverty or social exclusion"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"            Goal 8 - Decent work and economic growth"	"sdg_08"	"folder"	" "	" "	" "	" "	
+"                Real GDP per capita"	"sdg_08_10"	"table"	"09.10.2026"	"08.09.2026"	"2000"	"2025"	2062
+"        Employment and social policy indicators"	"es"	"folder"	" "	" "	" "	" "	
+"            Social protection performance monitor - indicators"	"tespm"	"folder"	" "	" "	" "	" "	
+"                Persons at risk of poverty or social exclusion"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"            Social inclusion and social policy indicators"	"tesip"	"folder"	" "	" "	" "	" "	
+"                Investing in children"	"tesic"	"folder"	" "	" "	" "	" "	
+"                    Access to quality services"	"tesicq"	"folder"	" "	" "	" "	" "	
+"                        Primary indicators"	"tesicqprim"	"folder"	" "	" "	" "	" "	
+"                            Overcrowding rate by age, sex and poverty status - total population"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"        European pillar of social rights (EPSR)"	"tepsr"	"folder"	" "	" "	" "	" "	
+"            Social protection and inclusion"	"tepsr_spi"	"folder"	" "	" "	" "	" "	
+"                Social protection and inclusion - headline indicators"	"tepsr_spi_hi"	"folder"	" "	" "	" "	" "	
+"                    At risk of poverty or social exclusion (AROPE) components and 2030 targets"	"tepsr_spi_aro"	"folder"	" "	" "	" "	" "	
+"                        Persons at risk of poverty or social exclusion - EU2030 target"	"ilc_pecs01"	"dataset"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1536
+"                            Persons at risk of poverty or social exclusion"	"sdg_01_10"	"table"	"05.10.2026"	"08.06.2026"	"2014"	"2025"	1520
+"    Cross cutting topics"	"cc"	"folder"	" "	" "	" "	" "	
+"        Quality of life"	"qol"	"folder"	" "	" "	" "	" "	
+"            Material living conditions"	"qol_mlc"	"folder"	" "	" "	" "	" "	
+"                Income"	"qol_mlc_i"	"folder"	" "	" "	" "	" "	
+"                    At-risk-of-poverty rate by poverty threshold, age and sex - EU-SILC and ECHP surveys"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"                Consumption"	"qol_mlc_c"	"folder"	" "	" "	" "	" "	
+"                    Gross domestic product (GDP) and main components per capita - annual data"	"nama_10_pc"	"dataset"	"09.10.2026"	"08.09.2026"	"1975"	"2025"	142261
+"                Material conditions"	"qol_mlc_m"	"folder"	" "	" "	" "	" "	
+"                    Housing conditions"	"qol_mlc_mh"	"folder"	" "	" "	" "	" "	
+"                        Overcrowding rate by age, sex and poverty status - total population"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"            Health"	"qol_hlt"	"folder"	" "	" "	" "	" "	
+"                Health status"	"qol_hlt_st"	"folder"	" "	" "	" "	" "	
+"                    Self-perceived health by sex, age and income quintile"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"            Overall experience of life"	"qol_lif"	"folder"	" "	" "	" "	" "	
+"                Life satisfaction"	"qol_life_sat"	"folder"	" "	" "	" "	" "	
+"                    Overall life satisfaction by sex, age and educational attainment"	"ilc_pw01"	"dataset"	"17.09.2026"	"08.06.2026"	"2013"	"2025"	36618
+"        Equality and non-discrimination"	"eq"	"folder"	" "	" "	" "	" "	
+"            Income and living conditions"	"eq_ilc"	"folder"	" "	" "	" "	" "	
+"                Income inequality and social protection"	"eq_in"	"folder"	" "	" "	" "	" "	
+"                    At-risk-of-poverty rate by poverty threshold, age and sex - EU-SILC and ECHP surveys"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"            Health"	"eq_hlth"	"folder"	" "	" "	" "	" "	
+"                Health status"	"eq_hstat"	"folder"	" "	" "	" "	" "	
+"                    Self-perceived health by sex, age and income quintile"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"            Labour market and earnings"	"eq_labour_earn"	"folder"	" "	" "	" "	" "	
+"                Unemployment"	"eq_une"	"folder"	" "	" "	" "	" "	
+"                    Unemployment by sex and age - annual data"	"une_rt_a"	"dataset"	"10.09.2026"	"12.03.2026"	"2003"	"2025"	39708
+"        Children and youth"	"chldyth"	"folder"	" "	" "	" "	" "	
+"            Youth"	"yth"	"folder"	" "	" "	" "	" "	
+"                Youth health and wellbeing"	"yth_health"	"folder"	" "	" "	" "	" "	
+"                    Self-perceived health by sex, age and income quintile"	"hlth_silc_10"	"dataset"	"17.09.2026"	"27.07.2026"	"2005"	"2025"	1894683
+"                Youth social inclusion"	"yth_incl"	"folder"	" "	" "	" "	" "	
+"                    At-risk-of-poverty rate by poverty threshold, age and sex - EU-SILC and ECHP surveys"	"ilc_li02"	"dataset"	"05.10.2026"	"10.06.2026"	"1995"	"2025"	1067750
+"                    Overcrowding rate by age, sex and poverty status - total population"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471
+"        Housing"	"hous"	"folder"	" "	" "	" "	" "	
+"            Population and social conditions"	"hous_pop"	"folder"	" "	" "	" "	" "	
+"                Living conditions and welfare"	"hous_ilc"	"folder"	" "	" "	" "	" "	
+"                    Housing conditions"	"hous_ilc_con"	"folder"	" "	" "	" "	" "	
+"                        Overcrowding rate by age, sex and poverty status - total population"	"ilc_lvho05a"	"dataset"	"17.09.2026"	"11.06.2026"	"2003"	"2025"	120471

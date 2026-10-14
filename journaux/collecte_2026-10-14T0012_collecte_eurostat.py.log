@@ -1,0 +1,39 @@
+
+===== collecte_eurostat.py =====
+[00:12:56] Collecte Eurostat — étapes demandées : echantillons, amorce, niveau1, niveau2 ; durée max 270 min ; niveau 2 : sans limite jeux par passage
+[00:12:56] === Étape c : niveau 2 (séries FR des jeux candidats) ===
+[00:12:57]   Révision des règles du niveau 2 (v7) : 0 jeux à refaire pour l'unité (0 séries par défaut) :  ; 24 jeux à refaire pour le partenaire ou la ventilation par origine : demo_marcb, demo_marcz, educ_uoe_mobg02, educ_uoe_mobg03, educ_uoe_mobs02, educ_uoe_mobs03, educ_uoe_mobs06, env_trdrrm, env_wasship, env_wastrdmp, nrg_ind_id3cf, nrg_ind_idooil, nrg_te_bio, nrg_te_eh, nrg_te_gas, nrg_te_oil, nrg_te_sff, nrg_ti_bio, nrg_ti_eh, nrg_ti_gas, nrg_ti_oil, nrg_ti_sff, sdg_17_10, sdg_17_31
+[00:12:58]   12737 lignes retirées (jeux à refaire ou non candidats)
+[00:12:58]   1816 jeux candidats ; 1792 déjà traités ; 24 à traiter ; 0 à rafraîchir (vérifiés il y a plus de 90 jours)
+[00:13:00]   [1/24] sdg_17_10              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.4 s 
+[00:13:00]   [2/24] sdg_17_31              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 0.9 s 
+[00:13:01]   [3/24] demo_marcz             ok                 séries     1 (éligibles 0, ventilations 1) 2 req. 0.9 s 
+[00:13:02]   [4/24] demo_marcb             ok                 séries     1 (éligibles 0, ventilations 1) 2 req. 0.8 s 
+[00:13:04]   [5/24] educ_uoe_mobs02        ok                 séries     5 (éligibles 5, ventilations 5) 2 req. 1.6 s 
+[00:13:05]   [6/24] educ_uoe_mobs03        ok                 séries     5 (éligibles 5, ventilations 5) 2 req. 1.4 s 
+[00:13:07]   [7/24] educ_uoe_mobs06        ok                 séries     6 (éligibles 6, ventilations 6) 2 req. 1.6 s 
+[00:13:08]   [8/24] educ_uoe_mobg02        ok                 séries     5 (éligibles 0, ventilations 5) 2 req. 1.3 s 
+[00:13:09]   [9/24] educ_uoe_mobg03        ok                 séries     5 (éligibles 0, ventilations 5) 2 req. 1.3 s 
+[00:13:11]   [10/24] env_trdrrm             ok                 séries   354 (éligibles 238, ventilations 0) 2 req. 1.2 s dimensions à total fixées à la requête (jeu volumineux)
+[00:13:12]   [11/24] env_wastrdmp           ok                 séries   358 (éligibles 237, ventilations 0) 2 req. 1.1 s dimensions à total fixées à la requête (jeu volumineux)
+[00:13:13]   [12/24] env_wasship            ok                 séries    23 (éligibles 18, ventilations 0) 2 req. 1.1 s 
+[00:13:14]   [13/24] nrg_ind_idooil         ok                 séries    11 (éligibles 11, ventilations 0) 2 req. 0.7 s 
+[00:13:14]   [14/24] nrg_ind_id3cf          ok                 séries     1 (éligibles 1, ventilations 0) 2 req. 0.8 s 
+[00:13:18]   [15/24] nrg_ti_oil             ok                 séries    38 (éligibles 38, ventilations 0) 2 req. 3.6 s 
+[00:13:21]   [16/24] nrg_te_oil             ok                 séries    38 (éligibles 38, ventilations 0) 2 req. 3.4 s 
+[00:13:22]   [17/24] nrg_ti_gas             ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 0.9 s 
+[00:13:23]   [18/24] nrg_te_gas             ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 1.0 s 
+[00:13:24]   [19/24] nrg_ti_eh              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 0.9 s 
+[00:13:25]   [20/24] nrg_te_eh              ok                 séries     2 (éligibles 2, ventilations 0) 2 req. 0.9 s 
+[00:13:26]   [21/24] nrg_ti_bio             ok                 séries     6 (éligibles 6, ventilations 0) 2 req. 1.2 s 
+[00:13:28]   [22/24] nrg_te_bio             ok                 séries     6 (éligibles 6, ventilations 0) 2 req. 1.2 s 
+[00:13:29]   [23/24] nrg_ti_sff             ok                 séries    14 (éligibles 14, ventilations 0) 2 req. 1.8 s 
+[00:13:31]   [24/24] nrg_te_sff             ok                 séries    14 (éligibles 14, ventilations 0) 2 req. 1.7 s 
+[00:13:33]   Règles appliquées au catalogue : {"lignes_avant": 56210, "lignes": 56210, "lignes_ecartees": 20114, "lignes_deplacees_ce_passage": 0, "lignes_resynchronisees": 0}
+[00:13:35]   Catalogue des séries compressé : eurostat_series_catalogue.csv.gz (1.6 Mo)
+[00:13:35]   Passage terminé : 24 jeux traités, 0 restants, 0 à rafraîchir
+[00:13:36] Bilan : {"fichier": "eurostat_series_catalogue.csv.gz", "octets": 1588869, "lignes": 56210, "series_defaut": 42538, "series_eligibles": 31375, "lignes_ventilation": 13672, "jeux_avec_series": 1720, "series_defaut_par_dimension": {"planete": 21057, "niveau_de_vie": 9233, "sante": 5944, "education": 3006, "travail": 1704, "securite_confiance": 737, "logement_cadre_vie": 312, "contexte": 277, "egalites": 121, "liens_bien_etre": 78, "democratie": 69}, "series_eligibles_par_dimension": {"planete": 15567, "niveau_de_vie": 6054, "sante": 5308, "education": 1913, "travail": 1223, "securite_confiance": 629, "logement_cadre_vie": 291, "contexte": 241, "egalites": 116, "democratie": 29, "liens_bien_etre": 4}, "jeux_avec_serie_eligible_par_dimension": {"contexte": 38, "democratie": 8, "education": 228, "egalites": 41, "liens_bien_etre": 4, "logement_cadre_vie": 101, "niveau_de_vie": 248, "planete": 191, "sante": 154, "securite_confiance": 45, "travail": 331}, "lignes_ventilation_par_dimension_de_ventilation": {"age": 7390, "sex": 5156, "isced11": 255, "hhcomp": 203, "deg_urb": 150, "ind_type": 130, "iscedf13": 124, "quant_inc": 110, "citizen": 72, "c_birth": 71, "hhtyp": 10, "quantile": 1}, "lignes_ventilation_par_dimension_v0": {"sante": 7762, "travail": 2285, "education": 1699, "niveau_de_vie": 1199, "logement_cadre_vie": 251, "liens_bien_etre": 219, "securite_confiance": 81, "egalites": 77, "democratie": 48, "contexte": 45, "planete": 6}, "unites_retenues_relatives": 180}
+[00:13:36] Fin : 48 requêtes (0 nouveaux essais), 15.3 Mo, 0.7 min
+----- collecte_eurostat.py : OK en 41 s
+
+Bilan : tous les scripts ont réussi

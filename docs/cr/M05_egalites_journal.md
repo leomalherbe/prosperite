@@ -123,4 +123,4 @@ Contrainte rencontrée : le vérificateur commun refuse une `premiere_annee` ant
 
 ## 6. Livraison
 
-Commits sur `m05-egalites`, PR « M05 — fiches indicateurs : egalites » vers `main` ; compte rendu `docs/cr/M05_egalites_compte_rendu.md`, copié dans le Projet (`claude/cr/M05_egalites_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_egalites.csv`). Le message du deuxième commit annonce « 15 écarts construits » : le décompte exact est **12** (fiches avec `formule`).
+Commits sur `m05-egalites`, PR #10 « M05 — fiches indicateurs : egalites » vers `main` ; compte rendu `docs/cr/M05_egalites_compte_rendu.md`, copié dans le Projet (`claude/cr/M05_egalites_compte_rendu.md`) avec le tableau de validation (`claude/40_validation_egalites.csv`). Le message du deuxième commit annonce « 15 écarts construits » : le décompte exact est **12** (fiches avec `formule`).

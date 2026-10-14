@@ -1,6 +1,6 @@
 # Compte rendu — M05, fiches indicateurs de la dimension `egalites`
 
-Agent de mission M05 (Égalités), 14 octobre 2026, branche `m05-egalites`, PR « M05 — fiches indicateurs : egalites ». Méthode commune `docs/methodo/33_methode_fiches_M05.md` appliquée sans modification des scripts communs. Détail dans `docs/cr/M05_egalites_journal.md`.
+Agent de mission M05 (Égalités), 14 octobre 2026, branche `m05-egalites`, PR #10 « M05 — fiches indicateurs : egalites ». Méthode commune `docs/methodo/33_methode_fiches_M05.md` appliquée sans modification des scripts communs. Détail dans `docs/cr/M05_egalites_journal.md`.
 
 ## 1. Livrables
 

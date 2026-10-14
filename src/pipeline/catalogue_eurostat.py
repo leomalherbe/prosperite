@@ -67,6 +67,10 @@ PREFIXES_ENTREPRISES_ECHANGES = {
     "isoc_env_ict": "émissions du secteur des TIC",
     "htec_": "secteurs de haute technologie", "egi_": "groupes d'entreprises multinationaux",
     "rd_p_bemp": "R-D des entreprises par activité", "rd_p_perssize": "R-D des entreprises par taille",
+    # contrôle qualité du 14/10 : « Tableaux des emplois » (use tables) lus comme « emploi » ; emploi lié aux exportations
+    "naio_": "tableaux entrées-sorties (branches, produits, emploi lié aux exportations)",
+    "cult_trd": "commerce extérieur de biens culturels",
+    "lc_lci_r2_cow": "pondérations de l'indice du coût de la main-d'œuvre", "lc_lci_r2_itw": "pondérations de l'indice du coût de la main-d'œuvre",
 }
 #: Jeux `isoc_*` d'entreprises non couverts par les préfixes : repérés par le titre anglais.
 MOTIF_ISOC_ENTREPRISES = re.compile(r"\benterprises?\b|\bNACE\b|\bICT sector\b|international trade", re.IGNORECASE)
@@ -224,7 +228,7 @@ MOTS_CLES = {
         r"culturel", r"musee", r"lecture", r"langue", r"internet", r"ordinateur", r"numerique",
     ],
     "liens_bien_etre": [
-        r"life satisfaction", r"satisf", r"happ(y|iness)", r"well-being", r"wellbeing", r"quality of life",
+        r"life satisfaction", r"satisf(?!aits?\b)", r"happ(y|iness)", r"well-being", r"wellbeing", r"quality of life",
         r"social participation", r"social (relations|life|activities|support)", r"personal relationships",
         r"someone to (rely|ask|discuss)", r"lonel", r"leisure", r"time use", r"free time", r"volunt", r"meaning",
         r"worthwhile", r"feeling", r"work-life", r"friends", r"(family|friends) (or|and) relatives",
@@ -258,7 +262,7 @@ MOTS_CLES = {
         r"\bwomen\b", r"female", r"intergenerational", r"transmission of disadvantage", r"social mobility",
         r"discriminat", r"income quintile", r"top 10%", r"bottom 40%", r"relative median",
         r"inegalit", r"\bgenre\b", r"ecart", r"rapport interquintile", r"\bgini\b", r"distribution des revenus",
-        r"repartition des revenus", r"dispersion", r"disparite", r"\bfemmes\b", r"intergenerationnel", r"mobilite sociale",
+        r"repartition des revenus", r"dispersion", r"disparite", r"(?<!sages-)\bfemmes\b", r"intergenerationnel", r"mobilite sociale",
         r"discrimination",
     ],
     "planete": [
@@ -574,7 +578,9 @@ def bilan_dossiers(toc_en: pd.DataFrame, catalogue: pd.DataFrame, toc_fr: Option
 # ---------------------------------------------------------------- niveau 2 : rôles des dimensions
 
 CODES_TOTAL = ("TOTAL", "T", "_T", "TOT", "ALL", "TOTAL_HH")
-CODES_TOTAL_PAR_DIMENSION = {"wstatus": ("POP", "TOTAL"), "sex": ("T",), "age": ("TOTAL",), "ind_type": ("IND_TOTAL",)}
+CODES_TOTAL_PAR_DIMENSION = {"wstatus": ("POP", "TOTAL"), "sex": ("T",), "age": ("TOTAL",), "ind_type": ("IND_TOTAL",),
+                             "partner": ("WORLD", "TOTAL"),  # v5 : pays partenaire fixé au monde entier
+                             "species": ("F00",), "fishreg": ("0",)}  # v5 : captures de pêche, tous organismes, toutes zones
 
 #: Dimensions toujours énumérées (chaque modalité est un indicateur distinct), même si un total existe.
 DIMENSIONS_CONTENU = {"icd10"}
@@ -585,7 +591,12 @@ VENTILATIONS = {
     "incgrp": "groupe de revenu", "quant_expn": "quintile de dépenses", "hhtyp": "type de ménage",
     "hhcomp": "composition du ménage", "deg_urb": "degré d'urbanisation",
     "ind_type": "type d'individus (âge, sexe, éducation, emploi…)",
+    # v5 : écarts selon l'origine (gel 1, A8 : égalités)
+    "citizen": "nationalité", "c_birth": "pays de naissance",
 }
+#: Dimensions dont l'énumération ou le traitement a changé en v5 : un jeu dont une série porte l'une d'elles
+#: est refait (recalcul ciblé), pour fixer le partenaire au monde entier ou ajouter la ventilation par origine.
+DIMENSIONS_REVISEES_V5 = ("partner", "citizen", "c_birth", "species", "fishreg")
 PREFIXES_VENTILATION = {"isced": "niveau d'éducation"}
 
 DIMENSIONS_TECHNIQUES = {"freq", "geo", "unit", "time", "TIME_PERIOD"}
@@ -606,6 +617,10 @@ def code_total(dim: str, codes: Iterable[str]) -> Optional[str]:
     for candidat in CODES_TOTAL_PAR_DIMENSION.get(dim, ()) + CODES_TOTAL:
         if candidat in codes:
             return candidat
+    if dim == "fishreg":  # jeu d'une grande zone de pêche : la zone elle-même (« 27 ») est le total de ses sous-zones (« 27_8_A »)
+        racines = [c for c in codes if "_" not in c]
+        if len(racines) == 1:
+            return racines[0]
     return None
 
 
@@ -702,6 +717,15 @@ def jeux_a_refaire_unites(series: pd.DataFrame) -> dict[str, int]:
     nouvelle = d["unites_disponibles"].map(lambda x: choisir_unite(u for u in x.split(" ; ") if u) or "")
     changees = d[nouvelle != d["unite_code"]]
     return {k: int(v) for k, v in changees["code_jeu"].value_counts().items()}
+
+
+def jeux_a_refaire_dimensions(series: pd.DataFrame, dimensions=DIMENSIONS_REVISEES_V5) -> dict[str, int]:
+    """Jeux dont une série par défaut porte une dimension au traitement révisé (v5 : partenaire, origine)."""
+    if series.empty:
+        return {}
+    d = series[series["type_ligne"] == "defaut"]
+    motif = r"[?&](?:" + "|".join(dimensions) + r")="
+    return {k: int(v) for k, v in d[d["serie_id"].str.contains(motif, regex=True)]["code_jeu"].value_counts().items()}
 
 
 @dataclass
@@ -987,14 +1011,17 @@ MOTIF_JEUX_SECTEURS = re.compile(r"^(nasa_10_f_|naidsa_10_f_|nasa_10_nf_tr$|nasa
 SECTEURS_GARDES = ("S1", "S14", "S14_S15")
 MOTIF_SECTEUR_HORS_MENAGES = "secteur_hors_menages"
 _SECTEUR = re.compile(r"[?&]sector=([^&]+)")
+#: secteur de contrepartie (nasa_10_f_cp) : même règle (ensemble de l'économie ou ménages)
+_SECTEUR_CONTREPARTIE = re.compile(r"[?&]sector2=([^&]+)")
 
 
 def motif_exclusion_serie(code_jeu: str, serie_id: str) -> str:
     """Motif d'exclusion d'une série d'un jeu candidat (v5), ou chaîne vide si elle est gardée."""
     if MOTIF_JEUX_SECTEURS.match(code_jeu or ""):
-        m = _SECTEUR.search(serie_id or "")
-        if m and m.group(1) not in SECTEURS_GARDES:
-            return MOTIF_SECTEUR_HORS_MENAGES
+        for motif in (_SECTEUR, _SECTEUR_CONTREPARTIE):
+            m = motif.search(serie_id or "")
+            if m and m.group(1) not in SECTEURS_GARDES:
+                return MOTIF_SECTEUR_HORS_MENAGES
     return ""
 
 
@@ -1006,12 +1033,17 @@ def separer_series_exclues(series: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataF
     masque = pd.Series([bool(m) for m in motifs], index=series.index)
     exclues = series[masque].copy()
     if not exclues.empty:
-        secteurs = exclues["serie_id"].str.extract(_SECTEUR.pattern)[0].fillna("?")
+        def detail(serie_id: str) -> str:
+            m = _SECTEUR.search(serie_id)
+            if m and m.group(1) not in SECTEURS_GARDES:
+                return f"secteur {m.group(1)}"
+            m = _SECTEUR_CONTREPARTIE.search(serie_id)
+            return f"secteur de contrepartie {m.group(1) if m else '?'}"
         exclues["commentaire"] = [
-            (f"{MOTIF_SECTEUR_HORS_MENAGES} : secteur {s} (ni l'ensemble de l'économie S1, ni les ménages S14/S14_S15)"
-             + (f" ; {c}" if c and not c.startswith(MOTIF_SECTEUR_HORS_MENAGES) else ""))
+            (f"{MOTIF_SECTEUR_HORS_MENAGES} : {detail(s)} (ni l'ensemble de l'économie S1, ni les ménages S14/S14_S15)"
+             + (f" ; {c}" if c else ""))
             if not c.startswith(MOTIF_SECTEUR_HORS_MENAGES) else c
-            for s, c in zip(secteurs, exclues["commentaire"])
+            for s, c in zip(exclues["serie_id"], exclues["commentaire"])
         ]
         exclues["candidat"] = "non"
     return series[~masque], exclues

@@ -56,11 +56,16 @@ from src.sources import eurostat as es  # noqa: E402
 #: remplaçant de sdg_15_60 corrigé (env_bio3 n'a que l'agrégat UE), une erreur sur une série n'arrête plus l'étape.
 #: v5 niveau 1 (14/10, D26) : entreprises et échanges extérieurs exclus même dans les dossiers prioritaires,
 #: pêche et sylviculture réintégrées en `planete`, jeux de population sans mot-clé étiquetés `contexte`, mots-clés R-D.
-ETAPES = {"echantillons": 1, "amorce": 3, "niveau1": 5, "niveau2": 2}
+#: v6 niveau 1 (14/10, contrôle qualité) : tableaux entrées-sorties (« Tableaux des emplois » = use tables),
+#: pondérations de l'indice du coût du travail et commerce de biens culturels exclus ; faux amis « non satisfaits »
+#: (besoins de soins) et « sages-femmes ».
+ETAPES = {"echantillons": 1, "amorce": 3, "niveau1": 6, "niveau2": 2}
 
 #: Révision des règles du niveau 2 appliquées **sans refaire tout le niveau 2** (v5, D26) : recalcul ciblé
 #: des jeux dont l'unité retenue change, séries des secteurs hors ménages écartées, étiquettes resynchronisées.
-REGLES_NIVEAU2 = 5
+#: 6 (contrôle qualité) : pays partenaire fixé au monde entier, ventilations par nationalité et pays de naissance
+#: (A8) : jeux concernés refaits.
+REGLES_NIVEAU2 = 6
 
 DUREE_MAX = float(os.environ.get("EUROSTAT_DUREE_MAX_MINUTES", "270")) * 60
 NIVEAU2_MAX_JEUX = int(os.environ.get("EUROSTAT_NIVEAU2_MAX_JEUX", "0") or 0)
@@ -608,13 +613,16 @@ def _revision_regles(info: dict) -> None:
     refaits ; les autres jeux gardent leurs séries (pas de nouveau passage complet)."""
     if info.get("regles", 0) >= REGLES_NIVEAU2 or not FICHIER_SERIES.exists():
         return
-    a_refaire = cat.jeux_a_refaire_unites(_lire(FICHIER_SERIES))
-    for code in a_refaire:
+    series = _lire(FICHIER_SERIES)
+    unites = cat.jeux_a_refaire_unites(series)
+    dimensions = cat.jeux_a_refaire_dimensions(series) if info.get("regles", 0) < 6 else {}
+    for code in set(unites) | set(dimensions):
         info["jeux"].pop(code, None)
     info["regles"] = REGLES_NIVEAU2
-    info["revision_unites"] = {"date": maintenant(), "jeux": a_refaire}
-    journal(f"  Révision des règles du niveau 2 (v{REGLES_NIVEAU2}) : {len(a_refaire)} jeux à refaire pour l'unité "
-            f"({sum(a_refaire.values())} séries par défaut) : {', '.join(sorted(a_refaire))}")
+    info.setdefault("revisions", []).append({"date": maintenant(), "regles": REGLES_NIVEAU2, "unites": unites, "partenaire_origine": dimensions})
+    journal(f"  Révision des règles du niveau 2 (v{REGLES_NIVEAU2}) : {len(unites)} jeux à refaire pour l'unité "
+            f"({sum(unites.values())} séries par défaut) : {', '.join(sorted(unites))} ; {len(dimensions)} jeux à refaire "
+            f"pour le partenaire ou la ventilation par origine : {', '.join(sorted(dimensions))}")
 
 
 def etape_niveau2(etat: dict) -> None:

@@ -741,9 +741,10 @@ def test_niveau1_v5_entreprises_peche_sylviculture_contexte():
         _ligne_toc("demo_pjan", "Population on 1 January by age and sex", demo),
         _ligne_toc("rd_e_gerdtot", "GERD by sector of performance", "Database by themes > Science"),
         _ligne_toc("htec_emp_nat2", "Employed persons in technology and knowledge-intensive sectors by NACE Rev. 2 activity", "Database by themes > Science"),
+        _ligne_toc("naio_10_cp16", "Use table at purchasers' prices", "Database by themes > Economy > National accounts"),
     ])
     c = cat.construire_catalogue_jeux(toc).set_index("code_jeu")
-    for code in ("bd_size", "isoc_ci_in_es", "isoc_xyz_n2", "bop_rem6", "lc_ncost_r2", "htec_emp_nat2"):
+    for code in ("bd_size", "isoc_ci_in_es", "isoc_xyz_n2", "bop_rem6", "lc_ncost_r2", "htec_emp_nat2", "naio_10_cp16"):
         assert c.loc[code, "candidat"] == "non", code
         assert c.loc[code, "motif_candidat"].startswith("entreprises ou échanges extérieurs"), code
     assert c.loc["isoc_ci_ifp_iu", "candidat"] == "oui"  # particuliers : gardé
@@ -775,6 +776,27 @@ def test_unites_absolues_preferees_aux_indices_relatifs():
     assert cat.jeux_a_refaire_unites(series) == {"nama_10_pc": 1}
 
 
+def test_controle_qualite_v5_faux_amis_partenaire_origine():
+    # « besoins de soins non satisfaits » relève de la santé ; « sages-femmes » n'est pas un écart femmes-hommes
+    assert cat.etiqueter("sdg_03_60", "Self-reported unmet need for medical examination and care by sex",
+                         "Besoins auto-déclarés de traitement médical non satisfaits par sexe", "", "").dimension == "sante"
+    assert cat.etiqueter("hlth_rs_prsns", "Nursing and caring professionals", "Infirmiers, sages-femmes et aides-soignants", "", "").dimension != "egalites"
+    assert cat.etiqueter("ilc_pw01", "Overall life satisfaction", "Satisfaction globale de la vie", "", "").dimension == "liens_bien_etre"
+    # partenaire fixé au monde entier ; nationalité en ventilation
+    lignes, roles = cat.construire_series(_jeu_roles("partner", ["WORLD", "DE", "JM"]))
+    assert roles.defauts["partner"] == "WORLD" and roles.contenu == [] and len(lignes) == 1
+    lignes, roles = cat.construire_series(_jeu_roles("citizen", ["TOTAL", "NAT", "FOR"]))
+    assert roles.ventilations == ["citizen"] and [l["type_ligne"] for l in lignes] == ["defaut", "ventilation"]
+    # captures de pêche : tous organismes (F00), toutes zones (0) ou la grande zone du jeu (27)
+    assert cat.code_total("species", ["AGN", "F00", "F01"]) == "F00"
+    assert cat.code_total("fishreg", ["0", "27", "37"]) == "0"
+    assert cat.code_total("fishreg", ["27", "27_8", "27_8_A"]) == "27"
+    assert cat.code_total("fishreg", ["27_8", "27_9"]) is None
+    series = pd.DataFrame({"code_jeu": ["educ_uoe_mobs02", "ilc_li31", "ilc_li02"], "type_ligne": ["defaut"] * 3,
+                           "serie_id": ["educ_uoe_mobs02?partner=JM&geo=FR", "ilc_li31?citizen=TOTAL&geo=FR", "ilc_li02?sex=T&geo=FR"]})
+    assert cat.jeux_a_refaire_dimensions(series) == {"educ_uoe_mobs02": 1, "ilc_li31": 1}
+
+
 def _series_df(lignes):
     base = {c: "" for c in cat.COLONNES_SERIES}
     return pd.DataFrame([dict(base, **l) for l in lignes], columns=cat.COLONNES_SERIES)
@@ -787,13 +809,15 @@ def test_secteurs_hors_menages_ecartes():
         {"code_jeu": "nasa_10_nf_tr", "serie_id": "nasa_10_nf_tr?freq=A&sector=S1&geo=FR", "candidat": "oui"},
         {"code_jeu": "nasa_10_nf_tr", "serie_id": "nasa_10_nf_tr?freq=A&sector=S13&geo=FR", "candidat": "oui", "commentaire": "note"},
         {"code_jeu": "gov_10a_main", "serie_id": "gov_10a_main?freq=A&sector=S13&geo=FR", "candidat": "oui"},
+        {"code_jeu": "nasa_10_f_cp", "serie_id": "nasa_10_f_cp?freq=A&sector2=S12&sector=S14_S15&geo=FR", "candidat": "oui"},
     ])
     gardees, exclues = cat.separer_series_exclues(s)
-    assert list(gardees["serie_id"].str.extract(r"sector=(\w+)")[0]) == ["S14_S15", "S1", "S13"]
+    assert list(gardees["serie_id"].str.extract(r"[?&]sector=(\w+)")[0]) == ["S14_S15", "S1", "S13"]
     assert list(gardees["code_jeu"]) == ["nasa_10_f_bs", "nasa_10_nf_tr", "gov_10a_main"]
-    assert len(exclues) == 2 and set(exclues["candidat"]) == {"non"}
-    assert all(c.startswith("secteur_hors_menages : secteur S1") for c in exclues["commentaire"])
+    assert len(exclues) == 3 and set(exclues["candidat"]) == {"non"}
+    assert all(c.startswith("secteur_hors_menages : secteur S1") for c in exclues["commentaire"][:2])
     assert exclues["commentaire"].iloc[1].endswith(" ; note")
+    assert exclues["commentaire"].iloc[2].startswith("secteur_hors_menages : secteur de contrepartie S12")
     # idempotent : une ligne déjà écartée garde son motif
     assert list(cat.separer_series_exclues(exclues)[1]["commentaire"]) == list(exclues["commentaire"])
 
@@ -824,7 +848,7 @@ def test_script_regles_catalogue_et_peremption(tmp_path, monkeypatch):
     ]).to_csv(tmp_path / "s.csv", index=False)
     pd.DataFrame({"code_jeu": ["nasa_10_f_bs"], "dimension_v0": ["niveau_de_vie"], "theme_source": ["T"], "candidat": ["oui"],
                   "statut_niveau2": [""], "nb_series_fr": [""], "nb_series_candidates": [""], "structure_fr": [""]}).to_csv(tmp_path / "j.csv", index=False)
-    etat = {"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 5,
+    etat = {"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 6,
                                    "jeux": {"nasa_10_f_bs": {"statut": "ok", "date": "2026-10-13T15:00:00Z", "nb_series": 2}}}}}
     bilan = script._appliquer_regles_catalogue(etat)
     assert bilan["lignes"] == 1 and bilan["lignes_ecartees"] == 1  # bd_size retiré (plus suivi), S11 écarté
@@ -836,8 +860,8 @@ def test_script_regles_catalogue_et_peremption(tmp_path, monkeypatch):
     suivi = {"a": {"statut": "ok", "date": "2020-01-01T00:00:00Z"}, "b": {"statut": "ok", "date": script.maintenant()},
              "c": {"statut": "erreur_donnees", "date": "2020-01-01T00:00:00Z"}}
     assert script.jeux_perimes(suivi) == ["a"]
-    assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 5, "jeux": suivi}}}, "niveau2")
-    assert not script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 5, "jeux": {"b": suivi["b"]}}}}, "niveau2")
+    assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 6, "jeux": suivi}}}, "niveau2")
+    assert not script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 6, "jeux": {"b": suivi["b"]}}}}, "niveau2")
     assert script.etape_a_faire({"etapes": {"niveau2": {"version": 2, "termine": True, "regles": 4, "jeux": {}}}}, "niveau2")
-    assert script.etape_a_faire({"etapes": {"niveau1": {"version": 5, "termine": True, "date": "2020-01-01T00:00:00Z"}}}, "niveau1")
-    assert not script.etape_a_faire({"etapes": {"niveau1": {"version": 5, "termine": True, "date": script.maintenant()}}}, "niveau1")
+    assert script.etape_a_faire({"etapes": {"niveau1": {"version": script.ETAPES["niveau1"], "termine": True, "date": "2020-01-01T00:00:00Z"}}}, "niveau1")
+    assert not script.etape_a_faire({"etapes": {"niveau1": {"version": script.ETAPES["niveau1"], "termine": True, "date": script.maintenant()}}}, "niveau1")

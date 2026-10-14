@@ -882,6 +882,15 @@ def etape_catalogage(etat: Optional[Etat]) -> dict:
                 # comptait à tort comme « fréquence ? non retenue » (9 845 séries)
                 mexclusions["aucune valeur numérique"] += 1
                 continue
+            if freq == "Q":
+                # Melodi code le trimestre « Q » (code SDMX), la BDM « T » : jusqu'au 14/10, 1 698 séries étaient
+                # comptées à tort « fréquence Q non retenue »
+                freq = "T"
+            if l["jeu"].startswith("DS_CNT_"):
+                # comptes trimestriels base 2020 : mêmes séries que les dataflows BDM CNT-2020-* (594, 334, 682 et
+                # 67-68 séries), déjà au catalogue BDM
+                mexclusions["comptes trimestriels : doublon des dataflows BDM CNT-2020-*"] += 1
+                continue
             if freq not in cat.FREQUENCES_RETENUES:
                 mexclusions[f"fréquence {freq or '?'} non retenue"] += 1
                 continue

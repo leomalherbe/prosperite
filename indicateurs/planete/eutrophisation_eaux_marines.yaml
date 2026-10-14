@@ -1,0 +1,50 @@
+id: eutrophisation_eaux_marines
+libelle: Part des eaux marines touchées par l'eutrophisation
+dimension: planete
+sous_theme: eau
+famille: eutrophisation_eaux_marines
+variante_principale: oui
+definition: Part des eaux marines concernées par l'eutrophisation, valeur annuelle (indicateur ODD 14.60 de l'UE
+  ; méthode non relue, l'API ayant refusé la lecture le 14/10/2026).
+unite: '%'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_14_60 (eaux marines concernées par eutrophisation)
+source_serie_id: sdg_14_60?freq=A&statinfo=VAL_A&indic_env=MA_ETR&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_14_60?freq=A&statinfo=VAL_A&indic_env=MA_ETR&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_14_60/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002116
+hors_longlist: non
+raccordement: 'non : série depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'eutrophisation des eaux marines au catalogue, série Eurostat annuelle de
+  2000 à 2025 (26 points).
+note_pertinence: L'eutrophisation marine résulte des apports d'azote et de phosphore des fleuves, que mesurent les
+  fiches de flux à la mer. Ni les valeurs ni les drapeaux n'ont pu être relus (refus de l'API le 14/10/2026), et
+  la méthode est à vérifier avant de fixer des bornes. La moyenne sur quatre ans est en variante.
+variantes:
+- serie_id: sdg_14_60?freq=A&statinfo=AVG_4Y&indic_env=MA_ETR&unit=PC&geo=FR
+  source: Eurostat
+  nature: même source, moyenne sur quatre ans
+  ligne_id: estat-002115
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_eurostat_non_lus
+- methode_a_verifier
+notes: ''

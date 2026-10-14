@@ -1,0 +1,46 @@
+id: ozone_vegetation
+libelle: Part des stations rurales dépassant la valeur cible d'ozone pour la protection de la végétation
+dimension: planete
+sous_theme: pollutions
+famille: ozone_vegetation
+variante_principale: oui
+definition: Part des stations de mesure de fond en milieu rural où la valeur cible réglementaire d'ozone pour la
+  protection de la végétation est dépassée, en moyenne glissante pluriannuelle (SDES, base Geod'air).
+unite: '% des stations rurales'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Dépassements de la valeur cible d'ozone pour la protection de la végétation, stations de fond rural
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/6bcf0cf8-c721-4de9-a964-f040cb2798ab/csv
+  (O3.Fond_rural)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/6bcf0cf8-c721-4de9-a964-f040cb2798ab/csv
+  (O3.Fond_rural)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2002
+derniere_annee: 2024
+nb_points_depuis_2000: 23
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000374
+hors_longlist: non
+raccordement: 'non : moyennes glissantes depuis 2000-2002'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'effet de la pollution de l'air sur la végétation, série SDES de 2002 à 2024
+  (23 périodes glissantes), 7,69 % des stations rurales sur 2020-2024 d'après l'extrait du robot M04.
+note_pertinence: 'L''ozone abîme les cultures et les forêts : l''indicateur mesure un état des écosystèmes, distinct
+  de l''ozone subi par la population, qui relève de logement_cadre_vie (R2). Les valeurs sont des moyennes glissantes
+  sur plusieurs années, qui lissent les étés les plus chauds.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyenne_glissante_pluriannuelle
+notes: ''

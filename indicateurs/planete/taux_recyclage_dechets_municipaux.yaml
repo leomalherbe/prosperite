@@ -1,0 +1,102 @@
+id: taux_recyclage_dechets_municipaux
+libelle: Taux de recyclage des déchets municipaux
+dimension: planete
+sous_theme: déchets et matières
+famille: taux_recyclage_dechets_municipaux
+variante_principale: oui
+definition: Part des déchets municipaux recyclés (recyclage matière, compostage et méthanisation, préparation en
+  vue du réemploi) dans les déchets municipaux produits.
+unite: '%'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_11_60 (taux de recyclage des déchets municipaux)
+source_serie_id: sdg_11_60?freq=A&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_60?freq=A&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_11_60/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002103
+hors_longlist: non
+raccordement: 'non : série continue depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Moyen admis (D19) adossé aux cibles de 55 %, 60 % et 65 % (2025, 2030, 2035) de la directive-cadre
+  déchets (texte à vérifier), série Eurostat de 2000 à 2024 (24,5 % en 2000, 40,9 % en 2024, estimé).
+note_pertinence: Le taux plafonne autour de 40 % depuis 2015, loin des cibles européennes, ce qui rend l'indicateur
+  discriminant. La plupart des valeurs depuis 2006 sont estimées par Eurostat. Les séries de l'INSEE (ODD 11.i3c)
+  et de l'OCDE (How's Life 12_15) et les taux de recyclage par flux réglementé (emballages, DEEE, VHU, piles) sont
+  en variantes.
+variantes:
+- serie_id: '010600338'
+  source: INSEE BDM
+  nature: INSEE ODD 11.i3c (BDM et Melodi, 2010-2023), OCDE How's Life 12_15 (2004-2024)
+  ligne_id: bdm-001167
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_15 UNIT_MEASURE=PT_WST_TR
+  source: OCDE — How's Life? (base du bien-être)
+  nature: INSEE ODD 11.i3c (BDM et Melodi, 2010-2023), OCDE How's Life 12_15 (2004-2024)
+  ligne_id: m04-000094
+  eligible: oui
+- serie_id: env_waspacr?freq=A&waste=W1501&unit=RT_TGT2025&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-041072
+  eligible: oui
+- serie_id: env_waspacr?freq=A&waste=W150102&unit=RT_TGT2025&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-041074
+  eligible: oui
+- serie_id: env_waspb?freq=A&wst_oper=COL&waste=W1606B&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-041189
+  eligible: oui
+- serie_id: env_wasbat?freq=A&wst_oper=RCY&waste=W160601&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-041191
+  eligible: oui
+- serie_id: env_wasbat?freq=A&wst_oper=RCY&waste=W160605&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-041195
+  eligible: oui
+- serie_id: env_waselvt?freq=A&wst_oper=RCY_REU&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-041287
+  eligible: oui
+- serie_id: cei_wm060?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'taux de recyclage par flux réglementé : emballages (par matériau), équipements électriques et électroniques,
+    véhicules hors d''usage, piles et accumulateurs (Eurostat)'
+  ligne_id: estat-052320
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3c&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE ODD 11.i3c (BDM et Melodi, 2010-2023), OCDE How's Life 12_15 (2004-2024)
+  ligne_id: melodi-005689
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_estimees
+notes: ''

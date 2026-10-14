@@ -1,0 +1,83 @@
+id: etat_conservation_habitats
+libelle: Part des habitats naturels dans un état de conservation favorable
+dimension: planete
+sous_theme: biodiversité
+famille: etat_conservation_habitats
+variante_principale: oui
+definition: Part des évaluations d'habitats d'intérêt communautaire (directive Habitats-Faune-Flore) jugées dans
+  un état de conservation favorable, France métropolitaine, moyenne sur la période de rapportage de six ans (indicateur
+  national ODD 15.i2).
+unite: '% des évaluations (moyenne sur 6 ans)'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 15.i2 (BDM 010596301)
+source_serie_id: '010596301'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596301
+url_page: https://www.insee.fr/fr/statistiques/serie/010596301
+frequence: irreguliere
+premiere_annee: 2012
+derniere_annee: 2024
+nb_points_depuis_2000: 3
+geo: FM
+eligibilite_longlist: a_verifier
+ligne_id: bdm-001139
+hors_longlist: non
+raccordement: 'non : rapportage sexennal'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'état des habitats naturels, publiée à chaque rapportage européen (3 points
+  de 2012 à 2024) et admise comme série irrégulière (D17).
+note_pertinence: L'indicateur dit dans quel état sont les habitats protégés par la directive Habitats ; il ne bouge
+  qu'à chaque rapportage, tous les six ans, ce qui impose de reporter la dernière valeur (D17). Les autres classes
+  d'état (défavorable inadéquat, défavorable mauvais, inconnu) sont en variantes, et la part d'état inconnu pèse
+  sur la lecture.
+variantes:
+- serie_id: '010596302'
+  source: INSEE BDM
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: bdm-001140
+  eligible: a_verifier
+- serie_id: '010596303'
+  source: INSEE BDM
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: bdm-001141
+  eligible: a_verifier
+- serie_id: '010596304'
+  source: INSEE BDM
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: bdm-001142
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT15&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i2&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: melodi-005597
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT16&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i2&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: melodi-005598
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT17&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i2&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: melodi-005599
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT18&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i2&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état (défavorable inadéquat, défavorable mauvais, inconnu) et voie Melodi
+  ligne_id: melodi-005600
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rapportage_sexennal
+- champ_metropole
+notes: ''

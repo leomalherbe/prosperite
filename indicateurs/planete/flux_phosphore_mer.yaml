@@ -1,0 +1,80 @@
+id: flux_phosphore_mer
+libelle: Apports de phosphore des fleuves à la mer
+dimension: planete
+sous_theme: eau
+famille: flux_phosphore_mer
+variante_principale: oui
+definition: Flux annuel de phosphore apporté à la mer par les cours d'eau, toutes façades de France métropolitaine
+  (indicateur national ODD 14.i3b).
+unite: milliers de tonnes par an
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 14.i3b (BDM 010596782)
+source_serie_id: '010596782'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596782
+url_page: https://www.insee.fr/fr/statistiques/serie/010596782
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2021
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001128
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD des apports de phosphore au milieu marin, série de 2010 à 2021 pour
+  le total (12 points) et jusqu'en 2023 pour la Manche et l'Atlantique.
+note_pertinence: Le phosphore apporté par les fleuves, d'origine urbaine et agricole, nourrit l'eutrophisation des
+  eaux côtières. Comme pour l'azote, les flux dépendent des débits et le total s'arrête en 2021 ; les façades sont
+  en variantes.
+variantes:
+- serie_id: '010596783'
+  source: INSEE BDM
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: bdm-001129
+  eligible: oui
+- serie_id: '010596784'
+  source: INSEE BDM
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: bdm-001130
+  eligible: oui
+- serie_id: '010596785'
+  source: INSEE BDM
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: bdm-001131
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=MER_FACADE1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: melodi-005639
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=MER_FACADE2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: melodi-005641
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=MER_FACADE3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: melodi-005644
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=14.i3b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: ventilation par façade maritime et voie Melodi
+  ligne_id: melodi-005686
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- dependance_hydrologie
+- champ_metropole
+notes: ''

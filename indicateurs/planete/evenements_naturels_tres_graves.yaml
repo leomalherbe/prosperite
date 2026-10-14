@@ -1,0 +1,61 @@
+id: evenements_naturels_tres_graves
+libelle: Nombre d'événements naturels très graves
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: evenements_naturels_tres_graves
+variante_principale: oui
+definition: 'Nombre d''événements naturels (inondations, tempêtes, mouvements de terrain…) classés « très graves
+  » dans l''année selon une échelle de gravité des dommages humains et matériels (indicateur national ODD 13.i1a
+  ; seuils de l''échelle : non trouvés).'
+unite: nombre d'événements
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 13.i1a (BDM 010595977)
+source_serie_id: '010595977'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010595977
+url_page: https://www.insee.fr/fr/statistiques/serie/010595977
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000908
+hors_longlist: non
+raccordement: 'non : aucune série antérieure à 2010 au catalogue'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD 13.i1a publié chaque année de 2010 à 2024 (15 points), seule mesure
+  du nombre d'aléas majeurs subis (A14).
+note_pertinence: Le décompte des événements très graves donne une lecture simple de l'exposition du pays aux aléas,
+  dont les inondations (variante 13.i1b). Il est très variable et dépend du seuil de gravité, dont la définition
+  n'a pas été trouvée. Il complète les communes reconnues en catastrophe naturelle et les pertes économiques.
+variantes:
+- serie_id: '010595978'
+  source: INSEE BDM
+  nature: voie Melodi (13.i1a) et sous-total des inondations (13.i1b, BDM 010595978 et Melodi)
+  ligne_id: bdm-000909
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i1a&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: voie Melodi (13.i1a) et sous-total des inondations (13.i1b, BDM 010595978 et Melodi)
+  ligne_id: melodi-005701
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i1b&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: voie Melodi (13.i1a) et sous-total des inondations (13.i1b, BDM 010595978 et Melodi)
+  ligne_id: melodi-005702
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- definition_seuil_non_trouvee
+- forte_variabilite_annuelle
+notes: ''

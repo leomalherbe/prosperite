@@ -1,0 +1,48 @@
+id: jours_canicule
+libelle: Nombre de jours-départements en canicule
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: chaleur_extreme
+variante_principale: oui
+definition: 'Somme, sur l''année, du nombre de jours en situation de canicule de chaque département (variable nb_jdep_can
+  de Santé publique France ; définition des seuils : système d''alerte canicule et santé, à préciser à la relecture
+  du jeu).'
+unite: jours-départements
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Santé publique France (Odissé)
+source_jeu: canicules-nombres-de-jours-de-canicule-france (champ nb_jdep_can)
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-nombres-de-jours-de-canicule-france
+  (nb_jdep_can)
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-nombres-de-jours-de-canicule-france
+  (nb_jdep_can)
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/canicules-nombres-de-jours-de-canicule-france/
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000375
+hors_longlist: non
+raccordement: 'non : la canicule de 2003 n''est pas couverte'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série nationale annuelle de l'exposition aux vagues de chaleur (A14), de 2004 à 2025
+  (22 points), avec 517 jours-départements en 2025 d'après l'export vérifié par le robot M04.
+note_pertinence: Les canicules sont l'aléa climatique aux effets sanitaires les plus directs, et la grille les range
+  dans la planète (A14). La série commence en 2004 et omet la canicule de 2003, ce qui pèsera sur le choix de bornes
+  historiques. La part de la population exposée à des températures extrêmes (OCDE) forme l'autre fiche de la famille.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- canicule_2003_non_couverte
+- definition_a_preciser
+notes: ''

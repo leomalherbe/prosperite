@@ -1,0 +1,108 @@
+id: part_energies_renouvelables
+libelle: Part des énergies renouvelables dans la consommation finale brute d'énergie
+dimension: planete
+sous_theme: énergie
+famille: part_energies_renouvelables
+variante_principale: oui
+definition: Part de l'énergie produite à partir de sources renouvelables dans la consommation finale brute d'énergie,
+  selon la méthode de la directive européenne relative aux énergies renouvelables.
+unite: '%'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_07_40 (part des énergies renouvelables dans la consommation finale brute)
+source_serie_id: sdg_07_40?freq=A&nrg_bal=REN&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_07_40?freq=A&nrg_bal=REN&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_07_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002009
+hors_longlist: non
+raccordement: 'non : série continue depuis 2004'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de moyens admis (D19) adossé à la cible de 33 % en 2030 de l'article L100-4 (texte
+  à vérifier, Q-F), série Eurostat de 2004 à 2025 passée de 9,3 % à 23,9 % (2025 provisoire).
+note_pertinence: 'C''est l''indicateur de transition énergétique le plus suivi, et la cible officielle fournira
+  une borne (D19). Eurostat est retenu parce qu''il remonte à 2004 et va jusqu''en 2025 ; la série INSEE (ODD 7.i2b,
+  2010-2024), les parts par secteur et la définition de l''OCDE sont en variantes. Une part qui monte ne dit pas
+  que la consommation baisse : la fiche se lit avec la consommation finale.'
+variantes:
+- serie_id: '010596107'
+  source: INSEE BDM
+  nature: doublon technique (nrg_ind_ren) et voie INSEE (ODD 7.i2b, BDM 010596107 et Melodi, 2010-2024)
+  ligne_id: bdm-000821
+  eligible: oui
+- serie_id: sdg_07_40?freq=A&nrg_bal=REN_ELC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation : part renouvelable de l''électricité, du chauffage et du refroidissement, des transports
+    (sdg_07_40 et nrg_ind_ren)'
+  ligne_id: estat-002010
+  eligible: oui
+- serie_id: sdg_07_40?freq=A&nrg_bal=REN_HEAT_CL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation : part renouvelable de l''électricité, du chauffage et du refroidissement, des transports
+    (sdg_07_40 et nrg_ind_ren)'
+  ligne_id: estat-002011
+  eligible: oui
+- serie_id: sdg_07_40?freq=A&nrg_bal=REN_TRA&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation : part renouvelable de l''électricité, du chauffage et du refroidissement, des transports
+    (sdg_07_40 et nrg_ind_ren)'
+  ligne_id: estat-002012
+  eligible: oui
+- serie_id: nrg_ind_fecf?freq=A&nrg_bal=FC_E&siec=RA000&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autres définitions : OCDE How''s Life 12_10 (part dans l''approvisionnement total) ; Eurostat nrg_ind_fecf
+    (part des renouvelables et biocarburants dans la consommation finale)'
+  ligne_id: estat-041668
+  eligible: oui
+- serie_id: nrg_ind_ren?freq=A&nrg_bal=REN&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon technique (nrg_ind_ren) et voie INSEE (ODD 7.i2b, BDM 010596107 et Melodi, 2010-2024)
+  ligne_id: estat-041697
+  eligible: oui
+- serie_id: nrg_ind_ren?freq=A&nrg_bal=REN_ELC&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation : part renouvelable de l''électricité, du chauffage et du refroidissement, des transports
+    (sdg_07_40 et nrg_ind_ren)'
+  ligne_id: estat-041698
+  eligible: oui
+- serie_id: nrg_ind_ren?freq=A&nrg_bal=REN_HEAT_CL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation : part renouvelable de l''électricité, du chauffage et du refroidissement, des transports
+    (sdg_07_40 et nrg_ind_ren)'
+  ligne_id: estat-041699
+  eligible: oui
+- serie_id: nrg_ind_ren?freq=A&nrg_bal=REN_TRA&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'ventilation : part renouvelable de l''électricité, du chauffage et du refroidissement, des transports
+    (sdg_07_40 et nrg_ind_ren)'
+  ligne_id: estat-041700
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_10 UNIT_MEASURE=PT_SUP_NRG
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'autres définitions : OCDE How''s Life 12_10 (part dans l''approvisionnement total) ; Eurostat nrg_ind_fecf
+    (part des renouvelables et biocarburants dans la consommation finale)'
+  ligne_id: m04-000089
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i2b&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique (nrg_ind_ren) et voie INSEE (ODD 7.i2b, BDM 010596107 et Melodi, 2010-2024)
+  ligne_id: melodi-005730
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- derniere_valeur_provisoire
+notes: ''

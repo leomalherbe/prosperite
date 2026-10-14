@@ -1,0 +1,68 @@
+id: races_locales_menacees
+libelle: Races locales d'animaux d'élevage menacées d'extinction
+dimension: planete
+sous_theme: biodiversité
+famille: races_locales_menacees
+variante_principale: oui
+definition: Nombre de races locales d'animaux d'élevage classées à risque d'extinction (indicateur national ODD
+  2.i7 de diversité génétique).
+unite: nombre de races
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 2.i7 (BDM 010594440)
+source_serie_id: '010594440'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594440
+url_page: https://www.insee.fr/fr/statistiques/serie/010594440
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001067
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : une baisse peut traduire une meilleure conservation comme la disparition ou
+  le reclassement de races, et la série (2010-2025) ne distingue pas ces cas.'
+note_pertinence: La diversité génétique des races domestiques fait partie de la biodiversité (cible ODD 2.5), mais
+  ce décompte se lit mal seul. Les classes « non à risque » et « risque inconnu » sont en variantes ; une part des
+  races menacées dans l'ensemble des races locales serait plus lisible.
+variantes:
+- serie_id: '010594442'
+  source: INSEE BDM
+  nature: autres classes de risque (non à risque, inconnu) et voie Melodi
+  ligne_id: bdm-001068
+  eligible: oui
+- serie_id: '010594444'
+  source: INSEE BDM
+  nature: autres classes de risque (non à risque, inconnu) et voie Melodi
+  ligne_id: bdm-001069
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EXCT_R1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i7&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: autres classes de risque (non à risque, inconnu) et voie Melodi
+  ligne_id: melodi-005623
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EXCT_R2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i7&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: autres classes de risque (non à risque, inconnu) et voie Melodi
+  ligne_id: melodi-005624
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EXCT_R3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i7&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: autres classes de risque (non à risque, inconnu) et voie Melodi
+  ligne_id: melodi-005625
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

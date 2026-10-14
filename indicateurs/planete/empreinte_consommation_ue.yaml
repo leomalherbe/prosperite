@@ -1,0 +1,150 @@
+id: empreinte_consommation_ue
+libelle: Empreinte environnementale de la consommation (note unique pondérée)
+dimension: planete
+sous_theme: 'climat : empreinte'
+famille: empreinte_consommation_ue
+variante_principale: oui
+definition: Indicateur composite du Centre commun de recherche de la Commission européenne qui agrège, par analyse
+  du cycle de vie, seize catégories d'impact de la consommation (climat, particules, acidification, eutrophisation,
+  écotoxicité, usage des terres, eau, ressources fossiles et minérales…), pondérées et exprimées en unités de limite
+  planétaire.
+unite: limite planétaire (unité Eurostat PB)
+sens: bas
+type: pression
+declaratif: non
+composite: oui
+source_organisme: Eurostat (modèle du Centre commun de recherche)
+source_jeu: sdg_12_31 (empreinte de consommation, note unique pondérée)
+source_serie_id: sdg_12_31?freq=A&cons_fp=SWS&unit=PB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_12_31?freq=A&cons_fp=SWS&unit=PB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_12_31/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002018
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seul indicateur public qui rapporte l'ensemble des impacts de la consommation aux limites
+  planétaires, série Eurostat sans drapeau de 2010 à 2024 (3,27 en 2010, 3,17 en 2024), admis comme composite (D18).
+note_pertinence: L'indicateur prolonge la logique de plafond de la dimension en rapportant la consommation aux limites
+  planétaires. Il repose sur un modèle (analyse du cycle de vie de produits représentatifs) dont les hypothèses
+  pèsent sur le niveau, et sa pondération est conventionnelle. Les seize catégories d'impact et la note par habitant
+  sont en variantes.
+variantes:
+- serie_id: cei_gsr010?freq=A&cons_fp=SWS&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052343
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=AC&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052328
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=CCHG&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052329
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=ECOTOX_FW&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052330
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=ETR_FW&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052331
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=ETR_M&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052332
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=ETR_T&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052333
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=HTOX_C&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052334
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=HTOX_NC&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052335
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=IR_HHLTH&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052336
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=LU&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052337
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=ODP&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052338
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=PM_HHLTH&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052339
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=POF&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052340
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=RU_FOSS&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052341
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=RU_MIN_MT&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052342
+  eligible: oui
+- serie_id: cei_gsr010?freq=A&cons_fp=WU&unit=P_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat cei_gsr010 : note unique pondérée par habitant et 16 catégories d''impact (climat, acidification,
+    eutrophisation, écotoxicité, usage des terres, eau, ressources…)'
+  ligne_id: estat-052344
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- modele
+notes: ''

@@ -1,0 +1,228 @@
+id: etat_ecologique_eaux_surface
+libelle: Part des masses d'eau de surface en bon ou très bon état écologique
+dimension: planete
+sous_theme: eau
+famille: etat_ecologique_eaux_surface
+variante_principale: oui
+definition: Part des masses d'eau de surface (cours d'eau, plans d'eau) en très bon ou bon état écologique au sens
+  de la directive-cadre sur l'eau, d'après les états des lieux des bassins (indicateur national ODD 6.i2a ; somme
+  des classes « très bon » et « bon »).
+unite: '% des masses d''eau de surface'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 6.i2a (BDM 010595385 et 010595386)
+source_serie_id: 010595385 + 010595386
+composantes:
+- '010595385'
+- '010595386'
+formule: très bon état (010595385) + bon état (010595386)
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010595386
+url_page: https://www.insee.fr/fr/statistiques/serie/010595386
+frequence: irreguliere
+premiere_annee: 2013
+derniere_annee: 2021
+nb_points_depuis_2000: 4
+geo: FE
+eligibilite_longlist: non
+ligne_id: bdm-000752 ; bdm-000753
+hors_longlist: non
+raccordement: 'non : quatre états des lieux de 2013 à 2021'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de référence de la qualité des rivières (directive-cadre sur l'eau), 4 points de
+  2013 à 2021, non éligible dans la long-list mais candidat selon D28 (écart moyen de 2,7 ans entre valeurs, maintenance
+  PLA-1).
+note_pertinence: L'état écologique résume la qualité biologique et physico-chimique des cours d'eau et des plans
+  d'eau ; c'est l'objectif central de la directive-cadre sur l'eau. La série ne bouge qu'aux états des lieux des
+  bassins, d'où le report de la dernière valeur (D17). L'état chimique et l'état des eaux littorales sont en variantes.
+variantes:
+- serie_id: '010595387'
+  source: INSEE BDM
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: bdm-000754
+  eligible: non
+- serie_id: '010595388'
+  source: INSEE BDM
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: bdm-000755
+  eligible: non
+- serie_id: '010595389'
+  source: INSEE BDM
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: bdm-000756
+  eligible: non
+- serie_id: '010595390'
+  source: INSEE BDM
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: bdm-000757
+  eligible: non
+- serie_id: '010595391'
+  source: INSEE BDM
+  nature: état chimique des masses d'eau de surface (bon, mauvais, indéterminé ; ODD 6.i2b, BDM et Melodi)
+  ligne_id: bdm-000758
+  eligible: non
+- serie_id: '010595392'
+  source: INSEE BDM
+  nature: état chimique des masses d'eau de surface (bon, mauvais, indéterminé ; ODD 6.i2b, BDM et Melodi)
+  ligne_id: bdm-000759
+  eligible: non
+- serie_id: '010595393'
+  source: INSEE BDM
+  nature: état chimique des masses d'eau de surface (bon, mauvais, indéterminé ; ODD 6.i2b, BDM et Melodi)
+  ligne_id: bdm-000760
+  eligible: non
+- serie_id: '010596765'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001116
+  eligible: non
+- serie_id: '010596766'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001117
+  eligible: non
+- serie_id: '010596767'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001118
+  eligible: non
+- serie_id: '010596768'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001119
+  eligible: non
+- serie_id: '010596769'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001120
+  eligible: non
+- serie_id: '010596770'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001121
+  eligible: non
+- serie_id: '010596771'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001122
+  eligible: non
+- serie_id: '010596772'
+  source: INSEE BDM
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: bdm-001123
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: melodi-005596
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: melodi-005601
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2b&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: état chimique des masses d'eau de surface (bon, mauvais, indéterminé ; ODD 6.i2b, BDM et Melodi)
+  ligne_id: melodi-005602
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005605
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005606
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: melodi-005607
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: melodi-005608
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: melodi-005609
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2b&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: état chimique des masses d'eau de surface (bon, mauvais, indéterminé ; ODD 6.i2b, BDM et Melodi)
+  ligne_id: melodi-005610
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005613
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005614
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autres classes d'état écologique (moyen, médiocre, mauvais, indéterminé) et voie Melodi (6.i2a)
+  ligne_id: melodi-005615
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT6&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i2b&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: état chimique des masses d'eau de surface (bon, mauvais, indéterminé ; ODD 6.i2b, BDM et Melodi)
+  ligne_id: melodi-005616
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT7&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005619
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT7&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005620
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT8&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1a&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005621
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ETAT8&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i1b&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: qualité écologique des masses d'eau littorales, de transition et côtières (ODD 14.i1a et 14.i1b, BDM et
+    Melodi)
+  ligne_id: melodi-005622
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- exclusion_longlist_contraire_D28
+- somme_de_classes
+notes: ''

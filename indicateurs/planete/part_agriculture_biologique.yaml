@@ -1,0 +1,91 @@
+id: part_agriculture_biologique
+libelle: Part de la surface agricole en agriculture biologique
+dimension: planete
+sous_theme: agriculture et pesticides
+famille: part_agriculture_biologique
+variante_principale: oui
+definition: 'Part de la surface agricole utilisée cultivée en agriculture biologique, d''après l''Agence Bio (indicateurs
+  territoriaux de développement durable ; prise en compte des surfaces en conversion : à vérifier).'
+unite: '% de la SAU'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE (données de l'Agence Bio)
+source_jeu: Indicateurs territoriaux de développement durable, fichier France entière (DiDo), variable part_agribio_surf
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_agribio_surf)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FE
+eligibilite_longlist: oui
+ligne_id: m04-000309
+hors_longlist: non
+raccordement: 'non : série continue depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Moyen admis (D19) adossé à la cible d'environ 21 % en 2030 de la SNBC 3, série nationale de
+  2000 à 2024 (25 points), 10,11 % en 2024 d'après l'extrait du robot M04.
+note_pertinence: L'agriculture biologique n'emploie ni engrais minéraux ni pesticides de synthèse, ce qui en fait
+  un levier de réduction des pressions agricoles. La série nationale est préférée à celle d'Eurostat, de même profondeur
+  mais estimée de 2020 à 2024 et de niveau différent (9,51 % en 2024) ; Eurostat, l'INSEE (ODD 2.i4a) et les exploitations
+  HVE sont en variantes. La part d'Eurostat recule depuis 2022 (9,82 % puis 9,51 % en 2024).
+variantes:
+- serie_id: '010594424'
+  source: INSEE BDM
+  nature: Eurostat sdg_02_40 (2000-2024, valeurs 2020-2024 estimées) et org_cropar (part et surfaces de terres arables
+    et cultures permanentes en bio, 2012-2024) ; INSEE ODD 2.i4a (BDM et Melodi, 2010-2024)
+  ligne_id: bdm-001058
+  eligible: oui
+- serie_id: '010594425'
+  source: INSEE BDM
+  nature: 'INSEE ODD 2.i4b : nombre d''exploitations certifiées haute valeur environnementale (BDM et Melodi, 2012-2024)'
+  ligne_id: bdm-001059
+  eligible: oui
+- serie_id: sdg_02_40?freq=A&unit=PC_UAA&crops=UAAXK0000&agprdmet=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_02_40 (2000-2024, valeurs 2020-2024 estimées) et org_cropar (part et surfaces de terres arables
+    et cultures permanentes en bio, 2012-2024) ; INSEE ODD 2.i4a (BDM et Melodi, 2010-2024)
+  ligne_id: estat-002035
+  eligible: oui
+- serie_id: org_cropar?freq=A&unit=HA&crops=ARA&agprdmet=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_02_40 (2000-2024, valeurs 2020-2024 estimées) et org_cropar (part et surfaces de terres arables
+    et cultures permanentes en bio, 2012-2024) ; INSEE ODD 2.i4a (BDM et Melodi, 2010-2024)
+  ligne_id: estat-032587
+  eligible: oui
+- serie_id: org_cropar?freq=A&unit=HA&crops=PECR&agprdmet=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_02_40 (2000-2024, valeurs 2020-2024 estimées) et org_cropar (part et surfaces de terres arables
+    et cultures permanentes en bio, 2012-2024) ; INSEE ODD 2.i4a (BDM et Melodi, 2010-2024)
+  ligne_id: estat-032635
+  eligible: oui
+- serie_id: org_cropar?freq=A&unit=PC_UAA&crops=UAAXK0000&agprdmet=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_02_40 (2000-2024, valeurs 2020-2024 estimées) et org_cropar (part et surfaces de terres arables
+    et cultures permanentes en bio, 2012-2024) ; INSEE ODD 2.i4a (BDM et Melodi, 2010-2024)
+  ligne_id: estat-032645
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i4a&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat sdg_02_40 (2000-2024, valeurs 2020-2024 estimées) et org_cropar (part et surfaces de terres arables
+    et cultures permanentes en bio, 2012-2024) ; INSEE ODD 2.i4a (BDM et Melodi, 2010-2024)
+  ligne_id: melodi-005719
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=2.i4b&PCS=_Z&SDG=SDG2&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: 'INSEE ODD 2.i4b : nombre d''exploitations certifiées haute valeur environnementale (BDM et Melodi, 2012-2024)'
+  ligne_id: melodi-005720
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- definition_a_verifier
+notes: ''

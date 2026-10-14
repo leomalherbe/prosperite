@@ -1,0 +1,99 @@
+id: oiseaux_communs_specialistes
+libelle: Abondance des oiseaux communs spécialistes
+dimension: planete
+sous_theme: biodiversité
+famille: oiseaux_communs_specialistes
+variante_principale: oui
+definition: Indice d'abondance des populations d'oiseaux communs spécialistes de leur milieu (agricole, forestier,
+  bâti), base 100 en 1989, France métropolitaine, issu du suivi temporel des oiseaux communs (indicateur national
+  ODD 15.i6a).
+unite: indice (base 100 en 1989)
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 15.i6a (BDM 010596708)
+source_serie_id: '010596708'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596708
+url_page: https://www.insee.fr/fr/statistiques/serie/010596708
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001146
+hors_longlist: non
+raccordement: 'a_etudier : la BDM ne diffuse l''indice qu''à partir de 2010 alors qu''il est calculé depuis 1989
+  ; série longue à rechercher auprès du producteur'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de l'état de la biodiversité ordinaire au catalogue national, indicateur
+  ODD 15.i6a publié de 2010 à 2024 (15 points).
+note_pertinence: Les oiseaux spécialistes réagissent à la dégradation de leur habitat, ce qui en fait un bon témoin
+  de l'état de la biodiversité ordinaire. Les indices par milieu (dont les oiseaux des milieux agricoles, aussi
+  suivis par Eurostat jusqu'en 2021) sont en variantes ; l'indice des espèces généralistes, dont la hausse traduit
+  une homogénéisation, ne s'interprète pas seul. L'indice est calculé depuis 1989 chez le producteur, ce qui permettrait
+  des bornes historiques plus longues.
+variantes:
+- serie_id: '010596709'
+  source: INSEE BDM
+  nature: 'indice des espèces généralistes (ODD 15.i6b, BDM et Melodi) : sens ambigu (une hausse traduit une homogénéisation)'
+  ligne_id: bdm-001147
+  eligible: oui
+- serie_id: '010596722'
+  source: INSEE BDM
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: bdm-001148
+  eligible: oui
+- serie_id: '010596723'
+  source: INSEE BDM
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: bdm-001149
+  eligible: oui
+- serie_id: '010596724'
+  source: INSEE BDM
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: bdm-001150
+  eligible: oui
+- serie_id: env_bio2?freq=A&unit=I00&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_bio2 : indice des oiseaux communs des milieux agricoles (base 2000), 2000-2021'
+  ligne_id: estat-041457
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=1989&COMPOSITE_BREAKDOWN=HABIT_TYP1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i6a&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: melodi-005550
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=1989&COMPOSITE_BREAKDOWN=HABIT_TYP2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i6a&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: melodi-005551
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=1989&COMPOSITE_BREAKDOWN=HABIT_TYP3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i6a&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: melodi-005552
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=1989&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i6a&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: voie Melodi (15.i6a, total) et ventilation par milieu (agricole, forestier, bâti), BDM et Melodi
+  ligne_id: melodi-005553
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=1989&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i6b&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=IX
+  source: INSEE Melodi
+  nature: 'indice des espèces généralistes (ODD 15.i6b, BDM et Melodi) : sens ambigu (une hausse traduit une homogénéisation)'
+  ligne_id: melodi-005554
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_metropole
+- serie_bdm_depuis_2010
+notes: ''

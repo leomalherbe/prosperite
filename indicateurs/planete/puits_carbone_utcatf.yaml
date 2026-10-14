@@ -1,0 +1,110 @@
+id: puits_carbone_utcatf
+libelle: Puits de carbone des terres et des forêts (solde net de l'UTCATF)
+dimension: planete
+sous_theme: 'climat : émissions du territoire'
+famille: puits_carbone_utcatf
+variante_principale: oui
+definition: Solde net des émissions et absorptions de gaz à effet de serre du secteur « utilisation des terres,
+  changement d'affectation des terres et foresterie » (catégorie 4 de l'inventaire) ; une valeur négative est une
+  absorption nette (puits).
+unite: 'millions de tonnes équivalent CO2 (négatif : absorption)'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: env_air_gge (émissions de gaz à effet de serre par secteur source, CRF 4)
+source_serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000897
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Grandeur visée par les cibles indicatives de la SNBC 3 (décret n° 2026-636), série Eurostat
+  sans drapeau de 2000 à 2024 dont l'absorption nette est passée de 60,98 Mt en 2004 à 41,18 Mt en 2024 (API lue
+  le 14/10/2026).
+note_pertinence: Le puits des forêts et des sols compense une partie des émissions et conditionne la neutralité
+  carbone en 2050 ; son affaiblissement (sécheresses, mortalité des arbres, récoltes) est une alerte en soi. La
+  série est très variable d'une année à l'autre (absorption de 34,07 Mt en 2000 et de 33,94 Mt en 2017) et révisée
+  à chaque inventaire. Le solde par habitant (sdg_13_21), la série du Citepa et le détail par type de terres sont
+  en variantes.
+variantes:
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4A&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000898
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4B&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000901
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4C&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000905
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4D&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000909
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4E&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000912
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000916
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4G&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000920
+  eligible: oui
+- serie_id: env_air_gge?freq=A&unit=MIO_T&airpol=GHG&src_crf=CRF4H&geo=FR
+  source: Eurostat
+  nature: 'Eurostat env_air_gge : solde UTCATF par catégorie de terres (forêts, cultures, prairies, zones humides,
+    établissements, autres terres, produits bois), tous GES'
+  ligne_id: estat-000921
+  eligible: oui
+- serie_id: sdg_13_21?freq=A&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_13_21 (émissions nettes de l'UTCATF par habitant, 2000-2024) ; Citepa (solde UTCATF, 1990-2025,
+    niveau 2)
+  ligne_id: estat-002109
+  eligible: oui
+- serie_id: https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (GES.UTCATF.France
+    hexagonale + Outre-mer inclus dans l'UE.total GES.MtCO2e)
+  source: Citepa — inventaire national des émissions, format Secten (édition 2026)
+  nature: Eurostat sdg_13_21 (émissions nettes de l'UTCATF par habitant, 2000-2024) ; Citepa (solde UTCATF, 1990-2025,
+    niveau 2)
+  ligne_id: m04-000343
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- revision_a_chaque_inventaire
+- valeurs_negatives
+notes: ''

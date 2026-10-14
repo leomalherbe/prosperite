@@ -1,0 +1,64 @@
+id: empreinte_ecologique
+libelle: Empreinte écologique de la consommation par habitant
+dimension: planete
+sous_theme: 'climat : empreinte'
+famille: empreinte_ecologique
+variante_principale: oui
+definition: Surface biologiquement productive (cultures, pâturages, forêts, zones de pêche, terrains bâtis et forêts
+  nécessaires à l'absorption du CO2) mobilisée pour produire ce que consomment les habitants et absorber leurs émissions,
+  en hectares globaux par personne (comptes nationaux d'empreinte et de biocapacité).
+unite: hectares globaux par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: oui
+source_organisme: Footprint Data Foundation (comptes nationaux d'empreinte écologique et de biocapacité)
+source_jeu: National Ecological Footprint and Biocapacity Accounts, édition 2026 (feuille national_data, colonne
+  efc_total_percapita)
+source_serie_id: https://fodafo.org/wp-content/uploads/NEFBA2026_bulk_v1_0_omiting_Iceland_Faroe_Islands.xlsx (feuille
+  national_data) (colonne efc_total_percapita)
+source_niveau: 2
+url_api: https://fodafo.org/wp-content/uploads/NEFBA2026_bulk_v1_0_omiting_Iceland_Faroe_Islands.xlsx (feuille national_data)
+  (colonne efc_total_percapita)
+url_page: https://fodafo.org/data
+frequence: annuelle
+premiere_annee: 1961
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000345
+hors_longlist: non
+raccordement: 'non : série continue depuis 1961'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seul indicateur agrégé de la demande de surfaces productives, comparable à la biocapacité,
+  disponible de 1961 à 2025 (dont 2024 et 2025 estimés) et admis comme composite (D18).
+note_pertinence: L'empreinte écologique traduit plusieurs pressions (carbone, cultures, forêts, pêche, artificialisation)
+  dans une unité commune et se compare à la biocapacité par habitant, en variante. Le poids du carbone y est prépondérant,
+  d'où un recouvrement avec l'empreinte carbone à traiter au contrôle de redondance. La licence du classeur n'est
+  pas trouvée et son adresse change à chaque édition.
+variantes:
+- serie_id: https://fodafo.org/wp-content/uploads/NEFBA2026_bulk_v1_0_omiting_Iceland_Faroe_Islands.xlsx (feuille
+    national_data) (colonne biocap_total_percapita)
+  source: Footprint Data Foundation — comptes nationaux d'empreinte écologique et de biocapacité (édition 2026)
+  nature: biocapacité par habitant et empreinte de la production par habitant (même classeur)
+  ligne_id: m04-000346
+  eligible: oui
+- serie_id: https://fodafo.org/wp-content/uploads/NEFBA2026_bulk_v1_0_omiting_Iceland_Faroe_Islands.xlsx (feuille
+    national_data) (colonne efp_total_percapita)
+  source: Footprint Data Foundation — comptes nationaux d'empreinte écologique et de biocapacité (édition 2026)
+  nature: biocapacité par habitant et empreinte de la production par habitant (même classeur)
+  ligne_id: m04-000347
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- licence_non_trouvee
+- url_par_edition
+- deux_dernieres_annees_estimees
+notes: ''

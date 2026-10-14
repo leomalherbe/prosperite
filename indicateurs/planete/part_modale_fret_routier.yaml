@@ -1,0 +1,68 @@
+id: part_modale_fret_routier
+libelle: Part de la route dans le transport intérieur de marchandises
+dimension: planete
+sous_theme: énergie
+famille: part_modale_fret_routier
+variante_principale: oui
+definition: Part du transport routier dans les tonnes-kilomètres du transport intérieur terrestre de marchandises
+  (route, fer, voies navigables), France métropolitaine (indicateur national ODD 9.i1b).
+unite: '% des tonnes-kilomètres'
+sens: bas
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 9.i1b (BDM 010751587)
+source_serie_id: '010751587'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010751587
+url_page: https://www.insee.fr/fr/statistiques/serie/010751587
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-000904
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national ODD de report modal publié chaque année de 2010 à 2024 (15 points), seule
+  mesure de la structure du transport de marchandises au catalogue.
+note_pertinence: Le report du fret de la route vers le rail et le fleuve réduit les émissions et la consommation
+  d'énergie des transports. Les parts du ferroviaire et du fluvial, complémentaires à 100 %, sont en variantes.
+variantes:
+- serie_id: '010751586'
+  source: INSEE BDM
+  nature: voie Melodi et parts du ferroviaire et du fluvial (compléments)
+  ligne_id: bdm-000903
+  eligible: oui
+- serie_id: '010751588'
+  source: INSEE BDM
+  nature: voie Melodi et parts du ferroviaire et du fluvial (compléments)
+  ligne_id: bdm-000905
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRANSP_MOY3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=9.i1b&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: voie Melodi et parts du ferroviaire et du fluvial (compléments)
+  ligne_id: melodi-005668
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRANSP_MOY4&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=9.i1b&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: voie Melodi et parts du ferroviaire et du fluvial (compléments)
+  ligne_id: melodi-005669
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRANSP_MOY5&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=9.i1b&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: voie Melodi et parts du ferroviaire et du fluvial (compléments)
+  ligne_id: melodi-005670
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_metropole
+notes: ''

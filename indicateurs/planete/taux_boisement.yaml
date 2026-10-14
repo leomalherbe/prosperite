@@ -1,0 +1,93 @@
+id: taux_boisement
+libelle: Taux de boisement
+dimension: planete
+sous_theme: sols et forêts
+famille: taux_boisement
+variante_principale: oui
+definition: Part de la surface de France métropolitaine couverte par la forêt, en moyenne sur cinq ans, d'après
+  l'inventaire forestier (indicateur national ODD 15.i1).
+unite: '% du territoire (moyenne sur 5 ans)'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: ODD 15.i1 (BDM 010596289)
+source_serie_id: '010596289'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596289
+url_page: https://www.insee.fr/fr/statistiques/serie/010596289
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2022
+nb_points_depuis_2000: 13
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-001138
+hors_longlist: non
+raccordement: 'non : série depuis 2010'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur national ODD 15.i1, série de 2010 à 2022 (13 points) issue de l'inventaire forestier,
+  rattachée au concept « usage des sols » présent dans trois cadres.
+note_pertinence: La surface forestière ne dit rien de la santé des forêts (mortalité, sécheresses) ni de leur exploitation,
+  que mesure la fiche sur l'intensité d'exploitation. Les séries de la FAO (via OWID et Eurostat) et de l'enquête
+  LUCAS sont en variantes. Le Doughnut fixe une limite mondiale sur la surface forestière, sans équivalent national.
+variantes:
+- serie_id: https://ourworldindata.org/grapher/forest-area-as-share-of-land-area.csv (colonne forest_share)
+  source: Our World in Data (relais)
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: m04-000218
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=15.i1&PCS=_Z&SDG=SDG15&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: melodi-005745
+  eligible: oui
+- serie_id: lan_lcv_fao?freq=A&unit=PC&landcover=TOTAL&geo=FR
+  source: Eurostat
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: estat-005702
+  eligible: a_verifier
+- serie_id: for_area_efa?freq=A&stk_flow=STK_CL&indic_fo=OWL&unit=THS_HA&geo=FR
+  source: Eurostat
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: estat-036890
+  eligible: a_verifier
+- serie_id: for_area?freq=A&unit=THS_HA&indic_fo=FOR&geo=FR
+  source: Eurostat
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: estat-036894
+  eligible: a_verifier
+- serie_id: for_area?freq=A&unit=THS_HA&indic_fo=OWL&geo=FR
+  source: Eurostat
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: estat-036895
+  eligible: a_verifier
+- serie_id: for_vol?freq=A&unit=THS_M3&indic_fo=GS_FOR&geo=FR
+  source: Eurostat
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: estat-053124
+  eligible: a_verifier
+- serie_id: sdg_15_11?freq=A&indic_fo=FOR&unit=PC&geo=FR
+  source: Eurostat
+  nature: voie Melodi (15.i1) ; FAO via OWID (part du territoire) ; Eurostat for_area, for_area_efa (autres terres
+    boisées), sdg_15_11 et lan_lcv_fao (LUCAS), for_vol (volume sur pied, FAO)
+  ligne_id: estat-002117
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyenne_sur_5_ans
+- champ_metropole
+notes: ''

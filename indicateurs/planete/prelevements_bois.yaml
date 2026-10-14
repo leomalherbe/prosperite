@@ -1,0 +1,141 @@
+id: prelevements_bois
+libelle: Prélèvements de bois rond
+dimension: planete
+sous_theme: sols et forêts
+famille: exploitation_forets
+variante_principale: non
+definition: Volume de bois rond (bois d'œuvre, d'industrie et de chauffage) prélevé dans les forêts françaises,
+  sur écorce.
+unite: milliers de mètres cubes sur écorce
+sens: ambigu
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: 'for_remov (bois rond : quantités enlevées par type de bois et assortiment)'
+source_serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW&unit=THS_M3&bark=OVBK&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/for_remov?freq=A&treespec=TOTAL&prod_wd=RW&unit=THS_M3&bark=OVBK&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/for_remov/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-053081
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : un volume prélevé ne se juge que rapporté à l''accroissement des forêts, que
+  mesure la fiche principale de la famille, alors que la série seule (77 136 milliers de m3 en 2000, 57 220 en 2023)
+  n''est pas interprétable.'
+note_pertinence: 'Récolter du bois peut être soutenable et remplacer des matériaux plus émetteurs, comme épuiser
+  la forêt : le volume seul ne tranche pas. Les ventilations par assortiment et par propriétaire et les comptes
+  forestiers en volume sont en variantes ; les jeux de sylviculture ont été réintégrés par D26.'
+variantes:
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW&unit=THS_M3&bark=UNBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053082
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_FW&unit=THS_M3&bark=OVBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053083
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_FW&unit=THS_M3&bark=UNBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053084
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN&unit=THS_M3&bark=OVBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053085
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN&unit=THS_M3&bark=UNBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053086
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN_LG&unit=THS_M3&bark=OVBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053087
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN_LG&unit=THS_M3&bark=UNBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053088
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN_O&unit=THS_M3&bark=OVBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053089
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN_O&unit=THS_M3&bark=UNBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053090
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN_PW&unit=THS_M3&bark=OVBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053091
+  eligible: oui
+- serie_id: for_remov?freq=A&treespec=TOTAL&prod_wd=RW_IN_PW&unit=THS_M3&bark=UNBK&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053092
+  eligible: oui
+- serie_id: for_owner?freq=A&unit=THS_M3&owner=PRV&treespec=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053093
+  eligible: oui
+- serie_id: for_owner?freq=A&unit=THS_M3&owner=PUB_OTH&treespec=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053094
+  eligible: oui
+- serie_id: for_owner?freq=A&unit=THS_M3&owner=PUB_STA&treespec=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053095
+  eligible: oui
+- serie_id: for_vol_efa?freq=A&stk_flow=LOSS&indic_fo=FNAWS&unit=THS_M3&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053100
+  eligible: oui
+- serie_id: for_vol_efa?freq=A&stk_flow=RMOV&indic_fo=FNAWS&unit=THS_M3&geo=FR
+  source: Eurostat
+  nature: ventilation par assortiment (bois d'œuvre, d'industrie, de chauffage), par propriétaire, sous écorce ;
+    comptes forestiers en volume (enlèvements et pertes des forêts non exploitables)
+  ligne_id: estat-053112
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_estimees_2019_2021_2023
+notes: ''

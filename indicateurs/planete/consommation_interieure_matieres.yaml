@@ -1,0 +1,195 @@
+id: consommation_interieure_matieres
+libelle: Consommation intérieure de matières par habitant
+dimension: planete
+sous_theme: déchets et matières
+famille: consommation_interieure_matieres
+variante_principale: oui
+definition: Matières extraites sur le territoire plus importations moins exportations, en poids physique, en tonnes
+  par habitant (comptes de flux de matières).
+unite: tonnes par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: env_ac_mfa (comptes de flux de matières)
+source_serie_id: env_ac_mfa?freq=A&indic_env=DMC&material=TOTAL&unit=T_HAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_ac_mfa?freq=A&indic_env=DMC&material=TOTAL&unit=T_HAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/env_ac_mfa/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-037954
+hors_longlist: non
+raccordement: 'a_etudier : ruptures de série en 2000, 2004 et 2009 (drapeau b)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur territorial des flux de matières, série Eurostat de 2000 à 2025 (14,6 t par habitant
+  en 2000, 10,6 t en 2025 imputée), avec des ruptures en 2000, 2004 et 2009.
+note_pertinence: 'La consommation intérieure de matières mesure ce qui est consommé sur le territoire, sans les
+  matières mobilisées à l''étranger pour les importations : elle sous-estime la pression d''une économie qui importe
+  ses produits, d''où la fiche distincte sur l''empreinte. La productivité des ressources (PIB par tonne), les composantes
+  du compte et la série INSEE (ODD 12.i1) sont en variantes.'
+variantes:
+- serie_id: '010596187'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i1a à 12.i1c : DMC, DMC par habitant, productivité matières (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-000723
+  eligible: oui
+- serie_id: '010596188'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i1a à 12.i1c : DMC, DMC par habitant, productivité matières (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-000724
+  eligible: oui
+- serie_id: '010596189'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i1a à 12.i1c : DMC, DMC par habitant, productivité matières (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-000725
+  eligible: oui
+- serie_id: env_ac_mfa?freq=A&indic_env=DE&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037953
+  eligible: oui
+- serie_id: env_ac_mfa?freq=A&indic_env=DMI&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037955
+  eligible: oui
+- serie_id: env_ac_mfa?freq=A&indic_env=EXP&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037956
+  eligible: oui
+- serie_id: env_ac_mfa?freq=A&indic_env=IMP&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037957
+  eligible: oui
+- serie_id: env_ac_mfa?freq=A&indic_env=PTB&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037958
+  eligible: oui
+- serie_id: env_ac_mfadpo?freq=A&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037959
+  eligible: oui
+- serie_id: env_ac_mfabi?freq=A&material=TOTAL&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037960
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=BI&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037961
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=DE&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037962
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=DMC&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037963
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=DMI&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037964
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=DPO&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037965
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=EXP&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037966
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=IMP&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037967
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=NAS&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037968
+  eligible: oui
+- serie_id: env_ac_mfain?freq=A&indic_env=PTB&unit=T_HAB&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-037969
+  eligible: oui
+- serie_id: env_ac_rp?freq=A&unit=EUR_KG_CLV15&geo=FR
+  source: Eurostat
+  nature: Eurostat comptes de flux de matières (extraction, apports, importations, exportations, balance physique,
+    émissions des processus, addition nette de stock) et productivité des ressources (PIB/DMC) ; INSEE ODD 12.i1a
+    à 12.i1c (BDM et Melodi, 2010-2023)
+  ligne_id: estat-053125
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i1a&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 12.i1a à 12.i1c : DMC, DMC par habitant, productivité matières (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005690
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i1b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 12.i1a à 12.i1c : DMC, DMC par habitant, productivité matières (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005691
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=12.i1c&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=EUR_KG
+  source: INSEE Melodi
+  nature: 'INSEE ODD 12.i1a à 12.i1c : DMC, DMC par habitant, productivité matières (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005692
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ruptures_2000_2004_2009
+- derniere_valeur_imputee
+notes: ''

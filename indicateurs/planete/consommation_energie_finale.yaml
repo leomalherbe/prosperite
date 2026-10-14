@@ -1,0 +1,213 @@
+id: consommation_energie_finale
+libelle: Consommation finale d'énergie
+dimension: planete
+sous_theme: énergie
+famille: consommation_energie_finale
+variante_principale: oui
+definition: Énergie consommée par les utilisateurs finals (ménages, industrie, transports, tertiaire, agriculture),
+  hors usages non énergétiques et hors branche énergie, selon la définition de la directive européenne relative
+  à l'efficacité énergétique (Eurostat, FEC_EED).
+unite: millions de tonnes équivalent pétrole
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: nrg_ind_eff (consommation d'énergie primaire et finale)
+source_serie_id: nrg_ind_eff?freq=A&nrg_bal=FEC_EED&unit=MTOE&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_eff?freq=A&nrg_bal=FEC_EED&unit=MTOE&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_eff/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2024
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-041960
+hors_longlist: non
+raccordement: 'non : série continue depuis 2005'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Grandeur visée par l'objectif de baisse de l'article L100-4 du code de l'énergie (base 2012)
+  et par la directive relative à l'efficacité énergétique, série Eurostat sans drapeau de 2005 à 2024 (150,92 Mtep
+  en 2012, 130,72 Mtep en 2024).
+note_pertinence: La consommation finale mesure l'énergie effectivement utilisée par l'économie et les ménages, quelle
+  que soit sa production. Eurostat est retenu parce que la série INSEE (ODD 7.i2a, en TWh) ne commence qu'en 2011
+  ; elle est en variante avec ses ventilations par secteur, la consommation par habitant et celle des ménages. Les
+  objectifs de l'article L100-4 sont à vérifier avant le socle des bornes (question Q-F).
+variantes:
+- serie_id: '010760750'
+  source: INSEE BDM
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: bdm-000822
+  eligible: oui
+- serie_id: '010760751'
+  source: INSEE BDM
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: bdm-000823
+  eligible: oui
+- serie_id: '010760752'
+  source: INSEE BDM
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: bdm-000824
+  eligible: oui
+- serie_id: '010760753'
+  source: INSEE BDM
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: bdm-000825
+  eligible: oui
+- serie_id: '010760754'
+  source: INSEE BDM
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: bdm-000826
+  eligible: oui
+- serie_id: nrg_bal_c?freq=A&nrg_bal=FC_E&siec=TOTAL&unit=GWH&geo=FR
+  source: Eurostat
+  nature: 'bilans énergétiques Eurostat (nrg_bal_s, nrg_bal_c, GWh) : consommation finale EED et consommation finale
+    à usage énergétique'
+  ligne_id: estat-001262
+  eligible: oui
+- serie_id: nrg_bal_c?freq=A&nrg_bal=FEC_EED&siec=TOTAL&unit=GWH&geo=FR
+  source: Eurostat
+  nature: 'bilans énergétiques Eurostat (nrg_bal_s, nrg_bal_c, GWh) : consommation finale EED et consommation finale
+    à usage énergétique'
+  ligne_id: estat-001294
+  eligible: oui
+- serie_id: sdg_07_20?freq=A&unit=KGOE&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-002008
+  eligible: oui
+- serie_id: sdg_07_11?freq=A&unit=TOE_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-002013
+  eligible: oui
+- serie_id: nrg_bal_s?freq=A&nrg_bal=FC_E&siec=TOTAL&unit=GWH&geo=FR
+  source: Eurostat
+  nature: 'bilans énergétiques Eurostat (nrg_bal_s, nrg_bal_c, GWh) : consommation finale EED et consommation finale
+    à usage énergétique'
+  ligne_id: estat-036783
+  eligible: oui
+- serie_id: nrg_bal_s?freq=A&nrg_bal=FEC_EED&siec=TOTAL&unit=GWH&geo=FR
+  source: Eurostat
+  nature: 'bilans énergétiques Eurostat (nrg_bal_s, nrg_bal_c, GWh) : consommation finale EED et consommation finale
+    à usage énergétique'
+  ligne_id: estat-036812
+  eligible: oui
+- serie_id: nrg_ind_esc?freq=A&siec=TOTAL&nrg_bal=FC_E&unit=GJ_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-041647
+  eligible: oui
+- serie_id: nrg_ind_esc?freq=A&siec=TOTAL&nrg_bal=FC_IND_E&unit=GJ_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-041648
+  eligible: oui
+- serie_id: nrg_ind_esc?freq=A&siec=TOTAL&nrg_bal=FC_OTH_CP_E&unit=GJ_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-041649
+  eligible: oui
+- serie_id: nrg_ind_esc?freq=A&siec=TOTAL&nrg_bal=FC_OTH_E&unit=GJ_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-041650
+  eligible: oui
+- serie_id: nrg_ind_esc?freq=A&siec=TOTAL&nrg_bal=FC_OTH_HH_E&unit=GJ_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-041651
+  eligible: oui
+- serie_id: nrg_ind_esc?freq=A&siec=TOTAL&nrg_bal=FC_TRA_E&unit=GJ_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre unité : par habitant (Eurostat sdg_07_11 en tep, nrg_ind_esc en GJ, ensemble et par secteur)'
+  ligne_id: estat-041658
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052182
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E_CK&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052183
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E_LE&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052184
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E_OE&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052185
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E_SC&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052186
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E_SH&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052187
+  eligible: oui
+- serie_id: nrg_d_hhq?freq=A&nrg_bal=FC_OTH_HH_E_WH&siec=TOTAL&unit=TJ&geo=FR
+  source: Eurostat
+  nature: 'composante ménages : consommation finale d''énergie des ménages par habitant (sdg_07_20, 2000-2024) et
+    par usage (nrg_d_hhq : chauffage, eau chaude, cuisson, appareils…)'
+  ligne_id: estat-052188
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i2a&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TWH
+  source: INSEE Melodi
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: melodi-005586
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT12&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i2a&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TWH
+  source: INSEE Melodi
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: melodi-005588
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i2a&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TWH
+  source: INSEE Melodi
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: melodi-005592
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECO_SECT4-5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i2a&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TWH
+  source: INSEE Melodi
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: melodi-005594
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=7.i2a&PCS=_Z&SDG=SDG7&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TWH
+  source: INSEE Melodi
+  nature: INSEE ODD 7.i2a (BDM 010760750 et Melodi, TWh, 2011-2024) et ventilation par secteur (industrie, transports,
+    résidentiel-tertiaire, agriculture)
+  ligne_id: melodi-005684
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

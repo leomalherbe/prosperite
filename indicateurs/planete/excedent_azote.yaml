@@ -1,0 +1,77 @@
+id: excedent_azote
+libelle: Excédent du bilan azoté des terres agricoles
+dimension: planete
+sous_theme: azote et phosphore
+famille: pression_azote_agricole
+variante_principale: oui
+definition: 'Bilan brut de l''azote des sols agricoles : apports (engrais minéraux et organiques, effluents d''élevage,
+  fixation biologique, dépôts atmosphériques, semences) moins exportations par les récoltes et les fourrages, en
+  kg d''azote par hectare de surface agricole utilisée.'
+unite: kg d'azote par hectare de SAU
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: aei_pr_gnb (bilan nutritif brut)
+source_serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=BAL_UAA&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/aei_pr_gnb?freq=A&nutrient=N&indic_ag=BAL_UAA&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/aei_pr_gnb/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-035803
+hors_longlist: non
+raccordement: 'a_etudier : rupture de série en 2010 (drapeau b)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la pression azotée agricole retenue par l'OCDE (How's Life 12_11), série Eurostat
+  de 2000 à 2023 (40,0 kg/ha en 2000, 18,3 en 2023) avec une rupture en 2010 (drapeau b).
+note_pertinence: 'L''excédent d''azote est la part des apports que les cultures n''absorbent pas et qui finit dans
+  les eaux (nitrates) ou dans l''air (ammoniac, protoxyde d''azote) : c''est l''indicateur national le plus proche
+  de la limite planétaire de l''azote. Il varie avec les rendements, donc avec la météo. La consommation d''engrais
+  azotés minéraux forme l''autre fiche de la famille ; la série de l''OCDE et les termes du bilan sont en variantes.'
+variantes:
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=BAL&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare) ; OCDE How's Life 12_11
+  ligne_id: estat-035802
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=INP_NT&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare) ; OCDE How's Life 12_11
+  ligne_id: estat-035804
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=INP_UAA&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare) ; OCDE How's Life 12_11
+  ligne_id: estat-035805
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=OUT_NT&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare) ; OCDE How's Life 12_11
+  ligne_id: estat-035822
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=OUT_UAA&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare) ; OCDE How's Life 12_11
+  ligne_id: estat-035823
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_11 UNIT_MEASURE=KG
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare) ; OCDE How's Life 12_11
+  ligne_id: m04-000090
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2010
+- sensible_aux_rendements
+notes: ''

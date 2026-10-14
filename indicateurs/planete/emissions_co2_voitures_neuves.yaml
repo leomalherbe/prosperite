@@ -1,0 +1,47 @@
+id: emissions_co2_voitures_neuves
+libelle: Émissions moyennes de CO2 des voitures particulières neuves
+dimension: planete
+sous_theme: énergie
+famille: emissions_co2_voitures_neuves
+variante_principale: oui
+definition: Émissions moyennes de CO2 par kilomètre des voitures particulières neuves immatriculées dans l'année,
+  selon la mesure d'homologation.
+unite: grammes de CO2 par kilomètre
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_13_31 (émissions moyennes de CO2 par km des voitures particulières neuves)
+source_serie_id: sdg_13_31?freq=A&geo=FR&unit=G_KM
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_13_31?freq=A&geo=FR&unit=G_KM
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_13_31/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002106
+hors_longlist: non
+raccordement: 'a_etudier : rupture NEDC/WLTP en 2017 (valeurs 2017-2019 converties par Eurostat)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur annuel de 2000 à 2025 (26 points) adossé aux normes européennes d'émission des
+  voitures neuves, avec une rupture en 2017 liée au passage à la procédure WLTP (drapeau b, API lue le 14/10/2026).
+note_pertinence: 'L''indicateur suit l''amélioration du parc neuf mais change de protocole : NEDC jusqu''en 2016,
+  valeurs converties en WLTP de 2017 à 2019, WLTP depuis 2020, d''où un saut de 109,8 à 133,8 g/km en 2017. Il faudra
+  raccorder la série ou ne lire que 2017-2025 (89,1 g/km en 2025, valeur provisoire). Il mesure des émissions d''homologation,
+  pas l''usage réel des véhicules.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2017_wltp
+- valeurs_estimees_2017_2019
+- derniere_valeur_provisoire
+notes: ''

@@ -1,0 +1,73 @@
+id: aires_marines_protegees
+libelle: Part des eaux sous juridiction en aires marines protégées
+dimension: planete
+sous_theme: biodiversité
+famille: aires_marines_protegees
+variante_principale: oui
+definition: Part de la zone économique exclusive française couverte par des aires marines protégées (How's Life,
+  capital naturel, mesure 12_6).
+unite: '% de la zone économique exclusive'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: OCDE
+source_jeu: How's Life? (bien-être futur), mesure 12_6
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_6 UNIT_MEASURE=PT_EEZ
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2024
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000085
+hors_longlist: non
+raccordement: 'non : série continue depuis 2004'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Moyen admis (D19) adossé à la cible de 30 % d'espaces protégés terrestres et maritimes (article
+  L110-4), série OCDE de 2004 à 2024 (21 points), 33,91 % en 2024 d'après l'extrait du robot M04.
+note_pertinence: La France dispose d'un très grand domaine maritime, surtout outre-mer, où de vastes aires protégées
+  ont été créées. La série INSEE (ODD 14.i7, 2011-2024) et les sites Natura 2000 en mer (Eurostat, 6 points) sont
+  en variantes. Comme pour les terres, la protection ne garantit pas le bon état des milieux.
+variantes:
+- serie_id: '010596835'
+  source: INSEE BDM
+  nature: INSEE ODD 14.i7 (BDM 010596835 et Melodi, 2011-2024), WDPA via OWID (eaux territoriales), Eurostat sdg_14_10
+    et env_bio4 (sites marins Natura 2000, 6 points)
+  ligne_id: bdm-001136
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/marine-protected-areas.csv (colonne er_mrn_ptmr_zs)
+  source: Our World in Data (relais)
+  nature: INSEE ODD 14.i7 (BDM 010596835 et Melodi, 2011-2024), WDPA via OWID (eaux territoriales), Eurostat sdg_14_10
+    et env_bio4 (sites marins Natura 2000, 6 points)
+  ligne_id: m04-000217
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=14.i7&PCS=_Z&SDG=SDG14&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE ODD 14.i7 (BDM 010596835 et Melodi, 2011-2024), WDPA via OWID (eaux territoriales), Eurostat sdg_14_10
+    et env_bio4 (sites marins Natura 2000, 6 points)
+  ligne_id: melodi-005707
+  eligible: oui
+- serie_id: sdg_14_10?freq=A&areaprot=MPA&unit=PC&geo=FR
+  source: Eurostat
+  nature: INSEE ODD 14.i7 (BDM 010596835 et Melodi, 2011-2024), WDPA via OWID (eaux territoriales), Eurostat sdg_14_10
+    et env_bio4 (sites marins Natura 2000, 6 points)
+  ligne_id: estat-002114
+  eligible: a_verifier
+- serie_id: env_bio4?freq=A&unit=PC&areaprot=MPA&geo=FR
+  source: Eurostat
+  nature: INSEE ODD 14.i7 (BDM 010596835 et Melodi, 2011-2024), WDPA via OWID (eaux territoriales), Eurostat sdg_14_10
+    et env_bio4 (sites marins Natura 2000, 6 points)
+  ligne_id: estat-041458
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: ''

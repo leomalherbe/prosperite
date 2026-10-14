@@ -1,0 +1,184 @@
+id: dechets_municipaux_par_habitant
+libelle: Déchets municipaux produits par habitant
+dimension: planete
+sous_theme: déchets et matières
+famille: dechets_municipaux_par_habitant
+variante_principale: oui
+definition: Quantité de déchets municipaux (déchets des ménages et déchets assimilés collectés par le service public)
+  produite dans l'année, en kilogrammes par habitant.
+unite: kg par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: env_wasmun (déchets municipaux par opérations de gestion)
+source_serie_id: env_wasmun?freq=A&wst_oper=GEN&unit=KG_HAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wasmun?freq=A&wst_oper=GEN&unit=KG_HAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/env_wasmun/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-001860
+hors_longlist: non
+raccordement: 'non : la source remonte à 1995'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Pression visée par l'objectif de réduction des déchets ménagers et assimilés de la loi AGEC,
+  série Eurostat de 2000 à 2024 (514 kg en 2000, 530 kg en 2024) dont la plupart des valeurs récentes sont estimées.
+note_pertinence: Les déchets municipaux mesurent la pression de la consommation des ménages sur les ressources et
+  les capacités de traitement. La série saute de 516 kg en 2015 à 553 kg en 2016 sans drapeau de rupture, cause
+  à documenter, et les valeurs depuis 2016 sont des estimations. La série INSEE des déchets traités par habitant
+  (ODD 11.i3b, 2010-2023) et les modes de traitement sont en variantes.
+variantes:
+- serie_id: '010596160'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001160
+  eligible: oui
+- serie_id: '010596161'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001161
+  eligible: oui
+- serie_id: '010596162'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001162
+  eligible: oui
+- serie_id: '010596163'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001163
+  eligible: oui
+- serie_id: '010596164'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001164
+  eligible: oui
+- serie_id: '010596165'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001165
+  eligible: oui
+- serie_id: '010600337'
+  source: INSEE BDM
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: bdm-001166
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=DSP_I&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001857
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=DSP_I_RCV_E&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001858
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=DSP_L_OTH&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001859
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=RCV_E&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001862
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=RCY&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001863
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=RCY_C_D&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001864
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=RCY_M&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001865
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=TRT&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001866
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRAIT1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005661
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRAIT2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005662
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRAIT3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005663
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRAIT4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005664
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRAIT5&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005665
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=T
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005675
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=11.i3b&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=KG
+  source: INSEE Melodi
+  nature: 'INSEE ODD 11.i3a et 11.i3b : déchets municipaux traités, total et par habitant, et par mode de traitement
+    (BDM et Melodi, 2010-2023)'
+  ligne_id: melodi-005688
+  eligible: oui
+- serie_id: env_wasmun?freq=A&wst_oper=PRP_REU&unit=KG_HAB&geo=FR
+  source: Eurostat
+  nature: 'ventilation par mode de traitement (recyclage, compostage, valorisation énergétique, incinération, décharge,
+    préparation au réemploi) : Eurostat env_wasmun, kg par habitant'
+  ligne_id: estat-001861
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_estimees
+- saut_2016_non_documente
+notes: ''

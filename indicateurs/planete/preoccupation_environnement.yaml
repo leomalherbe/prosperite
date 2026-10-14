@@ -1,0 +1,54 @@
+id: preoccupation_environnement
+libelle: Personnes préoccupées par les problèmes liés à l'environnement (baromètre DREES)
+dimension: planete
+sous_theme: perceptions
+famille: preoccupation_environnement
+variante_principale: oui
+definition: Part des adultes résidant en France métropolitaine qui se disent « beaucoup » ou « assez » préoccupés
+  par les problèmes liés à l'environnement (question OG05_1 du baromètre d'opinion de la DREES ; part pondérée,
+  non-réponses au dénominateur, calculée sur les distributions extraites par le robot M04).
+unite: '% des répondants'
+sens: ambigu
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees), question OG05_1
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG05_1, modalités 1+2
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+statut_serie: a_calculer
+rattachement_propose: question OG05_1 du baromètre DREES, présente dans les extraits du robot M04 mais absente du
+  catalogue des candidats M04 et des long-lists ; à calculer et à cataloguer (maintenance PLA-3)
+raccordement: 'non : pas d''enquête en 2003'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : la part de personnes préoccupées par l''environnement (86,8 % en 2000, 76,7
+  % en 2025, modalités « beaucoup » et « assez » recalculées sur les distributions du robot M04) mesure l''attention
+  portée au sujet autant que l''état de l''environnement.'
+note_pertinence: 'C''est la seule mesure déclarative disponible pour la dimension : le baromètre de la DREES pose
+  la question chaque année depuis 2000 (sauf 2003), en France métropolitaine. Sa remontée en 2018-2019 (87,5 % en
+  2019) puis sa baisse (76,7 % en 2025) suivent l''actualité plus que les pressions mesurées par les autres fiches.
+  Elle pourrait servir de contexte, ou d''indicateur d''adhésion à la transition, si Léo le souhaite.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- enquete_metropole
+- pas_d_enquete_2003
+notes: ''

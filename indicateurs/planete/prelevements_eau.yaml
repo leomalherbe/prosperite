@@ -1,0 +1,207 @@
+id: prelevements_eau
+libelle: Prélèvements d'eau douce par habitant
+dimension: planete
+sous_theme: eau
+famille: pression_eau
+variante_principale: oui
+definition: Volume total d'eau douce (de surface et souterraine) prélevé dans le milieu naturel pour tous les usages
+  (eau potable, agriculture, industrie, refroidissement des centrales, canaux), rapporté à la population.
+unite: m³ par habitant
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: env_wat_abs (prélèvement annuel d'eau douce par source et secteur)
+source_serie_id: env_wat_abs?freq=A&wat_proc=ABST&wat_src=FRW&unit=M3_HAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_wat_abs?freq=A&wat_proc=ABST&wat_src=FRW&unit=M3_HAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/env_wat_abs/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-041297
+hors_longlist: non
+raccordement: 'non : série continue depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la pression sur la ressource en eau la plus longue au catalogue, série Eurostat
+  sans drapeau de 2000 à 2023 (538 m³ par habitant en 2000, 341 m³ en 2023).
+note_pertinence: 'Le refroidissement des centrales, dont l''eau est en grande partie restituée aux rivières, pèse
+  lourd dans le total (13,3 milliards de m³ sur 34,1 en 2022 pour les eaux de surface, d''après l''ITDD) : la ventilation
+  par usage, en variante, aide à lire la tendance. Les volumes nationaux masquent les tensions locales et estivales.
+  La série INSEE par usage (ODD 6.i5, 2010-2022) et les ventilations par origine et par secteur sont en variantes.'
+variantes:
+- serie_id: '010595608'
+  source: INSEE BDM
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: bdm-000770
+  eligible: oui
+- serie_id: '010595708'
+  source: INSEE BDM
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: bdm-000771
+  eligible: oui
+- serie_id: '010595808'
+  source: INSEE BDM
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: bdm-000772
+  eligible: oui
+- serie_id: '010595908'
+  source: INSEE BDM
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: bdm-000773
+  eligible: oui
+- serie_id: '010600313'
+  source: INSEE BDM
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: bdm-000776
+  eligible: oui
+- serie_id: '010600315'
+  source: INSEE BDM
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: bdm-000778
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABST&wat_src=FGW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041296
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABST&wat_src=FSW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041298
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_AGR&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041300
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_CON&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041303
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_ELC_CL&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041306
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_IND&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041309
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_MIN&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041312
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_PWS&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041315
+  eligible: oui
+- serie_id: env_wat_abs?freq=A&wat_proc=ABS_SER&wat_src=FRW&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041318
+  eligible: oui
+- serie_id: env_wat_use?freq=A&wat_proc=ABS_GEN_HYDRO&wat_src=TOTAL&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041320
+  eligible: oui
+- serie_id: env_wat_use?freq=A&wat_proc=WAU&wat_src=TOTAL&unit=M3_HAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041321
+  eligible: oui
+- serie_id: env_wat_bal?freq=A&wat_proc=CWD&wat_src=TOTAL&unit=MIO_M3&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041324
+  eligible: oui
+- serie_id: env_wat_bal?freq=A&wat_proc=WAU&wat_src=TOTAL&unit=MIO_M3&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041326
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EAU_UTIL1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=6.i5&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=M3
+  source: INSEE Melodi
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: melodi-005577
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EAU_UTIL2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=6.i5&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=M3
+  source: INSEE Melodi
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: melodi-005578
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EAU_UTIL3&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=6.i5&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=M3
+  source: INSEE Melodi
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: melodi-005579
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EAU_UTIL4&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=6.i5&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=M3
+  source: INSEE Melodi
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: melodi-005580
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=EAU_UTIL5&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=6.i5&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=M3
+  source: INSEE Melodi
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: melodi-005581
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=6.i5&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=M3
+  source: INSEE Melodi
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: melodi-005687
+  eligible: oui
+- serie_id: env_wat_bal?freq=A&wat_proc=DIS&wat_src=TOTAL&unit=MIO_M3&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : ventilation par origine (eaux de surface, souterraines) et par secteur (agriculture, industrie,
+    électricité, distribution publique…) ; eau mise à disposition, eaux de refroidissement, hydroélectricité'
+  ligne_id: estat-041325
+  eligible: non
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable vol_prelev.total)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'INSEE ODD 6.i5 : prélèvements totaux et par usage (eau potable, industrie, agriculture, refroidissement
+    des centrales, canaux), France métropolitaine, 2010-2022 (BDM et Melodi) ; SDES ITDD (2014-2022, non éligible)'
+  ligne_id: m04-000317
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyenne_nationale_masque_tensions_locales
+notes: ''

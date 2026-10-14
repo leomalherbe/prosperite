@@ -1,0 +1,60 @@
+id: engrais_azotes_mineraux
+libelle: Consommation d'engrais azotés minéraux
+dimension: planete
+sous_theme: azote et phosphore
+famille: pression_azote_agricole
+variante_principale: non
+definition: Quantité d'azote contenue dans les engrais minéraux (inorganiques) utilisés par l'agriculture, en tonnes
+  d'azote.
+unite: tonnes d'azote
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: aei_fm_usefert (consommation d'engrais inorganiques)
+source_serie_id: aei_fm_usefert?freq=A&nutrient=N&unit=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/aei_fm_usefert?freq=A&nutrient=N&unit=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/aei_fm_usefert/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-035867
+hors_longlist: non
+raccordement: 'non : série continue depuis 2000'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille pression_azote_agricole, proche de l'indicateur de la limite planétaire
+  du Doughnut et visée par la cible de baisse de 30 % en 2030 de la SNBC 3, série Eurostat de 2000 à 2024 (2 482
+  363 t en 2000, 1 824 613 t en 2024, provisoire).
+note_pertinence: Les engrais minéraux sont une source majeure d'azote réactif dans les sols, et le Doughnut fixe
+  sa limite sur l'azote appliqué comme engrais. La série ignore les effluents d'élevage et les prélèvements des
+  cultures, contrairement à l'excédent. Les valeurs 2023 et 2024 sont provisoires.
+variantes:
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=I_FRT&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_gnb : engrais minéraux, organiques et total (tonnes d''azote)'
+  ligne_id: estat-035806
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=I_FRT_MIN&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_gnb : engrais minéraux, organiques et total (tonnes d''azote)'
+  ligne_id: estat-035807
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=N&indic_ag=I_FRT_ORG&geo=FR
+  source: Eurostat
+  nature: 'Eurostat aei_pr_gnb : engrais minéraux, organiques et total (tonnes d''azote)'
+  ligne_id: estat-035808
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_provisoires_2023_2024
+notes: ''

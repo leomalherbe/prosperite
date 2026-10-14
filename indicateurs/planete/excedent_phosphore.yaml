@@ -1,0 +1,72 @@
+id: excedent_phosphore
+libelle: Excédent du bilan phosphoré des terres agricoles
+dimension: planete
+sous_theme: azote et phosphore
+famille: pression_phosphore_agricole
+variante_principale: oui
+definition: 'Bilan brut du phosphore des sols agricoles : apports (engrais minéraux et organiques, effluents d''élevage,
+  semences) moins exportations par les récoltes et les fourrages, en kg de phosphore par hectare de surface agricole
+  utilisée.'
+unite: kg de phosphore par hectare de SAU
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: aei_pr_gnb (bilan nutritif brut)
+source_serie_id: aei_pr_gnb?freq=A&nutrient=P&indic_ag=BAL_UAA&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/aei_pr_gnb?freq=A&nutrient=P&indic_ag=BAL_UAA&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/aei_pr_gnb/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-035837
+hors_longlist: non
+raccordement: 'a_etudier : rupture de série en 2010 (drapeau b)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la pression phosphorée agricole, série Eurostat de 2000 à 2023 (8,4 kg/ha en 2000,
+  -1,1 en 2023) avec une rupture en 2010 (drapeau b).
+note_pertinence: 'L''excédent de phosphore s''accumule dans les sols et rejoint les eaux par érosion, ce qui nourrit
+  l''eutrophisation. Il est devenu presque nul, et négatif en 2023, ce qui signale un déstockage des sols plutôt
+  qu''une absence de pression : les bornes devront en tenir compte. La consommation d''engrais phosphatés forme
+  l''autre fiche de la famille.'
+variantes:
+- serie_id: aei_pr_gnb?freq=A&nutrient=P&indic_ag=BAL&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare)
+  ligne_id: estat-035836
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=P&indic_ag=INP_NT&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare)
+  ligne_id: estat-035838
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=P&indic_ag=INP_UAA&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare)
+  ligne_id: estat-035839
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=P&indic_ag=OUT_NT&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare)
+  ligne_id: estat-035853
+  eligible: oui
+- serie_id: aei_pr_gnb?freq=A&nutrient=P&indic_ag=OUT_UAA&geo=FR
+  source: Eurostat
+  nature: même bilan en tonnes, apports et prélèvements (totaux et par hectare)
+  ligne_id: estat-035854
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2010
+- valeurs_negatives
+notes: ''

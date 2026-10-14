@@ -1,0 +1,1247 @@
+id: taux_pauvrete_60
+libelle: Taux de pauvreté monétaire (seuil à 60 % du niveau de vie médian)
+dimension: niveau_de_vie
+sous_theme: pauvreté monétaire
+famille: pauvrete_monetaire
+variante_principale: oui
+definition: Part des personnes dont le niveau de vie est inférieur à 60 % du niveau de vie médian (enquête Revenus
+  fiscaux et sociaux, données rétropolées, France métropolitaine, ménages ordinaires).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure PR_MD60
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005344
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans les cinq cadres de référence (§5 du crosswalk, en complément pour l'INSEE),
+  indicateur ODD national 1.i1a, publié sans rupture par l'INSEE de 1996 à 2024 (25 points), un an de plus que la
+  série ODD de la BDM.
+note_pertinence: 'C''est l''indicateur de pauvreté de référence en France et en Europe : en 2024, 15,4 % des personnes,
+  soit 9,8 millions, vivent sous le seuil de 1 337 € par mois (Insee Première n° 2117, lue le 14/10/2026). Le taux
+  est relatif : il mesure la distance au niveau de vie médian, pas la privation absolue, que portent d''autres fiches
+  (privation matérielle et sociale, premier décile). La version EU-SILC d''Eurostat, de même définition mais avec
+  des ruptures en 2020 et 2022, est une variante.'
+variantes:
+- serie_id: '010594446'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000837
+  eligible: oui
+- serie_id: '010594447'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000838
+  eligible: oui
+- serie_id: '010594448'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000839
+  eligible: oui
+- serie_id: '010594450'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000841
+  eligible: oui
+- serie_id: '010594451'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000842
+  eligible: oui
+- serie_id: '010600322'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000876
+  eligible: oui
+- serie_id: '010600323'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000877
+  eligible: oui
+- serie_id: '010600324'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000878
+  eligible: oui
+- serie_id: '010600325'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000879
+  eligible: oui
+- serie_id: '010594452'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000843
+  eligible: oui
+- serie_id: '010594453'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000844
+  eligible: oui
+- serie_id: '010594454'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000845
+  eligible: oui
+- serie_id: '010594455'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000846
+  eligible: oui
+- serie_id: '010594457'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000847
+  eligible: oui
+- serie_id: '010594458'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000848
+  eligible: oui
+- serie_id: '010594459'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000849
+  eligible: oui
+- serie_id: '010594460'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000850
+  eligible: oui
+- serie_id: '010594461'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000851
+  eligible: oui
+- serie_id: '010594462'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000852
+  eligible: oui
+- serie_id: '010594463'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000853
+  eligible: oui
+- serie_id: '010600326'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000880
+  eligible: oui
+- serie_id: '010600327'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: bdm-000881
+  eligible: oui
+- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (Eurostat), seuil de 60 %, ensemble'
+  ligne_id: estat-000032
+  eligible: oui
+- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-000033
+  eligible: oui
+- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-000034
+  eligible: oui
+- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_70&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-000035
+  eligible: oui
+- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_70&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-000036
+  eligible: oui
+- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_70&sex=T&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-000037
+  eligible: oui
+- serie_id: sdg_01_20?freq=A&statinfo=MED_EI&age=TOTAL&rskpovth=B_60&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (Eurostat), seuil de 60 %, ensemble'
+  ligne_id: estat-002019
+  eligible: oui
+- serie_id: ilc_li41?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-004567
+  eligible: oui
+- serie_id: ilc_li43?freq=A&unit=PC&deg_urb=DEG1&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-005293
+  eligible: oui
+- serie_id: ilc_li43?freq=A&unit=PC&deg_urb=DEG2&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-005294
+  eligible: oui
+- serie_id: ilc_li43?freq=A&unit=PC&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-005295
+  eligible: oui
+- serie_id: ilc_li45?freq=A&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu après coûts du logement'
+  ligne_id: estat-030543
+  eligible: oui
+- serie_id: ilc_li45?freq=A&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu après coûts du logement'
+  ligne_id: estat-030544
+  eligible: oui
+- serie_id: ilc_li45?freq=A&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu après coûts du logement'
+  ligne_id: estat-030545
+  eligible: oui
+- serie_id: hlth_dpe020?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-021811
+  eligible: oui
+- serie_id: hlth_dpe020?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-021812
+  eligible: oui
+- serie_id: hlth_dpe020?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-021813
+  eligible: oui
+- serie_id: ilc_li03?freq=A&statinfo=MED_EI&rskpovth=B_60&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT64&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030105
+  eligible: oui
+- serie_id: ilc_li03?freq=A&statinfo=MED_EI&rskpovth=B_60&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030104
+  eligible: oui
+- serie_id: ilc_li03?freq=A&statinfo=MED_EI&rskpovth=B_70&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030106
+  eligible: oui
+- serie_id: ilc_li03?freq=A&statinfo=MED_EI&rskpovth=B_70&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT64&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030107
+  eligible: oui
+- serie_id: ilc_li04?freq=A&statinfo=MED_EI&wstatus=POP&rskpovth=B_60&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030135
+  eligible: oui
+- serie_id: ilc_li04?freq=A&statinfo=MED_EI&wstatus=POP&rskpovth=B_60&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030136
+  eligible: oui
+- serie_id: ilc_li04?freq=A&statinfo=MED_EI&wstatus=POP&rskpovth=B_60&sex=T&age=Y16-64&age=Y18-64&age=Y_GE18&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030137
+  eligible: oui
+- serie_id: ilc_li04?freq=A&statinfo=MED_EI&wstatus=POP&rskpovth=B_70&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030138
+  eligible: oui
+- serie_id: ilc_li04?freq=A&statinfo=MED_EI&wstatus=POP&rskpovth=B_70&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030139
+  eligible: oui
+- serie_id: ilc_li04?freq=A&statinfo=MED_EI&wstatus=POP&rskpovth=B_70&sex=T&age=Y16-64&age=Y18-64&age=Y_GE18&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030140
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED0-2&rskpovth=B_60&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030342
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED0-2&rskpovth=B_60&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030343
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED0-2&rskpovth=B_60&sex=T&age=Y18-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030344
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED0-2&rskpovth=B_70&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030345
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED0-2&rskpovth=B_70&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030346
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED0-2&rskpovth=B_70&sex=T&age=Y18-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030347
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED3_4&rskpovth=B_60&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030354
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED3_4&rskpovth=B_60&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030355
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED3_4&rskpovth=B_60&sex=T&age=Y18-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030356
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED3_4&rskpovth=B_70&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030357
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED3_4&rskpovth=B_70&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030358
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED3_4&rskpovth=B_70&sex=T&age=Y18-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030359
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED5-8&rskpovth=B_60&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030366
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED5-8&rskpovth=B_60&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030367
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED5-8&rskpovth=B_60&sex=T&age=Y18-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030368
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED5-8&rskpovth=B_70&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030369
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED5-8&rskpovth=B_70&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030370
+  eligible: oui
+- serie_id: ilc_li07?freq=A&statinfo=MED_EI&isced11=ED5-8&rskpovth=B_70&sex=T&age=Y18-64&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030371
+  eligible: oui
+- serie_id: ilc_li08?freq=A&statinfo=MED_EI&rskpovth=B_60&tenure=TOTAL&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030399
+  eligible: oui
+- serie_id: ilc_li08?freq=A&statinfo=MED_EI&rskpovth=B_60&tenure=TOTAL&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030400
+  eligible: oui
+- serie_id: ilc_li08?freq=A&statinfo=MED_EI&rskpovth=B_60&tenure=TOTAL&sex=T&age=Y_LT16&age=Y16-64&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030401
+  eligible: oui
+- serie_id: ilc_li08?freq=A&statinfo=MED_EI&rskpovth=B_70&tenure=TOTAL&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030402
+  eligible: oui
+- serie_id: ilc_li08?freq=A&statinfo=MED_EI&rskpovth=B_70&tenure=TOTAL&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030403
+  eligible: oui
+- serie_id: ilc_li08?freq=A&statinfo=MED_EI&rskpovth=B_70&tenure=TOTAL&sex=T&age=Y_LT16&age=Y16-64&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030404
+  eligible: oui
+- serie_id: ilc_li60?freq=A&unit=PC&isced11=ED0-2&age=Y_LT18&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030616
+  eligible: oui
+- serie_id: ilc_li60?freq=A&unit=PC&isced11=ED0-2&age=Y_LT6&age=Y6-11&age=Y12-17&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030617
+  eligible: oui
+- serie_id: ilc_li60?freq=A&unit=PC&isced11=ED3_4&age=Y_LT18&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030618
+  eligible: oui
+- serie_id: ilc_li60?freq=A&unit=PC&isced11=ED3_4&age=Y_LT6&age=Y6-11&age=Y12-17&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030619
+  eligible: oui
+- serie_id: ilc_li60?freq=A&unit=PC&isced11=ED5-8&age=Y_LT18&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030620
+  eligible: oui
+- serie_id: ilc_li60?freq=A&unit=PC&isced11=ED5-8&age=Y_LT6&age=Y6-11&age=Y12-17&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030621
+  eligible: oui
+- serie_id: ilc_pnp9?freq=A&sex=T&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030662
+  eligible: oui
+- serie_id: ilc_pnp9?freq=A&sex=M&sex=F&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030663
+  eligible: oui
+- serie_id: ilc_pnp9?freq=A&sex=T&age=Y_LT65&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-030664
+  eligible: oui
+- serie_id: sdg_01_20a?freq=A&unit=PC&age=Y_GE18&sex=T&citizen=EU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-053143
+  eligible: oui
+- serie_id: sdg_01_20a?freq=A&unit=PC&age=Y_GE18&sex=T&citizen=NAT&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-053144
+  eligible: oui
+- serie_id: sdg_01_20a?freq=A&unit=PC&age=Y_GE18&sex=T&citizen=NEU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-053145
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=EU27_2020_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054665
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=EU27_2020_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054666
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=EU27_2020_FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054667
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=EU28_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054668
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=EU28_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054669
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=EU28_FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054670
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054671
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054672
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054673
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NAT&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054674
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NAT&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054675
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NAT&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054676
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2020_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054680
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2020_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054681
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2020_FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054682
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NEU28_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054683
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NEU28_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054684
+  eligible: oui
+- serie_id: ilc_li31?freq=A&citizen=NEU28_FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054685
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=EU27_2020_FOR&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054686
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=EU27_2020_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_LT65&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054687
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=EU27_2020_FOR&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054688
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=FOR&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054689
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_LT65&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054690
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=FOR&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054691
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NAT&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054692
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NAT&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_LT65&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054693
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NAT&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054694
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NEU27_2020_FOR&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054695
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NEU27_2020_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_LT65&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054696
+  eligible: oui
+- serie_id: ilc_li32?freq=A&statinfo=MED_EI&rskpovth=B_60&c_birth=NEU27_2020_FOR&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054697
+  eligible: oui
+- serie_id: ilc_li33?freq=A&unit=PC&citizen=FOR&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054698
+  eligible: oui
+- serie_id: ilc_li34?freq=A&unit=PC&c_birth=FOR&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054700
+  eligible: oui
+- serie_id: ilc_li33?freq=A&unit=PC&citizen=NAT&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054699
+  eligible: oui
+- serie_id: ilc_li34?freq=A&unit=PC&c_birth=NAT&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054701
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004791
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004793
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=12&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004797
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=12&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004799
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=13&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004803
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=13&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004805
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1T2&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004809
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1T2&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004811
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=2&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004815
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=2&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004817
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=3&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004821
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=3&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004823
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=31&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004827
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=31&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004829
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=36&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004833
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=36&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004835
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=1T2&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004854
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=3&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004855
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=4&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004856
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=5&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004857
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=6&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004858
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=EAP_W_PWRK_EXP&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004859
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=1T2&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004866
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=3&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004867
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=4&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004868
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=5&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004869
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=6&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004870
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=EAP_W_PWRK_EXP&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004871
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005094
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y18T29&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004545
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y30T39&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004563
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y40T49&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004581
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y50T64&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004599
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y65T74&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004617
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE75&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004887
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004905
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005092
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005093
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD70&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005095
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005105
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y18T29&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004547
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y30T39&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004565
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y40T49&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004583
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y50T64&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004601
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y65T74&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004619
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE75&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-004889
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005103
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005104
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD70&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005106
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD70&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005113
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD70_CURR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005114
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005283
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005284
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_NCH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005285
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005286
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005287
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005288
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005289
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005290
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005291
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_OR_P1_CH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005292
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005303
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005304
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_NCH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005305
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005306
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005307
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005308
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005309
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005310
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005311
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_OR_P1_CH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
+    %
+  ligne_id: melodi-005312
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'autre unité : nombre de personnes pauvres'
+  ligne_id: melodi-005340
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=1&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005503
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=11&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005504
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=5&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005514
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=12&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005505
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=1T2_GE18&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005506
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=2&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005507
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=31&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005508
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=36&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005509
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=3_GE18&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005510
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=1_2&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005511
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=3&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005512
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=4&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005513
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=6&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005515
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005518
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T29&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005392
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y30T39&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005426
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y40T49&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005431
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y50T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005437
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y65T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005443
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005466
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005516
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
+  ligne_id: melodi-005517
+  eligible: oui
+- serie_id: icw_pov_10?freq=A&sex=T&age=TOTAL&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
+  ligne_id: estat-032215
+  eligible: a_verifier
+- serie_id: icw_pov_10?freq=A&sex=M&sex=F&age=TOTAL&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
+  ligne_id: estat-032216
+  eligible: a_verifier
+- serie_id: icw_pov_10?freq=A&sex=T&age=Y_LT35&age=Y35-44&age=Y45-54&age=Y55-64&age=Y65-74&age=Y_GE75&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
+  ligne_id: estat-032217
+  eligible: a_verifier
+- serie_id: icw_pov_11?freq=A&hhcomp=TOTAL&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
+  ligne_id: estat-032223
+  eligible: a_verifier
+- serie_id: icw_pov_11?freq=A&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
+  ligne_id: estat-032224
+  eligible: a_verifier
+- serie_id: icw_pov_12?freq=A&wstatus=TOTAL&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
+  ligne_id: estat-032228
+  eligible: a_verifier
+- serie_id: ilc_li31?freq=A&citizen=EU27_2007_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054662
+  eligible: non
+- serie_id: ilc_li31?freq=A&citizen=EU27_2007_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054663
+  eligible: non
+- serie_id: ilc_li31?freq=A&citizen=EU27_2007_FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054664
+  eligible: non
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2007_FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054677
+  eligible: non
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2007_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054678
+  eligible: non
+- serie_id: ilc_li31?freq=A&citizen=NEU27_2007_FOR&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
+  ligne_id: estat-054679
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_metropole_menages_ordinaires
+notes: 'Famille pauvrete_monetaire (INSEE prioritaire à définition égale, charte §3.5) : principal ERFS rétropolée
+  ; taux_pauvrete_50 en variante de fiche. Variantes : ERFS non rétropolée 1975-2024 et ventilations, indicateur
+  ODD 1.i1a (BDM 010594446, 2010-2023) et ventilations, EU-SILC (ilc_li02, sdg_01_20) et ventilations (dont les
+  lignes par sexe, âge et nationalité, composantes des écarts construits d''egalites, D32), seuil de 70 %, revenu
+  après coûts du logement, double risque revenu-consommation (expérimental).'

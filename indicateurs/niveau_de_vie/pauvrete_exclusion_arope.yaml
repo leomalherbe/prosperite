@@ -1,0 +1,392 @@
+id: pauvrete_exclusion_arope
+libelle: Personnes en risque de pauvreté ou d'exclusion sociale (AROPE)
+dimension: niveau_de_vie
+sous_theme: pauvreté et exclusion
+famille: pauvrete_exclusion_arope
+variante_principale: oui
+definition: Part des personnes en risque de pauvreté (moins de 60 % du revenu médian), ou en situation de privation
+  matérielle et sociale sévère, ou vivant dans un ménage à très faible intensité de travail (définition de la stratégie
+  européenne 2030, EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: Eurostat
+source_jeu: sdg_01_10 (indicateur ODD de l'UE, définition 2030 ; doublon ilc_peps01n)
+source_serie_id: sdg_01_10?freq=A&age=TOTAL&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_01_10?freq=A&age=TOTAL&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_01_10/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2015
+derniere_annee: 2025
+nb_points_depuis_2000: 11
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000001
+hors_longlist: non
+raccordement: 'a_etudier : l''ancienne définition (ilc_peps01, 2004-2020, cible UE 2020) couvre 2004-2014 et pourrait
+  être raccordée sur 2015-2020'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de l'objectif européen et français 2030 (−1,1 million de personnes en France par
+  rapport à 2019, objectifs officiels du référentiel), annuel de 2015 à 2025 (11 points).
+note_pertinence: 'L''AROPE est l''indicateur phare de l''Union européenne : il réunit la pauvreté monétaire, la
+  privation sévère et l''exclusion de l''emploi. En France, il passe de 18,4 % en 2015 à 20,8 % en 2025, avec des
+  ruptures en 2020 et 2022 (API Eurostat, lue le 14/10/2026). Comme il contient le taux de pauvreté et la privation
+  sévère, il est marqué composite pour le contrôle de redondance (D18).'
+variantes:
+- serie_id: sdg_01_10?freq=A&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-000002
+  eligible: oui
+- serie_id: ilc_peps01n?freq=A&unit=PC&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-000047
+  eligible: oui
+- serie_id: ilc_peps01n?freq=A&unit=PC&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-000048
+  eligible: oui
+- serie_id: ilc_peps01n?freq=A&unit=PC&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-000049
+  eligible: oui
+- serie_id: ilc_peps03n?freq=A&quant_inc=TOTAL&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029821
+  eligible: oui
+- serie_id: ilc_peps03n?freq=A&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029822
+  eligible: oui
+- serie_id: ilc_peps03n?freq=A&quant_inc=TOTAL&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029823
+  eligible: oui
+- serie_id: sdg_01_10a?freq=A&deg_urb=DEG1&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-001987
+  eligible: oui
+- serie_id: sdg_01_10a?freq=A&deg_urb=DEG2&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-001988
+  eligible: oui
+- serie_id: sdg_01_10a?freq=A&deg_urb=DEG3&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-001989
+  eligible: oui
+- serie_id: ilc_peps11n?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-004566
+  eligible: oui
+- serie_id: ilc_peps13n?freq=A&deg_urb=DEG1&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-005290
+  eligible: oui
+- serie_id: ilc_peps13n?freq=A&deg_urb=DEG2&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-005291
+  eligible: oui
+- serie_id: ilc_peps13n?freq=A&deg_urb=DEG3&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-005292
+  eligible: oui
+- serie_id: hlth_dpe010?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-021808
+  eligible: oui
+- serie_id: hlth_dpe010?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-021809
+  eligible: oui
+- serie_id: hlth_dpe010?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-021810
+  eligible: oui
+- serie_id: ilc_peps02n?freq=A&wstatus=POP&sex=T&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029818
+  eligible: oui
+- serie_id: ilc_peps02n?freq=A&wstatus=POP&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029819
+  eligible: oui
+- serie_id: ilc_peps02n?freq=A&wstatus=POP&sex=T&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y25-49&age=Y25-54&age=Y25-59&age=Y50-59&age=Y50-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029820
+  eligible: oui
+- serie_id: ilc_peps04n?freq=A&sex=T&isced11=TOTAL&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029824
+  eligible: oui
+- serie_id: ilc_peps04n?freq=A&sex=M&sex=F&isced11=TOTAL&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029825
+  eligible: oui
+- serie_id: ilc_peps04n?freq=A&sex=T&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029826
+  eligible: oui
+- serie_id: ilc_peps04n?freq=A&sex=T&isced11=TOTAL&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y25-49&age=Y25-54&age=Y25-59&age=Y50-59&age=Y50-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029827
+  eligible: oui
+- serie_id: ilc_peps07n?freq=A&tenure=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029828
+  eligible: oui
+- serie_id: ilc_peps60n?freq=A&isced11=ED0-2&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029829
+  eligible: oui
+- serie_id: ilc_peps60n?freq=A&isced11=ED0-2&age=Y_LT6&age=Y6-11&age=Y12-17&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029830
+  eligible: oui
+- serie_id: ilc_peps60n?freq=A&isced11=ED3_4&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029831
+  eligible: oui
+- serie_id: ilc_peps60n?freq=A&isced11=ED3_4&age=Y_LT6&age=Y6-11&age=Y12-17&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029832
+  eligible: oui
+- serie_id: ilc_peps60n?freq=A&isced11=ED5-8&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029833
+  eligible: oui
+- serie_id: ilc_peps60n?freq=A&isced11=ED5-8&age=Y_LT6&age=Y6-11&age=Y12-17&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029834
+  eligible: oui
+- serie_id: ilc_pecs01?freq=A&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029859
+  eligible: oui
+- serie_id: ilc_pecs01?freq=A&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029860
+  eligible: oui
+- serie_id: ilc_peps01?freq=A&unit=PC&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029861
+  eligible: oui
+- serie_id: ilc_peps01?freq=A&unit=PC&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&sex=T&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029862
+  eligible: oui
+- serie_id: ilc_peps01?freq=A&unit=PC&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-029863
+  eligible: oui
+- serie_id: ilc_chg01?freq=A&yn_arope=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-031503
+  eligible: oui
+- serie_id: ilc_chg02?freq=A&yn_arope=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-031504
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=EU27_2020_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054444
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=M&sex=F&citizen=EU27_2020_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054445
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=EU27_2020_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054446
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=EU28_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054447
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=M&sex=F&citizen=EU28_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054448
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=EU28_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054449
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054450
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=M&sex=F&citizen=FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054451
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054452
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=NAT&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054453
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=M&sex=F&citizen=NAT&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054454
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=NAT&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054455
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=NEU27_2020_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054456
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=M&sex=F&citizen=NEU27_2020_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054457
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=NEU27_2020_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054458
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=NEU28_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054459
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=M&sex=F&citizen=NEU28_FOR&age=Y_GE18&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054460
+  eligible: oui
+- serie_id: ilc_peps05n?freq=A&sex=T&citizen=NEU28_FOR&age=Y16-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054461
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=EU27_2020_FOR&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054462
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=M&sex=F&c_birth=EU27_2020_FOR&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054463
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=EU27_2020_FOR&age=Y16-29&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054464
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=FOR&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054465
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=M&sex=F&c_birth=FOR&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054466
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=FOR&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054467
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=NAT&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054468
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=M&sex=F&c_birth=NAT&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054469
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=NAT&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054470
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=NEU27_2020_FOR&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054471
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=M&sex=F&c_birth=NEU27_2020_FOR&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054472
+  eligible: oui
+- serie_id: ilc_peps06n?freq=A&sex=T&c_birth=NEU27_2020_FOR&age=Y16-29&age=Y18-19&age=Y18-24&age=Y18-29&age=Y18-54&age=Y18-59&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y20-64&age=Y25-29&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon, ventilation ou ancienne définition (UE 2020, 2004-2020)
+  ligne_id: estat-054473
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- composite_union_de_trois_criteres
+- debut_2015
+notes: 'La cible française est exprimée en nombre de personnes (ilc_pecs01, en variante). Variantes : ilc_peps01n
+  (doublon), ventilations de la nouvelle définition, ancienne définition 2004-2020, handicap (hlth_dpe010), enfants
+  selon la situation des parents (ilc_chg01, ilc_chg02).'

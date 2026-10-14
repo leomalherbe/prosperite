@@ -1,0 +1,58 @@
+id: pauvrete_ancree_2008
+libelle: Taux de pauvreté ancré dans le temps (seuil de 2008)
+dimension: niveau_de_vie
+sous_theme: revenus et pouvoir d'achat
+famille: niveau_vie_modestes
+variante_principale: non
+definition: Part des personnes dont le revenu disponible équivalent est inférieur au seuil de pauvreté de 2008 (60
+  % du revenu médian de 2008), réévalué de l'inflation (EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_li22b (taux de risque de pauvreté ancré en 2008, enquêtes EU-SILC)
+source_serie_id: ilc_li22b?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li22b?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_li22b/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2025
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-030528
+hors_longlist: non
+raccordement: 'a_etudier : Eurostat publie aussi un taux ancré en 2019 (ilc_li22, 2019-2025, hors catalogue) qui
+  pourrait lui succéder'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur de pauvreté « absolue » du cadre Qualité de vie d'Eurostat, annuel de 2008 à 2025
+  (18 points), substituable au premier décile en euros constants de l'INSEE, principal de la famille.
+note_pertinence: 'Avec un seuil fixé une fois pour toutes en termes réels, ce taux baisse quand le niveau de vie
+  des plus modestes progresse, même si les inégalités ne bougent pas : il répond à la question « les pauvres vivent-ils
+  mieux qu''avant ? ». Il porte la même information que le premier décile en euros constants, d''où la même famille.
+  Les valeurs n''ont pas pu être lues (API Eurostat saturée, réponse 429 le 14/10/2026).'
+variantes:
+- serie_id: ilc_li22b?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation (âge, sexe)
+  ligne_id: estat-030529
+  eligible: oui
+- serie_id: ilc_li22b?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: ventilation (âge, sexe)
+  ligne_id: estat-030530
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_non_lues
+- rupture_eu_silc_2020_2022_a_verifier
+notes: 'Ruptures d''EU-SILC en 2020 et 2022 probables (comme ilc_li02) mais non vérifiées pour ce jeu. Variantes
+  : ventilations par âge et par sexe.'

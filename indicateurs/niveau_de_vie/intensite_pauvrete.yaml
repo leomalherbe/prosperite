@@ -1,0 +1,178 @@
+id: intensite_pauvrete
+libelle: Intensité de la pauvreté (seuil à 60 %)
+dimension: niveau_de_vie
+sous_theme: pauvreté monétaire
+famille: intensite_pauvrete
+variante_principale: oui
+definition: Écart relatif entre le niveau de vie médian des personnes pauvres et le seuil de pauvreté à 60 % du
+  niveau de vie médian, en pourcentage du seuil (enquête Revenus fiscaux et sociaux, données rétropolées, France
+  métropolitaine).
+unite: '% du seuil de pauvreté'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure PI_MD60
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PI_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PI_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005342
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Concept nommé dans le contenu de la dimension (« intensité de la pauvreté »), indicateur ODD
+  1.i3, publié sans rupture de 1996 à 2024 (25 points).
+note_pertinence: Le taux de pauvreté compte les pauvres ; l'intensité dit à quel point ils sont pauvres. En 2024,
+  le niveau de vie médian des personnes pauvres est inférieur de 19,7 % au seuil, en hausse de 0,5 point sur un
+  an (Insee Première n° 2117, lue le 14/10/2026). Une politique qui relève les très bas revenus sans franchir le
+  seuil améliore l'intensité sans changer le taux.
+variantes:
+- serie_id: '010594492'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i3 (2010-2023)
+  ligne_id: bdm-000872
+  eligible: oui
+- serie_id: '010594493'
+  source: INSEE BDM
+  nature: indicateur ODD 1.i3 (2010-2023)
+  ligne_id: bdm-000873
+  eligible: oui
+- serie_id: sdg_10_30?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=T&unit=PC&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-002028
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_40&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030493
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_40&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030494
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_40&sex=T&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y_LT16&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030495
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_50&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030496
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_50&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030497
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_50&sex=T&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y_LT16&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030498
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030499
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030500
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_60&sex=T&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y_LT16&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030501
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_70&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030502
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_70&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030503
+  eligible: oui
+- serie_id: ilc_li11?freq=A&statinfo=MED_EI&rskpovth=B_70&sex=T&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y_LT16&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE65&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030504
+  eligible: oui
+- serie_id: ilc_li13?freq=A&yn_rskpov=TOTAL&age=Y16-64&workint=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030505
+  eligible: oui
+- serie_id: ilc_li13?freq=A&yn_rskpov=TOTAL&age=Y18-64&workint=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC, écart relatif médian de pauvreté (seuils 40 à 60 %)'
+  ligne_id: estat-030506
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL_MD50&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1996-2024)
+  ligne_id: melodi-005086
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1996-2024)
+  ligne_id: melodi-005087
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PI_MD50&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1996-2024)
+  ligne_id: melodi-005097
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PI_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1996-2024)
+  ligne_id: melodi-005098
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL_MD50&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre seuil (50 %) et composante (niveau de vie médian des pauvres)
+  ligne_id: melodi-005337
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre seuil (50 %) et composante (niveau de vie médian des pauvres)
+  ligne_id: melodi-005338
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PI_MD50&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre seuil (50 %) et composante (niveau de vie médian des pauvres)
+  ligne_id: melodi-005341
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S50&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=1.i3&PCS=_Z&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i3 (2010-2023)
+  ligne_id: melodi-005502
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=1.i3&PCS=_Z&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: indicateur ODD 1.i3 (2010-2023)
+  ligne_id: melodi-005519
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_metropole_menages_ordinaires
+notes: 'Variantes : intensité au seuil de 50 %, niveau de vie médian des pauvres, ERFS non rétropolée, indicateur
+  ODD 1.i3 (BDM 010594492 et 010594493, 2010-2023), écart relatif médian de pauvreté EU-SILC (ilc_li11, sdg_10_30,
+  ilc_li13).'

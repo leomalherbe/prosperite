@@ -1,0 +1,221 @@
+id: pib_habitant
+libelle: PIB par habitant en volume
+dimension: niveau_de_vie
+sous_theme: production et revenu national
+famille: pib_habitant
+variante_principale: oui
+definition: Produit intérieur brut rapporté à la population, aux prix de l'année précédente chaînés (euros de l'année
+  de référence 2020 par habitant ; comptes nationaux annuels de l'INSEE, base 2020).
+unite: euros de 2020 par habitant
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, comptes nationaux annuels base 2020 (série 011779993)
+source_serie_id: '011779993'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011779993
+url_page: https://www.insee.fr/fr/statistiques/serie/011779993
+frequence: annuelle
+premiere_annee: 1949
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000174
+hors_longlist: non
+raccordement: 'non : série continue de 1949 à 2025 en base 2020'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur ordinaire de la dimension par décision du gel 1 (A12, R7), série de l'INSEE de
+  1949 à 2025 (26 points depuis 2000), INSEE préféré à Eurostat (sdg_08_10, en variante) à définition égale.
+note_pertinence: Le PIB par habitant mesure la production par personne, pas le bien-être des ménages ; il reste
+  la référence la plus connue et le gel 1 l'a gardé comme indicateur ordinaire, son appartenance au socle étant
+  tranchée au gel 2. Il diverge du revenu des ménages quand la part des profits, des impôts ou des revenus versés
+  à l'étranger change, d'où la variante revenu_national_habitant et les fiches de revenu des ménages.
+variantes:
+- serie_id: '011779991'
+  source: INSEE BDM
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: bdm-000172
+  eligible: oui
+- serie_id: '011779992'
+  source: INSEE BDM
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: bdm-000173
+  eligible: oui
+- serie_id: '011779995'
+  source: INSEE BDM
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: bdm-000176
+  eligible: oui
+- serie_id: '011779998'
+  source: INSEE BDM
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: bdm-000179
+  eligible: oui
+- serie_id: '010596080'
+  source: INSEE BDM
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: bdm-001086
+  eligible: oui
+- serie_id: sdg_08_10?freq=A&unit=CLV20_EUR_HAB&na_item=B1GQ&geo=FR
+  source: Eurostat
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: estat-000003
+  eligible: oui
+- serie_id: sdg_10_10?freq=A&indic_ppp=EXP_PPS_EU27_2020_HAB&ppp_cat18=GDP&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: estat-001990
+  eligible: oui
+- serie_id: sdg_10_10?freq=A&indic_ppp=VI_PPS_EU27_2020_HAB&ppp_cat18=GDP&unit=PC&geo=FR
+  source: Eurostat
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: estat-001991
+  eligible: oui
+- serie_id: nama_10r_2gdp?freq=A&unit=EUR_HAB&geo=FR
+  source: Eurostat
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: estat-002320
+  eligible: oui
+- serie_id: nama_10r_3gdp?freq=A&unit=EUR_HAB&geo=FR
+  source: Eurostat
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: estat-002322
+  eligible: oui
+- serie_id: nama_10r_2gvagr?freq=A&na_item=B1G&unit=I20&geo=FR
+  source: Eurostat
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: estat-002323
+  eligible: oui
+- serie_id: nama_10r_2gvagr?freq=A&na_item=B1GQ&unit=I20&geo=FR
+  source: Eurostat
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: estat-002324
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_EUR_HAB&ppp_cat18=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-009466
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_EUR_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-009927
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_PPS_EU27_2020_HAB&ppp_cat18=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-009658
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU27_2020_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-010305
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=VI_PPS_EU27_2020_HAB&ppp_cat18=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-009834
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU27_2020_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-011027
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU15_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-010115
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU27_2007_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-010210
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU28_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-010397
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU15_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-010932
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU27_2007_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-010979
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU28_HAB&ppp_cat=GDP&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA ou euros par habitant (parités de pouvoir d''achat)'
+  ligne_id: estat-011074
+  eligible: oui
+- serie_id: nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=B1GQ&geo=FR
+  source: Eurostat
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: estat-052390
+  eligible: oui
+- serie_id: naida_10_gdp?freq=A&unit=CP_MEUR&na_item=B1GQ&geo=FR
+  source: Eurostat
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: estat-052611
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=2020&STO=B1GQ&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: melodi-000003
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=2020&STO=B1GQ&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: melodi-000004
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B1GQ&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: melodi-000009
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B1GQ&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: melodi-000010
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=2020&STO=B1GQ&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: melodi-000111
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=B1GQ&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : PIB total et croissance annuelle'
+  ligne_id: melodi-000114
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=2020&STO=_PIB_HABITANT&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: melodi-000449
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=_PIB_HABITANT&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: melodi-000451
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=8.i1&PCS=_Z&SDG=SDG8&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre unité, autre voie d'accès ou autre source (Eurostat), évolution
+  ligne_id: melodi-005735
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- revision_frequente_comptes_nationaux
+notes: 'Valeurs non lues (BDM fermée à l''outil le 14/10/2026). Variantes : euros courants (011779998), voie Melodi,
+  Eurostat sdg_08_10 et nama_10_pc, taux de croissance (ODD 8.i1), SPA (sdg_10_10, prc_ppp_ind), PIB total et croissance.'

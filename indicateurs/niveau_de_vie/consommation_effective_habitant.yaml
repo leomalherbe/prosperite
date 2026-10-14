@@ -1,0 +1,589 @@
+id: consommation_effective_habitant
+libelle: Consommation individuelle effective par habitant en volume
+dimension: niveau_de_vie
+sous_theme: consommation
+famille: consommation_menages
+variante_principale: oui
+definition: Biens et services consommés par les ménages, qu'ils les paient eux-mêmes ou qu'ils soient financés par
+  les administrations ou les institutions sans but lucratif (santé, éducation, logement social…), rapportés à la
+  population, en volumes chaînés (euros de 2020 par habitant).
+unite: euros de 2020 par habitant
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: nama_10_pc (PIB et principales composantes par habitant), na_item P41
+source_serie_id: nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=P41&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=P41&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-052398
+hors_longlist: non
+raccordement: 'non : série annuelle continue de 2000 à 2025'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la consommation retenue par Stiglitz-Sen-Fitoussi et le cadre Qualité de vie d'Eurostat,
+  en niveau par habitant et en volume de 2000 à 2025 (26 points), que l'INSEE ne publie qu'en total.
+note_pertinence: Ce que les ménages consomment réellement est, selon Stiglitz-Sen-Fitoussi, une meilleure mesure
+  du niveau de vie matériel que la production. La consommation individuelle effective passe de 21 150 € par habitant
+  en 2000 à 25 660 € en 2019, chute à 23 920 € en 2020 et atteint 26 250 € en 2025 (provisoire, API Eurostat, lue
+  le 14/10/2026). Elle inclut les services publics individualisables, comme le revenu disponible ajusté.
+variantes:
+- serie_id: '011780512'
+  source: INSEE BDM
+  nature: 'autre forme : agrégat total INSEE (BDM)'
+  ligne_id: bdm-000105
+  eligible: oui
+- serie_id: '011780513'
+  source: INSEE BDM
+  nature: 'autre forme : agrégat total INSEE (BDM)'
+  ligne_id: bdm-000106
+  eligible: oui
+- serie_id: '011780515'
+  source: INSEE BDM
+  nature: 'autre forme : agrégat total INSEE (BDM)'
+  ligne_id: bdm-000107
+  eligible: oui
+- serie_id: '011780516'
+  source: INSEE BDM
+  nature: 'autre forme : agrégat total INSEE (BDM)'
+  ligne_id: bdm-000108
+  eligible: oui
+- serie_id: '011783318'
+  source: INSEE BDM
+  nature: 'autre forme : agrégat total INSEE (BDM)'
+  ligne_id: bdm-000145
+  eligible: oui
+- serie_id: '011783319'
+  source: INSEE BDM
+  nature: 'autre forme : agrégat total INSEE (BDM)'
+  ligne_id: bdm-000146
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=PAID&na_item=P4_R_HAB&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-001598
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=P4_R_HAB_2010&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-008091
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=P4_R_HAB_GR&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-008092
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_EUR&ppp_cat18=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009381
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_EUR&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009846
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_EUR_HAB&ppp_cat18=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009429
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_EUR_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009892
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_NAC&ppp_cat18=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009478
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_NAC&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009939
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_PPS_EU27_2020&ppp_cat18=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009574
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU27_2020&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010222
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=EXP_PPS_EU27_2020_HAB&ppp_cat18=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009622
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU27_2020_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010271
+  eligible: oui
+- serie_id: prc_ppp_ind_1?freq=A&indic_ppp=VI_PPS_EU27_2020_HAB&ppp_cat18=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-009798
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU27_2020_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010991
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU15&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010032
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU15_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010078
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU27_2007&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010127
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU27_2007_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010173
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU28&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010317
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=EXP_PPS_EU28_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010363
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU15_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010897
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU27_2007_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-010944
+  eligible: oui
+- serie_id: prc_ppp_ind?freq=A&na_item=VI_PPS_EU28_HAB&ppp_cat=A01&geo=FR
+  source: Eurostat
+  nature: 'autre unité : parités de pouvoir d''achat (consommation individuelle effective)'
+  ligne_id: estat-011039
+  eligible: oui
+- serie_id: nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=P3&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-052391
+  eligible: oui
+- serie_id: nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=P31_S14&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-052393
+  eligible: oui
+- serie_id: nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=P31_S14_S15&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-052394
+  eligible: oui
+- serie_id: nama_10_pc?freq=A&unit=CLV20_EUR_HAB&na_item=P31_S15&geo=FR
+  source: Eurostat
+  nature: autre définition (consommation finale effective des ménages, dépense de consommation) ou autre unité
+  ligne_id: estat-052395
+  eligible: oui
+- serie_id: naida_10_gdp?freq=A&unit=CP_MEUR&na_item=P31_S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre forme : agrégat total (Eurostat, euros courants)'
+  ligne_id: estat-052628
+  eligible: oui
+- serie_id: naida_10_gdp?freq=A&unit=CP_MEUR&na_item=P41&geo=FR
+  source: Eurostat
+  nature: 'autre forme : agrégat total (Eurostat, euros courants)'
+  ligne_id: estat-052630
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000179
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000269
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000270
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000271
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P4&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000272
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000273
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P3&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000274
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000275
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000276
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000277
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P4&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000278
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000279
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=2020&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000288
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000289
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000348
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000349
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000350
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000351
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000352
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000358
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000359
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000360
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000361
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000362
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000363
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000392
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000393
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000394
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000418
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000419
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000423
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000424
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000436
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000447
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000591
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000592
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000593
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000594
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000602
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000603
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000604
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000605
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000762
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000763
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000767
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEP&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000768
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEPHSI&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000771
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEPHSI&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000772
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEPHSI&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000776
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CPDEPHSI&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000777
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=L&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=2020&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000786
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=CP_ASSUR_SERV_FIN&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000787
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=CP_CANTINE_REVENU&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000788
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=CP_DEP_LOGT_REVENU&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000789
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=CP_TELE_REVENU&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000790
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-000792
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002055
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002056
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002057
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002058
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002059
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002064
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002065
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002066
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002067
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002068
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14B&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002069
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=P3&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002097
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002098
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=P4&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002099
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W2&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=P31&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages), volume ou valeur, évolution'
+  ligne_id: melodi-002145
+  eligible: oui
+- serie_id: hbs_exp_t111?freq=A&unit=EUR_AE&geo=FR
+  source: Eurostat
+  nature: 'autre source : enquête Budget de famille (hbs_exp_t111)'
+  ligne_id: estat-027474
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_provisoires_2024_2025
+- revision_frequente_comptes_nationaux
+notes: 'Variantes : consommation finale effective des ménages réelle par habitant (nasa_10_nf_tr, nasa_10_ki), dépense
+  de consommation des ménages par habitant (nama_10_pc), consommation en SPA (prc_ppp_ind), agrégats totaux de l''INSEE
+  (BDM, Melodi), dépense moyenne par adulte équivalent (Budget de famille).'

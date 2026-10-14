@@ -1,0 +1,604 @@
+id: privation_materielle_sociale
+libelle: Taux de privation matérielle et sociale
+dimension: niveau_de_vie
+sous_theme: privations
+famille: privation_materielle_sociale
+variante_principale: oui
+definition: 'Part des personnes qui déclarent au moins 5 privations parmi 13 (7 relatives au ménage, 6 à la personne
+  : faire face à une dépense imprévue, une semaine de vacances, un repas avec viande ou poisson un jour sur deux,
+  chauffer son logement, une voiture, remplacer des meubles, des vêtements neufs, deux paires de chaussures, une
+  petite somme pour soi, une activité de loisirs, retrouver des amis, internet, être sans impayés), enquête Statistiques
+  sur les ressources et conditions de vie (SRCV).'
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, indicateurs ODD (ODD-ERADICATION-PAUVRETE), indicateur 1.i2 et indicateur de richesse nationale
+  n° 7
+source_serie_id: '010594486'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594486
+url_page: https://www.insee.fr/fr/statistiques/serie/010594486
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: oui
+ligne_id: bdm-000871
+hors_longlist: non
+raccordement: 'a_etudier : 2013-2024 ; l''ancien taux de privation matérielle sévère d''Eurostat (ilc_mddd11, 2004-2020)
+  pourrait couvrir 2004-2012 avec une autre définition'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans trois cadres (Stiglitz-Sen-Fitoussi, Eurostat, INSEE ; §5 du crosswalk),
+  indicateur de richesse nationale n° 7, publié par l'INSEE de 2013 à 2024 (12 points), INSEE préféré à Eurostat
+  à définition égale.
+note_pertinence: 'La privation matérielle et sociale mesure directement ce que les ménages ne peuvent pas se payer,
+  indépendamment du seuil de revenu. Selon la version EU-SILC (même enquête, variante), le taux français va de 14,1
+  % en 2014 à 10,5 % en 2021 puis 13,3 % en 2025, avec des ruptures en 2020 et 2022 (API Eurostat, lue le 14/10/2026).
+  Plusieurs éléments de la liste ont des fiches propres dans d''autres dimensions (vacances, loisirs et sorties
+  en liens_bien_etre, dépense imprévue et impayés en securite) : à surveiller au contrôle de redondance.'
+variantes:
+- serie_id: ilc_mdsd09?freq=A&deg_urb=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-005383
+  eligible: oui
+- serie_id: ilc_mdsd09?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-005384
+  eligible: oui
+- serie_id: ilc_mdsd02?freq=A&hhcomp=TOTAL&quant_inc=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031556
+  eligible: oui
+- serie_id: ilc_mdsd02?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&quant_inc=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031557
+  eligible: oui
+- serie_id: ilc_mdsd02?freq=A&hhcomp=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031558
+  eligible: oui
+- serie_id: ilc_mdsd03?freq=A&isced11=TOTAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031559
+  eligible: oui
+- serie_id: ilc_mdsd03?freq=A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031560
+  eligible: oui
+- serie_id: ilc_mdsd03?freq=A&isced11=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031561
+  eligible: oui
+- serie_id: ilc_mdsd03?freq=A&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031562
+  eligible: oui
+- serie_id: ilc_mdsd07?freq=A&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031564
+  eligible: oui
+- serie_id: ilc_mdsd07?freq=A&age=Y_LT6&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031565
+  eligible: oui
+- serie_id: ilc_mdsd07?freq=A&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031566
+  eligible: oui
+- serie_id: '010777531'
+  source: INSEE BDM
+  nature: doublon technique (Melodi) et champ des 16 ans ou plus
+  ligne_id: bdm-000887
+  eligible: oui
+- serie_id: ilc_mdsd08?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-004571
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=EMP&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031535
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=EMP&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031536
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=EMP&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031537
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=INAC_OTH&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031538
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=INAC_OTH&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031539
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=INAC_OTH&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031540
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=NEMP&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031541
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=NEMP&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031542
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=NEMP&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031543
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=NSAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031544
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=NSAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031545
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=NSAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031546
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=RET&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031547
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=RET&age=Y16-64&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y25-54&age=Y25-59&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031548
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=RET&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031549
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=SAL&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031550
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=SAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031551
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=SAL&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031552
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=UNE&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031553
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=UNE&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031554
+  eligible: oui
+- serie_id: ilc_mdsd01?freq=A&wstatus=UNE&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031555
+  eligible: oui
+- serie_id: ilc_mdsd06?freq=A&tenure=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031563
+  eligible: oui
+- serie_id: ilc_mdsd10?freq=A&isced11=TOTAL&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031567
+  eligible: oui
+- serie_id: ilc_mdsd10?freq=A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&isced11=UNK&age=Y_LT18&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031568
+  eligible: oui
+- serie_id: ilc_mdsd10?freq=A&isced11=TOTAL&age=Y_LT6&age=Y6-11&age=Y11-15&age=Y12-17&age=Y_LT16&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031569
+  eligible: oui
+- serie_id: ilc_sis4?freq=A&unit=AVG&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031607
+  eligible: oui
+- serie_id: ilc_sis4?freq=A&unit=AVG&age=Y_LT18&age=Y18-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031608
+  eligible: oui
+- serie_id: ilc_sis4?freq=A&unit=AVG&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-031609
+  eligible: oui
+- serie_id: ilc_mdes12a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031738
+  eligible: oui
+- serie_id: ilc_mdes12a?freq=A&unit=PC&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031739
+  eligible: oui
+- serie_id: ilc_mdes12a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031740
+  eligible: oui
+- serie_id: ilc_mdes12b?freq=A&unit=PC&wstatus=POP&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031741
+  eligible: oui
+- serie_id: ilc_mdes12b?freq=A&unit=PC&wstatus=POP&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031742
+  eligible: oui
+- serie_id: ilc_mddu05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031791
+  eligible: oui
+- serie_id: ilc_mddu05?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031792
+  eligible: oui
+- serie_id: ilc_mddu05a?freq=A&deg_urb=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031793
+  eligible: oui
+- serie_id: ilc_mddu05a?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031794
+  eligible: oui
+- serie_id: ilc_mddu05a?freq=A&deg_urb=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031795
+  eligible: oui
+- serie_id: ilc_mddu05a?freq=A&deg_urb=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031796
+  eligible: oui
+- serie_id: ilc_mddu05b?freq=A&rskpovth=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031797
+  eligible: oui
+- serie_id: ilc_mddu05b?freq=A&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031798
+  eligible: oui
+- serie_id: ilc_mddu05b?freq=A&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031799
+  eligible: oui
+- serie_id: ilc_mddu05c?freq=A&hhcomp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031800
+  eligible: oui
+- serie_id: ilc_mddu05c?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&hhcomp=HWC_51&hhcomp=HWC_52&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031801
+  eligible: oui
+- serie_id: ilc_mddu06a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031802
+  eligible: oui
+- serie_id: ilc_mddu06a?freq=A&unit=PC&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031803
+  eligible: oui
+- serie_id: ilc_mddu06a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031804
+  eligible: oui
+- serie_id: ilc_mddu06b?freq=A&unit=PC&wstatus=POP&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031805
+  eligible: oui
+- serie_id: ilc_mddu06b?freq=A&unit=PC&wstatus=POP&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031806
+  eligible: oui
+- serie_id: ilc_mddu08a?freq=A&statinfo=MED_EI&rskpovth=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031831
+  eligible: oui
+- serie_id: ilc_mddu08a?freq=A&statinfo=MED_EI&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031832
+  eligible: oui
+- serie_id: ilc_mddu08a?freq=A&statinfo=MED_EI&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031833
+  eligible: oui
+- serie_id: ilc_mddu08b?freq=A&quant_inc=TOTAL&wstatus=POP&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031834
+  eligible: oui
+- serie_id: ilc_mddu08b?freq=A&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&wstatus=POP&unit=PC&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031835
+  eligible: oui
+- serie_id: ilc_mdho07?freq=A&unit=PC&rskpovth=TOTAL&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031836
+  eligible: oui
+- serie_id: ilc_mdho07?freq=A&unit=PC&rskpovth=TOTAL&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&geo=FR
+  source: Eurostat
+  nature: composante (élément de privation)
+  ligne_id: estat-031837
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=EU27_2020_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055134
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=EU27_2020_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055135
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=EU27_2020_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055136
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=EU28_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055137
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=EU28_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055138
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=EU28_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055139
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055140
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055141
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055142
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NAT&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055143
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NAT&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055144
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NAT&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055145
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NEU28_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055149
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NEU28_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055150
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NEU28_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055151
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=EU27_2020_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055152
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=EU27_2020_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055153
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=EU27_2020_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055154
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=EU28_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055155
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=EU28_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055156
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=EU28_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055157
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055158
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055159
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055160
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NAT&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055161
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NAT&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055162
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NAT&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055163
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NEU27_2020_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055164
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NEU27_2020_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055165
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NEU27_2020_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055166
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NEU28_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055167
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NEU28_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055168
+  eligible: oui
+- serie_id: ilc_mdsd05?freq=A&c_birth=NEU28_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055169
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=1.i2&PCS=_Z&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique (Melodi) et champ des 16 ans ou plus
+  ligne_id: melodi-005538
+  eligible: oui
+- serie_id: ilc_mdsd04?freq=A&citizen=NEU27_2020_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055146
+  eligible: non
+- serie_id: ilc_mdsd04?freq=A&citizen=NEU27_2020_FOR&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y18-24&age=Y18-59&age=Y18-64&age=Y18-74&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-59&age=Y35-44&age=Y45-54&age=Y50-64&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y_GE75&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055147
+  eligible: non
+- serie_id: ilc_mdsd04?freq=A&citizen=NEU27_2020_FOR&age=Y_GE16&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (ensemble et ventilations) ; intensité de la privation'
+  ligne_id: estat-055148
+  eligible: non
+- serie_id: DS_SRCV_PMS?AGE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&PCS=_Z&QUANTILE_NIVVIE=_T&SEX=_T&SRCV_MEASURE=PMS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: INSEE SRCV (Melodi DS_SRCV_PMS), France métropolitaine, 2020-2025 ; écartée du catalogue par M01 (6 points)
+    ; un an de plus que la BDM (maintenance n° 8)
+  eligible: non
+  catalogue: insee_melodi_catalogue_non
+- serie_id: DS_SRCV_PMS?AGE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-F_X_D976&HLTH_GALI=_T&HLTH_SPH=_T&PCS=_Z&QUANTILE_NIVVIE=_T&SEX=_T&SRCV_MEASURE=PMS&TPH=_T&TSH=_T
+  source: INSEE Melodi
+  nature: INSEE SRCV, France hors Mayotte, 2022-2025 ; écartée du catalogue par M01 (4 points)
+  eligible: non
+  catalogue: insee_melodi_catalogue_non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2013
+- rupture_eu_silc_2020_2022
+- elements_partages_avec_d_autres_dimensions
+notes: 'Eurostat publie la même mesure jusqu''en 2025 (un an de plus) mais à partir de 2014 seulement : la règle
+  INSEE > Eurostat à définition égale s''applique. Variantes : copie Melodi, 16 ans ou plus (BDM 010777531), EU-SILC
+  (ilc_mdsd07) et ventilations, nombre moyen de privations (ilc_sis4), éléments sans fiche propre (voiture, vêtements,
+  chaussures, meubles, petite somme), série SRCV Melodi 2020-2025 (catalogue des séries écartées, maintenance n°
+  8).'

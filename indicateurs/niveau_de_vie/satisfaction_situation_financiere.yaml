@@ -1,0 +1,124 @@
+id: satisfaction_situation_financiere
+libelle: Satisfaction à l'égard de la situation financière du ménage
+dimension: niveau_de_vie
+sous_theme: pauvreté ressentie
+famille: satisfaction_situation_financiere
+variante_principale: oui
+definition: Note moyenne (de 0 à 10) donnée par les personnes de 16 ans ou plus à leur satisfaction concernant la
+  situation financière de leur ménage (module bien-être d'EU-SILC).
+unite: note de 0 à 10
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_pw01b (satisfaction de la vie par domaine, modalité FIN), module ad hoc d'EU-SILC
+source_serie_id: ilc_pw01b?freq=A&life_sat=FIN&statinfo=AVG&isced11=TOTAL&sex=T&age=Y_GE16&unit=RTG&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pw01b?freq=A&life_sat=FIN&statinfo=AVG&isced11=TOTAL&sex=T&age=Y_GE16&unit=RTG&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_pw01b/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2013
+derniere_annee: 2022
+nb_points_depuis_2000: 3
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-031903
+hors_longlist: non
+raccordement: 'non : trois vagues du module (2013, 2018, 2022), pas de série annuelle de relais au catalogue'
+incontournable: non
+recommandation: retenir
+motif_recommandation: 'Satisfaction du domaine « niveau de vie » (R4) retenue par le cadre Qualité de vie d''Eurostat,
+  publiée en 2013, 2018 et 2022, série pluriannuelle admise (D17, D28 : écart moyen de 4,5 ans).'
+note_pertinence: 'Selon R4, la satisfaction d''un domaine va dans ce domaine : celle-ci complète, côté ressenti,
+  les mesures objectives du revenu et des privations. La note moyenne vaut 6,4 en 2013, 6,6 en 2018 et 6,4 en 2022
+  (API Eurostat, lue le 14/10/2026). Avec trois points seulement, elle se prête mal au suivi annuel, d''où l''intérêt
+  d''une série SRCV de l''INSEE si elle existe (non trouvée au catalogue).'
+variantes:
+- serie_id: ilc_pw01b?freq=A&life_sat=FIN&statinfo=AVG&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&sex=T&age=Y_GE16&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031904
+  eligible: a_verifier
+- serie_id: ilc_pw01b?freq=A&life_sat=FIN&statinfo=AVG&isced11=TOTAL&sex=M&sex=F&age=Y_GE16&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031905
+  eligible: a_verifier
+- serie_id: ilc_pw01b?freq=A&life_sat=FIN&statinfo=AVG&isced11=TOTAL&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y20-24&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE65&age=Y_GE75&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031906
+  eligible: a_verifier
+- serie_id: ilc_pw02b?freq=A&life_sat=FIN&statinfo=AVG&deg_urb=TOTAL&hhcomp=TOTAL&quant_inc=TOTAL&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031939
+  eligible: a_verifier
+- serie_id: ilc_pw02b?freq=A&life_sat=FIN&statinfo=AVG&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&hhcomp=TOTAL&quant_inc=TOTAL&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031940
+  eligible: a_verifier
+- serie_id: ilc_pw02b?freq=A&life_sat=FIN&statinfo=AVG&deg_urb=TOTAL&hhcomp=A1&hhcomp=A2&hhcomp=A_GE3&hhcomp=DCH&hhcomp=NDCH&quant_inc=TOTAL&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031941
+  eligible: a_verifier
+- serie_id: ilc_pw02b?freq=A&life_sat=FIN&statinfo=AVG&deg_urb=TOTAL&hhcomp=TOTAL&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&unit=RTG&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031942
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=HIGH&life_sat=FIN&isced11=TOTAL&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031975
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=HIGH&life_sat=FIN&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031976
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=HIGH&life_sat=FIN&isced11=TOTAL&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031977
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=HIGH&life_sat=FIN&isced11=TOTAL&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y20-24&age=Y25-29&age=Y25-34&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-031978
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=LOW&life_sat=FIN&isced11=TOTAL&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-032011
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=LOW&life_sat=FIN&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&sex=T&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-032012
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=LOW&life_sat=FIN&isced11=TOTAL&sex=M&sex=F&age=Y_GE16&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-032013
+  eligible: a_verifier
+- serie_id: ilc_pw05b?freq=A&lev_satis=LOW&life_sat=FIN&isced11=TOTAL&sex=T&age=Y16-19&age=Y16-24&age=Y16-29&age=Y20-24&age=Y25-29&age=Y25-34&age=Y35-49&age=Y50-64&age=Y65-74&age=Y_GE75&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; autre unité (part de satisfaction faible ou élevée)
+  ligne_id: estat-032014
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- trois_vagues
+- declaratif
+notes: 'Variantes : ventilations (sexe, âge, diplôme, quintile, ménage, urbanisation) et parts de satisfaction faible
+  ou élevée (ilc_pw05b). Le module SRCV de l''INSEE (DS_SRCV_SATISFACTION) ne contient pas ce domaine (vie, relations,
+  travail seulement).'

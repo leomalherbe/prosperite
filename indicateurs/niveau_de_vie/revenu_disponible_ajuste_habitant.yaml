@@ -1,0 +1,229 @@
+id: revenu_disponible_ajuste_habitant
+libelle: Revenu disponible brut ajusté des ménages par habitant, en termes réels
+dimension: niveau_de_vie
+sous_theme: revenus et pouvoir d'achat
+famille: revenu_disponible_menages
+variante_principale: oui
+definition: Revenu disponible brut des ménages et des institutions sans but lucratif à leur service, augmenté des
+  transferts sociaux en nature (santé, éducation, logement social…), rapporté à la population et exprimé en termes
+  réels (déflaté par les prix de la consommation finale effective des ménages), en euros par habitant (comptes nationaux
+  de secteur, Eurostat).
+unite: euros réels par habitant
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: nasa_10_nf_tr (opérations non financières des comptes de secteur), na_item B7G_R_HAB, secteur S14_S15
+source_serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=RECV&na_item=B7G_R_HAB&sector=S14_S15&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=RECV&na_item=B7G_R_HAB&sector=S14_S15&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/nasa_10_nf_tr/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-001679
+hors_longlist: non
+raccordement: 'non : série annuelle continue de 2000 à 2024 dans les comptes nationaux'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept retenu par Stiglitz-Sen-Fitoussi, l'OCDE (1_1) et Eurostat (« revenu disponible des
+  ménages », §5 du crosswalk) et seule série des catalogues en niveau réel par habitant, annuelle de 2000 à 2024
+  (25 points).
+note_pertinence: 'C''est la mesure des comptes nationaux de « ce dont disposent les ménages » : revenus d''activité
+  et de patrimoine, après impôts et prestations, plus les services publics individualisables. Elle passe de 21 496
+  € par habitant en 2000 à 27 882 € en 2024 (API Eurostat, lue le 14/10/2026), avec un recul en 2020 (25 849 € contre
+  26 280 € en 2019). L''INSEE ne publie pas ce niveau mais son évolution par unité de consommation (fiche pouvoir_achat_uc,
+  de la même famille).'
+variantes:
+- serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=PAID&na_item=B6G_R_HAB&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu disponible brut réel par habitant, non ajusté (B6G_R_HAB, indice 2008=100)'
+  ligne_id: estat-001431
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=PAID&na_item=B6G_R_HAB_2008&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu disponible brut réel par habitant, non ajusté (B6G_R_HAB, indice 2008=100)'
+  ligne_id: estat-001432
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=PPS_EU27_2020_HAB&direct=PAID&na_item=B7G&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA par habitant (UE27 2020)'
+  ligne_id: estat-001438
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=PAID&na_item=B7G_R_HAB&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: doublon technique (direction PAID)
+  ligne_id: estat-001439
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=RECV&na_item=B6G_R_HAB&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu disponible brut réel par habitant, non ajusté (B6G_R_HAB, indice 2008=100)'
+  ligne_id: estat-001671
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=CP_MNAC&direct=RECV&na_item=B6G_R_HAB_2008&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu disponible brut réel par habitant, non ajusté (B6G_R_HAB, indice 2008=100)'
+  ligne_id: estat-001672
+  eligible: oui
+- serie_id: nasa_10_nf_tr?freq=A&unit=PPS_EU27_2020_HAB&direct=RECV&na_item=B7G&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre unité : SPA par habitant (UE27 2020)'
+  ligne_id: estat-001678
+  eligible: oui
+- serie_id: nama_10r_2hhinc?freq=A&unit=EUR_HAB&direct=BAL&na_item=B5N&geo=FR
+  source: Eurostat
+  nature: 'autre jeu : nama_10r_2hhinc, valeur nationale (euros courants par habitant)'
+  ligne_id: estat-002336
+  eligible: oui
+- serie_id: nama_10r_2hhinc?freq=A&unit=EUR_HAB&direct=BAL&na_item=B6N&geo=FR
+  source: Eurostat
+  nature: 'autre jeu : nama_10r_2hhinc, valeur nationale (euros courants par habitant)'
+  ligne_id: estat-002337
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=B7G_N_HAB_GR&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre unité : indice 2010=100 et taux de variation (nasa_10_ki)'
+  ligne_id: estat-008082
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=B7G_R_HAB_2010&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre unité : indice 2010=100 et taux de variation (nasa_10_ki)'
+  ligne_id: estat-008083
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=B7G_R_HAB_GR&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: 'autre unité : indice 2010=100 et taux de variation (nasa_10_ki)'
+  ligne_id: estat-008084
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=1_1 UNIT_MEASURE=USD_PPP_PS
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'autre source : OCDE How''s Life 1_1 (net ajusté, USD PPA)'
+  ligne_id: m04-000001
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000068
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000069
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000070
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000071
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000072
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B7N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000073
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000103
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B6N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000104
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000105
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B7N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000106
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000582
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-000583
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001408
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001409
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B6N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001410
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001411
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001412
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B7N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001413
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B6G&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001443
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B6N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001444
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B7G&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001445
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B7N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: 'autre forme : agrégat total INSEE (ménages S14, ménages et ISBLSM S1M), euros courants ou évolution'
+  ligne_id: melodi-001446
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- unite_catalogue_incorrecte
+- annee_de_reference_des_prix_non_trouvee
+notes: 'Le catalogue et l''API étiquettent l''unité « prix courants, millions de monnaie nationale » alors que l''indicateur
+  est en termes réels par habitant (incohérence relevée par la lecture de l''API le 14/10/2026, maintenance NDV-1)
+  ; l''année de référence des prix n''est pas indiquée dans la réponse. Variante non ajustée (B6G_R_HAB) : 17 339
+  € en 2000, 22 316 € en 2024. Direction « reçu » (RECV) retenue ; la direction « payé » donne la même valeur (doublon
+  technique).'

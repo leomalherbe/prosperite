@@ -1,0 +1,152 @@
+id: difficulte_joindre_deux_bouts
+libelle: Difficulté à joindre les deux bouts (pauvreté subjective)
+dimension: niveau_de_vie
+sous_theme: pauvreté ressentie
+famille: pauvrete_subjective
+variante_principale: oui
+definition: Part des personnes vivant dans un ménage qui déclare arriver à joindre les deux bouts « avec difficulté
+  » ou « avec grande difficulté » (EU-SILC, indicateur de pauvreté subjective).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_sbjp01 (pauvreté subjective par âge et sexe, EU-SILC)
+source_serie_id: ilc_sbjp01?freq=A&age=TOTAL&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_sbjp01?freq=A&age=TOTAL&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_sbjp01/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031509
+hors_longlist: non
+raccordement: 'oui : 2004-2009 par la somme des modalités « grande difficulté » et « difficulté » d''ilc_mdes09,
+  égale à ilc_sbjp01 à l''arrondi près sur 2010-2025 (vérifié sur l''API le 14/10/2026)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat et de l'OCDE (How's Life 1_5), annuel de 2010
+  à 2025 (16 points) et raccordable jusqu'en 2004 par sa décomposition publiée.
+note_pertinence: 'La question porte sur le ressenti du budget du ménage : elle capte les fins de mois difficiles
+  que le revenu seul ne révèle pas (charges contraintes, endettement). La part passe de 20,2 % en 2010 à 16,5 %
+  en 2021 puis 21,8 % en 2025 ; la modalité « grande difficulté » double, de 4,4 % en 2010 à 8,0 % en 2025 (API
+  Eurostat, lue le 14/10/2026). La rupture de 2022 coïncide avec la hausse : à interpréter avec prudence.'
+variantes:
+- serie_id: hlth_dm060?freq=A&unit=PC&lev_limit=TOTAL&lev_diff=DIF&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-021844
+  eligible: oui
+- serie_id: hlth_dm060?freq=A&unit=PC&lev_limit=TOTAL&lev_diff=DIF&age=Y16-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-021845
+  eligible: oui
+- serie_id: hlth_dm060?freq=A&unit=PC&lev_limit=TOTAL&lev_diff=DIF&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-021846
+  eligible: oui
+- serie_id: hlth_dm060?freq=A&unit=PC&lev_limit=TOTAL&lev_diff=GRT&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-021853
+  eligible: oui
+- serie_id: hlth_dm060?freq=A&unit=PC&lev_limit=TOTAL&lev_diff=GRT&age=Y16-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-021854
+  eligible: oui
+- serie_id: hlth_dm060?freq=A&unit=PC&lev_limit=TOTAL&lev_diff=GRT&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-021855
+  eligible: oui
+- serie_id: ilc_sbjp01?freq=A&age=Y_LT18&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031510
+  eligible: oui
+- serie_id: ilc_sbjp01?freq=A&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031511
+  eligible: oui
+- serie_id: ilc_sbjp02?freq=A&isced11=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031512
+  eligible: oui
+- serie_id: ilc_sbjp02?freq=A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031513
+  eligible: oui
+- serie_id: ilc_sbjp03?freq=A&wstatus=POP&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031514
+  eligible: oui
+- serie_id: ilc_sbjp04?freq=A&tenure=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031515
+  eligible: oui
+- serie_id: ilc_sbjp05?freq=A&deg_urb=DEG1&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031516
+  eligible: oui
+- serie_id: ilc_sbjp05?freq=A&deg_urb=DEG2&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031517
+  eligible: oui
+- serie_id: ilc_sbjp05?freq=A&deg_urb=DEG3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031518
+  eligible: oui
+- serie_id: ilc_mdes09?freq=A&unit=PC&lev_diff=DIF&hhcomp=TOTAL&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031716
+  eligible: oui
+- serie_id: ilc_mdes09?freq=A&unit=PC&lev_diff=DIF&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031717
+  eligible: oui
+- serie_id: ilc_mdes09?freq=A&unit=PC&lev_diff=GRT&hhcomp=TOTAL&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031722
+  eligible: oui
+- serie_id: ilc_mdes09?freq=A&unit=PC&lev_diff=GRT&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: estat-031723
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=1_5 UNIT_MEASURE=PT_POP_Y_GE16
+  source: OCDE — How's Life? (base du bien-être)
+  nature: ventilation ; composante (grande difficulté, difficulté) ; autre source (OCDE How's Life 1_5)
+  ligne_id: m04-000006
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- declaratif
+notes: 'Valeurs lues : ilc_sbjp01 20,2 (2010), 18,1 (2017), 16,9 (2019), 18,5 (2020), 16,5 (2021), 21,7 (2022),
+  22,2 (2023), 21,8 (2024 et 2025) ; ilc_mdes09 « grande difficulté » 6,1 (2004) puis 2,9 à 8,3, « difficulté »
+  de 11,0 (2021) à 16,1 (2013), drapeau b en 2020 et 2022. Déclaratif oui : appréciation par le ménage de sa situation
+  (méthode §4), et non capacité objective. Variantes : ventilations, modalités GRT et DIF d''ilc_mdes09, handicap
+  (hlth_dm060), OCDE 1_5.'

@@ -1,0 +1,243 @@
+id: patrimoine_net_median
+libelle: Patrimoine net médian des ménages
+dimension: niveau_de_vie
+sous_theme: épargne et patrimoine
+famille: patrimoine_menages
+variante_principale: oui
+definition: 'Patrimoine net (actifs immobiliers, financiers et professionnels moins les dettes, hors « reste » :
+  véhicules, équipement, objets de valeur) au-dessous duquel se situe la moitié des ménages, en euros constants
+  (enquête Histoire de vie et Patrimoine, France métropolitaine).'
+unite: euros constants par ménage
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ENQPAT_DET (détention et montants du patrimoine des ménages), mesure MT_PATNET_HR_CST, médiane
+  (D5), comparable depuis 2010
+source_serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATNET_HR_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATNET_HR_CST&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATNET_HR_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATNET_HR_CST&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/8736846
+frequence: irreguliere
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 5
+geo: FM
+eligibilite_longlist: a_verifier
+ligne_id: melodi-004525
+hors_longlist: non
+raccordement: 'a_etudier : vagues 2010 à 2024 recalculées après le changement de redressement de 2020-2021 ; la
+  valeur nette du patrimoine des ménages des comptes nationaux (annuelle, 1995-2025) est en variante'
+incontournable: non
+recommandation: retenir
+motif_recommandation: 'Seule mesure du patrimoine du ménage médian (Stiglitz-Sen-Fitoussi, OCDE 1_3), cinq vagues
+  de 2010 à 2024 admises comme série pluriannuelle (D17, D28 : écart moyen de 3,5 ans).'
+note_pertinence: 'Le patrimoine protège des aléas et conditionne l''accès au logement ; la médiane décrit le ménage
+  « du milieu » sans être tirée par les grandes fortunes, dont la concentration relève d''egalites. La version hors
+  « reste » est la seule comparable depuis 2010 ; la version complète ne commence qu''en 2015. Le patrimoine dépend
+  fortement des prix immobiliers : sa hausse peut accompagner un logement moins accessible (logement_cadre_vie).'
+variantes:
+- serie_id: DD_CNA_PATRIMOINE?ACCOUNTING_ENTRY=C&ACTIVITY=_T&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=U&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-000799
+  eligible: oui
+- serie_id: DD_CNA_PATRIMOINE?ACCOUNTING_ENTRY=C&ACTIVITY=_T&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE_N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-000803
+  eligible: oui
+- serie_id: DD_CNA_PATRIMOINE?ACCOUNTING_ENTRY=D&ACTIVITY=_T&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=U&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-000873
+  eligible: oui
+- serie_id: DD_CNA_PATRIMOINE?ACCOUNTING_ENTRY=D&ACTIVITY=_T&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE_N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-000877
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=C&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=U&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-001475
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=C&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE_N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-001479
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=U&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-001606
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=D&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=B90&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=LE_N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-001610
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=1_3 UNIT_MEASURE=USD_HH_PPP
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: m04-000003
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATBRUT_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004428
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATBRUT_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004429
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATBRUT_HR_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004430
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATBRUT_HR_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004431
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATFIN_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004432
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATFIN_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004433
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATFIN_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004434
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATFIN_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004435
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATIMM_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004436
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATIMM_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004437
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATIMM_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004438
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATIMM_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004439
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATNET_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004440
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATNET_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004441
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATNET_HR_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004442
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATNET_HR_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004443
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATPRO_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004444
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATPRO_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004445
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATPRO_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004446
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATPRO_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004447
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATRES_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004448
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_PATRES_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004449
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATBRUT_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATBRUT_COUR&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004456
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATBRUT_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATBRUT_CST&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004467
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATBRUT_HR_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATBRUT_HR_COUR&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004476
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATBRUT_HR_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATBRUT_HR_CST&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004485
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATNET_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATNET_COUR&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004496
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATNET_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATNET_CST&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004507
+  eligible: a_verifier
+- serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_PATNET_HR_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5&QUANTILE_MEASURE=PATNET_HR_COUR&TPH=_T
+  source: INSEE Melodi
+  nature: autre statistique (moyenne, brut), composante, autre source (OCDE, comptes nationaux)
+  ligne_id: melodi-004516
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- revision_methodologique_2020_2021
+- sensible_aux_prix_immobiliers
+notes: 'Valeurs non lues (API Melodi fermée à l''outil). Vagues de l''enquête : 2009-2010, 2014-2015, 2017-2018,
+  2020-2021, 2023-2024 (métadonnées du jeu Melodi). Variantes : autres médianes (brut, net, courants ou constants,
+  France hors Mayotte depuis 2015), patrimoine moyen et ses composantes, OCDE 1_3 (2009-2020), valeur nette du patrimoine
+  des ménages dans les comptes nationaux (total, euros courants).'

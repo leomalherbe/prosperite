@@ -1,0 +1,213 @@
+id: taux_epargne_menages
+libelle: Taux d'épargne des ménages
+dimension: niveau_de_vie
+sous_theme: épargne et patrimoine
+famille: taux_epargne_menages
+variante_principale: oui
+definition: Part du revenu disponible brut des ménages qui n'est pas consacrée à la consommation (épargne brute
+  / revenu disponible brut, comptes nationaux de l'INSEE, base 2020).
+unite: '% du revenu disponible brut'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_CNA_AGREGATS (comptes nationaux annuels, base 2020), mesure _TEM
+source_serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_TEM&TRANSFORMATION=N&UNIT_MEASURE=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_TEM&TRANSFORMATION=N&UNIT_MEASURE=PT
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DD_CNA_AGREGATS
+frequence: annuelle
+premiere_annee: 1949
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: melodi-000466
+hors_longlist: non
+raccordement: 'non : série continue de 1949 à 2025 en base 2020'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : le taux bondit quand la consommation est contrainte (20,03 % en 2020 contre
+  14,24 % en 2019 selon Eurostat, confinements) aussi bien que quand les ménages s''enrichissent.'
+note_pertinence: 'Le taux d''épargne est un agrégat intelligible des comptes nationaux, mais une hausse peut traduire
+  une aisance accrue comme une épargne de précaution ou une consommation empêchée : il ne dit pas si les ménages
+  vont mieux. La capacité d''épargne ressentie et l''épargne de précaution sont suivies en securite (soldes d''opinion,
+  pauvreté en actifs liquides). Il reste disponible comme variable de contexte.'
+variantes:
+- serie_id: '011794755'
+  source: INSEE BDM
+  nature: montant trimestriel (BDM)
+  ligne_id: bdm-000202
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=SRG_S14&sector=S14&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-008096
+  eligible: oui
+- serie_id: nasa_10_ki?freq=A&unit=PC&na_item=SRG_S14_S15&sector=S14_S15&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-008097
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B8G&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000074
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B8G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000075
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B8N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000076
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B8G&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000107
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=B&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B8N&TRANSFORMATION=N&UNIT_MEASURE=XDC
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000108
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_TEFM&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000463
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_TEFM&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000464
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W0&EXPENDITURE=_Z&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_TEM&TRANSFORMATION=GY&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-000465
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B8G&TRANSFORMATION=GY&UNIT_MEASURE=PT&VALUATION=S
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-001414
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B8G&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-001415
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=B8N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-001416
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B8G&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-001447
+  eligible: oui
+- serie_id: DD_CNA_TEE?ACCOUNTING_ENTRY=B&CONSOLIDATION=N&COUNTERPART_AREA=W0&COUNTERPART_SECTOR=S1&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&MATURITY=_Z&PRICES=V&REF_SECTOR=S1M&REF_YEAR_PRICE=&STO=B8N&TRANSFORMATION=N&UNIT_MEASURE=XDC&VALUATION=S
+  source: INSEE Melodi
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: melodi-001448
+  eligible: oui
+- serie_id: icw_sr_01?freq=A&age=TOTAL&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032191
+  eligible: a_verifier
+- serie_id: icw_sr_01?freq=A&age=Y_LT30&age=Y30-39&age=Y30-44&age=Y_LT35&age=Y35-44&age=Y40-49&age=Y45-54&age=Y45-59&age=Y50-59&age=Y55-64&age=Y60-69&age=Y_GE60&age=Y65-74&age=Y_GE70&age=Y_GE75&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032192
+  eligible: a_verifier
+- serie_id: icw_sr_04?freq=A&isced11=TOTAL&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032197
+  eligible: a_verifier
+- serie_id: icw_sr_04?freq=A&isced11=ED0-2&isced11=ED0&isced11=ED1&isced11=ED2&isced11=ED3_4&isced11=ED3&isced11=ED4&isced11=ED5-8&isced11=ED5&isced11=ED6-8&isced11=UNK&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032198
+  eligible: a_verifier
+- serie_id: icw_sr_02?freq=A&hhcomp=TOTAL&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032193
+  eligible: a_verifier
+- serie_id: icw_sr_02?freq=A&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032194
+  eligible: a_verifier
+- serie_id: icw_sr_03?freq=A&quant_inc=TOTAL&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032195
+  eligible: a_verifier
+- serie_id: icw_sr_03?freq=A&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032196
+  eligible: a_verifier
+- serie_id: icw_sr_12?freq=A&lev_diff=EASY&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032203
+  eligible: a_verifier
+- serie_id: icw_sr_12?freq=A&lev_diff=FEASY&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032204
+  eligible: a_verifier
+- serie_id: icw_sr_12?freq=A&lev_diff=GRT&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032205
+  eligible: a_verifier
+- serie_id: icw_sr_12?freq=A&lev_diff=MOD&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032206
+  eligible: a_verifier
+- serie_id: icw_sr_12?freq=A&lev_diff=SOME&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032207
+  eligible: a_verifier
+- serie_id: icw_sr_12?freq=A&lev_diff=VEASY&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032208
+  eligible: a_verifier
+- serie_id: icw_sr_13?freq=A&deg_urb=TOTAL&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032209
+  eligible: a_verifier
+- serie_id: icw_sr_13?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032210
+  eligible: a_verifier
+- serie_id: icw_sr_15?freq=A&wstatus=TOTAL&unit=PC_DI&geo=FR
+  source: Eurostat
+  nature: autre unité ou autre définition (épargne financière) ; autre source (Eurostat) ; montant
+  ligne_id: estat-032211
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+notes: 'Valeurs Eurostat (nasa_10_ki, SRG_S14_S15, lues le 14/10/2026) : 13,07 % (2000), 15,73 % (2009), 14,24 %
+  (2019), 20,03 % (2020), 18,67 % (2021), 17,93 % (2024, provisoire). Rattachement possible à securite (épargne
+  de précaution) si la session mère le juge utile. Variantes : évolution, taux d''épargne financière, Eurostat,
+  taux médian expérimental (icw_sr), montants annuels et trimestriels.'

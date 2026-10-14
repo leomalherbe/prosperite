@@ -1,0 +1,1514 @@
+id: niveau_vie_median
+libelle: Niveau de vie médian
+dimension: niveau_de_vie
+sous_theme: revenus et pouvoir d'achat
+famille: niveau_vie_median
+variante_principale: oui
+definition: Niveau de vie (revenu disponible du ménage après impôts directs et prestations sociales, divisé par
+  le nombre d'unités de consommation) qui partage la population en deux moitiés, en euros constants de la dernière
+  année (enquête Revenus fiscaux et sociaux, données rétropolées, France métropolitaine, ménages ordinaires).
+unite: euros constants par an et par unité de consommation
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_ERFS_RETROPOLE (enquête ERFS, données rétropolées), mesure MED_SL
+source_serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+url_page: https://www.insee.fr/fr/statistiques/9019316
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: oui
+ligne_id: melodi-005335
+hors_longlist: non
+raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Revenu médian des ménages, concept du cadre Qualité de vie d'Eurostat et de Stiglitz-Sen-Fitoussi
+  (§5 du crosswalk), publié sans rupture par l'INSEE de 1996 à 2024 (25 points depuis 2000).
+note_pertinence: La médiane décrit le niveau de vie d'un ménage « du milieu », sans être tirée par les très hauts
+  revenus comme la moyenne des comptes nationaux. En 2024, le niveau de vie médian atteint 2 228 € par mois pour
+  une personne seule et progresse de 1,8 % en euros constants (Insee Première n° 2117, lue le 14/10/2026). Il complète
+  la mesure macroéconomique (revenu_disponible_ajuste_habitant), qui couvre aussi les services publics mais pas
+  la répartition.
+variantes:
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG1&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005298
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG1&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005299
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG1&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005300
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG2&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005301
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG2&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005302
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG2&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005303
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG3&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005304
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG3&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005305
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MEAN_EI&deg_urb=DEG3&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005306
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG1&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005307
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG1&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005308
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG1&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005309
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG2&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005310
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG2&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005311
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG2&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005312
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG3&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005313
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG3&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005314
+  eligible: oui
+- serie_id: ilc_di17?freq=A&unit=EUR&statinfo=MED_EI&deg_urb=DEG3&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-005315
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=B_40&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030073
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=B_50&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030074
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=B_60&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030075
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=B_70&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030076
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2&rskpovth=B_40&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030077
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2&rskpovth=B_50&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030078
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2&rskpovth=B_60&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030079
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2&rskpovth=B_70&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030080
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2_CH2_LT14&rskpovth=B_40&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030082
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2_CH2_LT14&rskpovth=B_50&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030083
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2_CH2_LT14&rskpovth=B_60&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030084
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2_CH2_LT14&rskpovth=B_70&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030085
+  eligible: oui
+- serie_id: ilc_di03?freq=A&age=TOTAL&sex=T&statinfo=MEAN_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030796
+  eligible: oui
+- serie_id: ilc_di03?freq=A&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y_LT16&age=Y16-24&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&sex=T&statinfo=MEAN_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030797
+  eligible: oui
+- serie_id: ilc_di03?freq=A&age=TOTAL&sex=M&sex=F&statinfo=MEAN_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030798
+  eligible: oui
+- serie_id: ilc_di03?freq=A&age=TOTAL&sex=T&statinfo=MED_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030799
+  eligible: oui
+- serie_id: ilc_di03?freq=A&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y_LT16&age=Y16-24&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&sex=T&statinfo=MED_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030800
+  eligible: oui
+- serie_id: ilc_di03?freq=A&age=TOTAL&sex=M&sex=F&statinfo=MED_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030801
+  eligible: oui
+- serie_id: ilc_di05?freq=A&wstatus=POP&statinfo=MEAN_EI&unit=EUR&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030806
+  eligible: oui
+- serie_id: ilc_di05?freq=A&wstatus=POP&statinfo=MEAN_EI&unit=EUR&age=Y16-64&age=Y18-64&age=Y_GE18&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030807
+  eligible: oui
+- serie_id: ilc_di05?freq=A&wstatus=POP&statinfo=MEAN_EI&unit=EUR&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030808
+  eligible: oui
+- serie_id: ilc_di05?freq=A&wstatus=POP&statinfo=MED_EI&unit=EUR&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030809
+  eligible: oui
+- serie_id: ilc_di05?freq=A&wstatus=POP&statinfo=MED_EI&unit=EUR&age=Y16-64&age=Y18-64&age=Y_GE18&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030810
+  eligible: oui
+- serie_id: ilc_di05?freq=A&wstatus=POP&statinfo=MED_EI&unit=EUR&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030811
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED0-2&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030860
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED0-2&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030861
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED0-2&sex=T&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030862
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED3_4&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030863
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED3_4&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030864
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED3_4&sex=T&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030865
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED5-8&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030866
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED5-8&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030867
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MEAN_EI&unit=EUR&isced11=ED5-8&sex=T&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030868
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED0-2&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030869
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED0-2&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030870
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED0-2&sex=T&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030871
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED3_4&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030872
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED3_4&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030873
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED3_4&sex=T&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030874
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED5-8&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030875
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED5-8&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030876
+  eligible: oui
+- serie_id: ilc_di08?freq=A&statinfo=MED_EI&unit=EUR&isced11=ED5-8&sex=T&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030877
+  eligible: oui
+- serie_id: ilc_di09?freq=A&tenure=TOTAL&statinfo=MEAN_EI&unit=EUR&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030878
+  eligible: oui
+- serie_id: ilc_di09?freq=A&tenure=TOTAL&statinfo=MEAN_EI&unit=EUR&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030879
+  eligible: oui
+- serie_id: ilc_di09?freq=A&tenure=TOTAL&statinfo=MEAN_EI&unit=EUR&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030880
+  eligible: oui
+- serie_id: ilc_di09?freq=A&tenure=TOTAL&statinfo=MED_EI&unit=EUR&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030881
+  eligible: oui
+- serie_id: ilc_di09?freq=A&tenure=TOTAL&statinfo=MED_EI&unit=EUR&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030882
+  eligible: oui
+- serie_id: ilc_di09?freq=A&tenure=TOTAL&statinfo=MED_EI&unit=EUR&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y_GE60&age=Y_GE65&age=Y_GE75&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030883
+  eligible: oui
+- serie_id: ilc_di18?freq=A&statinfo=MED&unit=INX&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030920
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054765
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054766
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054767
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054768
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054769
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054770
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054771
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054772
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054773
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054774
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NAT&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054775
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NAT&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054776
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054780
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054781
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054782
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054783
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054784
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054785
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054789
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054790
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054791
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054792
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054793
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054794
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054795
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054796
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054797
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054798
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NAT&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054799
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NAT&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054800
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054804
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054805
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054806
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054807
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054808
+  eligible: oui
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054809
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054813
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054814
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054815
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054816
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054817
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054818
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054819
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054820
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054821
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054822
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NAT&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054823
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NAT&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054824
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054828
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054829
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054830
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054831
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054832
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054833
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054837
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054838
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054839
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054840
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054841
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054842
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054843
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054844
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054845
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054846
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NAT&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054847
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NAT&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054848
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054852
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU27_2020_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054853
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU27_2020_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054854
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054855
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU28_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054856
+  eligible: oui
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU28_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054857
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004788
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004789
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=12&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004794
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=12&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004795
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=13&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004800
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=13&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004801
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1T2&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004806
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=1T2&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004807
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=2&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004812
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=2&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004813
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=3&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004818
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=3&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004819
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=31&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004824
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=31&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004825
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=36&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004830
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=36&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004831
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=1T2&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004836
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=3&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004837
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=4&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004838
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=5&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004839
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=6&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004840
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=EAP_W_PWRK_EXP&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004841
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=1T2&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004842
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=3&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004843
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=4&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004844
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=5&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004845
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=6&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004846
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=EAP_W_PWRK_EXP&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004847
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D0TD1&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005070
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D1TD2&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005071
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D2TD3&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005072
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D3TD4&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005073
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D4TD5&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005074
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D5TD6&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005075
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D6TD7&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005076
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D7TD8&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005077
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D8TD9&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005078
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=D9TD10&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005079
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005082
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y18T29&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004542
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y30T39&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004560
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y40T49&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004578
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y50T64&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004596
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y65T74&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004614
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE75&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004884
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004902
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005080
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005081
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005085
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y18T29&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004543
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y30T39&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004561
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y40T49&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004579
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y50T64&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004597
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y65T74&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004615
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_GE75&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004885
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=Y_LT18&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-004903
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005083
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005084
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD50&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005109
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD50_CURR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005110
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005111
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD60_CURR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005112
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005253
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005254
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_NCH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005255
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005256
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005257
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005258
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005259
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005260
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005261
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MEAN_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_OR_P1_CH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005262
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005263
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005264
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=CPL_NCH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005265
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005266
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005267
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005268
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=OTH_HH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005269
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_CH_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005270
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_HRP_Y_LT65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005271
+  eligible: oui
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_Z&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=MED_SL&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=P1_OR_P1_CH_HRP_Y_GE65
+  source: INSEE Melodi
+  nature: série non rétropolée (1975-2024) et ventilations ; niveau de vie moyen ; seuils de pauvreté
+  ligne_id: melodi-005272
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD50&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'autre forme : seuils de pauvreté (50 %, 60 % du médian), euros constants'
+  ligne_id: melodi-005345
+  eligible: oui
+- serie_id: DS_ERFS_RETROPOLE?AGE=_T&EMPSTA_ENQ=_T&ERFS_MEASURE=PT_MD60&GEO=FRANCE-FM&MUN_DENSITY_LEVEL=_T&TPH=_T
+  source: INSEE Melodi
+  nature: 'autre forme : seuils de pauvreté (50 %, 60 % du médian), euros constants'
+  ligne_id: melodi-005346
+  eligible: oui
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=A_40&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030069
+  eligible: non
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=A_50&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030070
+  eligible: non
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=A_60&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030071
+  eligible: non
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A1&rskpovth=A_70&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030072
+  eligible: non
+- serie_id: ilc_li01?freq=A&statinfo=MED_EI&hhcomp=A2_CH2_LT14&rskpovth=A_60&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-030081
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054762
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054763
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=EU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054764
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054777
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054778
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MEAN_EI&citizen=NEU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054779
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054786
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054787
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=EU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054788
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054801
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054802
+  eligible: non
+- serie_id: ilc_di15?freq=A&unit=EUR&statinfo=MED_EI&citizen=NEU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054803
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054810
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054811
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=EU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054812
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054825
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054826
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MEAN_EI&c_birth=NEU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054827
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054834
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054835
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=EU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054836
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054849
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU27_2007_FOR&sex=M&sex=F&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054850
+  eligible: non
+- serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NEU27_2007_FOR&sex=T&age=Y18-54&age=Y18-59&age=Y18-64&age=Y20-64&age=Y25-54&age=Y25-59&age=Y55-64&age=Y_GE55&age=Y_GE60&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (revenu équivalent médian ou moyen, ventilations ; seuils de pauvreté ; indice
+    réel 2010=100)'
+  ligne_id: estat-054851
+  eligible: non
+- serie_id: ilc_di01?freq=A&quant_inc=D5&statinfo=SHARE&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list egalites)'
+  ligne_id: estat-030735
+  eligible: oui
+  longlist: egalites
+- serie_id: ilc_di01?freq=A&quant_inc=D5&statinfo=TC&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list egalites)'
+  ligne_id: estat-030736
+  eligible: oui
+  longlist: egalites
+- serie_id: ilc_di04?freq=A&hhcomp=TOTAL&statinfo=MEAN_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list egalites)'
+  ligne_id: estat-030802
+  eligible: oui
+  longlist: egalites
+- serie_id: ilc_di04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT64&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&statinfo=MEAN_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list egalites)'
+  ligne_id: estat-030803
+  eligible: oui
+  longlist: egalites
+- serie_id: ilc_di04?freq=A&hhcomp=TOTAL&statinfo=MED_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list egalites)'
+  ligne_id: estat-030804
+  eligible: oui
+  longlist: egalites
+- serie_id: ilc_di04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE2_DCH&hhcomp=A_GE2_NDCH&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT64&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&statinfo=MED_EI&unit=EUR&geo=FR
+  source: Eurostat
+  nature: 'autre source : EU-SILC (long-list egalites)'
+  ligne_id: estat-030805
+  eligible: oui
+  longlist: egalites
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_metropole_menages_ordinaires
+notes: 'Champ : personnes vivant en France métropolitaine dans un ménage ordinaire dont le revenu déclaré est positif
+  ou nul et dont la personne de référence n''est pas étudiante (métadonnées du jeu Melodi). Variantes : série non
+  rétropolée 1975-2024 et ses ventilations, revenu équivalent médian EU-SILC (ilc_di03, 2000-2025) et ses ventilations,
+  indice réel ilc_di18, seuils de pauvreté (60 % de la médiane).'

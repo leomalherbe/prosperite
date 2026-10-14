@@ -1,0 +1,50 @@
+id: indice_developpement_humain
+libelle: Indice de développement humain (IDH)
+dimension: niveau_de_vie
+sous_theme: production et revenu national
+famille: indice_developpement_humain
+variante_principale: oui
+definition: 'Moyenne géométrique de trois indices normalisés : espérance de vie à la naissance, durée de scolarisation
+  (attendue et moyenne) et revenu national brut par habitant en parité de pouvoir d''achat (PNUD).'
+unite: indice de 0 à 1
+sens: haut
+type: resultat
+declaratif: non
+composite: oui
+source_organisme: PNUD
+source_jeu: Rapport sur le développement humain 2025, séries composites (fichier CSV, colonnes hdi_<année>)
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes hdi_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
+  hdi_<année>)
+url_page: https://hdr.undp.org/data-center/documentation-and-downloads
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000348
+hors_longlist: non
+raccordement: 'non : série 1990-2023 recalculée par le PNUD à chaque édition'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Hors champ de la dimension : indice synthétique santé-éducation-revenu dont les trois composantes
+  sont des fiches de sante, education et niveau_de_vie, et dont l''observatoire construit lui-même l''équivalent
+  multidimensionnel (D18, double compte).'
+note_pertinence: 'L''IDH est l''alternative au PIB la plus connue, mais il mélange trois dimensions de la grille
+  : le cocher dans niveau_de_vie compterait deux fois la santé et l''éducation. Pour la France, il évolue lentement
+  (0,92 en 2023, sortie du robot M04) et sert surtout aux comparaisons entre pays. Il pourrait figurer comme repère
+  externe à côté de l''indice plutôt que comme indicateur.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- composite_D18
+- revision_a_chaque_edition
+notes: Le coefficient d'inégalité humaine du même rapport est une fiche d'egalites ; l'indice ajusté aux inégalités
+  n'est pas au catalogue. Licence CC BY 3.0 IGO annoncée par le PNUD (non revérifiée).

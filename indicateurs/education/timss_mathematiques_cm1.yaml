@@ -1,0 +1,56 @@
+id: timss_mathematiques_cm1
+libelle: Élèves de CM1 ayant au moins le niveau minimal en mathématiques (TIMSS)
+dimension: education
+sous_theme: compétences des élèves
+famille: mathematiques_fin_primaire
+variante_principale: oui
+definition: Part des élèves de CM1 qui atteignent au moins le seuil d'aptitude minimale en mathématiques de l'enquête
+  internationale TIMSS (indicateur national ODD 4.i1b de l'INSEE, France hors Mayotte).
+unite: '% des élèves de CM1'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux, d'après la DEPP)
+source_jeu: Melodi DS_NAT_SDG, indicateur 4.i1b
+source_serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i1b&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i1b&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_NAT_SDG
+frequence: irreguliere
+premiere_annee: 2015
+derniere_annee: 2023
+nb_points_depuis_2000: 3
+geo: FRANCE-F_X_D976
+eligibilite_longlist: non
+ligne_id: melodi-005751
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure cataloguée des compétences en mathématiques en fin d'école primaire comparable
+  dans le temps et entre pays, indicateur national ODD (cycles 2015, 2019 et 2023), exclue à tort par la long-list
+  alors que l'écart de quatre ans entre ses valeurs satisfait D28.
+note_pertinence: 'TIMSS évalue tous les quatre ans les mathématiques des élèves en quatrième année de scolarité.
+  La série BDM de même définition passe de 58 % (2015) et 57 % (2019) à 36 % (2023) : une chute de cette ampleur
+  appelle une vérification du seuil ou du champ retenus en 2023 avant tout usage. Les évaluations nationales de
+  début de sixième (part d''élèves de bas niveau en mathématiques, annuelle depuis 2017) sont l''alternative de
+  la famille.'
+variantes:
+- serie_id: '010594813'
+  source: INSEE BDM
+  nature: INSEE BDM 010594813 (champ TIMSS particulier)
+  ligne_id: bdm-000783
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- exclusion_longlist_contraire_D28
+- valeur_2023_a_verifier
+- melodi_non_lu
+notes: API Melodi fermée à l'outil de lecture ; valeurs de la série BDM 010594813 (zone propre à l'enquête, code
+  FMGUADMART15_FHMAY19…) lues le 15/10/2026 ; liste de maintenance, n° 38 (éligibilité) et n° 39 (valeur 2023).

@@ -1,0 +1,245 @@
+id: accueil_formel_moins_3_ans
+libelle: Enfants de moins de 3 ans accueillis en mode de garde formel ou à l'école
+dimension: education
+sous_theme: petite enfance
+famille: accueil_petite_enfance
+variante_principale: oui
+definition: Part des enfants de moins de 3 ans accueillis au moins une heure par semaine dans un mode de garde formel
+  (structure collective, accueil familial organisé, école), somme des durées « 1 à 29 heures » et « 30 heures ou
+  plus » (EU-SILC, Eurostat ilc_caindformal).
+unite: '% des enfants de moins de 3 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (EU-SILC)
+source_jeu: ilc_caindformal (enfants en mode de garde formel par âge et durée), moins de 3 ans
+source_serie_id: ilc_caindformal?freq=A&age=Y_LT3&duration=H1-29&unit=PC&geo=FR
+composantes:
+- ilc_caindformal?freq=A&age=Y_LT3&duration=H1-29&unit=PC&geo=FR
+- ilc_caindformal?freq=A&age=Y_LT3&duration=H_GE30&unit=PC&geo=FR
+formule: H1-29 + H_GE30 (égal à 100 - H0)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_caindformal?freq=A&age=Y_LT3&duration=H1-29&duration=H_GE30&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/tepsr_sp210/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2025
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031458 ; estat-031460
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur phare du socle européen des droits sociaux (tableau tepsr_sp210), annuel de 2005
+  à 2025 (21 points ; 32,0 % en 2005, 59,7 % en 2025), somme recoupée avec les valeurs publiées par Eurostat.
+note_pertinence: L'accès des jeunes enfants à un accueil formel favorise leur développement et l'emploi des parents.
+  La part a presque doublé en vingt ans, portée par l'accueil de 30 heures ou plus (16,0 % en 2005, 43,6 % en 2025)
+  ; le saut de 2007 à 2008 (27,3 % puis 39,6 %), sans drapeau, et les ruptures de 2020 et 2022 sont à documenter.
+  Eurostat publie directement le total dans le tableau tepsr_sp210, absent du catalogue de séries, en variante.
+variantes:
+- serie_id: educ_uoe_enra25?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-022506
+  eligible: oui
+- serie_id: educ_uoe_enra25?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-022507
+  eligible: oui
+- serie_id: ilc_caindformal?freq=A&age=Y_LT3&duration=H0&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031456
+  eligible: oui
+- serie_id: ilc_caindformal?freq=A&age=Y3-CSA&age=CSA1-Y12&duration=H0&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031457
+  eligible: oui
+- serie_id: ilc_caindformal?freq=A&age=Y3-CSA&age=CSA1-Y12&duration=H1-29&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031459
+  eligible: oui
+- serie_id: ilc_caindformal?freq=A&age=Y3-CSA&age=CSA1-Y12&duration=H_GE30&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031461
+  eligible: oui
+- serie_id: ilc_caindform25?freq=A&yn_arope=TOTAL&duration=H0&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031462
+  eligible: oui
+- serie_id: ilc_caindform25?freq=A&yn_arope=TOTAL&duration=H0&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031463
+  eligible: oui
+- serie_id: ilc_caindform25?freq=A&yn_arope=TOTAL&duration=H1-24&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031464
+  eligible: oui
+- serie_id: ilc_caindform25?freq=A&yn_arope=TOTAL&duration=H1-24&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031465
+  eligible: oui
+- serie_id: ilc_caindform25?freq=A&yn_arope=TOTAL&duration=H_GE25&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031466
+  eligible: oui
+- serie_id: ilc_caindform25?freq=A&yn_arope=TOTAL&duration=H_GE25&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031467
+  eligible: oui
+- serie_id: ilc_caindform25b?freq=A&yn_arope=TOTAL&duration=H0&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031468
+  eligible: oui
+- serie_id: ilc_caindform25b?freq=A&yn_arope=TOTAL&duration=H0&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031469
+  eligible: oui
+- serie_id: ilc_caindform25b?freq=A&yn_arope=TOTAL&duration=H1-24&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031470
+  eligible: oui
+- serie_id: ilc_caindform25b?freq=A&yn_arope=TOTAL&duration=H1-24&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031471
+  eligible: oui
+- serie_id: ilc_caindform25b?freq=A&yn_arope=TOTAL&duration=H_GE25&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031472
+  eligible: oui
+- serie_id: ilc_caindform25b?freq=A&yn_arope=TOTAL&duration=H_GE25&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031473
+  eligible: oui
+- serie_id: ilc_caindform25q?freq=A&quant_inc=TOTAL&duration=H0&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031474
+  eligible: oui
+- serie_id: ilc_caindform25q?freq=A&quant_inc=TOTAL&duration=H0&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031476
+  eligible: oui
+- serie_id: ilc_caindform25q?freq=A&quant_inc=TOTAL&duration=H1-24&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031477
+  eligible: oui
+- serie_id: ilc_caindform25q?freq=A&quant_inc=TOTAL&duration=H1-24&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031479
+  eligible: oui
+- serie_id: ilc_caindform25q?freq=A&quant_inc=TOTAL&duration=H_GE25&age=Y_LT3&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031480
+  eligible: oui
+- serie_id: ilc_caindform25q?freq=A&quant_inc=TOTAL&duration=H_GE25&age=Y1-2&age=Y3-CSA&age=CSA1-Y12&unit=PC&geo=FR
+  source: Eurostat
+  nature: ilc_caindformal (aucune heure ; enfants de 3 ans à 12 ans), ilc_caindform25 et 25b (seuil de 25 h, totaux),
+    ilc_caindform25q (totaux), élèves de moins de 3 ans (educ_uoe_enra25)
+  ligne_id: estat-031482
+  eligible: oui
+- serie_id: ilc_camnforall?freq=A&age=Y_LT3&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC : nombre moyen et médian d''heures hebdomadaires en mode de garde formel (lignes de la long-list
+    niveau_de_vie)'
+  ligne_id: estat-031483
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_camnforall?freq=A&age=Y3-CSA&age=CSA-Y12&age=CSA1-Y12&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC : nombre moyen et médian d''heures hebdomadaires en mode de garde formel (lignes de la long-list
+    niveau_de_vie)'
+  ligne_id: estat-031484
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_camnforg0?freq=A&age=Y_LT3&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC : nombre moyen et médian d''heures hebdomadaires en mode de garde formel (lignes de la long-list
+    niveau_de_vie)'
+  ligne_id: estat-031485
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_camnforg0?freq=A&age=Y3-CSA&age=CSA-Y12&age=CSA1-Y12&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC : nombre moyen et médian d''heures hebdomadaires en mode de garde formel (lignes de la long-list
+    niveau_de_vie)'
+  ligne_id: estat-031486
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_camdforg0?freq=A&age=Y_LT3&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC : nombre moyen et médian d''heures hebdomadaires en mode de garde formel (lignes de la long-list
+    niveau_de_vie)'
+  ligne_id: estat-031487
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_camdforg0?freq=A&age=Y3-CSA&age=CSA-Y12&age=CSA1-Y12&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC : nombre moyen et médian d''heures hebdomadaires en mode de garde formel (lignes de la long-list
+    niveau_de_vie)'
+  ligne_id: estat-031488
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: tepsr_sp210?freq=A&unit=PC&duration=H_GE1&age=Y_LT3&geo=FR
+  source: Eurostat
+  nature: même indicateur publié en total (1 heure ou plus, 2005-2025 ; 59,7 % en 2025), tableau du socle européen
+    des droits sociaux
+  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 15/10/2026)
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_calculee
+- rupture_2020
+- rupture_2022
+- saut_2008_sans_drapeau
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 ; recoupement (D34) : 16,0 + 16,0 = 32,0 (2005), 16,9 + 22,7
+  = 39,6 (2008), 17,3 + 42,0 = 59,3 (2024) et 16,1 + 43,6 = 59,7 (2025), égaux aux valeurs de tepsr_sp210.'

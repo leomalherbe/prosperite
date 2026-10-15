@@ -1,0 +1,370 @@
+id: diplomes_superieur_25_34
+libelle: Jeunes adultes de 25 à 34 ans diplômés de l'enseignement supérieur
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: diplomes_superieur_25_34
+variante_principale: oui
+definition: Part des personnes de 25 à 34 ans dont le plus haut diplôme relève de l'enseignement supérieur (CITE
+  5 à 8 ; CITE 1997 5-6 avant 2014), d'après l'enquête européenne sur les forces de travail (Eurostat, indicateur
+  ODD sdg_04_20).
+unite: '% des 25-34 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_04_20 (indicateur ODD 4, enquête sur les forces de travail)
+source_serie_id: sdg_04_20?freq=A&sex=T&age=Y25-34&unit=PC&isced11=ED5-8&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_20?freq=A&sex=T&age=Y25-34&unit=PC&isced11=ED5-8&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_04_20/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002052
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de l'espace européen de l'éducation (cible d'au moins 45 % en 2030) et du cadre
+  Eurostat Qualité de vie, annuel de 2000 à 2025 (31,4 % en 2000, 55,8 % en 2025).
+note_pertinence: La part des diplômés du supérieur mesure l'élévation de la qualification des générations récentes.
+  La cible européenne de 45 % est dépassée depuis 2018 (47,0 %), ce qui posera la question de la borne. Eurostat
+  signale le passage à la CITE 2011 en 2014 et des ruptures en 2003, 2013, 2021 et 2024. La DEPP reprend l'indicateur
+  (2013-2024) et l'INSEE publie les parts de diplômés du supérieur par tranche d'âge dans les séries longues de
+  l'enquête Emploi, en variantes.
+variantes:
+- serie_id: edat_lfse_03?freq=A&sex=T&age=Y15-74&unit=PC&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-000417
+  eligible: oui
+- serie_id: edat_lfse_03?freq=A&sex=M&sex=F&age=Y15-74&unit=PC&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-000418
+  eligible: oui
+- serie_id: edat_lfse_03?freq=A&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-34&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-34&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y45-64&age=Y55-64&age=Y55-69&age=Y55-74&age=UNK&unit=PC&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-000419
+  eligible: oui
+- serie_id: sdg_04_20?freq=A&sex=M&sex=F&age=Y25-34&unit=PC&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: sdg_04_20 par sexe ; edat_lfse_03 et 04 (CITE 5-8) par âge (dont 25-64 ans) et sexe ; reprise DEPP ; diplômés
+    du supérieur et docteurs pour 1 000 habitants (educ_uoe_grad05, grad06)
+  ligne_id: estat-002053
+  eligible: oui
+- serie_id: edat_lfse_04?freq=A&sex=T&isced11=ED5-8&age=Y25-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-002439
+  eligible: oui
+- serie_id: edat_lfse_04?freq=A&sex=M&sex=F&isced11=ED5-8&age=Y25-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-002440
+  eligible: oui
+- serie_id: edat_lfse_04?freq=A&sex=T&isced11=ED5-8&age=Y20-24&age=Y25-34&age=Y30-34&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-002441
+  eligible: oui
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED5&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024650
+  eligible: oui
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED5&age=Y20-29&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024651
+  eligible: non
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED5-8&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024652
+  eligible: oui
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED5-8&age=Y20-29&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024653
+  eligible: non
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED6&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024654
+  eligible: oui
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED6&age=Y20-29&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024655
+  eligible: non
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED7&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024656
+  eligible: oui
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED7&age=Y20-29&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024657
+  eligible: non
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED8&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024658
+  eligible: oui
+- serie_id: educ_uoe_grad05?freq=A&unit=P_THAB&isced11=ED8&age=Y20-29&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024659
+  eligible: oui
+- serie_id: educ_uoe_grad06?freq=A&unit=P_THAB&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024660
+  eligible: oui
+- serie_id: educ_uoe_grad06?freq=A&unit=P_THAB&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024661
+  eligible: oui
+- serie_id: educ_uoe_grad06?freq=A&unit=P_THAB&sex=T&age=Y25-34&geo=FR
+  source: Eurostat
+  nature: Eurostat edat_lfse_03, edat_lfse_04 (CITE 5-8), educ_uoe_grad05, educ_uoe_grad06
+  ligne_id: estat-024662
+  eligible: oui
+- serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
+    (France.Ensemble#dipl_sup)
+  source: DEPP — data.education.gouv.fr (Opendatasoft)
+  nature: sdg_04_20 par sexe ; edat_lfse_03 et 04 (CITE 5-8) par âge (dont 25-64 ans) et sexe ; reprise DEPP ; diplômés
+    du supérieur et docteurs pour 1 000 habitants (educ_uoe_grad05, grad06)
+  ligne_id: m04-000391
+  eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002260
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002261
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002262
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T89&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002547
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T89&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002548
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T89&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002549
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002697
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002698
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002699
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003076
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003077
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003078
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y65T89&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003199
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y65T89&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003200
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y65T89&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003201
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002281
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002282
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002283
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T89&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002553
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T89&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002554
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T89&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002555
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002718
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002719
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y25T49&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-002720
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003085
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003086
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y50T64&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003087
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y65T89&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003205
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y65T89&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003206
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y65T89&COMPOHALO=_T&EDUC=EEC6T8&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues de l''enquête Emploi : part des diplômés de bac + 2 et du supérieur long, par âge
+    et sexe (lignes de la long-list travail)'
+  ligne_id: melodi-003207
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- cible_atteinte
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026.

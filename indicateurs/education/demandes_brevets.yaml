@@ -1,0 +1,54 @@
+id: demandes_brevets
+libelle: Demandes de brevets européens par million d'habitants
+dimension: education
+sous_theme: recherche et innovation
+famille: demandes_brevets
+variante_principale: oui
+definition: Nombre de demandes de brevets déposées auprès de l'Office européen des brevets par des déposants résidant
+  en France, rapporté à la population (Eurostat, indicateur ODD sdg_09_40).
+unite: demandes par million d'habitants
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_09_40 (indicateur ODD 9), pays du déposant
+source_serie_id: sdg_09_40?freq=A&coop_ptn=APPL&unit=P_MHAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_40?freq=A&coop_ptn=APPL&unit=P_MHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_09_40/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002016
+hors_longlist: non
+rattachement_propose: ligne de la long-list niveau_de_vie (règle 1160 « recherche_education » de niveau_de_vie),
+  proposée en education (recherche, A5)
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de résultat de la recherche au catalogue, indicateur ODD 9 d'Eurostat, annuelle
+  de 2004 à 2025 (22 points ; 129,2 en 2004, 158,7 en 2025, provisoire).
+note_pertinence: Les dépôts de brevets mesurent une part de la production d'innovations, celle qui est brevetable
+  et protégée en Europe. L'indicateur dépend des stratégies de dépôt des entreprises et de la localisation de leur
+  siège (pays du déposant ; la clé « pays de l'inventeur » est en variante). Eurostat signale une rupture en 2014
+  et des valeurs provisoires de 2021 à 2025.
+variantes:
+- serie_id: sdg_09_40?freq=A&coop_ptn=INVT&unit=P_MHAB&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_40 selon le pays de l'inventeur (ligne de la long-list niveau_de_vie)
+  ligne_id: estat-002017
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2014
+- provisoire_2021_2025
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (mise à jour du 24/03/2026).

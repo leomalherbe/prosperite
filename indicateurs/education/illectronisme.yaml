@@ -1,0 +1,53 @@
+id: illectronisme
+libelle: 'Illectronisme : personnes sans usage d''internet ou sans aucune compétence numérique'
+dimension: education
+sous_theme: compétences numériques
+famille: illectronisme
+variante_principale: oui
+definition: Part des personnes de 16 à 74 ans n'ayant pas utilisé internet au cours des trois derniers mois ou n'ayant
+  aucune compétence numérique, d'après l'enquête TIC auprès des ménages (INSEE, indicateur national ODD 4.i3).
+unite: '% des 16-74 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: BDM, ODD 4.i3 (enquête TIC auprès des ménages)
+source_serie_id: '010594834'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594834
+url_page: https://www.insee.fr/fr/statistiques/serie/010594834
+frequence: irreguliere
+premiere_annee: 2015
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FE
+eligibilite_longlist: a_verifier
+ligne_id: bdm-000802
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de l'illectronisme, contenu explicite de la dimension (A7), 7 vagues de 2015 à 2025
+  (D17 ; 15 % en 2015, 7 % en 2025).
+note_pertinence: 'L''illectronisme désigne l''incapacité à se servir des outils numériques, source d''exclusion
+  à mesure que les services passent en ligne. L''indicateur réunit les non-utilisateurs d''internet et les utilisateurs
+  sans aucune compétence : il dépend de l''équipement autant que des compétences, l''accès à internet lui-même relevant
+  de logement_cadre_vie (A7). Les valeurs sont publiées à l''unité près, ce qui brouille les petites variations.'
+variantes:
+- serie_id: DS_NAT_SDG?AGE=Y16T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NUM_COMP4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i3&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG 4.i3 (NUM_COMP4)
+  ligne_id: melodi-005384
+  eligible: a_verifier
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2021
+- valeurs_arrondies
+notes: 'Valeurs lues sur la BDM le 15/10/2026 : 15, 14, 13, 11, 10, 10 et 7 % en 2015, 2016, 2017, 2019, 2021, 2023
+  et 2025.'

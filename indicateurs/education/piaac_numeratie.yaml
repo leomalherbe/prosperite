@@ -1,0 +1,47 @@
+id: piaac_numeratie
+libelle: Compétences des adultes en numératie (score moyen PIAAC)
+dimension: education
+sous_theme: compétences des adultes
+famille: piaac_numeratie
+variante_principale: oui
+definition: Score moyen des adultes de 16 à 65 ans en numératie (usage des nombres et des informations mathématiques)
+  dans l'enquête PIAAC de l'OCDE sur les compétences des adultes (How's Life, mesure 6_4).
+unite: points
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (How's Life, d'après PIAAC)
+source_jeu: How's Life? (bien-être actuel, DF_HSL_CWB)
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_4 UNIT_MEASURE=PO
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.6_4......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2012
+derniere_annee: 2023
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000042
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Compétences mesurées des adultes (incontournable, trois cadres), deux cycles PIAAC admis par
+  D17 et D28 (2012 et 2023 ; 257,2 points en 2023).
+note_pertinence: La numératie mesure la capacité des adultes à utiliser les nombres dans la vie courante et au travail,
+  complément de la littératie. Deux cycles seulement existent et leur comparabilité est à vérifier dans la documentation
+  de l'OCDE. La part d'adultes faiblement compétents en numératie est l'alternative de la famille.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- deux_valeurs
+- comparabilite_cycles_a_verifier
+notes: 'Extrait du robot M04 (docs/sources/series/ocde__hsl_bien_etre_actuel.csv) : 2012 et 2023, 257,223 points
+  en 2023.'

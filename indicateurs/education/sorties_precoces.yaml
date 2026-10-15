@@ -1,0 +1,180 @@
+id: sorties_precoces
+libelle: Sorties précoces du système scolaire (18-24 ans)
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: sorties_precoces
+variante_principale: oui
+definition: Part des jeunes de 18 à 24 ans qui ne suivent ni études ni formation et n'ont pas de diplôme du second
+  cycle du secondaire (CAP, BEP ou plus), en moyenne annuelle (INSEE, enquête Emploi, France hors Mayotte). Indicateur
+  de richesse nationale n° 8 et indicateur national ODD 4.i4.
+unite: '% des 18-24 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, indicateurs de richesse nationale et ODD 4.i4 (enquête Emploi)
+source_serie_id: '010594746'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594746
+url_page: https://www.insee.fr/fr/statistiques/serie/010594746
+frequence: annuelle
+premiere_annee: 2006
+derniere_annee: 2024
+nb_points_depuis_2000: 19
+geo: FR-D976
+eligibilite_longlist: oui
+ligne_id: bdm-000781
+hors_longlist: non
+raccordement: 'a_etudier : Eurostat sdg_04_10 pour 2000-2005 et 2025 (D16), valeurs supérieures de 1 à 1,5 point
+  avant 2013'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Concept présent dans les cinq cadres de bien-être (crosswalk §5), indicateur de richesse nationale
+  doté d'une cible européenne (moins de 9 % en 2030) et d'une cible française (9,5 %), annuel de 2006 à 2024 (19
+  points ; 7,9 % en 2024).
+note_pertinence: 'Les sorties précoces comptent les jeunes qui quittent l''école sans qualification du second cycle,
+  premier facteur de risque d''exclusion durable. La série de l''INSEE (11,2 % en 2006, 7,9 % en 2024) ne montre
+  pas la rupture de 2013 que signale Eurostat (11,8 % en 2012, 9,7 % en 2013, drapeau « b ») et se situe sous la
+  série européenne avant 2013 : elle semble rétropolée, ce que sa documentation doit confirmer. La série Eurostat
+  sdg_04_10 (2000-2025, 7,2 % en 2025, « définition différente » depuis 2021) couvre les années manquantes et sert
+  aux comparaisons européennes.'
+variantes:
+- serie_id: '010599819'
+  source: INSEE BDM
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  ligne_id: bdm-000803
+  eligible: oui
+- serie_id: '010599820'
+  source: INSEE BDM
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  ligne_id: bdm-000804
+  eligible: oui
+- serie_id: sdg_04_10?freq=A&unit=PC&wstatus=POP&age=Y18-24&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-002050
+  eligible: oui
+- serie_id: sdg_04_10?freq=A&unit=PC&wstatus=POP&age=Y18-24&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-002051
+  eligible: oui
+- serie_id: edat_lfse_30?freq=A&unit=PC&wstatus=POP&sex=T&age=Y18-24&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-005066
+  eligible: oui
+- serie_id: edat_lfse_30?freq=A&unit=PC&wstatus=POP&sex=M&sex=F&age=Y18-24&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-005067
+  eligible: oui
+- serie_id: edat_lfse_30?freq=A&unit=PC&wstatus=POP&sex=T&age=Y18-24&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-005068
+  eligible: oui
+- serie_id: edat_lfse_01?freq=A&sex=T&wstatus=POP&citizen=TOTAL&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-054196
+  eligible: oui
+- serie_id: edat_lfse_01?freq=A&sex=M&sex=F&wstatus=POP&citizen=TOTAL&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-054197
+  eligible: oui
+- serie_id: edat_lfse_02?freq=A&sex=T&wstatus=POP&c_birth=TOTAL&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-054199
+  eligible: oui
+- serie_id: edat_lfse_02?freq=A&sex=M&sex=F&wstatus=POP&c_birth=TOTAL&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-054200
+  eligible: oui
+- serie_id: edat_lfse_16?freq=A&unit=PC&sex=T&age=Y18-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-002442
+  eligible: oui
+- serie_id: edat_lfse_16?freq=A&unit=PC&sex=M&sex=F&age=Y18-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-002443
+  eligible: oui
+- serie_id: edat_lfse_14?freq=A&sex=T&wstatus=POP&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-024928
+  eligible: oui
+- serie_id: edat_lfse_14?freq=A&sex=M&sex=F&wstatus=POP&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-024929
+  eligible: oui
+- serie_id: edat_lfse_15?freq=A&sex=T&wstatus=POP&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-024930
+  eligible: oui
+- serie_id: edat_lfse_15?freq=A&sex=M&sex=F&wstatus=POP&age=Y18-24&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat EFT : sdg_04_10, edat_lfse_14, edat_lfse_16 (valeur nationale), edat_lfse_30, totaux d''edat_lfse_01
+    et 02, sorties de l''éducation formelle (edat_lfse_15)'
+  ligne_id: estat-024931
+  eligible: oui
+- serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
+    (France.Ensemble#elet)
+  source: DEPP — data.education.gouv.fr (Opendatasoft)
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  ligne_id: m04-000390
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i4&PCS=_Z&SDG=SDG4&SEX=F&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  ligne_id: melodi-005388
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i4&PCS=_Z&SDG=SDG4&SEX=M&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  ligne_id: melodi-005389
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i4&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  ligne_id: melodi-005390
+  eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_20_24_sortis_nondip)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: 'mesure voisine : part des non-diplômés parmi les 20-24 ans sortis d''études (recensement, 2016 et 2022
+    ; 15,73 % en 2022)'
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+  statut: disponible
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2013_eurostat
+- retropolation_a_confirmer
+- valeur_2025_non_publiee
+notes: 'Valeurs lues le 15/10/2026 : BDM 010594746 (2006-2024, 2025 non publiée) et API Eurostat sdg_04_10 (2000-2025
+  ; ruptures en 2003, 2013, 2014, 2021 et 2024). La DEPP reprend l''indicateur européen (2013-2024).'

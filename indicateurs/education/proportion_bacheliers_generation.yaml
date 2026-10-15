@@ -1,0 +1,62 @@
+id: proportion_bacheliers_generation
+libelle: Proportion de bacheliers dans une génération
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: proportion_bacheliers_generation
+variante_principale: oui
+definition: Part des jeunes d'une génération qui obtiennent le baccalauréat, toutes séries confondues, calculée
+  par la DEPP (France hors Mayotte, données définitives).
+unite: '% d''une génération'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DEPP
+source_jeu: fr-en-proportion-de-bacheliers-dans-une-generation (data.education.gouv.fr), tous baccalauréats, données
+  définitives
+source_serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-proportion-de-bacheliers-dans-une-generation
+  (France hors Mayotte.Tous baccalauréats.données définitives#pourcentage_de_bacheliers_dans_une_generation)
+source_niveau: 1
+url_api: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-proportion-de-bacheliers-dans-une-generation/exports/csv?delimiter=%3B
+url_page: https://data.education.gouv.fr/explore/dataset/fr-en-proportion-de-bacheliers-dans-une-generation/
+frequence: annuelle
+premiere_annee: 2001
+derniere_annee: 2023
+nb_points_depuis_2000: 23
+geo: FR-D976
+eligibilite_longlist: oui
+ligne_id: m04-000386
+hors_longlist: non
+raccordement: 'a_etudier : série « France hors DROM » 1970-2009 du même jeu pour 2000, données provisoires pour
+  2024-2025'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur national de l'accès au baccalauréat, annuel de 2001 à 2023 en données définitives
+  (23 points ; 80,7 % en 2023), prolongé par des données provisoires jusqu'en 2025 (80,1 %).
+note_pertinence: Le taux d'accès au baccalauréat est le repère le plus suivi de la démocratisation scolaire en France.
+  Il ne retient que le baccalauréat (les CAP et BEP n'y entrent pas) et dépend des règles de l'examen, ce qui en
+  fait une mesure d'accès au diplôme plus que de compétences. Le même jeu donne une série « France hors DROM » de
+  1970 à 2009 et des données provisoires pour 2024-2025, en variantes.
+variantes:
+- serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-proportion-de-bacheliers-dans-une-generation
+    (France hors Mayotte.Tous baccalauréats.données provisoires#pourcentage_de_bacheliers_dans_une_generation)
+  source: DEPP — data.education.gouv.fr (Opendatasoft)
+  nature: même indicateur, données provisoires (2024-2025 ; 80,1 % en 2025)
+  preuve: docs/sources/series/depp__fr-en-proportion-de-bacheliers-dans-une-generation.csv
+  statut: disponible
+- serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-proportion-de-bacheliers-dans-une-generation
+    (France hors DROM.Tous baccalauréats.données définitives#pourcentage_de_bacheliers_dans_une_generation)
+  source: DEPP — data.education.gouv.fr (Opendatasoft)
+  nature: même indicateur sur la France hors DROM, série longue 1970-2009 (65,3 % en 2009)
+  preuve: docs/sources/series/depp__fr-en-proportion-de-bacheliers-dans-une-generation.csv
+  statut: disponible
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_hors_mayotte
+- donnees_provisoires_2024_2025
+notes: Extrait du robot M04 (docs/sources/series/depp__fr-en-proportion-de-bacheliers-dans-une-generation.csv) ;
+  la DEPP diffuse aussi les proportions par série et par sexe dans le même jeu.

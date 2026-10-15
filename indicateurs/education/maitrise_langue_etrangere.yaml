@@ -1,0 +1,50 @@
+id: maitrise_langue_etrangere
+libelle: Adultes maîtrisant très bien leur meilleure langue étrangère
+dimension: education
+sous_theme: compétences des adultes
+famille: langues_etrangeres
+variante_principale: non
+definition: Part des personnes de 25 à 64 ans qui déclarent un niveau « très bon » dans la langue étrangère qu'elles
+  connaissent le mieux, d'après l'enquête européenne sur l'éducation des adultes (Eurostat edat_aes_l31 ; dénominateur
+  à confirmer).
+unite: '% (dénominateur à confirmer)'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: edat_aes_l31 (enquête sur l'éducation des adultes), modalité 25-64 ans, niveau « très bon »
+source_serie_id: edat_aes_l31?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&unit=PC&lev_know=PROF&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_aes_l31?freq=A&age=Y25-64&unit=PC&lev_know=PROF&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_aes_l31/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2022
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-025031
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: 'Autre statistique de la même enquête (cadre Eurostat Qualité de vie : niveau de la langue
+  la mieux connue), 4 vagues de 2007 à 2022 (D17), dont les valeurs n''ont pas pu être relues sur l''API le 15/10/2026
+  (refus du proxy).'
+note_pertinence: Le niveau déclaré dans la meilleure langue étrangère complète la simple connaissance d'une langue.
+  Le dénominateur (ensemble des 25-64 ans ou seules personnes connaissant une langue) et les drapeaux de rupture
+  restent à lire dans les métadonnées. Les niveaux « élémentaire » et « bon » sont écartés en bloc (catégories intermédiaires).
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- valeurs_non_relues
+- denominateur_a_confirmer
+- auto_evaluation
+notes: Période et nombre de points tirés de la long-list (paquet d'âges) ; lecture de l'API refusée (HTTP 429) le
+  15/10/2026 (liste de maintenance, n° 41).

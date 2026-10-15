@@ -1,0 +1,47 @@
+id: adultes_faibles_competences_calcul
+libelle: Adultes ayant de faibles compétences en numératie (PIAAC)
+dimension: education
+sous_theme: compétences des adultes
+famille: piaac_numeratie
+variante_principale: non
+definition: Part des adultes de 16 à 65 ans dont le score PIAAC en numératie est au plus du niveau 1 (How's Life,
+  mesure 6_4_DEP ; seuil à confirmer dans la documentation de l'OCDE).
+unite: '% des adultes'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (How's Life, d'après PIAAC)
+source_jeu: How's Life? (bien-être actuel, DF_HSL_CWB)
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_4_DEP UNIT_MEASURE=PT_ST
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.6_4_DEP......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2012
+derniere_annee: 2023
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000043
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la même épreuve, centrée sur les adultes en difficulté, deux cycles PIAAC
+  (2012 et 2023 ; 22,6 % en 2023, D17).
+note_pertinence: 'La part d''adultes faiblement compétents se lit plus directement qu''un score pour fixer un seuil
+  et un objectif. L''unité de l''OCDE (« pourcentage d''élèves ») est un libellé erroné de la base : la mesure porte
+  sur les adultes.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- deux_valeurs
+- seuil_a_confirmer
+- libelle_unite_errone
+notes: 'Extrait du robot M04 (docs/sources/series/ocde__hsl_bien_etre_actuel.csv) : 2012 et 2023, 22,6255 % en 2023.'

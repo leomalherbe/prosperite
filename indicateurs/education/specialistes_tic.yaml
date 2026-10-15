@@ -1,0 +1,127 @@
+id: specialistes_tic
+libelle: Spécialistes des technologies de l'information et de la communication dans l'emploi
+dimension: education
+sous_theme: compétences numériques
+famille: specialistes_tic
+variante_principale: oui
+definition: Part des spécialistes des technologies de l'information et de la communication (professions de la CITP-08
+  retenues par Eurostat) dans l'emploi total, d'après l'enquête européenne sur les forces de travail (Eurostat isoc_sks_itspt).
+unite: '% de l''emploi total'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: isoc_sks_itspt (spécialistes des TIC en emploi)
+source_serie_id: isoc_sks_itspt?freq=A&unit=PC_EMP&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sks_itspt?freq=A&unit=PC_EMP&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/isoc_sks_itspt/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-052275
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure des compétences numériques avancées de la population en emploi, annuelle de 2004 à
+  2025 et comparable depuis la rupture de 2011 (2,7 % en 2011, 4,9 % en 2025).
+note_pertinence: 'La part des spécialistes des TIC indique la capacité du pays à concevoir et entretenir les outils
+  numériques, complément des compétences de base de toute la population. C''est aussi une structure de l''emploi,
+  dont la hausse ne dit rien du bien-être des personnes concernées : la lecture reste prudente. Eurostat signale
+  une rupture en 2011 (4,1 % en 2010, 2,7 % en 2011) et une définition différente depuis 2021 ; la part des femmes
+  parmi ces spécialistes relève d''egalites.'
+variantes:
+- serie_id: isoc_sks_itspa?freq=A&unit=PC&age=Y35-74&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052281
+  eligible: oui
+- serie_id: isoc_sks_itspa?freq=A&unit=PC&age=Y15-34&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052282
+  eligible: oui
+- serie_id: isoc_sks_itspe?freq=A&unit=PC&isced11=ED0-4&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052278
+  eligible: oui
+- serie_id: isoc_sks_itspe?freq=A&unit=PC&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052279
+  eligible: oui
+- serie_id: isoc_ski_itemp?freq=A&wstatus=ACT&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052283
+  eligible: oui
+- serie_id: isoc_ski_itemp?freq=A&wstatus=EMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052284
+  eligible: oui
+- serie_id: isoc_ski_itemp?freq=A&wstatus=UNE&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052285
+  eligible: oui
+- serie_id: isoc_ski_itsex?freq=A&unit=PC&sex=T&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052286
+  eligible: oui
+- serie_id: isoc_ski_itsex?freq=A&unit=PC&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052287
+  eligible: oui
+- serie_id: isoc_ski_itage?freq=A&unit=PC&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052291
+  eligible: oui
+- serie_id: isoc_ski_itage?freq=A&unit=PC&age=Y15-34&age=Y35-74&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052292
+  eligible: oui
+- serie_id: isoc_ski_itedu?freq=A&unit=PC&isced11=ED3-8&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052288
+  eligible: oui
+- serie_id: isoc_ski_itedu?freq=A&unit=PC&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052290
+  eligible: oui
+- serie_id: isoc_sks_itspe?freq=A&unit=PC&isced11=NRP&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052280
+  eligible: a_verifier
+- serie_id: isoc_ski_itedu?freq=A&unit=PC&isced11=ED3_4&geo=FR
+  source: Eurostat
+  nature: Eurostat isoc_sks_itspa, itspe (par âge, par diplôme) ; isoc_ski_* (personnes diplômées en TIC)
+  ligne_id: estat-052289
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2005
+- rupture_2006
+- rupture_2011
+- rupture_2013
+- rupture_2014
+- definition_differente_depuis_2021
+- valeurs_estimees_2004_2012
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026.

@@ -1,0 +1,51 @@
+id: duree_moyenne_scolarisation
+libelle: Durée moyenne de scolarisation des 25 ans ou plus
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: niveau_etudes_adultes
+variante_principale: non
+definition: Nombre moyen d'années d'études accomplies par les personnes de 25 ans ou plus, estimé par le PNUD d'après
+  l'UNESCO et Barro et Lee (composante éducation de l'indice de développement humain).
+unite: années
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: PNUD (Rapport sur le développement humain 2025)
+source_jeu: séries composites, colonnes mys_<année>
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes mys_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000359
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: 'Autre statistique du niveau d''études des adultes (cadre SSF : nombre moyen d''années de
+  scolarité), annuelle de 1990 à 2023 (11,77 ans en 2023) mais estimée et moins récente que la part des adultes
+  peu diplômés.'
+note_pertinence: La durée moyenne se lit plus intuitivement qu'une part par niveau de diplôme et entre dans l'indice
+  de développement humain. C'est toutefois une estimation modélisée, peu sensible d'une année à l'autre, publiée
+  avec deux ans de retard dans un fichier dont l'URL change à chaque édition. La licence annoncée par le PNUD (CC
+  BY 3.0 IGO) reste à confirmer.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- niveau_2
+- url_par_edition
+- licence_a_confirmer
+- estimation_modelisee
+notes: 'Extrait du robot M04 (docs/sources/series/pnud__hdr25_series_composites_france.csv) : 34 périodes 1990-2023,
+  32 valeurs distinctes, 11,7657 en 2023.'

@@ -1,0 +1,545 @@
+id: formation_adultes_4_semaines
+libelle: Participation des 25-64 ans à l'éducation ou à la formation au cours des quatre dernières semaines
+dimension: education
+sous_theme: formation des adultes
+famille: formation_adultes
+variante_principale: oui
+definition: Part des personnes de 25 à 64 ans ayant suivi un enseignement ou une formation, formels ou non formels,
+  au cours des quatre semaines précédant l'enquête, d'après l'enquête européenne sur les forces de travail (Eurostat,
+  indicateur ODD sdg_04_60).
+unite: '% des 25-64 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_04_60 (indicateur ODD 4, enquête sur les forces de travail)
+source_serie_id: sdg_04_60?freq=A&unit=PC&age=Y25-64&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_60?freq=A&unit=PC&age=Y25-64&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_04_60/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002059
+hors_longlist: non
+raccordement: 'a_etudier : rupture de 2013 (5,7 % en 2012, 17,8 % en 2013) à neutraliser avant toute lecture de
+  la trajectoire'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du cadre Eurostat Qualité de vie (participation des adultes à l'éducation et à
+  la formation), seule mesure annuelle depuis 2000 (26 points ; 15,5 % en 2025).
+note_pertinence: 'La participation au cours des quatre dernières semaines est le suivi annuel de la formation tout
+  au long de la vie. La série française est marquée par une rupture majeure en 2013 (5,7 % en 2012, 17,8 % en 2013,
+  drapeau « b »), une chute en 2020 (13,0 %) et une nouvelle rupture en 2021 : sa trajectoire ne se lit que par
+  morceaux. Les cibles européenne (au moins 60 %) et française (65 %) de 2030 portent sur la participation au cours
+  des douze derniers mois, en variante.'
+variantes:
+- serie_id: trng_lfse_01?freq=A&unit=PC&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-000420
+  eligible: oui
+- serie_id: trng_lfse_01?freq=A&unit=PC&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-000421
+  eligible: oui
+- serie_id: trng_lfse_01?freq=A&unit=PC&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-34&age=Y25-49&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y50-74&age=Y55-64&age=Y55-69&age=Y55-74&age=Y65-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-000422
+  eligible: oui
+- serie_id: trng_lfs_14?freq=A&unit=PC&deg_urb=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-005010
+  eligible: oui
+- serie_id: trng_lfs_14?freq=A&unit=PC&deg_urb=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-005012
+  eligible: oui
+- serie_id: trng_lfs_14?freq=A&unit=PC&deg_urb=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-34&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-005013
+  eligible: oui
+- serie_id: trng_lfse_03?freq=A&unit=PC&isced11=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023191
+  eligible: oui
+- serie_id: trng_lfse_03?freq=A&unit=PC&isced11=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023193
+  eligible: oui
+- serie_id: trng_lfse_03?freq=A&unit=PC&isced11=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023194
+  eligible: oui
+- serie_id: trng_lfs_12?freq=A&unit=PC&citizen=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-054076
+  eligible: oui
+- serie_id: trng_lfs_12?freq=A&unit=PC&citizen=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-054078
+  eligible: oui
+- serie_id: trng_lfs_12?freq=A&unit=PC&citizen=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-054079
+  eligible: oui
+- serie_id: trng_lfs_13?freq=A&unit=PC&c_birth=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-054080
+  eligible: oui
+- serie_id: trng_lfs_13?freq=A&unit=PC&c_birth=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-054082
+  eligible: oui
+- serie_id: trng_lfs_13?freq=A&unit=PC&c_birth=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-054083
+  eligible: oui
+- serie_id: sdg_04_60?freq=A&unit=PC&age=Y25-64&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-002060
+  eligible: oui
+- serie_id: trng_lfse_04?freq=A&unit=PC&sex=T&age=Y18-64&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-002421
+  eligible: oui
+- serie_id: trng_lfse_04?freq=A&unit=PC&sex=M&sex=F&age=Y18-64&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-002422
+  eligible: oui
+- serie_id: trng_lfse_04?freq=A&unit=PC&sex=T&age=Y25-64&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-002423
+  eligible: oui
+- serie_id: trng_lfse_02?freq=A&unit=PC&sex=T&wstatus=POP&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023188
+  eligible: oui
+- serie_id: trng_lfse_02?freq=A&unit=PC&sex=M&sex=F&wstatus=POP&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023189
+  eligible: oui
+- serie_id: trng_lfse_02?freq=A&unit=PC&sex=T&wstatus=POP&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023190
+  eligible: oui
+- serie_id: trng_lfs_04?freq=A&unit=PC&isco08=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023195
+  eligible: oui
+- serie_id: trng_lfs_04?freq=A&unit=PC&isco08=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023196
+  eligible: oui
+- serie_id: trng_lfs_04?freq=A&unit=PC&isco08=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023197
+  eligible: oui
+- serie_id: trng_lfs_07?freq=A&unit=PC&sizeclas=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023204
+  eligible: oui
+- serie_id: trng_lfs_07?freq=A&unit=PC&sizeclas=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023205
+  eligible: oui
+- serie_id: trng_lfs_07?freq=A&unit=PC&sizeclas=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023206
+  eligible: oui
+- serie_id: trng_lfs_08b?freq=A&unit=PC&nace_r2=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023207
+  eligible: oui
+- serie_id: trng_lfs_08b?freq=A&unit=PC&nace_r2=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023208
+  eligible: oui
+- serie_id: trng_lfs_08b?freq=A&unit=PC&nace_r2=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023209
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=FE&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023210
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=FE&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023211
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=FE&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023212
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=FE_NFE&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023213
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=FE_NFE&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023214
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=FE_NFE&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023215
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023216
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023217
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023218
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=FE&isced11=TOTAL&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023225
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=FE&isced11=TOTAL&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023227
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=FE&isced11=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023228
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=FE_NFE&isced11=TOTAL&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023229
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=FE_NFE&isced11=TOTAL&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023231
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=FE_NFE&isced11=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023232
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE&isced11=TOTAL&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023233
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE&isced11=TOTAL&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023235
+  eligible: oui
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE&isced11=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023236
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=FE&wstatus=POP&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023245
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=FE&wstatus=POP&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023246
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=FE&wstatus=POP&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023247
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=FE_NFE&wstatus=POP&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023248
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=FE_NFE&wstatus=POP&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023249
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=FE_NFE&wstatus=POP&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023250
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE&wstatus=POP&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023251
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE&wstatus=POP&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023252
+  eligible: oui
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE&wstatus=POP&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023253
+  eligible: oui
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE_JB&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023219
+  eligible: non
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE_JB&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023220
+  eligible: non
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE_JB&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023221
+  eligible: non
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE_NJB&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023222
+  eligible: non
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE_NJB&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023223
+  eligible: non
+- serie_id: trng_lfs_09?freq=A&unit=PC&training=NFE_NJB&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023224
+  eligible: non
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE_JB&isced11=TOTAL&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023237
+  eligible: non
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE_JB&isced11=TOTAL&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023239
+  eligible: non
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE_JB&isced11=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023240
+  eligible: non
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE_NJB&isced11=TOTAL&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023241
+  eligible: non
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE_NJB&isced11=TOTAL&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023243
+  eligible: non
+- serie_id: trng_lfs_10?freq=A&unit=PC&training=NFE_NJB&isced11=TOTAL&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023244
+  eligible: non
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE_JB&wstatus=POP&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023254
+  eligible: non
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE_JB&wstatus=POP&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023255
+  eligible: non
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE_JB&wstatus=POP&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023256
+  eligible: non
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE_NJB&wstatus=POP&sex=T&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023257
+  eligible: non
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE_NJB&wstatus=POP&sex=M&sex=F&age=Y15-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023258
+  eligible: non
+- serie_id: trng_lfs_11?freq=A&unit=PC&training=NFE_NJB&wstatus=POP&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: sdg_04_60 par sexe ; trng_lfse_01 à 04 et trng_lfs_09, 11 à 14 (18-74 ans, par sexe, âge, type de formation,
+    valeur nationale) ; salariés (trng_lfs_04, 07, 08b)
+  ligne_id: estat-023259
+  eligible: non
+- serie_id: trng_lfs_05?freq=A&unit=PC&emp_cont=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat trng_lfs_05, trng_lfs_06 : participation des salariés (lignes de la long-list travail)'
+  ligne_id: estat-023198
+  eligible: oui
+  longlist: travail
+- serie_id: trng_lfs_05?freq=A&unit=PC&emp_cont=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat trng_lfs_05, trng_lfs_06 : participation des salariés (lignes de la long-list travail)'
+  ligne_id: estat-023199
+  eligible: oui
+  longlist: travail
+- serie_id: trng_lfs_05?freq=A&unit=PC&emp_cont=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat trng_lfs_05, trng_lfs_06 : participation des salariés (lignes de la long-list travail)'
+  ligne_id: estat-023200
+  eligible: oui
+  longlist: travail
+- serie_id: trng_lfs_06?freq=A&unit=PC&worktime=TOTAL&sex=T&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat trng_lfs_05, trng_lfs_06 : participation des salariés (lignes de la long-list travail)'
+  ligne_id: estat-023201
+  eligible: oui
+  longlist: travail
+- serie_id: trng_lfs_06?freq=A&unit=PC&worktime=TOTAL&sex=M&sex=F&age=Y18-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat trng_lfs_05, trng_lfs_06 : participation des salariés (lignes de la long-list travail)'
+  ligne_id: estat-023202
+  eligible: oui
+  longlist: travail
+- serie_id: trng_lfs_06?freq=A&unit=PC&worktime=TOTAL&sex=T&age=Y18-24&age=Y18-64&age=Y18-69&age=Y20-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-54&age=Y55-74&geo=FR
+  source: Eurostat
+  nature: 'Eurostat trng_lfs_05, trng_lfs_06 : participation des salariés (lignes de la long-list travail)'
+  ligne_id: estat-023203
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- chute_2020
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (2,8 % en 2000).

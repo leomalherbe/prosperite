@@ -1,0 +1,83 @@
+id: competences_numeriques_base
+libelle: Personnes de 16 à 74 ans ayant au moins des compétences numériques de base
+dimension: education
+sous_theme: compétences numériques
+famille: competences_numeriques
+variante_principale: oui
+definition: Part des personnes de 16 à 74 ans dont les compétences numériques générales sont de base ou plus avancées,
+  d'après l'indicateur européen de compétences numériques calculé sur l'enquête TIC auprès des ménages (INSEE, indicateur
+  national ODD 4.i3 ; somme des niveaux « de base » et « plus avancées »).
+unite: '% des 16-74 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux)
+source_jeu: BDM, ODD 4.i3 (enquête TIC auprès des ménages)
+source_serie_id: '010594832'
+composantes:
+- '010594832'
+- '010594833'
+formule: 010594832 + 010594833 (niveau de base + niveau plus avancé)
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594832+010594833
+url_page: https://www.insee.fr/fr/statistiques/serie/010594832
+frequence: irreguliere
+premiere_annee: 2015
+derniere_annee: 2025
+nb_points_depuis_2000: 7
+geo: FE
+eligibilite_longlist: a_verifier
+ligne_id: bdm-000800 ; bdm-000801
+hors_longlist: non
+raccordement: 'a_etudier : changement de l''indicateur européen en 2021 (jeux isoc_sk_dskl_i jusqu''en 2019, isoc_sk_dskl_i21
+  depuis)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du cadre Eurostat Qualité de vie et de l'objectif européen d'au moins 80 % des
+  16-74 ans en 2030, 7 vagues de 2015 à 2025 (D17 ; 57 % en 2015, 66 % en 2025), somme recoupée avec les trois valeurs
+  publiées par Eurostat.
+note_pertinence: 'Les compétences numériques conditionnent l''accès aux droits, à l''emploi et aux services en ligne.
+  L''INSEE publie les quatre niveaux de la répartition à l''unité près : la part d''au moins de base est la somme
+  des niveaux « de base » et « plus avancées » (62 %, 60 % et 66 % en 2021, 2023 et 2025, contre 61,96 %, 59,67
+  % et 65,74 % dans sdg_04_70). L''indicateur européen a changé en 2021 : les valeurs 2015-2019 et 2021-2025 ne
+  sont pas strictement comparables.'
+variantes:
+- serie_id: '010594831'
+  source: INSEE BDM
+  nature: INSEE Melodi DS_NAT_SDG 4.i3 (niveaux de base et avancé) ; niveau « faibles compétences » (BDM et Melodi)
+  ligne_id: bdm-000799
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y16T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NUM_COMP1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i3&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG 4.i3 (niveaux de base et avancé) ; niveau « faibles compétences » (BDM et Melodi)
+  ligne_id: melodi-005381
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y16T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NUM_COMP2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i3&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG 4.i3 (niveaux de base et avancé) ; niveau « faibles compétences » (BDM et Melodi)
+  ligne_id: melodi-005382
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y16T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NUM_COMP3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i3&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE Melodi DS_NAT_SDG 4.i3 (niveaux de base et avancé) ; niveau « faibles compétences » (BDM et Melodi)
+  ligne_id: melodi-005383
+  eligible: a_verifier
+- serie_id: sdg_04_70?freq=A&ind_type=IND_TOTAL&indic_is=I_DSK2_BAB&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: même indicateur publié par Eurostat avec une décimale (2021, 2023, 2025 ; 65,74 % en 2025), jeu hors filtre
+    du catalogue (début 2021)
+  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 15/10/2026)
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2021
+- valeurs_arrondies
+- serie_calculee
+notes: 'Valeurs lues le 15/10/2026 : BDM 010594832 (base : 30, 28, 28, 26, 31, 29, 31) et 010594833 (avancées :
+  27, 28, 29, 31, 31, 31, 35) pour 2015, 2016, 2017, 2019, 2021, 2023, 2025 ; recoupement avec sdg_04_70 (2021,
+  2023, 2025) conforme à l''arrondi près (D34).'

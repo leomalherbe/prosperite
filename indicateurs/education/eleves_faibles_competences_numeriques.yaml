@@ -1,0 +1,52 @@
+id: eleves_faibles_competences_numeriques
+libelle: Élèves de quatrième ayant de faibles compétences numériques (ICILS)
+dimension: education
+sous_theme: compétences numériques
+famille: eleves_faibles_competences_numeriques
+variante_principale: oui
+definition: Part des élèves en huitième année de scolarité (quatrième) sous le seuil de maîtrise de l'enquête internationale
+  ICILS sur la littératie informatique, reprise par la DEPP pour le suivi des objectifs européens d'éducation.
+unite: '% des élèves de quatrième'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DEPP (d'après l'enquête ICILS de l'IEA)
+source_jeu: fr-en-objectifs_europeens_education_formation (data.education.gouv.fr), variable icils_numerique
+source_serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
+  (France.Ensemble#icils_numerique)
+source_niveau: 1
+url_api: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation/exports/csv?delimiter=%3B
+url_page: https://data.education.gouv.fr/explore/dataset/fr-en-objectifs_europeens_education_formation/
+frequence: irreguliere
+premiere_annee: 2018
+derniere_annee: 2023
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/depp__fr-en-objectifs_europeens_education_formation.csv
+rattachement_propose: 'hors long-list : variable du jeu DEPP des objectifs européens lue par le robot M04 mais non
+  cataloguée, proposée en education (compétences numériques) ; liste de maintenance, n° 37'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure des compétences numériques des élèves, assortie d'une cible européenne de moins
+  de 15 % en 2030, enquête quinquennale admise par D17 et D28 (2018 et 2023 ; 42,7 % en 2023).
+note_pertinence: ICILS évalue la capacité des élèves de quatrième à utiliser un ordinateur pour rechercher, produire
+  et communiquer de l'information. Avec 42,7 % d'élèves sous le seuil en 2023, la France est loin de la cible européenne.
+  Seules deux valeurs existent et la ventilation par sexe n'est publiée que pour 2018.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- hors_longlist
+- deux_valeurs
+notes: 'Extrait du robot M04 (docs/sources/series/depp__fr-en-objectifs_europeens_education_formation.csv) : 2018
+  et 2023, 42,7 % en 2023 ; ventilation par sexe en 2018 seulement (37,8 % des filles, 49,2 % des garçons).'

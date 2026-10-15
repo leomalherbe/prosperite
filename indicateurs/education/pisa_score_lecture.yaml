@@ -1,0 +1,48 @@
+id: pisa_score_lecture
+libelle: Score moyen des élèves de 15 ans en compréhension de l'écrit (PISA)
+dimension: education
+sous_theme: compétences des élèves
+famille: pisa_lecture
+variante_principale: non
+definition: Score moyen des élèves de 15 ans à l'épreuve de compréhension de l'écrit de l'enquête PISA de l'OCDE
+  (How's Life, mesure 6_1).
+unite: points
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (How's Life, d'après PISA)
+source_jeu: How's Life? (bien-être actuel, DF_HSL_CWB)
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_1 UNIT_MEASURE=PO
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.6_1......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2006
+derniere_annee: 2022
+nb_points_depuis_2000: 6
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000035
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Indicateur des compétences des élèves de l'OCDE (How's Life 6_1) et du cadre SSF, enquête
+  triennale admise par D17 (6 cycles de 2006 à 2022 ; 473,85 points en 2022), autre lecture de la même épreuve que
+  la part d'élèves en difficulté.
+note_pertinence: Le score moyen résume toute la distribution des résultats, quand la part sous le niveau 2 n'en
+  regarde que la base. La base How's Life ne reprend PISA qu'à partir de 2006 et l'extrait du robot s'arrête au
+  cycle 2022. Les deux statistiques se lisent différemment pour les bornes (points contre pourcentage), d'où deux
+  fiches dans une même famille.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- cycle_2025_absent
+notes: 'Extrait du robot M04 (docs/sources/series/ocde__hsl_bien_etre_actuel.csv) : cycles 2006, 2009, 2012, 2015,
+  2018 et 2022 ; 473,85 points en 2022.'

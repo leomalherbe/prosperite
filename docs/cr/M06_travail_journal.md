@@ -61,4 +61,5 @@ Fichiers du dépôt lus (sans saisie de valeur) : `cnam_ameli__sinistralite_naf1
 
 ## 4. Rédaction et livraison
 
-- Rapport `docs/validation/audit_travail.md` ; copie dans le Projet (`claude/cr/M06_travail_audit.md`) ; PR vers `main` par l'API GitHub.
+- Rapport `docs/validation/audit_travail.md` ; copie dans le Projet (`claude/cr/M06_travail_audit.md`) ; PR **#24** « M06 — audit croisé : travail » ouverte vers `main` par l'API GitHub (`POST /repos/leomalherbe/prosperite/pulls`).
+- Aucun fichier sous `scripts/`, `src/`, `indicateurs/`, `catalogues/` modifié ; `.claude/` non commité.

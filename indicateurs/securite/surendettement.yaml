@@ -6,7 +6,7 @@ famille: surendettement
 variante_principale: oui
 definition: Nombre de dossiers de surendettement déposés dans l'année auprès des commissions de surendettement de
   la Banque de France, France métropolitaine (indicateur national ODD 1.i5).
-unite: nombre de dossiers déposés (taux à calculer)
+unite: nombre de dossiers déposés
 sens: bas
 type: resultat
 declaratif: non
@@ -29,8 +29,9 @@ raccordement: 'a_etudier : 2000-2009 par les dépôts de dossiers de la Banque d
   D21)'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure administrative des ménages en grande difficulté financière, annuelle 2010-2024
-  (218 102 dossiers en 2010, 108 748 en 2020, 134 807 en 2024) ; en nombre, à rapporter au nombre de ménages.
+motif_recommandation: Seule mesure administrative des ménages en grande difficulté financière, publiée en nombre
+  par l'INSEE (indicateur national ODD 1.i5), annuelle 2010-2024 (218 102 dossiers en 2010, 108 748 en 2020, 134
+  807 en 2024).
 note_pertinence: Le surendettement est l'issue extrême de l'insécurité économique et la dimension le cite explicitement.
   Le nombre de dépôts dépend aussi des règles de la procédure et de l'accès au crédit (à documenter avec la Banque
   de France). La baisse jusqu'en 2020 puis la remontée sont cohérentes avec les retards de paiement de l'enquête
@@ -52,6 +53,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- en_nombre_taux_a_calculer
+- en_nombre
 - dependance_reglementaire
-notes: ''
+notes: Indicateur retenu en nombre, comme l'indicateur ODD 1.i5 publié. Un taux pour 100 000 habitants (010594499
+  / 000067671 × 100 000, population moyenne de France métropolitaine, 1946-2025) pourrait être calculé par le pipeline,
+  mais il n'est pas retenu comme série principale faute de valeurs officielles pour le recoupement (D34) ; la population
+  métropolitaine n'augmente que de 5,7 % de 2010 à 2024 (BDM 000067671 lue le 14/10/2026), peu au regard des mouvements
+  de la série (-50 % de 2010 à 2020).

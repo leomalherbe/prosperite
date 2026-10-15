@@ -1,20 +1,23 @@
 id: ecart_temps_partiel_fh
-libelle: Écart de taux d'emploi à temps partiel entre hommes et femmes (20-64 ans)
+libelle: Écart de part du temps partiel dans l'emploi entre femmes et hommes (20-64 ans)
 dimension: egalites
 sous_theme: écarts femmes-hommes
 famille: ecart_temps_partiel_fh
 variante_principale: oui
-definition: Différence, en points, entre le taux d'emploi à temps partiel des hommes et celui des femmes de 20 à
-  64 ans (jeu Eurostat sdg_05_30, personnes en emploi à temps partiel) ; la valeur est négative parce que les femmes
-  travaillent plus souvent à temps partiel.
-unite: points de pourcentage (hommes moins femmes, négatif)
-sens: haut
+definition: Différence, en valeur absolue et en points, entre la part du temps partiel dans l'emploi des femmes
+  et celle des hommes de 20 à 64 ans (jeu Eurostat sdg_05_30, modalité « personnes en emploi à temps partiel » ;
+  la série publiée, hommes moins femmes, est négative).
+unite: points de pourcentage
+sens: bas
 type: resultat
 declaratif: non
 composite: non
 source_organisme: Eurostat
 source_jeu: sdg_05_30 (indicateurs ODD de l'UE, enquête Forces de travail)
 source_serie_id: sdg_05_30?freq=A&wstatus=EMP_PT&age=Y20-64&unit=PC_PNT&geo=FR
+composantes:
+- sdg_05_30?freq=A&wstatus=EMP_PT&age=Y20-64&unit=PC_PNT&geo=FR
+formule: abs(A)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_30?freq=A&wstatus=EMP_PT&age=Y20-64&unit=PC_PNT&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_05_30/default/table?lang=fr
@@ -30,10 +33,11 @@ raccordement: 'a_etudier : 2003-2008 par la part du temps partiel par sexe de l'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Inégalité de durée d'emploi distincte de l'écart d'emploi, annuelle de 2009 à 2025, dont l'ampleur
-  a nettement baissé (-25,2 points en 2009, -17,5 en 2025).
-note_pertinence: 'Le temps partiel, surtout féminin, explique une grande part des écarts de revenu salarial entre
-  femmes et hommes. Comme la série est négative (hommes moins femmes), le sens est « haut » : la valeur remonte
-  vers 0 quand l''écart se réduit. Une partie du temps partiel est choisie, ce qui nuance la lecture.'
+  a nettement baissé (25,2 points en 2009, 17,5 en 2025, en valeur absolue).
+note_pertinence: Le temps partiel, surtout féminin, explique une grande part des écarts de revenu salarial entre
+  femmes et hommes. La série publiée (hommes moins femmes) est négative ; exprimée en valeur absolue (D34), elle
+  mesure la distance à la parité avec le sens « bas ». Une partie du temps partiel est choisie, ce qui nuance la
+  lecture.
 variantes:
 - serie_id: sdg_05_30?freq=A&wstatus=EMP_TEMP&age=Y20-64&unit=PC_PNT&geo=FR
   source: Eurostat
@@ -65,6 +69,12 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- valeurs_negatives
 - definition_differente_2021
-notes: ''
+- valeur_absolue_d34
+- definition_a_confirmer_metadonnees
+notes: 'Définition corrigée après l''audit M06 : écart de parts du temps partiel dans l''emploi, et non de taux
+  d''emploi à temps partiel ; l''audit l''a recoupée sur lfsa_eppga (« personnes en emploi à temps partiel, % de
+  l''emploi total », 20-64 ans) : 8,1 % pour les hommes moins 25,6 % pour les femmes = -17,5 en 2025, valeur publiée.
+  Les métadonnées de sdg_05_30 ne détaillent pas la modalité EMP_PT (à confirmer, maintenance EGA-5) ; l''API a
+  refusé une nouvelle lecture le 14/10/2026 (HTTP 429). A = série publiée (hommes moins femmes) : -25,2 (2009),
+  -17,5 (2025), drapeau d de 2021 à 2025.'

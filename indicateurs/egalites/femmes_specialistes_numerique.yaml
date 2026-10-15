@@ -1,0 +1,65 @@
+id: femmes_specialistes_numerique
+libelle: Part des femmes parmi les spécialistes des technologies de l'information et de la communication en emploi
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_filieres_scientifiques
+variante_principale: non
+definition: Part des femmes parmi les personnes en emploi exerçant comme spécialistes des technologies de l'information
+  et de la communication (TIC) (jeu Eurostat isoc_sks_itsps).
+unite: '% des spécialistes TIC en emploi'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: isoc_sks_itsps (spécialistes en emploi dans les TIC par sexe)
+source_serie_id: isoc_sks_itsps?freq=A&unit=PC&sex=F&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_sks_itsps?freq=A&unit=PC&sex=F&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/isoc_sks_itsps/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-052276
+hors_longlist: non
+rattachement_propose: ligne de la long-list education (compétences numériques) ; ségrégation professionnelle selon
+  le sexe, contenu d'egalites ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Objet voisin (l'emploi plutôt que les études) et série plus longue (2004-2025, 22 points ;
+  23,6 % en 2004, 19,6 % en 2025) que l'indicateur principal, proposée comme alternative dans la famille femmes_filieres_scientifiques.
+note_pertinence: La part des femmes parmi les spécialistes du numérique mesure la ségrégation professionnelle dans
+  un secteur en croissance et bien rémunéré ; elle stagne autour de 20 %. Les valeurs 2004-2012 sont estimées (drapeau
+  e) et la série compte plusieurs ruptures (2005, 2006, 2011, 2013, 2014, 2021). Le sens « haut » vaut jusqu'à la
+  parité.
+variantes:
+- serie_id: isoc_sks_itsps?freq=A&unit=PC&sex=M&geo=FR
+  source: Eurostat
+  nature: part des hommes parmi les spécialistes TIC en emploi (même jeu ; long-list education)
+  ligne_id: estat-052277
+  eligible: oui
+  longlist: education
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_estimees_eurostat_e
+- rupture_2005
+- rupture_2006
+- rupture_2011
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- definition_differente_2021
+- unite_a_confirmer
+- sens_limite_parite
+notes: 'Valeurs et drapeaux lus sur l''API Eurostat le 14/10/2026 : e (estimé) de 2004 à 2012 et en 2022, b en 2005,
+  2006, 2011, 2013, 2014 et 2021, d de 2021 à 2025 ; 21,2 % (2008), 15,8 % (2015, minimum), 19,6 % (2025). Unité
+  publiée « pourcentage » : le niveau se lit comme la part des femmes parmi les spécialistes TIC, à confirmer dans
+  les métadonnées (maintenance EGA-5). Oubli O8 de l''audit M06.'

@@ -1,0 +1,58 @@
+id: femmes_conseils_administration
+libelle: Part des femmes parmi les membres des conseils des plus grandes sociétés cotées
+dimension: egalites
+sous_theme: écarts femmes-hommes
+famille: femmes_conseils_administration
+variante_principale: oui
+definition: Part des femmes parmi les membres exécutifs et non exécutifs des conseils des plus grandes sociétés
+  cotées (indicateur ODD de l'UE sdg_05_61, « postes de cadres supérieurs occupés par des femmes », modalité NEXEC_EXEC).
+unite: '% des membres des conseils'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_05_61 (indicateurs ODD de l'UE)
+source_serie_id: sdg_05_61?freq=A&prof_pos=NEXEC_EXEC&sex=F&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_05_61?freq=A&prof_pos=NEXEC_EXEC&sex=F&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_05_61/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002070
+hors_longlist: non
+rattachement_propose: ligne de la long-list education (indicateurs ODD 5) ; représentation économique des femmes,
+  contenu d'egalites (A8) ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur ODD de l'UE annuel de 2012 à 2025 (14 points ; 21,4 % en 2012, 40,0 % en 2016,
+  46,5 % en 2025), objet d'une cible légale de 40 % (loi n° 2011-103, dite Copé-Zimmermann), seule mesure de la
+  place des femmes dans la gouvernance des entreprises.
+note_pertinence: 'La part des femmes dans les conseils a plus que doublé depuis 2012 : la série mesure surtout l''effet
+  d''une obligation légale. La cible de 40 % est atteinte depuis 2016 ; le sens « haut » vaut jusqu''à la parité
+  (50 %), qui fournit un objectif naturel. Les directions exécutives (cadres dirigeants) restent moins féminisées,
+  d''où une famille distincte de femmes_postes_direction.'
+variantes:
+- serie_id: sdg_05_61?freq=A&prof_pos=NEXEC&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: administrateurs non exécutifs seulement (même jeu sdg_05_61 ; long-list education)
+  ligne_id: estat-002069
+  eligible: oui
+  longlist: education
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- cible_legale_40
+- sens_limite_parite
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (aucun drapeau publié) : 21,4 % (2012), 40,0 % (2016), 47,1
+  % (2024), 46,5 % (2025) ; variante « administrateurs non exécutifs » (NEXEC) : 27,8 % (2012), 49,9 % (2024), 48,8
+  % (2025). Cible : loi n° 2011-103 du 27 janvier 2011 (crosswalk, objectifs officiels, statut à vérifier au socle
+  des bornes).'

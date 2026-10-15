@@ -11,6 +11,7 @@ sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: V-Dem (relais Our World in Data)
 source_jeu: women-political-empowerment-index (OWID)
 source_serie_id: https://ourworldindata.org/grapher/women-political-empowerment-index.csv (colonne wom_emp_vdem__estimate_best)
@@ -18,7 +19,7 @@ source_niveau: 2
 url_api: https://ourworldindata.org/grapher/women-political-empowerment-index.csv?v=1&csvType=full&useColumnShortNames=true
 url_page: https://ourworldindata.org/grapher/women-political-empowerment-index
 frequence: annuelle
-premiere_annee: 1900
+premiere_annee: 1851
 derniere_annee: 2025
 nb_points_depuis_2000: 26
 geo: FR
@@ -26,13 +27,14 @@ eligibilite_longlist: oui
 ligne_id: m04-000190
 hors_longlist: non
 raccordement: non
-incontournable: oui
-recommandation: ecarter
-motif_recommandation: 'Dominé : proche du plafond pour la France (0,929 en 2025), fondé sur des évaluations d''experts,
-  et sa composante mesurable (part des femmes au Parlement) a sa propre fiche.'
-note_pertinence: Les indices V-Dem sont conçus pour comparer des régimes très différents ; pour la France, ils varient
-  peu (52 valeurs distinctes sur 127 ans). Les mesures directes (Parlement, postes de direction) sont plus lisibles
-  et plus sensibles.
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indice annuel d'experts plus profond (1851, puis 1900-2025) et plus frais (0,929 en 2025)
+  que l'indice d'inégalité de genre du PNUD (1990-2023), proposé comme alternative dans la famille indice_composite_genre.
+note_pertinence: 'Les indices V-Dem sont conçus pour comparer des régimes très différents ; pour la France, celui-ci
+  varie peu (52 valeurs distinctes sur 127 périodes) et approche du plafond. Sa composante la plus lisible, la part
+  des femmes au Parlement, a sa propre fiche (femmes_parlement) : double compte à traiter au contrôle de redondance
+  (D18).'
 variantes:
 - serie_id: https://ourworldindata.org/grapher/women-civil-liberties-index.csv (colonne wom_civ_libs_vdem__estimate_best)
   source: Our World in Data (relais)
@@ -58,5 +60,7 @@ qualite:
 - composite
 - niveau_2
 - evaluation_experts
-notes: 'Série OWID : 1851 puis 1900-2025 ; premiere_annee ramenée à 1900, borne basse du contrôle de scripts/verifier_fiches.py
-  (1900-2100), à élargir.'
+- lacune_1852_1899
+notes: 'Série OWID (V-Dem) lue dans docs/sources/series/owid__women-political-empowerment-index.csv : 1851, puis
+  1900-2025 (127 périodes, 52 valeurs distinctes, 0,929 en 2025). incontournable : non, le concept du crosswalk
+  étant l''indice d''inégalité de genre (décision de la session mère : par concept).'

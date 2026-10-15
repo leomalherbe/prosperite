@@ -1,6 +1,6 @@
 # Journal — M05, fiches indicateurs de la dimension `logement_cadre_vie`
 
-Mission M05 (fiche `docs/missions/M05_fiches_indicateurs.md`), méthode commune `docs/methodo/33_methode_fiches_M05.md` v1.2 (D31 à D36), branche `m05-logement_cadre_vie`. Commencée le 14/10/2026 par un premier agent, interrompue, reprise et terminée le 15/10/2026 par un second agent (ce journal).
+Mission M05 (fiche `docs/missions/M05_fiches_indicateurs.md`), méthode commune `docs/methodo/33_methode_fiches_M05.md` v1.2 (D31 à D36), branche `m05-logement_cadre_vie`. Commencée le 14/10/2026 par un premier agent, interrompue, reprise et terminée le 15/10/2026 par un second agent (ce journal) ; PR #26.
 
 ## 0. Reprise
 

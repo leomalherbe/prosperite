@@ -59,4 +59,4 @@ DREES OG04_1 et SDPROXIM_3 à cataloguer et calculer (LOG-1) ; séries SDES de l
 
 ## 8. Pull request
 
-PR vers `main` « M05 — fiches indicateurs : logement_cadre_vie » (numéro dans le rapport de l'agent) ; à ne pas fusionner pendant un run du robot (D26).
+PR #26 vers `main` « M05 — fiches indicateurs : logement_cadre_vie » (https://github.com/leomalherbe/prosperite/pull/26), ouverte le 15/10/2026 par l'API GitHub ; à ne pas fusionner pendant un run du robot (D26).

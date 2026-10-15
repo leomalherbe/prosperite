@@ -1,0 +1,84 @@
+
+===== collecte_travail.py =====
+[12:27:03] ===== bloc melodi =====
+[12:27:06] Melodi DD_EEC_SERIES : notice lue, 16 concepts
+[12:27:10] Melodi DS_SRCV_SATISFACTION : notice lue, 19 concepts
+[12:27:14] Melodi DS_DERA_PRIVE_SERIES_LONGUES : notice lue, 13 concepts
+[12:27:18] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'EMPRATE'} : 2907 observations
+[12:27:23] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'UNEMPRATE'} : 7263 observations
+[12:27:27] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'ACTRATE'} : 2907 observations
+[12:27:32] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'EMP'} : 9756 observations
+[12:27:36] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'UNEMP'} : 8487 observations
+[12:27:40] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'ACTPOP'} : 2907 observations
+[12:27:44] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'HALO'} : 1080 observations
+[12:27:48] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_SEX_AGE_IN_HALO'} : 720 observations
+[12:27:52] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'NEET'} : 276 observations
+[12:27:56] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_SEX_AGE_IN_NEET'} : 276 observations
+[12:28:00] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'UNDEREMP'} : 1728 observations
+[12:28:05] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_UNDEREMP_SEX_AGE_IN_EMP'} : 1728 observations
+[12:28:09] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_WKTIME_IN_EMP_BY_SEX_AGE'} : 1836 observations
+[12:28:13] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_EMPFORM_IN_EMP_BY_SEX_AGE'} : 3168 observations
+[12:28:17] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_UNEMPDUR_IN_UNEMP'} : 1224 observations
+[12:28:22] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'EMPRATE_EDUC'} : 3168 observations
+[12:28:26] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'UNEMPRATE_EDUC'} : 3168 observations
+[12:28:30] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'EMP_EDUC'} : 3168 observations
+[12:28:34] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'UNEMP_EDUC'} : 3168 observations
+[12:28:38] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_EDUC_IN_EMP_BY_SEX_AGE'} : 3168 observations
+[12:28:43] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_PCS_IN_EMP_BY_SEX_AGE'} : 5280 observations
+[12:28:47] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'POP_EDUC'} : 3960 observations
+[12:28:51] Melodi DD_EEC_SERIES {'EEC_MEASURE': 'PT_EDUC_IN_POP_BY_SEX_AGE'} : 3960 observations
+[12:28:55] Melodi DS_SRCV_SATISFACTION {'SRCV_MEASURE': 'TRAVSATISF'} : 1440 observations
+[12:29:00] Melodi DS_DERA_PRIVE_SERIES_LONGUES {'DERA_MEASURE': 'SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS'} : 5800 observations
+[12:29:00] Sortie taux_emploi : 26 lignes
+[12:29:00] Sortie taux_chomage : 26 lignes
+[12:29:00] Sortie taux_activite : 26 lignes
+[12:29:00] Sortie part_temps_partiel : 26 lignes
+[12:29:00] Sortie taux_sous_emploi : 26 lignes
+[12:29:00] Sortie neet : 46 lignes
+[12:29:00] Sortie halo_chomage : 24 lignes
+[12:29:00] Sortie part_emploi_temporaire : 52 lignes
+[12:29:00] Sortie taux_chomage_longue_duree : 52 lignes
+[12:29:00] Sortie satisfaction_travail : 16 lignes
+[12:29:00] Sortie salaire_net_moyen_reel : 25 lignes
+[12:29:00] ===== bloc bdm =====
+[12:29:01] BDM 010752333 : 29 observations (Salaire net annuel moyen en équivalent temps plein dans le secteur privé - Ensemble des sa)
+[12:29:01] BDM 010596081 : 50 observations (Taux d’emploi)
+[12:29:01] BDM 001787711 : 44 observations (Taux de chômage au sens du BIT (moyenne annuelle) - Ensemble - France métropolitaine)
+[12:29:01] BDM 011818639 : 94 observations (Part des jeunes de 15 à 29 ans qui ne sont ni en emploi ni en formation (NEET) - France en)
+[12:29:01] BDM 011818634 : 94 observations (Part des personnes contraintes sur leur offre de travail (halo, chômage, sous-emploi) parm)
+[12:29:01] BDM 011818675 : 94 observations (Part du temps partiel dans l'emploi au sens du BIT - Ensemble - France entière - Données C)
+[12:29:01] BDM 011818737 : 94 observations (Personnes actives (taux d'activité) au sens du BIT - Ensemble des 15 à 64 ans - France ent)
+[12:29:01] BDM 011818623 : 94 observations (Personnes dans le halo autour du chômage - Ensemble de 15 à 64 ans (part dans la populatio)
+[12:29:01] BDM 011818676 : 94 observations (Personnes en emploi (taux d'emploi) au sens du BIT - Ensemble des 15 à 64 ans - France ent)
+[12:29:01] BDM 011818697 : 94 observations (Taux d'emploi en contrat à durée déterminée (CDD) ou intérim au sens du BIT - Total - Fran)
+[12:29:01] BDM 011818543 : 94 observations (Taux de chômage au sens du BIT - Ensemble - France entière - Données CVS)
+[12:29:01] BDM 011818581 : 94 observations (Taux de chômage de longue durée - Ensemble - France entière - Données CVS)
+[12:29:01] BDM 011818670 : 94 observations (Taux des personnes en situation de sous-emploi - Ensemble - France entière - Données CVS)
+[12:29:01] ===== bloc controles =====
+[12:29:01] Contrôles : 405 lignes
+[12:29:01] ===== bloc eurostat =====
+[12:29:02] Eurostat lfsi_emp_a : 23 observations (Emploi et forces de travail par sexe et âge - données annuelles, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:02] Eurostat sdg_08_30 : 17 observations (Taux d'emploi par sexe, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:03] Eurostat sdg_08_20 : 23 observations (Jeunes ne travaillant pas et ne suivant ni études ni formation (NEET) par sexe, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:04] Eurostat lfsi_neet_a : 46 observations (Jeunes sans emploi et ne participant ni à l'éducation ni à la formation (Taux NE, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:04] Eurostat hsw_exp1 : 195 observations (Personnes déclarant une exposition à des facteurs de risque pouvant nuire au bie, mise à jour 2024-01-03T23:00:00+0100)
+[12:29:05] Eurostat hsw_exp2 : 198 observations (Personnes déclarant une exposition à des facteurs de risque pouvant nuire à la s, mise à jour 2024-01-03T23:00:00+0100)
+[12:29:06] Eurostat hsw_pb1 : 197 observations (Personnes déclarant un problème de santé lié au travail par niveau d'éducation a, mise à jour 2024-01-03T23:00:00+0100)
+[12:29:06] Eurostat une_ltu_a : 168 observations (Chômage de longue durée par sexe - données annuelles, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:07] Eurostat sdg_08_40 : 51 observations (Taux de chômage de longue durée par sexe, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:20] Eurostat lfsa_ewhuis : 70325 observations (Moyenne d'heures de travail habituellement prestées par semaine dans l'activité , mise à jour 2026-09-10T23:00:00+0200)
+[12:29:20] Eurostat hsw_n2_02 : 3757 observations (Accidents du travail mortels par activité de la NACE Rév. 2, mise à jour 2026-09-25T11:00:00+0200)
+[12:29:21] Eurostat sdg_08_60 : 45 observations (Accidents de travail mortels par 100 000 travailleurs, par sexe, mise à jour 2026-09-25T11:00:00+0200)
+[12:29:21] Eurostat lfsa_qoe_4ax1r2 : 432 observations (Emploi précaire par activité de la NACE Rév. 2 (2008-2026), mise à jour 2026-09-10T23:00:00+0200)
+[12:29:23] Eurostat lfsa_qoe_3a2 : 4464 observations (Longues heures de travail dans l'activité principale par statut professionnel et, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:24] Eurostat lfsa_eetpgar : 1274 observations (Salariés qui n'ont pas pu trouver un emploi permanent ou à temps plein, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:25] Eurostat lfsa_eppgai : 750 observations (Personnes en emploi à temps partiel involontaire - % de l'emploi à temps partiel, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:25] Eurostat lfsi_long_a : 252 observations (Transitions sur le marché du travail - résultats annuels, mise à jour 2026-08-05T23:00:00+0200)
+[12:29:30] Eurostat lfsa_ugadra : 30862 observations (Personnes au chômage par durée de chômage et distinction chômage enregistré/béné, mise à jour 2026-09-10T23:00:00+0200)
+[12:29:30] ===== bloc ameli =====
+[12:29:33] Ameli deces-par-secteur-d-activite-naf-1-et-naf-5 : 22680 lignes, colonnes ['annee', 'code_naf1', 'libelle_naf1', 'naf1', 'code_naf5', 'libelle_naf5', 'naf5', 'risque', 'nb_deces', 'nb_deces_int']
+[12:29:38] Ameli sinistralite-par-secteur-d-activite-concerne-naf-1 : 60480 lignes, colonnes ['annee', 'risque', 'code_naf1', 'libelle_naf1', 'naf1', 'code_naf5', 'libelle_naf5', 'naf5', 'nb_sinistres', 'nb_salaries', 'indice_frequence', 'nb_sinistres_int', 'nb_salaries_int', 'indice_frequence_int']
+[12:29:38] Bilan : 0 bloc(s) en échec, 0 erreur(s)
+----- collecte_travail.py : OK en 154 s
+
+Bilan : tous les scripts ont réussi

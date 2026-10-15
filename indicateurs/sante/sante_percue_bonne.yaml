@@ -32,758 +32,380 @@ motif_recommandation: Indicateur phare du cadre Qualité de vie d'Eurostat et de
   de 2005 à 2025 (68,8 % en 2005, 64,7 % en 2025) ; l'INSEE ne publie pas ce niveau.
 note_pertinence: La santé perçue est la mesure synthétique de l'état de santé ressenti, prédictive de la mortalité.
   Elle recule de 68,8 % en 2005 à 64,7 % en 2025, avec des ruptures (« b ») en 2020 et 2022 liées à la refonte de
-  SRCV. La part en mauvaise ou très mauvaise santé, les ventilations et les séries de l'OCDE et du baromètre DREES
-  sont en variantes.
+  SRCV. La part en mauvaise ou très mauvaise santé a sa fiche (sante_percue_mauvaise) ; les ventilations et les
+  séries de l'OCDE et du baromètre DREES sont en variantes.
 variantes:
-- serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-000102
-  eligible: oui
-- serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-44&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-000103
-  eligible: oui
-- serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-000104
-  eligible: oui
 - serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-000117
   eligible: oui
 - serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-44&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-000118
   eligible: oui
 - serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-000119
   eligible: oui
 - serie_id: sdg_03_20?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-002041
-  eligible: oui
-- serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=B_VB&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-004880
-  eligible: oui
-- serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=B_VB&sex=T&age=TOTAL&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-004877
-  eligible: non
-- serie_id: hlth_silc_18?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=B_VB&sex=T&age=TOTAL&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-004878
-  eligible: non
-- serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=B_VB&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-004879
-  eligible: non
-- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011332
-  eligible: oui
-- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011333
-  eligible: oui
-- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011334
-  eligible: oui
-- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011335
-  eligible: oui
-- serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011360
-  eligible: oui
-- serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011362
-  eligible: oui
-- serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&levels=B_VB&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-011363
   eligible: oui
 - serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=VG_G&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-004900
   eligible: oui
 - serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=VG_G&sex=T&age=TOTAL&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-004897
   eligible: non
 - serie_id: hlth_silc_18?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=VG_G&sex=T&age=TOTAL&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-004898
   eligible: non
 - serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=VG_G&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-004899
   eligible: non
 - serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011352
   eligible: oui
 - serie_id: hlth_silc_02?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011353
   eligible: oui
 - serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011354
   eligible: oui
 - serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011355
   eligible: oui
 - serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011380
   eligible: oui
 - serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011382
   eligible: oui
 - serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-011383
-  eligible: oui
-- serie_id: hlth_dh010?freq=A&unit=PC&levels=B_VB&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-021940
-  eligible: oui
-- serie_id: hlth_dh010?freq=A&unit=PC&levels=B_VB&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-021941
-  eligible: oui
-- serie_id: hlth_dh010?freq=A&unit=PC&levels=B_VB&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-021942
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053412
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053413
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053414
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053427
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053428
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053429
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053433
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053434
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053435
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053448
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053449
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053450
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053454
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053455
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053456
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053469
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053470
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053471
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NAT&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053475
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053476
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053477
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NAT&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053490
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053491
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053492
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053517
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053518
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053519
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053532
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053533
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053534
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053538
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053539
-  eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053540
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053553
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053554
   eligible: oui
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053555
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053580
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053581
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053582
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053595
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053596
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053597
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053601
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053602
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053603
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053616
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053617
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053618
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053622
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053623
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053624
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053637
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053638
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053639
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NAT&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053643
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053644
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053645
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NAT&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053658
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053659
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053660
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053685
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053686
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NEU27_2020_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053687
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053700
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053701
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053702
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053706
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053707
-  eligible: oui
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053708
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053721
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053722
   eligible: oui
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053723
   eligible: oui
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=5_2 UNIT_MEASURE=PT_POP_Y_GE16
   source: OCDE — How's Life? (base du bien-être)
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: m04-000031
-  eligible: oui
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=5_2_DEP UNIT_MEASURE=PT_POP_Y_GE16
-  source: OCDE — How's Life? (base du bien-être)
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: m04-000032
   eligible: oui
 - serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
     et barometre2025_diff_csv ; variable SA01_AB, modalités 1+2
   source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: m04-000268
   eligible: oui
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053391
-  eligible: non
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053392
-  eligible: non
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053393
-  eligible: non
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053406
   eligible: non
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053407
   eligible: non
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053408
-  eligible: non
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053496
-  eligible: non
-- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053497
-  eligible: non
-- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053498
   eligible: non
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053511
   eligible: non
 - serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053512
   eligible: non
 - serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053513
-  eligible: non
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053559
-  eligible: non
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053560
-  eligible: non
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053561
   eligible: non
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053574
   eligible: non
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053575
   eligible: non
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053576
-  eligible: non
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053664
-  eligible: non
-- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053665
-  eligible: non
-- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&lev_perc=B_VB&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
-  ligne_id: estat-053666
   eligible: non
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053679
   eligible: non
 - serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053680
   eligible: non
 - serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure dans les jeux ventilés, complément « mauvaise », ventilations, autres sources
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
   ligne_id: estat-053681
   eligible: non
-- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=BAD&age=Y_GE18&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005330
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=BAD&age=Y_GE18&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005331
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=BAD&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005332
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=BAD&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005333
-  eligible: oui
-  longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=GOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005338
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=GOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005339
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=GOOD&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005340
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=GOOD&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005341
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VBAD&age=Y_GE18&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005342
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=VBAD&age=Y_GE18&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005343
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VBAD&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005344
-  eligible: oui
-  longlist: logement_cadre_vie
-- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VBAD&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
-  source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
-  ligne_id: estat-005345
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VGOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005346
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=VGOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005347
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VGOOD&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005348
   eligible: oui
   longlist: logement_cadre_vie
 - serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VGOOD&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
   source: Eurostat
-  nature: même mesure, 18 ans ou plus (long-list logement_cadre_vie)
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
   ligne_id: estat-005349
   eligible: oui
   longlist: logement_cadre_vie

@@ -39,21 +39,17 @@ statut_serie: a_calculer
 rattachement_propose: 'hors long-list : question SA07_1 du baromètre DREES non cataloguée par M04 ; satisfaction
   du domaine santé (R4), voisine de la confiance dans l''hôpital rangée en democratie (R5) ; à cataloguer (maintenance
   SAN-3)'
-raccordement: 'non : pas de question en 2022 ni en 2024'
+raccordement: 'a_etudier : modalité « jamais allé.e / ne connais pas » ajoutée en 2014 (2,9 % des répondants), année
+  où la part des satisfaits passe de 66,8 % à 73,1 % ; pas de question en 2022 ni en 2024'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure de satisfaction à l'égard du système de soins (R4), 14 vagues de 2010 à 2025
   (69,2 % en 2010, 61,3 % en 2025), valeur 2025 recoupée sur le tableau officiel de la DREES (61,29 %).
 note_pertinence: 'La satisfaction à l''égard de la qualité des soins hospitaliers est la satisfaction du domaine
-  santé que demande la règle R4 ; elle recule de 69,2 % en 2010 à 58,4 % en 2023. Les urgences (63,0 % en 2010,
-  41,1 % en 2025, 16 vagues), les généralistes et les autres prestataires sont en variantes. La question est proche
+  santé que demande la règle R4 ; elle recule de 69,2 % en 2010 à 58,4 % en 2023. Les urgences ont une fiche variante
+  (satisfaction_urgences) ; les généralistes et les cliniques privées sont en variantes. La question est proche
   de la confiance dans l''hôpital (democratie) : à départager au contrôle de redondance.'
 variantes:
-- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
-    ; variable SA07_2, modalités 1+2
-  source: DREES (baromètre d'opinion)
-  nature: urgences hospitalières (2010-2025, 16 vagues), hors long-list
-  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
 - serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
     ; variable SA07_5, modalités 1+2
   source: DREES (baromètre d'opinion)
@@ -76,6 +72,9 @@ qualite:
 - enquete_metropole
 - recoupement_partiel_D34
 - pas_de_question_2022_2024
+- modalite_ajoutee_2014
 notes: 'Parts calculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
   des modalités 1 et 2) : 69,2 % (2010), 73,1 % (2014), 62,5 % (2018), 68,6 % (2021), 58,4 % (2023), 61,3 % (2025).
-  Recoupement D34 : 2025 identique au tableau croisé officiel (61,29 %) ; deux autres valeurs officielles à trouver.'
+  Recoupement D34 : 2025 identique au tableau croisé officiel (61,29 %) ; deux autres valeurs officielles à trouver.
+  Modalité 6 « je n''y suis jamais allé / je ne connais pas » présente à partir de 2014 (2,88 % en 2014) ; libellés
+  des modalités avant 2014 non disponibles dans le dépôt (dictionnaire 2025 seulement).'

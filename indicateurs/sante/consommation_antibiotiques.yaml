@@ -28,10 +28,13 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Indicateur du tableau de bord ODD de l'UE, annuel de 2013 à 2024 (12 points), seule mesure
-  de l'usage des antibiotiques au catalogue.
-note_pertinence: 'La surconsommation d''antibiotiques favorise l''antibiorésistance, menace sanitaire majeure. L''indicateur
-  est à la marge du contenu de la dimension (comportements de soins) : la fiche est soumise à Léo pour décision.'
+motif_recommandation: Indicateur du tableau de bord ODD de l'UE, annuel de 2013 à 2024 sans drapeau (25,9 doses
+  pour 1 000 habitants et par jour en 2013, 20,3 en 2020, 26,5 en 2024), seule mesure de l'usage des antibiotiques
+  au catalogue.
+note_pertinence: 'La surconsommation d''antibiotiques favorise l''antibiorésistance, menace sanitaire majeure. La
+  consommation, comprise entre 24,7 et 25,9 doses de 2013 à 2019, chute en 2020 et 2021 (20,3 et 21,5) puis dépasse
+  son niveau d''avant la crise sanitaire en 2024 (26,5). L''indicateur est à la marge du contenu de la dimension
+  (comportements de soins) : la fiche est soumise à Léo pour décision.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -39,7 +42,6 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- valeurs_non_lues
 - hors_contenu_cite
-notes: 'Valeurs non relues à la source (périodes de la long-list). Objectif européen de réduction de la consommation
-  (−20 % en 2030 par rapport à 2019 selon la recommandation du Conseil de 2023, de mémoire) : à vérifier.'
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (sdg_03_70, unit=P_THAB, aucun drapeau). Objectif européen
+  de réduction de la consommation : à rechercher avant le socle des bornes (non vérifié).'

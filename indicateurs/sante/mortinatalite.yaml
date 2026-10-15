@@ -1,0 +1,72 @@
+id: mortinatalite
+libelle: Mortinatalité spontanée
+dimension: sante
+sous_theme: périnatalité
+famille: mortinatalite
+variante_principale: oui
+definition: Nombre d'enfants mort-nés, hors interruptions médicales de grossesse (mortinatalité spontanée), pour
+  1 000 naissances, France (Santé publique France).
+unite: mort-nés pour 1 000 naissances
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Santé publique France
+source_jeu: Odissé, jeu mortalite-infantile-et-mortinatalite-france (tx1000_mortinatalite_spontanee)
+source_serie_id: mortalite-infantile-et-mortinatalite-france#tx1000_mortinatalite_spontanee
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/mortalite-infantile-et-mortinatalite-france/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/mortalite-infantile-et-mortinatalite-france/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2024
+nb_points_depuis_2000: 11
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/spf_odisse__mortalite-infantile-et-mortinatalite-france.csv
+statut_serie: disponible
+rattachement_propose: 'hors long-list : jeu Odissé extrait par le robot M04 mais absent des catalogues ; à cataloguer
+  (maintenance SAN-5)'
+raccordement: 'a_etudier : le taux de mortinatalité d''Eurostat (demo_minfind, 2000-2010) et sa suite (hlth_cd_aperrto
+  LFOE, 2013-2024) comprennent les interruptions médicales de grossesse'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série de mortinatalité qui exclut les interruptions médicales de grossesse, annuelle
+  de 2014 à 2024 (11 valeurs ; 5,627 pour 1 000 en 2024), le taux total d'Eurostat restant en variante.
+note_pertinence: La mortinatalité (enfants mort-nés) complète la mortalité infantile, qui ne compte que les enfants
+  nés vivants. En 2024, Santé publique France compte 9,208 mort-nés pour 1 000 naissances, dont 3,581 après interruption
+  médicale de grossesse et 5,627 spontanés ; seule la part spontanée a un sens univoque, la part induite dépendant
+  du dépistage prénatal et des décisions des parents. La mortalité fœtale tardive d'Eurostat (9,1 pour 1 000 en
+  2013, 9,0 en 2024) et le taux total de Santé publique France sont en variantes.
+variantes:
+- serie_id: hlth_cd_aperrto?freq=A&unit=RT&resid=TOT_IN&mortalit=LFOE&geo=FR
+  source: Eurostat
+  nature: autre définition (interruptions médicales de grossesse comprises), dont une série arrêtée
+  ligne_id: estat-021354
+  eligible: oui
+- serie_id: demo_minfind?freq=A&unit=RT&indic_de=LFOEMORRT&geo=FR
+  source: Eurostat
+  nature: autre définition (interruptions médicales de grossesse comprises), dont une série arrêtée
+  ligne_id: estat-011270
+  eligible: non
+- serie_id: mortalite-infantile-et-mortinatalite-france#tx1000_mortinatalite_globale
+  source: Santé publique France (Odissé)
+  nature: mortinatalité totale, interruptions médicales de grossesse comprises (2014-2024, 9,208 en 2024), hors
+    long-list
+  preuve: docs/sources/series/spf_odisse__mortalite-infantile-et-mortinatalite-france.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- debut_2014
+- valeurs_2014_2023_non_lues
+notes: 'Périodes et dernières valeurs lues dans docs/sources/series/spf_odisse__mortalite-infantile-et-mortinatalite-france.csv
+  (tx1000_mortinatalite_spontanee : 11 périodes 2014-2024, 11 valeurs distinctes, 5,627 en 2024 ; globale 9,208
+  ; induite 3,581). Valeurs 2014-2023 non lues : l''API Odissé n''a pas pu être lue dans la session du 15/10/2026.
+  Dénominateur (naissances totales ou vivantes), seuil de terme et champ géographique à confirmer dans la fiche
+  du jeu. Eurostat hlth_cd_aperrto LFOE lu sur l''API le 15/10/2026 (2013-2024, aucun drapeau).'

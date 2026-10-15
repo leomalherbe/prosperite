@@ -2,8 +2,8 @@ id: besoins_soins_dentaires_non_satisfaits
 libelle: Besoins de soins dentaires non satisfaits
 dimension: sante
 sous_theme: accès aux soins
-famille: besoins_soins_non_satisfaits
-variante_principale: non
+famille: besoins_soins_dentaires
+variante_principale: oui
 definition: Part des personnes de 16 ans ou plus déclarant avoir eu besoin d'un examen ou d'un traitement dentaire
   sans l'obtenir parce qu'il était trop cher, trop éloigné ou à cause d'une liste d'attente (enquête SRCV).
 unite: '% des 16 ans ou plus'
@@ -27,12 +27,13 @@ ligne_id: estat-020177
 hors_longlist: non
 raccordement: 'a_etudier : chute non signalée de 2015 (5,6 % en 2014, 3,4 % en 2015) et ruptures de 2020 et 2022'
 incontournable: non
-recommandation: retenir_variante
-motif_recommandation: Soins les plus souvent non obtenus, annuelle de 2008 à 2025 (4,2 % en 2008, 7,0 % en 2024,
-  6,5 % en 2025), soit environ deux fois les besoins médicaux non satisfaits.
+recommandation: retenir
+motif_recommandation: Soins les plus souvent non obtenus, annuels de 2008 à 2025 (4,2 % en 2008, 7,0 % en 2024,
+  6,5 % en 2025), concept distinct des soins médicaux et non substituable (D35).
 note_pertinence: Les besoins dentaires non satisfaits sont presque deux fois plus fréquents que les besoins médicaux
-  (6,5 % contre 3,7 % en 2025). La série passe de 2,7 % en 2019 à 6,4 % en 2020, année de rupture (« b »). L'indicateur
-  national ODD 3.i7b de l'INSEE est en variante.
+  (6,5 % contre 3,7 % en 2025) ; ils forment une famille propre parce que les soins dentaires ne remplacent pas
+  les soins médicaux pour l'utilisateur (D35). La série passe de 2,7 % en 2019 à 6,4 % en 2020, année de rupture
+  (« b »). L'indicateur national ODD 3.i7b de l'INSEE est en variante.
 variantes:
 - serie_id: '010593301'
   source: INSEE BDM

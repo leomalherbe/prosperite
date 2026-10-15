@@ -1,0 +1,102 @@
+id: mortalite_maladies_respiratoires
+libelle: Mortalité par maladies respiratoires
+dimension: sante
+sous_theme: causes de décès
+famille: mortalite_maladies_respiratoires
+variante_principale: oui
+definition: 'Taux standardisé de mortalité par maladies de l''appareil respiratoire (CIM-10 J00-J99 : grippe, pneumonies,
+  maladies chroniques des voies respiratoires, asthme), tous âges, France (population standard européenne 2013).'
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE-CépiDc)
+source_jeu: hlth_cd_asdr2 (causes de décès, taux standardisés)
+source_serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=J&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=J&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_cd_asdr2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000279
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Grand chapitre de causes de décès lié au tabac, à la pollution de l'air et aux épidémies hivernales,
+  série annuelle de 2011 à 2023 sans drapeau (55,28 pour 100 000 en 2011, 45,41 en 2021, 56,44 en 2023).
+note_pertinence: Les maladies respiratoires (bronchopneumopathie chronique obstructive, pneumonies, grippe, asthme)
+  dépendent du tabagisme, de la pollution de l'air et de la couverture vaccinale. Le taux varie d'une année à l'autre
+  avec l'intensité des épidémies hivernales (51,93 en 2014, 60,47 en 2015) et tombe à 48,51 en 2020 et 45,41 en
+  2021, années de l'épidémie de Covid-19 dont les décès sont classés à part (codes U07). Les maladies chroniques
+  des voies respiratoires inférieures, la grippe et la pneumonie sont en variantes.
+variantes:
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=J&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000280
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=J&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000281
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=J09-J11&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000282
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=J09-J11&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000283
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=J09-J11&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000284
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=J12-J18&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000285
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=J12-J18&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000286
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=J12-J18&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000287
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=J40-J47&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000291
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=J40-J47&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000292
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=J40-J47&geo=FR
+  source: Eurostat
+  nature: sexe, âge, principales sous-causes
+  ligne_id: estat-000293
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2011
+- variations_epidemiques_annuelles
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (hlth_cd_asdr2, icd10=J, sex=T, age=TOTAL, aucun drapeau).

@@ -1,0 +1,65 @@
+id: mortalite_chutes
+libelle: Mortalité par chute accidentelle
+dimension: sante
+sous_theme: causes de décès
+famille: mortalite_chutes
+variante_principale: oui
+definition: Taux standardisé de mortalité par chute accidentelle (CIM-10 W00-W19), tous âges, France (population
+  standard européenne 2013).
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE-CépiDc)
+source_jeu: hlth_cd_asdr2 (causes de décès, taux standardisés)
+source_serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=W00-W19&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=W00-W19&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_cd_asdr2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000381
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure annuelle des décès par chute de 2011 à 2023, sans drapeau et en hausse de 9,86 à 13,47
+  pour 100 000, que complète la série de Santé publique France des 65 ans ou plus (2015-2024).
+note_pertinence: 'Les chutes sont un accident de la vie courante qui touche surtout les personnes âgées : Santé
+  publique France compte 20 148 décès par chute de personnes de 65 ans ou plus en 2024, dont 14 626 à 85 ans ou
+  plus. Le taux standardisé augmente de 37 % entre 2011 et 2023 ; la part de cette hausse qui tiendrait aux pratiques
+  de certification des décès n''est pas documentée. Les accidents de transport relèvent de securite (A6) ; les autres
+  accidents de la vie courante (noyades, intoxications) sont écartés comme causes de second rang.'
+variantes:
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=W00-W19&geo=FR
+  source: Eurostat
+  nature: sexe et âge
+  ligne_id: estat-000382
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=W00-W19&geo=FR
+  source: Eurostat
+  nature: sexe et âge
+  ligne_id: estat-000383
+  eligible: oui
+- serie_id: chutes-hospitalisations-et-deces-pour-les-plus-de-65-ans-region-copie#Décès.Hommes et Femmes.Tous âges#taux_standardise_par_age
+  source: Santé publique France (Odissé)
+  nature: 'autre source : taux standardisé de décès par chute des 65 ans ou plus (2015-2024, 138,4 en 2024, unité
+    à confirmer), hors long-list'
+  preuve: docs/sources/series/spf_odisse__chutes-hospitalisations-et-deces-pour-les-plus-de-65-ans-region-copie.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2011
+- certification_a_verifier
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (hlth_cd_asdr2, icd10=W00-W19, sex=T, age=TOTAL, aucun drapeau).
+  Décès des 65 ans ou plus lus dans docs/sources/series/spf_odisse__chutes-hospitalisations-et-deces-pour-les-plus-de-65-ans-region-copie.csv
+  (10 périodes 2015-2024). Rattachement : les accidents de la vie courante ne figurent dans le contenu d''aucune
+  dimension ; la ligne reste en sante (long-list), la session mère peut en décider autrement (R1).'

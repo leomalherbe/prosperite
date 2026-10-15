@@ -17,7 +17,7 @@ source_serie_id: ilc_mdho01?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdho01?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age=TOTAL&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdho01/default/table?lang=fr
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2004
 derniere_annee: 2023
 nb_points_depuis_2000: 18
@@ -25,11 +25,11 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-031861
 hors_longlist: non
-raccordement: 'non : série EU-SILC depuis 2004, sans valeur en 2021 et 2022'
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: oui
 recommandation: retenir
 motif_recommandation: Indicateur incontournable de la qualité du logement (cadre Qualité de vie d'Eurostat, SSF),
-  série Eurostat de 2004 à 2023 (18 points, sans valeur en 2021 et 2022).
+  18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, module triennal ensuite, D17).
 note_pertinence: L'humidité et les infiltrations sont les défauts du logement les plus répandus et les plus liés
   à la santé respiratoire. Le taux, compris entre 10,9 % et 15,0 % de 2004 à 2019, passe à 18,0 % en 2020 (drapeau
   b) puis 21,1 % en 2023 (API Eurostat, lue le 14/10/2026). Le saut coïncide avec une rupture de série et doit être
@@ -82,6 +82,9 @@ socle_v1:
   justification: ''
 qualite:
 - rupture_2020
-- annees_manquantes_2021_2022
+- module_triennal_depuis_2021
 notes: 'Valeurs lues (ilc_mdho01, ensemble) : 15,0 (2004), 12,5 (2010), 10,9 (2011), 14,0 (2016), 11,5 (2019), 18,0
-  (2020, b), 21,1 (2023). Variantes : ventilations, enfants (ilc_mdho01c), handicap (hlth_dhc070).'
+  (2020, b), 21,1 (2023). Depuis le règlement-cadre de 2021, l''item relève du module triennal « conditions de travail
+  et de logement » d''EU-SILC (vagues 2023 et 2026 d''après la page des modules d''Eurostat lue le 15/10/2026) :
+  valeurs annuelles de 2004 à 2020, puis 2023, d''où la fréquence irrégulière (report de la dernière valeur, D17).
+  Variantes : ventilations, enfants (ilc_mdho01c), handicap (hlth_dhc070).'

@@ -27,15 +27,17 @@ ligne_id: estat-052758
 hors_longlist: non
 rattachement_propose: ligne de la long-list education (IPCH, rattachement par défaut erroné) ; loyers → logement_cadre_vie
   (contenu de la dimension) ; à trancher au gel 2
-raccordement: 'non : série IPCH depuis 1996'
+raccordement: 'a_etudier : prc_hicp_aind n''est plus mis à jour (remplacé par prc_hicp_ainr, ECOICOP v2, loyers
+  non catalogués) ; relais possible par l''IPC de l''INSEE base 2025 (BDM 011815635)'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule série annuelle de l'évolution des loyers payés par les locataires, IPCH de 2000 à 2025
-  (26 points d'après la long-list), les séries de l'INSEE (enquête Loyers et charges) étant trimestrielles (D35).
+  (26 points), retenue sous réserve du raccordement à son successeur (prc_hicp_ainr ou IPC INSEE base 2025), les
+  séries de l'enquête Loyers et charges étant trimestrielles (D35).
 note_pertinence: 'Les loyers sont la principale dépense des locataires : leur hausse, comparée à celle des prix
   et des revenus, renseigne sur la tension du marché locatif. L''indicateur est un taux de variation nominal, sans
-  rapport au revenu ; les bornes devront tenir compte de l''inflation générale. Les valeurs n''ont pas été relues
-  sur l''API.'
+  rapport au revenu ; les bornes devront tenir compte de l''inflation générale. Il va de -0,3 % (2018) à 3,6 % (2005)
+  et vaut 2,3 % en 2024 et en 2025 (API Eurostat lue le 15/10/2026).'
 variantes:
 - serie_id: '010600372'
   source: INSEE BDM
@@ -86,7 +88,12 @@ socle_v1:
   justification: ''
 qualite:
 - taux_de_variation_nominal
-- drapeaux_non_lus
-notes: 'Variantes : loyers effectivement payés par les locataires (CP0411) ; INSEE BDM, variation trimestrielle
-  et annuelle des loyers des secteurs libre et social et de l''ensemble (France métropolitaine, 1987-2026). L''indice
-  de référence des loyers (IRL) est écarté du catalogue INSEE comme indice de révision de contrats.'
+- serie_remplacee_2026
+notes: 'Valeurs lues (prc_hicp_aind, CP041, taux de variation moyen annuel, mise à jour Eurostat du 06/02/2026,
+  aucun drapeau) : -0,1 (2000), 3,6 (2005), 1,6 (2010), 0,6 (2015), -0,3 (2018), 0,4 (2020), 2,1 (2023), 2,3 (2024
+  et 2025). La page de l''API indique que le jeu n''est plus mis à jour et qu''il est remplacé par prc_hicp_ainr
+  (ECOICOP version 2), dont seul le total est catalogué (long-list education) : maintenance LOG-6. Variantes : loyers
+  effectivement payés par les locataires (CP0411) ; INSEE BDM, variation trimestrielle et annuelle des loyers des
+  secteurs libre et social et de l''ensemble (France métropolitaine, 1987-2026) ; indice annuel des prix à la consommation
+  des loyers, base 2025 (BDM 011815635, catalogue des séries écartées de l''INSEE). L''indice de référence des loyers
+  (IRL) est écarté du catalogue INSEE comme indice de révision de contrats.'

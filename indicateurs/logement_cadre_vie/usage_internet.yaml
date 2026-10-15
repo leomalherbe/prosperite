@@ -31,9 +31,9 @@ recommandation: retenir
 motif_recommandation: Variante principale de la famille usage_internet (A7), série Eurostat annuelle de 2006 à 2025
   (19 points d'après la long-list), plus longue que les séries INSEE de même enquête (2009-2025, D35).
 note_pertinence: L'usage effectif d'internet mesure l'inclusion numérique au-delà de l'équipement du ménage. La
-  Banque mondiale (UIT) donne une série plus ancienne, de 14,31 % en 2000 à 88,65 % en 2024 (extrait de l'API lu
-  le 13/10/2026), avec une cassure en 2015 qui en limite le raccordement. Les compétences numériques et l'illectronisme
-  relèvent d'education (A7).
+  part des 16-74 ans passe de 46,87 % en 2006 à 94,98 % en 2025, sans valeur en 2020 (API Eurostat lue le 15/10/2026),
+  ce qui la rapproche de la saturation. La Banque mondiale (UIT) donne une série plus ancienne, de 14,31 % en 2000
+  à 88,65 % en 2024 (extrait de l'API lu le 13/10/2026), avec une cassure en 2015 qui en limite le raccordement.
 variantes:
 - serie_id: '010594687'
   source: INSEE BDM
@@ -507,7 +507,11 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
-notes: 'Banque mondiale IT.NET.USER.ZS : 83,75 (2014), 78,01 (2015) (cassure). Variantes : autres périodes de référence
-  (dans l''année, jamais), fréquence (quotidienne, hebdomadaire), ventilation par âge, table régionale, INSEE enquête
-  TIC et indicateur ODD 10 (ensemble, sexe, âge), Banque mondiale, OCDE ODD 5.b.1 (femmes).'
+- annee_manquante_2020
+- proche_de_la_saturation
+notes: 'Valeurs lues (isoc_ci_ifp_iu, I_IU3, tous les particuliers, mise à jour Eurostat du 17/04/2026, aucun drapeau)
+  : 46,87 (2006), 75,34 (2010), 84,69 (2015), 89,39 (2019), 91,55 (2021), 90,60 (2022), 94,98 (2025). Banque mondiale
+  IT.NET.USER.ZS : 83,75 (2014), 78,01 (2015) (cassure). Les compétences numériques et l''illectronisme relèvent
+  d''education (A7). Variantes : autres périodes de référence (dans l''année, jamais), fréquence (quotidienne, hebdomadaire),
+  ventilation par âge, table régionale, INSEE enquête TIC et indicateur ODD 10 (ensemble, sexe, âge), Banque mondiale,
+  OCDE ODD 5.b.1 (femmes).'

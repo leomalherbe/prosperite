@@ -32,7 +32,8 @@ motif_recommandation: Seule mesure de la privation numérique pour raisons finan
   2014 à 2025 (12 points d'après la long-list).
 note_pertinence: L'indicateur isole les personnes exclues du numérique faute de moyens, une privation devenue pénalisante
   quand les démarches passent en ligne. L'élément entre dans la privation matérielle et sociale suivie en niveau_de_vie,
-  ce que le contrôle de redondance devra noter. Les valeurs n'ont pas été relues sur l'API.
+  ce que le contrôle de redondance devra noter. La part est faible et baisse de 2,7 % en 2014 à 1,4 % en 2024 (1,6
+  % en 2025, API Eurostat lue le 15/10/2026).
 variantes:
 - serie_id: ilc_mddu07a?freq=A&unit=PC&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&geo=FR
   source: Eurostat
@@ -112,6 +113,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
-notes: 'Capacité financière déclarée : déclaratif non (méthode §4). Variantes : ventilations par âge, sexe, statut
-  d''activité, quintile, diplôme, urbanisation et risque de pauvreté ou d''exclusion.'
+- rupture_2020
+- rupture_2022
+- faible_niveau
+notes: 'Capacité financière déclarée : déclaratif non (méthode §4). Valeurs lues (ilc_mddu07a, ensemble, mise à
+  jour Eurostat du 17/09/2026) : 2,7 (2014), 2,1 (2015), 1,8 (2017), 1,9 (2020, b), 1,5 (2021), 1,7 (2022, b), 1,4
+  (2024), 1,6 (2025). Variantes : ventilations par âge, sexe, statut d''activité, quintile, diplôme, urbanisation
+  et risque de pauvreté ou d''exclusion.'

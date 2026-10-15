@@ -17,7 +17,7 @@ source_serie_id: ilc_mded04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=HVY&unit=
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mded04/default/table?lang=fr
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2004
 derniere_annee: 2023
 nb_points_depuis_2000: 18
@@ -25,14 +25,15 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-031749
 hors_longlist: non
-raccordement: 'non : série EU-SILC depuis 2004'
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure du poids ressenti du coût du logement, série Eurostat annuelle de 2004 à 2023
-  (18 points d'après la long-list), dernière valeur postérieure à 2020.
+motif_recommandation: Seule mesure du poids ressenti du coût du logement, 18 valeurs de 2004 à 2023 (annuelles jusqu'en
+  2020, module triennal ensuite, D17).
 note_pertinence: 'La question recueille l''appréciation du ménage sur son budget logement : elle complète les ratios
   coût sur revenu en captant des situations tendues qu''ils ne montrent pas (charges contraintes, endettement).
-  La série s''arrête en 2023 dans la long-list ; sa poursuite dans l''enquête EU-SILC est à vérifier.'
+  La part qui juge ce coût lourd passe de 20,2 % en 2004 à 29,6 % en 2013, redescend à 23,2 % en 2019 et atteint
+  31,4 % en 2023 (API Eurostat lue le 15/10/2026), après une rupture en 2020.'
 variantes:
 - serie_id: ilc_mded04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
   source: Eurostat
@@ -66,6 +67,12 @@ socle_v1:
   justification: ''
 qualite:
 - declaratif
-- drapeaux_non_lus
-notes: 'Déclaratif oui : appréciation du ménage sur sa charge (méthode §4). Variantes : ventilation par type de
-  ménage, modalités « dans une certaine mesure » et « pas une charge ».'
+- rupture_2020
+- module_triennal_depuis_2021
+notes: 'Déclaratif oui : appréciation du ménage sur sa charge (méthode §4). Valeurs lues (ilc_mded04, lev_bur=HVY,
+  ensemble, mise à jour Eurostat du 13/08/2026) : 20,2 (2004), 29,3 (2008), 29,6 (2013), 23,2 (2019), 26,4 (2020,
+  b), 31,4 (2023) ; aucune valeur 2021 et 2022. Depuis le règlement-cadre de 2021, l''item relève du module triennal
+  « conditions de travail et de logement » d''EU-SILC (vagues 2023 et 2026 d''après la page des modules d''Eurostat
+  lue le 15/10/2026) : valeurs annuelles de 2004 à 2020, puis 2023, d''où la fréquence irrégulière (report de la
+  dernière valeur, D17). Variantes : ventilation par type de ménage, modalités « dans une certaine mesure » et «
+  pas une charge ».'

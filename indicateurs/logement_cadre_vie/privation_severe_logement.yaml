@@ -18,7 +18,7 @@ source_serie_id: ilc_mdho06a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=TOTAL&geo=F
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdho06a?freq=A&unit=PC&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdho06a/default/table?lang=fr
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2004
 derniere_annee: 2023
 nb_points_depuis_2000: 18
@@ -28,15 +28,16 @@ ligne_id: estat-031838
 hors_longlist: non
 rattachement_propose: ligne de la long-list niveau_de_vie (groupe privation_logement) renvoyée à logement_cadre_vie
   ; qualité du logement → logement_cadre_vie ; à trancher au gel 2
-raccordement: 'non : série EU-SILC depuis 2004'
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: oui
 recommandation: retenir
 motif_recommandation: Indicateur incontournable qui croise surpeuplement et défauts du logement (suivi ODD 11 de
-  l'UE, sdg_11_11), série Eurostat de 2004 à 2023 (18 points d'après la long-list).
+  l'UE, sdg_11_11), 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, puis 2023, D17).
 note_pertinence: L'indicateur cible les situations de mal-logement les plus graves, au croisement du manque d'espace
   et des défauts du logement. Il dépend de composantes déjà présentes dans la dimension (surpeuplement, humidité,
-  sanitaires, éclairement), ce que le contrôle de redondance devra prendre en compte. Les valeurs n'ont pas été
-  relues (refus 429 du proxy le 14/10/2026).
+  sanitaires, éclairement), ce que le contrôle de redondance devra prendre en compte. La part, entre 2,1 % et 3,4
+  % de 2004 à 2019, passe à 3,8 % en 2020 (rupture b) et 4,6 % en 2023 (table ODD sdg_11_11, API Eurostat lue le
+  15/10/2026).
 variantes:
 - serie_id: ilc_mdho06c?freq=A&unit=PC&deg_urb=TOTAL&tenure=OWN_L&geo=FR
   source: Eurostat
@@ -222,7 +223,13 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
+- rupture_2020
+- module_triennal_depuis_2021
 - recoupe_composantes
-notes: 'Variantes : table ODD sdg_11_11 et ventilations par sexe et âge (lignes de niveau_de_vie), ventilations
-  par type de ménage, statut d''occupation et urbanisation (ilc_mdho06b à d), handicap (hlth_dhc030).'
+- valeurs_lues_sur_table_odd
+notes: 'Valeurs lues sur la table ODD sdg_11_11 (même indicateur, ensemble, mise à jour Eurostat du 21/05/2026 ;
+  l''API de ilc_mdho06a a été refusée par le proxy le 15/10/2026, HTTP 429) : 3,4 (2004), 2,1 (2013 et 2017), 2,7
+  (2018), 2,3 (2019), 3,8 (2020, b), 4,6 (2023) ; sous le seuil de pauvreté : 9,6 (2004), 13,7 (2023). Les défauts
+  du logement relèvent du module triennal d''EU-SILC depuis 2021 (vagues 2023 et 2026, page des modules d''Eurostat
+  lue le 15/10/2026). Variantes : table ODD sdg_11_11 et ventilations par sexe et âge (lignes de niveau_de_vie),
+  ventilations par type de ménage, statut d''occupation et urbanisation (ilc_mdho06b à d), handicap (hlth_dhc030).'

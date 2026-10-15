@@ -16,7 +16,7 @@ source_serie_id: ilc_mdho04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdho04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age=TOTAL&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdho04/default/table?lang=fr
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2004
 derniere_annee: 2023
 nb_points_depuis_2000: 18
@@ -24,14 +24,15 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-031879
 hors_longlist: non
-raccordement: 'non : série EU-SILC depuis 2004'
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure de l'éclairement naturel du logement, élément de la privation sévère liée au
-  logement d'Eurostat, série de 2004 à 2023 (18 points d'après la long-list).
+  logement d'Eurostat, 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, module triennal ensuite, D17).
 note_pertinence: 'Le manque de lumière naturelle dégrade le confort et la santé, en particulier dans les logements
   exigus. L''élément entre dans la définition de la privation sévère liée au logement : il recoupe en partie privation_severe_logement.
-  Les valeurs n''ont pas été relues sur l''API.'
+  La part oscille entre 6,9 % et 9,0 % de 2004 à 2019, puis passe à 9,7 % en 2020 (rupture b) et 10,6 % en 2023
+  (API Eurostat lue le 15/10/2026).'
 variantes:
 - serie_id: hlth_dhc100?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
   source: Eurostat
@@ -80,6 +81,11 @@ socle_v1:
   justification: ''
 qualite:
 - declaratif
-- drapeaux_non_lus
-notes: 'Déclaratif oui : jugement du ménage sur son logement. Variantes : ventilations, enfants (ilc_mdho04c), handicap
-  (hlth_dhc100).'
+- rupture_2020
+- module_triennal_depuis_2021
+notes: 'Déclaratif oui : jugement du ménage sur son logement. Valeurs lues (ilc_mdho04, ensemble, mise à jour Eurostat
+  du 13/08/2026) : 9,0 (2004), 7,4 (2015), 6,9 (2017 et 2018), 7,3 (2019), 9,7 (2020, b), 10,6 (2023) ; aucune valeur
+  2021, 2022, 2024, 2025. Depuis le règlement-cadre de 2021, l''item relève du module triennal « conditions de travail
+  et de logement » d''EU-SILC (vagues 2023 et 2026 d''après la page des modules d''Eurostat lue le 15/10/2026) :
+  valeurs annuelles de 2004 à 2020, puis 2023, d''où la fréquence irrégulière (report de la dernière valeur, D17).
+  Variantes : ventilations, enfants (ilc_mdho04c), handicap (hlth_dhc100).'

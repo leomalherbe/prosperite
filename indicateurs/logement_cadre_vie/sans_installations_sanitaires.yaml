@@ -17,7 +17,7 @@ source_serie_id: ilc_mdho05?freq=A&unit=PC&hhcomp=TOTAL&rskpovth=TOTAL&sex=T&age
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdho05?freq=A&unit=PC&hhcomp=TOTAL&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdho05/default/table?lang=fr
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2004
 derniere_annee: 2023
 nb_points_depuis_2000: 18
@@ -25,15 +25,16 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-031885
 hors_longlist: non
-raccordement: 'non : série EU-SILC depuis 2004'
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: oui
 recommandation: retenir
 motif_recommandation: Proxy national de l'assainissement non sûr du Doughnut et indicateur d'équipements de base
-  du Better Life Index, série Eurostat de 2004 à 2023 (18 points d'après la long-list).
+  du Better Life Index, 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, module triennal ensuite, D17).
 note_pertinence: 'Le manque d''équipements sanitaires de base est devenu rare en France (le crosswalk M03 le juge
-  peu discriminant) mais subsiste dans des logements très dégradés. Une série quasi constante n''est pas un motif
-  d''écart (D34) : la fiche couvre l''assainissement des cadres de référence du point de vue des ménages. Les valeurs
-  n''ont pas été relues sur l''API.'
+  peu discriminant) mais subsiste dans des logements très dégradés. La part passe de 0,6 % en 2004 à 0,2 % en 2019,
+  puis 0,4 % en 2020 (rupture b) et 0,7 % en 2023 (table ODD sdg_06_10 de même définition, API Eurostat lue le 15/10/2026).
+  Une série quasi constante n''est pas un motif d''écart (D34) : la fiche couvre l''assainissement des cadres de
+  référence du point de vue des ménages.'
 variantes:
 - serie_id: sdg_06_10?freq=A&unit=PC&hhcomp=TOTAL&rskpovth=TOTAL&sex=T&age=TOTAL&geo=FR
   source: Eurostat
@@ -173,7 +174,15 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
-- faible_variabilite_probable
-notes: 'Variantes : table ODD sdg_06_10 ; composantes ni baignoire ni douche (ilc_mdho02) et pas de toilettes intérieures
-  (ilc_mdho03), enfants, handicap ; ventilations.'
+- rupture_2020
+- module_triennal_depuis_2021
+- faible_variabilite
+- valeurs_lues_sur_table_odd
+notes: 'Valeurs lues sur la table ODD sdg_06_10 (même indicateur, ensemble, mise à jour Eurostat du 13/08/2026 ;
+  l''API de ilc_mdho05 a été refusée par le proxy le 15/10/2026, HTTP 429) : 0,6 (2004), 0,3 (2010 à 2016), 0,2
+  (2019), 0,4 (2020, b), 0,7 (2023) ; sous le seuil de pauvreté : 2,0 (2004), 0,3 (2020, b), 1,1 (2023). Depuis
+  le règlement-cadre de 2021, l''item relève du module triennal « conditions de travail et de logement » d''EU-SILC
+  (vagues 2023 et 2026 d''après la page des modules d''Eurostat lue le 15/10/2026) : valeurs annuelles de 2004 à
+  2020, puis 2023, d''où la fréquence irrégulière (report de la dernière valeur, D17). Variantes : table ODD sdg_06_10
+  ; composantes ni baignoire ni douche (ilc_mdho02) et pas de toilettes intérieures (ilc_mdho03), enfants, handicap
+  ; ventilations.'

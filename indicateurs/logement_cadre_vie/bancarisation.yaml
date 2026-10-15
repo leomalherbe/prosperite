@@ -32,10 +32,11 @@ incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure de l'accès aux services financiers (ODD 8.10.2), série INSEE irrégulière de 2011
   à 2024 (5 points, écart moyen supérieur à 1,5 an), admise par D17 et D28.
-note_pertinence: L'accès à un compte conditionne le versement des revenus et des prestations et l'accès à la plupart
-  des services. Les valeurs n'ont pas été lues ; si, comme attendu en France, la part est proche de la totalité
-  des adultes, l'indicateur distinguera peu les années mais une baisse signalerait une exclusion bancaire. Son rattachement
-  à l'accès aux services, proposé par niveau_de_vie, est à trancher par la session mère.
+note_pertinence: 'L''accès à un compte conditionne le versement des revenus et des prestations et l''accès à la
+  plupart des services. La part est proche de la totalité des adultes (97,0 % en 2011, 94,0 % en 2017, 99,2 % en
+  2021 et 2024, BDM lue le 15/10/2026) : l''indicateur distinguera peu les années, mais une baisse signalerait une
+  exclusion bancaire. Son rattachement à l''accès aux services, proposé par niveau_de_vie, est à trancher par la
+  session mère.'
 variantes:
 - serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=8.i7&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
@@ -50,5 +51,8 @@ socle_v1:
   justification: ''
 qualite:
 - serie_irreguliere_D17
-- valeurs_non_lues
-notes: 'Variante : même série, voie Melodi (ODD 8.i7). Source primaire de l''INSEE non lue.'
+- proche_de_la_saturation
+- source_primaire_a_verifier
+notes: 'Valeurs lues (BDM 010596094, France, statut A) : 97,0 (2011), 96,6 (2014), 94,0 (2017), 99,2 (2021), 99,2
+  (2024) ; aucune autre année. Les années correspondent aux vagues de l''enquête Global Findex de la Banque mondiale,
+  source probable non vérifiée dans les métadonnées de l''INSEE. Variante : même série, voie Melodi (ODD 8.i7).'

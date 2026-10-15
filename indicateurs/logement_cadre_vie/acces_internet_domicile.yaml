@@ -33,8 +33,8 @@ motif_recommandation: Variante principale de la famille acces_internet_domicile 
   D35).
 note_pertinence: L'accès à internet chez soi conditionne désormais l'accès à l'emploi, aux services publics et aux
   liens sociaux. La part approche la saturation (88,11 % des ménages en 2021 selon l'OCDE, extrait du robot M04),
-  ce qui déplace l'enjeu vers la qualité de la connexion et l'usage. Les valeurs Eurostat n'ont pas été relues sur
-  l'API.
+  ce qui déplace l'enjeu vers la qualité de la connexion et l'usage. Les valeurs Eurostat n'ont pas pu être relues
+  (API refusée par le proxy, HTTP 429, le 15/10/2026).
 variantes:
 - serie_id: isoc_r_iacc_h?freq=A&unit=PC_HH&geo=FR
   source: Eurostat

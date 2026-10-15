@@ -25,16 +25,18 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-037496
 hors_longlist: non
-raccordement: 'non : série Eurostat depuis 1990'
+raccordement: 'a_etudier : valeurs Eurostat aberrantes en 2010-2012 (99,1 ; 99,2 ; 99,1) à remplacer par la somme
+  des séries INSEE 010751584 et 010751585 (16,7 ; 17,0 ; 16,2)'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule série annuelle du recours aux transports collectifs, Eurostat de 2000 à 2024 (25 points),
-  plus longue que les composantes publiées par l'INSEE de 2010 à 2024.
+motif_recommandation: Seule série annuelle longue du recours aux transports collectifs, Eurostat de 2000 à 2024
+  (25 points), retenue sous réserve de remplacer les valeurs aberrantes de 2010-2012 par la somme des composantes
+  de l'INSEE (2010-2024).
 note_pertinence: 'La part des transports collectifs reflète à la fois l''offre de transports publics et la dépendance
-  à la voiture, qui pèse sur le budget et le temps des ménages. Aucun indicateur d''accessibilité des transports
-  (ODD 11.2.1) n''existe en série annuelle pour la France : la part modale est la seule mesure du contenu « transports
-  collectifs » de la dimension. Elle recoupe la planète (émissions des transports), mais son rattachement suit le
-  contenu de la dimension.'
+  à la voiture, qui pèse sur le budget et le temps des ménages. Hors 2010-2012, elle oscille entre 13,4 % et 15,8
+  % de 2000 à 2019, chute à 12,1 % en 2020 et atteint 17,4 % en 2024 (API Eurostat lue le 15/10/2026). Aucun indicateur
+  d''accessibilité des transports (ODD 11.2.1) n''existe en série annuelle pour la France : la part modale est la
+  seule mesure du contenu « transports collectifs » de la dimension.'
 variantes:
 - serie_id: '010751584'
   source: INSEE BDM
@@ -132,8 +134,17 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
-notes: 'Variantes : table ODD sdg_09_50 ; composantes autocars et autobus, trains ; complément voiture particulière
-  ; répartition incluant l''aérien et le maritime (tran_hv_ms_psmod) ; INSEE BDM 010751584 et 010751585 et Melodi
-  ODD 9 (France métropolitaine, 2010-2024). L''OCDE ne publie l''ODD 11.2.1 que pour 2020 (95,3 % de la population
-  urbaine, extrait du robot M04).'
+- valeurs_aberrantes_2010_2012
+- rupture_2013
+- champ_metro_tram_different_insee
+notes: 'Valeurs lues (tran_hv_psmod, TRN_BUS_TOT_AVD « trains, autocars, autobus et trolleybus, somme des données
+  disponibles », mise à jour Eurostat du 26/08/2026) : 13,9 (2000), 15,8 (2008), 14,6 (2009), 99,1 (2010, e), 99,2
+  (2011, e), 99,1 (2012), 15,6 (2013, b), 15,6 (2019), 12,1 (2020), 15,4 (2022), 17,4 (2024). Somme des séries INSEE
+  (France métropolitaine, transport ferré y compris métro + bus, cars et tramways, BDM lue le 15/10/2026) : 16,7
+  (2010), 17,0 (2011), 16,2 (2012), 16,1 (2013), 12,2 (2020), 17,3 (2024), soit de 0,1 point en dessous à 0,7 point
+  au-dessus d''Eurostat sur 2013-2024 (champ incluant métro et tramway). Maintenance LOG-7. La part recoupe la planète
+  (émissions des transports), mais son rattachement suit le contenu de la dimension. Variantes : table ODD sdg_09_50
+  ; composantes autocars et autobus, trains ; complément voiture particulière ; répartition incluant l''aérien et
+  le maritime (tran_hv_ms_psmod) ; INSEE BDM 010751584 et 010751585 et Melodi ODD 9 ; part des transports en commun
+  dans les déplacements domicile-travail (recensement, ITDD, 2016 et 2022, hors long-list). L''OCDE ne publie l''ODD
+  11.2.1 que pour 2020 (95,3 % de la population urbaine, extrait du robot M04).'

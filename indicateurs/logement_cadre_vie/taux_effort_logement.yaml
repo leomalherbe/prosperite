@@ -31,8 +31,8 @@ recommandation: retenir_variante
 motif_recommandation: Autre lecture de la famille surcharge_couts_logement (charge du ménage médian plutôt que part
   au-delà d'un seuil), série Eurostat annuelle de 2004 à 2025 (21 points d'après la long-list).
 note_pertinence: 'Le taux d''effort médian décrit la charge du logement pour un ménage ordinaire, quand le taux
-  de surcharge se concentre sur les situations extrêmes. Les valeurs et les drapeaux n''ont pas pu être relus sur
-  l''API Eurostat le 14/10/2026 (refus 429 du proxy) : la fiche s''appuie sur les métadonnées de la long-list.'
+  de surcharge se concentre sur les situations extrêmes. Il varie peu : 12,3 % en 2004, 13,3 % en 2006, 11,1 % en
+  2020 (rupture b) et 12,2 % en 2025 (API Eurostat lue le 15/10/2026).'
 variantes:
 - serie_id: ilc_lvho08b?freq=A&unit=PC&deg_urb=DEG1&geo=FR
   source: Eurostat
@@ -93,6 +93,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
-notes: 'Variantes : ilc_lvho08b (urbanisation) ; parts moyennes du coût du logement (ilc_mded01) et du loyer (ilc_mded02)
-  dans le revenu disponible, lignes renvoyées par niveau_de_vie.'
+- rupture_2020
+- rupture_2022
+- annee_manquante_2021
+notes: 'Valeurs lues (ilc_lvho08a, ensemble, mise à jour Eurostat du 17/09/2026) : 12,3 (2004), 13,3 (2006), 13,1
+  (2015), 11,3 (2018), 11,1 (2020, b), 11,4 (2022, b), 12,3 (2024), 12,2 (2025) ; aucune valeur en 2021. Variantes
+  : ilc_lvho08b (urbanisation) ; parts moyennes du coût du logement (ilc_mded01) et du loyer (ilc_mded02) dans le
+  revenu disponible, lignes renvoyées par niveau_de_vie.'

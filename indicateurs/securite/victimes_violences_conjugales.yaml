@@ -26,11 +26,14 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000952
 hors_longlist: non
-raccordement: 'non : pas de série avant 2010 ; rupture CVS/VRS sans valeur 2019-2020'
+raccordement: 'a_etudier : rupture CVS (2010-2018) / VRS (2021-2023) sans valeur 2019-2020 ; le niveau tombe de
+  0,5 % en 2018 à 0,2 % en 2021 (-60 %, valeurs arrondies au dixième) : traiter en deux segments ou avec un coefficient
+  de passage à demander au SSMSI'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure de la fréquence des violences conjugales indépendante de la plainte (enquête,
-  2010-2023), mais imprécise (0,2 à 0,9 %, arrondi au dixième) et rompue entre 2018 et 2021.
+  2010-2023), mais imprécise (0,2 à 0,9 %, arrondi au dixième) et rompue entre 2018 et 2021 ; composante de victimes_violences,
+  à ne pas cumuler avec elle au socle.
 note_pertinence: 'Les violences conjugales sont au cœur des politiques de sécurité récentes et leur enregistrement
   par la police a fortement augmenté avec la libération de la parole : seule l''enquête permet d''en suivre la fréquence.
   La série baisse de 0,7-0,9 % (2010-2014) à 0,5-0,6 % (2015-2018), mais la précision est faible. La part des victimes
@@ -80,4 +83,5 @@ qualite:
 - lacune_2019_2020
 - champ_metropole_18_75_ans
 - faible_precision
-notes: ''
+notes: 'Valeurs BDM relues le 14/10/2026. Famille imbriquée (audit M06 §5.4) : composante de victimes_violences
+  ; au socle, l''ensemble ou ses composantes, pas les deux.'

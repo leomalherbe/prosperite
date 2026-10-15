@@ -33,7 +33,7 @@ incontournable: oui
 recommandation: retenir
 motif_recommandation: Indicateur incontournable (Doughnut, OCDE 10_1, Eurostat QoL), taux annuel 2008-2024 sans
   lacune et à sens non ambigu (les homicides sont presque tous connus des services), raccordable à 2000 par la série
-  ONUDC.
+  ONUDC ; il englobe homicides_conjugaux, à ne pas cumuler avec lui au socle.
 note_pertinence: 'L''homicide est l''atteinte la plus grave et la mieux enregistrée : presque tous les homicides
   sont connus de la police, si bien que la série enregistrée suit l''évolution réelle, contrairement aux autres
   violences. Le taux français est faible (de 1,03 à 1,60 pour 100 000 entre 2008 et 2024) et ses variations annuelles
@@ -119,6 +119,33 @@ variantes:
   nature: 'ITDD : homicides pour 1 000 habitants, 2016-2024 (non éligible : 9 points)'
   ligne_id: m04-000299
   eligible: non
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-000393
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-000394
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-000395
+  eligible: oui
+  longlist: sante
 - serie_id: sdg_16_10?freq=A&unit=RT&icd10=X85-Y09_Y871&sex=T&age=TOTAL&geo=FR
   source: Eurostat
   nature: 'autre définition : taux standardisé de mortalité par homicide (Eurostat sdg_16_10, causes de décès),
@@ -133,6 +160,132 @@ variantes:
   ligne_id: estat-001986
   eligible: oui
   longlist: sante
+- serie_id: hlth_cd_acdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-002732
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_acdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-002733
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_acdr2?freq=A&unit=RT&sex=T&age=Y_LT1&age=Y1-4&age=Y5-9&age=Y10-14&age=Y_LT15&age=Y15-19&age=Y15-24&age=Y15-29&age=Y20-24&age=Y_LT25&age=Y25-29&age=Y30-34&age=Y30-44&age=Y35-39&age=Y40-44&age=Y45-49&age=Y45-64&age=Y50-54&age=Y55-59&age=Y60-64&age=Y_LT65&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y75-79&age=Y75-84&age=Y80-84&age=Y85-89&age=Y_GE85&age=Y90-94&age=Y_GE95&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-002734
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=TOTAL&icd10=X85-Y09_Y871&resid=TOT_IN&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020795
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=M&sex=F&age=TOTAL&icd10=X85-Y09_Y871&resid=TOT_IN&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020796
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=Y_LT1&age=Y1-4&age=Y5-9&age=Y10-14&age=Y_LT15&age=Y15-19&age=Y15-24&age=Y15-29&age=Y20-24&age=Y_LT25&age=Y25-29&age=Y30-34&age=Y30-44&age=Y35-39&age=Y40-44&age=Y45-49&age=Y45-64&age=Y50-54&age=Y55-59&age=Y60-64&age=Y_LT65&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y75-79&age=Y75-84&age=Y80-84&age=Y85-89&age=Y_GE85&age=Y90-94&age=Y_GE95&icd10=X85-Y09_Y871&resid=TOT_IN&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020797
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=TOTAL&icd10=X85-Y09_Y871&resid=TOT_RESID&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020798
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=M&sex=F&age=TOTAL&icd10=X85-Y09_Y871&resid=TOT_RESID&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020799
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=Y_LT1&age=Y1-4&age=Y5-9&age=Y10-14&age=Y_LT15&age=Y15-19&age=Y15-24&age=Y15-29&age=Y20-24&age=Y_LT25&age=Y25-29&age=Y30-34&age=Y30-44&age=Y35-39&age=Y40-44&age=Y45-49&age=Y45-64&age=Y50-54&age=Y55-59&age=Y60-64&age=Y_LT65&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y75-79&age=Y75-84&age=Y80-84&age=Y85-89&age=Y_GE85&age=Y90-94&age=Y_GE95&icd10=X85-Y09_Y871&resid=TOT_RESID&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020800
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=T&age=Y_LT75&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021077
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=M&sex=F&age=Y_LT75&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021078
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=T&age=Y_LT70&icd10=X85-Y09_Y871&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021079
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=X86-Y09&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021543
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=X86-Y09&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par agression d''après les causes médicales de décès (Eurostat hlth_cd_aro,
+    hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll, codes X85-Y09 et Y87.1 ; hlth_cd_apr, mortalité évitable, X86-Y09),
+    nombres, taux standardisés et bruts (valeur nationale des jeux NUTS 2), années potentielles de vie perdues,
+    2011-2023 ou 2024, avec ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021544
+  eligible: oui
+  longlist: sante
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -141,5 +294,7 @@ socle_v1:
 qualite:
 - delinquance_enregistree
 - raccordement_2000_2007
-notes: 'Variante de la long-list sante à rattacher ici (sdg_16_10, taux standardisé de mortalité par homicide, causes
-  de décès) : rattachement à corriger par la session mère (R1).'
+notes: 'Variantes de la long-list sante à rattacher ici (sdg_16_10, taux standardisé de mortalité par homicide,
+  et jeux de causes de décès hlth_cd_* X85-Y09 : nombres, taux, années de vie perdues, mortalité évitable) : rattachement
+  à corriger par la session mère (R1 ; maintenance n° 2, SEC-1). Famille imbriquée (audit M06 §5.4) : homicides_conjugaux
+  est une composante de cet ensemble ; au socle, l''un ou l''autre, pas les deux.'

@@ -14,6 +14,9 @@ composite: non
 source_organisme: INSEE (enquête de conjoncture auprès des ménages)
 source_jeu: BDM, enquête mensuelle de conjoncture auprès des ménages (ENQ-CONJ-MENAGES)
 source_serie_id: '000857186'
+composantes:
+- '000857186'
+formule: moyenne des 12 soldes mensuels de l'année (données brutes)
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000857186
 url_page: https://www.insee.fr/fr/statistiques/serie/000857186
@@ -44,4 +47,5 @@ socle_v1:
   justification: ''
 qualite:
 - agregation_annuelle
-notes: ''
+notes: 'Moyenne annuelle calculée par le projet (D34) sur les valeurs mensuelles publiées : l''INSEE ne publie pas
+  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire).'

@@ -1,6 +1,6 @@
 # copernicus_cams / ads_catalogue
 # URL : https://ads.atmosphere.copernicus.eu/api/catalogue/v1/collections
-# Vérifié le 2026-10-14T09:25:27Z — HTTP 200 — application/json — 54044 octets lus (taille annoncée : 10929)
+# Vérifié le 2026-10-13T14:47:53Z — HTTP 200 — application/json — 54044 octets lus (taille annoncée : 10919)
 
 {
  "collections": [
@@ -40,7 +40,7 @@
      "interval": [
       [
        "2024-03-01T00:00:00+00:00",
-       "2026-10-13T00:00:00+00:00"
+       "2026-10-12T00:00:00+00:00"
       ]
      ]
     }
@@ -72,12 +72,12 @@
     }
    },
    "published": "2024-10-21T00:00:00Z",
-   "updated": "2026-10-14T00:00:00Z",
+   "updated": "2026-10-13T00:00:00Z",
    "sci:doi": "10.24381/93910310",
    "cads:disabled_reason": null,
    "cads:sanity_check": {
     "status": "available",
-    "timestamp": "2026-10-14T09:18:14.233679+00:00"
+    "timestamp": "2026-10-13T14:18:12.234982+00:00"
    },
    "cads:fair": 92
   },

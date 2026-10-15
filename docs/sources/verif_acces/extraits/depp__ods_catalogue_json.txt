@@ -1,17 +1,125 @@
 # depp / ods_catalogue_json
 # URL : https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-14T09:23:13Z — HTTP 200 — application/json; charset=utf-8 — 5751 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:45:54Z — HTTP 200 — application/json; charset=utf-8 — 8616 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 310,
  "results": [
   {
    "visibility": "domain",
-   "fields": [],
-   "dataset_id": "retours-formulaire-votre-avis-themes-attendus",
-   "dataset_uid": "da_5r8kx5",
+   "fields": [
+    {
+     "name": "geo_shape",
+     "description": null,
+     "annotations": {},
+     "label": "Geo Shape",
+     "type": "geo_shape"
+    },
+    {
+     "name": "orig",
+     "description": null,
+     "annotations": {},
+     "label": "orig",
+     "type": "text"
+    },
+    {
+     "name": "dest",
+     "description": null,
+     "annotations": {},
+     "label": "dest",
+     "type": "text"
+    },
+    {
+     "name": "line_id",
+     "description": null,
+     "annotations": {},
+     "label": "line_id",
+     "type": "text"
+    },
+    {
+     "name": "stop1",
+     "description": null,
+     "annotations": {},
+     "label": "stop1",
+     "type": "text"
+    },
+    {
+     "name": "stop2",
+     "description": null,
+     "annotations": {},
+     "label": "stop2",
+     "type": "text"
+    },
+    {
+     "name": "stop3",
+     "description": null,
+     "annotations": {},
+     "label": "stop3",
+     "type": "text"
+    },
+    {
+     "name": "stop4",
+     "description": null,
+     "annotations": {},
+     "label": "stop4",
+     "type": "text"
+    },
+    {
+     "name": "stop5",
+     "description": null,
+     "annotations": {},
+     "label": "stop5",
+     "type": "text"
+    },
+    {
+     "name": "distance",
+     "description": null,
+     "annotations": {},
+     "label": "distance",
+     "type": "text"
+    },
+    {
+     "name": "name",
+     "description": null,
+     "annotations": {},
+     "label": "name",
+     "type": "text"
+    },
+    {
+     "name": "deviation",
+     "description": null,
+     "annotations": {},
+     "label": "deviation",
+     "type": "text"
+    },
+    {
+     "name": "geo_point_2d",
+     "description": null,
+     "annotations": {},
+     "label": "geo_point_2d",
+     "type": "geo_point_2d"
+    },
+    {
+     "name": "objectid",
+     "description": null,
+     "annotations": {},
+     "label": "objectid",
+     "type": "text"
+    },
+    {
+     "name": "shape_length",
+     "description": null,
+     "annotations": {},
+     "label": "Shape__Length",
+     "type": "text"
+    }
+   ],
+   "dataset_id": "paris-2024-lignes-para-dds",
+   "dataset_uid": "da_a39n9j",
    "has_records": true,
-   "features": [],
+   "features": [
+    "geo"
+   ],
    "attachments": [],
    "alternative_exports": [],
    "data_visible": true,
@@ -19,7 +127,7 @@
     "dcat": {
      "created": null,
      "issued": null,
-     "creator": null,
+     "creator": "Paris 2024",
      "contributor": null,
      "contact_name": null,
      "contact_email": null,
@@ -36,30 +144,71 @@
      "relation": null
     },
     "default": {
-     "title": "Retours formulaire - votre avis - Thèmes attendus",
-     "description": null,
-     "theme": null,
-     "keyword": null,
-     "license": null,
-     "license_url": null,
+     "title": "Paris 2024 - Lignes PARA DDS",
+     "description": "<p><span style='color: rgb(76, 76, 76); font-family: \"Avenir Next W01\", \"Avenir Next W00\", \"Avenir Next\", Avenir, \"Helvetica Neue\", sans-serif; font-size: 16px;'>Couche des itinéraires DDS. Le DDS (</span><font color=\"#4c4c4c\" face=\"Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif\"><span style=\"font-size: 16px;\">Direct and Dedicated Services) </span></font><span style='color: rgb(76, 76, 76); font-family: \"Avenir Next W01\", \"Avenir Next W00\", \"Avenir Next\", Avenir, \"Helvetica Neue\", sans-serif; font-size: 16px;'>est un service de transport pour les populations d'OBS.</span></p>",
+     "theme": [
+      "Sport, jeunesse et vie associative"
+     ],
+     "keyword": [
+      "transport",
+      "mobilité",
+      "accrédités",
+      "DDS",
+      "OBS"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "http://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
      "language": "fr",
      "metadata_languages": [
       "fr"
      ],
      "timezone": null,
-     "modified": "2023-04-04T11:43:34+00:00",
+     "modified": "2024-10-01T10:01:34+00:00",
      "modified_updates_on_metadata_change": false,
      "modified_updates_on_data_change": false,
-     "data_processed": null,
-     "metadata_processed": "2026-01-29T18:58:50.056000+00:00",
+     "data_processed": "2026-01-29T19:40:10.372000+00:00",
+     "metadata_processed": "2026-01-29T19:40:10.506000+00:00",
      "geographic_reference": null,
      "geographic_reference_auto": false,
      "territory": null,
-     "geometry_types": null,
-     "bbox": null,
-     "publisher": null,
+     "geometry_types": [
+      "LineString",
+      "MultiLineString"
+     ],
+     "bbox": {
+      "type": "Feature",
+      "geometry": {
+       "coordinates": [
+        [
+         [
+          2.668751450255513,
+          49.01535398326814
+         ],
+         [
+          2.034902460873127,
+          49.01535398326814
+         ],
+         [
+          2.034902460873127,
+          48.78309953492135
+         ],
+         [
+          2.668751450255513,
+          48.78309953492135
+         ],
+         [
+          2.668751450255513,
+          49.01535398326814
+         ]
+        ]
+       ],
+       "type": "Polygon"
+      },
+      "properties": {}
+     },
+     "publisher": "Ministère des Sports",
      "references": null,
-     "records_count": 0,
+     "records_count": 110,
      "attributions": null,
      "source_domain": null,
      "source_domain_title": null,
@@ -86,124 +235,18 @@
    "fields": [
     {
      "name": "annee",
-     "description": "Année",
+     "description": "Année des données",
      "annotations": {
-      "facet": true,
-      "disjunctive": true,
-      "sortable": true
+      "timeserie_precision": "year"
      },
-     "label": "année",
-     "type": "text"
+     "label": "Année",
+     "type": "date"
     },
     {
-     "name": "corps_acces",
-     "description": "Corps d'accès",
+     "name": "mois_des_donnees",
+     "description": "Mois des données",
      "annotations": {
-      "sortable": true,
-      "facet": true,
-      "disjunctive": true
+      "timeserie_precision": "month"
      },
-     "label": "corps_acces",
-     "type": "text"
-    },
-    {
-     "name": "nombre_promus",
-     "description": "Nombre de promus",
-     "annotations": {},
-     "label": "nombre_promus",
-     "type": "int"
-    },
-    {
-     "name": "pourcentage_femmes",
-     "description": "Pourcentage de femmes promues",
-     "annotations": {},
-     "label": "pourcentage_femmes",
-     "type": "double"
-    },
-    {
-     "name": "age_moyen",
-     "description": "Age moyen des promus",
-     "annotations": {},
-     "label": "age_moyen",
-     "type": "double"
-    },
-    {
-     "name": "ratio_promus_promouvables",
-     "description": "Pourcentage de promus par rapport aux promouvables",
-     "annotations": {},
-     "label": "ratio_promus_promouvables",
-     "type": "double"
-    },
-    {
-     "name": "pourcentage_femmes_dans_promouvables",
-     "description": "Pourcentage de femmes parmi les promouvables",
-     "annotations": {},
-     "label": "pourcentage_femmes_dans_promouvables",
-     "type": "double"
-    },
-    {
-     "name": "age_moyen_femmes_promues",
-     "description": "Age moyen de femmes promues",
-     "annotations": {},
-     "label": "age_moyen_femmes_promues",
-     "type": "double"
-    }
-   ],
-   "dataset_id": "fr-en-liste-aptitude-enseignants-1er-et-2nd-degre-public",
-   "dataset_uid": "da_3cfa2z",
-   "has_records": true,
-   "features": [
-    "analyze"
-   ],
-   "attachments": [],
-   "alternative_exports": [],
-   "data_visible": true,
-   "metas": {
-    "dcat": {
-     "created": null,
-     "issued": null,
-     "creator": null,
-     "contributor": null,
-     "contact_name": null,
-     "contact_email": null,
-     "accrualperiodicity": "Ponctuelle",
-     "spatial": "France",
-     "temporal": "2019",
-     "granularity": null,
-     "dataquality": null,
-     "publisher_type": null,
-     "conforms_to": null,
-     "temporal_coverage_start": "2018-12-31T23:00:00+00:00",
-     "temporal_coverage_end": "2019-12-30T23:00:00+00:00",
-     "accessRights": null,
-     "relation": null
-    },
-    "default": {
-     "title": "Liste d’aptitude des enseignants du 1er et du 2nd degré public",
-     "description": "<p>Liste d’aptitude des enseignants du 1er et du 2nd degré publics</p><p>Pour les agrégés, le nombre de promouvables correspond au nombre de candidats.<br>Pour les certifiés et les professeurs d’éducation physique et sportive (PEPS), le nombre de promouvables correspond ici au nombre de candidats<br>ayant été proposés par les recteurs.<br>Pour les professeurs de chaires supérieures, le nombre de promouvables correspond au nombre d’agents remplissant les conditions statutaires.<br>Les professeurs de chaires supérieures recensés sont ceux nommés au 1er septembre 2019.<br></p><p>Source : MENJS DGRH B2-1, B2-3<br></p>",
-     "theme": [
-      "Ressources humaines"
-     ],
-     "keyword": [
-      "liste d'aptitude",
-      "enseignants",
-      "public",
-      "1er degré",
-      "2nd degré"
-     ],
-     "license": "Licence Ouverte v2.0 (Etalab)",
-     "license_url": "http://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
-     "language": "fr",
-     "metadata_languages": [
-      "fr"
-     ],
-     "timezone": null,
-     "modified": "2026-01-29T18:43:48.867000+00:00",
-     "modified_updates_on_metadata_change": true,
-     "modified_updates_on_data_change": true,
-     "data_processed": "2026-01-29T18:43:48.867000+00:00",
-     "metadata_processed": "2026-01-29T18:43:48.998000+00:00",
-     "geographic_reference": [
-      "world_fr"
-     ],
-     "
+     "label": "Mois des données",
+     "t

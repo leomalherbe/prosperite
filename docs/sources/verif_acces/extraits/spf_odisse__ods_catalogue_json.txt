@@ -1,6 +1,6 @@
 # spf_odisse / ods_catalogue_json
 # URL : https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-14T09:23:21Z — HTTP 200 — application/json; charset=utf-8 — 24123 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:01Z — HTTP 200 — application/json; charset=utf-8 — 20407 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 388,
@@ -18,113 +18,191 @@
      "type": "date"
     },
     {
-     "name": "cod_geo",
+     "name": "sexe",
      "description": null,
      "annotations": {},
-     "label": "Région Code",
-     "type": "int"
-    },
-    {
-     "name": "reglib",
-     "description": null,
-     "annotations": {},
-     "label": "Région",
+     "label": "﻿Sexe",
      "type": "text"
     },
     {
-     "name": "p_i_ins_tot",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt aux insecticides\n",
-     "annotations": {},
-     "label": "Insecticides : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_carba_tot",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt aux carbamates\n",
-     "annotations": {},
-     "label": "Carbamates : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_neo_tot",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt aux néonicotinoïdes\n",
-     "annotations": {},
-     "label": "Néonicotinoïdes : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_orgchl_tot",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt aux organochlorés\n",
-     "annotations": {},
-     "label": "Organochlorés : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_orgpho_tot",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt aux organophosphorés\n",
-     "annotations": {},
-     "label": "Organophosphorés : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_pyre_tot",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt aux pyrethrinoïdes de synthèse\n",
-     "annotations": {},
-     "label": "Pyréthrinoïdes : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_orgpho_chlorpy",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt au chlorpyriphos (appartient à la famille des organophosphorés)\n",
-     "annotations": {},
-     "label": "Chlorpyriphos : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "p_i_orgchl_lind",
-     "description": "Proportion d'exploitations agricoles traitant les cultures d'intérêt au lindane (appartient à la famille des organochlorés)\n",
-     "annotations": {},
-     "label": "Lindane : proportion d'exploitations utilisatrices",
-     "type": "double"
-    },
-    {
-     "name": "prop_explt_4cult",
+     "name": "classe_d_age",
      "description": null,
      "annotations": {},
-     "label": "Proportion d'exploitations agricoles dont la majorité des surfaces sont des cultures où l’utilisation de pesticides est évaluée",
+     "label": "Classe d'âge",
+     "type": "text"
+    },
+    {
+     "name": "statut_du_travailleur",
+     "description": null,
+     "annotations": {},
+     "label": "Statut du travailleur",
+     "type": "text"
+    },
+    {
+     "name": "nombre_de_travailleurs",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs",
+     "type": "int"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Herbicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Herbicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Herbicides",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Herbicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Herbicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_herbicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne sup. - Herbicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Insecticides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Insecticides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Insecticides",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Insecticides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Insecticides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_insecticides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne sup. - Insecticides (%)",
+     "type": "double"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Fongicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Fongicides",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Fongicides",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Fongicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Fongicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_fongicides",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne sup. - Fongicides (%)",
+     "type": "double"
+    },
+    {
+     "name": "nombre_de_travailleurs_exposes_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Nombre de travailleurs exposés - Autres PPP",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_inf_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne inf. - Autres PPP",
+     "type": "int"
+    },
+    {
+     "name": "intervalle_de_sensibilite_borne_sup_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité Borne sup. - Autres PPP",
+     "type": "int"
+    },
+    {
+     "name": "proportion_de_travailleurs_exposes_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Proportion de travailleurs exposés - Autres PPP (%)",
+     "type": "double"
+    },
+    {
+     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_autres_ppp",
+     "description": null,
+     "annotations": {},
+     "label": "Intervalle de sensibilité de la proportion Borne inf. - Autres PPP (%)",
      "type": "double"
     }
-   ],
-   "dataset_id": "pesticides-exposition-professionnelle-aux-insecticides-region",
-   "dataset_uid": "da_mzwc92",
-   "has_records": true,
-   "features": [
-    "timeserie",
-    "analyze"
-   ],
-   "attachments": [],
-   "alternative_exports": [],
-   "data_visible": true,
-   "metas": {
-    "dcat": {
-     "created": null,
-     "issued": null,
-     "creator": null,
-     "contributor": null,
-     "contact_name": null,
-     "contact_email": null,
-     "accrualperiodicity": null,
-     "spatial": null,
-     "temporal": "1979-2010",
-     "granularity": null,
-     "dataquality": null,
-     "publisher_type": "NationalAuthority",
-     "conforms_to": null,
-     "temporal_coverage_start": null,
-     "temporal_coverage_end": null,
-     "accessRights": null,
-     "relation": null
-    },
-    "default": {
-     "title": "Pesticides : exposition professionnelle aux insecticides (Région)",
-     "description": "<p class=\"MsoNormal\"><span style='font-family:\"Arial\",sans-serif'>Les indicateurs\ngéographiques d’exposition professionnelle liée à l’utilisation agricole des\npesticides de type insecticides visent à décrire l'exposition au niveau d'une\nexploitation agricole. Les indicateurs sont construits en croisant les\ninformations de 4 matrices cultures-exposition (céréales à paille, maïs grain\net fourrage, pommes de terre et vigne) développées à partir des informations de\nréférence sur les pratiques agricoles dans le cadre du programme Matphyto de\nSanté publique France avec les types d'exploitations définis par ces cultures\nissues des données du recensement général agricole.  <o:p></o:p></span></p><p class=\"MsoNormal\"><span style='font-family:\"Arial\",sans-serif'>Le terme\nd’indicateur d’exposition est entendu ici comme une métrique permettant de\ncaractériser et classer le plus correctement possible des zones géographiques\nentre elles selon leurs utilisations de pesticides sur les cultures agricoles\nune année donnée.<o:p></o:p></span></p><p class=\"MsoNormal\"><span style='font-family:\"Arial\",sans-serif'>Les familles\nchimiques et substances actives présentées sont celles pour lesquelles des\neffets sur la santé sont connus (classées 1A/1B comme CMR – cancérigène,\nmutagène, reprotoxique - ou présentant un lien fort avec certaines pathologies\ndans l’expertise Inserm « Pesticides et santé » de 2021) et/ou qui étaient les\nplus utilisées en 2010 sur les cultures étudiées.<o:p></o:p></span></p><p class=\"MsoNormal\"><span style='font-family:\"Arial\",sans-serif'>Les indicateurs\nsont disponibles pour les années correspondant aux différentes éditions du\nrecensement général agricole (1979, 1988, 2000, 2010). <o:p></o:p></span></p><p class=\"MsoNormal\"><b><span style='font-family:\"Arial\",sans-serif'>Précisions :<o:p></o:p></span></b></p><ul><li><span style='font-family:\"Arial\",sans-serif'>L’indicateur a\nété calculé en utilisant la formule = somme [nombre d'exploitations a

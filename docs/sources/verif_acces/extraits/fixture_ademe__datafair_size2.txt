@@ -1,58 +1,10 @@
 # fixture_ademe / datafair_size2
 # URL : https://data.ademe.fr/data-fair/api/v1/datasets?size=2&select=id,title,updatedAt,count
-# Vérifié le 2026-10-14T09:27:52Z — HTTP 200 — application/json; charset=utf-8 — 1931 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:48:15Z — HTTP 200 — application/json; charset=utf-8 — 1929 octets lus (taille annoncée : inconnue)
 
 {
- "count": 1019,
+ "count": 1018,
  "results": [
-  {
-   "title": "Operations CEE engages",
-   "owner": {
-    "type": "organization",
-    "id": "g1pKfMqaE",
-    "name": "ADEME",
-    "department": "observatoire-cee",
-    "departmentName": "Observatoire CEE"
-   },
-   "updatedAt": "2026-10-13T15:15:35.076Z",
-   "id": "uodlqtpx91jll7k5c9uaw3u7",
-   "slug": "operations-cee-engages",
-   "count": 3244,
-   "userPermissions": [
-    "list",
-    "readDescription",
-    "readSchema",
-    "readSafeSchema",
-    "readLines",
-    "getGeoAgg",
-    "getValuesAgg",
-    "getValues",
-    "getMetricAgg",
-    "getSimpleMetricsAgg",
-    "getWordsAgg",
-    "getMinAgg",
-    "getMaxAgg",
-    "downloadOriginalData",
-    "downloadFullData",
-    "readApiDoc",
-    "realtime-transactions",
-    "readLine",
-    "readLineRevisions",
-    "readRevisions",
-    "bulkSearch",
-    "listDataFiles",
-    "downloadDataFile",
-    "downloadMetadataAttachment",
-    "downloadAttachment",
-    "getReadApiKey",
-    "readCompatODSRecords",
-    "readCompatODSExports"
-   ],
-   "public": true,
-   "visibility": "public",
-   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/operations-cee-engages",
-   "page": "https://data.ademe.fr/datasets/operations-cee-engages"
-  },
   {
    "title": "PRODICEE - Programmes",
    "owner": {
@@ -100,6 +52,54 @@
    "visibility": "public",
    "href": "https://data.ademe.fr/data-fair/api/v1/datasets/prodicee-test2-operations",
    "page": "https://data.ademe.fr/datasets/prodicee-test2-operations"
+  },
+  {
+   "title": "Liste des autres référentiels",
+   "owner": {
+    "type": "organization",
+    "id": "g1pKfMqaE",
+    "name": "ADEME",
+    "department": "sinoe",
+    "departmentName": "SINOE"
+   },
+   "updatedAt": "2026-10-11T12:52:03.673Z",
+   "id": "2anc-74dx322mzn5dj2702li",
+   "slug": "nom011-autres-referentiels",
+   "count": 901,
+   "userPermissions": [
+    "list",
+    "readDescription",
+    "readSchema",
+    "readSafeSchema",
+    "readLines",
+    "getGeoAgg",
+    "getValuesAgg",
+    "getValues",
+    "getMetricAgg",
+    "getSimpleMetricsAgg",
+    "getWordsAgg",
+    "getMinAgg",
+    "getMaxAgg",
+    "downloadOriginalData",
+    "downloadFullData",
+    "readApiDoc",
+    "realtime-transactions",
+    "readLine",
+    "readLineRevisions",
+    "readRevisions",
+    "bulkSearch",
+    "listDataFiles",
+    "downloadDataFile",
+    "downloadMetadataAttachment",
+    "downloadAttachment",
+    "getReadApiKey",
+    "readCompatODSRecords",
+    "readCompatODSExports"
+   ],
+   "public": true,
+   "visibility": "public",
+   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/nom011-autres-referentiels",
+   "page": "https://data.ademe.fr/datasets/nom011-autres-referentiels"
   }
  ]
 }

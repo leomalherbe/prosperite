@@ -1,6 +1,6 @@
 # drees / ods_catalogue_json
 # URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-14T09:23:06Z — HTTP 200 — application/json; charset=utf-8 — 10443 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:45:50Z — HTTP 200 — application/json; charset=utf-8 — 5745 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 265,
@@ -8,64 +8,43 @@
   {
    "visibility": "domain",
    "fields": [],
-   "dataset_id": "4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d",
-   "dataset_uid": "da_pgl91t",
+   "dataset_id": "3024_l-accueil-des-jeunes-enfants-du-cote-des-familles",
+   "dataset_uid": "da_14wuvi",
    "has_records": false,
    "features": [],
    "attachments": [
     {
-     "id": "pauvrete_redistribution_decomposition_revenu_2012_2023_vf_xlsx",
-     "title": "Pauvrete_redistribution_decomposition_revenu_2012-2023_vf.xlsx",
+     "id": "laccueil_des_jeunes_enfants_du_cote_des_famillesxlsx",
+     "title": "L’accueil des jeunes enfants : du côté des familles.xlsx",
      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d/attachments/pauvrete_redistribution_decomposition_revenu_2012_2023_vf_xlsx"
-    },
-    {
-     "id": "01_les_caracteristiques_des_personnes_pauvres_et_des_personnes_modestes_2023_vf_xlsx",
-     "title": "01_Les caractéristiques des personnes pauvres et des personnes modestes_2023_vf.xlsx",
-     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d/attachments/01_les_caracteristiques_des_personnes_pauvres_et_des_personnes_modestes_2023_vf_xlsx"
-    },
-    {
-     "id": "02_la_composition_du_revenu_des_menages_pauvres_ou_modestes_vf_xlsx",
-     "title": "02_La composition du revenu des ménages pauvres ou modestes_vf.xlsx",
-     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d/attachments/02_la_composition_du_revenu_des_menages_pauvres_ou_modestes_vf_xlsx"
-    },
-    {
-     "id": "03_les_effets_des_transferts_sociaux_et_fiscaux_sur_la_reduction_de_la_pauvrete_monetaire_vf_xlsx",
-     "title": "03_Les effets des transferts sociaux et fiscaux sur la réduction de la pauvreté monétaire_vf.xlsx",
-     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d/attachments/03_les_effets_des_transferts_sociaux_et_fiscaux_sur_la_reduction_de_la_pauvrete_monetaire_vf_xlsx"
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/3024_l-accueil-des-jeunes-enfants-du-cote-des-familles/attachments/laccueil_des_jeunes_enfants_du_cote_des_famillesxlsx"
     }
    ],
    "alternative_exports": [],
    "data_visible": true,
    "metas": {
     "default": {
-     "title": "Pauvreté avant et après redistribution, niveau de vie et décomposition du revenu",
-     "description": "<p class=\"\">Ce jeu de données porte sur la pauvreté avant et après redistribution, le niveau de vie et la composition du revenu des ménages. </p><div>Il comporte des séries longues de 2012 à 2023 pour les indicateurs suivants : </div><ul><li><b>Effet de la redistribution sur la pauvreté, selon diverses caractéristiques </b></li></ul><ul><li><b>Indicateurs de pauvreté avant et après redistribution </b></li></ul><ul><li><b>Seuil de pauvreté, revenu disponible et niveau de vie </b></li></ul><ul><li><b>Décomposition du revenu disponible</b> <span style=\"white-space: pre;\"> </span></li></ul><div>Il comporte également une actualisation pour 2023 des données sur la pauvreté, la redistribution et la composition du niveau de vie habituellement publiées dans le Panorama de la Drees intitulé « <a href=\"https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/251204-minima-sociaux-et-prestations-de-solidarite\" style=\"font-family: sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);\" target=\"_blank\">Minima sociaux et prestations de solidarité – Ménages aux revenus modestes et redistribution</a> ». La dernière version publiée de cet ouvrage porte sur les données de revenu 2022.<span style=\"white-space: pre;\"> </span></div><div><span style=\"white-space: pre;\"><br></span></div><div><div>Un commentaire de ce jeu de données est présenté ici :</div><p class=\"\"><a href=\"https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/260416-Indicateurs-pauvret%C3%A9-avant-apr%C3%A8s-redistribution\" style='background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400;'><span style=\"font-weight: bolder;\">La redistribution diminue de près d’un tiers le taux de pauvreté</span></a></p></div><hr><div><p class=\"\"><a href=\"https://drees.solidarites-sante.gouv.fr/communique-de-presse-jeux-de-donnees/jeux-de-donnees/260416-Indicateurs-pauvret%C3%A9-avant-apr%C3%A8s-redistribution\" style='background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400;'><span style=\"font-weight: bolder;\"><br></span></a></p></div>",
+     "title": "L’accueil des jeunes enfants : du côté des familles",
+     "description": "<p style=\"font-size:15px;\">L’enquête Modes de garde et d’accueil des jeunes enfants réalisée par la DREES en 2013 est la troisième édition de l’opération, après celles menées en 2002 puis en 2007. Elle concerne les ménages vivant en France métropolitaine ayant au moins un enfant de moins de 6 ans. Son objectif principal est de dresser un panorama des solutions adoptées\npar les parents pour la garde de leurs enfants.</p>\n<p style=\"font-size:15px;\">Ce jeu de données rassemble les\ndivers résultats tirés de l'enquête publiés par la DREES dans sa collection <i style=\"mso-bidi-font-style: normal;\">Études et résultats</i>, ainsi que des\ntableaux complémentaires tirés de l'enquête (voir rubrique Autres résultats).</p>",
      "theme": [
-      "Minima sociaux et Pauvreté"
+      "Enfance, jeunesse, famille"
      ],
      "keyword": [
-      "Niveau de vie",
-      "Revenus",
-      "Redistribution",
-      "Ménages modestes",
-      "Pauvreté"
+      "mode d'accueil",
+      "famille",
+      "jeune enfant",
+      "conciliation vie familiale et professionnelle"
      ],
      "license": "Licence Ouverte v2.0 (Etalab)",
      "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
      "language": "fr",
-     "metadata_languages": [
-      "fr"
-     ],
+     "metadata_languages": null,
      "timezone": null,
-     "modified": "2026-04-16T13:24:01.604000+00:00",
+     "modified": "2021-01-22T08:30:53.513000+00:00",
      "modified_updates_on_metadata_change": true,
      "modified_updates_on_data_change": false,
      "data_processed": null,
-     "metadata_processed": "2026-04-16T13:24:11.827000+00:00",
+     "metadata_processed": "2021-01-22T08:30:57.646000+00:00",
      "geographic_reference": [
       "world_fr"
      ],
@@ -75,5 +54,107 @@
      ],
      "geometry_types": null,
      "bbox": null,
-     "publisher": "DREES/OSOL/BLEX",
-     "references": "https://www.insee.fr/fr/meta
+     "publisher": "DREES/OSOL/BJF",
+     "references": null,
+     "records_count": 0,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": "sgsocialgouv",
+     "update_frequency": null
+    },
+    "custom": {
+     "themes-niveau-2": [
+      "Accueil des jeunes enfants"
+     ],
+     "themes-niveau-3": null,
+     "version": null,
+     "date-de-creation": "2018-04-19",
+     "frequence-de-mise-a-jour": null,
+     "periode-de-temps": "2013",
+     "code-source": null,
+     "pieces-jointes": null
+    }
+   }
+  },
+  {
+   "visibility": "domain",
+   "fields": [],
+   "dataset_id": "374_le-fond-d-aide-aux-jeunes-faj",
+   "dataset_uid": "da_3kauyb",
+   "has_records": false,
+   "features": [],
+   "attachments": [
+    {
+     "id": "faj_donnees_mensuelles_departementales_2020_2021_xlsx",
+     "title": "FAJ - Données mensuelles départementales 2020-2021.xlsx",
+     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/374_le-fond-d-aide-aux-jeunes-faj/attachments/faj_donnees_mensuelles_departementales_2020_2021_xlsx"
+    },
+    {
+     "id": "faj_donnees_annuelles_departementales_2007_2022_xlsx",
+     "title": "FAJ - Données annuelles départementales 2007-2022.xlsx",
+     "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "url": "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/374_le-fond-d-aide-aux-jeunes-faj/attachments/faj_donnees_annuelles_departementales_2007_2022_xlsx"
+    }
+   ],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Le fonds d'aide aux jeunes (FAJ)",
+     "description": "<p>Données départementales sur le fonds d'aide aux jeunes.<br/></p>",
+     "theme": [
+      "Minima sociaux et Pauvreté",
+      "Enfance, jeunesse, famille",
+      "Système de protection sociale"
+     ],
+     "keyword": [
+      "aide départementale",
+      "jeunesse",
+      "fonds d'aide aux jeunes",
+      "FAJ"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "language": "fr",
+     "metadata_languages": null,
+     "timezone": null,
+     "modified": "2024-02-15T09:42:04.676000+00:00",
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": false,
+     "data_processed": null,
+     "metadata_processed": "2024-02-15T09:42:12.531000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DREES/OSOL/BCL",
+     "references": null,
+     "records_count": 0,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": "sgsocialgouv",
+     "update_frequency": null
+    },
+    "custom": {
+     "themes-niveau-2": [
+      "Minima sociaux et prestations à destination des ménages modestes",
+      "Aide et action sociales des collectivités locales",
+      "Situation des enfants, familles et jeunes adultes"
+     ],
+    

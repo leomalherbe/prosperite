@@ -41,55 +41,49 @@ variantes:
 - serie_id: educ_outc_pisa?freq=A&field=READ&sex=T&unit=PC&geo=FR
   source: Eurostat
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: estat-024950
   eligible: a_verifier
 - serie_id: educ_outc_pisa?freq=A&field=READ&sex=M&sex=F&unit=PC&geo=FR
   source: Eurostat
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: estat-024951
-  eligible: a_verifier
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_1_DEP UNIT_MEASURE=PT_ST
-  source: OCDE — How's Life? (base du bien-être)
-  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
-  ligne_id: m04-000036
   eligible: a_verifier
 - serie_id: DS_NAT_SDG?AGE=Y15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i1c&PCS=_Z&SDG=SDG4&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: melodi-005368
   eligible: a_verifier
 - serie_id: DS_NAT_SDG?AGE=Y15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i1c&PCS=_Z&SDG=SDG4&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: melodi-005369
   eligible: a_verifier
 - serie_id: DS_NAT_SDG?AGE=Y15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i1c&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: melodi-005370
   eligible: a_verifier
 - serie_id: '010594816'
   source: INSEE BDM
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: bdm-000784
   eligible: non
 - serie_id: '010594817'
   source: INSEE BDM
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: bdm-000785
   eligible: non
 - serie_id: '010594818'
   source: INSEE BDM
   nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
-    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+    total et sexe, Melodi et BDM)
   ligne_id: bdm-000786
   eligible: non
 - serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation

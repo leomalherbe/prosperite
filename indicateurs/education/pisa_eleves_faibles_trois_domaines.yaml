@@ -1,0 +1,49 @@
+id: pisa_eleves_faibles_trois_domaines
+libelle: Élèves de 15 ans faibles à la fois en lecture, en mathématiques et en sciences (PISA)
+dimension: education
+sous_theme: compétences des élèves
+famille: pisa_eleves_faibles_trois_domaines
+variante_principale: oui
+definition: Part des élèves de 15 ans dont les scores PISA sont faibles dans les trois domaines évalués (compréhension
+  de l'écrit, mathématiques, sciences), mesure de privation de l'OCDE (How's Life, 6_1_DEP ; seuil à confirmer dans
+  la documentation, a priori sous le niveau 2 dans chaque domaine).
+unite: '% des élèves de 15 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE (How's Life, d'après PISA)
+source_jeu: How's Life? (bien-être actuel, DF_HSL_CWB)
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_1_DEP UNIT_MEASURE=PT_ST
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.6_1_DEP......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2018
+derniere_annee: 2022
+nb_points_depuis_2000: 2
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000036
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Mesure de privation de l'OCDE qui cumule les difficultés dans les trois domaines PISA (incontournable,
+  compétences mesurées), deux cycles admis par D17 et D28 (2018 et 2022 ; 16,8 % en 2022).
+note_pertinence: Les élèves faibles dans les trois domaines à la fois forment le noyau dur de l'échec scolaire,
+  que les parts par domaine ne distinguent pas. La base How's Life ne la publie que depuis 2018 et l'extrait du
+  robot s'arrête au cycle 2022. Le seuil exact retenu par l'OCDE est à confirmer dans la documentation de la base.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- deux_valeurs
+- seuil_a_confirmer
+- cycle_2025_absent
+notes: 'Extrait du robot M04 (docs/sources/series/ocde__hsl_bien_etre_actuel.csv) : 2018 et 2022, 16,7966 % en 2022
+  ; mesure codée 6_1_DEP, 6_2_DEP et 6_3_DEP dans la liste de codes de l''OCDE (même libellé).'

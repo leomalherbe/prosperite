@@ -1,19 +1,22 @@
 id: revenu_relatif_seniors
-libelle: Revenu médian des 65 ans ou plus rapporté à celui des moins de 65 ans
+libelle: Écart à la parité du revenu médian des 65 ans ou plus et des moins de 65 ans
 dimension: egalites
 sous_theme: générations
 famille: revenu_relatif_seniors
 variante_principale: oui
-definition: Rapport entre le revenu disponible équivalent médian des personnes de 65 ans ou plus et celui des moins
-  de 65 ans (EU-SILC, jeu ilc_pnp2).
-unite: rapport (sans unité)
-sens: ambigu
+definition: Écart absolu à 1 du rapport entre le revenu disponible équivalent médian des personnes de 65 ans ou
+  plus et celui des moins de 65 ans (EU-SILC, jeu ilc_pnp2) ; 0 signifie l'égalité.
+unite: écart absolu à 1 (sans unité)
+sens: bas
 type: resultat
 declaratif: non
 composite: non
 source_organisme: Eurostat
 source_jeu: ilc_pnp2 (EU-SILC et PCM)
 source_serie_id: ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=T&geo=FR
+composantes:
+- ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=T&geo=FR
+formule: abs(A - 1)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=T&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_pnp2/default/table?lang=fr
@@ -27,11 +30,14 @@ ligne_id: estat-030665
 hors_longlist: non
 raccordement: non
 incontournable: non
-recommandation: ecarter
-motif_recommandation: 'Sens ambigu : le rapport passe au-dessus puis au-dessous de 1 (0,90 en 2000, 1,04 en 2015
-  et 2018, 0,97 en 2025), et un écart dans un sens ou dans l''autre n''a pas la même lecture.'
-note_pertinence: Un rapport dont la parité (1) est l'optimum ne peut pas être normalisé entre un seuil et un objectif.
-  L'écart de pauvreté entre jeunes et seniors, de signe constant, est préféré pour les générations.
+recommandation: retenir
+motif_recommandation: Écart absolu à la parité (D34) du revenu médian des 65 ans ou plus rapporté à celui des moins
+  de 65 ans, annuel de 2000 à 2025 sans 2002-2003 (24 points ; 0,10 en 2000, 0,01 en 2011, 0,03 en 2025), seule
+  mesure de l'écart de niveau de vie entre générations.
+note_pertinence: 'Le rapport des revenus médians passe de 0,90 (2000) à 1,04 (2015 et 2018) puis 0,97 (2025) : les
+  plus âgés ont rattrapé puis dépassé le reste de la population avant de repasser sous la parité. Exprimé en écart
+  absolu à 1 (D34), il mesure la distance à l''égalité quel que soit le groupe avantagé. Le revenu ne tient pas
+  compte du patrimoine (logement possédé), plus élevé chez les plus âgés.'
 variantes:
 - serie_id: ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=M&sex=F&geo=FR
   source: Eurostat
@@ -54,7 +60,13 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- sens_ambigu
+- valeur_absolue_d34
+- rupture_2004
+- rupture_2008
 - rupture_2020
 - rupture_2022
-notes: ''
+- lacune_2002_2003
+notes: 'A = rapport publié (statinfo=R_MED_I). Valeurs lues par l''audit M06 sur l''API Eurostat le 14/10/2026 :
+  0,90 (2000), 1,01 (2011), 1,04 (2015 et 2018), 0,97 (2025), aucune valeur en 2002-2003, drapeau b en 2004 et 2008
+  (et 2020, 2022) ; série depuis 1995 (long-list : 2000). Avant D34, la fiche était écartée pour sens ambigu (passage
+  par la parité).'

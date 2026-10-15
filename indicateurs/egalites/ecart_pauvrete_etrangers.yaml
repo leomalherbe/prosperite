@@ -4,8 +4,9 @@ dimension: egalites
 sous_theme: écarts selon l'origine
 famille: ecart_pauvrete_origine
 variante_principale: oui
-definition: Taux de pauvreté monétaire (seuil de 60 % du revenu médian) des personnes de 18 ans ou plus de nationalité
-  étrangère moins celui des personnes de nationalité française, en points (EU-SILC, jeu ilc_li31).
+definition: Écart, en valeur absolue et en points, entre le taux de pauvreté monétaire (seuil de 60 % du revenu
+  médian) des personnes de 18 ans ou plus de nationalité étrangère et celui des personnes de nationalité française
+  (EU-SILC, jeu ilc_li31).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -17,7 +18,7 @@ source_serie_id: ilc_li31?freq=A&citizen=FOR&citizen=NAT&age=Y_GE18&sex=T&unit=P
 composantes:
 - ilc_li31?freq=A&citizen=FOR&age=Y_GE18&sex=T&unit=PC&geo=FR
 - ilc_li31?freq=A&citizen=NAT&age=Y_GE18&sex=T&unit=PC&geo=FR
-formule: taux de pauvreté (citizen=FOR) - taux de pauvreté (citizen=NAT)
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li31?freq=A&citizen=FOR&citizen=NAT&age=Y_GE18&sex=T&unit=PC&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_li31/default/table?lang=fr
@@ -133,7 +134,11 @@ socle_v1:
 qualite:
 - ecart_construit
 - faible_precision
+- valeur_absolue_d34
+- rupture_2008
 - rupture_2020
 - rupture_2022
 - composantes_autre_longlist
-notes: ''
+notes: 'Composantes (A = étrangers, B = Français) lues sur l''API Eurostat le 14/10/2026 : 2004-2025 pour les deux
+  (aucune valeur en 2003), drapeau b en 2008, 2020 et 2022 ; recoupement (D34) : 32,8 - 11,8 = 21,0 (2004), 37,8
+  - 11,3 = 26,5 (2013), 34,0 - 12,8 = 21,2 (2025) ; signe constant.'

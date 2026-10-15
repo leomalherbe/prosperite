@@ -1,0 +1,284 @@
+"""Classeurs Excel de validation du gel 2 (charte §3.6) — export et ré-import.
+
+Export : `docs/validation/validation_<dimension>.csv` → `docs/validation/classeurs/validation_<dimension>.xlsx`
+    python scripts/classeur_validation.py exporter --dimension securite [--toutes]
+Import : relit les colonnes `decision_leo` et `commentaire_leo` saisies dans le classeur et les
+reporte dans le CSV (les autres colonnes du CSV ne sont pas touchées) :
+    python scripts/classeur_validation.py importer --dimension securite [--fichier chemin.xlsx]
+
+Principe (D20, validation par exception) : chaque ligne porte la recommandation de l'agent et la
+décision qui s'appliquera par défaut ; Léo ne remplit `decision_leo` que là où il diverge.
+Décision par défaut : recommandation `retenir` + variante principale + incontournable → `retenu_socle` ;
+`retenir` ou `retenir_variante` → `retenu` ; `ecarter` → `ecarte`.
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import sys
+from pathlib import Path
+
+from openpyxl import Workbook, load_workbook
+from openpyxl.comments import Comment
+from openpyxl.formatting.rule import FormulaRule
+from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
+from openpyxl.utils import get_column_letter
+from openpyxl.worksheet.datavalidation import DataValidation
+
+RACINE = Path(__file__).resolve().parent.parent
+DOSSIER_CSV = RACINE / "docs" / "validation"
+DOSSIER_XLSX = DOSSIER_CSV / "classeurs"
+
+DECISIONS = ["retenu", "retenu_socle", "ecarte", "a_discuter"]
+POLICE = "Arial"
+
+COLONNES = [
+    # (clé CSV, en-tête affiché, largeur)
+    ("famille", "Famille", 22),
+    ("id", "Identifiant", 28),
+    ("libelle", "Libellé", 44),
+    ("variante_principale", "Variante principale", 11),
+    ("definition_courte", "Définition courte", 60),
+    ("sens", "Sens", 8),
+    ("unite", "Unité", 18),
+    ("source", "Source", 36),
+    ("serie_id", "Série (identifiant)", 30),
+    ("periode", "Période", 22),
+    ("type", "Type", 10),
+    ("declaratif", "Déclaratif", 10),
+    ("composite", "Composite", 10),
+    ("incontournable", "Incontournable", 13),
+    ("recommandation", "Recommandation de l'agent", 16),
+    ("motif", "Motif de la recommandation", 70),
+    ("decision_par_defaut", "Décision par défaut (si vous ne remplissez rien)", 18),
+    ("decision_leo", "Votre décision (liste déroulante)", 20),
+    ("commentaire_leo", "Votre commentaire", 40),
+]
+
+
+def decision_par_defaut(ligne: dict) -> str:
+    rec = (ligne.get("recommandation") or "").strip()
+    if rec == "retenir":
+        if ligne.get("variante_principale") == "oui" and ligne.get("incontournable") == "oui":
+            return "retenu_socle"
+        return "retenu"
+    if rec == "retenir_variante":
+        return "retenu"
+    if rec == "ecarter":
+        return "ecarte"
+    return "a_discuter"
+
+
+def lire_csv(dimension: str) -> list[dict]:
+    chemin = DOSSIER_CSV / f"validation_{dimension}.csv"
+    with chemin.open(encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def trier(lignes: list[dict]) -> list[dict]:
+    # par famille, variante principale d'abord, puis identifiant
+    return sorted(lignes, key=lambda l: (l.get("famille", ""), 0 if l.get("variante_principale") == "oui" else 1, l.get("id", "")))
+
+
+def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
+    lignes = trier(lire_csv(dimension))
+    DOSSIER_XLSX.mkdir(parents=True, exist_ok=True)
+    sortie = DOSSIER_XLSX / f"validation_{dimension}.xlsx"
+
+    wb = Workbook()
+    # --- Feuille 1 : mode d'emploi -------------------------------------------------
+    me = wb.active
+    me.title = "Mode d'emploi"
+    titre = libelle_dimension or dimension
+    texte = [
+        (f"Gel 2 — validation des indicateurs de la dimension « {titre} »", True),
+        ("", False),
+        ("Comment remplir ce classeur (validation par exception, charte §3.6, décision D20)", True),
+        ("1. Ouvrez l'onglet « Validation ». Chaque ligne est un indicateur candidat (une fiche YAML dans le dépôt), regroupé par famille ; la variante principale de chaque famille est en tête.", False),
+        ("2. Les colonnes grises sont informatives. La colonne « Recommandation de l'agent » et son motif résument l'analyse ; la colonne « Décision par défaut » indique ce qui s'appliquera si vous ne remplissez rien.", False),
+        ("3. Ne remplissez la colonne jaune « Votre décision » que là où vous divergez ou hésitez. Valeurs possibles (liste déroulante) :", False),
+        ("     retenu = disponible dans l'outil, non coché par défaut ;", False),
+        ("     retenu_socle = disponible ET coché par défaut dans la configuration de référence ;", False),
+        ("     ecarte = non retenu (indiquez pourquoi dans le commentaire) ;", False),
+        ("     a_discuter = vous voulez en parler avant de trancher (la session mère vous posera la question).", False),
+        ("4. Le commentaire est libre ; il est lu et conservé dans la fiche.", False),
+        ("5. Enregistrez le fichier au même endroit, sous le même nom : la session mère le relit automatiquement.", False),
+        ("", False),
+        ("Rappels", True),
+        ("— Une famille regroupe des variantes d'un même concept (autre seuil, autre source, ventilation) : en général une seule variante est cochée par défaut.", False),
+        ("— « Incontournable » = présent dans au moins trois cadres de référence (Doughnut, Stiglitz-Sen-Fitoussi, OCDE, Eurostat, INSEE).", False),
+        ("— « Déclaratif » = donnée d'enquête d'opinion ou de ressenti ; « Composite » = indice agrégé d'un producteur tiers (V-Dem, CPI…).", False),
+        ("— Sens « ambigu » : l'agent n'a pas pu établir si plus haut est mieux ; ces lignes sont écartées par défaut.", False),
+        ("— Les bornes (seuil minimal, objectif) ne sont pas traitées ici : elles viendront après le gel 2 (socle v1).", False),
+        ("", False),
+        ("Exemple de ligne remplie : décision « ecarte », commentaire « doublon de la série INSEE équivalente ; garder la variante INSEE ».", False),
+    ]
+    for i, (t, gras) in enumerate(texte, 1):
+        c = me.cell(row=i, column=1, value=t)
+        c.font = Font(name=POLICE, bold=gras, size=12 if i == 1 else 10)
+        c.alignment = Alignment(wrap_text=True, vertical="top")
+    me.column_dimensions["A"].width = 140
+
+    # --- Feuille 2 : validation ----------------------------------------------------
+    ws = wb.create_sheet("Validation")
+    entete_fill = PatternFill("solid", fgColor="1F3864")
+    info_fill = PatternFill("solid", fgColor="F2F2F2")
+    saisie_fill = PatternFill("solid", fgColor="FFF2CC")
+    bord = Border(bottom=Side(style="thin", color="BFBFBF"))
+    for j, (_, en_tete, largeur) in enumerate(COLONNES, 1):
+        c = ws.cell(row=1, column=j, value=en_tete)
+        c.font = Font(name=POLICE, bold=True, color="FFFFFF")
+        c.fill = entete_fill
+        c.alignment = Alignment(wrap_text=True, vertical="center")
+        ws.column_dimensions[get_column_letter(j)].width = largeur
+    ws.row_dimensions[1].height = 42
+
+    col = {cle: j for j, (cle, _, _) in enumerate(COLONNES, 1)}
+    for i, l in enumerate(lignes, 2):
+        l = dict(l)
+        l["decision_par_defaut"] = decision_par_defaut(l)
+        for cle, j in col.items():
+            c = ws.cell(row=i, column=j, value=l.get(cle, "") or "")
+            c.font = Font(name=POLICE, size=10)
+            c.alignment = Alignment(wrap_text=True, vertical="top")
+            c.border = bord
+            c.fill = saisie_fill if cle in ("decision_leo", "commentaire_leo") else info_fill
+        ws.row_dimensions[i].height = 60
+        # ligne de variante principale : identifiant en gras
+        if l.get("variante_principale") == "oui":
+            ws.cell(row=i, column=col["id"]).font = Font(name=POLICE, size=10, bold=True)
+
+    n = len(lignes) + 1
+    dv = DataValidation(type="list", formula1='"' + ",".join(DECISIONS) + '"', allow_blank=True, showErrorMessage=True,
+                        errorTitle="Valeur non admise", error="Choisissez une valeur dans la liste : " + ", ".join(DECISIONS))
+    ws.add_data_validation(dv)
+    dv.add(f"{get_column_letter(col['decision_leo'])}2:{get_column_letter(col['decision_leo'])}{max(n, 2)}")
+    ws.freeze_panes = ws.cell(row=2, column=col["libelle"] + 1)
+    ws.auto_filter.ref = f"A1:{get_column_letter(len(COLONNES))}{max(n, 2)}"
+    # mise en évidence des lignes où une décision a été saisie
+    lettre_dec = get_column_letter(col["decision_leo"])
+    ws.conditional_formatting.add(
+        f"A2:{get_column_letter(len(COLONNES))}{max(n, 2)}",
+        FormulaRule(formula=[f"${lettre_dec}2<>\"\""], fill=PatternFill("solid", fgColor="E2EFDA")),
+    )
+    ws.cell(row=1, column=col["decision_leo"]).comment = Comment("À remplir seulement si vous divergez de la décision par défaut. Liste : retenu, retenu_socle, ecarte, a_discuter.", "session mère")
+
+    # --- Feuille 3 : synthèse (formules) -------------------------------------------
+    sy = wb.create_sheet("Synthèse")
+    plage_rec = f"Validation!${get_column_letter(col['recommandation'])}$2:${get_column_letter(col['recommandation'])}${n}"
+    plage_def = f"Validation!${get_column_letter(col['decision_par_defaut'])}$2:${get_column_letter(col['decision_par_defaut'])}${n}"
+    plage_dec = f"Validation!${lettre_dec}$2:${lettre_dec}${n}"
+    plage_fam = f"Validation!${get_column_letter(col['famille'])}$2:${get_column_letter(col['famille'])}${n}"
+    lignes_syn = [
+        ("Dimension", titre),
+        ("Indicateurs candidats (fiches)", f"=COUNTA(Validation!$B$2:$B${n})"),
+        ("Familles distinctes", f"=SUMPRODUCT(({plage_fam}<>\"\")/COUNTIF({plage_fam},{plage_fam}&\"\"))"),
+        ("", ""),
+        ("Recommandations de l'agent", ""),
+        ("  retenir", f"=COUNTIF({plage_rec},\"retenir\")"),
+        ("  retenir_variante", f"=COUNTIF({plage_rec},\"retenir_variante\")"),
+        ("  ecarter", f"=COUNTIF({plage_rec},\"ecarter\")"),
+        ("", ""),
+        ("Décisions par défaut", ""),
+        ("  retenu_socle", f"=COUNTIF({plage_def},\"retenu_socle\")"),
+        ("  retenu", f"=COUNTIF({plage_def},\"retenu\")"),
+        ("  ecarte", f"=COUNTIF({plage_def},\"ecarte\")"),
+        ("  a_discuter", f"=COUNTIF({plage_def},\"a_discuter\")"),
+        ("", ""),
+        ("Vos décisions saisies (exceptions)", f"=COUNTA({plage_dec})"),
+        ("  dont retenu_socle", f"=COUNTIF({plage_dec},\"retenu_socle\")"),
+        ("  dont retenu", f"=COUNTIF({plage_dec},\"retenu\")"),
+        ("  dont ecarte", f"=COUNTIF({plage_dec},\"ecarte\")"),
+        ("  dont a_discuter", f"=COUNTIF({plage_dec},\"a_discuter\")"),
+    ]
+    for i, (a, b) in enumerate(lignes_syn, 1):
+        ca = sy.cell(row=i, column=1, value=a)
+        cb = sy.cell(row=i, column=2, value=b)
+        ca.font = Font(name=POLICE, bold=not a.startswith("  ") and a != "", size=10)
+        cb.font = Font(name=POLICE, size=10)
+    sy.column_dimensions["A"].width = 40
+    sy.column_dimensions["B"].width = 18
+    sy.cell(row=len(lignes_syn) + 2, column=1, value="Les comptes se recalculent à l'ouverture dans Excel.").font = Font(name=POLICE, italic=True, size=9)
+
+    wb.save(sortie)
+    return sortie
+
+
+def importer(dimension: str, fichier: Path | None = None) -> int:
+    chemin_csv = DOSSIER_CSV / f"validation_{dimension}.csv"
+    fichier = fichier or (DOSSIER_XLSX / f"validation_{dimension}.xlsx")
+    wb = load_workbook(fichier, data_only=True)
+    ws = wb["Validation"]
+    entetes = {str(ws.cell(row=1, column=j).value): j for j in range(1, ws.max_column + 1)}
+    j_id = entetes["Identifiant"]
+    j_dec = entetes["Votre décision (liste déroulante)"]
+    j_com = entetes["Votre commentaire"]
+    decisions = {}
+    for i in range(2, ws.max_row + 1):
+        ident = ws.cell(row=i, column=j_id).value
+        if not ident:
+            continue
+        dec = (ws.cell(row=i, column=j_dec).value or "")
+        com = (ws.cell(row=i, column=j_com).value or "")
+        dec = str(dec).strip()
+        if dec and dec not in DECISIONS:
+            print(f"avertissement — {ident} : décision « {dec} » non admise, ignorée", file=sys.stderr)
+            dec = ""
+        decisions[str(ident).strip()] = (dec, str(com).strip())
+    with chemin_csv.open(encoding="utf-8", newline="") as f:
+        lecteur = csv.DictReader(f)
+        champs = lecteur.fieldnames or []
+        lignes = list(lecteur)
+    n = 0
+    for l in lignes:
+        if l["id"] in decisions:
+            dec, com = decisions[l["id"]]
+            if dec or com:
+                l["decision_leo"], l["commentaire_leo"] = dec, com
+                n += 1
+    with chemin_csv.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=champs)
+        w.writeheader()
+        w.writerows(lignes)
+    print(f"{dimension} : {n} décision(s) ou commentaire(s) reportés dans {chemin_csv.name}")
+    return n
+
+
+def libelles_dimensions() -> dict[str, str]:
+    try:
+        import yaml  # noqa: WPS433
+
+        d = yaml.safe_load((RACINE / "indicateurs" / "dimensions.yaml").read_text(encoding="utf-8"))
+        return {x["id"]: x["libelle"] for x in d["dimensions"]}
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def main() -> int:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sp = p.add_subparsers(dest="commande", required=True)
+    e = sp.add_parser("exporter")
+    e.add_argument("--dimension")
+    e.add_argument("--toutes", action="store_true", help="toutes les dimensions ayant un CSV de validation")
+    i = sp.add_parser("importer")
+    i.add_argument("--dimension", required=True)
+    i.add_argument("--fichier")
+    args = p.parse_args()
+    lib = libelles_dimensions()
+    if args.commande == "exporter":
+        if args.toutes:
+            dims = sorted(c.stem.replace("validation_", "") for c in DOSSIER_CSV.glob("validation_*.csv"))
+        elif args.dimension:
+            dims = [args.dimension]
+        else:
+            p.error("--dimension ou --toutes")
+        for d in dims:
+            print("écrit", exporter(d, lib.get(d)))
+    else:
+        importer(args.dimension, Path(args.fichier) if args.fichier else None)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

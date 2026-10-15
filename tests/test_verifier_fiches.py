@@ -183,6 +183,29 @@ def test_hors_longlist_avec_preuve(depot: Path):
     assert any("absente des catalogues" in e for e in ver.verifier_dimension(depot, "dimtest").erreurs)
 
 
+def test_composantes_modalites_d_un_paquet(depot: Path):
+    """Écart construit (D34) : chaque composante peut être une modalité d'un paquet catalogué."""
+    _csv(depot / "catalogues" / "longlist_paquets.csv", COLONNES_LONGLIST, [
+        ["p1", "Eurostat", "jeu_p?age=Y15-74&sex=M&sex=F&geo=FR", "Paquet par sexe", "eurostat_series", "oui", ""],
+    ])
+    paquets = ver.index_paquets({"jeu_p?age=Y15-74&sex=M&sex=F&geo=FR", "jeu_a?geo=FR"})
+    assert ver.selection_de_paquet("jeu_p?age=Y15-74&sex=F&geo=FR", paquets)
+    assert not ver.selection_de_paquet("jeu_p?age=Y15-74&sex=T&geo=FR", paquets)     # modalité absente
+    assert not ver.selection_de_paquet("jeu_p?age=Y15-74&sex=F", paquets)            # clé manquante
+    assert not ver.selection_de_paquet("jeu_p?age=Y15-74&sex=F&sex=M&geo=FR", paquets)
+    _fiches_valides(depot)
+    pre.main(["--dimension", "dimtest", "--racine", str(depot), "--maj-fiches"])
+    fiche_a = yaml.safe_load((depot / "indicateurs/dimtest/indic_a.yaml").read_text(encoding="utf-8"))
+    fiche_a.update({"composantes": ["jeu_p?age=Y15-74&sex=F&geo=FR", "jeu_p?age=Y15-74&sex=M&geo=FR"],
+                    "formule": "abs(A - B)", "annee_reference": "observation"})
+    _ecrire_fiche(depot, fiche_a)
+    rapport = ver.verifier_dimension(depot, "dimtest")
+    assert rapport.erreurs == [] and not any("hors schéma" in a for a in rapport.avertissements)
+    fiche_a["composantes"] = ["jeu_p?age=Y15-74&sex=T&geo=FR"]
+    _ecrire_fiche(depot, fiche_a)
+    assert any("absente des catalogues" in e for e in ver.verifier_dimension(depot, "dimtest").erreurs)
+
+
 def test_ligne_deja_prise_par_une_autre_dimension(depot: Path):
     _fiches_valides(depot)
     pre.main(["--dimension", "dimtest", "--racine", str(depot), "--maj-fiches"])

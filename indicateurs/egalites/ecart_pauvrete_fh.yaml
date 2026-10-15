@@ -4,8 +4,8 @@ dimension: egalites
 sous_theme: écarts femmes-hommes
 famille: ecart_pauvrete_fh
 variante_principale: oui
-definition: Taux de pauvreté monétaire (seuil de 60 % du revenu équivalent médian) des femmes moins celui des hommes,
-  en points (EU-SILC, jeu ilc_li02, tous âges).
+definition: Écart, en valeur absolue et en points, entre le taux de pauvreté monétaire (seuil de 60 % du revenu
+  équivalent médian) des femmes et celui des hommes (EU-SILC, jeu ilc_li02, tous âges).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -14,7 +14,10 @@ composite: non
 source_organisme: Eurostat
 source_jeu: ilc_li02 (EU-SILC, taux de risque de pauvreté)
 source_serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&sex=F&age=TOTAL&geo=FR
-formule: taux de pauvreté des femmes (sex=F) - taux de pauvreté des hommes (sex=M)
+composantes:
+- ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=F&age=TOTAL&geo=FR
+- ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&age=TOTAL&geo=FR
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&sex=F&age=TOTAL&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table?lang=fr
@@ -31,12 +34,13 @@ rattachement_propose: ligne de la long-list niveau_de_vie (ventilation par sexe 
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Écart de signe presque constant de 2004 à 2025 (1,5 point en 2004, -0,2 en 2018, 2,0 en 2025),
-  calculé sur une série annuelle d'Eurostat et seule mesure de l'écart de pauvreté selon le sexe pour toute la population.
+motif_recommandation: Écart absolu (D34) des taux de pauvreté des femmes et des hommes, annuel de 2000 à 2025 sauf
+  2003 (25 points), entre 0,2 et 2,0 points (2,0 en 2025), seule mesure de l'écart de pauvreté selon le sexe pour
+  toute la population.
 note_pertinence: 'La pauvreté est mesurée au niveau du ménage : l''écart entre femmes et hommes vient surtout des
   familles monoparentales et des femmes âgées seules, et il sous-estime les inégalités au sein des couples. Chez
-  les 65 ans ou plus, l''écart est plus net (13,1 % contre 9,8 % en 2025). L''unique valeur négative (2018) est
-  faible : le sens « bas » reste lisible.'
+  les 65 ans ou plus, l''écart est plus net (13,1 % contre 9,8 % en 2025). L''écart ne s''est inversé qu''une fois
+  (-0,2 point en 2018) ; la valeur absolue (D34) le compte comme une distance à la parité.'
 variantes:
 - serie_id: ilc_pnp12?freq=A&age=Y_GE65&unit=NR&geo=FR
   source: Eurostat
@@ -57,9 +61,17 @@ socle_v1:
   justification: ''
 qualite:
 - ecart_construit
+- valeur_absolue_d34
+- rupture_2001
+- rupture_2004
 - rupture_2020
 - rupture_2022
+- valeurs_entieres_2000_2002
+- lacune_2003
 - composantes_autre_longlist
-notes: 'Variante ilc_pnp12 (« différences de sexe dans le taux de risque de pauvreté », unité « nombre ») : valeurs
+notes: 'Composantes (A = femmes, B = hommes) lues sur l''API Eurostat le 14/10/2026 : valeurs depuis 1995 pour les
+  deux, entières jusqu''en 2002 (avant EU-SILC), aucune valeur en 2003, drapeau b en 2001, 2004, 2020 et 2022 ;
+  recoupement (D34) : 16 - 15 = 1 (2000), 14,2 - 12,7 = 1,5 (2004), 13,3 - 13,5 → 0,2 (2018), 17,3 - 15,3 = 2,0
+  (2025). Variante ilc_pnp12 (« différences de sexe dans le taux de risque de pauvreté », unité « nombre ») : valeurs
   de -7,40 à -0,20 pour les 65 ans ou plus, qui ne correspondent pas à la différence des taux par sexe ; définition
-  à vérifier dans les métadonnées Eurostat.'
+  à vérifier (maintenance n° 18).'

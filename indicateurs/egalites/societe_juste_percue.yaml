@@ -33,7 +33,8 @@ motif_recommandation: Seule mesure déclarative annuelle du jugement porté sur 
   la seule année 2003 (26,5 % en 2000, 18,7 % en 2025).
 note_pertinence: 'L''indicateur apporte la dimension subjective des inégalités, que les mesures statistiques ne
   disent pas : les inégalités de revenu ont peu bougé alors que le sentiment d''injustice a progressé. Il dépend
-  aussi du climat politique.'
+  aussi du climat politique. Les « ne sait pas », comptés au dénominateur, passent de 1,26 % (2017) à 2,91 % (2018)
+  puis restent entre 2,46 et 3,26 % : rupture possible de protocole en 2018, comme pour liens_bien_etre/cohesion_sociale_percue.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -43,5 +44,11 @@ socle_v1:
 qualite:
 - perception
 - lacune_2003
-- champ_geo_a_corriger
-notes: 'Catalogue M04 : geo FR à corriger en FM (maintenance n° 4).'
+- enquete_metropole
+- rupture_possible_2018
+notes: Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+  incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
+  vérifier) ; pièce jointe unique barometre2000_2025_diff_csv (vérifiée par le robot le 13/10/2026 ; l'identifiant
+  change à chaque édition), alors que l'identifiant de catalogue cite encore les deux pièces jointes antérieures
+  ; échantillon représentatif de la population vivant en France métropolitaine (page du jeu, variable SDREG) ; licence
+  non indiquée sur la page du jeu (Licence Ouverte à confirmer).

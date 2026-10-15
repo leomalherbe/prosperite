@@ -7,7 +7,7 @@ variante_principale: oui
 definition: 'Nombre de vols sans violence (catégorie ICCS 0502 : vols de biens, y compris de véhicules) enregistrés
   par la police et la gendarmerie dans l''année, pour 100 000 habitants.'
 unite: infractions pour 100 000 habitants
-sens: bas
+sens: ambigu
 type: resultat
 declaratif: non
 composite: non
@@ -28,13 +28,14 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: ecarter
-motif_recommandation: 'Série irrégulière sans drapeau de rupture : +43 % en 2009 (1 504 à 2 150 pour 100 000), -16
-  % en 2010, +18 % en 2013, sauts qui traduisent des changements d''enregistrement plus qu''une évolution des vols
-  ; pas de série d''enquête au catalogue pour la contrôler.'
-note_pertinence: Les vols sans violence sont la délinquance la plus fréquente, mais une part importante n'est pas
-  déclarée et la série Eurostat présente des sauts inexpliqués. Une fois que la série SSMSI (victimes de vols sans
-  violence, 2016-2025) aura assez de recul, ou si les séries VRS sont cataloguées, le concept pourra revenir. Les
-  vols de véhicules, mieux déclarés, ont leur propre fiche.
+motif_recommandation: 'La série enregistrée présente des sauts sans drapeau ni explication publiée (+42,9 % en 2009,
+  -15,6 % en 2010, +17,8 % en 2013) et à peine plus d''une victime de vol sans violence sur quatre porte plainte
+  (26,9 % en 2020, enquête CVS, SSMSI) : elle ne mesure pas l''évolution des vols (sens ambigu).'
+note_pertinence: 'Les vols sans violence sont la délinquance la plus fréquente, mais la plupart ne sont pas déclarés
+  et la série Eurostat présente des sauts dont la cause n''est pas documentée (la réponse de l''API ne porte ni
+  drapeau ni note). La série SSMSI des victimes de vols sans violence (2016-2025, 10 points, éligible) n''a pas
+  ces sauts, mais elle dépend du même faible taux de plainte : elle reste une variante. Les vols de véhicules, déclarés
+  par environ une victime sur deux, ont leur propre fiche.'
 variantes:
 - serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols sans violence
     enregistrés par les services de sécurité (Données annuelles) » ; Indicateur=Vols et tentatives de vols sans
@@ -55,5 +56,9 @@ socle_v1:
   justification: ''
 qualite:
 - delinquance_enregistree
-- ruptures_non_signalees
-notes: ''
+- sens_ambigu
+- sauts_cause_non_documentee
+notes: 'Valeurs relues sur l''API Eurostat le 14/10/2026 : 1 503,87 (2008), 2 149,68 (2009), 1 813,45 (2010), 2
+  118,89 (2013), 1 911,46 (2024), sans drapeau. Taux de plainte : série SSMSI « Vols et tentatives de vols sans
+  violences ni menaces » (enquête CVS, 2006-2020, dernière valeur 26,9 % en 2020 ; docs/sources/series/ssmsi__series_chronologiques.csv,
+  non cataloguée, SEC-3).'

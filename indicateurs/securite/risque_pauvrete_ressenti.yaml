@@ -4,9 +4,10 @@ dimension: securite
 sous_theme: sécurité économique
 famille: insecurite_economique_ressentie
 variante_principale: oui
-definition: 'Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui répondent « oui, plutôt
-  » à la question : « pensez-vous qu''il y a un risque que vous deveniez pauvre dans les cinq prochaines années
-  ? » (question PE03 du baromètre d''opinion de la DREES ; part pondérée).'
+definition: Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui répondent « oui, plutôt
+  » à la question PE03 du baromètre d'opinion de la DREES (« pensez-vous qu'il y a un risque que vous deveniez pauvre
+  dans les cinq prochaines années ? ») ; part pondérée, les réponses « je me considère déjà comme pauvre » et les
+  non-réponses étant comptées au dénominateur. La réponse « déjà pauvre » (modalité 3) est la fiche niveau_de_vie/pauvrete_ressentie.
 unite: '% des répondants'
 sens: bas
 type: resultat
@@ -16,6 +17,11 @@ source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable PE03, modalités 1
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable PE03, modalités 1
+formule: part pondérée des réponses PE03 = 1 (« oui, plutôt ») parmi l'ensemble des répondants (modalités 1, 2,
+  3 et non-réponses au dénominateur), poids de redressement du baromètre
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -30,13 +36,15 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule série annuelle de l'insécurité économique ressentie (2014-2025), à condition de compter
-  aussi la réponse « je me considère déjà comme pauvre » (7,9 % en 2014, 17,4 % en 2025), sans quoi la baisse de
-  la série du catalogue (32,1 % à 16,1 %) est trompeuse.
-note_pertinence: 'La crainte de devenir pauvre exprime directement l''insécurité économique vécue. Mais la série
-  du catalogue (modalité 1 seule) exclut ceux qui se disent déjà pauvres, dont la part a doublé : la somme des deux
-  réponses (« risque » ou « déjà pauvre ») passe de 40,0 % en 2014 à 33,5 % en 2025. Les non-réponses sautent de
-  1,4 % à 6,1 % en 2018 (changement de protocole possible, à vérifier) et l''année 2024 manque.'
+motif_recommandation: Seule série annuelle de la crainte de devenir pauvre (DREES, 11 vagues de 2014 à 2025), la
+  réponse « déjà pauvre » relevant de niveau_de_vie (NDV-4) ; sa baisse (32,1 % en 2014, 16,1 % en 2025) se retrouve
+  parmi les répondants qui ne se disent pas déjà pauvres (34,9 % puis 19,5 %), si bien qu'elle ne tient pas seulement
+  au passage vers la pauvreté ressentie.
+note_pertinence: 'La crainte de devenir pauvre exprime directement l''insécurité économique vécue. La série compte
+  la seule réponse « oui, plutôt » : ceux qui se disent déjà pauvres (7,9 % en 2014, 17,4 % en 2025) sont comptés
+  dans la fiche niveau_de_vie/pauvrete_ressentie, et les deux fiches sont à lire ensemble, une partie de la baisse
+  pouvant venir du passage d''une réponse à l''autre. Les non-réponses sautent de 1,4 % à 6,1 % en 2018 (changement
+  de protocole possible, à vérifier) et l''année 2024 manque.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -45,9 +53,16 @@ socle_v1:
   justification: ''
 qualite:
 - enquete_metropole
-- definition_a_corriger
+- calcul_sur_microdonnees
 - rupture_possible_2018
 - lacune_2024
 - licence_a_confirmer
-notes: 'Correction proposée à M04 : définir l''indicateur comme la somme des modalités 1 et 3 de pe03. Parts recalculées
-  par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv.'
+- non_recoupe_2014_2023
+notes: 'Modalité 1 seule (consigne de la session mère, coordination NDV-4 avec niveau_de_vie/pauvrete_ressentie,
+  qui porte la modalité 3) : la correction n° 3 de la maintenance (somme des modalités 1 et 3) est à abandonner
+  (SEC-2). Parts lues dans docs/sources/series/drees__barometre_2000_2025_distributions.csv ; parmi les répondants
+  qui ne se disent pas déjà pauvres (modalité 1 / (100 − modalité 3)) : 34,9 % en 2014, 26,7 % en 2018, 17,0 % en
+  2021, 19,5 % en 2025 (calcul de l''agent correcteur, lecture d''appoint, pas une variante). Recoupement (D34)
+  : tableaux croisés simplifiés publiés par la DREES pour 2025 (docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
+  : 16,12 % « oui, plutôt », 59,80 % « non, plutôt pas », 17,41 % « déjà pauvre », 6,67 % sans réponse, identiques
+  au calcul du robot ; vagues 2014-2023 non recoupées.'

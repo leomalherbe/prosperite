@@ -34,13 +34,13 @@ Vérifications à la source (WebFetch, 14/10/2026) : `demo_mlexpec` (b 2012 et 2
 
 41 fiches (36 séries de la long-list, 5 hors long-list), 32 familles, variantes injectées par `preselection.py --maj-fiches`, tableau de validation écrit ; vérificateur : 0 erreur, 7 avertissements (fiches hors catalogue avec preuve). La session s'est interrompue ensuite : ni compte rendu, ni lignes de maintenance (les fiches citaient déjà SAN-1, SAN-2, SAN-3 et SAN-6), ni pull request.
 
-## 3. Reprise (15/10, 13:05)
+## 3. Reprise (15/10, vers 12:45)
 
 Agent de reprise, même branche. `git checkout -B m05-sante origin/m05-sante` puis `git merge origin/main` (`792f1a5` : corrections securite et egalites après audit, classeurs de validation du gel 2) : fusion sans conflit. Tests : 398 réussis. Vérificateur à la reprise : 41 fiches, 32 familles, 31 `retenir`, 9 `retenir_variante`, 1 `ecarter`, 0 erreur, 7 avertissements.
 
 Relus : `CLAUDE.md`, charte (§3.4, §3.6, §4, §5.1), journal des décisions D13-D36, méthode 33 v1.2, fiche de mission M05, `dimensions.yaml`, ce journal, les règles, la présélection et les 41 fiches ; `audit_securite.md` (erreurs typiques : champ mixte, séries arrêtées, sens ambigu, raccordements), comptes rendus M05 `securite` et `travail`, liste de maintenance (y compris SEC-1 du fichier `maintenance_catalogues_securite.md`). Dossier de travail : `tmp/m05-sante/` (scripts de contrôle et de mise à jour, non commités).
 
-## 4. Contrôle des 41 fiches et corrections (15/10, 13:40)
+## 4. Contrôle des 41 fiches et corrections (15/10, 13:15)
 
 1. **Rattachements croisés (R1)**, recontrôlés sur `main` à jour : `egalites` utilise 10 lignes de la long-list `sante` (toutes en `autre_dimension:egalites` ici) ; `securite` en importe 54 (`sdg_16_10` ×2 et 52 lignes `hlth_cd_*` d'homicides et d'accidents de transport) ; aucune ligne `autre_dimension:sante` dans les sept présélections existantes. Écart trouvé : la règle 30 envoyait 78 lignes à `securite`, dont 26 de **mortalité infantile par accident de transport** (`hlth_cd_ainfo`, `ainfr`, `info`, `yinfo`, `yinfr`) que `securite` n'importe pas et que SEC-1 laisse en `sante`. Règle corrigée (exclusion de ces jeux) : ces lignes tombent dans `mortalite_infantile_causes` (écart en bloc) ; `causes_deces_securite` compte désormais 52 lignes, exactement celles que `securite` importe.
 2. **Valeurs non lues** (5 fiches marquées `valeurs_non_lues`), lues sur l'API Eurostat le 15/10 : `hlth_ps_immu` (2000-2025, `b` en 2005, valeurs entières de 2000 à 2004, saut de 53 % à 65 % entre 2000 et 2001), `sdg_03_70` (2013-2024, sans drapeau), `sdg_03_41` (2001-2023, une décimale jusqu'en 2010 et deux ensuite), `hlth_sha11_hf` HF3 (2006-2025, `b` en 2010, `p` en 2025). `sdg_11_52` a de nouveau été refusé (HTTP 429, consigne de ne pas réessayer) : `deces_pollution_air` garde `valeurs_non_lues`.
@@ -50,7 +50,7 @@ Relus : `CLAUDE.md`, charte (§3.4, §3.6, §4, §5.1), journal des décisions D
 6. `sdg_03_41` : précision différente avant et après 2011 (raccordement `a_etudier`) ; `reste_a_charge_menages` : rupture de 2010 (`a_etudier`) ; `vaccination_grippe_seniors` : rupture de 2005 (`a_etudier`) ; `decouvertes_vih` : sous-thème « maladies infectieuses ».
 7. Autres fiches relues sans correction : familles, variantes principales, sens, `declaratif` (`oui` pour la santé perçue, les limitations GALI « perçues », les espérances de vie sans incapacité qui en dépendent, la douleur ressentie et les opinions DREES ; `non` pour la maladie chronique, les besoins non satisfaits, les épisodes dépressifs mesurés par questionnaire standardisé et les pensées suicidaires) et incontournables (espérance de vie ; santé perçue, morbidité, limitations).
 
-## 5. Compléments de la présélection (15/10, 14:20)
+## 5. Compléments de la présélection (15/10, 13:25)
 
 Recherche des concepts du contenu de la dimension dans toutes les long-lists, les `*_non`, le catalogue des jeux Eurostat et les sorties du robot M04 (`ocde__odd_3.csv`, `spf_odisse__*`, `drees__barometre_*`). Fiches ajoutées (8) :
 
@@ -71,7 +71,7 @@ Examinés et non retenus : DREES SA06_1 et SA06_3 (« tout le monde peut être s
 
 `python scripts/preselection.py --dimension sante --maj-fiches` → **14 188 lignes affectées** (14 168 + 20 importées de `logement_cadre_vie`), 0 sans règle, **117 groupes** : 49 `fiche` (dont 8 hors long-list), 41 `variante_de`, 21 `ecarte_en_bloc`, 6 `autre_dimension`. Répartition des 14 168 lignes : 41 `fiche`, 873 `variante_de`, 13 073 `ecarte_en_bloc` (11 741 éligibles, 374 à vérifier, 958 non éligibles), 181 `autre_dimension` (`travail` 104, `securite` 54, `niveau_de_vie` 12, `egalites` 10, `logement_cadre_vie` 1).
 
-## 6. Contrôles finaux (15/10, 15:00)
+## 6. Contrôles finaux (15/10, 13:30)
 
 `python scripts/verifier_fiches.py --dimension sante --tableau` → **0 erreur**, 11 avertissements, tous du même type : série principale hors catalogue avec preuve (`couverture_sanitaire_universelle`, `mortalite_prematuree_mnt`, `vaccination_hpv` : sortie OCDE du robot, SAN-1 ; `mortalite_traitable` : jeu `sdg_03_42` au catalogue des jeux, SAN-2 ; `sante_francais_percue_degradee`, `satisfaction_soins_hopital`, `satisfaction_urgences` : distributions DREES, une alerte par composante, SAN-3 ; `mortinatalite` : sortie SPF, SAN-5). Compteurs : 49 fiches, 38 familles, **37 `retenir`**, 11 `retenir_variante`, 1 `ecarter` ; 11 déclaratives ; 1 composite ; 4 à vérifier (D17 : douleur physique, épisodes dépressifs, pensées suicidaires, obésité) ; 8 hors long-list ; 9 fiches incontournables ; 908 variantes ; 0 ligne déjà prise ailleurs. Types : 40 résultats, 6 moyens (D19), 3 pressions. Tests : 398 réussis.
 

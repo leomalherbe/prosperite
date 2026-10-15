@@ -1,0 +1,114 @@
+id: mortalite_cancer
+libelle: Mortalité par cancer
+dimension: sante
+sous_theme: causes de décès
+famille: mortalite_cancer
+variante_principale: oui
+definition: Taux standardisé de mortalité par tumeurs malignes (CIM-10 C00-C97), tous âges, France (population standard
+  européenne 2013).
+unite: décès pour 100 000 habitants (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE-CépiDc)
+source_jeu: hlth_cd_asdr2 (causes de décès, taux standardisés)
+source_serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=C&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=C&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_cd_asdr2/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000147
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Première cause de décès en taux standardisé sur toute la période 2011-2023 (253,11 pour 100
+  000 en 2011, 218,58 en 2023), série annuelle sans drapeau.
+note_pertinence: La mortalité par cancer dépend de la prévention (tabac, alcool), du dépistage et des traitements.
+  Son taux standardisé baisse régulièrement (−14 % entre 2011 et 2023). Les cancers du poumon, colorectal et du
+  sein sont en variantes.
+variantes:
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=C&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000148
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=C&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000149
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=C00-D48&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000153
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=C00-D48&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000154
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=C00-D48&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000155
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=C18-C21&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000162
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=C18-C21&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000163
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=C18-C21&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000164
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=C33_C34&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000174
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=C33_C34&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000175
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=C33_C34&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000176
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=C50&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000180
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=C50&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000181
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=C50&geo=FR
+  source: Eurostat
+  nature: sexe, âge, tumeurs, principales localisations
+  ligne_id: estat-000182
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2011
+notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (icd10=C).

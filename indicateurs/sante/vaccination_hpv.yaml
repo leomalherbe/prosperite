@@ -1,0 +1,55 @@
+id: vaccination_hpv
+libelle: Couverture vaccinale contre les papillomavirus humains (HPV)
+dimension: sante
+sous_theme: comportements et prévention
+famille: vaccination_hpv
+variante_principale: oui
+definition: Part de la population cible ayant reçu la dernière dose du vaccin contre les papillomavirus humains,
+  responsables des cancers du col de l'utérus (indicateur ODD 3.b.1, estimations de l'OMS reprises par l'OCDE ;
+  population cible à confirmer dans les métadonnées).
+unite: '% de la population cible'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: OCDE (d'après l'OMS)
+source_jeu: Base ODD de l'OCDE, objectif 3 (indicateur 3.b.1)
+source_serie_id: 'odd_3 : 3_B_1_SH_ACS_HPV._T._T._T._T._T.PT_POP_SUB'
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_3,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/ocde__odd_3.csv
+statut_serie: disponible
+rattachement_propose: 'hors long-list : série extraite par le robot M04 (docs/sources/series/ocde__odd_3.csv) mais
+  absente du catalogue des candidats M04 ; à cataloguer (maintenance SAN-1)'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de la vaccination contre les cancers liés aux papillomavirus, 13 années
+  de 2011 à 2023 (45 % en 2023), admise comme moyen (D19).
+note_pertinence: 'La vaccination contre les papillomavirus prévient les cancers du col de l''utérus et d''autres
+  cancers ; sa couverture reste en France très inférieure à celle des vaccins du nourrisson (45 % en 2023 contre
+  93 % pour la deuxième dose contre la rougeole selon la même base). Elle forme une famille propre : ni la population
+  ni la maladie visées ne sont celles des vaccins du nourrisson. Les valeurs sont des estimations de l''OMS, révisées
+  à chaque édition.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- estimation_modelisee
+- population_cible_a_verifier
+notes: 'Périodes lues dans docs/sources/series/ocde__odd_3.csv (13 périodes 2011-2023, 12 valeurs distinctes, dernière
+  valeur 45 ; deuxième dose contre la rougeole 3_B_1_SH_ACS_MCV2 : 93 en 2023). Valeurs antérieures non lues. Santé
+  publique France publie des couvertures par cohorte de naissance (Odissé), non cataloguées.'

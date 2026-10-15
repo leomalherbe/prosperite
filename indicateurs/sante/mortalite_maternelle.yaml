@@ -1,0 +1,52 @@
+id: mortalite_maternelle
+libelle: Ratio de mortalité maternelle
+dimension: sante
+sous_theme: périnatalité
+famille: mortalite_maternelle
+variante_principale: oui
+definition: Nombre de décès de femmes liés à la grossesse ou à l'accouchement pour 100 000 naissances vivantes (estimations
+  du groupe interagences des Nations unies, reprises par le PNUD).
+unite: décès pour 100 000 naissances vivantes
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: PNUD (d'après le groupe interagences des Nations unies)
+source_jeu: Rapport sur le développement humain 2025, séries des indices composites (colonnes mmr)
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes mmr_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: https://hdr.undp.org/data-center/documentation-and-downloads
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000361
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de la cible ODD 3.1, série annuelle de 1990 à 2023 (7,9 pour 100 000 en 2023),
+  seule série nationale au catalogue.
+note_pertinence: La mortalité maternelle est un indicateur de la qualité des soins périnatals. Les valeurs sont
+  des estimations modélisées, révisées à chaque édition ; l'enquête nationale confidentielle de l'Inserm, de référence
+  en France, n'est publiée qu'en rapports PDF. La série OCDE (ODD 3.1.1, 2000-2018) est en variante.
+variantes:
+- serie_id: 'odd_3 : 3_1_1_OECD._T.F._T._T._T.DT_10P5BR_L'
+  source: OCDE (ODD 3.1.1)
+  nature: 'autre source : ratio de mortalité maternelle 2000-2018 (8,2 en 2018), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- estimation_modelisee
+- niveau_2
+- licence_a_confirmer
+notes: Dernière valeur lue dans docs/sources/series/pnud__hdr25_series_composites_france.csv (7,90908 en 2023, 34
+  années 1990-2023). Licence CC BY 3.0 IGO annoncée par le PNUD, non revérifiée (M04).

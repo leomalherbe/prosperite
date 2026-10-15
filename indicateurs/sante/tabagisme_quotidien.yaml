@@ -1,0 +1,280 @@
+id: tabagisme_quotidien
+libelle: Prévalence du tabagisme quotidien
+dimension: sante
+sous_theme: comportements et prévention
+famille: tabagisme
+variante_principale: oui
+definition: Part des 18-75 ans déclarant fumer du tabac tous les jours (Baromètre de Santé publique France).
+unite: '% des 18-75 ans'
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Santé publique France
+source_jeu: Odissé, jeu tabagisme-prevalence-selon-le-sexe (taux)
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/tabagisme-prevalence-selon-le-sexe
+  (taux)
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/tabagisme-prevalence-selon-le-sexe/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/tabagisme-prevalence-selon-le-sexe/information/
+frequence: irreguliere
+premiere_annee: 2000
+derniere_annee: 2023
+nb_points_depuis_2000: 13
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000376
+hors_longlist: non
+raccordement: 'a_etudier : la série INSEE (ODD 3.i8) donne 18,2 % en 2024 contre 23,1 % en 2023 chez Santé publique
+  France, saut probablement lié au changement de protocole du Baromètre 2024'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Comportement à risque suivi par les cadres OCDE et Eurostat, 13 vagues de 2000 à 2023 (annuelles
+  depuis 2014 ; 23,1 % en 2023), plus que l'indicateur national ODD 3.i8 de l'INSEE (9 vagues 2010-2024).
+note_pertinence: Le tabagisme est un facteur de risque majeur des cancers et des maladies cardiovasculaires ; sa
+  prévalence quotidienne est suivie par les cadres OCDE et Eurostat. La série de Santé publique France est préférée
+  à la copie INSEE, plus courte, qui ajoute une valeur 2024 (18,2 %) probablement non comparable. La série OCDE
+  et les ventilations de l'INSEE sont en variantes.
+variantes:
+- serie_id: '010593303'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001022
+  eligible: a_verifier
+- serie_id: '010593304'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001023
+  eligible: a_verifier
+- serie_id: '010593305'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001024
+  eligible: a_verifier
+- serie_id: '010593306'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001025
+  eligible: a_verifier
+- serie_id: '010593307'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001026
+  eligible: a_verifier
+- serie_id: '010593308'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001027
+  eligible: a_verifier
+- serie_id: '010593309'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001028
+  eligible: a_verifier
+- serie_id: '010593310'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001029
+  eligible: a_verifier
+- serie_id: '010593311'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001030
+  eligible: a_verifier
+- serie_id: '010593312'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001031
+  eligible: a_verifier
+- serie_id: '010593313'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001032
+  eligible: a_verifier
+- serie_id: '010593314'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001033
+  eligible: a_verifier
+- serie_id: '010593315'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001034
+  eligible: a_verifier
+- serie_id: '010593316'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001035
+  eligible: a_verifier
+- serie_id: '010593317'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001036
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=13_4 UNIT_MEASURE=PT_POP_Y_GE15
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même mesure, autres voies et ventilations
+  ligne_id: m04-000098
+  eligible: oui
+- serie_id: '010593319'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001037
+  eligible: a_verifier
+- serie_id: '010593320'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001038
+  eligible: a_verifier
+- serie_id: '010593321'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001039
+  eligible: a_verifier
+- serie_id: '010593322'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001040
+  eligible: a_verifier
+- serie_id: '010593323'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001041
+  eligible: a_verifier
+- serie_id: '010593324'
+  source: INSEE BDM
+  nature: même mesure, autres voies et ventilations
+  ligne_id: bdm-001042
+  eligible: a_verifier
+- serie_id: sdg_03_30?freq=A&age=Y_GE15&sex=T&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: même mesure, autres voies et ventilations
+  ligne_id: estat-002042
+  eligible: a_verifier
+- serie_id: sdg_03_30?freq=A&age=Y_GE15&sex=M&sex=F&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: même mesure, autres voies et ventilations
+  ligne_id: estat-002043
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=1&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005393
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=2&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005394
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_T&EMPSTA=32&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005395
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=3_X_353&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005399
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=4T8&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005400
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=DIPL_NIV1&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005404
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005410
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005385
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005386
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005411
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005412
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y25T34&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005420
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y25T34&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005421
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y35T44&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005428
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y35T44&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005429
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y45T54&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005432
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y45T54&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005433
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y55T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005439
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y55T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005440
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y65T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005445
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y65T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=3.i8&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même mesure, autres voies et ventilations
+  ligne_id: melodi-005446
+  eligible: a_verifier
+- serie_id: 'odd_3 : 3_A_1_OECD._T._T._T._T._T.PT_POP'
+  source: OCDE (ODD 3.a.1)
+  nature: 'même mesure, autre voie : consommation quotidienne de tabac (2000, 2005, 2010, 2014-2023 ; 23,1 % en
+    2023, comme Santé publique France), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2024_a_verifier
+- champ_18_75_ans
+notes: 'Valeurs lues dans docs/sources/series/spf_odisse__tabagisme-prevalence-selon-le-sexe.csv (2000, 2005, 2010,
+  2014-2023 ; 23,12 % en 2023) et sur la BDM le 14/10/2026 (010593303, champ FM : 29,7 % en 2010, 25,3 % en 2021,
+  18,2 % en 2024, rien en 2022-2023). Cause du saut de 2024 non vérifiée.'

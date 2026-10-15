@@ -1,0 +1,60 @@
+id: manque_medecins_percu
+libelle: Personnes estimant manquer de médecins généralistes à proximité
+dimension: sante
+sous_theme: accès aux soins
+famille: manque_medecins_percu
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui estiment qu'il n'y a « pas
+  assez » de médecins généralistes à proximité de chez elles (question SA09_1, modalité 3, non-réponses au dénominateur,
+  pondération de redressement).
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable SA09_1, modalités 3
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable SA09_1, modalités 3
+formule: part pondérée de la modalité 3 (« pas assez ») de SA09_1, non-réponses comprises au dénominateur
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: irreguliere
+premiere_annee: 2002
+derniere_annee: 2025
+nb_points_depuis_2000: 11
+geo: FM
+eligibilite_longlist: oui
+ligne_id: m04-000270
+hors_longlist: non
+raccordement: 'non : pas d''enquête sur cette question de 2003 à 2014 ni en 2016'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure ressentie de l'offre de soins de proximité, 11 vagues de 2002 à 2025 (20,7 %
+  en 2002, 55,8 % en 2025), valeur 2025 recoupée sur le tableau officiel de la DREES (55,76 %).
+note_pertinence: 'La perception d''un manque de généralistes traduit les difficultés d''accès (déserts médicaux)
+  que la densité moyenne ne montre pas : elle passe de 28,3 % en 2015 à 57,8 % en 2024. La série n''est annuelle
+  que depuis 2017. La même question pour les spécialistes est en variante.'
+variantes:
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion ; variable SA09_2, modalité 3
+  source: DREES (baromètre d'opinion)
+  nature: même question pour les médecins spécialistes (2002, 2015, 2017-2025), hors long-list
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- calcul_sur_microdonnees
+- enquete_metropole
+- recoupement_partiel_D34
+notes: 'Parts calculées sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (SA09_1, modalité 3)
+  : 20,7 % (2002), 28,3 % (2015), 36,3 % (2017), 49,6 % (2021), 57,8 % (2024), 55,8 % (2025). Recoupement D34 :
+  valeur 2025 identique au tableau croisé officiel (docs/sources/series/drees__barometre_tc_simplifies_2025.txt,
+  55,76 %) ; les deux autres valeurs officielles exigées restent à trouver (publications DREES en PDF).'

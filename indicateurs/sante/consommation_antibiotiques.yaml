@@ -1,0 +1,47 @@
+id: consommation_antibiotiques
+libelle: Consommation d'antibiotiques
+dimension: sante
+sous_theme: comportements et prévention
+famille: antibiotiques
+variante_principale: oui
+definition: Consommation d'antibiotiques à usage systémique en ville et à l'hôpital, en doses définies journalières
+  pour 1 000 habitants et par jour (indicateur ODD de l'UE).
+unite: doses définies journalières pour 1 000 habitants et par jour
+sens: bas
+type: pression
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'ECDC)
+source_jeu: sdg_03_70 (consommation d'antibiotiques)
+source_serie_id: sdg_03_70?freq=A&unit=P_THAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_70?freq=A&unit=P_THAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_03_70/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002045
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du tableau de bord ODD de l'UE, annuel de 2013 à 2024 sans drapeau (25,9 doses
+  pour 1 000 habitants et par jour en 2013, 20,3 en 2020, 26,5 en 2024), seule mesure de l'usage des antibiotiques
+  au catalogue.
+note_pertinence: 'La surconsommation d''antibiotiques favorise l''antibiorésistance, menace sanitaire majeure. La
+  consommation, comprise entre 24,7 et 25,9 doses de 2013 à 2019, chute en 2020 et 2021 (20,3 et 21,5) puis dépasse
+  son niveau d''avant la crise sanitaire en 2024 (26,5). L''indicateur est à la marge du contenu de la dimension
+  (comportements de soins) : la fiche est soumise à Léo pour décision.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_contenu_cite
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (sdg_03_70, unit=P_THAB, aucun drapeau). Objectif européen
+  de réduction de la consommation : à rechercher avant le socle des bornes (non vérifié).'

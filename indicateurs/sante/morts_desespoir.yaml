@@ -1,0 +1,95 @@
+id: morts_desespoir
+libelle: Décès par suicide, alcool ou drogue (« morts de désespoir »)
+dimension: sante
+sous_theme: santé mentale
+famille: suicide
+variante_principale: non
+definition: Taux de mortalité par suicide, maladies liées à l'alcool et surdoses de drogues, pour 100 000 habitants
+  (OCDE, How's Life, mesure 5_3).
+unite: décès pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE
+source_jeu: How's Life? Well-being Database (bien-être actuel), mesure 5_3
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=5_3 UNIT_MEASURE=DT_10P5HB
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2023
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000033
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Mesure du cadre OCDE How's Life, annuelle de 2004 à 2023 (18,7 pour 100 000 en 2023), qui
+  élargit le suicide aux décès liés à l'alcool et aux drogues.
+note_pertinence: Les « morts de désespoir » regroupent trois causes associées à la détresse psychique et aux addictions.
+  La mesure recoupe le suicide (même famille) ; ses composantes alcool et drogue d'Eurostat (2011-2023) sont en
+  variantes.
+variantes:
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=F10&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-000240
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=F10&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-000241
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=F10&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-000242
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=TOXICO&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-000360
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=TOXICO&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-000361
+  eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=TOXICO&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-000362
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=ALC_POIS&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-021391
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=ALC_POIS&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-021392
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=DRUG_POIS&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-021441
+  eligible: oui
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=DRUG_POIS&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'composantes : alcool et drogues'
+  ligne_id: estat-021442
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- famille_imbriquee
+notes: Dernière valeur lue dans docs/sources/series/ocde__hsl_bien_etre_actuel.csv (18,7012 en 2023, 20 périodes
+  2004-2023). Standardisation par âge à confirmer dans les métadonnées OCDE.

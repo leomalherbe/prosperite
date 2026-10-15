@@ -1,0 +1,48 @@
+id: vaccination_grippe_seniors
+libelle: Vaccination contre la grippe des 65 ans ou plus
+dimension: sante
+sous_theme: comportements et prévention
+famille: vaccination_grippe
+variante_principale: oui
+definition: Part des personnes de 65 ans ou plus vaccinées contre la grippe saisonnière (Eurostat, d'après l'Assurance
+  maladie).
+unite: '% des 65 ans ou plus'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: hlth_ps_immu (vaccination contre la grippe des 65 ans ou plus)
+source_serie_id: hlth_ps_immu?freq=A&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_ps_immu?freq=A&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_ps_immu/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-020034
+hors_longlist: non
+raccordement: 'a_etudier : rupture de 2005 (valeurs entières de 2000 à 2004, 53 % en 2000 puis 65 % en 2001)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Plus longue série de prévention au catalogue, annuelle de 2000 à 2025 (53,0 % en 2000, 64,8
+  % en 2009, 48,5 % en 2015, 59,9 % en 2021, 53,7 % en 2025), admise comme moyen (D19).
+note_pertinence: La vaccination antigrippale des personnes âgées réduit la mortalité hivernale ; son taux mesure
+  l'adhésion à la prévention. La couverture recule de 63,9 % en 2010 à 48,5 % en 2015, remonte à 59,9 % en 2021
+  (épidémie de Covid-19) puis redescend à 53,7 % en 2025. Les valeurs de 2000 à 2004 sont arrondies à l'unité et
+  la série porte une rupture (« b ») en 2005.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2005
+- valeurs_entieres_2000_2004
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (hlth_ps_immu, unit=PC : b en 2005, aucun autre drapeau ;
+  saut de 53,0 % en 2000 à 65,0 % en 2001 non expliqué). Rattachement de la campagne d''hiver à l''année civile
+  : non vérifié. Objectif de couverture (UE ou OMS) : à vérifier avant le socle des bornes.'

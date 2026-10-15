@@ -1,0 +1,82 @@
+id: mortalite_prematuree
+libelle: Taux de mortalité prématurée (avant 65 ans)
+dimension: sante
+sous_theme: mortalité
+famille: mortalite_prematuree
+variante_principale: oui
+definition: Taux standardisé de mortalité des personnes de moins de 65 ans (structure par âge de référence), France
+  (y compris Mayotte depuis 2014), état civil.
+unite: décès pour 1 000 habitants de moins de 65 ans (taux standardisé)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Démographie, état civil (BDM)
+source_serie_id: '001744911'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001744911
+url_page: https://www.insee.fr/fr/statistiques/serie/001744911
+frequence: annuelle
+premiere_annee: 1998
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000443
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure annuelle de l'INSEE de 1998 à 2025 (2,2 ‰ en 2000, 1,7 ‰ en 2025, provisoire), centrée
+  sur les décès avant 65 ans que l'espérance de vie mêle aux décès des âges élevés.
+note_pertinence: La mortalité prématurée isole les décès survenus avant 65 ans, ceux qui pèsent le plus sur les
+  années de vie perdues. La série INSEE n'a qu'une décimale (2,2 ‰ de 1998 à 2001, 1,8 ‰ de 2016 à 2022), ce qui
+  la rend peu sensible d'une année à l'autre. Les années potentielles de vie perdues de l'OCDE (2004-2022) et d'Eurostat
+  (2011-2023) sont des variantes plus fines.
+variantes:
+- serie_id: '001744912'
+  source: INSEE BDM
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: bdm-000444
+  eligible: oui
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=T&age=Y_LT75&icd10=TOTAL&geo=FR
+  source: Eurostat
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: estat-021041
+  eligible: oui
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=M&sex=F&age=Y_LT75&icd10=TOTAL&geo=FR
+  source: Eurostat
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: estat-021042
+  eligible: oui
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=T&age=Y_LT70&icd10=TOTAL&geo=FR
+  source: Eurostat
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: estat-021043
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=13_3 UNIT_MEASURE=Y_10P5PS
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: m04-000097
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_LT65&EC_MEASURE=MOR_STANDARD_RT&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: melodi-003955
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_LT65&EC_MEASURE=MOR_STANDARD_RT&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autre champ, copies, années de vie perdues
+  ligne_id: melodi-003956
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- une_decimale
+- provisoire_2023_2025
+- inclusion_mayotte_2014
+notes: Valeurs lues sur la BDM le 14/10/2026 (001744911).

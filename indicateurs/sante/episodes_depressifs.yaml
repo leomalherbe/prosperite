@@ -1,0 +1,53 @@
+id: episodes_depressifs
+libelle: Épisodes dépressifs caractérisés au cours des 12 derniers mois
+dimension: sante
+sous_theme: santé mentale
+famille: sante_mentale
+variante_principale: oui
+definition: Part des 18-75 ans ayant connu un épisode dépressif caractérisé au cours des 12 derniers mois (questionnaire
+  CIDI-SF du Baromètre santé de Santé publique France).
+unite: '% des 18-75 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Santé publique France
+source_jeu: Odissé, jeu sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_fra
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/sante-mentale-episodes-depressifs-…_fra
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_fra/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_fra/information/
+frequence: irreguliere
+premiere_annee: 2005
+derniere_annee: 2021
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000382
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de prévalence de la dépression au catalogue, 4 vagues (2005, 2010, 2017, 2021
+  ; 13,3 % en 2021) admises comme série irrégulière (D17).
+note_pertinence: La santé mentale est retenue par les cadres SSF et Eurostat et citée dans le contenu de la dimension.
+  L'épisode dépressif caractérisé est mesuré par un questionnaire standardisé, ce qui en fait un état mesuré plutôt
+  qu'une perception. La dernière vague date de 2021 ; la dépression déclarée de l'enquête EHIS (OCDE 5_4, 2014 et
+  2019) est en variante.
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=5_4 UNIT_MEASURE=PT_POP_Y_GE15
+  source: OCDE — How's Life? (base du bien-être)
+  nature: autre source
+  ligne_id: m04-000034
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- derniere_valeur_2021
+- enquete_metropole_a_verifier
+notes: Valeurs lues dans docs/sources/series/spf_odisse__sante-mentale-episodes-depressifs-caracterises-dans-les-12-derniers-mois_fra.csv
+  (13,2688 % en 2021 ; femmes 16,57 %, hommes 9,78 %). Champ géographique (métropole ou France) non lu.

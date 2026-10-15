@@ -1,0 +1,54 @@
+id: pensees_suicidaires
+libelle: Pensées suicidaires au cours des 12 derniers mois
+dimension: sante
+sous_theme: santé mentale
+famille: sante_mentale
+variante_principale: non
+definition: Part des 18-75 ans déclarant avoir pensé à se suicider au cours des 12 derniers mois (Baromètre santé
+  de Santé publique France).
+unite: '% des 18-75 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Santé publique France
+source_jeu: Odissé, jeu sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra (ps_12m_v)
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra
+  (ps_12m_v)
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra/information/
+frequence: irreguliere
+premiere_annee: 2005
+derniere_annee: 2021
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: m04-000383
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Lecture voisine de la santé mentale dans la même enquête, 4 vagues de 2005 à 2021 (4,2 % en
+  2021), admise comme série irrégulière (D17).
+note_pertinence: Les pensées suicidaires précèdent souvent les tentatives et complètent le taux de suicide, qui
+  ne compte que les décès. La série est courte et espacée.
+variantes:
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/gestes-auto-infliges-hospitalisations-france
+    (taux_standardise)
+  source: Santé publique France — Odissé (Opendatasoft)
+  nature: concept voisin (non éligible)
+  ligne_id: m04-000384
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- derniere_valeur_2021
+- anomalie_source_ic
+notes: 'Valeurs lues dans docs/sources/series/spf_odisse__sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra.csv
+  (4,2061 % en 2021). Anomalie de la source : la borne inférieure de l''intervalle de confiance de l''ensemble vaut
+  38,8152 pour une estimation de 4,2061 (maintenance SAN-6).'

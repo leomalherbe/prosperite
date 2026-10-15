@@ -1,0 +1,69 @@
+id: satisfaction_urgences
+libelle: Satisfaction à l'égard de la qualité des soins des urgences hospitalières
+dimension: sante
+sous_theme: perceptions
+famille: satisfaction_soins
+variante_principale: non
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui se disent « très » ou « plutôt
+  » satisfaites de la qualité des soins ou des services des urgences hospitalières (question SA07_2, modalités 1
+  et 2, non-réponses et « jamais allé » au dénominateur).
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées,
+  question SA07_2
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA07_2, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA07_2, modalité 1
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA07_2, modalité 2
+formule: SA07_2 modalité 1 + SA07_2 modalité 2 (parts pondérées)
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+statut_serie: a_calculer
+rattachement_propose: 'hors long-list : question SA07_2 du baromètre DREES non cataloguée par M04 ; satisfaction
+  du domaine santé (R4) ; à cataloguer (maintenance SAN-3)'
+raccordement: 'a_etudier : modalité « jamais allé.e / ne connais pas » ajoutée en 2014 (4,7 % des répondants en
+  2014, 6,9 % en 2025)'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Satisfaction à l'égard des urgences hospitalières, objet voisin des hôpitaux publics, posée
+  chaque année de 2010 à 2025 (16 vagues ; 63,0 % en 2010, 41,4 % en 2019, 38,3 % en 2023, 41,1 % en 2025), calculée
+  par le projet et non encore recoupée (D34).
+note_pertinence: Les urgences sont la porte d'entrée de l'hôpital pour les soins non programmés ; la satisfaction
+  à leur égard recule bien plus que celle envers les hôpitaux publics (de 63,0 % à 41,1 % entre 2010 et 2025, contre
+  69,2 % à 61,3 %). La série baisse par paliers (54,9 % en 2012, 42,1 % en 2018, 38,6 % en 2022), avec une remontée
+  en 2020 et 2021 (49,4 % et 51,0 %). La modalité « jamais allé.e » apparaît en 2014 et ses répondants restent au
+  dénominateur, comme pour la fiche principale.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- a_calculer
+- calcul_sur_microdonnees
+- enquete_metropole
+- recoupement_a_faire_D34
+- modalite_ajoutee_2014
+notes: 'Parts calculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
+  des modalités 1 « très satisfait » et 2 « plutôt satisfait », dictionnaire 2025 ; modalité 6 « je n''y suis jamais
+  allé / je ne connais pas » à partir de 2014) : 63,0 % (2010), 54,3 % (2014), 41,4 % (2019), 38,6 % (2022), 41,1
+  % (2025). Recoupement D34 non fait : la sortie du robot ne contient le tableau officiel 2025 que pour SA07_1.'

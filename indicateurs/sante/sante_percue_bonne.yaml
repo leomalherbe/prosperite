@@ -1,0 +1,423 @@
+id: sante_percue_bonne
+libelle: Personnes se déclarant en bonne ou très bonne santé
+dimension: sante
+sous_theme: santé perçue et limitations
+famille: sante_percue
+variante_principale: oui
+definition: Part des personnes de 16 ans ou plus vivant en logement ordinaire qui jugent leur état de santé général
+  « bon » ou « très bon » (enquête SRCV, volet français d'EU-SILC).
+unite: '% des 16 ans ou plus'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat (d'après l'INSEE, enquête SRCV)
+source_jeu: sdg_03_20 (part de la population se percevant en bonne ou très bonne santé)
+source_serie_id: sdg_03_20?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_03_20?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_03_20/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2025
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002040
+hors_longlist: non
+raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV à neutraliser'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur phare du cadre Qualité de vie d'Eurostat et de l'OCDE (§5 du crosswalk), annuel
+  de 2005 à 2025 (68,8 % en 2005, 64,7 % en 2025) ; l'INSEE ne publie pas ce niveau.
+note_pertinence: La santé perçue est la mesure synthétique de l'état de santé ressenti, prédictive de la mortalité.
+  Elle recule de 68,8 % en 2005 à 64,7 % en 2025, avec des ruptures (« b ») en 2020 et 2022 liées à la refonte de
+  SRCV. La part en mauvaise ou très mauvaise santé a sa fiche (sante_percue_mauvaise) ; les ventilations et les
+  séries de l'OCDE et du baromètre DREES sont en variantes.
+variantes:
+- serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-000117
+  eligible: oui
+- serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-44&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y_GE60&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-000118
+  eligible: oui
+- serie_id: hlth_silc_01?freq=A&unit=PC&wstatus=POP&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-000119
+  eligible: oui
+- serie_id: sdg_03_20?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-002041
+  eligible: oui
+- serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=VG_G&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-004900
+  eligible: oui
+- serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=VG_G&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-004897
+  eligible: non
+- serie_id: hlth_silc_18?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=VG_G&sex=T&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-004898
+  eligible: non
+- serie_id: hlth_silc_18?freq=A&deg_urb=TOTAL&levels=VG_G&sex=M&sex=F&age=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-004899
+  eligible: non
+- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011352
+  eligible: oui
+- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011353
+  eligible: oui
+- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y25-29&age=Y25-34&age=Y25-64&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011354
+  eligible: oui
+- serie_id: hlth_silc_02?freq=A&unit=PC&isced11=TOTAL&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011355
+  eligible: oui
+- serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011380
+  eligible: oui
+- serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y18-44&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-49&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011382
+  eligible: oui
+- serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=TOTAL&age=Y_GE16&sex=M&sex=F&levels=VG_G&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-011383
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053427
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053428
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053429
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053448
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053449
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053450
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053469
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053470
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053471
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NAT&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053490
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NAT&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053491
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NAT&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053492
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053532
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053533
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053534
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053553
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053554
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053555
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053595
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053596
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053597
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053616
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053617
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=EU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053618
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053637
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053638
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053639
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NAT&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053658
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NAT&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053659
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NAT&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053660
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053700
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053701
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&citizen=NEU27_2020_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053702
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053721
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053722
+  eligible: oui
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=NEU28_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053723
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=5_2 UNIT_MEASURE=PT_POP_Y_GE16
+  source: OCDE — How's Life? (base du bien-être)
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: m04-000031
+  eligible: oui
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+    et barometre2025_diff_csv ; variable SA01_AB, modalités 1+2
+  source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: m04-000268
+  eligible: oui
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053406
+  eligible: non
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053407
+  eligible: non
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053408
+  eligible: non
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053511
+  eligible: non
+- serie_id: hlth_silc_23?freq=A&sex=M&sex=F&age=Y_GE16&c_birth=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053512
+  eligible: non
+- serie_id: hlth_silc_23?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&c_birth=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053513
+  eligible: non
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053574
+  eligible: non
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053575
+  eligible: non
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&citizen=EU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053576
+  eligible: non
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y_GE16&citizen=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053679
+  eligible: non
+- serie_id: hlth_silc_24?freq=A&sex=M&sex=F&age=Y_GE16&citizen=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053680
+  eligible: non
+- serie_id: hlth_silc_24?freq=A&sex=T&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y20-64&age=Y25-29&age=Y25-34&age=Y25-54&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&citizen=NEU27_2007_FOR&lev_perc=VG_G&unit=PC&geo=FR
+  source: Eurostat
+  nature: même mesure dans les jeux ventilés, ventilations, autres sources
+  ligne_id: estat-053681
+  eligible: non
+- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=GOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005338
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=GOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005339
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=GOOD&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005340
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=GOOD&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005341
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VGOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005346
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&levels=VGOOD&age=Y_GE18&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005347
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VGOOD&age=Y18-64&age=Y_GE65&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005348
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl01?freq=A&deg_urb=TOTAL&levels=VGOOD&age=Y_GE18&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes « bon » et « très bon », 18 ans ou plus (long-list logement_cadre_vie)
+  ligne_id: estat-005349
+  eligible: oui
+  longlist: logement_cadre_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (sdg_03_20, sex=T). Famille SRCV / EU-SILC : aucune série
+  INSEE de santé perçue au catalogue ; la série DREES (SA01) change d''échelle en 2004 et 2007 (35,5 % en 2000,
+  88,2 % en 2004, 72,0 % en 2007, calculés sur les distributions du robot). Variante importée de logement_cadre_vie
+  : ilc_lvhl01 (18 ans ou plus, 2004-2025).'

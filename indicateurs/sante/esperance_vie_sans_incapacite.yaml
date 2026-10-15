@@ -1,0 +1,156 @@
+id: esperance_vie_sans_incapacite
+libelle: Années de vie en bonne santé (espérance de vie sans incapacité) à la naissance
+dimension: sante
+sous_theme: espérance de vie
+famille: esperance_vie_sans_incapacite
+variante_principale: oui
+definition: Nombre d'années qu'une personne peut espérer vivre sans limitation d'activité durable due à un problème
+  de santé (indicateur GALI de l'enquête SRCV combiné aux tables de mortalité), ensemble des sexes, France.
+unite: années
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat (d'après l'INSEE, SRCV et état civil)
+source_jeu: hlth_hlye (années de vie en bonne santé par sexe), modalité HLY_Y0
+source_serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=HLY_Y0&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=HLY_Y0&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_hlye/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2024
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-011310
+hors_longlist: non
+raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV (question GALI) à neutraliser avant tout
+  calcul de tendance'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur de richesse nationale de l'INSEE et du cadre Qualité de vie d'Eurostat (§5 du crosswalk),
+  annuel de 2004 à 2024, publié pour l'ensemble des sexes par Eurostat seulement.
+note_pertinence: 'Les années de vie en bonne santé combinent la mortalité et la part des personnes déclarant une
+  limitation durable d''activité : elles disent si l''allongement de la vie se fait en bonne santé. La série passe
+  de 62,9 ans en 2004 à 64,6 ans en 2020 (rupture « b ») et 66,2 ans en 2021, puis revient à 63,6 ans en 2024 (provisoire)
+  : la refonte de SRCV en 2020 rend la trajectoire récente fragile. L''INSEE publie le même indicateur par sexe
+  (variantes, ODD 3.i1a).'
+variantes:
+- serie_id: '010593268'
+  source: INSEE BDM
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: bdm-000988
+  eligible: oui
+- serie_id: '010593269'
+  source: INSEE BDM
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: bdm-000989
+  eligible: oui
+- serie_id: sdg_03_12?freq=A&unit=YR&hlth_hle=HE_Y0&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-001992
+  eligible: oui
+- serie_id: sdg_03_12?freq=A&unit=YR&hlth_hle=HE_Y0&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-001993
+  eligible: oui
+- serie_id: sdg_03_11?freq=A&unit=YR&sex=T&hlth_hle=HLY_Y0&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-002131
+  eligible: oui
+- serie_id: sdg_03_11?freq=A&unit=YR&sex=M&sex=F&hlth_hle=HLY_Y0&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-002132
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=PC&sex=T&hlth_hle=HLY_LE_Y0_PC&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011304
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=PC&sex=M&sex=F&hlth_hle=HLY_LE_Y0_PC&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011305
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=PC&sex=T&hlth_hle=HLY_LE_Y50_PC&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011306
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=PC&sex=M&sex=F&hlth_hle=HLY_LE_Y50_PC&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011307
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=HLY_Y0&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011311
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=HLY_Y50&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011312
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=HLY_Y50&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011313
+  eligible: oui
+- serie_id: hlth_silc_17?freq=A&unit=YR&hlth_hle=HE_Y0&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011322
+  eligible: oui
+- serie_id: hlth_silc_17?freq=A&unit=YR&hlth_hle=HE_Y0&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011323
+  eligible: oui
+- serie_id: hlth_silc_17?freq=A&unit=YR&hlth_hle=HE_Y50&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011324
+  eligible: oui
+- serie_id: hlth_silc_17?freq=A&unit=YR&hlth_hle=HE_Y50&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011325
+  eligible: oui
+- serie_id: hlth_silc_17?freq=A&unit=YR&hlth_hle=HE_Y65&sex=T&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011326
+  eligible: oui
+- serie_id: hlth_silc_17?freq=A&unit=YR&hlth_hle=HE_Y65&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: estat-011327
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i1a&PCS=_Z&SDG=SDG3&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: melodi-005527
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i1a&PCS=_Z&SDG=SDG3&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: INSEE par sexe, ODD, pourcentage de l'espérance de vie, espérance de santé perçue
+  ligne_id: melodi-005528
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- provisoire_2022_2024
+- composante_declarative_gali
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (hlth_hlye, HLY_Y0, sex=T) : b en 2020, bp en 2022, p en
+  2023 et 2024. Déclaratif : la limitation d''activité est auto-déclarée (question GALI).'

@@ -1,0 +1,119 @@
+id: decouvertes_vih
+libelle: Découvertes de séropositivité VIH
+dimension: sante
+sous_theme: maladies infectieuses
+famille: decouvertes_vih
+variante_principale: oui
+definition: Nombre de personnes ayant découvert leur séropositivité au VIH dans l'année, France (indicateur national
+  ODD 3.i2, Santé publique France).
+unite: personnes
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (d'après Santé publique France)
+source_jeu: Indicateurs ODD nationaux (BDM)
+source_serie_id: '010593272'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010593272
+url_page: https://www.insee.fr/fr/statistiques/serie/010593272
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2024
+nb_points_depuis_2000: 15
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000992
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : le nombre de découvertes de séropositivité (2010-2024) augmente avec l''effort
+  de dépistage autant qu''avec les nouvelles contaminations, et il est exprimé en nombre.'
+note_pertinence: L'indicateur national ODD 3.i2 suit l'épidémie de VIH, mais une hausse peut traduire un meilleur
+  dépistage plutôt qu'une progression de l'épidémie. La mortalité par tuberculose, VIH et hépatites (sdg_03_41)
+  porte la cible ODD 3.3 avec un sens clair.
+variantes:
+- serie_id: '010593273'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-000993
+  eligible: oui
+- serie_id: '010593274'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-000994
+  eligible: oui
+- serie_id: '010593275'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-000995
+  eligible: oui
+- serie_id: '010593276'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-000996
+  eligible: oui
+- serie_id: '010593277'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-000997
+  eligible: oui
+- serie_id: '010593278'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-000998
+  eligible: oui
+- serie_id: '010769023'
+  source: INSEE BDM
+  nature: ventilations
+  ligne_id: bdm-001044
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=CONTAMIN_MOD1&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005478
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=CONTAMIN_MOD2&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005479
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=CONTAMIN_MOD3&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005480
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=CONTAMIN_MOD4&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005481
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=F_cis&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005531
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=M_cis&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005532
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=TS&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005533
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=3.i2&PCS=_Z&SDG=SDG3&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
+  source: INSEE Melodi
+  nature: ventilations
+  ligne_id: melodi-005534
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- en_nombre
+notes: ''

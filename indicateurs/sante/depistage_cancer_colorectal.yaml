@@ -1,0 +1,78 @@
+id: depistage_cancer_colorectal
+libelle: Participation au dépistage organisé du cancer colorectal
+dimension: sante
+sous_theme: comportements et prévention
+famille: depistage_cancer
+variante_principale: oui
+definition: Part de la population cible ayant participé au programme de dépistage organisé du cancer colorectal
+  (données de programme).
+unite: '% de la population cible'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après Santé publique France)
+source_jeu: hlth_ps_prev (dépistages du cancer, données de programme)
+source_serie_id: hlth_ps_prev?freq=A&unit=PC&sex=T&icd10=C18-C21&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_ps_prev?freq=A&unit=PC&sex=T&icd10=C18-C21&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_ps_prev/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-020032
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série annuelle de dépistage en cours au catalogue, 12 valeurs de 2011 à 2024 (28,2 %
+  en 2011, 29,6 % en 2024 ; rien en 2015-2016, rupture « b » en 2017), admise comme moyen (D19).
+note_pertinence: Le dépistage organisé vise à réduire la mortalité par cancer colorectal ; la participation stagne
+  entre 24,9 % et 29,8 % de la population cible sur la période. Le dépistage du cancer du sein (série Eurostat arrêtée
+  en 2020, série Santé publique France 2017-2025) est en variante.
+variantes:
+- serie_id: hlth_ps_scre?freq=A&unit=PC&source=PRG&icd10=C50&geo=FR
+  source: Eurostat
+  nature: sexe, autres cancers
+  ligne_id: estat-020028
+  eligible: oui
+- serie_id: hlth_ps_prev?freq=A&unit=PC&sex=M&sex=F&icd10=C18-C21&geo=FR
+  source: Eurostat
+  nature: sexe, autres cancers
+  ligne_id: estat-020033
+  eligible: oui
+- serie_id: hlth_ps_scre?freq=A&unit=PC&source=PRG&icd10=C53&geo=FR
+  source: Eurostat
+  nature: sexe, autres cancers
+  ligne_id: estat-020029
+  eligible: non
+- serie_id: hlth_ps_scre?freq=A&unit=PC&source=SRV&icd10=C50&geo=FR
+  source: Eurostat
+  nature: sexe, autres cancers
+  ligne_id: estat-020030
+  eligible: non
+- serie_id: hlth_ps_scre?freq=A&unit=PC&source=SRV&icd10=C53&geo=FR
+  source: Eurostat
+  nature: sexe, autres cancers
+  ligne_id: estat-020031
+  eligible: non
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/cancer-participation-au-depistage-organise-du-cancer-du-sein_fra
+    (tx_part_insee_std)
+  source: Santé publique France — Odissé (Opendatasoft)
+  nature: sexe, autres cancers
+  ligne_id: m04-000381
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2017
+- annees_manquantes_2015_2016
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (hlth_ps_prev, sex=T : C50 et C53 sans valeur, « m » en 2015
+  et 2016). Objectif de participation des lignes directrices européennes : non trouvé (à chercher avant le socle
+  des bornes).'

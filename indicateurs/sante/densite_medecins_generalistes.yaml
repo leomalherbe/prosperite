@@ -1,0 +1,133 @@
+id: densite_medecins_generalistes
+libelle: Densité de médecins généralistes
+dimension: sante
+sous_theme: accès aux soins
+famille: densite_medecins
+variante_principale: oui
+definition: Nombre de médecins généralistes en activité pour 100 000 habitants, France (INSEE d'après le répertoire
+  RPPS, DREES).
+unite: médecins pour 100 000 habitants
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (d'après la DREES, RPPS)
+source_jeu: Densité des professionnels de santé (BDM)
+source_serie_id: '010761075'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010761075
+url_page: https://www.insee.fr/fr/statistiques/serie/010761075
+frequence: annuelle
+premiere_annee: 2012
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-001476
+hors_longlist: non
+raccordement: 'a_etudier : la série Eurostat des praticiens de médecine générale (hlth_rs_physcat, 2000-2024) change
+  de définition en 2009 et en 2011 (160,22 en 2009, 142,31 en 2011)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de l'offre de soins de premier recours admise comme moyen (D19), annuelle de 2012 à
+  2025 (155 pour 100 000 en 2012, 146 en 2025) et en baisse continue.
+note_pertinence: La densité de généralistes mesure l'offre de premier recours dont dépend l'accès aux soins courants
+  ; elle recule de 155 à 146 pour 100 000 habitants entre 2012 et 2025. C'est une moyenne nationale qui ignore les
+  écarts territoriaux (déserts médicaux), mieux mesurés par l'accessibilité potentielle localisée de la DREES, non
+  cataloguée. L'ensemble des médecins, les spécialistes et les séries Eurostat et OCDE sont en variantes.
+variantes:
+- serie_id: '010761076'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001477
+  eligible: oui
+- serie_id: '010761293'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001478
+  eligible: oui
+- serie_id: '010761294'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001479
+  eligible: oui
+- serie_id: '010761309'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001480
+  eligible: oui
+- serie_id: '010761310'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001481
+  eligible: oui
+- serie_id: '010761426'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001482
+  eligible: oui
+- serie_id: '010761427'
+  source: INSEE BDM
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: bdm-001483
+  eligible: oui
+- serie_id: hlth_rs_prs2?freq=A&unit=HAB_P&wstatus=PACT&med_spec=PHYS&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011677
+  eligible: oui
+- serie_id: hlth_rs_prs2?freq=A&unit=HAB_P&wstatus=PRACT&med_spec=PHYS&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011683
+  eligible: oui
+- serie_id: hlth_rs_physcat?freq=A&unit=P_HTHAB&med_spec=GEN&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011688
+  eligible: oui
+- serie_id: hlth_rs_physcat?freq=A&unit=P_HTHAB&med_spec=GEN_OTH&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011689
+  eligible: oui
+- serie_id: hlth_rs_physcat?freq=A&unit=P_HTHAB&med_spec=GEN_PRAC&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011690
+  eligible: oui
+- serie_id: hlth_rs_physcat?freq=A&unit=P_HTHAB&med_spec=SPEC&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011697
+  eligible: oui
+- serie_id: hlth_rs_phys?freq=A&unit=NR&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011699
+  eligible: oui
+- serie_id: hlth_rs_phys?freq=A&unit=NR&age=Y_LT35&age=Y35-44&age=Y45-54&age=Y55-64&age=Y65-74&age=Y_GE75&sex=T&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011700
+  eligible: oui
+- serie_id: hlth_rs_phys?freq=A&unit=NR&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: champ, ensemble des médecins, autres sources
+  ligne_id: estat-011701
+  eligible: oui
+- serie_id: 'odd_3 : 3_C_1_OECD._T._T._T._T._T.10P3HB'
+  source: OCDE (ODD 3.c.1)
+  nature: ensemble des médecins pour 1 000 habitants (2000-2023), hors long-list
+  preuve: docs/sources/series/ocde__odd_3.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- debut_2012
+- moyenne_nationale
+notes: 'Valeurs lues sur la BDM (010761075, champ FE) et sur l''API Eurostat (hlth_rs_physcat, GEN : b en 2009 et
+  2011) le 14/10/2026. Variante hors long-list : OCDE ODD 3.c.1, densité de médecins 2000-2023 (3,9 pour 1 000 en
+  2023).'

@@ -1,0 +1,64 @@
+id: deces_pollution_air
+libelle: Décès prématurés attribuables aux particules fines (PM2,5)
+dimension: sante
+sous_theme: mortalité
+famille: deces_pollution_air
+variante_principale: oui
+definition: Décès prématurés attribuables à l'exposition de la population aux particules fines PM2,5, pour 100 000
+  habitants (estimations de l'Agence européenne de l'environnement).
+unite: décès prématurés pour 100 000 habitants
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'Agence européenne de l'environnement)
+source_jeu: sdg_11_52 (décès prématurés dus aux PM2,5)
+source_serie_id: sdg_11_52?freq=A&airpol=PM2_5&effect=PMD&unit=RT&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_11_52?freq=A&airpol=PM2_5&effect=PMD&unit=RT&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_11_52/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2023
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-001994
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list sante gardée ici : le décès attribuable est un résultat de santé, l''exposition
+  subie à la pollution de l''air relève de logement_cadre_vie et les émissions de planete (R2) ; à confirmer au
+  gel 2'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du tableau de bord ODD de l'UE, 18 années de 2005 à 2023, seule mesure annuelle
+  de la mortalité attribuable à l'environnement au catalogue.
+note_pertinence: La pollution de l'air est un facteur de risque environnemental majeur ; ce décompte traduit l'exposition
+  en décès et relie la dimension santé aux conditions de vie. Ce sont des estimations modélisées, révisées à chaque
+  édition. Santé publique France publie une estimation nationale ponctuelle (2016-2019) en variante.
+variantes:
+- serie_id: hlth_cd_iap?freq=A&airpol=PM2_5&effect=PMD&unit=RT&geo=FR
+  source: Eurostat
+  nature: même série et années de vie perdues
+  ligne_id: estat-021625
+  eligible: oui
+- serie_id: hlth_cd_iap?freq=A&airpol=PM2_5&effect=YLL&unit=RT&geo=FR
+  source: Eurostat
+  nature: même série et années de vie perdues
+  ligne_id: estat-021626
+  eligible: oui
+- serie_id: pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_fra#pm25_nb_dc
+  source: Santé publique France (Odissé)
+  nature: 'autre source : décès attribuables aux PM2,5 sur 2016-2019 (39 541), estimation ponctuelle, hors long-list'
+  preuve: docs/sources/series/spf_odisse__pollution-de-l-air-impact-du-no2-et-des-pm2-5_mortalite_fra.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- estimation_modelisee
+- valeurs_non_lues
+notes: 'Valeurs non lues : l''API Eurostat (sdg_11_52) a refusé la lecture (HTTP 429 du mandataire) le 14/10/2026
+  puis de nouveau le 15/10/2026 ; périodes lues dans la long-list (2005-2023, 18 points). Cible européenne du plan
+  « zéro pollution » sur les décès prématurés : à vérifier avant le socle des bornes.'

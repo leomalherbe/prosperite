@@ -1,0 +1,129 @@
+id: esperance_vie_65
+libelle: Espérance de vie à 65 ans
+dimension: sante
+sous_theme: espérance de vie
+famille: esperance_vie
+variante_principale: non
+definition: Nombre moyen d'années restant à vivre à 65 ans dans les conditions de mortalité de l'année, ensemble
+  des sexes, France (Eurostat, jeu des années de vie en bonne santé).
+unite: années
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'INSEE)
+source_jeu: hlth_hlye (années de vie en bonne santé par sexe), modalité LE_Y65
+source_serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y65&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y65&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_hlye/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2024
+nb_points_depuis_2000: 21
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-011320
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Lecture de la longévité aux âges élevés, annuelle de 2004 à 2024 (20,1 ans en 2004, 21,9 ans
+  en 2024), indépendante de la mortalité infantile et juvénile.
+note_pertinence: L'espérance de vie à 65 ans mesure les années restant à vivre à l'âge de la retraite et sert de
+  référence aux années de vie en bonne santé au même âge. Elle passe de 22,0 ans en 2019 à 21,2 ans en 2020 (Covid-19)
+  puis remonte à 21,9 ans en 2023 et 2024. L'INSEE la publie à 60 ans et par sexe (variantes, 1946-2025 en métropole).
+variantes:
+- serie_id: '001686950'
+  source: INSEE BDM
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: bdm-000427
+  eligible: oui
+- serie_id: '001686955'
+  source: INSEE BDM
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: bdm-000432
+  eligible: oui
+- serie_id: '001686960'
+  source: INSEE BDM
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: bdm-000437
+  eligible: oui
+- serie_id: '001686965'
+  source: INSEE BDM
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: bdm-000442
+  eligible: oui
+- serie_id: '001745153'
+  source: INSEE BDM
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: bdm-000445
+  eligible: oui
+- serie_id: '001745154'
+  source: INSEE BDM
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: bdm-000446
+  eligible: oui
+- serie_id: demo_mlexpec?freq=A&unit=YR&sex=T&age=Y_GE85&age=Y_GE95&geo=FR
+  source: Eurostat
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: estat-000401
+  eligible: oui
+- serie_id: demo_r_mlifexp?freq=A&unit=YR&sex=T&age=Y_GE85&age=Y_GE95&geo=FR
+  source: Eurostat
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: estat-002319
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y50&geo=FR
+  source: Eurostat
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: estat-011318
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=LE_Y50&geo=FR
+  source: Eurostat
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: estat-011319
+  eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=LE_Y65&geo=FR
+  source: Eurostat
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: estat-011321
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y60&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=F&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: melodi-003907
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y60&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=M&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: melodi-003908
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y60&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=F&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: melodi-003909
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y60&EC_MEASURE=LEXPEC&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=M&UNIT_MEASURE=YR
+  source: INSEE Melodi
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: melodi-003910
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_GE65&EC_MEASURE=MOR_STANDARD_RT&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: melodi-003935
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_GE65&EC_MEASURE=MOR_STANDARD_RT&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autres âges élevés, sexe, autres voies
+  ligne_id: melodi-003936
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- provisoire_2023
+notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (hlth_hlye, LE_Y65, sex=T).

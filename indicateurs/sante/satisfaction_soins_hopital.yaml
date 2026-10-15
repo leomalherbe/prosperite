@@ -1,0 +1,86 @@
+id: satisfaction_soins_hopital
+libelle: Satisfaction à l'égard de la qualité des soins des hôpitaux publics
+dimension: sante
+sous_theme: perceptions
+famille: satisfaction_soins
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui se disent « très » ou « plutôt
+  » satisfaites de la qualité des soins ou des services des hôpitaux publics, hors urgences et maternités (question
+  SA07_1, modalités 1 et 2, non-réponses et « jamais allé » au dénominateur).
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées,
+  question SA07_1
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA07_1, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA07_1, modalité 1
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA07_1, modalité 2
+formule: SA07_1 modalité 1 + SA07_1 modalité 2 (parts pondérées)
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2010
+derniere_annee: 2025
+nb_points_depuis_2000: 14
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+statut_serie: a_calculer
+rattachement_propose: 'hors long-list : question SA07_1 du baromètre DREES non cataloguée par M04 ; satisfaction
+  du domaine santé (R4), voisine de la confiance dans l''hôpital rangée en democratie (R5) ; à cataloguer (maintenance
+  SAN-3)'
+raccordement: 'a_etudier : modalité « jamais allé.e / ne connais pas » ajoutée en 2014 (2,9 % des répondants), année
+  où la part des satisfaits passe de 66,8 % à 73,1 % ; pas de question en 2022 ni en 2024'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de satisfaction à l'égard du système de soins (R4), 14 vagues de 2010 à 2025
+  (69,2 % en 2010, 61,3 % en 2025), valeur 2025 recoupée sur le tableau officiel de la DREES (61,29 %).
+note_pertinence: 'La satisfaction à l''égard de la qualité des soins hospitaliers est la satisfaction du domaine
+  santé que demande la règle R4 ; elle recule de 69,2 % en 2010 à 58,4 % en 2023. Les urgences ont une fiche variante
+  (satisfaction_urgences) ; les généralistes et les cliniques privées sont en variantes. La question est proche
+  de la confiance dans l''hôpital (democratie) : à départager au contrôle de redondance.'
+variantes:
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA07_5, modalités 1+2
+  source: DREES (baromètre d'opinion)
+  nature: médecins généralistes (2014-2025, 89,5 % en 2014, 83,4 % en 2025), hors long-list
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA07_3, modalités 1+2
+  source: DREES (baromètre d'opinion)
+  nature: cliniques privées (2010-2025), hors long-list
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA11, modalités 1+2
+  source: DREES (baromètre d'opinion)
+  nature: 'question voisine : temps accordé par le médecin généraliste jugé suffisant (7 vagues 2002, 2015-2025
+    ; 82,5 % en 2002, 79,4 % en 2025, calculé sur les distributions du robot), hors long-list'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- a_calculer
+- calcul_sur_microdonnees
+- enquete_metropole
+- recoupement_partiel_D34
+- pas_de_question_2022_2024
+- modalite_ajoutee_2014
+notes: 'Parts calculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
+  des modalités 1 et 2) : 69,2 % (2010), 73,1 % (2014), 62,5 % (2018), 68,6 % (2021), 58,4 % (2023), 61,3 % (2025).
+  Recoupement D34 : 2025 identique au tableau croisé officiel (61,29 %) ; deux autres valeurs officielles à trouver.
+  Modalité 6 « je n''y suis jamais allé / je ne connais pas » présente à partir de 2014 (2,88 % en 2014) ; libellés
+  des modalités avant 2014 non disponibles dans le dépôt (dictionnaire 2025 seulement).'

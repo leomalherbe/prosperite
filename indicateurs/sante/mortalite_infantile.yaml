@@ -1,0 +1,146 @@
+id: mortalite_infantile
+libelle: Taux de mortalité infantile
+dimension: sante
+sous_theme: mortalité
+famille: mortalite_infantile
+variante_principale: oui
+definition: Nombre d'enfants décédés avant un an pour 1 000 enfants nés vivants, France (y compris Mayotte depuis
+  2014), état civil.
+unite: décès pour 1 000 naissances vivantes
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Démographie, état civil (BDM)
+source_serie_id: '001641594'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001641594
+url_page: https://www.insee.fr/fr/statistiques/serie/001641594
+frequence: annuelle
+premiere_annee: 1994
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000308
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur de la cible ODD 3.2, annuel de 1994 à 2025 (état civil), qui remonte de 3,5 ‰ en
+  2011, 2012 et 2014 à 4,1 ‰ en 2024.
+note_pertinence: La mortalité infantile reflète la qualité du suivi des grossesses et des soins aux nouveau-nés
+  ; elle est basse en France mais remonte depuis le milieu des années 2010 (3,9 ‰ en 2017, 4,0 ‰ en 2023). Le champ
+  inclut Mayotte depuis 2014 ; la série métropolitaine (1901-2025), la série lissée sur trois ans et les taux de
+  mortalité néonatale d'Eurostat sont en variantes.
+variantes:
+- serie_id: '000067681'
+  source: INSEE BDM
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: bdm-000301
+  eligible: oui
+- serie_id: '000436403'
+  source: INSEE BDM
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: bdm-000303
+  eligible: oui
+- serie_id: '001641596'
+  source: INSEE BDM
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: bdm-000309
+  eligible: oui
+- serie_id: '001745430'
+  source: INSEE BDM
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: bdm-000447
+  eligible: oui
+- serie_id: '001745431'
+  source: INSEE BDM
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: bdm-000448
+  eligible: oui
+- serie_id: demo_r_minf?freq=A&unit=NR&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-002291
+  eligible: oui
+- serie_id: demo_r_minfind?freq=A&unit=RT&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-002292
+  eligible: oui
+- serie_id: demo_minfind?freq=A&unit=RT&indic_de=ENEOMORRT&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-011268
+  eligible: oui
+- serie_id: demo_minfind?freq=A&unit=RT&indic_de=INFMORRT&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-011269
+  eligible: oui
+- serie_id: demo_minfind?freq=A&unit=RT&indic_de=NEOMORRT&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-011271
+  eligible: oui
+- serie_id: demo_minf?freq=A&unit=NR&age=Y_LT1&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-011273
+  eligible: oui
+- serie_id: hlth_cd_aperrto?freq=A&unit=RT&resid=TOT_IN&mortalit=ENEO&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-021353
+  eligible: oui
+- serie_id: hlth_cd_aperrto?freq=A&unit=RT&resid=TOT_IN&mortalit=NEO&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-021355
+  eligible: oui
+- serie_id: hlth_cd_aperrto?freq=A&unit=RT&resid=TOT_IN&mortalit=PERI&geo=FR
+  source: Eurostat
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: estat-021356
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_LT1&EC_MEASURE=MOR_INF_RT&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: melodi-003945
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_LT1&EC_MEASURE=MOR_INF_RT&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: melodi-003946
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_LT1&EC_MEASURE=MOR_INF_RT_3Y&FREQ=A&GEO=FRANCE-F&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: melodi-003947
+  eligible: oui
+- serie_id: DS_DECES_MORTALITE_SERIES?AGE=Y_LT1&EC_MEASURE=MOR_INF_RT_3Y&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&SEX=_T&UNIT_MEASURE=PM
+  source: INSEE Melodi
+  nature: autres champs, voies, lissage et composantes
+  ligne_id: melodi-003948
+  eligible: oui
+- serie_id: 'odd_3 : 3_2_1_SH_DYN_MORT.Y_LT5._T._T._T._T.DT_10P3BR'
+  source: OCDE (ODD 3.2.1, d'après l'ONU)
+  nature: 'concept voisin : mortalité des moins de 5 ans (2000-2023), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
+- serie_id: mortalite-infantile-et-mortinatalite-france#tx1000_mortalite_infantile
+  source: Santé publique France (Odissé)
+  nature: 'autre source : taux de mortalité infantile 2012-2024, hors long-list'
+  preuve: docs/sources/series/spf_odisse__mortalite-infantile-et-mortinatalite-france.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- inclusion_mayotte_2014
+- provisoire_2025
+notes: 'Valeurs lues sur la BDM le 14/10/2026 (001641594) : 4,5 ‰ en 2000, 3,5 ‰ en 2011, 4,1 ‰ en 2024, 4,0 ‰ en
+  2025 (provisoire). Variantes hors long-list : mortalité des moins de 5 ans (OCDE, ODD 3.2.1, 4,3 ‰ en 2023) et
+  série Santé publique France (4,077 ‰ en 2024).'

@@ -1,0 +1,64 @@
+id: reste_a_charge_menages
+libelle: Part des paiements directs des ménages dans la dépense de santé
+dimension: sante
+sous_theme: accès aux soins
+famille: reste_a_charge_menages
+variante_principale: oui
+definition: Paiements directs des ménages (reste à charge après assurance maladie obligatoire et complémentaire)
+  en pourcentage de la dépense courante de santé, France (comptes de la santé, système SHA).
+unite: '% de la dépense courante de santé'
+sens: bas
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après la DREES, comptes de la santé)
+source_jeu: hlth_sha11_hf (dépenses de santé par mécanisme de financement), HF3
+source_serie_id: hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF3&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF3&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_sha11_hf/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 20
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-011496
+hors_longlist: non
+raccordement: 'a_etudier : rupture de 2010 (10,17 % en 2009, 11,96 % en 2010)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Mesure de la protection financière des ménages face aux soins, annuelle de 2006 à 2025 (9,36
+  % en 2006, 11,96 % en 2010, 10,32 % en 2025, provisoire), qui complète le renoncement pour raisons financières.
+note_pertinence: 'La part des paiements directs mesure ce qui reste à la charge des ménages après remboursements
+  ; elle conditionne le renoncement aux soins des plus modestes. Elle passe de 10,17 % en 2009 à 11,96 % en 2010,
+  année de rupture (« b »), puis reste entre 10,17 % et 10,38 % de 2021 à 2025. C''est une moyenne de financement,
+  pas une mesure par personne : la DREES publie aussi le reste à charge par habitant, non catalogué.'
+variantes:
+- serie_id: hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF31&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-011497
+  eligible: oui
+- serie_id: hlth_sha11_hf?freq=A&unit=PC_CHE&icha11_hf=HF32&geo=FR
+  source: Eurostat
+  nature: composantes
+  ligne_id: estat-011498
+  eligible: oui
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA17, modalités 1+2
+  source: DREES (baromètre d'opinion)
+  nature: 'lecture ressentie : reste à charge jugé « beaucoup » ou « un peu » trop élevé (4 vagues 2019-2025 ; 45,9
+    % en 2019, 34,4 % en 2025, calculé sur les distributions du robot), hors long-list'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2010
+- provisoire_2025
+- moyen_financement
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (hlth_sha11_hf, HF3, PC_CHE : b en 2010, p en 2025). Seul
+  indicateur retenu des comptes de la santé (les autres dépenses sont des moyens budgétaires, charte §3.4).'

@@ -60,6 +60,11 @@ variantes:
     et des logements occupés par leur propriétaire (prc_hpi_ooa)
   ligne_id: estat-052319
   eligible: oui
+- serie_id: '010567058'
+  source: INSEE BDM
+  nature: indice des prix des logements anciens INSEE-Notaires, France métropolitaine, ensemble, série brute trimestrielle
+    (1996-2026), hors long-list
+  catalogue: 'insee_bdm_catalogue_non (série écartée par M01, motif à corriger : maintenance LOG-4)'
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -71,5 +76,6 @@ notes: 'Valeurs lues (tipsho60, unité « ratio prix sur revenu rapporté à la 
   102,96 (2005), 112,33 (2007), 103,19 (2009), 101,29 (2016), 108,04 (2020), 111,09 (2022), 103,42 (2023), 95,48
   (2024) ; aucun drapeau. Variantes : taux de variation annuels de l''indice des prix des logements, nominal (tipsho20)
   et déflaté (tipsho10), prc_hpi_a, logements occupés par leur propriétaire (prc_hpi_ooa). L''indice des prix des
-  logements anciens INSEE-Notaires et la série BCE des prix de l''immobilier résidentiel ne sont pas catalogués
-  (maintenance LOG-4).'
+  logements anciens INSEE-Notaires figure au catalogue des séries écartées de l''INSEE (motif « indice de production
+  ou de prix de production (entreprises) », à corriger) et est ajouté en variante ; la série BCE des prix de l''immobilier
+  résidentiel (flux RPP) n''est pas cataloguée (maintenance LOG-4).'

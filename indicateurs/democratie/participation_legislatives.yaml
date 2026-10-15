@@ -5,8 +5,10 @@ sous_theme: participation électorale
 famille: participation_electorale
 variante_principale: non
 definition: 'Part des électeurs inscrits ayant voté au premier tour des élections législatives (votants rapportés
-  aux inscrits, tous bureaux de vote du fichier agrégé du ministère de l''Intérieur). Champ : France entière ; l''inclusion
-  des Français de l''étranger avant 2012 est à vérifier.'
+  aux inscrits), calculée par le projet sur le fichier agrégé des résultats du ministère de l''Intérieur. Champ
+  homogène : France métropolitaine et départements d''outre-mer (Guadeloupe, Martinique, Guyane, La Réunion et Mayotte),
+  hors collectivités d''outre-mer et hors Français de l''étranger, que le fichier ne contient qu''à partir de 2009-2012
+  ; c''est le champ « France » des séries de l''INSEE.'
 unite: '% des inscrits'
 sens: haut
 type: resultat
@@ -14,41 +16,48 @@ declaratif: non
 composite: non
 source_organisme: Ministère de l'Intérieur (résultats électoraux), calcul du projet
 source_jeu: Données des élections agrégées (data.gouv.fr, fichier general_results au bureau de vote, Licence Ouverte
-  2.0)
-source_serie_id: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants
-  / somme inscrits)
+  2.0), agrégées par scrutin et par département par le robot (vague 9)
+source_serie_id: 'general_results (data.gouv.fr) : id_election AAAA_legi_t1, départements de métropole et DROM (somme
+  votants / somme inscrits)'
+composantes:
+- https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants / somme inscrits)
+formule: 'taux = 100 × somme(votants) / somme(inscrits) des lignes id_election = AAAA_legi_t1 et code_departement
+  ∈ {01 à 95, 2A, 2B, ZA ou 971, ZB ou 972, ZC ou 973, ZD ou 974, ZM ou 976} de l''agrégat par scrutin et par département
+  (première année lue : 2002) ; série annuelle par report de la valeur du dernier scrutin jusqu''au suivant (D17)'
 source_niveau: 2
-url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet
+url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.csv
 url_page: https://www.data.gouv.fr/fr/datasets/6481e741d4cf002ec0efec9d/
 frequence: irreguliere
-formule: taux = somme des votants / somme des inscrits de l'ensemble des bureaux de vote du fichier pour le scrutin
-  ; série annuelle reconstruite en reportant la valeur du dernier scrutin jusqu'au scrutin suivant (D17)
 premiere_annee: 2002
 derniere_annee: 2024
 nb_points_depuis_2000: 6
-geo: FR
+geo: FE
 eligibilite_longlist: a_verifier
 ligne_id: m04-000248
 hors_longlist: non
-raccordement: 'a_etudier : scrutin de 1997 absent du fichier (2000-2001 sans valeur) ; champ des inscrits avant
-  2012 à vérifier'
+preuve: docs/sources/series/interieur_elections__participation_par_departement.csv
+raccordement: 'a_etudier : scrutin de 1997 absent du fichier, 2000-2001 sans valeur (maintenance n° 24 b)'
 incontournable: oui
 recommandation: retenir_variante
-motif_recommandation: Scrutin national qui désigne l'Assemblée nationale et seconde lecture de la participation
-  nationale, 6 scrutins de 2002 à 2024 (de 47,51 % en 2022 à 66,71 % en 2024 au premier tour).
+motif_recommandation: Scrutin national qui désigne l'Assemblée nationale, 6 scrutins de 2002 à 2024 sur un champ
+  homogène (de 48,38 % en 2022 à 67,87 % en 2024), recoupés avec les 4 valeurs publiées par l'INSEE depuis 2012
+  (D34).
 note_pertinence: 'Les législatives mesurent l''intérêt pour l''élection du Parlement, en net recul de 2002 (64,53
-  %) à 2022 (47,51 %) avant le rebond de 2024 (66,71 %), après la dissolution. Elles complètent la présidentielle,
+  %) à 2022 (48,38 %) avant le rebond de 2024 (67,87 %), après la dissolution. Elles complètent la présidentielle,
   dont elles suivent le calendrier depuis 2002 (sauf en 2024) : l''utilisateur choisira l''une ou l''autre, ou les
-  deux avec prudence.'
+  deux avec prudence. Le champ exclut les onze circonscriptions des Français de l''étranger, créées en 2012, ce
+  qui supprime la rupture de champ relevée par l''audit.'
 variantes:
 - serie_id: '001778442'
   source: INSEE BDM
-  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2012-2024'
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » (métropole et DROM, identique
+    au calcul du projet à l''arrondi) et France métropolitaine, 2012-2024'
   ligne_id: bdm-001368
   eligible: a_verifier
 - serie_id: '001778443'
   source: INSEE BDM
-  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2012-2024'
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » (métropole et DROM, identique
+    au calcul du projet à l''arrondi) et France métropolitaine, 2012-2024'
   ligne_id: bdm-001369
   eligible: a_verifier
 socle_v1:
@@ -58,8 +67,19 @@ socle_v1:
   justification: ''
 qualite:
 - serie_irreguliere_D17
-- calcul_projet_a_recouper
-- champ_inscrits_a_verifier
+- calcul_projet
+- champ_metropole_drom
+- non_recoupe_2002_2007
+- departement_71_absent_2002
+- mayotte_absente_2002
 - lacune_2000_2001
-notes: Valeurs lues dans la sortie du robot M04. L'INSEE (BDM 001778442) publie 58,2 %, 49,6 %, 48,4 % et 67,9 %
-  pour 2012, 2017, 2022 et 2024 (lus le 14/10/2026), soit 0,9 à 1,2 point de plus que le fichier du ministère.
+notes: 'Calcul du projet (D34) sur la sortie de la vague 9 du robot (docs/sources/series/interieur_elections__participation_par_departement.csv
+  : inscrits, votants et exprimés sommés par scrutin et par département sur general_results.csv, aucun votant manquant),
+  lue le 15/10/2026 : 64,53 % (2002), 60,46 % (2007), 58,18 % (2012), 49,61 % (2017), 48,38 % (2022), 67,87 % (2024).
+  Recoupement : INSEE BDM 001778442 (58,2 %, 49,6 %, 48,4 % et 67,9 % de 2012 à 2024), identique à l''arrondi ;
+  2002 et 2007 non recoupés (premiers tours absents des pages d''archives lisibles à l''outil). Les Français de
+  l''étranger n''élisent des députés que depuis 2012 ; avant l''audit, la fiche portait le taux de tous les bureaux
+  (57,22 % en 2012, 47,51 % en 2022, 66,71 % en 2024), qui les inclut depuis cette date. En 2002, le fichier ne
+  contient ni Mayotte ni la Saône-et-Loire (398 818 inscrits à la présidentielle de 2002, 1 % du champ) ; la participation
+  de ce département dépassant la moyenne de 1 à 1,5 point en 2007 et 2012, l''effet sur 2002 est inférieur à 0,02
+  point.'

@@ -1,0 +1,74 @@
+id: adhesion_syndicale
+libelle: Part des personnes membres d'une organisation syndicale
+dimension: democratie
+sous_theme: voix et participation citoyenne
+famille: adhesion_syndicale
+variante_principale: oui
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui déclarent être membres d''une
+  organisation syndicale (question SDASSYND_1 : « Vous personnellement, êtes-vous membre d''une organisation syndicale
+  ? », réponse « oui »), non-réponses incluses au dénominateur, avec la pondération de redressement de l''enquête
+  ; population vivant en France métropolitaine.'
+unite: '% des répondants'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DREES
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDASSYND_1, modalité 1
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDASSYND_1, modalité 1
+formule: 'part = 100 × somme(poids des réponses SDASSYND_1 = 1) / somme(poids des réponses non vides, ne sait pas
+  999999999 compris), par année (première année lue : 2000) ; fonction distribution_ponderee du robot, vague 10'
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_syndicat_association.csv
+rattachement_propose: 'hors long-list : question SDASSYND_1 du baromètre DREES non cataloguée par M04 (oubli O1
+  de l''audit M06) ; candidat democratie (D33), à cataloguer (maintenance DEM-2)'
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure publique et annuelle de l'adhésion syndicale depuis 2000 (25 années sur 2000-2025,
+  de 8,06 % en 2000 à 6,81 % en 2025), candidat de la dimension (D33), calculée par le robot sans valeur officielle
+  publiée pour la recouper (D34).
+note_pertinence: L'adhésion à un syndicat mesure l'engagement dans la représentation collective des intérêts, une
+  forme de participation que le vote ne capte pas. La part des adhérents baisse de 8,06 % (2000) à 5,49 % (2019)
+  puis remonte à 6,99 % (2024) et 6,81 % (2025). Le sens « haut » suppose qu'une présence syndicale plus dense renforce
+  la voix des citoyens ; la série porte sur toute la population interrogée, retraités et inactifs compris, et ne
+  se compare pas à un taux de syndicalisation des salariés.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- calcul_sur_microdonnees
+- enquete_metropole
+- pas_d_enquete_2003
+- non_recoupe
+- codes_modalites_a_verifier
+- licence_a_confirmer
+notes: 'Parts « oui » lues dans la sortie de la vague 10 du robot (docs/sources/series/drees__barometre_2000_2025_syndicat_association.csv,
+  distribution pondérée des questions SDASSYND_1 et SDASSYND_2) : 8,06 % (2000), 8,93 % (2001), 8,66 % (2002), 8,67
+  % (2004), 7,81 % (2010), 7,41 % (2012), 5,49 % (2019), 6,29 % (2022), 6,99 % (2024), 6,81 % (2025) ; « ne sait
+  pas » (999999999) au plus 0,62 % (2023), absent avant 2016 (des non-réponses laissées vides seraient exclues du
+  dénominateur). Couverture 2000-2002 et 2004-2025 lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv
+  ; libellés de la question et des modalités lus dans les dictionnaires 2025 (1 = oui, 2 = non, 999999999 = ne sait
+  pas). Recoupement (D34) : aucune valeur publiée par la DREES pour cette question n''a été trouvée (les tableaux
+  simplifiés 2025 au dépôt ne la contiennent pas) ; la méthode du robot est recoupée sur la question PE03 en 2025
+  (fiche securite/risque_pauvrete_ressenti). Échantillon représentatif de la population vivant en France métropolitaine
+  (page du jeu) ; licence non indiquée sur la page du jeu.'

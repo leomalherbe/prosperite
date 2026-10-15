@@ -1,0 +1,97 @@
+id: taux_detention
+libelle: Nombre de personnes détenues pour 100 000 habitants
+dimension: democratie
+sous_theme: justice et État de droit
+famille: taux_detention
+variante_principale: oui
+definition: Nombre de personnes détenues rapporté à la population, pour 100 000 habitants, tous âges et deux sexes
+  (Eurostat crim_pris_age, « Détenus par âge et sexe »).
+unite: pour 100 000 habitants
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: crim_pris_age — Détenus par âge et sexe
+source_serie_id: crim_pris_age?freq=A&age=TOTAL&sex=T&unit=P_HTHAB&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_pris_age?freq=A&age=TOTAL&sex=T&unit=P_HTHAB&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/crim_pris_age/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-032527
+hors_longlist: non
+rattachement_propose: 'long-list securite (ligne estat-032527, règle 1090 autre_dimension:democratie du pilote securite)
+  : prisons → democratie (D33, audit M06 O3)'
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : la hausse du nombre de détenus pour 100 000 habitants (de 97,26 en 2008 à 117,47
+  en 2024) peut traduire plus de délinquance ou une justice plus sévère sans que l''État de droit progresse ni recule.'
+note_pertinence: Le taux de détention décrit l'intensité du recours à la prison, mais il ne se lit ni comme une
+  amélioration ni comme une dégradation de l'État de droit. La surpopulation carcérale et la part des détenus en
+  attente de jugement, retenues dans la dimension, en portent la lecture normative ; la série reste disponible comme
+  contexte.
+variantes:
+- serie_id: '001779165'
+  source: INSEE BDM
+  nature: 'INSEE (BDM) : nombre de condamnés écroués au 31 décembre, France et France métropolitaine, 2012-2024'
+  ligne_id: bdm-001324
+  eligible: oui
+- serie_id: '001779166'
+  source: INSEE BDM
+  nature: 'INSEE (BDM) : nombre de condamnés écroués au 31 décembre, France et France métropolitaine, 2012-2024'
+  ligne_id: bdm-001325
+  eligible: oui
+- serie_id: crim_pris_age?freq=A&age=JUVENILE&age=ADULT&sex=T&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : détenus pour 100 000 habitants par âge, par sexe, par nationalité (total en doublon technique)
+    et condamnés (crim_pris_tri, TRI_SPSD), 2008-2024 ; lignes de la long-list securite'
+  ligne_id: estat-032528
+  eligible: oui
+  longlist: securite
+- serie_id: crim_pris_age?freq=A&age=TOTAL&sex=M&sex=F&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : détenus pour 100 000 habitants par âge, par sexe, par nationalité (total en doublon technique)
+    et condamnés (crim_pris_tri, TRI_SPSD), 2008-2024 ; lignes de la long-list securite'
+  ligne_id: estat-032529
+  eligible: oui
+  longlist: securite
+- serie_id: crim_pris_ctz?freq=A&citizen=TOTAL&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : détenus pour 100 000 habitants par âge, par sexe, par nationalité (total en doublon technique)
+    et condamnés (crim_pris_tri, TRI_SPSD), 2008-2024 ; lignes de la long-list securite'
+  ligne_id: estat-055248
+  eligible: oui
+  longlist: securite
+- serie_id: crim_pris_ctz?freq=A&citizen=FOR&citizen=NAT&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : détenus pour 100 000 habitants par âge, par sexe, par nationalité (total en doublon technique)
+    et condamnés (crim_pris_tri, TRI_SPSD), 2008-2024 ; lignes de la long-list securite'
+  ligne_id: estat-055249
+  eligible: oui
+  longlist: securite
+- serie_id: crim_pris_tri?freq=A&leg_stat=TRI_SPSD&unit=P_HTHAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : détenus pour 100 000 habitants par âge, par sexe, par nationalité (total en doublon technique)
+    et condamnés (crim_pris_tri, TRI_SPSD), 2008-2024 ; lignes de la long-list securite'
+  ligne_id: estat-032531
+  eligible: oui
+  longlist: securite
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_ambigu
+- rattachement_a_trancher
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (mise à jour du jeu : 29/04/2026), sans drapeau : 97,26 (2008),
+  93,64 (2010), 102,25 (2013), 105,30 (2019), 92,90 (2020), 106,34 (2022), 111,18 (2023), 117,47 (2024). Lignes
+  crim_pris_* de la long-list securite importées (audit M06 O3, D33) : ventilations par âge, sexe et nationalité
+  et condamnés (crim_pris_tri, TRI_SPSD) en variantes, avec le nombre de condamnés écroués de l''INSEE ; détenus
+  par infraction écartés en bloc (D35).'

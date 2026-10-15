@@ -5,7 +5,11 @@ sous_theme: participation électorale
 famille: participation_electorale
 variante_principale: non
 definition: 'Part des électeurs inscrits ayant voté au premier tour des élections municipales (votants rapportés
-  aux inscrits, tous bureaux de vote du fichier agrégé du ministère de l''Intérieur). Champ : France entière.'
+  aux inscrits), calculée par le projet sur le fichier agrégé des résultats du ministère de l''Intérieur. Champ
+  homogène : France métropolitaine et départements d''outre-mer (Guadeloupe, Martinique, Guyane, La Réunion et Mayotte),
+  hors collectivités d''outre-mer et hors Français de l''étranger, que le fichier ne contient qu''à partir de 2009-2012
+  ; c''est le champ « France » des séries de l''INSEE. Le scrutin de 2008, limité dans le fichier aux communes de
+  plus de 3 500 habitants, n''est pas retenu.'
 unite: '% des inscrits'
 sens: haut
 type: resultat
@@ -13,41 +17,52 @@ declaratif: non
 composite: non
 source_organisme: Ministère de l'Intérieur (résultats électoraux), calcul du projet
 source_jeu: Données des élections agrégées (data.gouv.fr, fichier general_results au bureau de vote, Licence Ouverte
-  2.0)
-source_serie_id: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants
-  / somme inscrits)
+  2.0), agrégées par scrutin et par département par le robot (vague 9)
+source_serie_id: 'general_results (data.gouv.fr) : id_election AAAA_muni_t1, départements de métropole et DROM (somme
+  votants / somme inscrits)'
+composantes:
+- https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants / somme inscrits)
+formule: 'taux = 100 × somme(votants) / somme(inscrits) des lignes id_election = AAAA_muni_t1 et code_departement
+  ∈ {01 à 95, 2A, 2B, ZA ou 971, ZB ou 972, ZC ou 973, ZD ou 974, ZM ou 976} de l''agrégat par scrutin et par département
+  (première année lue : 2008, champ limité aux communes de plus de 3 500 habitants, non retenue ; série retenue
+  depuis 2014) ; série annuelle par report de la valeur du dernier scrutin jusqu''au suivant (D17)'
 source_niveau: 2
-url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet
+url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.csv
 url_page: https://www.data.gouv.fr/fr/datasets/6481e741d4cf002ec0efec9d/
 frequence: irreguliere
-formule: taux = somme des votants / somme des inscrits de l'ensemble des bureaux de vote du fichier pour le scrutin
-  ; série annuelle reconstruite en reportant la valeur du dernier scrutin jusqu'au scrutin suivant (D17)
-premiere_annee: 2008
+premiere_annee: 2014
 derniere_annee: 2026
-nb_points_depuis_2000: 4
-geo: FR
+nb_points_depuis_2000: 3
+geo: FE
 eligibilite_longlist: a_verifier
 ligne_id: m04-000252
 hors_longlist: non
-raccordement: 'a_etudier : scrutin de 2001 absent du fichier (2000-2007 sans valeur)'
+preuve: docs/sources/series/interieur_elections__participation_par_departement.csv
+raccordement: 'a_etudier : 2001 absent du fichier et 2008 limité aux communes de plus de 3 500 habitants (66,5 %
+  publiés pour l''ensemble des communes) : 2000-2013 sans valeur comparable'
 incontournable: oui
 recommandation: retenir_variante
-motif_recommandation: Scrutin local de référence, 4 scrutins de 2008 à 2026 dont celui de mars 2020 tenu au début
-  de l'épidémie de covid-19 (44,66 %), sans valeur avant 2008 dans le fichier du ministère.
+motif_recommandation: Scrutin local de référence, 3 scrutins comparables de 2014 à 2026 sur un champ homogène (44,60
+  % en 2020, scrutin tenu au début de l'épidémie de covid-19), le fichier ne couvrant en 2008 que les communes de
+  plus de 3 500 habitants.
 note_pertinence: 'Les municipales mesurent la participation à la démocratie locale, la plus proche des habitants
-  : 58,86 % en 2008, 63,55 % en 2014, 44,66 % en 2020 et 57,12 % en 2026. Le creux de 2020, scrutin tenu au début
-  de l''épidémie de covid-19, complique la lecture de la tendance.'
+  : 63,52 % en 2014, 44,60 % en 2020 et 57,10 % en 2026, en métropole et dans les DROM. Le creux de 2020, scrutin
+  tenu au début de l''épidémie de covid-19, complique la lecture de la tendance. La valeur 2008 du fichier (58,81
+  %) est retirée : elle ne porte que sur les communes de plus de 3 500 habitants, contre 66,5 % publiés pour l''ensemble
+  des communes.'
 variantes:
 - serie_id: '001785274'
   source: INSEE BDM
   nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2014
-    et 2020 (classées non éligibles par la long-list)'
+    et 2020 (classées non éligibles par la long-list ; 44,6 % en 2020 comme le calcul du projet, mais 63,4 % en
+    2014 contre 63,52 %)'
   ligne_id: bdm-001370
   eligible: non
 - serie_id: '001785275'
   source: INSEE BDM
   nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2014
-    et 2020 (classées non éligibles par la long-list)'
+    et 2020 (classées non éligibles par la long-list ; 44,6 % en 2020 comme le calcul du projet, mais 63,4 % en
+    2014 contre 63,52 %)'
   ligne_id: bdm-001371
   eligible: non
 socle_v1:
@@ -57,8 +72,16 @@ socle_v1:
   justification: ''
 qualite:
 - serie_irreguliere_D17
-- calcul_projet_a_recouper
-- lacune_2000_2007
-notes: Valeurs lues dans la sortie du robot M04. Les séries de l'INSEE (BDM 001785274 et 001785275, 2014 et 2020)
-  sont classées non éligibles par la long-list alors que les séries analogues des autres scrutins sont « à vérifier
-  » (signalé dans docs/cr/maintenance_catalogues.md).
+- calcul_projet
+- champ_metropole_drom
+- lacune_2000_2013
+- ecart_insee_2014
+notes: 'Calcul du projet (D34) sur la sortie de la vague 9 du robot (docs/sources/series/interieur_elections__participation_par_departement.csv
+  : inscrits, votants et exprimés sommés par scrutin et par département sur general_results.csv, aucun votant manquant),
+  lue le 15/10/2026. Recoupement : sur tous les bureaux du fichier (communes des collectivités d''outre-mer comprises),
+  63,55 % (2014), 44,66 % (2020) et 57,12 % (2026), soit les taux nationaux publiés (63,55 % et 44,66 %, repris
+  par LCP en 2026 ; 57,1 % au communiqué du ministère de 2026) ; le champ métropole et DROM retire moins de 0,1
+  point. L''INSEE (BDM 001785274) publie 44,6 % en 2020, comme le calcul, mais 63,4 % en 2014 contre 63,52 % (écart
+  non expliqué). Le champ du fichier en 2008 (communes de plus de 3 500 habitants ; scrutin de 2001 absent) est
+  lu dans la description du jeu data.gouv.fr par l''audit M06 ; le taux 2008 pour l''ensemble des communes est de
+  66,5 % (ministère, cité par Maire-info le 11/03/2008).'

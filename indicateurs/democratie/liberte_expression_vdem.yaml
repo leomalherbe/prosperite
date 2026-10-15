@@ -12,6 +12,7 @@ sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: V-Dem (Varieties of Democracy), relais Our World in Data
 source_jeu: V-Dem v16 via le graphique OWID freedom-of-expression-index (colonne freeexpr_vdem__estimate_best)
 source_serie_id: https://ourworldindata.org/grapher/freedom-of-expression-index.csv (colonne freeexpr_vdem__estimate_best)
@@ -19,7 +20,7 @@ source_niveau: 2
 url_api: https://ourworldindata.org/grapher/freedom-of-expression-index.csv?v=1&csvType=full&useColumnShortNames=true
 url_page: https://ourworldindata.org/grapher/freedom-of-expression-index
 frequence: annuelle
-premiere_annee: 1900
+premiere_annee: 1789
 derniere_annee: 2025
 nb_points_depuis_2000: 26
 geo: FR
@@ -30,11 +31,13 @@ raccordement: non
 incontournable: non
 recommandation: retenir
 motif_recommandation: Liberté d'expression nommée dans le contenu de la dimension, indice V-Dem annuel de 2000 à
-  2025 (26 points, 0,959 en 2025), distinct de l'indice global de démocratie (fiche propre admise par la règle des
-  composites).
+  2025 (26 points, 0,959 en 2025), concept distinct de la qualité démocratique globale (famille propre, D35) et
+  non incontournable, la table des cadres ne citant les « indices V-Dem » qu'en proxys généraux du thème démocratie
+  et libertés de SSF.
 note_pertinence: La liberté d'expression est une liberté publique fondamentale que la dimension cite explicitement.
   L'indice V-Dem est proche du maximum pour la France (0,959) et varie peu, ce qui limite son pouvoir de discrimination
-  dans le temps. Il recoupe en partie la liberté de la presse de RSF (famille distincte, autre producteur).
+  dans le temps. Il recoupe en partie la liberté de la presse de RSF, concept voisin nommé à part dans la dimension
+  (famille distincte).
 variantes:
 - serie_id: https://ourworldindata.org/grapher/media-corruption-score.csv (colonne v2mecorrpt__estimate_best)
   source: Our World in Data (relais)
@@ -75,7 +78,6 @@ qualite:
 - composite_D18
 - relais_owid
 - faible_variation
-notes: 'Dernière valeur (0,959 en 2025) et nombre de valeurs distinctes (56 sur 237 années) lus dans la sortie du
-  robot M04. Les questions d''experts V-Dem sur les médias sont listées en variantes. Série disponible depuis 1789
-  dans le relais OWID : premiere_annee ramenée à 1900, borne du contrôle de scripts/verifier_fiches.py (signalé
-  à la session mère).'
+notes: Dernière valeur (0,959 en 2025) et nombre de valeurs distinctes (56 sur 237 années) lus dans la sortie du
+  robot M04. Les questions d'experts V-Dem sur les médias sont listées en variantes. Série disponible depuis 1789
+  dans le relais OWID (V-Dem v16) ; année = année observée.

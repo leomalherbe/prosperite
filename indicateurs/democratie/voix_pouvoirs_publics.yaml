@@ -4,9 +4,11 @@ dimension: democratie
 sous_theme: voix et participation citoyenne
 famille: voix_pouvoirs_publics
 variante_principale: oui
-definition: Part des personnes de 16 à 65 ans déclarant avoir leur mot à dire sur ce que fait le gouvernement («
-  Having a say in government »), d'après l'enquête de l'OCDE sur les déterminants de la confiance dans les institutions
-  publiques (vagues 2021 et 2023), base How's Life de l'OCDE, mesure 8_1 ; libellé exact de la question non lu.
+definition: 'Part des personnes de 16 à 65 ans déclarant avoir leur mot à dire sur ce que fait le gouvernement («
+  Having a say in government »), base How''s Life de l''OCDE, mesure 8_1 (vagues 2021 et 2023) ; source primaire
+  à vérifier : How''s Life? 2020 définit l''indicateur sur l''enquête PIAAC (16-65 ans, unité que porte la base),
+  alors que les années 2021 et 2023 évoquent l''enquête de l''OCDE sur les déterminants de la confiance dans les
+  institutions publiques ; libellé exact de la question non lu.'
 unite: '% des 16-65 ans'
 sens: haut
 type: resultat
@@ -50,5 +52,8 @@ socle_v1:
 qualite:
 - deux_points
 - serie_irreguliere_D17
+- source_a_verifier
 notes: 'Valeurs lues dans la sortie du robot M04 (docs/sources/series/ocde__hsl_bien_etre_actuel.csv) : dernière
-  valeur 26,27 % (2023) ; complément 8_1_DEP 57,62 % (2023).'
+  valeur 26,27 % (2023) ; complément 8_1_DEP 57,62 % (2023). Source primaire non vérifiable (audit M06 §5.3) : le
+  PDF de définitions de l''OCDE est refusé à l''outil et l''extrait du robot ne retient que les passages sur Gallup
+  et les moyennes pluriannuelles ; comparabilité des vagues 2021 et 2023 à établir.'

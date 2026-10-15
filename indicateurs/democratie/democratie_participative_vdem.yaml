@@ -2,7 +2,7 @@ id: democratie_participative_vdem
 libelle: Indice de démocratie participative (V-Dem)
 dimension: democratie
 sous_theme: qualité démocratique (indices composites)
-famille: vdem
+famille: qualite_democratique
 variante_principale: non
 definition: Indice composite de V-Dem (de 0 à 1) qui combine la démocratie électorale et la composante participative
   (participation des citoyens aux organisations de la société civile, démocratie directe, élus locaux et régionaux),
@@ -13,6 +13,7 @@ sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: V-Dem (Varieties of Democracy), relais Our World in Data
 source_jeu: V-Dem v16 via le graphique OWID participatory-democracy-index (colonne participdem_vdem__estimate_best)
 source_serie_id: https://ourworldindata.org/grapher/participatory-democracy-index.csv (colonne participdem_vdem__estimate_best)
@@ -20,7 +21,7 @@ source_niveau: 2
 url_api: https://ourworldindata.org/grapher/participatory-democracy-index.csv?v=1&csvType=full&useColumnShortNames=true
 url_page: https://ourworldindata.org/grapher/participatory-democracy-index
 frequence: annuelle
-premiere_annee: 1900
+premiere_annee: 1789
 derniere_annee: 2025
 nb_points_depuis_2000: 26
 geo: FR
@@ -31,7 +32,7 @@ raccordement: non
 incontournable: oui
 recommandation: retenir_variante
 motif_recommandation: Indice global V-Dem le plus proche du thème participation, annuel de 2000 à 2025 (26 points,
-  0,597 en 2025), proposé en alternative à l'indice de démocratie libérale dans la famille V-Dem (D18).
+  0,597 en 2025), en alternative à l'indice de démocratie libérale dans la famille qualite_democratique (D35).
 note_pertinence: La démocratie participative met l'accent sur l'implication directe des citoyens, au cœur de la
   question de la dimension (« est-ce que les citoyens participent et sont entendus ? »). L'utilisateur choisira
   cet indice ou l'indice libéral, pas les deux, pour éviter de compter deux fois la composante électorale.
@@ -44,5 +45,5 @@ socle_v1:
 qualite:
 - composite_D18
 - relais_owid
-notes: 'Dernière valeur (0,597 en 2025) lue dans la sortie du robot M04. Série disponible depuis 1789 dans le relais
-  OWID : premiere_annee ramenée à 1900, borne du contrôle de scripts/verifier_fiches.py (signalé à la session mère).'
+notes: Dernière valeur (0,597 en 2025) lue dans la sortie du robot M04. Série disponible depuis 1789 dans le relais
+  OWID (V-Dem v16) ; année = année observée.

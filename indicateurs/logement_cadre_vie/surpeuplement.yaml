@@ -384,6 +384,12 @@ variantes:
     2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
   ligne_id: melodi-005542
   eligible: non
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable taux_lgmt_suroccupes)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: part des résidences principales en situation de sur-occupation (recensement 2011, 2016 et 2022, 9,72 %
+    en 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -395,4 +401,5 @@ qualite:
 notes: 'Valeurs lues (ilc_lvho05a, ensemble) : 10,3 (2004), 9,2 (2010), 7,1 (2014), 7,7 (2019), 9,6 (2020, b), 9,2
   (2022, b), 10,4 (2024), 10,8 (2025). Variantes : ventilations, nationalité et pays de naissance, INSEE BDM 010596142
   et Melodi ODD 11 (2013-2020), recensement (suroccupation modérée et accentuée), OCDE How''s Life 3_1 (7,59 % des
-  ménages en 2024 d''après l''extrait du robot M04).'
+  ménages en 2024 d''après l''extrait du robot M04); ITDD, part des résidences principales sur-occupées au recensement
+  (2011, 2016, 2022 ; 9,72 % en 2022, hors long-list).'

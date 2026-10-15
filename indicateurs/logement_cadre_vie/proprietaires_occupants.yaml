@@ -1,0 +1,71 @@
+id: proprietaires_occupants
+libelle: Proportion de ménages propriétaires de leur résidence principale
+dimension: logement_cadre_vie
+sous_theme: accès au logement et sans-abrisme
+famille: proprietaires_occupants
+variante_principale: oui
+definition: Part des résidences principales occupées par leur propriétaire (accédants et non accédants), estimation
+  annuelle du parc de logements de l'INSEE, France hors Mayotte.
+unite: '% des résidences principales'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, estimation annuelle du parc de logements, série 001791247
+source_serie_id: '001791247'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001791247
+url_page: https://www.insee.fr/fr/statistiques/serie/001791247
+frequence: annuelle
+premiere_annee: 1982
+derniere_annee: 2026
+nb_points_depuis_2000: 27
+geo: FR-D976
+eligibilite_longlist: oui
+ligne_id: bdm-001191
+hors_longlist: non
+raccordement: 'non : estimation annuelle du parc depuis 1982'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Sens ambigu (l'accession à la propriété est un objectif public, mais une part plus élevée
+  de propriétaires n'améliore pas en soi les conditions de logement), malgré une série INSEE annuelle de 1982 à
+  2026.
+note_pertinence: 'Le taux de propriétaires est souvent cité dans le débat public et l''accession à la propriété
+  fait l''objet de politiques dédiées. Il décrit toutefois la structure du parc plus qu''une condition de vie, et
+  il varie très peu : 55,7 % en 2000, 57,7 % de 2010 à 2013, 57,3 % en 2026 (valeur provisoire, BDM lue le 15/10/2026).
+  La fiche est écartée comme sous_occupation (charte §3.4), pour que Léo puisse s''en saisir s''il en juge autrement.'
+variantes:
+- serie_id: '001687221'
+  source: INSEE BDM
+  nature: autre zone (France métropolitaine), voie Melodi, source EU-SILC (part de la population)
+  ligne_id: bdm-001178
+  eligible: oui
+- serie_id: hlth_dhc010?freq=A&unit=PC&rskpovth=TOTAL&lev_limit=TOTAL&tenure=OWN&geo=FR
+  source: Eurostat
+  nature: autre zone (France métropolitaine), voie Melodi, source EU-SILC (part de la population)
+  ligne_id: estat-021886
+  eligible: oui
+- serie_id: DS_PARC_LOGEMENTS_SERIES?EAPL_MEASURE=PT_OWNER&FREQ=A&GEO=FRANCE-FM&SEASONAL_ADJUST=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre zone (France métropolitaine), voie Melodi, source EU-SILC (part de la population)
+  ligne_id: melodi-005772
+  eligible: oui
+- serie_id: DS_PARC_LOGEMENTS_SERIES?EAPL_MEASURE=PT_OWNER&FREQ=A&GEO=FRANCE-F_X_D976&SEASONAL_ADJUST=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: autre zone (France métropolitaine), voie Melodi, source EU-SILC (part de la population)
+  ligne_id: melodi-005773
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_provisoires_2024_2026
+- faible_variabilite
+notes: 'Valeurs lues (BDM 001791247, statut A jusqu''en 2023, P de 2024 à 2026) : 55,7 (2000), 56,9 (2005), 57,7
+  (2010), 57,5 (2017 à 2023), 57,4 (2024 et 2025), 57,3 (2026). Variantes : même série en France métropolitaine
+  (BDM 001687221) et voie Melodi (DS_PARC_LOGEMENTS_SERIES, PT_OWNER) ; part des personnes vivant dans un logement
+  dont elles sont propriétaires (EU-SILC, hlth_dhc010). Les autres statuts d''occupation (accédants, locataires
+  du parc privé ou social, logés gratuitement) restent écartés en bloc comme structure du parc.'

@@ -1,0 +1,78 @@
+id: duree_trajet_domicile_travail
+libelle: Durée médiane des trajets domicile-travail
+dimension: logement_cadre_vie
+sous_theme: transports et services
+famille: duree_trajet_domicile_travail
+variante_principale: oui
+definition: Durée médiane, en minutes, des navettes domicile-travail à l'heure de pointe, d'après le recensement
+  de la population (indicateurs territoriaux de développement durable INSEE-SDES, fichier France entière, variable
+  med_dist_min_hp, sous-champ « act »).
+unite: minutes
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE-SDES (indicateurs territoriaux de développement durable)
+source_jeu: Indicateurs territoriaux de développement durable, fichier France entière (DiDo), variable med_dist_min_hp
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_min_hp, sous-champ act)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: irreguliere
+premiere_annee: 2011
+derniere_annee: 2022
+nb_points_depuis_2000: 3
+geo: FE
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+rattachement_propose: 'hors long-list : variable du fichier ITDD France entière extraite par le robot M04 mais non
+  cataloguée (maintenance LOG-5) ; temps de trajet (SSF, mobilité au crosswalk M03 §3.3) → transports, contenu de
+  la dimension'
+raccordement: 'non : trois millésimes du recensement (2011, 2016, 2022)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure du temps de trajet domicile-travail retenue par le cadre Stiglitz-Sen-Fitoussi,
+  trois millésimes du recensement (2011, 2016, 2022) admis comme série irrégulière (D17, D28).
+note_pertinence: 'Le temps passé dans les trajets quotidiens pèse sur le temps libre, la fatigue et le budget des
+  ménages ; il dépend de l''éloignement entre logement et emploi et de l''offre de transport. La série ne compte
+  que trois valeurs, dont deux identiques, la dernière étant de 13 minutes en 2022 (19 minutes pour le sous-champ
+  « nav », extrait du robot M04) : elle distinguera peu les années. Le mode de calcul de la durée (temps estimé
+  à l''heure de pointe ou déclaré) et le sens des sous-champs « act » et « nav » sont à vérifier avant de fixer
+  des bornes.'
+variantes:
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_min_hp, sous-champ nav)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: sous-champ « nav » (19 minutes en 2022 ; 2011, 2016, 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_km, sous-champ act)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: distance médiane en km, sous-champ « act » (8,4 km en 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_km, sous-champ nav)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: distance médiane en km, sous-champ « nav » (14,9 km en 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- serie_irreguliere_D17
+- faible_variabilite
+- methode_a_verifier
+- sous_champs_a_verifier
+notes: 'Extrait du robot M04 (docs/sources/series/sdes__itdd_france_entiere.csv) : périodes 2011, 2016 et 2022,
+  2 valeurs distinctes, dernière valeur 13 (act) et 19 (nav) minutes ; distance médiane 8,4 km (act) et 14,9 km
+  (nav) en 2022. Les valeurs de 2011 et 2016 ne figurent pas dans les extraits commités et la lecture du fichier
+  DiDo n''a pas abouti le 15/10/2026 (autorisation non accordée à l''outil) : non trouvé. Le même fichier donne
+  les parts modales des déplacements domicile-travail (2016, 2022), reprises en variante de part_modale_transports_collectifs.
+  Aucune série annuelle du temps de trajet n''est cataloguée (enquêtes Mobilité des personnes du SDES ponctuelles,
+  d''après le relevé M03).'

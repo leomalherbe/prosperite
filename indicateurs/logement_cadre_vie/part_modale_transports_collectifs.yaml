@@ -128,6 +128,12 @@ variantes:
     métro (France métropolitaine, 2010-2024)'
   ligne_id: melodi-005667
   eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_depl_dom_trav, sous-champ tec)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: part des transports en commun dans les déplacements domicile-travail (recensement 2016 et 2022, 15,24
+    % en 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

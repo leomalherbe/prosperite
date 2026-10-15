@@ -86,6 +86,17 @@ variantes:
     fixe et 5G
   ligne_id: estat-052315
   eligible: non
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable locaux_raccor)
+  source: INSEE-SDES (ITDD, fichier France entière, d'après l'Arcep)
+  nature: part des locaux raccordables à la fibre (FTTH), 2019-2021 et 2023-2024 (89,39 % en 2024), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable couv4g)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: part de la surface couverte en 4G par au moins un opérateur, 2019, 2021, 2023 et 2024 (99,05 % en 2024),
+    hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

@@ -1,0 +1,62 @@
+id: preoccupation_logement
+libelle: Personnes préoccupées par le logement (baromètre DREES)
+dimension: logement_cadre_vie
+sous_theme: accès au logement et sans-abrisme
+famille: preoccupation_logement
+variante_principale: oui
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui se disent « beaucoup » ou
+  « assez » préoccupées par le logement (question OG04_1 : « Êtes-vous personnellement préoccupé(e) par… le logement
+  ? »), non-réponses au dénominateur, pondération de redressement de l''enquête.'
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_1, modalités 1+2
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+rattachement_propose: 'hors long-list : question OG04_1 du baromètre DREES non cataloguée par M04 (maintenance LOG-1)
+  ; coût et accès au logement, contenu de la dimension'
+raccordement: 'non : question posée chaque année de 2014 à 2025'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure ressentie et annuelle de l'inquiétude pour le logement, posée chaque année de
+  2014 à 2025 (12 vagues), de 66,2 % à 55,4 % des répondants d'après les distributions calculées par le robot M04.
+note_pertinence: 'La préoccupation pour le logement traduit la difficulté ressentie à se loger ou à payer son logement,
+  pour soi ou ses proches. Comme les autres questions OG04 du baromètre (chômage en travail, insécurité du quartier
+  en securite), elle mêle une inquiétude personnelle et un jugement sur la situation du pays (D32). Sa baisse de
+  66,2 % en 2014 à 54,0 % en 2020, puis sa stabilité autour de 55 %, contraste avec la remontée du taux de surcharge
+  des coûts du logement : le contrôle de redondance et le choix des bornes devront en tenir compte.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- calcul_sur_microdonnees
+- enquete_metropole
+- codes_modalites_a_verifier
+- licence_a_confirmer
+notes: 'Parts recalculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
+  des modalités 1 « beaucoup » et 2 « assez » de og04_1, non-réponses au dénominateur) : 66,23 % (2014), 62,10 %
+  (2015), 59,89 % (2018), 54,01 % (2020), 56,77 % (2023), 55,36 % (2025). Libellés de la question et des modalités
+  lus dans les dictionnaires 2025 du robot ; couverture 2014-2025 (12 années) lue dans drees__barometre_2000_2025_couverture.csv.
+  Questions voisines non retenues : LO11 (conditions actuelles de logement jugées satisfaisantes ou insuffisantes,
+  2024 et 2025 seulement, non éligible), LO10 (nombre de pièces, 5 vagues de 2020 à 2025), LO01 et LO02 (statut
+  d''occupation, prêt en cours : structure).'

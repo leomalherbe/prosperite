@@ -35,7 +35,13 @@ note_pertinence: 'L''indicateur mondial du logement inadéquat est la référenc
   la France, il repose sur une estimation par ville peu variable d''une année à l''autre (7 % en 2024 d''après l''extrait
   du robot M04). Sa méthode n''est pas documentée dans les extraits disponibles : il est proposé en variante de
   la privation sévère mesurée par EU-SILC.'
-variantes: []
+variantes:
+- serie_id: 'odd_11 : 11_1_1_EN_LND_SLUM._T._T._T._T.URB.PT_POP_URB'
+  source: OCDE — indicateurs ODD (estimation ONU-Habitat)
+  nature: population urbaine vivant en bidonville (ODD 11.1.1), 12 valeurs biennales 2000-2022 toutes nulles, hors
+    long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/ocde__odd_11.csv
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -46,4 +52,6 @@ qualite:
 - faible_variabilite
 - annee_manquante_2021
 notes: 'Extrait du robot M04 (docs/sources/series/ocde__odd_11.csv) : périodes 2004-2020 et 2022-2024, dernière
-  valeur 7.'
+  valeur 7. Le même fichier donne la part de la population urbaine vivant en bidonville (ODD 11.1.1, 12 valeurs
+  biennales 2000-2022, toutes nulles), ajoutée en variante hors long-list : elle confirme que la composante « bidonvilles
+  » du Doughnut est sans objet pour la France.'

@@ -40,6 +40,16 @@ variantes:
   nature: même série, France métropolitaine
   ligne_id: bdm-001351
   eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable log_hlm_phab)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: logements sociaux pour 10 000 habitants, 2011-2025 (795,1 en 2025), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_pls)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: part des logements sociaux dans l'ensemble des logements, 2011-2025 (17,47 % en 2025), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

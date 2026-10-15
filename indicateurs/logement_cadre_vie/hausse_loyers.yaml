@@ -81,6 +81,11 @@ variantes:
   ligne_id: estat-052759
   eligible: oui
   longlist: education
+- serie_id: '011815635'
+  source: INSEE BDM
+  nature: indice annuel des prix à la consommation des loyers d'habitation effectivement payés, base 2025, France,
+    1996-2025 (taux de variation à calculer), relais possible de prc_hicp_aind
+  catalogue: 'insee_bdm_catalogue_non (série écartée par M01 : indice de prix)'
 socle_v1:
   seuil_minimal: null
   objectif: null

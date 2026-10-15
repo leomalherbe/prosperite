@@ -4,8 +4,9 @@ dimension: egalites
 sous_theme: origine sociale et mobilité
 famille: ecart_reussite_origine_sociale
 variante_principale: oui
-definition: Taux de réussite au baccalauréat (toutes séries) des candidats dont le parent de référence est cadre
-  ou de profession intellectuelle supérieure moins celui des candidats enfants d'ouvriers, en points (DEPP).
+definition: Écart, en valeur absolue et en points, entre le taux de réussite au baccalauréat (toutes séries) des
+  candidats dont le parent de référence est cadre ou de profession intellectuelle supérieure et celui des candidats
+  enfants d'ouvriers (DEPP).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -20,7 +21,7 @@ composantes:
   (Cadres, professions intellectuelles supérieures#pourcentage_d_admis_au_baccalaureat)
 - https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale
   (Ouvriers#pourcentage_d_admis_au_baccalaureat)
-formule: taux de réussite des enfants de cadres - taux de réussite des enfants d'ouvriers
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale/exports/csv?delimiter=%3B
 url_page: https://data.education.gouv.fr/explore/dataset/fr-en-reussite-au-baccalaureat-origine-sociale/
@@ -50,4 +51,10 @@ qualite:
 - ecart_construit
 - champ_candidats
 - reforme_bac_2021
-notes: Valeurs 2025 lues dans l'extrait du robot M04 (docs/sources/series/depp__fr-en-reussite-au-baccalaureat-origine-sociale.csv).
+- valeur_absolue_d34
+- recoupement_a_faire
+notes: 'Composantes (A = enfants de cadres, B = enfants d''ouvriers) : 1997-2025 pour les deux d''après l''extrait
+  du robot M04 (docs/sources/series/depp__fr-en-reussite-au-baccalaureat-origine-sociale.csv), qui ne donne que
+  la dernière valeur (97,1 % et 87,5 % en 2025, écart 9,6) ; le recoupement sur trois années (D34) et le contrôle
+  de 2020 (épreuves remplacées par le contrôle continu) sont à faire par le robot (data.education.gouv.fr refusé
+  à l''outil ; maintenance EGA-6).'

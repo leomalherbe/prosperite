@@ -16,6 +16,11 @@ source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable OG04_4, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable OG04_4, modalités 1+2
+formule: part pondérée des réponses OG04_4 = 1 (« beaucoup ») ou 2 (« assez ») parmi l'ensemble des répondants (non-réponses
+  au dénominateur), poids de redressement du baromètre
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -44,7 +49,10 @@ socle_v1:
   justification: ''
 qualite:
 - enquete_metropole
+- calcul_sur_microdonnees
 - rupture_possible_2018
 - licence_a_confirmer
-notes: Parts recalculées par l'agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (modalités
-  1 et 2 de og04_4).
+- non_recoupe
+notes: 'Parts lues dans docs/sources/series/drees__barometre_2000_2025_distributions.csv (modalités 1 et 2 de og04_4
+  : 18,22 + 22,58 = 40,8 % en 2014, 18,57 + 28,52 = 47,1 % en 2025). Recoupement (D34) avec les tableaux publiés
+  par la DREES à faire : l''extrait du classeur 2025 au dépôt ne détaille pas OG04.'

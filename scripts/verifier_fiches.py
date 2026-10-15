@@ -11,7 +11,9 @@ Contrôles (erreurs bloquantes, code de sortie 1) :
    autre fiche de la famille → `retenir_variante` ou `ecarter`.
 4. **Catalogues** : l'identifiant de la série principale (ou chacune de ses `composantes`) et celui de chaque
    variante figurent dans un catalogue du dépôt (long-lists, catalogues INSEE et Eurostat, y compris les
-   séries écartées `*_non`). Exception documentée : une fiche ou une variante hors catalogue de séries
+   séries écartées `*_non`) ; une composante Eurostat peut être une modalité d'un « paquet » catalogué
+   (même jeu, mêmes clés, une valeur par clé ; écarts construits, D34). Exception documentée : une fiche
+   ou une variante hors catalogue de séries
    (`hors_longlist: oui`, ou variante sans `ligne_id`) dont le jeu Eurostat figure dans le catalogue des jeux,
    ou dont le champ `preuve` désigne un fichier du dépôt (sortie du robot, ex. `docs/sources/series/…`) :
    avertissement, la série est à cataloguer (liste de maintenance, D32).
@@ -60,7 +62,7 @@ FACULTATIFS = {
     "composantes": "liste", "formule": "texte", "nb_points_depuis_2000": "entier",
     "eligibilite_longlist": {"oui", "a_verifier", "non", "hors_longlist"}, "ligne_id": "texte_vide",
     "hors_longlist": OUI_NON, "rattachement_propose": "texte", "preuve": "texte",
-    "statut_serie": {"disponible", "a_calculer"},
+    "statut_serie": {"disponible", "a_calculer"}, "annee_reference": {"observation", "edition"},
 }
 COLONNES_TABLEAU = ["id", "libelle", "famille", "variante_principale", "definition_courte", "sens", "unite", "source",
                     "serie_id", "periode", "type", "declaratif", "composite", "incontournable", "recommandation",
@@ -212,14 +214,49 @@ def _preuve(racine: Path | None, element: dict) -> str | None:
     return None
 
 
+def _cle_requete(serie: str) -> tuple[str, list[tuple[str, str]]]:
+    """Découpe un identifiant Eurostat `jeu?k1=v1&k2=v2…` en (jeu, paires clé-valeur)."""
+    jeu, _, requete = serie.partition("?")
+    paires = [tuple(p.split("=", 1)) for p in requete.split("&") if "=" in p] if requete else []
+    return jeu, paires
+
+
+def index_paquets(series: set[str]) -> dict[str, list[dict[str, set[str]]]]:
+    """Paquets de modalités du catalogue (`jeu?…&sex=M&sex=F…`), par jeu : clé → valeurs admises."""
+    index: dict[str, list[dict[str, set[str]]]] = defaultdict(list)
+    for serie in series:
+        jeu, paires = _cle_requete(serie)
+        if paires:
+            cles: dict[str, set[str]] = defaultdict(set)
+            for k, v in paires:
+                cles[k].add(v)
+            index[jeu].append(dict(cles))
+    return index
+
+
+def selection_de_paquet(serie: str, paquets: dict[str, list[dict[str, set[str]]]]) -> bool:
+    """Vrai si `serie` (une valeur par clé) est une modalité d'un paquet catalogué du même jeu, avec les mêmes
+    clés : composante d'un écart construit (méthode 33 §9, D34), ex. `une_rt_a?…&sex=F…` dans `…&sex=M&sex=F…`."""
+    jeu, paires = _cle_requete(serie)
+    cles = [k for k, _ in paires]
+    if not paires or len(cles) != len(set(cles)):
+        return False
+    return any(set(p) == set(cles) and all(v in p[k] for k, v in paires) for p in paquets.get(jeu, []))
+
+
 def controler_catalogues(fiche: dict, rapport: Rapport, series: set[str], jeux: set[str],
-                         racine: Path | None = None) -> None:
+                         racine: Path | None = None, paquets: dict | None = None) -> None:
     nom = fiche.get("id", "?")
     hors = fiche.get("hors_longlist") == "oui"
     principales = fiche.get("composantes") or [fiche.get("source_serie_id", "")]
     for serie in principales:
         if serie in series:
             continue
+        if fiche.get("composantes"):
+            if paquets is None:
+                paquets = index_paquets(series)
+            if selection_de_paquet(serie, paquets):
+                continue
         if hors and serie.split("?")[0] in jeux:
             rapport.avertir(nom, f"série principale hors catalogue de séries (jeu {serie.split('?')[0]} au catalogue "
                                  "des jeux) : à réintégrer au catalogue")
@@ -405,8 +442,9 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
     controler_familles(fiches, rapport)
     if catalogues:
         series, jeux = index_catalogues(racine)
+        paquets = index_paquets(series) if any(f.get("composantes") for f in fiches) else None
         for f in fiches:
-            controler_catalogues(f, rapport, series, jeux, racine)
+            controler_catalogues(f, rapport, series, jeux, racine, paquets)
     controler_couverture(racine, dimension, fiches, rapport)
     controler_lignes_croisees(racine, dimension, rapport)
     controler_tableau(racine, dimension, fiches, rapport)

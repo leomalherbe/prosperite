@@ -28,13 +28,16 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: ecarter
-motif_recommandation: 'Les violences sexuelles enregistrées sont multipliées par 4 entre 2010 et 2024 (35,5 à 140,8
-  pour 100 000 habitants, accélération depuis 2018) alors que la part de victimes déclarées dans l''enquête reste
-  entre 0,4 et 0,8 % : la série mesure la révélation des faits, pas leur fréquence.'
-note_pertinence: La hausse des violences sexuelles enregistrées traduit d'abord une plus grande propension à porter
-  plainte et une meilleure prise en charge des victimes ; l'utiliser comme indicateur de sécurité conduirait à lire
-  un progrès de la parole comme une dégradation. Elle peut être montrée à titre d'information, à côté de l'enquête,
-  mais pas notée.
+motif_recommandation: 'Sur 2010-2018, les violences sexuelles enregistrées doublent (35,5 à 71,6 pour 100 000 habitants)
+  quand la part de victimes déclarées dans l''enquête CVS passe de 0,4 à 0,5 %, et moins d''une victime d''agression
+  sexuelle sur cinq la signale à la police (17,4 % en 2019, ONUDC) : la série mesure la révélation des faits, pas
+  leur fréquence (sens ambigu).'
+note_pertinence: 'La hausse des violences sexuelles enregistrées traduit d''abord une plus grande propension à porter
+  plainte et une meilleure prise en charge des victimes ; elle se poursuit après 2018 (140,8 pour 100 000 en 2024)
+  alors que l''enquête VRS reste entre 0,5 et 0,6 % (2021-2023). L''enquête est peu précise (valeurs arrondies au
+  dixième, 0,8 % isolé en 2017) : la preuve repose surtout sur l''écart d''ordre de grandeur. Utiliser la série
+  enregistrée comme indicateur de sécurité conduirait à lire un progrès de la parole comme une dégradation : elle
+  peut être montrée à titre d''information, pas notée.'
 variantes:
 - serie_id: crim_off_cat?freq=A&iccs=ICCS03011&unit=P_HTHAB&geo=FR
   source: Eurostat
@@ -90,4 +93,6 @@ socle_v1:
 qualite:
 - delinquance_enregistree
 - sens_ambigu
-notes: ''
+notes: 'Valeurs relues sur l''API Eurostat (35,51 en 2010, 71,63 en 2018, 140,75 en 2024) et sur la BDM (010596045)
+  le 14/10/2026. Taux de signalement à la police : ONUDC via l''OCDE, ODD 16.3.1, agressions sexuelles 17,41 % en
+  2019 (série 2010-2019) et violences sexuelles 6 % en 2021-2022 (docs/sources/series/ocde__odd_16.csv).'

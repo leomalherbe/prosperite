@@ -30,9 +30,10 @@ incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Série enregistrée continue 2008-2024 (de 167 à 190 pour 100 000 jusqu'en 2013, puis 83 en
   2024), dont le sens n'est pas contredit par l'enquête ; variante de la série d'enquête, plus fraîche qu'elle.
-note_pertinence: 'Pour les vols avec violence, la plainte est fréquente et la série enregistrée a une évolution
-  plausible (baisse continue depuis 2013) : elle peut remplacer l''enquête si le relais ONUDC s''arrête. Le SSMSI
-  publie les vols violents sans arme et avec arme en nombre (2016-2025).'
+note_pertinence: 'Les vols avec violence ont une évolution enregistrée plausible (baisse continue depuis 2013),
+  mais moins d''une victime sur trois les signale à la police (30 % en 2022, ONUDC via l''OCDE) : comme pour les
+  cambriolages, le sens repose sur la stabilité de ce taux. La série peut remplacer l''enquête si le relais ONUDC
+  s''arrête. Le SSMSI publie les vols violents sans arme et avec arme en nombre (2016-2025).'
 variantes:
 - serie_id: https://www.data.gouv.fr/fr/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f (Titre « Vols violents sans
     arme enregistrés par les services de sécurité (Données annuelles) » ; Indicateur=Vols et tentatives de vols
@@ -57,4 +58,7 @@ socle_v1:
   justification: ''
 qualite:
 - delinquance_enregistree
-notes: ''
+- sens_hypothese_plainte_stable
+notes: 'Valeurs relues sur l''API Eurostat le 14/10/2026 (166,60 en 2008, 190,02 en 2013, 82,81 en 2024, sans drapeau).
+  Taux de signalement à la police des vols avec violence : ONUDC via l''OCDE, ODD 16.3.1 (2007-2022, dernière valeur
+  30 % en 2022 ; m04-000141, long-list democratie).'

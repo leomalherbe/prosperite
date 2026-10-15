@@ -4,14 +4,15 @@ dimension: securite
 sous_theme: sécurité routière
 famille: securite_routiere
 variante_principale: oui
-definition: Nombre de personnes tuées dans un accident de la circulation routière (décès dans les 30 jours), rapporté
-  à la population, pour 100 000 habitants (indicateur de développement durable de l'UE, sdg_11_40).
+definition: 'Nombre de personnes tuées dans un accident de la circulation routière (décès dans les 30 jours), rapporté
+  à la population moyenne de l''année, pour 100 000 habitants (indicateur de développement durable de l''UE, sdg_11_40).
+  Champ mixte : le nombre de tués est celui de la France métropolitaine, la population celle de la France entière.'
 unite: tués pour 100 000 habitants
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-source_organisme: Eurostat (statistiques de sécurité routière, d'après l'ONISR)
+source_organisme: Eurostat, d'après la Commission européenne (DG Mobilité et transports)
 source_jeu: sdg_11_40 — Décès sur les routes, par type de route
 source_serie_id: sdg_11_40?freq=A&tra_infr=TOTAL&unit=RT&geo=FR
 source_niveau: 1
@@ -28,13 +29,15 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Indicateur des cadres OCDE (10_3), ODD 3.6 et objectif UE 2030 (diviser par deux tués et blessés
-  graves), taux pour 100 000 habitants 2000-2024 sans lacune (13,3 en 2000, 4,6 en 2024).
+motif_recommandation: Indicateur des cadres OCDE (10_3), ODD 3.6 et objectif UE 2030, taux pour 100 000 habitants
+  2000-2024 sans lacune (13,3 en 2000, 4,6 en 2024) à champ mixte documenté (D32), proposé au socle (retenu_socle)
+  au vu de l'arbitrage A6 et des cibles officielles.
 note_pertinence: 'La sécurité routière est rattachée à la dimension par l''arbitrage A6 du gel 1. Le taux de tués
   a été divisé par près de trois depuis 2000, surtout entre 2002 et 2006 (de 12,4 à 7,4), puis stagne autour de
-  5 depuis 2013. Le champ est à vérifier : rapporter les 3 193 tués de métropole de 2024 (INSEE) au taux de 4,6
-  pour 100 000 donne une population d''environ 69 millions, celle de la France entière et non de la métropole (calcul
-  de l''agent). Les objectifs officiels (ODD 3.6, UE 2030) fournissent des bornes.'
+  5 depuis 2013. Le taux publié rapporte les tués de France métropolitaine à la population de la France entière
+  : il est sous-estimé d''environ 3 % (4,6 publié en 2024 contre 4,8 pour la métropole), mais le rapport entre les
+  deux populations varie peu et la tendance est préservée. Les objectifs officiels (ODD 3.6, UE 2030) fournissent
+  des bornes.'
 variantes:
 - serie_id: '010593288'
   source: INSEE BDM
@@ -192,6 +195,159 @@ variantes:
   nature: 'INSEE ODD 3.i6 : ventilations par âge et par type de route (BDM et Melodi), 2010 ou 2013-2024'
   ligne_id: melodi-005469
   eligible: oui
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-000378
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-000379
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_asdr2?freq=A&unit=RT&sex=T&age=Y_LT65&age=Y_GE65&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-000380
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_acdr2?freq=A&unit=RT&sex=T&age=TOTAL&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-002717
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_acdr2?freq=A&unit=RT&sex=M&sex=F&age=TOTAL&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-002718
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_acdr2?freq=A&unit=RT&sex=T&age=Y_LT1&age=Y1-4&age=Y5-9&age=Y10-14&age=Y_LT15&age=Y15-19&age=Y15-24&age=Y15-29&age=Y20-24&age=Y_LT25&age=Y25-29&age=Y30-34&age=Y30-44&age=Y35-39&age=Y40-44&age=Y45-49&age=Y45-64&age=Y50-54&age=Y55-59&age=Y60-64&age=Y_LT65&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y75-79&age=Y75-84&age=Y80-84&age=Y85-89&age=Y_GE85&age=Y90-94&age=Y_GE95&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-002719
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=TOTAL&icd10=V_Y85&resid=TOT_IN&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020765
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=M&sex=F&age=TOTAL&icd10=V_Y85&resid=TOT_IN&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020766
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=Y_LT1&age=Y1-4&age=Y5-9&age=Y10-14&age=Y_LT15&age=Y15-19&age=Y15-24&age=Y15-29&age=Y20-24&age=Y_LT25&age=Y25-29&age=Y30-34&age=Y30-44&age=Y35-39&age=Y40-44&age=Y45-49&age=Y45-64&age=Y50-54&age=Y55-59&age=Y60-64&age=Y_LT65&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y75-79&age=Y75-84&age=Y80-84&age=Y85-89&age=Y_GE85&age=Y90-94&age=Y_GE95&icd10=V_Y85&resid=TOT_IN&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020767
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=TOTAL&icd10=V_Y85&resid=TOT_RESID&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020768
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=M&sex=F&age=TOTAL&icd10=V_Y85&resid=TOT_RESID&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020769
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_aro?freq=A&unit=NR&sex=T&age=Y_LT1&age=Y1-4&age=Y5-9&age=Y10-14&age=Y_LT15&age=Y15-19&age=Y15-24&age=Y15-29&age=Y20-24&age=Y_LT25&age=Y25-29&age=Y30-34&age=Y30-44&age=Y35-39&age=Y40-44&age=Y45-49&age=Y45-64&age=Y50-54&age=Y55-59&age=Y60-64&age=Y_LT65&age=Y65-69&age=Y65-74&age=Y_GE65&age=Y70-74&age=Y75-79&age=Y75-84&age=Y80-84&age=Y85-89&age=Y_GE85&age=Y90-94&age=Y_GE95&icd10=V_Y85&resid=TOT_RESID&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-020770
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=T&age=Y_LT75&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021062
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=M&sex=F&age=Y_LT75&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021063
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apyll?freq=A&unit=YR&sex=T&age=Y_LT70&icd10=V_Y85&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021064
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=T&icd10=V&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021535
+  eligible: oui
+  longlist: sante
+- serie_id: hlth_cd_apr?freq=A&mortalit=TOTAL&sex=M&sex=F&icd10=V&unit=RT&geo=FR
+  source: Eurostat
+  nature: 'autre définition : décès par accident de transport, tous modes (route, rail, air, eau ; codes V01-V99
+    et Y85), d''après les causes médicales de décès (Eurostat hlth_cd_aro, hlth_cd_asdr2, hlth_cd_acdr2, hlth_cd_apyll,
+    hlth_cd_apr), nombres, taux, années potentielles de vie perdues et mortalité évitable, 2011-2023 ou 2024, avec
+    ventilations ; lignes de la long-list sante'
+  ligne_id: estat-021536
+  eligible: oui
+  longlist: sante
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -200,7 +356,16 @@ socle_v1:
 qualite:
 - rupture_2014
 - provisoire_2023_2024
-- champ_geo_a_verifier
-notes: 'Rupture signalée par Eurostat en 2014 (drapeau b) ; valeurs 2023-2024 provisoires. Incontournable : non
-  selon la méthode commune (seuls les concepts du §5 de la synthèse du crosswalk), bien que trois cadres de la table
-  des cadres le citent (OCDE 10_3, ODD 3.6, objectif UE 2030) : à trancher.'
+- champ_mixte
+notes: 'Champ mixte (D32 ; audit M06 §4.1, maintenance n° 9 close) : la formule de sdg_11_40 se retrouve à l''unité
+  près en rapportant les tués de tran_sf_roadro (3 181 en 2024, champ métropolitain, de 2 à 13 unités sous la série
+  INSEE 010593288 chaque année de 2018 à 2024) à la population moyenne de la France entière de demo_gind (68 775
+  952 en 2024) ; l''API Eurostat (lue le 14/10/2026) donne pour source la DG Mobilité et transports de la Commission
+  et pour dénominateur la population moyenne de l''année. Taux homogène à recalculer par le pipeline (D32) : 010593288
+  / 000067671 × 100 000 (tués et population moyenne de France métropolitaine, 2010-2024 et 1946-2025) : 6,3 en 2010,
+  5,0 en 2018, 3,9 en 2020, 4,8 en 2024 (calcul de l''agent correcteur sur la BDM lue le 14/10/2026 ; Eurostat :
+  6,2, 4,8, 3,8 et 4,6). Rupture signalée par Eurostat en 2014 (drapeau b, cause non documentée ; l''entrée de Mayotte
+  dans la population France entière est une hypothèse non vérifiée) ; valeurs 2023-2024 provisoires. Incontournable
+  : non selon la méthode commune (concepts du §5 de la synthèse du crosswalk ; parmi les cadres, seule l''OCDE le
+  cite, l''ODD 3.6 et l''objectif UE 2030 étant des cibles) ; proposé à Léo en retenu_socle (audit M06 §5.5). Variantes
+  « causes de décès » (hlth_cd_*, long-list sante) : tous modes de transport, pas seulement la route.'

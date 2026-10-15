@@ -1,0 +1,63 @@
+id: ecart_revenu_median_origine
+libelle: Écart relatif de revenu médian entre personnes nées en France et personnes nées à l'étranger (18 ans ou
+  plus)
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_pauvrete_origine
+variante_principale: non
+definition: Écart, en valeur absolue et en pourcentage, entre le revenu disponible équivalent médian des personnes
+  de 18 ans ou plus nées en France et celui des personnes nées à l'étranger, rapporté au premier (EU-SILC, jeu ilc_di16).
+unite: '% du revenu médian des personnes nées en France'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_di16 (revenu moyen et médian par groupe de pays de naissance)
+source_serie_id: ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NAT&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+composantes:
+- ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NAT&sex=T&age=Y_GE18&geo=FR
+- ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+formule: abs(A - B) / A * 100
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di16?freq=A&unit=EUR&statinfo=MED_EI&c_birth=NAT&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_di16/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-054846 ; estat-054843
+hors_longlist: non
+rattachement_propose: lignes de la long-list niveau_de_vie (revenu médian par pays de naissance, variantes de niveau_de_vie/niveau_vie_median)
+  ; l'écart construit relève d'egalites (A8, R3), les niveaux restent dans niveau_de_vie ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Écart calculé sur deux séries annuelles de 2004 à 2025 (22 points ; 20,3 % en 2004, 17,2 %
+  en 2015, 22,1 % en 2025), qui couvre les immigrés devenus français, proposé comme alternative dans la famille
+  ecart_pauvrete_origine.
+note_pertinence: Le revenu médian des personnes nées à l'étranger est inférieur d'environ un cinquième à celui des
+  personnes nées en France. Par pays de naissance, la mesure inclut les immigrés naturalisés, que l'écart de pauvreté
+  selon la nationalité (principal de la famille) exclut. Les deux composantes sautent en 2008 (+22 % et +15 % en
+  un an) sans drapeau, et portent des ruptures en 2020 et 2022.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- valeur_absolue_d34
+- rupture_possible_2008
+- rupture_2020
+- rupture_2022
+- composantes_autre_longlist
+notes: 'Composantes (A = nés en France, B = nés à l''étranger, euros courants, sans effet sur l''écart relatif)
+  lues sur l''API Eurostat le 14/10/2026 : 2004-2025 pour les deux (aucune valeur en 2003), drapeau b en 2020 et
+  2022 ; recoupement (D34) : 15 974 et 12 737 € (2004, écart 20,3 %), 22 191 et 18 380 € (2015, 17,2 %), 27 964
+  et 21 792 € (2025, 22,1 %) ; saut de 2008 : 17 115 → 19 638 € (A) et 13 564 → 16 581 € (B). Variante possible
+  par nationalité (ilc_di15), non importée pour ne pas multiplier les niveaux tenus en variante (audit M06, I2).
+  Oubli O5 de l''audit M06.'

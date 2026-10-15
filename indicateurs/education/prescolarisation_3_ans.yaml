@@ -126,6 +126,12 @@ variantes:
     de jeux régionaux)
   ligne_id: estat-022505
   eligible: oui
+- serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
+    (France.Ensemble#eape)
+  source: DEPP — data.education.gouv.fr (Opendatasoft)
+  nature: reprise de l'indicateur européen par la DEPP (2013-2023 ; 100 % en 2023)
+  preuve: docs/sources/series/depp__fr-en-objectifs_europeens_education_formation.csv
+  statut: disponible
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -135,4 +141,5 @@ qualite:
 - valeurs_au_plafond
 - rupture_2014
 - provisoire_2018_2023_2024
-notes: Valeurs lues sur l'API Eurostat le 15/10/2026 ; la DEPP publie aussi 100 % (2013-2023, objectifs européens).
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 ; la DEPP reprend la mesure pour le suivi des objectifs européens
+  (2013-2023, 100 % en 2023).

@@ -2,8 +2,8 @@ id: egalite_libertes_groupes_sociaux
 libelle: Égalité des libertés civiles entre groupes sociaux (V-Dem)
 dimension: egalites
 sous_theme: discriminations
-famille: egalite_libertes_groupes_sociaux
-variante_principale: oui
+famille: discriminations_origine
+variante_principale: non
 definition: Score du projet V-Dem mesurant si les libertés civiles sont garanties de la même façon à tous les groupes
   sociaux (origine, religion, langue…), estimé à partir d'évaluations d'experts.
 unite: score (échelle du modèle de mesure V-Dem)
@@ -11,6 +11,7 @@ sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: V-Dem (relais Our World in Data)
 source_jeu: equality-of-civil-liberties-across-social-groups-score (OWID)
 source_serie_id: https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-score.csv (colonne
@@ -19,7 +20,7 @@ source_niveau: 2
 url_api: https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-score.csv?v=1&csvType=full&useColumnShortNames=true
 url_page: https://ourworldindata.org/grapher/equality-of-civil-liberties-across-social-groups-score
 frequence: annuelle
-premiere_annee: 1900
+premiere_annee: 1789
 derniere_annee: 2025
 nb_points_depuis_2000: 26
 geo: FR
@@ -28,13 +29,15 @@ ligne_id: m04-000175
 hors_longlist: non
 raccordement: non
 incontournable: non
-recommandation: ecarter
-motif_recommandation: Score presque constant (14 valeurs distinctes sur 237 ans, 1,042 en 2025), sans borne fixe
-  et fondé sur des évaluations d'experts, donc peu informatif sur l'évolution des discriminations en France.
-note_pertinence: Les discriminations selon l'origine sont un contenu explicite de la dimension (A8), mais aucune
-  série annuelle mesurée n'est au catalogue. Les candidats à cataloguer sont la question CS16_1 du baromètre DREES
-  (témoins de discriminations liées à l'origine, 2015-2025) et les enquêtes TeO et du Défenseur des droits (non
-  annuelles).
+recommandation: retenir_variante
+motif_recommandation: Score annuel d'experts de 1789 à 2025 (1,042 en 2025), bien plus long que la mesure d'enquête
+  principale de la famille, proposé comme alternative dans la famille discriminations_origine (une série peu variable
+  n'est pas écartée, D34).
+note_pertinence: Le score V-Dem mesure si les libertés civiles sont garanties de la même façon à tous les groupes
+  sociaux (origine, religion, langue) ; pour la France, il varie peu (14 valeurs distinctes sur 237 ans). C'est
+  une évaluation d'experts sans borne fixe, alors que la question CS16_1 du baromètre DREES (principale de la famille)
+  mesure des discriminations observées par la population. Il apporte une série annuelle longue, utile pour les années
+  sans enquête.
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -46,5 +49,6 @@ qualite:
 - niveau_2
 - evaluation_experts
 - peu_variable
-notes: 'Série OWID : 1789-2025 ; premiere_annee ramenée à 1900, borne basse du contrôle de scripts/verifier_fiches.py
-  (1900-2100), à élargir.'
+notes: 'Série OWID (V-Dem) lue dans docs/sources/series/owid__equality-of-civil-liberties-across-social-groups-score.csv
+  : 1789-2025 (237 périodes, 14 valeurs distinctes, 1,042 en 2025). Principale de la famille choisie contre l''ordre
+  « série la plus longue » : mesure d''enquête directe (CS16_1) plutôt qu''évaluation d''experts presque constante.'

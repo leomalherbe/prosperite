@@ -1,12 +1,12 @@
 id: ecart_chomage_diplome
 libelle: Écart de taux de chômage entre peu diplômés et diplômés du supérieur
 dimension: egalites
-sous_theme: origine sociale et mobilité
+sous_theme: diplôme
 famille: ecart_chomage_diplome
 variante_principale: oui
-definition: Taux de chômage des 15-74 ans dont le diplôme le plus élevé est au plus le premier cycle du secondaire
-  (CITE 0-2) moins celui des diplômés du supérieur (CITE 5-8), en points (enquête Forces de travail, jeu Eurostat
-  lfsa_urgaed).
+definition: Écart, en valeur absolue et en points, entre le taux de chômage des 15-74 ans dont le diplôme le plus
+  élevé est au plus le premier cycle du secondaire (CITE 0-2) et celui des diplômés du supérieur (CITE 5-8) (enquête
+  Forces de travail, jeu Eurostat lfsa_urgaed).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -15,7 +15,10 @@ composite: non
 source_organisme: Eurostat
 source_jeu: lfsa_urgaed (taux de chômage par niveau d'éducation)
 source_serie_id: lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&geo=FR
-formule: taux de chômage (isced11=ED0-2) - taux de chômage (isced11=ED5-8)
+composantes:
+- lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED0-2&geo=FR
+- lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED5-8&geo=FR
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_urgaed?freq=A&unit=PC&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsa_urgaed/default/table?lang=fr
@@ -32,8 +35,9 @@ rattachement_propose: ligne de la long-list travail (ventilation par diplôme) ;
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Écart construit sur une série annuelle de 2000 à 2025 (26 points), qui mesure la pénalité
-  des peu diplômés sur le marché du travail, de signe constant.
+motif_recommandation: Écart absolu (D34) construit sur deux séries annuelles de 2000 à 2025 (26 points), de signe
+  constant (9,8 points en 2000, 12,3 en 2016, 9,4 en 2025), qui mesure la pénalité des peu diplômés sur le marché
+  du travail.
 note_pertinence: Le diplôme reste le premier déterminant du risque de chômage ; l'écart mesure cette inégalité sans
   dire si elle vient de compétences ou de signal. Il est sensible à la conjoncture (les peu diplômés subissent davantage
   les récessions).
@@ -51,5 +55,18 @@ socle_v1:
   justification: ''
 qualite:
 - ecart_construit
+- valeur_absolue_d34
+- rupture_2003
+- rupture_2005
+- rupture_2006
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021
 - composantes_autre_longlist
-notes: ''
+notes: 'Composantes (A = CITE 0-2, B = CITE 5-8) lues sur l''API Eurostat le 14/10/2026 : valeurs depuis 1993 pour
+  les deux (long-list : 2000), mêmes drapeaux (b en 1998, 2003, 2005, 2006, 2013 et 2014 ; bd en 2021 et 2024 ;
+  d de 2021 à 2025) ; recoupement (D34) : 15,3 - 5,5 = 9,8 (2000), 11,1 - 4,3 = 6,8 (2008), 18,0 - 5,7 = 12,3 (2016),
+  14,7 - 5,3 = 9,4 (2025). Sous-thème « diplôme » (et non « origine sociale ») : l''écart porte sur le diplôme de
+  la personne elle-même (J3 de l''audit M06).'

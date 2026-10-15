@@ -34,7 +34,7 @@ motif_recommandation: Seule mesure cataloguée des discriminations envers les fe
   ; 17,3 % en 2014, 15,7 % en 2025, creux de 14,1 % en 2020).
 note_pertinence: 'Être témoin de discriminations dépend aussi de la sensibilité au sujet, qui a pu augmenter après
   2017 : une hausse ne signifie pas forcément plus de discriminations. La même enquête interroge sur les discriminations
-  liées à l''origine ethnique (CS16_1, 2015-2025), non cataloguées : à ajouter (voir la liste de maintenance).'
+  liées à l''origine ethnique (CS16_1, 2015-2025), objet de la fiche discriminations_origine_temoins.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -44,5 +44,10 @@ socle_v1:
 qualite:
 - serie_irreguliere_D17
 - perception
-- champ_geo_a_corriger
-notes: 'Catalogue M04 : geo FR à corriger en FM (maintenance n° 4).'
+- enquete_metropole
+notes: Indicateur calculé par le robot de M04 sur les microdonnées pondérées (poids de redressement fournis), non-réponses
+  incluses au dénominateur ; codes de modalités lus dans le dictionnaire 2025 (stabilité sur toute la période à
+  vérifier) ; pièce jointe unique barometre2000_2025_diff_csv (vérifiée par le robot le 13/10/2026 ; l'identifiant
+  change à chaque édition), alors que l'identifiant de catalogue cite encore les deux pièces jointes antérieures
+  ; échantillon représentatif de la population vivant en France métropolitaine (page du jeu, variable SDREG) ; licence
+  non indiquée sur la page du jeu (Licence Ouverte à confirmer).

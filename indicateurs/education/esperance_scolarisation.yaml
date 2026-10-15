@@ -1,0 +1,421 @@
+id: esperance_scolarisation
+libelle: Espérance de scolarisation (durée attendue des études)
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: esperance_scolarisation
+variante_principale: oui
+definition: Nombre d'années d'études qu'un enfant en âge d'entrer à l'école peut espérer accomplir si les taux de
+  scolarisation par âge observés l'année considérée se maintenaient (PNUD, d'après l'UNESCO).
+unite: années
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: PNUD (Rapport sur le développement humain 2025)
+source_jeu: séries composites, colonnes eys_<année>
+source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+  (colonnes eys_<année>)
+source_niveau: 2
+url_api: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1990
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000360
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur « durée prévisible de scolarité » du Better Life Index de l'OCDE et composante
+  éducation de l'IDH, annuel de 1990 à 2023 (16,1 ans en 2023), plus fin que la série Eurostat arrondie à l'année.
+note_pertinence: La durée attendue des études résume en un chiffre la participation à l'éducation à tous les âges,
+  de la maternelle au supérieur. Elle augmente avec l'allongement des études comme avec les redoublements, ce qui
+  en limite la lecture normative. La série Eurostat educ_uoe_enra07 (2013-2024, en années entières) et les taux
+  de scolarisation par âge sont en variantes.
+variantes:
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED5&age=Y30-34&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022311
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED5&age=Y35-39&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022312
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED5-8&age=Y30-34&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022313
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED5-8&age=Y35-39&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022314
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED6&age=Y30-34&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022315
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED6&age=Y35-39&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022316
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED7&age=Y30-34&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022317
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED7&age=Y35-39&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022318
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED8&age=Y30-34&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022319
+  eligible: oui
+- serie_id: educ_uoe_enrt07?freq=A&unit=PC&isced11=ED8&age=Y35-39&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022320
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED5&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022321
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED5&age=Y20-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022322
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED5-8&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022323
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED5-8&age=Y20-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022324
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED6&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022325
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED6&age=Y20-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022326
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED7&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022327
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED7&age=Y20-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022328
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED8&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022329
+  eligible: oui
+- serie_id: educ_uoe_enrt08?freq=A&unit=PC&isced11=ED8&age=Y20-24&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022330
+  eligible: oui
+- serie_id: educ_uoe_enra05?freq=A&unit=PC&age=Y0-29&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022393
+  eligible: oui
+- serie_id: educ_uoe_enra05?freq=A&unit=PC&age=Y5-29&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-18&age=Y20-24&age=Y25-29&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022394
+  eligible: oui
+- serie_id: educ_uoe_enra06?freq=A&unit=P_THAB&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022395
+  eligible: oui
+- serie_id: educ_uoe_enra07?freq=A&unit=NR&isced11=ED0-8&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022396
+  eligible: oui
+- serie_id: educ_uoe_enra07?freq=A&unit=NR&isced11=ED02-8&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022397
+  eligible: oui
+- serie_id: educ_uoe_enra07?freq=A&unit=NR&isced11=ED5-8&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022398
+  eligible: oui
+- serie_id: educ_uoe_enra08?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022399
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_1&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022400
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_1&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022401
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_3&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022404
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_3&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022405
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_2&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022402
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_2&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022403
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_4&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022406
+  eligible: oui
+- serie_id: educ_uoe_enra09?freq=A&unit=PC&particip=PT_S_ECA_4&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022407
+  eligible: oui
+- serie_id: educ_uoe_enra27?freq=A&age=Y14&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022508
+  eligible: oui
+- serie_id: educ_uoe_enra27?freq=A&age=Y14&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022509
+  eligible: oui
+- serie_id: educ_uoe_enra28?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022510
+  eligible: oui
+- serie_id: educ_uoe_enra28?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022511
+  eligible: oui
+- serie_id: educ_uoe_enra29?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022512
+  eligible: oui
+- serie_id: educ_uoe_enra29?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-022513
+  eligible: oui
+- serie_id: edat_lfse_18?freq=A&sex=T&age=Y15-34&wstatus=POP&training=FE_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024897
+  eligible: oui
+- serie_id: edat_lfse_18?freq=A&sex=M&sex=F&age=Y15-34&wstatus=POP&training=FE_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024898
+  eligible: oui
+- serie_id: edat_lfse_18?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=POP&training=FE_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024899
+  eligible: oui
+- serie_id: edat_lfse_18?freq=A&sex=T&age=Y15-34&wstatus=POP&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024900
+  eligible: oui
+- serie_id: edat_lfse_18?freq=A&sex=M&sex=F&age=Y15-34&wstatus=POP&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024901
+  eligible: oui
+- serie_id: edat_lfse_18?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=POP&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024902
+  eligible: oui
+- serie_id: edat_lfse_19?freq=A&sex=T&age=Y15-34&wstatus=POP&training=FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024903
+  eligible: oui
+- serie_id: edat_lfse_19?freq=A&sex=M&sex=F&age=Y15-34&wstatus=POP&training=FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024904
+  eligible: oui
+- serie_id: edat_lfse_19?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=POP&training=FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024905
+  eligible: oui
+- serie_id: edat_lfse_19?freq=A&sex=T&age=Y15-34&wstatus=POP&training=NO_FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024906
+  eligible: oui
+- serie_id: edat_lfse_19?freq=A&sex=M&sex=F&age=Y15-34&wstatus=POP&training=NO_FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024907
+  eligible: oui
+- serie_id: edat_lfse_19?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=POP&training=NO_FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : espérance de scolarisation (enra07, arrondie à l''année, 2013-2024), taux de scolarisation
+    par âge (enra05, enra06, enra08, enra09), taux de non-scolarisation (enra27 à 29), étudiants du supérieur par
+    âge (enrt07, enrt08), participation des 15-34 ans à l''éducation et à la formation (edat_lfse_18, 19)'
+  ligne_id: estat-024908
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- niveau_2
+- url_par_edition
+- licence_a_confirmer
+- estimation_modelisee
+notes: 'Extrait du robot M04 (docs/sources/series/pnud__hdr25_series_composites_france.csv) : 34 périodes 1990-2023,
+  16,0951 en 2023.'

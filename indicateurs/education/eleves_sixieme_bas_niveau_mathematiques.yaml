@@ -1,0 +1,47 @@
+id: eleves_sixieme_bas_niveau_mathematiques
+libelle: Élèves de sixième de bas niveau en mathématiques (évaluations nationales)
+dimension: education
+sous_theme: compétences des élèves
+famille: mathematiques_fin_primaire
+variante_principale: non
+definition: Part des élèves de sixième classés dans le groupe de bas niveau en mathématiques aux évaluations nationales
+  de début d'année de la DEPP (indicateur territorial de développement durable, France entière).
+unite: '% des élèves de sixième'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE (ITDD, d'après la DEPP)
+source_jeu: Indicateurs territoriaux de développement durable (DiDo), variable bas_niveau_maths
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable bas_niveau_maths)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2017
+derniere_annee: 2024
+nb_points_depuis_2000: 8
+geo: FE
+eligibilite_longlist: non
+ligne_id: m04-000322
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Mesure annuelle (2017-2024, 8 points ; 32,2 % en 2024) des acquis en mathématiques à l'entrée
+  au collège, plus récente et plus fréquente que TIMSS (CM1) mais encore sous le seuil de 10 points de la charte.
+note_pertinence: Les évaluations de début de sixième donnent chaque année un état des acquis en mathématiques à
+  la sortie de l'école primaire. Le seuil de « bas niveau » est propre à la DEPP et la comparabilité d'une année
+  sur l'autre repose sur la stabilité des épreuves, à vérifier dans sa documentation. La série atteindra dix points
+  avec la campagne de 2026.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moins_de_10_points
+- seuil_propre_depp
+notes: 'Extrait du robot M04 (docs/sources/series/sdes__itdd_france_entiere.csv) : 2017-2024, 8 valeurs dont 7 distinctes,
+  32,2 % en 2024.'

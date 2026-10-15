@@ -1,0 +1,48 @@
+id: adultes_sans_langue_etrangere
+libelle: Adultes de 25 à 64 ans ne connaissant aucune langue étrangère
+dimension: education
+sous_theme: compétences des adultes
+famille: langues_etrangeres
+variante_principale: oui
+definition: Part des personnes de 25 à 64 ans déclarant ne connaître aucune langue étrangère, d'après l'enquête
+  européenne sur l'éducation des adultes (Eurostat edat_aes_l21).
+unite: '% des 25-64 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: edat_aes_l21 (enquête sur l'éducation des adultes), modalité 25-64 ans, aucune langue
+source_serie_id: edat_aes_l21?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&n_lang=0&unit=PC&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_aes_l21?freq=A&age=Y25-64&n_lang=0&unit=PC&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_aes_l21/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2022
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-024977
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du cadre Eurostat Qualité de vie, enquête quinquennale admise par D17 (2007, 2011,
+  2016 et 2022 ; 41,2 % en 2007, 22,6 % en 2022).
+note_pertinence: 'La connaissance d''au moins une langue étrangère est un repère de compétence des adultes retenu
+  par le cadre européen de qualité de vie. La forte baisse de 2022 (39,9 % en 2016, 22,6 % en 2022) coïncide avec
+  une rupture de série signalée par Eurostat, comme en 2011 : la trajectoire est à lire avec prudence. La connaissance
+  est déclarée par la personne, sans test.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2011
+- rupture_2022
+- auto_evaluation
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (modalité 25-64 ans du paquet d'âges catalogué).

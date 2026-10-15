@@ -1,0 +1,104 @@
+id: formation_adultes_12_mois
+libelle: Participation des 25-64 ans à l'éducation ou à la formation au cours des douze derniers mois
+dimension: education
+sous_theme: formation des adultes
+famille: formation_adultes
+variante_principale: non
+definition: Part des personnes de 25 à 64 ans ayant suivi un enseignement ou une formation, formels ou non formels,
+  au cours des douze mois précédant l'enquête, d'après l'enquête européenne sur l'éducation des adultes (Eurostat
+  trng_aes_100).
+unite: '% des 25-64 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: trng_aes_100 (enquête sur l'éducation des adultes), modalité 25-64 ans, formel et non formel
+source_serie_id: trng_aes_100?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&sex=T&training=FE_NFE&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/trng_aes_100?freq=A&age=Y25-64&sex=T&training=FE_NFE&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/trng_aes_100/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2022
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-022793
+hors_longlist: non
+raccordement: 'a_etudier : question sur douze mois de l''enquête sur les forces de travail depuis 2022 (trng_lfs_17
+  : 36,3 % en 2022, 37,7 % en 2024), de niveau très inférieur'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur des cibles européenne (au moins 60 %) et française (65 %) de 2030, mais quinquennal
+  (2007, 2011, 2016 et 2022, D17 ; 50,8 % en 2022), d'où son rang de variante derrière la série annuelle.
+note_pertinence: La participation sur douze mois capte les formations courtes que la fenêtre de quatre semaines
+  manque, d'où un niveau bien plus élevé (50,8 % en 2022 contre 13,3 % sur quatre semaines). L'enquête sur les forces
+  de travail pose la même question depuis 2022 mais trouve 36,3 %, écart de source à documenter avant de fixer une
+  borne. L'INSEE diffuse l'indicateur ODD 4.i2 sur les 18-64 ans de France métropolitaine (2016, 2022), en variante.
+variantes:
+- serie_id: trng_aes_100?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&sex=T&training=FE&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: estat-022790
+  eligible: a_verifier
+- serie_id: trng_aes_100?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&sex=T&training=NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: estat-022796
+  eligible: a_verifier
+- serie_id: '010594830'
+  source: INSEE BDM
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: bdm-000798
+  eligible: non
+- serie_id: '010594736'
+  source: INSEE BDM
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: bdm-000779
+  eligible: non
+- serie_id: '010594737'
+  source: INSEE BDM
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: bdm-000780
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=Y18T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=4.i2&PCS=_Z&SDG=SDG4&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: melodi-005396
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=Y18T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=4.i2&PCS=_Z&SDG=SDG4&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: melodi-005397
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=Y18T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=4.i2&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat trng_aes_100 (formelle seule, non formelle seule) ; INSEE ODD 4.i2 (18-64 ans, métropole, 2016
+    et 2022, BDM et Melodi)
+  ligne_id: melodi-005398
+  eligible: non
+- serie_id: trng_lfs_17?freq=A&age=Y25-64&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: même question dans l'enquête sur les forces de travail (2022, 2024 ; 37,7 % en 2024), jeu hors filtre
+    du catalogue (début 2022)
+  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 15/10/2026)
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2011
+- rupture_2022
+- ecart_de_source_eft_aes
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (modalité 25-64 ans du paquet d''âges catalogué : 35,1 %
+  en 2007, 50,5 % en 2011, 51,3 % en 2016, 50,8 % en 2022).'

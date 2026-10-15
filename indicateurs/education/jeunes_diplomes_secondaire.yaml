@@ -1,0 +1,87 @@
+id: jeunes_diplomes_secondaire
+libelle: Jeunes adultes de 25 à 34 ans diplômés au moins du second cycle du secondaire
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: sorties_precoces
+variante_principale: non
+definition: 'Part des personnes de 25 à 34 ans vivant en ménage ordinaire dont le plus haut niveau atteint relève
+  au moins du second cycle du secondaire (CITE 3 à 8 : CAP, BEP, baccalauréat ou plus), d''après l''enquête européenne
+  sur les forces de travail (Eurostat edat_lfse_03).'
+unite: '% des 25-34 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: edat_lfse_03 (population par niveau d'éducation atteint), modalité 25-34 ans, CITE 3-8
+source_serie_id: edat_lfse_03?freq=A&sex=T&age=Y15-19&age=Y15-24&age=Y15-29&age=Y15-34&age=Y15-64&age=Y15-69&age=Y18-24&age=Y18-64&age=Y18-69&age=Y18-74&age=Y20-24&age=Y20-29&age=Y20-34&age=Y25-29&age=Y25-34&age=Y25-54&age=Y25-64&age=Y25-69&age=Y25-74&age=Y30-34&age=Y30-54&age=Y35-44&age=Y35-54&age=Y45-54&age=Y45-64&age=Y55-64&age=Y55-69&age=Y55-74&age=UNK&unit=PC&isced11=ED3-8&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_03?freq=A&sex=T&age=Y25-34&unit=PC&isced11=ED3-8&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_03/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000407
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de l'achèvement du secondaire (incontournable, cinq cadres), indicateur de l'OCDE
+  (13_1) et du cadre SSF, annuelle de 2000 à 2025 (76,4 % en 2000, 89,9 % en 2025) mais sans cible officielle, d'où
+  la variante principale laissée aux sorties précoces.
+note_pertinence: 'L''indicateur regarde les jeunes adultes une fois leurs études achevées, quand les sorties précoces
+  portent sur les 18-24 ans : les deux mesurent le même déficit de qualification à des âges voisins. Eurostat signale
+  des ruptures en 2003, 2013, 2014, 2021 et 2024, dont le passage à la CITE 2011 en 2014. L''OCDE diffuse la même
+  mesure de 2004 à 2024 (89,4 % en 2024 contre 89,1 % pour Eurostat), en variante.'
+variantes:
+- serie_id: edat_lfse_03?freq=A&sex=T&age=Y15-74&unit=PC&isced11=ED3-8&geo=FR
+  source: Eurostat
+  nature: 'Eurostat edat_lfse_03 (15-74 ans, par sexe) et edat_lfse_04 (valeur nationale d''un jeu régional : 20-24,
+    25-34, 30-34 et 25-64 ans, par sexe), CITE 3-8'
+  ligne_id: estat-000405
+  eligible: oui
+- serie_id: edat_lfse_03?freq=A&sex=M&sex=F&age=Y15-74&unit=PC&isced11=ED3-8&geo=FR
+  source: Eurostat
+  nature: 'Eurostat edat_lfse_03 (15-74 ans, par sexe) et edat_lfse_04 (valeur nationale d''un jeu régional : 20-24,
+    25-34, 30-34 et 25-64 ans, par sexe), CITE 3-8'
+  ligne_id: estat-000406
+  eligible: oui
+- serie_id: edat_lfse_04?freq=A&sex=T&isced11=ED3-8&age=Y25-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat edat_lfse_03 (15-74 ans, par sexe) et edat_lfse_04 (valeur nationale d''un jeu régional : 20-24,
+    25-34, 30-34 et 25-64 ans, par sexe), CITE 3-8'
+  ligne_id: estat-002427
+  eligible: oui
+- serie_id: edat_lfse_04?freq=A&sex=M&sex=F&isced11=ED3-8&age=Y25-64&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat edat_lfse_03 (15-74 ans, par sexe) et edat_lfse_04 (valeur nationale d''un jeu régional : 20-24,
+    25-34, 30-34 et 25-64 ans, par sexe), CITE 3-8'
+  ligne_id: estat-002428
+  eligible: oui
+- serie_id: edat_lfse_04?freq=A&sex=T&isced11=ED3-8&age=Y20-24&age=Y25-34&age=Y30-34&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat edat_lfse_03 (15-74 ans, par sexe) et edat_lfse_04 (valeur nationale d''un jeu régional : 20-24,
+    25-34, 30-34 et 25-64 ans, par sexe), CITE 3-8'
+  ligne_id: estat-002429
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=13_1 UNIT_MEASURE=PT_POP_Y25T34
+  source: OCDE — How's Life? (base du bien-être)
+  nature: OCDE How's Life 13_1 (d'après l'EFT)
+  ligne_id: m04-000095
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2003
+- rupture_2013
+- rupture_2014
+- rupture_2021
+- rupture_2024
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (modalité 25-34 ans du paquet d'âges catalogué, série disponible
+  depuis 1993).

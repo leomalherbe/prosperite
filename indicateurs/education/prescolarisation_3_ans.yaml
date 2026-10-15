@@ -1,0 +1,138 @@
+id: prescolarisation_3_ans
+libelle: Participation à l'éducation préscolaire des enfants de 3 ans à l'âge de la scolarité obligatoire
+dimension: education
+sous_theme: petite enfance
+famille: accueil_petite_enfance
+variante_principale: non
+definition: Part des enfants âgés de 3 ans à l'âge du début de la scolarité primaire obligatoire qui participent
+  à l'éducation de la petite enfance (Eurostat, indicateur ODD sdg_04_31, statistiques UOE).
+unite: '% des enfants concernés'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_04_31 (indicateur ODD 4, statistiques UOE)
+source_serie_id: sdg_04_31?freq=A&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_31?freq=A&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_04_31/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2013
+derniere_annee: 2024
+nb_points_depuis_2000: 12
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002054
+hors_longlist: non
+raccordement: 'a_etudier : educ_uoe_enra10 (enfants de 4 ans à l''âge de la scolarité obligatoire, 2000-2024) pour
+  2000-2012 (D16)'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Indicateur de la cible européenne d'au moins 96 % en 2030, annuel de 2013 à 2024 (12 points),
+  mais au plafond en France (100 % chaque année sauf 99,3 % en 2014), d'où son rang de variante dans la famille
+  de l'accueil de la petite enfance.
+note_pertinence: 'La participation des enfants de 3 ans ou plus à l''école maternelle est quasi universelle en France
+  : l''indicateur est au plafond et ne distingue plus les années, ce qui n''est pas un motif d''écart (D34). Il
+  garde une valeur de contrôle au regard de la cible européenne. Les taux par âge et la série des 4 ans ou plus
+  (educ_uoe_enra10, depuis 2000) sont en variantes.'
+variantes:
+- serie_id: sdg_04_31?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_04_31 par sexe
+  ligne_id: estat-002055
+  eligible: oui
+- serie_id: educ_uoe_enra17?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-002419
+  eligible: oui
+- serie_id: educ_uoe_enra22?freq=A&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-002420
+  eligible: oui
+- serie_id: educ_uoe_enra10?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022408
+  eligible: oui
+- serie_id: educ_uoe_enra10?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022409
+  eligible: oui
+- serie_id: educ_uoe_enra18?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022496
+  eligible: oui
+- serie_id: educ_uoe_enra18?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022497
+  eligible: oui
+- serie_id: educ_uoe_enra19?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022498
+  eligible: oui
+- serie_id: educ_uoe_enra19?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022499
+  eligible: oui
+- serie_id: educ_uoe_enra20?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022500
+  eligible: oui
+- serie_id: educ_uoe_enra20?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022501
+  eligible: oui
+- serie_id: educ_uoe_enra21?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022502
+  eligible: oui
+- serie_id: educ_uoe_enra21?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022503
+  eligible: oui
+- serie_id: educ_uoe_enra23?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022504
+  eligible: oui
+- serie_id: educ_uoe_enra23?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_uoe_enra10 (4 ans et plus, 2000-2024), enra17 à 23 (âges 0, 3, 4 et 5 ans, valeurs nationales
+    de jeux régionaux)
+  ligne_id: estat-022505
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_au_plafond
+- rupture_2014
+- provisoire_2018_2023_2024
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 ; la DEPP publie aussi 100 % (2013-2023, objectifs européens).

@@ -1,0 +1,81 @@
+id: personnel_recherche
+libelle: Personnel de R&D en % de la population active (équivalent temps plein)
+dimension: education
+sous_theme: recherche et innovation
+famille: effort_recherche
+variante_principale: non
+definition: Personnel de recherche et développement (chercheurs et personnel de soutien) en équivalents temps plein,
+  rapporté à la population active (Eurostat, indicateur ODD sdg_09_30).
+unite: '% de la population active (ETP)'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_09_30 (indicateur ODD 9), tous secteurs d'exécution
+source_serie_id: sdg_09_30?freq=A&sex=T&prof_pos=TOTAL&sectperf=TOTAL&unit=PC_ACT_FTE&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_09_30?freq=A&sex=T&prof_pos=TOTAL&sectperf=TOTAL&unit=PC_ACT_FTE&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_09_30/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2003
+derniere_annee: 2024
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002095
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre mesure de l'effort de recherche (moyens humains), annuelle de 2003 à 2024 (22 points),
+  dont les valeurs n'ont pas pu être relues sur l'API le 15/10/2026 (refus du proxy).
+note_pertinence: Le personnel de R&D rapporté aux actifs complète la dépense par une mesure en personnes. L'INSEE
+  publie les effectifs en nombre (ODD 9.i4), en variante. Les valeurs et les drapeaux de rupture restent à relire.
+variantes:
+- serie_id: rd_p_persreg?freq=A&prof_pos=TOTAL&sex=T&sectperf=TOTAL&unit=PC_ACT_FTE&geo=FR
+  source: Eurostat
+  nature: Eurostat rd_p_perslf, rd_p_persreg (même série), rd_p_persocc, perssci, persqual11 (effectifs en ETP)
+  ligne_id: estat-002451
+  eligible: oui
+- serie_id: rd_p_perslf?freq=A&sex=T&prof_pos=TOTAL&sectperf=TOTAL&unit=PC_ACT_FTE&geo=FR
+  source: Eurostat
+  nature: Eurostat rd_p_perslf, rd_p_persreg (même série), rd_p_persocc, perssci, persqual11 (effectifs en ETP)
+  ligne_id: estat-052224
+  eligible: oui
+- serie_id: rd_p_persocc?freq=A&sectperf=TOTAL&prof_pos=TOTAL&sex=T&unit=FTE&geo=FR
+  source: Eurostat
+  nature: Eurostat rd_p_perslf, rd_p_persreg (même série), rd_p_persocc, perssci, persqual11 (effectifs en ETP)
+  ligne_id: estat-053133
+  eligible: oui
+- serie_id: rd_p_persqual11?freq=A&prof_pos=TOTAL&sectperf=TOTAL&isced11=TOTAL&sex=T&unit=FTE&geo=FR
+  source: Eurostat
+  nature: Eurostat rd_p_perslf, rd_p_persreg (même série), rd_p_persocc, perssci, persqual11 (effectifs en ETP)
+  ligne_id: estat-053135
+  eligible: oui
+- serie_id: rd_p_perssci?freq=A&sectperf=TOTAL&prof_pos=TOTAL&sex=T&ford=TOTAL&unit=FTE&geo=FR
+  source: Eurostat
+  nature: Eurostat rd_p_perslf, rd_p_persreg (même série), rd_p_persocc, perssci, persqual11 (effectifs en ETP)
+  ligne_id: estat-053137
+  eligible: oui
+- serie_id: '010594841'
+  source: INSEE BDM
+  nature: 'INSEE ODD 9.i4 : personnel de recherche en ETP (BDM et Melodi, lignes de la long-list niveau_de_vie)'
+  ligne_id: bdm-000891
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=9.i4&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=FT
+  source: INSEE Melodi
+  nature: 'INSEE ODD 9.i4 : personnel de recherche en ETP (BDM et Melodi, lignes de la long-list niveau_de_vie)'
+  ligne_id: melodi-005738
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- indicateur_de_moyens_D19
+- valeurs_non_relues
+notes: Période et nombre de points tirés de la long-list ; lecture de l'API refusée (HTTP 429) le 15/10/2026.

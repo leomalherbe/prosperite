@@ -1,0 +1,53 @@
+id: pirls_lecture_cm1
+libelle: Élèves de CM1 ayant au moins le niveau minimal en lecture (PIRLS)
+dimension: education
+sous_theme: compétences des élèves
+famille: lecture_fin_primaire
+variante_principale: oui
+definition: Part des élèves de CM1 qui atteignent au moins le seuil d'aptitude minimale en compréhension de l'écrit
+  de l'enquête internationale PIRLS (indicateur national ODD 4.i1a de l'INSEE, France hors Mayotte).
+unite: '% des élèves de CM1'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE (indicateurs ODD nationaux, d'après la DEPP)
+source_jeu: Melodi DS_NAT_SDG, indicateur 4.i1a
+source_serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i1a&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i1a&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+url_page: https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_NAT_SDG
+frequence: irreguliere
+premiere_annee: 2011
+derniere_annee: 2021
+nb_points_depuis_2000: 3
+geo: FRANCE-F_X_D976
+eligibilite_longlist: a_verifier
+ligne_id: melodi-005750
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure cataloguée des compétences en lecture en fin d'école primaire comparable dans
+  le temps et entre pays, indicateur national ODD (cycles 2011, 2016 et 2021, D17).
+note_pertinence: PIRLS évalue tous les cinq ans la compréhension de l'écrit des élèves en quatrième année de scolarité.
+  Au seuil minimal, la part est proche du plafond (95 % en 2011, 94 % en 2016 et en 2021 dans la série BDM de même
+  définition), ce qui en limite le pouvoir de discrimination. Les évaluations nationales de début de sixième (part
+  d'élèves de bas niveau en français, annuelle depuis 2017) sont l'alternative de la famille.
+variantes:
+- serie_id: '010594810'
+  source: INSEE BDM
+  nature: INSEE BDM 010594810 (champ PIRLS particulier)
+  ligne_id: bdm-000782
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- valeurs_proches_du_plafond
+- melodi_non_lu
+notes: API Melodi fermée à l'outil de lecture ; valeurs de la série BDM 010594810 (zone propre à l'enquête, code
+  FMGUADMART16_FHMAY21…) lues le 15/10/2026.

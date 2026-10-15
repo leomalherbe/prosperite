@@ -1,0 +1,111 @@
+id: pisa_eleves_difficulte_lecture
+libelle: Élèves de 15 ans en difficulté en compréhension de l'écrit (sous le niveau 2 de PISA)
+dimension: education
+sous_theme: compétences des élèves
+famille: pisa_lecture
+variante_principale: oui
+definition: Part des élèves de 15 ans dont le score PISA en compréhension de l'écrit est inférieur au niveau 2 de
+  compétence, seuil de maîtrise insuffisante retenu par l'Union européenne (Eurostat, indicateur ODD sdg_04_40,
+  d'après l'OCDE).
+unite: '% des élèves de 15 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat (d'après l'enquête PISA de l'OCDE)
+source_jeu: sdg_04_40 (indicateur ODD 4), domaine READ
+source_serie_id: sdg_04_40?freq=A&field=READ&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_04_40?freq=A&field=READ&sex=T&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_04_40/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 9
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-002057
+hors_longlist: non
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Compétences mesurées des élèves (incontournable, trois cadres) avec une cible européenne de
+  moins de 15 % en 2030, enquête triennale admise par D17 (9 cycles de 2000 à 2025 ; 26,9 % en 2022, 32,7 % en 2025).
+note_pertinence: PISA mesure à 15 ans la maîtrise des textes écrits utile à la vie courante ; la part des élèves
+  sous le niveau 2 vise la base de la distribution, ce que traduit la cible européenne. La hausse de 2025 (32,7
+  % après 26,9 % en 2022) est la plus forte de la série ; Eurostat signale des ruptures en 2009 et en 2018. Les
+  résultats du cycle 2025, publiés par Eurostat le 8 octobre 2026, ne figurent pas encore dans la base de l'OCDE
+  lue par le robot ; le score moyen et les tests de lecture de la journée défense et citoyenneté sont les alternatives
+  de la famille.
+variantes:
+- serie_id: educ_outc_pisa?freq=A&field=READ&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: estat-024950
+  eligible: a_verifier
+- serie_id: educ_outc_pisa?freq=A&field=READ&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: estat-024951
+  eligible: a_verifier
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=6_1_DEP UNIT_MEASURE=PT_ST
+  source: OCDE — How's Life? (base du bien-être)
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: m04-000036
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i1c&PCS=_Z&SDG=SDG4&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: melodi-005368
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i1c&PCS=_Z&SDG=SDG4&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: melodi-005369
+  eligible: a_verifier
+- serie_id: DS_NAT_SDG?AGE=Y15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=4.i1c&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: melodi-005370
+  eligible: a_verifier
+- serie_id: '010594816'
+  source: INSEE BDM
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: bdm-000784
+  eligible: non
+- serie_id: '010594817'
+  source: INSEE BDM
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: bdm-000785
+  eligible: non
+- serie_id: '010594818'
+  source: INSEE BDM
+  nature: Eurostat educ_outc_pisa (lecture, total et sexe) ; INSEE ODD 4.i1c (élèves au moins au niveau minimal,
+    total et sexe, Melodi et BDM) ; OCDE élèves faibles dans les trois domaines (6_1_DEP)
+  ligne_id: bdm-000786
+  eligible: non
+- serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
+    (France.Ensemble#pisa_ecrit)
+  source: DEPP — data.education.gouv.fr (Opendatasoft)
+  nature: reprise de l'indicateur européen par la DEPP (cycles 2015, 2018 et 2022 ; 26,9 % en 2022)
+  preuve: docs/sources/series/depp__fr-en-objectifs_europeens_education_formation.csv
+  statut: disponible
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2009
+- rupture_2018
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (mise à jour du 08/10/2026, cycle 2025 inclus) ; la DEPP publie
+  26,9 % pour 2022 (objectifs européens).

@@ -1,0 +1,107 @@
+id: taux_reussite_bac
+libelle: Taux de réussite au baccalauréat (toutes séries)
+dimension: education
+sous_theme: diplômes et sorties précoces
+famille: taux_reussite_bac
+variante_principale: oui
+definition: Part des candidats présents admis au baccalauréat, toutes séries confondues (DEPP).
+unite: '% des candidats présents'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DEPP
+source_jeu: fr-en-reussite-au-baccalaureat-origine-sociale (data.education.gouv.fr), ensemble des candidats
+source_serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale
+  (Ensemble#pourcentage_d_admis_au_baccalaureat)
+source_niveau: 1
+url_api: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-reussite-au-baccalaureat-origine-sociale/exports/csv?delimiter=%3B
+url_page: https://data.education.gouv.fr/explore/dataset/fr-en-reussite-au-baccalaureat-origine-sociale/
+frequence: annuelle
+premiere_annee: 1997
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000387
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu : le taux d''admis (91,6 % en 2025) dépend autant des exigences de l''examen
+  et de ses réformes que du niveau des candidats, et ignore les jeunes qui ne se présentent pas.'
+note_pertinence: Le taux de réussite est très suivi mais mesure le résultat d'un examen dont les règles changent
+  (épreuves remplacées par le contrôle continu en 2020, réforme du baccalauréat de 2021), pas un niveau de compétences.
+  La proportion de bacheliers dans une génération, retenue, rend mieux compte de l'accès au diplôme. Les taux par
+  série et au diplôme national du brevet (BDM, 2011-2020) sont en variantes.
+variantes:
+- serie_id: '001760036'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001382
+  eligible: oui
+- serie_id: '001760037'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001383
+  eligible: oui
+- serie_id: '001769003'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001406
+  eligible: oui
+- serie_id: '001769004'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001407
+  eligible: oui
+- serie_id: '001769271'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001412
+  eligible: oui
+- serie_id: '001769272'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001413
+  eligible: oui
+- serie_id: '001769473'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001414
+  eligible: oui
+- serie_id: '001769474'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001415
+  eligible: oui
+- serie_id: '001769621'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001418
+  eligible: oui
+- serie_id: '001769622'
+  source: INSEE BDM
+  nature: 'INSEE BDM : taux de réussite au baccalauréat (toutes séries, général, technologique, professionnel) et
+    au diplôme national du brevet'
+  ligne_id: bdm-001419
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- reforme_bac_2021
+- controle_continu_2020
+notes: 'Extrait du robot M04 (docs/sources/series/depp__fr-en-reussite-au-baccalaureat-origine-sociale.csv) : 1997-2025,
+  29 valeurs, 91,6 % en 2025 ; l''écart selon l''origine sociale est une fiche d''egalites (ecart_reussite_bac_origine_sociale).'

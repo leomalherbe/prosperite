@@ -1,0 +1,112 @@
+id: effort_recherche_pib
+libelle: 'Effort de recherche : dépense intérieure de R&D en % du PIB'
+dimension: education
+sous_theme: recherche et innovation
+famille: effort_recherche
+variante_principale: oui
+definition: Dépense intérieure de recherche et développement (DIRD, exécutée sur le territoire par les entreprises
+  et les administrations) rapportée au PIB (INSEE, indicateur de richesse nationale n° 2 et ODD 9, d'après le ministère
+  chargé de la recherche).
+unite: '% du PIB'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, indicateurs de richesse nationale et ODD 9.i5a (DIRD/PIB)
+source_serie_id: '010594852'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594852
+url_page: https://www.insee.fr/fr/statistiques/serie/010594852
+frequence: annuelle
+premiere_annee: 1996
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FE
+eligibilite_longlist: oui
+ligne_id: bdm-000897
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Effort de R&D rattaché à la dimension par l'arbitrage A5 (D25), indicateur de richesse nationale
+  doté de l'objectif européen de 3 % du PIB, annuel de 1996 à 2024 (25 points depuis 2000 ; 2,18 % en 2024, valeur
+  estimée).
+note_pertinence: 'L''effort de recherche est un indicateur de moyens (D19) : il mesure ce que le pays consacre à
+  la production de connaissances, pas leur résultat. La série est stable, entre 2,02 % (2007) et 2,28 % (2014 et
+  2020), loin de l''objectif de 3 %. Eurostat (sdg_09_10), l''OCDE (How''s Life 15_4) et la part exécutée par les
+  entreprises sont en variantes.'
+variantes:
+- serie_id: '010776361'
+  source: INSEE BDM
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
+    en % du PIB) ; OCDE How's Life 15_4
+  ligne_id: bdm-000907
+  eligible: oui
+- serie_id: sdg_09_10?freq=A&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-002094
+  eligible: oui
+- serie_id: rd_e_gerdreg?freq=A&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-002453
+  eligible: oui
+- serie_id: rd_e_gerdtot?freq=A&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-053126
+  eligible: oui
+- serie_id: rd_e_gerdsc?freq=A&ford=TOTAL&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-053127
+  eligible: oui
+- serie_id: rd_e_gerdfund?freq=A&sectperf=TOTAL&sectfund=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-053129
+  eligible: oui
+- serie_id: rd_e_gerdcost?freq=A&expend=TOTAL&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-053130
+  eligible: oui
+- serie_id: rd_e_gerdact?freq=A&rnd_act=TOTAL&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-053131
+  eligible: oui
+- serie_id: rd_e_gerdsobj07?freq=A&nabs07=TOTAL&sectperf=TOTAL&unit=PC_GDP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_09_10 et rd_e_gerd* (total, % du PIB)
+  ligne_id: estat-053132
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=15_4 UNIT_MEASURE=PT_B1GQ
+  source: OCDE — How's Life? (base du bien-être)
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
+    en % du PIB) ; OCDE How's Life 15_4
+  ligne_id: m04-000114
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=9.i5a&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
+    en % du PIB) ; OCDE How's Life 15_4
+  ligne_id: melodi-005739
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=9.i5b&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
+    en % du PIB) ; OCDE How's Life 15_4
+  ligne_id: melodi-005740
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- indicateur_de_moyens_D19
+- derniere_valeur_estimee
+notes: Valeurs lues sur la BDM le 15/10/2026 (mise à jour du 27/05/2026 ; 2,09 % en 2000).

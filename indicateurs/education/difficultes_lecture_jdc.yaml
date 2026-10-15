@@ -1,0 +1,62 @@
+id: difficultes_lecture_jdc
+libelle: Jeunes en difficulté de lecture à la journée défense et citoyenneté
+dimension: education
+sous_theme: compétences des élèves
+famille: pisa_lecture
+variante_principale: non
+definition: Part des jeunes en difficulté de lecture aux tests passés lors de la journée défense et citoyenneté
+  (DEPP), d'après l'indicateur territorial de développement durable (France entière ; champ des 16-25 ans selon
+  l'ITDD, des 16-18 ans de nationalité française selon les notes de la DEPP).
+unite: '% des jeunes testés'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE (ITDD, d'après la DEPP)
+source_jeu: Indicateurs territoriaux de développement durable (DiDo), variable tx_jeunes_diff_lecture
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable tx_jeunes_diff_lecture)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: https://www.education.gouv.fr/depp/journee-defense-et-citoyennete-2024-un-jeune-francais-sur-vingt-en-situation-d-illettrisme-469313
+frequence: annuelle
+premiere_annee: 2022
+derniere_annee: 2024
+nb_points_depuis_2000: 3
+geo: FE
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+rattachement_propose: 'hors long-list : variable de l''ITDD lue par le robot M04 mais non cataloguée, proposée en
+  education (compétences des jeunes)'
+raccordement: 'a_etudier : notes annuelles de la DEPP sur la JDC (fichier xlsx propre à chaque édition, URL non
+  stable)'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Seule mesure annuelle de la maîtrise de la lecture des jeunes adultes, proche de l'analphabétisme
+  suivi par le Doughnut, mais limitée à 3 points au catalogue (2022-2024 ; 13,32 % en 2024), sous le seuil de 10
+  points de la charte.
+note_pertinence: 'Les tests de la JDC repèrent chaque année les jeunes qui lisent mal au moment où ils quittent
+  le système scolaire, ce que PISA ne mesure que tous les trois ans et à 15 ans. La DEPP publie 13 % de jeunes en
+  difficulté de lecture et 6 % en situation d''illettrisme en 2024 (note d''information 25-57). La série longue
+  n''est diffusée que dans des fichiers propres à chaque note : il faut la cataloguer pour rendre l''indicateur
+  éligible.'
+variantes:
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable Eff_Diff)
+  source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
+  nature: même indicateur en nombre de jeunes (2022-2024 ; 112 246 en 2024)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+  statut: disponible
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moins_de_10_points
+- hors_longlist
+- raccordement_a_etudier
+- champ_age_a_verifier
+notes: 'Page de la DEPP lue le 15/10/2026 (JDC 2024 : 76 % de lecteurs efficaces, 10 % de maîtrise fragile, 13 %
+  en difficulté, 6 % en situation d''illettrisme) ; données de la note dans un fichier xlsx propre à l''édition.'

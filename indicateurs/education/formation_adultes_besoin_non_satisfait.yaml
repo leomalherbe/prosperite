@@ -1,0 +1,104 @@
+id: formation_adultes_besoin_non_satisfait
+libelle: Adultes de 25 à 64 ans qui auraient voulu se former sans l'avoir fait
+dimension: education
+sous_theme: formation des adultes
+famille: formation_adultes_besoin_non_satisfait
+variante_principale: oui
+definition: Part des personnes de 25 à 64 ans qui n'ont participé à aucune éducation ou formation au cours des douze
+  derniers mois mais auraient souhaité le faire, d'après l'enquête européenne sur l'éducation des adultes (Eurostat
+  trng_aes_175).
+unite: '% des 25-64 ans'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: trng_aes_175 (enquête sur l'éducation des adultes), modalité 25-64 ans, non-participants souhaitant
+  participer
+source_serie_id: trng_aes_175?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&particip=NPT_W&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/trng_aes_175?freq=A&age=Y25-64&particip=NPT_W&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/trng_aes_175/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2022
+nb_points_depuis_2000: 4
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-022893
+hors_longlist: non
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure du besoin de formation non satisfait, 4 vagues de l'enquête sur l'éducation des
+  adultes (D17 ; 10,0 % en 2007, 11,5 % en 2022).
+note_pertinence: Les adultes qui voudraient se former sans y parvenir signalent un manque d'accès (coût, temps,
+  offre) plutôt qu'un manque d'intérêt. L'indicateur complète le taux de participation en distinguant la non-participation
+  subie de la non-participation choisie (37,5 % des 25-64 ans ne se sont pas formés et ne le souhaitaient pas en
+  2022). Eurostat signale des ruptures en 2011 (13,8 %) et en 2022.
+variantes:
+- serie_id: trng_aes_175?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&particip=NPT_NW&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022891
+  eligible: a_verifier
+- serie_id: trng_aes_175?freq=A&age=Y18-69&particip=NPT_NW&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022890
+  eligible: non
+- serie_id: trng_aes_175?freq=A&age=Y18-69&particip=NPT_W&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022892
+  eligible: non
+- serie_id: trng_aes_175?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&particip=PT_NW&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022897
+  eligible: a_verifier
+- serie_id: trng_aes_175?freq=A&age=Y18-69&particip=PT_NW&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022896
+  eligible: non
+- serie_id: trng_aes_175?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&particip=PT_W&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022899
+  eligible: a_verifier
+- serie_id: trng_aes_175?freq=A&age=Y18-69&particip=PT_W&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022898
+  eligible: non
+- serie_id: trng_aes_175?freq=A&age=Y18-69&particip=NRP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022894
+  eligible: non
+- serie_id: trng_aes_175?freq=A&age=Y18-64&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&particip=NRP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Autres catégories de la même question (trng_aes_175 : participants souhaitant davantage, non-participants
+    ne souhaitant pas)'
+  ligne_id: estat-022895
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rupture_2011
+- rupture_2022
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (modalité 25-64 ans du paquet d''âges catalogué). Déclaratif
+  « non » : le souhait de se former est un fait déclaré, pas une opinion (méthode 33 §4).'

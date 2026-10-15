@@ -17,7 +17,7 @@ source_serie_id: '010596094'
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596094
 url_page: https://www.insee.fr/fr/statistiques/serie/010596094
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2011
 derniere_annee: 2024
 nb_points_depuis_2000: 5
@@ -27,7 +27,8 @@ ligne_id: bdm-001100
 hors_longlist: non
 rattachement_propose: lignes de la long-list niveau_de_vie (groupe bancarisation_services) renvoyées à logement_cadre_vie
   ; accès aux services → logement_cadre_vie ; à trancher au gel 2
-raccordement: 'non : série irrégulière depuis 2011'
+raccordement: 'non : série irrégulière depuis 2011 (2011, 2014, 2017, 2021, 2024 ; report de la dernière valeur,
+  D17)'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure de l'accès aux services financiers (ODD 8.10.2), série INSEE irrégulière de 2011

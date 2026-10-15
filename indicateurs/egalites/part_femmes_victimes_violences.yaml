@@ -29,24 +29,24 @@ raccordement: non
 incontournable: non
 recommandation: ecarter
 motif_recommandation: 'Sens ambigu : une part ne dit rien du niveau des violences (elle monte si les violences contre
-  les hommes baissent), et la série, 2010-2023 (12 points), traverse la rupture de l''enquête de victimation de
-  2022.'
+  les hommes baissent), et la série, 2010-2023 (12 points), passe de l''enquête Cadre de vie et sécurité à l''enquête
+  Vécu et ressenti en matière de sécurité, avec deux années sans valeur (à lire sur la série).'
 note_pertinence: Les violences faites aux femmes sont mesurées en niveau dans securite (victimes de violences conjugales,
   ventilées par sexe, R3). La part des femmes parmi les victimes est un indicateur de structure, pas de résultat.
 variantes:
 - serie_id: '010594735'
   source: INSEE BDM
-  nature: indicateur ODD 5.i4b (violences sexuelles hors ménage) et copies Melodi
+  nature: indicateur ODD national 5.i4b (violences sexuelles hors ménage), BDM et copie Melodi
   ligne_id: bdm-000818
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=5.i3b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: indicateur ODD 5.i4b (violences sexuelles hors ménage) et copies Melodi
+  nature: 'doublon technique : copie Melodi de l''indicateur ODD 5.i3b (série principale)'
   ligne_id: melodi-005417
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=Y18T75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=5.i4b&PCS=_Z&SDG=SDG5&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: indicateur ODD 5.i4b (violences sexuelles hors ménage) et copies Melodi
+  nature: indicateur ODD national 5.i4b (violences sexuelles hors ménage), BDM et copie Melodi
   ligne_id: melodi-005419
   eligible: oui
 socle_v1:
@@ -57,4 +57,7 @@ socle_v1:
 qualite:
 - sens_ambigu
 - rupture_enquete_cvs_vrs
-notes: ''
+- lacune_deux_annees_a_lire
+notes: 'Valeurs non relues (BDM refusée à l''outil) : pour la série voisine BDM 010596046, issue des mêmes enquêtes,
+  l''audit securite lit 2010-2018 puis 2021-2023. Variantes : indicateur ODD 5.i4b (violences sexuelles hors ménage,
+  BDM et copie Melodi) et doublon technique Melodi de la série principale (5.i3b).'

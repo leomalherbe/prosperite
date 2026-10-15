@@ -4,9 +4,9 @@ dimension: egalites
 sous_theme: écarts femmes-hommes
 famille: ecart_salaire_fh
 variante_principale: non
-definition: Écart relatif entre le salaire net mensuel moyen en équivalent temps plein des hommes et celui des femmes,
-  en pourcentage du salaire des hommes, salariés du secteur privé (base Tous salariés, tous volumes de travail convertis
-  en équivalent temps plein).
+definition: Écart relatif, en valeur absolue, entre le salaire net mensuel moyen en équivalent temps plein des hommes
+  et celui des femmes, en pourcentage du salaire des hommes, salariés du secteur privé (base Tous salariés, tous
+  volumes de travail convertis en équivalent temps plein).
 unite: '% du salaire net moyen des hommes'
 sens: bas
 type: resultat
@@ -19,8 +19,7 @@ source_serie_id: 'DS_DERA_PRIVE_SERIES_LONGUES : (SEX=M - SEX=F) / SEX=M, mesure
 composantes:
 - DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=M&UNIT_MEASURE=XDC&WKTIME=_T
 - DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=F&UNIT_MEASURE=XDC&WKTIME=_T
-formule: (salaire net EQTP moyen des hommes - salaire net EQTP moyen des femmes) / salaire net EQTP moyen des hommes
-  x 100
+formule: abs(A - B) / A * 100
 source_niveau: 1
 url_api: https://api.insee.fr/melodi/data/DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=M&UNIT_MEASURE=XDC&WKTIME=_T
 url_page: https://www.insee.fr/fr/outil-interactif/5369554/series-longues-dans-le-secteur-prive
@@ -65,4 +64,9 @@ qualite:
 - champ_secteur_prive
 - composantes_autre_longlist
 - champ_geo_1999_2000
-notes: 'Champ du jeu Melodi : France métropolitaine jusqu''en 1999, France ensuite (description du catalogue Melodi).'
+- valeur_absolue_d34
+- recoupement_a_faire
+notes: 'Composantes (A = hommes, B = femmes) : 1996-2024 pour les deux d''après le catalogue Melodi ; champ du jeu
+  : France métropolitaine jusqu''en 1999, France ensuite (description du catalogue Melodi). Valeurs non lues (API
+  Melodi refusée à l''outil) : recoupement de trois écarts avec ceux que publie l''INSEE à faire au premier passage
+  du robot (D34 ; maintenance EGA-6).'

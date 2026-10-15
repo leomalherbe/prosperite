@@ -4,8 +4,8 @@ dimension: egalites
 sous_theme: générations
 famille: ecart_pauvrete_generations
 variante_principale: oui
-definition: Taux de pauvreté monétaire (seuil de 60 % du revenu médian) des 18-24 ans moins celui des 65 ans ou
-  plus, en points (EU-SILC, jeu ilc_li02).
+definition: Écart, en valeur absolue et en points, entre le taux de pauvreté monétaire (seuil de 60 % du revenu
+  médian) des 18-24 ans et celui des 65 ans ou plus (EU-SILC, jeu ilc_li02).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -14,7 +14,10 @@ composite: non
 source_organisme: Eurostat
 source_jeu: ilc_li02 (EU-SILC, taux de risque de pauvreté par âge)
 source_serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&geo=FR
-formule: taux de pauvreté (age=Y18-24) - taux de pauvreté (age=Y_GE65)
+composantes:
+- ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y18-24&geo=FR
+- ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y_GE65&geo=FR
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table?lang=fr
@@ -32,7 +35,7 @@ raccordement: non
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure annuelle des écarts entre générations au catalogue, construite sur deux séries
-  de 2004 à 2025 (22 points), de signe constant et croissante (5,2 points en 2004, 9,9 en 2015, 11,2 en 2025).
+  de 2004 à 2025 (22 points), de signe constant, avec un maximum de 14,9 points en 2010 (5,2 en 2004, 11,2 en 2025).
 note_pertinence: 'Le risque de pauvreté des 18-24 ans est resté autour de 20 % quand celui des 65 ans ou plus baissait
   jusqu''en 2017 puis remontait : l''écart mesure cette inégalité entre générations. Le taux des 18-24 ans inclut
   des étudiants hors du domicile parental dont les ressources sont mal mesurées. Ruptures en 2004, 2020 et 2022.'
@@ -44,8 +47,12 @@ socle_v1:
   justification: ''
 qualite:
 - ecart_construit
+- valeur_absolue_d34
+- rupture_2004
 - rupture_2020
 - rupture_2022
 - composantes_autre_longlist
-notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 : la modalité 18-24 ans commence en 2004 (le paquet d''âges
-  du catalogue commence en 2000).'
+notes: 'Composantes (A = 18-24 ans, B = 65 ans ou plus) lues sur l''API Eurostat le 14/10/2026 : A depuis 2004 (le
+  paquet d''âges du catalogue commence en 2000), B depuis 1995 (valeurs entières jusqu''en 2002, aucune en 2003)
+  ; drapeau b en 2004, 2020 et 2022 ; recoupement (D34) : 20,5 - 15,3 = 5,2 (2004), 24,3 - 9,4 = 14,9 (2010), 17,9
+  - 8,0 = 9,9 (2015), 22,8 - 11,6 = 11,2 (2025) ; signe constant.'

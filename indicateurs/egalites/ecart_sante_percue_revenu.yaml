@@ -4,8 +4,9 @@ dimension: egalites
 sous_theme: santé
 famille: ecart_sante_revenu
 variante_principale: oui
-definition: Part des personnes de 16 ans ou plus se déclarant en bonne ou très bonne santé dans le quintile de revenu
-  le plus élevé moins la même part dans le quintile le plus bas, en points (EU-SILC, jeu hlth_silc_10).
+definition: Écart, en valeur absolue et en points, entre la part des personnes de 16 ans ou plus se déclarant en
+  bonne ou très bonne santé dans le quintile de revenu le plus élevé et la même part dans le quintile le plus bas
+  (EU-SILC, jeu hlth_silc_10).
 unite: points de pourcentage
 sens: bas
 type: resultat
@@ -14,7 +15,10 @@ composite: non
 source_organisme: Eurostat
 source_jeu: hlth_silc_10 (santé perçue par quintile de revenu)
 source_serie_id: hlth_silc_10?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&age=Y_GE16&sex=T&levels=VG_G&geo=FR
-formule: part en bonne ou très bonne santé (quant_inc=QU5) - même part (quant_inc=QU1)
+composantes:
+- hlth_silc_10?freq=A&unit=PC&quant_inc=QU5&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+- hlth_silc_10?freq=A&unit=PC&quant_inc=QU1&age=Y_GE16&sex=T&levels=VG_G&geo=FR
+formule: abs(A - B)
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_silc_10?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&age=Y_GE16&sex=T&levels=VG_G&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_silc_10/default/table?lang=fr
@@ -53,5 +57,8 @@ qualite:
 - non_standardise_age
 - rupture_2020
 - rupture_2022
+- valeur_absolue_d34
 - composantes_autre_longlist
-notes: ''
+notes: 'Composantes (A = cinquième quintile, B = premier quintile) lues sur l''API Eurostat le 14/10/2026 : 2005-2025
+  pour les deux, drapeau b en 2020 et 2022 ; recoupement (D34) : 75,7 - 59,2 = 16,5 (2005), 73,2 - 60,6 = 12,6 (2015),
+  75,5 - 54,2 = 21,3 (2025) ; signe constant.'

@@ -1,0 +1,87 @@
+id: ecart_emploi_nationalite
+libelle: Écart de taux d'emploi entre nationaux et ressortissants de pays hors UE (20-64 ans)
+dimension: egalites
+sous_theme: écarts selon l'origine
+famille: ecart_emploi_origine
+variante_principale: oui
+definition: Écart, en valeur absolue et en points, entre le taux d'emploi des personnes de 20 à 64 ans de nationalité
+  française et celui des ressortissants de pays hors de l'Union européenne (enquête Forces de travail, jeu Eurostat
+  sdg_08_30a).
+unite: points de pourcentage
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_08_30a (taux d'emploi par nationalité, indicateurs ODD de l'UE)
+source_serie_id: sdg_08_30a?freq=A&unit=PC&sex=T&age=Y20-64&citizen=NAT&citizen=NEU27_2020_FOR&geo=FR
+composantes:
+- sdg_08_30a?freq=A&unit=PC&sex=T&age=Y20-64&citizen=NAT&geo=FR
+- sdg_08_30a?freq=A&unit=PC&sex=T&age=Y20-64&citizen=NEU27_2020_FOR&geo=FR
+formule: abs(A - B)
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_30a?freq=A&unit=PC&sex=T&age=Y20-64&citizen=NAT&citizen=NEU27_2020_FOR&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_08_30a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-053141 ; estat-053142
+hors_longlist: non
+rattachement_propose: lignes de la long-list travail (taux d'emploi par nationalité), renvoyées à egalites par la
+  présélection travail (autre_dimension:egalites, maintenance TRA-4) ; l'écart construit relève d'egalites (A8,
+  R3) ; à trancher au gel 2
+raccordement: non
+incontournable: non
+recommandation: retenir
+motif_recommandation: Indicateur du cadre Eurostat Qualité de vie (écart d'emploi entre nationaux et ressortissants
+  de pays tiers), construit sur deux séries annuelles de 2000 à 2025 (26 points) de signe constant (23,0 points
+  en 2000, 24,5 en 2016, 19,3 en 2025), principale de la famille ecart_emploi_origine.
+note_pertinence: Le taux d'emploi des 20-64 ans, sans biais de structure par âge, mesure l'accès à l'emploi des
+  ressortissants de pays hors UE, chômage et inactivité compris. L'écart reflète des différences de qualification,
+  de maîtrise de la langue et des discriminations, sans les distinguer. La nationalité exclut les immigrés devenus
+  français, que l'écart de chômage selon le pays de naissance (variante de la famille) couvre.
+variantes:
+- serie_id: lfsa_ergan?freq=A&unit=PC&sex=T&age=Y_GE15&citizen=EU27_2020&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=STLS&citizen=NRP&geo=FR
+  source: Eurostat
+  nature: écarts de taux d'emploi selon la nationalité et le pays de naissance, 15 ans ou plus (lfsa_ergan, lfsa_ergacob
+    ; long-list travail)
+  ligne_id: estat-054245
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergacob?freq=A&unit=PC&sex=T&age=Y_GE15&c_birth=EU27_2020&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&geo=FR
+  source: Eurostat
+  nature: écarts de taux d'emploi selon la nationalité et le pays de naissance, 15 ans ou plus (lfsa_ergan, lfsa_ergacob
+    ; long-list travail)
+  ligne_id: estat-054254
+  eligible: oui
+  longlist: travail
+- serie_id: sdg_08_30a?freq=A&unit=PC&sex=T&age=Y20-64&citizen=EU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: taux d'emploi des 20-64 ans ressortissants d'un autre pays de l'UE (même jeu sdg_08_30a ; long-list travail)
+  ligne_id: estat-053140
+  eligible: oui
+  longlist: travail
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- ecart_construit
+- valeur_absolue_d34
+- rupture_2003
+- rupture_2005
+- rupture_2006
+- rupture_2014
+- rupture_2021
+- rupture_2024
+- definition_differente_2021
+- composantes_autre_longlist
+notes: 'Composantes (A = nationaux, B = ressortissants de pays hors UE) lues sur l''API Eurostat le 14/10/2026 :
+  2000-2025 pour les deux, mêmes drapeaux (b en 2003, 2005, 2006 et 2014 ; bd en 2021 et 2024 ; d de 2021 à 2025
+  ; aucun u) ; recoupement (D34) : 68,5 - 45,5 = 23,0 (2000), 71,3 - 51,8 = 19,5 (2008), 71,3 - 46,8 = 24,5 (2016),
+  76,8 - 57,5 = 19,3 (2025). Valeur isolée de 2008 pour les ressortissants hors UE (51,8 % contre 47,8 % en 2007
+  et 48,4 % en 2009), à surveiller. Cadre : Eurostat Qualité de vie, sous-dimension 7.2 (docs/methodo/30_indicateurs_cadres_reference.csv).'

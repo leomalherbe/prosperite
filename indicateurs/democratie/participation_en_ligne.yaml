@@ -1,0 +1,65 @@
+id: participation_en_ligne
+libelle: Participation en ligne à des consultations ou à des votes sur des sujets civiques ou politiques
+dimension: democratie
+sous_theme: voix et participation citoyenne
+famille: participation_en_ligne
+variante_principale: oui
+definition: Part des particuliers ayant utilisé internet pour participer à des consultations en ligne ou pour voter
+  sur des sujets civiques ou politiques (urbanisme, signature de pétitions, par exemple), d'après l'enquête européenne
+  sur l'usage des technologies de l'information par les particuliers (Eurostat isoc_ci_ac_i, indicateur I_IUVOTE,
+  ensemble des individus) ; tranche d'âge et période de référence non relues dans les métadonnées.
+unite: '% des particuliers'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: isoc_ci_ac_i — Particuliers, activités sur l'internet
+source_serie_id: isoc_ci_ac_i?freq=A&indic_is=I_IUVOTE&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_ci_ac_i?freq=A&indic_is=I_IUVOTE&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/isoc_ci_ac_i/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2011
+derniere_annee: 2025
+nb_points_depuis_2000: 10
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-005592
+hors_longlist: non
+rattachement_propose: 'long-list logement_cadre_vie (ligne estat-005592, règle R5) : participation citoyenne et
+  non administration en ligne (D33) ; rattachement à democratie proposé (oubli O2 de l''audit M06), règle autre_dimension:democratie
+  à prévoir pour M05 logement_cadre_vie'
+raccordement: non
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Seule mesure fréquente de la participation citoyenne hors élections, 10 points de 2011 à 2025
+  entre 5,98 % (2015) et 10,36 % (2013), 8,74 % en 2025, éligible et de niveau 1, rattachée à la dimension par l'audit
+  M06 (O2).
+note_pertinence: 'Participer à une consultation publique ou signer une pétition en ligne est une forme de participation
+  citoyenne entre deux élections, complémentaire de la citoyenneté active mesurée par EU-SILC en 2015 et 2022 seulement.
+  La part des particuliers concernés varie entre 6 % et 10 % depuis 2011 sans tendance nette. Son niveau dépend
+  aussi de l''offre de consultations en ligne et de l''usage d''internet : elle se lit avec la citoyenneté active
+  plutôt qu''à sa place.'
+variantes:
+- serie_id: isoc_ci_ac_i?freq=A&indic_is=I_IUVOTE&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=FAM&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=SELF_S&ind_type=SELF_NS&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=EMP_WKT_FT&ind_type=EMP_WKT_PT&ind_type=EMP_CON_PRM&ind_type=EMP_CON_TMP&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilations par type d'individus (âge, sexe, diplôme, emploi, revenu…) de la même série Eurostat, 2011-2025
+    ; ligne de la long-list logement_cadre_vie
+  ligne_id: estat-005593
+  eligible: oui
+  longlist: logement_cadre_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- rattachement_a_trancher
+- depend_usage_internet
+notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (mise à jour du jeu : 17/04/2026), sans drapeau : 6,96 %
+  (2011), 10,36 % (2013), 5,98 % (2015), 7,41 % (2017), 9,08 % (2019), 9,19 % (2021), 8,89 % (2022), 8,46 % (2023),
+  8,21 % (2024), 8,74 % (2025). Les mesures voisines d''expression d''opinions politiques en ligne (I_IUPOL, I_IUPOL1,
+  I_IUPOL2 : 1 à 5 points, non éligibles) restent dans la long-list logement_cadre_vie ; leur rattachement est signalé
+  au compte rendu.'

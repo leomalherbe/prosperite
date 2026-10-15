@@ -2,7 +2,7 @@ id: liberte_presse_rsf
 libelle: Liberté de la presse (score RSF)
 dimension: democratie
 sous_theme: libertés
-famille: rsf
+famille: liberte_presse_rsf
 variante_principale: oui
 definition: Score de la France au Classement mondial de la liberté de la presse de Reporters sans frontières (questionnaire
   d'experts et relevé des exactions contre les journalistes) ; de 0 à 100, plus haut = mieux, depuis 2013 (les fichiers
@@ -12,6 +12,7 @@ sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: edition
 source_organisme: Reporters sans frontières
 source_jeu: Classement mondial de la liberté de la presse, fichiers CSV annuels
 source_serie_id: https://rsf.org/sites/default/files/import_classement/<année>.csv
@@ -87,4 +88,5 @@ qualite:
 notes: 'Valeurs lues dans les extraits du robot M04 (docs/sources/series/rsf__classement_<année>.txt) : 3,25 (2002,
   rang 11), 13,38 (2010), 9,5 (2011-2012), 78,4 (2013), 78,11 (2014), 77,4 (2021), 78,53 (2022, nouvelle méthode),
   76,62 (2025), 76,68 (2026, rang 25). Pas de fichier 2011 (édition 2011-2012). Colonnes et encodage variables selon
-  les années : le script de collecte devra les gérer.'
+  les années : le script de collecte devra les gérer. Année = année du classement (édition), qui porte sur l''année
+  précédente (annee_reference, audit M06 J6).'

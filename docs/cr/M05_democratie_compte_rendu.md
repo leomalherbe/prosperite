@@ -15,7 +15,7 @@ Agent M05 democratie, 14 octobre 2026, branche `m05-democratie`, PR #11. Méthod
 
 Contrôles : `python scripts/verifier_fiches.py --dimension democratie` → **0 erreur**, 1 avertissement attendu (`citoyennete_active`, série hors catalogue de séries, jeu `ilc_scp19` au catalogue des jeux) ; `pytest` : 394 réussis. Aucun fichier de `scripts/` ni de `src/` modifié.
 
-## 2. Chiffres
+## 2. Chiffres (avant l'audit ; chiffres à jour au §7)
 
 - Long-list : 250 lignes (129 éligibles, 32 à vérifier, 89 non ; 64 composites). Décisions : 31 lignes `fiche` (+ 1 fiche hors long-list), 100 lignes `variante_de` (dont 3 importées de `securite`), 82 `ecarte_en_bloc` (dont 58 lignes d'administration en ligne non éligibles ou sans intérêt propre, 10 d'activité des tribunaux), 40 `autre_dimension` (38 `logement_cadre_vie`, 2 `egalites`).
 - **32 fiches, 24 familles : 22 `retenir`, 7 `retenir_variante`, 3 `ecarter`** ; 10 déclaratives (confiance, indépendance perçue de la justice, voix) ; 11 composites ; 12 irrégulières (D17), dont 10 « à vérifier » dans la long-list ; 1 hors long-list ; 12 incontournables ; 100 variantes.
@@ -43,3 +43,25 @@ Contrôles : `python scripts/verifier_fiches.py --dimension democratie` → **0 
 
 - **Léo** : source principale de la participation (ministère plutôt qu'INSEE) et nombre de fiches de participation (6) ; maintien de Freedom House (7 valeurs distinctes depuis 2002, licence non trouvée) ; RSF lisible seulement depuis 2013 ; citoyenneté active (24,8 % en 2015, 11,9 % en 2022 : comparabilité à vérifier) ; confiance dans l'armée dans cette dimension.
 - **Session mère** : incontournables corruption et confiance (consigne de mission contre méthode §4) ; fiches non principales WGI ; rattachements `autre_dimension` (administration en ligne, parité) et confiance dans l'école et l'hôpital gardées ici (R5) ; lignes `crim_pris_*` de `securite` rattachées ici.
+
+## 7. Corrections après audit (M06, D32-D36) — branche `m05-democratie-corr`, PR #23
+
+Audit : `docs/validation/audit_democratie.md` (29 fiches auditées : 18 conformes, 10 à corriger, 1 non vérifiable ; 4 oublis ; 8 désaccords de jugement ; 9 corrections au §10). Les neuf corrections et les oublis O1 à O3 sont appliqués (O4 : piste de source, DEM-7) ; détail horodaté, fichiers et limites : `docs/cr/M05_democratie_corrections_journal.md`.
+
+| Fiche | Correction |
+|---|---|
+| `participation_presidentielle`, `_legislatives`, `_europeennes`, `_municipales`, `_regionales`, `_departementales` | recalcul sur un **champ homogène métropole + DROM** (champ « France » de l'INSEE) à partir de la vague 9 du robot (agrégat par scrutin et par département), le fichier ne contenant les Français de l'étranger et les collectivités d'outre-mer qu'à partir de 2009-2012 ; recoupé avec les archives du ministère (présidentielles 2002 et 2007 : 72,11 % et 84,73 % ; régionales 2010 : 46,33 %) et l'INSEE 2012-2024 (identique à l'arrondi) ; présidentielle : 72,11 / 84,73 / 80,67 / 79,02 / 75,28 % ; municipales depuis 2014 (2008 limité aux communes de plus de 3 500 habitants) ; régionales depuis 2010 (2004 mal codé : Manche absente, bureaux rattachés au mauvais département, DEM-1) ; départementales en `retenir_variante` sur 2015-2021 (J3) ; `composantes`, `formule`, `preuve`, `geo: FE` (D34) |
+| `libertes_freedom_house` | années OWID = années couvertes (`annee_couverte`) ; édition 2026 ; baisse de 93-96 à 89 ; famille `qualite_democratique` |
+| composites (D33, D35, J1, J5, J6) | familles de concept : `qualite_democratique` (V-Dem libéral principal ; V-Dem participatif, Freedom House, WGI voix et responsabilité en variantes), `etat_de_droit` (WGI principal, WJP en variante), `corruption` (WGI principal, CPI en variante), `liberte_presse_rsf`, `liberte_expression_vdem`, `liberte_academique_vdem` ; WGI en score 0-100 (documentation lue) ; sous-indices V-Dem d'État de droit et de corruption rattachés à leur famille, autres sous-indices WGI écartés en bloc ; `annee_reference` sur les 11 composites |
+| `democratie_liberale_vdem`, `democratie_participative_vdem`, `liberte_expression_vdem` | `premiere_annee: 1789` (D32) ; `faible_variation` sur l'indice libéral |
+| `adhesion_syndicale` (nouvelle, O1, D33) | SDASSYND_1 du baromètre DREES calculée par la vague 10 du robot : 8,06 % (2000) → 5,49 % (2019) → 6,81 % (2025), 25 points ; `retenir`, sans valeur officielle publiée pour la recouper |
+| `participation_en_ligne` (nouvelle, O2) | `I_IUVOTE` d'Eurostat importé de la long-list `logement_cadre_vie` : 6,96 % (2011) à 8,74 % (2025), 10 points ; `retenir`, incontournable |
+| `taux_detention` (nouvelle, O3, I2) | 14 lignes `crim_pris_*` renvoyées par `securite` : détenus pour 100 000 habitants (97,26 en 2008, 117,47 en 2024), `sens: ambigu`, `ecarter` ; ventilations en variantes, détenus par infraction écartés en bloc |
+| `voix_pouvoirs_publics` | source primaire « à vérifier (PIAAC ou enquête Confiance) », `source_a_verifier` |
+| `perception_corruption_cpi`, `voix_responsabilite_wgi`, `detention_provisoire`, `liberte_expression_vdem` | motif CPI (71 → 66, maximum 72) ; trajectoire de voix et responsabilité depuis 2000 et volatilité 2003-2005 ; raccordement de 2019 `a_etudier` (J4) ; incontournables motivés (J7) |
+
+Chiffres après corrections : **35 fiches, 25 familles : 22 `retenir`, 10 `retenir_variante`, 3 `ecarter`** ; 10 déclaratives ; 11 composites ; 2 hors long-list ; 13 incontournables ; 102 variantes. Présélection : 93 groupes (35 `fiche`, 44 `variante_de`, 12 `ecarte_en_bloc`, 2 `autre_dimension`) ; 269 lignes, dont 19 importées (17 de `securite`, 2 de `logement_cadre_vie`). Vérificateur : 0 erreur, 2 avertissements attendus (`adhesion_syndicale`, `citoyennete_active` : séries hors catalogue). Tests : 399 réussis.
+
+Liste de maintenance : ligne 24 précisée dans `docs/cr/maintenance_catalogues.md` ; nouveaux signalements DEM-1 à DEM-7 dans `docs/cr/maintenance_catalogues_democratie.md` (régionales 2004 mal codées, catalogage de SDASSYND_1, identifiants WJP et des lignes de participation (D36), champ homogène au catalogue, table de correspondance pour `I_IUVOTE` et `crim_pris_*`, extraits complets des scores WGI, sources à rechercher).
+
+À trancher : **session mère** — `adhesion_syndicale` en `retenir` sans recoupement possible (D34) ; V-Dem libéral (niveau 2) plutôt que WGI voix et responsabilité (niveau 1) en principale de `qualite_democratique` (concept le plus large, dérogation à la méthode §4) ; rattachement de `I_IUVOTE` et des 17 lignes `crim_pris_*` ; mesures `I_IUPOL*` laissées à `logement_cadre_vie`. **Léo** — un seul indice par famille de composites ; WGI en principale pour l'État de droit et la corruption, le WJP et le CPI, plus connus mais plus courts, en variantes ; régionales et municipales réduites à 3 points, départementales à 2.

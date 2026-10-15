@@ -2,43 +2,61 @@ id: etat_de_droit_wgi
 libelle: État de droit (indicateurs de gouvernance de la Banque mondiale)
 dimension: democratie
 sous_theme: justice et État de droit
-famille: wgi
-variante_principale: non
+famille: etat_de_droit
+variante_principale: oui
 definition: 'Indicateur composite « Rule of Law » des WGI : perception du respect des règles de la société, notamment
   l''exécution des contrats, la police et la justice (libellé M04), agrégée à partir de sources d''experts et d''enquêtes
-  ; estimation sur une échelle d''environ -2,5 à +2,5 (documentation WGI non lue).'
-unite: estimation (environ -2,5 à +2,5)
+  ; score de gouvernance de 0 à 100, avec intervalles de confiance à 90 %, produit « pour faciliter les comparaisons
+  entre pays et dans le temps » (documentation WGI lue le 15/10/2026), l''estimation d''origine suivant une loi
+  normale de moyenne proche de zéro (de -2,5 à 2,5 environ).'
+unite: score de 0 à 100
 sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: Banque mondiale (Worldwide Governance Indicators)
-source_jeu: WGI (API v2 de la Banque mondiale, source 3), GOV_WGI_RL.EST
-source_serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.EST?source=3
+source_jeu: WGI (API v2 de la Banque mondiale, source 3), GOV_WGI_RL.SC (score de gouvernance 0-100)
+source_serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.SC?source=3
 source_niveau: 1
-url_api: https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.EST?source=3&format=json&per_page=100
-url_page: non trouvé
+url_api: https://api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.SC?source=3&format=json&per_page=100
+url_page: https://www.worldbank.org/en/publication/worldwide-governance-indicators/documentation
 frequence: annuelle
 premiere_annee: 1996
 derniere_annee: 2025
 nb_points_depuis_2000: 25
 geo: FR
 eligibilite_longlist: oui
-ligne_id: m04-000148
+ligne_id: m04-000149
 hors_longlist: non
 raccordement: non
 incontournable: non
-recommandation: retenir_variante
-motif_recommandation: Sous-indice WGI de l'État de droit, plus long que l'indice du WJP (25 points depuis 2000 contre
-  12), proposé comme alternative dans la famille WGI (D18).
-note_pertinence: L'État de droit est nommé dans le contenu de la dimension ; l'indice du WJP en est la mesure spécialisée
-  mais ne commence qu'en 2012-2013. Cette série WGI couvre toute la période (0,97 en 2025). Elle mêle sécurité des
-  contrats et des biens, ce qui l'éloigne un peu des droits des citoyens.
+recommandation: retenir
+motif_recommandation: 'Variante principale de la famille etat_de_droit (D35 ; méthode §4 : niveau 1 et série la
+  plus longue), score annuel depuis 1996 sauf 1997, 1999 et 2001 (25 points depuis 2000, 74,61 en 2025), quand l''indice
+  du WJP ne commence qu''en 2012-2013.'
+note_pertinence: L'État de droit est nommé dans le contenu de la dimension et la table des cadres propose les WGI
+  et le WJP comme mesures (thème « garanties légales et État de droit » de Stiglitz-Sen-Fitoussi). Les WGI couvrent
+  toute la période et montrent une baisse continue depuis 2017 (estimation de 1,26 en 2017 à 0,97 en 2025). L'indicateur
+  mêle sécurité des contrats et des biens et droits des citoyens ; le WJP, plus spécialisé, reste disponible dans
+  la même famille.
 variantes:
-- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.SC?source=3
+- serie_id: api.worldbank.org/v2/country/FRA/indicator/GOV_WGI_RL.EST?source=3
   source: Banque mondiale — Worldwide Governance Indicators
-  nature: 'autre échelle : score de 0 à 100 introduit en 2025'
-  ligne_id: m04-000149
+  nature: 'autre échelle : estimation d''environ -2,5 à +2,5 (moyenne proche de zéro sur l''ensemble des pays)'
+  ligne_id: m04-000148
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/rule-of-law-index.csv (colonne rule_of_law_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit : indice d''État de droit, administration publique rigoureuse
+    et impartiale'
+  ligne_id: m04-000168
+  eligible: oui
+- serie_id: https://ourworldindata.org/grapher/rigorous-and-impartial-public-administration-score.csv (colonne public_admin_vdem__estimate_best)
+  source: Our World in Data (relais)
+  nature: 'sous-indices V-Dem de l''État de droit : indice d''État de droit, administration publique rigoureuse
+    et impartiale'
+  ligne_id: m04-000185
   eligible: oui
 socle_v1:
   seuil_minimal: null
@@ -48,6 +66,8 @@ socle_v1:
 qualite:
 - composite_D18
 - lacune_2001
-notes: 'Dernière valeur (0,97 en 2025) lue dans la sortie du robot M04 ; définition résumée d''après le libellé
-  M04 (respect des contrats, police, justice). Exception à la règle des familles : fiche non principale d''une famille
-  de producteur, pour un concept qui a sa propre famille (WJP).'
+notes: 'Score 0-100 : 74,61 en 2025 (sortie du robot M04, 27 valeurs de 1996 à 2025 ; série complète non relue,
+  API de la Banque mondiale refusée à l''outil le 15/10/2026). Estimation (variante, extrait du robot, mise à jour
+  WGI du 25/09/2026) : 1,35 (2000), 1,47 (2005), 1,28 (2010), 1,26 (2017), 1,10 (2021), 0,97 (2025). Série principale
+  passée de l''estimation au score 0-100 après lecture de la documentation WGI (audit M06 J5). Sous-indices V-Dem
+  d''État de droit en variantes (D35). Année = année observée.'

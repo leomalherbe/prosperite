@@ -1,18 +1,19 @@
 id: libertes_freedom_house
 libelle: Score global de liberté (Freedom House)
 dimension: democratie
-sous_theme: libertés
-famille: freedom_house
-variante_principale: oui
+sous_theme: qualité démocratique (indices composites)
+famille: qualite_democratique
+variante_principale: non
 definition: 'Score global de Freedom in the World (de 0 à 100), somme des droits politiques (0 à 40 : processus
   électoral, pluralisme, fonctionnement du gouvernement) et des libertés civiles (0 à 60 : expression, association,
-  État de droit, autonomie personnelle), notés par des analystes de Freedom House ; relais Our World in Data (années
-  = éditions du rapport).'
+  État de droit, autonomie personnelle), notés par des analystes de Freedom House ; relais Our World in Data, dont
+  les années sont les années couvertes (l''édition du rapport paraît l''année suivante).'
 unite: score de 0 à 100
 sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: Freedom House, relais Our World in Data
 source_jeu: Freedom in the World via le graphique OWID freedom-score-fh (colonne total_score)
 source_serie_id: https://ourworldindata.org/grapher/freedom-score-fh.csv (colonne total_score)
@@ -29,13 +30,15 @@ ligne_id: m04-000195
 hors_longlist: non
 raccordement: non
 incontournable: non
-recommandation: retenir
-motif_recommandation: Variante principale de la famille Freedom House (D18), score annuel de 2002 à 2025 (24 points,
-  89 sur 100 en 2025), mais 7 valeurs distinctes seulement et licence non trouvée.
-note_pertinence: 'Freedom House mesure les droits politiques et les libertés civiles, au cœur de la dimension. Le
-  score français varie très peu (89 ou 90 de 2018 à 2024 dans le fichier source) : il distingue mal les années et
-  recoupe largement l''indice V-Dem. Freedom House ne diffuse les éditions 2025 et 2026 que sur demande ; OWID relaie
-  l''édition 2025.'
+recommandation: retenir_variante
+motif_recommandation: Score global de Freedom House de 2002 à 2025 (24 points, 89 sur 100 en 2025), substituable
+  à l'indice V-Dem de démocratie libérale (famille qualite_democratique, D35) mais à 7 valeurs distinctes seulement,
+  sans licence trouvée et absent de la table des cadres (non incontournable).
+note_pertinence: 'Freedom House mesure les droits politiques et les libertés civiles, au cœur de la dimension, et
+  recoupe largement l''indice V-Dem de démocratie libérale, variante principale de la même famille. Le score français
+  a perdu 6 à 7 points depuis 2002-2014 (de 93 à 96 selon les années) : 91 en 2015, 90 de 2016 à 2020, 89 depuis
+  2021, et il varie très peu d''une année à l''autre. Freedom House ne diffuse les éditions récentes que sur demande
+  ; OWID relaie l''édition 2026 (données 2025).'
 variantes:
 - serie_id: https://ourworldindata.org/grapher/political-rights-score-fh.csv (colonne polrights_score)
   source: Our World in Data (relais)
@@ -99,6 +102,10 @@ qualite:
 - relais_owid
 - faible_variation
 - licence_non_trouvee
-- annee_edition
-notes: Dernière valeur (89 en 2025) et nombre de valeurs distinctes (7 sur 24) lus dans la sortie du robot M04 ;
-  scores 2018-2024 (90, puis 89 en 2022-2024) lus dans l'extrait du fichier All_data_FIW_2013-2024.xlsx (docs/sources/series/freedom_house__fiw_2013_2024_france.txt).
+- annee_couverte
+notes: 'Dernière valeur (89 en 2025, année couverte, édition 2026) et nombre de valeurs distinctes (7 sur 24) lus
+  dans la sortie du robot M04 ; série OWID lue par l''audit M06 (CSV filtré sur la France, métadonnées « Freedom
+  House (2026) », période 2002-2025) : 95 (2002-2004), 93 (2005), 94 (2006), 93 (2007), 96 (2008-2009), 95 (2010-2014),
+  91 (2015), 90 (2016-2020), 89 (2021-2025). Le fichier Freedom House All_data_FIW_2013-2024.xlsx (docs/sources/series/freedom_house__fiw_2013_2024_france.txt)
+  est daté par édition : 95 (éditions 2013-2015), 91 (2016), 90 (2017-2021), 89 (2022-2024), soit les années couvertes
+  2012-2014, 2015, 2016-2020 et 2021-2023 (année OWID = édition - 1, audit M06 §4.2).'

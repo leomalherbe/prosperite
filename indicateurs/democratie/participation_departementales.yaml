@@ -1,12 +1,14 @@
 id: participation_departementales
-libelle: Taux de participation au premier tour des élections cantonales puis départementales
+libelle: Taux de participation au premier tour des élections départementales
 dimension: democratie
 sous_theme: participation électorale
 famille: participation_electorale
 variante_principale: non
-definition: Part des électeurs inscrits ayant voté au premier tour des élections cantonales (jusqu'en 2011) puis
-  départementales (depuis 2015) ; votants rapportés aux inscrits, tous bureaux de vote du fichier agrégé du ministère
-  de l'Intérieur.
+definition: Part des électeurs inscrits ayant voté au premier tour des élections départementales (votants rapportés
+  aux inscrits), calculée par le projet sur le fichier agrégé des résultats du ministère de l'Intérieur, sur le
+  champ métropole et DROM. Les cantonales de 2001 à 2011, qui renouvelaient les conseils généraux par moitié, ne
+  sont pas comparables et ne sont pas retenues ; Paris, la Guyane, la Martinique et, en 2021, la Corse n'élisent
+  pas de conseil départemental (absents du fichier).
 unite: '% des inscrits'
 sens: haut
 type: resultat
@@ -14,41 +16,48 @@ declaratif: non
 composite: non
 source_organisme: Ministère de l'Intérieur (résultats électoraux), calcul du projet
 source_jeu: Données des élections agrégées (data.gouv.fr, fichier general_results au bureau de vote, Licence Ouverte
-  2.0)
-source_serie_id: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants
-  / somme inscrits)
+  2.0), agrégées par scrutin et par département par le robot (vague 9)
+source_serie_id: 'general_results (data.gouv.fr) : id_election AAAA_dpmt_t1, départements de métropole et DROM (somme
+  votants / somme inscrits)'
+composantes:
+- https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet (somme votants / somme inscrits)
+formule: 'taux = 100 × somme(votants) / somme(inscrits) des lignes id_election = AAAA_dpmt_t1 et code_departement
+  ∈ {01 à 95, 2A, 2B, ZA ou 971, ZB ou 972, ZC ou 973, ZD ou 974, ZM ou 976} de l''agrégat par scrutin et par département
+  (première année lue : 2015 ; cantonales AAAA_cant_t1 de 2001 à 2011 exclues) ; série annuelle par report de la
+  valeur du dernier scrutin jusqu''au suivant (D17)'
 source_niveau: 2
-url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.parquet
+url_api: https://data-pipeline-open.s3.sbg.io.cloud.ovh.net/elections/general_results.csv
 url_page: https://www.data.gouv.fr/fr/datasets/6481e741d4cf002ec0efec9d/
 frequence: irreguliere
-formule: taux = somme des votants / somme des inscrits de l'ensemble des bureaux de vote du fichier pour le scrutin
-  ; série annuelle reconstruite en reportant la valeur du dernier scrutin jusqu'au scrutin suivant (D17)
-premiere_annee: 2001
+premiere_annee: 2015
 derniere_annee: 2021
-nb_points_depuis_2000: 6
-geo: FR
+nb_points_depuis_2000: 2
+geo: FE
 eligibilite_longlist: a_verifier
 ligne_id: m04-000251
 hors_longlist: non
+preuve: docs/sources/series/interieur_elections__participation_par_departement.csv
 raccordement: non
 incontournable: oui
-recommandation: ecarter
-motif_recommandation: 'Champ rompu en 2015 : les cantonales de 2001 à 2011 ne concernaient qu''environ la moitié
-  des électeurs (19,6 à 21,4 millions d''inscrits dans le fichier) contre 42,7 millions aux départementales de 2015.'
-note_pertinence: Les cantonales renouvelaient les conseils généraux par moitié, si bien que chaque scrutin ne portait
-  que sur une partie du territoire ; la réforme de 2015 fait voter tous les électeurs. La série mêle donc deux champs
-  et son niveau de 2021 (33,32 %) est marqué par l'épidémie.
+recommandation: retenir_variante
+motif_recommandation: Scrutin départemental renouvelé en entier depuis 2015, 2 scrutins comparables sur un champ
+  homogène (50,17 % en 2015, 33,32 % en 2021) recoupés avec l'INSEE, admis comme série irrégulière (D17, D28) plutôt
+  qu'écartés pour leur seul nombre (D32).
+note_pertinence: 'Les départementales mesurent la participation à l''échelon départemental : 50,17 % en 2015 et
+  33,32 % en 2021, scrutin tenu pendant l''épidémie le même jour que les régionales. Les cantonales de 2001 à 2011
+  ne portaient que sur la moitié des cantons (19,6 à 21,4 millions d''inscrits contre 42,7 millions en 2015) : elles
+  sont exclues de la série. Avec deux scrutins, l''indicateur montre un niveau plus qu''une trajectoire.'
 variantes:
 - serie_id: '001778052'
   source: INSEE BDM
-  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2015
-    et 2021'
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » (identique au calcul du projet
+    à l''arrondi) et France métropolitaine, 2015 et 2021'
   ligne_id: bdm-001362
   eligible: a_verifier
 - serie_id: '001778053'
   source: INSEE BDM
-  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » et France métropolitaine, 2015
-    et 2021'
+  nature: 'INSEE (BDM, tableau TCRED) : même taux au premier tour, champ « France » (identique au calcul du projet
+    à l''arrondi) et France métropolitaine, 2015 et 2021'
   ligne_id: bdm-001363
   eligible: a_verifier
 socle_v1:
@@ -58,7 +67,14 @@ socle_v1:
   justification: ''
 qualite:
 - serie_irreguliere_D17
-- rupture_2015
-- calcul_projet_a_recouper
-notes: 'Valeurs lues dans la sortie du robot M04 : 65,48 % (2001), 63,91 % (2004), 64,87 % (2008), 44,32 % (2011),
-  50,17 % (2015), 33,32 % (2021).'
+- calcul_projet
+- champ_metropole_drom
+- champ_variable_corse_2021
+- cantonales_exclues
+- deux_points
+notes: 'Calcul du projet (D34) sur la sortie de la vague 9 du robot (docs/sources/series/interieur_elections__participation_par_departement.csv
+  : inscrits, votants et exprimés sommés par scrutin et par département sur general_results.csv, aucun votant manquant),
+  lue le 15/10/2026. Recoupement : INSEE BDM 001778052 (50,2 % en 2015, 33,3 % en 2021), identique à l''arrondi.
+  Cantonales, non retenues : 65,48 % (2001), 63,91 % (2004), 64,87 % (2008), 44,32 % (2011). Avant l''audit, la
+  fiche était écartée pour « champ rompu en 2015 », motif hors de la méthode (audit M06 J3) : la partie 2015-2021
+  est éligible au sens de D17 et D28.'

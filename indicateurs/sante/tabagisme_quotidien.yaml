@@ -261,6 +261,11 @@ variantes:
   nature: même mesure, autres voies et ventilations
   ligne_id: melodi-005446
   eligible: a_verifier
+- serie_id: 'odd_3 : 3_A_1_OECD._T._T._T._T._T.PT_POP'
+  source: OCDE (ODD 3.a.1)
+  nature: 'même mesure, autre voie : consommation quotidienne de tabac (2000, 2005, 2010, 2014-2023 ; 23,1 % en
+    2023, comme Santé publique France), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

@@ -52,6 +52,15 @@ variantes:
   nature: composantes
   ligne_id: estat-001983
   eligible: oui
+- serie_id: 'odd_3 : 3_3_2_SH_TBS_INCD._T._T._T._T._T.10P5HB'
+  source: OCDE (ODD 3.3.2, d'après l'OMS)
+  nature: 'concept voisin : incidence de la tuberculose pour 100 000 habitants (2000-2023, 8,3 en 2023), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
+- serie_id: 'odd_3 : 3_3_1_SH_HIV_INCD._T._T._T._T._T.10P3HB_UNINFCT'
+  source: OCDE (ODD 3.3.1, d'après l'ONUSIDA)
+  nature: 'concept voisin : nouvelles infections par le VIH pour 1 000 personnes non infectées (estimations 2000-2023,
+    5 valeurs distinctes, 0,09 en 2023), hors long-list'
+  preuve: docs/sources/series/ocde__odd_3.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

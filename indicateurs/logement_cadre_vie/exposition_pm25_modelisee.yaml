@@ -1,0 +1,53 @@
+id: exposition_pm25_modelisee
+libelle: Exposition moyenne de la population aux PM2,5 (estimation modélisée)
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: exposition_pm25
+variante_principale: non
+definition: Concentration annuelle moyenne de PM2,5 à laquelle la population est exposée, pondérée par la population
+  et estimée par modélisation (Banque mondiale, indicateur EN.ATM.PM25.MC.M3).
+unite: µg/m³
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Banque mondiale
+source_jeu: World Development Indicators, EN.ATM.PM25.MC.M3
+source_serie_id: https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.PM25.MC.M3?format=json
+source_niveau: 1
+url_api: https://api.worldbank.org/v2/country/FRA/indicator/EN.ATM.PM25.MC.M3?format=json
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1995
+derniere_annee: 2023
+nb_points_depuis_2000: 24
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000396
+hors_longlist: non
+raccordement: 'non : série modélisée depuis 1995'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la famille exposition_pm25 (toute la population, estimation modélisée),
+  seule à couvrir 2000-2010, annuelle de 1995 à 2023 (24 points depuis 2000).
+note_pertinence: La modélisation couvre l'ensemble du territoire et remonte avant 2011, ce que la série réglementaire
+  du SDES ne fait pas. Elle passe de 17,88 µg/m³ en 2000 à 8,23 en 2023 (extrait de l'API Banque mondiale lu le
+  13/10/2026), une baisse proche de celle mesurée en fond urbain. Les estimations sont révisées d'une édition à
+  l'autre et la remontée de 2022 (10,38) appelle une vérification.
+variantes:
+- serie_id: 'odd_11 : 11_6_2_OECD._T._T._T._T._T.M3'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: OCDE ODD 11.6.2 (exposition moyenne de la population, 2000-2020)
+  ligne_id: m04-000128
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- estimation_modelisee
+- revision_frequente
+notes: 'Valeurs lues (docs/sources/verif_acces/extraits/banque_mondiale__en_atm_pm25_mc_m3.txt) : 17,88 (2000),
+  15,87 (2010), 12,05 (2015), 8,78 (2020), 9,94 (2021), 10,38 (2022), 8,23 (2023). Variante : OCDE ODD 11.6.2 (9,49
+  µg/m³ en 2020 d''après l''extrait du robot M04).'

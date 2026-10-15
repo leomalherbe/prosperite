@@ -1,0 +1,48 @@
+id: population_exposee_pm25
+libelle: Population exposée aux PM2,5 au-delà de la valeur guide de l'OMS
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: exposition_pm25
+variante_principale: non
+definition: Part de la population exposée à une concentration annuelle moyenne de PM2,5 supérieure à la valeur guide
+  de l'Organisation mondiale de la santé (OCDE, How's Life 9_2 ; seuil à vérifier, voir notes).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: OCDE
+source_jeu: How's Life? (bien-être actuel), mesure 9_2
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=9_2 UNIT_MEASURE=PT_POP
+source_niveau: 1
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2020
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000062
+hors_longlist: non
+raccordement: 'non : série OCDE de 2004 à 2020'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la famille exposition_pm25 (part au-dessus d'un seuil sanitaire), série
+  OCDE annuelle de 2004 à 2020 (17 points), 99,70 % en 2020 d'après l'extrait du robot M04.
+note_pertinence: La part de la population au-dessus du seuil sanitaire parle davantage au public qu'une concentration
+  en µg/m³. Avec une valeur proche de 100 %, l'indicateur ne distingue presque plus les années ; il le fera de nouveau
+  quand l'exposition approchera la valeur guide. La série s'arrête en 2020 dans l'extrait du robot.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- seuil_a_verifier
+- peu_discriminant
+- serie_arretee_2020
+notes: 'Le catalogue M04 indique un seuil de 10 µg/m³ ; une part de 99,70 % au-dessus de 10 µg/m³ est incompatible
+  avec une exposition moyenne de 9,49 µg/m³ la même année (OCDE ODD 11.6.2) : le seuil est plus probablement celui
+  de 5 µg/m³ des lignes directrices de l''OMS de 2021, à vérifier (maintenance LOG-3).'

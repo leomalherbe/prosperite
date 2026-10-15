@@ -1,0 +1,405 @@
+id: surpeuplement
+libelle: Taux de surpeuplement des logements
+dimension: logement_cadre_vie
+sous_theme: surpeuplement et qualité du logement
+famille: surpeuplement
+variante_principale: oui
+definition: Part de la population vivant dans un logement surpeuplé, c'est-à-dire comptant moins de pièces que le
+  minimum requis compte tenu de la taille et de la composition du ménage (définition harmonisée EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_lvho05a (taux de surpeuplement par âge, sexe et statut de pauvreté, population totale, EU-SILC)
+source_serie_id: ilc_lvho05a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho05a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho05a/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-000050
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2004 ; INSEE (SRCV, 2013-2020) et recensement en variantes'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: 'Indicateur incontournable (surpeuplement et qualité du logement : SSF, OCDE, Eurostat), série
+  Eurostat annuelle de 2004 à 2025 (22 points), l''INSEE n''en publiant que deux points par API (D35).'
+note_pertinence: Le surpeuplement prive les ménages d'intimité et d'espace pour les enfants et nuit à la santé.
+  Le taux passe de 10,3 % en 2004 à 7,1 % en 2014, puis remonte à 10,8 % en 2025 (API Eurostat, lue le 14/10/2026)
+  ; les ruptures de 2020 et 2022 (drapeau b) invitent à lire la hausse avec prudence.
+variantes:
+- serie_id: ilc_lvho05a?freq=A&unit=PC&rskpovth=TOTAL&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-000051
+  eligible: oui
+- serie_id: ilc_lvho05a?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-000052
+  eligible: oui
+- serie_id: ilc_lvho05d?freq=A&unit=PC&deg_urb=DEG1&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-005357
+  eligible: oui
+- serie_id: ilc_lvho05d?freq=A&unit=PC&deg_urb=DEG2&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-005358
+  eligible: oui
+- serie_id: ilc_lvho05d?freq=A&unit=PC&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-005359
+  eligible: oui
+- serie_id: hlth_dhc040?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-021871
+  eligible: oui
+- serie_id: hlth_dhc040?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-021872
+  eligible: oui
+- serie_id: hlth_dhc040?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-021873
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A1&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031354
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A1_DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031355
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A1_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031356
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A1_LT65&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031357
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A2&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031358
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A2_2LT65&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031359
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A2_DCH1&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031360
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A2_DCH2&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031361
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A2_DCH_GE3&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031362
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A2_GE1_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031363
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A_GE2_DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031364
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A_GE2_NDCH&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031365
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A_GE3&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031366
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=A_GE3_DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031367
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=DCH&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031368
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=F1&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031369
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=M1&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031370
+  eligible: oui
+- serie_id: ilc_lvho05b?freq=A&unit=PC&hhcomp=NDCH&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031371
+  eligible: oui
+- serie_id: ilc_lvho05c?freq=A&unit=PC&tenure=OWN_L&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031372
+  eligible: oui
+- serie_id: ilc_lvho05c?freq=A&unit=PC&tenure=OWN_NL&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031373
+  eligible: oui
+- serie_id: ilc_lvho05c?freq=A&unit=PC&tenure=RENT_FR&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031374
+  eligible: oui
+- serie_id: ilc_lvho05c?freq=A&unit=PC&tenure=RENT_MKT&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031375
+  eligible: oui
+- serie_id: ilc_lvho05q?freq=A&unit=PC&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031376
+  eligible: oui
+- serie_id: ilc_lvho05q?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031377
+  eligible: oui
+- serie_id: ilc_lvho06?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031378
+  eligible: oui
+- serie_id: ilc_lvho06?freq=A&unit=PC&rskpovth=TOTAL&age=Y_LT6&age=Y6-11&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y16-19&age=Y16-24&age=Y16-29&age=Y_LT18&age=Y18-64&age=Y20-24&age=Y20-29&age=Y25-29&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031379
+  eligible: oui
+- serie_id: ilc_lvho06?freq=A&unit=PC&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031380
+  eligible: oui
+- serie_id: ilc_lvho06q?freq=A&unit=PC&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031381
+  eligible: oui
+- serie_id: ilc_lvho06q?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031382
+  eligible: oui
+- serie_id: ilc_chg05?freq=A&yn_arope=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilations (âge, sexe, type de ménage, statut d'occupation, urbanisation, quintile, handicap, enfants)
+    ; population hors ménages d'une personne (ilc_lvho06, ilc_lvho06q)
+  ligne_id: estat-031507
+  eligible: oui
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055041
+  eligible: oui
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055044
+  eligible: oui
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055047
+  eligible: oui
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055050
+  eligible: oui
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055056
+  eligible: oui
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055059
+  eligible: oui
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=EU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055065
+  eligible: oui
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=EU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055068
+  eligible: oui
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055071
+  eligible: oui
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=NAT&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055074
+  eligible: oui
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=NEU27_2020_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055080
+  eligible: oui
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=NEU28_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055083
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=3_1 UNIT_MEASURE=PT_HH
+  source: OCDE — How's Life? (base du bien-être)
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: m04-000019
+  eligible: oui
+- serie_id: '010596142'
+  source: INSEE BDM
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: bdm-001158
+  eligible: a_verifier
+- serie_id: DS_RP_LOGEMENT_COMP?FREQ=A&GEO=FRANCE-F&OCC_IND=MOD_OVER_OCC&OCS=DW_MAIN&RP_MEASURE=DWELLINGS
+  source: INSEE Melodi
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: melodi-005784
+  eligible: a_verifier
+- serie_id: DS_RP_LOGEMENT_COMP?FREQ=A&GEO=FRANCE-FM&OCC_IND=MOD_OVER_OCC&OCS=DW_MAIN&RP_MEASURE=DWELLINGS
+  source: INSEE Melodi
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: melodi-005786
+  eligible: a_verifier
+- serie_id: DS_RP_LOGEMENT_COMP?FREQ=A&GEO=FRANCE-F&OCC_IND=SEV_OVER_OCC&OCS=DW_MAIN&RP_MEASURE=DWELLINGS
+  source: INSEE Melodi
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: melodi-005785
+  eligible: a_verifier
+- serie_id: DS_RP_LOGEMENT_COMP?FREQ=A&GEO=FRANCE-FM&OCC_IND=SEV_OVER_OCC&OCS=DW_MAIN&RP_MEASURE=DWELLINGS
+  source: INSEE Melodi
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: melodi-005787
+  eligible: a_verifier
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055038
+  eligible: non
+- serie_id: ilc_lvho15?freq=A&unit=PC&citizen=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055053
+  eligible: non
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055062
+  eligible: non
+- serie_id: ilc_lvho16?freq=A&unit=PC&c_birth=NEU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
+  source: Eurostat
+  nature: ventilation par nationalité et par pays de naissance (18 ans ou plus, ensemble des sexes)
+  ligne_id: estat-055077
+  eligible: non
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=11.i1&PCS=_Z&SDG=SDG11&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: INSEE BDM 010596142 et Melodi ODD 11 (SRCV, 2013-2020) ; recensement (suroccupation modérée et accentuée,
+    2012-2023) ; OCDE How's Life 3_1 (part des ménages, 2010-2024)
+  ligne_id: melodi-005542
+  eligible: non
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable taux_lgmt_suroccupes)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: part des résidences principales en situation de sur-occupation (recensement 2011, 2016 et 2022, 9,72 %
+    en 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+notes: 'Valeurs lues (ilc_lvho05a, ensemble) : 10,3 (2004), 9,2 (2010), 7,1 (2014), 7,7 (2019), 9,6 (2020, b), 9,2
+  (2022, b), 10,4 (2024), 10,8 (2025). Variantes : ventilations, nationalité et pays de naissance, INSEE BDM 010596142
+  et Melodi ODD 11 (2013-2020), recensement (suroccupation modérée et accentuée), OCDE How''s Life 3_1 (7,59 % des
+  ménages en 2024 d''après l''extrait du robot M04); ITDD, part des résidences principales sur-occupées au recensement
+  (2011, 2016, 2022 ; 9,72 % en 2022, hors long-list).'

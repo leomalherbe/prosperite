@@ -1,0 +1,91 @@
+id: logement_trop_sombre
+libelle: Logement jugé trop sombre
+dimension: logement_cadre_vie
+sous_theme: surpeuplement et qualité du logement
+famille: logement_trop_sombre
+variante_principale: oui
+definition: Part de la population vivant dans un ménage qui juge son logement trop sombre, pas assez lumineux (EU-SILC).
+unite: '% de la population'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_mdho04 (population considérant son logement comme trop sombre, EU-SILC)
+source_serie_id: ilc_mdho04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdho04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdho04/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2004
+derniere_annee: 2023
+nb_points_depuis_2000: 18
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031879
+hors_longlist: non
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'éclairement naturel du logement, élément de la privation sévère liée au
+  logement d'Eurostat, 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, module triennal ensuite, D17).
+note_pertinence: 'Le manque de lumière naturelle dégrade le confort et la santé, en particulier dans les logements
+  exigus. L''élément entre dans la définition de la privation sévère liée au logement : il recoupe en partie privation_severe_logement.
+  La part oscille entre 6,9 % et 9,0 % de 2004 à 2019, puis passe à 9,7 % en 2020 (rupture b) et 10,6 % en 2023
+  (API Eurostat lue le 15/10/2026).'
+variantes:
+- serie_id: hlth_dhc100?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-021883
+  eligible: oui
+- serie_id: hlth_dhc100?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-021884
+  eligible: oui
+- serie_id: hlth_dhc100?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-021885
+  eligible: oui
+- serie_id: ilc_mdho04?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&sex=T&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-031880
+  eligible: oui
+- serie_id: ilc_mdho04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=M&sex=F&age=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-031881
+  eligible: oui
+- serie_id: ilc_mdho04?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sex=T&age=Y_LT18&age=Y18-64&age=Y_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-031882
+  eligible: oui
+- serie_id: ilc_mdho04c?freq=A&rskpovth=TOTAL&unit=PC&age=Y_LT18&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-031883
+  eligible: oui
+- serie_id: ilc_mdho04c?freq=A&rskpovth=TOTAL&unit=PC&age=Y_LT6&age=Y6-11&age=Y12-17&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, sexe, âge) ; enfants (ilc_mdho04c) ; handicap (hlth_dhc100)
+  ligne_id: estat-031884
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- declaratif
+- rupture_2020
+- module_triennal_depuis_2021
+notes: 'Déclaratif oui : jugement du ménage sur son logement. Valeurs lues (ilc_mdho04, ensemble, mise à jour Eurostat
+  du 13/08/2026) : 9,0 (2004), 7,4 (2015), 6,9 (2017 et 2018), 7,3 (2019), 9,7 (2020, b), 10,6 (2023) ; aucune valeur
+  2021, 2022, 2024, 2025. Depuis le règlement-cadre de 2021, l''item relève du module triennal « conditions de travail
+  et de logement » d''EU-SILC (vagues 2023 et 2026 d''après la page des modules d''Eurostat lue le 15/10/2026) :
+  valeurs annuelles de 2004 à 2020, puis 2023, d''où la fréquence irrégulière (report de la dernière valeur, D17).
+  Variantes : ventilations, enfants (ilc_mdho04c), handicap (hlth_dhc100).'

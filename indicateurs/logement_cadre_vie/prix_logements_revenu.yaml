@@ -1,0 +1,81 @@
+id: prix_logements_revenu
+libelle: Prix des logements rapportés au revenu (ratio standardisé)
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: prix_logements_revenu
+variante_principale: oui
+definition: Rapport entre l'indice des prix des logements et le revenu disponible nominal par habitant, exprimé
+  par rapport à sa moyenne de long terme (Eurostat, tipsho60).
+unite: indice (moyenne de long terme = 100)
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: tipsho60 (ratio standardisé prix des logements sur revenu, données annuelles)
+source_serie_id: tipsho60?freq=A&unit=PTIR_LT_AVG&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tipsho60?freq=A&unit=PTIR_LT_AVG&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/tipsho60/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-053080
+hors_longlist: non
+raccordement: 'non : série Eurostat depuis 2000'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure du prix d'achat des logements rapporté au revenu, série Eurostat annuelle de
+  2000 à 2024 (25 points d'après la long-list).
+note_pertinence: Le prix d'achat relatif au revenu dit si l'accession à la propriété devient plus ou moins accessible
+  ; une hausse enrichit les propriétaires en place mais éloigne les autres ménages de l'accession. Le ratio passe
+  de 70,2 en 2000 à 112,3 en 2007, reste au-dessus de 100 jusqu'en 2023 et revient à 95,5 en 2024 (100 = moyenne
+  de long terme, API Eurostat lue le 14/10/2026). Le sens « bas » retenu ici est celui de l'accessibilité et reste
+  à confirmer par Léo.
+variantes:
+- serie_id: prc_hpi_a?freq=A&purchase=TOTAL&unit=RCH_A_AVG&geo=FR
+  source: Eurostat
+  nature: taux de variation annuel de l'indice des prix des logements, nominal et déflaté (tipsho20, tipsho10, prc_hpi_a),
+    et des logements occupés par leur propriétaire (prc_hpi_ooa)
+  ligne_id: estat-009361
+  eligible: oui
+- serie_id: prc_hpi_ooa?freq=A&unit=RCH_A_AVG&expend=TOTAL&geo=FR
+  source: Eurostat
+  nature: taux de variation annuel de l'indice des prix des logements, nominal et déflaté (tipsho20, tipsho10, prc_hpi_a),
+    et des logements occupés par leur propriétaire (prc_hpi_ooa)
+  ligne_id: estat-009372
+  eligible: oui
+- serie_id: tipsho20?freq=A&unit=RCH_A_AVG&geo=FR
+  source: Eurostat
+  nature: taux de variation annuel de l'indice des prix des logements, nominal et déflaté (tipsho20, tipsho10, prc_hpi_a),
+    et des logements occupés par leur propriétaire (prc_hpi_ooa)
+  ligne_id: estat-052318
+  eligible: oui
+- serie_id: tipsho10?freq=A&unit=RCH_A_AVG&geo=FR
+  source: Eurostat
+  nature: taux de variation annuel de l'indice des prix des logements, nominal et déflaté (tipsho20, tipsho10, prc_hpi_a),
+    et des logements occupés par leur propriétaire (prc_hpi_ooa)
+  ligne_id: estat-052319
+  eligible: oui
+- serie_id: '010567058'
+  source: INSEE BDM
+  nature: indice des prix des logements anciens INSEE-Notaires, France métropolitaine, ensemble, série brute trimestrielle
+    (1996-2026), hors long-list
+  catalogue: 'insee_bdm_catalogue_non (série écartée par M01, motif à corriger : maintenance LOG-4)'
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_a_confirmer
+notes: 'Valeurs lues (tipsho60, unité « ratio prix sur revenu rapporté à la moyenne de long terme ») : 70,20 (2000),
+  102,96 (2005), 112,33 (2007), 103,19 (2009), 101,29 (2016), 108,04 (2020), 111,09 (2022), 103,42 (2023), 95,48
+  (2024) ; aucun drapeau. Variantes : taux de variation annuels de l''indice des prix des logements, nominal (tipsho20)
+  et déflaté (tipsho10), prc_hpi_a, logements occupés par leur propriétaire (prc_hpi_ooa). L''indice des prix des
+  logements anciens INSEE-Notaires figure au catalogue des séries écartées de l''INSEE (motif « indice de production
+  ou de prix de production (entreprises) », à corriger) et est ajouté en variante ; la série BCE des prix de l''immobilier
+  résidentiel (flux RPP) n''est pas cataloguée (maintenance LOG-4).'

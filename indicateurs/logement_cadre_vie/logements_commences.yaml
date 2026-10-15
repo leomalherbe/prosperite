@@ -1,0 +1,88 @@
+id: logements_commences
+libelle: Logements commencés (cumul sur douze mois)
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: logements_commences
+variante_principale: oui
+definition: Nombre de logements dont la construction a commencé au cours des douze derniers mois, estimations en
+  date réelle (base Sitadel), France hors Mayotte.
+unite: nombre de logements
+sens: ambigu
+type: moyen
+declaratif: non
+composite: non
+source_organisme: INSEE (données SDES, Sitadel)
+source_jeu: BDM, construction de logements, série 001718270
+source_serie_id: '001718270'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/001718270
+url_page: https://www.insee.fr/fr/statistiques/serie/001718270
+frequence: mensuelle
+premiere_annee: 2000
+derniere_annee: 2026
+geo: FR-D976
+eligibilite_longlist: oui
+ligne_id: bdm-000270
+hors_longlist: non
+raccordement: 'non : série en date réelle depuis 2000'
+incontournable: non
+recommandation: ecarter
+motif_recommandation: Sens ambigu pour le cadre de vie (offre de logements mais aussi artificialisation des sols),
+  série mensuelle de l'INSEE de 2000 à 2026 sans série annuelle publiée.
+note_pertinence: 'La construction neuve est suivie de près dans le débat sur la crise du logement : peu de mises
+  en chantier signale une offre insuffisante. Mais davantage de constructions n''est pas un progrès en soi (artificialisation,
+  vacance) et le besoin dépend de la démographie, si bien que le sens de l''indicateur n''est pas univoque. La valeur
+  annuelle serait le cumul de décembre.'
+variantes:
+- serie_id: '001718149'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000253
+  eligible: oui
+- serie_id: '001718154'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000258
+  eligible: oui
+- serie_id: '001718158'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000262
+  eligible: oui
+- serie_id: '001718162'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000266
+  eligible: oui
+- serie_id: '001718274'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000274
+  eligible: oui
+- serie_id: '010752271'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000297
+  eligible: oui
+- serie_id: '010752277'
+  source: INSEE BDM
+  nature: 'logements commencés et autorisés, totaux : mensuels, cumul sur douze mois (France hors Mayotte et France
+    métropolitaine), données CVS-CJO'
+  ligne_id: bdm-000298
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- mensuelle_agregation_annuelle
+- indicateur_de_moyens
+notes: 'Variantes : logements commencés et autorisés (totaux mensuels, cumuls sur douze mois en France hors Mayotte
+  et en France métropolitaine, données CVS-CJO). Ventilations par type de construction et surfaces écartées en bloc.'

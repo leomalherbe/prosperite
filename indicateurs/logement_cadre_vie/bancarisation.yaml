@@ -1,0 +1,59 @@
+id: bancarisation
+libelle: Adultes disposant d'un compte bancaire ou d'un service de paiement mobile
+dimension: logement_cadre_vie
+sous_theme: transports et services
+famille: bancarisation
+variante_principale: oui
+definition: Part des adultes possédant un compte dans une banque ou une autre institution financière, ou faisant
+  appel à des services monétaires mobiles (indicateur national ODD 8.10.2 de l'INSEE).
+unite: '% des adultes'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: BDM, indicateurs nationaux des ODD, objectif 8, série 010596094
+source_serie_id: '010596094'
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010596094
+url_page: https://www.insee.fr/fr/statistiques/serie/010596094
+frequence: irreguliere
+premiere_annee: 2011
+derniere_annee: 2024
+nb_points_depuis_2000: 5
+geo: FE
+eligibilite_longlist: a_verifier
+ligne_id: bdm-001100
+hors_longlist: non
+rattachement_propose: lignes de la long-list niveau_de_vie (groupe bancarisation_services) renvoyées à logement_cadre_vie
+  ; accès aux services → logement_cadre_vie ; à trancher au gel 2
+raccordement: 'non : série irrégulière depuis 2011 (2011, 2014, 2017, 2021, 2024 ; report de la dernière valeur,
+  D17)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure de l'accès aux services financiers (ODD 8.10.2), série INSEE irrégulière de 2011
+  à 2024 (5 points, écart moyen supérieur à 1,5 an), admise par D17 et D28.
+note_pertinence: 'L''accès à un compte conditionne le versement des revenus et des prestations et l''accès à la
+  plupart des services. La part est proche de la totalité des adultes (97,0 % en 2011, 94,0 % en 2017, 99,2 % en
+  2021 et 2024, BDM lue le 15/10/2026) : l''indicateur distinguera peu les années, mais une baisse signalerait une
+  exclusion bancaire. Son rattachement à l''accès aux services, proposé par niveau_de_vie, est à trancher par la
+  session mère.'
+variantes:
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=8.i7&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: même série, voie Melodi (ODD 8.i7)
+  ligne_id: melodi-005453
+  eligible: a_verifier
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- proche_de_la_saturation
+- source_primaire_a_verifier
+notes: 'Valeurs lues (BDM 010596094, France, statut A) : 97,0 (2011), 96,6 (2014), 94,0 (2017), 99,2 (2021), 99,2
+  (2024) ; aucune autre année. Les années correspondent aux vagues de l''enquête Global Findex de la Banque mondiale,
+  source probable non vérifiée dans les métadonnées de l''INSEE. Variante : même série, voie Melodi (ODD 8.i7).'

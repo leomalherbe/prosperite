@@ -1,0 +1,66 @@
+id: connaissance_personne_sdf
+libelle: Personnes connaissant quelqu'un de sans domicile fixe (baromètre DREES)
+dimension: logement_cadre_vie
+sous_theme: accès au logement et sans-abrisme
+famille: connaissance_personne_sdf
+variante_principale: oui
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui déclarent connaître, dans
+  leur famille ou en dehors, quelqu''un qui est sans domicile fixe, ou l''être elles-mêmes (question SDPROXIM_3
+  : « Dans votre famille ou en dehors de votre famille, connaissez-vous quelqu''un qui est SDF (sans domicile fixe)
+  ? », réponses « oui », modalités 2 à 8), non-réponses au dénominateur, pondération de redressement de l''enquête.'
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDPROXIM_3, modalités 2 à 8
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2025
+nb_points_depuis_2000: 25
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: a_calculer
+preuve: docs/sources/series/drees__barometre_2000_2025_couverture.csv
+rattachement_propose: 'hors long-list : question SDPROXIM_3 du baromètre DREES ni cataloguée ni calculée par M04
+  (maintenance LOG-1) ; sans-abrisme, contenu de la dimension'
+raccordement: 'non : question posée 25 années de 2000 à 2025 (pas d''enquête en 2003)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série annuelle approchant le sans-abrisme, nommé dans le contenu de la dimension, question
+  posée 25 années de 2000 à 2025, sous réserve du calcul des valeurs par le robot M04.
+note_pertinence: 'Aucune statistique publique annuelle du nombre de personnes sans domicile n''est cataloguée :
+  l''enquête Sans-domicile de l''INSEE est ponctuelle (2001 et 2012 d''après le relevé M03) et les estimations associatives
+  sont publiées en PDF (exclues, D09). La question mesure la présence du sans-abrisme dans l''entourage des personnes
+  interrogées, un indicateur indirect qui dépend aussi de la taille des réseaux sociaux et de la visibilité du phénomène.
+  Le sens « bas » (plus de personnes concernées dans l''entourage, situation dégradée) est à confirmer par Léo.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- calcul_sur_microdonnees
+- valeurs_a_calculer
+- indicateur_indirect
+- enquete_metropole
+- pas_d_enquete_2003
+- codes_modalites_a_verifier
+- licence_a_confirmer
+notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (sdproxim_3 : 2000-2002
+  et 2004-2025, 25 années). Modalités lues dans le dictionnaire 2025 du robot : 1 « non » ; 2 « oui, dans votre
+  famille » ; 3 « oui, hors famille » ; 4 « oui, vous-même » ; 5 à 8 combinaisons des précédentes ; NSP. La distribution
+  n''est pas calculée par le robot (absente de drees__barometre_2000_2025_distributions.csv) : maintenance LOG-1
+  ; les modalités « vous-même » ont pu apparaître en cours de série, à vérifier sur les dictionnaires anciens avant
+  calcul. Les autres questions SDPROXIM (chômage, familles monoparentales sous le SMIC, emploi précaire, RSA, handicap,
+  dépendance) relèvent d''autres dimensions et ne sont pas reprises.'

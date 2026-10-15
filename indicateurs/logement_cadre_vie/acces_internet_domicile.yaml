@@ -1,0 +1,207 @@
+id: acces_internet_domicile
+libelle: Ménages ayant accès à internet à domicile
+dimension: logement_cadre_vie
+sous_theme: numérique
+famille: acces_internet_domicile
+variante_principale: oui
+definition: Part des ménages comptant au moins une personne de 16 à 74 ans qui disposent d'un accès à internet à
+  domicile (enquête européenne sur l'usage des technologies de l'information par les ménages, Eurostat).
+unite: '% des ménages'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: isoc_ci_in_h (ménages, niveau d'accès à l'internet)
+source_serie_id: isoc_ci_in_h?freq=A&unit=PC_HH&hhtyp=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_ci_in_h?freq=A&unit=PC_HH&hhtyp=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/isoc_ci_in_h/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2002
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-005474
+hors_longlist: non
+raccordement: 'non : série Eurostat depuis 2002 ; INSEE (enquête TIC, 2009-2025) en variante'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille acces_internet_domicile (accès au numérique, A7 ; OCDE How's
+  Life 3_4), série Eurostat de 2002 à 2025 (22 points), plus longue que la série INSEE de même enquête (2009-2025,
+  D35).
+note_pertinence: L'accès à internet chez soi conditionne désormais l'accès à l'emploi, aux services publics et aux
+  liens sociaux. La part approche la saturation (88,11 % des ménages en 2021 selon l'OCDE, extrait du robot M04),
+  ce qui déplace l'enjeu vers la qualité de la connexion et l'usage. Les valeurs Eurostat n'ont pas pu être relues
+  (API refusée par le proxy, HTTP 429, le 15/10/2026).
+variantes:
+- serie_id: isoc_r_iacc_h?freq=A&unit=PC_HH&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-004542
+  eligible: oui
+- serie_id: isoc_ci_in_h?freq=A&unit=PC_HH&hhtyp=A1&hhtyp=A1_DCH&hhtyp=A2&hhtyp=A2_DCH&hhtyp=A_GE3&hhtyp=A_GE3_DCH&hhtyp=ALL_NDCH&hhtyp=ALL_DCH&hhtyp=HH_O1&hhtyp=HH_NO1&hhtyp=HH_DEG1&hhtyp=HH_DEG2&hhtyp=HH_DEG3&hhtyp=HHI_Q1&hhtyp=HHI_Q2&hhtyp=HHI_Q3&hhtyp=HHI_Q4&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-005475
+  eligible: oui
+- serie_id: ilc_mddu07e?freq=A&rskpovth=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031820
+  eligible: oui
+- serie_id: ilc_mddu07e?freq=A&rskpovth=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031821
+  eligible: oui
+- serie_id: ilc_mddu07e?freq=A&rskpovth=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031822
+  eligible: oui
+- serie_id: ilc_mddu07f?freq=A&isced11=TOTAL&deg_urb=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031823
+  eligible: oui
+- serie_id: ilc_mddu07f?freq=A&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&deg_urb=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031824
+  eligible: oui
+- serie_id: ilc_mddu07f?freq=A&isced11=TOTAL&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031825
+  eligible: oui
+- serie_id: ilc_mddu07f?freq=A&isced11=TOTAL&deg_urb=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031826
+  eligible: oui
+- serie_id: ilc_mddu07f?freq=A&isced11=TOTAL&deg_urb=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031827
+  eligible: oui
+- serie_id: ilc_mddu07g?freq=A&yn_arope=TOTAL&age=TOTAL&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031828
+  eligible: oui
+- serie_id: ilc_mddu07g?freq=A&yn_arope=TOTAL&age=Y16-24&age=Y16-29&age=Y16-44&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-64&age=Y_GE18&age=Y25-29&age=Y25-34&age=Y35-44&age=Y45-54&age=Y45-64&age=Y55-64&age=Y65-74&age=Y_GE65&age=Y75-84&age=Y_GE75&age=Y_GE85&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031829
+  eligible: oui
+- serie_id: ilc_mddu07g?freq=A&yn_arope=TOTAL&age=TOTAL&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; table régionale (valeur nationale) ; absence de connexion pour des raisons
+    non financières (ilc_mddu07e à g)
+  ligne_id: estat-031830
+  eligible: oui
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=3_4 UNIT_MEASURE=PT_HH
+  source: OCDE — How's Life? (base du bien-être)
+  nature: OCDE How's Life 3_4 (2006-2021)
+  ligne_id: m04-000022
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=0T1&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006267
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=2_353&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006269
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=3_X_353&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006271
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=4T8&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006273
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=1&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006285
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006291
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y15T29&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006217
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y15T44&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006231
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y30T44&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006233
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y45T59&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006247
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y60T74&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006249
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y_GE60&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006263
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y_GE75&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006265
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=F&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006287
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=M&TICM_MEASURE=EQUIP_INT
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : taux d''équipement internet à domicile (2009-2025) et ventilations simples'
+  ligne_id: melodi-006289
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- drapeaux_non_lus
+- proche_de_la_saturation
+notes: 'Variantes : ventilation par type de ménage, table régionale (valeur nationale), absence de connexion pour
+  des raisons non financières (ilc_mddu07e à g), INSEE enquête TIC (taux d''équipement, ventilations simples), OCDE
+  How''s Life 3_4.'

@@ -1,0 +1,174 @@
+id: administration_en_ligne
+libelle: Recours aux services de l'administration en ligne
+dimension: logement_cadre_vie
+sous_theme: numérique
+famille: administration_en_ligne
+variante_principale: oui
+definition: Part des personnes de 15 ans ou plus ayant utilisé, au cours des douze derniers mois, les services de
+  l'administration en ligne (INSEE, enquête sur les technologies de l'information et de la communication).
+unite: '% des personnes de 15 ans ou plus'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_TICM_PRATIQUES (pratiques en ligne des personnes), mesure EGOV_12MOIS
+source_serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2009
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FEHM
+eligibilite_longlist: oui
+ligne_id: melodi-006592
+hors_longlist: non
+raccordement: 'non : enquête TIC depuis 2009 ; série Eurostat interrompue en 2021 en variante'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série continue du recours à l'administration en ligne (rattachement D33), INSEE annuelle
+  de 2009 à 2025 (16 points), la série européenne étant interrompue en 2021.
+note_pertinence: 'La dématérialisation des démarches fait de l''administration en ligne une porte d''accès aux droits,
+  dont l''indicateur mesure l''usage. Une hausse peut aussi traduire la disparition des guichets plutôt qu''un progrès
+  : le sens « haut » est à confirmer par Léo. Les valeurs n''ont pas été relues (API Melodi non interrogée).'
+variantes:
+- serie_id: isoc_r_gov_i?freq=A&indic_is=I_IGOV12RT&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_r_gov_i (valeur nationale) : contacts avec les administrations par internet (2008-2021,
+    puis nouvelle définition depuis 2022) et envoi de formulaires'
+  ligne_id: estat-004553
+  eligible: oui
+- serie_id: isoc_r_gov_i?freq=A&indic_is=I_IUGOV12&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_r_gov_i (valeur nationale) : contacts avec les administrations par internet (2008-2021,
+    puis nouvelle définition depuis 2022) et envoi de formulaires'
+  ligne_id: estat-004555
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=0T1&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006496
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=2_353&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006504
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=3_X_353&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006512
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=4T8&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006520
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=1&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006568
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y15T29&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006296
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y15T44&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006352
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y30T44&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006360
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y45T59&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006416
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y60T74&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006424
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y_GE60&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006480
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y_GE75&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006488
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=F&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006576
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=M&TICM_MEASURE=EGOV_12MOIS
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006584
+  eligible: oui
+- serie_id: isoc_r_gov_i?freq=A&indic_is=I_IUGOV1&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_r_gov_i (valeur nationale) : contacts avec les administrations par internet (2008-2021,
+    puis nouvelle définition depuis 2022) et envoi de formulaires'
+  ligne_id: estat-004554
+  eligible: non
+- serie_id: isoc_ciegi_ac?freq=A&indic_is=I_IGOV12FM&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ciegi_ac, ensemble des particuliers : contacts avec les pouvoirs publics par internet (2008-2021
+    et définition 2022) et composantes (informations, téléchargement et envoi de formulaires), lignes renvoyées
+    par democratie'
+  ligne_id: estat-005602
+  eligible: oui
+  longlist: democratie
+- serie_id: isoc_ciegi_ac?freq=A&indic_is=I_IGOV12IF&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ciegi_ac, ensemble des particuliers : contacts avec les pouvoirs publics par internet (2008-2021
+    et définition 2022) et composantes (informations, téléchargement et envoi de formulaires), lignes renvoyées
+    par democratie'
+  ligne_id: estat-005606
+  eligible: oui
+  longlist: democratie
+- serie_id: isoc_ciegi_ac?freq=A&indic_is=I_IGOV12RT&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ciegi_ac, ensemble des particuliers : contacts avec les pouvoirs publics par internet (2008-2021
+    et définition 2022) et composantes (informations, téléchargement et envoi de formulaires), lignes renvoyées
+    par democratie'
+  ligne_id: estat-005610
+  eligible: oui
+  longlist: democratie
+- serie_id: isoc_ciegi_ac?freq=A&indic_is=I_IUGOV12&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ciegi_ac, ensemble des particuliers : contacts avec les pouvoirs publics par internet (2008-2021
+    et définition 2022) et composantes (informations, téléchargement et envoi de formulaires), lignes renvoyées
+    par democratie'
+  ligne_id: estat-005652
+  eligible: oui
+  longlist: democratie
+- serie_id: isoc_ciegi_ac?freq=A&indic_is=I_IUGOV1&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ciegi_ac, ensemble des particuliers : contacts avec les pouvoirs publics par internet (2008-2021
+    et définition 2022) et composantes (informations, téléchargement et envoi de formulaires), lignes renvoyées
+    par democratie'
+  ligne_id: estat-005650
+  eligible: non
+  longlist: democratie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sens_a_confirmer
+- champ_a_verifier
+notes: 'Variantes : ventilations simples (INSEE), Eurostat isoc_r_gov_i et isoc_ciegi_ac (contacts avec les pouvoirs
+  publics par internet 2008-2021, nouvelle définition depuis 2022, composantes), ces dernières renvoyées par democratie.'

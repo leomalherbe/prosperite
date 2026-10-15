@@ -1,0 +1,182 @@
+id: haut_debit_domicile
+libelle: Connexion à haut débit à domicile
+dimension: logement_cadre_vie
+sous_theme: numérique
+famille: acces_internet_domicile
+variante_principale: non
+definition: Part des personnes de 15 ans ou plus disposant à leur domicile d'une connexion à internet à haut débit,
+  fixe ou mobile (INSEE, enquête sur les technologies de l'information et de la communication auprès des ménages).
+unite: '% des personnes de 15 ans ou plus'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DS_TICM_EQUIPEMENT (équipement des ménages en internet), mesure HAUT_DEBIT
+source_serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2009
+derniere_annee: 2025
+nb_points_depuis_2000: 16
+geo: FEHM
+eligibilite_longlist: oui
+ligne_id: melodi-006292
+hors_longlist: non
+raccordement: 'non : enquête TIC depuis 2009'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Autre statistique de la famille acces_internet_domicile (qualité de la connexion), série INSEE
+  annuelle de 2009 à 2025 (16 points d'après la long-list), plus longue que l'indicateur ODD de l'INSEE (2010-2025).
+note_pertinence: Le haut débit distingue un accès réellement utilisable (vidéo, démarches, télétravail) d'une connexion
+  minimale. L'INSEE le publie parmi les indicateurs nationaux des ODD (objectif 10, réduction des inégalités), ce
+  qui souligne l'enjeu de fracture numérique. Les valeurs n'ont pas été relues (API Melodi non interrogée).
+variantes:
+- serie_id: '010594684'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594684 à 010594686 et Melodi ODD 10 : individus disposant du haut débit à domicile, ensemble
+    et par sexe, 2010-2025'
+  ligne_id: bdm-000969
+  eligible: oui
+- serie_id: '010594685'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594684 à 010594686 et Melodi ODD 10 : individus disposant du haut débit à domicile, ensemble
+    et par sexe, 2010-2025'
+  ligne_id: bdm-000970
+  eligible: oui
+- serie_id: '010594686'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594684 à 010594686 et Melodi ODD 10 : individus disposant du haut débit à domicile, ensemble
+    et par sexe, 2010-2025'
+  ligne_id: bdm-000971
+  eligible: oui
+- serie_id: isoc_ci_it_h?freq=A&indic_is=H_BBFIX&unit=PC_HH&hhtyp=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ci_it_h : ménages ayant une connexion à large bande (totale, fixe, mobile), 2006-2021'
+  ligne_id: estat-005432
+  eligible: oui
+- serie_id: isoc_ci_it_h?freq=A&indic_is=H_BBFIX&unit=PC_HH&hhtyp=A1&hhtyp=A1_DCH&hhtyp=A2&hhtyp=A2_DCH&hhtyp=A_GE3&hhtyp=A_GE3_DCH&hhtyp=ALL_NDCH&hhtyp=ALL_DCH&hhtyp=HH_O1&hhtyp=HH_NO1&hhtyp=HH_DEG1&hhtyp=HH_DEG2&hhtyp=HH_DEG3&hhtyp=HHI_Q1&hhtyp=HHI_Q2&hhtyp=HHI_Q3&hhtyp=HHI_Q4&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ci_it_h : ménages ayant une connexion à large bande (totale, fixe, mobile), 2006-2021'
+  ligne_id: estat-005433
+  eligible: oui
+- serie_id: isoc_ci_it_h?freq=A&indic_is=H_BBMOB&unit=PC_HH&hhtyp=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ci_it_h : ménages ayant une connexion à large bande (totale, fixe, mobile), 2006-2021'
+  ligne_id: estat-005434
+  eligible: oui
+- serie_id: isoc_ci_it_h?freq=A&indic_is=H_BBMOB&unit=PC_HH&hhtyp=A1&hhtyp=A1_DCH&hhtyp=A2&hhtyp=A2_DCH&hhtyp=A_GE3&hhtyp=A_GE3_DCH&hhtyp=ALL_NDCH&hhtyp=ALL_DCH&hhtyp=HH_O1&hhtyp=HH_NO1&hhtyp=HH_DEG1&hhtyp=HH_DEG2&hhtyp=HH_DEG3&hhtyp=HHI_Q1&hhtyp=HHI_Q2&hhtyp=HHI_Q3&hhtyp=HHI_Q4&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ci_it_h : ménages ayant une connexion à large bande (totale, fixe, mobile), 2006-2021'
+  ligne_id: estat-005435
+  eligible: oui
+- serie_id: isoc_ci_it_h?freq=A&indic_is=H_BROAD&unit=PC_HH&hhtyp=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ci_it_h : ménages ayant une connexion à large bande (totale, fixe, mobile), 2006-2021'
+  ligne_id: estat-005438
+  eligible: oui
+- serie_id: isoc_ci_it_h?freq=A&indic_is=H_BROAD&unit=PC_HH&hhtyp=A1&hhtyp=A1_DCH&hhtyp=A2&hhtyp=A2_DCH&hhtyp=A_GE3&hhtyp=A_GE3_DCH&hhtyp=ALL_NDCH&hhtyp=ALL_DCH&hhtyp=HH_O1&hhtyp=HH_NO1&hhtyp=HH_DEG1&hhtyp=HH_DEG2&hhtyp=HH_DEG3&hhtyp=HHI_Q1&hhtyp=HHI_Q2&hhtyp=HHI_Q3&hhtyp=HHI_Q4&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_ci_it_h : ménages ayant une connexion à large bande (totale, fixe, mobile), 2006-2021'
+  ligne_id: estat-005439
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i4&PCS=_Z&SDG=SDG10&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594684 à 010594686 et Melodi ODD 10 : individus disposant du haut débit à domicile, ensemble
+    et par sexe, 2010-2025'
+  ligne_id: melodi-005447
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i4&PCS=_Z&SDG=SDG10&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594684 à 010594686 et Melodi ODD 10 : individus disposant du haut débit à domicile, ensemble
+    et par sexe, 2010-2025'
+  ligne_id: melodi-005448
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i4&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594684 à 010594686 et Melodi ODD 10 : individus disposant du haut débit à domicile, ensemble
+    et par sexe, 2010-2025'
+  ligne_id: melodi-005449
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=0T1&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006268
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=2_353&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006270
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=3_X_353&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006272
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=4T8&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006274
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=1&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006286
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y15T29&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006218
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y15T44&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006232
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y30T44&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006234
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y45T59&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006248
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y60T74&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006250
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y_GE60&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006264
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=Y_GE75&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006266
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=F&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006288
+  eligible: oui
+- serie_id: DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=M&TICM_MEASURE=HAUT_DEBIT
+  source: INSEE Melodi
+  nature: ventilations simples (âge, diplôme, sexe, emploi)
+  ligne_id: melodi-006290
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- champ_a_verifier
+notes: 'Champ (personnes de 15 ans ou plus) déduit des ventilations par âge et de l''indicateur ODD de même enquête,
+  à vérifier. Variantes : ventilations simples, INSEE BDM 010594684 à 010594686 et Melodi ODD 10, Eurostat isoc_ci_it_h
+  (2006-2021).'

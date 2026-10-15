@@ -1,0 +1,65 @@
+id: exposition_pm25
+libelle: Exposition moyenne de la population urbaine aux particules fines PM2,5
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: exposition_pm25
+variante_principale: oui
+definition: 'Indicateur d''exposition moyenne : moyenne des concentrations de PM2,5 mesurées par les stations de
+  fond urbain, en moyenne glissante sur trois ans (SDES, base Geod''air), indicateur réglementaire assorti d''objectifs
+  pour 2020, 2025 et 2030.'
+unite: µg/m³
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Indicateur d'exposition moyenne aux PM2,5, fond urbain (fichier DiDo d237b4e4)
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/d237b4e4-c1ce-431f-8716-4297be69f261/csv
+  (PM2_5.Fond_urbain#INDICATEUR_EXPO_MOY)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/d237b4e4-c1ce-431f-8716-4297be69f261/csv
+  (PM2_5.Fond_urbain#INDICATEUR_EXPO_MOY)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2011
+derniere_annee: 2024
+nb_points_depuis_2000: 14
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000365
+hors_longlist: non
+raccordement: 'a_etudier : avant 2011, raccordement possible avec la série modélisée de la Banque mondiale (exposition_pm25_modelisee)'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Indicateur incontournable de la pollution de l'air locale (SSF, OCDE, Eurostat), seul publié
+  avec des objectifs réglementaires (14,7 µg/m³ pour 2020, 11,2 pour 2025, 10 pour 2030), de 2011 à 2024 (14 périodes
+  triennales).
+note_pertinence: Les particules fines sont le polluant de l'air le plus nocif pour la santé ; l'indicateur suit
+  l'exposition de la population des villes. Il baisse de 17,3 µg/m³ sur 2009-2011 à 8,9 sur 2022-2024, sous l'objectif
+  fixé pour 2030 (extrait du fichier du SDES lu par le robot M04 le 13/10/2026). Les moyennes triennales lissent
+  les années atypiques.
+variantes:
+- serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/9db8c875-10d8-49b3-ac30-1e6f358ab6b0/csv
+    (PM2_5.fond_urbain_periurbain)
+  source: SDES — qualité de l'air (plateforme DiDo)
+  nature: concentration moyenne annuelle de PM2,5 en fond urbain (stations, non pondérée par la population, 2009-2024)
+  ligne_id: m04-000369
+  eligible: oui
+- serie_id: sdes_air_depassements_sante_pct_agglomerations:PM2_5
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: part des agglomérations dépassant la valeur limite de PM2,5 (2009-2024, hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_depassements_sante_pct_agglomerations.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moyenne_glissante_triennale
+- fond_urbain_seulement
+notes: 'Valeurs lues (docs/sources/verif_acces/extraits/sdes__air_expo_pm25_fond_urbain_csv.txt) : 17,33 (2009-2011),
+  13,5 (2013-2015), 9,80 (2018-2020), 8,89 (2022-2024) ; objectifs 14,7 (2018-2020), 11,2 (2023-2025), 10 (2028-2030).
+  La valeur guide de l''OMS (5 µg/m³, 30_indicateurs_cadres_reference.csv, à vérifier) est une borne scientifique
+  possible. Variantes : concentration moyenne annuelle de PM2,5 en fond urbain (8,16 µg/m³ en 2024) et part des
+  agglomérations en dépassement de la valeur limite (hors long-list, preuve du robot).'

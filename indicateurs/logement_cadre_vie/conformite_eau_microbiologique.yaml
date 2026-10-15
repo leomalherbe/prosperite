@@ -1,0 +1,59 @@
+id: conformite_eau_microbiologique
+libelle: Conformité microbiologique de l'eau du robinet
+dimension: logement_cadre_vie
+sous_theme: eau du robinet et assainissement
+famille: conformite_eau_microbiologique
+variante_principale: oui
+definition: Part des prélèvements d'eau distribuée (eau du robinet) conformes aux limites de qualité microbiologique,
+  dans le cadre du contrôle sanitaire des agences régionales de santé (SDES-INSEE, indicateurs territoriaux de développement
+  durable).
+unite: '% des prélèvements'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE
+source_jeu: Indicateurs territoriaux de développement durable, fichier France entière (DiDo), variable taux_conform_prelev_microbio
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable taux_conform_prelev_microbio)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+nb_points_depuis_2000: 17
+geo: FE
+eligibilite_longlist: oui
+ligne_id: m04-000310
+hors_longlist: non
+raccordement: 'non : série ITDD depuis 2008'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille conformite_eau_microbiologique, série SDES-INSEE annuelle
+  de 2008 à 2024 (17 points), plus longue et plus fraîche que la série complémentaire de l'INSEE (2010-2023).
+note_pertinence: La qualité sanitaire de l'eau du robinet est une condition de vie subie que les ménages ne choisissent
+  pas (R2). Le taux de conformité est élevé et varie peu (97,9 % en 2024, 9 valeurs distinctes de 2008 à 2024 d'après
+  l'extrait du robot M04), mais une dégradation serait un signal fort ; une série quasi constante n'est pas un motif
+  d'écart (D34).
+variantes:
+- serie_id: '010600314'
+  source: INSEE BDM
+  nature: 'complément : eau distribuée non conforme pour la microbiologie (INSEE BDM 010600314 et Melodi ODD 6,
+    2010-2023)'
+  ligne_id: bdm-000777
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i1a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'complément : eau distribuée non conforme pour la microbiologie (INSEE BDM 010600314 et Melodi ODD 6,
+    2010-2023)'
+  ligne_id: melodi-005724
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- faible_variabilite
+notes: 'Variantes : eau distribuée non conforme pour la microbiologie (INSEE BDM 010600314 et Melodi ODD 6, 2010-2023,
+  complément du taux de conformité).'

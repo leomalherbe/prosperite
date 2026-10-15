@@ -1,0 +1,517 @@
+id: usage_internet
+libelle: Usage d'internet au cours des trois derniers mois
+dimension: logement_cadre_vie
+sous_theme: numérique
+famille: usage_internet
+variante_principale: oui
+definition: Part des personnes de 16 à 74 ans ayant utilisé internet au cours des trois derniers mois (enquête européenne
+  sur l'usage des technologies de l'information par les particuliers, Eurostat).
+unite: '% des personnes de 16 à 74 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: isoc_ci_ifp_iu (particuliers, utilisation de l'internet)
+source_serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IU3&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_ci_ifp_iu?freq=A&indic_is=I_IU3&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/isoc_ci_ifp_iu/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2006
+derniere_annee: 2025
+nb_points_depuis_2000: 19
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-001846
+hors_longlist: non
+raccordement: 'a_etudier : 2000-2005 avec la série de la Banque mondiale (UIT), après examen de sa cassure de 2014-2015'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille usage_internet (A7), série Eurostat annuelle de 2006 à 2025
+  (19 points d'après la long-list), plus longue que les séries INSEE de même enquête (2009-2025, D35).
+note_pertinence: L'usage effectif d'internet mesure l'inclusion numérique au-delà de l'équipement du ménage. La
+  part des 16-74 ans passe de 46,87 % en 2006 à 94,98 % en 2025, sans valeur en 2020 (API Eurostat lue le 15/10/2026),
+  ce qui la rapproche de la saturation. La Banque mondiale (UIT) donne une série plus ancienne, de 14,31 % en 2000
+  à 88,65 % en 2024 (extrait de l'API lu le 13/10/2026), avec une cassure en 2015 qui en limite le raccordement.
+variantes:
+- serie_id: '010594687'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000972
+  eligible: oui
+- serie_id: '010594688'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000973
+  eligible: oui
+- serie_id: '010594689'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000974
+  eligible: oui
+- serie_id: '010594690'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000975
+  eligible: oui
+- serie_id: '010594691'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000976
+  eligible: oui
+- serie_id: '010594692'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000977
+  eligible: oui
+- serie_id: '010594693'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000978
+  eligible: oui
+- serie_id: '010594694'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: bdm-000979
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_I3_12&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001840
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_I3_12&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL_SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001841
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_ILT12&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001842
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_ILT12&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=SELF_S&ind_type=SELF_NS&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=EMP_WKT_FT&ind_type=EMP_WKT_PT&ind_type=EMP_CON_PRM&ind_type=EMP_CON_TMP&ind_type=EMP_SECT_AFF&ind_type=EMP_SECT_MQM&ind_type=EMP_SECT_CON&ind_type=EMP_SECT_TTAFS&ind_type=EMP_SECT_IC&ind_type=EMP_SECT_FIN&ind_type=EMP_SECT_RE&ind_type=EMP_SECT_BS&ind_type=EMP_SECT_ADM&ind_type=EMP_SECT_OTH&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001843
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IMT12&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001844
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IMT12&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL_SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001845
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IU3&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=SELF_S&ind_type=SELF_NS&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=EMP_WKT_FT&ind_type=EMP_WKT_PT&ind_type=EMP_CON_PRM&ind_type=EMP_CON_TMP&ind_type=EMP_SECT_AFF&ind_type=EMP_SECT_MQM&ind_type=EMP_SECT_CON&ind_type=EMP_SECT_TTAFS&ind_type=EMP_SECT_IC&ind_type=EMP_SECT_FIN&ind_type=EMP_SECT_RE&ind_type=EMP_SECT_BS&ind_type=EMP_SECT_ADM&ind_type=EMP_SECT_OTH&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001847
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IUEVR&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001848
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IUEVR&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001849
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IUMT12&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001850
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IUMT12&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL_SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001851
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IUX&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001852
+  eligible: oui
+- serie_id: isoc_ci_ifp_iu?freq=A&indic_is=I_IUX&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y75_MAX&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=SELF_S&ind_type=SELF_NS&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=EMP_WKT_FT&ind_type=EMP_WKT_PT&ind_type=EMP_CON_PRM&ind_type=EMP_CON_TMP&ind_type=EMP_SECT_AFF&ind_type=EMP_SECT_MQM&ind_type=EMP_SECT_CON&ind_type=EMP_SECT_TTAFS&ind_type=EMP_SECT_IC&ind_type=EMP_SECT_FIN&ind_type=EMP_SECT_RE&ind_type=EMP_SECT_BS&ind_type=EMP_SECT_ADM&ind_type=EMP_SECT_OTH&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-001853
+  eligible: oui
+- serie_id: isoc_r_iuse_i?freq=A&indic_is=I_IDAY&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'table régionale (valeur nationale) : usage dans les 3 mois et dans l''année, usage quotidien et régulier,
+    jamais'
+  ligne_id: estat-004544
+  eligible: oui
+- serie_id: isoc_r_iuse_i?freq=A&indic_is=I_ILT12&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'table régionale (valeur nationale) : usage dans les 3 mois et dans l''année, usage quotidien et régulier,
+    jamais'
+  ligne_id: estat-004545
+  eligible: oui
+- serie_id: isoc_r_iuse_i?freq=A&indic_is=I_IU3&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'table régionale (valeur nationale) : usage dans les 3 mois et dans l''année, usage quotidien et régulier,
+    jamais'
+  ligne_id: estat-004546
+  eligible: oui
+- serie_id: isoc_r_iuse_i?freq=A&indic_is=I_IUSE&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'table régionale (valeur nationale) : usage dans les 3 mois et dans l''année, usage quotidien et régulier,
+    jamais'
+  ligne_id: estat-004549
+  eligible: oui
+- serie_id: isoc_r_iuse_i?freq=A&indic_is=I_IUX&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: 'table régionale (valeur nationale) : usage dans les 3 mois et dans l''année, usage quotidien et régulier,
+    jamais'
+  ligne_id: estat-004552
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IDAY&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005476
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IDAY&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=SELF_S&ind_type=SELF_NS&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=EMP_WKT_FT&ind_type=EMP_WKT_PT&ind_type=EMP_CON_PRM&ind_type=EMP_CON_TMP&ind_type=EMP_SECT_AFF&ind_type=EMP_SECT_MQM&ind_type=EMP_SECT_CON&ind_type=EMP_SECT_TTAFS&ind_type=EMP_SECT_IC&ind_type=EMP_SECT_FIN&ind_type=EMP_SECT_RE&ind_type=EMP_SECT_BS&ind_type=EMP_SECT_ADM&ind_type=EMP_SECT_OTH&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005477
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_ILTWK&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005480
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_ILTWK&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL_SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005481
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IUSE&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005484
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IUSE&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=SELF_S&ind_type=SELF_NS&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=EMP_WKT_FT&ind_type=EMP_WKT_PT&ind_type=EMP_CON_PRM&ind_type=EMP_CON_TMP&ind_type=EMP_SECT_AFF&ind_type=EMP_SECT_MQM&ind_type=EMP_SECT_CON&ind_type=EMP_SECT_TTAFS&ind_type=EMP_SECT_IC&ind_type=EMP_SECT_FIN&ind_type=EMP_SECT_RE&ind_type=EMP_SECT_BS&ind_type=EMP_SECT_ADM&ind_type=EMP_SECT_OTH&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005485
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IWK&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005486
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IWK&unit=PC_IND&ind_type=Y0_15&ind_type=Y16_17&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_EMPL_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_34&ind_type=F_Y25_34&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y35_44&ind_type=F_Y35_44&ind_type=M_Y45_54&ind_type=F_Y45_54&ind_type=M_Y55_64&ind_type=F_Y55_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_Y65_74&ind_type=F_Y65_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=HHI_Q1&ind_type=HHI_Q2&ind_type=HHI_Q3&ind_type=HHI_Q4&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=IND_DCH&ind_type=IND_NO_DCH&ind_type=MD&ind_type=MDX&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&ind_type=DIS_LTD&ind_type=DIS_LTD_SEV&ind_type=DIS_SEV&ind_type=DIS_NONE&ind_type=F_DIS_LTD&ind_type=F_DIS_LTD_SEV&ind_type=F_DIS_SEV&ind_type=F_DIS_NONE&ind_type=M_DIS_LTD&ind_type=M_DIS_LTD_SEV&ind_type=M_DIS_SEV&ind_type=M_DIS_NONE&ind_type=Y16_24_DIS_LTD&ind_type=Y16_24_DIS_LTD_SEV&ind_type=Y16_24_DIS_NONE&ind_type=Y25_54_DIS_LTD&ind_type=Y25_54_DIS_LTD_SEV&ind_type=Y25_54_DIS_SEV&ind_type=Y25_54_DIS_NONE&ind_type=Y55_74_DIS_LTD&ind_type=Y55_74_DIS_LTD_SEV&ind_type=Y55_74_DIS_SEV&ind_type=Y55_74_DIS_NONE&ind_type=Y75_89&ind_type=F_Y75_89&ind_type=M_Y75_89&ind_type=Y75_89LO&ind_type=Y75_89ME&ind_type=Y75_89HI&ind_type=F_I0_2_75_89&ind_type=F_I3_4_75_89&ind_type=F_I5_8_75_89&ind_type=M_I0_2_75_89&ind_type=M_I3_4_75_89&ind_type=M_I5_8_75_89&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005487
+  eligible: oui
+- serie_id: 'odd_5 : 5_B_1_OECD._T.F._T._T._T.PT_POP'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: Banque mondiale IT.NET.USER.ZS (UIT, 1995-2024) ; OCDE ODD 5.b.1 (femmes utilisant internet, 2006-2024)
+  ligne_id: m04-000145
+  eligible: oui
+- serie_id: https://api.worldbank.org/v2/country/FRA/indicator/IT.NET.USER.ZS?format=json
+  source: Banque mondiale — World Development Indicators (API v2)
+  nature: Banque mondiale IT.NET.USER.ZS (UIT, 1995-2024) ; OCDE ODD 5.b.1 (femmes utilisant internet, 2006-2024)
+  ligne_id: m04-000402
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y15T29&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005377
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y30T44&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005427
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y45T59&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005434
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y60T74&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005441
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005450
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005451
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005452
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=Y_GE75&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=10.i5&PCS=_Z&SDG=SDG10&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010594687 à 010594694 et Melodi ODD 10 : individus connectés dans les trois derniers mois,
+    ensemble, par sexe et par âge, 2010-2025'
+  ligne_id: melodi-005467
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=0T1&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006498
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=0T1&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006500
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=2_353&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006506
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=2_353&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006508
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=3_X_353&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006514
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=3_X_353&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006516
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=4T8&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006522
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=4T8&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006524
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=1&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006570
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=1&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006572
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006594
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y15T29&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006298
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y15T44&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006354
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y30T44&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006362
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y45T59&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006418
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y60T74&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006426
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y_GE60&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006482
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y_GE75&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006490
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=F&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006578
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=M&TICM_MEASURE=QUOTIDIEN
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006586
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006596
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y15T29&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006300
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y15T44&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006356
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y30T44&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006364
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y45T59&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006420
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y60T74&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006428
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y_GE60&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006484
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=Y_GE75&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006492
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=F&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006580
+  eligible: oui
+- serie_id: DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=M&TICM_MEASURE=WEB_3MOIS
+  source: INSEE Melodi
+  nature: 'INSEE, enquête TIC : usage d''internet dans les 3 mois et usage quotidien, ensemble et ventilations simples
+    (2009-2025)'
+  ligne_id: melodi-006588
+  eligible: oui
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IMTH&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005482
+  eligible: non
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_ILTMTH&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005478
+  eligible: non
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_IMTH&unit=PC_IND&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL&ind_type=SAL_SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005483
+  eligible: non
+- serie_id: isoc_ci_ifp_fu?freq=A&indic_is=I_ILTMTH&unit=PC_IND&ind_type=Y16_19&ind_type=Y16_24&ind_type=Y16_29&ind_type=Y20_24&ind_type=Y25_29&ind_type=Y25_34&ind_type=Y25_54&ind_type=Y25_64&ind_type=Y35_44&ind_type=Y45_54&ind_type=Y55_64&ind_type=Y55_74&ind_type=Y65_74&ind_type=Y16_24LO&ind_type=Y16_24ME&ind_type=Y16_24HI&ind_type=Y25_54LO&ind_type=Y25_54ME&ind_type=Y25_54HI&ind_type=Y25_64LO&ind_type=Y25_64ME&ind_type=Y25_64HI&ind_type=Y55_74LO&ind_type=Y55_74ME&ind_type=Y55_74HI&ind_type=Y25_64_SALSELFFAM&ind_type=Y25_64_UNE&ind_type=Y25_64_RETIROTH&ind_type=M_Y16_19&ind_type=F_Y16_19&ind_type=M_Y16_24&ind_type=F_Y16_24&ind_type=M_Y16_29&ind_type=F_Y16_29&ind_type=M_Y16_74&ind_type=F_Y16_74&ind_type=M_Y20_24&ind_type=F_Y20_24&ind_type=M_Y25_29&ind_type=F_Y25_29&ind_type=M_Y25_54&ind_type=F_Y25_54&ind_type=M_Y25_64&ind_type=F_Y25_64&ind_type=M_Y55_74&ind_type=F_Y55_74&ind_type=M_I0_2&ind_type=F_I0_2&ind_type=M_I3_4&ind_type=F_I3_4&ind_type=M_I5_8&ind_type=F_I5_8&ind_type=I0_2&ind_type=I3_4&ind_type=I5_8&ind_type=CB_EU_FOR&ind_type=CB_EXT_EU&ind_type=CB_FOR&ind_type=CB_NAT&ind_type=CC_EU_FOR&ind_type=CC_EXT_EU&ind_type=CC_FOR&ind_type=CC_NAT&ind_type=EMPL_UNE&ind_type=IND_DEG1&ind_type=IND_DEG2&ind_type=IND_DEG3&ind_type=IND_O1&ind_type=IND_NO1&ind_type=IND_BROAD&ind_type=IND_BROADX&ind_type=ISCO_ICT&ind_type=ISCO_ICTX&ind_type=ISCO0_5&ind_type=ISCO6_9&ind_type=RETIR_OTHER&ind_type=RF_GE1&ind_type=RF_GE2&ind_type=SAL_SELF_FAM&ind_type=STUD&ind_type=UNE&ind_type=Y16_29LO&ind_type=Y16_29ME&ind_type=Y16_29HI&geo=FR
+  source: Eurostat
+  nature: ventilation par âge ; dernière utilisation (moins d'un an, de 3 à 12 mois, plus d'un an, au moins une
+    fois, jamais) ; fréquence (quotidienne, hebdomadaire)
+  ligne_id: estat-005479
+  eligible: non
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- annee_manquante_2020
+- proche_de_la_saturation
+notes: 'Valeurs lues (isoc_ci_ifp_iu, I_IU3, tous les particuliers, mise à jour Eurostat du 17/04/2026, aucun drapeau)
+  : 46,87 (2006), 75,34 (2010), 84,69 (2015), 89,39 (2019), 91,55 (2021), 90,60 (2022), 94,98 (2025). Banque mondiale
+  IT.NET.USER.ZS : 83,75 (2014), 78,01 (2015) (cassure). Les compétences numériques et l''illectronisme relèvent
+  d''education (A7). Variantes : autres périodes de référence (dans l''année, jamais), fréquence (quotidienne, hebdomadaire),
+  ventilation par âge, table régionale, INSEE enquête TIC et indicateur ODD 10 (ensemble, sexe, âge), Banque mondiale,
+  OCDE ODD 5.b.1 (femmes).'

@@ -1,0 +1,56 @@
+id: concentration_no2
+libelle: Concentration moyenne de dioxyde d'azote (NO2) en fond urbain
+dimension: logement_cadre_vie
+sous_theme: qualité de l'air
+famille: concentration_no2
+variante_principale: oui
+definition: Moyenne annuelle des concentrations de dioxyde d'azote mesurées par les stations de fond urbain et périurbain
+  (SDES, base Geod'air).
+unite: µg/m³
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES (qualité de l'air, plateforme DiDo)
+source_jeu: Concentrations moyennes annuelles de polluants (fichier DiDo 9db8c875), NO2 fond urbain et périurbain
+source_serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/9db8c875-10d8-49b3-ac30-1e6f358ab6b0/csv
+  (NO2.fond_urbain_periurbain)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/9db8c875-10d8-49b3-ac30-1e6f358ab6b0/csv
+  (NO2.fond_urbain_periurbain)
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: m04-000366
+hors_longlist: non
+raccordement: 'non : série du SDES depuis 2000'
+incontournable: oui
+recommandation: retenir
+motif_recommandation: Seule série de concentration du principal polluant du trafic routier, SDES annuelle de 2000
+  à 2024 (25 points), 11,97 µg/m³ en fond urbain en 2024 d'après l'extrait du robot M04.
+note_pertinence: Le dioxyde d'azote, émis surtout par les moteurs diesel, irrite les voies respiratoires ; sa concentration
+  de fond a baissé de plus de moitié depuis 2000 (indice de 42,64 en 2024, base 100 en 2000, extrait du robot M04).
+  Près du trafic, la concentration reste presque double (21,86 µg/m³ en 2024).
+variantes:
+- serie_id: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/9db8c875-10d8-49b3-ac30-1e6f358ab6b0/csv
+    (NO2.proximite_trafic_urbain)
+  source: SDES — qualité de l'air (plateforme DiDo)
+  nature: proximité du trafic routier (2000-2024)
+  ligne_id: m04-000367
+  eligible: oui
+- serie_id: sdes_air_concentrations_indice:NO2.Fond_urbain
+  source: SDES (qualité de l'air, plateforme DiDo)
+  nature: indice base 100 en 2000, fond urbain (hors long-list)
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-2)
+  preuve: docs/sources/series/sdes__air_concentrations_indice.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite: []
+notes: 'Variantes : proximité du trafic routier ; indice base 100 en 2000 (hors long-list, preuve du robot).'

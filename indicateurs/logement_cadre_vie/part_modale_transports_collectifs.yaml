@@ -1,0 +1,156 @@
+id: part_modale_transports_collectifs
+libelle: Part des transports collectifs dans les déplacements de voyageurs
+dimension: logement_cadre_vie
+sous_theme: transports et services
+famille: part_modale_transports_collectifs
+variante_principale: oui
+definition: Part des trains, autocars, autobus et trolleybus dans le transport intérieur terrestre de voyageurs,
+  mesuré en voyageurs-kilomètres, le reste étant assuré par la voiture particulière (Eurostat).
+unite: '% des voyageurs-kilomètres'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: tran_hv_psmod (répartition modale du transport intérieur de voyageurs)
+source_serie_id: tran_hv_psmod?freq=A&unit=PC&vehicle=TRN_BUS_TOT_AVD&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tran_hv_psmod?freq=A&unit=PC&vehicle=TRN_BUS_TOT_AVD&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/tran_hv_psmod/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2000
+derniere_annee: 2024
+nb_points_depuis_2000: 25
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-037496
+hors_longlist: non
+raccordement: 'a_etudier : valeurs Eurostat aberrantes en 2010-2012 (99,1 ; 99,2 ; 99,1) à remplacer par la somme
+  des séries INSEE 010751584 et 010751585 (16,7 ; 17,0 ; 16,2)'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule série annuelle longue du recours aux transports collectifs, Eurostat de 2000 à 2024
+  (25 points), retenue sous réserve de remplacer les valeurs aberrantes de 2010-2012 par la somme des composantes
+  de l'INSEE (2010-2024).
+note_pertinence: 'La part des transports collectifs reflète à la fois l''offre de transports publics et la dépendance
+  à la voiture, qui pèse sur le budget et le temps des ménages. Hors 2010-2012, elle oscille entre 13,4 % et 15,8
+  % de 2000 à 2019, chute à 12,1 % en 2020 et atteint 17,4 % en 2024 (API Eurostat lue le 15/10/2026). Aucun indicateur
+  d''accessibilité des transports (ODD 11.2.1) n''existe en série annuelle pour la France : la part modale est la
+  seule mesure du contenu « transports collectifs » de la dimension.'
+variantes:
+- serie_id: '010751584'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010751584 et 010751585 et Melodi ODD 9 : bus, cars et tramways ; transport ferré y compris
+    métro (France métropolitaine, 2010-2024)'
+  ligne_id: bdm-000901
+  eligible: oui
+- serie_id: '010751585'
+  source: INSEE BDM
+  nature: 'INSEE BDM 010751584 et 010751585 et Melodi ODD 9 : bus, cars et tramways ; transport ferré y compris
+    métro (France métropolitaine, 2010-2024)'
+  ligne_id: bdm-000902
+  eligible: oui
+- serie_id: sdg_09_50?freq=A&unit=PC&vehicle=BUS_TOT&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-002000
+  eligible: oui
+- serie_id: sdg_09_50?freq=A&unit=PC&vehicle=TRN&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-002001
+  eligible: oui
+- serie_id: sdg_09_50?freq=A&unit=PC&vehicle=TRN_BUS_TOT_AVD&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-002002
+  eligible: oui
+- serie_id: tran_hv_ms_psmod?freq=A&vehicle=AC&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037484
+  eligible: oui
+- serie_id: tran_hv_ms_psmod?freq=A&vehicle=BUS_TOT&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037485
+  eligible: oui
+- serie_id: tran_hv_ms_psmod?freq=A&vehicle=CAR&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037486
+  eligible: oui
+- serie_id: tran_hv_ms_psmod?freq=A&vehicle=SEAV&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037487
+  eligible: oui
+- serie_id: tran_hv_ms_psmod?freq=A&vehicle=TRN&unit=PC&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037488
+  eligible: oui
+- serie_id: tran_hv_psmod?freq=A&unit=PC&vehicle=BUS_TOT&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037493
+  eligible: oui
+- serie_id: tran_hv_psmod?freq=A&unit=PC&vehicle=CAR&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037494
+  eligible: oui
+- serie_id: tran_hv_psmod?freq=A&unit=PC&vehicle=TRN&geo=FR
+  source: Eurostat
+  nature: doublon (sdg_09_50) ; composantes (autocars et autobus, trains) ; complément (voiture particulière) ;
+    répartition incluant l'aérien et le maritime (tran_hv_ms_psmod)
+  ligne_id: estat-037495
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRANSP_MOY1&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=9.i1a&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010751584 et 010751585 et Melodi ODD 9 : bus, cars et tramways ; transport ferré y compris
+    métro (France métropolitaine, 2010-2024)'
+  ligne_id: melodi-005666
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=TRANSP_MOY2&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=9.i1a&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE BDM 010751584 et 010751585 et Melodi ODD 9 : bus, cars et tramways ; transport ferré y compris
+    métro (France métropolitaine, 2010-2024)'
+  ligne_id: melodi-005667
+  eligible: oui
+- serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_depl_dom_trav, sous-champ tec)
+  source: INSEE-SDES (ITDD, fichier France entière)
+  nature: part des transports en commun dans les déplacements domicile-travail (recensement 2016 et 2022, 15,24
+    % en 2022), hors long-list
+  catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
+  preuve: docs/sources/series/sdes__itdd_france_entiere.csv
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- valeurs_aberrantes_2010_2012
+- rupture_2013
+- champ_metro_tram_different_insee
+notes: 'Valeurs lues (tran_hv_psmod, TRN_BUS_TOT_AVD « trains, autocars, autobus et trolleybus, somme des données
+  disponibles », mise à jour Eurostat du 26/08/2026) : 13,9 (2000), 15,8 (2008), 14,6 (2009), 99,1 (2010, e), 99,2
+  (2011, e), 99,1 (2012), 15,6 (2013, b), 15,6 (2019), 12,1 (2020), 15,4 (2022), 17,4 (2024). Somme des séries INSEE
+  (France métropolitaine, transport ferré y compris métro + bus, cars et tramways, BDM lue le 15/10/2026) : 16,7
+  (2010), 17,0 (2011), 16,2 (2012), 16,1 (2013), 12,2 (2020), 17,3 (2024), soit de 0,1 point en dessous à 0,7 point
+  au-dessus d''Eurostat sur 2013-2024 (champ incluant métro et tramway). Maintenance LOG-7. La part recoupe la planète
+  (émissions des transports), mais son rattachement suit le contenu de la dimension. Variantes : table ODD sdg_09_50
+  ; composantes autocars et autobus, trains ; complément voiture particulière ; répartition incluant l''aérien et
+  le maritime (tran_hv_ms_psmod) ; INSEE BDM 010751584 et 010751585 et Melodi ODD 9 ; part des transports en commun
+  dans les déplacements domicile-travail (recensement, ITDD, 2016 et 2022, hors long-list). L''OCDE ne publie l''ODD
+  11.2.1 que pour 2020 (95,3 % de la population urbaine, extrait du robot M04).'

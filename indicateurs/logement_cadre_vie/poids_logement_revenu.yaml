@@ -1,0 +1,76 @@
+id: poids_logement_revenu
+libelle: Part de la dépense de logement dans le revenu disponible des ménages (comptes nationaux)
+dimension: logement_cadre_vie
+sous_theme: coût du logement
+famille: surcharge_couts_logement
+variante_principale: non
+definition: 'Dépense de consommation des ménages consacrée au logement (poste COICOP 04 : loyers effectifs et imputés,
+  eau, énergie et entretien courant) rapportée à leur revenu disponible brut, en valeur (comptes nationaux annuels,
+  base 2020).'
+unite: '% du revenu disponible brut'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: INSEE
+source_jeu: Melodi DD_CNA_AGREGATS (comptes nationaux annuels), part de la dépense liée au logement dans le revenu
+  disponible brut des ménages
+source_serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP04&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_LOGT_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+source_niveau: 1
+url_api: https://api.insee.fr/melodi/data/DD_CNA_AGREGATS?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP04&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_LOGT_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 1959
+derniere_annee: 2025
+nb_points_depuis_2000: 26
+geo: FRANCE-F
+eligibilite_longlist: oui
+ligne_id: melodi-000472
+hors_longlist: non
+rattachement_propose: ligne de la long-list niveau_de_vie (groupe cout_logement) renvoyée à logement_cadre_vie ;
+  coût du logement → logement_cadre_vie ; à trancher au gel 2
+raccordement: 'non : série des comptes nationaux depuis 1959'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Seule mesure du poids du logement dans le revenu des ménages publiée par l'INSEE, annuelle
+  de 1959 à 2025 (26 points depuis 2000), lecture macroéconomique complémentaire du taux de surcharge.
+note_pertinence: L'indicateur mesure le poids moyen du logement dans le revenu de l'ensemble des ménages, y compris
+  la valeur du service de logement que se rendent les propriétaires occupants (loyers imputés). Sa longueur situe
+  la période depuis 2000 dans une tendance longue ; il ne dit rien de la répartition de la charge entre ménages.
+  Les valeurs n'ont pas été relues (API Melodi non interrogée).
+variantes:
+- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=3_2 UNIT_MEASURE=PT_B7G_S14
+  source: OCDE — How's Life? (base du bien-être)
+  nature: 'complément (OCDE How''s Life 3_2 : part du revenu disponible brut ajusté restant après les dépenses de
+    logement, 2004-2024)'
+  ligne_id: m04-000020
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP04&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S1&REF_YEAR_PRICE=&STO=_COEFF_BUDG&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: coefficient budgétaire du logement, de l'eau et de l'énergie dans la consommation des ménages et de l'économie
+    totale
+  ligne_id: melodi-000404
+  eligible: oui
+- serie_id: DD_CNA_AGREGATS?ACCOUNTING_ENTRY=D&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP04&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_COEFF_BUDG_P31&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: coefficient budgétaire du logement, de l'eau et de l'énergie dans la consommation des ménages et de l'économie
+    totale
+  ligne_id: melodi-000407
+  eligible: oui
+- serie_id: DD_CNA_CONSO_MENAGES_COICOP?ACCOUNTING_ENTRY=_Z&ACTIVITY=_T&COUNTERPART_AREA=W2&EXPENDITURE=CP04&FREQ=A&GEO=FRANCE-F&INSTR_ASSET=_Z&PRICES=V&PRODUCT=_T&REF_SECTOR=S14&REF_YEAR_PRICE=&STO=_DEP_LOGT_REVENU&TRANSFORMATION=N&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: doublon technique (même série dans le jeu DD_CNA_CONSO_MENAGES_COICOP)
+  ligne_id: melodi-000793
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- comptes_nationaux_revisables
+- loyers_imputes_inclus
+notes: 'Variantes : doublon dans DD_CNA_CONSO_MENAGES_COICOP ; coefficient budgétaire du même poste dans la consommation
+  des ménages et de l''économie totale ; complément de l''OCDE (How''s Life 3_2, part du revenu disponible brut
+  ajusté restant après les dépenses de logement : 79,84 % en 2024 d''après l''extrait du robot M04).'

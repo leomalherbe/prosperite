@@ -1,0 +1,72 @@
+id: pieces_par_personne
+libelle: Nombre moyen de pièces par personne
+dimension: logement_cadre_vie
+sous_theme: surpeuplement et qualité du logement
+famille: surpeuplement
+variante_principale: non
+definition: Nombre moyen de pièces d'habitation par personne dans les résidences principales (EU-SILC).
+unite: pièces par personne
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: ilc_lvho03 (nombre moyen de pièces par personne par statut d'occupation et type de logement, EU-SILC)
+source_serie_id: ilc_lvho03?freq=A&unit=AVG&building=TOTAL&tenure=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho03?freq=A&unit=AVG&building=TOTAL&tenure=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho03/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031453
+hors_longlist: non
+raccordement: 'non : série EU-SILC depuis 2004'
+incontournable: oui
+recommandation: retenir_variante
+motif_recommandation: Autre lecture de la famille surpeuplement (espace moyen disponible, indicateur du Better Life
+  Index de l'OCDE), série Eurostat annuelle de 2004 à 2025 (22 points d'après la long-list).
+note_pertinence: La moyenne de pièces par personne décrit l'espace dont dispose le ménage moyen, quand le taux de
+  surpeuplement isole les situations de manque. Publiée au dixième, elle ne varie qu'entre 1,7 et 1,9 de 2004 à
+  2025 (API Eurostat lue le 15/10/2026) et se prête mal à des bornes annuelles, mais reste un repère utile.
+variantes:
+- serie_id: ilc_lvho04n?freq=A&unit=AVG&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, revenu, urbanisation) et table régionale (valeur nationale)
+  ligne_id: estat-004573
+  eligible: oui
+- serie_id: ilc_lvho04d?freq=A&unit=AVG&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, revenu, urbanisation) et table régionale (valeur nationale)
+  ligne_id: estat-005355
+  eligible: oui
+- serie_id: ilc_lvho04d?freq=A&unit=AVG&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, revenu, urbanisation) et table régionale (valeur nationale)
+  ligne_id: estat-005356
+  eligible: oui
+- serie_id: ilc_lvho04?freq=A&unit=AVG&rskpovth=TOTAL&hhcomp=TOTAL&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, revenu, urbanisation) et table régionale (valeur nationale)
+  ligne_id: estat-031454
+  eligible: oui
+- serie_id: ilc_lvho04?freq=A&unit=AVG&rskpovth=TOTAL&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&geo=FR
+  source: Eurostat
+  nature: ventilations (type de ménage, revenu, urbanisation) et table régionale (valeur nationale)
+  ligne_id: estat-031455
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- faible_variabilite
+notes: 'Valeurs lues (ilc_lvho03, ensemble, mise à jour Eurostat du 17/09/2026) : 1,7 (2004 à 2008), 1,8 (2009 à
+  2018), 1,9 (2019), 1,8 (2020, b ; 2021 ; 2022, b ; 2023 à 2025). Variantes : ilc_lvho04 (type de ménage, revenu),
+  ilc_lvho04d (urbanisation), ilc_lvho04n (table régionale, valeur nationale).'

@@ -1,0 +1,58 @@
+id: conformite_eau_physicochimique
+libelle: Conformité physico-chimique de l'eau du robinet
+dimension: logement_cadre_vie
+sous_theme: eau du robinet et assainissement
+famille: conformite_eau_physicochimique
+variante_principale: oui
+definition: Part des prélèvements d'eau distribuée conformes aux limites de qualité physico-chimiques (nitrates,
+  pesticides, métaux et autres paramètres), dans le cadre du contrôle sanitaire des agences régionales de santé
+  (SDES-INSEE, indicateurs territoriaux de développement durable).
+unite: '% des prélèvements'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: SDES-INSEE
+source_jeu: Indicateurs territoriaux de développement durable, fichier France entière (DiDo), variable taux_conform_prelev_physico
+source_serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable taux_conform_prelev_physico)
+source_niveau: 1
+url_api: https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datafiles/305ea0e3-269b-47ee-bab5-7553fec6f010/csv
+url_page: non trouvé
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+nb_points_depuis_2000: 17
+geo: FE
+eligibilite_longlist: oui
+ligne_id: m04-000311
+hors_longlist: non
+raccordement: 'non : série ITDD depuis 2008'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Variante principale de la famille conformite_eau_physicochimique (concept complémentaire du
+  risque microbiologique), série SDES-INSEE annuelle de 2008 à 2024 (17 points d'après la long-list).
+note_pertinence: Les non-conformités physico-chimiques, liées notamment aux pesticides et aux nitrates, exposent
+  la population à des risques chroniques plutôt qu'aigus. Le taux vaut 95,3 % en 2024 d'après l'extrait du robot
+  M04 ; il peut dépendre de la liste des substances contrôlées, à documenter avant de fixer des bornes.
+variantes:
+- serie_id: '010600312'
+  source: INSEE BDM
+  nature: 'complément : eau distribuée non conforme pour la physico-chimie (INSEE BDM 010600312 et Melodi ODD 6,
+    2010-2023)'
+  ligne_id: bdm-000775
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i1b&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'complément : eau distribuée non conforme pour la physico-chimie (INSEE BDM 010600312 et Melodi ODD 6,
+    2010-2023)'
+  ligne_id: melodi-005725
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- perimetre_des_parametres_a_documenter
+notes: 'Variantes : eau distribuée non conforme pour la physico-chimie (INSEE BDM 010600312 et Melodi ODD 6, 2010-2023,
+  complément du taux de conformité).'

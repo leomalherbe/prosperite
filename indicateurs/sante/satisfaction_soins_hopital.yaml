@@ -60,6 +60,12 @@ variantes:
   source: DREES (baromètre d'opinion)
   nature: cliniques privées (2010-2025), hors long-list
   preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA11, modalités 1+2
+  source: DREES (baromètre d'opinion)
+  nature: 'question voisine : temps accordé par le médecin généraliste jugé suffisant (7 vagues 2002, 2015-2025
+    ; 82,5 % en 2002, 79,4 % en 2025, calculé sur les distributions du robot), hors long-list'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

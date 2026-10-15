@@ -1,6 +1,6 @@
 # Compte rendu — M05, fiches indicateurs de la dimension `sante`
 
-Agents de mission M05 (Santé), 14 et 15 octobre 2026, branche `m05-sante`, pull request « M05 — fiches indicateurs : sante ». Mission commencée le 14/10 (règles, présélection, 41 fiches), interrompue, puis reprise et terminée le 15/10 (contrôle des fiches, 8 fiches ajoutées, maintenance, compte rendu). Méthode commune `docs/methodo/33_methode_fiches_M05.md` (v1.2) appliquée sans modification des scripts communs. Détail dans `docs/cr/M05_sante_journal.md`.
+Agents de mission M05 (Santé), 14 et 15 octobre 2026, branche `m05-sante`, PR #20 « M05 — fiches indicateurs : sante ». Mission commencée le 14/10 (règles, présélection, 41 fiches), interrompue, puis reprise et terminée le 15/10 (contrôle des fiches, 8 fiches ajoutées, maintenance, compte rendu). Méthode commune `docs/methodo/33_methode_fiches_M05.md` (v1.2) appliquée sans modification des scripts communs. Détail dans `docs/cr/M05_sante_journal.md`.
 
 ## 1. Livrables
 

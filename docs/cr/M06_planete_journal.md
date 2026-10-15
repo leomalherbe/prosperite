@@ -51,4 +51,4 @@ Fichiers du dépôt lus : extraits Citepa (`citepa__secten_*`), OCDE (`ocde__odd
 ## 5. Livraison
 
 - Fichiers créés : `docs/validation/audit_planete.md` et ce journal. Aucune fiche, aucun tableau, aucun script ni aucun catalogue n'a été modifié ; ni la charte, ni le journal des décisions, ni `CLAUDE.md`, ni les fiches de mission.
-- Commits sur `m06-planete`, push, PR vers `main` ouverte par l'API GitHub (« M06 — audit croisé : planete ») ; rapport déposé dans le Projet sous `claude/cr/M06_planete_audit.md`.
+- Commits sur `m06-planete`, push, PR #25 vers `main` ouverte par l'API GitHub (« M06 — audit croisé : planete ») ; rapport déposé dans le Projet sous `claude/cr/M06_planete_audit.md`.

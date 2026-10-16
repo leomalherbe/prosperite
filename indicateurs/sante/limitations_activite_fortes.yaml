@@ -29,7 +29,8 @@ ligne_id: estat-011387
 hors_longlist: non
 raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV ; la série par degré d''urbanisation (hlth_silc_20)
   remonte à 2004'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Approche statistique du handicap (limitation grave), annuelle de 2008 à 2025 (8,6 % en 2008,
   10,2 % en 2023, 9,8 % en 2025), que la fiche principale additionne aux limitations légères.
@@ -360,4 +361,6 @@ qualite:
 - non_standardise_age
 notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (hlth_silc_06, lev_limit=SEV, wstatus=POP : b en 2020 et
   2022, aucun autre drapeau). Déclaratif « oui » comme la fiche principale : limitation perçue (libellé Eurostat
-  « self-perceived »).'
+  « self-perceived »). Champ (D15) : la série EU-SILC de la France provient de l''enquête SRCV de l''INSEE ; l''INSEE
+  publie en France métropolitaine (FM) l''indicateur national ODD 3.i7a, de mêmes valeurs que hlth_silc_08 de 2010
+  à 2023 (audit M06) : le champ de la série Eurostat (code FR) est à confirmer dans les métadonnées.'

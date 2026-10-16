@@ -19,7 +19,8 @@ source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-op
 composantes:
 - data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable SA09_1, modalités 3
-formule: part pondérée de la modalité 3 (« pas assez ») de SA09_1, non-réponses comprises au dénominateur
+formule: SA09_1 modalité 3 / ensemble des répondants * 100 (part pondérée ; non-réponses au dénominateur, convention
+  du tableau officiel de la DREES, D45)
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -33,6 +34,7 @@ ligne_id: m04-000270
 hors_longlist: non
 raccordement: 'non : pas d''enquête sur cette question de 2003 à 2014 ni en 2016'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule mesure ressentie de l'offre de soins de proximité, 11 vagues de 2002 à 2025 (20,7 %
   en 2002, 55,8 % en 2025), valeur 2025 recoupée sur le tableau officiel de la DREES (55,76 %).
@@ -53,8 +55,8 @@ qualite:
 - serie_irreguliere_D17
 - calcul_sur_microdonnees
 - enquete_metropole
-- recoupement_partiel_D34
+- non_recoupe
 notes: 'Parts calculées sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (SA09_1, modalité 3)
-  : 20,7 % (2002), 28,3 % (2015), 36,3 % (2017), 49,6 % (2021), 57,8 % (2024), 55,8 % (2025). Recoupement D34 :
-  valeur 2025 identique au tableau croisé officiel (docs/sources/series/drees__barometre_tc_simplifies_2025.txt,
-  55,76 %) ; les deux autres valeurs officielles exigées restent à trouver (publications DREES en PDF).'
+  : 20,7 % (2002), 28,3 % (2015), 36,3 % (2017), 49,6 % (2021), 57,8 % (2024), 55,8 % (2025), recalcul identique
+  de l''audit M06. Contrôle de plausibilité (D38 b) : la valeur 2025 reproduit le tableau croisé officiel (docs/sources/series/drees__barometre_tc_simplifies_2025.txt,
+  55,76 %) ; les autres années ne sont pas recoupées (non_recoupe), les publications de la DREES étant en PDF.'

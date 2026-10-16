@@ -27,6 +27,7 @@ ligne_id: estat-002040
 hors_longlist: non
 raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV à neutraliser'
 incontournable: oui
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Indicateur phare du cadre Qualité de vie d'Eurostat et de l'OCDE (§5 du crosswalk), annuel
   de 2005 à 2025 (68,8 % en 2005, 64,7 % en 2025) ; l'INSEE ne publie pas ce niveau.
@@ -420,4 +421,7 @@ qualite:
 notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (sdg_03_20, sex=T). Famille SRCV / EU-SILC : aucune série
   INSEE de santé perçue au catalogue ; la série DREES (SA01) change d''échelle en 2004 et 2007 (35,5 % en 2000,
   88,2 % en 2004, 72,0 % en 2007, calculés sur les distributions du robot). Variante importée de logement_cadre_vie
-  : ilc_lvhl01 (18 ans ou plus, 2004-2025).'
+  : ilc_lvhl01 (18 ans ou plus, 2004-2025). Champ (D15) : la série EU-SILC de la France provient de l''enquête SRCV
+  de l''INSEE ; l''INSEE publie en France métropolitaine (FM) l''indicateur national ODD 3.i7a, de mêmes valeurs
+  que hlth_silc_08 de 2010 à 2023 (audit M06) : le champ de la série Eurostat (code FR) est à confirmer dans les
+  métadonnées.'

@@ -26,7 +26,8 @@ eligibilite_longlist: oui
 ligne_id: estat-011360
 hors_longlist: non
 raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV à neutraliser'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre lecture de la même question que la part en bonne santé, centrée sur les états de santé
   dégradés, annuelle de 2005 à 2025 (9,9 % en 2005, 7,7 % en 2015, 10,8 % en 2023, 10,2 % en 2025).
@@ -419,4 +420,6 @@ qualite:
 - rupture_2022
 notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (hlth_silc_10, levels=B_VB, quant_inc=TOTAL : b en 2020 et
   2022, aucun autre drapeau). La ventilation par quintile (estat-011361) sert à l''écart construit d''egalites (ecart_sante_percue_revenu_mauvaise)
-  et reste dans cette dimension.'
+  et reste dans cette dimension. Champ (D15) : la série EU-SILC de la France provient de l''enquête SRCV de l''INSEE
+  ; l''INSEE publie en France métropolitaine (FM) l''indicateur national ODD 3.i7a, de mêmes valeurs que hlth_silc_08
+  de 2010 à 2023 (audit M06) : le champ de la série Eurostat (code FR) est à confirmer dans les métadonnées.'

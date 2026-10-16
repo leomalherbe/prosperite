@@ -26,7 +26,8 @@ eligibilite_longlist: oui
 ligne_id: estat-011314
 hors_longlist: non
 raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV (question GALI)'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Lecture aux âges de la retraite, annuelle de 2004 à 2024 (9,3 ans en 2004, 11,0 ans en 2019,
   10,9 ans en 2024, provisoire), complément de l'espérance de vie à 65 ans.
@@ -59,4 +60,7 @@ qualite:
 - rupture_2022
 - provisoire_2022_2024
 - composante_declarative_gali
-notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (hlth_hlye, HLY_Y65, sex=T).
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (hlth_hlye, HLY_Y65, sex=T). Champ (D15) : la série EU-SILC
+  de la France provient de l''enquête SRCV de l''INSEE ; l''INSEE publie en France métropolitaine (FM) l''indicateur
+  national ODD 3.i7a, de mêmes valeurs que hlth_silc_08 de 2010 à 2023 (audit M06) : le champ de la série Eurostat
+  (code FR) est à confirmer dans les métadonnées.'

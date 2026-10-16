@@ -25,16 +25,18 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000376
 hors_longlist: non
-raccordement: 'a_etudier : la série INSEE (ODD 3.i8) donne 18,2 % en 2024 contre 23,1 % en 2023 chez Santé publique
-  France, saut probablement lié au changement de protocole du Baromètre 2024'
+raccordement: 'a_etudier : l''édition 2024 du Baromètre de Santé publique France (17,4 % des 18-79 ans, métropole
+  et quatre DROM, nouveau protocole) est une nouvelle série en variante (D43) ; la série INSEE (ODD 3.i8, FM) donne
+  18,2 % en 2024 contre 23,1 % en 2023 chez Santé publique France'
 incontournable: non
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Comportement à risque suivi par les cadres OCDE et Eurostat, 13 vagues de 2000 à 2023 (annuelles
   depuis 2014 ; 23,1 % en 2023), plus que l'indicateur national ODD 3.i8 de l'INSEE (9 vagues 2010-2024).
 note_pertinence: Le tabagisme est un facteur de risque majeur des cancers et des maladies cardiovasculaires ; sa
   prévalence quotidienne est suivie par les cadres OCDE et Eurostat. La série de Santé publique France est préférée
-  à la copie INSEE, plus courte, qui ajoute une valeur 2024 (18,2 %) probablement non comparable. La série OCDE
-  et les ventilations de l'INSEE sont en variantes.
+  à la copie INSEE, plus courte ; l'édition 2024 du Baromètre (17,4 % des 18-79 ans) ouvre une nouvelle série, non
+  comparable aux vagues 2000-2023. La série OCDE et les ventilations de l'INSEE sont en variantes.
 variantes:
 - serie_id: '010593303'
   source: INSEE BDM
@@ -266,6 +268,13 @@ variantes:
   nature: 'même mesure, autre voie : consommation quotidienne de tabac (2000, 2005, 2010, 2014-2023 ; 23,1 % en
     2023, comme Santé publique France), hors long-list'
   preuve: docs/sources/series/ocde__odd_3.csv
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/tabagisme-indicateurs-du-barometre-2024
+    (Tabagisme quotidien, Tous)
+  source: Santé publique France (Baromètre 2024)
+  nature: 'nouvelle série (D43) : édition 2024 du Baromètre de Santé publique France, 17,4 % [16,9 - 17,9] des 18-79
+    ans, 34 768 répondants, métropole, Guadeloupe, Guyane, Martinique et La Réunion, nouveau protocole ; non raccordée
+    aux vagues antérieures, hors long-list'
+  preuve: docs/sources/series/spf_odisse__tabagisme-indicateurs-du-barometre-2024.txt
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -273,8 +282,11 @@ socle_v1:
   justification: ''
 qualite:
 - serie_irreguliere_D17
-- rupture_2024_a_verifier
 - champ_18_75_ans
+- nouvelle_serie_2024
 notes: 'Valeurs lues dans docs/sources/series/spf_odisse__tabagisme-prevalence-selon-le-sexe.csv (2000, 2005, 2010,
   2014-2023 ; 23,12 % en 2023) et sur la BDM le 14/10/2026 (010593303, champ FM : 29,7 % en 2010, 25,3 % en 2021,
-  18,2 % en 2024, rien en 2022-2023). Cause du saut de 2024 non vérifiée.'
+  18,2 % en 2024, rien en 2022-2023). Édition 2024 lue dans docs/sources/series/spf_odisse__tabagisme-indicateurs-du-barometre-2024.txt
+  (vague 13 du robot, 16/10/2026) : 17,4 % des 18-79 ans (intervalle 16,9 - 17,9), métropole et quatre DROM ; nouvelle
+  série (D43), derniere_annee reste 2023. La valeur INSEE de 2024 (18,2 %, FM) diffère de celle de Santé publique
+  France : champ vraisemblablement restreint à la métropole et aux 18-75 ans, non vérifié.'

@@ -1,201 +1,42 @@
 # mesr / ods_catalogue_json
 # URL : https://data.enseignementsup-recherche.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-16T07:56:56Z — HTTP 200 — application/json; charset=utf-8 — 37626 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:45:56Z — HTTP 200 — application/json; charset=utf-8 — 31158 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 217,
  "results": [
   {
    "visibility": "domain",
-   "fields": [
-    {
-     "name": "rentree",
-     "description": "Année de couverture des données",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Année",
-     "type": "text",
-     "label_fr": "Année",
-     "label_en": "Année",
-     "description_fr": "Année de couverture des données",
-     "description_en": "Année de couverture des données"
+   "fields": [],
+   "dataset_id": "barometre-sante-de-la-science-ouverte",
+   "dataset_uid": "da_snqrgj",
+   "has_records": false,
+   "features": [],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "dcat": {
+     "created": "2022-01-28",
+     "issued": "2022-01-28",
+     "creator": "Département des outils d'aide à la décision",
+     "contributor": null,
+     "contact_name": null,
+     "contact_email": "bso@recherche.gouv.fr",
+     "accrualperiodicity": "Annuelle",
+     "spatial": null,
+     "temporal": null,
+     "granularity": "NCTId",
+     "dataquality": null,
+     "publisher_type": null,
+     "conforms_to": null,
+     "temporal_coverage_start": null,
+     "temporal_coverage_end": null,
+     "accessRights": null,
+     "relation": null
     },
-    {
-     "name": "annee_universitaire",
-     "description": null,
-     "annotations": {},
-     "label": "Année universitaire",
-     "type": "text",
-     "label_fr": "Année universitaire",
-     "label_en": "Année universitaire",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "type_personnel",
-     "description": "agent titulare ou contractuel",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Type de personnel",
-     "type": "text",
-     "label_fr": "Type de personnel",
-     "label_en": "Type de personnel",
-     "description_fr": "agent titulare ou contractuel",
-     "description_en": "agent titulare ou contractuel"
-    },
-    {
-     "name": "etablissement_id_paysage",
-     "description": "identifiant interne de l'établissement d'affectation",
-     "annotations": {},
-     "label": "etablissement_id_paysage",
-     "type": "text",
-     "label_fr": "etablissement_id_paysage",
-     "label_en": "etablissement_id_paysage",
-     "description_fr": "identifiant interne de l'établissement d'affectation",
-     "description_en": "identifiant interne de l'établissement d'affectation"
-    },
-    {
-     "name": "etablissement_lib",
-     "description": "Établissement d'affectation",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Etablissement",
-     "type": "text",
-     "label_fr": "Etablissement",
-     "label_en": "Etablissement",
-     "description_fr": "Établissement d'affectation",
-     "description_en": "Établissement d'affectation"
-    },
-    {
-     "name": "etablissement_compos_id_paysage",
-     "description": null,
-     "annotations": {},
-     "label": "etablissement_compos_id_paysage",
-     "type": "text",
-     "label_fr": "etablissement_compos_id_paysage",
-     "label_en": "etablissement_compos_id_paysage",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "etablissement_compos_lib",
-     "description": "Décomposition des universités à statuts expérimentaux",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Décomposition des universités",
-     "type": "text",
-     "label_fr": "Décomposition des universités",
-     "label_en": "Décomposition des universités",
-     "description_fr": "Décomposition des universités à statuts expérimentaux",
-     "description_en": "Décomposition des universités à statuts expérimentaux"
-    },
-    {
-     "name": "etablissement_id_uai",
-     "description": "code UAI de l'établissement",
-     "annotations": {},
-     "label": "etablissement_id_uai",
-     "type": "text",
-     "label_fr": "etablissement_id_uai",
-     "label_en": "etablissement_id_uai",
-     "description_fr": "code UAI de l'établissement",
-     "description_en": "code UAI de l'établissement"
-    },
-    {
-     "name": "etablissement_code_region",
-     "description": null,
-     "annotations": {},
-     "label": "etablissement_code_region",
-     "type": "text",
-     "label_fr": "etablissement_code_region",
-     "label_en": "etablissement_code_region",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "etablissement_region",
-     "description": "Région du siège de l'établissement",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Région",
-     "type": "text",
-     "label_fr": "Région",
-     "label_en": "Région",
-     "description_fr": "Région du siège de l'établissement",
-     "description_en": "Région du siège de l'établissement"
-    },
-    {
-     "name": "etablissement_code_academie",
-     "description": null,
-     "annotations": {},
-     "label": "etablissement_code_academie",
-     "type": "text",
-     "label_fr": "etablissement_code_academie",
-     "label_en": "etablissement_code_academie",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "etablissement_academie",
-     "description": "Académie du siège de l'établissement",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Académie",
-     "type": "text",
-     "label_fr": "Académie",
-     "label_en": "Académie",
-     "description_fr": "Académie du siège de l'établissement",
-     "description_en": "Académie du siège de l'établissement"
-    },
-    {
-     "name": "etablissement_coordonnees",
-     "description": "Coordonnées GPS du siège de l'établissement",
-     "annotations": {},
-     "label": "etablissement_coordonnees",
-     "type": "geo_point_2d",
-     "label_fr": "etablissement_coordonnees",
-     "label_en": "etablissement_coordonnees",
-     "description_fr": "Coordonnées GPS du siège de l'établissement",
-     "description_en": "Coordonnées GPS du siège de l'établissement"
-    },
-    {
-     "name": "categorie",
-     "description": "Catégorie statutaire de l'agent",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Catégorie",
-     "type": "text",
-     "label_fr": "Catégorie",
-     "label_en": "Catégorie",
-     "description_fr": "Catégorie statutaire de l'agent",
-     "description_en": "Catégorie statutaire de l'agent"
-    },
-    {
-     "name": "code_corps",
-     "description": null,
-     "annotations": {},
-     "label": "code_corps",
-     "type": "text",
-     "label_fr": "code_corps",
-     "label_en": "code_corps",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "corps_lib",
-     "description": "Corps d'appartenance de l'agent",
-     "annotations": {
-      "facet": true
-     },
-     "label": "Corps",
-     "type": "text",
-     "label_fr": "Corps",
-     "label_en": "Corps",
-     "description_fr": "Corps d'appartenance de l'agent",
-     "description_en": "Corps d'apparte
+    "default": {
+     "title": "Baromètre santé de la science ouverte",
+     "title_fr": "Baromètre santé de la science ouverte",
+     "title_en": "Baromètre santé de la science ouverte",
+     "description": "Ce jeu de données recense les données sous-jacentes au baromètre santé de la Science Ouverte, concernant les essais cliniques et les études observationnelles.<br><br>Le site https://barometredelascienceouverte.esr.gouv.fr/sante offre une vision globale des résultats du baromètre santé de la science ouverte.<br><br>Ce jeu de données liste les essais cliniques et études observationnelles présentes dans les registres clinicaltrials.org, EUCTR et CTIS, et ayant été conduits, au moins en partie, en France.<br><br>Les détails de la méthode sont exposés sur https://barometredelascienceouverte.esr.gouv.fr/a-propos/methodologie.<br><br>Les données sont disponibles au format CSV :<br><br>https://storage.gra.cloud.ovh.net/v1/AUTH_32c5d10cb0fe4519b957064a111717e3/bso_dump/bso-clinical-trials.csv.gz<br><br>et au format JSONL (json lines) :<br><br>https://storage.gra.cloud.ovh.net/v1/AUTH_32c5d10cb0fe4519b957064a111717e3/bso_dump/bso-clinical-trials.jsonl.gz<br><br>Le fichier JSONL est plus riche que le fichier CSV.<br><br>- id: identifiant unique par essai clinique ou étude observationnelle (NCTId &gt; CTIS &gt; eudraCT)<br>- ISRCTN : identifiant dans le registre ISRCTN<br>- NCTId : identifiant NCT dans clinicaltrials.gov<br>- CTIS : identifiant CTIS<br>- WHO : identifiant WHO (OMS)<br>- acronym : acronyme de l'essai<br>- all_sources : sources utilisées (\"clinical_trials\", \"euctr\" et / ou \"ctis)<br>- delay_first_results_completion : nombre de jours entre la fin de l'essai (completion) et la première date de communication des résultats (publication dans une revue ou dépôt d'une synthèse)<br>- delay_start_completion : nombre de jours entre le début et la fin de l'essai<br>- delay_submission_start : nombre de jours entre le début de l'essai et la première date de communication des résultats (publication dans une revue ou dépôt d'une synthèse)<br>- design_allocation : randomisé / non randomisé<br>- enrollment_count : nombre de participants<br>- enrollment_type: type de recrutement<br>- eudraCT : identifiant eudraCT<br>- first_publication_date : première date de communication des résultats dans une publication scientifique<br>- first_results_or_publication_date : première date de communication des résultats (dépôt de synthèse ou publication scientifique)<br>- french_location_only : booléen, VRAI si tous les sites mentionnés sont en France, FAUX sinon<br>- has_publication_oa : booléen, si communication des résultats dans une publication, VRAI si au moins une publication en accès ouvert, FAUX sinon<br>- results_details.2025Q4.has_results: booléen, VRAI si communication des résultats avec dépôt d'une synthèse<br>- results_details.2025Q4.has_publications_result: booléen, VRAI si communication des résultats dans une publication scientifique<br>- results_details.2025Q4.has_results_or_publications: booléen, VRAI si communication des résultats (publication et/ou dépot de synthèse)<br>- results_details.2025Q4.has_results_or_publications_within_3y: booléen, VRAI sicommunication des résultats dans les 3 ans après la fin de l'essai clinique<br>- results_details.2025Q4.has_results_or_publications_within_1y<br>- intervention_type : type d'essai clinique<br>- ipd_sharing : Individual Participant Data (IPD) Sharing<br>- ipd_sharing_description : texte décrivant Individual Participant Data (IPD) Sharing <br>- lead_sponsor : nom du promoteur<br>- lead_sponsor_type : type de promoteur (industriel / académique)<br>- lead_sponsor_normalized : nom du prometeur normalisé<br>- sponsor_collaborators<br>- location_country : liste (séparée par des ';') des pays où s'est déroulé l'essai<br>- location_facility : liste (séparée par des ';') des établissements ou s'est déroulé l'essai<br>- other_ids : autres identifiants<br>- primary_purpose : but principal de l'essai<br>- publication_access : non renseigné<br>- publications_result : liste (séparée par des ';') des publications faisant communication des résultats de l'essai<br>- references : non renseigné dans le CSV<br>- results_first_submit_date : première date ou le promoteur ou PI a soumis le dépôt d'une synthèse de résultats<br>- results_first_submit_qc_date : première date ou le promoteur ou PI a soumis le dépot d'une synthèse de résultats vérifiant les critères de controles (cf doc clinical trials)<br>- snapshot_date : date de moissonage des données<br>- status : statut de l'essai<br>- status_simplified : statut de l'essai (version simplifiée avec moins de modalités)<br>- study_completion_date : date de fin de l'essai<br>- study_completion_date_type : type de date de fin d'essai (réelle ou prévue)<br>- study_completion_year : année de fin de l'essai<br>- study_first_submit_date : première date de soumission par le promoteur ou PI d'un enregistrement dans le registre<br>- study_first_submit_qc_date : première date de soumission par le promoteur ou PI d'un enregistrement qui vérifie les controles de qualité dans le reg

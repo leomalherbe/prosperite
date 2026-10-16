@@ -1,6 +1,6 @@
 # economie / ods_catalogue_json
 # URL : https://data.economie.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-16T07:57:05Z — HTTP 200 — application/json; charset=utf-8 — 6643 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:08Z — HTTP 200 — application/json; charset=utf-8 — 5656 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 617,
@@ -11,190 +11,134 @@
     {
      "name": "annee",
      "description": null,
-     "annotations": {
-      "timeserie_precision": "year"
-     },
-     "label": "﻿annee",
-     "type": "date"
-    },
-    {
-     "name": "thematique",
-     "description": null,
      "annotations": {},
-     "label": "thematique",
+     "label": "annee",
      "type": "text"
     },
     {
-     "name": "indicateur",
+     "name": "categorie_civile",
      "description": null,
      "annotations": {},
-     "label": "indicateur",
+     "label": "categorie_civile",
      "type": "text"
     },
     {
-     "name": "code_batterie_harmonise",
+     "name": "sexe",
      "description": null,
      "annotations": {},
-     "label": "code_batterie_harmonise",
+     "label": "sexe",
      "type": "text"
-    },
-    {
-     "name": "code_question_harmonise",
-     "description": null,
-     "annotations": {},
-     "label": "code_question_harmonise",
-     "type": "text"
-    },
-    {
-     "name": "question",
-     "description": null,
-     "annotations": {},
-     "label": "question",
-     "type": "text"
-    },
-    {
-     "name": "reponse",
-     "description": null,
-     "annotations": {},
-     "label": "reponse",
-     "type": "text"
-    },
-    {
-     "name": "pays",
-     "description": null,
-     "annotations": {},
-     "label": "pays",
-     "type": "text"
-    },
-    {
-     "name": "code_iso2",
-     "description": null,
-     "annotations": {},
-     "label": "code_iso2",
-     "type": "text"
-    },
-    {
-     "name": "code_iso3",
-     "description": null,
-     "annotations": {},
-     "label": "code_iso3",
-     "type": "text"
-    },
-    {
-     "name": "code_geo_gisco",
-     "description": null,
-     "annotations": {},
-     "label": "code_geo_gisco",
-     "type": "text"
-    },
-    {
-     "name": "base",
-     "description": null,
-     "annotations": {},
-     "label": "base",
-     "type": "int"
     },
     {
      "name": "effectif",
      "description": null,
      "annotations": {},
      "label": "effectif",
-     "type": "int"
+     "type": "text"
     },
     {
-     "name": "pourcentage",
+     "name": "age",
      "description": null,
      "annotations": {},
-     "label": "pourcentage",
+     "label": "age",
      "type": "double"
     },
     {
-     "name": "pourcentage_ue27",
+     "name": "montant_pension",
      "description": null,
      "annotations": {},
-     "label": "pourcentage_ue27",
+     "label": "montant_pension",
      "type": "double"
     },
     {
-     "name": "ecart_ue27_points",
+     "name": "taux_rp",
      "description": null,
      "annotations": {},
-     "label": "ecart_ue27_points",
-     "type": "double"
+     "label": "taux_rp",
+     "type": "text"
     }
    ],
-   "dataset_id": "afa-extrait-eurobarometre-perception-generale-corruption-ue27",
-   "dataset_uid": "da_ulavru",
+   "dataset_id": "cube-flux-retraite-progressive",
+   "dataset_uid": "da_ms4pv5",
    "has_records": true,
    "features": [
-    "analyze",
-    "timeserie"
+    "analyze"
    ],
    "attachments": [],
    "alternative_exports": [],
    "data_visible": true,
    "metas": {
     "default": {
-     "title": "AFA extrait Eurobarometre perception generale corruption UE27",
-     "description": null,
-     "theme": null,
+     "title": "Retraite - cube flux retraite progressive",
+     "description": "<p><strong>Cube de données agrégées</strong> reprenant les nouvelles retraites progressives,  liquidées par le <strong>Service des Retraites de l’État</strong>.</p><hr><p>Il propose des données sur les thèmes suivants: Effectif, Âge moyen, Montant mensuel moyen et taux de retraite progressive.</p>",
+     "theme": [
+      "RETRAITE"
+     ],
      "keyword": [
-      "Corruption"
+      "Etat",
+      "catégories",
+      "âges",
+      "taux",
+      "montant",
+      "retraites",
+      "sexe",
+      "effectif",
+      "2023",
+      "2024",
+      "2025"
      ],
-     "license": "Licence Ouverte v2.0 (Etalab)",
-     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "license": "Licence Ouverte (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf",
      "language": "fr",
-     "modified": "2026-08-21T12:34:42+00:00",
-     "publisher": null,
-     "references": "https://data.europa.eu/data/datasets/",
-     "attributions": [
-      "Eurobarometre"
+     "metadata_languages": [
+      "fr"
      ],
-     "update_frequency": "ANNUAL",
-     "bbox": null,
-     "data_processed": "2026-08-21T12:42:13.986000+00:00",
-     "federated": false,
+     "timezone": null,
+     "modified": "2026-08-11T13:40:52.131000+00:00",
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": true,
+     "data_processed": "2026-08-11T13:40:52.131000+00:00",
+     "metadata_processed": "2026-08-11T14:04:39.818000+00:00",
      "geographic_reference": [
       "world_fr"
      ],
      "geographic_reference_auto": true,
-     "geometry_types": null,
-     "metadata_languages": [
-      "fr"
-     ],
-     "metadata_processed": "2026-08-21T14:41:16.520000+00:00",
-     "modified_updates_on_data_change": false,
-     "modified_updates_on_metadata_change": false,
-     "parent_domain": null,
-     "records_count": 270,
-     "shared_catalog": null,
-     "source_dataset": null,
-     "source_domain": null,
-     "source_domain_address": null,
-     "source_domain_title": null,
      "territory": [
       "France"
      ],
-     "timezone": null
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": null,
+     "references": "https://retraitesdeletat.gouv.fr/professionnels/donnees-statistiques",
+     "records_count": 18,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": null,
+     "update_frequency": "ANNUAL"
     },
     "dcat": {
-     "accessRights": null,
-     "accrualperiodicity": "annual",
-     "conforms_to": null,
-     "contact_email": null,
+     "created": null,
+     "issued": null,
+     "creator": null,
+     "contributor": null,
      "contact_name": null,
-     "contributor": "AFA",
-     "created": "2026-08-21",
-     "creator": "Eurobarometre",
-     "dataquality": null,
+     "contact_email": null,
+     "accrualperiodicity": null,
+     "spatial": null,
+     "temporal": null,
      "granularity": null,
-     "issued": "2026-08-21",
-     "publisher_type": "SupraNationalAuthority",
-     "relation": null,
-     "spatial": "Europe",
-     "temporal": "2022-2026",
-     "temporal_coverage_end": "2026-05-31T22:00:00+00:00",
-     "temporal_coverage_start": "2022-05-31T22:00:00+00:00"
+     "dataquality": null,
+     "publisher_type": null,
+     "conforms_to": null,
+     "temporal_coverage_start": null,
+     "temporal_coverage_end": null,
+     "accessRights": null,
+     "relation": null
     }
    }
   },
@@ -202,73 +146,77 @@
    "visibility": "domain",
    "fields": [
     {
-     "name": "column_1",
+     "name": "pays_emprunteurs",
      "description": null,
      "annotations": {},
-     "label": "Column 1",
+     "label": "Pays emprunteurs",
      "type": "text"
     },
     {
-     "name": "column_2",
+     "name": "creances_apd",
      "description": null,
      "annotations": {},
-     "label": "Column 2",
-     "type": "int"
+     "label": "Creances APD",
+     "type": "double"
     },
     {
-     "name": "column_3",
+     "name": "creances_napd",
      "description": null,
      "annotations": {},
-     "label": "Column 3",
-     "type": "int"
-    },
-    {
-     "name": "column_4",
-     "description": null,
-     "annotations": {},
-     "label": "Column 4",
-     "type": "int"
-    },
-    {
-     "name": "column_5",
-     "description": null,
-     "annotations": {},
-     "label": "Column 5",
-     "type": "int"
-    },
-    {
-     "name": "column_6",
-     "description": null,
-     "annotations": {},
-     "label": "Column 6",
-     "type": "int"
-    },
-    {
-     "name": "column_7",
-     "description": null,
-     "annotations": {},
-     "label": "Column 7",
-     "type": "int"
-    },
-    {
-     "name": "column_8",
-     "description": null,
-     "annotations": {},
-     "label": "Column 8",
-     "type": "int"
-    },
-    {
-     "name": "column_9",
-     "description": null,
-     "annotations": {},
-     "label": "Column 9",
-     "type": "int"
+     "label": "Creances NAPD",
+     "type": "double"
     }
    ],
-   "dataset_id": "lfi-2012-dotation-cas-titre-2-et-hors-titre-2-par-programme",
-   "dataset_uid": "da_4mjvx2",
+   "dataset_id": "encours-de-creances-de-la-france-sur-les-etats-etrangers-au-31-decembre-2018",
+   "dataset_uid": "da_j5x6gf",
    "has_records": true,
    "features": [
     "analyze",
     "custom_view"
    ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Encours de créances de la France sur les Etats étrangers au 31 décembre 2018",
+     "description": "<p>Il s’agit des encours des créances détenues soit par l’État \ndirectement, soit par l’Agence Française de Développement, soit par BPI \nAssurance Export et Natixis pour le compte de l’État. Sont incluses dans\n les encours présentés toutes les créances dont le débiteur est soit \nsouverain, soit appartient au secteur public d’un État étranger. Il \ns’agit donc d’un encours plus large que celui qui est détenu sur le \nsecteur souverain (État et débiteurs garantis par lui).</p>",
+     "theme": [
+      "ECONOMIE"
+     ],
+     "keyword": [
+      "aide publique au développement",
+      "2018",
+      "prêts",
+      "encours",
+      "créances"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
+     "language": "fr",
+     "metadata_languages": [
+      "fr"
+     ],
+     "timezone": null,
+     "modified": "2019-11-07T16:01:30+00:00",
+     "modified_updates_on_metadata_change": false,
+     "modified_updates_on_data_change": false,
+     "data_processed": "2019-11-07T16:08:06.383000+00:00",
+     "metadata_processed": "2026-01-26T08:59:20.638000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DGTRESOR",
+     "references": null,
+     "records_count": 98,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source

@@ -1,6 +1,6 @@
 # odre / ods_catalogue_json
 # URL : https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-16T07:57:11Z — HTTP 200 — application/json; charset=utf-8 — 33882 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:11Z — HTTP 200 — application/json; charset=utf-8 — 41532 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 187,
@@ -9,102 +9,87 @@
    "visibility": "domain",
    "fields": [
     {
-     "name": "geo_point_2d",
+     "name": "annee",
      "description": null,
-     "annotations": {},
-     "label": "Geo Point",
-     "type": "geo_point_2d",
-     "label_fr": "Geo Point",
-     "label_en": "Geo Point",
+     "annotations": {
+      "timeserie_precision": "year"
+     },
+     "label": "Année",
+     "type": "date",
+     "label_fr": "Année",
+     "label_en": "Année",
      "description_fr": null,
      "description_en": null
     },
     {
-     "name": "geo_shape",
+     "name": "secteur",
      "description": null,
      "annotations": {},
-     "label": "Geo Shape",
-     "type": "geo_shape",
-     "label_fr": "Geo Shape",
-     "label_en": "Geo Shape",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "objectid",
-     "description": null,
-     "annotations": {},
-     "label": "OBJECTID",
+     "label": "Secteur d'activité",
      "type": "text",
-     "label_fr": "OBJECTID",
-     "label_en": "OBJECTID",
+     "label_fr": "Secteur d'activité",
+     "label_en": "Secteur d'activité",
      "description_fr": null,
      "description_en": null
     },
     {
-     "name": "shape_length",
+     "name": "pg24_sensibilite_basse",
      "description": null,
-     "annotations": {},
-     "label": "SHAPE_Length",
-     "type": "text",
-     "label_fr": "SHAPE_Length",
-     "label_en": "SHAPE_Length",
+     "annotations": {
+      "decimals": 1
+     },
+     "label": "PG24_sensibilité basse",
+     "type": "double",
+     "label_fr": "PG24_sensibilité basse",
+     "label_en": "PG24_sensibilité basse",
      "description_fr": null,
      "description_en": null
     },
     {
-     "name": "shape_area",
+     "name": "pg24_fit_for_55",
      "description": null,
-     "annotations": {},
-     "label": "SHAPE_Area",
-     "type": "text",
-     "label_fr": "SHAPE_Area",
-     "label_en": "SHAPE_Area",
+     "annotations": {
+      "decimals": 1
+     },
+     "label": "PG24_Fit for 55",
+     "type": "double",
+     "label_fr": "PG24_Fit for 55",
+     "label_en": "PG24_Fit for 55",
      "description_fr": null,
      "description_en": null
     },
     {
-     "name": "type",
+     "name": "pg24_sensibilite_haute",
      "description": null,
-     "annotations": {},
-     "label": "Type",
-     "type": "text",
-     "label_fr": "Type",
-     "label_en": "Type",
-     "description_fr": null,
-     "description_en": null
-    },
-    {
-     "name": "largeur",
-     "description": null,
-     "annotations": {},
-     "label": "LARGEUR",
-     "type": "text",
-     "label_fr": "LARGEUR",
-     "label_en": "LARGEUR",
+     "annotations": {
+      "decimals": 1
+     },
+     "label": "PG24_sensibilité haute",
+     "type": "double",
+     "label_fr": "PG24_sensibilité haute",
+     "label_en": "PG24_sensibilité haute",
      "description_fr": null,
      "description_en": null
     }
    ],
-   "dataset_id": "corridor_grd_10_km-nat-grtgaz",
-   "dataset_uid": "da_tbsa5h",
+   "dataset_id": "pg2024-conso-nat-secteur",
+   "dataset_uid": "da_cx6i0c",
    "has_records": true,
    "features": [
-    "geo"
+    "timeserie",
+    "analyze"
    ],
-   "attachments": [
-    {
-     "id": "fiche_metadonnees_corridor_10km_reseau_distribution_gaz_pdf",
-     "title": "Fiche_métadonnées_corridor_10km_reseau_distribution_gaz.pdf",
-     "mimetype": "application/pdf",
-     "url": "https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/corridor_grd_10_km-nat-grtgaz/attachments/fiche_metadonnees_corridor_10km_reseau_distribution_gaz_pdf"
-    }
-   ],
+   "attachments": [],
    "alternative_exports": [],
    "data_visible": true,
    "metas": {
+    "semantic": {
+     "rml_mapping": null,
+     "classes": null,
+     "properties": null
+    },
     "default": {
-     "title": "Corridor de largeur 10 km de part et d’autre du réseau de distribution de gaz",
-     "title_fr": "Corridor de largeur 10 km de part et d’autre du réseau de distribution de gaz",
-     "title_en": "Corridor de largeur 10 km de part et d’autre du réseau de distribution de gaz",
-     "description": "<p class=\"\" style=\"text-align:justify;line-height:150%\"><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>Corridor\nde largeur 10 km de part et d’autre du réseau de distribution de gaz.</span></p><p class=\"MsoNormal\" style=\"text-align:justify;line-height:150%\"><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>Ce\ncorridor a été calculé à partir de la donnée « </span><a href=\"https://www.agenceore.fr/opendata/infrastructures-de-reseau-de-gaz\"><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>infrastructures\nde réseau gaz</span></a><span style='font-size:10.0pt;line-height:150%;\nfont-family:\"Arial Narrow\",sans-serif;mso-fareast-font-family:\"Arial Narrow\";\nmso-bidi-font-family:\"Arial Narrow\"'> » présent sur la plate-forme </span><a href=\"https://www.agenceore.fr/opendata/infrastructures-de-reseau-de-gaz\"><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>ORE</span></a><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>.<o:p></o:p></span></p><p class=\"MsoNormal\" style=\"text-align:justify;line-height:150%\"><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>Ce\njeu de données reflète la présence d’un réseau de distribution de gaz dans un\nrayon de 10 km en tout point à l’intérieur du corridor.<o:p></o:p></span></p><p>\n\n\n\n\n\n</p><p class=\"MsoNormal\" style=\"text-align:justify;line-height:150%\"><b><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'>Attention\n!</span></b><span style='font-size:10.0pt;line-height:150%;font-family:\"Arial Narrow\",sans-serif;\nmso-fareast-font-family:\"Arial Narrow\";mso-bidi-font-family:\"Arial Narrow\"'> \nCes informations ne permettent pas d’identifier avec précision la présence ou\nl’absence de réseaux ou canalisation sur une zone géographique donnée. Vous ne\npouvez en aucun cas les utiliser dans le cadre de travaux sur voirie. Dans ce cadre,\nseules les informations obtenues via le téléservice (guichet unique) </span><a href=\"https://eur03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.reseaux-et-canalisations.ineris.fr%2F&amp;data=04%7C01%7Cromain.ufarte%40grtgaz.com%7C04d60773885f4c8bf78808d9f5417327%7C081c4a9cea86468c9b4c30d99d63df76%7C0%7C0%7C637810483732510049%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=42ijdBwGrIGIxgELzlI%2Feti6y0xrJauGTdNW7ZMyY84%3D&amp;reserved=0\"><span style='font
+     "title": "Scénarios de consommation à horizon 2030 et 2035 (Perspectives Gaz 2024)",
+     "title_fr": "Scénarios de consommation à horizon 2030 et 2035 (Perspectives Gaz 2024)",
+     "title_en": "Scénarios de consommation à horizon 2030 et 2035 (Perspectives Gaz 2024)",
+     "description": "<p class=\"MsoNormal\">Ce jeu de données contient le scénario de consommation de\ngaz aux horizons 2030 et 2035 issues du document<b> <i>Perspectives gaz 2024</i>.</b>\nCelui-ci a été réalisé conjointement par GRDF, NaTran et Teréga dans le cadre\nde l’article L141-10 du code de l’énergie.<o:p></o:p></p><p class=\"MsoNormal\">L’ambition est d’enrichir le débat public sur l’évolution du\nmix énergétique français : il s’agit de contribuer à décrire les chemins\npossibles de décarbonation de ce mix en proposant un scénario d’évolution des\nconsommations de gaz.<o:p></o:p></p><p>\n\n\n\n</p><p class=\"MsoNormal\">Les opérateurs d’infrastructures ont enrichi le scénario <i>Perspectives\nGaz 2024</i> par des études de sensibilité à certains paramètres, présentant\ndes incertitudes notables et reconnues.</p><p class=\"MsoNormal\">La création de plusieurs trajectoires permet de quantifier\nla sensibilité des paramètres qui composent la trajectoire principale. Il\ns’agit ici d’encadrer la consommation finale de gaz de 282 TWh en 2035 donnée\npar le scénario <i>Perspectives Gaz 2024</i>. Ce scénario est décliné en cinq\nvariantes d’influence baissière ou haussière sur la consommation de gaz.<o:p></o:p></p><p class=\"MsoNormal\"><o:p> </o:p></p><ul style=\"margin-top:0cm\" type=\"disc\">\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante « Sobriété\n     renforcée dans les bâtiments » quantifie l’économie sur la consommation de\n     gaz selon une proposition de leviers de sobriété nouveaux ou déjà employés\n     en France. Ces leviers relatent d’une modification de nos habitudes de\n     consommations et plus globalement de nos modes de vie. La somme de tous\n     ces leviers permettrait d’atteindre une réduction de la consommation de\n     gaz de 12 TWh en 2035.<o:p></o:p></li>\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante «\n     Développement accéléré des équipements énergétiques hybrides » évalue\n     l’impact de parts de marché accrues pour deux équipements hybrides à\n     faible consommation énergétique, peu mis en avant aujourd’hui : la pompe à\n     chaleur hybride et un chauffe-eau solaire, associé à un chauffe-bain gaz\n     ou une chaudière gaz. À horizon 2035, leur déploiement accéléré réduirait\n     de 7 TWh la consommation de gaz.<o:p></o:p></li>\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante « Aléas dans\n     la mise en œuvre de la transition énergétique » traduit l’impact de deux\n     aléas possibles. D’une part, un retard de la mise en service de capacité\n     de production d’électricité et d’autre part, un retard sur les objectifs\n     de rénovation énergétique des bâtiments du point de vue de la consommation\n     énergétique. La combinaison de ces deux aléas rajouterait 8 TWh à la\n     consommation de gaz en 2035.<o:p></o:p></li>\n <li class=\"MsoListParagraph\" style=\"margin-left:0cm;mso-list:l0 level1 lfo1\">La variante « Succès\n     industriel » projette un succès dans la réindustrialisation de secteurs\n     clés de l’économie française. Cela concerne l’industrie automobile et des\n     équipements, chimique, agro-alimentaire, papier-carton, métallurgie. La\n     concrétisation sur le long terme de cette réindustrialisation implique une\n     augmentation de la consommation de gaz de 10 TWh en 2035. Cette\n     sensibilité haute des consommations de gaz de l’industrie pourrait aussi\n     traduire une situation différente, dans laquelle les conditions\n     économiques ne sont réunies ni pour accroître la production industrielle\n     ni pour électrifier rapidement les procédés industriels.<o:

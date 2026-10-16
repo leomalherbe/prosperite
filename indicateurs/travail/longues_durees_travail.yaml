@@ -4,9 +4,9 @@ dimension: travail
 sous_theme: conditions et santé au travail
 famille: longues_durees_travail
 variante_principale: oui
-definition: Part des personnes en emploi de 15 ans ou plus dont la durée habituelle de travail hebdomadaire dans
-  l'activité principale dépasse le seuil des « longues heures » retenu par Eurostat (jeu de qualité de l'emploi,
-  enquête sur les forces de travail).
+definition: Part des personnes en emploi de 15 ans ou plus dont la durée habituelle de travail dans l'activité principale
+  atteint 49 heures ou plus par semaine (« longues heures » du jeu Eurostat de qualité de l'emploi, enquête sur
+  les forces de travail).
 unite: '% des personnes en emploi'
 sens: bas
 type: resultat
@@ -26,16 +26,17 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-026413
 hors_longlist: non
-raccordement: 'a_etudier : saut de 2003 (8,0 % en 2002, 13,4 % en 2003, rupture) lié au passage à l''enquête en
-  continu'
+raccordement: 'a_etudier : sauts de 2003 (8,0 % en 2002, 13,4 % en 2003, rupture, passage à l''enquête en continu)
+  et de 2021 (11,7 % en 2020, 10,0 % en 2021, rupture et définition différente)'
 incontournable: oui
 recommandation: retenir
 motif_recommandation: Concept présent dans trois cadres (SSF, OCDE, Eurostat) et maintenu dans la dimension par
   D27, série Eurostat 2000-2025 (26 points) avec ruptures en 2003, 2014, 2021 et 2024.
 note_pertinence: 'Les longues durées de travail pèsent sur la santé et la vie hors travail : c''est un incontournable
-  du crosswalk. La série baisse de 13,4 % (2003) à 9,4 % (2025), après un saut de 2003 dû au changement d''enquête
-  (API Eurostat, 14/10/2026). Le seuil horaire exact n''est pas donné par l''API (non trouvé) ; la variante de l''OCDE
-  fixe le seuil à 50 heures pour les salariés.'
+  du crosswalk. Le seuil est de 49 heures ou plus par semaine (métadonnées Eurostat lfsa_qoe_esms) ; la variante
+  de l''OCDE fixe le seuil à 50 heures pour les salariés. La série baisse de 13,4 % (2003) à 9,4 % (2025), avec
+  deux sauts liés à l''enquête, en 2003 (enquête en continu) et en 2021 (rénovation, 11,7 % puis 10,0 %) (collecte
+  ciblée du robot, 15/10/2026).'
 variantes:
 - serie_id: lfsa_qoe_3a2?freq=A&unit=PC&sex=T&age=Y_GE15&wstatus=CFAM&isco08=TOTAL&geo=FR
   source: Eurostat
@@ -125,5 +126,4 @@ qualite:
 - rupture_2021
 - rupture_2024
 - definition_differente_2021_2025
-- seuil_horaire_a_verifier
-notes: ''
+notes: Seuil de 49 heures lu dans les métadonnées lfsa_qoe_esms (audit M06 F3) ; TRA-9 soldé sur ce point.

@@ -32,7 +32,7 @@ motif_recommandation: Mesure des passages au chômage nommés dans le contenu de
   le cadre Qualité de vie (sécurité), série 2011-2025 (14 points, pas de valeur en 2021).
 note_pertinence: 'Le risque de perdre son emploi est le cœur de la sécurité de l''emploi : l''indicateur le mesure
   directement. Les valeurs vont de 3,0 % (2011) à 2,9 % (2025), sans valeur en 2021, avec une rupture en 2014 et
-  le drapeau « définition différente » en 2018 et depuis 2022 (API Eurostat, 14/10/2026).'
+  le drapeau « définition différente » depuis 2022 (collecte ciblée du robot, 15/10/2026).'
 variantes:
 - serie_id: lfsi_long_e04?freq=A&deg_urb=TOTAL&age=Y15-74&unit=PC_EMP&geo=FR
   source: Eurostat
@@ -63,5 +63,6 @@ qualite:
 - pas_de_valeur_2021
 - rupture_2014
 - rupture_2024
-- definition_differente_2018_2022_2025
-notes: ''
+- definition_differente_2022_2025
+notes: 'Drapeaux relus dans docs/sources/series/eurostat_travail_lfsi_long_a.csv (robot, 15/10/2026) : « b » 2014,
+  « d » 2022-2025, « bd » 2024 ; aucun drapeau en 2018, contrairement à la version M05 de la fiche.'

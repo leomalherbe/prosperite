@@ -1,40 +1,58 @@
 id: accidents_travail_mortels
-libelle: Accidents du travail mortels
+libelle: Décès par accident du travail (régime général)
 dimension: travail
 sous_theme: conditions et santé au travail
 famille: accidents_travail_mortels
 variante_principale: oui
-definition: Nombre d'accidents du travail mortels pour 100 000 travailleurs, toutes branches (Eurostat, statistiques
-  européennes des accidents du travail, ESAW).
-unite: pour 100 000 travailleurs
+definition: 'Nombre de décès consécutifs à un accident du travail reconnu, survenus avant consolidation, pour 100
+  000 salariés du régime général de la Sécurité sociale (Assurance maladie, risques professionnels) ; calculé par
+  le projet : décès de l''année (jeu des décès au travail) rapportés aux salariés de l''année (jeu de sinistralité).'
+unite: décès pour 100 000 salariés
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-source_organisme: Eurostat
-source_jeu: hsw_n2_02 (statistiques européennes des accidents du travail)
-source_serie_id: hsw_n2_02?freq=A&unit=RT_INC&nace_r2=TOTAL&geo=FR
+source_organisme: Assurance maladie (risques professionnels)
+source_jeu: 'data.ameli.fr : décès au travail par secteur d''activité (NAF 1 et NAF 5), tous secteurs, rapportés
+  aux salariés du jeu de sinistralité par secteur d''activité (NAF 1)'
+source_serie_id: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/deces-par-secteur-d-activite-naf-1-et-naf-5
+  (Accidents du travail.TOUS.TOUS#nb_deces_int) / sinistralite-par-secteur-d-activite-concerne-naf-1 (Accidents
+  du travail.TOUS.Tous secteurs confondus.Tous secteurs confondus#nb_salaries_int) x 100000
+composantes:
+- https://data.ameli.fr/api/explore/v2.1/catalog/datasets/deces-par-secteur-d-activite-naf-1-et-naf-5 (Accidents
+  du travail.TOUS.TOUS#nb_deces_int)
+- https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1 (Accidents
+  du travail.TOUS.Tous secteurs confondus.Tous secteurs confondus#nb_salaries_int)
+formule: 'A / B * 100000 (A = nb_deces_int, risque « Accidents du travail », code_naf1 = TOUS, code_naf5 = TOUS
+  ; B = nb_salaries_int, même risque, tous secteurs ; première année lue : 2015 pour A, 2005 pour B)'
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hsw_n2_02?freq=A&unit=RT_INC&nace_r2=TOTAL&geo=FR
-url_page: https://ec.europa.eu/eurostat/databrowser/view/hsw_n2_02/default/table?lang=fr
+url_api: https://data.ameli.fr/api/explore/v2.1/catalog/datasets/deces-par-secteur-d-activite-naf-1-et-naf-5
+url_page: https://data.ameli.fr/pages/data-risques-professionnels/
 frequence: annuelle
-premiere_annee: 2008
+premiere_annee: 2015
 derniere_annee: 2024
-nb_points_depuis_2000: 17
+nb_points_depuis_2000: 10
 geo: FR
-eligibilite_longlist: oui
-ligne_id: estat-021652
-hors_longlist: non
-raccordement: non
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/cnam_ameli__deces_naf_brut.csv.gz
+rattachement_propose: 'hors long-list : jeu Ameli des décès au travail, repéré par M04 dans l''export du catalogue
+  data.ameli.fr mais non catalogué, lu par la collecte ciblée du robot (15/10/2026) ; série nationale principale
+  par D40'
+raccordement: 'a_etudier : hausse de 2019 (553 décès en 2018, 733 en 2019) attribuée à un changement de méthode
+  qui prend mieux en compte les malaises, non chiffré ; la série européenne hsw_n2_02 prolonge avant 2015'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Indicateur ODD européen (sdg_08_60, mêmes valeurs depuis 2010) et du cadre Qualité de vie,
-  série 2008-2025 (17 points) traitée en famille propre parce qu'un décès n'est pas substituable à un accident avec
-  arrêt.
+motif_recommandation: Série nationale des décès par accident du travail du régime général (D40), calculée sur deux
+  jeux de l'Assurance maladie de 2015 à 2024 (10 points) et recoupée avec les nombres de décès publiés (733 en 2019,
+  738 en 2022, 759 en 2023), la série européenne hsw_n2_02 (2008-2024, quatre ruptures) restant en variante.
 note_pertinence: Les accidents mortels portent une préoccupation publique propre (D32), distincte de la fréquence
-  des accidents avec arrêt. Le taux passe de 1,56 (2008) à 3,61 (2024) pour 100 000 travailleurs, avec des ruptures
-  en 2014, 2017, 2020 et 2022 qui expliquent sans doute une partie de la hausse (API Eurostat, 14/10/2026). La cause
-  des ruptures n'est pas documentée dans la réponse de l'API.
+  des accidents avec arrêt. Le taux passe de 2,9 décès pour 100 000 salariés en 2015 à 3,7 en 2024, avec un saut
+  en 2019 (2,9 en 2018, 3,7 en 2019) attribué en partie à une meilleure prise en compte des malaises. La série européenne
+  (tous travailleurs) suit la même trajectoire (2,74 en 2018, 3,54 en 2019, 3,61 en 2024), commence en 2008 et porte
+  des ruptures en 2014, 2017, 2020 et 2022, sans cause documentée.
 variantes:
 - serie_id: hsw_mi08?freq=A&unit=RT_INC&sex=T&nace_r2=TOTAL&severity=FAT&geo=FR
   source: Eurostat
@@ -96,15 +114,33 @@ variantes:
     « mortel »)'
   ligne_id: estat-021643
   eligible: oui
+- serie_id: hsw_n2_02?freq=A&unit=RT_INC&nace_r2=TOTAL&geo=FR
+  source: Eurostat
+  nature: Eurostat hsw_n2_02 (statistiques européennes des accidents du travail, 2008-2024)
+  ligne_id: estat-021652
+  eligible: oui
 socle_v1:
   seuil_minimal: null
   objectif: null
   type_justification: null
   justification: ''
 qualite:
-- rupture_2014
-- rupture_2017
-- rupture_2020
-- rupture_2022
-notes: 'La long-list signale un « champ à vérifier : statistiques d''entreprises » (mot NACE du libellé) : la série
-  est le total toutes branches (nace_r2=TOTAL).'
+- hors_longlist
+- champ_regime_general
+- serie_administrative
+- deces_avant_consolidation
+- changement_methode_2019_malaises
+notes: 'Calcul (D34) : A = décès par accident du travail, ligne « TOUS / TOUS » du jeu des décès (545 en 2015, 553
+  en 2018, 733 en 2019, 550 en 2020, 645 en 2021, 738 en 2022, 759 en 2023, 764 en 2024) ; B = salariés du régime
+  général, ligne « TOUS / TOUS » du jeu de sinistralité (19 557 331 en 2019, 20 737 804 en 2023, 20 799 568 en 2024)
+  ; sorties du robot cnam_ameli__deces_naf_brut.csv.gz et cnam_ameli__sinistralite_naf1_brut.csv.gz (15/10/2026).
+  Taux : 2,90 (2015), 2,74 (2016), 2,75 (2017), 2,88 (2018), 3,75 (2019), 2,84 (2020), 3,21 (2021), 3,57 (2022),
+  3,66 (2023), 3,67 (2024). Recoupement : 733 décès en 2019 (question écrite n° 6836 à l''Assemblée nationale, citant
+  la CNAM), 738 en 2022 et 645 en 2021 (Politis, janvier 2024, d''après la CNAM), 759 en 2023 (« 759 décès parmi
+  les AT reconnus et survenus avant consolidation, soit 21 de plus qu''en 2022 », Assurance maladie, Santé et sécurité
+  au travail, chiffres 2023) ; 20,7 millions de salariés en 2023 (même source). Champ (description des jeux) : salariés
+  du régime général, y compris indépendants ayant souscrit l''assurance volontaire et certains agents contractuels
+  publics ; hors régime agricole et fonctions publiques ; France entière. Hausse de 2019 : « changement de méthodologie
+  statistique prenant mieux en compte les malaises », non chiffré (Politis, 2024, d''après la CNAM) ; à confirmer
+  sur la page Méthode de data.ameli.fr. Ancienne principale (M05) : Eurostat hsw_n2_02 (2008-2024 et non 2008-2025,
+  audit F6), passée en variante (D40) ; jeu à cataloguer (TRA-11).'

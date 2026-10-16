@@ -526,6 +526,12 @@ variantes:
   nature: INSEE Melodi DS_NAT_SDG, indicateur ODD 8.i2 (sexes réunis)
   ligne_id: melodi-005438
   eligible: oui
+- serie_id: edat_lfse_24?freq=A&duration=TOTAL&isced11=TOTAL&age=Y15-34&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : taux d''emploi des 15-34 ans sortis d''études (edat_lfse_24, total)'
+  ligne_id: estat-024932
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -536,4 +542,7 @@ qualite:
 - retropolation_hypotheses_insee
 notes: 'Rétropolation : page INSEE des séries longues (insee.fr/fr/statistiques/8977323, lue le 14/10/2026), qui
   précise que ces corrections « sont toujours basées sur des hypothèses et des choix ». Ventilations par sexe signalées
-  à egalites (ecart_emploi_fh).'
+  à egalites (ecart_emploi_fh). Contrôle TRA-3 (collecte ciblée du robot du 15/10/2026, docs/sources/series/melodi_travail_taux_emploi.csv
+  et melodi_travail_controles.csv) : 63,6 % (2000), 64,3 % (2013), 69,3 % (2025) ; identique à l''IRN 1 (BDM 010596081)
+  de 2000 à 2024 à 0,1 point près (2017 et 2024) et à la moyenne annuelle de la série trimestrielle BDM 011818676
+  à 0,1 point près.'

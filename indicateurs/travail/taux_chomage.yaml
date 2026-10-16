@@ -619,6 +619,12 @@ variantes:
   nature: 'INSEE, séries longues : taux de chômage par âge, catégorie socioprofessionnelle et diplôme (sexes réunis)'
   ligne_id: melodi-003797
   eligible: oui
+- serie_id: edat_lfse_25?freq=A&duration=TOTAL&isced11=TOTAL&age=Y15-34&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : taux de chômage des 15-34 ans sortis d''études (edat_lfse_25, total)'
+  ligne_id: estat-024936
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -627,4 +633,7 @@ socle_v1:
 qualite:
 - serie_retropolee_insee
 notes: 'Ventilations par sexe signalées à egalites (ecart_chomage_fh) ; variantes : séries BDM trimestrielles et
-  annuelles (métropole 001787711, 1982-2025), Eurostat une_rt_a.'
+  annuelles (métropole 001787711, 1982-2025), Eurostat une_rt_a. Contrôle TRA-3 (collecte ciblée du robot du 15/10/2026,
+  melodi_travail_taux_chomage.csv et melodi_travail_controles.csv) : 8,5 % (2000), 10,4 % (2015), 7,7 % (2025) ;
+  égal à la moyenne annuelle de la série trimestrielle France entière BDM 011818543 à 0,05 point près ; la série
+  annuelle métropole 001787711 est inférieure de 0,2 à 0,4 point (champ).'

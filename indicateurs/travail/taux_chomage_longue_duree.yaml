@@ -18,7 +18,8 @@ source_serie_id: 'DD_EEC_SERIES : UNEMP (UNEMPDUR=LT, AGE=_T) / ACTPOP (AGE=_T) 
 composantes:
 - DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
 - DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=ACTPOP&EMPFORM=_T&EMPSTA=1T2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PS&WKTIME=_T
-formule: chômeurs depuis un an ou plus / population active x 100
+formule: 'A / B * 100 (A = UNEMP, UNEMPDUR=LT, AGE=_T : chômeurs depuis un an ou plus ; B = ACTPOP, AGE=_T : population
+  active ; milliers de personnes)'
 source_niveau: 1
 url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMP&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=LT&UNIT_MEASURE=PS&WKTIME=_T
 url_page: https://www.insee.fr/fr/statistiques/8977323
@@ -33,9 +34,10 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Indicateur des cadres OCDE et Qualité de vie d'Eurostat, calculable sur deux séries annuelles
-  rétropolées de l'INSEE de 1975 à 2025, alors que la série européenne une_ltu_a porte le drapeau « définition différente
-  » de 2021 à 2025.
+motif_recommandation: Indicateur des cadres OCDE et Qualité de vie d'Eurostat, calculé sur deux séries annuelles
+  rétropolées de l'INSEE (1975-2025) et recoupé avec la série trimestrielle de l'INSEE et avec Eurostat (2,3 % en
+  2003, 3,1 % en 2015, 1,8 % en 2025), alors que la série européenne porte le drapeau « définition différente »
+  de 2021 à 2025.
 note_pertinence: Le chômage de longue durée mesure l'enfermement dans le chômage, plus grave pour les personnes
   que le chômage frictionnel. Au catalogue, l'INSEE ne publie ce taux qu'en série trimestrielle (BDM 011818581,
   2003-2026) ; le calcul sur les séries longues donne une série annuelle homogène depuis 1975. La série Eurostat
@@ -408,5 +410,11 @@ socle_v1:
 qualite:
 - serie_retropolee_insee
 - a_calculer_formule
-notes: Indicateur à calculer par le pipeline sur les deux composantes ; contrôler le résultat avec la série trimestrielle
-  BDM 011818581 (moyenne annuelle) au premier passage du robot.
+notes: 'Composantes lues par le robot (collecte ciblée du 15/10/2026, melodi_travail_taux_chomage_longue_duree.csv
+  ; première année lue : 2000 pour les deux composantes, séries publiées depuis 1975) : 627,5 milliers de chômeurs
+  depuis un an ou plus et 27 803,1 milliers d''actifs en 2003, 572,7 et 31 834,1 en 2025. Taux calculé : 2,90 %
+  (2000), 2,26 % (2003), 3,12 % (2015), 1,77 % (2024), 1,80 % (2025). Recoupement (D34) : moyennes annuelles de
+  la série trimestrielle BDM 011818581 (2,28 % en 2003, 3,18 % en 2015, 1,78 % en 2024, 1,80 % en 2025 ; écart au
+  plus de 0,03 point hors 2014-2020, où le calcul est inférieur de 0,06 à 0,11 point) et Eurostat une_ltu_a, 15-74
+  ans (2,3 %, 3,1 %, 1,7 %, 1,8 %) ; les nombres de chômeurs de longue durée sont ceux d''Eurostat (627 milliers
+  en 2003). Calcul à reprendre par le pipeline (TRA-2).'

@@ -18,7 +18,8 @@ source_serie_id: 'DD_EEC_SERIES : PT_EMPFORM_IN_EMP_BY_SEX_AGE, EMPFORM=22 (CDD)
 composantes:
 - DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_EMPFORM_IN_EMP_BY_SEX_AGE&EMPFORM=22&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
 - DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_EMPFORM_IN_EMP_BY_SEX_AGE&EMPFORM=26&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
-formule: part des CDD + part de l'intérim
+formule: A + B (A = part des CDD, EMPFORM=22 ; B = part de l'intérim, EMPFORM=26 ; mesure PT_EMPFORM_IN_EMP_BY_SEX_AGE,
+  AGE=_T, SEX=_T, en % de l'emploi total)
 source_niveau: 1
 url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_EMPFORM_IN_EMP_BY_SEX_AGE&EMPFORM=22&EMPSTA=1&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
 url_page: https://www.insee.fr/fr/statistiques/8977323
@@ -33,12 +34,13 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Mesure des contrats courts nommés dans le contenu de la dimension (A15), en série annuelle
-  INSEE rétropolée de 1982 à 2025, plus homogène que la série européenne des contrats temporaires marquée « définition
-  différente » depuis 2021.
+motif_recommandation: Mesure des contrats courts nommés dans le contenu de la dimension (A15), somme de deux séries
+  annuelles INSEE rétropolées (1982-2025) recoupée avec les parts publiées par l'INSEE (11,0 % en 2017, 10,3 % en
+  2022, 9,5 % en 2024), plus homogène que la série européenne marquée « définition différente » depuis 2021.
 note_pertinence: Les contrats temporaires exposent à l'insécurité de l'emploi et des revenus. La définition INSEE
   (CDD et intérim, rapportés à tout l'emploi) diffère de la définition européenne, qui ajoute apprentis et contrats
-  aidés et rapporte aux seuls salariés (variantes). La somme des deux parts est à calculer.
+  aidés et rapporte aux seuls salariés (variantes). La somme des deux parts, calculée par le projet, vaut 9,4 %
+  en 2000, 11,1 % en 2017 et 9,4 % en 2025.
 variantes:
 - serie_id: '011818697'
   source: INSEE BDM
@@ -306,4 +308,12 @@ socle_v1:
 qualite:
 - serie_retropolee_insee
 - a_calculer_formule
-notes: ''
+notes: 'Composantes lues par le robot (collecte ciblée du 15/10/2026, melodi_travail_part_emploi_temporaire.csv
+  ; première année lue : 2000 pour les deux composantes, séries publiées depuis 1982) : CDD 7,9 % et intérim 1,5
+  % en 2000, 7,6 % et 1,8 % en 2025. Recoupement (D34) avec les parts publiées par l''INSEE : 9,5 % en 2024 (7,6
+  % de CDD et 1,9 % d''intérim, « Statuts d''emploi », insee.fr/fr/statistiques/8376828, qui situe 2024 0,7 point
+  sous l''avant-crise, soit 10,2 % en 2019 : calcul 10,2 %) ; 10,3 % en 2022 (calcul 10,3 %) et 11,0 % en 2017 (calcul
+  11,1 %, écart d''arrondi ou de rétropolation), Emploi, chômage, revenus du travail, édition 2023, fiche 4. Unité
+  confirmée (TRA-3) : la part totale est comprise entre celles des femmes et des hommes ; contrôle complémentaire
+  : (A + B) × taux d''emploi des 15-64 ans / 100 égale la moyenne annuelle du taux d''emploi en CDD ou intérim (BDM
+  011818697) à 0,09 point près sur 2003-2025. Calcul à reprendre par le pipeline (TRA-2).'

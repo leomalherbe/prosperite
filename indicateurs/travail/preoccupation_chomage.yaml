@@ -2,7 +2,7 @@ id: preoccupation_chomage
 libelle: Personnes préoccupées par le chômage (baromètre DREES)
 dimension: travail
 sous_theme: qualité et sécurité de l'emploi
-famille: insecurite_emploi_percue
+famille: preoccupation_chomage
 variante_principale: oui
 definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui se disent « beaucoup » ou
   « assez » préoccupées par le chômage (question OG04_6 : « Êtes-vous personnellement préoccupé(e) par… le chômage
@@ -16,6 +16,11 @@ source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable OG04_6, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_6, modalités 1+2
+formule: 'part = 100 × somme(poids des réponses OG04_6 = 1 « beaucoup » ou 2 « assez ») / somme(poids des réponses,
+  « ne sait pas » 999999999 compris), par année (première année lue : 2000) ; distribution pondérée du robot M04'
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -34,12 +39,14 @@ rattachement_propose: 'hors long-list : question OG04_6 du baromètre DREES non 
 raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure ressentie et annuelle de l'insécurité de l'emploi depuis 2000 (25 années), en
-  baisse de 90,7 % en 2000 à 63,5 % en 2025 d'après les distributions calculées par le robot M04.
-note_pertinence: 'La préoccupation pour le chômage traduit la crainte de perdre son emploi ou de ne pas en trouver,
-  pour soi ou ses proches : c''est la face ressentie de la sécurité de l''emploi. La question mêle une inquiétude
-  personnelle et un jugement sur la situation du pays, ce qui la rapproche d''une opinion sur la société (D32).
-  La série est longue, publique et sans trou depuis 2004 (pas d''enquête en 2003).'
+motif_recommandation: Opinion sur la société (D32) posée chaque année depuis 2000 (25 années), en baisse de 90,7
+  % en 2000 à 63,5 % en 2025, calculée sur les microdonnées du baromètre DREES et plausible au regard des parts
+  publiées par la DREES (88 % en 2014, 81 % en 2017).
+note_pertinence: 'La préoccupation pour le chômage traduit l''inquiétude face au chômage, pour soi, ses proches
+  ou le pays : c''est la face ressentie et collective de la sécurité de l''emploi. La question appartient à la batterie
+  des préoccupations du baromètre (pauvreté, logement, environnement…), ce qui en fait une opinion sur la société
+  (D32), distincte du risque perçu pour soi ou un proche (famille insecurite_emploi_percue). La série est longue,
+  publique et sans trou depuis 2004 (pas d''enquête en 2003).'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -51,8 +58,12 @@ qualite:
 - calcul_sur_microdonnees
 - enquete_metropole
 - pas_d_enquete_2003
-- codes_modalites_a_verifier
 - licence_a_confirmer
-notes: 'Parts recalculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
-  des modalités 1 et 2 de og04_6, non-réponses au dénominateur) : 90,7 % (2000), 88,7 % (2010), 63,5 % (2025). Libellé
-  de la question et des modalités lu dans les dictionnaires 2025 du robot.'
+- non_recoupe
+notes: 'Parts recalculées sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (modalités 1 et 2
+  de og04_6, « ne sait pas » au dénominateur) : 90,7 % (2000), 88,7 % (2010), 87,7 % (2014), 81,0 % (2017), 79,2
+  % (2018), 63,5 % (2025). Plausibilité (D38 b) : la DREES publie 88 % en 2014 (synthèse du baromètre 2014) et 81
+  % en 2017 (synthèse 2017), et « entre huit et neuf Français sur dix » préoccupés par la pauvreté et le chômage
+  en 2018 (synthèse 2018) ; recoupement D34 incomplet (deux valeurs chiffrées) : non_recoupe. Libellé de la question
+  et des modalités (1 beaucoup, 2 assez, 3 peu, 4 pas du tout, 999999999 ne sait pas) lus dans les dictionnaires
+  2025 du robot. Famille propre depuis la correction de l''audit M06 (J7).'

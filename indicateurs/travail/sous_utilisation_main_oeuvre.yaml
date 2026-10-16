@@ -29,8 +29,8 @@ raccordement: non
 incontournable: non
 recommandation: retenir
 motif_recommandation: Mesure synthétique de la sous-utilisation du travail retenue par l'OCDE (13_2), série INSEE
-  trimestrielle de 2003 à 2026 sans équivalent annuel de même définition, alors que la série Eurostat lfsi_sla_a
-  ne commence qu'en 2014 et porte le drapeau « définition différente » depuis 2021.
+  trimestrielle de 2003 à 2026 sans équivalent annuel de même définition ; elle additionne chômage, halo et sous-emploi
+  et ne se cumule pas au socle avec taux_chomage, halo_chomage et taux_sous_emploi (familles imbriquées).
 note_pertinence: 'L''indicateur additionne chômage, halo et sous-emploi : il résume en un chiffre l''écart entre
   le travail souhaité et le travail obtenu. Il recoupe les fiches taux_chomage, halo_chomage et taux_sous_emploi
   : à surveiller au contrôle de redondance (ensemble ou composantes). Les variantes européennes (capacités excédentaires,
@@ -213,5 +213,6 @@ qualite:
 - trimestrielle_agregation_annuelle
 - derniere_annee_partielle
 - recoupe_autres_fiches
-notes: Valeurs Eurostat lues sur l'API le 14/10/2026 (lfsi_sla_a, SLACK, 15-74 ans). Série trimestrielle retenue
-  faute de série annuelle de même définition (consigne de la session mère).
+notes: 'Valeurs Eurostat lues sur l''API le 14/10/2026 (lfsi_sla_a, SLACK, 15-74 ans). Série trimestrielle retenue
+  faute de série annuelle de même définition (consigne de la session mère). Familles imbriquées (audit M06 J4) :
+  choisir au socle l''ensemble ou ses composantes ; à examiner au contrôle de redondance.'

@@ -15,7 +15,7 @@ source_organisme: OCDE (How's Life)
 source_jeu: OECD.WISE.WDP DSD_HSL@DF_HSL_CWB (base du bien-être), indicateur 2_8_DEP
 source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_8_DEP UNIT_MEASURE=PT_SAL_FT
 source_niveau: 1
-url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.2_8_DEP.PT_SAL_FT._T._T._T.?startPeriod=2000&format=jsondata
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
 url_page: non trouvé
 frequence: irreguliere
 premiere_annee: 2006
@@ -44,4 +44,7 @@ qualite:
 - serie_irreguliere_D17
 - source_nationale_non_documentee
 - licence_a_confirmer
-notes: Périodes et dernière valeur lues dans docs/sources/series/ocde__hsl_bien_etre_actuel.csv.
+notes: 'Périodes et dernière valeur lues dans docs/sources/series/ocde__hsl_bien_etre_actuel.csv. URL d''API : celle
+  lue par le robot M04 (docs/sources/verif_acces/series.csv, ocde / hsl_bien_etre_actuel), qui renvoie toutes les
+  mesures de la base pour la France ; la mesure 2_8_DEP est filtrée à la lecture (l''URL filtrée construite par
+  M05 n''avait pas été vérifiée, audit M06 §2).'

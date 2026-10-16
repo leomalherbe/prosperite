@@ -26,7 +26,7 @@ eligibilite_longlist: oui
 ligne_id: bdm-000607
 hors_longlist: non
 raccordement: non
-incontournable: oui
+incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Lecture du taux d'emploi corrigée du temps partiel, sans série annuelle de même définition,
   disponible en trimestriel de 2003 à 2026 (agrégation annuelle à prévoir).
@@ -113,3 +113,4 @@ qualite:
 - trimestrielle_agregation_annuelle
 - derniere_annee_partielle
 notes: Retenue comme série trimestrielle faute de série annuelle de même définition (consigne de la session mère).
+  Incontournable porté par la variante principale de la famille (taux_emploi, D38 d).

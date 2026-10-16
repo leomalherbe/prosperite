@@ -30,8 +30,8 @@ raccordement: non
 incontournable: non
 recommandation: retenir
 motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat (activité productive), série annuelle 2004-2025
-  (22 points) qui mesure l'exclusion de l'emploi à l'échelle du ménage, ce que les taux individuels ne montrent
-  pas.
+  (22 points) qui mesure l'exclusion de l'emploi à l'échelle du ménage ; composante de niveau_de_vie/pauvrete_exclusion_arope,
+  il ne se cumule pas au socle avec elle.
 note_pertinence: 'Un ménage sans travail ou presque cumule les risques de pauvreté et d''isolement : l''indicateur
   complète le taux d''emploi individuel. La série va de 10,3 % (2004) à 9,0 % (2025), avec des ruptures en 2020
   et 2022 (API Eurostat, 14/10/2026). La nouvelle définition européenne (moins de 65 ans, sdg_01_40) ne commence
@@ -746,6 +746,20 @@ variantes:
     et EFT (ménages sans emploi lfsi_jhh_a)
   ligne_id: estat-055031
   eligible: non
+- serie_id: ilc_lvhl17n?freq=A&tenure=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC ilc_lvhl17, ilc_lvhl17n (long-list logement_cadre_vie) : très faible intensité de travail, total
+    des statuts d''occupation du logement'
+  ligne_id: estat-031155
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_lvhl17?freq=A&unit=PC&tenure=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'EU-SILC ilc_lvhl17, ilc_lvhl17n (long-list logement_cadre_vie) : très faible intensité de travail, total
+    des statuts d''occupation du logement'
+  ligne_id: estat-031346
+  eligible: oui
+  longlist: logement_cadre_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -755,4 +769,6 @@ qualite:
 - rupture_2020
 - rupture_2022
 notes: 'Rattachement à travail conforme à la long-list (cadre Qualité de vie, activité productive) ; composante
-  de l''AROPE (niveau_de_vie) : à surveiller au contrôle de redondance.'
+  de l''AROPE (niveau_de_vie/pauvrete_exclusion_arope) : familles imbriquées (audit M06 J4), à examiner au contrôle
+  de redondance. Lignes ilc_lvhl17 et ilc_lvhl17n (total des statuts d''occupation) importées de la long-list logement_cadre_vie
+  en variantes (audit I6).'

@@ -48,7 +48,7 @@ def _fiche(**surcharges) -> dict:
         "url_api": "https://exemple.org/a", "url_page": "non trouvé", "frequence": "annuelle",
         "premiere_annee": 2010, "derniere_annee": 2024, "nb_points_depuis_2000": 15, "geo": "FR",
         "eligibilite_longlist": "oui", "ligne_id": "l1", "hors_longlist": "non", "raccordement": "non",
-        "incontournable": "non", "recommandation": "retenir",
+        "incontournable": "non", "socle_propose": "non", "recommandation": "retenir",
         "motif_recommandation": "Série annuelle de 15 points couvrant 2010-2024.",
         "note_pertinence": "Première phrase de la note. Deuxième phrase de la note.",
         "variantes": [], "socle_v1": {"seuil_minimal": None, "objectif": None, "type_justification": None,
@@ -280,6 +280,232 @@ def test_nb_phrases():
     assert ver.nb_phrases("Indicateur de richesse nationale n° 5, série 2010-2025.") == 1
     assert ver.nb_phrases("Une phrase (D17). Une autre « citée ».") == 2
     assert ver.premiere_phrase("Première. Seconde.") == "Première."
+
+
+def _depot_pret(depot: Path) -> None:
+    _fiches_valides(depot)
+    pre.main(["--dimension", "dimtest", "--racine", str(depot), "--maj-fiches"])
+
+
+@pytest.mark.parametrize("surcharges, attendu", [
+    ({"socle_propose": None}, "socle_propose obligatoire"),
+    ({"incontournable": "oui"}, "socle_propose: oui attendu"),
+    ({"recommandation": "ecarter", "socle_propose": "oui"}, "exige la recommandation"),
+])
+def test_socle_propose_erreurs(depot: Path, surcharges: dict, attendu: str):
+    """D41 : socle_propose obligatoire sur une principale, imposé aux incontournables, réservé aux « retenir »."""
+    _depot_pret(depot)
+    fiche = {**yaml.safe_load((depot / "indicateurs/dimtest/indic_a.yaml").read_text(encoding="utf-8")), **surcharges}
+    fiche = {k: v for k, v in fiche.items() if v is not None}
+    _ecrire_fiche(depot, fiche)
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert any(attendu in e for e in rapport.erreurs), rapport.erreurs
+
+
+def test_socle_propose_valide_et_compte(depot: Path):
+    _depot_pret(depot)
+    fiche = yaml.safe_load((depot / "indicateurs/dimtest/indic_a.yaml").read_text(encoding="utf-8"))
+    _ecrire_fiche(depot, {**fiche, "socle_propose": "oui", "incontournable": "oui"})
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert not [e for e in rapport.erreurs if "socle" in e]
+    assert rapport.compteurs["socle_propose"] == ["indic_a"]
+    # oui sur une fiche non principale : refusé
+    fiche_h = yaml.safe_load((depot / "indicateurs/dimtest/indic_h.yaml").read_text(encoding="utf-8"))
+    _ecrire_fiche(depot, {**fiche_h, "socle_propose": "oui"})
+    assert any("réservé aux variantes principales" in e for e in ver.verifier_dimension(depot, "dimtest").erreurs)
+
+
+def test_socle_propose_plafond_de_8(depot: Path):
+    _depot_pret(depot)
+    for i in range(9):
+        _ecrire_fiche(depot, _fiche(id=f"socle_{i}", famille=f"socle_{i}", socle_propose="oui", ligne_id=""))
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert any("9 fiches socle_propose: oui (8 au plus" in e for e in rapport.erreurs)
+
+
+def test_socle_transitoire_et_incontournable_non_principal(tmp_path: Path):
+    """Dimension encore en correction (D41, logement_cadre_vie) : absence du champ = avertissement ;
+    D38 d : avertissement ; ailleurs, l'absence du champ est une erreur sur toute fiche (principale ou non)."""
+    fiche = _fiche(dimension="logement_cadre_vie", incontournable="oui")
+    del fiche["socle_propose"]
+    _ecrire_fiche(tmp_path, fiche)
+    variante = _fiche(id="indic_v", dimension="logement_cadre_vie", variante_principale="non",
+                      recommandation="retenir_variante", incontournable="oui")
+    del variante["socle_propose"]
+    _ecrire_fiche(tmp_path, variante)
+    rapport = ver.verifier_dimension(tmp_path, "logement_cadre_vie", catalogues=False)
+    assert not [e for e in rapport.erreurs if "socle" in e], rapport.erreurs
+    assert any("socle_propose absent de 2 fiche(s)" in a for a in rapport.avertissements)
+    assert any("indic_v" in a and "D38 d" in a for a in rapport.avertissements)
+    # même situation dans une dimension corrigée (sante, travail…) : une erreur par fiche, variante comprise
+    _ecrire_fiche(tmp_path, {**fiche, "dimension": "travail"})
+    _ecrire_fiche(tmp_path, {**variante, "dimension": "travail"})
+    erreurs = ver.verifier_dimension(tmp_path, "travail", catalogues=False).erreurs
+    assert sum("socle_propose obligatoire" in e for e in erreurs) == 2, erreurs
+
+
+def test_socle_derogation_et_limite_atteinte(depot: Path):
+    """Incontournable hors socle : dérogation écrite admise ; sans dérogation, avertissement si 8 fiches sont déjà
+    au socle, erreur sinon ; dérogation sans objet : avertissement."""
+    _depot_pret(depot)
+    fiche = yaml.safe_load((depot / "indicateurs/dimtest/indic_a.yaml").read_text(encoding="utf-8"))
+    _ecrire_fiche(depot, {**fiche, "incontournable": "oui", "derogation_socle": "Décision de Léo au gel 2 : retenu."})
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert not [e for e in rapport.erreurs if "socle" in e], rapport.erreurs
+    assert rapport.compteurs["derogations_socle"] == ["indic_a"]
+    _ecrire_fiche(depot, {**fiche, "incontournable": "oui"})
+    for i in range(8):
+        _ecrire_fiche(depot, _fiche(id=f"pilier_{i}", famille=f"pilier_{i}", socle_propose="oui", ligne_id="",
+                                    hors_longlist="oui"))
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert not [e for e in rapport.erreurs if "D41" in e], rapport.erreurs
+    assert any("indic_a" in a and "limite de 8 atteinte" in a for a in rapport.avertissements)
+    fiche_b = yaml.safe_load((depot / "indicateurs/dimtest/indic_b.yaml").read_text(encoding="utf-8"))
+    _ecrire_fiche(depot, {**fiche_b, "derogation_socle": "Sans objet."})
+    assert any("indic_b" in a and "sans objet" in a
+               for a in ver.verifier_dimension(depot, "dimtest", catalogues=False).avertissements)
+
+
+def test_identifiant_drees_ancien_reconnu_avec_avertissement():
+    """D45 : l'identifiant à deux pièces jointes est reconnu comme celui de la pièce jointe unique (et inversement)."""
+    ancien = ("data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, " + ver.DREES_ANCIEN
+              + " ; variable PE03, modalités 1")
+    unique = ver.normaliser_id(ancien)
+    assert ver.DREES_UNIQUE in unique and ver.DREES_ANCIEN not in unique
+    rapport = ver.Rapport("dimtest")
+    ver.controler_catalogues(_fiche(source_serie_id=unique), rapport, {ancien, unique}, set())
+    assert rapport.erreurs == [] and rapport.avertissements == []
+    rapport = ver.Rapport("dimtest")
+    ver.controler_catalogues(_fiche(source_serie_id=ancien), rapport, {unique}, set())
+    assert rapport.erreurs == [] and any("D45" in a for a in rapport.avertissements)
+
+
+def test_index_catalogues_ajoute_la_forme_unique(tmp_path: Path):
+    ancien = "drees, " + ver.DREES_ANCIEN + " ; variable X, modalité 1"
+    _csv(tmp_path / "catalogues" / "longlist_dimtest.csv", COLONNES_LONGLIST,
+         [["m1", "DREES", ancien, "X", "autres_sources_m04", "oui", ""]])
+    series, _ = ver.index_catalogues(tmp_path)
+    assert ancien in series and ver.normaliser_id(ancien) in series
+
+
+def test_tableau_ancien_format_admis_avec_avertissement(tmp_path: Path):
+    fiche = _fiche(dimension="sante")
+    _ecrire_fiche(tmp_path, fiche)
+    chemin = tmp_path / "docs" / "validation" / "validation_sante.csv"
+    ligne = ver.ligne_tableau(fiche)
+    _csv(chemin, ver.COLONNES_TABLEAU_V12,
+         [[str(ligne[c] if ligne[c] is not None else "") for c in ver.COLONNES_TABLEAU_V12]])
+    rapport = ver.verifier_dimension(tmp_path, "sante", catalogues=False)
+    assert not [e for e in rapport.erreurs if "tableau" in e], rapport.erreurs
+    assert any("format antérieur" in a for a in rapport.avertissements)
+    _csv(chemin, ["id", "libelle"], [[fiche["id"], fiche["libelle"]]])
+    assert any("colonnes inattendues" in e for e in ver.verifier_dimension(tmp_path, "sante", catalogues=False).erreurs)
+
+
+def test_tableau_porte_sous_theme_et_socle(depot: Path):
+    _depot_pret(depot)
+    chemin = ver.ecrire_tableau(depot, "dimtest", [f for _, f in ver.lire_fiches(depot, "dimtest")])
+    relu = {r["id"]: r for r in csv.DictReader(chemin.open(encoding="utf-8"))}
+    assert list(next(iter(relu.values()))) == ver.COLONNES_TABLEAU
+    assert relu["indic_a"]["sous_theme"] == "thème" and relu["indic_a"]["socle_propose"] == "non"
+
+
+def test_tableau_regenere_conserve_les_decisions_de_leo(depot: Path):
+    """Passage du format v1.2 au format v1.3 : decision_leo et commentaire_leo sont reportés à l'identique
+    (fins de ligne CRLF de l'ancien ré-import comprises) ; une décision sans fiche bloque la réécriture."""
+    _depot_pret(depot)
+    fiches = [f for _, f in ver.lire_fiches(depot, "dimtest")]
+    chemin = depot / "docs" / "validation" / "validation_dimtest.csv"
+    commentaire = "Garder, « avec virgule », et\nretour"
+    with chemin.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=ver.COLONNES_TABLEAU_V12)  # séparateur CRLF, comme l'ancien import
+        w.writeheader()
+        for fiche in fiches:
+            ligne = {c: ("" if v is None else v) for c, v in ver.ligne_tableau(fiche).items()}
+            if fiche["id"] == "indic_b":
+                ligne["decision_leo"], ligne["commentaire_leo"] = "retenu_socle", commentaire
+            w.writerow({c: ligne[c] for c in ver.COLONNES_TABLEAU_V12})
+    ver.ecrire_tableau(depot, "dimtest", fiches)
+    relu = {r["id"]: r for r in csv.DictReader(chemin.open(encoding="utf-8", newline=""))}
+    assert list(next(iter(relu.values()))) == ver.COLONNES_TABLEAU
+    assert relu["indic_b"]["decision_leo"] == "retenu_socle" and relu["indic_b"]["commentaire_leo"] == commentaire
+    assert relu["indic_a"]["decision_leo"] == "" and relu["indic_a"]["commentaire_leo"] == ""
+    assert b"\r\n" not in chemin.read_bytes()
+    assert not ver.verifier_dimension(depot, "dimtest", catalogues=False).erreurs
+    # une décision sans fiche correspondante : réécriture refusée, fichier intact
+    avant = chemin.read_bytes()
+    with pytest.raises(ver.DecisionsPerdues):
+        ver.ecrire_tableau(depot, "dimtest", [f for f in fiches if f["id"] != "indic_b"])
+    assert chemin.read_bytes() == avant
+    assert ver.main(["--dimension", "dimtest", "--racine", str(depot), "--tableau", "--sans-catalogues"]) == 0
+    assert chemin.read_bytes() == avant
+
+
+def _preselection_autre(depot: Path, lignes: list[list[str]]) -> None:
+    _csv(depot / "docs/validation/preselection_autre_lignes.csv", pre.COLONNES_LIGNES, lignes)
+
+
+def test_lignes_renvoyees_orphelines(depot: Path, tmp_path: Path):
+    """D46 : une ligne renvoyée à dimtest et non reprise par dimtest est signalée ; reprise, elle ne l'est plus."""
+    _depot_pret(depot)
+    _preselection_autre(depot, [
+        ["x2", "autre", "renvoi_z", "autre_dimension:dimtest", "", "", "jeu_z?geo=FR", "Eurostat", "eurostat_series",
+         "Autre chose", "oui", "", "10"],
+        ["x1", "autre", "renvoi_jeunes", "autre_dimension:dimtest", "", "", "jeu_a?age=Y16-24&geo=FR", "Eurostat",
+         "eurostat_series", "Indicateur A — jeunes", "oui", "", "20"],
+    ])
+    rapport = ver.verifier_dimension(depot, "dimtest")
+    assert rapport.compteurs["lignes_recues"] == 2 and rapport.compteurs["lignes_recues_orphelines"] == 1
+    assert any("renvoyée(s) par autre (groupe renvoi_z) non reprises" in a for a in rapport.avertissements)
+    renvois = ver.lignes_renvoyees(ver.lire_preselections(depot))
+    assert dict(zip(renvois["ligne_id"], renvois["statut"])) == {"x2": "orpheline", "x1": "variante"}
+    texte = "\n".join(ver.rapport_lignes_renvoyees(depot))
+    assert "autre → dimtest : 2 ; 0, 1, 0, 0 ; 1" in texte and "x2 [renvoi_z]" in texte
+    assert "Orphelines par destination : dimtest 1" in texte
+    sortie = tmp_path / "renvois.csv"
+    assert ver.main(["--lignes-renvoyees", "--racine", str(depot), "--sortie", str(sortie)]) == 0
+    assert "orpheline" in sortie.read_text(encoding="utf-8")
+    # reprise explicite (écart en bloc) : plus d'orpheline
+    with (depot / "docs/validation/regles_preselection_dimtest.csv").open("a", encoding="utf-8") as f:
+        f.write("70,autre_z,ecarte_en_bloc,,Hors champ.,autre,,,^jeu_z,,\n")
+    pre.main(["--dimension", "dimtest", "--racine", str(depot), "--maj-fiches"])
+    assert ver.verifier_dimension(depot, "dimtest").compteurs["lignes_recues_orphelines"] == 0
+
+
+def test_ligne_relayee_vers_une_troisieme_dimension(depot: Path):
+    """Une ligne renvoyée à dimtest que dimtest renvoie à une troisième dimension est « relayée » ; si la troisième
+    ne la reprend pas, elle y est orpheline."""
+    _depot_pret(depot)
+    _preselection_autre(depot, [["x2", "autre", "renvoi_z", "autre_dimension:dimtest", "", "", "jeu_z?geo=FR",
+                                 "Eurostat", "eurostat_series", "Autre chose", "oui", "", "10"]])
+    with (depot / "docs/validation/regles_preselection_dimtest.csv").open("a", encoding="utf-8") as f:
+        f.write("70,autre_z,autre_dimension:tierce,,Relève de tierce.,autre,,,^jeu_z,,\n")
+    assert pre.main(["--dimension", "dimtest", "--racine", str(depot)]) == 0
+    renvois = ver.lignes_renvoyees(ver.lire_preselections(depot))
+    statuts = {(r["origine"], r["destination"]): r["statut"] for r in renvois.to_dict("records")}
+    assert statuts == {("autre", "dimtest"): "relayee:tierce", ("dimtest", "tierce"): "orpheline"}
+
+
+def test_ligne_ecartee_ici_et_retenue_ailleurs(depot: Path):
+    """D46 : l'avertissement va à la dimension qui écarte ; celle qui retient en garde le compte."""
+    _depot_pret(depot)
+    _preselection_autre(depot, [["l2", "dimtest", "doublon", "ecarte_en_bloc", "", "", "jeu_a?sex=F&geo=FR", "Eurostat",
+                                 "eurostat_series", "Indicateur A — femmes", "oui", "", "10"]])
+    rapport = ver.verifier_dimension(depot, "dimtest")
+    assert rapport.compteurs["lignes_retenues_ecartees_ailleurs"] == 1
+    assert not any("l2" in a for a in rapport.avertissements)
+    rapport = ver.Rapport("autre")
+    ver.controler_lignes_renvoyees("autre", rapport, ver.lire_preselections(depot))
+    assert rapport.compteurs["lignes_ecartees_retenues_ailleurs"] == 1
+    assert any("l2 écartée ici et retenue par dimtest/indic_a_ventilations" in a for a in rapport.avertissements)
+
+
+def test_main_lignes_renvoyees_sans_dimension(depot: Path, capsys):
+    _depot_pret(depot)
+    assert ver.main(["--lignes-renvoyees", "--racine", str(depot)]) == 0
+    assert "0 ligne(s) orpheline(s)" in capsys.readouterr().out
+    with pytest.raises(SystemExit):
+        ver.main(["--racine", str(depot)])
 
 
 @pytest.mark.skipif(not (RACINE / "indicateurs" / "liens_bien_etre").exists(), reason="fiches pilotes absentes")

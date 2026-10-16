@@ -58,7 +58,7 @@ OCDE ODD 3 : séries 3.4.1, 3.8.1, 3.b.1 et variantes à cataloguer (1) ; Eurost
 3. La modalité « je n'y suis jamais allé » ajoutée en 2014 aux questions de satisfaction DREES doit-elle sortir du dénominateur (satisfaction des usagers) ? Les fiches suivent aujourd'hui la convention du tableau officiel (non-réponses et non-usagers au dénominateur).
 4. Le classeur Excel de validation de `sante` reste à produire (`scripts/classeur_validation.py`, fusionné sur `main`) : à faire par la session mère au gel 2, comme pour les autres dimensions.
 
-## 8. Corrections après audit (M06, D38-D46) — branche `m05-sante-corr`
+## 8. Corrections après audit (M06, D38-D46) — branche `m05-sante-corr`, PR #33
 
 Audit : `docs/validation/audit_sante.md` (49 fiches auditées : 35 conformes, 14 à corriger ; 7 oublis ; 9 points de cohérence ; 8 désaccords de jugement ; 10 corrections au §10), réponses de la session mère en D43. Toutes les corrections F et A et les oublis O1 à O7 sont traités ; détail, fichiers et limites : `docs/cr/M05_sante_corrections_journal.md`. Une collecte ciblée du robot (vague 13, 16/10/2026) a lu sept jeux de Santé publique France fermés à l'outil de lecture.
 

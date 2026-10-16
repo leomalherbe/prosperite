@@ -1,6 +1,6 @@
 # Journal des corrections après audit M06 — dimension `sante`
 
-Agent correcteur (session lancée par la session mère), 16 octobre 2026, branche `m05-sante-corr` créée depuis `origin/main` (`d26ebc2` : journal D41-D46). Rapport d'audit appliqué : `docs/validation/audit_sante.md` (§10, liste ordonnée des corrections ; oublis O1 à O7 ; cohérence I1 à I9 ; désaccords J1 à J8), selon les réponses de la session mère (D43) et les règles communes D38, D39, D41, D45, D46. Modèles suivis : journaux de corrections `securite` et `travail`.
+Agent correcteur (session lancée par la session mère), 16 octobre 2026, branche `m05-sante-corr` (PR #33 « M05 — sante : corrections après audit ») créée depuis `origin/main` (`d26ebc2` : journal D41-D46). Rapport d'audit appliqué : `docs/validation/audit_sante.md` (§10, liste ordonnée des corrections ; oublis O1 à O7 ; cohérence I1 à I9 ; désaccords J1 à J8), selon les réponses de la session mère (D43) et les règles communes D38, D39, D41, D45, D46. Modèles suivis : journaux de corrections `securite` et `travail`.
 
 ## 0. Mise en route et état de référence
 

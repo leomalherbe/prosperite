@@ -14,11 +14,11 @@ declaratif: oui
 composite: non
 source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees)
-source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable OG04_4, modalités 1+2
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_4, modalités 1+2
 composantes:
-- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable OG04_4, modalités 1+2
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_4, modalités 1+2
 formule: part pondérée des réponses OG04_4 = 1 (« beaucoup ») ou 2 (« assez ») parmi l'ensemble des répondants (non-réponses
   au dénominateur), poids de redressement du baromètre
 source_niveau: 2
@@ -33,7 +33,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000264
 hors_longlist: non
 raccordement: non
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Seule série annuelle vivante sur l'insécurité ressentie dans le quartier (2014-2025, de 37,5
   à 47,6 % de préoccupés), mais elle mesure une préoccupation plutôt qu'un sentiment d'insécurité vécu.

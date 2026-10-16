@@ -14,8 +14,8 @@ declaratif: oui
 composite: non
 source_organisme: DREES
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
-source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable OG01, modalités 1+2
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG01, modalités 1+2
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -29,6 +29,7 @@ ligne_id: m04-000254
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Seule évaluation globale annuelle disponible avant 2010 (23 points, 2002-2025), mais sa question
   porte sur la « situation actuelle » et non sur la satisfaction dans la vie.
@@ -36,8 +37,8 @@ note_pertinence: La question est plus large que la satisfaction dans la vie et p
   autant que le bien-être ressenti. Son intérêt est de couvrir 2002-2009, que la série INSEE ne couvre pas. Le complément
   (situation jugée mauvaise) est listé en variante.
 variantes:
-- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-    et barometre2025_diff_csv ; variable OG01, modalités 3+4
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable OG01, modalités 3+4
   source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
   nature: 'complément (modalités 3+4 : situation jugée mauvaise)'
   ligne_id: m04-000255

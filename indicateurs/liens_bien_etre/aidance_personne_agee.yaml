@@ -14,8 +14,8 @@ declaratif: non
 composite: non
 source_organisme: DREES
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
-source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable DE07, modalités 1
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable DE07, modalités 1
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -29,6 +29,7 @@ ligne_id: m04-000261
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: ecarter
 motif_recommandation: Sens d'interprétation ambigu (solidarité de proximité ou charge supportée par les aidants,
   charte §3.4) et thème du travail non rémunéré non traité en v1 (A4).

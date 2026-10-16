@@ -14,8 +14,8 @@ declaratif: oui
 composite: non
 source_organisme: DREES
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
-source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable CS05, modalités 1+2
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable CS05, modalités 1+2
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -29,14 +29,15 @@ ligne_id: m04-000258
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Série annuelle de 12 points (2014-2025) mesurant l'inclusion sociale ressentie, concept du
   cadre Eurostat (« perception de l'inclusion sociale ») sans autre source annuelle pour la France.
 note_pertinence: Le sentiment d'intégration décrit le lien entre la personne et la société, au-delà du cercle des
   proches. Eurostat ne publie qu'une vague (2022) de l'indicateur voisin « se sentir exclu de la société » (ilc_pw10).
 variantes:
-- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-    et barometre2025_diff_csv ; variable CS05, modalités 3+4
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable CS05, modalités 3+4
   source: DREES — Baromètre d'opinion (microdonnées pondérées, data.drees)
   nature: complément (ne pas se sentir intégré)
   ligne_id: m04-000259

@@ -4,8 +4,8 @@ dimension: sante
 sous_theme: santé mentale
 famille: sante_mentale
 variante_principale: non
-definition: Part des 18-75 ans déclarant avoir pensé à se suicider au cours des 12 derniers mois (Baromètre santé
-  de Santé publique France).
+definition: Part des 18-75 ans résidant en France métropolitaine déclarant avoir pensé à se suicider au cours des
+  12 derniers mois (Baromètre santé de Santé publique France).
 unite: '% des 18-75 ans'
 sens: bas
 type: resultat
@@ -22,12 +22,14 @@ frequence: irreguliere
 premiere_annee: 2005
 derniere_annee: 2021
 nb_points_depuis_2000: 4
-geo: FR
+geo: FM
 eligibilite_longlist: a_verifier
 ligne_id: m04-000383
 hors_longlist: non
-raccordement: non
+raccordement: 'a_etudier : l''édition 2024 du Baromètre (5,2 % des 18-79 ans, métropole et quatre DROM, nouveau
+  protocole) est une nouvelle série, en variante, non comparable aux vagues 2005-2021 (D43)'
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Lecture voisine de la santé mentale dans la même enquête, 4 vagues de 2005 à 2021 (4,2 % en
   2021), admise comme série irrégulière (D17).
@@ -40,6 +42,13 @@ variantes:
   nature: concept voisin (non éligible)
   ligne_id: m04-000384
   eligible: non
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/conduites-sucidaires-indicateurs-du-barometre-2024
+    (Pensées suicidaires au cours des 12 derniers mois, Tous)
+  source: Santé publique France (Baromètre 2024)
+  nature: 'nouvelle série (D43) : édition 2024 du Baromètre de Santé publique France, 5,2 % [5,0 - 5,5] des 18-79
+    ans, 34 940 répondants, métropole, Guadeloupe, Guyane, Martinique et La Réunion, nouveau protocole ; non raccordée
+    aux vagues antérieures, hors long-list'
+  preuve: docs/sources/series/spf_odisse__conduites-sucidaires-indicateurs-du-barometre-2024.txt
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -49,6 +58,11 @@ qualite:
 - serie_irreguliere_D17
 - derniere_valeur_2021
 - anomalie_source_ic
+- enquete_metropole
+- nouvelle_serie_2024
 notes: 'Valeurs lues dans docs/sources/series/spf_odisse__sante-mentale-pensees-suicidaires-et-tentatives-de-suicide_fra.csv
-  (4,2061 % en 2021). Anomalie de la source : la borne inférieure de l''intervalle de confiance de l''ensemble vaut
-  38,8152 pour une estimation de 4,2061 (maintenance SAN-6).'
+  (4,2061 % en 2021). Champ : 18-75 ans, France métropolitaine, comme les épisodes dépressifs (même Baromètre santé
+  ; audit M06 §6). Anomalie de la source : la borne inférieure de l''intervalle de confiance de l''ensemble vaut
+  38,8152 pour une estimation de 4,2061 (maintenance SAN-6). Édition 2024 lue dans docs/sources/series/spf_odisse__conduites-sucidaires-indicateurs-du-barometre-2024.txt
+  (vague 13 du robot, 16/10/2026) : 5,2 % des 18-79 ans (intervalle 5,0 - 5,5) ; nouvelle série (D43), derniere_annee
+  reste 2021.'

@@ -27,6 +27,7 @@ ligne_id: estat-020063
 hors_longlist: non
 raccordement: 'a_etudier : chute non signalée de 2015 (2,3 % en 2014, 0,8 % en 2015) et ruptures de 2020 et 2022'
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Composante financière des besoins non satisfaits, annuelle de 2008 à 2025 (1,6 % en 2008,
   1,9 % en 2025), identique sur 2010-2023 à l'indicateur national ODD 3.i7a de l'INSEE.
@@ -140,4 +141,6 @@ qualite:
 - chute_2015_non_signalee
 notes: 'Valeurs lues le 14/10/2026 sur l''API Eurostat (hlth_silc_08, TXP) et sur la BDM (010593299, champ FM, mêmes
   valeurs de 2010 à 2023). Déclaratif « non » : fait déclaré (méthode §4), alors que la fiche de mission le range
-  parmi les déclaratifs attendus.'
+  parmi les déclaratifs attendus. Champ (D15) : la série EU-SILC de la France provient de l''enquête SRCV de l''INSEE
+  ; l''INSEE publie en France métropolitaine (FM) l''indicateur national ODD 3.i7a, de mêmes valeurs que hlth_silc_08
+  de 2010 à 2023 (audit M06) : le champ de la série Eurostat (code FR) est à confirmer dans les métadonnées.'

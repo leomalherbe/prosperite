@@ -5,34 +5,40 @@ sous_theme: espérance de vie
 famille: esperance_vie
 variante_principale: non
 definition: Nombre moyen d'années restant à vivre à 65 ans dans les conditions de mortalité de l'année, ensemble
-  des sexes, France (Eurostat, jeu des années de vie en bonne santé).
+  des sexes, France (Eurostat, jeu démographique de l'espérance de vie, comme la fiche principale de la famille).
 unite: années
 sens: haut
 type: resultat
 declaratif: non
 composite: non
 source_organisme: Eurostat (d'après l'INSEE)
-source_jeu: hlth_hlye (années de vie en bonne santé par sexe), modalité LE_Y65
-source_serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y65&geo=FR
+source_jeu: demo_mlexpec (espérance de vie par âge et sexe), âge 65 ans
+source_serie_id: demo_mlexpec?freq=A&unit=YR&sex=T&age=Y65&geo=FR
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y65&geo=FR
-url_page: https://ec.europa.eu/eurostat/databrowser/view/hlth_hlye/default/table?lang=fr
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec?freq=A&unit=YR&sex=T&age=Y65&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table?lang=fr
 frequence: annuelle
-premiere_annee: 2004
+premiere_annee: 1998
 derniere_annee: 2024
-nb_points_depuis_2000: 21
+nb_points_depuis_2000: 25
 geo: FR
-eligibilite_longlist: oui
-ligne_id: estat-011320
-hors_longlist: non
-raccordement: non
-incontournable: oui
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+rattachement_propose: 'hors long-list : modalité age=Y65 du jeu demo_mlexpec (catalogue des jeux), non cataloguée
+  par M02 (seules Y_LT1, Y_GE85 et Y_GE95 le sont) ; à cataloguer (maintenance SAN-9, audit M06 O6)'
+raccordement: 'non : ruptures de 2012 et 2014 signalées par Eurostat, comme pour l''espérance de vie à la naissance'
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
-motif_recommandation: Lecture de la longévité aux âges élevés, annuelle de 2004 à 2024 (20,1 ans en 2004, 21,9 ans
-  en 2024), indépendante de la mortalité infantile et juvénile.
-note_pertinence: L'espérance de vie à 65 ans mesure les années restant à vivre à l'âge de la retraite et sert de
-  référence aux années de vie en bonne santé au même âge. Elle passe de 22,0 ans en 2019 à 21,2 ans en 2020 (Covid-19)
-  puis remonte à 21,9 ans en 2023 et 2024. L'INSEE la publie à 60 ans et par sexe (variantes, 1946-2025 en métropole).
+motif_recommandation: Lecture de la longévité aux âges élevés, annuelle de 1998 à 2024 dans le même jeu que la fiche
+  principale (19,3 ans en 2000, 21,0 ans en 2020, 21,9 ans en 2024), choisie par D43 devant la série du jeu des
+  années de vie en bonne santé.
+note_pertinence: L'espérance de vie à 65 ans mesure les années restant à vivre à l'âge de la retraite. Elle passe
+  de 21,7 ans en 2019 à 21,0 ans en 2020 (Covid-19) puis remonte à 21,9 ans en 2024. La série du jeu des années
+  de vie en bonne santé (hlth_hlye, 2004-2024), identique jusqu'en 2013 puis plus haute de 0,1 à 0,5 an, reste en
+  variante parce qu'elle sert au calcul des années de vie en bonne santé à 65 ans ; l'INSEE publie l'espérance de
+  vie à 60 ans par sexe (variantes).
 variantes:
 - serie_id: '001686950'
   source: INSEE BDM
@@ -84,6 +90,11 @@ variantes:
   nature: autres âges élevés, sexe, autres voies
   ligne_id: estat-011319
   eligible: oui
+- serie_id: hlth_hlye?freq=A&unit=YR&sex=T&hlth_hle=LE_Y65&geo=FR
+  source: Eurostat
+  nature: même indicateur, jeu des années de vie en bonne santé
+  ligne_id: estat-011320
+  eligible: oui
 - serie_id: hlth_hlye?freq=A&unit=YR&sex=M&sex=F&hlth_hle=LE_Y65&geo=FR
   source: Eurostat
   nature: autres âges élevés, sexe, autres voies
@@ -125,5 +136,13 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- provisoire_2023
-notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (hlth_hlye, LE_Y65, sex=T).
+- hors_longlist
+- rupture_2012
+- rupture_2014
+- provisoire_2023_2024
+- ecart_hlth_hlye_depuis_2014
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 : demo_mlexpec (age=Y65, sex=T ; mise à jour du 25/09/2026),
+  1998-2024, b en 2012 et 2014, p en 2023 et 2024 (19,1 en 1998, 19,3 en 2000, 21,5 en 2014, 21,7 en 2019, 21,0
+  en 2020, 21,2 en 2022, 21,9 en 2024) ; hlth_hlye (LE_Y65 ; mise à jour du 17/07/2026) identique de 2004 à 2013
+  puis 22,0 (2014), 22,0 (2019), 21,2 (2020), 21,3 (2022), 21,9 (2024), écart de 0,1 à 0,5 an non expliqué. Choix
+  de la principale : D43 (audit M06 J1).'

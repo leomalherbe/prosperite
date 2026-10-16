@@ -27,6 +27,7 @@ ligne_id: bdm-000992
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: ecarter
 motif_recommandation: 'Sens ambigu : le nombre de découvertes de séropositivité (2010-2024) augmente avec l''effort
   de dépistage autant qu''avec les nouvelles contaminations, et il est exprimé en nombre.'
@@ -116,4 +117,6 @@ socle_v1:
   justification: ''
 qualite:
 - en_nombre
-notes: ''
+- valeurs_estimees_statut_E
+notes: 'Valeurs de la BDM (010593272) toutes au statut E (estimations) : 6 110 (2010), 4 848 (2020), 5 850 (2024),
+  lecture de l''audit M06 du 16/10/2026.'

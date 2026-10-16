@@ -28,6 +28,7 @@ ligne_id: estat-011390
 hors_longlist: non
 raccordement: 'a_etudier : ruptures de 2020 et 2022 de l''enquête SRCV'
 incontournable: oui
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Concept « limitations » du §5 du crosswalk et base de l'espérance de vie sans incapacité,
   annuel de 2008 à 2025 (23,2 % en 2008, 25,8 % en 2025).
@@ -676,5 +677,8 @@ qualite:
 - rupture_2020
 - rupture_2022
 - non_standardise_age
-notes: Valeurs lues sur l'API Eurostat le 14/10/2026 (hlth_silc_06, wstatus=POP). Série DREES SA03 instable (25,7
-  % en 2014, 17,5 % en 2018, calculés sur les distributions du robot).
+notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (hlth_silc_06, wstatus=POP). Série DREES SA03 instable (25,7
+  % en 2014, 17,5 % en 2018, calculés sur les distributions du robot). Champ (D15) : la série EU-SILC de la France
+  provient de l''enquête SRCV de l''INSEE ; l''INSEE publie en France métropolitaine (FM) l''indicateur national
+  ODD 3.i7a, de mêmes valeurs que hlth_silc_08 de 2010 à 2023 (audit M06) : le champ de la série Eurostat (code
+  FR) est à confirmer dans les métadonnées.'

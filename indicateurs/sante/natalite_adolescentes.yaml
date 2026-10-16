@@ -27,13 +27,20 @@ ligne_id: m04-000362
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Indicateur de la cible ODD 3.7 (santé sexuelle et reproductive), annuel de 1990 à 2023 (3,5
   pour 1 000 en 2023), à la limite du contenu de la dimension.
 note_pertinence: 'La natalité des adolescentes renseigne sur l''accès à la contraception et à l''éducation à la
   sexualité ; elle est très basse en France. La santé reproductive n''est pas citée dans le contenu de la dimension
   : la fiche est soumise à Léo pour décision.'
-variantes: []
+variantes:
+- serie_id: demo_frate?freq=A&unit=NR&age=Y10-14&age=Y15-19&age=Y20-24&age=Y25-29&age=Y30-34&age=Y35-39&age=Y40-44&age=Y45-49&age=Y_GE50&agedef=COMPLET&geo=FR
+  source: Eurostat
+  nature: 'autre source : taux de fécondité par âge d''après l''état civil (long-list hors_grille)'
+  ligne_id: estat-011198
+  eligible: non
+  longlist: hors_grille
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -44,5 +51,11 @@ qualite:
 - niveau_2
 - licence_a_confirmer
 - hors_contenu_cite
-notes: 'Dernière valeur lue dans docs/sources/series/pnud__hdr25_series_composites_france.csv (3,507 en 2023). Variante
-  possible hors long-list : OCDE ODD 3.7.2 (2000-2021, 6,36 pour 1 000 en 2021, autre estimation).'
+- estimations_divergentes
+notes: 'Dernière valeur lue dans docs/sources/series/pnud__hdr25_series_composites_france.csv (3,507 en 2023). Estimations
+  divergentes : l''OCDE (ODD 3.7.2) donne 6,36 pour 1 000 en 2021 (audit M06). Source d''état civil importée en
+  variante (audit M06 J4) : taux de fécondité des 15-19 ans d''Eurostat (demo_frate, d''après l''INSEE), 1998-2024,
+  lu sur l''API le 16/10/2026 : 0,01228 (2000), 0,00642 (2021), 0,00606 (2023), 0,00569 (2024), soit 12,3, 6,4,
+  6,1 et 5,7 pour 1 000, b en 2014, p de 2022 à 2024 ; proche de l''OCDE, loin du PNUD. Question à la session mère
+  : faire de cette série d''enregistrement la principale (modalité âge 15-19 ans d''un paquet catalogué, conversion
+  pour 1 000 ; maintenance SAN-12).'

@@ -14,7 +14,7 @@ Agents de mission M05 (Santé), 14 et 15 octobre 2026, branche `m05-sante`, PR #
 
 Contrôles : `main` fusionné (`792f1a5`, sans conflit) ; `python scripts/verifier_fiches.py --dimension sante` → **0 erreur**, 11 avertissements, tous « série principale hors catalogue avec preuve » (8 fiches hors long-list, une alerte par composante pour les séries DREES calculées) ; 0 ligne déjà prise par une autre dimension ; `pytest` : 398 réussis.
 
-## 2. Chiffres
+## 2. Chiffres (avant l'audit ; chiffres à jour au §8)
 
 - **Long-list** : 14 168 lignes (12 547 éligibles, 461 à vérifier, 1 160 non éligibles) ; Eurostat 13 705 (dont 8 184 lignes d'activité hospitalière `hlth_co_*` et 3 609 lignes de causes de décès `hlth_cd_*`), BDM 232, Melodi 203, M04 28. Décisions : 41 lignes en `fiche`, 873 en `variante_de`, 13 073 en `ecarte_en_bloc` (11 741 éligibles : activité hospitalière, ressources et dépenses de santé, causes de décès détaillées, en nombre ou par région, catégories détaillées de la santé perçue, raisons personnelles des besoins non satisfaits…), 181 en `autre_dimension` (`travail` 104, `securite` 54, `niveau_de_vie` 12, `egalites` 10, `logement_cadre_vie` 1).
 - **49 fiches, 38 familles** : **37 `retenir`**, **11 `retenir_variante`**, **1 `ecarter`** (`decouvertes_vih`, sens ambigu).
@@ -57,3 +57,34 @@ OCDE ODD 3 : séries 3.4.1, 3.8.1, 3.b.1 et variantes à cataloguer (1) ; Eurost
 2. Faut-il admettre comme fiche une opinion DREES courte mais pertinente (SA06_1 et SA06_3, égalité d'accès aux soins selon le revenu et le lieu de vie, 7 vagues annuelles 2018-2025, non éligibles) quand elle atteindra 10 points ?
 3. La modalité « je n'y suis jamais allé » ajoutée en 2014 aux questions de satisfaction DREES doit-elle sortir du dénominateur (satisfaction des usagers) ? Les fiches suivent aujourd'hui la convention du tableau officiel (non-réponses et non-usagers au dénominateur).
 4. Le classeur Excel de validation de `sante` reste à produire (`scripts/classeur_validation.py`, fusionné sur `main`) : à faire par la session mère au gel 2, comme pour les autres dimensions.
+
+## 8. Corrections après audit (M06, D38-D46) — branche `m05-sante-corr`, PR #33
+
+Audit : `docs/validation/audit_sante.md` (49 fiches auditées : 35 conformes, 14 à corriger ; 7 oublis ; 9 points de cohérence ; 8 désaccords de jugement ; 10 corrections au §10), réponses de la session mère en D43. Toutes les corrections F et A et les oublis O1 à O7 sont traités ; détail, fichiers et limites : `docs/cr/M05_sante_corrections_journal.md`. Une collecte ciblée du robot (vague 13, 16/10/2026) a lu sept jeux de Santé publique France fermés à l'outil de lecture.
+
+| Fiche | Correction |
+|---|---|
+| `satisfaction_soins_hopital`, `satisfaction_urgences` (D39, D43) | parts recalculées hors « jamais allé.e » : (modalités 1 + 2) / (100 − modalité 6) ; hôpitaux publics 75,2 % (2014) → 63,7 % (2025), urgences 57,0 % → 44,1 % ; `rupture_2014`, `non_recoupe` (D38 b), plausibilité contre la valeur officielle 2025 (61,29 %) |
+| `deces_pollution_air` (F) | 18 valeurs lues (61 pour 100 000 en 2005, 22 en 2023, 2006 absent) ; contrefactuel 5 µg/m³ ; saut de 2013-2014 (53 → 34) en `raccordement: a_etudier` |
+| `prevalence_diabete` (nouvelle, O1, D43) | Santé publique France, taux standardisé 4,69 % (2010) → 5,24 % (2023), famille propre, `retenir`, sens bas, `depend_du_depistage` |
+| `vaccination_hpv` (F2, O2, J3) | série nationale de Santé publique France (schéma complet des filles de 16 ans, 2011-2025 : 44,7 % en 2023, 50,7 % en 2025) en principale, OCDE 3.b.1 et garçons en variantes |
+| `episodes_depressifs`, `pensees_suicidaires`, `tabagisme_quotidien` (F3, O3, D43) | `geo: FM` (18-75 ans, métropole) ; édition 2024 du Baromètre en **nouvelle série** (variante, `raccordement: a_etudier`) : 15,6 %, 5,2 %, 17,4 % des 18-79 ans ; `episodes_depressifs` incontournable (santé mentale, D43) |
+| `esperance_vie_65` (J1, O6, D43) | principale `demo_mlexpec` âge 65 ans (1998-2024), `hlth_hlye` en variante (écart de 0,1 à 0,5 an depuis 2014) |
+| `obesite` (F1) | `frequence: irreguliere` (6 vagues) |
+| 4 fiches variantes (D38 d) | `incontournable: non` : espérance de vie et années de vie en bonne santé à 65 ans, limitations fortes, santé perçue mauvaise |
+| `sante_francais_percue_degradee`, `manque_medecins_percu` (D38 b, D45) | `non_recoupe`, plausibilité écrite, formules avec la convention de dénominateur |
+| `vaccination_grippe_seniors`, `depistage_cancer_colorectal` (O2, O4) | séries de Santé publique France en variantes (année Eurostat N = campagne N-1/N ; campagnes de dépistage glissantes de deux ans) |
+| `mortalite_chutes`, règles `ilc_lvhl01` (D39) | rattachements tranchés par D39 cités |
+| mineurs (§7.5, J4) | densité de généralistes, mortalité traitable, VIH (statut E), Mayotte en 2014, natalité des adolescentes (estimations divergentes ; taux de fécondité des 15-19 ans de l'état civil en variante), champ SRCV des 10 fiches EU-SILC (D15) |
+
+Lignes renvoyées (D38 a, D46) : les 20 lignes `ilc_lvhl01` reçues de `logement_cadre_vie` sont importées (16 variantes, 4 écartées) ; aucune autre ligne n'est renvoyée à `sante` ; les 181 lignes renvoyées par `sante` sont toutes reprises par leurs destinataires (`travail` 104, `securite` 54, `niveau_de_vie` 12, `egalites` 10, `logement_cadre_vie` 1), avec un motif ; deux renvois hors long-list sont tracés (décès attribuables à la chaleur → `planete`, A14, D43 ; confiance dans les médecins → `democratie`).
+
+Socle proposé (D41, `socle_propose: oui`, 8 fiches) : `esperance_vie_naissance`, `esperance_vie_sans_incapacite`, `sante_percue_bonne`, `maladie_chronique`, `limitations_activite`, `episodes_depressifs` (les 6 incontournables), `besoins_soins_non_satisfaits` (accès aux soins), `tabagisme_quotidien` (comportements et nutrition).
+
+Chiffres après corrections : **50 fiches, 39 familles : 38 `retenir`, 11 `retenir_variante`, 1 `ecarter`** ; 11 déclaratives ; 1 composite ; 4 « à vérifier » ; 10 hors long-list ; 6 incontournables ; 921 variantes ; types : 41 résultats, 6 moyens, 3 pressions. Présélection : 122 groupes (50 `fiche`, 43 `variante_de`, 21 `ecarte_en_bloc`, 8 `autre_dimension`) ; 14 189 lignes, dont 21 importées. Vérificateur : 0 erreur, 65 avertissements attendus (50 « socle_propose hors schéma » tant que le vérificateur n'est pas mis à jour, 15 séries hors catalogue avec preuve) ; `pytest` : 403 réussis.
+
+Liste de maintenance : SAN-3, SAN-4 et SAN-7 précisées (`docs/cr/maintenance_catalogues.md`) ; SAN-8 (jeux de Santé publique France lus par la vague 13), SAN-9 (`demo_mlexpec` âge 65 ans), SAN-10 (décès attribuables à la chaleur → `planete`), SAN-11 (SA13 → `democratie`), SAN-12 (`demo_frate` → `sante`) dans `docs/cr/maintenance_catalogues_sante.md`.
+
+Réponses aux questions du §7 : 1. chutes → `sante` (D39) ; 3. modalité « jamais allé » exclue (D39, D43) ; 4. classeur régénéré par la session mère. La question 2 (SA06) reste ouverte.
+
+À trancher : **session mère** — incontournable « santé mentale » porté par la seule `episodes_depressifs` (le suicide porterait le socle à 9) ; principale nationale de la vaccination HPV (J3) ; série d'état civil en principale de la natalité des adolescentes (J4) ; non-réponses au dénominateur des satisfactions ; numéro de la vague 13 du robot à la fusion. **Léo** — rupture de 2014 des satisfactions, saut de 2014 des décès attribuables aux PM2,5, séries du Baromètre 2024 non raccordées (dernière valeur comparable 2021 pour la santé mentale), sens bas de la prévalence du diabète traité, choix du tabac pour le socle « comportements et nutrition ».

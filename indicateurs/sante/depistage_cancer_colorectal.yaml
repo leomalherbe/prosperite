@@ -27,6 +27,7 @@ ligne_id: estat-020032
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule série annuelle de dépistage en cours au catalogue, 12 valeurs de 2011 à 2024 (28,2 %
   en 2011, 29,6 % en 2024 ; rien en 2015-2016, rupture « b » en 2017), admise comme moyen (D19).
@@ -65,6 +66,14 @@ variantes:
   nature: sexe, autres cancers
   ligne_id: m04-000381
   eligible: non
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-france-copie
+    (taux_standardises_de_participation_population_eligible, Ensemble)
+  source: Santé publique France
+  nature: 'même indicateur chez le producteur national : taux standardisé de participation de la population éligible
+    par campagne de deux ans, de 28,2 % en 2010-2011 à 30,7 % en 2024-2025 (rien pour 2014-2015 et 2015-2016) ;
+    Eurostat en reprend les valeurs sous l''année de fin de campagne ; la participation de la population cible s''arrête
+    en 2022-2023, hors long-list (audit M06 O4)'
+  preuve: docs/sources/series/spf_odisse__cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-france-copie.txt
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -73,6 +82,11 @@ socle_v1:
 qualite:
 - rupture_2017
 - annees_manquantes_2015_2016
+- campagnes_glissantes_2_ans
 notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (hlth_ps_prev, sex=T : C50 et C53 sans valeur, « m » en 2015
-  et 2016). Objectif de participation des lignes directrices européennes : non trouvé (à chercher avant le socle
-  des bornes).'
+  et 2016). Série de Santé publique France lue dans docs/sources/series/spf_odisse__cancer-participation-au-depistage-organise-du-cancer-du-colon-rectum-france-copie.txt
+  (vague 13 du robot, 16/10/2026) : la valeur Eurostat de l''année N est le taux standardisé de participation de
+  la population éligible de la campagne N-1/N (28,16 % pour 2010-2011 contre 28,20 % en 2011 ; 24,85 % pour 2019-2020
+  contre 24,90 % en 2020 ; 29,57 % pour 2023-2024 contre 29,60 % en 2024) ; elle ne comble pas 2015-2016 et ajoute
+  2024-2025 (30,74 %) : variante, Eurostat reste principal (audit M06 O4). Objectif de participation des lignes
+  directrices européennes : non trouvé (à chercher avant le socle des bornes).'

@@ -27,11 +27,13 @@ ligne_id: estat-002095
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
-motif_recommandation: Autre mesure de l'effort de recherche (moyens humains), annuelle de 2003 à 2024 (22 points),
-  dont les valeurs n'ont pas pu être relues sur l'API le 15/10/2026 (refus du proxy).
-note_pertinence: Le personnel de R&D rapporté aux actifs complète la dépense par une mesure en personnes. L'INSEE
-  publie les effectifs en nombre (ODD 9.i4), en variante. Les valeurs et les drapeaux de rupture restent à relire.
+motif_recommandation: Autre mesure de l'effort de recherche (moyens humains), annuelle de 2003 à 2024 (22 points
+  ; 1,24 % en 2003, 1,72 % en 2024).
+note_pertinence: Le personnel de R&D rapporté aux actifs complète la dépense par une mesure en personnes. La part
+  progresse régulièrement (1,37 % en 2010, 1,62 % en 2020, 1,72 % en 2024) ; Eurostat signale une définition différente
+  en 2008 et 2009 et une rupture en 2010. L'INSEE publie les effectifs en nombre (ODD 9.i4), en variante.
 variantes:
 - serie_id: rd_p_persreg?freq=A&prof_pos=TOTAL&sex=T&sectperf=TOTAL&unit=PC_ACT_FTE&geo=FR
   source: Eurostat
@@ -77,6 +79,8 @@ socle_v1:
   justification: ''
 qualite:
 - indicateur_de_moyens_D19
-- valeurs_non_relues
-notes: Période et nombre de points tirés de la long-list ; lecture de l'API refusée (HTTP 429) le 15/10/2026 (liste
-  de maintenance, n° 41).
+- definition_differente_2008_2009
+- rupture_2010
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (mise à jour du 29/09/2026) : 1,24 % (2003), 1,26, 1,24,
+  1,29, 1,32, 1,33 (2008, d), 1,35 (2009, d), 1,37 (2010, b) … 1,62 (2020), 1,68, 1,67, 1,70, 1,72 (2024) ; aucune
+  valeur de 2000 à 2002. Liste de maintenance n° 41 soldée pour cette série.'

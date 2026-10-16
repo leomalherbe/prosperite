@@ -3,10 +3,11 @@ libelle: Participation des 25-64 ans à l'éducation ou à la formation au cours
 dimension: education
 sous_theme: formation des adultes
 famille: formation_adultes
-variante_principale: non
+variante_principale: oui
 definition: Part des personnes de 25 à 64 ans ayant suivi un enseignement ou une formation, formels ou non formels,
   au cours des douze mois précédant l'enquête, d'après l'enquête européenne sur l'éducation des adultes (Eurostat
-  trng_aes_100).
+  trng_aes_100) ; la série diffusée par Eurostat inclut la formation guidée en situation de travail, que l'indicateur
+  des cibles de 2030 exclut.
 unite: '% des 25-64 ans'
 sens: haut
 type: resultat
@@ -26,16 +27,21 @@ geo: FR
 eligibilite_longlist: a_verifier
 ligne_id: estat-022793
 hors_longlist: non
-raccordement: 'a_etudier : question sur douze mois de l''enquête sur les forces de travail depuis 2022 (trng_lfs_17
-  : 36,3 % en 2022, 37,7 % en 2024), de niveau très inférieur'
+raccordement: 'a_etudier : l''indicateur des cibles (AES hors formation guidée : 48,4 % en 2016, 49,2 % en 2022
+  selon la Commission) n''est pas dans la base d''Eurostat ; la question sur douze mois de l''EFT (trng_lfs_17,
+  biennale depuis 2022, hors formation guidée) doit prendre le relais'
 incontournable: non
-recommandation: retenir_variante
-motif_recommandation: Indicateur des cibles européenne (au moins 60 %) et française (65 %) de 2030, mais quinquennal
-  (2007, 2011, 2016 et 2022, D17 ; 50,8 % en 2022), d'où son rang de variante derrière la série annuelle.
-note_pertinence: La participation sur douze mois capte les formations courtes que la fenêtre de quatre semaines
-  manque, d'où un niveau bien plus élevé (50,8 % en 2022 contre 13,3 % sur quatre semaines). L'enquête sur les forces
-  de travail pose la même question depuis 2022 mais trouve 36,3 %, écart de source à documenter avant de fixer une
-  borne. L'INSEE diffuse l'indicateur ODD 4.i2 sur les 18-64 ans de France métropolitaine (2016, 2022), en variante.
+socle_propose: oui
+recommandation: retenir
+motif_recommandation: 'Principale de la formation des adultes (D44) : participation sur douze mois de l''enquête
+  sur l''éducation des adultes, la plus proche des séries publiées de l''indicateur des cibles européenne (60 %)
+  et française (65 %) de 2030, quinquennale (2007, 2011, 2016 et 2022, D17 ; 50,8 % en 2022).'
+note_pertinence: 'La participation sur douze mois capte les formations courtes que la fenêtre de quatre semaines
+  manque (50,8 % en 2022 contre 13,3 % sur quatre semaines). La série d''Eurostat inclut la formation guidée en
+  situation de travail : l''indicateur des cibles, qui l''exclut, n''est publié que par la Commission (extraction
+  spéciale de l''AES : 48,4 % en 2016 et 49,2 % en 2022, avec rupture), et les cibles de 60 % et 65 % ne s''appliquent
+  pas telles quelles à la série retenue. L''enquête sur les forces de travail pose la question sur douze mois tous
+  les deux ans depuis 2022, hors formation guidée (36,3 % en 2022, 37,7 % en 2024), en variante.'
 variantes:
 - serie_id: trng_aes_100?freq=A&age=Y18-24&age=Y18-29&age=Y18-64&age=Y25-29&age=Y25-64&age=Y25-69&age=Y30-54&age=Y55-69&sex=T&training=FE&unit=PC&geo=FR
   source: Eurostat
@@ -87,9 +93,10 @@ variantes:
   eligible: non
 - serie_id: trng_lfs_17?freq=A&age=Y25-64&sex=T&unit=PC&geo=FR
   source: Eurostat
-  nature: même question dans l'enquête sur les forces de travail (2022, 2024 ; 37,7 % en 2024), jeu hors filtre
-    du catalogue (début 2022)
-  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 15/10/2026)
+  nature: même question dans l'enquête sur les forces de travail, hors formation guidée, biennale depuis 2022 (36,3
+    % en 2022, 37,7 % en 2024, b), relais annoncé de l'indicateur des cibles ; jeu hors filtre du catalogue (début
+    2022)
+  catalogue: eurostat_jeux_catalogue (jeu seul ; série vérifiée sur l'API Eurostat le 16/10/2026)
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -99,6 +106,15 @@ qualite:
 - serie_irreguliere_D17
 - rupture_2011
 - rupture_2022
+- inclut_formation_guidee
+- cible_mesuree_par_extraction_speciale
 - ecart_de_source_eft_aes
-notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 (modalité 25-64 ans du paquet d''âges catalogué : 35,1 %
-  en 2007, 50,5 % en 2011, 51,3 % en 2016, 50,8 % en 2022).'
+notes: 'Valeurs relues sur l''API Eurostat le 16/10/2026 (mise à jour du 27/08/2026 ; modalité 25-64 ans du paquet
+  d''âges catalogué) : 35,1 % (2007), 50,5 % (2011, b), 51,3 % (2016), 50,8 % (2022, b) ; le jeu trng_aes_100 n''a
+  pas de modalité hors formation guidée (dimension training : FE_NFE, FE, NFE). Indicateur des cibles : « extraction
+  spéciale de l''AES, hors formation guidée », retenue en septembre 2024 par le groupe des indicateurs du comité
+  de l''emploi (rapport conjoint sur l''emploi, COM(2025) 958, annexes 2 et 3, lu le 16/10/2026 : France 48,4 %
+  en 2016 et 49,2 % en 2022 avec rupture ; UE 37,4 % et 39,5 %), diffusée hors de la base d''Eurostat (bibliothèque
+  CIRCABC du tableau de bord social ; « données fournies à la demande du Cedefop »), donc non cataloguée (liste
+  de maintenance EDU-1). Le Cedefop juge les valeurs françaises de 2016 et 2022 non comparables. trng_lfs_17 relue
+  le 16/10/2026 (mise à jour du 10/09/2026) : 36,3 % (2022), 37,7 % (2024, b).'

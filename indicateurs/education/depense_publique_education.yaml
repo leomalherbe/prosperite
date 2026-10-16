@@ -27,14 +27,17 @@ ligne_id: estat-024039
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: ecarter
 motif_recommandation: 'Sens ambigu : la part du PIB consacrée à l''éducation varie avec la démographie scolaire
-  et le PIB autant qu''avec l''effort, et aucune cible officielle n''en fixe la borne (moyen budgétaire, charte
-  §3.4 et D19).'
+  et le PIB autant qu''avec l''effort (pic de 5,66 % en 2020 dû à la chute du PIB), et le seul repère existant,
+  international (Cadre d''action Éducation 2030 : au moins 4 à 6 % du PIB), est un plancher que la France dépasse
+  chaque année (5,26 % en 2023).'
 note_pertinence: Les moyens consacrés à l'éducation sont souvent cités, mais un même niveau de dépense peut produire
-  des résultats très différents. Les résultats eux-mêmes (diplômes, compétences) sont retenus dans la dimension.
-  La dépense par élève rapportée au PIB par habitant (2012-2019) est en variante ; la dépense intérieure d'éducation
-  de la DEPP, série nationale plus longue, n'est pas cataloguée.
+  des résultats très différents. Les résultats eux-mêmes (diplômes, compétences) sont retenus dans la dimension
+  ; une fiche de moyens (type moyen, D19) serait possible par cohérence avec l'effort de R&D, mais sans cible discriminante
+  pour la France. La dépense par élève rapportée au PIB par habitant (2012-2019) est en variante ; la dépense intérieure
+  d'éducation de la DEPP, série nationale plus longue, n'est pas cataloguée.
 variantes:
 - serie_id: educ_uoe_fine09?freq=A&unit=GDP_HAB&isced11=ED02-8&geo=FR
   source: Eurostat
@@ -55,6 +58,9 @@ socle_v1:
   justification: ''
 qualite:
 - indicateur_de_moyens_D19
-- valeurs_non_relues
-notes: Période et nombre de points tirés de la long-list (2012-2023, 12 points) ; valeurs non relues (liste de maintenance,
-  n° 41).
+- definition_differente_2013
+- provisoire_2019_et_2023
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (mise à jour du 15/09/2026) : 5,46 % (2012), 5,51 (2013,
+  d), 5,52, 5,47, 5,42, 5,45, 5,41, 5,35 (2019, p), 5,66 (2020), 5,42, 5,33, 5,26 (2023, p). Repère du Cadre d''action
+  Éducation 2030 (« au moins 4 à 6 % de son PIB », fiche de l''ISU-UNESCO lue le 16/10/2026), information pour les
+  bornes (D44). Liste de maintenance n° 41 soldée pour cette série.'

@@ -22,7 +22,8 @@ composantes:
   ; variable SA05, modalité 3
 - data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable SA05, modalité 4
-formule: SA05 modalité 3 + SA05 modalité 4 (parts pondérées)
+formule: (SA05 modalité 3 + SA05 modalité 4) / ensemble des répondants * 100 (parts pondérées ; non-réponses au
+  dénominateur, convention du tableau officiel de la DREES, D45)
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -40,6 +41,7 @@ rattachement_propose: 'hors long-list : question SA05 du baromètre DREES non ca
   société (D32) ; à cataloguer (maintenance SAN-3)'
 raccordement: 'non : pas d''enquête en 2003'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Opinion sur la société (D32) posée chaque année depuis 2000 sauf en 2003 (25 vagues ; 26,9
   % en 2000, 61,2 % en 2025), valeur 2025 recoupée sur le tableau officiel de la DREES (61,24 %).
@@ -58,9 +60,10 @@ qualite:
 - a_calculer
 - calcul_sur_microdonnees
 - enquete_metropole
-- recoupement_partiel_D34
 - pas_d_enquete_2003
+- non_recoupe
 notes: 'Parts calculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
   des modalités 3 et 4, dictionnaire 2025 : 1 « beaucoup amélioré », 2 « un peu amélioré », 3 « un peu détérioré
-  », 4 « beaucoup détérioré », 5 « est resté identique »). Recoupement D34 : 2025 identique au tableau croisé officiel
-  (61,24 %) ; deux autres valeurs officielles à trouver.'
+  », 4 « beaucoup détérioré », 5 « est resté identique »), recalcul identique de l''audit M06 (26,9 % en 2000, 40,3
+  % en 2019, 53,6 % en 2020, 61,2 % en 2025). Contrôle de plausibilité (D38 b) : la valeur 2025 reproduit le tableau
+  croisé officiel (61,24 %) ; les autres années ne sont pas recoupées (non_recoupe).'

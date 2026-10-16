@@ -1,80 +1,124 @@
 # sdes / dido_datasets_structure
 # URL : https://data.statistiques.developpement-durable.gouv.fr/dido/api/v1/datasets?page=1&pageSize=10
-# Vérifié le 2026-10-16T07:53:26Z — HTTP 200 — application/json; charset=utf-8 — 400000 octets lus (taille annoncée : 1648239)
+# Vérifié le 2026-10-13T14:46:25Z — HTTP 200 — application/json; charset=utf-8 — 400000 octets lus (taille annoncée : 1610769)
 
 {
   "total": 41,
   "data": [
     {
-      "id": "66684be91c2b28d362ecbf4f",
-      "title": "Fluvial : transport de marchandises",
-      "description": "Les données mises à disposition concernent le trafic fluvial de marchandises (en tonnes et tonnes-kilomètres) ventilé selon les critères suivants : région et département d’origine, région et département de destination, type de produit, type de conditionnement, type de transport, pavillon. Elles sont issues du système d’information de Voies navigables de France (VNF).",
-      "topic": "Transports",
+      "id": "6102466697d9291fc5ce2d70",
+      "title": "Données locales de consommation d'électricité et de gaz naturel et de chaleur et de froid - adresse (à partir de 2018)",
+      "description": "Données locales de consommation d'électricité, de gaz naturel et de chaleur et de froid - consommations annuelles et points de livraison d'électricité et de gaz naturel des bâtiments professionnels par grand secteur d'activité et de ceux du secteur résidentiel d'au moins 10 logements (ou avec une consommation de plus de 200 MWh pour le gaz naturel)  à la maille adresse ; consommations annuelles et points de livraison de chaleur et de froid par grand secteur d'activité  d'au moins 10 points de livraison ou ou avec une consommation de plus de 200 MWh à la maille adresse ",
+      "topic": "Énergie",
       "tags": [
-        "transport",
-        "transport-de-marchandises",
-        "transport-fluvial"
+        "chaleur",
+        "consommation-d-energie",
+        "electricite",
+        "froid",
+        "gaz-naturel"
       ],
       "license": "fr-lo",
       "frequency": "annual",
-      "frequency_date": "2026-05-01",
+      "frequency_date": "2026-09-30",
       "spatial": {
-        "zones": [],
-        "granularity": "country"
+        "zones": [
+          "country:fr"
+        ],
+        "granularity": "poi"
       },
       "temporal_coverage": {
-        "start": "2011-01-01",
-        "end": "2024-12-31"
+        "start": "2018-01-01",
+        "end": "2025-12-31"
       },
-      "caution": "Cinq fichiers de données, contenant plusieurs séries, dont certaines contiennent du Secret statistique, voir le fichier de documentation en ligne (Concepts_définitions.xlsx).\nLe fichier de documentation donne également, entre autres informations, des exemples d'utilisation des fichiers contenant plusieurs séries empilées.",
-      "created_at": "2024-06-11T13:06:49.572Z",
-      "last_modified": "2026-10-15T13:38:16.005Z",
-      "last_update": "2026-10-15T13:38:16.005Z",
+      "created_at": "2021-07-29T06:10:46.874Z",
+      "last_modified": "2026-10-12T07:03:22.332Z",
+      "last_update": "2026-10-12T07:03:22.332Z",
       "organization": {
-        "id": "60cf529207db02177dd0071f",
-        "title": "Bureau des statistiques de la mobilité et de la logistique",
-        "description": "Bureau des statistiques de la mobilité et de la logistique",
-        "acronym": "CGDD/SDES/SDST/BSML"
+        "id": "60cf529407db02177dd00721",
+        "title": "Bureau des statistiques de l'offre d'énergie",
+        "description": "Bureau des statistiques de l'offre d'énergie",
+        "acronym": "CGDD/SDES/SDSE/BSOE"
       },
-      "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=dataset&datasetId=66684be91c2b28d362ecbf4f",
-      "views": 2105,
+      "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=dataset&datasetId=6102466697d9291fc5ce2d70",
+      "views": 58542,
       "attachments": [
         {
-          "rid": "92566cbe-c1f6-4f66-bee5-fb78e22b311f",
+          "rid": "61d1bf0c-b549-4a9b-bab7-74c5ba8976d0",
           "type": "documentation",
-          "title": "Définitions, concepts",
-          "description": "Définitions, concepts, nomenclatures, informations sur les fichiers et données, précautions, ...",
-          "published": "2024-06-10T22:00:00.000Z",
-          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/92566cbe-c1f6-4f66-bee5-fb78e22b311f",
-          "created_at": "2024-06-11T13:22:15.539Z",
-          "last_modified": "2026-06-11T07:14:33.985Z",
-          "downloads": 725
+          "title": "Liste des variables - chaleur et froid",
+          "description": "Détail des variables - fichiers chaleur et froid",
+          "published": "2023-10-02T16:14:27.000Z",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/61d1bf0c-b549-4a9b-bab7-74c5ba8976d0",
+          "created_at": "2023-10-02T16:14:27.824Z",
+          "last_modified": "2024-10-02T07:05:28.139Z",
+          "downloads": 1001
+        },
+        {
+          "rid": "225da583-3f5b-4253-8333-ef1715b65749",
+          "type": "documentation",
+          "title": "Liste des variables - électricité",
+          "description": "Détail des variables - fichiers électricité",
+          "published": "2023-10-02T16:14:34.000Z",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/225da583-3f5b-4253-8333-ef1715b65749",
+          "created_at": "2023-10-02T16:14:34.596Z",
+          "last_modified": "2024-10-02T07:04:11.444Z",
+          "downloads": 1336
+        },
+        {
+          "rid": "3f440b90-7ba5-4d28-9f17-2cbe240ec9c1",
+          "type": "documentation",
+          "title": "Liste des variables - gaz",
+          "description": "Détail des variables - fichiers gaz",
+          "published": "2023-10-02T16:14:35.000Z",
+          "url": "https://data.statistiques.developpement-durable.gouv.fr/dido/api/files/3f440b90-7ba5-4d28-9f17-2cbe240ec9c1",
+          "created_at": "2023-10-02T16:14:35.581Z",
+          "last_modified": "2024-10-02T07:03:51.283Z",
+          "downloads": 1171
         }
       ],
       "datafiles": [
         {
-          "rid": "ad270003-70bc-4e45-a37c-06f36dcc56a5",
-          "title": "Fluvial : transport de marchandises par année",
-          "description": "Données sur le trafic fluvial intérieur de marchandises (en tonnes, en tonnes-kilomètres, en EVP et EVP-kilomètres) par année, selon les ventilations suivantes :\n- total ;\n- par type de transport ;\n- par type de conditionnement ;\n- par type de produit ;\n- par type de pavillon.",
-          "created_at": "2024-06-11T13:11:10.105Z",
-          "last_modified": "2026-10-15T13:36:36.017Z",
-          "published": "2025-05-20T22:00:00.000Z",
+          "rid": "a0f04eb7-acef-4a25-84a3-fb640a8255ae",
+          "title": "Données de consommation et de points de livraison d'énergie à la maille adresse - électricité - année  2018",
+          "description": "Consommations annuelles et nombre de points de livraison d'électricité des bâtiments professionnels par secteur d'activité (agriculture, industrie, tertiaire, résidentiel et non affecté) ou selon le code NAF à 2 niveaux selon les cas et de ceux du secteur résidentiel d'au moins 10 logements à la maille adresse.",
+          "created_at": "2025-09-30T14:05:36.246Z",
+          "last_modified": "2025-09-30T15:53:20.802Z",
+          "published": "2025-09-29T22:00:00.000Z",
           "temporal_coverage": {
-            "start": "2011-01-01",
-            "end": "2024-12-31"
+            "start": "2018-01-01",
+            "end": "2018-12-31"
           },
-          "legal_notice": "Voies navigables de France (VNF), calculs Sdes",
-          "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=ad270003-70bc-4e45-a37c-06f36dcc56a5",
+          "legal_notice": "SDES",
+          "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=a0f04eb7-acef-4a25-84a3-fb640a8255ae",
           "millesimes": [
             {
-              "millesime": "2025-06",
-              "date_diffusion": "2026-10-15T01:36:00.000Z",
-              "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=ad270003-70bc-4e45-a37c-06f36dcc56a5&datafileMillesime=2025-06",
-              "rows": 630,
+              "millesime": "2018-09",
+              "date_diffusion": "2025-09-30T14:03:47.000Z",
+              "weburl": "https://www.statistiques.developpement-durable.gouv.fr/catalogue?page=datafile&datafileRid=a0f04eb7-acef-4a25-84a3-fb640a8255ae&datafileMillesime=2018-09",
+              "rows": 558962,
               "columns": [
                 {
+                  "name": "OPERATEUR",
+                  "description": "Nom de l'opérateur",
+                  "unit": "n/a",
+                  "type": "string",
+                  "filters": [
+                    "contains",
+                    "eq",
+                    "ne",
+                    "startsWith",
+                    "endsWith",
+                    "in",
+                    "nin"
+                  ],
+                  "availableValues": [
+                    "Enedis",
+                    "RTE"
+                  ]
+                },
+                {
                   "name": "ANNEE",
-                  "description": "ANNEE D'EXERCICE",
+                  "description": "Millésime des données",
                   "unit": "n/a",
                   "type": "year",
                   "filters": [
@@ -88,60 +132,5 @@
                     "in",
                     "nin"
                   ],
-                  "availableValues": []
-                },
-                {
-                  "name": "MOIS",
-                  "description": "MOIS D'EXERCICE",
-                  "unit": "n/a",
-                  "type": "yearmonth",
-                  "filters": [
-                    "contains",
-                    "eq",
-                    "ne",
-                    "gt",
-                    "gte",
-                    "lt",
-                    "lte",
-                    "in",
-                    "nin"
-                  ],
-                  "availableValues": []
-                },
-                {
-                  "name": "TYPE_CODE",
-                  "description": "TYPE DE TRANSPORT - Code",
-                  "unit": "n/a",
-                  "type": "string",
-                  "filters": [
-                    "in",
-                    "nin"
-                  ],
                   "availableValues": [
-                    "",
-                    "1",
-                    "2",
-                    "3",
-                    "4"
-                  ]
-                },
-                {
-                  "name": "TYPE_LIBELLE",
-                  "description": "TYPE DE TRANSPORT - Libellé",
-                  "unit": "n/a",
-                  "type": "string",
-                  "filters": [
-                    "in",
-                    "nin"
-                  ],
-                  "availableValues": [
-                    "",
-                    "1_National",
-                    "2_International Entrant",
-                    "3_International Sortant",
-                    "4_Transit"
-                  ]
-                },
-                {
-                  "name": "COND_CODE",
-            
+       

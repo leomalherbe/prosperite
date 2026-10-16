@@ -1,318 +1,317 @@
 # depp / ods_catalogue_export
 # URL : https://data.education.gouv.fr/api/explore/v2.1/catalog/exports/csv?delimiter=%3B
-# Vérifié le 2026-10-16T07:52:53Z — HTTP 200 — text/csv; charset=utf-8 — 737959 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:45:55Z — HTTP 200 — text/csv; charset=utf-8 — 737714 octets lus (taille annoncée : inconnue)
 
-Colonnes : ['default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.modified', 'default.publisher', 'default.references', 'default.attributions', 'default.update_frequency', 'default.bbox', 'default.data_processed', 'default.federated', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.geometry_types', 'default.metadata_languages', 'default.metadata_processed', 'default.modified_updates_on_data_change', 'default.modified_updates_on_metadata_change', 'default.parent_domain', 'default.records_count', 'default.shared_catalog', 'default.source_dataset', 'default.source_domain', 'default.source_domain_address', 'default.source_domain_title', 'default.territory', 'default.timezone', 'dcat.accessRights', 'dcat.accrualperiodicity', 'dcat.conforms_to', 'dcat.contact_email', 'dcat.contact_name', 'dcat.contributor', 'dcat.created', 'dcat.creator', 'dcat.dataquality', 'dcat.granularity', 'dcat.issued', 'dcat.publisher_type', 'dcat.relation', 'dcat.spatial', 'dcat.temporal', 'dcat.temporal_coverage_end', 'dcat.temporal_coverage_start', 'metadonnees-complementaires.date-observation', 'metadonnees-complementaires.periode-donnees', 'metadonnees-complementaires.champ', 'metadonnees-complementaires.couverture-geographique', 'metadonnees-complementaires.unite-statistique', 'metadonnees-complementaires.secret-statistique', 'metadonnees-complementaires.source', 'datasetid']
-311 lignes ; 311 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
+Colonnes : ['dcat.created', 'dcat.issued', 'dcat.creator', 'dcat.contributor', 'dcat.contact_name', 'dcat.contact_email', 'dcat.accrualperiodicity', 'dcat.spatial', 'dcat.temporal', 'dcat.granularity', 'dcat.dataquality', 'dcat.publisher_type', 'dcat.conforms_to', 'dcat.temporal_coverage_start', 'dcat.temporal_coverage_end', 'dcat.accessRights', 'dcat.relation', 'default.title', 'default.description', 'default.theme', 'default.keyword', 'default.license', 'default.license_url', 'default.language', 'default.metadata_languages', 'default.timezone', 'default.modified', 'default.modified_updates_on_metadata_change', 'default.modified_updates_on_data_change', 'default.data_processed', 'default.metadata_processed', 'default.geographic_reference', 'default.geographic_reference_auto', 'default.territory', 'default.geometry_types', 'default.bbox', 'default.publisher', 'default.references', 'default.records_count', 'default.attributions', 'default.source_domain', 'default.source_domain_title', 'default.source_domain_address', 'default.source_dataset', 'default.shared_catalog', 'default.federated', 'default.parent_domain', 'default.update_frequency', 'metadonnees-complementaires.date-observation', 'metadonnees-complementaires.periode-donnees', 'metadonnees-complementaires.champ', 'metadonnees-complementaires.couverture-geographique', 'metadonnees-complementaires.unite-statistique', 'metadonnees-complementaires.secret-statistique', 'metadonnees-complementaires.source', 'datasetid']
+310 lignes ; 310 combinaisons distinctes de ['datasetid', 'default.title', 'default.modified', 'default.records_count', 'default.publisher'] :
 datasetid	default.title	default.modified	default.records_count	default.publisher
-paris-2024-zones-de-depose-reprise-spectateurs	Paris 2024 - Zones de dépose reprise spectateurs	2024-09-11T15:02:28+00:00	184	Ministère des Sports
-fr-en-dataes-types-d-equipement	Data ES - Types d'équipement	2023-09-04T12:16:31+00:00	185	Ministère des Sports
-fr-en-heures-annuelles-enseignement-timss	Étude TIMSS : heures annuelles d'enseignement	2026-06-23T10:39:06.515000+00:00	6	DEPP – Ministère chargé de l’éducation nationale
 paris-2024-lignes-para-dds	Paris 2024 - Lignes PARA DDS	2024-10-01T10:01:34+00:00	110	Ministère des Sports
-paris-2024-centres-de-preparation-aux-jeux	Paris 2024 - Centres de préparation aux Jeux	2024-02-05T10:50:45+00:00	3000	Ministère des Sports
+fr-en-tne_suivi_deploiement_solutions_numeriques_preparation_classe_ecole_inclusive_dept	TNE - Suivi du déploiement des solutions numériques de préparation de la classe et pour l'école inclusive par département	2026-02-05T23:11:52.441000+00:00	12	Réseau Canopé
+paris-2024-entrees-ceremonie-douverture-paralympique	Paris 2024 - Entrées Cérémonie d'ouverture Paralympique	2024-08-12T13:21:25+00:00	3	Ministère des Sports
+games_map_events_fr	Carte des Jeux - Evènements (FR)	2024-10-04T15:00:19+00:00	678	Ministère des Sports
 retours-formulaire-votre-avis-themes-attendus	Retours formulaire - votre avis - Thèmes attendus	2023-04-04T11:43:34+00:00	0	
+paris-2024-lignes-tc-cer	Paris 2024 - Lignes TC CER	2024-10-01T10:01:20+00:00	31	Ministère des Sports
+paris24-calendrier-des-sessions-version-simplifiee	Paris 2024 - Calendrier des sessions [Version simplifiée]	2024-07-30T15:00:00+00:00	1044	Ministère des Sports
+paris-2024-sites-de-competition	Paris 2024 - Sites de compétition	2024-09-10T17:11:16+00:00	63	Ministère des Sports
+paris-2024-parkings-pfr-taxi-ts	Paris 2024 - Parkings PFR + taxi + TS	2024-09-11T15:04:20+00:00	230	Ministère des Sports
+fr-en-dataes-activites	Data ES - Liste des Activités	2023-09-04T12:15:30+00:00	245	Ministère des Sports
+fr-en-capytale_goals	Capytale : objectifs Matomo	2026-10-07T13:29:48+00:00	22214	
+fr-en-gar-accedants_academie2024-2025	Accédants au GAR par académie 2024-2025	2026-03-12T13:00:29+00:00	31	DNE - Ministère de l'Education Nationale DNE-SN1
+retours-formulaire-votre-avis-copie	Retours formulaire - votre avis - Analyse	2023-03-01T09:09:46+00:00	176	
+fr-en-liste-aptitude-enseignants-1er-et-2nd-degre-public	Liste d’aptitude des enseignants du 1er et du 2nd degré public	2026-01-29T18:43:48.867000+00:00	5	DGRH - Ministère de l'éducation nationale
+paris-2024-lignes-chc	Paris 2024 - Lignes CHC	2024-10-01T10:01:57+00:00	338	Ministère des Sports
+fr-en-belc-participants-par-pays	BELC - participants par pays	2026-01-29T19:46:23.188000+00:00	302	France Éducation international
+fr-en-concours_recrutement_personnel_enseignant_second_degre_prive	Concours de recrutement de personnels enseignants du 2nd degré privé	2026-01-29T18:27:20.936000+00:00	85	DGRH - Ministère de l'éducation nationale
+paris-2024-lignes-oly-dds	Paris 2024 - Lignes OLY DDS	2024-10-01T10:02:01+00:00	314	Ministère des Sports
+fr-en-tne_suivi_deploiement_solutions_numeriques_1d_dept	TNE - Suivi du déploiement des solutions numériques 1er degré par département	2026-01-29T20:19:51.619000+00:00	12	Réseau Canopé
+fr-en-concours_personnel_enseignant_premier_degre_prive	Concours de recrutement de personnels enseignants du 1er degré privé	2026-01-29T18:27:09.285000+00:00	54	DGRH - Ministère de l'éducation nationale
+fr-en-eleves-par-niveaux-timss	Étude TIMSS : proportion d'élèves par niveau	2016-12-08T08:43:32+00:00	24	DEPP – Ministère chargé de l’éducation nationale
+fr-en-capytale-nombre-de-visite	Capytale nombre de visites sur la plateforme	2026-10-12T22:05:06.287000+00:00	36	DNE - Ministère de l'Education Nationale - Académie de Paris
+fr-en-gar-affectations_academie2024-2025	Données d’affectation des ressources numériques éducatives dans le GAR par académie 2024-2025	2026-03-12T14:35:53+00:00	31	DNE - Ministère de l'Education Nationale DNE-SN1
+paris-2024-zones-de-depose-reprise-spectateurs	Paris 2024 - Zones de dépose reprise spectateurs	2024-09-11T15:02:28+00:00	184	Ministère des Sports
+fr-en-evaluations_nationales_ce1_academie	Les évaluations nationales Repères CE1 par académie	2026-06-02T07:37:25.677000+00:00	12462	DEPP – Ministère chargé de l’éducation nationale
 fr-en-part_vehicules_faibles_emissions	Part des véhicules à faibles émissions dans le renouvellement du parc du Ministère de l’éducation nationale et de la Jeunesse	2026-01-29T18:59:18.710000+00:00	88	SAAM-Ministère de l'Éducation nationale
+donnees-ips-erea	dataviz4	2010-01-01T09:41:02+00:00	706	DEPP – Ministère en charge de l’éducation nationale
 fr-en-evaluations_nationales_2degt_departement	Résultats consolidés aux évaluations nationales de début de seconde générale et technologique par département	2026-06-23T09:53:37.850000+00:00	4284	DEPP – Ministère chargé de l’éducation nationale
 paris-2024-lignes-para-tf	Paris 2024 - Lignes PARA TF	2024-10-01T10:01:39+00:00	93	Ministère des Sports
-paris-2024-entrees-ceremonie-douverture-paralympique	Paris 2024 - Entrées Cérémonie d'ouverture Paralympique	2024-08-12T13:21:25+00:00	3	Ministère des Sports
-fr-en-cap_specialite_sexe_statut_departement	Résultats par spécialité, sexe, statut et département au CAP	2026-06-09T08:22:03.208000+00:00	35167	DEPP – Ministère chargé de l’éducation nationale
-fr-en-concours_recrutement_second_degre_public	Concours de recrutement de personnels enseignants, d'éducation et d'orientation du 2nd degré public	2026-01-29T18:27:19.785000+00:00	105	DGRH - Ministère de l'éducation nationale
 paris24-calendrier-de-sessions-version-simplifiee-eng	Paris 2024 - Calendrier des sessions [Version simplifiée ENG]	2024-07-30T16:00:00+00:00	1044	Ministère des Sports
-fr-en-iva-classe-sortie	IVA situation en fonction de la classe de sortie – Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	72	DEPP – Ministère chargé de l’éducation nationale
-fr-en-eleves-par-niveaux-timss	Étude TIMSS : proportion d'élèves par niveau	2016-12-08T08:43:32+00:00	24	DEPP – Ministère chargé de l’éducation nationale
-paris-2024-lignes-para-ta	Paris 2024 - Lignes PARA TA	2024-10-01T10:01:12+00:00	119	Ministère des Sports
-paris-2024-lignes-tc-cer	Paris 2024 - Lignes TC CER	2024-10-01T10:01:20+00:00	31	Ministère des Sports
-fr-en-programmes-mobilite-enseignante-fei	Programmes de mobilité enseignante gérés par France Éducation international	2026-01-29T19:46:28.528000+00:00	35	France Éducation international
-fr-en-gar-accedants_academie2024-2025	Accédants au GAR par académie 2024-2025	2026-03-12T13:00:29+00:00	31	DNE - Ministère de l'Education Nationale DNE-SN1
-fr-en-indicateurs_personnels_etablissements1d-numerique	Les personnels dans les établissements du premier degré - copie pour dataviz	2026-10-15T22:02:12.511000+00:00	94584	DEPP – Ministère chargé de l’éducation nationale
-fr-en-objectifs_europeens_education_formation	Les objectifs européens en éducation et en formation	2026-06-23T11:36:55.502000+00:00	1009	DEPP – Ministère chargé de l’éducation nationale
-fr-en-structures-retour-ecole	Les structures de retour à l'école	2026-02-05T23:15:47.984000+00:00	61	DGESCO - Ministère de l'éducation nationale
-fr-en-capytale-nombre-de-visite	Capytale nombre de visites sur la plateforme	2026-10-15T22:15:02.045000+00:00	36	DNE - Ministère de l'Education Nationale - Académie de Paris
-retours-formulaire-votre-avis-copie	Retours formulaire - votre avis - Analyse	2023-03-01T09:09:46+00:00	176	
-fr-en-evaluations_nationales_ce1_academie	Les évaluations nationales Repères CE1 par académie	2026-06-02T07:37:25.677000+00:00	12462	DEPP – Ministère chargé de l’éducation nationale
-fr-en-remplacement-premier-degre	Le remplacement des professeurs absents dans l'enseignement public du premier degré	2024-11-20T10:50:07+00:00	100	DGRH - Ministère de l'éducation nationale
-lycees_prefigurateurs_prepa2nde	Lycées avec classes préparatoires à la classe de seconde	2026-01-29T19:20:16.602000+00:00	110	DGESCO - Ministère de l'éducation nationale
-fr-en-concours_personnel_enseignant_premier_degre_prive	Concours de recrutement de personnels enseignants du 1er degré privé	2026-01-29T18:27:09.285000+00:00	54	DGRH - Ministère de l'éducation nationale
-fr-en-sante-enfants-grande-section-et-cm2	La santé des enfants en grande section de maternelle et en CM2	2026-01-29T18:25:51.308000+00:00	196	Ministère de l'Éducation nationale
-games_map_events_fr	Carte des Jeux - Evènements (FR)	2024-10-04T15:00:19+00:00	678	Ministère des Sports
 fr-en-evaluations_nationales_2de_pro_academie	Résultats consolidés aux évaluations nationales de début de seconde professionnelle par académie	2026-06-23T10:02:03.704000+00:00	1302	DEPP – Ministère chargé de l’éducation nationale
-paris24-calendrier-des-sessions-version-simplifiee	Paris 2024 - Calendrier des sessions [Version simplifiée]	2024-07-30T15:00:00+00:00	1044	Ministère des Sports
-paris-2024-lignes-oly-dds	Paris 2024 - Lignes OLY DDS	2024-10-01T10:02:01+00:00	314	Ministère des Sports
-challenge-cyber-passe-ton-hack-d-abord	Challenge Cyber "Passe ton hack d'abord"	2026-10-15T22:05:06.778000+00:00	135	DGESCO - Ministère de l'éducation nationale
+challenge-cyber-passe-ton-hack-d-abord	Challenge Cyber "Passe ton hack d'abord"	2026-10-12T22:05:05.887000+00:00	119	DGESCO - Ministère de l'éducation nationale
 fr-en-hybridation_lycees_par_lycee	Hybridation de l’enseignement en lycée - par lycée	2026-01-29T19:46:21.324000+00:00	1713	DNE - Ministère de l'Education Nationale
-fr-en-effectifs-etudiants-cpge-par-annee-et-par-sexe	Effectifs d’étudiants en CPGE par année et par sexe	2026-01-29T18:25:45.806000+00:00	144	DNE - Ministère de l'Education Nationale
-fr-en-tne_suivi_deploiement_solutions_numeriques_1d_dept	TNE - Suivi du déploiement des solutions numériques 1er degré par département	2026-01-29T20:19:51.619000+00:00	12	Réseau Canopé
-fr-en-reseau-education-prioritaire-colleges	Réseau d'éducation prioritaire des collèges	2018-10-01T11:35:09+00:00	5610	Ministère de l'Éducation nationale
-fr-en-concours_recrutement_personnel_enseignant_second_degre_prive	Concours de recrutement de personnels enseignants du 2nd degré privé	2026-01-29T18:27:20.936000+00:00	85	DGRH - Ministère de l'éducation nationale
-fr-en-demandes-decisions-orientation-fin-3e	Demandes et décisions d'orientation en fin de 3ème (2015-2019)	2026-01-29T18:44:24.702000+00:00	155	DGESCO - Ministère de l'éducation nationale
-fr-en-origine-scolaire-etudiants-cpge	Origine scolaire des étudiants entrant en première année de CPGE	2018-03-23T16:55:15+00:00	36	DNE - Ministère de l'Education Nationale
-fr-en-seances-conseil-superieur-education	Séances du Conseil Supérieur de l'Éducation	2026-01-29T18:30:57.577000+00:00	55	Direction des affaires juridiques - Ministère de l'Éducation nationale
-fr-en-programmes-enseignement-premier-degre	Programmes d'enseignement du premier degré	2026-01-29T18:29:34.597000+00:00	10	DGESCO - Ministère de l'éducation nationale
-fr-en-tne_suivi_deploiement_solutions_numeriques_preparation_classe_ecole_inclusive_dept	TNE - Suivi du déploiement des solutions numériques de préparation de la classe et pour l'école inclusive par département	2026-02-05T23:11:52.441000+00:00	12	Réseau Canopé
-fr-en-dataes-activites	Data ES - Liste des Activités	2023-09-04T12:15:30+00:00	245	Ministère des Sports
-fr-en-livre-or-1914-1918	Première Guerre Mondiale 1914-1918 "Livre d’or des personnels de l’instruction publique et des Beaux-arts"	2026-01-29T18:29:22.567000+00:00	17144	DGESCO - Ministère de l'éducation nationale
-fr-en-belc-participants-par-pays	BELC - participants par pays	2026-01-29T19:46:23.188000+00:00	302	France Éducation international
-fr-en-dix-plus-hautes-remunerations	Dix plus hautes rémunérations	2026-07-07T14:30:51.605000+00:00	8	DAF - Ministère de l'Éducation nationale
-paris-2024-psa-snm	Paris 2024 - PSA spectateurs	2024-10-04T00:00:02+00:00	204	Ministère des Sports
-paris-2024-liste-athletes-engages-olypara	Paris 2024 - Liste des athlètes engagés aux Jeux Olympiques et Paralympiques	2024-10-30T14:51:36+00:00	12625	Ministère des Sports
-fr-en-reussite-au-baccalaureat-origine-sociale	Réussite au baccalauréat selon l’origine sociale	2026-06-23T10:15:59.061000+00:00	348	DEPP – Ministère chargé de l’éducation nationale
-fr-en-evaluations_nationales_6eme_departement	Résultats aux évaluations nationales de début de sixième par département	2026-06-12T14:13:34.980000+00:00	5508	DEPP – Ministère chargé de l’éducation nationale
-fr-en-cites_scolaires	Liste des cités scolaires	2026-10-16T04:00:03.749000+00:00	1742	Ministère de l'Éducation nationale
-fr-en-liste-aptitude-enseignants-1er-et-2nd-degre-public	Liste d’aptitude des enseignants du 1er et du 2nd degré public	2026-01-29T18:43:48.867000+00:00	5	DGRH - Ministère de l'éducation nationale
-fr-en-ips-erea-ap2022	Indices de position sociale des EREA (à partir de 2022)	2026-08-03T08:34:49.986000+00:00	310	DEPP – Ministère chargé de l’éducation nationale
+fr-en-remplacement-premier-degre	Le remplacement des professeurs absents dans l'enseignement public du premier degré	2024-11-20T10:50:07+00:00	100	DGRH - Ministère de l'éducation nationale
+fr-en-ipa-emploi-groupe-specialite	IPA taux d'emploi en fonction du groupe de spécialité – Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	537	DEPP – Ministère chargé de l’éducation nationale
+fr-en-espaces-services-jeunesse	Espaces services jeunesse	2025-09-09T09:57:33+00:00	17	DGESCO - Ministère de l'éducation nationale
+fr-en-tne_personnels_formes_par_departement_secteur_type_etablissement	TNE - Nombre de participants aux formations par département, secteur et type d'établissement	2026-01-29T20:07:58.098000+00:00	460	Réseau Canopé
+paris-2024-voies-olympiques-et-paralympiques	Paris 2024 - Voies Olympiques et Paralympiques	2024-10-01T10:01:27+00:00	2000	Ministère des Sports
+fr-en-magistere-inscrits-par-annee-scolaire-plateforme-academique	Plateforme de formation Magistère - Inscrits scolaire sur les plateformes académiques par année	2026-05-18T17:27:53+00:00	1105	DNE - Ministère de l'Education Nationale DNE-TN1
 fr-en-evaluations_nationales_2degt_region	Résultats consolidés aux évaluations nationales de début de seconde générale et technologique par région académique	2026-06-23T09:55:54.585000+00:00	798	DEPP – Ministère chargé de l’éducation nationale
-paris-2024-territoires-labellises-terre-de-jeux	Paris 2024 - Territoires labellisés "Terre de Jeux"	2024-10-01T13:37:38+00:00	4513	Ministère des Sports
-fr-en-baccalaureat-par-departement	Réussite au baccalauréat par département	2026-06-23T10:13:56.337000+00:00	1818	DEPP – Ministère chargé de l’éducation nationale
-fr-en-complements-programmes-second-degre	Compléments aux programmes d'enseignement du second degré	2026-01-29T18:29:47.371000+00:00	14	DGESCO - Ministère de l'éducation nationale
-fr-en-aap-snee-ecoles	Appel à projet Socle Numérique dans les Ecoles Elémentaires - par école	2026-01-29T19:44:38.284000+00:00	12624	DNE - Ministère de l'Education Nationale
+fr-en-moyens_enseignants_2d_prive	Indicateurs d'encadrement H/E et E/S à la rentrée dans le secteur privé sous contrat	2026-06-09T08:19:21.532000+00:00	12350	DEPP – Ministère chargé de l’éducation nationale
+fr-en-reseau-education-prioritaire-colleges	Réseau d'éducation prioritaire des collèges	2018-10-01T11:35:09+00:00	5610	Ministère de l'Éducation nationale
+fr-en-demandes-decisions-orientation-fin-3e	Demandes et décisions d'orientation en fin de 3ème (2015-2019)	2026-01-29T18:44:24.702000+00:00	155	DGESCO - Ministère de l'éducation nationale
+fr-en-iva-classe-sortie	IVA situation en fonction de la classe de sortie – Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	72	DEPP – Ministère chargé de l’éducation nationale
+fr-en-aap-snee-collectivites	Appel à projet Socle Numérique dans les Ecoles Elémentaires - par collectivité	2024-11-27T16:33:25+00:00	6870	
+fr-en-seances-conseil-superieur-education	Séances du Conseil Supérieur de l'Éducation	2026-01-29T18:30:57.577000+00:00	55	Direction des affaires juridiques - Ministère de l'Éducation nationale
+paris-2024-psa-snm	Paris 2024 - PSA spectateurs	2024-10-04T00:00:02+00:00	204	Ministère des Sports
 enjeux-cyber-operation-cactus	Enjeux Cyber Opération Cactus	2026-10-12T22:00:04.475000+00:00	684	DGESCO - Ministère de l'éducation nationale
 fr-en-effectifs-specialites-doublettes-terminale-generale	Effectifs dans les enseignements de spécialités en Terminale générale	2026-07-27T09:51:28.645000+00:00	13548	DEPP – Ministère chargé de l’éducation nationale
 fr-en-organisation-du-temps-scolaire	Organisation du temps scolaire	2026-01-29T18:29:17.843000+00:00	113293	DGESCO - Ministère de l'éducation nationale
+fr-en-evaluations_nationales_6eme_departement	Résultats aux évaluations nationales de début de sixième par département	2026-06-12T14:13:34.980000+00:00	5508	DEPP – Ministère chargé de l’éducation nationale
 paris-2024-evenements-olympiade-culturelle	Paris 2024 - Événements Olympiade Culturelle	2024-09-15T19:15:27+00:00	4316	Ministère des Sports
 fr-en-pix_resultats_des_campagnes_de_rentree_par_eple	Pix - Résultats par palier des parcours de rentrée pour les élèves des collèges et lycées	2026-09-07T15:52:15.706000+00:00	334050	Groupement d’intérêt public « Pix »
-fr-en-matomo_visiteurs	matomo visiteurs	2026-03-18T14:01:39+00:00	122	
-fr-en-matomo_regions	matomo régions	2026-03-18T13:26:06+00:00	4847	
 fr-en-cnr-base-nefle	Ecoles et établissements engagés dans la démarche du CNR Education	2026-01-29T19:04:09.044000+00:00	6024	DGESCO - Ministère de l'éducation nationale
-apb-voeux-de-poursuite-detude-et-admissions	APB Voeux de poursuite d'étude et admissions	2019-02-08T13:53:51+00:00	17753	Ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation > Sous-direction des Systèmes d'information et études statistiques
-fr-en-ips-ecoles-ap2022	Indices de position sociale des écoles (à partir de 2022)	2026-08-07T07:34:04.835000+00:00	97080	DEPP – Ministère chargé de l’éducation nationale
 fr-en-inserjeunes-cfa-niveau_formation	Inserjeunes Apprentissage par centre de formation d'apprentis (CFA) et niveau de formation CAP à BTS	2026-07-20T07:33:39.023000+00:00	32953	DEPP – Ministère chargé de l’éducation nationale
-fr-en-indice_eloignement_lycee_ap2020	Indice d'éloignement des lycées	2026-07-24T10:05:58.205000+00:00	24883	DEPP – Ministère chargé de l’éducation nationale
+fr-en-reussite-au-baccalaureat-origine-sociale	Réussite au baccalauréat selon l’origine sociale	2026-06-23T10:15:59.061000+00:00	348	DEPP – Ministère chargé de l’éducation nationale
 fr-en-dnb-par-etablissement	Diplôme national du brevet par établissement	2026-09-23T12:10:53.533000+00:00	139580	DEPP – Ministère chargé de l’éducation nationale
+fr-en-heures-annuelles-enseignement-timss	Étude TIMSS : heures annuelles d'enseignement	2026-06-23T10:39:06.515000+00:00	6	DEPP – Ministère chargé de l’éducation nationale
 paris-2024-parkings-accredites	Paris 2024 - Parkings accrédités	2024-10-01T10:02:11+00:00	460	Ministère des Sports
+fr-en-dataes-types-d-equipement	Data ES - Types d'équipement	2023-09-04T12:16:31+00:00	185	Ministère des Sports
 cartes-des-sites-poi-en	Cartes des sites - Venues POI (EN)	2024-10-04T15:00:46+00:00	3420	Ministère des Sports
-fr-en-resultats-detailles-au-dnb	Résultats détaillés au DNB	2026-06-23T10:09:38.097000+00:00	5544	DEPP – Ministère chargé de l’éducation nationale
+fr-en-ips-ecoles-ap2022	Indices de position sociale des écoles (à partir de 2022)	2026-08-07T07:34:04.835000+00:00	97080	DEPP – Ministère chargé de l’éducation nationale
+apb-voeux-de-poursuite-detude-et-admissions	APB Voeux de poursuite d'étude et admissions	2019-02-08T13:53:51+00:00	17753	Ministère de l'Enseignement supérieur, de la Recherche et de l'Innovation > Sous-direction des Systèmes d'information et études statistiques
+fr-en-indice_eloignement_lycee_ap2020	Indice d'éloignement des lycées	2026-07-24T10:05:58.205000+00:00	24883	DEPP – Ministère chargé de l’éducation nationale
 fr-en-inserjeunes-lycee_pro-agri-formation-fine	Inserjeunes Voie professionnelle scolaire agricole par établissement relevant du ministère de l'agriculture et formation fine	2026-07-20T08:42:15.876000+00:00	4654	DEPP – Ministère chargé de l’éducation nationale
 fr-en-evaluations_nationales_6eme_academie	Résultats aux évaluations nationales de début de sixième par académie	2026-06-12T14:12:56.391000+00:00	1674	DEPP – Ministère chargé de l’éducation nationale
-fr-en-capytale-usages-academiques-douzederniersmois	Capytale - Usages académiques	2026-10-15T22:15:37.197000+00:00	1129	DNE - Ministère de l'Education Nationale - Académie de Paris
-fr-en-label-egalite-fille-garcon	Label Egalité Filles-Garçons	2026-01-29T19:47:30.053000+00:00	1678	DGESCO - Ministère de l'éducation nationale
 recensement-operation-cactus	Recensement Opération Cactus	2026-10-12T22:00:09.849000+00:00	905	DGESCO - Ministère de l'éducation nationale
+fr-en-cites_scolaires	Liste des cités scolaires	2026-10-13T04:00:04.875000+00:00	1742	Ministère de l'Éducation nationale
+paris-2024-centres-de-preparation-aux-jeux	Paris 2024 - Centres de préparation aux Jeux	2024-02-05T10:50:45+00:00	3000	Ministère des Sports
+fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre	Adresse et géolocalisation des établissements d'enseignement des premier et second degrés	2026-10-13T05:00:59.706000+00:00	63558	DEPP – Ministère chargé de l’éducation nationale
+fr-en-indicateurs_personnels_etablissements1d-numerique	Les personnels dans les établissements du premier degré - copie pour dataviz	2026-10-12T22:02:24.460000+00:00	94584	DEPP – Ministère chargé de l’éducation nationale
+fr-en-resultats-detailles-au-dnb	Résultats détaillés au DNB	2026-06-23T10:09:38.097000+00:00	5544	DEPP – Ministère chargé de l’éducation nationale
+fr-en-label-egalite-fille-garcon	Label Egalité Filles-Garçons	2026-01-29T19:47:30.053000+00:00	1678	DGESCO - Ministère de l'éducation nationale
+fr-en-objectifs_europeens_education_formation	Les objectifs européens en éducation et en formation	2026-06-23T11:36:55.502000+00:00	1009	DEPP – Ministère chargé de l’éducation nationale
 fr-en-taille-moyenne-classes-premier-degre	Taille moyenne des classes dans le premier degré	2026-06-16T07:12:44+00:00	47148	DEPP – Ministère chargé de l’éducation nationale
 fr-en-pix_certification_pix_inscription_et_passation_par_eple	Pix - Nombre de sessions et certifications de profil Pix par établissement	2026-07-23T17:24:07.932000+00:00	43479	Groupement d’intérêt public « Pix »
+fr-en-capytale-usages-academiques-douzederniersmois	Capytale - Usages académiques	2026-10-12T22:15:34.276000+00:00	1129	DNE - Ministère de l'Education Nationale - Académie de Paris
 fr-en-dnma-par-uai-profils	DNMA - Métriques par UAI croisées par les profils	2026-10-07T22:03:14.233000+00:00	4000500	DNE - Ministère de l'Education Nationale
-fr-en-adresse-et-geolocalisation-etablissements-premier-et-second-degre	Adresse et géolocalisation des établissements d'enseignement des premier et second degrés	2026-10-16T05:00:58.342000+00:00	63564	DEPP – Ministère chargé de l’éducation nationale
-parcoursup-2021-2024-propositions-d-admission-dans-l-enseignement-superieur-des-eleves-de-terminale	Parcoursup 2021-2024 : propositions d'admission dans l'enseignement supérieur des élèves de terminale diplômés du baccalauréat général selon leurs enseignements de spécialité	2025-04-01T13:11:57+00:00	17420	
-fr-en-inserjeunes-lycee_pro	Inserjeunes Voie professionnelle scolaire par établissement relevant du ministère de l'éducation nationale	2026-07-20T08:29:09.764000+00:00	30944	DEPP – Ministère chargé de l’éducation nationale
-fr-en-evaluations_nationales_cm2_academie	Les évaluations nationales Repères CM2 par académie	2026-06-02T07:40:46.327000+00:00	2976	DEPP – Ministère chargé de l’éducation nationale
-fr-en-indice_eloignement_college_2019-2021	Indice d'éloignement des collèges 2019-2021	2026-06-23T11:57:10.420000+00:00	20862	DEPP – Ministère chargé de l’éducation nationale
-fr-en-espaces-services-jeunesse	Espaces services jeunesse	2025-09-09T09:57:33+00:00	17	DGESCO - Ministère de l'éducation nationale
-fr-en-ipa-emploi-groupe-specialite	IPA taux d'emploi en fonction du groupe de spécialité – Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	537	DEPP – Ministère chargé de l’éducation nationale
-paris-2024-voies-olympiques-et-paralympiques	Paris 2024 - Voies Olympiques et Paralympiques	2024-10-01T10:01:27+00:00	2000	Ministère des Sports
 fr-en-indicateurs-de-resultat-des-lycees-denseignement-general-et-technologique	Indicateurs de valeur ajoutée des lycées d'enseignement général et technologique (ancienne version)	2026-07-01T12:20:20.659000+00:00	27808	DEPP – Ministère chargé de l’éducation nationale
+fr-en-inserjeunes-lycee_pro	Inserjeunes Voie professionnelle scolaire par établissement relevant du ministère de l'éducation nationale	2026-07-20T08:29:09.764000+00:00	30944	DEPP – Ministère chargé de l’éducation nationale
+lycees_prefigurateurs_prepa2nde	Lycées avec classes préparatoires à la classe de seconde	2026-01-29T19:20:16.602000+00:00	110	DGESCO - Ministère de l'éducation nationale
+fr-en-evaluations_nationales_cm2_academie	Les évaluations nationales Repères CM2 par académie	2026-06-02T07:40:46.327000+00:00	2976	DEPP – Ministère chargé de l’éducation nationale
+parcoursup-2021-2024-propositions-d-admission-dans-l-enseignement-superieur-des-eleves-de-terminale	Parcoursup 2021-2024 : propositions d'admission dans l'enseignement supérieur des élèves de terminale diplômés du baccalauréat général selon leurs enseignements de spécialité	2025-04-01T13:11:57+00:00	17420	
+fr-en-indice_eloignement_college_2019-2021	Indice d'éloignement des collèges 2019-2021	2026-06-23T11:57:10.420000+00:00	20862	DEPP – Ministère chargé de l’éducation nationale
+fr-en-programmes-enseignement-premier-degre	Programmes d'enseignement du premier degré	2026-01-29T18:29:34.597000+00:00	10	DGESCO - Ministère de l'éducation nationale
+fr-en-effectifs-etudiants-cpge-par-annee-et-par-sexe	Effectifs d’étudiants en CPGE par année et par sexe	2026-01-29T18:25:45.806000+00:00	144	DNE - Ministère de l'Education Nationale
+fr-en-etablissements-labellises-generation-2024	Établissements labellisés "génération 2024"	2026-08-05T08:37:14.319000+00:00	11221	DGESCO - Ministère de l'éducation nationale
+fr-en-structures-retour-ecole	Les structures de retour à l'école	2026-02-05T23:15:47.984000+00:00	61	DGESCO - Ministère de l'éducation nationale
+fr-en-ecoles-effectifs-nb_classes	Effectifs d’élèves par école	2026-08-27T09:25:30.169000+00:00	859372	DEPP – Ministère chargé de l’éducation nationale
 fr-en-ips-lycees-ap2022	Indices de position sociale dans les lycées (2022)	2024-05-24T12:13:01+00:00	3598	DEPP – Ministère chargé de l’éducation nationale
+fr-en-deploiemement_tedi	TED-i : déploiement des robots de télé-présence destinés aux élèves hospitalisés	2026-10-13T06:00:10.784000+00:00	4110	DNE - Ministère de l'Education Nationale
 fr-en-cefte	Campus professionnel franco-étranger (CPFx) (ex Centres d'excellence de formation technique à l'étranger (CEFTE))	2026-09-11T06:35:50.166000+00:00	20	France Éducation international
 fr-en-evaluations_nationales_4eme_departement	Résultats aux évaluations nationales de début de quatrième par département	2026-07-02T09:09:06.089000+00:00	1836	DEPP – Ministère chargé de l’éducation nationale
-fr-en-tne_personnels_formes_par_departement_secteur_type_etablissement	TNE - Nombre de participants aux formations par département, secteur et type d'établissement	2026-01-29T20:07:58.098000+00:00	460	Réseau Canopé
-paris-2024-sites-de-competition	Paris 2024 - Sites de compétition	2024-09-10T17:11:16+00:00	63	Ministère des Sports
-paris-2024-parkings-pfr-taxi-ts	Paris 2024 - Parkings PFR + taxi + TS	2024-09-11T15:04:20+00:00	230	Ministère des Sports
 paris-2024-faq	Paris 2024 - FAQ	2023-12-08T13:40:19+00:00	949	Ministère des Sports
-fr-en-magistere-inscrits-par-annee-scolaire-plateforme-academique	Plateforme de formation Magistère - Inscrits scolaire sur les plateformes académiques par année	2026-05-18T17:27:53+00:00	1105	DNE - Ministère de l'Education Nationale DNE-TN1
-fr-en-deploiemement_tedi	TED-i : déploiement des robots de télé-présence destinés aux élèves hospitalisés	2026-10-16T06:00:10.581000+00:00	4143	DNE - Ministère de l'Education Nationale
-fr-en-etablissements-labellises-generation-2024	Établissements labellisés "génération 2024"	2026-08-05T08:37:14.319000+00:00	11221	DGESCO - Ministère de l'éducation nationale
-fr-en-ecoles-effectifs-nb_classes	Effectifs d’élèves par école	2026-08-27T09:25:30.169000+00:00	859372	DEPP – Ministère chargé de l’éducation nationale
-paris-2024-boutiques-officielles	Paris 2024 - Boutiques officielles	2024-06-27T12:55:49+00:00	149	Ministère des Sports
-paris-2024-lignes-chc	Paris 2024 - Lignes CHC	2024-10-01T10:01:57+00:00	338	Ministère des Sports
-donnees-ips-erea	dataviz4	2010-01-01T09:41:02+00:00	706	DEPP – Ministère en charge de l’éducation nationale
-fr-en-magistere-inscrits-sur-des-plateformes-nationales-ou-partenaires-2014-2025	Magistere Inscrits sur des plateformes nationales ou partenaires 2014-2025	2026-05-18T20:20:13+00:00	165	DNE - Ministère de l'Education Nationale DNE-TN1
-fr-en-annuaire-education	Annuaire de l'éducation	2026-10-16T05:01:16.585000+00:00	68570	DNE - Ministère de l'Education Nationale
+fr-en-ips-erea-ap2022	Indices de position sociale des EREA (à partir de 2022)	2026-08-03T08:34:49.986000+00:00	310	DEPP – Ministère chargé de l’éducation nationale
 fr-en-indicateurs-de-resultat-des-lycees-gt_v2	Indicateurs de valeur ajoutée des lycées d'enseignement général et technologique	2026-06-10T10:17:27.564000+00:00	32485	DEPP – Ministère chargé de l’éducation nationale
+fr-en-annuaire-education	Annuaire de l'éducation	2026-10-13T05:01:21.711000+00:00	68562	DNE - Ministère de l'Education Nationale
 fr-en-proportion-de-bacheliers-dans-une-generation	La proportion de bacheliers dans une génération	2026-06-23T10:04:50.998000+00:00	243	DEPP – Ministère chargé de l’éducation nationale
-fr-en-etablissements-ep	Etablissements de l'éducation prioritaire	2026-02-02T17:04:47.548000+00:00	8501	DGESCO - Ministère de l'éducation nationale
-fr-en-ips_lycees	Indices de position sociale des lycées (2016-2021)	2024-05-24T11:30:32+00:00	21777	DEPP – Ministère chargé de l’éducation nationale
 fr-en-lycees-metiers	Lycées des métiers	2026-09-07T14:30:49.656000+00:00	763	Direction générale de l'Enseignement scolaire
-observatoire-des-usages-pedagogiques-de-l-ia-ressources-pedagogiques	[Observatoire des usages pédagogiques de l'IA] Ressources Pédagogiques	2026-10-12T23:00:06.165000+00:00	39	DGESCO
+paris-2024-boutiques-officielles	Paris 2024 - Boutiques officielles	2024-06-27T12:55:49+00:00	149	Ministère des Sports
+fr-en-sante-enfants-grande-section-et-cm2	La santé des enfants en grande section de maternelle et en CM2	2026-01-29T18:25:51.308000+00:00	196	Ministère de l'Éducation nationale
+fr-en-magistere-inscrits-sur-des-plateformes-nationales-ou-partenaires-2014-2025	Magistere Inscrits sur des plateformes nationales ou partenaires 2014-2025	2026-05-18T20:20:13+00:00	165	DNE - Ministère de l'Education Nationale DNE-TN1
 paris-2024-results-medals-oly-eng	Paris 2024 - Résultats des médaillés pour chaque discipline Olympique	2024-10-30T14:53:08+00:00	1044	Ministère des Sports
-fr-en-formations_diplomes	Codification des diplômes et certifications préparés par la voie de l’apprentissage	2026-10-16T05:00:04.750000+00:00	3593	DEPP – Ministère chargé de l’éducation nationale
-fr-en-moyens_enseignants_2d_prive	Indicateurs d'encadrement H/E et E/S à la rentrée dans le secteur privé sous contrat	2026-06-09T08:19:21.532000+00:00	12350	DEPP – Ministère chargé de l’éducation nationale
-fr-en-catalogue-structures-accueil-hebergement	Catalogue national des structures d'accueil et d'hébergement	2026-10-03T22:00:06.996000+00:00	640	DJEPVA - Ministère chargé de la Jeunesse
+fr-en-etablissements-ep	Etablissements de l'éducation prioritaire	2026-02-02T17:04:47.548000+00:00	8501	DGESCO - Ministère de l'éducation nationale
+fr-en-formations_diplomes	Codification des diplômes et certifications préparés par la voie de l’apprentissage	2026-10-13T05:00:10.097000+00:00	3592	DEPP – Ministère chargé de l’éducation nationale
+fr-en-ips_lycees	Indices de position sociale des lycées (2016-2021)	2024-05-24T11:30:32+00:00	21777	DEPP – Ministère chargé de l’éducation nationale
 fr-en-boursiers-par-departement	Boursiers par département	2026-01-29T18:42:55.458000+00:00	983	DGESCO - Ministère de l'éducation nationale
+fr-en-complements-programmes-second-degre	Compléments aux programmes d'enseignement du second degré	2026-01-29T18:29:47.371000+00:00	14	DGESCO - Ministère de l'éducation nationale
+fr-en-livre-or-1914-1918	Première Guerre Mondiale 1914-1918 "Livre d’or des personnels de l’instruction publique et des Beaux-arts"	2026-01-29T18:29:22.567000+00:00	17144	DGESCO - Ministère de l'éducation nationale
+observatoire-des-usages-pedagogiques-de-l-ia-ressources-pedagogiques	[Observatoire des usages pédagogiques de l'IA] Ressources Pédagogiques	2026-10-12T23:00:06.165000+00:00	39	DGESCO
+paris-2024-territoires-labellises-terre-de-jeux	Paris 2024 - Territoires labellisés "Terre de Jeux"	2024-10-01T13:37:38+00:00	4513	Ministère des Sports
+fr-en-cap_specialite_sexe_statut_departement	Résultats par spécialité, sexe, statut et département au CAP	2026-06-09T08:22:03.208000+00:00	35167	DEPP – Ministère chargé de l’éducation nationale
+fr-en-baccalaureat-par-departement	Réussite au baccalauréat par département	2026-06-23T10:13:56.337000+00:00	1818	DEPP – Ministère chargé de l’éducation nationale
+fr-en-concours_recrutement_second_degre_public	Concours de recrutement de personnels enseignants, d'éducation et d'orientation du 2nd degré public	2026-01-29T18:27:19.785000+00:00	105	DGRH - Ministère de l'éducation nationale
 fr-en-effectifs-premier-degre	Effectifs d'élèves des écoles du premier degré public et privé sous tutelle du ministère en charge de l'éducation nationale - Obsolète	2016-12-02T10:08:10+00:00	254517	DEPP – Ministère chargé de l’éducation nationale
+fr-en-dix-plus-hautes-remunerations	Dix plus hautes rémunérations	2026-07-07T14:30:51.605000+00:00	8	DAF - Ministère de l'Éducation nationale
 donnees-ips-ecoles	dataviz3	2010-01-01T09:41:02+00:00	279318	DEPP – Ministère en charge de l’éducation nationale
-dataviz-a-la-une	dataviz-list	2020-12-14T08:05:19+00:00	37	
+dataviz-a-la-une	dataviz-list	2020-12-14T08:05:19+00:00	36	
 fr-en-challenge-data	Données du challenge de la donnée 2025	2025-07-04T15:03:15+00:00	3	
-data-es-recensement-des-equipements-sportifs-et-lieux-de-pratique-complet	Data ES - Recensement des équipements sportifs et lieux de pratique (Complet)	2026-10-15T11:28:49+00:00	333658	Ministère des Sports
+data-es-recensement-des-equipements-sportifs-et-lieux-de-pratique-complet	Data ES - Recensement des équipements sportifs et lieux de pratique (Complet)	2026-10-12T06:24:56+00:00	333636	Ministère des Sports
 fr-en-indicateurs-de-resultat-des-lycees-denseignement-professionnels	Indicateurs de valeur ajoutée des lycées d'enseignement professionnel (ancienne version)	2026-06-23T10:47:45.628000+00:00	24236	DEPP – Ministère chargé de l’éducation nationale
 fr-en-inserjeunes-lycee_pro-examen	Inserjeunes Voie professionnelle scolaire par établissement relevant du ministère de l'éducation nationale et par niveau de formation de CAP à BTS	2026-07-20T08:29:52.833000+00:00	37746	DEPP – Ministère chargé de l’éducation nationale
 fr-en-evaluations_nationales_cm1_departement	Les évaluations nationales Repères CM1 par département	2026-06-02T13:27:37.153000+00:00	15606	DEPP – Ministère chargé de l’éducation nationale
 fr-en-inserjeunes-lycee_pro-agri-examen	Inserjeunes Voie professionnelle scolaire agricole par établissement relevant du ministère de l'agriculture et par niveau de formation CAPa à BTSA	2026-07-20T08:40:55.576000+00:00	2768	DEPP – Ministère chargé de l’éducation nationale
+fr-en-catalogue-structures-accueil-hebergement	Catalogue national des structures d'accueil et d'hébergement	2026-10-03T22:00:06.996000+00:00	640	DJEPVA - Ministère chargé de la Jeunesse
 fr-en-baccalaureat-par-academie	Le baccalauréat par académie	2026-06-23T10:12:17.216000+00:00	43217	DEPP – Ministère chargé de l’éducation nationale
-fr-en-gar-affectations_academie2024-2025	Données d’affectation des ressources numériques éducatives dans le GAR par académie 2024-2025	2026-03-12T14:35:53+00:00	31	DNE - Ministère de l'Education Nationale DNE-SN1
+paris-2024-lignes-para-ta	Paris 2024 - Lignes PARA TA	2024-10-01T10:01:12+00:00	119	Ministère des Sports
 fr-en-inserjeunes-lycee_pro-formation-fine	Inserjeunes Voie professionnelle scolaire par établissement relevant du ministère de l'éducation nationale et formation fine	2026-07-20T07:55:40.211000+00:00	132124	DEPP – Ministère chargé de l’éducation nationale
 fr-en-inserjeunes-cfa-formation_fine	Inserjeunes Apprentissage par centre de formation d'apprentis (CFA) et formation fine niveau CAP à BTS	2026-07-20T07:37:26.735000+00:00	115588	DEPP – Ministère chargé de l’éducation nationale
 fr-en-indicateurs-valeur-ajoutee-colleges	Indicateurs de valeur ajoutée des collèges	2026-08-03T09:55:18.316000+00:00	26869	DEPP – Ministère chargé de l’éducation nationale
-fr-en-ulis	Les ULIS	2026-03-30T09:38:58+00:00	10424	DNE - Ministère de l'Education Nationale
-fr-en-aap-snee-collectivites	Appel à projet Socle Numérique dans les Ecoles Elémentaires - par collectivité	2024-11-27T16:33:25+00:00	6870	
-fr-en-typologie-des-classes-dans-les-etablissements-du-premier-degre	Typologie des classes dans les établissements du premier degré	2026-07-03T15:07:07+00:00	47153	DEPP – Ministère chargé de l’éducation nationale
-fr-en-futurpro-indicateurs-formation-etablissement	Futur pro - indicateurs formation/établissement	2025-12-11T09:25:13+00:00	29887	
-fr-en-capytale_goals	Capytale : objectifs Matomo	2026-10-07T13:29:48+00:00	22214	
 fr-en-evaluations_nationales_2degt_academie	Résultats consolidés aux évaluations nationales de début de seconde générale et technologique par académie	2026-06-23T09:57:49.321000+00:00	1302	DEPP – Ministère chargé de l’éducation nationale
 fr-en-reconnaissance_diplomes_comparabilite	Reconnaissance de diplômes - Dossiers de comparabilité de dipômes expertisés par le centre ENIC-NARIC France	2026-02-02T20:44:58.248000+00:00	1186	France Éducation international
-fr-en-statistiques_usage_forge_des_communs_numeriques	Statistiques d'usage de la forge des communs numériques	2026-10-15T22:00:02.659000+00:00	1231	DNE - Ministère de l'Education Nationale
+fr-en-origine-scolaire-etudiants-cpge	Origine scolaire des étudiants entrant en première année de CPGE	2018-03-23T16:55:15+00:00	36	DNE - Ministère de l'Education Nationale
+fr-en-typologie-des-classes-dans-les-etablissements-du-premier-degre	Typologie des classes dans les établissements du premier degré	2026-07-03T15:07:07+00:00	47153	DEPP – Ministère chargé de l’éducation nationale
+fr-en-ulis	Les ULIS	2026-03-30T09:38:58+00:00	10424	DNE - Ministère de l'Education Nationale
+fr-en-futurpro-indicateurs-formation-etablissement	Futur pro - indicateurs formation/établissement	2025-12-11T09:25:13+00:00	29887	
 fr-en-evaluations_nationales_mi_cp_region	Les évaluations nationales Repères de mi-CP par région académique	2026-06-02T07:55:01.975000+00:00	4746	DEPP – Ministère chargé de l’éducation nationale
-games_map_road_events_en	Carte des Jeux - Road Events (EN)	2024-09-13T08:12:23+00:00	678	Ministère des Sports
+fr-en-aap-snee-ecoles	Appel à projet Socle Numérique dans les Ecoles Elémentaires - par école	2026-01-29T19:44:38.284000+00:00	12624	DNE - Ministère de l'Education Nationale
 fr-en-evaluations_nationales_ce2_departement	Les évaluations nationales Repères CE2 par département	2026-06-02T07:38:51.554000+00:00	11016	DEPP – Ministère chargé de l’éducation nationale
+fr-en-programmes-mobilite-enseignante-fei	Programmes de mobilité enseignante gérés par France Éducation international	2026-01-29T19:46:28.528000+00:00	35	France Éducation international
 fr-en-ips_colleges	Indices de position sociale des collèges (2016-2021)	2026-07-24T15:01:11.134000+00:00	41701	DEPP – Ministère chargé de l’éducation nationale
+fr-en-statistiques_usage_forge_des_communs_numeriques	Statistiques d'usage de la forge des communs numériques	2026-10-12T22:00:06.757000+00:00	1228	DNE - Ministère de l'Education Nationale
+games_map_road_events_en	Carte des Jeux - Road Events (EN)	2024-09-13T08:12:23+00:00	678	Ministère des Sports
+paris-2024-liste-athletes-engages-olypara	Paris 2024 - Liste des athlètes engagés aux Jeux Olympiques et Paralympiques	2024-10-30T14:51:36+00:00	12625	Ministère des Sports
 fr-en-calendrier-scolaire	Le calendrier scolaire	2026-10-01T09:45:11.998000+00:00	2587	DNE - Ministère de l'Education Nationale
 assets-listing	Assets listing	2026-02-06T15:32:35+00:00	505	
-paris-2024-perimetres-de-securite	Paris 2024 - Périmètres de sécurité	2024-10-01T10:01:28+00:00	52	Ministère des Sports
-fr-en-complements-programmes-premier-degre	Compléments aux programmes d'enseignement du premier degré	2026-01-29T18:29:48.763000+00:00	16	DGESCO - Ministère de l'éducation nationale
-games_map_road_events_fr	Carte des Jeux - Road Events (FR)	2024-10-03T22:10:03+00:00	678	Ministère des Sports
-fr-en-actions-educatives-culturelles	Actions éducatives et culturelles	2026-01-29T18:29:37.899000+00:00	230	Ministère de l'Éducation nationale
-fr-en-evaluations_nationales_ce1_departement	Les évaluations nationales Repères CE1 par département	2026-06-02T07:37:50.922000+00:00	41004	DEPP – Ministère chargé de l’éducation nationale
-fr-en-hybridation_lycees_par_collectivite	Hybridation de l’enseignement en lycée - par collectivité	2026-02-02T17:05:54.422000+00:00	19	DNE - Ministère de l'Education Nationale
-paris-2024-entrees-ceremonie-d-ouverture-olympique	Paris 2024 - Entrées Cérémonie d'ouverture Olympique	2024-07-12T08:49:15+00:00	38	Ministère des Sports
-fr-en-inserjeunes-lycee_pro_agri	Inserjeunes Voie professionnelle scolaire agricole par établissement relevant du ministère de l'agriculture	2026-07-20T08:39:04.960000+00:00	1617	DEPP – Ministère chargé de l’éducation nationale
-fr-en-assistants_langues_vivantes_etrangeres	Assistants de langues vivantes étrangères - postes offerts	2026-02-02T18:55:23.042000+00:00	200	France Éducation international
-fr-en-scores-timss	Étude TIMSS : scores moyens par disciplines et domaines	2016-12-07T10:01:36+00:00	72	DEPP – Ministère chargé de l’éducation nationale
-fr-en-evaluations_nationales_cm1_academie	Les évaluations nationales Repères CM1 par académie	2026-06-02T13:27:00.638000+00:00	4743	DEPP – Ministère chargé de l’éducation nationale
-fr-en-evaluations_nationales_2depro_region	Résultats consolidés aux évaluations nationales de début de seconde professionnelle par région académique	2026-06-23T09:59:30.146000+00:00	798	DEPP – Ministère chargé de l’éducation nationale
-fr-en-ipa-classe-sortie	IPA situation en fonction de la classe de sortie – Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	90	DEPP – Ministère chargé de l’éducation nationale
+fr-en-matomo_visiteurs	matomo visiteurs	2026-03-18T14:01:39+00:00	122	
+fr-en-matomo_regions	matomo régions	2026-03-18T13:26:06+00:00	4847	
+fr-en-tne_indicateurs_satisfaction_formations	TNE - Indicateurs de satisfaction des formations aux solutions TNE	2026-01-29T20:08:37.354000+00:00	6	Réseau Canopé
 paris-2024-lignes-oly-tf	Paris 2024 - Lignes OLY TF	2024-10-01T10:01:56+00:00	328	Ministère des Sports
-fr-en-dnb-par-sexe-et-par-serie	Diplôme national du brevet par sexe et par série	2026-06-23T10:17:21.336000+00:00	16	DEPP – Ministère chargé de l’éducation nationale
 games_map_torch_position	Carte des Jeux - Position de la flamme	2024-10-03T22:00:05+00:00	83366	Ministère des Sports
-fr-en-remplacement-second-degre	Le remplacement des professeurs absents dans l'enseignement public du second degré	2024-11-20T11:42:06+00:00	30	DGRH - Ministère de l'éducation nationale
-cartes-des-sites-poi-fr	Cartes des sites - Venues POI (FR)	2024-09-13T09:00:03+00:00	3464	Ministère des Sports
-retours-formulaire-votre-avis-dataviz-attendues	Retours formulaire - votre avis - Dataviz attendues	2023-04-12T08:19:47+00:00	0	
-fr-en-concours_personnel_enseignant_premier_degre_public	Concours de recrutement de personnels enseignants du 1er degré public	2026-01-29T18:27:07.426000+00:00	47	DGRH - Ministère de l'éducation nationale
-paris-2024-parkings-velo-spectateurs-en-idf	Paris 2024 - Parkings vélo spectateurs en IDF	2024-06-20T16:51:41+00:00	41	Ministère des Sports
 fr-en-tne_suivi_deploiement_solutions_numeriques_2d_dept	TNE - Suivi du déploiement des solutions numériques 2nd degré par département	2026-02-05T23:42:47.526000+00:00	12	Réseau Canopé
-paris-2024-messages-chatbot-centre-de-contact-grand-public	Paris 2024 - Messages chatbot centre de contact grand public	2024-09-30T14:54:15+00:00	202246	Ministère des Sports
-fr-en-gar-affectations_degre2024-2025	Données d’affectation des ressources numériques éducatives dans le GAR par degré 2024-2025	2026-03-12T14:19:57+00:00	3	DNE - Ministère de l'Education Nationale DNE-SN1
-paris-2024-itineraires-spectateurs	Paris 2024 - Itinéraires spectateurs HORS PARIS	2024-10-01T10:01:35+00:00	133	Ministère des Sports
+retours-formulaire-votre-avis-dataviz-attendues	Retours formulaire - votre avis - Dataviz attendues	2023-04-12T08:19:47+00:00	0	
 fr-en-gar-acces_academie	Données d’accès aux ressources numériques éducatives via le GAR par académie 2024-2025	2026-03-12T10:50:50+00:00	31	DNE - Ministère de l'Education Nationale DNE-SN1
-fr-en-domino-les-fondamentaux-au-cycle-2	Domino les fondamentaux au cycle 2	2026-06-12T08:55:03.530000+00:00	7115	DNE - Ministère de l'Education Nationale - Belin Education - Cabri Maskott
-fr-en-effectif-des-agents-en-situation-de-handicap-par-type-de-beneficiaire	Effectif des agents en situation de handicap par type de bénéficiaire	2026-01-29T18:43:54.331000+00:00	11	DGRH - Ministère de l'éducation nationale
+fr-en-gar-acces_profil2024-2025	Données d’accès aux ressources numériques éducatives via le GAR par profil d’utilisateur 2024-2025	2026-03-12T13:17:08+00:00	5	DNE - Ministère de l'Education Nationale DNE-SN1
 fr-en-gar-acces_degre2024-2025	Données d’accès aux ressources numériques éducatives via le GAR par degré 2024-2025	2026-03-12T13:09:20+00:00	3	DNE - Ministère de l'Education Nationale DNE-SN1
-fr-en-gar-accedants_degre2024-2025	Accédants au GAR par degré 2024-2025	2026-03-12T13:27:48+00:00	3	DNE - Ministère de l'Education Nationale DNE-SN1
-fr-en-demandes-decisions-orientation-fin-2e-gt	Demandes et décisions d'orientation fin 2e GT (2015-2019)	2026-01-29T18:44:30.351000+00:00	155	DGESCO - Ministère de l'éducation nationale
-paris-2024-zones-de-depose-reprise-pfr-psh	Paris 2024 - Zones de dépose reprise PFR-PSH	2024-10-01T10:02:08+00:00	163	Ministère des Sports
-fr-en-situation_nationale_covid	Covid 19 - points de situation nationaux	2026-01-29T18:44:34.361000+00:00	58	Délégation à la communication - Ministère de l'Éducation nationale
-paris-2024-lignes-oly-ta	Paris 2024 - Lignes OLY TA	2024-10-01T10:02:02+00:00	449	Ministère des Sports
-paris-2024-flux-pietons-accredites	Paris 2024 - Flux piétons accrédités	2024-10-01T10:01:49+00:00	184	Ministère des Sports
-fr-en-plan-dactiondonnees-lesprojets	Plan d'action données algorithmes et codes sources - les projets	2026-10-16T04:00:02.486000+00:00	106	DNE - Ministère de l'Education Nationale
-retours-formulaire-votre-avis-datasets-attendus	Retours formulaire - votre avis - Datasets attendus	2023-04-04T14:09:16+00:00	0	
+fr-en-concours_personnel_enseignant_premier_degre_public	Concours de recrutement de personnels enseignants du 1er degré public	2026-01-29T18:27:07.426000+00:00	47	DGRH - Ministère de l'éducation nationale
+fr-en-plan-dactiondonnees-lesprojets	Plan d'action données algorithmes et codes sources - les projets	2026-10-13T04:00:03.865000+00:00	106	DNE - Ministère de l'Education Nationale
 paris-2024-lignes-para-tc	Paris 2024 - Lignes PARA TC	2024-10-01T10:02:16+00:00	135	Ministère des Sports
-fr-en-etic_2d	Enquête ETIC 2nd degré – Enquête cessée à partir de 2020	2021-06-30T22:00:00+00:00	12462	DEPP – Ministère chargé de l’éducation nationale
-fr-en-donnees-cartes-mouvement-interdepartemental-premier-degre-public	Données relatives aux cartes du mouvement interdépartemental du premier degré public	2026-02-02T17:04:31.215000+00:00	101	DGRH - Ministère de l'éducation nationale
-fr-en-occupation-internats	Occupation des internats	2026-07-07T15:57:06.927000+00:00	1641	Direction générale de l'Enseignement scolaire
-fr-en-colos-aprenantes	Colos apprenantes	2026-07-25T22:03:46.425000+00:00	33535	DGESCO - Ministère de l'éducation nationale
-fr-en-evaluations_nationales_ce1_region	Les évaluations nationales Repères CE1 par région académique	2026-06-02T07:38:20.947000+00:00	7638	DEPP – Ministère chargé de l’éducation nationale
-fr-esr-cartographie_formations_parcoursup	Cartographie des formations Parcoursup	2020-10-26T16:27:57+00:00	157510	Ministère de l'Enseignement supérieur, de la Recherche et de l'Espace
-assistant-ia-dinum-deploiement-au-ministere-de-leducation-nationale-en-academie	assistant-ia-dinum-deploiement-au-ministere-de-leducation-nationale-en-academie	2026-10-16T02:00:03.588000+00:00	32	DNE DSP - Ministère de l'Education Nationale 
-fr-en-bilan-contentieux	Bilan contentieux - Administration centrale et Académies	2026-01-29T18:43:43.489000+00:00	79	Direction des affaires juridiques - Ministère de l'Éducation nationale
+fr-en-initiatives_donnees_europe	fr-en-initiatives_donnees_europe	2026-08-27T14:13:51.802000+00:00	44	France Éducation international
+fr-en-tne_duree_formations_par_departement_secteur_type_etablissement	TNE - Durée des formations par département, secteur et type d'établissement	2026-01-29T20:07:44.981000+00:00	438	Réseau Canopé
+observatoire-des-usages-pedagogiques-de-l-ia-actions-innovantes	[Observatoire des usages pédagogiques de l'IA] Actions innovantes	2026-10-12T23:00:02.061000+00:00	183	DGESCO
+retours-formulaire-votre-avis-datasets-attendus	Retours formulaire - votre avis - Datasets attendus	2023-04-04T14:09:16+00:00	0	
+paris-2024-zones-de-depose-reprise-pfr-psh	Paris 2024 - Zones de dépose reprise PFR-PSH	2024-10-01T10:02:08+00:00	163	Ministère des Sports
+fr-en-gar-accedants_degre2024-2025	Accédants au GAR par degré 2024-2025	2026-03-12T13:27:48+00:00	3	DNE - Ministère de l'Education Nationale DNE-SN1
+paris-2024-cheminements-parking-velo-psa	Paris 2024 - Cheminements parking vélo - PSA	2024-10-01T10:02:17+00:00	49	Ministère des Sports
+paris-2024-lignes-oly-ta	Paris 2024 - Lignes OLY TA	2024-10-01T10:02:02+00:00	449	Ministère des Sports
+fr-en-domino-les-fondamentaux-au-cycle-2	Domino les fondamentaux au cycle 2	2026-06-12T08:55:03.530000+00:00	7115	DNE - Ministère de l'Education Nationale - Belin Education - Cabri Maskott
+fr-en-evaluations_nationales_2depro_region	Résultats consolidés aux évaluations nationales de début de seconde professionnelle par région académique	2026-06-23T09:59:30.146000+00:00	798	DEPP – Ministère chargé de l’éducation nationale
+fr-en-capytale-activites-copies	Capytale Activités et copies	2026-10-12T08:01:26.990000+00:00	11659	
+fr-en-dnma-par-uai-profils-appareils	DNMA - Métriques par UAI croisées par les profils et par les types d'appareils	2026-10-07T22:41:53.738000+00:00	1593254	DNE - Ministère de l'Education Nationale
+retours-formulaire-votre-avis-ameliorations-souhaitees	Retours formulaire - votre avis - Améliorations ergonomiques souhaitées	2023-04-12T14:35:43+00:00	0	
+fr-en-inserjeunes-lycee_pro_agri	Inserjeunes Voie professionnelle scolaire agricole par établissement relevant du ministère de l'agriculture	2026-07-20T08:39:04.960000+00:00	1617	DEPP – Ministère chargé de l’éducation nationale
+effectifs-deleves-par-ecole-copie0	Effectifs d’élèves par école pour analyse des patronymes	2026-06-02T07:15:19.755000+00:00	809225	DEPP – Ministère en charge de l’éducation nationale
+fr-en-ipa-classe-sortie	IPA situation en fonction de la classe de sortie – Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	90	DEPP – Ministère chargé de l’éducation nationale
+fr-en-tne_suivi_audiences	TNE - Indicateurs de suivi d'audience de la plateforme TNE	2026-01-31T12:10:16.599000+00:00	50	Réseau Canopé
 games_map_events_en	Carte des Jeux - Evènements (EN)	2024-10-04T15:00:31+00:00	9003	Ministère des Sports
-fr-en-matomo_comportements	matomo comportements	2026-03-18T13:26:06+00:00	20776	
+paris-2024-messages-chatbot-centre-de-contact-grand-public	Paris 2024 - Messages chatbot centre de contact grand public	2024-09-30T14:54:15+00:00	202246	Ministère des Sports
+idfm-parkings-relais-paris-2024-fr	[IDFM] - Parkings relais Paris 2024 (FR)	2026-02-02T18:24:52.834000+00:00	43	Ministère des Sports
+games_map_road_events_fr	Carte des Jeux - Road Events (FR)	2024-10-03T22:10:03+00:00	678	Ministère des Sports
+fr-en-demandes-decisions-orientation-fin-2e-gt	Demandes et décisions d'orientation fin 2e GT (2015-2019)	2026-01-29T18:44:30.351000+00:00	155	DGESCO - Ministère de l'éducation nationale
+paris-2024-entrees-ceremonie-d-ouverture-olympique	Paris 2024 - Entrées Cérémonie d'ouverture Olympique	2024-07-12T08:49:15+00:00	38	Ministère des Sports
+fr-en-situation_nationale_covid	Covid 19 - points de situation nationaux	2026-01-29T18:44:34.361000+00:00	58	Délégation à la communication - Ministère de l'Éducation nationale
+cartes-des-sites-poi-fr	Cartes des sites - Venues POI (FR)	2024-09-13T09:00:03+00:00	3464	Ministère des Sports
+paris-2024-flux-pietons-accredites	Paris 2024 - Flux piétons accrédités	2024-10-01T10:01:49+00:00	184	Ministère des Sports
+fr-en-donnees-cartes-mouvement-interdepartemental-premier-degre-public	Données relatives aux cartes du mouvement interdépartemental du premier degré public	2026-02-02T17:04:31.215000+00:00	101	DGRH - Ministère de l'éducation nationale
+fr-en-carto-filles-et-sciences	Les membres du collectif Filles et sciences	2026-09-18T07:02:08+00:00	31	DGESCO - Ministère de l'éducation nationale
+fr-en-gar-affectations_degre2024-2025	Données d’affectation des ressources numériques éducatives dans le GAR par degré 2024-2025	2026-03-12T14:19:57+00:00	3	DNE - Ministère de l'Education Nationale DNE-SN1
+fr-en-contour-academies-2020	Contour académies 2020	2026-01-29T18:45:37.403000+00:00	30	DGESCO - Ministère de l'éducation nationale
+paris-2024-perimetres-de-securite	Paris 2024 - Périmètres de sécurité	2024-10-01T10:01:28+00:00	52	Ministère des Sports
+lve-renforce	LVE renforcé	2026-10-08T08:08:07.975000+00:00	42499	DGESCO - Ministère de l'éducation nationale
+fr-en-complements-programmes-premier-degre	Compléments aux programmes d'enseignement du premier degré	2026-01-29T18:29:48.763000+00:00	16	DGESCO - Ministère de l'éducation nationale
+fr-en-lits-internats-publics-2d	Nombre de lits dans les internats des établissements publics du second degré	2026-07-29T14:46:59.296000+00:00	1623	DEPP – Ministère chargé de l’éducation nationale
+fr-en-colos-aprenantes	Colos apprenantes	2026-07-25T22:03:46.425000+00:00	33535	DGESCO - Ministère de l'éducation nationale
+fr-en-hybridation_lycees_par_collectivite	Hybridation de l’enseignement en lycée - par collectivité	2026-02-02T17:05:54.422000+00:00	19	DNE - Ministère de l'Education Nationale
+fr-esr-cartographie_formations_parcoursup	Cartographie des formations Parcoursup	2020-10-26T16:27:57+00:00	157508	Ministère de l'Enseignement supérieur, de la Recherche et de l'Espace
+fr-en-taux-de-pression-et-demploi	Taux de pression et d'emploi pour les diplômes de la voie professionnelle	2026-01-29T18:45:44.138000+00:00	185	DGESCO - Ministère de l'éducation nationale
+fr-en-pix_participations_aux_campagnes_par_profil_cible_et_mef_code	Pix - Participations aux campagnes de parcours de rentrée par profil cible de parcours de rentrée et MEF Code	2026-07-23T14:45:09.461000+00:00	354012	Groupement d’intérêt public « Pix »
+fr-en-tne_suivi_deploiement_solutions_numeriques_dept	TNE - Suivi du déploiement des solutions numériques par département	2026-02-05T23:12:11.799000+00:00	12	Réseau Canopé
+paris-2024-road-events-path	Paris 2024 - Tracés des road events	2024-09-05T22:00:05+00:00	30	Ministère des Sports
+fr-en-etablissements-labellises-generation-2030	Établissements labellisés "génération 2030"	2026-10-13T07:46:43.227000+00:00	11331	DGESCO - Ministère de l'éducation nationale
+fr-en-centres-et-etablissements-labellises-label-qualite-francais-langue-etrange	Centres et établissements labellisés "Label qualité français langue étrangère"	2026-09-08T14:36:50+00:00	111	France Éducation international
+fr-en-capytale-repartition-des-visites-sur-dataeducation	Capytale - Répartition par profil des visites d'utilisateurs connectés	2026-10-12T21:55:02.073000+00:00	72	DNE - Ministère de l'Education Nationale - Académie de Paris
+fr-en-bilan-contentieux	Bilan contentieux - Administration centrale et Académies	2026-01-29T18:43:43.489000+00:00	79	Direction des affaires juridiques - Ministère de l'Éducation nationale
+fr-en-budget-missions	Le budget : missions interministérielles «Enseignement scolaire» et «Recherche et enseignement supérieur»	2026-01-29T18:26:55.192000+00:00	612	DAF - Ministère de l'Éducation nationale
+fr-en-evaluations_nationales_6eme_par_etablissement	Résultats consolidés aux évaluations nationales de début de sixième par établissement	2026-06-16T08:38:58.396000+00:00	369797	DEPP – Ministère chargé de l’éducation nationale
+paris-2024-parkings-velo-spectateurs-en-idf	Paris 2024 - Parkings vélo spectateurs en IDF	2024-06-20T16:51:41+00:00	41	Ministère des Sports
+fr-en-etic_2d	Enquête ETIC 2nd degré – Enquête cessée à partir de 2020	2021-06-30T22:00:00+00:00	12462	DEPP – Ministère chargé de l’éducation nationale
 fr-en-delf-dalf_inscrits_centres	DELF-DALF (Diplôme d'études en langue française et Diplôme approfondi de langue française) - inscrits par centres de passation	2026-01-29T19:43:46.535000+00:00	23648	France Éducation international
 fr-en-evaluations_nationales_cm1_region	Les évaluations nationales Repères CM1 par région académique	2026-06-02T13:27:51.854000+00:00	2907	DEPP – Ministère chargé de l’éducation nationale
-fr-en-pix_participations_aux_campagnes_par_profil_cible_et_mef_code	Pix - Participations aux campagnes de parcours de rentrée par profil cible de parcours de rentrée et MEF Code	2026-07-23T14:45:09.461000+00:00	354012	Groupement d’intérêt public « Pix »
-effectifs-deleves-par-ecole-copie0	Effectifs d’élèves par école pour analyse des patronymes	2026-06-02T07:15:19.755000+00:00	809225	DEPP – Ministère en charge de l’éducation nationale
-paris-2024-road-events-path	Paris 2024 - Tracés des road events	2024-09-05T22:00:05+00:00	30	Ministère des Sports
-fr-en-centres-et-etablissements-labellises-label-qualite-francais-langue-etrange	Centres et établissements labellisés "Label qualité français langue étrangère"	2026-09-08T14:36:50+00:00	111	France Éducation international
-fr-en-evaluations_nationales_2de_pro_departement	Résultats consolidés aux évaluations nationales de début de seconde professionnelle par département	2026-06-23T10:00:49.563000+00:00	4284	DEPP – Ministère chargé de l’éducation nationale
-fr-en-contour-academies-2020	Contour académies 2020	2026-01-29T18:45:37.403000+00:00	30	DGESCO - Ministère de l'éducation nationale
-fr-en-evaluations_nationales_6eme_par_etablissement	Résultats consolidés aux évaluations nationales de début de sixième par établissement	2026-06-16T08:38:58.396000+00:00	369797	DEPP – Ministère chargé de l’éducation nationale
-fr-en-cap-par-departement	Candidat au CAP par département et sexe	2026-06-09T08:23:02.289000+00:00	609	DEPP – Ministère chargé de l’éducation nationale
 fr-en-evaluations_nationales_cp_region	Les évaluations nationales Repères CP par région académique	2026-06-02T07:36:35.785000+00:00	6612	DEPP – Ministère chargé de l’éducation nationale
 fr-en-indice_eloignement_college_ap2022	Indice d'éloignement des collèges depuis 2022	2026-06-09T08:29:45.897000+00:00	27929	DEPP – Ministère chargé de l’éducation nationale
-fr-en-dnma-par-uai-profils-appareils	DNMA - Métriques par UAI croisées par les profils et par les types d'appareils	2026-10-07T22:41:53.738000+00:00	1593254	DNE - Ministère de l'Education Nationale
-fr-en-tne_duree_formations_par_departement_secteur_type_etablissement	TNE - Durée des formations par département, secteur et type d'établissement	2026-01-29T20:07:44.981000+00:00	438	Réseau Canopé
-fr-en-maternelles-elysee	Liste maternelles Elysée	2026-06-12T11:35:00.496000+00:00	345	DGESCO - Ministère de l'éducation nationale
-fr-en-carto-pro-capacites	Attractivité dans la voie professionnelle	2026-02-02T16:43:51.611000+00:00	7208	DGESCO - Ministère de l'éducation nationale
-idfm-parkings-relais-paris-2024-fr	[IDFM] - Parkings relais Paris 2024 (FR)	2026-02-02T18:24:52.834000+00:00	43	Ministère des Sports
-fr-en-evaluations_nationales_cm2_region	Les évaluations nationales Repères CM2 par région académique	2026-06-02T07:40:16.707000+00:00	1824	DEPP – Ministère chargé de l’éducation nationale
-fr-en-carto-acc-sensoriel	Données de l'accompagnement à la déficience sensorielle	2026-01-29T19:41:27.669000+00:00	307	DGESCO - Ministère de l'éducation nationale
 fr-en-evaluations_nationales_6eme_region	Résultats aux évaluations nationales de début de sixième par région	2026-06-12T14:11:57.491000+00:00	1026	DEPP – Ministère chargé de l’éducation nationale
-fr-en-sections-sportives-scolaires	Sections Sportives Scolaires	2026-08-05T08:14:11.903000+00:00	2763	DGESCO - Ministère de l'éducation nationale
-lve-renforce	LVE renforcé	2026-10-08T08:08:07.975000+00:00	42499	DGESCO - Ministère de l'éducation nationale
+fr-en-maternelles-elysee	Liste maternelles Elysée	2026-06-12T11:35:00.496000+00:00	345	DGESCO - Ministère de l'éducation nationale
 fr-en-etablissements-deployes-gar	Liste des établissements déployés dans le GAR	2026-05-12T08:39:26+00:00	39336	DNE - Ministère de l'Education Nationale DNE-SN1
+fr-en-carto-pro-capacites	Attractivité dans la voie professionnelle	2026-02-02T16:43:51.611000+00:00	7208	DGESCO - Ministère de l'éducation nationale
 fr-en-annuaire_bde_lycees_pro	Annuaire des bureaux des entreprises des lycées professionnels et polyvalents	2026-03-20T17:16:07.197000+00:00	1942	
 fr-en-etablissements-labellises-euroscol	Établissements labellisés Euroscol	2026-02-02T19:58:11.354000+00:00	1672	DREIC - Ministère de l'éducation nationale
 fr-en-academies-ep	Académies Education Prioritaire	2026-01-29T18:25:25.059000+00:00	1658	DGESCO - Ministère de l'éducation nationale
+fr-en-evaluations_nationales_cm2_region	Les évaluations nationales Repères CM2 par région académique	2026-06-02T07:40:16.707000+00:00	1824	DEPP – Ministère chargé de l’éducation nationale
+fr-en-carto-acc-sensoriel	Données de l'accompagnement à la déficience sensorielle	2026-01-29T19:41:27.669000+00:00	307	DGESCO - Ministère de l'éducation nationale
 fr-en-colleges-ep	Collèges éducation prioritaire	2026-01-29T18:26:28.180000+00:00	47552	DGESCO - Ministère de l'éducation nationale
-fr-en-tne_indicateurs_satisfaction_formations	TNE - Indicateurs de satisfaction des formations aux solutions TNE	2026-01-29T20:08:37.354000+00:00	6	Réseau Canopé
-fr-en-lits-internats-publics-2d	Nombre de lits dans les internats des établissements publics du second degré	2026-07-29T14:46:59.296000+00:00	1623	DEPP – Ministère chargé de l’éducation nationale
-fr-en-carto-filles-et-sciences	Les membres du collectif Filles et sciences	2026-09-18T07:02:08+00:00	31	DGESCO - Ministère de l'éducation nationale
-paris-2024-cheminements-parking-velo-psa	Paris 2024 - Cheminements parking vélo - PSA	2024-10-01T10:02:17+00:00	49	Ministère des Sports
+fr-en-sections-sportives-scolaires	Sections Sportives Scolaires	2026-08-05T08:14:11.903000+00:00	2763	DGESCO - Ministère de l'éducation nationale
+fr-en-occupation-internats	Occupation des internats	2026-07-07T15:57:06.927000+00:00	1641	Direction générale de l'Enseignement scolaire
 fr-en-moyens_enseignants_2d_public	Indicateurs d'encadrement H/E et E/S à la rentrée dans le secteur public	2026-06-09T08:20:15.720000+00:00	38484	DEPP – Ministère chargé de l’éducation nationale
+fr-en-ips-colleges-ap2022	Indices de position sociale dans les collèges (2022)	2024-05-24T12:13:00+00:00	6973	DEPP – Ministère chargé de l’éducation nationale
 fr-en-mode-hebergement-eleves-etablissements-2d	Le mode d’hébergement des élèves dans les établissements du second degré	2026-08-05T09:10:44.114000+00:00	65101	DEPP – Ministère chargé de l’éducation nationale
 fr-en-evaluations_nationales_4eme_academie	Résultats aux évaluations nationales de début de quatrième par académie	2026-06-16T08:39:33.782000+00:00	558	DEPP – Ministère chargé de l’éducation nationale
 fr-en-litterature-collegiens	Littérature pour les collégiens	2026-01-29T18:29:36.231000+00:00	205	DGESCO - Ministère de l'éducation nationale
 label-100-eac	Label 100% EAC	2024-07-05T12:52:08+00:00	157	Ministère de la Culture
-observatoire-des-usages-pedagogiques-de-l-ia-actions-innovantes	[Observatoire des usages pédagogiques de l'IA] Actions innovantes	2026-10-12T23:00:02.061000+00:00	183	DGESCO
 fr-en-gestionnaire-dacces-aux-ressources-gar-liste_des_ressources-2026	GAR-Liste_des_ressources 2026	2025-12-16T09:45:16+00:00	15630	DNE - Ministère de l'Education Nationale DNE-SN1
 fr-en-etic_1d	Enquête ETIC 1er degré – Enquête cessée à partir de 2020	2021-06-30T22:00:00+00:00	81947	DEPP – Ministère chargé de l’éducation nationale
-fr-en-cites_educatives	Établissements membres d'une cité éducative	2026-10-16T04:00:05.078000+00:00	4684	Ministère de l'Éducation nationale
-fr-en-etablissements-fermes	Établissements fermés	2026-10-16T04:00:29.683000+00:00	42782	DEPP – Ministère chargé de l’éducation nationale
-fr-en-ips-colleges-ap2022	Indices de position sociale dans les collèges (2022)	2024-05-24T12:13:00+00:00	6973	DEPP – Ministère chargé de l’éducation nationale
+fr-en-cites_educatives	Établissements membres d'une cité éducative	2026-10-13T04:00:06.897000+00:00	4684	Ministère de l'Éducation nationale
 fr-en-evaluations_nationales_ce2_academie	Les évaluations nationales Repères CE2 par académie	2026-06-02T07:39:20.474000+00:00	3348	DEPP – Ministère chargé de l’éducation nationale
 fr-en-offre-langues-2d	Offre de langues dans les collèges et lycées	2026-01-31T11:39:00.683000+00:00	39858	DNE - Ministère de l'Education Nationale
+fr-en-etablissements-fermes	Établissements fermés	2026-10-13T04:00:29.265000+00:00	42775	DEPP – Ministère chargé de l’éducation nationale
 fr-en-liste-diplomes-professionnels	Liste des diplômes professionnels de l’éducation nationale	2026-10-09T13:52:31.715000+00:00	533	DGESCO - Ministère de l'éducation nationale
 fr-en-ulis-tfv	Implantation des ULIS-TFV	2026-01-29T19:48:04.631000+00:00	52	
 liste-des-actifs-de-donnees	Liste des actifs de données	2026-02-17T18:56:19+00:00	361	AMDAC
 fr-en-microtic2d	Enquête MicroTic2D – Enquête cessée à partir de 2023	2022-06-02T22:00:00+00:00	10396	DEPP – Ministère chargé de l’éducation nationale
 fr-en-ips-lycees-ap2023	Indices de position sociale des lycées (à partir de 2023)	2026-06-10T08:20:49.021000+00:00	10905	DEPP – Ministère chargé de l’éducation nationale
-fr-en-assistants_langue_francaise	Assistants de langue française à l'étranger - postes offerts	2026-02-02T18:50:05.481000+00:00	98	France Éducation international
+fr-en-evaluations_nationales_ce1_departement	Les évaluations nationales Repères CE1 par département	2026-06-02T07:37:50.922000+00:00	41004	DEPP – Ministère chargé de l’éducation nationale
+fr-en-evaluations_nationales_ce1_region	Les évaluations nationales Repères CE1 par région académique	2026-06-02T07:38:20.947000+00:00	7638	DEPP – Ministère chargé de l’éducation nationale
 fr-en-ips_ecoles_v2	Indices de position sociale des écoles (2016-2021)	2024-05-24T11:31:04+00:00	182082	DEPP – Ministère chargé de l’éducation nationale
 fr-en-dnma-par-uai-services	DNMA - Métriques par UAI croisées par les services	2026-10-07T23:23:57.795000+00:00	3209442	DNE - Ministère de l'Education Nationale
+fr-en-actions-educatives-culturelles	Actions éducatives et culturelles	2026-01-29T18:29:37.899000+00:00	230	Ministère de l'Éducation nationale
 fr-en-iva-emploi-groupe-specialite	IVA taux d'emploi en fonction du groupe de spécialité - Enquête cessée depuis 2020	2020-07-02T22:00:00+00:00	501	DEPP – Ministère chargé de l’éducation nationale
 fr-en-taille-colleges-lycees	Taille des collèges et des lycées	2018-03-26T07:57:09+00:00	344	Ministère de l'Éducation nationale
-donnees-ips-lycees	dataviz1	2010-01-01T09:41:02+00:00	32618	DEPP – Ministère en charge de l’éducation nationale
-retours-formulaire-votre-avis-ameliorations-souhaitees	Retours formulaire - votre avis - Améliorations ergonomiques souhaitées	2023-04-12T14:35:43+00:00	0	
 fr-en-indicateurs-de-resultat-des-lycees-pro_v2	Indicateurs de valeur ajoutée des lycées d'enseignement professionnel	2026-06-10T10:16:56.029000+00:00	28258	DEPP – Ministère chargé de l’éducation nationale
 fr-en-ips-colleges-ap2023	Indices de position sociale des collèges (à partir de 2023)	2026-09-01T09:31:02.578000+00:00	21061	DEPP – Ministère chargé de l’éducation nationale
 fr-en-inserjeunes-cfa	Inserjeunes Apprentissage par centre de formation d'apprentis (CFA)	2026-07-20T07:36:20.370000+00:00	11314	DEPP – Ministère chargé de l’éducation nationale
+fr-en-assistants_langue_francaise	Assistants de langue française à l'étranger - postes offerts	2026-02-02T18:50:05.481000+00:00	98	France Éducation international
 fr-en-evaluations_nationales_mi_cp_academie	Les évaluations nationales Repères de mi-CP par académie	2026-06-02T07:20:13.829000+00:00	9030	DEPP – Ministère chargé de l’éducation nationale
-fr-en-taux-de-pression-et-demploi	Taux de pression et d'emploi pour les diplômes de la voie professionnelle	2026-01-29T18:45:44.138000+00:00	185	DGESCO - Ministère de l'éducation nationale
 fr-en-evaluations_nationales_4eme_region	Résultats aux évaluations nationales de début de quatrième par région	2026-06-16T08:39:25.815000+00:00	342	DEPP – Ministère chargé de l’éducation nationale
-fr-en-diplomes-etablissements-secondaire	Diplômes préparés dans les établissements du secondaire et formations intermédiaires	2026-01-29T18:27:09.992000+00:00	3381	DNE - Ministère de l'Education Nationale
-fr-en-dnma-par-uai-appareils	DNMA - Métriques par UAI croisées par les appareils (types d'appareils, navigateurs, systèmes d'exploitation)	2026-10-07T23:35:01.205000+00:00	3997845	DNE - Ministère de l'Education Nationale
-fr-en-futurpro-indicateurs-formations	Futur pro - indicateurs formations	2025-12-11T09:27:07+00:00	554	
-fr-en-lycee_pro-effectifs-niveau-sexe-lv	Effectifs d’élèves en lycée professionnel	2026-07-27T10:21:28.880000+00:00	15506	DEPP – Ministère chargé de l’éducation nationale
+paris-2024-itineraires-spectateurs	Paris 2024 - Itinéraires spectateurs HORS PARIS	2024-10-01T10:01:35+00:00	133	Ministère des Sports
+donnees-ips-lycees	dataviz1	2010-01-01T09:41:02+00:00	32618	DEPP – Ministère en charge de l’éducation nationale
 fr-en-indicateurs_personnels_etablissements2d	Les personnels dans les établissements du second degré	2026-07-23T15:32:40.684000+00:00	10697	DEPP – Ministère chargé de l’éducation nationale
-fr-en-indicateurs_personnels_etablissements1d	Les personnels dans les établissements du premier degré	2026-06-24T18:35:30.817000+00:00	94584	DEPP – Ministère chargé de l’éducation nationale
 fr-en-evaluations_nationales_mi_cp_departement	Les évaluations nationales Repères de mi-CP par département	2026-06-02T07:20:42.485000+00:00	29904	DEPP – Ministère chargé de l’éducation nationale
 fr-en-lycee_pro-effectifs-niveau-sexe-mef	Effectifs des élèves en voie professionnelle ou BTS	2026-06-10T10:00:04.964000+00:00	312462	DEPP – Ministère chargé de l’éducation nationale
 fr-en-lieux-de-memoire	Sites d’histoire et de mémoire en lien avec le racisme, l’antisémitisme et l’antitsiganisme	2026-04-09T09:00:35.504000+00:00	385	DGESCO - Ministère de l'éducation nationale
-fr-en-programmes-enseignement-2nd-degre	Programmes d'enseignement du second degré	2026-02-02T17:03:39.965000+00:00	688	DGESCO - Ministère de l'éducation nationale
-fr-en-pix_certifications_par_classes	Pix - Nombre de participations aux sessions de certification de profils Pix par classe et établissement	2026-07-23T17:22:55.172000+00:00	72568	Groupement d’intérêt public « Pix »
-fr-en-matomo_peripheriques	matomo periphériques	2026-03-23T16:06:41+00:00	431	
-fr-en-carte-scolaire-colleges-publics	Carte scolaire des collèges publics	2026-10-09T15:00:57.180000+00:00	499680	Direction générale de l'Enseignement scolaire
+fr-en-diplomes-etablissements-secondaire	Diplômes préparés dans les établissements du secondaire et formations intermédiaires	2026-01-29T18:27:09.992000+00:00	3381	DNE - Ministère de l'Education Nationale
+fr-en-dnma-par-uai-appareils	DNMA - Métriques par UAI croisées par les appareils (types d'appareils, navigateurs, systèmes d'exploitation)	2026-10-07T23:35:01.205000+00:00	3997845	DNE - Ministère de l'Education Nationale
+assistant-ia-dinum-deploiement-au-ministere-de-leducation-nationale-en-academie	assistant-ia-dinum-deploiement-au-ministere-de-leducation-nationale-en-academie	2026-10-13T02:00:03.303000+00:00	32	DNE DSP - Ministère de l'Education Nationale 
+fr-en-futurpro-indicateurs-formations	Futur pro - indicateurs formations	2025-12-11T09:27:07+00:00	554	
+fr-en-lycee_pro-effectifs-niveau-sexe-lv	Effectifs d’élèves en lycée professionnel	2026-07-27T10:21:28.880000+00:00	15506	DEPP – Ministère chargé de l’éducation nationale
+fr-en-indicateurs_personnels_etablissements1d	Les personnels dans les établissements du premier degré	2026-06-24T18:35:30.817000+00:00	94584	DEPP – Ministère chargé de l’éducation nationale
 fr-en-sections-internationales	Sections internationales et classes menant au baccalauréat français international (BFI) en France et dans les établissements français à l’étranger	2026-09-30T13:44:56.767000+00:00	1100	DREIC - Ministère de l'éducation nationale
 fr-en-dnb-par-departement	Candidats au DNB par département, série et sexe	2026-06-23T10:08:15.305000+00:00	1212	DEPP – Ministère chargé de l’éducation nationale
 fr-en-sport-etudes	Implantation des sections Sport-Etudes	2026-02-12T16:26:15.181000+00:00	486	DGESCO - Ministère de l'éducation nationale
-fr-en-tne_suivi_deploiement_solutions_numeriques_dept	TNE - Suivi du déploiement des solutions numériques par département	2026-02-05T23:12:11.799000+00:00	12	Réseau Canopé
+fr-en-programmes-enseignement-2nd-degre	Programmes d'enseignement du second degré	2026-02-02T17:03:39.965000+00:00	688	DGESCO - Ministère de l'éducation nationale
 fr-en-effectifs-second-degre	Effectifs d'élèves des établissements du second degré public et privé sous tutelle du ministère en charge de l'éducation nationale - Obsolète	2016-12-02T10:36:34+00:00	57130	DEPP – Ministère chargé de l’éducation nationale
-fr-en-gar-acces_profil2024-2025	Données d’accès aux ressources numériques éducatives via le GAR par profil d’utilisateur 2024-2025	2026-03-12T13:17:08+00:00	5	DNE - Ministère de l'Education Nationale DNE-SN1
-fr-en-futurpro	Futur Pro : formations/établissements	2025-11-25T15:37:39+00:00	30462	
-fr-en-etablissements-labellises-generation-2030	Établissements labellisés "génération 2030"	2026-10-15T11:55:13.713000+00:00	11331	DGESCO - Ministère de l'éducation nationale
+fr-en-scores-timss	Étude TIMSS : scores moyens par disciplines et domaines	2016-12-07T10:01:36+00:00	72	DEPP – Ministère chargé de l’éducation nationale
+fr-en-pix_certifications_par_classes	Pix - Nombre de participations aux sessions de certification de profils Pix par classe et établissement	2026-07-23T17:22:55.172000+00:00	72568	Groupement d’intérêt public « Pix »
+fr-en-carte-scolaire-colleges-publics	Carte scolaire des collèges publics	2026-10-09T15:00:57.180000+00:00	499680	Direction générale de l'Enseignement scolaire
 fr-en-carto-pro-reussite-aux-examens	Réussite aux examens de la voie professionnelle	2026-01-29T18:38:35.603000+00:00	1615	DGESCO - Ministère de l'éducation nationale
-fr-en-territoires-educatifs-ruraux	Territoires éducatifs ruraux	2026-01-29T20:06:26.714000+00:00	2829	DGESCO - Ministère de l'éducation nationale
-fr-en-evaluations_nationales_cm2_departement	Les évaluations nationales Repères CM2 par département	2026-06-02T07:41:13.494000+00:00	9792	DEPP – Ministère chargé de l’éducation nationale
+fr-en-evaluations_nationales_cm1_academie	Les évaluations nationales Repères CM1 par académie	2026-06-02T13:27:00.638000+00:00	4743	DEPP – Ministère chargé de l’éducation nationale
 fr-en-tcf_inscrits_centres	TCF (Test de connaissance du français) - inscrits par centres de passation	2026-01-29T19:43:02.421000+00:00	4148	France Éducation international
-fr-en-age_eleves_entree_sixieme	Age des élèves à l'entrée en sixième	2026-09-01T09:03:25.277000+00:00	612	DEPP – Ministère chargé de l’éducation nationale
-fr-en-ips_erea	Indices de position sociale des EREA (2016-2021)	2024-05-24T12:30:47+00:00	473	DEPP – Ministère chargé de l’éducation nationale
-fr-en-capytale-repartition-des-visites-sur-dataeducation	Capytale - Répartition par profil des visites d'utilisateurs connectés	2026-10-15T22:15:02.158000+00:00	72	DNE - Ministère de l'Education Nationale - Académie de Paris
+fr-en-assistants_langues_vivantes_etrangeres	Assistants de langues vivantes étrangères - postes offerts	2026-02-02T18:55:23.042000+00:00	200	France Éducation international
+fr-en-futurpro	Futur Pro : formations/établissements	2025-11-25T15:37:39+00:00	30462	
 futurpro-isochrones	futurpro Isochrones	2026-01-29T09:15:41+00:00	28427	
 futurpro_familles_metiers	futurpro_familles_metiers	2026-02-03T22:17:24+00:00	35205	
-fr-en-ecoles-labellisees-30-minutes-d-activite-physique-quotidienne-30-apq	Ecoles labellisées "30 minutes d'activité physique quotidienne" (30'APQ)	2026-01-29T18:48:36.093000+00:00	9211	DGESCO - Ministère de l'éducation nationale
-fr-en-agenda-ministre-education-nationale	Agenda du ministre de l’Éducation Nationale	2026-10-16T04:30:03.007000+00:00	411	Délégation à la communication - Ministère de l'Éducation nationale
-fr-en-evaluations_nationales_ce2_region	Les évaluations nationales Repères CE2 par région académique	2026-06-02T07:39:48.031000+00:00	1998	DEPP – Ministère chargé de l’éducation nationale
-fr-en-tne_suivi_audiences	TNE - Indicateurs de suivi d'audience de la plateforme TNE	2026-01-31T12:10:16.599000+00:00	50	Réseau Canopé
-paris-2024-zones-de-depose-reprise-accredites-spectateurs	Paris 2024 - Zones de dépose reprise accrédités et spectateurs	2024-10-01T10:02:07+00:00	1461	Ministère des Sports
-fr-en-pix_participations_aux_campagnes_par_etablissement_sans_collecte_de_profil	Pix - Participations aux campagnes d'évaluation (parcours) par établissement	2026-07-23T17:08:36.865000+00:00	41422	Groupement d’intérêt public « Pix »
-fr-en-initiatives_donnees_europe	fr-en-initiatives_donnees_europe	2026-08-27T14:13:51.802000+00:00	44	France Éducation international
-fr-en-capytale-activites-copies	Capytale Activités et copies	2026-10-15T22:15:25.529000+00:00	16769	
-fr-en-capytale-bibliotheque	Capytale bibliothèque	2026-10-08T12:04:40+00:00	1	
+fr-en-territoires-educatifs-ruraux	Territoires éducatifs ruraux	2026-01-29T20:06:26.714000+00:00	2829	DGESCO - Ministère de l'éducation nationale
+fr-en-evaluations_nationales_cm2_departement	Les évaluations nationales Repères CM2 par département	2026-06-02T07:41:13.494000+00:00	9792	DEPP – Ministère chargé de l’éducation nationale
+fr-en-dnb-par-sexe-et-par-serie	Diplôme national du brevet par sexe et par série	2026-06-23T10:17:21.336000+00:00	16	DEPP – Ministère chargé de l’éducation nationale
+fr-en-evaluations_nationales_2de_pro_departement	Résultats consolidés aux évaluations nationales de début de seconde professionnelle par département	2026-06-23T10:00:49.563000+00:00	4284	DEPP – Ministère chargé de l’éducation nationale
+fr-en-remplacement-second-degre	Le remplacement des professeurs absents dans l'enseignement public du second degré	2024-11-20T11:42:06+00:00	30	DGRH - Ministère de l'éducation nationale
+fr-en-age_eleves_entree_sixieme	Age des élèves à l'entrée en sixième	2026-09-01T09:03:25.277000+00:00	612	DEPP – Ministère chargé de l’éducation nationale
+fr-en-agenda-ministre-education-nationale	Agenda du ministre de l’Éducation Nationale	2026-10-13T04:30:03.291000+00:00	397	Délégation à la communication - Ministère de l'Éducation nationale
+fr-en-ips_erea	Indices de position sociale des EREA (2016-2021)	2024-05-24T12:30:47+00:00	473	DEPP – Ministère chargé de l’éducation nationale
 fr-esr-parcoursup	Parcoursup 2025 - vœux de poursuite d'études et de réorientation dans l'enseignement supérieur et réponses des établissements	2026-03-09T16:54:47+00:00	14252	Ministère de l'Enseignement supérieur, de la Recherche et de l'Espace > Sous-Direction des systèmes d'information et des études statistiques (SIES) > Département des études statistiques sur l'enseignement supérieur
 fr-en-carto-pro-effectifs	Effectifs d'apprenants dans les diplômes de la voie professionnelle	2026-01-29T18:57:24.394000+00:00	115267	DGESCO - Ministère de l'éducation nationale
+fr-en-carto-pro-insertion	Taux d'emploi des diplômes de la voie professionnelle	2026-01-29T18:38:28.464000+00:00	635	DGESCO - Ministère de l'éducation nationale
+fr-en-ecoles-labellisees-30-minutes-d-activite-physique-quotidienne-30-apq	Ecoles labellisées "30 minutes d'activité physique quotidienne" (30'APQ)	2026-01-29T18:48:36.093000+00:00	9211	DGESCO - Ministère de l'éducation nationale
+fr-en-evaluations_nationales_ce2_region	Les évaluations nationales Repères CE2 par région académique	2026-06-02T07:39:48.031000+00:00	1998	DEPP – Ministère chargé de l’éducation nationale
+paris-2024-zones-de-depose-reprise-accredites-spectateurs	Paris 2024 - Zones de dépose reprise accrédités et spectateurs	2024-10-01T10:02:07+00:00	1461	Ministère des Sports
+fr-en-pix_participations_aux_campagnes_par_etablissement_sans_collecte_de_profil	Pix - Participations aux campagnes d'évaluation (parcours) par établissement	2026-07-23T17:08:36.865000+00:00	41422	Groupement d’intérêt public « Pix »
+fr-en-effectif-des-agents-en-situation-de-handicap-par-type-de-beneficiaire	Effectif des agents en situation de handicap par type de bénéficiaire	2026-01-29T18:43:54.331000+00:00	11	DGRH - Ministère de l'éducation nationale
+fr-en-lycee_gt-effectifs-niveau-sexe-lv	Effectifs d’élèves en lycée d'enseignement général et technologique	2026-07-27T08:15:52.712000+00:00	17674	DEPP – Ministère chargé de l’éducation nationale
 fr-en-effectifs-specialites-triplettes-1ere-generale	Effectifs dans les enseignements de spécialités en Première générale	2026-07-27T09:31:40.900000+00:00	11337	DEPP – Ministère chargé de l’éducation nationale
 fr-en-college-effectifs-niveau-sexe-lv	Effectifs d’élèves en collège	2026-07-27T10:24:40.709000+00:00	58556	DEPP – Ministère chargé de l’éducation nationale
-fr-en-carto-pro-insertion	Taux d'emploi des diplômes de la voie professionnelle	2026-01-29T18:38:28.464000+00:00	635	DGESCO - Ministère de l'éducation nationale
-fr-en-ecoles-ep	Écoles éducation prioritaire	2026-01-29T18:36:59.885000+00:00	417147	DGESCO - Ministère de l'éducation nationale
-fr-en-assistant_ia_deploiement_menjs	Déploiement de "l'Assistant" au ministère de l'éducation nationale	2026-07-09T09:44:53+00:00	99	DNE DSP - Ministère de l'Education Nationale
-fr-en-budget-missions	Le budget : missions interministérielles «Enseignement scolaire» et «Recherche et enseignement supérieur»	2026-01-29T18:26:55.192000+00:00	612	DAF - Ministère de l'Éducation nationale
+fr-en-indicateur_segregation_sociale_colleges	Indicateurs de ségrégation sociale entre collèges dans les départements	2026-07-02T08:21:24.489000+00:00	1584	DEPP – Ministère chargé de l’éducation nationale
 fr-en-evaluations_nationales_cp_departement	Les évaluations nationales Repères CP par département	2026-06-02T07:34:50.026000+00:00	35496	DEPP – Ministère chargé de l’éducation nationale
 fr-en-reussite-au-baccalaureat-age	Réussite au baccalauréat selon l'âge	2026-06-23T10:06:18.206000+00:00	348	DEPP – Ministère chargé de l’éducation nationale
+fr-en-cap-par-departement	Candidat au CAP par département et sexe	2026-06-09T08:23:02.289000+00:00	609	DEPP – Ministère chargé de l’éducation nationale
+fr-en-ecoles-ep	Écoles éducation prioritaire	2026-01-29T18:36:59.885000+00:00	417147	DGESCO - Ministère de l'éducation nationale
 donnees-ips-colleges	dataviz2	2010-01-01T09:41:02+00:00	62646	DEPP – Ministère en charge de l’éducation nationale
-fr-en-indicateur_segregation_sociale_colleges	Indicateurs de ségrégation sociale entre collèges dans les départements	2026-07-02T08:21:24.489000+00:00	1584	DEPP – Ministère chargé de l’éducation nationale
-fr-en-lycee_gt-effectifs-niveau-sexe-lv	Effectifs d’élèves en lycée d'enseignement général et technologique	2026-07-27T08:15:52.712000+00:00	17674	DEPP – Ministère chargé de l’éducation nationale
+fr-en-assistant_ia_deploiement_menjs	Déploiement de "l'Assistant" au ministère de l'éducation nationale	2026-07-09T09:44:53+00:00	99	DNE DSP - Ministère de l'Education Nationale
 fr-en-evaluations_nationales_cp_academie	Les évaluations nationales Repères CP par académie	2026-06-02T07:35:42.828000+00:00	10786	DEPP – Ministère chargé de l’éducation nationale
+fr-en-matomo_peripheriques	matomo periphériques	2026-03-23T16:06:41+00:00	431	
+fr-en-matomo_comportements	matomo comportements	2026-03-18T13:26:06+00:00	20776	

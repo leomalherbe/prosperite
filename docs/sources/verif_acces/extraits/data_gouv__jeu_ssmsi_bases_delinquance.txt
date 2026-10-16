@@ -1,6 +1,6 @@
 # data_gouv / jeu_ssmsi_bases_delinquance
 # URL : https://www.data.gouv.fr/api/1/datasets/621df2954fa5a3b5a023e23c/
-# Vérifié le 2026-10-16T07:53:36Z — HTTP 200 — application/json — 36824 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:37Z — HTTP 200 — application/json — 36814 octets lus (taille annoncée : inconnue)
 
 {
  "access_audiences": [],
@@ -51,7 +51,7 @@
    "2026-09": 0,
    "2026-10": 0
   },
-  "resources_downloads": 288444,
+  "resources_downloads": 286954,
   "reuses": 54,
   "reuses_by_months": {
    "2025-10": 0,
@@ -68,7 +68,7 @@
    "2026-09": 6,
    "2026-10": 1
   },
-  "views": 301547
+  "views": 300719
  },
  "organization": {
   "acronym": "MI",
@@ -126,9 +126,9 @@
    "created_at": "2026-06-29T15:03:10.696000+00:00",
    "description": null,
    "extras": {
-    "analysis:check_id": 55179224,
+    "analysis:check_id": 49721225,
     "analysis:error": "File too large to download",
-    "analysis:last-modified-at": "2026-09-28T07:36:07+00:00",
+    "analysis:last-modified-at": "2026-07-09T11:58:12+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:parsing:error": "csv_detective:Table seems to be empty",
     "analysis:parsing:finished_at": "2026-06-29T15:03:53.464464+00:00",
@@ -213,7 +213,7 @@
    "last_modified": "2026-07-09T11:58:34.249000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/a2af06fc-ba6c-4e6c-a69a-ac222817c93f",
    "metrics": {
-    "views": 12014
+    "views": 11938
    },
    "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
    "preview_url": null,
@@ -230,10 +230,10 @@
    "created_at": "2026-03-26T12:43:12.813000+00:00",
    "description": null,
    "extras": {
-    "analysis:check_id": 55178231,
+    "analysis:check_id": 49721295,
     "analysis:checksum": "287b5105a136d0f1a08302a80ec87bcad6ef0257",
     "analysis:content-length": 277329,
-    "analysis:last-modified-at": "2026-09-28T07:36:18+00:00",
+    "analysis:last-modified-at": "2026-07-09T12:01:36+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "application/pdf",
     "check:available": true,
@@ -263,7 +263,7 @@
    "last_modified": "2026-07-09T12:01:37.058000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/5e6dd067-3bba-45e3-b7ad-ed8c673bea5b",
    "metrics": {
-    "views": 4222
+    "views": 4104
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -280,10 +280,10 @@
    "created_at": "2026-03-26T12:42:30.465000+00:00",
    "description": null,
    "extras": {
-    "analysis:check_id": 55178313,
+    "analysis:check_id": 49721274,
     "analysis:checksum": "a68550f3b9dcc8a42d8ebd78025f84a29970fd0f",
     "analysis:content-length": 16095547,
-    "analysis:last-modified-at": "2026-09-28T07:36:11+00:00",
+    "analysis:last-modified-at": "2026-07-09T12:00:19+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "application/octet-stream",
     "analysis:parsing:error": "csv_detective:Could not detect the file's encoding. Consider specifying it in the routine call.",
@@ -296,10 +296,10 @@
     "check:cors:allow-origin": "*",
     "check:cors:max-age": "1728000",
     "check:cors:status": 204,
-    "check:date": "2026-10-16T00:12:54.965920+00:00",
+    "check:date": "2026-07-09T12:00:25.324088+00:00",
     "check:headers:content-length": 16095547,
-    "check:headers:content-type": "application/vnd.apache.parquet",
-    "check:id": 55178313,
+    "check:headers:content-type": "application/octet-stream",
+    "check:id": 49721274,
     "check:status": 200,
     "check:timeout": false
    },
@@ -316,7 +316,7 @@
    "last_modified": "2026-07-09T12:00:20.286000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/604d71b8-337d-4869-9226-49e01bae87df",
    "metrics": {
-    "views": 7574
+    "views": 7461
    },
    "mime": "application/octet-stream",
    "preview_url": null,
@@ -333,17 +333,17 @@
    "created_at": "2026-03-26T12:41:47.794000+00:00",
    "description": null,
    "extras": {
-    "analysis:check_id": 55178164,
+    "analysis:check_id": 49721263,
     "analysis:checksum": "723e73677ba71ddd1a7b94cae22cb6086d4c9bb7",
     "analysis:content-length": 621167706,
-    "analysis:last-modified-at": "2026-09-28T07:36:09+00:00",
+    "analysis:last-modified-at": "2026-07-09T11:59:46+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "text/plain",
-    "analysis:parsing:finished_at": "2026-10-16T00:12:27.899976+00:00",
+    "analysis:parsing:finished_at": "2026-07-09T12:02:03.847099+00:00",
     "analysis:parsing:parquet_size": 15303407,
     "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/44ef4323-1097-48d5-8719-3c544b55d294.parquet",
     "analysis:parsing:parsing_table": "352e9805856e25ba3a3e7af328a53fea",
-    "analysis:parsing:started_at": "2026-10-16T00:10:16.287181+00:00",
+    "analysis:parsing:started_at": "2026-07-09T12:00:08.857460+00:00",
     "check:available": true,
     "check:cors:allow-credentials": "true",
     "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
@@ -351,10 +351,10 @@
     "check:cors:allow-origin": "*",
     "check:cors:max-age": "1728000",
     "check:cors:status": 204,
-    "check:date": "2026-10-16T00:10:03.019035+00:00",
+    "check:date": "2026-07-09T11:59:52.677459+00:00",
     "check:headers:content-length": 39932450,
-    "check:headers:content-type": "application/gzip",
-    "check:id": 55178164,
+    "check:headers:content-type": "application/octet-stream",
+    "check:id": 49721263,
     "check:status": 200,
     "check:timeout": false
    },
@@ -371,7 +371,7 @@
    "last_modified": "2026-07-09T11:59:52.049000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/44ef4323-1097-48d5-8719-3c544b55d294",
    "metrics": {
-    "views": 31026
+    "views": 30535
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/44ef4323-1097-48d5-8719-3c544b55d294",
@@ -416,7 +416,7 @@
    "last_modified": "2026-07-09T11:05:36.750000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/eaf4d1df-9a43-44e3-a4d1-a0f789fb4d74",
    "metrics": {
-    "views": 19336
+    "views": 19233
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -433,17 +433,17 @@
    "created_at": "2026-01-27T17:44:04.585000+00:00",
    "description": null,
    "extras": {
-    "analysis:check_id": 55177994,
+    "analysis:check_id": 49721283,
     "analysis:checksum": "28d2bc5a7b271bec4e7bb3f3d352e25e62ae3eae",
     "analysis:content-length": 346163,
-    "analysis:last-modified-at": "2026-09-28T07:36:17+00:00",
+    "analysis:last-modified-at": "2026-07-09T12:00:55+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "text/plain",
-    "analysis:parsing:finished_at": "2026-10-16T00:06:58.000126+00:00",
+    "analysis:parsing:finished_at": "2026-07-09T12:01:09.811350+00:00",
     "analysis:parsing:parquet_size": 43751,
     "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/75753852-aca0-4c53-bfd4-a29513358d2f.parquet",
     "analysis:parsing:parsing_table": "382219b5389d6723d67a83bfee98e366",
-    "analysis:parsing:started_at": "2026-10-16T00:06:57.780890+00:00",
+    "analysis:parsing:started_at": "2026-07-09T12:01:07.991788+00:00",
     "check:available": true,
     "check:cors:allow-credentials": "true",
     "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
@@ -451,9 +451,9 @@
     "check:cors:allow-origin": "*",
     "check:cors:max-age": "1728000",
     "check:cors:status": 204,
-    "check:date": "2026-10-16T00:06:52.668873+00:00",
+    "check:date": "2026-01-31T04:04:18.650000",
     "check:headers:content-type": "text/csv",
-    "check:id": 55177994,
+    "check:id": 40603277,
     "check:status": 200,
     "check:timeout": false
    },
@@ -470,7 +470,7 @@
    "last_modified": "2026-07-09T12:00:58.553000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/75753852-aca0-4c53-bfd4-a29513358d2f",
    "metrics": {
-    "views": 8980
+    "views": 8852
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/75753852-aca0-4c53-bfd4-a29513358d2f",
@@ -487,17 +487,17 @@
    "created_at": "2026-01-27T17:41:54.890000+00:00",
    "description": null,
    "extras": {
-    "analysis:check_id": 55178205,
+    "analysis:check_id": 49721276,
     "analysis:checksum": "e42900f452b56e624752813e4396b7e2fd1b14b9",
     "analysis:content-length": 2001231,
-    "analysis:last-modified-at": "2026-09-28T07:36:16+00:00",
+    "analysis:last-modified-at": "2026-07-09T12:00:38+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "text/plain",
-    "analysis:parsing:finished_at": "2026-10-16T00:10:39.113750+00:00",
+    "analysis:parsing:finished_at": "2026-07-09T12:00:55.489388+00:00",
     "analysis:parsing:parquet_size": 219287,
     "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/2b27a675-e3bf-41ef-a852-5fb9ab483967.parquet",
     "analysis:parsing:parsing_table": "99628f5efd734f9d7881b5f91dda4251",
-    "analysis:parsing:started_at": "2026-10-16T00:10:38.471192+00:00",
+    "analysis:parsing:started_at": "2026-07-09T12:00:48.275127+00:00",
     "check:available": true,
     "check:cors:allow-credentials": "true",
     "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
@@ -505,9 +505,9 @@
     "check:cors:allow-origin": "*",
     "check:cors:max-age": "1728000",
     "check:cors:status": 204,
-    "check:date": "2026-10-16T00:10:31.738567+00:00",
+    "check:date": "2026-01-31T04:04:22.456000",
     "check:headers:content-type": "text/csv",
-    "check:id": 55178205,
+    "check:id": 40603281,
     "check:status": 200,
     "check:timeout": false
    },
@@ -524,7 +524,7 @@
    "last_modified": "2026-07-09T12:00:39.199000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/2b27a675-e3bf-41ef-a852-5fb9ab483967",
    "metrics": {
-    "views": 20572
+    "views": 20001
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/2b27a675-e3bf-41ef-a852-5fb9ab483967",
@@ -572,7 +572,7 @@
    "last_modified": "2026-07-09T11:05:22.655000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/db2a378a-e71a-4383-815c-163b4a3ddabd",
    "metrics": {
-    "views": 12585
+    "views": 12578
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -622,7 +622,7 @@
    "last_modified": "2026-07-09T11:05:16.352000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/1c23c284-9725-4d76-ac69-33356f7e52c9",
    "metrics": {
-    "views": 17514
+    "views": 17502
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -670,7 +670,7 @@
    "last_modified": "2026-07-09T11:05:09.498000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/4558c4a8-1273-4b50-a30f-385e177561a2",
    "metrics": {
-    "views": 14480
+    "views": 14479
    },
    "mime": "application/pdf",
    "preview_url": null,

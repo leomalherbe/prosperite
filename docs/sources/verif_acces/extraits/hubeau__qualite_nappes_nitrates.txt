@@ -1,11 +1,11 @@
 # hubeau / qualite_nappes_nitrates
 # URL : https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340&size=2
-# Vérifié le 2026-10-16T07:54:57Z — HTTP 206 — application/json;charset=UTF-8 — 11035 octets lus (taille annoncée : 1809)
+# Vérifié le 2026-10-13T14:47:48Z — HTTP 206 — application/json;charset=UTF-8 — 11035 octets lus (taille annoncée : 1810)
 
 {
- "count": 885109,
+ "count": 885036,
  "first": "https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340&page=1&size=2",
- "last": "https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340&page=442555&size=2",
+ "last": "https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340&page=442518&size=2",
  "prev": null,
  "next": "https://hubeau.eaufrance.fr/api/v1/qualite_nappes/analyses?code_param=1340&page=2&size=2",
  "api_version": "1.4.0",

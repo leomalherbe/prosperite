@@ -1,6 +1,6 @@
 # data_gouv / jeu_onisr_baac
 # URL : https://www.data.gouv.fr/api/1/datasets/53698f4ca3a729239d2036df/
-# Vérifié le 2026-10-16T07:53:40Z — HTTP 200 — application/json — 230186 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:38Z — HTTP 200 — application/json — 230186 octets lus (taille annoncée : inconnue)
 
 {
  "access_audiences": [],
@@ -57,7 +57,7 @@
    "2026-08": 0,
    "2026-09": 0
   },
-  "resources_downloads": 720585,
+  "resources_downloads": 716431,
   "reuses": 91,
   "reuses_by_months": {
    "2025-09": 0,
@@ -74,7 +74,7 @@
    "2026-08": 11,
    "2026-09": 0
   },
-  "views": 257176
+  "views": 256261
  },
  "organization": {
   "acronym": "MI",
@@ -166,7 +166,7 @@
    "last_modified": "2025-11-07T10:02:12.392000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/d0574a19-9005-4fff-92db-050b5fb2c72c",
    "metrics": {
-    "views": 5495
+    "views": 5434
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/d0574a19-9005-4fff-92db-050b5fb2c72c",
@@ -217,7 +217,7 @@
    "last_modified": "2025-10-21T14:28:14.139000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/baf4e65e-fe7b-4095-a3a6-d907df102a5e",
    "metrics": {
-    "views": 1866
+    "views": 1850
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/baf4e65e-fe7b-4095-a3a6-d907df102a5e",
@@ -272,7 +272,7 @@
    "last_modified": "2025-10-21T11:59:01.081000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/83f0fb0e-e0ef-47fe-93dd-9aaee851674a",
    "metrics": {
-    "views": 13910
+    "views": 13688
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/83f0fb0e-e0ef-47fe-93dd-9aaee851674a",
@@ -323,7 +323,7 @@
    "last_modified": "2025-10-21T11:58:13.699000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/228b3cda-fdfb-4677-bd54-ab2107028d2d",
    "metrics": {
-    "views": 8770
+    "views": 8632
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/228b3cda-fdfb-4677-bd54-ab2107028d2d",
@@ -374,7 +374,7 @@
    "last_modified": "2025-12-29T09:29:20.308000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/fd30513c-6b11-4a56-b6dc-5ac87728794b",
    "metrics": {
-    "views": 6611
+    "views": 6448
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/fd30513c-6b11-4a56-b6dc-5ac87728794b",
@@ -425,7 +425,7 @@
    "last_modified": "2025-10-21T11:56:56.552000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/f57b1f58-386d-4048-8f78-2ebe435df868",
    "metrics": {
-    "views": 10327
+    "views": 10132
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/f57b1f58-386d-4048-8f78-2ebe435df868",
@@ -479,7 +479,7 @@
    "last_modified": "2025-10-21T14:27:23.791000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/5a858f9e-a229-4063-b96e-686b44d7739b",
    "metrics": {
-    "views": 3530
+    "views": 3517
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/5a858f9e-a229-4063-b96e-686b44d7739b",
@@ -534,7 +534,7 @@
    "last_modified": "2024-10-23T15:33:39.692000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/68848e2a-28dd-4efc-9d5f-d512f7dbe66f",
    "metrics": {
-    "views": 18273
+    "views": 18170
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/68848e2a-28dd-4efc-9d5f-d512f7dbe66f",
@@ -592,7 +592,7 @@
    "last_modified": "2024-10-23T15:33:01.820000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/146a42f5-19f0-4b3e-a887-5cd8fbef057b",
    "metrics": {
-    "views": 12991
+    "views": 12908
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/146a42f5-19f0-4b3e-a887-5cd8fbef057b",
@@ -650,7 +650,7 @@
    "last_modified": "2024-10-23T15:32:29.599000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/8bef19bf-a5e4-46b3-b5f9-a145da4686bc",
    "metrics": {
-    "views": 14361
+    "views": 14285
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/8bef19bf-a5e4-46b3-b5f9-a145da4686bc",
@@ -712,7 +712,7 @@
    "last_modified": "2024-10-28T10:31:45.190000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/104dbb32-704f-4e99-a71e-43563cb604f2",
    "metrics": {
-    "views": 17366
+    "views": 17262
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/104dbb32-704f-4e99-a71e-43563cb604f2",
@@ -770,7 +770,7 @@
    "last_modified": "2025-03-26T17:02:58.944000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/62c20524-d442-46f5-bfd8-982c59763ec8",
    "metrics": {
-    "views": 26934
+    "views": 26879
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/62c20524-d442-46f5-bfd8-982c59763ec8",
@@ -824,7 +824,7 @@
    "last_modified": "2023-10-05T09:41:54.634000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/c9742921-4427-41e5-81bc-f13af8bc31a0",
    "metrics": {
-    "views": 15769
+    "views": 15734
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/c9742921-4427-41e5-81bc-f13af8bc31a0",
@@ -878,7 +878,7 @@
    "last_modified": "2023-10-05T09:41:20.327000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/a6ef711a-1f03-44cb-921a-0ce8ec975995",
    "metrics": {
-    "views": 13277
+    "views": 13247
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/a6ef711a-1f03-44cb-921a-0ce8ec975995",
@@ -932,7 +932,7 @@
    "last_modified": "2023-10-05T09:39:41.721000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/5fc299c0-4598-4c29-b74c-6a67b0cc27e7",
    "metrics": {
-    "views": 25987
+    "views": 25917
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/5fc299c0-4598-4c29-b74c-6a67b0cc27e7",
@@ -986,7 +986,7 @@
    "last_modified": "2025-10-21T11:59:33.829000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/8ef4c2a3-91a0-4d98-ae3a-989bde87b62a",
    "metrics": {
-    "views": 21318
+    "views": 21225
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -1036,7 +1036,7 @@
    "last_modified": "2023-10-09T14:03:43.114000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/ba5a1956-7e82-41b7-a602-89d7dd484d7a",
    "metrics": {
-    "views": 24880
+    "views": 24804
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -1090,7 +1090,7 @@
    "last_modified": "2022-10-24T11:39:53.069000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/0bb5953a-25d8-46f8-8c25-b5c2f5ba905e",
    "metrics": {
-    "views": 17865
+    "views": 17806
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/0bb5953a-25d8-46f8-8c25-b5c2f5ba905e",
@@ -1144,7 +1144,7 @@
    "last_modified": "2022-10-24T11:39:15.375000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/8a4935aa-38cd-43af-bf10-0209d6d17434",
    "metrics": {
-    "views": 19128
+    "views": 19086
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/8a4935aa-38cd-43af-bf10-0209d6d17434",
@@ -1198,7 +1198,7 @@
    "last_modified": "2022-10-24T11:38:45.420000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/85cfdc0c-23e4-4674-9bcd-79a970d7269b",
    "metrics": {
-    "views": 42701
+    "views": 42595
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/85cfdc0c-23e4-4674-9bcd-79a970d7269b",
@@ -1252,7 +1252,7 @@
    "last_modified": "2025-11-07T10:05:23.926000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/49d6533c-a789-49bc-967e-f7f3d74dda93",
    "metrics": {
-    "views": 4180
+    "views": 4158
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -1302,7 +1302,7 @@
    "last_modified": "2022-11-30T14:22:28.095000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/c4c7f24a-425f-48fe-b589-5e59f6658ef0",
    "metrics": {
-    "views": 2845
+    "views": 2840
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/c4c7f24a-425f-48fe-b589-5e59f6658ef0",
@@ -1356,7 +1356,7 @@
    "last_modified": "2022-11-30T14:18:32.989000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/eddac81d-e6bc-4d02-a864-7b4ab29ed8db",
    "metrics": {
-    "views": 3718
+    "views": 3716
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/eddac81d-e6bc-4d02-a864-7b4ab29ed8db",
@@ -1410,7 +1410,7 @@
    "last_modified": "2021-11-26T17:30:53.170000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/4e729f76-c04b-4388-be67-4762f5c05b55",
    "metrics": {
-    "views": 3455
+    "views": 3453
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/4e729f76-c04b-4388-be67-4762f5c05b55",
@@ -1464,7 +1464,7 @@
    "last_modified": "2021-11-26T17:31:18.235000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/5ec2789d-585a-4a4a-9efd-c47f6f085b64",
    "metrics": {
-    "views": 2013
+    "views": 2010
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/5ec2789d-585a-4a4a-9efd-c47f6f085b64",
@@ -1518,7 +1518,7 @@
    "last_modified": "2021-11-26T17:31:40.373000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/77b51b6f-29a9-4e1c-9af1-d237bba1669d",
    "metrics": {
-    "views": 1726
+    "views": 1724
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/77b51b6f-29a9-4e1c-9af1-d237bba1669d",
@@ -1572,7 +1572,7 @@
    "last_modified": "2021-11-26T17:32:01.525000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/3db6be71-3a13-4d27-a73b-df4f79e36d5e",
    "metrics": {
-    "views": 1649
+    "views": 1647
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/3db6be71-3a13-4d27-a73b-df4f79e36d5e",
@@ -1680,7 +1680,7 @@
    "last_modified": "2021-11-26T17:32:45.133000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/b3cde8f6-179e-4224-bbf0-b325e218d06a",
    "metrics": {
-    "views": 1423
+    "views": 1421
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/b3cde8f6-179e-4224-bbf0-b325e218d06a",
@@ -1734,7 +1734,7 @@
    "last_modified": "2021-11-26T17:33:05.449000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/f080122f-60ce-4e6f-a653-aedfc12b5ec8",
    "metrics": {
-    "views": 1373
+    "views": 1372
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/f080122f-60ce-4e6f-a653-aedfc12b5ec8",
@@ -1896,7 +1896,7 @@
    "last_modified": "2021-11-26T17:34:36.568000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/a050f3ab-5d2a-4ea4-8687-090c03b7cb09",
    "metrics": {
-    "views": 1338
+    "views": 1337
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/a050f3ab-5d2a-4ea4-8687-090c03b7cb09",
@@ -2004,7 +2004,7 @@
    "last_modified": "2025-03-11T13:55:17.756000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/21e46f4e-fa29-40bb-9ec8-905e41e041aa",
    "metrics": {
-    "views": 4006
+    "views": 3982
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -2058,7 +2058,7 @@
    "last_modified": "2021-11-10T11:18:20.443000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/78c45763-d170-4d51-a881-e3147802d7ee",
    "metrics": {
-    "views": 12467
+    "views": 12395
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/78c45763-d170-4d51-a881-e3147802d7ee",
@@ -2113,7 +2113,7 @@
    "last_modified": "2021-11-10T11:17:30.702000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/a66be22f-c346-49af-b196-71df24702250",
    "metrics": {
-    "views": 11241
+    "views": 11183
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/a66be22f-c346-49af-b196-71df24702250",
@@ -2167,7 +2167,7 @@
    "last_modified": "2021-11-10T11:16:08.474000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/e85c41f7-d4ea-4faf-877f-ab69a620ce21",
    "metrics": {
-    "views": 13517
+    "views": 13479
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/e85c41f7-d4ea-4faf-877f-ab69a620ce21",
@@ -2221,7 +2221,7 @@
    "last_modified": "2021-11-10T11:12:08.960000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/07a88205-83c1-4123-a993-cba5331e8ae0",
    "metrics": {
-    "views": 32384
+    "views": 32258
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/07a88205-83c1-4123-a993-cba5331e8ae0",
@@ -2276,7 +2276,7 @@
    "last_modified": "2020-11-05T10:42:42.234000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/36b1b7b3-84b4-4901-9163-59ae8a9e3028",
    "metrics": {
-    "views": 16303
+    "views": 16242
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/36b1b7b3-84b4-4901-9163-59ae8a9e3028",
@@ -2330,7 +2330,7 @@
    "last_modified": "2020-11-05T10:43:20.008000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/780cd335-5048-4bd6-a841-105b44eb2667",
    "metrics": {
-    "views": 14331
+    "views": 14279
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/780cd335-5048-4bd6-a841-105b44eb2667",
@@ -2384,7 +2384,7 @@
    "last_modified": "2020-11-05T10:43:45.165000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/2ad65965-36a1-4452-9c08-61a6c874e3e6",
    "metrics": {
-    "views": 14283
+    "views": 14250
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/2ad65965-36a1-4452-9c08-61a6c874e3e6",
@@ -2438,7 +2438,7 @@
    "last_modified": "2020-11-05T10:44:06.669000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/e22ba475-45a3-46ac-a0f7-9ca9ed1e283a",
    "metrics": {
-    "views": 39779
+    "views": 39682
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/e22ba475-45a3-46ac-a0f7-9ca9ed1e283a",
@@ -2492,7 +2492,7 @@
    "last_modified": "2025-03-11T13:55:09.058000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/8d4df329-bbbb-434c-9f1f-596d78ad529f",
    "metrics": {
-    "views": 2943
+    "views": 2926
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -2546,7 +2546,7 @@
    "last_modified": "2019-10-14T11:21:03.252000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/72b251e1-d5e1-4c46-a1c2-c65f1b26549a",
    "metrics": {
-    "views": 9518
+    "views": 9458
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/72b251e1-d5e1-4c46-a1c2-c65f1b26549a",
@@ -2600,7 +2600,7 @@
    "last_modified": "2019-10-14T11:21:17.316000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/b4aaeede-1a80-4d76-8f97-543dad479167",
    "metrics": {
-    "views": 7424
+    "views": 7370
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/b4aaeede-1a80-4d76-8f97-543dad479167",
@@ -2654,7 +2654,7 @@
    "last_modified": "2019-10-14T11:20:50.754000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/d9d65ca1-16a3-4ea3-b7c8-2412c92b69d9",
    "metrics": {
-    "views": 9611
+    "views": 9597
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/d9d65ca1-16a3-4ea3-b7c8-2412c92b69d9",
@@ -2708,7 +2708,7 @@
    "last_modified": "2019-10-14T11:19:10.891000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/6eee0852-cbd7-447e-bd70-37c433029405",
    "metrics": {
-    "views": 29812
+    "views": 29721
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/6eee0852-cbd7-447e-bd70-37c433029405",
@@ -2764,7 +2764,7 @@
    "last_modified": "2018-09-27T11:12:16.075000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/07bfe612-0ad9-48ef-92d3-f5466f8465fe",
    "metrics": {
-    "views": 4470
+    "views": 4433
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/07bfe612-0ad9-48ef-92d3-f5466f8465fe",
@@ -2819,7 +2819,7 @@
    "last_modified": "2019-11-04T16:44:48.001000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/d6103d0c-6db5-466f-b724-91cbea521533",
    "metrics": {
-    "views": 3841
+    "views": 3808
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/d6103d0c-6db5-466f-b724-91cbea521533",
@@ -2875,7 +2875,7 @@
    "last_modified": "2018-09-27T11:11:40.277000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/9b76a7b6-3eef-4864-b2da-1834417e305c",
    "metrics": {
-    "views": 3388
+    "views": 3370
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/9b76a7b6-3eef-4864-b2da-1834417e305c",
@@ -2931,7 +2931,7 @@
    "last_modified": "2018-09-27T11:10:59.503000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/9a7d408b-dd72-4959-ae7d-c854ec505354",
    "metrics": {
-    "views": 5758
+    "views": 5710
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/9a7d408b-dd72-4959-ae7d-c854ec505354",
@@ -2988,7 +2988,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 4034
+    "views": 3999
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/e4c6f4fe-7c68-4a1d-9bb6-b0f1f5d45526",
@@ -3046,7 +3046,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 7617
+    "views": 7583
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/be2191a6-a7cd-446f-a9fc-8d698688eb9e",
@@ -3103,7 +3103,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3345
+    "views": 3333
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/08b77510-39c4-4761-bf02-19457264790f",
@@ -3160,7 +3160,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 6487
+    "views": 6443
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/96aadc9f-0b55-4e9a-a70e-c627ed97e6f7",
@@ -3217,7 +3217,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3090
+    "views": 3056
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/b43a4237-9359-4217-b833-8d3dc29a6c24",
@@ -3274,7 +3274,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2892
+    "views": 2872
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/3420157e-7d23-4832-a710-a3a2f2df909c",
@@ -3331,7 +3331,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2725
+    "views": 2716
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/31db21ef-4328-4c5e-bf3d-66a8fe82e6a2",
@@ -3388,7 +3388,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 4655
+    "views": 4614
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/185fbdc7-d4c5-4522-888e-ac9550718f71",
@@ -3445,7 +3445,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2867
+    "views": 2837
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/457c10ff-ea6c-4238-9af1-d8dc62b896d4",
@@ -3502,7 +3502,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2524
+    "views": 2508
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/86c64436-427f-4042-a4ee-ed0aa31bac76",
@@ -3559,7 +3559,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2490
+    "views": 2483
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/617af155-1b7c-41d6-9504-576878c4d9af",
@@ -3616,7 +3616,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3896
+    "views": 3864
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/85dfe8c6-589f-4e76-8a07-9f59e49ec10d",
@@ -3674,7 +3674,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2747
+    "views": 2715
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/af4349c5-0293-4639-8694-b8b628bfc6c3",
@@ -3731,7 +3731,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2376
+    "views": 2348
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/3c059a3c-4624-4513-b3a4-2b18c48dfd47",
@@ -3788,7 +3788,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2536
+    "views": 2528
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/1e00e4dd-e204-4a08-9e10-9b8a02791ba9",
@@ -3845,7 +3845,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3688
+    "views": 3656
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/18b1a57a-57bf-4bf1-b9ee-dfa5a3154225",
@@ -3906,7 +3906,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2736
+    "views": 2705
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/a19e060e-1c18-4272-ac4e-d4745ab8fade",
@@ -3967,7 +3967,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2366
+    "views": 2351
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/48683290-0d4d-429a-8fb6-977887098d5d",
@@ -4025,7 +4025,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2380
+    "views": 2375
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -4086,7 +4086,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3729
+    "views": 3699
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/b2518ec1-6529-47bc-9d55-40e2effeb0e7",
@@ -4147,7 +4147,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2596
+    "views": 2568
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/bd946492-31b3-428e-8494-a1e203bdc9cc",
@@ -4208,7 +4208,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2207
+    "views": 2193
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/569e3f44-ff4c-4a25-bb45-f4a3646b392d",
@@ -4269,7 +4269,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2322
+    "views": 2317
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/26d37f6b-3603-42b0-a779-bbeaa19af4a6",
@@ -4330,7 +4330,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3429
+    "views": 3400
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/37991267-8a15-4a9d-9b1c-ff3e6bea3625",
@@ -4391,7 +4391,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2584
+    "views": 2553
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/c5e5664d-1483-41da-a4c6-5f1727d7a353",
@@ -4452,7 +4452,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2298
+    "views": 2281
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/4dd8a9ea-785f-4e3f-8f83-3838a60ac7f5",
@@ -4510,7 +4510,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2262
+    "views": 2255
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -4571,7 +4571,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3467
+    "views": 3434
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/decdfe8c-38ff-4a06-b7fc-615785f2914d",
@@ -4632,7 +4632,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2509
+    "views": 2481
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/2387db3d-11ee-4df4-aa31-4c3c748244d4",
@@ -4693,7 +4693,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2174
+    "views": 2148
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/787ba26e-2588-47aa-b73d-346f120f9c59",
@@ -4754,7 +4754,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2203
+    "views": 2195
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/0a25081b-89b6-4f7c-9d31-72ec679f0abf",
@@ -4815,7 +4815,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3157
+    "views": 3124
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/fdfacdb9-f48e-4759-bae5-48d063216acb",
@@ -4876,7 +4876,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2524
+    "views": 2497
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/433e26cf-d4c8-4dd9-b3f2-ecbc8a8f0509",
@@ -4937,7 +4937,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2198
+    "views": 2184
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/6d9e4024-8207-4020-ae4c-5b83504e7268",
@@ -4998,7 +4998,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2263
+    "views": 2258
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/237a4d23-1b66-43fb-8832-2f89fbbc6beb",
@@ -5056,7 +5056,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3299
+    "views": 3272
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -5117,7 +5117,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2442
+    "views": 2415
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/c5c30fc2-9bfd-4bcd-b45b-f01a31f1d087",
@@ -5178,7 +5178,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2138
+    "views": 2124
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/6e905a7a-c48d-4f5c-a0bb-54b83c8dfe5f",
@@ -5239,7 +5239,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2199
+    "views": 2194
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/1d967969-c3d2-45c6-adc7-b3b72a8c6e89",
@@ -5297,7 +5297,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3192
+    "views": 3164
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -5358,7 +5358,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2399
+    "views": 2371
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/ebb4c37e-1616-497d-b5ed-f8113bed2ae7",
@@ -5419,7 +5419,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2142
+    "views": 2128
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/c3362179-9c39-4056-9503-ce00ea6b810e",
@@ -5480,7 +5480,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2218
+    "views": 2213
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/28b1fbdc-f984-40d8-8614-236ee26adc7c",
@@ -5541,7 +5541,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3185
+    "views": 3158
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/fafa33cf-50cb-4092-a819-d5209f684089",
@@ -5602,7 +5602,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2627
+    "views": 2608
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/cecdbd46-11f2-41fa-b0bd-e6e223de6b3c",
@@ -5663,7 +5663,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2315
+    "views": 2300
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/924b962b-4400-4468-9f7d-0bdba28f51e9",
@@ -5724,7 +5724,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2449
+    "views": 2443
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/3a3488e0-86a1-4917-b082-f3bdc25f6922",
@@ -5785,7 +5785,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 3563
+    "views": 3536
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/a47866f7-ece1-4de8-8d31-3a1b4f477e08",
@@ -5841,7 +5841,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 1077
+    "views": 1072
    },
    "mime": null,
    "preview_url": null,
@@ -5899,7 +5899,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 587
+    "views": 586
    },
    "mime": null,
    "preview_url": null,
@@ -6016,7 +6016,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 6764
+    "views": 6755
    },
    "mime": "application/pdf",
    "preview_url": null,
@@ -6075,7 +6075,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 2168
+    "views": 2167
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -6132,7 +6132,7 @@
     "nb_hits": 0,
     "nb_uniq_visitors": 0,
     "nb_visits": 0,
-    "views": 910
+    "views": 909
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/706198f2-18a0-4663-9eb4-8011cb74b8c7",

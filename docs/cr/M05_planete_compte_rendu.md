@@ -59,7 +59,7 @@ Lectures impossibles le 14/10/2026 : BDM INSEE (robots.txt, aucune valeur INSEE 
 4. Prévoir au contrôle de redondance les recouvrements entre empreinte carbone, empreinte écologique et empreinte de consommation de l'UE, et entre excédent d'azote, ammoniac et nitrates.
 5. Les lectures de vérification ont buté sur les limites des sites (BDM INSEE refusée, Eurostat 429 après une vingtaine d'appels) : les valeurs INSEE des fiches restent à confirmer au premier passage du robot.
 
-## 8. Corrections après audit (M06, D34-D40) — branche `m05-planete-corr`, PR #__PR__
+## 8. Corrections après audit (M06, D34-D40) — branche `m05-planete-corr`, PR #32
 
 Audit : `docs/validation/audit_planete.md` (42 fiches auditées : 23 conformes, 18 à corriger, 1 non vérifiable ; 14 corrections au §9, oublis O1-O3, cohérence I1-I6, désaccords J1-J9). Toutes les corrections sont appliquées ou tranchées ; détail, fichiers et limites : `docs/cr/M05_planete_corrections_journal.md`.
 

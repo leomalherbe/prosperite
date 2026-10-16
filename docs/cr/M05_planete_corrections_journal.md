@@ -79,4 +79,5 @@ Agent correcteur (session lancée par la session mère), 16 octobre 2026, branch
 | 2026-10-16 10:01 | Règles de présélection | `36240c2` |
 | 2026-10-16 10:02 | Instantanés de vérification des accès remis à l'état de `main` | `c08a252` |
 | 2026-10-16 10:08 | Fiches, présélection, tableau | `284fa42` |
-| 2026-10-16 10:20 | Maintenance, classeur, journal, compte rendu | (ce commit) |
+| 2026-10-16 10:20 | Maintenance, classeur, journal, compte rendu | `0d52ef9` |
+| 2026-10-16 10:24 | PR #32 « M05 — planete : corrections après audit » ouverte par l'API GitHub | — |

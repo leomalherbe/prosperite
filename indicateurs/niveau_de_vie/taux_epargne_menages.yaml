@@ -29,7 +29,8 @@ raccordement: 'non : série continue de 1949 à 2025 en base 2020'
 incontournable: non
 recommandation: ecarter
 motif_recommandation: 'Sens ambigu : le taux bondit quand la consommation est contrainte (20,03 % en 2020 contre
-  14,24 % en 2019 selon Eurostat, confinements) aussi bien que quand les ménages s''enrichissent.'
+  14,24 % en 2019 pour les ménages et les ISBLSM selon Eurostat, confinements) aussi bien que quand les ménages
+  s''enrichissent.'
 note_pertinence: 'Le taux d''épargne est un agrégat intelligible des comptes nationaux, mais une hausse peut traduire
   une aisance accrue comme une épargne de précaution ou une consommation empêchée : il ne dit pas si les ménages
   vont mieux. La capacité d''épargne ressentie et l''épargne de précaution sont suivies en securite (soldes d''opinion,
@@ -207,7 +208,8 @@ socle_v1:
   justification: ''
 qualite:
 - sens_ambigu
-notes: 'Valeurs Eurostat (nasa_10_ki, SRG_S14_S15, lues le 14/10/2026) : 13,07 % (2000), 15,73 % (2009), 14,24 %
-  (2019), 20,03 % (2020), 18,67 % (2021), 17,93 % (2024, provisoire). Rattachement possible à securite (épargne
-  de précaution) si la session mère le juge utile. Variantes : évolution, taux d''épargne financière, Eurostat,
+notes: 'Valeurs Eurostat des ménages et des ISBLSM (nasa_10_ki, SRG_S14_S15, lues le 14/10/2026 et relues par l''audit
+  M06 ; la principale INSEE porte sur les seuls ménages, S14, valeurs Melodi non lues) : 13,07 % (2000), 15,73 %
+  (2009), 14,24 % (2019), 20,03 % (2020), 18,67 % (2021), 17,93 % (2024, provisoire). Rattachement possible à securite
+  (épargne de précaution) si la session mère le juge utile. Variantes : évolution, taux d''épargne financière, Eurostat,
   taux médian expérimental (icw_sr), montants annuels et trimestriels.'

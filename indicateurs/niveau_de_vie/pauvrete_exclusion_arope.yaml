@@ -12,6 +12,7 @@ sens: bas
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: Eurostat
 source_jeu: sdg_01_10 (indicateur ODD de l'UE, définition 2030 ; doublon ilc_peps01n)
 source_serie_id: sdg_01_10?freq=A&age=TOTAL&unit=PC&geo=FR
@@ -387,6 +388,8 @@ qualite:
 - rupture_2022
 - composite_union_de_trois_criteres
 - debut_2015
-notes: 'La cible française est exprimée en nombre de personnes (ilc_pecs01, en variante). Variantes : ilc_peps01n
-  (doublon), ventilations de la nouvelle définition, ancienne définition 2004-2020, handicap (hlth_dpe010), enfants
-  selon la situation des parents (ilc_chg01, ilc_chg02).'
+notes: 'annee_reference : observation, l''année est celle de l''enquête EU-SILC ; la composante monétaire porte
+  sur les revenus de l''année N − 1 (période de référence des revenus d''EU-SILC). La cible française est exprimée
+  en nombre de personnes (ilc_pecs01, en variante). Variantes : ilc_peps01n (doublon), ventilations de la nouvelle
+  définition, ancienne définition 2004-2020, handicap (hlth_dpe010), enfants selon la situation des parents (ilc_chg01,
+  ilc_chg02).'

@@ -1,0 +1,66 @@
+id: solde_niveau_vie_france_futur
+libelle: Opinion des ménages sur l'évolution future du niveau de vie en France (solde)
+dimension: niveau_de_vie
+sous_theme: opinions sur la société
+famille: perception_niveau_vie_france
+variante_principale: non
+definition: Solde des réponses (part des ménages jugeant que le niveau de vie en France va s'améliorer moins part
+  jugeant qu'il va se détériorer) à la question sur les perspectives d'évolution du niveau de vie en France de l'enquête
+  mensuelle de conjoncture auprès des ménages (Camme), zone FM ; moyenne annuelle des 12 soldes mensuels à calculer.
+unite: solde d'opinion (points de %)
+sens: haut
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: INSEE (enquête de conjoncture auprès des ménages)
+source_jeu: BDM, enquête mensuelle de conjoncture auprès des ménages (ENQ-CONJ-MENAGES)
+source_serie_id: '000857177'
+composantes:
+- '000857177'
+formule: moyenne des 12 soldes mensuels de l'année (données brutes)
+source_niveau: 1
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/000857177
+url_page: https://www.insee.fr/fr/statistiques/serie/000857177
+frequence: mensuelle
+premiere_annee: 1970
+derniere_annee: 2026
+geo: FM
+eligibilite_longlist: non
+ligne_id: bdm-000696
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list hors_grille (D29, P8 : soldes de conjoncture hors grille), admise comme
+  variante déclarative de niveau_de_vie par D38 (j)'
+raccordement: non
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Solde d'opinion mensuel de l'INSEE depuis 1970 sur les perspectives d'évolution du niveau
+  de vie en France, admis comme variante déclarative par D38 (j), à agréger en moyenne annuelle.
+note_pertinence: 'Le solde résume la perception que les ménages ont du niveau de vie du pays, et non du leur : c''est
+  une opinion sur la société, comme la perception de la hausse de la pauvreté, principale de la famille. Il est
+  structurellement négatif : la moyenne des soldes mensuels bruts vaut −25,6 en 2019 et −56,4 en 2025 (calcul de
+  l''agent correcteur sur les valeurs de la BDM lues le 16/10/2026), et le solde atteint −62 en septembre 2026.
+  Il réagit vite aux chocs (inflation, crises), mais mesure une évolution perçue et non un niveau.'
+variantes:
+- serie_id: '000857189'
+  source: INSEE BDM
+  nature: données CVS (ligne de la long-list hors_grille)
+  ligne_id: bdm-000706
+  eligible: non
+  longlist: hors_grille
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- agregation_annuelle
+- solde_d_opinion_evolution
+- non_recoupe
+- horizon_question_a_verifier
+notes: 'Moyenne annuelle calculée par le projet (D34) sur les valeurs mensuelles publiées : l''INSEE ne publie pas
+  de moyenne annuelle de ce solde, aucun recoupement n''est possible (calcul élémentaire). Valeurs mensuelles brutes
+  lues sur la BDM le 16/10/2026 (mise à jour du 24/09/2026) : de −36 à −18 en 2019, de −64 à −48 en 2025, −62 en
+  septembre 2026. La long-list classe la ligne non éligible pour le seul motif hors_grille (D29, P8), levé par D38
+  (j) ; série mensuelle depuis 1970 (catalogue). L''horizon de la question (douze mois ?) n''est pas écrit dans
+  les publications relues (publication Camme de décembre 2016 sur insee.fr) : à vérifier dans le questionnaire.
+  Variante : données CVS (000857189).'

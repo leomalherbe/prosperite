@@ -16,8 +16,13 @@ source_organisme: DREES
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
   et barometre2025_diff_csv ; variable PE03, modalités 3
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
+  et barometre2025_diff_csv ; variable PE03, modalités 3
+formule: part pondérée des réponses PE03 = 3 (« je me considère déjà comme pauvre ») parmi l'ensemble des répondants
+  (modalités 1, 2, 3 et non-réponses au dénominateur), poids de redressement du baromètre
 source_niveau: 2
-url_api: non trouvé
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
 frequence: annuelle
 premiere_annee: 2014
@@ -33,10 +38,11 @@ recommandation: retenir_variante
 motif_recommandation: Seule mesure de l'auto-identification comme pauvre (DREES, 11 vagues de 2014 à 2025), autre
   lecture subjective de la pauvreté, substituable à la difficulté à joindre les deux bouts, principale de la famille.
 note_pertinence: 'Se dire pauvre n''est pas la même chose qu''avoir du mal à boucler son budget : la question mesure
-  le sentiment d''appartenir aux pauvres. La part passe de 7,87 % en 2014 à 19,24 % en 2023 et 17,41 % en 2025 (sortie
-  du robot M04, docs/sources/series/drees__barometre_2000_2025_distributions.csv). La modalité 1 de la même question
-  (« oui, plutôt » : risque de devenir pauvre) est la fiche securite/risque_pauvrete_ressenti, que la maintenance
-  n° 3 propose d''élargir à la modalité 3 : les deux fiches ne doivent pas compter deux fois la même modalité (NDV-4).'
+  le sentiment d''appartenir aux pauvres. La part passe de 7,87 % en 2014 à 12,65 % en 2017, 17,12 % en 2018, 19,24
+  % en 2023 et 17,41 % en 2025 (sortie du robot M04) ; le saut de 2018 coïncide avec celui des non-réponses (1,35
+  % puis 6,08 %), d''où une rupture possible. La modalité 1 de la même question (« oui, plutôt » : risque de devenir
+  pauvre) est la fiche securite/risque_pauvrete_ressenti : chaque fiche compte une seule modalité et elles se lisent
+  ensemble.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -47,7 +53,18 @@ qualite:
 - lacune_2024
 - calcul_sur_microdonnees
 - enquete_metropole
+- rupture_possible_2018
+- non_recoupe_2014_2023
+- licence_a_confirmer
 - codes_modalites_a_verifier
 notes: 'geo FM et non FR : la fiche du jeu 431 indique un échantillon représentatif de la France métropolitaine
-  (maintenance n° 4). Valeurs : 7,87 (2014), 12,38 (2015), 17,12 (2018), 18,71 (2022), 19,24 (2023), 17,41 (2025).
-  Pas de vague 2024 pour PE03 (couverture du robot).'
+  (maintenance n° 4). Valeurs (docs/sources/series/drees__barometre_2000_2025_distributions.csv) : 7,87 (2014),
+  12,38 (2015), 12,65 (2017), 17,12 (2018), 18,71 (2022), 19,24 (2023), 17,41 (2025) ; non-réponses 1,35 % (2017),
+  6,08 % (2018), entre 6,2 et 7,8 % ensuite, comme pour la fiche sœur de securite (rupture_possible_2018). Contrôle
+  de plausibilité (D34, D38 b) : tableau croisé simplifié publié par la DREES pour 2025 (docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
+  : 16,12 % « oui, plutôt », 59,80 % « non, plutôt pas », 17,41 % « déjà pauvre », 6,67 % sans réponse, identiques
+  au calcul du robot ; vagues 2014-2023 non recoupées. Coordination avec securite : la correction n° 3 de la liste
+  partagée (somme des modalités 1 et 3) est abandonnée (SEC-2, NDV-4 close) ; modalité 1 en securite, modalité 3
+  ici. source_serie_id : identifiant du catalogue M04, qui cite encore les deux pièces jointes antérieures ; url_api
+  : pièce jointe unique barometre2000_2025_diff_csv, comme la fiche sœur (question Q6 de l''audit). Pas de vague
+  2024 pour PE03 (couverture du robot). Licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'

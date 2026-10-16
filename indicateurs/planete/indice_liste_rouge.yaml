@@ -5,43 +5,49 @@ sous_theme: biodiversité
 famille: indice_liste_rouge
 variante_principale: oui
 definition: Indice agrégé du risque d'extinction des espèces (Union internationale pour la conservation de la nature),
-  de 0 (toutes les espèces éteintes) à 1 (aucune espèce menacée), décliné pour la France (indicateur ODD 15.5.1).
+  de 0 (toutes les espèces éteintes) à 1 (aucune espèce menacée), décliné pour la France (indicateur ODD 15.5.1,
+  publié à quatre décimales dans la base How's Life de l'OCDE).
 unite: indice (0 à 1)
 sens: haut
 type: resultat
 declaratif: non
 composite: non
-source_organisme: OCDE (base des indicateurs ODD, d'après l'UICN)
-source_jeu: Indicateurs ODD de l'OCDE, objectif 15, indicateur 15.5.1
-source_serie_id: 'odd_15 : 15_5_1_ER_RSK_LST._T._T._T._T._T.IX'
+source_organisme: OCDE (How's Life?, d'après l'UICN)
+source_jeu: How's Life? (capital naturel), mesure 12_7
+source_serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_7 UNIT_MEASURE=IX
 source_niveau: 1
-url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.RSB,DSD_SDG@DF_SDG_G_15,2.0/FRA..........?startPeriod=2000&format=csvfilewithlabels
+url_api: https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
 url_page: non trouvé
 frequence: annuelle
-premiere_annee: 2000
-derniere_annee: 2024
-nb_points_depuis_2000: 25
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
 geo: FR
 eligibilite_longlist: oui
-ligne_id: m04-000133
+ligne_id: m04-000086
 hors_longlist: non
-raccordement: 'non : série continue depuis 2000'
+raccordement: 'a_etudier : 2000-2003 par la série ODD de l''OCDE (2000-2024) ou par OWID (1980-2025), arrondies
+  à deux décimales'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Indicateur ODD 15.5.1 du risque d'extinction, série annuelle de 2000 à 2024 (25 points) dans
-  la base ODD de l'OCDE, aussi publiée par How's Life (0,8426 en 2025 d'après l'extrait du robot M04).
+motif_recommandation: Indicateur ODD 15.5.1 du risque d'extinction, série OCDE How's Life annuelle de 2004 à 2025
+  publiée à quatre décimales (22 valeurs distinctes, 0,8426 en 2025), préférée à la base ODD de l'OCDE arrondie
+  à deux décimales (J4).
 note_pertinence: 'L''indice résume l''évolution du statut de menace des espèces présentes en France et reflète l''effondrement
-  de la biodiversité visé par le Doughnut. Il bouge lentement et par paliers : Our World in Data n''en compte que
-  11 valeurs distinctes sur 1980-2025 (catalogue M04). Les relais How''s Life et OWID sont en variantes.'
+  de la biodiversité visé par le Doughnut. Il bouge lentement : arrondi à deux décimales, il ne prend que 13 valeurs
+  distinctes sur 2000-2024 dans la base ODD de l''OCDE et 11 sur 1980-2025 chez Our World in Data, en variantes,
+  qui peuvent raccorder les années 2000 à 2003.'
 variantes:
-- serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_7 UNIT_MEASURE=IX
-  source: OCDE — How's Life? (base du bien-être)
-  nature: 'même indice : OCDE How''s Life 12_7 (2004-2025) ; OWID (1980-2025, niveau 2)'
-  ligne_id: m04-000086
+- serie_id: 'odd_15 : 15_5_1_ER_RSK_LST._T._T._T._T._T.IX'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: 'même indice arrondi à deux décimales : OCDE base ODD 15.5.1 (2000-2024, 13 valeurs distinctes) ; OWID
+    (1980-2025, niveau 2) ; utiles au raccordement 2000-2003'
+  ligne_id: m04-000133
   eligible: oui
 - serie_id: https://ourworldindata.org/grapher/red-list-index.csv (colonne _15_5_1__er_rsk_lst)
   source: Our World in Data (relais)
-  nature: 'même indice : OCDE How''s Life 12_7 (2004-2025) ; OWID (1980-2025, niveau 2)'
+  nature: 'même indice arrondi à deux décimales : OCDE base ODD 15.5.1 (2000-2024, 13 valeurs distinctes) ; OWID
+    (1980-2025, niveau 2) ; utiles au raccordement 2000-2003'
   ligne_id: m04-000215
   eligible: oui
 socle_v1:
@@ -49,6 +55,7 @@ socle_v1:
   objectif: null
   type_justification: null
   justification: ''
-qualite:
-- valeurs_par_paliers
-notes: ''
+qualite: []
+notes: 'Valeurs : extraits du robot M04 (ocde__hsl_bien_etre_futur.csv : 2004-2025, 22 valeurs distinctes, 0,8426
+  en 2025 ; ocde__odd_15.csv : 2000-2024, 13 valeurs distinctes, 0,83 en 2024 ; owid__red-list-index.csv : 1980-2025,
+  11 valeurs distinctes, 0,84 en 2025).'

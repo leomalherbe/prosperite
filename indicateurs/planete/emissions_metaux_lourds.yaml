@@ -4,8 +4,8 @@ dimension: planete
 sous_theme: pollutions
 famille: emissions_metaux_lourds
 variante_principale: oui
-definition: Émissions de plomb dans l'air, total national de l'inventaire des polluants atmosphériques ; les autres
-  métaux lourds de l'inventaire sont en variantes.
+definition: Émissions de plomb dans l'air, total national « pour tout l'ensemble du territoire » de l'inventaire
+  déclaré à l'Union européenne, champ France métropolitaine ; les autres métaux lourds de l'inventaire sont en variantes.
 unite: tonnes
 sens: bas
 type: pression
@@ -13,9 +13,9 @@ declaratif: non
 composite: non
 source_organisme: Eurostat
 source_jeu: env_air_emis (polluants atmosphériques par secteur source)
-source_serie_id: env_air_emis?freq=A&unit=T&airpol=PB&src_nfr=NFR_TOT_NAT_C&geo=FR
+source_serie_id: env_air_emis?freq=A&unit=T&airpol=PB&src_nfr=NFR_TOT_NAT&geo=FR
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=PB&src_nfr=NFR_TOT_NAT_C&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=PB&src_nfr=NFR_TOT_NAT&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/env_air_emis/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2000
@@ -23,117 +23,118 @@ derniere_annee: 2024
 nb_points_depuis_2000: 25
 geo: FR
 eligibilite_longlist: oui
-ligne_id: estat-036479
+ligne_id: estat-036478
 hors_longlist: non
-raccordement: non
+raccordement: 'non : série homogène de 2000 à 2024'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure de la pollution de l'air par les métaux lourds, série Eurostat de 2000 à 2024
-  (25 points), avec 92,1 t de plomb en 2025 selon le Citepa (extrait du robot M04).
+motif_recommandation: Seule mesure de la pollution de l'air par les métaux lourds, total national Eurostat homogène
+  et sans drapeau de 2000 à 2024 (280 t en 2000, 90 t en 2024), proche du Citepa pour la France hexagonale (92,1
+  t en 2025).
 note_pertinence: Le plomb, le cadmium et le mercure sont toxiques et persistants dans les sols et les chaînes alimentaires.
-  Le plomb sert d'indicateur principal ; les huit autres métaux de l'inventaire sont en variantes. Les drapeaux
-  d'Eurostat n'ont pas été relus.
+  Le plomb sert d'indicateur principal ; le total de conformité et les huit autres métaux de l'inventaire sont en
+  variantes.
 variantes:
 - serie_id: env_air_emis?freq=A&unit=T&airpol=AS&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-035914
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=AS&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-035915
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=CD&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-035962
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=CD&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-035963
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=CR&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036065
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=CR&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036066
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=CU&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036111
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=CU&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036112
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=HG&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036158
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=HG&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036159
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=NI&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036262
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=NI&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036263
   eligible: oui
-- serie_id: env_air_emis?freq=A&unit=T&airpol=PB&src_nfr=NFR_TOT_NAT&geo=FR
+- serie_id: env_air_emis?freq=A&unit=T&airpol=PB&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
-  ligne_id: estat-036478
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
+  ligne_id: estat-036479
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=SE&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036679
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=SE&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036680
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=ZN&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036778
   eligible: oui
 - serie_id: env_air_emis?freq=A&unit=T&airpol=ZN&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: plomb (total carburant vendu, Citepa) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure, nickel,
-    sélénium, zinc), totaux nationaux
+  nature: plomb (total pour l'évaluation de conformité) et autres métaux (arsenic, cadmium, chrome, cuivre, mercure,
+    nickel, sélénium, zinc), totaux nationaux
   ligne_id: estat-036779
   eligible: oui
 - serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
@@ -148,8 +149,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_eurostat_non_lus
-- perimetre_geo_a_verifier
-notes: 'Périmètre géographique du total national transmis par la France (code FR d''Eurostat) à confirmer : les
-  niveaux sont proches de ceux que le Citepa publie pour la France hexagonale (ammoniac : 574 390 t en 2024 chez
-  Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote : 647 990 t et 631,9 kt).'
+- champ_metropole
+notes: 'Champ : France métropolitaine. La directive (UE) 2016/2284 ne couvre pas les départements d''outre-mer (article
+  2 §2, lu le 16/10/2026) et, pour la France, le total « pour tout l''ensemble du territoire » coïncide à 10 t près
+  avec le total pour l''évaluation de conformité chaque année de 1999 à 2024 (API Eurostat lue le 16/10/2026, mise
+  à jour du 07/09/2026, aucun drapeau), sauf pour les COVNM ; les niveaux sont proches de ceux du Citepa pour la
+  France hexagonale (ammoniac : 574 380 t en 2024 chez Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote
+  : 647 990 t et 631,9 kt). Le champ `geo` garde le code de la série (FR, D15).'

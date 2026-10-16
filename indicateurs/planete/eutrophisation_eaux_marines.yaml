@@ -1,43 +1,47 @@
 id: eutrophisation_eaux_marines
-libelle: Part des eaux marines touchées par l'eutrophisation
+libelle: Part des eaux marines touchées par l'eutrophisation (moyenne sur quatre ans)
 dimension: planete
 sous_theme: eau
 famille: eutrophisation_eaux_marines
 variante_principale: oui
-definition: Part des eaux marines concernées par l'eutrophisation, valeur annuelle (indicateur ODD 14.60 de l'UE
-  ; méthode non relue, l'API ayant refusé la lecture le 14/10/2026).
-unite: '%'
+definition: 'Part de la zone économique exclusive métropolitaine (environ 348 500 km²) classée eutrophe, en moyenne
+  sur quatre ans : une zone est eutrophe quand la concentration en chlorophylle a, observée par satellite (Copernicus
+  Marine Service), dépasse le 90e centile de la période de référence 1998-2017 plus de 25 % des jours d''observation
+  de l''année (indicateur ODD 14.60 de l''UE).'
+unite: '% de la ZEE métropolitaine (moyenne sur 4 ans)'
 sens: bas
 type: resultat
 declaratif: non
 composite: non
 source_organisme: Eurostat
 source_jeu: sdg_14_60 (eaux marines concernées par eutrophisation)
-source_serie_id: sdg_14_60?freq=A&statinfo=VAL_A&indic_env=MA_ETR&unit=PC&geo=FR
+source_serie_id: sdg_14_60?freq=A&statinfo=AVG_4Y&indic_env=MA_ETR&unit=PC&geo=FR
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_14_60?freq=A&statinfo=VAL_A&indic_env=MA_ETR&unit=PC&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_14_60?freq=A&statinfo=AVG_4Y&indic_env=MA_ETR&unit=PC&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_14_60/default/table?lang=fr
 frequence: annuelle
-premiere_annee: 2000
+premiere_annee: 2001
 derniere_annee: 2025
-nb_points_depuis_2000: 26
+nb_points_depuis_2000: 25
 geo: FR
 eligibilite_longlist: oui
-ligne_id: estat-002116
+ligne_id: estat-002115
 hors_longlist: non
-raccordement: 'non : série depuis 2000'
+raccordement: 'non : moyenne publiée depuis 2001'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure de l'eutrophisation des eaux marines au catalogue, série Eurostat annuelle de
-  2000 à 2025 (26 points).
-note_pertinence: L'eutrophisation marine résulte des apports d'azote et de phosphore des fleuves, que mesurent les
-  fiches de flux à la mer. Ni les valeurs ni les drapeaux n'ont pu être relus (refus de l'API le 14/10/2026), et
-  la méthode est à vérifier avant de fixer des bornes. La moyenne sur quatre ans est en variante.
+motif_recommandation: Seule mesure de l'eutrophisation des eaux marines au catalogue, moyenne sur quatre ans publiée
+  par Eurostat sans drapeau de 2001 à 2025 (2,35 % en 2010, 0,02 % en 2017, 1,23 % en 2025), préférée à la valeur
+  annuelle erratique (J3).
+note_pertinence: 'L''eutrophisation marine résulte des apports d''azote et de phosphore des fleuves, que mesurent
+  les fiches de flux à la mer. L''indicateur est relatif : il compte les anomalies de chlorophylle par rapport à
+  1998-2017, pas un niveau absolu d''eutrophisation. La valeur annuelle, en variante, vaut 0,00 % quatre années
+  sur les dix dernières et 4,82 % en 2024, d''où le choix de la moyenne publiée.'
 variantes:
-- serie_id: sdg_14_60?freq=A&statinfo=AVG_4Y&indic_env=MA_ETR&unit=PC&geo=FR
+- serie_id: sdg_14_60?freq=A&statinfo=VAL_A&indic_env=MA_ETR&unit=PC&geo=FR
   source: Eurostat
-  nature: même source, moyenne sur quatre ans
-  ligne_id: estat-002115
+  nature: même source, valeur annuelle (2000-2025 ; 0,00 % en 2016, 2017, 2023 et 2025, 4,82 % en 2024)
+  ligne_id: estat-002116
   eligible: oui
 socle_v1:
   seuil_minimal: null
@@ -45,6 +49,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_eurostat_non_lus
-- methode_a_verifier
-notes: ''
+- champ_metropole
+- moyenne_glissante_4_ans
+- indicateur_relatif_reference_1998_2017
+- avis_important_non_lu
+notes: 'API Eurostat lue le 16/10/2026 (mise à jour du 28/04/2026) : aucun drapeau ; rapport km² / % constant (22
+  725 km² = 6,52 % en 2007, 16 782 km² = 4,82 % en 2024), d''où le champ métropolitain ; l''« avis important » joint
+  au jeu (PDF) n''a pas été lu.'

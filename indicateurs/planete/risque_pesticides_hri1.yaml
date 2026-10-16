@@ -30,9 +30,11 @@ incontournable: non
 recommandation: retenir
 motif_recommandation: Indicateur de la stratégie Ecophyto 2030, qui vise une baisse de 50 % en 2030 par rapport
   à 2011-2013, série Eurostat sans drapeau de 2011 à 2024 (99 en 2011, 53 en 2024).
-note_pertinence: Le HRI1 pondère les ventes de substances par leur dangerosité ; sa chute de 111 à 59 entre 2018
-  et 2019 est à expliquer (substances autorisées, pondération ou déclaration) avant de fixer des bornes. Les quantités
-  vendues non pondérées (INSEE et Eurostat) et l'indice européen voisin sdg_02_53 sont en variantes. Le NODU, mesure
+note_pertinence: Le HRI1 pondère les ventes de substances par leur dangerosité. Le pic de 2018 (111, contre 89 en
+  2017) tient à des achats anticipés en fin d'année avant la hausse de la redevance pour pollutions diffuses entrée
+  en vigueur le 1er janvier 2019 (communiqué interministériel cité par l'AFP, Terre-net, 7 janvier 2020) ; le niveau
+  reste ensuite entre 50 et 60 (59 en 2019, 53 en 2024), sans que cette source explique toute la baisse. Les quantités
+  vendues non pondérées (INSEE et Eurostat) et l'indice européen voisin sdg_02_53 sont en variantes ; le NODU, mesure
   de l'intensité des traitements, forme l'autre fiche de la famille.
 variantes:
 - serie_id: '011800708'
@@ -221,5 +223,7 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- saut_2019_a_expliquer
-notes: ''
+- pic_2018_anticipation_rpd
+notes: 'API Eurostat aei_hri lue le 16/10/2026 (mise à jour du 03/09/2026), aucun drapeau : 99 (2011), 118 (2014),
+  89 (2017), 111 (2018), 59 (2019), 60 (2020), 50 (2023), 53 (2024). Le NODU montre le même pic (120,8 en 2018,
+  75,8 en 2019, BDM 010594432 lue par l''audit M06).'

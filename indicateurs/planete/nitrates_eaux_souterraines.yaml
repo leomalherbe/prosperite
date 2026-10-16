@@ -28,11 +28,12 @@ hors_longlist: non
 raccordement: 'non : série depuis 2007'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure annuelle de la qualité des nappes au catalogue, série Eurostat de 2007 à 2023
-  (17 points).
+motif_recommandation: Seule mesure annuelle de la qualité des nappes au catalogue, série Eurostat sans drapeau de
+  2007 à 2023 (17 points).
 note_pertinence: Les nitrates d'origine agricole dégradent durablement les nappes qui alimentent l'eau potable ;
-  le seuil de 50 mg/l sert de repère réglementaire. Les valeurs et les drapeaux n'ont pas pu être relus (refus de
-  l'API le 14/10/2026). La part des stations au-dessus de 50 mg/l (ITDD, 2010-2022, 3,87 % en 2022) est en variante.
+  le seuil de 50 mg/l sert de repère réglementaire. La moyenne nationale varie très peu et sans à-coup (17,85 mg/l
+  en 2007, 17,26 en 2018, 17,49 en 2023 ; API lue le 16/10/2026), ce qui suggère une série lissée et appellera des
+  bornes resserrées. La part des stations au-dessus de 50 mg/l (ITDD, 2010-2022, 3,87 % en 2022) est en variante.
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_class_5_eau_sout_nit)
   source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
@@ -45,5 +46,5 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_eurostat_non_lus
+- faible_variation
 notes: ''

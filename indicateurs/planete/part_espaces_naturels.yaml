@@ -2,18 +2,27 @@ id: part_espaces_naturels
 libelle: Part du territoire en espaces boisés, naturels, humides ou en eau
 dimension: planete
 sous_theme: sols et forêts
-famille: usage_sols
-variante_principale: non
+famille: espaces_naturels
+variante_principale: oui
 definition: Part du territoire de France métropolitaine occupée par des zones boisées, naturelles, humides ou en
-  eau, d'après l'enquête Teruti.
+  eau d'après l'enquête Teruti, calculée par le projet à partir des surfaces que l'INSEE publie en hectares (la
+  série publiée en pourcentage, 010776378, est arrondie à l'unité).
 unite: '% du territoire'
 sens: haut
 type: resultat
 declaratif: non
 composite: non
 source_organisme: INSEE (d'après l'enquête Teruti du ministère de l'agriculture)
-source_jeu: BDM 010776377
+source_jeu: Enquête Teruti, BDM 010776377 (zones boisées, naturelles, humides ou en eau), 010776375 (terres agricoles)
+  et 010596146 (sols artificialisés), surfaces en hectares
 source_serie_id: '010776377'
+composantes:
+- '010776377'
+- '010776375'
+- '010596146'
+formule: '010776377 / (010776377 + 010776375 + 010596146) * 100, les trois séries étant des surfaces en hectares
+  malgré leurs unités INSEE (POURCENT, MILLIERS_HECTARES) ; première année lue de chaque composante : 1982 ; dernière
+  année commune : 2022'
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010776377
 url_page: https://www.insee.fr/fr/statistiques/serie/010776377
@@ -25,50 +34,64 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-001170
 hors_longlist: non
-raccordement: 'non : série depuis 1982'
+raccordement: 'non : série calculée de 1982 à 2022'
 incontournable: oui
-recommandation: retenir_variante
-motif_recommandation: Autre lecture de la famille usage_sols (état des espaces naturels plutôt que pression), série
-  Teruti de 1982 à 2022 (23 points depuis 2000), concept présent dans trois cadres.
-note_pertinence: L'indicateur suit les espaces qui portent l'essentiel de la biodiversité terrestre ; il se lit
-  avec la part artificialisée et la part agricole (en variante), les trois couvrant le territoire. La couverture
-  naturelle et semi-naturelle de l'OCDE (5 points de 2005 à 2022, 52,2 % en 2022 d'après l'extrait du robot M04)
-  et ses pertes et gains sont en variantes.
+recommandation: retenir
+motif_recommandation: Concept « usage des sols » présent dans trois cadres, part recalculée sur les surfaces Teruti
+  en hectares de 1982 à 2022 (39,95 % en 2000, 40,07 % en 2022), recoupée avec la série INSEE arrondie (40 %) et
+  avec la part artificialisée publiée (D34).
+note_pertinence: 'L''indicateur suit les espaces qui portent l''essentiel de la biodiversité terrestre ; c''est
+  un état, distinct de la pression d''artificialisation, d''où une famille propre (D38 i). La part est presque stable
+  depuis 2000 : l''artificialisation progresse surtout aux dépens des terres agricoles (52,61 % du territoire en
+  2000, 50,44 % en 2022), en variante. La couverture naturelle et semi-naturelle de l''OCDE (5 points de 2005 à
+  2022, 52,2 % en 2022 d''après l''extrait du robot M04) et ses pertes et gains sont aussi en variantes.'
 variantes:
 - serie_id: '010776375'
   source: INSEE BDM
-  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
-    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  nature: 'étiquettes INSEE inversées (PLA-12) : 010776378 « surface » = part en % arrondie à l''unité (40 de 2000
+    à 2022) ; terres agricoles : 010776375 « proportion » = surface en hectares, 010776376 « surface » = part en
+    % arrondie (complément) ; OCDE How''s Life 12_1 à 12_3 (couverture naturelle et semi-naturelle, pertes et gains,
+    5 points)'
   ligne_id: bdm-001168
   eligible: oui
 - serie_id: '010776376'
   source: INSEE BDM
-  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
-    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  nature: 'étiquettes INSEE inversées (PLA-12) : 010776378 « surface » = part en % arrondie à l''unité (40 de 2000
+    à 2022) ; terres agricoles : 010776375 « proportion » = surface en hectares, 010776376 « surface » = part en
+    % arrondie (complément) ; OCDE How''s Life 12_1 à 12_3 (couverture naturelle et semi-naturelle, pertes et gains,
+    5 points)'
   ligne_id: bdm-001169
   eligible: oui
 - serie_id: '010776378'
   source: INSEE BDM
-  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
-    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  nature: 'étiquettes INSEE inversées (PLA-12) : 010776378 « surface » = part en % arrondie à l''unité (40 de 2000
+    à 2022) ; terres agricoles : 010776375 « proportion » = surface en hectares, 010776376 « surface » = part en
+    % arrondie (complément) ; OCDE How''s Life 12_1 à 12_3 (couverture naturelle et semi-naturelle, pertes et gains,
+    5 points)'
   ligne_id: bdm-001171
   eligible: oui
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_1 UNIT_MEASURE=PT_LAR
   source: OCDE — How's Life? (base du bien-être)
-  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
-    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  nature: 'étiquettes INSEE inversées (PLA-12) : 010776378 « surface » = part en % arrondie à l''unité (40 de 2000
+    à 2022) ; terres agricoles : 010776375 « proportion » = surface en hectares, 010776376 « surface » = part en
+    % arrondie (complément) ; OCDE How''s Life 12_1 à 12_3 (couverture naturelle et semi-naturelle, pertes et gains,
+    5 points)'
   ligne_id: m04-000081
   eligible: a_verifier
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_2 UNIT_MEASURE=PT_LND_NTR_SNTR_BP
   source: OCDE — How's Life? (base du bien-être)
-  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
-    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  nature: 'étiquettes INSEE inversées (PLA-12) : 010776378 « surface » = part en % arrondie à l''unité (40 de 2000
+    à 2022) ; terres agricoles : 010776375 « proportion » = surface en hectares, 010776376 « surface » = part en
+    % arrondie (complément) ; OCDE How''s Life 12_1 à 12_3 (couverture naturelle et semi-naturelle, pertes et gains,
+    5 points)'
   ligne_id: m04-000082
   eligible: a_verifier
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_3 UNIT_MEASURE=PT_LND_NTR_SNTR_BP
   source: OCDE — How's Life? (base du bien-être)
-  nature: même concept en hectares ; terres agricoles (part et surface, complément) ; OCDE How's Life 12_1 à 12_3
-    (couverture naturelle et semi-naturelle, pertes et gains, 5 points)
+  nature: 'étiquettes INSEE inversées (PLA-12) : 010776378 « surface » = part en % arrondie à l''unité (40 de 2000
+    à 2022) ; terres agricoles : 010776375 « proportion » = surface en hectares, 010776376 « surface » = part en
+    % arrondie (complément) ; OCDE How''s Life 12_1 à 12_3 (couverture naturelle et semi-naturelle, pertes et gains,
+    5 points)'
   ligne_id: m04-000083
   eligible: a_verifier
 socle_v1:
@@ -79,4 +102,14 @@ socle_v1:
 qualite:
 - enquete_teruti
 - champ_metropole
-notes: ''
+- serie_calculee_D34
+- etiquettes_inversees_insee
+- faible_variation
+notes: 'Recoupement (BDM lue le 16/10/2026) : la somme des trois surfaces (54 950 587 ha en 2000, 54 918 357 ha
+  en 2022) est la superficie de la métropole ; la part calculée vaut 39,95 % (2000), 40,06 % (2010), 40,07 % (2015,
+  2020, 2022), soit 40 une fois arrondie comme la série publiée 010776378 (en 1982, 39,49 % contre 40 publié : écart
+  non expliqué) ; le même calcul donne pour les sols artificialisés 5,71 %, 7,44 %, 8,47 %, 8,95 %, 9,35 % et 9,49
+  % (1982, 2000, 2010, 2015, 2020, 2022), égaux une fois arrondis à la série publiée 010596134 (5,7 ; 7,4 ; 8,5
+  ; 9,0 ; 9,4 ; 9,5). Étiquettes INSEE inversées : 010776377 et 010776375 (« proportion », POURCENT) contiennent
+  des hectares, 010776378 et 010776376 (« surface », MILLIERS_HECTARES) des pourcentages arrondis à l''unité, 010596146
+  (MILLIERS_HECTARES) des hectares (maintenance PLA-12).'

@@ -25,13 +25,16 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000904
 hors_longlist: non
-raccordement: 'non : série depuis 2010'
+raccordement: 'a_etudier : série Eurostat tran_hv_frmod (2005-2024), inférieure de 0 à 1,3 point sur 2010-2024,
+  pour 2005-2009'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Indicateur national ODD de report modal publié chaque année de 2010 à 2024 (15 points), seule
   mesure de la structure du transport de marchandises au catalogue.
 note_pertinence: Le report du fret de la route vers le rail et le fleuve réduit les émissions et la consommation
-  d'énergie des transports. Les parts du ferroviaire et du fluvial, complémentaires à 100 %, sont en variantes.
+  d'énergie des transports. Les parts du ferroviaire et du fluvial, complémentaires à 100 %, sont en variantes,
+  avec la répartition modale d'Eurostat (2005-2024, y compris aérien, maritime et oléoducs) et l'intensité du fret
+  rapportée au PIB, reçues de logement_cadre_vie et de niveau_de_vie (D38 a, D39).
 variantes:
 - serie_id: '010751586'
   source: INSEE BDM
@@ -58,6 +61,157 @@ variantes:
   nature: voie Melodi et parts du ferroviaire et du fluvial (compléments)
   ligne_id: melodi-005670
   eligible: oui
+- serie_id: sdg_09_60?freq=A&unit=PC&tra_mode=IWW&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-001997
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: sdg_09_60?freq=A&unit=PC&tra_mode=RAIL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-001998
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: sdg_09_60?freq=A&unit=PC&tra_mode=RAIL_IWW_AVD&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-001999
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod6?freq=A&tra_mode=AIR&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037473
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod6?freq=A&tra_mode=IWW&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037474
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod6?freq=A&tra_mode=OIL_PIPE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037475
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod6?freq=A&tra_mode=RAIL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037476
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod6?freq=A&tra_mode=ROAD&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037477
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod6?freq=A&tra_mode=SEA&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037478
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod?freq=A&tra_mode=AIR&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037479
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod?freq=A&tra_mode=IWW&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037480
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod?freq=A&tra_mode=RAIL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037481
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod?freq=A&tra_mode=ROAD&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037482
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_ms_frmod?freq=A&tra_mode=SEA&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037483
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_frmod?freq=A&unit=PC&tra_mode=IWW&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037489
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_frmod?freq=A&unit=PC&tra_mode=RAIL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037490
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_frmod?freq=A&unit=PC&tra_mode=RAIL_IWW_AVD&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037491
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_frmod?freq=A&unit=PC&tra_mode=ROAD&geo=FR
+  source: Eurostat
+  nature: 'Eurostat : répartition modale du transport intérieur de fret (tran_hv_frmod, route, rail, voies navigables,
+    2005-2024), y compris aérien, maritime et oléoducs (tran_hv_ms_frmod, tran_hv_ms_frmod6, 2008-2024), part du
+    rail et des voies navigables (sdg_09_60, 2005-2024) ; lignes renvoyées par logement_cadre_vie (règle 1130)'
+  ligne_id: estat-037492
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: tran_hv_frtra?freq=A&unit=I15&geo=FR
+  source: Eurostat
+  nature: volume du transport intérieur de fret rapporté au PIB (Eurostat tran_hv_frtra, indice 2015 = 100, 2005-2024)
+    ; ligne renvoyée par niveau_de_vie (règle 1180)
+  ligne_id: estat-037497
+  eligible: oui
+  longlist: niveau_de_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -65,4 +219,6 @@ socle_v1:
   justification: ''
 qualite:
 - champ_metropole
-notes: ''
+notes: 'Part de la route, BDM et API Eurostat lues le 16/10/2026 : INSEE 88,8 % (2010), 85,7 % (2015), 88,8 % (2024)
+  ; Eurostat 85,6 % (2005), 87,5 % (2010), 84,9 % (2015), 88,3 % (2024), soit un écart de 0 à -1,3 point sur 2010-2024
+  ; l''INSEE (SDES), indicateur national de définition propre, reste principal.'

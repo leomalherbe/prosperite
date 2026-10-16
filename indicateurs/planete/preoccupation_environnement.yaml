@@ -16,6 +16,12 @@ source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion (microdonnées pondérées, data.drees), question OG05_1
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable OG05_1, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG05_1, modalités 1 et 2
+formule: 'part = 100 × somme(poids des réponses OG05_1 = 1 ou 2) / somme(poids des réponses non vides, ne sait pas
+  999999999 compris), par année (première année lue : 2000 ; pas d''enquête en 2003) ; distributions pondérées du
+  robot M04'
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -51,4 +57,8 @@ qualite:
 - hors_longlist
 - enquete_metropole
 - pas_d_enquete_2003
-notes: ''
+- calcul_sur_microdonnees
+notes: 'Recoupement : pour 2025, le tableau publié par la DREES (tris simplifiés, feuille 6, docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
+  donne 32,04 % « beaucoup », 44,63 % « assez », 18,90 % « peu », 4,37 % « pas du tout » et 0,07 % de non-réponses,
+  soit 76,66 % de préoccupés, identiques au calcul sur les distributions du robot ; les autres années ne sont pas
+  recoupées (aucun tableau publié dans le dépôt).'

@@ -28,10 +28,13 @@ hors_longlist: non
 raccordement: 'non : série depuis 2010'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Indicateur européen de circularité, série Eurostat annuelle de 2010 à 2024 (15 points).
+motif_recommandation: Indicateur européen de circularité, série Eurostat annuelle de 2010 à 2024 (17,6 % en 2010,
+  17,8 % en 2024, dernière valeur imputée).
 note_pertinence: Le taux mesure la part des besoins en matières couverte par le recyclage, objectif du plan d'action
-  européen pour l'économie circulaire. Il dépend du recyclage mais aussi du volume total de matières consommées.
-  Les drapeaux d'Eurostat n'ont pas été relus ; le doublon env_ac_cur est en variante.
+  européen pour l'économie circulaire. Il dépend du recyclage mais aussi du volume total de matières consommées
+  ; il a reculé de 19,8 % en 2018 à 15,4 % en 2020 et 2021 avant de remonter à 17,8 % en 2024 (valeur imputée par
+  Eurostat, API lue le 16/10/2026). Le doublon env_ac_cur est en variante et l'emploi de l'économie circulaire forme
+  l'autre fiche de la famille (D39).
 variantes:
 - serie_id: env_ac_cur?freq=A&unit=PC&geo=FR
   source: Eurostat
@@ -44,5 +47,5 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_eurostat_non_lus
+- derniere_valeur_imputee
 notes: ''

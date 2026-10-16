@@ -4,8 +4,9 @@ dimension: planete
 sous_theme: pollutions
 famille: emissions_cov_non_methaniques
 variante_principale: oui
-definition: Émissions de composés organiques volatils non méthaniques (COVNM) dans l'air, total national retenu
-  pour l'évaluation du respect des plafonds d'émission de la directive (UE) 2016/2284.
+definition: Émissions de composés organiques volatils non méthaniques (COVNM) dans l'air, total national « pour
+  tout l'ensemble du territoire » de l'inventaire déclaré à l'Union européenne (directive (UE) 2016/2284), champ
+  France métropolitaine.
 unite: tonnes
 sens: bas
 type: pression
@@ -13,9 +14,9 @@ declaratif: non
 composite: non
 source_organisme: Eurostat
 source_jeu: env_air_emis (polluants atmosphériques par secteur source)
-source_serie_id: env_air_emis?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT_C&geo=FR
+source_serie_id: env_air_emis?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT&geo=FR
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT_C&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/env_air_emis/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2000
@@ -23,51 +24,53 @@ derniere_annee: 2024
 nb_points_depuis_2000: 25
 geo: FR
 eligibilite_longlist: oui
-ligne_id: estat-036354
+ligne_id: estat-036353
 hors_longlist: non
-raccordement: non
+raccordement: 'non : série homogène de 2000 à 2024'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Pression atmosphérique soumise à un plafond d'émission européen, série Eurostat de 2000 à
-  2024 (25 points), avec 1 027,5 kt en 2025 selon le Citepa (extrait du robot M04).
-note_pertinence: Les composés organiques volatils non méthaniques (solvants, combustion, agriculture) sont des précurseurs
-  de l'ozone. Les drapeaux d'Eurostat n'ont pas été relus. Le Citepa (1990-2025), les agrégats sectoriels et les
-  comptes d'émissions sont en variantes.
+motif_recommandation: Précurseur de l'ozone soumis à un plafond d'émission européen, total national Eurostat homogène
+  et sans drapeau de 2000 à 2024 (2 113 480 t en 2000, 1 037 120 t en 2024), préféré au total de conformité qui
+  exclut les émissions agricoles des catégories 3B et 3D en 2005 et depuis 2020 (D40).
+note_pertinence: 'Les composés organiques volatils non méthaniques (solvants, combustion, agriculture) sont des
+  précurseurs de l''ozone. Le total de conformité à la directive, qui exclut une partie des émissions agricoles
+  certaines années, le Citepa (1990-2025, France hexagonale : 1 027,5 kt en 2025), les agrégats sectoriels et les
+  comptes d''émissions sont en variantes.'
 variantes:
-- serie_id: env_air_emis?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT&geo=FR
+- serie_id: env_air_emis?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les composés organiques volatils non méthaniques
-  ligne_id: estat-036353
+  nature: 'total national pour l''évaluation de conformité (directive (UE) 2016/2284) : exclut les COVNM des catégories
+    3B et 3D (effluents d''élevage, sols agricoles) en 2005 et depuis 2020 (article 4 §3 d), série non homogène'
+  ligne_id: estat-036354
   eligible: oui
 - serie_id: env_ac_ainah_r2?freq=A&airpol=NMVOC&nace_r2=TOTAL&unit=G_HAB&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les composés organiques volatils non méthaniques
+  nature: agrégats sectoriels et comptes d'émissions (principe de résidence) pour les composés organiques volatils
+    non méthaniques
   ligne_id: estat-037514
   eligible: oui
 - serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR1A_TRA&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les composés organiques volatils non méthaniques
+  nature: agrégats sectoriels et comptes d'émissions (principe de résidence) pour les composés organiques volatils
+    non méthaniques
   ligne_id: estat-037941
   eligible: oui
 - serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR3_AGR&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les composés organiques volatils non méthaniques
+  nature: agrégats sectoriels et comptes d'émissions (principe de résidence) pour les composés organiques volatils
+    non méthaniques
   ligne_id: estat-037942
   eligible: oui
 - serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR3_MNR&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les composés organiques volatils non méthaniques
+  nature: agrégats sectoriels et comptes d'émissions (principe de résidence) pour les composés organiques volatils
+    non méthaniques
   ligne_id: estat-037943
   eligible: oui
 - serie_id: env_air_emis_ind?freq=A&unit=T&airpol=NMVOC&src_nfr=NFR_TOT_NAT&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les composés organiques volatils non méthaniques
+  nature: agrégats sectoriels et comptes d'émissions (principe de résidence) pour les composés organiques volatils
+    non méthaniques
   ligne_id: estat-037944
   eligible: oui
 - serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
@@ -82,8 +85,15 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_eurostat_non_lus
-- perimetre_geo_a_verifier
-notes: 'Périmètre géographique du total national transmis par la France (code FR d''Eurostat) à confirmer : les
-  niveaux sont proches de ceux que le Citepa publie pour la France hexagonale (ammoniac : 574 390 t en 2024 chez
-  Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote : 647 990 t et 631,9 kt).'
+- champ_metropole
+notes: 'Champ : France métropolitaine. La directive (UE) 2016/2284 ne couvre pas les départements d''outre-mer (article
+  2 §2, lu le 16/10/2026) et, pour la France, le total « pour tout l''ensemble du territoire » coïncide à 10 t près
+  avec le total pour l''évaluation de conformité chaque année de 1999 à 2024 (API Eurostat lue le 16/10/2026, mise
+  à jour du 07/09/2026, aucun drapeau), sauf pour les COVNM ; les niveaux sont proches de ceux du Citepa pour la
+  France hexagonale (ammoniac : 574 380 t en 2024 chez Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote
+  : 647 990 t et 631,9 kt). Le champ `geo` garde le code de la série (FR, D15). Le total de conformité, en variante,
+  n''est pas homogène : l''article 4 §3 d de la directive (lu le 16/10/2026) exclut des engagements les émissions
+  d''oxydes d''azote et de COVNM des catégories 3B (effluents d''élevage) et 3D (sols agricoles), et ce total les
+  retire pour l''année de référence 2005 (1 339 890 t contre 1 765 820 t) et depuis 2020 (706 010 t contre 1 133
+  840 t en 2020 ; 635 090 t contre 1 037 120 t en 2024). Pour les oxydes d''azote, les deux totaux coïncident (754
+  770 t en 2020) : pas de rupture.'

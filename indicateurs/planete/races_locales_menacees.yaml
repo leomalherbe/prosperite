@@ -28,8 +28,9 @@ hors_longlist: non
 raccordement: non
 incontournable: non
 recommandation: ecarter
-motif_recommandation: 'Sens ambigu : une baisse peut traduire une meilleure conservation comme la disparition ou
-  le reclassement de races, et la série (2010-2025) ne distingue pas ces cas.'
+motif_recommandation: 'Sens ambigu : le nombre de races à risque passe de 38 en 2010 à 122 en 2025 surtout parce
+  que des races de risque inconnu ont été classées (182 en 2010, 107 en 2025), et la série vaut 0 en 2012 et 2013
+  (14 points utiles sur 16).'
 note_pertinence: La diversité génétique des races domestiques fait partie de la biodiversité (cible ODD 2.5), mais
   ce décompte se lit mal seul. Les classes « non à risque » et « risque inconnu » sont en variantes ; une part des
   races menacées dans l'ensemble des races locales serait plus lisible.
@@ -64,5 +65,9 @@ socle_v1:
   objectif: null
   type_justification: null
   justification: ''
-qualite: []
-notes: ''
+qualite:
+- valeurs_nulles_2012_2013
+- reclassement_risque_inconnu
+notes: 'Valeurs lues sur la BDM le 16/10/2026 : 0 race à risque et 0 non à risque en 2012 et 2013, alors que 240
+  et 239 races sont classées de risque inconnu (anomalie de la source) ; races classées en 2010 : 38 à risque, 20
+  non à risque, 182 inconnues ; en 2025 : 122, 20 et 107.'

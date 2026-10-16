@@ -31,9 +31,10 @@ recommandation: retenir
 motif_recommandation: Mesure de la pression sur la ressource en eau la plus longue au catalogue, série Eurostat
   sans drapeau de 2000 à 2023 (538 m³ par habitant en 2000, 341 m³ en 2023).
 note_pertinence: 'Le refroidissement des centrales, dont l''eau est en grande partie restituée aux rivières, pèse
-  lourd dans le total (13,3 milliards de m³ sur 34,1 en 2022 pour les eaux de surface, d''après l''ITDD) : la ventilation
-  par usage, en variante, aide à lire la tendance. Les volumes nationaux masquent les tensions locales et estivales.
-  La série INSEE par usage (ODD 6.i5, 2010-2022) et les ventilations par origine et par secteur sont en variantes.'
+  lourd dans les prélèvements (13,3 milliards de m³ d''eau de surface en 2022, sur 34,1 milliards prélevés au total,
+  toutes origines et eaux saumâtres comprises, d''après l''ITDD) : la ventilation par usage, en variante, aide à
+  lire la tendance. Les volumes nationaux masquent les tensions locales et estivales. La série INSEE par usage (ODD
+  6.i5, 2010-2022) et les ventilations par origine et par secteur sont en variantes.'
 variantes:
 - serie_id: '010595608'
   source: INSEE BDM

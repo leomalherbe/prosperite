@@ -38,17 +38,20 @@ note_pertinence: L'artificialisation détruit des sols vivants de façon presque
 variantes:
 - serie_id: '010596146'
   source: INSEE BDM
-  nature: surface artificialisée en milliers d'hectares (BDM 010596146) et voie Melodi (11.i2a, % et hectares)
+  nature: 'surface artificialisée en hectares (BDM 010596146 : 4 090 161 ha en 2000, malgré l''unité « milliers
+    d''hectares » de la source, PLA-12) et voie Melodi (11.i2a, % et hectares)'
   ligne_id: bdm-001159
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=11.i2a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=HA
   source: INSEE Melodi
-  nature: surface artificialisée en milliers d'hectares (BDM 010596146) et voie Melodi (11.i2a, % et hectares)
+  nature: 'surface artificialisée en hectares (BDM 010596146 : 4 090 161 ha en 2000, malgré l''unité « milliers
+    d''hectares » de la source, PLA-12) et voie Melodi (11.i2a, % et hectares)'
   ligne_id: melodi-005743
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=11.i2a&PCS=_Z&SDG=SDG11&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: surface artificialisée en milliers d'hectares (BDM 010596146) et voie Melodi (11.i2a, % et hectares)
+  nature: 'surface artificialisée en hectares (BDM 010596146 : 4 090 161 ha en 2000, malgré l''unité « milliers
+    d''hectares » de la source, PLA-12) et voie Melodi (11.i2a, % et hectares)'
   ligne_id: melodi-005744
   eligible: oui
 - serie_id: sdg_11_32?freq=A&unit=PC&geo=FR
@@ -101,4 +104,6 @@ socle_v1:
 qualite:
 - enquete_teruti
 - champ_metropole
-notes: ''
+notes: La variante BDM 010596146 est en hectares (4 090 161 ha en 2000, 5 214 224 ha en 2022, BDM lue le 16/10/2026)
+  malgré l'unité « milliers d'hectares » de l'INSEE (maintenance PLA-12). La part d'espaces naturels, un état, forme
+  sa propre famille (espaces_naturels, D38 i) ; la valeur 2023 (9,5 %) porte une marque de révision (OBS_REV).

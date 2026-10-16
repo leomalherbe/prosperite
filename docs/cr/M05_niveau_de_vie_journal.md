@@ -53,7 +53,7 @@ Le niveau réel par habitant du revenu disponible n'existe qu'à Eurostat (`nasa
 
 | Concept | Principale | Variante(s) Eurostat ou autre | Motif |
 |---|---|---|---|
-| Taux de pauvreté à 60 % | INSEE ERFS rétropolée (1996-2024, sans rupture) | EU-SILC `ilc_li02`, `sdg_01_20` (2000-2025, ruptures 2008, 2020, 2022) ; ODD BDM 2010-2023 | INSEE > Eurostat à définition égale, série sans rupture |
+| Taux de pauvreté à 60 % | INSEE ERFS rétropolée (1996-2024, sans rupture) | EU-SILC `ilc_li02`, `sdg_01_20` (2000-2025, ruptures 2008, 2020, 2022 ; erratum après audit M06, T5 : ruptures en 2001, 2004, 2020 et 2022, aucune en 2008) ; ODD BDM 2010-2023 | INSEE > Eurostat à définition égale, série sans rupture |
 | Taux de pauvreté à 50 % | INSEE ERFS rétropolée | EU-SILC, OCDE 1_4 | idem |
 | Intensité de la pauvreté | INSEE ERFS rétropolée | `ilc_li11`, `sdg_10_30` | idem |
 | Niveau de vie médian | INSEE ERFS rétropolée | `ilc_di03`, `ilc_di18` | idem |

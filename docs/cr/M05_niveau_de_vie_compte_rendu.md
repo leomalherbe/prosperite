@@ -29,7 +29,7 @@ Les ≈ 7 900 lignes de comptes nationaux et de prix (INSEE `DD_CNA_*` et BDM, E
 Le niveau réel par habitant du revenu disponible et de la consommation **n'existe qu'à Eurostat** (`nasa_10_nf_tr` B7G_R_HAB : 21 496 € en 2000, 27 882 € en 2024 ; `nama_10_pc` P41) : l'INSEE ne publie au catalogue que des évolutions (`_PAM_UC`) et des montants totaux. Les principales sont donc Eurostat, la mesure INSEE du débat public (pouvoir d'achat par UC, en évolution) étant une variante de fiche de la même famille.
 
 ### 3.2 Familles INSEE / Eurostat
-INSEE principal à définition égale (charte §3.5, méthode §4) : taux de pauvreté à 60 % et à 50 %, intensité, niveau de vie médian et premier décile (ERFS rétropolée 1996-2024, sans rupture, préférée à EU-SILC qui a des ruptures en 2008, 2020 et 2022 et à la série ODD de la BDM qui s'arrête en 2023) ; privation matérielle et sociale (BDM ODD 1.i2, 2013-2024, préférée à `ilc_mdsd07` 2014-2025 : un an de profondeur contre un an de fraîcheur) ; privation alimentaire (ODD 2.i1) ; PIB par habitant. Eurostat principal faute d'équivalent INSEE : privation sévère, AROPE, pauvreté persistante, ancrée, subjective, satisfaction financière.
+INSEE principal à définition égale (charte §3.5, méthode §4) : taux de pauvreté à 60 % et à 50 %, intensité, niveau de vie médian et premier décile (ERFS rétropolée 1996-2024, sans rupture, préférée à EU-SILC qui a des ruptures en 2001, 2004, 2020 et 2022 (corrigé après l'audit M06, T5 : aucune en 2008) et à la série ODD de la BDM qui s'arrête en 2023) ; privation matérielle et sociale (BDM ODD 1.i2, 2013-2024, préférée à `ilc_mdsd07` 2014-2025 : un an de profondeur contre un an de fraîcheur) ; privation alimentaire (ODD 2.i1) ; PIB par habitant. Eurostat principal faute d'équivalent INSEE : privation sévère, AROPE, pauvreté persistante, ancrée, subjective, satisfaction financière.
 
 ### 3.3 Autres choix
 - **Pauvreté des enfants** : fiche propre (préoccupation publique propre, D32), bien que ventilation de la pauvreté d'ensemble.
@@ -68,3 +68,41 @@ Unité erronée des mesures par habitant de `nasa_10_nf_tr` (NDV-1) ; table de c
 ## 8. Pull request
 
 PR #16 vers `main` (https://github.com/leomalherbe/prosperite/pull/16), ouverte le 14/10/2026 par l'API GitHub ; à ne pas fusionner pendant un run du robot (D26).
+
+## 9. Corrections après l'audit M06 (16/10/2026, PR #NN)
+
+Agent correcteur, branche `m05-niveau_de_vie-corr`, PR #NN « M05 — niveau_de_vie : corrections après audit ». Audit appliqué : `docs/validation/audit_niveau_de_vie.md` (verdict `corrections_necessaires`), avec les décisions D37 à D40. Détail, sources relues et contrôles : `docs/cr/M05_niveau_de_vie_corrections_journal.md`. Les sections 1 à 8 ci-dessus décrivent l'état de M05 ; les chiffres à jour sont ceux de la présente section.
+
+### 9.1 Corrections appliquées (liste ordonnée de l'audit)
+
+1. **Privation alimentaire** : série principale EU-SILC `ilc_mdes03` (2004-2025, 22 points, ligne de la long-list `planete`), plus longue de 6 ans et plus fraîche d'un an que l'indicateur ODD 2.i1 de l'INSEE (écart au plus 0,2 point sur 2010-2024), qui passe en variante ; ruptures 2020 et 2022.
+2. **`ilc_mdho06q`** (privation sévère liée au logement, libellé du catalogue erroné) retiré des variantes de la privation sévère et renvoyé à `logement_cadre_vie`.
+3. **IDH** : `retenir_variante` dans la famille du PIB par habitant, jamais au socle (D38 c), `annee_reference: observation`.
+4. **Pauvreté ancrée en 2008** : valeurs relues (12,5 % en 2008, 12,1 % en 2019, 15,6 % en 2025), ruptures 2020 et 2022, qui portent toute la hausse ; série toujours publiée.
+5. **Perception de la hausse de la pauvreté (PE01)** : rupture possible en 2007, anomalie en 2014, `non_recoupe` et contrôle de plausibilité sur la publication 2025 (D38 b) ; PE02 (évolution future) en variante.
+6. **Pauvreté ressentie (PE03)** : rupture possible en 2018, `non_recoupe`, URL de la pièce jointe unique, note alignée sur `securite` (modalité 1 là-bas, modalité 3 ici).
+7. **Privation matérielle et sociale** : valeurs de la principale INSEE citées ; la série n'est pas rétropolée (rupture SRCV entre 2019 et 2020 selon l'INSEE).
+8. **Transversales** : `annee_reference` des composites ; ventilations par sexe du taux à 60 % renvoyées à `egalites` (D35, 9 lignes) ; `rattachement_propose` des imports ; métadonnées du revenu national ; incontournable porté par la seule principale de chaque famille (D38 d).
+9. **Maintenance** : NDV-4 faite, NDV-5 vérifiée, NDV-6 et NDV-10 abandonnées, NDV-11 et NDV-12 nouvelles ; ruptures EU-SILC corrigées (2001, 2004, 2020 et 2022, aucune en 2008).
+10. **Décisions D38 et D39** : soldes d'opinion de l'enquête de conjoncture sur le niveau de vie en France en deux fiches `retenir_variante` (D38 j) ; lignes renvoyées par `logement_cadre_vie` et `sante` importées (D38 a).
+
+Non appliqué : l'IDH ajusté aux inégalités en variante (O5), déjà variante d'`egalites/coefficient_inegalite_humaine`.
+
+### 9.2 Chiffres après corrections
+
+- **27 fiches, 18 familles** : **17 `retenir`**, **9 `retenir_variante`** (pouvoir d'achat par UC, taux de pauvreté à 50 %, pauvreté ancrée 2008, privation sévère, pauvreté ressentie, revenu national par habitant, IDH, soldes d'opinion passé et futur sur le niveau de vie en France), **1 `ecarter`** (taux d'épargne, sens ambigu).
+- 6 déclaratives, 2 composites (AROPE, IDH), 2 irrégulières (D17), 1 hors long-list (PE01), **4 incontournables** (`taux_pauvrete_60`, `revenu_disponible_ajuste_habitant`, `niveau_vie_median`, `privation_materielle_sociale`).
+- Présélection : 149 règles, 11 930 lignes (109 importées) ; 1 282 variantes ; 706 lignes renvoyées à d'autres dimensions (`travail` 354, `egalites` 258, `logement_cadre_vie` 47, `education` 24, `securite` 19, `planete` 4).
+- Vérificateur : 0 erreur, 6 avertissements attendus ; `pytest` : 399 réussis. Classeur `docs/validation/classeurs/validation_niveau_de_vie.xlsx` : décisions par défaut 4 `retenu_socle`, 22 `retenu`, 1 `ecarte`.
+
+### 9.3 Désaccords tranchés
+
+J1 (IDH) et J5 (soldes d'opinion) par D38 (c) et (j) ; J3 par D38 (d) ; J2 (deux familles de revenu) et J6 (taux d'épargne écarté) maintenus, comme le recommandait l'auditeur ; J4 : pauvreté ancrée gardée dans la famille du premier décile, avec la dépendance aux ruptures écrite.
+
+### 9.4 Questions pour la session mère
+
+1. Ventilations par sexe : D35 appliqué aux 9 lignes du taux à 60 % (au-delà de la seule ligne citée par l'audit) ; `egalites` doit les importer.
+2. Famille `perception_niveau_vie_france` (PE01 principale, soldes en variantes) : substituabilité à confirmer.
+3. Identifiants DREES du catalogue M04 (NDV-12, Q6 de l'audit).
+4. IDH ajusté aux inégalités : à rapprocher de l'IDH au gel 2 ?
+5. Volume des variantes (1 282) : appliquer en bloc la règle D35 sur les ventilations de second rang avant le gel 2 ?

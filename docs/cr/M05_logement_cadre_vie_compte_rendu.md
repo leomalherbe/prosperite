@@ -61,7 +61,7 @@ DREES OG04_1 et SDPROXIM_3 à cataloguer et calculer (LOG-1) ; séries SDES de l
 
 PR #26 vers `main` « M05 — fiches indicateurs : logement_cadre_vie » (https://github.com/leomalherbe/prosperite/pull/26), ouverte le 15/10/2026 par l'API GitHub ; à ne pas fusionner pendant un run du robot (D26).
 
-## 9. Corrections après audit (M06, D38-D46) — branche `m05-logement_cadre_vie-corr`, PR #PR_NUM
+## 9. Corrections après audit (M06, D38-D46) — branche `m05-logement_cadre_vie-corr`, PR #35
 
 Audit : `docs/validation/audit_logement_cadre_vie.md` (44 fiches auditées : 25 conformes, 19 à corriger ; 1 oubli de 28 lignes ; 7 points de cohérence ; 7 désaccords de jugement ; 11 corrections au §12), réponses de la session mère en D42. Toutes les corrections F, A et C sont appliquées ; J3 et J5 suivent D42 ; J6 et J7, non tranchés, restent en question. Deux collectes ciblées du robot (vagues 15 et 16, 16/10/2026) ont calculé la distribution de SDPROXIM_3 et lu les trois séries Melodi. Détail, fichiers et limites : `docs/cr/M05_logement_cadre_vie_corrections_journal.md`.
 

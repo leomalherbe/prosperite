@@ -1,6 +1,6 @@
 # data_gouv / jeu_ssmsi_series_chrono
 # URL : https://www.data.gouv.fr/api/1/datasets/62b02e970a264df3467b6c42/
-# Vérifié le 2026-10-13T14:46:36Z — HTTP 200 — application/json — 13617 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-16T08:31:27Z — HTTP 200 — application/json — 13623 octets lus (taille annoncée : inconnue)
 
 {
  "access_audiences": [],
@@ -26,10 +26,10 @@
  "id": "62b02e970a264df3467b6c42",
  "internal": {
   "created_at_internal": "2022-06-20T10:23:51.920000+00:00",
-  "last_modified_internal": "2026-09-15T15:22:56.688000+00:00"
+  "last_modified_internal": "2026-10-14T15:06:04.423000+00:00"
  },
- "last_modified": "2026-09-15T15:22:56.688000+00:00",
- "last_update": "2026-09-15T15:22:56.688000+00:00",
+ "last_modified": "2026-10-14T15:06:04.423000+00:00",
+ "last_update": "2026-10-14T15:06:04.423000+00:00",
  "license": "lov2",
  "metrics": {
   "dataservices": 1,
@@ -51,7 +51,7 @@
    "2025-07": 0,
    "2025-08": 0
   },
-  "resources_downloads": 9405,
+  "resources_downloads": 9449,
   "reuses": 5,
   "reuses_by_months": {
    "2025-08": 0,
@@ -68,7 +68,7 @@
    "2026-07": 1,
    "2026-08": 1
   },
-  "views": 40695
+  "views": 40830
  },
  "organization": {
   "acronym": "MI",
@@ -121,15 +121,15 @@
   {
    "checksum": {
     "type": "sha1",
-    "value": "f172f5de9c867077a260ac93d5d11c27f7e04cb2"
+    "value": "953267a4564f442b9a72569f82f5b433fed09fba"
    },
    "created_at": "2024-02-12T17:15:25.261000+00:00",
    "description": "La base des séries chronologiques du Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) référence plusieurs milliers d’indicateurs statistiques mensuels, trimestriels, annuels, nationaux, départementaux relatifs aux périmètres suivis par le service : crimes, délits, contraventions, taux de plainte, sentiment d’insécurité,… Pour chaque indicateur, outre ses valeurs, la base fournit des informations notamment sur sa source, sa périodicité, son unité de compte et sa définition complétée d’un lien vers une publication associée directement téléchargeable sur le site du [SSMSI](https://www.interieur.gouv.fr/Interstats/Publications).\n\n**Ouverture du fichier avec le logiciel R** (exemple d’instruction):\nlibrary(arrow)\ndir=chemin vers le stockage du fichier parquet\ndt=read_parquet(paste0(dir,\" series_chrono_2024-01-08.parquet\"))\n\n**Ouverture du fichier avec le logiciel Python** (exemple d’instruction):\nimport pandas as pd\nparquet.file=\"chemin\\series_chrono_2024-01-08.parquet\"\npd.read_parquet(parquet_file,engine='pyarrow')\n\n**Ouverture du fichier avec Visual Studio Code** :\nInstaller l’extension parquet-viewer et glisser/déposer le fichier parquet directement dans Visual Studio Code\n",
    "extras": {
-    "analysis:check_id": 53412579,
-    "analysis:checksum": "f172f5de9c867077a260ac93d5d11c27f7e04cb2",
-    "analysis:content-length": 365722,
-    "analysis:last-modified-at": "2026-09-15T15:22:17+00:00",
+    "analysis:check_id": 55098144,
+    "analysis:checksum": "953267a4564f442b9a72569f82f5b433fed09fba",
+    "analysis:content-length": 366468,
+    "analysis:last-modified-at": "2026-10-14T15:06:04+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "application/octet-stream",
     "analysis:parsing:error": "copy_records_to_table:'header_row_idx'",
@@ -142,14 +142,14 @@
     "check:cors:allow-origin": "*",
     "check:cors:max-age": "1728000",
     "check:cors:status": 204,
-    "check:date": "2026-09-15T15:22:20.930317+00:00",
-    "check:headers:content-length": 365722,
-    "check:headers:content-type": "application/octet-stream",
-    "check:id": 53412579,
+    "check:date": "2026-10-14T15:06:08.169636+00:00",
+    "check:headers:content-length": 366468,
+    "check:headers:content-type": "application/vnd.apache.parquet",
+    "check:id": 55098144,
     "check:status": 200,
     "check:timeout": false
    },
-   "filesize": 365722,
+   "filesize": 366468,
    "filetype": "file",
    "format": "parquet",
    "geopf": null,
@@ -157,39 +157,39 @@
    "id": "8e1ba8e5-8b5c-46b5-b867-79bfac1b325c",
    "internal": {
     "created_at_internal": "2024-02-12T17:15:25.261000+00:00",
-    "last_modified_internal": "2026-09-15T15:22:18.064000+00:00"
+    "last_modified_internal": "2026-10-14T15:06:04.423000+00:00"
    },
-   "last_modified": "2026-09-15T15:22:18.064000+00:00",
+   "last_modified": "2026-10-14T15:06:04.423000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/8e1ba8e5-8b5c-46b5-b867-79bfac1b325c",
    "metrics": {
-    "views": 2204
+    "views": 2213
    },
    "mime": "application/vnd.apache.parquet",
    "preview_url": null,
    "schema": null,
    "title": "Base des séries chronologiques du SSMSI (fichier parquet)",
    "type": "main",
-   "url": "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20260915-152217/serieschrono-datagouv.parquet"
+   "url": "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20261014-150603/serieschrono-datagouv.parquet"
   },
   {
    "checksum": {
     "type": "sha1",
-    "value": "1a1ce80920293aab4124f86f8a0c1816fc9ded74"
+    "value": "415b233460bc3fe361372ce162e79b6430d49698"
    },
    "created_at": "2023-07-12T08:44:25.705000+00:00",
    "description": "La base des séries chronologiques du Service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.interieur.gouv.fr/Interstats/Le-SSMSI/A-propos-du-SSMSI)) référence plusieurs milliers d’indicateurs statistiques mensuels, trimestriels, annuels, nationaux, départementaux relatifs aux périmètres suivis par le service : crimes, délits, contraventions, taux de plainte, sentiment d’insécurité,… Pour chaque indicateur, outre ses valeurs, la base fournit des informations notamment sur sa source, sa périodicité, son unité de compte et sa définition complétée d’un lien vers une publication associée directement téléchargeable sur le site du [SSMSI](https://www.interieur.gouv.fr/Interstats/Publications).",
    "extras": {
-    "analysis:check_id": 53412609,
+    "analysis:check_id": 55185727,
     "analysis:checksum": "1a1ce80920293aab4124f86f8a0c1816fc9ded74",
     "analysis:content-length": 24636942,
     "analysis:last-modified-at": "2026-09-15T15:22:56+00:00",
     "analysis:last-modified-detection": "last-modified-header",
     "analysis:mime-type": "text/plain",
-    "analysis:parsing:finished_at": "2026-09-15T15:23:05.772541+00:00",
+    "analysis:parsing:finished_at": "2026-10-16T03:06:34.569449+00:00",
     "analysis:parsing:parquet_size": 315518,
     "analysis:parsing:parquet_url": "https://hydra.s3.rbx.io.cloud.ovh.net/parquet/631cff69-f0da-4890-b4fc-97aeada1476f.parquet",
     "analysis:parsing:parsing_table": "b5a201c5ed509773091df8ef46cfd455",
-    "analysis:parsing:started_at": "2026-09-15T15:23:04.658349+00:00",
+    "analysis:parsing:started_at": "2026-10-16T03:06:32.929569+00:00",
     "check:available": true,
     "check:cors:allow-credentials": "true",
     "check:cors:allow-headers": "Origin,Authorization,Accept,DNT,User-Agent,If-Modified-Since,Cache-Control,Content-Type,Range,sentry-trace,baggage",
@@ -203,7 +203,7 @@
     "check:status": 200,
     "check:timeout": false
    },
-   "filesize": 24636942,
+   "filesize": 24643076,
    "filetype": "file",
    "format": "csv",
    "geopf": null,
@@ -211,19 +211,19 @@
    "id": "631cff69-f0da-4890-b4fc-97aeada1476f",
    "internal": {
     "created_at_internal": "2023-07-12T08:44:25.705000+00:00",
-    "last_modified_internal": "2026-09-15T15:22:56.688000+00:00"
+    "last_modified_internal": "2026-10-14T15:05:38.101000+00:00"
    },
-   "last_modified": "2026-09-15T15:22:56.688000+00:00",
+   "last_modified": "2026-10-14T15:05:38.101000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/631cff69-f0da-4890-b4fc-97aeada1476f",
    "metrics": {
-    "views": 7013
+    "views": 7035
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/631cff69-f0da-4890-b4fc-97aeada1476f",
    "schema": null,
    "title": "serieschrono-datagouv.csv",
    "type": "main",
-   "url": "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20260915-152254/serieschrono-datagouv.csv"
+   "url": "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20261014-150536/serieschrono-datagouv.csv"
   }
  ],
  "schema": null,

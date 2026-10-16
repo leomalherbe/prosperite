@@ -1,12 +1,12 @@
 # ademe / datafair_liste
 # URL : https://data.ademe.fr/data-fair/api/v1/datasets?size=3&select=id,title,updatedAt,count
-# Vérifié le 2026-10-16T08:23:34Z — HTTP 200 — application/json; charset=utf-8 — 3055 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:49Z — HTTP 200 — application/json; charset=utf-8 — 3055 octets lus (taille annoncée : inconnue)
 
 {
- "count": 1022,
+ "count": 1018,
  "results": [
   {
-   "title": "Volumes de CEE engages par fiches et départements 2020-2026",
+   "title": "PRODICEE - Programmes",
    "owner": {
     "type": "organization",
     "id": "g1pKfMqaE",
@@ -14,10 +14,10 @@
     "department": "observatoire-cee",
     "departmentName": "Observatoire CEE"
    },
-   "updatedAt": "2026-10-15T10:49:15.986Z",
-   "id": "uodlqtpx91jll7k5c9uaw3u7",
-   "slug": "operations-cee-engages",
-   "count": 3244,
+   "updatedAt": "2026-10-13T14:13:18.113Z",
+   "id": "cwq-sf9jjjspxdsy7tobnc61",
+   "slug": "prodicee-test2-operations",
+   "count": 119,
    "userPermissions": [
     "list",
     "readDescription",
@@ -50,11 +50,11 @@
    ],
    "public": true,
    "visibility": "public",
-   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/operations-cee-engages",
-   "page": "https://data.ademe.fr/datasets/operations-cee-engages"
+   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/prodicee-test2-operations",
+   "page": "https://data.ademe.fr/datasets/prodicee-test2-operations"
   },
   {
-   "title": "Avancement des enquêtes traitement par service",
+   "title": "Liste des autres référentiels",
    "owner": {
     "type": "organization",
     "id": "g1pKfMqaE",
@@ -62,10 +62,10 @@
     "department": "sinoe",
     "departmentName": "SINOE"
    },
-   "updatedAt": "2026-10-16T05:55:12.495Z",
-   "id": "h9jt-rp8-a2w4gxl9ze-7p2f",
-   "slug": "act024-avancement-des-enquetes-traitement-par-service",
-   "count": 8109,
+   "updatedAt": "2026-10-11T12:52:03.673Z",
+   "id": "2anc-74dx322mzn5dj2702li",
+   "slug": "nom011-autres-referentiels",
+   "count": 901,
    "userPermissions": [
     "list",
     "readDescription",
@@ -98,22 +98,22 @@
    ],
    "public": true,
    "visibility": "public",
-   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/act024-avancement-des-enquetes-traitement-par-service",
-   "page": "https://data.ademe.fr/datasets/act024-avancement-des-enquetes-traitement-par-service"
+   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/nom011-autres-referentiels",
+   "page": "https://data.ademe.fr/datasets/nom011-autres-referentiels"
   },
   {
-   "title": "Avancement des enquêtes traitement",
+   "title": "Populations municipales 1968-2023 (RP)",
    "owner": {
     "type": "organization",
-    "id": "g1pKfMqaE",
-    "name": "ADEME",
-    "department": "sinoe",
-    "departmentName": "SINOE"
+    "id": "5a5dc47163ebd4a6f438589b",
+    "name": "Koumoul",
+    "department": "data",
+    "departmentName": "Données de référence"
    },
-   "updatedAt": "2026-10-16T05:50:09.136Z",
-   "id": "p7oh8brxliy5sdba6p5qdl60",
-   "slug": "act023-avancement-des-enquetes-traitement",
-   "count": 6588,
+   "updatedAt": "2026-10-09T12:48:41.730Z",
+   "id": "-8iof5shsi7-7flxka07w-wo",
+   "slug": "populations-municipales-de-1968-a-2023-recensement-de-la-population-com",
+   "count": 801734,
    "userPermissions": [
     "list",
     "readDescription",
@@ -146,8 +146,8 @@
    ],
    "public": true,
    "visibility": "public",
-   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/act023-avancement-des-enquetes-traitement",
-   "page": "https://data.ademe.fr/datasets/act023-avancement-des-enquetes-traitement"
+   "href": "https://data.ademe.fr/data-fair/api/v1/datasets/populations-municipales-de-1968-a-2023-recensement-de-la-population-com",
+   "page": "https://data.ademe.fr/datasets/populations-municipales-de-1968-a-2023-recensement-de-la-population-com"
   }
  ]
 }

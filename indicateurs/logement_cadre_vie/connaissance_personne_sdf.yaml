@@ -7,16 +7,23 @@ variante_principale: oui
 definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui déclarent connaître, dans
   leur famille ou en dehors, quelqu''un qui est sans domicile fixe, ou l''être elles-mêmes (question SDPROXIM_3
   : « Dans votre famille ou en dehors de votre famille, connaissez-vous quelqu''un qui est SDF (sans domicile fixe)
-  ? », réponses « oui », modalités 2 à 8), non-réponses au dénominateur, pondération de redressement de l''enquête.'
+  ? », réponses « oui », modalités 2 à 8), « ne sait pas » exclus du dénominateur, pondération de redressement de
+  l''enquête.'
 unite: '% des répondants'
 sens: bas
 type: resultat
-declaratif: non
+declaratif: oui
 composite: non
 source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable SDPROXIM_3, modalités 2 à 8
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDPROXIM_3, modalités 2 à 8
+formule: 'part = 100 × somme(poids des réponses SDPROXIM_3 = 2 à 8, « oui » sous toutes ses formes) / somme(poids
+  des réponses hors « ne sait pas » 999999999), par année (première année lue : 2000) ; distribution pondérée du
+  robot M04 (vague 15) ; « ne sait pas » exclus faute de convention publiée par la DREES pour cette question (D45)'
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -28,20 +35,25 @@ geo: FM
 eligibilite_longlist: hors_longlist
 ligne_id: ''
 hors_longlist: oui
-statut_serie: a_calculer
-preuve: docs/sources/series/drees__barometre_2000_2025_couverture.csv
-rattachement_propose: 'hors long-list : question SDPROXIM_3 du baromètre DREES ni cataloguée ni calculée par M04
-  (maintenance LOG-1) ; sans-abrisme, contenu de la dimension'
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_sdproxim_sdf.csv
+rattachement_propose: 'hors long-list : question SDPROXIM_3 du baromètre DREES, distribution calculée par le robot
+  (vague 15 du 16/10/2026) mais non cataloguée (maintenance LOG-1) ; sans-abrisme, contenu de la dimension ; fiche
+  confirmée par D42'
 raccordement: 'non : question posée 25 années de 2000 à 2025 (pas d''enquête en 2003)'
 incontournable: non
+socle_propose: non
 recommandation: retenir
-motif_recommandation: Seule série annuelle approchant le sans-abrisme, nommé dans le contenu de la dimension, question
-  posée 25 années de 2000 à 2025, sous réserve du calcul des valeurs par le robot M04.
+motif_recommandation: Seule série annuelle approchant le sans-abrisme (D42), question posée 25 années de 2000 à
+  2025, part calculée sur les microdonnées du baromètre DREES entre 8,9 % (2021) et 16,0 % (2008), 9,3 % en 2025,
+  non recoupée faute de valeur publiée mais contrôlée en plausibilité (D38 b).
 note_pertinence: 'Aucune statistique publique annuelle du nombre de personnes sans domicile n''est cataloguée :
-  l''enquête Sans-domicile de l''INSEE est ponctuelle (2001 et 2012 d''après le relevé M03) et les estimations associatives
-  sont publiées en PDF (exclues, D09). La question mesure la présence du sans-abrisme dans l''entourage des personnes
-  interrogées, un indicateur indirect qui dépend aussi de la taille des réseaux sociaux et de la visibilité du phénomène.
-  Le sens « bas » (plus de personnes concernées dans l''entourage, situation dégradée) est à confirmer par Léo.'
+  l''enquête Sans-domicile de l''INSEE est ponctuelle (2001 et 2012) et les estimations associatives sont publiées
+  en PDF (exclues, D09). La question mesure la présence du sans-abrisme dans l''entourage des personnes interrogées,
+  d''où le sens « bas » (plus de personnes concernées, situation dégradée), mais la part dépend aussi de la taille
+  des réseaux, de la visibilité du phénomène et de l''engagement associatif des répondants. Elle ne reproduit pas
+  la hausse de près de 50 % du nombre de sans-domicile mesurée par l''INSEE entre 2001 et 2012 (12,7 % puis 11,9
+  % ici), ce qui confirme son caractère indirect : Léo tranche au gel 2 (D42).'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -51,16 +63,31 @@ socle_v1:
 qualite:
 - hors_longlist
 - calcul_sur_microdonnees
-- valeurs_a_calculer
 - indicateur_indirect
 - enquete_metropole
 - pas_d_enquete_2003
-- codes_modalites_a_verifier
 - licence_a_confirmer
-notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (sdproxim_3 : 2000-2002
-  et 2004-2025, 25 années). Modalités lues dans le dictionnaire 2025 du robot : 1 « non » ; 2 « oui, dans votre
-  famille » ; 3 « oui, hors famille » ; 4 « oui, vous-même » ; 5 à 8 combinaisons des précédentes ; NSP. La distribution
-  n''est pas calculée par le robot (absente de drees__barometre_2000_2025_distributions.csv) : maintenance LOG-1
-  ; les modalités « vous-même » ont pu apparaître en cours de série, à vérifier sur les dictionnaires anciens avant
-  calcul. Les autres questions SDPROXIM (chômage, familles monoparentales sous le SMIC, emploi précaire, RSA, handicap,
+- non_recoupe
+- modalites_combinees_depuis_2014
+- tendance_differente_enquete_sans_domicile
+notes: 'Parts calculées sur docs/sources/series/drees__barometre_2000_2025_sdproxim_sdf.csv (vague 15 du robot,
+  16/10/2026 ; modalités 2 à 8, « ne sait pas » exclus) : 9,18 (2000), 12,70 (2001), 11,23 (2002), 12,57 (2004),
+  14,53 (2005), 12,90 (2006), 13,15 (2007), 15,97 (2008), 12,51 (2009), 13,61 (2010), 11,25 (2011), 11,94 (2012),
+  10,78 (2013), 9,34 (2014), 11,67 (2015), 11,90 (2016), 11,46 (2017), 9,25 (2018), 10,15 (2019 et 2020), 8,93 (2021),
+  9,87 (2022), 11,27 (2023), 9,89 (2024), 9,33 (2025) ; avec les « ne sait pas » au dénominateur, l''écart est au
+  plus de 0,13 point (2002). Modalités lues dans le dictionnaire 2025 : 1 « non » ; 2 « oui, dans votre famille
+  » ; 3 « oui, hors famille » ; 4 « oui, vous-même » ; 5 à 8 combinaisons ; NSP. Modalités présentes : 1 à 3 en
+  2000, 1 à 4 de 2001 à 2013, combinaisons 5 à 8 à partir de 2014 (réponses multiples possibles depuis cette date,
+  sans rupture visible de la part des « oui ») ; « vous-même » ne dépasse pas 0,17 % (2005). Contrôle de plausibilité
+  (D38 b) : (1) le même calcul reproduit les valeurs publiées par la DREES pour d''autres questions du même fichier
+  (OG04_1 en 2025 ici, PE03 en securite, OG04_6 et SDRICHOM en travail) ; (2) les parts somment à 100 à 0,01 près
+  et les « ne sait pas » ne dépassent pas 1,09 % (2002) ; (3) ordre de grandeur : 141 500 personnes sans domicile
+  en France métropolitaine début 2012 (INSEE Première n° 1455, juillet 2013, page lue le 16/10/2026), soit environ
+  0,2 % de la population, pour 11,9 % de répondants qui en connaissent une, ce qui est compatible avec un entourage
+  de plusieurs dizaines de personnes (ordre de grandeur, pas une validation) ; (4) la tendance diffère : l''INSEE
+  mesure une hausse de près de 50 % du nombre de sans-domicile de 2001 à 2012, la part passe de 12,7 % à 11,9 %.
+  Aucune valeur publiée de cette question n''a été trouvée (synthèses du baromètre 2015 et 2017, Dossiers solidarité
+  et santé n° 61, sondage IFOP 2020 sur le logement : recherches du 16/10/2026) ; elle est absente des tableaux
+  publiés de 2025. Déclaratif oui (D42), par exception à la méthode §4 qui classe les faits déclarés en déclaratif
+  non. Les autres questions SDPROXIM (chômage, familles monoparentales sous le SMIC, emploi précaire, RSA, handicap,
   dépendance) relèvent d''autres dimensions et ne sont pas reprises.'

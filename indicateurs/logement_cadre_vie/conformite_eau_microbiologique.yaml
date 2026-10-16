@@ -1,7 +1,7 @@
 id: conformite_eau_microbiologique
 libelle: Conformité microbiologique de l'eau du robinet
 dimension: logement_cadre_vie
-sous_theme: eau du robinet et assainissement
+sous_theme: eau du robinet
 famille: conformite_eau_microbiologique
 variante_principale: oui
 definition: Part des prélèvements d'eau distribuée (eau du robinet) conformes aux limites de qualité microbiologique,
@@ -28,6 +28,7 @@ ligne_id: m04-000310
 hors_longlist: non
 raccordement: 'non : série ITDD depuis 2008'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Variante principale de la famille conformite_eau_microbiologique, série SDES-INSEE annuelle
   de 2008 à 2024 (17 points), plus longue et plus fraîche que la série complémentaire de l'INSEE (2010-2023).
@@ -38,14 +39,14 @@ note_pertinence: La qualité sanitaire de l'eau du robinet est une condition de 
 variantes:
 - serie_id: '010600314'
   source: INSEE BDM
-  nature: 'complément : eau distribuée non conforme pour la microbiologie (INSEE BDM 010600314 et Melodi ODD 6,
-    2010-2023)'
+  nature: 'autre statistique du contrôle sanitaire : eau distribuée non conforme pour la microbiologie (INSEE BDM
+    010600314 et Melodi ODD 6, 2010-2023), définition différente à documenter'
   ligne_id: bdm-000777
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i1a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: 'complément : eau distribuée non conforme pour la microbiologie (INSEE BDM 010600314 et Melodi ODD 6,
-    2010-2023)'
+  nature: 'autre statistique du contrôle sanitaire : eau distribuée non conforme pour la microbiologie (INSEE BDM
+    010600314 et Melodi ODD 6, 2010-2023), définition différente à documenter'
   ligne_id: melodi-005724
   eligible: oui
 socle_v1:
@@ -55,5 +56,11 @@ socle_v1:
   justification: ''
 qualite:
 - faible_variabilite
-notes: 'Variantes : eau distribuée non conforme pour la microbiologie (INSEE BDM 010600314 et Melodi ODD 6, 2010-2023,
-  complément du taux de conformité).'
+- creux_2016
+notes: 'Valeurs lues (fichier ITDD France entière, DiDo, variable taux_conform_prelev_microbio, lu le 16/10/2026)
+  : 99 (2008), 98,4 (2009), 98,2 (2010 et 2015), 96,9 (2016), 98,0 (2017), 98,5 (2021 et 2022), 98,3 (2023), 97,9
+  (2024) ; le creux de 2016 n''est pas expliqué à la source. Variantes : eau distribuée non conforme pour la microbiologie
+  (INSEE BDM 010600314 et Melodi ODD 6, 2010-2023), autre statistique du contrôle sanitaire qui n''est pas le complément
+  du taux ITDD (0,5 % en 2010 et 0,6 % en 2015 contre 1,8 % impliqués par l''ITDD ; 1,5 % en 2021 et en 2023 contre
+  1,5 et 1,7 %), définition à documenter ; la série INSEE saute de 0,6 % (2015) à 1,7 % (2016) (BDM lue par l''audit
+  M06 le 16/10/2026, F1).'

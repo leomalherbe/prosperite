@@ -28,7 +28,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000366
 hors_longlist: non
 raccordement: 'non : série du SDES depuis 2000'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule série de concentration du principal polluant du trafic routier, SDES annuelle de 2000
   à 2024 (25 points), 11,97 µg/m³ en fond urbain en 2024 d'après l'extrait du robot M04.
@@ -53,4 +54,7 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite: []
-notes: 'Variantes : proximité du trafic routier ; indice base 100 en 2000 (hors long-list, preuve du robot).'
+notes: 'Variantes : proximité du trafic routier ; indice base 100 en 2000 (hors long-list, preuve du robot). Incontournable
+  : non (D42 : le dioxyde d''azote et l''ozone ne figurent dans aucun cadre de référence ; l''incontournable « pollution
+  de l''air locale » est limité aux PM2,5, aux PM10 et à la pollution déclarée autour du logement) ; la fiche reste
+  retenue.'

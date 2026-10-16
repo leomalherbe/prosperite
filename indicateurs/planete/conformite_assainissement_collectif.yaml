@@ -1,7 +1,7 @@
 id: conformite_assainissement_collectif
 libelle: Conformité de la performance des ouvrages d'assainissement collectif
-dimension: logement_cadre_vie
-sous_theme: eau du robinet et assainissement
+dimension: planete
+sous_theme: eau
 famille: conformite_assainissement_collectif
 variante_principale: oui
 definition: Taux de conformité de la performance des ouvrages d'assainissement collectif (stations de traitement
@@ -25,53 +25,52 @@ geo: FE
 eligibilite_longlist: oui
 ligne_id: bdm-000767
 hors_longlist: non
-rattachement_propose: 'lignes de la long-list logement_cadre_vie (INSEE, ODD 6) et de la long-list planete (renvoyées
-  ici par la règle assainissement de planete, maintenance PLA-6) ; cette fiche propose de rendre le concept à planete
-  (R2 : pression sur les milieux aquatiques), la session mère tranche au gel 2'
+rattachement_propose: lignes de la long-list logement_cadre_vie (INSEE, ODD 6.i3a et 6.i3b) importées par planete
+  ; assainissement → planete (D39), fiche transférée de logement_cadre_vie par son correcteur (D42)
 raccordement: 'non : série INSEE depuis 2010'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure annuelle de la qualité du traitement des eaux usées (cible 6.3 des ODD), série
-  INSEE de 2010 à 2022 (13 points), retenue quelle que soit la dimension que la session mère lui attribuera.
-note_pertinence: 'Le traitement des eaux usées protège la santé et les milieux aquatiques : le taux de conformité
+  INSEE de 2010 à 2022 (13 points), rattachée à planete par D39.
+note_pertinence: 'Le traitement des eaux usées protège les milieux aquatiques et la santé : le taux de conformité
   des ouvrages collectifs dit si les stations respectent les exigences de la directive sur les eaux résiduaires
-  urbaines. Il passe de 80,0 % en 2010 à 98,6 % en 2018, puis revient à 91,9 % en 2022 (BDM lue le 15/10/2026).
-  C''est d''abord une pression sur les milieux, ce qui justifie la proposition de rattachement à planete, que planete
-  avait renvoyé ici comme service d''assainissement.'
+  urbaines. Il passe de 80,0 % en 2010 à 98,6 % en 2018, puis revient à 91,9 % en 2022 (BDM lue le 15/10/2026, valeurs
+  confirmées par l''audit M06 du 16/10/2026). L''équipement sanitaire des logements reste suivi en logement_cadre_vie
+  (sans_installations_sanitaires).'
 variantes:
-- serie_id: '010595405'
-  source: INSEE BDM
-  nature: voie Melodi ; composante assainissement non collectif (BDM, Melodi)
-  ligne_id: bdm-000768
-  eligible: oui
-- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i3a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  source: INSEE Melodi
-  nature: voie Melodi ; composante assainissement non collectif (BDM, Melodi)
-  ligne_id: melodi-005726
-  eligible: oui
-- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i3b&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  source: INSEE Melodi
-  nature: voie Melodi ; composante assainissement non collectif (BDM, Melodi)
-  ligne_id: melodi-005727
-  eligible: oui
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable step_taux_conform)
   source: SDES-INSEE — Indicateurs territoriaux de développement durable (ITDD), France entière
   nature: autre source (ITDD, conformité des stations d'épuration, définition différente)
   ligne_id: m04-000315
   eligible: oui
-  longlist: planete
+- serie_id: '010595405'
+  source: INSEE BDM
+  nature: voie Melodi (ODD 6.i3a) ; composante assainissement non collectif (BDM 010595405, Melodi ODD 6.i3b)
+  ligne_id: bdm-000768
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i3a&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: voie Melodi (ODD 6.i3a) ; composante assainissement non collectif (BDM 010595405, Melodi ODD 6.i3b)
+  ligne_id: melodi-005726
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=6.i3b&PCS=_Z&SDG=SDG6&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: voie Melodi (ODD 6.i3a) ; composante assainissement non collectif (BDM 010595405, Melodi ODD 6.i3b)
+  ligne_id: melodi-005727
+  eligible: oui
+  longlist: logement_cadre_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
   type_justification: null
   justification: ''
-qualite:
-- rattachement_a_trancher
+qualite: []
 notes: 'Valeurs lues (BDM 010595400, France, statut A) : 80,0 (2010), 79,7 (2011), 92,9 (2013), 95,1 (2015), 98,6
   (2018), 92,6 (2019), 89,0 (2021), 91,9 (2022) ; aucune valeur après 2022. Variantes : même série par Melodi (ODD
   6.i3a) ; composante assainissement non collectif (BDM 010595405 et Melodi 6.i3b : 40,8 % en 2010, 39,2 % en 2012,
   53,7 % en 2013, 64,5 % en 2023, saut de 2012-2013 non expliqué) ; taux de conformité des stations d''épuration
   des indicateurs territoriaux (ITDD, 2007-2023, 54,9 % en 2023 d''après l''extrait du robot M04 : définition différente,
-  à documenter). Les lignes avaient été renvoyées à planete par la première version de cette présélection, et planete
-  les a renvoyées ici (règle assainissement, maintenance PLA-6) : sans fiche, le concept aurait disparu des deux
-  tableaux.'
+  à documenter). Fiche créée en logement_cadre_vie le 15/10/2026, transférée dans planete le 16/10/2026 par le correcteur
+  de logement_cadre_vie (D39, D42 ; audit M06 logement_cadre_vie §3.1).'

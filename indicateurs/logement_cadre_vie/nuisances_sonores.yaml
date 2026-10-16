@@ -27,6 +27,7 @@ ligne_id: estat-031889
 hors_longlist: non
 raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule mesure disponible du bruit subi au logement (cadre Qualité de vie d'Eurostat, suivi
   ODD 11 de l'UE), 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, module triennal ensuite, D17).
@@ -84,11 +85,11 @@ qualite:
 - declaratif
 - rupture_2020
 - module_triennal_depuis_2021
-- valeurs_lues_sur_table_odd
 notes: 'Déclaratif oui : gêne déclarée. Valeurs lues sur la table ODD sdg_11_20 (même indicateur, ensemble, mise
   à jour Eurostat du 13/08/2026 ; l''API de ilc_mddw01 a été refusée par le proxy le 15/10/2026, HTTP 429) : 23,5
   (2004), 18,5 (2010), 16,2 (2013), 17,3 (2019), 20,7 (2020, b), 21,1 (2023) ; sous le seuil de pauvreté : 28,3
   (2004), 33,1 (2020, b), 27,0 (2023). Depuis le règlement-cadre de 2021, l''item relève du module triennal « conditions
   de travail et de logement » d''EU-SILC (vagues 2023 et 2026 d''après la page des modules d''Eurostat lue le 15/10/2026)
   : valeurs annuelles de 2004 à 2020, puis 2023, d''où la fréquence irrégulière (report de la dernière valeur, D17).
-  Variantes : table ODD sdg_11_20, ventilations par type de ménage, urbanisation (ilc_mddw04) et handicap (hlth_dhc110).'
+  Variantes : table ODD sdg_11_20, ventilations par type de ménage, urbanisation (ilc_mddw04) et handicap (hlth_dhc110).
+  Valeurs confirmées sur le jeu primaire ilc_mddw01 par l''audit M06 (16/10/2026).'

@@ -26,7 +26,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000396
 hors_longlist: non
 raccordement: 'non : série modélisée depuis 1995'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre statistique de la famille exposition_pm25 (toute la population, estimation modélisée),
   seule à couvrir 2000-2010, annuelle de 1995 à 2023 (24 points depuis 2000).
@@ -50,4 +51,5 @@ qualite:
 - revision_frequente
 notes: 'Valeurs lues (docs/sources/verif_acces/extraits/banque_mondiale__en_atm_pm25_mc_m3.txt) : 17,88 (2000),
   15,87 (2010), 12,05 (2015), 8,78 (2020), 9,94 (2021), 10,38 (2022), 8,23 (2023). Variante : OCDE ODD 11.6.2 (9,49
-  µg/m³ en 2020 d''après l''extrait du robot M04).'
+  µg/m³ en 2020 d''après l''extrait du robot M04). Incontournable : non (D38 d : l''incontournable se porte sur
+  la variante principale de la famille).'

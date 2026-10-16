@@ -27,6 +27,7 @@ ligne_id: estat-031885
 hors_longlist: non
 raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: oui
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Proxy national de l'assainissement non sûr du Doughnut et indicateur d'équipements de base
   du Better Life Index, 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, module triennal ensuite, D17).
@@ -177,7 +178,6 @@ qualite:
 - rupture_2020
 - module_triennal_depuis_2021
 - faible_variabilite
-- valeurs_lues_sur_table_odd
 notes: 'Valeurs lues sur la table ODD sdg_06_10 (même indicateur, ensemble, mise à jour Eurostat du 13/08/2026 ;
   l''API de ilc_mdho05 a été refusée par le proxy le 15/10/2026, HTTP 429) : 0,6 (2004), 0,3 (2010 à 2016), 0,2
   (2019), 0,4 (2020, b), 0,7 (2023) ; sous le seuil de pauvreté : 2,0 (2004), 0,3 (2020, b), 1,1 (2023). Depuis
@@ -185,4 +185,4 @@ notes: 'Valeurs lues sur la table ODD sdg_06_10 (même indicateur, ensemble, mis
   (vagues 2023 et 2026 d''après la page des modules d''Eurostat lue le 15/10/2026) : valeurs annuelles de 2004 à
   2020, puis 2023, d''où la fréquence irrégulière (report de la dernière valeur, D17). Variantes : table ODD sdg_06_10
   ; composantes ni baignoire ni douche (ilc_mdho02) et pas de toilettes intérieures (ilc_mdho03), enfants, handicap
-  ; ventilations.'
+  ; ventilations. Valeurs confirmées sur le jeu primaire ilc_mdho05 par l''audit M06 (16/10/2026).'

@@ -15,7 +15,7 @@ Mission M05 (Logement et cadre de vie), commencée le 14/10/2026 par un premier 
 
 Contrôles : `verifier_fiches.py --dimension logement_cadre_vie` → **0 erreur**, 3 avertissements attendus (séries principales hors catalogue des 3 fiches hors long-list, preuves du robot) ; `pytest` : 398 réussis.
 
-## 2. Chiffres
+## 2. Chiffres (avant l'audit ; chiffres à jour au §9)
 
 - **Long-list** : 1 527 lignes (1 255 éligibles, 53 à vérifier, 219 non éligibles). Décisions : 35 `fiche`, 452 `variante_de`, 894 `ecarte_en_bloc` (dont 230 croisements de ventilations des enquêtes TIC, 225 usages en ligne sans sens normatif, 70 comptes nationaux du logement), 146 `autre_dimension` (`education` 93, `planete` 23, `sante` 20, `travail` 7, `niveau_de_vie` 2, `egalites` 1). Lignes importées : 137 (6 `fiche`, 25 `variante_de`, 106 `ecarte_en_bloc`), dont les 134 lignes que les présélections déjà faites renvoient ici.
 - **44 fiches, 33 familles : 30 `retenir`, 10 `retenir_variante`, 4 `ecarter`** (`sous_occupation`, `logements_commences`, `proprietaires_occupants`, `raccordement_traitement_eaux_usees`, toutes pour sens ambigu).
@@ -60,3 +60,31 @@ DREES OG04_1 et SDPROXIM_3 à cataloguer et calculer (LOG-1) ; séries SDES de l
 ## 8. Pull request
 
 PR #26 vers `main` « M05 — fiches indicateurs : logement_cadre_vie » (https://github.com/leomalherbe/prosperite/pull/26), ouverte le 15/10/2026 par l'API GitHub ; à ne pas fusionner pendant un run du robot (D26).
+
+## 9. Corrections après audit (M06, D38-D46) — branche `m05-logement_cadre_vie-corr`, PR #PR_NUM
+
+Audit : `docs/validation/audit_logement_cadre_vie.md` (44 fiches auditées : 25 conformes, 19 à corriger ; 1 oubli de 28 lignes ; 7 points de cohérence ; 7 désaccords de jugement ; 11 corrections au §12), réponses de la session mère en D42. Toutes les corrections F, A et C sont appliquées ; J3 et J5 suivent D42 ; J6 et J7, non tranchés, restent en question. Deux collectes ciblées du robot (vagues 15 et 16, 16/10/2026) ont calculé la distribution de SDPROXIM_3 et lu les trois séries Melodi. Détail, fichiers et limites : `docs/cr/M05_logement_cadre_vie_corrections_journal.md`.
+
+| Fiche | Correction |
+|---|---|
+| `conformite_assainissement_collectif`, `raccordement_traitement_eaux_usees` (D39, D42) | **transférées dans `planete`** (fiches créées dans `indicateurs/planete/`, règles et tableau de `planete` mis à jour, `socle_propose: non`) ; sens ambigu du raccordement confirmé par `env_ww_con` (part collectée fixée à 82 %, assainissement individuel jamais compté) |
+| `privation_ordinateur` (nouvelle, O1) | `ilc_mddu03` (2004-2025 : 10,5 % → 2,2 % en 2015 → 3,5 % en 2025), `retenir_variante` dans la famille `privation_internet`, 15 ventilations en variantes (lignes renvoyées par `education`) |
+| `hausse_loyers` (D42) | IPC des loyers de l'INSEE (BDM 011815635, 1996-2025) en principale, taux nominal calculé (`composantes`, `formule`), recoupé sur neuf années avec l'IPCH, passé en variante |
+| `preoccupation_logement`, `connaissance_personne_sdf` (D34, D38 b, D42) | `composantes`, `formule`, `non_recoupe` ; préoccupation recoupée en 2025 (55,35 %) ; connaître une personne SDF : valeurs calculées (9,18 % en 2000, 15,97 % en 2008, 9,33 % en 2025), famille propre, `retenir`, déclaratif, plausibilité contre l'enquête Sans-domicile de l'INSEE |
+| 9 fiches de l'air et de la qualité du logement (D38 d, D42) | `incontournable: non` sur les 7 non principales et sur les familles NO2 et ozone : 7 incontournables, tous principaux |
+| eau du robinet, surcharge (F1, F2) | variantes INSEE « autre statistique, définition à documenter » ; creux de 2016, chute de 2024 ; OCDE 3_3 = 40 % les plus modestes |
+| `pollution_quartier`, `acces_internet_domicile`, `duree_trajet_domicile_travail`, `sous_occupation`, 3 fiches EU-SILC (C) | valeurs, drapeaux et sous-champs lus ; drapeaux « non lus » retirés |
+| `administration_en_ligne`, `haut_debit_domicile`, `poids_logement_revenu` | valeurs Melodi lues par le robot (vague 16) |
+| `privation_severe_logement`, `haut_debit_domicile`, `hausse_loyers` | lignes renvoyées en variantes (`ilc_mdho06q`, `isoc_r_broad_h`, IPCH) |
+
+Lignes renvoyées (D38 a, D46) : les 164 lignes reçues sont toutes reprises (dont les 28 d'`education` sur l'accès au numérique, les 2 lignes IPCH des loyers, les 2 lignes `ilc_mdho06q` de `niveau_de_vie`, la ligne ODD 7.i1 de `sante`) ; les lignes envoyées portent un motif et sont reprises par `planete` (27), `sante` (20), `education` (93, écartées), `travail` (7), `niveau_de_vie` (2) ; restent à reprendre : 1 ligne par `egalites` (OCDE 10_3_1) et 9 lignes par `democratie` (participation et expression politiques en ligne, nouvelle règle 1475, D39, qui corrige aussi la contradiction sur les deux lignes `I_IUVOTE` retenues par `democratie` et écartées ici).
+
+Socle proposé (D41, `socle_propose: oui`, 8 fiches) : `surcharge_couts_logement` (coût), `surpeuplement` et `logement_humide` (qualité et surpeuplement), `incapacite_chauffer` (précarité énergétique), `exposition_pm25` et `pollution_quartier` (environnement local subi), `part_modale_transports_collectifs` (services et transports), `acces_internet_domicile` (numérique). Trois incontournables restent hors du socle proposé (`concentration_pm10`, `privation_severe_logement`, `sans_installations_sanitaires`) : question à la session mère.
+
+Chiffres après corrections : **43 fiches, 32 familles : 29 `retenir`, 11 `retenir_variante`, 3 `ecarter`** (`sous_occupation`, `logements_commences`, `proprietaires_occupants`) ; 6 déclaratives ; 0 composite ; 1 « à vérifier » ; 4 hors long-list ; 7 incontournables ; 510 variantes ; 40 résultats, 3 moyens. Présélection : 144 groupes (43 `fiche`, 61 `variante_de`, 28 `ecarte_en_bloc`, 12 `autre_dimension`) ; 1 691 lignes, dont 164 importées ; 161 lignes renvoyées. `planete` : 78 fiches, 66 familles. Vérificateur : 0 erreur pour les deux dimensions, avertissements attendus (`socle_propose` hors schéma tant que le vérificateur v1.3 n'est pas fusionné ; séries hors catalogue avec preuve) ; `pytest` : 403 réussis. Classeur Excel non généré (session mère).
+
+Liste de maintenance : LOG-1, LOG-5, LOG-6, LOG-9 mises à jour (`docs/cr/maintenance_catalogues.md`) ; LOG-12 (`env_ww_con` : libellé, traitement tertiaire), LOG-13 (libellé de `ilc_mdho06q`), LOG-14 (définition de l'OCDE 3_3) dans `docs/cr/maintenance_catalogues_logement_cadre_vie.md`.
+
+Réponses aux questions du §7 : 1. assainissement → `planete` (D39, D42) ; 2. loyers renvoyés par `education` (règle 1005) et ODD 7.i1 par `sante` ; 3. SDPROXIM_3 calculé (vague 15) ; 4. module triennal en `irreguliere` (D38 e), à appliquer par `securite` à `delinquance_quartier` (D42).
+
+À trancher : **session mère** — incontournables hors du socle proposé (conflit avec le vérificateur v1.3) ; privation d'ordinateur en variante ou en famille propre ; J6 (`population_exposee_pm25`) et J7 (type de `logements_commences`) ; reprise des 9 lignes de participation politique en ligne par `democratie` ; numéros des vagues 15 et 16 du robot. **Léo** — « connaître une personne SDF » comme seul indicateur du sans-abrisme (D42) ; sens de `prix_logements_revenu` et d'`administration_en_ligne` ; hausse des loyers en taux nominal (bornes à indexer sur l'inflation) ; chute de 2024 de la conformité physico-chimique de l'eau ; choix entre `privation_severe_logement` et ses composantes au socle.

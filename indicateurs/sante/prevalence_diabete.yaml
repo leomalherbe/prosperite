@@ -39,10 +39,10 @@ motif_recommandation: Seule mesure annuelle de la fréquence d'une maladie chron
   2023 (4,69 % en 2010, 5,24 % en 2023 en taux standardisé), retenue avec un sens bas malgré l'effet du dépistage
   (D43).
 note_pertinence: 'Le diabète est une maladie chronique dont l''obésité et la sédentarité sont des facteurs de risque
-  (A2) ; sa prévalence complète la mortalité par diabète, qui baisse quand la prévalence augmente. Le taux compte
-  les personnes traitées : il monte aussi quand le dépistage et la prise en charge progressent, d''où le drapeau
-  depend_du_depistage (D43). Le taux standardisé neutralise le vieillissement, qui explique une part de la hausse
-  du taux brut (4,37 % en 2010, 5,59 % en 2023).'
+  (A2) ; sa prévalence complète la mortalité par diabète, qui baisse de 17 % de 2011 à 2023 alors que la prévalence
+  augmente. Le taux compte les personnes traitées : il monte aussi quand le dépistage et la prise en charge progressent,
+  d''où le drapeau depend_du_depistage (D43). Le taux standardisé neutralise le vieillissement, qui explique une
+  part de la hausse du taux brut (4,37 % en 2010, 5,59 % en 2023).'
 variantes:
 - serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/diabete-prevalence-france (diabete_tx_brut)
   source: Santé publique France

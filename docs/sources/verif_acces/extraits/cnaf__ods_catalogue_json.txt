@@ -1,6 +1,6 @@
 # cnaf / ods_catalogue_json
 # URL : https://data.caf.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-16T08:30:45Z — HTTP 200 — application/json; charset=utf-8 — 39578 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:46:14Z — HTTP 200 — application/json; charset=utf-8 — 8081 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 210,
@@ -9,158 +9,184 @@
    "visibility": "domain",
    "fields": [
     {
-     "name": "dfrefenr",
-     "description": "Date de fin de de l'enregistrement de la dépense d'action sociale de l'exercice",
+     "name": "dtreffre",
+     "description": "Mois de droit",
      "annotations": {},
-     "label": "date de référence d'enregistrement",
+     "label": "Date référence",
      "type": "date"
     },
     {
-     "name": "masfb1to",
-     "description": "Le montant des dépenses liées à la petite enfance (0 à 6 ans) ",
+     "name": "numqp24",
+     "description": "Numéro de quartier prioritaire de la ville du domicile",
      "annotations": {},
-     "label": "Montant petite enfance (PE)",
-     "type": "double"
+     "label": "Numéro de QPV",
+     "type": "text"
     },
     {
-     "name": "masf1fsu",
-     "description": "Le montant des aides financières aux familles PE - subventions non remboursables",
+     "name": "nomqpv",
+     "description": "Nom de quartier prioritaire de la ville du domicile",
      "annotations": {},
-     "label": "Montant PE - aide aux familles subvention",
-     "type": "double"
+     "label": "Nom de QPV",
+     "type": "text"
     },
     {
-     "name": "masf1fpr",
-     "description": "Le montant des aides financières aux familles PE - prêts accordés aux familles",
+     "name": "numcomdo",
+     "description": "Numéro de commune du domicile",
      "annotations": {},
-     "label": "Montant PE - aide aux familles prêts",
-     "type": "double"
+     "label": "Numéro commune",
+     "type": "text"
     },
     {
-     "name": "masf1pfl",
-     "description": "Le montant des dépenses PE aux partenaires pour le fonctionnement de leurs structures - fonds locaux ",
+     "name": "nomcom",
+     "description": "Nom de la commune de résidence",
      "annotations": {},
-     "label": "Montant PE - aide aux partenaires fonctionnement fonds locaux",
-     "type": "double"
+     "label": "Nom commune",
+     "type": "text"
     },
     {
-     "name": "masf1pfn",
-     "description": null,
+     "name": "rsa_ppa_agg",
+     "description": "Bénéficiaire du RSA ou de la PA",
      "annotations": {},
-     "label": "masf1pfn",
-     "type": "double"
+     "label": "RSA ou PA",
+     "type": "text"
     },
     {
-     "name": "masf1psu",
-     "description": "Le montant des dépenses PE aux partenaires relatives à l'investissement dans leurs structures - subventions non remboursables  ",
+     "name": "indfoy_rsa_ppa",
+     "description": "Nombre de foyers bénéficiaires de l'RSA_PPA",
      "annotations": {},
-     "label": "Montant PE - aide aux partenaires investissement subventions",
-     "type": "double"
+     "label": "Nombre foyers RSA_PPA",
+     "type": "int"
     },
     {
-     "name": "masf1invfl",
-     "description": "Le montant des dépenses PE aux partenaires relatives à l'investissement dans leurs structures - subventions non remboursables - fonds locaux ",
+     "name": "indnbp_rsa_ppa",
+     "description": "Nombre de personnes appartenant à un foyer bénéficiaire de l'RSA_PPA",
      "annotations": {},
-     "label": "Montant PE - aide aux partenaires investissement subventions fonds locaux",
-     "type": "double"
+     "label": "Nombre personnes RSA_PPA",
+     "type": "int"
+    }
+   ],
+   "dataset_id": "rsa_ppa_s_agg_qpv_f",
+   "dataset_uid": "da_cmghxp",
+   "has_records": true,
+   "features": [
+    "timeserie",
+    "analyze"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "dcat": {
+     "created": null,
+     "issued": null,
+     "creator": null,
+     "contributor": null,
+     "contact_name": null,
+     "contact_email": null,
+     "accrualperiodicity": "annually",
+     "spatial": "France",
+     "temporal": null,
+     "granularity": null,
+     "dataquality": null,
+     "publisher_type": null,
+     "conforms_to": null,
+     "temporal_coverage_start": "2024-12-31T10:00:00+00:00",
+     "temporal_coverage_end": "2099-12-31T09:46:00+00:00",
+     "accessRights": null,
+     "relation": null
+    },
+    "default": {
+     "title": "RSA et PA - Répartition des allocataires [QPV]",
+     "description": "Bénéficiaires au titre de décembre du revenu de solidartité active (RSA) ou de la prime d'activité (PA) à l'échelle du quartier prioritaire de la ville depuis 2024 selon le type de prestations. Ce jeu présente les foyers allocataires, les personnes couvertes et le montant total de prestations versées. Sous conditions de ressources, le revenu de solidarité active assure un revenu minimum aux personnes les plus démunies ou à celles ayant des ressources faibles (<a href=\"https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/le-revenu-de-solidarite-active-rsa\" target=\"_blank\">https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/le-revenu-de-solidarite-active-rsa</a>). La prime d'activité peut être touchée par les personnes ayant une activité professionnelle (salariée ou indépendante) ou par les personnes indemnisées au titre du chômage partiel/technique et que leurs ressources sont modestes (<a href=\"https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/la-prime-d-activite\" target=\"_blank\">https://caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/la-prime-d-activite</a>). ",
+     "theme": [
+      "Solidarité et soutien à l'activité"
+     ],
+     "keyword": [
+      "revenu de solidarité active",
+      " RSA",
+      " PA",
+      " minima sociaux"
+     ],
+     "license": "Licence Ouverte v2.0 (Etalab)",
+     "license_url": null,
+     "language": "fr",
+     "metadata_languages": [
+      "fr"
+     ],
+     "timezone": null,
+     "modified": "2026-06-15T16:38:42+00:00",
+     "modified_updates_on_metadata_change": false,
+     "modified_updates_on_data_change": true,
+     "data_processed": "2026-06-15T16:38:42+00:00",
+     "metadata_processed": "2026-06-15T16:38:42.620000+00:00",
+     "geographic_reference": [
+      "world_fr"
+     ],
+     "geographic_reference_auto": true,
+     "territory": [
+      "France"
+     ],
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "Caisse nationale des Allocations familiales",
+     "references": null,
+     "records_count": 4993,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": null,
+     "update_frequency": null
+    },
+    "custom": {
+     "date-debut": "2024-12-31",
+     "labellisation": false,
+     "periodicite": "Annuelle",
+     "niveau-geographique": "QPV"
+    }
+   }
+  },
+  {
+   "visibility": "domain",
+   "fields": [
+    {
+     "name": "dtreffre",
+     "description": "Mois de droit",
+     "annotations": {
+      "facetsort": "-alphanum",
+      "timeserie_precision": "month",
+      "facet": true
+     },
+     "label": "Date référence",
+     "type": "date"
     },
     {
-     "name": "masf1invfn",
-     "description": "Le montant des dépenses PE aux partenaires relatives à l'investissement dans leurs structures - subventions non remboursables - fonds nationaux",
-     "annotations": {},
-     "label": "Montant PE - aide aux partenaires investissement subventions fonds nationaux",
-     "type": "double"
+     "name": "prepare_tx",
+     "description": "Taux de la PREPARE",
+     "annotations": {
+      "facet": true,
+      "facetsort": "alphanum",
+      "disjunctive": true
+     },
+     "label": "Taux PREPARE",
+     "type": "text"
     },
     {
-     "name": "masf1ppr",
-     "description": "Le montant des dépenses PE aux partenaires relatives à l'investissement dans leurs structures - prêts",
-     "annotations": {},
-     "label": "Montant PE - aide aux partenaires investissement prêt",
-     "type": "double"
+     "name": "sitfam_d",
+     "description": "Situation familiale en fonction de la prestation perçue",
+     "annotations": {
+      "facet": true,
+      "facetsort": "alphanum",
+      "disjunctive": true
+     },
+     "label": "Situation familiale",
+     "type": "text"
     },
     {
-     "name": "masf1cfl",
-     "description": "Le montant des dépenses PE aux structures gérées par les Caf  pour le fonctionnement - fonds locaux ",
+     "name": "indfoy_prepare",
+     "description": "Nombre de foyers bénéficiaires de la PREPARE selon le taux et selon la situation familiale",
      "annotations": {},
-     "label": "Montant PE - service Caf fonctionnement fonds locaux",
-     "type": "double"
-    },
-    {
-     "name": "masf1cps",
-     "description": "Le montant des dépenses PE aux structures gérées par les Caf pour le fonctionnement - fonds nationaux ",
-     "annotations": {},
-     "label": "Montant PE - service Caf fonctionnement prestation de service fonds affectés",
-     "type": "double"
-    },
-    {
-     "name": "masf1cin",
-     "description": "Le montant des dépenses PE aux structures gérées par les Caf relatives à l'investissement - fonds locaux",
-     "annotations": {},
-     "label": "Montant PE - service Caf investissement fonds locaux",
-     "type": "double"
-    },
-    {
-     "name": "masf1gfn",
-     "description": "Le montant des dépenses PE pour la gestion administrative des œuvres des Caf - fonctionnement - fonds nationaux",
-     "annotations": {},
-     "label": "Montant PE - subvention vers e/ga0 fonctionnement fonds nationaux",
-     "type": "double"
-    },
-    {
-     "name": "masf1gin",
-     "description": "Le montant des dépenses PE pour la gestion administrative des œuvres des Caf - investissment - fonds nationaux ",
-     "annotations": {},
-     "label": "Montant PE - subvention vers e/ga0 investissement fonds nationaux",
-     "type": "double"
-    },
-    {
-     "name": "masfb2to",
-     "description": "Le montant des dépenses liées au temps libre des enfants et des familles",
-     "annotations": {},
-     "label": "Montant temps libre (TL)",
-     "type": "double"
-    },
-    {
-     "name": "masf2fsu",
-     "description": "Le montant des aides financières aux familles TL - subventions non remboursables",
-     "annotations": {},
-     "label": "Montant TL - aide aux familles subventions",
-     "type": "double"
-    },
-    {
-     "name": "masf2fpr",
-     "description": "Le montant des aides financières aux familles TL - prêts accordés aux familles",
-     "annotations": {},
-     "label": "Montant TL - aide aux familles prêts",
-     "type": "double"
-    },
-    {
-     "name": "masf2pfl",
-     "description": "Le montant des dépenses TL aux partenaires pour le fonctionnement de leurs structures - fonds locaux ",
-     "annotations": {},
-     "label": "Montant TL - aide aux partenaires fonctionnement fonds locaux",
-     "type": "double"
-    },
-    {
-     "name": "masf2pfn",
-     "description": null,
-     "annotations": {},
-     "label": "masf2pfn",
-     "type": "double"
-    },
-    {
-     "name": "masf2psu",
-     "description": "Le montant des dépenses TL  aux partenaires relatives à l'investissement dans leurs structures - subventions non remboursables",
-     "annotations": {},
-     "label": "Montant TL - aide aux partenaires investissement subventions",
-     "type": "double"
-    },
-    {
-     "name": "masf2invfl",
-     "description": "Le montant des dépenses TL aux partenaires relatives à l'investissement dans leurs structures - subventions non remboursables - fonds locaux ",
-     "annotations": {},
-     "label": "Montant TL - aide aux partenaires investissement subventions fonds locaux",
-     "type": "double"
-    },
-    {
-     "name
+     "label": "Nombre foyers PREPAR

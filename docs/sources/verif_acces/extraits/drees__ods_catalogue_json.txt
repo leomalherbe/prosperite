@@ -1,9 +1,9 @@
 # drees / ods_catalogue_json
 # URL : https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-16T08:30:25Z — HTTP 200 — application/json; charset=utf-8 — 5745 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-13T14:45:50Z — HTTP 200 — application/json; charset=utf-8 — 5745 octets lus (taille annoncée : inconnue)
 
 {
- "total_count": 264,
+ "total_count": 265,
  "results": [
   {
    "visibility": "domain",
@@ -38,34 +38,34 @@
      "license": "Licence Ouverte v2.0 (Etalab)",
      "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
      "language": "fr",
+     "metadata_languages": null,
+     "timezone": null,
      "modified": "2021-01-22T08:30:53.513000+00:00",
-     "publisher": "DREES/OSOL/BJF",
-     "references": null,
-     "attributions": null,
-     "update_frequency": null,
-     "bbox": null,
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": false,
      "data_processed": null,
-     "federated": false,
+     "metadata_processed": "2021-01-22T08:30:57.646000+00:00",
      "geographic_reference": [
       "world_fr"
      ],
      "geographic_reference_auto": true,
-     "geometry_types": null,
-     "metadata_languages": null,
-     "metadata_processed": "2021-01-22T08:30:57.646000+00:00",
-     "modified_updates_on_data_change": false,
-     "modified_updates_on_metadata_change": true,
-     "parent_domain": "sgsocialgouv",
-     "records_count": 0,
-     "shared_catalog": null,
-     "source_dataset": null,
-     "source_domain": null,
-     "source_domain_address": null,
-     "source_domain_title": null,
      "territory": [
       "France"
      ],
-     "timezone": null
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DREES/OSOL/BJF",
+     "references": null,
+     "records_count": 0,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": "sgsocialgouv",
+     "update_frequency": null
     },
     "custom": {
      "themes-niveau-2": [
@@ -122,34 +122,34 @@
      "license": "Licence Ouverte v2.0 (Etalab)",
      "license_url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf",
      "language": "fr",
+     "metadata_languages": null,
+     "timezone": null,
      "modified": "2024-02-15T09:42:04.676000+00:00",
-     "publisher": "DREES/OSOL/BCL",
-     "references": null,
-     "attributions": null,
-     "update_frequency": null,
-     "bbox": null,
+     "modified_updates_on_metadata_change": true,
+     "modified_updates_on_data_change": false,
      "data_processed": null,
-     "federated": false,
+     "metadata_processed": "2024-02-15T09:42:12.531000+00:00",
      "geographic_reference": [
       "world_fr"
      ],
      "geographic_reference_auto": true,
-     "geometry_types": null,
-     "metadata_languages": null,
-     "metadata_processed": "2024-02-15T09:42:12.531000+00:00",
-     "modified_updates_on_data_change": false,
-     "modified_updates_on_metadata_change": true,
-     "parent_domain": "sgsocialgouv",
-     "records_count": 0,
-     "shared_catalog": null,
-     "source_dataset": null,
-     "source_domain": null,
-     "source_domain_address": null,
-     "source_domain_title": null,
      "territory": [
       "France"
      ],
-     "timezone": null
+     "geometry_types": null,
+     "bbox": null,
+     "publisher": "DREES/OSOL/BCL",
+     "references": null,
+     "records_count": 0,
+     "attributions": null,
+     "source_domain": null,
+     "source_domain_title": null,
+     "source_domain_address": null,
+     "source_dataset": null,
+     "shared_catalog": null,
+     "federated": false,
+     "parent_domain": "sgsocialgouv",
+     "update_frequency": null
     },
     "custom": {
      "themes-niveau-2": [

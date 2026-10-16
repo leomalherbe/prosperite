@@ -69,9 +69,9 @@ Unité erronée des mesures par habitant de `nasa_10_nf_tr` (NDV-1) ; table de c
 
 PR #16 vers `main` (https://github.com/leomalherbe/prosperite/pull/16), ouverte le 14/10/2026 par l'API GitHub ; à ne pas fusionner pendant un run du robot (D26).
 
-## 9. Corrections après l'audit M06 (16/10/2026, PR #NN)
+## 9. Corrections après l'audit M06 (16/10/2026, PR #27)
 
-Agent correcteur, branche `m05-niveau_de_vie-corr`, PR #NN « M05 — niveau_de_vie : corrections après audit ». Audit appliqué : `docs/validation/audit_niveau_de_vie.md` (verdict `corrections_necessaires`), avec les décisions D37 à D40. Détail, sources relues et contrôles : `docs/cr/M05_niveau_de_vie_corrections_journal.md`. Les sections 1 à 8 ci-dessus décrivent l'état de M05 ; les chiffres à jour sont ceux de la présente section.
+Agent correcteur, branche `m05-niveau_de_vie-corr`, PR #27 « M05 — niveau_de_vie : corrections après audit ». Audit appliqué : `docs/validation/audit_niveau_de_vie.md` (verdict `corrections_necessaires`), avec les décisions D37 à D40. Détail, sources relues et contrôles : `docs/cr/M05_niveau_de_vie_corrections_journal.md`. Les sections 1 à 8 ci-dessus décrivent l'état de M05 ; les chiffres à jour sont ceux de la présente section.
 
 ### 9.1 Corrections appliquées (liste ordonnée de l'audit)
 

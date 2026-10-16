@@ -1,6 +1,6 @@
 # Journal des corrections après audit M06 — dimension `niveau_de_vie`
 
-Agent correcteur (session lancée par la session mère), 16 octobre 2026, branche `m05-niveau_de_vie-corr` (PR #NN) créée depuis `origin/main` (`d85ef3a` : journal D37–D40, classeur `democratie`). Rapport d'audit appliqué : `docs/validation/audit_niveau_de_vie.md` (§10, onze points ; transversales T1 à T6 ; oublis O1 à O5 ; cohérence I1 à I9 ; désaccords J1 à J6 ; questions Q1 à Q6), complété par les décisions D37 à D40 (en particulier D38 a à j et D39) et la méthode v1.2 (`docs/methodo/33_methode_fiches_M05.md`). Modèles suivis : `M05_securite_corrections_journal.md` et `M05_democratie_corrections_journal.md`.
+Agent correcteur (session lancée par la session mère), 16 octobre 2026, branche `m05-niveau_de_vie-corr` (PR #27) créée depuis `origin/main` (`d85ef3a` : journal D37–D40, classeur `democratie`). Rapport d'audit appliqué : `docs/validation/audit_niveau_de_vie.md` (§10, onze points ; transversales T1 à T6 ; oublis O1 à O5 ; cohérence I1 à I9 ; désaccords J1 à J6 ; questions Q1 à Q6), complété par les décisions D37 à D40 (en particulier D38 a à j et D39) et la méthode v1.2 (`docs/methodo/33_methode_fiches_M05.md`). Modèles suivis : `M05_securite_corrections_journal.md` et `M05_democratie_corrections_journal.md`.
 
 ## 0. Mise en route et état de référence
 
@@ -78,3 +78,7 @@ Agent correcteur (session lancée par la session mère), 16 octobre 2026, branch
 3. **Q6 de l'audit** (NDV-12) : aligner les identifiants DREES du catalogue M04 sur la pièce jointe unique.
 4. **IDHI** : variante d'`egalites/coefficient_inegalite_humaine` ; le rapprocher de l'IDH (ici) au gel 2 ?
 5. **Volume des variantes** (1 282, dont 257 pour `niveau_vie_median` et 218 pour `taux_pauvrete_60`) : la règle D35 « ventilations de second rang écartées en bloc » n'a pas été appliquée en masse (audit §5 b, question 4 de M05) ; à décider avant le gel 2.
+
+## 7. Pull request
+
+PR **#27** « M05 — niveau_de_vie : corrections après audit » ouverte vers `main` le 16/10/2026 par l'API GitHub (`POST /repos/leomalherbe/prosperite/pulls`) : https://github.com/leomalherbe/prosperite/pull/27. Compte rendu et tableau de validation copiés dans le Projet claude.ai (`claude/cr/M05_niveau_de_vie_compte_rendu.md`, `claude/40_validation_niveau_de_vie.csv`).

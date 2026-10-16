@@ -1,8 +1,8 @@
 id: pauvrete_percue_hausse
 libelle: Part des personnes estimant que la pauvreté a augmenté en France depuis cinq ans
 dimension: niveau_de_vie
-sous_theme: pauvreté ressentie
-famille: pauvrete_percue_hausse
+sous_theme: opinions sur la société
+famille: perception_niveau_vie_france
 variante_principale: oui
 definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui répondent que la pauvreté
   et l'exclusion en France « ont augmenté » depuis cinq ans (question PE01, modalité 2), non-réponses incluses au
@@ -16,6 +16,11 @@ source_organisme: DREES
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable PE01, modalité 2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable PE01, modalité 2
+formule: part pondérée des réponses PE01 = 2 (« ont augmenté ») parmi l'ensemble des répondants (modalités 1, 2,
+  3 et non-réponses au dénominateur), poids de redressement du baromètre
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -35,12 +40,25 @@ raccordement: 'non : 25 vagues sans interruption hors 2003 (2000-2002, 2004-2025
 incontournable: non
 recommandation: retenir
 motif_recommandation: Opinion sur la société (D32) portant sur la pauvreté, posée chaque année depuis 2000 sauf
-  en 2003 (25 vagues), seule mesure de la perception collective de la pauvreté au catalogue.
+  en 2003 (25 vagues), calculée sur microdonnées avec un contrôle de plausibilité sur la publication 2025 (D38 b),
+  principale de la famille des perceptions du niveau de vie en France.
 note_pertinence: 'La question ne demande pas si l''on est pauvre mais si la pauvreté progresse en France : c''est
   une opinion sur la société, au même titre que les perceptions des inégalités d''egalites. La part qui répond «
   ont augmenté » passe de 73,22 % en 2000 à 92,45 % en 2013 et reste proche de 90 % depuis (92,08 % en 2025, sortie
-  du robot M04). Le plafond atteint réduit sa capacité à discriminer les années récentes.'
-variantes: []
+  du robot M04) : le plafond atteint réduit sa capacité à discriminer les années récentes. La réponse spontanée
+  « (Sont restées stables) », entre 8,53 et 18,91 % de 2000 à 2006, tombe à 4,78 % en 2007, puis remonte à 7,67
+  % en 2014, année où la part retenue recule de 3,9 points : rupture possible en 2007 et anomalie en 2014, comme
+  pour la question IN02 d''egalites.'
+variantes:
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable PE02, modalité 2
+  source: DREES — baromètre d'opinion (microdonnées pondérées, sortie du robot M04)
+  nature: 'évolution future perçue : part répondant que la pauvreté et l''exclusion « vont plutôt augmenter » (PE02,
+    25 vagues 2000-2025 sans 2003 ; 64,95 % en 2000, 91,54 % en 2025, valeur 2025 identique au tableau publié par
+    la DREES) ; même anomalie de la réponse spontanée « (Resteront stables) » en 2007 et 2014'
+  eligible: hors_longlist
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+  statut: disponible
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -51,9 +69,19 @@ qualite:
 - calcul_sur_microdonnees
 - enquete_metropole
 - effet_plafond
+- lacune_2003
+- rupture_possible_2007
+- anomalie_2014
+- non_recoupe_2000_2024
+- licence_a_confirmer
 - codes_modalites_a_verifier
 notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (pe01 : 2000-2002, 2004-2025)
-  ; modalités lues dans le dictionnaire 2025 (1 « ont diminué », 2 « ont augmenté », 3 « sont restées stables »,
-  NSP). Questions voisines non retenues : PE02 (évolution future, même construction), OG04_3 (préoccupation pour
+  ; modalités lues dans le dictionnaire 2025 (1 « ont diminué », 2 « ont augmenté », 3 « (Sont restées stables)
+  », réponse spontanée notée entre parenthèses, NSP), stabilité des codes sur toute la période à vérifier. Contrôle
+  de plausibilité (D34, D38 b) : le tableau croisé simplifié publié par la DREES pour 2025 (docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
+  donne 3,68 % « ont diminué », 92,08 % « ont augmenté », 3,51 % « stables » et 0,73 % NSP, identiques au calcul
+  du robot ; vagues 2000-2024 non recoupées. Famille perception_niveau_vie_france : avec les soldes d''opinion de
+  l''enquête de conjoncture sur le niveau de vie en France (D38 j). Variante manuelle : PE02 (évolution future,
+  « vont plutôt augmenter »), oubli O3 de l''audit. Questions voisines non retenues : OG04_3 (préoccupation pour
   la pauvreté, sens ambigu : solidarité ou exposition), PE07 (revenu minimum jugé nécessaire, sens ambigu), CS27
-  (renoncements de dépenses, 2024-2025 seulement).'
+  (renoncements de dépenses, 2024-2025 seulement). Licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'

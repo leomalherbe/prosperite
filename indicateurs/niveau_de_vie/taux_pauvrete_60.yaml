@@ -25,6 +25,9 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: melodi-005344
 hors_longlist: non
+rattachement_propose: 'variantes ilc_li48 (pauvreté après coûts du logement par degré d''urbanisation) importées
+  de la long-list logement_cadre_vie : lignes renvoyées à niveau_de_vie par logement_cadre_vie (règle 1650, D38
+  a)'
 raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
 incontournable: oui
 recommandation: retenir
@@ -35,22 +38,12 @@ note_pertinence: 'C''est l''indicateur de pauvreté de référence en France et 
   soit 9,8 millions, vivent sous le seuil de 1 337 € par mois (Insee Première n° 2117, lue le 14/10/2026). Le taux
   est relatif : il mesure la distance au niveau de vie médian, pas la privation absolue, que portent d''autres fiches
   (privation matérielle et sociale, premier décile). La version EU-SILC d''Eurostat, de même définition mais avec
-  des ruptures en 2020 et 2022, est une variante.'
+  des ruptures en 2001, 2004, 2020 et 2022, est une variante.'
 variantes:
 - serie_id: '010594446'
   source: INSEE BDM
   nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
   ligne_id: bdm-000837
-  eligible: oui
-- serie_id: '010594447'
-  source: INSEE BDM
-  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
-  ligne_id: bdm-000838
-  eligible: oui
-- serie_id: '010594448'
-  source: INSEE BDM
-  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
-  ligne_id: bdm-000839
   eligible: oui
 - serie_id: '010594450'
   source: INSEE BDM
@@ -151,11 +144,6 @@ variantes:
   source: Eurostat
   nature: 'autre source : EU-SILC (Eurostat), seuil de 60 %, ensemble'
   ligne_id: estat-000032
-  eligible: oui
-- serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&sex=F&age=TOTAL&geo=FR
-  source: Eurostat
-  nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
-  ligne_id: estat-000033
   eligible: oui
 - serie_id: ilc_li02?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=T&age=Y_LT6&age=Y6-10&age=Y6-11&age=Y11-15&age=Y12-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y_LT16&age=Y16-19&age=Y16-24&age=Y16-29&age=Y16-64&age=Y_GE16&age=Y_LT18&age=Y18-24&age=Y18-64&age=Y_GE18&age=Y20-24&age=Y20-29&age=Y25-29&age=Y25-49&age=Y25-54&age=Y50-64&age=Y55-64&age=Y_LT60&age=Y_GE60&age=Y_LT65&age=Y65-74&age=Y_GE65&age=Y_LT75&age=Y_GE75&geo=FR
   source: Eurostat
@@ -848,18 +836,6 @@ variantes:
     %
   ligne_id: melodi-004905
   eligible: oui
-- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
-  source: INSEE Melodi
-  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
-    %
-  ligne_id: melodi-005092
-  eligible: oui
-- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
-  source: INSEE Melodi
-  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
-    %
-  ligne_id: melodi-005093
-  eligible: oui
 - serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=NUM_PER_MD70&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
   source: INSEE Melodi
   nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
@@ -907,18 +883,6 @@ variantes:
   nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
     %
   ligne_id: melodi-004889
-  eligible: oui
-- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
-  source: INSEE Melodi
-  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
-    %
-  ligne_id: melodi-005103
-  eligible: oui
-- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
-  source: INSEE Melodi
-  nature: série non rétropolée et ventilations (âge, sexe, statut d'activité, PCS, type de ménage) ; seuil de 70
-    %
-  ligne_id: melodi-005104
   eligible: oui
 - serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD70&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=_T&TPH=_T
   source: INSEE Melodi
@@ -1163,16 +1127,6 @@ variantes:
   nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
   ligne_id: melodi-005466
   eligible: oui
-- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  source: INSEE Melodi
-  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
-  ligne_id: melodi-005516
-  eligible: oui
-- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
-  source: INSEE Melodi
-  nature: indicateur ODD 1.i1a (2010-2023), ensemble et ventilations
-  ligne_id: melodi-005517
-  eligible: oui
 - serie_id: icw_pov_10?freq=A&sex=T&age=TOTAL&indic_ewb=POV_INC_CONS&unit=PC&geo=FR
   source: Eurostat
   nature: 'autre définition : double risque (revenu et consommation), statistiques expérimentales'
@@ -1233,6 +1187,18 @@ variantes:
   nature: ventilation EU-SILC (seuil de 60 % ou 70 %)
   ligne_id: estat-054679
   eligible: non
+- serie_id: ilc_li48?freq=A&deg_urb=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu après coûts du logement, par degré d''urbanisation (long-list logement_cadre_vie)'
+  ligne_id: estat-005296
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: ilc_li48?freq=A&deg_urb=DEG1&deg_urb=DEG2&deg_urb=DEG3&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'autre définition : revenu après coûts du logement, par degré d''urbanisation (long-list logement_cadre_vie)'
+  ligne_id: estat-005297
+  eligible: oui
+  longlist: logement_cadre_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -1242,6 +1208,9 @@ qualite:
 - champ_metropole_menages_ordinaires
 notes: 'Famille pauvrete_monetaire (INSEE prioritaire à définition égale, charte §3.5) : principal ERFS rétropolée
   ; taux_pauvrete_50 en variante de fiche. Variantes : ERFS non rétropolée 1975-2024 et ventilations, indicateur
-  ODD 1.i1a (BDM 010594446, 2010-2023) et ventilations, EU-SILC (ilc_li02, sdg_01_20) et ventilations (dont les
-  lignes par sexe, âge et nationalité, composantes des écarts construits d''egalites, D32), seuil de 70 %, revenu
-  après coûts du logement, double risque revenu-consommation (expérimental).'
+  ODD 1.i1a (BDM 010594446, 2010-2023) et ventilations, EU-SILC (ilc_li02, sdg_01_20 ; drapeaux b en 2001, 2004,
+  2020 et 2022 sur ilc_li02, API lue par l''audit M06) et ventilations (dont les lignes par âge et par nationalité,
+  composantes des écarts construits d''egalites, D32), seuil de 70 %, revenu après coûts du logement (dont par degré
+  d''urbanisation, lignes renvoyées par logement_cadre_vie), double risque revenu-consommation (expérimental). Les
+  ventilations par sexe du taux à 60 % (EU-SILC, ERFS, ODD 1.i1a, 9 lignes) sont renvoyées à egalites, où l''écart
+  existe déjà (ecart_pauvrete_fh, D35 ; audit M06 T2).'

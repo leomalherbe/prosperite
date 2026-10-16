@@ -25,11 +25,13 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: melodi-005313
 hors_longlist: non
+rattachement_propose: 'variante EU-SILC (seuil D1 d''ilc_di01) importée de la long-list egalites : ligne renvoyée
+  à niveau_de_vie par egalites (règle 1290, maintenance n° 11)'
 raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure absolue du niveau de vie du bas de la distribution, publiée sans rupture de 1996
-  à 2024 (25 points depuis 2000), complémentaire du taux de pauvreté qui est relatif au médian.
+motif_recommandation: Seule mesure en euros constants du niveau de vie du bas de la distribution, publiée sans rupture
+  de 1996 à 2024 (25 points depuis 2000), complémentaire du taux de pauvreté qui est relatif au médian.
 note_pertinence: 'Le taux de pauvreté monétaire peut rester stable alors que le niveau de vie réel des plus modestes
   progresse ou recule : le premier décile en euros constants mesure directement ce que les 10 % les plus modestes
   peuvent acheter. Il atteint 13 970 € par unité de consommation en 2024, en hausse de 1,7 % en euros constants
@@ -55,4 +57,5 @@ socle_v1:
 qualite:
 - champ_metropole_menages_ordinaires
 notes: 'Variantes : même statistique non rétropolée (1975-2024), seuil du premier décile EU-SILC (ilc_di01, ligne
-  de la long-list egalites). La fiche pauvrete_ancree_2008 (Eurostat) donne une lecture voisine en taux.'
+  de la long-list egalites). La fiche pauvrete_ancree_2008 (Eurostat) donne une lecture voisine en taux, mais sa
+  hausse depuis 2019 tient aux ruptures d''EU-SILC de 2020 et 2022.'

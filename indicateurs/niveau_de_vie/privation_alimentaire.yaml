@@ -1,77 +1,80 @@
 id: privation_alimentaire
-libelle: Renoncement à un repas avec viande, poisson ou équivalent pour raisons financières
+libelle: Ne pas avoir les moyens d'un repas avec viande, poisson ou équivalent un jour sur deux
 dimension: niveau_de_vie
 sous_theme: accès à l'alimentation
 famille: privation_alimentaire
 variante_principale: oui
 definition: Part des personnes vivant dans un ménage qui n'a pas les moyens de s'offrir un repas comportant de la
-  viande, du poulet ou du poisson (ou un équivalent végétarien) au moins un jour sur deux (enquête SRCV, indicateur
-  ODD 2.i1 « renoncement à consommer des protéines pour raisons financières »).
+  viande, du poulet ou du poisson (ou un équivalent végétarien) au moins un jour sur deux (EU-SILC, élément de la
+  privation matérielle et sociale ; même question que l'indicateur ODD 2.i1 de l'INSEE, « renoncement à consommer
+  des protéines pour raisons financières »).
 unite: '% de la population'
 sens: bas
 type: resultat
 declaratif: non
 composite: non
-source_organisme: INSEE
-source_jeu: BDM, indicateurs ODD, indicateur 2.i1
-source_serie_id: '010594393'
+source_organisme: Eurostat
+source_jeu: ilc_mdes03 (incapacité à s'offrir un repas comportant de la viande, du poulet ou du poisson un jour
+  sur deux, enquêtes EU-SILC), ensemble des ménages
+source_serie_id: ilc_mdes03?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
 source_niveau: 1
-url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594393
-url_page: https://www.insee.fr/fr/statistiques/serie/010594393
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mdes03?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mdes03/default/table?lang=fr
 frequence: annuelle
-premiere_annee: 2010
-derniere_annee: 2024
-nb_points_depuis_2000: 15
-geo: FM
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
 eligibilite_longlist: oui
-ligne_id: bdm-001054
+ligne_id: estat-031704
 hors_longlist: non
-rattachement_propose: variantes EU-SILC (ilc_mdes03, hlth_dm030) importées de la long-list planete (étiquette v0
-  du jeu) ; rattachement à niveau_de_vie proposé (A2), déjà signalé (maintenance n° 35)
-raccordement: 'a_etudier : la même question EU-SILC (ilc_mdes03, 2004-2025, long-list planete) couvre 2004-2009
-  et 2025'
+rattachement_propose: 'série principale et variantes EU-SILC (ilc_mdes03, hlth_dm030) : lignes de la long-list planete
+  (étiquette v0 du jeu) renvoyées à niveau_de_vie par planete (règle 2210), rattachement proposé (A2) déjà signalé
+  (maintenance n° 35)'
+raccordement: 'non : série EU-SILC annuelle de 2004 à 2025 (ruptures signalées en 2020 et 2022)'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure annuelle de l'accès à l'alimentation au catalogue (A2), indicateur ODD national
-  publié par l'INSEE de 2010 à 2024 (15 points).
-note_pertinence: 'L''accès à l''alimentation est rattaché à la dimension par l''arbitrage A2 ; faute de mesure de
-  l''insécurité alimentaire au catalogue (échelle FIES de la FAO, non trouvée), la privation de repas protéiné est
-  le meilleur indicateur disponible. C''est aussi l''un des 13 éléments de la privation matérielle et sociale :
-  il porte une préoccupation publique propre (aide alimentaire, prix de l''alimentation), d''où une fiche distincte
-  (D32).'
+motif_recommandation: Seule mesure annuelle de l'accès à l'alimentation (A2), publiée par Eurostat de 2004 à 2025
+  (22 points), plus longue de 6 ans et plus fraîche d'un an que l'indicateur ODD 2.i1 de l'INSEE, dont elle ne s'écarte
+  pas de plus de 0,2 point sur 2010-2024 (méthode §4).
+note_pertinence: L'accès à l'alimentation est rattaché à la dimension par l'arbitrage A2 ; faute de mesure de l'insécurité
+  alimentaire au catalogue (échelle FIES de la FAO, NDV-7), la privation de repas protéiné est le meilleur indicateur
+  disponible. La part passe de 6,7 % en 2004 à 7,5 % en 2019, puis de 6,3 % en 2021 à 9,5 % en 2022 (année de rupture)
+  et 12,2 % en 2023, et vaut 11,2 % en 2025 (API Eurostat, lue le 16/10/2026). C'est l'un des 13 éléments de la
+  privation matérielle et sociale, mais il porte une préoccupation publique propre (aide alimentaire, prix de l'alimentation),
+  d'où une fiche distincte (D32).
 variantes:
+- serie_id: '010594393'
+  source: INSEE BDM
+  nature: 'autre source : INSEE, indicateur ODD 2.i1 (BDM, 2010-2024)'
+  ligne_id: bdm-001054
+  eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=2.i1&PCS=_Z&SDG=SDG2&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: doublon technique (Melodi)
+  nature: copie Melodi de l'indicateur ODD 2.i1 de l'INSEE
   ligne_id: melodi-005543
   eligible: oui
 - serie_id: hlth_dm030?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=T&geo=FR
   source: Eurostat
-  nature: 'autre source : EU-SILC (long-list planete)'
+  nature: 'ventilation ou autre source : EU-SILC (long-list planete)'
   ligne_id: estat-021835
   eligible: oui
   longlist: planete
 - serie_id: hlth_dm030?freq=A&unit=PC&lev_limit=TOTAL&age=Y16-24&age=Y16-29&age=Y16-64&age=Y25-34&age=Y35-44&age=Y45-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
   source: Eurostat
-  nature: 'autre source : EU-SILC (long-list planete)'
+  nature: 'ventilation ou autre source : EU-SILC (long-list planete)'
   ligne_id: estat-021836
   eligible: oui
   longlist: planete
 - serie_id: hlth_dm030?freq=A&unit=PC&lev_limit=TOTAL&age=Y_GE16&sex=M&sex=F&geo=FR
   source: Eurostat
-  nature: 'autre source : EU-SILC (long-list planete)'
+  nature: 'ventilation ou autre source : EU-SILC (long-list planete)'
   ligne_id: estat-021837
-  eligible: oui
-  longlist: planete
-- serie_id: ilc_mdes03?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
-  source: Eurostat
-  nature: 'autre source : EU-SILC (long-list planete)'
-  ligne_id: estat-031704
   eligible: oui
   longlist: planete
 - serie_id: ilc_mdes03?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&unit=PC&geo=FR
   source: Eurostat
-  nature: 'autre source : EU-SILC (long-list planete)'
+  nature: 'ventilation ou autre source : EU-SILC (long-list planete)'
   ligne_id: estat-031705
   eligible: oui
   longlist: planete
@@ -87,7 +90,14 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
+- rupture_2020
+- rupture_2022
 - element_de_la_privation_materielle_et_sociale
-notes: 'Valeurs non lues (BDM fermée à l''outil le 14/10/2026). Variantes : copie Melodi (DS_NAT_SDG 2.i1), EU-SILC
-  ilc_mdes03 et hlth_dm030 (lignes de la long-list planete, rattachement proposé, maintenance n° 35), SRCV Melodi
-  2020-2025 (catalogue des séries écartées).'
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (jeu mis à jour le 17/09/2026) : 6,7 (2004), 6,3 (2005),
+  5,7 (2006), 7,6 (2008), 6,9 (2010), 7,5 (2019), 7,2 (2020, b), 6,3 (2021), 9,5 (2022, b), 12,2 (2023), 10,2 (2024),
+  11,2 (2025). Indicateur ODD 2.i1 de l''INSEE (BDM 010594393, FM, lue le 16/10/2026, mise à jour du 27/05/2026)
+  : 6,9 (2010), 7,0 (2018), 7,6 (2019), 7,3 (2020), 6,3 (2021), 9,4 (2022), 12,3 (2023), 10,0 (2024, révisée), 2025
+  sans valeur ; écart au plus 0,2 point sur les 15 années communes (audit M06, correction n° 1), d''où la principale
+  Eurostat (méthode §4 : profondeur et fraîcheur). Variantes : indicateur ODD 2.i1 (BDM et copie Melodi DS_NAT_SDG),
+  ventilations EU-SILC par type de ménage et par handicap (hlth_dm030), SRCV Melodi 2020-2025 (catalogue des séries
+  écartées, NDV-8).'

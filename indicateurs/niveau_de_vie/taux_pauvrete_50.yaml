@@ -26,7 +26,7 @@ eligibilite_longlist: oui
 ligne_id: melodi-005343
 hors_longlist: non
 raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
-incontournable: oui
+incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Seuil de pauvreté de l'OCDE (How's Life 1_4) et du Doughnut, publié sans rupture de 1996 à
   2024 (25 points), substituable au taux à 60 %, principal de la famille.
@@ -842,4 +842,5 @@ socle_v1:
 qualite:
 - champ_metropole_menages_ordinaires
 notes: 'Variantes : ERFS non rétropolée et ventilations (seuils de 50 % et 40 %), indicateur ODD 1.i1b (BDM 010594466,
-  2010-2023) et ventilations, EU-SILC (ilc_li02 et ventilations, seuils 40 et 50 %), OCDE 1_4.'
+  2010-2023) et ventilations, EU-SILC (ilc_li02 et ventilations, seuils 40 et 50 %), OCDE 1_4. Incontournable :
+  non, porté par la principale de la famille (D38 d).'

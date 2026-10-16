@@ -67,5 +67,9 @@ qualite:
 - rupture_2012
 - rupture_2020
 - champ_metropole_menages_ordinaires
-notes: 'Valeurs non lues (API Melodi fermée à l''outil). Variantes : valeurs aux années de rupture et indicateur
-  ODD 1.i1a des moins de 18 ans (BDM 010594449, Melodi DS_NAT_SDG, 2010-2023).'
+notes: 'Valeurs ERFS non lues (API Melodi fermée à l''outil). Variantes : valeurs aux années de rupture et indicateur
+  ODD 1.i1a des moins de 18 ans (BDM 010594449, Melodi DS_NAT_SDG, 2010-2023). Relais possibles des valeurs manquantes
+  aux années de rupture (2010, 2012, 2020), non dupliqués ici parce qu''ils sont déjà rangés ailleurs : le taux
+  EU-SILC des moins de 18 ans (ilc_li02, Y_LT18, 2004-2025, dans le paquet d''âges estat-000034, variante de taux_pauvrete_60
+  et série principale d''egalites/ecart_pauvrete_jeunes_seniors) et l''AROPE des enfants (sdg_01_10a, variante de
+  pauvrete_exclusion_arope) ; oubli O4 de l''audit.'

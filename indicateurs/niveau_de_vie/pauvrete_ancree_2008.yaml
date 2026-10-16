@@ -25,16 +25,19 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-030528
 hors_longlist: non
-raccordement: 'a_etudier : Eurostat publie aussi un taux ancré en 2019 (ilc_li22, 2019-2025, hors catalogue) qui
-  pourrait lui succéder'
+raccordement: 'non : série publiée jusqu''en 2025 (jeu mis à jour le 05/10/2026) ; un taux ancré en 2019 (ilc_li22,
+  hors catalogue) est aussi disponible'
 incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Indicateur de pauvreté « absolue » du cadre Qualité de vie d'Eurostat, annuel de 2008 à 2025
-  (18 points), substituable au premier décile en euros constants de l'INSEE, principal de la famille.
+  (18 points), lecture en taux du premier décile en euros constants, principal de la famille, mais dont la hausse
+  tient aux ruptures d'EU-SILC de 2020 et 2022.
 note_pertinence: 'Avec un seuil fixé une fois pour toutes en termes réels, ce taux baisse quand le niveau de vie
   des plus modestes progresse, même si les inégalités ne bougent pas : il répond à la question « les pauvres vivent-ils
-  mieux qu''avant ? ». Il porte la même information que le premier décile en euros constants, d''où la même famille.
-  Les valeurs n''ont pas pu être lues (API Eurostat saturée, réponse 429 le 14/10/2026).'
+  mieux qu''avant ? ». Il passe de 12,5 % en 2008 à 12,1 % en 2019, puis 14,2 % en 2020, 15,0 % en 2022 et 15,6
+  % en 2025 (API Eurostat, lue le 16/10/2026). Toute la hausse se concentre sur les deux années de rupture (+2,1
+  points en 2020, +1,6 en 2022) : hors ruptures, la série baisse de 0,6 point, et elle ne peut donc pas se lire
+  seule comme une dégradation, à la différence du premier décile de l''INSEE, série sans rupture.'
 variantes:
 - serie_id: ilc_li22b?freq=A&statinfo=MED_EI&unit=PC&rskpovth=B_60&sex=M&sex=F&age=TOTAL&geo=FR
   source: Eurostat
@@ -52,7 +55,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- valeurs_non_lues
-- rupture_eu_silc_2020_2022_a_verifier
-notes: 'Ruptures d''EU-SILC en 2020 et 2022 probables (comme ilc_li02) mais non vérifiées pour ce jeu. Variantes
-  : ventilations par âge et par sexe.'
+- rupture_2020
+- rupture_2022
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (comme l''audit M06 le 15/10) : 12,5 (2008), 12,5 (2009),
+  12,3 (2010), 13,7 (2011), 13,8 (2012), 13,4 (2013), 12,9 (2014), 13,0 (2015), 12,3 (2016), 11,8 (2017), 11,9 (2018),
+  12,1 (2019), 14,2 (2020, b), 13,4 (2021), 15,0 (2022, b), 15,1 (2023), 15,8 (2024), 15,6 (2025) ; NDV-6 résolu.
+  Famille du premier décile gardée (désaccord J4 de l''audit) : même question, lecture absolue du bas de la distribution.
+  Variantes : ventilations par âge et par sexe.'

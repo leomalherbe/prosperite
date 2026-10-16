@@ -2,8 +2,8 @@ id: indice_developpement_humain
 libelle: Indice de développement humain (IDH)
 dimension: niveau_de_vie
 sous_theme: production et revenu national
-famille: indice_developpement_humain
-variante_principale: oui
+famille: pib_habitant
+variante_principale: non
 definition: 'Moyenne géométrique de trois indices normalisés : espérance de vie à la naissance, durée de scolarisation
   (attendue et moyenne) et revenu national brut par habitant en parité de pouvoir d''achat (PNUD).'
 unite: indice de 0 à 1
@@ -11,6 +11,7 @@ sens: haut
 type: resultat
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: PNUD
 source_jeu: Rapport sur le développement humain 2025, séries composites (fichier CSV, colonnes hdi_<année>)
 source_serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv
@@ -29,14 +30,15 @@ ligne_id: m04-000348
 hors_longlist: non
 raccordement: 'non : série 1990-2023 recalculée par le PNUD à chaque édition'
 incontournable: non
-recommandation: ecarter
-motif_recommandation: 'Hors champ de la dimension : indice synthétique santé-éducation-revenu dont les trois composantes
-  sont des fiches de sante, education et niveau_de_vie, et dont l''observatoire construit lui-même l''équivalent
-  multidimensionnel (D18, double compte).'
-note_pertinence: 'L''IDH est l''alternative au PIB la plus connue, mais il mélange trois dimensions de la grille
-  : le cocher dans niveau_de_vie compterait deux fois la santé et l''éducation. Pour la France, il évolue lentement
-  (0,92 en 2023, sortie du robot M04) et sert surtout aux comparaisons entre pays. Il pourrait figurer comme repère
-  externe à côté de l''indice plutôt que comme indicateur.'
+recommandation: retenir_variante
+motif_recommandation: Composite santé-éducation-revenu couvrant plusieurs dimensions, rattaché à niveau_de_vie comme
+  alternative au PIB par habitant, au plus en variante et jamais au socle (D38 c), annuel de 1990 à 2023 (24 points
+  depuis 2000).
+note_pertinence: 'L''IDH est l''alternative au PIB la plus connue : il combine l''espérance de vie, la durée de
+  scolarisation et le revenu national par habitant. Pour la France, il évolue lentement (0,92 en 2023, sortie du
+  robot M04) et sert surtout aux comparaisons entre pays. Comme il recouvre la santé et l''éducation, qui ont leurs
+  dimensions, il n''est proposé qu''en variante du PIB par habitant, jamais au socle (D38 c), le double compte se
+  traitant au contrôle de redondance (D18).'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -45,6 +47,11 @@ socle_v1:
   justification: ''
 qualite:
 - composite_D18
+- composite_plusieurs_dimensions_D38c
 - revision_a_chaque_edition
-notes: Le coefficient d'inégalité humaine du même rapport est une fiche d'egalites ; l'indice ajusté aux inégalités
-  n'est pas au catalogue. Licence CC BY 3.0 IGO annoncée par le PNUD (non revérifiée).
+notes: 'annee_reference : observation (la colonne hdi_2023 de l''édition 2025 porte sur l''année 2023). Famille
+  pib_habitant : mesure synthétique du niveau de développement substituable au PIB par habitant (A12) ; désaccord
+  J1 de l''audit tranché par D38 (c). Le coefficient d''inégalité humaine du même rapport est une fiche d''egalites
+  ; l''IDH ajusté aux inégalités (ihdi, 2010-2023, 0,836 en 2023 d''après la sortie du robot) y est déjà une variante
+  (ligne m04-000349) : il n''est pas dupliqué ici (oubli O5 de l''audit). Licence CC BY 3.0 IGO annoncée par le
+  PNUD (non revérifiée).'

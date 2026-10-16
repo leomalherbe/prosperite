@@ -27,7 +27,7 @@ ligne_id: estat-000040
 hors_longlist: non
 raccordement: 'a_etudier : l''ancien taux de privation matérielle sévère (4 privations sur 9, ilc_mddd11, 2004-2020)
   est en variante pour couvrir 2004-2014 avec une autre définition'
-incontournable: oui
+incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Composante de l'AROPE et indicateur ODD européen (sdg_01_31), annuel de 2015 à 2025 (11 points),
   lecture « privation grave » substituable au taux à 5 privations, principal de la famille.
@@ -245,11 +245,6 @@ variantes:
   nature: doublon, ventilation ou ancienne définition (privation matérielle sévère, 2004-2020)
   ligne_id: estat-031603
   eligible: oui
-- serie_id: ilc_mdho06q?freq=A&unit=PC&quant_inc=TOTAL&geo=FR
-  source: Eurostat
-  nature: doublon, ventilation ou ancienne définition (privation matérielle sévère, 2004-2020)
-  ligne_id: estat-031859
-  eligible: oui
 - serie_id: ilc_mddd11?freq=A&unit=PC&age=TOTAL&sex=T&geo=FR
   source: Eurostat
   nature: doublon, ventilation ou ancienne définition (privation matérielle sévère, 2004-2020)
@@ -264,11 +259,6 @@ variantes:
   source: Eurostat
   nature: doublon, ventilation ou ancienne définition (privation matérielle sévère, 2004-2020)
   ligne_id: estat-031681
-  eligible: oui
-- serie_id: ilc_mdho06q?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
-  source: Eurostat
-  nature: doublon, ventilation ou ancienne définition (privation matérielle sévère, 2004-2020)
-  ligne_id: estat-031860
   eligible: oui
 - serie_id: ilc_mdsd15?freq=A&citizen=EU27_2020_FOR&age=Y_GE16&sex=T&unit=PC&geo=FR
   source: Eurostat
@@ -401,4 +391,7 @@ qualite:
 - debut_2015
 notes: 'Variantes : sdg_01_31 (doublon), ventilations (activité, diplôme, nationalité, pays de naissance, statut
   d''occupation, région, urbanisation, enfants, intensité de travail, handicap), ancien taux de privation matérielle
-  sévère 2004-2020 (ilc_mddd11, ilc_mdho06q dont le libellé du catalogue est à vérifier, maintenance NDV-5).'
+  sévère 2004-2020 (ilc_mddd11). Les lignes ilc_mdho06q, rangées ici par M05 sous le libellé erroné du catalogue,
+  sont la privation sévère liée au logement (« Severe housing deprivation rate by income quintile », API Eurostat)
+  : renvoyées à logement_cadre_vie (audit M06, correction n° 2, NDV-5). Incontournable : non, porté par la principale
+  de la famille (D38 d).'

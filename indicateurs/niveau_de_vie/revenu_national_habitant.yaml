@@ -6,7 +6,7 @@ famille: pib_habitant
 variante_principale: non
 definition: Revenu national brut (revenus primaires reçus par les résidents, y compris ceux qui viennent du reste
   du monde) exprimé en termes réels et rapporté à la population (comptes nationaux de l'INSEE, base 2020).
-unite: euros par habitant (termes réels)
+unite: euros par habitant (termes réels selon l'intitulé ; année de référence des prix non trouvée)
 sens: haut
 type: resultat
 declaratif: non
@@ -137,6 +137,10 @@ socle_v1:
   justification: ''
 qualite:
 - revision_frequente_comptes_nationaux
-notes: 'Valeurs non lues (API Melodi fermée à l''outil). Variantes : RNB réel total, RNB et RNN nominaux, revenu
-  disponible de la nation (INSEE, Eurostat naida_10_gdp), revenu national net ajusté par habitant (Banque mondiale
-  NY.ADJ.NNTY.PC.KD, 1995-2021).'
+- annee_de_reference_des_prix_non_trouvee
+- metadonnees_contradictoires
+notes: 'Valeurs non lues (API Melodi fermée à l''outil). Métadonnées contradictoires (catalogue Melodi relu, audit
+  M06 T6) : la ligne porte PRICES=V (« en valeur aux prix courants ») et l''unité « devise nationale (euros) »,
+  alors que la mesure s''intitule « revenu national brut en termes réels par habitant » ; l''année de référence
+  des prix n''est pas indiquée. Variantes : RNB réel total, RNB et RNN nominaux, revenu disponible de la nation
+  (INSEE, Eurostat naida_10_gdp), revenu national net ajusté par habitant (Banque mondiale NY.ADJ.NNTY.PC.KD, 1995-2021).'

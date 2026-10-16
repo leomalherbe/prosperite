@@ -27,14 +27,17 @@ ligne_id: estat-052275
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
-motif_recommandation: Mesure des compétences numériques avancées de la population en emploi, annuelle de 2004 à
-  2025 et comparable depuis la rupture de 2011 (2,7 % en 2011, 4,9 % en 2025).
+motif_recommandation: Mesure des compétences numériques avancées de la population en emploi, maintenue en education
+  (D44), annuelle de 2004 à 2025 (22 points ; 4,0 % en 2004, 4,9 % en 2025) avec des ruptures en 2005, 2006, 2011,
+  2013, 2014 et 2021.
 note_pertinence: 'La part des spécialistes des TIC indique la capacité du pays à concevoir et entretenir les outils
   numériques, complément des compétences de base de toute la population. C''est aussi une structure de l''emploi,
-  dont la hausse ne dit rien du bien-être des personnes concernées : la lecture reste prudente. Eurostat signale
-  une rupture en 2011 (4,1 % en 2010, 2,7 % en 2011) et une définition différente depuis 2021 ; la part des femmes
-  parmi ces spécialistes relève d''egalites.'
+  dont la hausse ne dit rien du bien-être des personnes concernées : la lecture reste prudente et la fiche n''est
+  pas proposée au socle. La cible européenne de la Décennie numérique (au moins 20 millions de spécialistes des
+  TIC en emploi dans l''Union en 2030) est exprimée en nombre pour l''Union et ne se transpose pas telle quelle
+  en part de l''emploi français ; la part des femmes parmi ces spécialistes relève d''egalites.'
 variantes:
 - serie_id: isoc_sks_itspa?freq=A&unit=PC&age=Y35-74&geo=FR
   source: Eurostat
@@ -122,6 +125,9 @@ qualite:
 - rupture_2011
 - rupture_2013
 - rupture_2014
+- rupture_2021
 - definition_differente_depuis_2021
 - valeurs_estimees_2004_2012
-notes: Valeurs lues sur l'API Eurostat le 15/10/2026.
+notes: 'Valeurs relues sur l''API Eurostat le 16/10/2026 (mise à jour du 17/04/2026) : 4,0 % (2004, e), 4,1 (2010,
+  e), 2,7 (2011, be), 3,0 (2013, b), 3,2 (2014, b), 4,5 (2021, bd), 4,9 (2025, d). Cible de la Décennie numérique
+  lue par l''audit M06 (procédure 2021/0293(COD)).'

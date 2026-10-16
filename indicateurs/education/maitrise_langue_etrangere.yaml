@@ -5,9 +5,9 @@ sous_theme: compétences des adultes
 famille: langues_etrangeres
 variante_principale: non
 definition: Part des personnes de 25 à 64 ans qui déclarent un niveau « très bon » dans la langue étrangère qu'elles
-  connaissent le mieux, d'après l'enquête européenne sur l'éducation des adultes (Eurostat edat_aes_l31 ; dénominateur
-  à confirmer).
-unite: '% (dénominateur à confirmer)'
+  connaissent le mieux, parmi celles qui connaissent au moins une langue étrangère, d'après l'enquête européenne
+  sur l'éducation des adultes (Eurostat edat_aes_l31).
+unite: '% des 25-64 ans connaissant au moins une langue étrangère'
 sens: haut
 type: resultat
 declaratif: non
@@ -28,13 +28,16 @@ ligne_id: estat-025031
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: 'Autre statistique de la même enquête (cadre Eurostat Qualité de vie : niveau de la langue
-  la mieux connue), 4 vagues de 2007 à 2022 (D17), dont les valeurs n''ont pas pu être relues sur l''API le 15/10/2026
-  (refus du proxy).'
-note_pertinence: Le niveau déclaré dans la meilleure langue étrangère complète la simple connaissance d'une langue.
-  Le dénominateur (ensemble des 25-64 ans ou seules personnes connaissant une langue) et les drapeaux de rupture
-  restent à lire dans les métadonnées. Les niveaux « élémentaire » et « bon » sont écartés en bloc (catégories intermédiaires).
+  la mieux connue), 4 vagues (D17) : 8,7 % en 2007 (non comparable), 18,7 % en 2011, 19,9 % en 2016 et 24,5 % en
+  2022.'
+note_pertinence: 'Le niveau déclaré dans la meilleure langue étrangère complète la simple connaissance d''une langue.
+  Le dénominateur est la population qui connaît au moins une langue étrangère : les trois niveaux publiés (très
+  bon, bon, élémentaire) somment à 100 % à l''arrondi près en 2011, 2016 et 2022. En 2007, 22,5 % de « sans réponse
+  » entrent dans le dénominateur, ce qui rend cette année non comparable ; les niveaux « élémentaire » et « bon
+  » sont écartés en bloc (catégories intermédiaires).'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -43,8 +46,11 @@ socle_v1:
   justification: ''
 qualite:
 - serie_irreguliere_D17
-- valeurs_non_relues
-- denominateur_a_confirmer
 - auto_evaluation
-notes: Période et nombre de points tirés de la long-list (paquet d'âges) ; lecture de l'API refusée (HTTP 429) le
-  15/10/2026 (liste de maintenance, n° 41).
+- rupture_2011
+- rupture_2022
+- non_reponse_2007
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (mise à jour du 27/08/2026), 25-64 ans, 2007, 2011, 2016
+  et 2022 : très bon 8,7 / 18,7 (b) / 19,9 / 24,5 (b) ; bon 23,6 / 35,0 / 29,0 / 24,9 ; élémentaire 45,2 / 46,2
+  / 51,1 / 50,5 ; sans réponse 22,5 en 2007, sans valeur ensuite (drapeaux u ou bu). Liste de maintenance n° 41
+  soldée pour cette série.'

@@ -27,6 +27,7 @@ ligne_id: melodi-005750
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule mesure cataloguée des compétences en lecture en fin d'école primaire comparable dans
   le temps et entre pays, indicateur national ODD (cycles 2011, 2016 et 2021, D17).
@@ -48,6 +49,7 @@ socle_v1:
 qualite:
 - serie_irreguliere_D17
 - valeurs_proches_du_plafond
+- champ_variable_selon_cycle
 - melodi_non_lu
-notes: API Melodi fermée à l'outil de lecture ; valeurs de la série BDM 010594810 (zone propre à l'enquête, code
-  FMGUADMART16_FHMAY21…) lues le 15/10/2026.
+notes: API Melodi fermée à l'outil de lecture ; valeurs de la série BDM 010594810 lues le 15/10/2026 ; la zone géographique
+  change à chaque cycle (code FMGUADMART16_FHMAY21…, audit M06).

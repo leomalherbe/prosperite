@@ -28,19 +28,20 @@ ligne_id: bdm-000897
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Effort de R&D rattaché à la dimension par l'arbitrage A5 (D25), indicateur de richesse nationale
   doté de l'objectif européen de 3 % du PIB, annuel de 1996 à 2024 (25 points depuis 2000 ; 2,18 % en 2024, valeur
   estimée).
 note_pertinence: 'L''effort de recherche est un indicateur de moyens (D19) : il mesure ce que le pays consacre à
   la production de connaissances, pas leur résultat. La série est stable, entre 2,02 % (2007) et 2,28 % (2014 et
-  2020), loin de l''objectif de 3 %. Eurostat (sdg_09_10), l''OCDE (How''s Life 15_4) et la part exécutée par les
-  entreprises sont en variantes.'
+  2020), loin de l''objectif de 3 % ; Eurostat signale des ruptures en 2000, 2004 et 2010 dans sdg_09_10. Eurostat
+  et la part exécutée par les entreprises sont en variantes, de même que l''investissement en R&D des comptes nationaux
+  (OCDE How''s Life 15_4 : 1,77 % du PIB en 2024), concept voisin et non doublon.'
 variantes:
 - serie_id: '010776361'
   source: INSEE BDM
-  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
-    en % du PIB) ; OCDE How's Life 15_4
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b)
   ligne_id: bdm-000907
   eligible: oui
 - serie_id: sdg_09_10?freq=A&sectperf=TOTAL&unit=PC_GDP&geo=FR
@@ -85,20 +86,18 @@ variantes:
   eligible: oui
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=15_4 UNIT_MEASURE=PT_B1GQ
   source: OCDE — How's Life? (base du bien-être)
-  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
-    en % du PIB) ; OCDE How's Life 15_4
+  nature: 'concept voisin : investissement en R&D des comptes nationaux (FBCF en R&D, OCDE How''s Life 15_4 ; 1,77
+    % du PIB en 2024 contre 2,18 % pour la DIRD), pas un doublon'
   ligne_id: m04-000114
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=9.i5a&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
-    en % du PIB) ; OCDE How's Life 15_4
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b)
   ligne_id: melodi-005739
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=9.i5b&PCS=_Z&SDG=SDG9&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b) ; Eurostat sdg_09_10, rd_e_gerd* (total
-    en % du PIB) ; OCDE How's Life 15_4
+  nature: INSEE (Melodi ODD 9.i5a ; DIRDE en % du PIB, BDM et Melodi 9.i5b)
   ligne_id: melodi-005740
   eligible: oui
 socle_v1:
@@ -109,4 +108,7 @@ socle_v1:
 qualite:
 - indicateur_de_moyens_D19
 - derniere_valeur_estimee
-notes: Valeurs lues sur la BDM le 15/10/2026 (mise à jour du 27/05/2026 ; 2,09 % en 2000).
+- rupture_eurostat_2000_2004_2010
+notes: 'Valeurs lues sur la BDM le 15/10/2026 (mise à jour du 27/05/2026 ; 2,09 % en 2000). Ruptures de sdg_09_10
+  en 2000, 2004 et 2010 lues par l''audit M06 (API, 16/10/2026) ; OCDE 15_4 : 1,76998 % du PIB en 2024 (extrait
+  du robot docs/sources/series/ocde__hsl_bien_etre_futur.csv).'

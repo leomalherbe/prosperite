@@ -32,13 +32,15 @@ ligne_id: estat-031458 ; estat-031460
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Indicateur phare du socle européen des droits sociaux (tableau tepsr_sp210), annuel de 2005
   à 2025 (21 points ; 32,0 % en 2005, 59,7 % en 2025), somme recoupée avec les valeurs publiées par Eurostat.
 note_pertinence: L'accès des jeunes enfants à un accueil formel favorise leur développement et l'emploi des parents.
   La part a presque doublé en vingt ans, portée par l'accueil de 30 heures ou plus (16,0 % en 2005, 43,6 % en 2025)
-  ; le saut de 2007 à 2008 (27,3 % puis 39,6 %), sans drapeau, et les ruptures de 2020 et 2022 sont à documenter.
-  Eurostat publie directement le total dans le tableau tepsr_sp210, absent du catalogue de séries, en variante.
+  ; les sauts de 2007 à 2008 (27,3 % puis 39,6 %) et de 2015 à 2016 (41,7 % puis 48,9 %), sans drapeau, et les ruptures
+  de 2020 et 2022 sont à documenter. Eurostat publie directement le total dans le tableau tepsr_sp210, absent du
+  catalogue de séries, en variante.
 variantes:
 - serie_id: educ_uoe_enra25?freq=A&sex=T&unit=PC&geo=FR
   source: Eurostat
@@ -241,5 +243,8 @@ qualite:
 - rupture_2020
 - rupture_2022
 - saut_2008_sans_drapeau
+- saut_2016_sans_drapeau
 notes: 'Valeurs lues sur l''API Eurostat le 15/10/2026 ; recoupement (D34) : 16,0 + 16,0 = 32,0 (2005), 16,9 + 22,7
-  = 39,6 (2008), 17,3 + 42,0 = 59,3 (2024) et 16,1 + 43,6 = 59,7 (2025), égaux aux valeurs de tepsr_sp210.'
+  = 39,6 (2008), 17,3 + 42,0 = 59,3 (2024) et 16,1 + 43,6 = 59,7 (2025), égaux aux valeurs de tepsr_sp210. Saut
+  de 2016 relevé par l''audit M06 (API, 16/10/2026). Le total publié tepsr_sp210 pourrait devenir la série principale
+  une fois catalogué (audit, J8 a ; liste de maintenance n° 40) : la somme recoupée est gardée en attendant.'

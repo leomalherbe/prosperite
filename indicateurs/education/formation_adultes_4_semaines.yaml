@@ -3,7 +3,7 @@ libelle: Participation des 25-64 ans à l'éducation ou à la formation au cours
 dimension: education
 sous_theme: formation des adultes
 famille: formation_adultes
-variante_principale: oui
+variante_principale: non
 definition: Part des personnes de 25 à 64 ans ayant suivi un enseignement ou une formation, formels ou non formels,
   au cours des quatre semaines précédant l'enquête, d'après l'enquête européenne sur les forces de travail (Eurostat,
   indicateur ODD sdg_04_60).
@@ -29,14 +29,16 @@ hors_longlist: non
 raccordement: 'a_etudier : rupture de 2013 (5,7 % en 2012, 17,8 % en 2013) à neutraliser avant toute lecture de
   la trajectoire'
 incontournable: non
-recommandation: retenir
-motif_recommandation: Indicateur du cadre Eurostat Qualité de vie (participation des adultes à l'éducation et à
-  la formation), seule mesure annuelle depuis 2000 (26 points ; 15,5 % en 2025).
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: Seule mesure annuelle de la participation des adultes à la formation (2000-2025, 26 points
+  ; 15,5 % en 2025), en variante de la participation sur douze mois qui porte les cibles de 2030 (D44).
 note_pertinence: 'La participation au cours des quatre dernières semaines est le suivi annuel de la formation tout
   au long de la vie. La série française est marquée par une rupture majeure en 2013 (5,7 % en 2012, 17,8 % en 2013,
   drapeau « b »), une chute en 2020 (13,0 %) et une nouvelle rupture en 2021 : sa trajectoire ne se lit que par
-  morceaux. Les cibles européenne (au moins 60 %) et française (65 %) de 2030 portent sur la participation au cours
-  des douze derniers mois, en variante.'
+  morceaux. Les cibles européenne (au moins 60 %) et française (65 %) de 2030 portent sur les douze derniers mois,
+  hors formation guidée en situation de travail, que l''enquête sur les forces de travail exclut aussi : elles ne
+  se transposent pas à la fenêtre de quatre semaines.'
 variantes:
 - serie_id: trng_lfse_01?freq=A&unit=PC&sex=T&age=Y18-74&geo=FR
   source: Eurostat
@@ -542,4 +544,5 @@ qualite:
 - rupture_2021
 - rupture_2024
 - chute_2020
-notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (2,8 % en 2000).
+notes: Valeurs lues sur l'API Eurostat le 15/10/2026 (2,8 % en 2000). L'enquête sur les forces de travail exclut
+  la formation guidée en situation de travail (note explicative d'Eurostat du 23/04/2024, lue par l'audit M06).

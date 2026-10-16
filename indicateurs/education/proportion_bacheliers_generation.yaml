@@ -30,6 +30,7 @@ hors_longlist: non
 raccordement: 'a_etudier : série « France hors DROM » 1970-2009 du même jeu pour 2000, données provisoires pour
   2024-2025'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Indicateur national de l'accès au baccalauréat, annuel de 2001 à 2023 en données définitives
   (23 points ; 80,7 % en 2023), prolongé par des données provisoires jusqu'en 2025 (80,1 %).
@@ -58,5 +59,7 @@ socle_v1:
 qualite:
 - champ_hors_mayotte
 - donnees_provisoires_2024_2025
+- controle_continu_2020
+- reforme_bac_2021
 notes: Extrait du robot M04 (docs/sources/series/depp__fr-en-proportion-de-bacheliers-dans-une-generation.csv) ;
   la DEPP diffuse aussi les proportions par série et par sexe dans le même jeu.

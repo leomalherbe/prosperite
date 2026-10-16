@@ -26,28 +26,30 @@ geo: FR-D976
 eligibilite_longlist: oui
 ligne_id: bdm-000781
 hors_longlist: non
-raccordement: 'a_etudier : Eurostat sdg_04_10 pour 2000-2005 et 2025 (D16), valeurs supérieures de 1 à 1,5 point
-  avant 2013'
+raccordement: 'a_etudier : rétropolation de 2000-2005 par l''évolution de sdg_04_10 (rupture de 2003), pas en niveau
+  (Eurostat au-dessus de 1 à 1,5 point avant 2013) ; 2025 d''après Eurostat'
 incontournable: oui
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Concept présent dans les cinq cadres de bien-être (crosswalk §5), indicateur de richesse nationale
-  doté d'une cible européenne (moins de 9 % en 2030) et d'une cible française (9,5 %), annuel de 2006 à 2024 (19
-  points ; 7,9 % en 2024).
+  doté de cibles européenne (moins de 9 %) et française (9,5 %) en 2030, annuel de 2006 à 2024 (19 points ; 7,9
+  % en 2024), principal par exception à la méthode §4 (D44) pour son champ homogène rétropolé par la DEPP de 2003
+  à 2013, la série d'Eurostat étant plus longue mais rompue en 2013.
 note_pertinence: 'Les sorties précoces comptent les jeunes qui quittent l''école sans qualification du second cycle,
-  premier facteur de risque d''exclusion durable. La série de l''INSEE (11,2 % en 2006, 7,9 % en 2024) ne montre
-  pas la rupture de 2013 que signale Eurostat (11,8 % en 2012, 9,7 % en 2013, drapeau « b ») et se situe sous la
-  série européenne avant 2013 : elle semble rétropolée, ce que sa documentation doit confirmer. La série Eurostat
-  sdg_04_10 (2000-2025, 7,2 % en 2025, « définition différente » depuis 2021) couvre les années manquantes et sert
-  aux comparaisons européennes.'
+  premier facteur de risque d''exclusion durable. La série de l''INSEE (11,2 % en 2006, 7,9 % en 2024) est rétropolée
+  par la DEPP de 2003 à 2013 sur le champ France hors Mayotte : elle atténue la rupture de questionnaire de 2013
+  (−0,7 point de 2012 à 2013 contre −2,1 chez Eurostat) sans l''effacer (−2,2 points de 2012 à 2014 contre −3,0).
+  La série Eurostat sdg_04_10 (2000-2025, 7,2 % en 2025) couvre les années manquantes et porte la cible européenne,
+  en variante.'
 variantes:
 - serie_id: '010599819'
   source: INSEE BDM
-  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe)
   ligne_id: bdm-000803
   eligible: oui
 - serie_id: '010599820'
   source: INSEE BDM
-  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe)
   ligne_id: bdm-000804
   eligible: oui
 - serie_id: sdg_04_10?freq=A&unit=PC&wstatus=POP&age=Y18-24&sex=T&geo=FR
@@ -143,22 +145,22 @@ variantes:
 - serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
     (France.Ensemble#elet)
   source: DEPP — data.education.gouv.fr (Opendatasoft)
-  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  nature: 'reprise DEPP de l''indicateur européen (millésime ou champ différent : 7,7 % contre 7,9 % en 2024)'
   ligne_id: m04-000390
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i4&PCS=_Z&SDG=SDG4&SEX=F&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe)
   ligne_id: melodi-005388
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i4&PCS=_Z&SDG=SDG4&SEX=M&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe)
   ligne_id: melodi-005389
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=Y18T24&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=4.i4&PCS=_Z&SDG=SDG4&SEX=_T&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
   source: INSEE Melodi
-  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe), reprise DEPP de l'indicateur européen
+  nature: INSEE BDM par sexe, copie Melodi DS_NAT_SDG 4.i4 (total et par sexe)
   ligne_id: melodi-005390
   eligible: oui
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable part_20_24_sortis_nondip)
@@ -174,7 +176,14 @@ socle_v1:
   justification: ''
 qualite:
 - rupture_2013_eurostat
-- retropolation_a_confirmer
+- retropolation_depp_2003_2013
+- provisoire_2021_2024
 - valeur_2025_non_publiee
-notes: 'Valeurs lues le 15/10/2026 : BDM 010594746 (2006-2024, 2025 non publiée) et API Eurostat sdg_04_10 (2000-2025
-  ; ruptures en 2003, 2013, 2014, 2021 et 2024). La DEPP reprend l''indicateur européen (2013-2024).'
+notes: 'Valeurs relues le 16/10/2026 : BDM 010594746 (mise à jour du 27/05/2026 ; 2006-2024, statut provisoire de
+  2021 à 2024, 2025 non publiée ; 10,8 % en 2012, 10,1 % en 2013, 8,6 % en 2014) ; page de l''INSEE 3281681 (6 janvier
+  2025 : indicateur calculé par Eurostat sur l''enquête Emploi, champ France métropolitaine et DOM hors Mayotte,
+  série rétropolée par la DEPP de 2003 à 2013, ruptures de 2003, 2013 et 2021, 7,6 % en 2023 provisoire). API Eurostat
+  sdg_04_10 lue le 15/10/2026 (2000-2025 ; ruptures en 2003, 2013, 2014, 2021 et 2024 ; 11,8 % en 2012, 9,7 % en
+  2013, 8,8 % en 2014). Écarts de millésime (audit M06, 16/10/2026) : de 2021 à 2023, la BDM (8,0, 7,8 et 7,8 %)
+  est au-dessus d''Eurostat (7,8, 7,6 et 7,6 %) et de la page de l''INSEE (7,6 % en 2023) ; pour 2024, la reprise
+  de la DEPP donne 7,7 % contre 7,9 % pour la BDM et Eurostat.'

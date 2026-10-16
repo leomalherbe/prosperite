@@ -1,0 +1,62 @@
+id: formation_par_le_travail
+libelle: Jeunes diplômés de l'enseignement professionnel formés en situation de travail pendant leurs études
+dimension: education
+sous_theme: formation des adultes
+famille: formation_adultes
+variante_principale: non
+definition: Part des diplômés récents (sortis depuis un à trois ans) du second cycle du secondaire ou du post-secondaire
+  professionnel (CITE 35 et 45), âgés de 20 à 34 ans, qui ont eu une expérience professionnelle pendant leurs études,
+  d'après l'enquête européenne sur les forces de travail (Eurostat edat_lfs_9919) ; indicateur de l'objectif européen
+  d'au moins 60 % de diplômés de l'enseignement professionnel exposés à la formation par le travail en 2025.
+unite: '% des diplômés récents de l''enseignement professionnel de 20 à 34 ans'
+sens: haut
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: 'edat_lfs_9919 (enquête sur les forces de travail : expérience professionnelle pendant les études, par
+  niveau d''éducation et ancienneté de sortie)'
+source_serie_id: edat_lfs_9919?freq=A&isced11=ED35_45&duration=Y1-3&workstud=WE&training=TOTAL&age=Y20-34&sex=T&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfs_9919?geo=FR&sex=T&age=Y20-34&isced11=ED35_45&duration=Y1-3&workstud=WE&unit=PC&lang=fr
+url_page: https://ec.europa.eu/eurostat/databrowser/view/edat_lfs_9919/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2021
+derniere_annee: 2025
+nb_points_depuis_2000: 5
+geo: FR
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+rattachement_propose: 'jeu edat_lfs_9919 du catalogue des jeux (« hors filtre : début des données 2021 »), absent
+  des long-lists ; oubli O1 de l''audit M06, fiche décidée par D44'
+statut_serie: disponible
+raccordement: non
+incontournable: non
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: Seule mesure de la formation par le travail dans l'enseignement professionnel, assortie d'un
+  objectif européen (au moins 60 % en 2025), annuelle de 2021 à 2025 (5 points), retenue en variante faute de dix
+  points (D44, D38 f).
+note_pertinence: 'La formation en situation de travail pendant les études professionnelles (stages, apprentissage)
+  facilite l''insertion des jeunes diplômés. La fiche est accueillie dans la famille de la formation des adultes,
+  dont elle n''est pas un substitut au sens strict : elle mesure l''apprentissage par le travail des jeunes plutôt
+  que la participation des adultes à la formation. Les valeurs n''ont pas pu être lues (refus du proxy le 16/10/2026)
+  et les modalités exactes de l''indicateur européen (personnes en formation ou non, nature de l''expérience) restent
+  à confirmer.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- moins_de_10_points
+- hors_longlist
+- valeurs_non_relues
+- modalites_a_confirmer
+- famille_d_accueil
+notes: 'Structure du jeu lue le 16/10/2026 (flux SDMX EDAT_LFS_9919 : isced11 dont ED35_45, duration dont Y1-3,
+  workstud dont WE, PAID, NPAID, SHORT, LONG et NONE_LT1, training TOTAL, FE_NFE, NO_FE_NO_NFE, âges de 20 à 34
+  ans) ; lecture des valeurs refusée par le proxy (HTTP 429), série à cataloguer et modalité training (TOTAL ou
+  NO_FE_NO_NFE) à confirmer (liste de maintenance n° 44, corrigée).'

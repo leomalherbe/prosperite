@@ -3,10 +3,10 @@ libelle: Personnes voyant un risque de chômage pour elles ou un proche (baromè
 dimension: travail
 sous_theme: qualité et sécurité de l'emploi
 famille: insecurite_emploi_percue
-variante_principale: non
-definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui répondent « oui » à la question
-  SDRICHOM : « Y a-t-il un risque de chômage dans les mois à venir pour vous-même ou l''un de vos proches ? », non-réponses
-  au dénominateur, pondération de redressement.'
+variante_principale: oui
+definition: Part des personnes interrogées par le baromètre d'opinion de la DREES qui répondent « oui » à la question
+  SDRICHOM (« Y a-t-il un risque de chômage dans les mois à venir pour vous-même ou l'un de vos proches ? »), parmi
+  celles qui répondent oui ou non, pondération de redressement de l'enquête.
 unite: '% des répondants'
 sens: bas
 type: resultat
@@ -16,6 +16,12 @@ source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable SDRICHOM, modalité 1
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SDRICHOM, modalités 1 et 2
+formule: 'part = 100 × somme(poids des réponses SDRICHOM = 1 « oui ») / somme(poids des réponses SDRICHOM = 1 ou
+  2), « ne sait pas » 999999999 exclu, par année (première année lue : 2010) ; distribution pondérée du robot, vague
+  11'
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -27,19 +33,21 @@ geo: FM
 eligibilite_longlist: hors_longlist
 ligne_id: ''
 hors_longlist: oui
-statut_serie: a_calculer
-preuve: docs/sources/series/drees__barometre_2000_2025_couverture.csv
-rattachement_propose: 'hors long-list : question SDRICHOM du baromètre DREES non cataloguée par M04 ; sécurité de
-  l''emploi ressentie (A15)'
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_risque_chomage.csv
+rattachement_propose: 'hors long-list : question SDRICHOM du baromètre DREES non cataloguée par M04, distribution
+  calculée par le robot (vague 11, 16/10/2026) ; sécurité de l''emploi ressentie (A15)'
 raccordement: non
 incontournable: non
-recommandation: retenir_variante
-motif_recommandation: Question plus proche de l'insécurité de l'emploi vécue que la préoccupation pour le chômage,
-  posée 16 années de 2010 à 2025, mais dont les valeurs restent à calculer par le robot M04.
-note_pertinence: La question porte sur un risque concret à court terme, pour soi ou un proche, plutôt que sur une
-  préoccupation générale. Elle commence en 2010 et ses valeurs ne sont pas encore produites (liste de maintenance).
-  Elle pourrait devenir la variante principale de la famille une fois calculée, si la session mère préfère une mesure
-  plus personnelle.
+recommandation: retenir
+motif_recommandation: Mesure personnelle de l'insécurité de l'emploi (risque de chômage pour soi ou un proche),
+  posée chaque année de 2010 à 2025 (16 points), calculée sur les microdonnées du baromètre DREES et plausible au
+  regard des parts publiées par la DREES (45 % en 2013, 42 % en 2014).
+note_pertinence: 'La question porte sur un risque concret à court terme, pour soi ou un proche : c''est la face
+  ressentie et personnelle de la sécurité de l''emploi (A15). La part passe de 41,0 % en 2010 à 49,8 % en 2016,
+  puis 28,7 % en 2025 (calcul sur la sortie du robot, « ne sait pas » exclu). La hausse des « ne sait pas » en 2018
+  (2,0 % en 2017, 5,8 % en 2018, environ 8 % depuis 2020) signale un possible changement de protocole, comme pour
+  d''autres questions du baromètre.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -48,9 +56,16 @@ socle_v1:
   justification: ''
 qualite:
 - hors_longlist
-- a_calculer
 - calcul_sur_microdonnees
 - enquete_metropole
-- codes_modalites_a_verifier
-notes: 'Couverture lue dans docs/sources/series/drees__barometre_2000_2025_couverture.csv (16 années 2010-2025,
-  taux de réponse 2025 : 1,000) ; distribution non calculée par le robot : valeurs non trouvé à ce jour.'
+- non_recoupe
+- rupture_possible_2018
+- licence_a_confirmer
+notes: 'Parts calculées par l''agent correcteur sur docs/sources/series/drees__barometre_2000_2025_risque_chomage.csv
+  (vague 11 du robot, 16/10/2026), modalité 1 rapportée aux modalités 1 et 2 : 41,0 % (2010), 44,8 % (2013), 41,5
+  % (2014), 49,8 % (2016), 38,4 % (2018), 43,6 % (2020), 31,5 % (2021), 28,7 % (2025) ; avec « ne sait pas » au
+  dénominateur : 40,1 % (2010) et 26,4 % (2025). Plausibilité (D38 b) : la DREES publie 42 % en 2014, « en baisse
+  de trois points par rapport à 2013 » (synthèse du baromètre 2014), ce que reproduit le calcul hors « ne sait pas
+  » (41,5 % et 44,8 %) mieux que le calcul avec (40,6 % et 44,1 %) ; recoupement D34 incomplet (deux valeurs) :
+  non_recoupe. Libellé de la question et des modalités lus dans les dictionnaires 2025 du robot. Variante principale
+  de la famille insecurite_emploi_percue depuis la correction de l''audit M06 (J7).'

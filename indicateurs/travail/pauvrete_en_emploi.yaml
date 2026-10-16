@@ -4,8 +4,9 @@ dimension: travail
 sous_theme: rémunération
 famille: pauvrete_en_emploi
 variante_principale: oui
-definition: Part des personnes de 18 ans ou plus en emploi dont le niveau de vie est inférieur à 60 % du niveau
-  de vie médian (EU-SILC, enquête SRCV de l'INSEE pour la France).
+definition: Part des personnes de 18 ans ou plus en emploi (statut d'activité le plus fréquent au cours de l'année
+  de référence) dont le niveau de vie est inférieur à 60 % du niveau de vie médian (EU-SILC, enquête SRCV de l'INSEE
+  pour la France).
 unite: '% des personnes en emploi de 18 ans ou plus'
 sens: bas
 type: resultat
@@ -32,8 +33,8 @@ motif_recommandation: Mesure des travailleurs pauvres, de même définition que 
   en série annuelle 2004-2025 (22 points).
 note_pertinence: 'Avoir un emploi ne protège pas toujours de la pauvreté : l''indicateur mesure si le travail permet
   de vivre. Les valeurs vont de 5,4 % (2004) à 8,7 % (2025), avec des ruptures en 2008, 2020 et 2022 (API Eurostat,
-  14/10/2026). Il dépend aussi de la composition du ménage, ce qui le place à la frontière de niveau_de_vie : la
-  session mère tranchera.'
+  14/10/2026). Il dépend aussi de la composition du ménage, mais son rattachement à travail est acté par D36 et
+  D39.'
 variantes:
 - serie_id: ilc_iw01?freq=A&wstatus=EMP&sex=M&sex=F&age=Y_GE18&unit=PC&geo=FR
   source: Eurostat
@@ -476,6 +477,69 @@ variantes:
   ligne_id: estat-002024
   eligible: oui
   longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=EMP&age=Y_GE18&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021820
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=EMP&age=Y18-24&age=Y18-64&age=Y25-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021821
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=EMP&age=Y_GE18&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021822
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=NSAL&age=Y_GE18&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021823
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=NSAL&age=Y18-24&age=Y18-64&age=Y25-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021824
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=NSAL&age=Y_GE18&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021825
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=SAL&age=Y_GE18&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021826
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=SAL&age=Y18-24&age=Y18-64&age=Y25-54&age=Y55-64&age=Y_GE65&sex=T&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021827
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: hlth_dpe050?freq=A&unit=PC&lev_limit=TOTAL&wstatus=SAL&age=Y_GE18&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hlth_dpe050 (long-list niveau_de_vie), total des niveaux de limitation : personnes occupées,
+    salariés et non-salariés, par âge et sexe'
+  ligne_id: estat-021828
+  eligible: oui
+  longlist: niveau_de_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -485,6 +549,7 @@ qualite:
 - rupture_2008
 - rupture_2020
 - rupture_2022
-- frontiere_niveau_de_vie
-notes: Le taux de pauvreté des salariés de l'ERFS (INSEE) figure dans la long-list niveau_de_vie comme ventilation
-  du taux de pauvreté ; il n'est pas repris ici.
+notes: 'Le taux de pauvreté des salariés de l''ERFS (INSEE) figure dans la long-list niveau_de_vie comme ventilation
+  du taux de pauvreté ; il n''est pas repris ici. Lignes de la long-list niveau_de_vie reprises en variantes (D36,
+  D39) : sdg_01_41 (indicateur ODD, même définition) et hlth_dpe050 (total des niveaux de limitation d''activité
+  : personnes occupées, salariés, non-salariés, par âge et sexe).'

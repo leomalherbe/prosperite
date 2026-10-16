@@ -1,5 +1,5 @@
 id: temps_partiel_subi
-libelle: Temps partiel involontaire (part des salariés à temps partiel)
+libelle: Temps partiel involontaire (part des personnes à temps partiel)
 dimension: travail
 sous_theme: sous-emploi et temps partiel
 famille: sous_emploi
@@ -25,15 +25,17 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-025569
 hors_longlist: non
-raccordement: 'a_etudier : rupture de 2021 (36,9 % en 2020, 27,2 % en 2021) liée à la rénovation de l''enquête'
+raccordement: 'a_etudier : rupture de 2021 (36,9 % en 2020, 27,2 % en 2021) liée à la rénovation de l''enquête ;
+  saut non signalé de 2013 (33,5 % en 2012, 38,7 % en 2013)'
 incontournable: non
 recommandation: retenir_variante
-motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat rapporté aux seuls salariés à temps partiel,
-  série 2000-2025 (26 points) mais rompue en 2021, alors que le taux de sous-emploi de l'INSEE est rétropolé.
+motif_recommandation: Indicateur du cadre Qualité de vie d'Eurostat rapporté à l'ensemble des personnes à temps
+  partiel, série 2000-2025 (26 points) mais rompue en 2021, alors que le taux de sous-emploi de l'INSEE est rétropolé.
 note_pertinence: 'L''indicateur se lit autrement que le taux de sous-emploi : il dit quelle part du temps partiel
-  est subie, pas quelle part de l''emploi. Les valeurs vont de 26,7 % (2000) à 41,5 % (2014, rupture) puis 20,3
-  % (2025) ; la chute de 2021 est une rupture de série (API Eurostat, 14/10/2026). Il ne peut servir de trajectoire
-  longue qu''après raccordement.'
+  est subie, pas quelle part de l''emploi, et couvre salariés et non-salariés (le jeu n''a pas de dimension de statut).
+  Les valeurs vont de 26,7 % (2000) à 42,7 % (2016) puis 20,3 % (2025) ; la chute de 2021 (36,9 % à 27,2 %) est
+  une rupture, et le saut de 2013 (33,5 % à 38,7 %), contemporain du nouveau questionnaire, n''est pas marqué (collecte
+  ciblée du robot, 15/10/2026). Il ne peut servir de trajectoire longue qu''après raccordement.'
 variantes:
 - serie_id: lfsa_eetpgar?freq=A&reason=NF_FTJOB&sex=T&age=Y_GE15&unit=PC_SAL&geo=FR
   source: Eurostat
@@ -108,6 +110,9 @@ socle_v1:
   justification: ''
 qualite:
 - rupture_2003
+- rupture_2005
+- rupture_2006
+- saut_non_signale_2013
 - rupture_2014
 - rupture_2021
 - rupture_2024

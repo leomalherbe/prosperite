@@ -4,9 +4,9 @@ dimension: travail
 sous_theme: qualité et sécurité de l'emploi
 famille: emploi_temporaire
 variante_principale: non
-definition: Part des salariés de 15 ans ou plus en contrat temporaire qui déclarent ne pas avoir trouvé d'emploi
-  permanent (Eurostat, enquête sur les forces de travail).
-unite: '% des salariés'
+definition: Part, parmi l'ensemble des salariés de 15 ans ou plus, de ceux qui occupent un emploi temporaire faute
+  d'avoir trouvé un emploi permanent (Eurostat, enquête sur les forces de travail).
+unite: '% de l''ensemble des salariés'
 sens: bas
 type: resultat
 declaratif: non
@@ -25,15 +25,18 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-025520
 hors_longlist: non
-raccordement: 'a_etudier : rupture de 2021 (7,3 % en 2020, 5,8 % en 2021, puis 3,6 % en 2025) avec changement de
-  définition'
+raccordement: 'a_etudier : rupture de 2021 (7,3 % en 2020, 5,8 % en 2021) avec changement de définition, puis baisse
+  continue (3,6 % en 2025)'
 incontournable: non
 recommandation: retenir_variante
-motif_recommandation: Indicateur du cadre Qualité de vie (contrats temporaires subis), série 2003-2025 (23 points)
-  dont le niveau est divisé par deux après la rupture de 2021, à lire avec la part des CDD et de l'intérim.
+motif_recommandation: Indicateur des contrats temporaires subis (cadre Qualité de vie), série 2003-2025 (23 points)
+  rompue en 2021 (7,3 % en 2020, 5,8 % en 2021) puis en baisse jusqu'à 3,6 % en 2025, à lire avec la part des CDD
+  et de l'intérim.
 note_pertinence: 'La part de l''emploi temporaire subi sépare les contrats courts choisis (études, préférence) de
-  ceux qu''on n''a pas pu éviter. La série est marquée « rupture et définition différente » en 2021 et 2024 : la
-  baisse de 7,3 % à 3,6 % entre 2020 et 2025 (API Eurostat, 14/10/2026) tient au moins en partie au nouveau questionnaire.'
+  ceux qu''on n''a pas pu éviter. Elle est rapportée à l''ensemble des salariés (unité PC_SAL), alors que le cadre
+  Qualité de vie la rapporte aux seuls salariés temporaires : c''est une autre statistique, de même sens. La rupture
+  de 2021 explique le saut de cette année-là, pas la baisse qui suit (5,8 % en 2021, 3,6 % en 2025 ; collecte ciblée
+  du robot, 15/10/2026).'
 variantes:
 - serie_id: lfsa_eetpgar?freq=A&reason=NF_FT_PJOB&sex=T&age=Y_GE15&unit=PC_SAL&geo=FR
   source: Eurostat
@@ -67,7 +70,10 @@ socle_v1:
   justification: ''
 qualite:
 - rupture_2003
+- rupture_2005
+- rupture_2006
 - rupture_2014
 - rupture_2021
+- rupture_2024
 - definition_differente_2021_2025
 notes: ''

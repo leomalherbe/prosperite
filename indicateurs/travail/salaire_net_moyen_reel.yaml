@@ -25,8 +25,8 @@ geo: FRANCE-F
 eligibilite_longlist: oui
 ligne_id: melodi-004140
 hors_longlist: non
-rattachement_propose: 'ligne de la long-list niveau_de_vie : la rémunération fait partie de la qualité des emplois
-  (définition de travail, OCDE 2_8) ; à trancher avec niveau_de_vie au gel 2'
+rattachement_propose: 'ligne de la long-list niveau_de_vie : rattachement à travail confirmé par D36 et D39 (le
+  salaire réel mesure la qualité de l''emploi, le revenu des ménages reste à niveau_de_vie)'
 raccordement: non
 incontournable: non
 recommandation: retenir
@@ -96,11 +96,35 @@ variantes:
     publique (moyennes), Eurostat nama_10_fte et earn_ses_pub2s (médiane horaire SES)
   ligne_id: estat-026680
   eligible: a_verifier
+- serie_id: '001665246'
+  source: INSEE BDM
+  nature: 'INSEE BDM (long-list niveau_de_vie) : indice du salaire net mensuel moyen des postes à temps complet
+    (euros courants et constants, base 2000), évolution du pouvoir d''achat du salaire des postes à temps complet
+    (ensemble)'
+  ligne_id: bdm-001211
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: '010752372'
+  source: INSEE BDM
+  nature: 'INSEE BDM (long-list niveau_de_vie) : indice du salaire net mensuel moyen des postes à temps complet
+    (euros courants et constants, base 2000), évolution du pouvoir d''achat du salaire des postes à temps complet
+    (ensemble)'
+  ligne_id: bdm-001269
+  eligible: oui
+  longlist: niveau_de_vie
 - serie_id: '010752375'
   source: INSEE BDM
   nature: INSEE séries longues (postes à temps complet, euros constants, 1951-2024), indice du pouvoir d'achat du
     salaire (BDM), OCDE 2_8 (salaire brut moyen en PPA)
   ligne_id: bdm-001272
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: '010752418'
+  source: INSEE BDM
+  nature: 'INSEE BDM (long-list niveau_de_vie) : indice du salaire net mensuel moyen des postes à temps complet
+    (euros courants et constants, base 2000), évolution du pouvoir d''achat du salaire des postes à temps complet
+    (ensemble)'
+  ligne_id: bdm-001315
   eligible: oui
   longlist: niveau_de_vie
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=2_8 UNIT_MEASURE=USD_PPP
@@ -110,11 +134,67 @@ variantes:
   ligne_id: m04-000015
   eligible: oui
   longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=CENTILE_50&SEX=_T&UNIT_MEASURE=XDC&WKTIME=FT
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004109
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=CENTILE_50&SEX=_T&UNIT_MEASURE=XDC&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004110
+  eligible: oui
+  longlist: niveau_de_vie
 - serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=XDC&WKTIME=FT
   source: INSEE Melodi
   nature: INSEE séries longues (postes à temps complet, euros constants, 1951-2024), indice du pouvoir d'achat du
     salaire (BDM), OCDE 2_8 (salaire brut moyen en PPA)
   ligne_id: melodi-004139
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EVOLUTION_CONSTANT&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=CENTILE_50&SEX=_T&UNIT_MEASURE=PT&WKTIME=FT
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004187
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EVOLUTION_CONSTANT&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=CENTILE_50&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004188
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EVOLUTION_CONSTANT&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=FT
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004217
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EVOLUTION_CONSTANT&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004218
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_INDICE_100_1996&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=CENTILE_50&SEX=_T&UNIT_MEASURE=IX&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004245
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_INDICE_100_1996&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=_T&UNIT_MEASURE=IX&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE séries longues du privé (long-list niveau_de_vie) : moyenne et médiane, ensemble et postes à temps
+    complet, en euros constants, en évolution annuelle et en indice base 100 en 1996'
+  ligne_id: melodi-004260
   eligible: oui
   longlist: niveau_de_vie
 socle_v1:
@@ -125,4 +205,11 @@ socle_v1:
 qualite:
 - champ_secteur_prive
 - effet_de_structure
-notes: 'Le niveau du salaire moyen n''a pas été lu (API Melodi refusée à WebFetch) : non trouvé.'
+- champ_metropole_avant_2000
+notes: 'Valeurs lues par le robot (collecte ciblée du 15/10/2026, melodi_travail_salaire_net_moyen_reel.csv, depuis
+  2000) : 2 486 € (2000), 2 827 € (2020, effet de composition de la crise sanitaire), 2 733 € (2024). Champ (notice
+  Melodi du jeu) : « France depuis 2000, France métropolitaine jusqu''en 1999 », salariés du privé hors agriculture
+  et particuliers-employeurs, comme la série BDM 010752333 (zone FM99_FR00) ; sans effet sur 2000-2024 (audit M06
+  J5). Lignes de la long-list niveau_de_vie reprises (D36, D39) : médiane, temps complet, évolutions et indices
+  en variantes ; ventilations par sexe renvoyées à egalites ; centiles, âge et PCS écartés en bloc ; SMIC écarté
+  (barème).'

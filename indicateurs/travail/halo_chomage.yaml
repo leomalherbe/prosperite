@@ -1,41 +1,41 @@
 id: halo_chomage
-libelle: Part du halo autour du chômage dans la population
+libelle: Part du halo autour du chômage dans la population des 15-64 ans
 dimension: travail
 sous_theme: chômage
 famille: halo_chomage
 variante_principale: oui
-definition: Part des personnes de 15 ans ou plus sans emploi qui souhaitent travailler mais ne sont pas comptées
-  comme chômeurs au sens du BIT (non disponibles ou ne recherchant pas activement), en moyenne annuelle (INSEE,
-  enquête Emploi, séries longues).
-unite: '% de la population de 15 ans ou plus'
+definition: Part des personnes de 15 à 64 ans sans emploi qui souhaitent travailler mais ne sont pas comptées comme
+  chômeurs au sens du BIT (non disponibles rapidement ou ne recherchant pas activement), dans la population du même
+  âge ; INSEE, enquête Emploi, série trimestrielle corrigée des variations saisonnières, champ France entière.
+unite: '% de la population de 15 à 64 ans'
 sens: bas
 type: resultat
 declaratif: non
 composite: non
 source_organisme: INSEE
-source_jeu: Melodi DD_EEC_SERIES (enquête Emploi, séries longues), mesure PT_SEX_AGE_IN_HALO
-source_serie_id: DD_EEC_SERIES?AGE=Y_GE15&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_HALO&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+source_jeu: BDM, enquête Emploi trimestrielle (halo autour du chômage)
+source_serie_id: '011818623'
 source_niveau: 1
-url_api: https://api.insee.fr/melodi/data/DD_EEC_SERIES?AGE=Y_GE15&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_HALO&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
-url_page: https://www.insee.fr/fr/statistiques/8977323
-frequence: annuelle
-premiere_annee: 2014
-derniere_annee: 2025
-nb_points_depuis_2000: 12
+url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/011818623
+url_page: https://www.insee.fr/fr/statistiques/serie/011818623
+frequence: trimestrielle
+premiere_annee: 2003
+derniere_annee: 2026
 geo: FE
 eligibilite_longlist: oui
-ligne_id: melodi-003252
+ligne_id: bdm-000093
 hors_longlist: non
-raccordement: 'a_etudier : part de la population depuis 2014 ; 2003-2013 par la série trimestrielle BDM 011818623
-  (15-64 ans) ou le nombre de personnes du halo (1990-2025)'
+raccordement: non
 incontournable: non
 recommandation: retenir
-motif_recommandation: Composante du chômage caché nommée dans le contenu de la dimension, en série annuelle INSEE
-  de 2014 à 2025 (12 points), raccordable avant 2014 par des séries INSEE de même concept.
+motif_recommandation: Composante du chômage caché nommée dans le contenu de la dimension, en série INSEE trimestrielle
+  de 2003 à 2026 sur les 15-64 ans, plus longue que la série annuelle Melodi des 15 ans ou plus (2014-2025), qui
+  reste en variante (audit M06 J1).
 note_pertinence: 'Le halo rassemble les personnes qui voudraient travailler mais échappent à la définition stricte
-  du chômage (découragés, indisponibles temporairement) : il complète le taux de chômage. Le libellé Melodi de la
-  mesure (« part du sexe et de l''âge dans les personnes dans le halo ») est ambigu ; le tableau t309 de l''INSEE
-  la présente comme une part de la population, ce qui reste à confirmer sur les valeurs.'
+  du chômage (découragés, indisponibles temporairement) : il complète le taux de chômage. La moyenne annuelle de
+  la série passe de 3,8 % en 2003 à 5,4 % en 2020, puis 4,5 % en 2025 (collecte ciblée du robot, 15/10/2026). La
+  série annuelle Melodi rapporte le halo à la population de 15 ans ou plus (3,4 % en 2025) : même concept, autre
+  dénominateur.'
 variantes:
 - serie_id: '011818556'
   source: INSEE BDM
@@ -156,11 +156,6 @@ variantes:
   source: INSEE BDM
   nature: 'INSEE BDM : halo en nombre et en part de la population des 15-64 ans (trimestriels 2003-2026)'
   ligne_id: bdm-000092
-  eligible: oui
-- serie_id: '011818623'
-  source: INSEE BDM
-  nature: 'INSEE BDM : halo en nombre et en part de la population des 15-64 ans (trimestriels 2003-2026)'
-  ligne_id: bdm-000093
   eligible: oui
 - serie_id: '011818624'
   source: INSEE BDM
@@ -1270,6 +1265,12 @@ variantes:
     sexe'
   ligne_id: melodi-003251
   eligible: oui
+- serie_id: DD_EEC_SERIES?AGE=Y_GE15&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_HALO&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=_T&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: 'INSEE, séries longues : halo en nombre (1990-2025) et en part de la population, par composante, âge et
+    sexe'
+  ligne_id: melodi-003252
+  eligible: oui
 - serie_id: DD_EEC_SERIES?AGE=Y_GE65&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_SEX_AGE_IN_HALO&EMPFORM=_T&EMPSTA=3&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
   source: INSEE Melodi
   nature: 'INSEE, séries longues : halo en nombre (1990-2025) et en part de la population, par composante, âge et
@@ -1294,6 +1295,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- libelle_melodi_ambigu
-- unite_a_confirmer
-notes: 'API Melodi refusée à WebFetch (robots.txt) : valeurs non lues ; à confirmer au premier passage du robot.'
+- trimestrielle_agregation_annuelle
+- derniere_annee_partielle
+notes: 'Série trimestrielle retenue faute de série annuelle de même définition (D35 ; la série annuelle Melodi porte
+  sur les 15 ans ou plus et commence en 2014). Contrôle TRA-3 (robot, 15/10/2026, melodi_travail_controles.csv)
+  : la mesure Melodi PT_SEX_AGE_IN_HALO est un taux (total compris entre les femmes et les hommes) ; recalculée
+  sur les 15-64 ans (nombre / population), elle égale la moyenne annuelle de la série BDM à 0,03 point près sur
+  2014-2025. Ancienne principale (M05) : melodi-003252, passée en variante.'

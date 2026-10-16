@@ -27,15 +27,17 @@ geo: FR
 eligibilite_longlist: a_verifier
 ligne_id: estat-026544
 hors_longlist: non
-raccordement: non
+raccordement: 'non : vagues 2007, 2013 et 2020 non comparables (« définition différente » puis « rupture ») ; lecture
+  en niveau de la vague 2020 pour le socle'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Seule mesure des risques psychosociaux au travail au catalogue, citée par le cadre Qualité
   de vie, observée en 2007, 2013 et 2020 (D17) avec des changements de définition entre chaque vague.
 note_pertinence: 'Les conditions de travail psychosociales (intensité, autonomie, harcèlement) sont citées par SSF
   et Eurostat. Les trois valeurs (49,0 % en 2007, 60,8 % en 2013, 53,5 % en 2020) portent les drapeaux « définition
-  différente » puis « rupture » (API Eurostat, 14/10/2026) : elles ne forment pas une trajectoire comparable. L''enquête
-  Conditions de travail de la DARES serait la source nationale à rechercher (liste de maintenance).'
+  différente » puis « rupture » (relues par la collecte ciblée du robot, 15/10/2026) : elles ne forment pas une
+  trajectoire comparable. Le pendant physique est la fiche exposition_risques_sante_physique ; l''enquête Conditions
+  de travail de la DARES serait la source nationale à rechercher (TRA-8).'
 variantes:
 - serie_id: hsw_exp1?freq=A&sex=T&age=Y15-74&isced11=TOTAL&unit=PC_EMP&geo=FR
   source: Eurostat

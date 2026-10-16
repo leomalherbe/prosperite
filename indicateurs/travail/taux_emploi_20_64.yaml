@@ -5,45 +5,50 @@ sous_theme: emploi
 famille: taux_emploi
 variante_principale: non
 definition: Part des personnes de 20 à 64 ans en emploi au sens du BIT, d'après l'enquête européenne sur les forces
-  de travail (Eurostat, indicateur ODD 8.30).
+  de travail (Eurostat, jeu lfsi_emp_a ; l'indicateur ODD sdg_08_30 en reprend les valeurs depuis 2009).
 unite: '% de la population de 20 à 64 ans'
 sens: haut
 type: resultat
 declaratif: non
 composite: non
 source_organisme: Eurostat
-source_jeu: sdg_08_30 (indicateurs ODD de l'UE, enquête sur les forces de travail)
-source_serie_id: sdg_08_30?freq=A&indic_em=EMP_LFS&sex=T&age=Y20-64&unit=PC_POP&geo=FR
+source_jeu: lfsi_emp_a (emploi et forces de travail par sexe et âge, enquête sur les forces de travail), classe
+  d'âge 20-64 ans
+source_serie_id: lfsi_emp_a?freq=A&indic_em=EMP_LFS&sex=T&age=Y15-24&age=Y15-29&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_POP&geo=FR
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_08_30?freq=A&indic_em=EMP_LFS&sex=T&age=Y20-64&unit=PC_POP&geo=FR
-url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_08_30/default/table?lang=fr
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_a?freq=A&indic_em=EMP_LFS&sex=T&age=Y20-64&unit=PC_POP&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table?lang=fr
 frequence: annuelle
-premiere_annee: 2009
+premiere_annee: 2003
 derniere_annee: 2025
-nb_points_depuis_2000: 17
+nb_points_depuis_2000: 23
 geo: FR
 eligibilite_longlist: oui
-ligne_id: estat-002090
+ligne_id: estat-025131
 hors_longlist: non
-raccordement: 'a_etudier : lfsi_emp_a (classe 20-64 ans, même source) couvre 2003-2008'
-incontournable: oui
+raccordement: non
+incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Même concept que la principale sur la classe d'âge de la cible française et européenne de
-  78 % en 2030, série Eurostat 2009-2025 (17 points) marquée « définition différente » de 2021 à 2025.
+  78 % en 2030, série Eurostat lfsi_emp_a de 2003 à 2025 (23 points), que l'indicateur ODD sdg_08_30 reprend à l'identique
+  depuis 2009.
 note_pertinence: 'La cible d''emploi de l''Union (au moins 78 % des 20-64 ans en emploi en 2030) et l''objectif
   français se lisent sur cette série : elle fournit une borne officielle que la série 15-64 ans n''a pas. Les valeurs
-  vont de 69,8 % en 2009 à 75,4 % en 2025 (API Eurostat, 14/10/2026). Le drapeau « d » de 2021 à 2025 signale le
-  changement de règlement européen de l''enquête, que l''INSEE a corrigé dans ses séries longues.'
+  vont de 70,0 % en 2003 à 75,4 % en 2025, identiques à celles de sdg_08_30 de 2009 à 2025 (collecte ciblée du robot,
+  15/10/2026). Le drapeau « d » de 2021 à 2025 signale le changement de règlement européen de l''enquête, que l''INSEE
+  a corrigé dans ses séries longues.'
 variantes:
+- serie_id: sdg_08_30?freq=A&indic_em=EMP_LFS&sex=T&age=Y20-64&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: Eurostat sdg_08_30 (indicateur ODD, 2009-2025, mêmes valeurs que lfsi_emp_a) et lfsi_emp_a_h (paquet historique
+    des classes d'âge, arrêté en 2020)
+  ligne_id: estat-002090
+  eligible: oui
 - serie_id: lfsi_emp_a_h?freq=A&age=Y15-24&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_POP&sex=T&indic_em=EMP_LFS&geo=FR
   source: Eurostat
-  nature: Eurostat lfsi_emp_a et lfsi_emp_a_h, paquet des classes d'âge (dont 20-64 ans), 2003-2025
+  nature: Eurostat sdg_08_30 (indicateur ODD, 2009-2025, mêmes valeurs que lfsi_emp_a) et lfsi_emp_a_h (paquet historique
+    des classes d'âge, arrêté en 2020)
   ligne_id: estat-025109
-  eligible: oui
-- serie_id: lfsi_emp_a?freq=A&indic_em=EMP_LFS&sex=T&age=Y15-24&age=Y15-29&age=Y20-64&age=Y25-54&age=Y55-64&unit=PC_POP&geo=FR
-  source: Eurostat
-  nature: Eurostat lfsi_emp_a et lfsi_emp_a_h, paquet des classes d'âge (dont 20-64 ans), 2003-2025
-  ligne_id: estat-025131
   eligible: oui
 socle_v1:
   seuil_minimal: null
@@ -52,4 +57,8 @@ socle_v1:
   justification: ''
 qualite:
 - definition_differente_2021_2025
-notes: 'Drapeaux lus sur l''API Eurostat le 14/10/2026 : « d » de 2021 à 2025, aucun drapeau avant.'
+notes: 'Série principale prise dans le paquet des classes d''âge (ligne estat-025131 : 15-24, 15-29, 20-64, 25-54
+  et 55-64 ans) ; modalité retenue : 20-64 ans (url_api). Valeurs et drapeaux lus dans docs/sources/series/eurostat_travail_lfsi_emp_a.csv
+  et eurostat_travail_sdg_08_30.csv : « d » de 2021 à 2025, aucun drapeau avant. Audit M06 F1 : l''ancienne principale
+  sdg_08_30 (2009-2025) passe en variante, le raccordement est inutile. Incontournable porté par la variante principale
+  de la famille (taux_emploi, D38 d).'

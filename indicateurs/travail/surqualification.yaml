@@ -77,12 +77,6 @@ variantes:
     lfsa_eoqgan2)'
   ligne_id: estat-054298
   eligible: oui
-- serie_id: lfsa_eoqgac?freq=A&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&age=Y_GE15&sex=T&unit=PC&geo=FR
-  source: Eurostat
-  nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
-    lfsa_eoqgan2)'
-  ligne_id: estat-054299
-  eligible: oui
 - serie_id: lfsa_eoqgac?freq=A&c_birth=TOTAL&age=Y15-64&age=Y20-34&age=Y20-64&age=Y25-34&age=Y25-64&age=Y35-64&sex=T&unit=PC&geo=FR
   source: Eurostat
   nature: 'Eurostat : taux de surqualification par nationalité, pays de naissance, branche (lfsa_eoqgan, lfsa_eoqgac,
@@ -109,4 +103,5 @@ qualite:
 - rupture_2021
 - rupture_2024
 - definition_differente_2021_2025
-notes: ''
+notes: La ligne estat-054299 (surqualification par pays de naissance), série principale d'egalites/ecart_surqualification_origine,
+  est renvoyée à egalites (audit M06 A2, I1).

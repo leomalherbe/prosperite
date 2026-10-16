@@ -4,9 +4,9 @@ dimension: travail
 sous_theme: satisfaction au travail
 famille: satisfaction_travail
 variante_principale: oui
-definition: Note moyenne, sur une échelle de 0 à 10, donnée par les personnes de 16 ans ou plus de France métropolitaine
-  à leur satisfaction concernant leur emploi principal (INSEE, enquête Statistiques sur les ressources et conditions
-  de vie, SRCV).
+definition: Note moyenne, sur une échelle de 0 à 10, donnée par les personnes en emploi de 16 ans ou plus de France
+  métropolitaine à leur satisfaction concernant leur emploi principal (INSEE, enquête Statistiques sur les ressources
+  et conditions de vie, SRCV).
 unite: note moyenne (0 à 10)
 sens: haut
 type: resultat
@@ -33,9 +33,9 @@ motif_recommandation: Satisfaction d'un domaine rangée dans ce domaine (R4), ci
   de vie, seule série annuelle publique de 2010 à 2023 (12 points), quand EU-SILC n'a que 2013 et 2018 et l'OCDE
   trois points.
 note_pertinence: La satisfaction au travail est la mesure ressentie de la qualité de l'emploi, nommée dans le contenu
-  de la dimension. La série INSEE compte 12 valeurs sur 2010-2023 et s'arrête en 2023, alors que la satisfaction
-  dans la vie du même jeu va jusqu'en 2025. La variante de l'OCDE (2013, 2018, 2023) vaut 7,08 en 2023 (extrait
-  du robot M04).
+  de la dimension. La série INSEE compte 12 valeurs, de 2010 à 2020 puis en 2023 (2021 et 2022 manquent), et s'arrête
+  en 2023, alors que la satisfaction dans la vie du même jeu va jusqu'en 2025. La variante de l'OCDE (2013, 2018,
+  2023) vaut 7,08 en 2023 (extrait du robot M04).
 variantes:
 - serie_id: DS_SRCV_SATISFACTION?AGE=Y16T24&DECILE_NIVVIE=_T&EDUC=_T&EMPSTA_ENQ=_T&FREQ=A&GEO=FRANCE-FM&HLTH_GALI=_T&HLTH_SPH=_T&NATIONALITY_TYPE=_T&NB_DIFF=_T&PCS=_Z&SATISFNOTE=_T&SEX=F&SRCV_MEASURE=TRAVSATISF&TPH=_T&TSH=_T
   source: INSEE Melodi
@@ -495,5 +495,7 @@ socle_v1:
 qualite:
 - enquete_metropole
 - annees_manquantes
-notes: 'Les deux années manquantes de 2010-2023 n''ont pas pu être identifiées (API Melodi refusée à WebFetch) :
-  non trouvé.'
+notes: 'Valeurs lues par le robot (15/10/2026, melodi_travail_satisfaction_travail.csv) : 7,4 (2010-2012), 7,0 (2020),
+  7,1 (2023) ; 2021, 2022, 2024 et 2025 sans valeur (statut « L ») : les années manquantes de 2010-2023 sont 2021
+  et 2022. Une série France hors Mayotte limitée à 2023 figure au catalogue des non-candidates (successeur possible,
+  audit M06 §6).'

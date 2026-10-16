@@ -758,6 +758,8 @@ socle_v1:
 qualite:
 - serie_retropolee_insee
 - inclut_chomage_partiel
-- libelle_melodi_ambigu
-notes: 'Libellé Melodi « part du sous-emploi, du sexe et de l''âge dans l''emploi total » : pour le total, la valeur
-  est le taux de sous-emploi (tableau t401 de l''INSEE), à confirmer au premier passage du robot.'
+notes: 'Unité confirmée par la collecte ciblée du robot (15/10/2026, TRA-3, melodi_travail_taux_sous_emploi.csv
+  et melodi_travail_controles.csv) : le total est compris entre les taux des femmes et des hommes (4,4 % en 2025,
+  contre 6,1 % et 2,8 %) et égal à la moyenne annuelle de la série BDM 011818670 et au recalcul nombre / emploi
+  à 0,05 point près sur 2003-2025 : c''est un taux, pas une répartition. Valeurs : 6,6 % (2000), 5,8 % (2019), 9,5
+  % (2020, chômage partiel), 4,4 % (2025).'

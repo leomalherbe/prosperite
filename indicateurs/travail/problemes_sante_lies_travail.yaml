@@ -1,0 +1,354 @@
+id: problemes_sante_lies_travail
+libelle: Personnes déclarant un problème de santé causé ou aggravé par le travail
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: problemes_sante_travail
+variante_principale: oui
+definition: Part des personnes de 15 à 64 ans en emploi ou l'ayant été qui déclarent avoir souffert d'au moins un
+  problème de santé causé ou aggravé par le travail au cours des douze derniers mois, d'après le module ad hoc de
+  l'enquête sur les forces de travail (Eurostat).
+unite: '% des personnes en emploi ou l''ayant été'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: hsw_pb1 (module ad hoc « accidents du travail et problèmes de santé liés au travail »), classe d'âge
+  15-64 ans
+source_serie_id: hsw_pb1?freq=A&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&age=Y65-74&isced11=TOTAL&unit=PC_EMP_PREEMP&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hsw_pb1?geo=FR&sex=T&age=Y15-64&isced11=TOTAL&unit=PC_EMP_PREEMP
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hsw_pb1/default/table?lang=fr
+frequence: irreguliere
+premiere_annee: 2007
+derniere_annee: 2020
+nb_points_depuis_2000: 3
+geo: FR
+eligibilite_longlist: a_verifier
+ligne_id: estat-021751
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list sante (règle sante_travail, autre_dimension:travail) : santé au travail
+  rattachée à travail par D39 ; oubli O1 de l''audit M06'
+raccordement: 'non : la vague 2007 (48,9 %, « définition différente ») n''est pas comparable à 2013 (12,4 %) et
+  2020 (8,3 %), sans drapeau entre elles ; lecture en niveau de la vague 2020 pour le socle'
+incontournable: non
+recommandation: retenir
+motif_recommandation: Seule mesure des atteintes à la santé causées par le travail hors accidents et maladies reconnus,
+  citée par le cadre Qualité de vie, observée en 2007, 2013 et 2020 (D17), dont seules les vagues 2013 et 2020 sont
+  comparables (audit M06 O1).
+note_pertinence: 'Les problèmes de santé liés au travail (troubles musculo-squelettiques, stress, dépression ou
+  anxiété) mesurent le résultat des expositions, que les maladies professionnelles reconnues ne saisissent qu''à
+  travers la reconnaissance. La part passe de 48,9 % en 2007 (définition différente) à 12,4 % en 2013 puis 8,3 %
+  en 2020 (collecte ciblée du robot, 15/10/2026) : le niveau de 2007 n''est pas comparable. Les ventilations par
+  gravité et par type de problème (hsw_pb2 à hsw_pb5) restent en variantes.'
+variantes:
+- serie_id: hsw_pb1?freq=A&sex=T&age=Y15-74&isced11=TOTAL&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021749
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb1?freq=A&sex=M&sex=F&age=Y15-74&isced11=TOTAL&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021750
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb1?freq=A&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021752
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb2?freq=A&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&isced11=TOTAL&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021755
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb2?freq=A&sex=T&age=Y15-74&isced11=TOTAL&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021753
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb2?freq=A&sex=M&sex=F&age=Y15-74&isced11=TOTAL&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021754
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb2?freq=A&sex=T&age=Y15-74&isced11=ED0-2&isced11=ED3_4&isced11=ED5-8&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021756
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb4?freq=A&lev_limit=NONE&age=Y15-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021760
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb4?freq=A&lev_limit=NONE&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021759
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb4?freq=A&lev_limit=SEV&age=Y15-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021762
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb4?freq=A&lev_limit=SEV&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021761
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb4?freq=A&lev_limit=SOME&age=Y15-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021764
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb4?freq=A&lev_limit=SOME&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021763
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=CARDIO_VASC&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021767
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=CARDIO_VASC&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021765
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=CARDIO_VASC&sex=M&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021766
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=HEAD_EYE&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021769
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=HEAD_EYE&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021768
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=INFECT&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021772
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=INFECT&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021770
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=INFECT&sex=F&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021771
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=MUSC_SKE&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&age=Y65-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021775
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=MUSC_SKE&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021773
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=MUSC_SKE&sex=M&sex=F&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021774
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=OTH&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021778
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=OTH&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021776
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=OTH&sex=M&sex=F&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021777
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=PULMO&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021781
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=PULMO&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021779
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=PULMO&sex=M&sex=F&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021780
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=STRESS&sex=T&age=Y15-34&age=Y15-64&age=Y35-54&age=Y35-64&age=Y55-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021786
+  eligible: a_verifier
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=STRESS&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021784
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=STRESS&sex=M&sex=F&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021785
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb3?freq=A&duration=TOTAL&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021757
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb3?freq=A&duration=TOTAL&age=Y15-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021758
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=STOMACH&sex=T&age=Y15-74&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021782
+  eligible: non
+  longlist: sante
+- serie_id: hsw_pb5?freq=A&hlth_pb=STOMACH&sex=T&age=Y15-64&age=Y35-64&unit=PC_EMP_PREEMP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat hsw_pb1 (sexe, diplôme, 15-74 ans), hsw_pb2 et hsw_pb3 (absence au travail et sa durée), hsw_pb4
+    (limitations dans les activités quotidiennes), hsw_pb5 (type de problème : troubles musculo-squelettiques, stress,
+    dépression ou anxiété…)'
+  ligne_id: estat-021783
+  eligible: non
+  longlist: sante
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- serie_irreguliere_D17
+- definition_differente_2007
+- module_ad_hoc
+- trajectoire_non_comparable_2007
+notes: 'Série principale prise dans le paquet des classes d''âge (ligne estat-021751 de la long-list sante : âges
+  15-34, 15-64, 35-54, 35-64, 55-64, 65-74) ; modalité retenue : 15-64 ans (url_api). Valeurs et drapeaux lus dans
+  docs/sources/series/eurostat_travail_hsw_pb1.csv (robot, 15/10/2026). Ventilations de second rang (profession,
+  statut, taille, temps de travail, pays de naissance, travail à domicile : hsw_pb7 à hsw_pb13) écartées en bloc.'

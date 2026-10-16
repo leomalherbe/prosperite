@@ -25,14 +25,15 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-025255
 hors_longlist: non
-raccordement: non
+raccordement: 'a_etudier : saut de 33,4 % (2020) à 42,3 % (2022) au changement de définition, pas de valeur en 2021'
 incontournable: non
 recommandation: retenir
 motif_recommandation: Mesure du retour à l'emploi des chômeurs, complémentaire du chômage de longue durée, série
-  Eurostat 2011-2025 (14 points).
+  Eurostat 2011-2025 (14 points) dont le niveau saute au changement de définition de 2022.
 note_pertinence: 'Un chômage dont on sort vite pèse moins qu''un chômage durable : la probabilité de retrouver un
-  emploi en un an complète le taux de chômage. Les valeurs et drapeaux de la série n''ont pas pu être relus (refus
-  de l''outil, 429) ; la série des passages de l''emploi au chômage, du même jeu, n''a pas de valeur en 2021.'
+  emploi en un an complète le taux de chômage. Les valeurs vont de 36,4 % (2011) à 33,4 % (2020), puis 42,3 % (2022)
+  et 41,3 % (2025), sans valeur en 2021 (collecte ciblée du robot, 15/10/2026). Le saut de 2022 coïncide avec le
+  drapeau « définition différente » : la trajectoire n''est lisible qu''après raccordement.'
 variantes:
 - serie_id: lfsi_long_e03?freq=A&deg_urb=TOTAL&age=Y15-74&unit=PC_EMP&geo=FR
   source: Eurostat
@@ -90,6 +91,9 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_non_lus
-- pas_de_valeur_2021_a_verifier
-notes: ''
+- pas_de_valeur_2021
+- rupture_2014
+- rupture_2024
+- definition_differente_2022_2025
+notes: 'Drapeaux lus dans docs/sources/series/eurostat_travail_lfsi_long_a.csv (robot, 15/10/2026) : « b » 2014,
+  « d » 2022-2025, « bd » 2024, pas de valeur en 2021 (audit M06 F7).'

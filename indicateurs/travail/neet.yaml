@@ -32,8 +32,8 @@ motif_recommandation: Concept nommé dans le contenu de la dimension et cité pa
   d'une cible européenne de 9 % en 2030 pour les 15-29 ans, en série annuelle INSEE de 2003 à 2025 (23 points).
 note_pertinence: 'Le taux de NEET mesure les jeunes à l''écart à la fois de l''emploi et de la formation : c''est
   l''indicateur d''insertion des jeunes retenu par l''Union. La cible européenne de 9 % en 2030 fournit une borne
-  officielle. Le libellé Melodi de la mesure est ambigu (« part du sexe et de l''âge dans le nombre de jeunes NEET
-  ») ; le tableau t310 de l''INSEE la présente comme la part de jeunes NEET, à confirmer sur les valeurs.'
+  officielle. La série vaut 10,8 % en 2003, 14,2 % en 2015 et 12,9 % en 2025, à 0,1 point près des séries de l''INSEE
+  (BDM) et d''Eurostat, chômeurs compris (collecte ciblée du robot, 15/10/2026).'
 variantes:
 - serie_id: '011818639'
   source: INSEE BDM
@@ -359,13 +359,162 @@ variantes:
     lfsi_neet_a_h, edat_lfse_20, edat_lfse_23, edat_lfse_28), OCDE 2_4'
   ligne_id: melodi-005376
   eligible: oui
+- serie_id: sdg_08_20?freq=A&sex=T&age=Y15-29&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-002088
+  eligible: oui
+  longlist: education
+- serie_id: sdg_08_20?freq=A&sex=M&sex=F&age=Y15-29&unit=PC_POP&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-002089
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_22?freq=A&sex=T&age=Y15-29&training=NO_FE_NO_NFE&wstatus=NEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-002444
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_22?freq=A&sex=M&sex=F&age=Y15-29&training=NO_FE_NO_NFE&wstatus=NEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-002445
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_22?freq=A&sex=T&age=Y15-24&age=Y18-24&age=Y18-29&training=NO_FE_NO_NFE&wstatus=NEMP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-002446
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_29?freq=A&sex=T&age=Y15-34&wstatus=NEMP&deg_urb=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-005062
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_29?freq=A&sex=M&sex=F&age=Y15-34&wstatus=NEMP&deg_urb=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-005063
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_29?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=NEMP&deg_urb=TOTAL&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-005064
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_21?freq=A&sex=T&age=Y15-34&wstatus=NEMP&training=NO_FE_NO_NFE&isced11=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-024924
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_21?freq=A&sex=M&sex=F&age=Y15-34&wstatus=NEMP&training=NO_FE_NO_NFE&isced11=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-024925
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_21?freq=A&sex=T&age=Y15-17&age=Y15-19&age=Y15-24&age=Y15-29&age=Y18-24&age=Y18-29&age=Y20-24&age=Y20-34&age=Y25-29&age=Y25-34&age=Y30-34&wstatus=NEMP&training=NO_FE_NO_NFE&isced11=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-024926
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_21?freq=A&sex=T&age=Y15-34&wstatus=NEMP&training=NO_FE_NO_NFE&isced11=ED0-2&isced11=ED3-8&isced11=ED3_4&isced11=ED34_44&isced11=ED35_45&isced11=ED5-8&isced11=NRP&unit=PC&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-024927
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_35?freq=A&unit=PC&sex=T&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-34&c_birth=TOTAL&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-053256
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_35?freq=A&unit=PC&sex=M&sex=F&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-34&c_birth=TOTAL&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-053257
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_35?freq=A&unit=PC&sex=T&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-24&age=Y15-29&age=Y25-34&c_birth=TOTAL&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-053258
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_36?freq=A&unit=PC&sex=T&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-34&citizen=TOTAL&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-053261
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_36?freq=A&unit=PC&sex=M&sex=F&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-34&citizen=TOTAL&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-053262
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_36?freq=A&unit=PC&sex=T&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-24&age=Y15-29&age=Y25-34&citizen=TOTAL&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'Eurostat (long-list education) : NEET de l''ODD européen (sdg_08_20, 15-29 ans, 2003-2025) et taux NEET
+    par âge, sexe, diplôme (edat_lfse_21, 22), totaux des tables par urbanisation, pays de naissance et nationalité
+    (edat_lfse_29, 35, 36)'
+  ligne_id: estat-053263
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null
   type_justification: null
   justification: ''
 qualite:
-- libelle_melodi_ambigu
-- unite_a_confirmer
-notes: 'Variantes de contrôle : BDM 011818639 (même définition, trimestrielle, 2003-2026) et Eurostat lfsi_neet_a
-  (15-29 ans, 2003-2025) ; l''ODD national 8.i4 et l''OCDE portent sur les 15-24 ans.'
+- code_empsta_melodi_inexact
+notes: 'Contrôle TRA-3 (robot, 15/10/2026, melodi_travail_neet.csv et melodi_travail_controles.csv) : la mesure
+  PT_SEX_AGE_IN_NEET est un taux (total compris entre les femmes, 13,2 %, et les hommes, 12,7 %, en 2025), égal
+  à la moyenne annuelle de la série BDM 011818639 à 0,1 point près sur 2003-2025 et au recalcul nombre / population
+  des 15-29 ans ; le nombre de NEET (1 528 milliers en 2025) est celui d''Eurostat lfsi_neet_a, qui compte les chômeurs.
+  Le code EMPSTA=3 (« Inactif ») porté par toutes les lignes NEET de Melodi est donc un artefact de codage (audit
+  M06 §3), sans effet sur le champ. Variantes : BDM 011818639 (trimestrielle, 2003-2026), Eurostat lfsi_neet_a et
+  sdg_08_20 (indicateur ODD, 15-29 ans, 2003-2025, mêmes valeurs ; ligne de la long-list education, audit O3) ;
+  l''ODD national 8.i4 et l''OCDE portent sur les 15-24 ans.'

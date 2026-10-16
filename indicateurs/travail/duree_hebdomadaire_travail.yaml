@@ -29,10 +29,12 @@ raccordement: non
 incontournable: non
 recommandation: ecarter
 motif_recommandation: 'Sens ambigu : une durée moyenne plus courte peut traduire plus de temps libre comme plus
-  de temps partiel subi, alors que les longues durées et le sous-emploi sont mesurés par des fiches retenues.'
+  de temps partiel subi, et les longues durées comme le sous-emploi sont mesurés par des fiches retenues, alors
+  que le cadre Qualité de vie d''Eurostat lui donne le sens « bas ».'
 note_pertinence: 'La durée moyenne mélange deux phénomènes opposés pour le bien-être : le surtravail et le sous-emploi.
-  Le cadre Qualité de vie la cite, mais ses extrêmes sont mieux lus par les fiches longues_durees_travail et taux_sous_emploi.
-  Les valeurs vont de 37,2 heures (2000) à 36,8 heures (2025) (API Eurostat, 14/10/2026).'
+  Le cadre Qualité de vie la cite avec le sens « bas » (choix contraire, audit M06 J6), mais ses extrêmes sont mieux
+  lus par les fiches longues_durees_travail et taux_sous_emploi. Les valeurs vont de 37,2 heures (2000) à 36,8 heures
+  (2025), avec des ruptures en 2003, 2014, 2021 et 2024 (collecte ciblée du robot, 15/10/2026).'
 variantes:
 - serie_id: '011793626'
   source: INSEE BDM

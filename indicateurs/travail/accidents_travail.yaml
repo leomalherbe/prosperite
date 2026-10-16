@@ -178,5 +178,7 @@ qualite:
 - champ_regime_general
 - pas_de_valeur_2020
 - serie_administrative
-notes: 'Champ : salariés du régime général (salariés agricoles et fonctionnaires a priori hors champ, à vérifier).
-  Accidents de trajet en variante (même source).'
+notes: 'Champ (description du jeu de sinistralité, sortie du robot cnam_ameli__sinistralite_naf1_schema.json) :
+  salariés du régime général, y compris indépendants ayant souscrit l''assurance volontaire et certains agents contractuels
+  publics ; hors régime agricole et fonctions publiques. Accidents de trajet en variante (même source). Le jeu des
+  décès au travail sert à la fiche accidents_travail_mortels (D40).'

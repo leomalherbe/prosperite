@@ -1,6 +1,6 @@
 # spf_odisse / ods_catalogue_json
 # URL : https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets?limit=2
-# Vérifié le 2026-10-13T14:46:01Z — HTTP 200 — application/json; charset=utf-8 — 20407 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-16T07:57:00Z — HTTP 200 — application/json; charset=utf-8 — 21148 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 388,
@@ -18,10 +18,17 @@
      "type": "date"
     },
     {
-     "name": "sexe",
+     "name": "ptsm",
      "description": null,
      "annotations": {},
-     "label": "﻿Sexe",
+     "label": "PTSM (projet territorial de santé mentale)",
+     "type": "text"
+    },
+    {
+     "name": "region",
+     "description": null,
+     "annotations": {},
+     "label": "Région",
      "type": "text"
     },
     {
@@ -32,177 +39,49 @@
      "type": "text"
     },
     {
-     "name": "statut_du_travailleur",
+     "name": "sexe",
      "description": null,
      "annotations": {},
-     "label": "Statut du travailleur",
+     "label": "Sexe",
      "type": "text"
     },
     {
-     "name": "nombre_de_travailleurs",
+     "name": "nombre_de_sejours",
      "description": null,
      "annotations": {},
-     "label": "Nombre de travailleurs",
-     "type": "int"
-    },
-    {
-     "name": "nombre_de_travailleurs_exposes_herbicides",
-     "description": null,
-     "annotations": {},
-     "label": "Nombre de travailleurs exposés - Herbicides",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_inf_herbicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne inf. - Herbicides",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_sup_herbicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne sup. - Herbicides",
-     "type": "int"
-    },
-    {
-     "name": "proportion_de_travailleurs_exposes_herbicides",
-     "description": null,
-     "annotations": {},
-     "label": "Proportion de travailleurs exposés - Herbicides (%)",
+     "label": "Nombre de séjours pour geste auto-infligé",
      "type": "double"
     },
     {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_herbicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne inf. - Herbicides (%)",
+     "name": "taux_brut",
+     "description": "Pour 100 000 habitants",
+     "annotations": {
+      "decimals": 2
+     },
+     "label": "Taux brut d'hospitalisation pour geste auto-infligé",
      "type": "double"
     },
     {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_herbicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne sup. - Herbicides (%)",
-     "type": "double"
-    },
-    {
-     "name": "nombre_de_travailleurs_exposes_insecticides",
-     "description": null,
-     "annotations": {},
-     "label": "Nombre de travailleurs exposés - Insecticides",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_inf_insecticides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne inf. - Insecticides",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_sup_insecticides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne sup. - Insecticides",
-     "type": "int"
-    },
-    {
-     "name": "proportion_de_travailleurs_exposes_insecticides",
-     "description": null,
-     "annotations": {},
-     "label": "Proportion de travailleurs exposés - Insecticides (%)",
-     "type": "double"
-    },
-    {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_insecticides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne inf. - Insecticides (%)",
-     "type": "double"
-    },
-    {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_insecticides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne sup. - Insecticides (%)",
-     "type": "double"
-    },
-    {
-     "name": "nombre_de_travailleurs_exposes_fongicides",
-     "description": null,
-     "annotations": {},
-     "label": "Nombre de travailleurs exposés - Fongicides",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_inf_fongicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne inf. - Fongicides",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_sup_fongicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne sup. - Fongicides",
-     "type": "int"
-    },
-    {
-     "name": "proportion_de_travailleurs_exposes_fongicides",
-     "description": null,
-     "annotations": {},
-     "label": "Proportion de travailleurs exposés - Fongicides (%)",
-     "type": "double"
-    },
-    {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_fongicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne inf. - Fongicides (%)",
-     "type": "double"
-    },
-    {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_sup_fongicides",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne sup. - Fongicides (%)",
-     "type": "double"
-    },
-    {
-     "name": "nombre_de_travailleurs_exposes_autres_ppp",
-     "description": null,
-     "annotations": {},
-     "label": "Nombre de travailleurs exposés - Autres PPP",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_inf_autres_ppp",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne inf. - Autres PPP",
-     "type": "int"
-    },
-    {
-     "name": "intervalle_de_sensibilite_borne_sup_autres_ppp",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité Borne sup. - Autres PPP",
-     "type": "int"
-    },
-    {
-     "name": "proportion_de_travailleurs_exposes_autres_ppp",
-     "description": null,
-     "annotations": {},
-     "label": "Proportion de travailleurs exposés - Autres PPP (%)",
-     "type": "double"
-    },
-    {
-     "name": "intervalle_de_sensibilite_de_la_proportion_borne_inf_autres_ppp",
-     "description": null,
-     "annotations": {},
-     "label": "Intervalle de sensibilité de la proportion Borne inf. - Autres PPP (%)",
+     "name": "taux_standardise",
+     "description": "Pour 100 000 habitants",
+     "annotations": {
+      "decimals": 2
+     },
+     "label": "Taux standardisé d'hospitalisation pour geste auto-infligé",
      "type": "double"
     }
+   ],
+   "dataset_id": "gestes-auto-infliges-hospitalisations-infradepartemental",
+   "dataset_uid": "da_vhz1bg",
+   "has_records": true,
+   "features": [
+    "analyze",
+    "timeserie"
+   ],
+   "attachments": [],
+   "alternative_exports": [],
+   "data_visible": true,
+   "metas": {
+    "default": {
+     "title": "Gestes auto-infligés : Hospitalisations (infradépartemental)",
+     "description": "<p>Les indicateurs de la surveillance des hospitalisations pour geste auto-infligé, comprenant les tentatives de suicide et les automutilations, proviennent du « Programme de médicalisation des systèmes d’information en médecine, chirurgie, obstétrique et odontologie (PMSI-MCO) » mis à disposition dans le Système national des données de santé (SNDS). </p><p>Le PMSI MCO recueille les données médico-administratives exhaustives relatives aux séjours dans tous les établissements publics et privés de santé de courte durée de France (Hexagone + DROM). Les données sont disponibles par classe d'âge, sexe et projet territorial de santé mentale (PTSM).</p><p>Les taux bruts sont rapportés à la population présente en France fournie par l’Insee via les données du recensement pour chaque PTSM hors Mayotte pour chacune des années considérées (pour les années ultérieures à 2021, les données du recensement 2021 sont utilisées étant les dernières à disposition). Pour Mayotte, les taux bruts sont rapportés à la population présente fournie par l’Insee via les estimations localisées de population pour chacune des années considérées (pour les années ultérieures à 2021, les données 2021 sont utilisées afin d'assurer une comparaison avec les autres PTSM). Les taux standardisés sont calculés à partir des données du recensement  de la France (Hexagone + DROM hors Mayotte) pour 2021 et des estimations localisées de population 2021 pour Mayotte. Saint-Martin et Saint-Barthélemy ne sont pas considérés.</p><p>Les indicateurs sont mis à jour annuellement et disponibles à partir de l’année 2019.</p><p><b>Limites de l’indicateur : </b></p><p>Les indicateurs sont basés sur les séjours hospitaliers et non les patients eux-mêmes pouvant faire l’objet de plusieurs hospitalisations pour geste auto-infligé au cours d’une même année.</p><p><span style=\"font-family: inherit;\">Les séjours au sein des établissements psychiatriques étant recueillis dans une autre base (Recueil d’informations médicalisé pour la psychiatrie ou RIM-P), ils ne sont pas considérés dans ces indicateurs. Ils peuvent donc expliquer des disparités territoriales due à l’offre de soins et conduisent à une sous-estimation des taux d’hospitalisation pour geste auto-infligé.</span></p><p><b style=\"font-family: inherit;\">Caractéristique des indicateurs : </b></p><p>La zone géographique correspond au PTSM de résidence des patients. </p><p>Les indicateurs ont été déclinés selon 5 classes d’âge : 0-17 ans ; 18-24 ans ; 25-44 ans ; 45-64 ans et 65 ans et plus.</p><p><b style=\"font-family: inherit;\">Algorithme d’identification : </b></p><p>L'acte de geste auto-infligé est défini dans le PMSI-MCO comme un empoisonnement ou une blessure traumatique qu'un individu s'inflige délibérément, regroupés sous les codes X60 à X84 dans le sous-chapitre « blessures auto-infligées » du chapitre XX de la CIM-10 consacré aux causes externes de mortalité et de morbidité. Cet indicateur intègre à la fois les blessures auto-infligées en rapport avec une volonté de mourir (tentatives de suicide) mais aussi celles provoquées pour une autre raison (automutilations par exemple) sans possibilité de les distinguer. </p><p>Tous les séjours avec un diagnostic associé pour geste auto-infligé ont été sélectionnés, un geste auto-infligé ne pouvant être codé en diagnostic principal. Les codes CIM-10 sélectionnés sont les suivants : </p><p>•<span style=\"white-space:pre\"> </span>X60-X64 : Intoxication médicamenteuse volontaire ;<br><span style=\"font-family: inherit;\">•</span><span style=\"font-family: inherit; white-space: pre;\"> </span><span style=\"font-family: inherit;\">X65 : Auto-intoxication par l’alcool et l’exposition à l’alcool ;<br></span><span style=\"font-family: inherit;\">•</span><span style=\"font-family: inherit; white-space: pre;\"> </span><span style=\"font-family: inherit;\">X66-X69 : Autres auto-intoxications, soit auto-intoxications au gaz, aux produits chimiques ou aux solvants ;<br></span><span style=\"font-family: inherit;\">•</span><span style=\"font-family: inherit; white-space: pre;\"> </span><span style=\"font-family: inherit;\">X70 : Lésio

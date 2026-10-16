@@ -24,10 +24,21 @@ Contrôles (erreurs bloquantes, code de sortie 1) :
    (lecture des `docs/validation/preselection_*_lignes.csv`, R1).
 6. **Tableau de validation** (si `docs/validation/validation_<dimension>.csv` existe) : une ligne par fiche,
    colonnes attendues, valeurs cohérentes avec les fiches, `decision_leo` vide ou dans la liste admise.
+7. **Socle proposé** (D41, méthode 33 v1.3) : `socle_propose: oui|non` obligatoire sur toute variante
+   principale ; `oui` réservé aux variantes principales recommandées `retenir` ; toute variante principale
+   `incontournable: oui` est `socle_propose: oui` ; 8 fiches `oui` au plus par dimension. Pendant leurs
+   corrections, `logement_cadre_vie`, `sante` et `education` peuvent encore ne pas porter le champ
+   (avertissement). Avertissement si une fiche non principale porte `incontournable: oui` (D38 d).
+
+Avertissements sur les lignes renvoyées (D38 a, D46), à partir des `docs/validation/preselection_*_lignes.csv` :
+- toute ligne renvoyée à la dimension par `autre_dimension:<dim>` qu'aucune règle de la dimension ne reprend
+  (fiche, variante, écart en bloc ou renvoi motivé vers une troisième dimension) ;
+- toute ligne retenue (fiche ou variante) dans une dimension et écartée en bloc dans une autre.
 
 Usage :
     python scripts/verifier_fiches.py --dimension liens_bien_etre
     python scripts/verifier_fiches.py --dimension liens_bien_etre --tableau   # (ré)écrit le tableau de validation
+    python scripts/verifier_fiches.py --lignes-renvoyees                      # bilan des renvois, par couple
 Les décisions de Léo déjà saisies dans le tableau sont conservées lors de la réécriture.
 """
 
@@ -63,11 +74,19 @@ FACULTATIFS = {
     "eligibilite_longlist": {"oui", "a_verifier", "non", "hors_longlist"}, "ligne_id": "texte_vide",
     "hors_longlist": OUI_NON, "rattachement_propose": "texte", "preuve": "texte",
     "statut_serie": {"disponible", "a_calculer"}, "annee_reference": {"observation", "edition"},
+    "socle_propose": OUI_NON,
 }
-COLONNES_TABLEAU = ["id", "libelle", "famille", "variante_principale", "definition_courte", "sens", "unite", "source",
-                    "serie_id", "periode", "type", "declaratif", "composite", "incontournable", "recommandation",
-                    "motif", "decision_leo", "commentaire_leo"]
+COLONNES_TABLEAU = ["id", "libelle", "sous_theme", "famille", "variante_principale", "definition_courte", "sens", "unite",
+                    "source", "serie_id", "periode", "type", "declaratif", "composite", "incontournable",
+                    "socle_propose", "recommandation", "motif", "decision_leo", "commentaire_leo"]
+# Format du tableau avant la méthode v1.3 (sans sous_theme ni socle_propose) : admis, avec un avertissement,
+# pour les dimensions encore en correction (DIMENSIONS_SOCLE_TRANSITOIRE).
+COLONNES_TABLEAU_V12 = [c for c in COLONNES_TABLEAU if c not in ("sous_theme", "socle_propose")]
 DECISIONS_LEO = {"", "retenu", "retenu_socle", "ecarte", "a_discuter"}
+SOCLE_MAX = 8                       # D41 : 8 fiches socle_propose: oui au plus par dimension
+# D41 : dimensions dont les corrections (qui posent socle_propose) ne sont pas encore fusionnées ; l'absence du
+# champ y est un avertissement. À vider une fois ces corrections fusionnées.
+DIMENSIONS_SOCLE_TRANSITOIRE = {"logement_cadre_vie", "sante", "education"}
 _RE_ID = re.compile(r"^[a-z][a-z0-9_]*$")
 _RE_RACCORDEMENT = re.compile(r"^(oui|non|a_etudier)(?: : (\S.*))?$", re.DOTALL)
 _RE_FIN_PHRASE = re.compile(r"[.!?…](?=\s+[A-ZÀÂÉÈÊÎÔÛÇ«])")
@@ -304,6 +323,120 @@ def controler_lignes_croisees(racine: Path, dimension: str, rapport: Rapport) ->
     rapport.compteurs["lignes_prises_ailleurs"] = n
 
 
+def lire_preselections(racine: Path) -> dict[str, pd.DataFrame]:
+    """Les `docs/validation/preselection_<dim>_lignes.csv` du dépôt, par dimension."""
+    dossier = racine / "docs" / "validation"
+    return {chemin.name[len("preselection_"):-len("_lignes.csv")]: pd.read_csv(chemin, dtype=str, keep_default_na=False)
+            for chemin in sorted(dossier.glob("preselection_*_lignes.csv"))}
+
+
+def _statut_reprise(decisions: list[str], origine: str) -> str:
+    """Traitement, par la dimension destinataire, d'une ligne qui lui est renvoyée (D38 a, D46)."""
+    if "fiche" in decisions:
+        return "fiche"
+    if any(d.startswith("variante_de:") for d in decisions):
+        return "variante"
+    if "ecarte_en_bloc" in decisions:
+        return "ecartee"
+    relais = sorted({d.split(":", 1)[1] for d in decisions if d.startswith("autre_dimension:")} - {origine})
+    if relais:
+        return "relayee:" + relais[0]
+    return "orpheline"
+
+
+def lignes_renvoyees(preselections: dict[str, pd.DataFrame]) -> pd.DataFrame:
+    """Une ligne par renvoi `autre_dimension:<destination>` : origine, destination, ligne et statut de reprise
+    (`fiche`, `variante`, `ecartee`, `relayee:<dim>` = renvoyée plus loin par une règle motivée, `orpheline`)."""
+    decisions: dict[str, dict[str, list[str]]] = {}
+    for dim, df in preselections.items():
+        par_ligne: dict[str, list[str]] = defaultdict(list)
+        for lid, dec in zip(df["ligne_id"], df["decision"]):
+            par_ligne[lid].append(dec)
+        decisions[dim] = par_ligne
+    rangs = []
+    for origine, df in preselections.items():
+        renvois = df[df["decision"].str.startswith("autre_dimension:")]
+        for r in renvois.to_dict("records"):
+            destination = r["decision"].split(":", 1)[1]
+            statut = _statut_reprise(decisions.get(destination, {}).get(r["ligne_id"], []), origine)
+            rangs.append({"origine": origine, "destination": destination, "ligne_id": r["ligne_id"],
+                          "longlist": r["longlist"], "groupe": r["groupe"], "serie_id": r["serie_id"],
+                          "libelle": r["libelle"], "statut": statut})
+    colonnes = ["origine", "destination", "ligne_id", "longlist", "groupe", "serie_id", "libelle", "statut"]
+    return pd.DataFrame(rangs, columns=colonnes)
+
+
+def lignes_retenues_et_ecartees(preselections: dict[str, pd.DataFrame]) -> list[dict]:
+    """Lignes retenues (fiche ou variante) dans une dimension et écartées en bloc dans une autre (D46)."""
+    usages: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
+    for dim, df in preselections.items():
+        for lid, dec, groupe in zip(df["ligne_id"], df["decision"], df["groupe"]):
+            usages[lid].append((dim, dec, groupe))
+    conflits = []
+    for lid, us in usages.items():
+        retenues = [u for u in us if u[1] == "fiche" or u[1].startswith("variante_de:")]
+        ecartees = [u for u in us if u[1] == "ecarte_en_bloc"]
+        for dim_r, _, groupe_r in retenues:
+            for dim_e, _, groupe_e in ecartees:
+                if dim_r != dim_e:
+                    conflits.append({"ligne_id": lid, "retenue_dans": dim_r, "groupe_retenu": groupe_r,
+                                     "ecartee_dans": dim_e, "groupe_ecarte": groupe_e})
+    return conflits
+
+
+def controler_lignes_renvoyees(dimension: str, rapport: Rapport, preselections: dict[str, pd.DataFrame]) -> None:
+    """D46 : avertit pour chaque groupe de lignes renvoyées à la dimension et non reprises, et pour chaque ligne
+    retenue ici et écartée ailleurs (ou l'inverse)."""
+    renvois = lignes_renvoyees(preselections)
+    recues = renvois[renvois["destination"] == dimension]
+    orphelines = recues[recues["statut"] == "orpheline"]
+    for (origine, groupe), sel in orphelines.groupby(["origine", "groupe"], sort=True):
+        exemples = ", ".join(sel["ligne_id"].head(5)) + (" …" if len(sel) > 5 else "")
+        rapport.avertir("lignes renvoyées", f"{len(sel)} ligne(s) renvoyée(s) par {origine} (groupe {groupe}) non "
+                                            f"reprises (D46) : {exemples}")
+    rapport.compteurs["lignes_recues"] = len(recues)
+    rapport.compteurs["lignes_recues_orphelines"] = len(orphelines)
+    n = 0
+    for c in lignes_retenues_et_ecartees(preselections):
+        if c["retenue_dans"] == dimension:
+            rapport.avertir(c["groupe_retenu"], f"ligne {c['ligne_id']} retenue ici et écartée par "
+                                                f"{c['ecartee_dans']}/{c['groupe_ecarte']} (D46)")
+            n += 1
+        elif c["ecartee_dans"] == dimension:
+            rapport.avertir(c["groupe_ecarte"], f"ligne {c['ligne_id']} écartée ici et retenue par "
+                                                f"{c['retenue_dans']}/{c['groupe_retenu']} (D46)")
+            n += 1
+    rapport.compteurs["lignes_retenues_ecartees"] = n
+
+
+def controler_socle(fiches: list[dict], dimension: str, rapport: Rapport) -> None:
+    """D41 : socle proposé (une fiche principale par sous-thème, incontournables compris, 8 au plus) ; D38 d."""
+    for f in fiches:
+        if f.get("incontournable") == "oui" and f.get("variante_principale") != "oui":
+            rapport.avertir(f.get("id"), "incontournable: oui sur une fiche non principale (D38 d : porté par la "
+                                         "variante principale seulement)")
+    if dimension in DIMENSIONS_SOCLE_TRANSITOIRE and not any("socle_propose" in f for f in fiches):
+        rapport.avertir("socle", "champ socle_propose absent de toutes les fiches (D41) : admis tant que la "
+                                 "correction de la dimension n'est pas fusionnée")
+        rapport.compteurs["socle_propose"] = []
+        return
+    for f in fiches:
+        principale = f.get("variante_principale") == "oui"
+        socle = f.get("socle_propose")
+        if principale and socle is None:
+            rapport.erreur(f.get("id"), "champ socle_propose obligatoire sur une variante principale (D41)")
+        if socle == "oui" and not principale:
+            rapport.erreur(f.get("id"), "socle_propose: oui réservé aux variantes principales (D41)")
+        elif socle == "oui" and f.get("recommandation") != "retenir":
+            rapport.erreur(f.get("id"), "socle_propose: oui exige la recommandation « retenir » (D41)")
+        if principale and f.get("incontournable") == "oui" and socle != "oui":
+            rapport.erreur(f.get("id"), "variante principale incontournable : socle_propose: oui attendu (D41)")
+    socle = sorted(f.get("id") for f in fiches if f.get("socle_propose") == "oui")
+    if len(socle) > SOCLE_MAX:
+        rapport.erreur("socle", f"{len(socle)} fiches socle_propose: oui ({SOCLE_MAX} au plus par dimension, D41)")
+    rapport.compteurs["socle_propose"] = socle
+
+
 def controler_familles(fiches: list[dict], rapport: Rapport) -> None:
     familles = defaultdict(list)
     for f in fiches:
@@ -369,13 +502,14 @@ def ligne_tableau(f: dict) -> dict:
     periode = f"{f.get('premiere_annee')}-{f.get('derniere_annee')}"
     periode += f" ({nb} points, {f.get('frequence')})" if nb is not None else f" ({f.get('frequence')})"
     return {
-        "id": f.get("id"), "libelle": f.get("libelle"), "famille": f.get("famille"),
+        "id": f.get("id"), "libelle": f.get("libelle"), "sous_theme": f.get("sous_theme"), "famille": f.get("famille"),
         "variante_principale": f.get("variante_principale"), "definition_courte": premiere_phrase(f.get("definition", "")),
         "sens": f.get("sens"), "unite": f.get("unite"),
         "source": f"{f.get('source_organisme')} — {f.get('source_jeu')}", "serie_id": f.get("source_serie_id"),
         "periode": periode, "type": f.get("type"), "declaratif": f.get("declaratif"), "composite": f.get("composite"),
-        "incontournable": f.get("incontournable"), "recommandation": f.get("recommandation"),
-        "motif": f.get("motif_recommandation"), "decision_leo": "", "commentaire_leo": "",
+        "incontournable": f.get("incontournable"), "socle_propose": f.get("socle_propose", ""),
+        "recommandation": f.get("recommandation"), "motif": f.get("motif_recommandation"),
+        "decision_leo": "", "commentaire_leo": "",
     }
 
 
@@ -405,7 +539,12 @@ def controler_tableau(racine: Path, dimension: str, fiches: list[dict], rapport:
         rapport.avertir("tableau", f"{chemin.name} absent (option --tableau pour le produire)")
         return
     df = pd.read_csv(chemin, dtype=str, keep_default_na=False)
-    if list(df.columns) != COLONNES_TABLEAU:
+    colonnes = COLONNES_TABLEAU
+    if list(df.columns) == COLONNES_TABLEAU_V12 and dimension in DIMENSIONS_SOCLE_TRANSITOIRE:
+        rapport.avertir("tableau", "format antérieur à la méthode v1.3 (sans sous_theme ni socle_propose) : "
+                                   "relancer avec --tableau après la fusion des corrections")
+        colonnes = COLONNES_TABLEAU_V12
+    elif list(df.columns) != COLONNES_TABLEAU:
         rapport.erreur("tableau", f"colonnes inattendues : {list(df.columns)}")
         return
     if df["id"].duplicated().any():
@@ -418,7 +557,7 @@ def controler_tableau(racine: Path, dimension: str, fiches: list[dict], rapport:
         if f is None:
             continue
         attendu = ligne_tableau(f)
-        for col in COLONNES_TABLEAU[:-2]:
+        for col in colonnes[:-2]:
             if str(attendu[col]) != r[col]:
                 rapport.erreur(r["id"], f"tableau de validation : colonne {col} différente de la fiche "
                                         "(relancer avec --tableau)")
@@ -440,6 +579,7 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
         if n > 1 and fid in {f.get("id") for f in fiches}:
             rapport.erreur(fid, f"identifiant présent {n} fois dans indicateurs/")
     controler_familles(fiches, rapport)
+    controler_socle(fiches, dimension, rapport)
     if catalogues:
         series, jeux = index_catalogues(racine)
         paquets = index_paquets(series) if any(f.get("composantes") for f in fiches) else None
@@ -447,6 +587,7 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
             controler_catalogues(f, rapport, series, jeux, racine, paquets)
     controler_couverture(racine, dimension, fiches, rapport)
     controler_lignes_croisees(racine, dimension, rapport)
+    controler_lignes_renvoyees(dimension, rapport, lire_preselections(racine))
     controler_tableau(racine, dimension, fiches, rapport)
     reco = Counter(f.get("recommandation") for f in fiches)
     rapport.compteurs.update({
@@ -463,14 +604,59 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
     return rapport
 
 
+def rapport_lignes_renvoyees(racine: Path, limite: int = 0) -> list[str]:
+    """Bilan des renvois `autre_dimension:<dim>` par couple (origine → destination) : reprises par la destination
+    (fiche, variante, écart en bloc, renvoi plus loin) et lignes orphelines (D46), puis lignes retenues dans une
+    dimension et écartées dans une autre. `limite` > 0 : nombre maximal de lignes orphelines listées par couple."""
+    preselections = lire_preselections(racine)
+    renvois = lignes_renvoyees(preselections)
+    sorties = ["Lignes renvoyées (autre_dimension:<dim>) — origine → destination : renvoyées ; fiche, variante, "
+               "écartées, relayées ; orphelines"]
+    total = 0
+    for (origine, destination), sel in renvois.groupby(["origine", "destination"], sort=True):
+        statuts = sel["statut"].str.split(":").str[0].value_counts()
+        n_orph = int(statuts.get("orpheline", 0))
+        total += n_orph
+        sorties.append(f"{origine} → {destination} : {len(sel)} ; {int(statuts.get('fiche', 0))}, "
+                       f"{int(statuts.get('variante', 0))}, {int(statuts.get('ecartee', 0))}, "
+                       f"{int(statuts.get('relayee', 0))} ; {n_orph}")
+    for (origine, destination), sel in renvois[renvois["statut"] == "orpheline"].groupby(["origine", "destination"],
+                                                                                          sort=True):
+        sorties.append("")
+        sorties.append(f"Orphelines {origine} → {destination} ({len(sel)}) :")
+        for r in (sel.head(limite) if limite > 0 else sel).to_dict("records"):
+            sorties.append(f"  {r['ligne_id']} [{r['groupe']}] {r['serie_id'][:80]} — {r['libelle'][:90]}")
+        if 0 < limite < len(sel):
+            sorties.append(f"  … {len(sel) - limite} autre(s)")
+    conflits = lignes_retenues_et_ecartees(preselections)
+    sorties.append("")
+    sorties.append(f"Lignes retenues dans une dimension et écartées dans une autre : {len(conflits)}")
+    for c in conflits:
+        sorties.append(f"  {c['ligne_id']} : retenue par {c['retenue_dans']}/{c['groupe_retenu']}, écartée par "
+                       f"{c['ecartee_dans']}/{c['groupe_ecarte']}")
+    sorties.append("")
+    sorties.append(f"{total} ligne(s) orpheline(s), {len(conflits)} ligne(s) retenue(s) et écartée(s)")
+    return sorties
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    parser.add_argument("--dimension", required=True)
+    parser.add_argument("--dimension")
     parser.add_argument("--racine", default=str(RACINE))
     parser.add_argument("--tableau", action="store_true", help="(ré)écrire docs/validation/validation_<dim>.csv")
     parser.add_argument("--sans-catalogues", action="store_true", help="ne pas contrôler la présence dans les catalogues")
+    parser.add_argument("--lignes-renvoyees", action="store_true",
+                        help="bilan des lignes renvoyées par couple de dimensions et des lignes orphelines (D46)")
+    parser.add_argument("--limite", type=int, default=0,
+                        help="avec --lignes-renvoyees : nombre maximal de lignes orphelines listées par couple")
     args = parser.parse_args(argv)
     racine = Path(args.racine)
+    if args.lignes_renvoyees:
+        print("\n".join(rapport_lignes_renvoyees(racine, args.limite)))
+        if not args.dimension:
+            return 0
+    if not args.dimension:
+        parser.error("--dimension est obligatoire (sauf avec --lignes-renvoyees)")
     if args.tableau:
         fiches = [f for _, f in lire_fiches(racine, args.dimension)]
         print(f"tableau écrit : {ecrire_tableau(racine, args.dimension, fiches).relative_to(racine)}")

@@ -28,6 +28,7 @@ ligne_id: estat-002026
 hors_longlist: non
 raccordement: 'a_etudier : chute non signalée de 2015 (2,8 % en 2014, 1,2 % en 2015) et ruptures de 2020 et 2022'
 incontournable: non
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Indicateur du tableau de bord ODD de l'UE et du cadre Qualité de vie d'Eurostat, annuel de
   2008 à 2025 (1,9 % en 2008, 4,1 % en 2024, 3,7 % en 2025).
@@ -547,4 +548,6 @@ qualite:
 notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (sdg_03_60 et hlth_silc_21 : mêmes valeurs depuis 2008 ;
   hlth_silc_21 donne 1,7 % en 2004). Déclaratif « non » : fait déclaré (méthode §4). Variante hors long-list : baromètre
   DREES SA27 (renoncement à un examen ou traitement, 2019-2025, 11,3 % en 2025, calculé sur les distributions du
-  robot).'
+  robot). Champ (D15) : la série EU-SILC de la France provient de l''enquête SRCV de l''INSEE ; l''INSEE publie
+  en France métropolitaine (FM) l''indicateur national ODD 3.i7a, de mêmes valeurs que hlth_silc_08 de 2010 à 2023
+  (audit M06) : le champ de la série Eurostat (code FR) est à confirmer dans les métadonnées.'

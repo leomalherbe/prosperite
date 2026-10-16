@@ -4,8 +4,10 @@ dimension: sante
 sous_theme: mortalité
 famille: deces_pollution_air
 variante_principale: oui
-definition: Décès prématurés attribuables à l'exposition de la population aux particules fines PM2,5, pour 100 000
-  habitants (estimations de l'Agence européenne de l'environnement).
+definition: 'Décès prématurés attribuables à l''exposition de longue durée aux particules fines PM2,5, pour 100
+  000 habitants : seul l''excès de concentration au-delà de 5 µg/m³ en moyenne annuelle (ligne directrice de l''OMS
+  de 2021) est compté, avec une hausse du risque de décès de 8 % par 10 µg/m³ (estimations de l''Agence européenne
+  de l''environnement, même méthode pour toutes les années).'
 unite: décès prématurés pour 100 000 habitants
 sens: bas
 type: resultat
@@ -28,14 +30,19 @@ hors_longlist: non
 rattachement_propose: 'ligne de la long-list sante gardée ici : le décès attribuable est un résultat de santé, l''exposition
   subie à la pollution de l''air relève de logement_cadre_vie et les émissions de planete (R2) ; à confirmer au
   gel 2'
-raccordement: non
+raccordement: 'a_etudier : chute de 53 à 34 décès pour 100 000 de 2013 à 2014 (-36 %), sans drapeau ni explication
+  dans les métadonnées (sdg_11_52_esmsip2) ; pas de valeur en 2006 (pas de carte interpolée des PM2,5)'
 incontournable: non
+socle_propose: non
 recommandation: retenir
-motif_recommandation: Indicateur du tableau de bord ODD de l'UE, 18 années de 2005 à 2023, seule mesure annuelle
-  de la mortalité attribuable à l'environnement au catalogue.
+motif_recommandation: Indicateur du tableau de bord ODD de l'UE, 18 années de 2005 à 2023 (61 décès prématurés pour
+  100 000 habitants en 2005, 22 en 2023, 2006 absent), seule mesure annuelle de la mortalité attribuable à l'environnement
+  au catalogue.
 note_pertinence: La pollution de l'air est un facteur de risque environnemental majeur ; ce décompte traduit l'exposition
-  en décès et relie la dimension santé aux conditions de vie. Ce sont des estimations modélisées, révisées à chaque
-  édition. Santé publique France publie une estimation nationale ponctuelle (2016-2019) en variante.
+  en décès et relie la dimension santé aux conditions de vie. Le taux baisse de 61 à 22 pour 100 000 entre 2005
+  et 2023, mais la chute de 2013 à 2014 (de 53 à 34) n'est pas expliquée et peut tenir à la modélisation. Ce sont
+  des estimations révisées à chaque édition ; Santé publique France publie une estimation nationale ponctuelle (2016-2019)
+  en variante.
 variantes:
 - serie_id: hlth_cd_iap?freq=A&airpol=PM2_5&effect=PMD&unit=RT&geo=FR
   source: Eurostat
@@ -58,7 +65,12 @@ socle_v1:
   justification: ''
 qualite:
 - estimation_modelisee
-- valeurs_non_lues
-notes: 'Valeurs non lues : l''API Eurostat (sdg_11_52) a refusé la lecture (HTTP 429 du mandataire) le 14/10/2026
-  puis de nouveau le 15/10/2026 ; périodes lues dans la long-list (2005-2023, 18 points). Cible européenne du plan
-  « zéro pollution » sur les décès prématurés : à vérifier avant le socle des bornes.'
+- pas_de_valeur_2006
+- saut_2014_non_signale
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (sdg_11_52, PM2_5, PMD, RT, FR ; mise à jour du 09/12/2025)
+  : 61 (2005), 51 (2007), 54, 61, 62, 61, 55, 53 (2013), 34 (2014), 42, 36, 34, 34, 27, 24 (2020), 29, 30, 22 (2023),
+  aucun drapeau, comme à la lecture de l''audit M06. Métadonnées sdg_11_52_esmsip2 (21/05/2026) : contrefactuel
+  de 5 µg/m³, « relative risk of 0.08 » pour 10 µg/m³, même approche pour toutes les années, 2006 manquant faute
+  de cartes interpolées, aucune rupture documentée. Rattachement : résultat de santé (sante), l''exposition relève
+  de logement_cadre_vie et les émissions de planete (R2, audit M06 I3), à confirmer au gel 2. Cible européenne du
+  plan « zéro pollution » sur les décès prématurés : à vérifier avant le socle des bornes.'

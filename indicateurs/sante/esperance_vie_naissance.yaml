@@ -27,6 +27,7 @@ ligne_id: estat-000399
 hors_longlist: non
 raccordement: non
 incontournable: oui
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Indicateur retenu par quatre cadres de bien-être (§5 du crosswalk), annuel de 2000 à 2024
   (79,2 ans en 2000, 83,0 ans en 2024, provisoire) et publié par Eurostat pour l'ensemble des sexes, alors que l'INSEE
@@ -152,5 +153,6 @@ qualite:
 - rupture_2014
 - provisoire_2023_2024
 notes: 'Valeurs lues sur l''API Eurostat le 14/10/2026 (demo_mlexpec, sex=T, age=Y_LT1, geo=FR) : la série France
-  commence en 1998 ; cause des ruptures de 2012 et 2014 non documentée dans la réponse (l''entrée de Mayotte dans
-  le champ en 2014 est une hypothèse non vérifiée).'
+  commence en 1998. Rupture de 2014 : les séries BDM de l''INSEE sont intitulées « France (inclus Mayotte à partir
+  de 2014) » (001686956, 001641594 ; audit M06), ce qui appuie l''explication par l''entrée de Mayotte dans le champ
+  ; la cause de la rupture de 2012 n''est pas documentée.'

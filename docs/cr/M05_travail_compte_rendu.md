@@ -12,7 +12,7 @@ Agent de mission M05 (Travail et emploi), 14 octobre 2026, branche `m05-travail`
 | `docs/validation/validation_travail.csv` | tableau de validation à 18 colonnes, `decision_leo` vide ; `verifier_fiches.py --dimension travail` : **0 erreur**, 2 avertissements (fiches DREES hors catalogue, avec preuve), 0 ligne déjà prise ailleurs |
 | `docs/cr/maintenance_catalogues_travail.md` | signalements `TRA-1` à `TRA-10` (statut `a_faire`), à consolider dans la liste partagée |
 
-## 2. Chiffres
+## 2. Chiffres (avant l'audit ; chiffres à jour au §8)
 
 - **Long-list** : 6 520 lignes (5 327 éligibles, 253 à vérifier, 940 non éligibles) ; Eurostat 4 040, Melodi 2 014 (dont `DD_EEC_SERIES` 1 673), BDM 452, M04 14. Décisions : 36 lignes en `fiche`, 1 671 en `variante_de`, 4 161 en `ecarte_en_bloc` (3 131 éligibles : structures par profession, branche, territoire, effectifs en nombre, comptes nationaux, statistiques d'entreprises, enquête sur la structure des salaires détaillée), 652 en `autre_dimension`.
 - **37 fiches, 28 familles** : **24 `retenir`**, **8 `retenir_variante`**, **5 `ecarter`**.
@@ -56,3 +56,28 @@ DREES OG04_6 et SDRICHOM à cataloguer et calculer (1) ; formules du pipeline (2
 3. Acter la règle des **ventilations par sexe** : `autre_dimension:egalites` quand l'écart est au catalogue d'`egalites`, variante sinon ; `egalites` pourrait construire de nouveaux écarts sur les séries longues de l'INSEE (sous-emploi, NEET, CDD), plus longues que ses composantes Eurostat.
 4. Trancher la frontière **rémunération** entre `travail` et `niveau_de_vie` avant que M05 `niveau_de_vie` ne commence (TRA-5, TRA-6).
 5. Faire relire par l'audit M06 en priorité : les deux formules (TRA-2), l'unité des mesures `PT_*` (TRA-3) et la famille `accidents_travail` (choix de la source nationale).
+
+## 8. Corrections après audit (M06, D34-D40) — branche `m05-travail-corr`, PR #31
+
+Audit : `docs/validation/audit_travail.md` (37 fiches auditées : 23 conformes, 12 à corriger, 2 non vérifiables ; 4 oublis ; 7 points de cohérence ; 7 désaccords de jugement ; 10 corrections au §12). Les dix corrections et les oublis O1 à O3 sont appliqués (O4 : signalé à `niveau_de_vie`, TRA-14) ; détail, fichiers et limites : `docs/cr/M05_travail_corrections_journal.md`. Une collecte ciblée du robot (15/10/2026, `scripts/collecte_travail.py`) a lu les séries Melodi, les séries BDM de contrôle, 18 jeux Eurostat et les jeux de l'Assurance maladie ; la vague 11 du robot (16/10/2026) a calculé la question SDRICHOM du baromètre DREES.
+
+| Fiche | Correction |
+|---|---|
+| onze fiches Melodi (TRA-3) | séries lues et comparées à la BDM : les mesures `PT_*` sont des taux (à 0,1 point des séries BDM) ; le code `EMPSTA=3` des lignes NEET est un artefact (chômeurs compris) ; valeurs et contrôles dans les notes |
+| `taux_emploi_20_64` (F1) | principale `lfsi_emp_a` 20-64 ans (2003-2025, 23 points), `sdg_08_30` en variante, raccordement inutile ; incontournable porté par la seule principale de la famille (D38 d), comme pour `taux_emploi_eqtp` |
+| `halo_chomage` (J1) | principale BDM 011818623 (15-64 ans, trimestrielle 2003-2026 : 3,8 % en 2003, 4,5 % en 2025), Melodi (15 ans ou plus, 2014-2025) en variante |
+| `accidents_travail_mortels` (D40, O2, F6) | série nationale de l'Assurance maladie : décès par accident du travail pour 100 000 salariés du régime général, 2015-2024 (2,90 → 3,67), calculée sur deux jeux et recoupée (733 décès en 2019, 738 en 2022, 759 en 2023) ; hausse de 2019 liée à la prise en compte des malaises ; Eurostat `hsw_n2_02` (2008-2024) en variante |
+| `exposition_risques_sante_physique`, `problemes_sante_lies_travail` (nouvelles, O1, D39) | modules ad hoc `hsw_exp2` (74,9 % en 2020) et `hsw_pb1` (8,3 % en 2020) importés de la long-list `sante`, familles propres, `retenir` avec trajectoire non comparable (J2) |
+| `preoccupation_chomage`, `risque_chomage_percu` (J7, D38 b) | deux familles : opinion sur la société (63,5 % en 2025) et risque perçu pour soi ou un proche (SDRICHOM, 28,7 % en 2025, principale de `insecurite_emploi_percue`) ; `retenir` avec `non_recoupe` et plausibilité contre les publications de la DREES |
+| `taux_chomage_longue_duree`, `part_emploi_temporaire` (D34) | formules normalisées et recoupements (BDM, Eurostat ; parts publiées par l'INSEE : 11,0 % en 2017, 10,3 % en 2022, 9,5 % en 2024) |
+| `contrats_tres_courts`, `longues_durees_travail` (F2, F3) | contrat de trois mois au plus en % des salariés ; seuil de 49 heures, saut de 2021 |
+| `emploi_temporaire_subi`, `temps_partiel_subi`, `sorties_chomage_emploi`, `passages_emploi_chomage` (F4, F5, F7) | dénominateurs, drapeaux et ruptures relus sur les sorties du robot |
+| `salaire_net_moyen_reel`, `pauvrete_en_emploi`, `satisfaction_travail`, `bas_salaires`, `sous_utilisation_main_oeuvre`, `menages_tres_faible_intensite_travail`, `duree_hebdomadaire_travail` | champ avant 2000 (J5), définitions précisées, URL OCDE lue par le robot, familles imbriquées signalées (J4), choix contraire du cadre Qualité de vie cité (J6) |
+
+Lignes renvoyées (D38 a) : les 521 lignes que `niveau_de_vie` (354), `sante` (104), `education` (56) et `logement_cadre_vie` (7) renvoient vers `travail` sont toutes reprises (2 nouvelles fiches, 119 variantes) ou écartées explicitement (379) ; 20 ventilations par sexe du salaire sont renvoyées à `egalites` (D35). `lfsa_ugadra` (171 lignes, D39) est écarté explicitement ; `estat-054299` est renvoyé à `egalites` (plus d'alerte R1).
+
+Chiffres après corrections : **39 fiches, 31 familles : 27 `retenir`, 7 `retenir_variante`, 5 `ecarter`** ; 3 déclaratives ; 0 composite ; 5 « à vérifier » ; 3 hors long-list ; 2 incontournables (`taux_emploi`, `longues_durees_travail`) ; 1 790 variantes. Présélection : 143 groupes (39 `fiche`, 59 `variante_de`, 34 `ecarte_en_bloc`, 11 `autre_dimension`) ; 7 041 lignes, dont 521 importées. Vérificateur : 0 erreur, 4 avertissements attendus (séries hors catalogue avec preuve). Tests : 403 réussis. Classeur : `docs/validation/classeurs/validation_travail.xlsx`.
+
+Liste de maintenance (`docs/cr/maintenance_catalogues_travail.md`) : TRA-3 et TRA-7 faits ; TRA-1 et TRA-9 en cours ; TRA-11 (catalogage des décès Ameli), TRA-12 et TRA-13 (table de correspondance), TRA-14 (OG04_9) ajoutés.
+
+À trancher : **session mère** — écart explicite de `lfsa_ugadra` ou fiche d'indemnisation des chômeurs ; dénominateurs des séries du baromètre DREES ; fiche variante Eurostat des accidents mortels pour 2008-2014 ; numéro de la vague 11 du robot à la fusion. **Léo** — séries nationales de l'Assurance maladie (régime général) en principale des accidents ; modules ad hoc de santé au travail (3 vagues non comparables) ; familles imbriquées au socle (sous-utilisation ou ses composantes ; intensité de travail et AROPE) ; deux mesures ressenties de l'insécurité de l'emploi.

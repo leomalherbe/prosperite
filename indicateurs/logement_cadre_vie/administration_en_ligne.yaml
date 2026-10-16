@@ -33,7 +33,8 @@ motif_recommandation: Seule série continue du recours à l'administration en li
   de 2009 à 2025 (16 points), la série européenne étant interrompue en 2021.
 note_pertinence: 'La dématérialisation des démarches fait de l''administration en ligne une porte d''accès aux droits,
   dont l''indicateur mesure l''usage. Une hausse peut aussi traduire la disparition des guichets plutôt qu''un progrès
-  : le sens « haut » est à confirmer par Léo. Les valeurs n''ont pas été relues (API Melodi non interrogée).'
+  : le sens « haut » est à confirmer par Léo. La part passe de 42,4 % en 2009 à 81,0 % en 2025, sans valeur en 2020
+  (API Melodi lue par le robot le 16/10/2026).'
 variantes:
 - serie_id: isoc_r_gov_i?freq=A&indic_is=I_IGOV12RT&unit=PC_IND&geo=FR
   source: Eurostat
@@ -171,5 +172,10 @@ socle_v1:
 qualite:
 - sens_a_confirmer
 - champ_a_verifier
+- annee_manquante_2020
 notes: 'Variantes : ventilations simples (INSEE), Eurostat isoc_r_gov_i et isoc_ciegi_ac (contacts avec les pouvoirs
-  publics par internet 2008-2021, nouvelle définition depuis 2022, composantes), ces dernières renvoyées par democratie.'
+  publics par internet 2008-2021, nouvelle définition depuis 2022, composantes), ces dernières renvoyées par democratie.
+  Valeurs lues (Melodi DS_TICM_PRATIQUES, mesure EGOV_12MOIS, ensemble ; docs/sources/series/insee_melodi__logement_administration_en_ligne.txt,
+  vague 16 du robot, 16/10/2026) : 42,4 (2009), 50,8 (2010), 56,6 (2015), 64,6 (2018), 67,9 (2019), 74,1 (2021),
+  76,2 (2022), 77,4 (2023), 80,7 (2024), 81,0 (2025) ; aucune valeur en 2020. La série Eurostat (I_IUGOV12) donne
+  80,66 % en 2021 (audit M06) : écart de champ ou de définition avec l''INSEE (74,1 %), à documenter.'

@@ -1,40 +1,40 @@
 # cnam_ameli / sinistralite_secteur_records
 # URL : https://data.ameli.fr/api/explore/v2.1/catalog/datasets/sinistralite-par-secteur-d-activite-concerne-naf-1/records?limit=2
-# Vérifié le 2026-10-13T14:48:02Z — HTTP 200 — application/json; charset=utf-8 — 874 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-16T08:24:39Z — HTTP 200 — application/json; charset=utf-8 — 1200 octets lus (taille annoncée : inconnue)
 
 {
  "total_count": 60480,
  "results": [
   {
-   "annee": "2005",
-   "risque": "Maladies professionnelles",
-   "code_naf1": "TOUS",
-   "libelle_naf1": "Tous secteurs confondus",
-   "naf1": "Tous secteurs confondus",
-   "code_naf5": "TOUS",
-   "libelle_naf5": "Tous secteurs confondus",
-   "naf5": "Tous secteurs confondus",
-   "nb_sinistres": "41182",
-   "nb_salaries": "18299350",
+   "annee": "2011",
+   "risque": "Tous risques confondus",
+   "code_naf1": "G",
+   "libelle_naf1": "Commerce ; réparation d'automobiles et de motocycles",
+   "naf1": "G - Commerce ; réparation d'automobiles et de motocycles",
+   "code_naf5": "4765Z",
+   "libelle_naf5": "Commerce de détail de jeux et jouets en magasin spécialisé",
+   "naf5": "4765Z - Commerce de détail de jeux et jouets en magasin spécialisé",
+   "nb_sinistres": "NC",
+   "nb_salaries": "NC",
    "indice_frequence": "NC",
-   "nb_sinistres_int": 41182,
-   "nb_salaries_int": 18299350,
+   "nb_sinistres_int": null,
+   "nb_salaries_int": null,
    "indice_frequence_int": null
   },
   {
-   "annee": "2005",
-   "risque": "Tous risques confondus",
-   "code_naf1": "TOUS",
-   "libelle_naf1": "Tous secteurs confondus",
-   "naf1": "Tous secteurs confondus",
-   "code_naf5": "TOUS",
-   "libelle_naf5": "Tous secteurs confondus",
-   "naf5": "Tous secteurs confondus",
-   "nb_sinistres": "823579",
-   "nb_salaries": "18299350",
+   "annee": "2011",
+   "risque": "Maladies professionnelles",
+   "code_naf1": "G",
+   "libelle_naf1": "Commerce ; réparation d'automobiles et de motocycles",
+   "naf1": "G - Commerce ; réparation d'automobiles et de motocycles",
+   "code_naf5": "4765Z",
+   "libelle_naf5": "Commerce de détail de jeux et jouets en magasin spécialisé",
+   "naf5": "4765Z - Commerce de détail de jeux et jouets en magasin spécialisé",
+   "nb_sinistres": "NC",
+   "nb_salaries": "NC",
    "indice_frequence": "NC",
-   "nb_sinistres_int": 823579,
-   "nb_salaries_int": 18299350,
+   "nb_sinistres_int": null,
+   "nb_salaries_int": null,
    "indice_frequence_int": null
   }
  ]

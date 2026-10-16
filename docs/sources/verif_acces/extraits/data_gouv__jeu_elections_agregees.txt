@@ -1,6 +1,6 @@
 # data_gouv / jeu_elections_agregees
 # URL : https://www.data.gouv.fr/api/1/datasets/6481e741d4cf002ec0efec9d/
-# Vérifié le 2026-10-13T14:46:39Z — HTTP 200 — application/json — 26199 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-16T08:23:24Z — HTTP 200 — application/json — 26199 octets lus (taille annoncée : inconnue)
 
 {
  "access_audiences": [],
@@ -86,7 +86,7 @@
    "2026-02": 0,
    "2026-03": 0
   },
-  "resources_downloads": 88195,
+  "resources_downloads": 88470,
   "reuses": 27,
   "reuses_by_months": {
    "2025-10": 0,
@@ -103,7 +103,7 @@
    "2026-09": 2,
    "2026-10": 2
   },
-  "views": 58044
+  "views": 58297
  },
  "organization": {
   "acronym": null,
@@ -193,7 +193,7 @@
    "last_modified": "2026-03-24T13:20:10.151000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/15b3e0e5-396b-4423-9556-faed8a52bfa2",
    "metrics": {
-    "views": 2166
+    "views": 2209
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/15b3e0e5-396b-4423-9556-faed8a52bfa2",
@@ -244,7 +244,7 @@
    "last_modified": "2026-07-07T14:00:35+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/b8703c69-a18f-46ab-9e7f-3a8368dcb891",
    "metrics": {
-    "views": 15766
+    "views": 15807
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/b8703c69-a18f-46ab-9e7f-3a8368dcb891",
@@ -295,7 +295,7 @@
    "last_modified": "2026-07-07T14:00:58+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/52a11762-45b4-414f-b6a2-eaa290217dc6",
    "metrics": {
-    "views": 10203
+    "views": 10230
    },
    "mime": "text/csv",
    "preview_url": "https://explore.data.gouv.fr/fr/resources/52a11762-45b4-414f-b6a2-eaa290217dc6",
@@ -339,7 +339,7 @@
    "last_modified": "2026-07-07T14:00:39+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/ff16d511-10c0-405e-9b35-511723948fce",
    "metrics": {
-    "views": 13282
+    "views": 13300
    },
    "mime": null,
    "preview_url": null,
@@ -383,7 +383,7 @@
    "last_modified": "2026-07-07T14:01:07+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/4d3b35f6-0b22-4415-a24c-419a676312e2",
    "metrics": {
-    "views": 40199
+    "views": 40218
    },
    "mime": null,
    "preview_url": null,
@@ -432,7 +432,7 @@
    "last_modified": "2026-02-16T09:21:46.948000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/6fd17a6c-519b-465c-a7fd-ad2955fafc76",
    "metrics": {
-    "views": 2488
+    "views": 2509
    },
    "mime": "text/csv",
    "preview_url": null,
@@ -481,7 +481,7 @@
    "last_modified": "2026-02-04T10:27:30.536000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/ced4d21f-9d17-4224-94c0-d0bf0bc28b1c",
    "metrics": {
-    "views": 2027
+    "views": 2063
    },
    "mime": "application/json",
    "preview_url": null,
@@ -530,7 +530,7 @@
    "last_modified": "2026-02-04T10:27:43.040000+00:00",
    "latest": "https://www.data.gouv.fr/api/1/datasets/r/c702d75b-4e7e-43c9-84fa-83220302931d",
    "metrics": {
-    "views": 2055
+    "views": 2076
    },
    "mime": "application/json",
    "preview_url": null,

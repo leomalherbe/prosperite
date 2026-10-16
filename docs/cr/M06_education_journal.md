@@ -28,7 +28,7 @@ Agent auditeur M06 (session neuve, Opus), 16 octobre 2026, branche `m06-educatio
 | Eurostat `trng_aes_100` (25-64) | 2007-2022 | FE_NFE 35,1 / 50,5 (b) / 51,3 / 50,8 (b) |
 | Eurostat `trng_aes_175` (25-64) | 2007-2022 | NPT_W 10,0 / 13,8 (b) / 11,4 / 11,5 (b) ; NPT_NW 37,5 en 2022 |
 | Eurostat `trng_lfs_17` (25-64) | 2022, 2024 | 36,3 ; 37,7 (b) ; note Eurostat `Info_note_TRNG_AL_20240423` : EFT **hors formation guidée en situation de travail**, données **biennales** depuis 2022 ; l'AES diffusé par Eurostat **inclut** cette formation |
-| Monitor « Education and Training », boîte à outils « adult learning » | page | indicateur des cibles (47 % en 2025, 60 % en 2030) : AES « excluding guided on-the-job training » ; `trng_aes_100` l'inclut et n'est pas présenté comme mesure de la cible |
+| Moniteur de l'éducation et de la formation, boîte à outils « adult learning » | page | cibles 47 % (2025) et 60 % (2030) ; indicateur principal : AES « excluding guided on-the-job training », plus une version EFT (`trng_lfs_17`) ; `trng_aes_100` inclut la formation guidée et n'est pas présenté comme mesure de la cible ; la source officielle de la cible n'est pas précisée |
 | Eurostat `edat_aes_l21` (25-64) | 2007-2022 | aucune langue 41,2 / 41,2 (b) / 39,9 / 22,6 (b) |
 | Eurostat `edat_aes_l31` (25-64) | 2007-2022 | « Très bon » 8,7 / 18,7 (b) / 19,9 / 24,5 (b) ; Bon + Élémentaire + Très bon = 99,9 à 100 % en 2011, 2016, 2022 ; 2007 : 22,5 % « sans réponse » |
 | Eurostat `ilc_caindformal` (< 3 ans) et `tepsr_sp210` | 2005-2025 | sommes égales au total publié (32,0 ; 39,6 ; 59,3 ; 59,7) ; b 2020, 2022 ; sauts sans drapeau 2007-2008 (27,3 → 39,6) et 2015-2016 (41,7 → 48,9) |

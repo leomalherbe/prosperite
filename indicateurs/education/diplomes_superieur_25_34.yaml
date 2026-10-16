@@ -28,14 +28,15 @@ ligne_id: estat-002052
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Indicateur de l'espace européen de l'éducation (cible d'au moins 45 % en 2030) et du cadre
   Eurostat Qualité de vie, annuel de 2000 à 2025 (31,4 % en 2000, 55,8 % en 2025).
-note_pertinence: La part des diplômés du supérieur mesure l'élévation de la qualification des générations récentes.
+note_pertinence: 'La part des diplômés du supérieur mesure l''élévation de la qualification des générations récentes.
   La cible européenne de 45 % est dépassée depuis 2018 (47,0 %), ce qui posera la question de la borne. Eurostat
-  signale le passage à la CITE 2011 en 2014 et des ruptures en 2003, 2013, 2021 et 2024. La DEPP reprend l'indicateur
-  (2013-2024) et l'INSEE publie les parts de diplômés du supérieur par tranche d'âge dans les séries longues de
-  l'enquête Emploi, en variantes.
+  signale le passage à la CITE 2011 en 2014 et des ruptures en 2003, 2013, 2021 et 2024. La DEPP reprend l''indicateur
+  (2013-2024, 53,4 % en 2024 contre 53,1 % pour Eurostat : millésime ou champ différent) et l''INSEE publie les
+  parts de diplômés du supérieur par tranche d''âge dans les séries longues de l''enquête Emploi, en variantes.'
 variantes:
 - serie_id: edat_lfse_03?freq=A&sex=T&age=Y15-74&unit=PC&isced11=ED5-8&geo=FR
   source: Eurostat
@@ -54,8 +55,7 @@ variantes:
   eligible: oui
 - serie_id: sdg_04_20?freq=A&sex=M&sex=F&age=Y25-34&unit=PC&isced11=ED5-8&geo=FR
   source: Eurostat
-  nature: sdg_04_20 par sexe ; edat_lfse_03 et 04 (CITE 5-8) par âge (dont 25-64 ans) et sexe ; reprise DEPP ; diplômés
-    du supérieur et docteurs pour 1 000 habitants (educ_uoe_grad05, grad06)
+  nature: sdg_04_20 par sexe
   ligne_id: estat-002053
   eligible: oui
 - serie_id: edat_lfse_04?freq=A&sex=T&isced11=ED5-8&age=Y25-64&unit=PC&geo=FR
@@ -141,8 +141,7 @@ variantes:
 - serie_id: https://data.education.gouv.fr/api/explore/v2.1/catalog/datasets/fr-en-objectifs_europeens_education_formation
     (France.Ensemble#dipl_sup)
   source: DEPP — data.education.gouv.fr (Opendatasoft)
-  nature: sdg_04_20 par sexe ; edat_lfse_03 et 04 (CITE 5-8) par âge (dont 25-64 ans) et sexe ; reprise DEPP ; diplômés
-    du supérieur et docteurs pour 1 000 habitants (educ_uoe_grad05, grad06)
+  nature: 'reprise DEPP de l''indicateur européen (millésime ou champ différent : 53,4 % contre 53,1 % en 2024)'
   ligne_id: m04-000391
   eligible: oui
 - serie_id: DD_EEC_SERIES?AGE=Y15T24&COMPOHALO=_T&EDUC=EEC4T5&EEC_MEASURE=PT_EDUC_IN_POP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=_T&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T

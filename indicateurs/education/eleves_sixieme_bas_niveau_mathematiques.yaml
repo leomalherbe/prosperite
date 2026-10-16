@@ -2,7 +2,7 @@ id: eleves_sixieme_bas_niveau_mathematiques
 libelle: Élèves de sixième de bas niveau en mathématiques (évaluations nationales)
 dimension: education
 sous_theme: compétences des élèves
-famille: mathematiques_fin_primaire
+famille: pisa_mathematiques
 variante_principale: non
 definition: Part des élèves de sixième classés dans le groupe de bas niveau en mathématiques aux évaluations nationales
   de début d'année de la DEPP (indicateur territorial de développement durable, France entière).
@@ -27,13 +27,15 @@ ligne_id: m04-000322
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Mesure annuelle (2017-2024, 8 points ; 32,2 % en 2024) des acquis en mathématiques à l'entrée
-  au collège, plus récente et plus fréquente que TIMSS (CM1) mais encore sous le seuil de 10 points de la charte.
+  au collège, variante de la famille des compétences en mathématiques dont la part d'élèves de 15 ans sous le niveau
+  2 de PISA est la principale (D44), sous le seuil de 10 points de la charte (D38 f).
 note_pertinence: Les évaluations de début de sixième donnent chaque année un état des acquis en mathématiques à
   la sortie de l'école primaire. Le seuil de « bas niveau » est propre à la DEPP et la comparabilité d'une année
   sur l'autre repose sur la stabilité des épreuves, à vérifier dans sa documentation. La série atteindra dix points
-  avec la campagne de 2026.
+  avec la campagne de 2026 ; TIMSS en CM1 étant écarté (D44), elle est la seule mesure de la famille avant 15 ans.
 variantes: []
 socle_v1:
   seuil_minimal: null

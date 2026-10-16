@@ -33,6 +33,7 @@ rattachement_propose: 'hors long-list : variable de l''ITDD lue par le robot M04
 raccordement: 'a_etudier : notes annuelles de la DEPP sur la JDC (fichier xlsx propre à chaque édition, URL non
   stable)'
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Seule mesure annuelle de la maîtrise de la lecture des jeunes après 15 ans, proche de l'analphabétisme
   suivi par le Doughnut, mais limitée à 3 points au catalogue (2022-2024 ; 13,32 % en 2024), sous le seuil de 10
@@ -56,6 +57,8 @@ qualite:
 - moins_de_10_points
 - hors_longlist
 - raccordement_a_etudier
-- champ_age_a_verifier
+- champ_age_itdd_16_25_depp_16_18
 notes: 'Page de la DEPP lue le 15/10/2026 (JDC 2024 : 76 % de lecteurs efficaces, 10 % de maîtrise fragile, 13 %
-  en difficulté, 6 % en situation d''illettrisme) ; données de la note dans un fichier xlsx propre à l''édition.'
+  en difficulté, 6 % en situation d''illettrisme) ; données de la note dans un fichier xlsx propre à l''édition.
+  Champ de la DEPP (jeunes de 16 à 18 ans de nationalité française) confirmé par l''audit M06 (note 25-57), différent
+  de celui de l''ITDD (16-25 ans).'

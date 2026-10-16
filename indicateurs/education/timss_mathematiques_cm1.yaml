@@ -2,10 +2,11 @@ id: timss_mathematiques_cm1
 libelle: Élèves de CM1 ayant au moins le niveau minimal en mathématiques (TIMSS)
 dimension: education
 sous_theme: compétences des élèves
-famille: mathematiques_fin_primaire
-variante_principale: oui
-definition: Part des élèves de CM1 qui atteignent au moins le seuil d'aptitude minimale en mathématiques de l'enquête
-  internationale TIMSS (indicateur national ODD 4.i1b de l'INSEE, France hors Mayotte).
+famille: pisa_mathematiques
+variante_principale: non
+definition: Part des élèves de CM1 qui atteignent au moins le « seuil d'aptitude minimale » en mathématiques de
+  l'indicateur national ODD 4.i1b de l'INSEE, d'après l'enquête internationale TIMSS (France hors Mayotte) ; seuil
+  non documenté, qui ne correspond pas au seuil bas de l'IEA (atteint par 85 % des élèves en 2023 selon la DEPP).
 unite: '% des élèves de CM1'
 sens: haut
 type: resultat
@@ -25,17 +26,19 @@ geo: FRANCE-F_X_D976
 eligibilite_longlist: non
 ligne_id: melodi-005751
 hors_longlist: non
-raccordement: non
+raccordement: 'a_etudier : série de la DEPP sur la part d''élèves sous le seuil bas de l''IEA (15 % en 2023, note
+  d''information 24.47) à cataloguer ; le jeu fr-en-scores-timss lu par le robot ne donne que les scores de 2015'
 incontournable: non
-recommandation: retenir
-motif_recommandation: Seule mesure cataloguée des compétences en mathématiques en fin d'école primaire comparable
-  dans le temps et entre pays, indicateur national ODD (cycles 2015, 2019 et 2023), exclue à tort par la long-list
-  alors que l'écart de quatre ans entre ses valeurs satisfait D28.
-note_pertinence: 'TIMSS évalue tous les quatre ans les mathématiques des élèves en quatrième année de scolarité.
-  La série BDM de même définition passe de 58 % (2015) et 57 % (2019) à 36 % (2023) : une chute de cette ampleur
-  appelle une vérification du seuil ou du champ retenus en 2023 avant tout usage. Les évaluations nationales de
-  début de sixième (part d''élèves de bas niveau en mathématiques, annuelle depuis 2017) sont l''alternative de
-  la famille.'
+socle_propose: non
+recommandation: ecarter
+motif_recommandation: 'Écartée (D44) : le seuil de la série n''est pas documenté et sa valeur de 2023 (36 % contre
+  57 % en 2019) n''est pas comparable, la note d''information 24.47 de la DEPP constatant des scores stables (485
+  en 2019, 484 en 2023) et 15 % seulement d''élèves sous le seuil bas de l''IEA.'
+note_pertinence: 'TIMSS évalue tous les quatre ans les mathématiques des élèves en quatrième année de scolarité
+  (CM1). La série ODD 4.i1b de l''INSEE donne 58 % (2015), 57 % (2019) et 36 % (2023), alors que la DEPP mesure
+  des scores stables (488, 485 et 484 points) et au moins 85 % d''élèves au seuil bas de l''IEA en 2023 : le seuil
+  retenu par la série et la chute de 2023 restent inexpliqués. La fiche rejoint la famille des compétences des élèves
+  en mathématiques, dont la part d''élèves de 15 ans sous le niveau 2 de PISA est la principale (D44).'
 variantes:
 - serie_id: '010594813'
   source: INSEE BDM
@@ -50,7 +53,11 @@ socle_v1:
 qualite:
 - serie_irreguliere_D17
 - exclusion_longlist_contraire_D28
-- valeur_2023_a_verifier
+- seuil_non_documente
+- valeur_2023_incoherente_ni_24_47
 - melodi_non_lu
-notes: API Melodi fermée à l'outil de lecture ; valeurs de la série BDM 010594813 (zone propre à l'enquête, code
-  FMGUADMART15_FHMAY19…) lues le 15/10/2026 ; liste de maintenance, n° 38 (éligibilité) et n° 39 (valeur 2023).
+notes: 'API Melodi fermée à l''outil de lecture ; valeurs de la série BDM 010594813 (zone propre à l''enquête, code
+  FMGUADMART15_FHMAY19…) lues le 15/10/2026. DEPP, note d''information 24.47 (4 décembre 2024), relue le 16/10/2026
+  : scores moyens de la France 488 (2015), 485 (2019) et 484 (2023), 15 % des élèves sous le seuil bas (400 points)
+  et 3 % au seuil avancé en 2023. Liste de maintenance, n° 38 (éligibilité) et n° 39 (valeur 2023, complétée par
+  le correcteur).'

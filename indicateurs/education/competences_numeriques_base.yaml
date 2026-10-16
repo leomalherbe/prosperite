@@ -18,7 +18,7 @@ source_serie_id: '010594832'
 composantes:
 - '010594832'
 - '010594833'
-formule: 010594832 + 010594833 (niveau de base + niveau plus avancé)
+formule: A + B (A = 010594832, niveau de base ; B = 010594833, niveau plus avancé)
 source_niveau: 1
 url_api: https://bdm.insee.fr/series/sdmx/data/SERIES_BDM/010594832+010594833
 url_page: https://www.insee.fr/fr/statistiques/serie/010594832
@@ -33,6 +33,7 @@ hors_longlist: non
 raccordement: 'a_etudier : changement de l''indicateur européen en 2021 (jeux isoc_sk_dskl_i jusqu''en 2019, isoc_sk_dskl_i21
   depuis)'
 incontournable: non
+socle_propose: oui
 recommandation: retenir
 motif_recommandation: Indicateur du cadre Eurostat Qualité de vie et de l'objectif européen d'au moins 80 % des
   16-74 ans en 2030, 7 vagues de 2015 à 2025 (D17 ; 57 % en 2015, 66 % en 2025), somme recoupée avec les trois valeurs

@@ -1,6 +1,6 @@
 # ocde / hsl_bien_etre_futur_fra
 # URL : https://sdmx.oecd.org/public/rest/data/OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1/FRA.......?startPeriod=2000&format=csvfilewithlabels
-# Vérifié le 2026-10-13T14:47:03Z — HTTP 200 — application/vnd.sdmx.data+csv; charset=utf-8; version=2; labels=name — 237441 octets lus (taille annoncée : inconnue)
+# Vérifié le 2026-10-16T07:54:03Z — HTTP 200 — application/vnd.sdmx.data+csv; version=2; labels=name; charset=utf-8 — 237441 octets lus (taille annoncée : inconnue)
 
 Colonnes : ['STRUCTURE', 'STRUCTURE_ID', 'STRUCTURE_NAME', 'ACTION', 'REF_AREA', 'Reference area', 'MEASURE', 'Measure', 'UNIT_MEASURE', 'Unit of measure', 'AGE', 'Age', 'SEX', 'Sex', 'EDUCATION_LEV', 'Education level', 'DOMAIN', 'Domain', 'TIME_PERIOD', 'Time period', 'OBS_VALUE', 'Observation value', 'OBS_STATUS', 'Observation status', 'UNIT_MULT', 'Unit multiplier', 'DECIMALS', 'Decimals', 'BASE_PER', 'Base period']
 878 lignes ; 878 combinaisons distinctes de ['MEASURE', 'Measure', 'UNIT_MEASURE', 'AGE', 'SEX', 'EDUCATION_LEV', 'TIME_PERIOD', 'OBS_VALUE'] :

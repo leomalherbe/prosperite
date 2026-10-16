@@ -13,6 +13,7 @@ sens: bas
 type: pression
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: Eurostat (modèle du Centre commun de recherche)
 source_jeu: sdg_12_31 (empreinte de consommation, note unique pondérée)
 source_serie_id: sdg_12_31?freq=A&cons_fp=SWS&unit=PB&geo=FR
@@ -147,4 +148,5 @@ socle_v1:
 qualite:
 - composite_D18
 - modele
-notes: ''
+notes: 'annee_reference : année civile de la consommation (métadonnées Eurostat de sdg_12_31 lues le 16/10/2026
+  : période de référence « année civile », nouvelles valeurs diffusées dans les deux ans qui suivent).'

@@ -4,9 +4,9 @@ dimension: planete
 sous_theme: 'climat : aléas et adaptation'
 famille: chaleur_extreme
 variante_principale: oui
-definition: 'Somme, sur l''année, du nombre de jours en situation de canicule de chaque département (variable nb_jdep_can
-  de Santé publique France ; définition des seuils : système d''alerte canicule et santé, à préciser à la relecture
-  du jeu).'
+definition: 'Somme, sur l''année, du nombre de jours en situation de canicule de chacun des 96 départements de métropole
+  (variable nb_jdep_can de Santé publique France ; définition des seuils : système d''alerte canicule et santé,
+  à préciser à la relecture du jeu).'
 unite: jours-départements
 sens: bas
 type: resultat
@@ -24,7 +24,7 @@ frequence: annuelle
 premiere_annee: 2004
 derniere_annee: 2025
 nb_points_depuis_2000: 22
-geo: FR
+geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000375
 hors_longlist: non
@@ -35,8 +35,29 @@ motif_recommandation: Seule série nationale annuelle de l'exposition aux vagues
   (22 points), avec 517 jours-départements en 2025 d'après l'export vérifié par le robot M04.
 note_pertinence: Les canicules sont l'aléa climatique aux effets sanitaires les plus directs, et la grille les range
   dans la planète (A14). La série commence en 2004 et omet la canicule de 2003, ce qui pèsera sur le choix de bornes
-  historiques. La part de la population exposée à des températures extrêmes (OCDE) forme l'autre fiche de la famille.
-variantes: []
+  historiques. La part de la population exposée à des températures extrêmes (OCDE) forme l'autre fiche de la famille
+  ; la sévérité des canicules (Santé publique France) et les degrés-jours de refroidissement (Eurostat, reçus de
+  logement_cadre_vie) sont en variantes.
+variantes:
+- serie_id: nrg_chddr2_a?freq=A&unit=NR&indic_nrg=CDD&geo=FR
+  source: Eurostat
+  nature: 'degrés-jours de refroidissement (Eurostat nrg_chdd_a et valeur nationale de nrg_chddr2_a, 2000-2025)
+    : besoin de rafraîchissement lié à la chaleur estivale ; lignes renvoyées par logement_cadre_vie (règle 650)'
+  ligne_id: estat-004564
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: nrg_chdd_a?freq=A&unit=NR&indic_nrg=CDD&geo=FR
+  source: Eurostat
+  nature: 'degrés-jours de refroidissement (Eurostat nrg_chdd_a et valeur nationale de nrg_chddr2_a, 2000-2025)
+    : besoin de rafraîchissement lié à la chaleur estivale ; lignes renvoyées par logement_cadre_vie (règle 650)'
+  ligne_id: estat-052222
+  eligible: oui
+  longlist: logement_cadre_vie
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-severite-france (severite)
+  source: Santé publique France (Odissé)
+  nature: sévérité des canicules (indicateur annuel de Santé publique France, 2004-2025, 22 valeurs, 13,5331 en
+    2025 ; robot, vague 11) ; oubli O2 de l'audit
+  preuve: docs/sources/series/spf_odisse__canicules-severite-france.csv
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -45,4 +66,6 @@ socle_v1:
 qualite:
 - canicule_2003_non_couverte
 - definition_a_preciser
-notes: ''
+- champ_metropole
+notes: 'Champ vérifié : le jeu départemental de Santé publique France compte 2 112 enregistrements, soit 22 années
+  × 96 départements de métropole (docs/sources/series/spf_odisse__catalogue_champs.csv) ; `geo` passe de FR à FM.'

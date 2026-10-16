@@ -3,7 +3,7 @@ libelle: Empreinte carbone par habitant
 dimension: planete
 sous_theme: 'climat : empreinte'
 famille: empreinte_carbone
-variante_principale: non
+variante_principale: oui
 definition: Empreinte carbone de la France (émissions de gaz à effet de serre induites par la demande finale intérieure,
   importations comprises) rapportée à la population, en tonnes équivalent CO2 par personne.
 unite: tonnes équivalent CO2 par habitant
@@ -27,13 +27,14 @@ ligne_id: bdm-000912
 hors_longlist: non
 raccordement: 'non : série continue depuis 1995'
 incontournable: oui
-recommandation: retenir_variante
-motif_recommandation: Lecture par personne de la famille empreinte_carbone, directement comparable aux repères de
-  2,3 et 3,1 t par habitant en 2050 retenus par la SNBC 3, série annuelle de 1995 à 2024 (25 points depuis 2000).
+recommandation: retenir
+motif_recommandation: Variante principale de la famille empreinte_carbone (par habitant, D38 h), indicateur de richesse
+  nationale n° 9 directement comparable aux repères de 2,3 et 3,1 t par habitant en 2050 de la SNBC 3, série annuelle
+  de 1995 à 2024 (11,4 t en 2000, 8,2 t en 2024, estimée).
 note_pertinence: 'C''est la forme la plus parlante de l''empreinte pour le public, qui peut la rapprocher de ses
   propres émissions. Les séries de l''OCDE (2004-2020), d''Eurostat (modèle FIGARO, 2010-2023) et du Global Carbon
   Project (CO2 seul) sont en variantes : elles reposent sur d''autres tableaux entrées-sorties et donnent d''autres
-  niveaux.'
+  niveaux. Le total en millions de tonnes, grandeur des fourchettes de la SNBC 3, forme l''autre fiche de la famille.'
 variantes:
 - serie_id: '010777562'
   source: INSEE BDM
@@ -120,4 +121,5 @@ socle_v1:
   justification: ''
 qualite:
 - perimetre_kyoto
-notes: ''
+notes: 'Valeurs lues sur la BDM le 16/10/2026 : 11,1 t (1995), 11,4 (2000), 12,4 (2005), 11,6 (2010), 9,8 (2015),
+  8,6 (2020), 8,5 (2023), 8,2 (2024, estimée).'

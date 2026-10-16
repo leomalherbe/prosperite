@@ -4,8 +4,8 @@ dimension: planete
 sous_theme: pollutions
 famille: emissions_dioxyde_soufre
 variante_principale: oui
-definition: Émissions d'oxydes de soufre (SOx, en équivalent SO2) dans l'air, total national retenu pour l'évaluation
-  du respect des plafonds d'émission de la directive (UE) 2016/2284.
+definition: Émissions d'oxydes de soufre (SOx, en équivalent SO2) dans l'air, total national « pour tout l'ensemble
+  du territoire » de l'inventaire déclaré à l'Union européenne (directive (UE) 2016/2284), champ France métropolitaine.
 unite: tonnes
 sens: bas
 type: pression
@@ -13,9 +13,9 @@ declaratif: non
 composite: non
 source_organisme: Eurostat
 source_jeu: env_air_emis (polluants atmosphériques par secteur source)
-source_serie_id: env_air_emis?freq=A&unit=T&airpol=SOX&src_nfr=NFR_TOT_NAT_C&geo=FR
+source_serie_id: env_air_emis?freq=A&unit=T&airpol=SOX&src_nfr=NFR_TOT_NAT&geo=FR
 source_niveau: 1
-url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=SOX&src_nfr=NFR_TOT_NAT_C&geo=FR
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_emis?freq=A&unit=T&airpol=SOX&src_nfr=NFR_TOT_NAT&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/env_air_emis/default/table?lang=fr
 frequence: annuelle
 premiere_annee: 2000
@@ -23,27 +23,27 @@ derniere_annee: 2024
 nb_points_depuis_2000: 25
 geo: FR
 eligibilite_longlist: oui
-ligne_id: estat-036733
+ligne_id: estat-036732
 hors_longlist: non
-raccordement: non
+raccordement: 'non : série homogène de 2000 à 2024'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Pression atmosphérique soumise à un plafond d'émission européen, série Eurostat de 2000 à
-  2024 (25 points), avec 70,2 kt de SO2 en 2025 selon le Citepa (extrait du robot M04).
+motif_recommandation: Pression atmosphérique soumise à un plafond d'émission européen, total national Eurostat homogène
+  et sans drapeau de 2000 à 2024 (640 600 t en 2000, 70 690 t en 2024), identique au total de conformité (D40).
 note_pertinence: Le dioxyde de soufre est à l'origine des pluies acides ; ses émissions sont désormais faibles,
-  ce qui appellera des bornes resserrées. Les drapeaux d'Eurostat n'ont pas été relus. Le Citepa (1990-2025) et
-  les comptes d'émissions sont en variantes.
+  ce qui appellera des bornes resserrées. Le total de conformité, le Citepa (1990-2025, 70,2 kt en 2025) et les
+  comptes d'émissions sont en variantes.
 variantes:
-- serie_id: env_air_emis?freq=A&unit=T&airpol=SOX&src_nfr=NFR_TOT_NAT&geo=FR
+- serie_id: env_air_emis?freq=A&unit=T&airpol=SOX&src_nfr=NFR_TOT_NAT_C&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les oxydes de soufre
-  ligne_id: estat-036732
+  nature: total national pour l'évaluation de conformité (directive (UE) 2016/2284), agrégats sectoriels et comptes
+    d'émissions (principe de résidence) pour les oxydes de soufre
+  ligne_id: estat-036733
   eligible: oui
 - serie_id: env_ac_ainah_r2?freq=A&airpol=SOX_SO2E&nace_r2=TOTAL&unit=G_HAB&geo=FR
   source: Eurostat
-  nature: total national (carburant vendu), Citepa (1990-2025, niveau 2), agrégats sectoriels et comptes d'émissions
-    (principe de résidence) pour les oxydes de soufre
+  nature: total national pour l'évaluation de conformité (directive (UE) 2016/2284), agrégats sectoriels et comptes
+    d'émissions (principe de résidence) pour les oxydes de soufre
   ligne_id: estat-037522
   eligible: oui
 - serie_id: 'https://www.citepa.org/wp-content/uploads/2026/06/serie_longue_Citepa_Secten_ed_2026-d.xlsx (feuille
@@ -58,8 +58,10 @@ socle_v1:
   type_justification: null
   justification: ''
 qualite:
-- drapeaux_eurostat_non_lus
-- perimetre_geo_a_verifier
-notes: 'Périmètre géographique du total national transmis par la France (code FR d''Eurostat) à confirmer : les
-  niveaux sont proches de ceux que le Citepa publie pour la France hexagonale (ammoniac : 574 390 t en 2024 chez
-  Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote : 647 990 t et 631,9 kt).'
+- champ_metropole
+notes: 'Champ : France métropolitaine. La directive (UE) 2016/2284 ne couvre pas les départements d''outre-mer (article
+  2 §2, lu le 16/10/2026) et, pour la France, le total « pour tout l''ensemble du territoire » coïncide à 10 t près
+  avec le total pour l''évaluation de conformité chaque année de 1999 à 2024 (API Eurostat lue le 16/10/2026, mise
+  à jour du 07/09/2026, aucun drapeau), sauf pour les COVNM ; les niveaux sont proches de ceux du Citepa pour la
+  France hexagonale (ammoniac : 574 380 t en 2024 chez Eurostat, 568,3 kt en 2025 chez le Citepa ; oxydes d''azote
+  : 647 990 t et 631,9 kt). Le champ `geo` garde le code de la série (FR, D15).'

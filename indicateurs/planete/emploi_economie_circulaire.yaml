@@ -1,0 +1,114 @@
+id: emploi_economie_circulaire
+libelle: Emploi dans les secteurs de l'économie circulaire
+dimension: planete
+sous_theme: déchets et matières
+famille: taux_utilisation_circulaire_matieres
+variante_principale: non
+definition: Personnes employées dans les secteurs les plus liés à l'économie circulaire (recyclage, réparation et
+  réemploi) selon le cadre de suivi de l'économie circulaire de l'UE, en pourcentage de l'emploi total, numérateur
+  en équivalents temps plein.
+unite: '% de l''emploi total (numérateur en ETP)'
+sens: haut
+type: moyen
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: cei_cie011 (personnes employées dans les secteurs de l'économie circulaire)
+source_serie_id: cei_cie011?freq=A&indic_env=EMP&unit=PC_EMP_FTE&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/cei_cie011?freq=A&indic_env=EMP&unit=PC_EMP_FTE&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/cei_cie011/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2005
+derniere_annee: 2023
+nb_points_depuis_2000: 19
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-052326
+hors_longlist: non
+raccordement: 'non : série depuis 2005'
+incontournable: non
+recommandation: retenir_variante
+motif_recommandation: Emploi de l'économie circulaire rattaché à planete comme moyen en variante (D39), série Eurostat
+  sans drapeau de 2005 à 2023 (1,6 % de l'emploi en 2005, 2,0 % en 2020 et 2021, 1,8 % en 2023).
+note_pertinence: L'emploi dans le recyclage, la réparation et le réemploi suit le développement d'une économie qui
+  prolonge la durée de vie des biens et des matières. C'est un moyen, dont le lien avec la pression sur les ressources
+  est indirect, d'où une fiche en variante de la famille du taux d'utilisation circulaire des matières. La série
+  nationale de l'INSEE (847 500 emplois en 2023, définition plus large) et sa répartition par pilier, dont les lignes
+  Melodi reçues de travail, sont en variantes.
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- sous_ensemble_secteurs
+notes: 'Valeurs lues le 16/10/2026 : Eurostat cei_cie011 (mise à jour du 06/08/2025, aucun drapeau) 1,6 % en 2005,
+  1,8 % en 2010, 2,0 % en 2020 et 2021, 1,8 % en 2023 (417 108 ETP en 2005, 537 036 en 2023) ; INSEE BDM 010600336
+  : 621 100 emplois en 2010, 847 500 en 2023. Les métadonnées d''Eurostat précisent que ces secteurs ne sont qu''un
+  sous-ensemble de l''économie circulaire.'
+variantes:
+- serie_id: '010596222'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i6 : nombre d''emplois de l''économie circulaire (BDM 010600336 et Melodi 12.i6a, 2010-2023)
+    et répartition par pilier (BDM)'
+  ligne_id: bdm-000742
+  eligible: oui
+- serie_id: '010596223'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i6 : nombre d''emplois de l''économie circulaire (BDM 010600336 et Melodi 12.i6a, 2010-2023)
+    et répartition par pilier (BDM)'
+  ligne_id: bdm-000743
+  eligible: oui
+- serie_id: '010596224'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i6 : nombre d''emplois de l''économie circulaire (BDM 010600336 et Melodi 12.i6a, 2010-2023)
+    et répartition par pilier (BDM)'
+  ligne_id: bdm-000744
+  eligible: oui
+- serie_id: '010600336'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i6 : nombre d''emplois de l''économie circulaire (BDM 010600336 et Melodi 12.i6a, 2010-2023)
+    et répartition par pilier (BDM)'
+  ligne_id: bdm-000748
+  eligible: oui
+- serie_id: '010754820'
+  source: INSEE BDM
+  nature: 'INSEE ODD 12.i6 : nombre d''emplois de l''économie circulaire (BDM 010600336 et Melodi 12.i6a, 2010-2023)
+    et répartition par pilier (BDM)'
+  ligne_id: bdm-000751
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=12.i6a&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=FT
+  source: INSEE Melodi
+  nature: 'INSEE ODD 12.i6 : nombre d''emplois de l''économie circulaire (BDM 010600336 et Melodi 12.i6a, 2010-2023)
+    et répartition par pilier (BDM)'
+  ligne_id: melodi-005749
+  eligible: oui
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECOCIRC_PILIER1&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=12.i6b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE Melodi ODD 12.i6b : répartition de l''emploi par pilier de l''économie circulaire (2010-2023) ;
+    lignes renvoyées par travail (règle 960)'
+  ligne_id: melodi-005582
+  eligible: oui
+  longlist: travail
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECOCIRC_PILIER2&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=12.i6b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE Melodi ODD 12.i6b : répartition de l''emploi par pilier de l''économie circulaire (2010-2023) ;
+    lignes renvoyées par travail (règle 960)'
+  ligne_id: melodi-005583
+  eligible: oui
+  longlist: travail
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECOCIRC_PILIER3&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=12.i6b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE Melodi ODD 12.i6b : répartition de l''emploi par pilier de l''économie circulaire (2010-2023) ;
+    lignes renvoyées par travail (règle 960)'
+  ligne_id: melodi-005584
+  eligible: oui
+  longlist: travail
+- serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=ECOCIRC_PILIER4&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=12.i6b&PCS=_Z&SDG=SDG12&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: 'INSEE Melodi ODD 12.i6b : répartition de l''emploi par pilier de l''économie circulaire (2010-2023) ;
+    lignes renvoyées par travail (règle 960)'
+  ligne_id: melodi-005585
+  eligible: oui
+  longlist: travail

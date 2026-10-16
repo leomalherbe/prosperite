@@ -29,8 +29,8 @@ hors_longlist: non
 raccordement: 'non : rapportage sexennal'
 incontournable: non
 recommandation: retenir
-motif_recommandation: Seule mesure de l'état des habitats naturels, publiée à chaque rapportage européen (3 points
-  de 2012 à 2024) et admise comme série irrégulière (D17).
+motif_recommandation: Seule mesure de l'état des habitats naturels, publiée à chaque rapportage européen (22 % en
+  2012, 20 % en 2018, 16 % en 2024, provisoire) et admise comme série irrégulière (D17).
 note_pertinence: L'indicateur dit dans quel état sont les habitats protégés par la directive Habitats ; il ne bouge
   qu'à chaque rapportage, tous les six ans, ce qui impose de reporter la dernière valeur (D17). Les autres classes
   d'état (défavorable inadéquat, défavorable mauvais, inconnu) sont en variantes, et la part d'état inconnu pèse
@@ -80,4 +80,7 @@ qualite:
 - serie_irreguliere_D17
 - rapportage_sexennal
 - champ_metropole
-notes: ''
+- derniere_valeur_provisoire
+notes: 'Valeurs lues sur la BDM le 16/10/2026 (2012, 2018, 2024) : favorable 22, 20, 16 ; défavorable inadéquat
+  38, 42, 40 ; défavorable mauvais 35, 34, 40 ; inconnu 5, 4, 4 (somme de 100) ; valeurs 2024 provisoires (statut
+  P).'

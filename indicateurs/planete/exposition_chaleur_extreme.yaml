@@ -25,17 +25,25 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: m04-000063
 hors_longlist: non
-rattachement_propose: ligne de la long-list logement_cadre_vie (environnement local) ; aléa climatique subi → planete
-  (A14, R2) ; à trancher au gel 2
+rattachement_propose: ligne de la long-list logement_cadre_vie, que logement_cadre_vie renvoie aussi à planete (règle
+  1630) ; aléa climatique subi → planete (A14)
 raccordement: 'non : série OCDE depuis 2004'
 incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Autre lecture de la famille chaleur_extreme (part de la population plutôt que nombre de jours),
   série OCDE annuelle de 2004 à 2024 (21 points), 1,03 % en 2024 d'après l'extrait du robot M04.
 note_pertinence: L'indicateur rapporte l'exposition à la population, ce qui tient compte du lieu de vie des habitants,
-  mais sa méthode d'estimation n'est pas documentée dans les extraits disponibles. La long-list le range dans logement_cadre_vie
-  ; l'arbitrage A14 le rattache à la planète avec les canicules.
-variantes: []
+  mais sa méthode d'estimation n'est pas documentée dans les extraits disponibles. La long-list le range dans logement_cadre_vie,
+  qui le renvoie à la planète avec les canicules (A14). La population concernée par une canicule de Santé publique
+  France, dont la définition suit le système d'alerte, est en variante et pourrait devenir la série de la fiche
+  une fois cataloguée (PLA-10).
+variantes:
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-taille-de-la-population-concernee-par-une-canicule-france
+    (pop_exposee)
+  source: Santé publique France (Odissé)
+  nature: taille de la population concernée par une canicule (Santé publique France, champ pop_exposee, 2004-2025,
+    22 valeurs, 53 095 300 personnes en 2025 ; robot, vague 11) ; oubli O2 de l'audit
+  preuve: docs/sources/series/spf_odisse__canicules-taille-de-la-population-concernee-par-une-canicule-france.csv
 socle_v1:
   seuil_minimal: null
   objectif: null

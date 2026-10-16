@@ -32,7 +32,8 @@ motif_recommandation: Mesure de la pression de toute l'économie sur les capacit
   d'Eurostat de 2004 à 2022 (10 points, D17), avec 5 034 kg par habitant en 2022.
 note_pertinence: Le total comprend les déchets minéraux du bâtiment et des travaux publics, sensibles à l'activité
   de construction, ce qui en rend la lecture délicate. Les valeurs 2004 et 2006 sont imputées. Les déchets dangereux,
-  les séries de l'INSEE (ODD 12.i4 et 12.i5) et les principaux modes de traitement sont en variantes.
+  les séries de l'INSEE (ODD 12.i4 et 12.i5) et les principaux modes de traitement sont en variantes ; les pertes
+  et gaspillages alimentaires forment l'autre fiche de la famille (variante, D40).
 variantes:
 - serie_id: sdg_12_51?freq=A&waste=TOTAL&hazard=HAZ&nace_r2=TOTAL_HH&unit=KG_HAB&geo=FR
   source: Eurostat

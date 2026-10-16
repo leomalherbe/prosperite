@@ -26,7 +26,7 @@ eligibilite_longlist: oui
 ligne_id: estat-002107
 hors_longlist: non
 raccordement: 'non : la source remonte à 1990 (9,4 t par habitant)'
-incontournable: oui
+incontournable: non
 recommandation: retenir_variante
 motif_recommandation: Lecture par personne de la famille emissions_ges_territoire, comparable aux repères exprimés
   par habitant, série Eurostat sans drapeau passée de 9,1 t en 2000 à 5,3 t en 2024 (API lue le 14/10/2026).
@@ -168,8 +168,8 @@ variantes:
   eligible: oui
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=12_8 UNIT_MEASURE=KG_CO2E_PS
   source: OCDE — How's Life? (base du bien-être)
-  nature: 'relais internationaux : OCDE How''s Life 12_8 (kg CO2e par habitant), Banque mondiale EN.GHG.ALL, Our
-    World in Data (GES hors usage des terres, Jones et al.)'
+  nature: 'relais internationaux : OCDE How''s Life 12_8 (tonnes CO2e par habitant, malgré le code d''unité « kg
+    » de la source, PLA-7), Banque mondiale EN.GHG.ALL, Our World in Data (GES hors usage des terres, Jones et al.)'
   ligne_id: m04-000087
   eligible: oui
 - serie_id: https://github.com/owid/co2-data (colonne co2_per_capita)
@@ -180,8 +180,8 @@ variantes:
   eligible: oui
 - serie_id: https://github.com/owid/co2-data (colonne ghg_excluding_lucf_per_capita)
   source: Our World in Data (relais)
-  nature: 'relais internationaux : OCDE How''s Life 12_8 (kg CO2e par habitant), Banque mondiale EN.GHG.ALL, Our
-    World in Data (GES hors usage des terres, Jones et al.)'
+  nature: 'relais internationaux : OCDE How''s Life 12_8 (tonnes CO2e par habitant, malgré le code d''unité « kg
+    » de la source, PLA-7), Banque mondiale EN.GHG.ALL, Our World in Data (GES hors usage des terres, Jones et al.)'
   ligne_id: m04-000222
   eligible: oui
 - serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
@@ -199,8 +199,8 @@ variantes:
   eligible: oui
 - serie_id: https://api.worldbank.org/v2/country/FRA/indicator/EN.GHG.ALL.PC.CE.AR5?format=json
   source: Banque mondiale — World Development Indicators (API v2)
-  nature: 'relais internationaux : OCDE How''s Life 12_8 (kg CO2e par habitant), Banque mondiale EN.GHG.ALL, Our
-    World in Data (GES hors usage des terres, Jones et al.)'
+  nature: 'relais internationaux : OCDE How''s Life 12_8 (tonnes CO2e par habitant, malgré le code d''unité « kg
+    » de la source, PLA-7), Banque mondiale EN.GHG.ALL, Our World in Data (GES hors usage des terres, Jones et al.)'
   ligne_id: m04-000398
   eligible: oui
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=13.i4c&PCS=_Z&SDG=SDG13&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=TCO2E

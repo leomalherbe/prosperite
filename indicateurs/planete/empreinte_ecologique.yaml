@@ -12,6 +12,7 @@ sens: bas
 type: pression
 declaratif: non
 composite: oui
+annee_reference: observation
 source_organisme: Footprint Data Foundation (comptes nationaux d'empreinte écologique et de biocapacité)
 source_jeu: National Ecological Footprint and Biocapacity Accounts, édition 2026 (feuille national_data, colonne
   efc_total_percapita)
@@ -61,4 +62,4 @@ qualite:
 - licence_non_trouvee
 - url_par_edition
 - deux_dernieres_annees_estimees
-notes: ''
+notes: 'annee_reference : année des données (l''édition 2026 des comptes couvre 1961-2025, 2024 et 2025 étant estimées).'

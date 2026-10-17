@@ -1,28 +1,24 @@
 # Point de reprise — session mère
 
-Mis à jour le 2026-10-14 à 10 h 05 (Paris), juste avant une pause (coupure internet annoncée par Léo). Ce document permet à toute session (mère ou reprise après redémarrage) de reprendre le pilotage sans relire l'historique de conversation. Il est réécrit à chaque étape importante.
+Mis à jour le 2026-10-17 à 12 h 15 (Paris). Ce document permet à toute session (mère ou reprise après redémarrage) de reprendre le pilotage sans relire l'historique de conversation. Il est réécrit à chaque étape importante.
 
 ## État du projet
-- **Phase 0** cadrage : fait (charte v1.2, journal D01–D33).
-- **Gel 1** (dimensions) : fait le 13/10 — `indicateurs/dimensions.yaml` v1 `statut: figee` (D23–D25, D27).
-- **M01 INSEE, M02 Eurostat, M03 cadres, M04 autres sources** : terminées et fusionnées dans `main` (PR #1 à #4). Catalogues complets dans `catalogues/` ; règles de catalogage actées D28–D30.
-- **M05-prep** (long-list `src/pipeline/longlist.py`, 47 367 lignes, 42 concepts présents sur plusieurs dimensions) : fusionnée (PR #5), régénérée par le robot (`collecte_longlist.py`).
-- **Méthode commune des fiches M05** : `docs/methodo/33_methode_fiches_M05.md` (D31), règles complémentaires des audits (D32), rattachements tranchés (D33).
-- **M05 fiches indicateurs** — faites et fusionnées pour **4 dimensions sur 10** : `liens_bien_etre` (21 fiches, PR #6), `securite` (33, PR #7), `egalites` (50, PR #10), `democratie` (32, PR #11). Tableaux de validation : `docs/validation/validation_<dimension>.csv`.
-- **M06 audits croisés** — faits et fusionnés pour `liens_bien_etre` (PR #8) et `securite` (PR #9) ; rapports `docs/validation/audit_<dimension>.md`.
-- **PR #12 ouverte** : `m05-liens_bien_etre-corr` — corrections de `liens_bien_etre` après audit (à relire et fusionner).
-- Aucun robot en cours, aucun agent actif au moment de la pause.
+- **Phase 0** cadrage : fait (charte v1.2, journal D01–D47).
+- **Gel 1** (dimensions) : fait le 13/10 (`indicateurs/dimensions.yaml` v1 figée).
+- **M01–M04, M05-prep** : terminées et fusionnées (PR #1–#5).
+- **M05 fiches indicateurs** : faites pour les 10 dimensions ; **M06 audits croisés** : faits pour les 10 ; **corrections après audit** : faites et fusionnées pour les 10 (dernière : logement_cadre_vie, PR #35, avec transfert de l'assainissement vers planète). Méthode commune : `docs/methodo/33_methode_fiches_M05.md` (v1.3 en cours sur la branche transversale).
+- **Gel 2** : `democratie` et `liens_bien_etre` **figées par Léo** (D47 ; décisions dans `docs/validation/validation_<dim>.csv`, classeurs retournés archivés dans `docs/validation/classeurs/retours/`). Les 8 autres dimensions attendent leurs classeurs.
+- **En cours** : branche `m05-transversal-gel2` (agent lancé le 17/10 à 12 h 10) — socle proposé par sous-thème (D41) sur les 10 dimensions, lignes renvoyées non reprises (D46), vérificateur et classeur v1.3, tableaux de validation régénérés → PR à fusionner.
 
 ## Prochaines étapes (dans l'ordre)
-1. Fusionner la PR #12 (corrections liens_bien_etre) après relecture.
-2. Lancer **M05** pour les **6 dimensions restantes** : `niveau_de_vie`, `travail`, `logement_cadre_vie`, `sante`, `education`, `planete` (fiche `docs/missions/M05_fiches_indicateurs.md` + méthode commune 33 ; agents Opus en worktree, une dimension par agent, 2 à 3 en parallèle au plus pour éviter les conflits git ; `niveau_de_vie` et `planete` sont les plus volumineuses : comptes nationaux à réduire en familles, D30).
-3. Lancer **M06** (audit croisé) pour `egalites`, `democratie`, puis chaque nouvelle dimension ; appliquer les corrections (branche `m05-<dim>-corr`).
-4. Convertir les `docs/validation/validation_<dimension>.csv` en **classeurs Excel** avec listes déroulantes (`decision_leo` : retenu / retenu_socle / ecarte / a_discuter) déposés dans le dossier OneDrive `30_dimensions_indicateurs/validation/` → **gel 2** par Léo (validation par exception, dimension par dimension ; possibilité de choix cliquables en session pour les familles où l'agent hésite).
-5. Après le gel 2 : socle des bornes v1 (M07), pipeline de données et millésimes (M08), front (M09), collecte (phase 7).
+1. Fusionner la PR transversale ; `python -m pytest -q` ; vérificateur à 0 erreur sur les 10 dimensions ; `--lignes-renvoyees` sans orpheline.
+2. Générer les **8 classeurs** restants (`python scripts/classeur_validation.py exporter --toutes`, v1.3 : défaut `retenu_socle` = `socle_propose: oui`) et les déposer dans le dossier OneDrive `30_dimensions_indicateurs/validation/` (ne pas écraser les deux classeurs validés) ; prévenir Léo.
+3. À chaque classeur retourné : `python scripts/classeur_validation.py importer --dimension <dim> --fichier <xlsx>` ; archiver le retour dans `docs/validation/classeurs/retours/` ; consigner au journal (D48…) ; traiter les `a_discuter` par questions cliquables en session.
+4. Quand les 10 sont figées : **base d'indicateurs v1.0** (`statut: fige` sur les fiches, journal des modifications, versionnement sémantique, charte §3.6), puis **M07 socle des bornes v1** (seuil minimal / objectif par indicateur retenu, hiérarchie officiel > scientifique > historique > européen > expert ; vérifier Q-F ZAN et énergie-climat), **M08 pipeline de données et millésimes**, **M09 front** (3 modes + jeu), **phase 7 collecte** (Supabase UE).
 
 ## Décisions en attente de Léo
-- Aucune bloquante. Le gel 2 commence dès que les classeurs d'une dimension sont prêts (les 4 premières dimensions peuvent être validées sans attendre les 6 autres).
-- Questions ouvertes au journal : Q-C (seuil de bascule vers les bornes émergentes), Q-D (cadre institutionnel), Q-E (répondants), Q-F (statut des objectifs ZAN et énergie-climat, à vérifier avant le socle des bornes).
+- Remplir les 8 classeurs restants (validation par exception) quand ils seront déposés.
+- Questions ouvertes au journal : Q-C (seuil de bascule vers les bornes émergentes), Q-D (cadre institutionnel), Q-E (répondants), Q-F (statut des objectifs ZAN et énergie-climat).
 
 ## Conventions de reprise
 - Lire `docs/00_charte_projet.md`, `docs/01_journal_decisions.md`, `docs/methodo/33_methode_fiches_M05.md`, puis ce document (copies dans le Projet claude.ai sous `claude/`).

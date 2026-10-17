@@ -4,7 +4,7 @@ libelle: Écart relatif de revenu médian entre personnes nées en France et per
 dimension: egalites
 sous_theme: écarts selon l'origine
 famille: ecart_pauvrete_origine
-variante_principale: non
+variante_principale: oui
 definition: Écart, en valeur absolue et en pourcentage, entre le revenu disponible équivalent médian des personnes
   de 18 ans ou plus nées en France et celui des personnes nées à l'étranger, rapporté au premier (EU-SILC, jeu ilc_di16).
 unite: '% du revenu médian des personnes nées en France'
@@ -34,15 +34,15 @@ rattachement_propose: lignes de la long-list niveau_de_vie (revenu médian par p
   ; l'écart construit relève d'egalites (A8, R3), les niveaux restent dans niveau_de_vie ; à trancher au gel 2
 raccordement: non
 incontournable: non
-socle_propose: non
-recommandation: retenir_variante
-motif_recommandation: Écart calculé sur deux séries annuelles de 2004 à 2025 (22 points ; 20,3 % en 2004, 17,2 %
-  en 2015, 22,1 % en 2025), qui couvre les immigrés devenus français, proposé comme alternative dans la famille
-  ecart_pauvrete_origine.
+socle_propose: oui
+recommandation: retenir
+motif_recommandation: 'Placé au socle par Léo au gel 2 et devenu principal de la famille ecart_pauvrete_origine
+  (D48) : écart calculé et recoupé sur deux séries annuelles de 2004 à 2025 (22 points ; 20,3 % en 2004, 22,1 %
+  en 2025), qui couvre les immigrés devenus français.'
 note_pertinence: Le revenu médian des personnes nées à l'étranger est inférieur d'environ un cinquième à celui des
   personnes nées en France. Par pays de naissance, la mesure inclut les immigrés naturalisés, que l'écart de pauvreté
-  selon la nationalité (principal de la famille) exclut. Les deux composantes sautent en 2008 (+22 % et +15 % en
-  un an) sans drapeau, et portent des ruptures en 2020 et 2022.
+  selon la nationalité (autre fiche de la famille) exclut. Les deux composantes sautent en 2008 (+22 % et +15 %
+  en un an) sans drapeau, et portent des ruptures en 2020 et 2022.
 variantes: []
 socle_v1:
   seuil_minimal: null

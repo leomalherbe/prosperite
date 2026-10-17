@@ -43,6 +43,13 @@ note_pertinence: 'Les discriminations selon l''origine sont un contenu explicite
   Les autres motifs posés dans la même question (religion, orientation sexuelle, âge, handicap) sont listés en variantes,
   et le score V-Dem d''égalité des libertés civiles entre groupes sociaux est une alternative de la famille.'
 variantes:
+- serie_id: 'odd_10 : 10_3_1_OECD._T._T._T._T._T.PT_POP_Y_GE15'
+  source: OCDE — indicateurs ODD (base « Measuring distance to the SDG targets »)
+  nature: part de la population jugeant son lieu de résidence accueillant pour les minorités raciales et ethniques
+    (OCDE, ODD 10.3.1, 2007-2023)
+  ligne_id: m04-000126
+  eligible: oui
+  longlist: logement_cadre_vie
 - serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
     ; variable CS16_4, modalité 1
   source: DREES

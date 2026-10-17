@@ -1,6 +1,6 @@
 # Méthode commune des fiches indicateurs (mission M05) — v1.3
 
-Version 1.3 — 17 octobre 2026 (historique au §11). Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions (D31), complétée par les règles actées au pilote `securite` et par les règles issues des audits M06 (D32, D33 ; §9), par les décisions D34 à D36 (second §9) et par les décisions D37 à D46 préparant le gel 2 (§10 : socle proposé, lignes renvoyées, règles communes). Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py`, `scripts/classeur_validation.py` (tests : `tests/test_verifier_fiches.py`, `tests/test_classeur_validation.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
+Version 1.3 — 17 octobre 2026 (historique au §11). Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions (D31), complétée par les règles actées au pilote `securite` et par les règles issues des audits M06 (D32, D33 ; §9), par les décisions D34 à D36 (second §9) et par les décisions D37 à D48 préparant le gel 2 (§10 : socle proposé, lignes renvoyées, règles communes). Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py`, `scripts/classeur_validation.py` (tests : `tests/test_verifier_fiches.py`, `tests/test_classeur_validation.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
 
 ## 1. Vocabulaire
 
@@ -151,14 +151,14 @@ Colonnes (format v1.3), dans l'ordre : `id, libelle, sous_theme, famille, varian
 - Frontière rémunération : salaire moyen réel, bas salaires et pauvreté en emploi → `travail` (qualité de l'emploi) ; revenus et niveau de vie des ménages → `niveau_de_vie`.
 - Chaque agent travaille dans un sous-dossier de travail propre (`tmp/<mission>/`, ignoré par git) : le bac à sable est partagé entre agents parallèles.
 
-## 10. Compléments v1.3 (décisions D37 à D47, 15-17 octobre 2026, préparation du gel 2)
+## 10. Compléments v1.3 (décisions D37 à D48, 15-17 octobre 2026, préparation du gel 2)
 
-### 10.1 Socle proposé (D41, D47)
+### 10.1 Socle proposé (D41, D47, D48)
 
 - **Champ obligatoire** `socle_propose: oui|non` sur toute fiche. `oui` : variante principale recommandée `retenir`, 8 fiches au plus par dimension. Le correcteur de la dimension désigne les variantes principales `incontournable: oui` **plus une fiche principale par sous-thème du contenu de la dimension** (`indicateurs/dimensions.yaml`) ; il écrit dans son journal, pour chaque fiche au socle, un motif d'une ligne.
 - **Dérogation** : une variante principale `retenir` et incontournable laissée hors du socle porte `derogation_socle: <motif>` (limite de 8 atteinte, redondance avec une fiche du socle, décision de Léo). Sans dérogation, le vérificateur renvoie une erreur, ou un avertissement si la limite de 8 est déjà atteinte ; une dérogation sans objet est un avertissement.
 - **Classeur** (`scripts/classeur_validation.py`, v1.3) : décision par défaut `retenu_socle` pour `socle_propose: oui`, `retenu` pour les autres `retenir` et les `retenir_variante`, `ecarte` pour `ecarter` (repli D37 pour une fiche sans le champ : `retenir` + principale + incontournable → `retenu_socle`) ; colonnes « Sous-thème » et « Socle proposé » ; feuille « Synthèse » : socle par sous-thème, par défaut et après les décisions saisies. L'export reprend les décisions d'un classeur rempli mais pas encore importé ; l'import ne vide jamais une décision du CSV.
-- **Dimension figée par Léo** (D47 : `democratie`, `liens_bien_etre`) : `socle_propose: oui` est exactement le socle validé, les fiches retirées du socle par Léo portent la dérogation correspondante ; les décisions `decision_leo` priment sur la règle. On n'y ajoute plus que des **variantes** (lignes renvoyées) : ni nouvelle fiche principale, ni changement de recommandation ; une ligne qui mériterait une fiche est notée au journal pour une v1.1 de la dimension.
+- **Dimension figée par Léo** (D47 : `democratie`, `liens_bien_etre` ; D48 : `egalites`) : `socle_propose: oui` est exactement le socle validé, les incontournables retirés du socle par Léo portent la dérogation correspondante ; les décisions `decision_leo` priment sur la règle. Quand Léo place au socle une fiche `retenir_variante`, elle devient la variante principale de sa famille (`retenir`, incontournable reporté sur elle), l'ancienne principale passe en `retenir_variante` (D48). On n'y ajoute plus que des **variantes** (lignes renvoyées) : ni nouvelle fiche, ni changement de recommandation hors décision de Léo ; une ligne qui mériterait une fiche est notée au journal pour une v1.1 de la dimension.
 
 ### 10.2 Lignes renvoyées (D38 a, D46)
 
@@ -184,4 +184,4 @@ Colonnes (format v1.3), dans l'ordre : `id, libelle, sous_theme, famille, varian
 | v1.0 | 14/10/2026 | Méthode du pilote `liens_bien_etre` adoptée pour les dix dimensions (D31) : vocabulaire, codes de présélection, schéma de fiche, tableau à 18 colonnes. |
 | v1.1 | 14/10/2026 | Règles complémentaires issues des audits des pilotes (D32, D33) : premier §9. |
 | v1.2 | 14/10/2026 | Familles par concept, séries calculées, vérifications (D34 à D36) : second §9. |
-| v1.3 | 17/10/2026 | Socle proposé (D41) et dimensions figées (D47), lignes renvoyées et renvois hors long-list (D38 a, D46), règles communes (D38, D42 à D45) : §10 ; schéma (`socle_propose`, `derogation_socle`, `annee_reference`), tableau à 20 colonnes (§7), déroulé (§6) ; vérificateur et classeur v1.3 (branche `m05-transversal-gel2`). |
+| v1.3 | 17/10/2026 | Socle proposé (D41) et dimensions figées (D47, D48), lignes renvoyées et renvois hors long-list (D38 a, D46), règles communes (D38, D42 à D45) : §10 ; schéma (`socle_propose`, `derogation_socle`, `annee_reference`), tableau à 20 colonnes (§7), déroulé (§6) ; vérificateur et classeur v1.3 (branche `m05-transversal-gel2`). |

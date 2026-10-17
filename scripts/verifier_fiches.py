@@ -29,9 +29,9 @@ Contrôles (erreurs bloquantes, code de sortie 1) :
    `incontournable: oui` est `socle_propose: oui`, sauf dérogation explicite écrite dans la fiche
    (`derogation_socle: <motif>`, ex. décision de Léo) ; 8 fiches `oui` au plus par dimension. Quand la limite
    de 8 est atteinte, un incontournable laissé hors du socle sans dérogation écrite est un avertissement.
-   Tant que sa correction n'est pas fusionnée, `logement_cadre_vie` peut ne pas porter le champ
-   (avertissement, `DIMENSIONS_SOCLE_TRANSITOIRE`). Avertissement si une fiche non principale porte
-   `incontournable: oui` (D38 d).
+   Une dimension dont la correction n'est pas fusionnée peut être déclarée dans `DIMENSIONS_SOCLE_TRANSITOIRE`
+   (absence du champ = avertissement ; ensemble vide depuis le 17/10/2026). Avertissement si une fiche non
+   principale porte `incontournable: oui` (D38 d).
 8. **Identifiants DREES** (D45) : un identifiant du baromètre d'opinion qui cite les deux anciennes pièces jointes
    (`barometre2000_2024_diff_csv` et `barometre2025_diff_csv`) est reconnu comme celui de la pièce jointe unique
    `barometre2000_2025_diff_csv`, avec un avertissement (à aligner).
@@ -40,7 +40,11 @@ Avertissements sur les lignes renvoyées (D38 a, D46), à partir des `docs/valid
 - toute ligne renvoyée à la dimension par `autre_dimension:<dim>` qu'aucune règle de la dimension ne reprend
   (fiche, variante, écart en bloc ou renvoi motivé vers une troisième dimension) ;
 - toute ligne écartée en bloc par la dimension alors qu'une autre dimension la retient (fiche ou variante) ;
-  la dimension qui la retient en garde le compte (`lignes_retenues_ecartees_ailleurs`).
+  la dimension qui la retient en garde le compte (`lignes_retenues_ecartees_ailleurs`) ;
+- tout renvoi **hors long-list** (règle `autre_dimension:<dim>` avec `hors_longlist = oui`, sans ligne : série
+  vérifiée à la source, ex. une question du baromètre DREES) que la dimension destinataire ne reprend pas : la
+  reprise se lit dans `docs/validation/regles_preselection_<destination>.csv`, dont une règle (fiche, variante,
+  écart en bloc ou renvoi plus loin) cite `<origine>/<groupe>` dans son motif.
 
 Usage :
     python scripts/verifier_fiches.py --dimension liens_bien_etre
@@ -95,8 +99,8 @@ COLONNES_LEO = ["decision_leo", "commentaire_leo"]
 DECISIONS_LEO = {"", "retenu", "retenu_socle", "ecarte", "a_discuter"}
 SOCLE_MAX = 8                       # D41 : 8 fiches socle_propose: oui au plus par dimension
 # D41 : dimensions dont la correction (qui pose socle_propose) n'est pas encore fusionnée ; l'absence du
-# champ y est un avertissement. À vider une fois la correction de logement_cadre_vie fusionnée.
-DIMENSIONS_SOCLE_TRANSITOIRE = {"logement_cadre_vie"}
+# champ y est un avertissement. Vide depuis la fusion de la correction de logement_cadre_vie (PR #35).
+DIMENSIONS_SOCLE_TRANSITOIRE: set[str] = set()
 # D45 : identifiants du baromètre d'opinion de la DREES, anciennes pièces jointes → pièce jointe unique
 DREES_ANCIEN = "pièces jointes barometre2000_2024_diff_csv et barometre2025_diff_csv"
 DREES_UNIQUE = "pièce jointe barometre2000_2025_diff_csv"
@@ -395,6 +399,50 @@ def lignes_renvoyees(preselections: dict[str, pd.DataFrame]) -> pd.DataFrame:
     return pd.DataFrame(rangs, columns=colonnes)
 
 
+def lire_regles_preselection(racine: Path) -> dict[str, pd.DataFrame]:
+    """Les `docs/validation/regles_preselection_<dim>.csv` du dépôt, par dimension (cellules nettoyées)."""
+    dossier = racine / "docs" / "validation"
+    regles = {}
+    for chemin in sorted(dossier.glob("regles_preselection_*.csv")):
+        df = pd.read_csv(chemin, dtype=str, keep_default_na=False)
+        regles[chemin.name[len("regles_preselection_"):-len(".csv")]] = df.apply(lambda col: col.str.strip())
+    return regles
+
+
+def _statut_decision(decision: str) -> str:
+    if decision == "fiche":
+        return "fiche"
+    if decision.startswith("variante_de:"):
+        return "variante"
+    if decision == "ecarte_en_bloc":
+        return "ecartee"
+    if decision.startswith("autre_dimension:"):
+        return "relayee:" + decision.split(":", 1)[1]
+    return "orpheline"
+
+
+def renvois_hors_longlist(regles: dict[str, pd.DataFrame]) -> pd.DataFrame:
+    """Renvois sans ligne (D46) : règles `autre_dimension:<destination>` avec `hors_longlist = oui` (série vérifiée à
+    la source, absente des long-lists). La destination les reprend par une règle dont le motif cite
+    `<origine>/<groupe>` ; statut : `fiche`, `variante`, `ecartee`, `relayee:<dim>` ou `orpheline`."""
+    rangs = []
+    for origine, df in regles.items():
+        if "hors_longlist" not in df.columns:
+            continue
+        sel = df[df["decision"].str.startswith("autre_dimension:") & (df["hors_longlist"] == "oui")]
+        for r in sel.to_dict("records"):
+            destination = r["decision"].split(":", 1)[1]
+            cle = f"{origine}/{r['groupe']}"
+            dest = regles.get(destination)
+            reprises = [] if dest is None else [x for x in dest.to_dict("records") if cle in x.get("motif", "")]
+            rangs.append({"origine": origine, "destination": destination, "groupe": r["groupe"],
+                          "nature": r.get("nature", ""),
+                          "regle_destination": reprises[0]["groupe"] if reprises else "",
+                          "statut": _statut_decision(reprises[0]["decision"]) if reprises else "orpheline"})
+    colonnes = ["origine", "destination", "groupe", "nature", "regle_destination", "statut"]
+    return pd.DataFrame(rangs, columns=colonnes)
+
+
 def lignes_retenues_et_ecartees(preselections: dict[str, pd.DataFrame]) -> list[dict]:
     """Lignes retenues (fiche ou variante) dans une dimension et écartées en bloc dans une autre (D46)."""
     usages: dict[str, list[tuple[str, str, str]]] = defaultdict(list)
@@ -413,10 +461,13 @@ def lignes_retenues_et_ecartees(preselections: dict[str, pd.DataFrame]) -> list[
     return conflits
 
 
-def controler_lignes_renvoyees(dimension: str, rapport: Rapport, preselections: dict[str, pd.DataFrame]) -> None:
+def controler_lignes_renvoyees(dimension: str, rapport: Rapport, preselections: dict[str, pd.DataFrame],
+                               regles: dict[str, pd.DataFrame] | None = None) -> None:
     """D46 : avertit pour chaque groupe de lignes renvoyées à la dimension et non reprises, et pour chaque ligne
     écartée en bloc ici alors qu'une autre dimension la retient (fiche ou variante). La dimension qui retient la
-    ligne n'est pas avertie (l'écart est à motiver ou à corriger là où il est écrit) ; elle en garde le compte."""
+    ligne n'est pas avertie (l'écart est à motiver ou à corriger là où il est écrit) ; elle en garde le compte.
+    Avec `regles` (règles de présélection de toutes les dimensions) : avertit aussi pour chaque renvoi hors long-list
+    reçu et non repris (aucune règle de la dimension ne cite `<origine>/<groupe>` dans son motif)."""
     renvois = lignes_renvoyees(preselections)
     recues = renvois[renvois["destination"] == dimension]
     orphelines = recues[recues["statut"] == "orpheline"]
@@ -426,6 +477,15 @@ def controler_lignes_renvoyees(dimension: str, rapport: Rapport, preselections: 
                                             f"reprises (D46) : {exemples}")
     rapport.compteurs["lignes_recues"] = len(recues)
     rapport.compteurs["lignes_recues_orphelines"] = len(orphelines)
+    if regles is not None:
+        hl = renvois_hors_longlist(regles)
+        recus = hl[hl["destination"] == dimension]
+        for r in recus[recus["statut"] == "orpheline"].to_dict("records"):
+            rapport.avertir("lignes renvoyées", f"renvoi hors long-list de {r['origine']} (groupe {r['groupe']}) non "
+                                                f"repris (D46) : citer « {r['origine']}/{r['groupe']} » dans le motif "
+                                                "de la règle qui le reprend")
+        rapport.compteurs["renvois_hors_longlist_recus"] = len(recus)
+        rapport.compteurs["renvois_hors_longlist_orphelins"] = int((recus["statut"] == "orpheline").sum())
     ecartees_ici, retenues_ici = 0, 0
     for c in lignes_retenues_et_ecartees(preselections):
         if c["ecartee_dans"] == dimension:
@@ -654,7 +714,7 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
             controler_catalogues(f, rapport, series, jeux, racine, paquets)
     controler_couverture(racine, dimension, fiches, rapport)
     controler_lignes_croisees(racine, dimension, rapport)
-    controler_lignes_renvoyees(dimension, rapport, lire_preselections(racine))
+    controler_lignes_renvoyees(dimension, rapport, lire_preselections(racine), lire_regles_preselection(racine))
     controler_tableau(racine, dimension, fiches, rapport)
     reco = Counter(f.get("recommandation") for f in fiches)
     rapport.compteurs.update({
@@ -673,8 +733,9 @@ def verifier_dimension(racine: Path, dimension: str, catalogues: bool = True) ->
 
 def rapport_lignes_renvoyees(racine: Path, limite: int = 0) -> list[str]:
     """Bilan des renvois `autre_dimension:<dim>` par couple (origine → destination) : reprises par la destination
-    (fiche, variante, écart en bloc, renvoi plus loin) et lignes orphelines (D46), puis lignes retenues dans une
-    dimension et écartées dans une autre. `limite` > 0 : nombre maximal de lignes orphelines listées par couple."""
+    (fiche, variante, écart en bloc, renvoi plus loin) et lignes orphelines (D46), renvois hors long-list et leur
+    reprise, puis lignes retenues dans une dimension et écartées dans une autre. `limite` > 0 : nombre maximal de
+    lignes orphelines listées par couple."""
     preselections = lire_preselections(racine)
     renvois = lignes_renvoyees(preselections)
     sorties = ["Lignes renvoyées (autre_dimension:<dim>) — origine → destination : renvoyées ; fiche, variante, "
@@ -699,6 +760,14 @@ def rapport_lignes_renvoyees(racine: Path, limite: int = 0) -> list[str]:
     if len(par_destination):
         sorties.append("")
         sorties.append("Orphelines par destination : " + ", ".join(f"{d} {n}" for d, n in par_destination.items()))
+    hl = renvois_hors_longlist(lire_regles_preselection(racine))
+    sorties.append("")
+    sorties.append(f"Renvois hors long-list (règle autre_dimension avec hors_longlist = oui) : {len(hl)}")
+    for r in hl.to_dict("records"):
+        reprise = f"repris par {r['destination']}/{r['regle_destination']} ({r['statut']})" if r["regle_destination"] \
+            else "NON REPRIS"
+        sorties.append(f"  {r['origine']}/{r['groupe']} → {r['destination']} : {reprise}")
+    n_hl = int((hl["statut"] == "orpheline").sum())
     conflits = lignes_retenues_et_ecartees(preselections)
     sorties.append("")
     sorties.append(f"Lignes retenues dans une dimension et écartées dans une autre : {len(conflits)}")
@@ -706,7 +775,8 @@ def rapport_lignes_renvoyees(racine: Path, limite: int = 0) -> list[str]:
         sorties.append(f"  {c['ligne_id']} : retenue par {c['retenue_dans']}/{c['groupe_retenu']}, écartée par "
                        f"{c['ecartee_dans']}/{c['groupe_ecarte']}")
     sorties.append("")
-    sorties.append(f"{total} ligne(s) orpheline(s), {len(conflits)} ligne(s) retenue(s) et écartée(s)")
+    sorties.append(f"{total} ligne(s) orpheline(s), {n_hl} renvoi(s) hors long-list non repris, {len(conflits)} "
+                   "ligne(s) retenue(s) et écartée(s)")
     return sorties
 
 

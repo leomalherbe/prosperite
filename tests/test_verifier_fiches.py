@@ -323,9 +323,12 @@ def test_socle_propose_plafond_de_8(depot: Path):
     assert any("9 fiches socle_propose: oui (8 au plus" in e for e in rapport.erreurs)
 
 
-def test_socle_transitoire_et_incontournable_non_principal(tmp_path: Path):
-    """Dimension encore en correction (D41, logement_cadre_vie) : absence du champ = avertissement ;
-    D38 d : avertissement ; ailleurs, l'absence du champ est une erreur sur toute fiche (principale ou non)."""
+def test_socle_transitoire_et_incontournable_non_principal(tmp_path: Path, monkeypatch):
+    """Dimension déclarée en correction (D41) : absence du champ = avertissement ; D38 d : avertissement ;
+    ailleurs, l'absence du champ est une erreur sur toute fiche (principale ou non). Depuis la fusion de la
+    correction de logement_cadre_vie (PR #35), aucune dimension n'est plus en transition."""
+    assert ver.DIMENSIONS_SOCLE_TRANSITOIRE == set()
+    monkeypatch.setattr(ver, "DIMENSIONS_SOCLE_TRANSITOIRE", {"logement_cadre_vie"})
     fiche = _fiche(dimension="logement_cadre_vie", incontournable="oui")
     del fiche["socle_propose"]
     _ecrire_fiche(tmp_path, fiche)
@@ -498,6 +501,31 @@ def test_ligne_ecartee_ici_et_retenue_ailleurs(depot: Path):
     ver.controler_lignes_renvoyees("autre", rapport, ver.lire_preselections(depot))
     assert rapport.compteurs["lignes_ecartees_retenues_ailleurs"] == 1
     assert any("l2 écartée ici et retenue par dimtest/indic_a_ventilations" in a for a in rapport.avertissements)
+
+
+def test_renvoi_hors_longlist_repris_par_citation(depot: Path):
+    """D46 : un renvoi sans ligne (règle autre_dimension avec hors_longlist = oui) est orphelin tant qu'aucune règle
+    de la destination ne cite « origine/groupe » dans son motif ; repris, il prend le statut de cette règle."""
+    _depot_pret(depot)
+    _csv(depot / "docs/validation/regles_preselection_autre.csv", pre.COLONNES_REGLES, [
+        ["10", "chaleur_dimtest", "autre_dimension:dimtest", "hors long-list", "Relève de dimtest.", "", "", "", "",
+         "", "oui"],
+    ])
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert rapport.compteurs["renvois_hors_longlist_orphelins"] == 1
+    assert any("renvoi hors long-list de autre (groupe chaleur_dimtest) non repris" in a
+               for a in rapport.avertissements)
+    texte = "\n".join(ver.rapport_lignes_renvoyees(depot))
+    assert "autre/chaleur_dimtest → dimtest : NON REPRIS" in texte and "1 renvoi(s) hors long-list non repris" in texte
+    with (depot / "docs/validation/regles_preselection_dimtest.csv").open("a", encoding="utf-8") as f:
+        f.write("70,indic_h_chaleur,variante_de:indic_a,hors long-list,Reprise de autre/chaleur_dimtest.,,,,,,oui\n")
+    assert pre.main(["--dimension", "dimtest", "--racine", str(depot)]) == 0
+    hl = ver.renvois_hors_longlist(ver.lire_regles_preselection(depot))
+    assert hl.to_dict("records")[0]["statut"] == "variante"
+    assert hl.to_dict("records")[0]["regle_destination"] == "indic_h_chaleur"
+    rapport = ver.verifier_dimension(depot, "dimtest", catalogues=False)
+    assert rapport.compteurs["renvois_hors_longlist_orphelins"] == 0 and not rapport.erreurs
+    assert "0 renvoi(s) hors long-list non repris" in "\n".join(ver.rapport_lignes_renvoyees(depot))
 
 
 def test_main_lignes_renvoyees_sans_dimension(depot: Path, capsys):

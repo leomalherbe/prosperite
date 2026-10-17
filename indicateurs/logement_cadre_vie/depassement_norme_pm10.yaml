@@ -28,7 +28,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000372
 hors_longlist: non
 raccordement: 'non : série du SDES depuis 2007'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre statistique de la famille concentration_pm10 (respect de la norme sanitaire), série
   du SDES annuelle de 2007 à 2024 (18 points), 1,80 % des agglomérations en 2024 d'après l'extrait du robot M04.
@@ -79,4 +80,5 @@ qualite:
 - peu_discriminant_recent
 notes: 'Variantes : INSEE BDM 010596138 et 010596139 et Melodi ODD 11 (part des stations en dépassement dans les
   agglomérations de plus de 250 000 et de 50 000 à 250 000 habitants) ; part des stations en dépassement par taille
-  d''agglomération (hors long-list, preuve du robot).'
+  d''agglomération (hors long-list, preuve du robot). Incontournable : non (D38 d : l''incontournable se porte sur
+  la variante principale de la famille).'

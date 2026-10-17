@@ -27,12 +27,15 @@ ligne_id: melodi-006292
 hors_longlist: non
 raccordement: 'non : enquête TIC depuis 2009'
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre statistique de la famille acces_internet_domicile (qualité de la connexion), série INSEE
   annuelle de 2009 à 2025 (16 points d'après la long-list), plus longue que l'indicateur ODD de l'INSEE (2010-2025).
 note_pertinence: Le haut débit distingue un accès réellement utilisable (vidéo, démarches, télétravail) d'une connexion
   minimale. L'INSEE le publie parmi les indicateurs nationaux des ODD (objectif 10, réduction des inégalités), ce
-  qui souligne l'enjeu de fracture numérique. Les valeurs n'ont pas été relues (API Melodi non interrogée).
+  qui souligne l'enjeu de fracture numérique. La part passe de 61,4 % en 2009 à 89,9 % en 2025, sans valeur en 2020
+  (API Melodi lue par le robot le 16/10/2026), et coïncide en 2010 et en 2025 avec l'indicateur ODD de l'INSEE (BDM
+  010594684).
 variantes:
 - serie_id: '010594684'
   source: INSEE BDM
@@ -170,6 +173,12 @@ variantes:
   nature: ventilations simples (âge, diplôme, sexe, emploi)
   ligne_id: melodi-006290
   eligible: oui
+- serie_id: isoc_r_broad_h?freq=A&unit=PC_HH&geo=FR
+  source: Eurostat
+  nature: 'Eurostat isoc_r_broad_h : ménages disposant d''un accès à large bande, table régionale (valeur nationale)'
+  ligne_id: estat-004543
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -177,6 +186,12 @@ socle_v1:
   justification: ''
 qualite:
 - champ_a_verifier
+- annee_manquante_2020
 notes: 'Champ (personnes de 15 ans ou plus) déduit des ventilations par âge et de l''indicateur ODD de même enquête,
   à vérifier. Variantes : ventilations simples, INSEE BDM 010594684 à 010594686 et Melodi ODD 10, Eurostat isoc_ci_it_h
-  (2006-2021).'
+  (2006-2021) et table régionale isoc_r_broad_h (ménages disposant d''un accès à large bande, 2006-2021, ligne renvoyée
+  par education, D38 a). Valeurs lues (Melodi DS_TICM_EQUIPEMENT, mesure HAUT_DEBIT, ensemble ; docs/sources/series/insee_melodi__logement_haut_debit_domicile.txt,
+  vague 16 du robot, 16/10/2026) : 61,4 (2009), 64,4 (2010), 75,2 (2012), 75,0 (2015), 79,6 (2018), 80,6 (2019),
+  85,3 (2021), 87,5 (2023), 88,8 (2024), 89,9 (2025) ; aucune valeur en 2020. Le champ « individus » est confirmé
+  par l''indicateur ODD de même enquête (64,4 % en 2010 et 89,9 % en 2025, audit M06) ; l''âge minimal (15 ans)
+  reste déduit des ventilations.'

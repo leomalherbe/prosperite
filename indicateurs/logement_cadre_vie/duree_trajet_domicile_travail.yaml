@@ -6,7 +6,7 @@ famille: duree_trajet_domicile_travail
 variante_principale: oui
 definition: Durée médiane, en minutes, des navettes domicile-travail à l'heure de pointe, d'après le recensement
   de la population (indicateurs territoriaux de développement durable INSEE-SDES, fichier France entière, variable
-  med_dist_min_hp, sous-champ « act »).
+  med_dist_min_hp, sous-champ « actifs », code act).
 unite: minutes
 sens: bas
 type: resultat
@@ -33,29 +33,30 @@ rattachement_propose: 'hors long-list : variable du fichier ITDD France entière
   la dimension'
 raccordement: 'non : trois millésimes du recensement (2011, 2016, 2022)'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule mesure du temps de trajet domicile-travail retenue par le cadre Stiglitz-Sen-Fitoussi,
   trois millésimes du recensement (2011, 2016, 2022) admis comme série irrégulière (D17, D28).
 note_pertinence: 'Le temps passé dans les trajets quotidiens pèse sur le temps libre, la fatigue et le budget des
   ménages ; il dépend de l''éloignement entre logement et emploi et de l''offre de transport. La série ne compte
-  que trois valeurs, dont deux identiques, la dernière étant de 13 minutes en 2022 (19 minutes pour le sous-champ
-  « nav », extrait du robot M04) : elle distinguera peu les années. Le mode de calcul de la durée (temps estimé
-  à l''heure de pointe ou déclaré) et le sens des sous-champs « act » et « nav » sont à vérifier avant de fixer
-  des bornes.'
+  que trois valeurs, 12, 12 et 13 minutes pour les actifs (2011, 2016, 2022 ; 18, 19 et 19 minutes pour les navetteurs,
+  fichier ITDD lu le 16/10/2026) : elle distinguera peu les années. Le suffixe « hp » désigne une durée à l''heure
+  de pointe, probablement estimée par un distancier (non vérifié), à documenter avant de fixer des bornes.'
 variantes:
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_min_hp, sous-champ nav)
   source: INSEE-SDES (ITDD, fichier France entière)
-  nature: sous-champ « nav » (19 minutes en 2022 ; 2011, 2016, 2022), hors long-list
+  nature: sous-champ « navetteurs » (18, 19 et 19 minutes en 2011, 2016 et 2022), hors long-list
   catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
   preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_km, sous-champ act)
   source: INSEE-SDES (ITDD, fichier France entière)
-  nature: distance médiane en km, sous-champ « act » (8,4 km en 2022), hors long-list
+  nature: distance médiane en km, sous-champ « actifs » (7,5, 7,9 et 8,4 km en 2011, 2016 et 2022), hors long-list
   catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
   preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 - serie_id: DiDo SDES rid 305ea0e3-269b-47ee-bab5-7553fec6f010 (variable med_dist_km, sous-champ nav)
   source: INSEE-SDES (ITDD, fichier France entière)
-  nature: distance médiane en km, sous-champ « nav » (14,9 km en 2022), hors long-list
+  nature: distance médiane en km, sous-champ « navetteurs » (14,2, 14,6 et 14,9 km en 2011, 2016 et 2022), hors
+    long-list
   catalogue: hors catalogue de séries, série extraite par le robot M04 (maintenance LOG-5)
   preuve: docs/sources/series/sdes__itdd_france_entiere.csv
 socle_v1:
@@ -68,11 +69,9 @@ qualite:
 - serie_irreguliere_D17
 - faible_variabilite
 - methode_a_verifier
-- sous_champs_a_verifier
-notes: 'Extrait du robot M04 (docs/sources/series/sdes__itdd_france_entiere.csv) : périodes 2011, 2016 et 2022,
-  2 valeurs distinctes, dernière valeur 13 (act) et 19 (nav) minutes ; distance médiane 8,4 km (act) et 14,9 km
-  (nav) en 2022. Les valeurs de 2011 et 2016 ne figurent pas dans les extraits commités et la lecture du fichier
-  DiDo n''a pas abouti le 15/10/2026 (autorisation non accordée à l''outil) : non trouvé. Le même fichier donne
-  les parts modales des déplacements domicile-travail (2016, 2022), reprises en variante de part_modale_transports_collectifs.
-  Aucune série annuelle du temps de trajet n''est cataloguée (enquêtes Mobilité des personnes du SDES ponctuelles,
-  d''après le relevé M03).'
+notes: 'Valeurs lues (fichier ITDD France entière, DiDo 305ea0e3, lu le 16/10/2026 ; LIBELLE_SOUS_CHAMP « actifs
+  » pour act et « navetteurs » pour nav) : durée médiane 12, 12 et 13 minutes (actifs) et 18, 19 et 19 minutes (navetteurs)
+  ; distance médiane 7,5, 7,9 et 8,4 km (actifs) et 14,2, 14,6 et 14,9 km (navetteurs), en 2011, 2016 et 2022 ;
+  aucune autre année. Le même fichier donne les parts modales des déplacements domicile-travail (2016, 2022), reprises
+  en variante de part_modale_transports_collectifs. Aucune série annuelle du temps de trajet n''est cataloguée (enquêtes
+  Mobilité des personnes du SDES ponctuelles, d''après le relevé M03).'

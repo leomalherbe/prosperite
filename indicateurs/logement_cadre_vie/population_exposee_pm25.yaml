@@ -26,7 +26,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000062
 hors_longlist: non
 raccordement: 'non : série OCDE de 2004 à 2020'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre statistique de la famille exposition_pm25 (part au-dessus d'un seuil sanitaire), série
   OCDE annuelle de 2004 à 2020 (17 points), 99,70 % en 2020 d'après l'extrait du robot M04.
@@ -45,4 +46,5 @@ qualite:
 - serie_arretee_2020
 notes: 'Le catalogue M04 indique un seuil de 10 µg/m³ ; une part de 99,70 % au-dessus de 10 µg/m³ est incompatible
   avec une exposition moyenne de 9,49 µg/m³ la même année (OCDE ODD 11.6.2) : le seuil est plus probablement celui
-  de 5 µg/m³ des lignes directrices de l''OMS de 2021, à vérifier (maintenance LOG-3).'
+  de 5 µg/m³ des lignes directrices de l''OMS de 2021, à vérifier (maintenance LOG-3). Incontournable : non (D38
+  d : l''incontournable se porte sur la variante principale de la famille).'

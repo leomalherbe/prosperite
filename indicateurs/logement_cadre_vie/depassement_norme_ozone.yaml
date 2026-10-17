@@ -28,7 +28,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000373
 hors_longlist: non
 raccordement: 'non : série du SDES depuis 2000'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Variante principale de la famille depassement_norme_ozone, série du SDES annuelle de 2000
   à 2024 (25 points), 9,88 % des agglomérations en 2024 d'après l'extrait du robot M04.
@@ -51,4 +52,6 @@ qualite:
 - sensible_a_la_meteo
 notes: 'Indices base 100 en 2000 en 2024 (extrait du robot M04) : NO2 42,64 ; PM10 49,76 ; SO2 13,15 ; ozone 98,96.
   Variante : part des stations de fond urbain dépassant la valeur cible, en moyenne triennale (9,39 % sur 2022-2024,
-  hors long-list, preuve du robot).'
+  hors long-list, preuve du robot). Incontournable : non (D42 : le dioxyde d''azote et l''ozone ne figurent dans
+  aucun cadre de référence ; l''incontournable « pollution de l''air locale » est limité aux PM2,5, aux PM10 et
+  à la pollution déclarée autour du logement) ; la fiche reste retenue.'

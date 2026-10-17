@@ -16,6 +16,12 @@ source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
 source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
   ; variable OG04_1, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_1, modalités 1+2
+formule: 'part = 100 × somme(poids des réponses OG04_1 = 1 « beaucoup » ou 2 « assez ») / somme(poids des réponses,
+  « ne sait pas » 999999999 compris), par année (première année lue : 2014) ; distribution pondérée du robot M04
+  ; convention de la DREES (D45), reproduite en 2025'
 source_niveau: 2
 url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
 url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
@@ -33,9 +39,11 @@ rattachement_propose: 'hors long-list : question OG04_1 du baromètre DREES non 
   ; coût et accès au logement, contenu de la dimension'
 raccordement: 'non : question posée chaque année de 2014 à 2025'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule mesure ressentie et annuelle de l'inquiétude pour le logement, posée chaque année de
-  2014 à 2025 (12 vagues), de 66,2 % à 55,4 % des répondants d'après les distributions calculées par le robot M04.
+  2014 à 2025 (12 vagues), de 66,2 % à 55,4 % des répondants (minimum de 53,9 % en 2022), recalculée sur les microdonnées
+  du baromètre DREES et identique en 2025 à la valeur publiée par la DREES (55,35 %).
 note_pertinence: 'La préoccupation pour le logement traduit la difficulté ressentie à se loger ou à payer son logement,
   pour soi ou ses proches. Comme les autres questions OG04 du baromètre (chômage en travail, insécurité du quartier
   en securite), elle mêle une inquiétude personnelle et un jugement sur la situation du pays (D32). Sa baisse de
@@ -51,12 +59,18 @@ qualite:
 - hors_longlist
 - calcul_sur_microdonnees
 - enquete_metropole
-- codes_modalites_a_verifier
 - licence_a_confirmer
-notes: 'Parts recalculées par l''agent sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme
-  des modalités 1 « beaucoup » et 2 « assez » de og04_1, non-réponses au dénominateur) : 66,23 % (2014), 62,10 %
-  (2015), 59,89 % (2018), 54,01 % (2020), 56,77 % (2023), 55,36 % (2025). Libellés de la question et des modalités
-  lus dans les dictionnaires 2025 du robot ; couverture 2014-2025 (12 années) lue dans drees__barometre_2000_2025_couverture.csv.
-  Questions voisines non retenues : LO11 (conditions actuelles de logement jugées satisfaisantes ou insuffisantes,
-  2024 et 2025 seulement, non éligible), LO10 (nombre de pièces, 5 vagues de 2020 à 2025), LO01 et LO02 (statut
-  d''occupation, prêt en cours : structure).'
+- non_recoupe_2014_2024
+notes: 'Parts recalculées sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme des modalités
+  1 « beaucoup » et 2 « assez » de og04_1, « ne sait pas » au dénominateur) : 66,23 (2014), 62,10 (2015), 62,49
+  (2016), 63,87 (2017), 59,89 (2018), 59,22 (2019), 54,01 (2020), 54,49 (2021), 53,86 (2022), 56,77 (2023), 55,77
+  (2024), 55,36 (2025) ; part des « ne sait pas » au plus 0,30 % (2020), nulle en 2017 et en 2025. Recoupement (D34,
+  D38 b) : les tableaux croisés simplifiés publiés par la DREES pour 2025 (feuille 5 de docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
+  donnent « S/T Oui » = 55,35 % (beaucoup 19,16 ; assez 36,20), identique au calcul (55,36 %, 55,35 % rapporté au
+  total des parts arrondies) ; aucune valeur publiée n''a été trouvée pour 2014-2024 (non_recoupe_2014_2024). Convention
+  du dénominateur (D45) : « ne sait pas » compris, comme la base des tableaux publiés par la DREES et la fiche travail/preoccupation_chomage
+  ; l''année 2025, sans « ne sait pas », ne départage pas les conventions, dont l''écart est au plus de 0,16 point
+  (2020). Libellés de la question et des modalités lus dans les dictionnaires 2025 du robot ; couverture 2014-2025
+  (12 années) lue dans drees__barometre_2000_2025_couverture.csv. Questions voisines non retenues : LO11 (conditions
+  actuelles de logement jugées satisfaisantes ou insuffisantes, 2024 et 2025 seulement, non éligible), LO10 (nombre
+  de pièces, 5 vagues de 2020 à 2025), LO01 et LO02 (statut d''occupation, prêt en cours : structure).'

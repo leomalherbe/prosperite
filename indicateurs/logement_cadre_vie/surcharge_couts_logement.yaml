@@ -28,9 +28,11 @@ ligne_id: estat-031390
 hors_longlist: non
 raccordement: 'non : série EU-SILC continue depuis 2004, ruptures signalées en 2020 et 2022'
 incontournable: non
+socle_propose: oui
 recommandation: retenir
-motif_recommandation: Indicateur du suivi des ODD de l'UE (sdg_01_50) et de l'OCDE (How's Life 3_3), annuel de 2004
-  à 2025 (21 points, 2021 manquant), l'INSEE n'en publiant pas le niveau par API (D35).
+motif_recommandation: Indicateur du suivi des ODD de l'UE (sdg_01_50), voisin de l'indicateur How's Life 3_3 de
+  l'OCDE (restreint aux 40 % les plus modestes), annuel de 2004 à 2025 (21 points, 2021 manquant), l'INSEE n'en
+  publiant pas le niveau par API (D35).
 note_pertinence: Le taux de surcharge repère les ménages pour qui le logement absorbe une part excessive du revenu,
   ce que la moyenne du taux d'effort ne montre pas. Il passe de 5,4 % en 2004 à 4,0 % en 2009, puis remonte à 7,0
   % en 2024 et 6,4 % en 2025 (API Eurostat, lue le 14/10/2026). Les ruptures de 2020 et 2022 (drapeau b) imposent
@@ -308,7 +310,8 @@ variantes:
   eligible: oui
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=3_3 UNIT_MEASURE=PT_POP
   source: OCDE — How's Life? (base du bien-être)
-  nature: autre source (OCDE How's Life 3_3, même enquête EU-SILC, 2015-2024)
+  nature: 'autre statistique (OCDE How''s Life 3_3) : ménages (ou personnes) des 40 % les plus modestes consacrant
+    plus de 40 % de leur revenu disponible au logement ; définition 2024 à confirmer'
   ligne_id: m04-000021
   eligible: a_verifier
 - serie_id: ilc_lvho25?freq=A&unit=PC&citizen=EU27_2007_FOR&sex=T&age=Y_GE18&geo=FR
@@ -342,4 +345,7 @@ qualite:
 - annee_manquante_2021
 notes: 'Valeurs lues (ilc_lvho07a, ensemble) : 5,4 (2004), 4,0 (2009), 5,2 (2013), 5,5 (2019), 5,6 (2020, b), 6,5
   (2022, b), 7,0 (2024), 6,4 (2025) ; aucune valeur en 2021. Variantes : table ODD sdg_01_50, ventilations, seuils
-  de 25 à 75 % (ilc_lvho27 à 30), nationalité et pays de naissance, enfants, handicap, OCDE How''s Life 3_3.'
+  de 25 à 75 % (ilc_lvho27 à 30), nationalité et pays de naissance, enfants, handicap ; OCDE How''s Life 3_3, autre
+  statistique : ménages des 40 % les plus modestes consacrant plus de 40 % de leur revenu disponible au logement,
+  loyers et remboursements d''emprunt sans loyers imputés (How''s Life 2020), 10,66 % en 2024 contre 7,0 % ici,
+  définition de l''édition 2024 à confirmer (audit M06, F2).'

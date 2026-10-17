@@ -28,7 +28,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000371
 hors_longlist: non
 raccordement: 'non : série du SDES depuis 2000'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre statistique de la famille concentration_no2 (respect de la norme sanitaire), série du
   SDES annuelle de 2000 à 2024 (25 points), 1,21 % des agglomérations en 2024 d'après l'extrait du robot M04.
@@ -54,4 +55,4 @@ socle_v1:
 qualite:
 - peu_discriminant_recent
 notes: 'Variantes : part des stations en dépassement dans les grandes et moyennes agglomérations (hors long-list,
-  preuve du robot).'
+  preuve du robot). Incontournable : non (D38 d : l''incontournable se porte sur la variante principale de la famille).'

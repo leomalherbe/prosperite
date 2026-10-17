@@ -159,7 +159,7 @@ def regles():
     ("Nombre de jours de canicule", "planete", "planete", 15),
     ("Exposition de la population aux particules fines PM2,5", "planete", "logement_cadre_vie", 16),
     ("Emissions de gaz à effet de serre", "planete", "planete", 17),
-    ("Situations de surendettement", "niveau_de_vie", "securite", 19),
+    ("Situations de surendettement", "niveau_de_vie", "niveau_de_vie", 19),  # D49 : sécurité économique des ménages reste en niveau_de_vie
     ("Levier des institutions financières monétaires", "niveau_de_vie", "hors_grille", 20),    # P5
     ("Comptes de patrimoine financier - données annuelles — Consolidé ; Sociétés financières ; Avoirs ; Monnaies",
      "niveau_de_vie", "hors_v1", 21),                                                         # P6
@@ -249,7 +249,7 @@ def test_rattachement_sur_les_catalogues(table):
     textile = ligne(table, "sbs_sc_ind_r2?freq=A&nace_r2=C131&indic_sb=V11110&size_emp=TOTAL&geo=FR")
     assert textile["dimension_v1"] == "education"                           # P2 : plus de « fibre » seul
     double_risque = ligne(table, "icw_pov_10?freq=A&sex=T&age=TOTAL&indic_ewb=POV_CONS_LFA&unit=PC&geo=FR")
-    assert double_risque["dimension_v1"] == "securite"                      # règle 19
+    assert double_risque["dimension_v1"] == "niveau_de_vie"                 # règle 19 (D49 : reste en niveau_de_vie)
     autrui = ligne(table, "ilc_pw03?freq=A&statinfo=AVG&unit=RTG&isced11=TOTAL&domain=OTH&sex=T&age=Y_GE16&geo=FR")
     assert autrui["dimension_v1"] == "liens_bien_etre"                      # P1
     emploi = ligne_libelle(table, "Conditions de vie : niveau de satisfaction")

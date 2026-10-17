@@ -1,6 +1,6 @@
-# Méthode commune des fiches indicateurs (mission M05) — v1.2
+# Méthode commune des fiches indicateurs (mission M05) — v1.3
 
-Version 1.1 — 14 octobre 2026. Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions (D31), complétée par les règles actées au pilote `securite` et par les règles issues des audits M06 (D32, D33 ; §9). Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py` (tests : `tests/test_verifier_fiches.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
+Version 1.3 — 17 octobre 2026 (historique au §11). Méthode du pilote `liens_bien_etre` (journal `docs/cr/M05_liens_bien_etre_journal.md`), adoptée par la session mère pour les dix dimensions (D31), complétée par les règles actées au pilote `securite` et par les règles issues des audits M06 (D32, D33 ; §9), par les décisions D34 à D36 (second §9) et par les décisions D37 à D46 préparant le gel 2 (§10 : socle proposé, lignes renvoyées, règles communes). Outils : `scripts/preselection.py`, `scripts/verifier_fiches.py`, `scripts/classeur_validation.py` (tests : `tests/test_verifier_fiches.py`, `tests/test_classeur_validation.py`). Exemple de fiche complète : `indicateurs/liens_bien_etre/satisfaction_vie.yaml`.
 
 ## 1. Vocabulaire
 
@@ -22,7 +22,7 @@ Partage fiche / variante : une autre **statistique** sur la même question devie
 | `fiche` | Le groupe porte la série principale de la fiche `<groupe>`. |
 | `variante_de:<id>` | Variantes de la fiche `<id>`, injectées dans son champ `variantes`. |
 | `ecarte_en_bloc` | Écarté, motif obligatoire. |
-| `autre_dimension:<dim>` | La ligne relève d'une autre dimension v1 (rattachement à corriger) ; `<dim>` doit exister dans `indicateurs/dimensions.yaml` ; la session mère tranche. |
+| `autre_dimension:<dim>` | La ligne relève d'une autre dimension v1 (rattachement à corriger) ; `<dim>` doit exister dans `indicateurs/dimensions.yaml` ; la dimension destinataire la reprend (fiche, variante, écart en bloc motivé ou renvoi motivé plus loin, §10.2) ; la session mère tranche. |
 
 Règles (`docs/validation/regles_preselection_<dim>.csv`) : colonnes `ordre, groupe, decision, nature, motif, longlist, catalogue, motif_ligne_id, motif_serie_id, motif_libelle, hors_longlist`. Chaque ligne reçoit la **première** règle dont toutes les conditions non vides sont remplies (expressions régulières en recherche ; libellé insensible à la casse). Ordre : séries principales exactes (`^…$`), doublons et variantes précises, écarts précis, puis règles larges. `longlist = <autre dim>` importe des lignes mal rattachées d'une autre long-list (rattachement proposé) ; `hors_longlist = oui` déclare un concept dont la série n'est dans aucune long-list (vérifiée à la source). Une ligne de la long-list sans règle fait échouer le script : la couverture est exhaustive.
 
@@ -57,7 +57,10 @@ Règles (`docs/validation/regles_preselection_<dim>.csv`) : colonnes `ordre, gro
 | `variante_principale` | oui | `oui` \| `non` (une seule `oui` par famille) |
 | `sens` | oui | `haut` \| `bas` \| `ambigu` (→ `ecarter`) |
 | `type` | oui | `resultat` \| `moyen` \| `pression` |
-| `declaratif`, `composite`, `incontournable` | oui | `oui` \| `non` |
+| `declaratif`, `composite`, `incontournable` | oui | `oui` \| `non` (`incontournable` : décidé par famille, porté par la variante principale seule, D38 d) |
+| `socle_propose` | oui | `oui` \| `non` (D41, §10.1) : `oui` réservé aux variantes principales recommandées `retenir`, 8 au plus par dimension |
+| `derogation_socle` | si besoin | motif écrit quand une variante principale `retenir` et incontournable reste hors du socle proposé (limite de 8 atteinte, décision de Léo) |
+| `annee_reference` | si composite | `observation` \| `edition` (D34) |
 | `source_organisme`, `source_jeu`, `source_serie_id` | oui | texte ; `source_serie_id` présent dans un catalogue du dépôt |
 | `composantes`, `formule` | si somme | liste de `serie_id` du catalogue ; formule en clair (`ALW + MOST`) |
 | `source_niveau` | oui | `1` (API) \| `2` (fichier) |
@@ -94,12 +97,17 @@ python scripts/preselection.py --dimension <dim> --maj-fiches
 # 5. Tableau de validation, puis contrôles (0 erreur exigé) :
 python scripts/verifier_fiches.py --dimension <dim> --tableau
 python scripts/verifier_fiches.py --dimension <dim>
+# 6. Lignes renvoyées (D46) : aucune orpheline, aucun renvoi hors long-list non repris (§10.2) :
+python scripts/verifier_fiches.py --lignes-renvoyees --limite 20
+# 7. (session mère) classeur Excel du gel 2, puis ré-import des décisions de Léo :
+python scripts/classeur_validation.py exporter --dimension <dim>
+python scripts/classeur_validation.py importer --dimension <dim> --fichier <classeur.xlsx>
 ```
-Sorties : `docs/validation/preselection_<dim>.csv` (une ligne par groupe), `preselection_<dim>_lignes.csv` (une ligne par ligne affectée), `validation_<dim>.csv`. Le vérificateur contrôle : schéma, identifiants uniques dans `indicateurs/`, familles, présence des séries principales et des variantes dans les catalogues, couverture complète de la long-list, cohérence des variantes avec la présélection, cohérence du tableau avec les fiches. Ses compteurs (fiches, `retenir`, déclaratifs, composites, à vérifier, hors long-list, incontournables) vont au journal.
+Sorties : `docs/validation/preselection_<dim>.csv` (une ligne par groupe), `preselection_<dim>_lignes.csv` (une ligne par ligne affectée), `validation_<dim>.csv`. Le vérificateur contrôle : schéma, identifiants uniques dans `indicateurs/`, familles, socle proposé (§10.1), présence des séries principales et des variantes dans les catalogues, couverture complète de la long-list, cohérence des variantes avec la présélection, lignes renvoyées (§10.2), cohérence du tableau avec les fiches. Ses compteurs (fiches, `retenir`, déclaratifs, composites, à vérifier, hors long-list, incontournables, socle proposé, dérogations, lignes reçues et orphelines) vont au journal.
 
 ## 7. Tableau de validation
 
-Colonnes, dans l'ordre : `id, libelle, famille, variante_principale, definition_courte, sens, unite, source, serie_id, periode, type, declaratif, composite, incontournable, recommandation, motif, decision_leo, commentaire_leo`. `decision_leo` : vide, `retenu`, `retenu_socle`, `ecarte` ou `a_discuter`. Une réécriture (`--tableau`) conserve les décisions déjà saisies.
+Colonnes (format v1.3), dans l'ordre : `id, libelle, sous_theme, famille, variante_principale, definition_courte, sens, unite, source, serie_id, periode, type, declaratif, composite, incontournable, socle_propose, recommandation, motif, decision_leo, commentaire_leo` ; lignes triées par sous-thème, famille, variante principale d'abord. `decision_leo` : vide, `retenu`, `retenu_socle`, `ecarte` ou `a_discuter`. Une réécriture (`--tableau`) conserve les décisions et commentaires déjà saisis (par identifiant) et refuse d'écrire si elle en ferait disparaître un (fiche supprimée ou renommée : reporter d'abord la décision). Le format v1.2 (18 colonnes, sans `sous_theme` ni `socle_propose`) est encore lu, avec un avertissement.
 
 ## 8. Pièges connus
 
@@ -142,3 +150,38 @@ Colonnes, dans l'ordre : `id, libelle, famille, variante_principale, definition_
 - Quand une décision change une règle, la session mère joint la liste des fiches déjà fusionnées à reprendre.
 - Frontière rémunération : salaire moyen réel, bas salaires et pauvreté en emploi → `travail` (qualité de l'emploi) ; revenus et niveau de vie des ménages → `niveau_de_vie`.
 - Chaque agent travaille dans un sous-dossier de travail propre (`tmp/<mission>/`, ignoré par git) : le bac à sable est partagé entre agents parallèles.
+
+## 10. Compléments v1.3 (décisions D37 à D47, 15-17 octobre 2026, préparation du gel 2)
+
+### 10.1 Socle proposé (D41, D47)
+
+- **Champ obligatoire** `socle_propose: oui|non` sur toute fiche. `oui` : variante principale recommandée `retenir`, 8 fiches au plus par dimension. Le correcteur de la dimension désigne les variantes principales `incontournable: oui` **plus une fiche principale par sous-thème du contenu de la dimension** (`indicateurs/dimensions.yaml`) ; il écrit dans son journal, pour chaque fiche au socle, un motif d'une ligne.
+- **Dérogation** : une variante principale `retenir` et incontournable laissée hors du socle porte `derogation_socle: <motif>` (limite de 8 atteinte, redondance avec une fiche du socle, décision de Léo). Sans dérogation, le vérificateur renvoie une erreur, ou un avertissement si la limite de 8 est déjà atteinte ; une dérogation sans objet est un avertissement.
+- **Classeur** (`scripts/classeur_validation.py`, v1.3) : décision par défaut `retenu_socle` pour `socle_propose: oui`, `retenu` pour les autres `retenir` et les `retenir_variante`, `ecarte` pour `ecarter` (repli D37 pour une fiche sans le champ : `retenir` + principale + incontournable → `retenu_socle`) ; colonnes « Sous-thème » et « Socle proposé » ; feuille « Synthèse » : socle par sous-thème, par défaut et après les décisions saisies. L'export reprend les décisions d'un classeur rempli mais pas encore importé ; l'import ne vide jamais une décision du CSV.
+- **Dimension figée par Léo** (D47 : `democratie`, `liens_bien_etre`) : `socle_propose: oui` est exactement le socle validé, les fiches retirées du socle par Léo portent la dérogation correspondante ; les décisions `decision_leo` priment sur la règle. On n'y ajoute plus que des **variantes** (lignes renvoyées) : ni nouvelle fiche principale, ni changement de recommandation ; une ligne qui mériterait une fiche est notée au journal pour une v1.1 de la dimension.
+
+### 10.2 Lignes renvoyées (D38 a, D46)
+
+- Toute ligne reçue par `autre_dimension:<dim>` est **reprise** par une règle de la dimension destinataire (colonne `longlist` = long-list de la ligne) : fiche, variante, écart en bloc motivé, ou renvoi motivé à une troisième dimension (« relayée » : la troisième la reprend à son tour). Aucune ligne orpheline au gel 2.
+- Règles de reprise : **liste exacte** des `ligne_id` (`^(id1|id2…)$`), pour ne capturer aucune ligne déjà affectée ailleurs (une ligne retenue dans une dimension et écartée dans une autre est signalée) ; le motif cite le groupe d'origine (`<origine>/<groupe>` ou « lignes renvoyées par <origine> (groupe …) ») et la décision appliquée.
+- Traitement usuel : composantes de premier rang d'un écart existant (ventilations par sexe ou par origine du même taux) → variantes de la fiche d'écart ; doublons techniques (totaux répétés d'un jeu ventilé) → variantes ; ventilations de second rang (sexe croisé avec l'âge, le diplôme, la catégorie sociale) et ventilations d'une variante → écart en bloc (D35) ; classes de la distribution (tranches de revenu, seuils de quantiles) → écart en bloc (§1) ; nombres quand l'écart se lit sur des taux → écart en bloc ; concept absent de la destination → fiche (écart construit selon D34, `composantes` et `formule`).
+- **Renvoi hors long-list** (règle `autre_dimension:<dim>` avec `hors_longlist = oui`, sans ligne : série vérifiée à la source) : la destination le reprend par une règle `hors_longlist = oui` (fiche hors long-list avec `preuve`, ou variante ajoutée à la main avec `preuve`) dont le motif cite `<origine>/<groupe>`.
+- Contrôles : `python scripts/verifier_fiches.py --lignes-renvoyees [--limite N] [--sortie renvois.csv]` donne, par couple origine → destination, les lignes renvoyées et leur reprise (fiche, variante, écartées, relayées ; orphelines), les renvois hors long-list et la règle qui les reprend, et les lignes retenues dans une dimension et écartées dans une autre ; exigé au gel 2 : « 0 ligne(s) orpheline(s), 0 renvoi(s) hors long-list non repris, 0 ligne(s) retenue(s) et écartée(s) ». Le contrôle d'une dimension (`--dimension`) avertit des mêmes cas pour les lignes qu'elle reçoit.
+
+### 10.3 Règles communes (D38, D42 à D45)
+
+- **Séries calculées sur microdonnées** (baromètre DREES, participation…) : `retenir` seulement avec `qualite: non_recoupe` et un contrôle de plausibilité documenté contre une valeur publiée ; sinon `retenir_variante` (D38 b).
+- **Composites couvrant plusieurs dimensions** (IDH, coefficient d'inégalité humaine) : dimension du concept dominant, au plus `retenir_variante`, jamais au socle, `composite: oui` (D38 c).
+- **Items EU-SILC devenus triennaux** (2021 et après) : `frequence: irreguliere` dans toutes les dimensions (D38 e, D42 pour `delinquance_quartier`).
+- Série annuelle de moins de 10 points seule mesure fréquente d'un concept : variante, jamais écartée pour brièveté (D38 f) ; D28 s'applique quelle que soit l'étendue de la série (D38 g) ; empreintes : par habitant principale, total en variante (D38 h) ; pression et état jamais dans une même famille (D38 i) ; opinions de l'enquête de conjoncture des ménages sur le niveau de vie en France : variantes déclaratives de `niveau_de_vie` (D38 j).
+- **Baromètre DREES** (D45) : identifiants alignés sur la pièce jointe unique `barometre2000_2025_diff_csv` (le vérificateur reconnaît l'ancienne forme à deux pièces jointes, avec un avertissement) ; dénominateur : convention publiée par la DREES quand elle existe (reproduire les chiffres publiés), sinon « ne sait pas » exclus ; convention écrite dans `formule`.
+- Limitation d'activité (GALI) : `declaratif: oui` partout (D43). Satisfactions DREES envers un service : recours au service au dénominateur, « jamais allé » exclu, `rupture_2014` (D39, D43).
+
+## 11. Historique des versions
+
+| Version | Date | Contenu |
+|---|---|---|
+| v1.0 | 14/10/2026 | Méthode du pilote `liens_bien_etre` adoptée pour les dix dimensions (D31) : vocabulaire, codes de présélection, schéma de fiche, tableau à 18 colonnes. |
+| v1.1 | 14/10/2026 | Règles complémentaires issues des audits des pilotes (D32, D33) : premier §9. |
+| v1.2 | 14/10/2026 | Familles par concept, séries calculées, vérifications (D34 à D36) : second §9. |
+| v1.3 | 17/10/2026 | Socle proposé (D41) et dimensions figées (D47), lignes renvoyées et renvois hors long-list (D38 a, D46), règles communes (D38, D42 à D45) : §10 ; schéma (`socle_propose`, `derogation_socle`, `annee_reference`), tableau à 20 colonnes (§7), déroulé (§6) ; vérificateur et classeur v1.3 (branche `m05-transversal-gel2`). |

@@ -1,6 +1,6 @@
 # Journal — M05 transversal, préparation du gel 2
 
-Agent transversal (session lancée par la session mère), 17 octobre 2026. Branche `m05-transversal-gel2`, reprise d'un agent précédent interrompu (16/10) puis fusionnée avec `main` (corrections `logement_cadre_vie`, PR #35 ; journal D47). Décisions appliquées : D38, D41 à D47 ; méthode `docs/methodo/33_methode_fiches_M05.md` passée en v1.3 sur cette branche.
+Agent transversal (session lancée par la session mère), 17 octobre 2026. Branche `m05-transversal-gel2`, reprise d'un agent précédent interrompu (16/10) puis fusionnée avec `main` (corrections `logement_cadre_vie`, PR #35 ; journal D47). Décisions appliquées : D38, D41 à D47 ; méthode `docs/methodo/33_methode_fiches_M05.md` passée en v1.3 sur cette branche. Pull request : #36.
 
 ## 1. Mise en route
 

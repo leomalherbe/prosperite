@@ -71,6 +71,118 @@ variantes:
   ligne_id: bdm-000017
   eligible: oui
   longlist: travail
+- serie_id: '001787712'
+  source: INSEE BDM
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: bdm-001498
+  eligible: oui
+  longlist: travail
+- serie_id: '001787713'
+  source: INSEE BDM
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: bdm-001499
+  eligible: oui
+  longlist: travail
+- serie_id: '001787718'
+  source: INSEE BDM
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: bdm-001504
+  eligible: oui
+  longlist: travail
+- serie_id: '001787719'
+  source: INSEE BDM
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: bdm-001505
+  eligible: oui
+  longlist: travail
+- serie_id: une_rt_a_h?freq=A&age=Y15-74&unit=PC_ACT&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: estat-025152
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_urgaed?freq=A&unit=PC&sex=M&sex=F&age=Y15-74&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: estat-024851
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_urgan?freq=A&unit=PC&sex=M&sex=F&age=Y15-74&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: estat-054343
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_urgacob?freq=A&unit=PC&sex=M&sex=F&age=Y15-74&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: estat-054347
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: melodi-002523
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: melodi-002524
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: melodi-003810
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: melodi-003811
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: melodi-003813
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=UNEMPRATE_EDUC&EMPFORM=_T&EMPSTA=2&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux de chômage (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM moyennes
+    annuelles métropole et hors Mayotte ; Eurostat une_rt_a_h 1992-2020 et totaux par sexe des jeux par diplôme,
+    nationalité et pays de naissance)
+  ligne_id: melodi-003814
+  eligible: oui
+  longlist: travail
 socle_v1:
   seuil_minimal: null
   objectif: null

@@ -51,6 +51,41 @@ variantes:
   ligne_id: estat-054183
   eligible: oui
   longlist: travail
+- serie_id: edat_lfse_35?freq=A&unit=PC&sex=T&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-34&c_birth=EU27_2020_FOR&c_birth=NEU27_2020_FOR&c_birth=FOR&c_birth=NAT&c_birth=NRP&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: taux de NEET par nationalité (sdg_08_20a, 15-29 ans) et par pays de naissance ou nationalité (edat_lfse_35,
+    edat_lfse_36, 15-34 ans)
+  ligne_id: estat-053259
+  eligible: oui
+  longlist: education
+- serie_id: edat_lfse_36?freq=A&unit=PC&sex=T&wstatus=NEMP&training=NO_FE_NO_NFE&age=Y15-34&citizen=EU27_2020_FOR&citizen=NEU27_2020_FOR&citizen=FOR&citizen=NAT&citizen=NRP&deg_urb=TOTAL&geo=FR
+  source: Eurostat
+  nature: taux de NEET par nationalité (sdg_08_20a, 15-29 ans) et par pays de naissance ou nationalité (edat_lfse_35,
+    edat_lfse_36, 15-34 ans)
+  ligne_id: estat-053264
+  eligible: oui
+  longlist: education
+- serie_id: sdg_08_20a?freq=A&sex=T&age=Y15-29&wstatus=NEMP&citizen=EU27_2020_FOR&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: taux de NEET par nationalité (sdg_08_20a, 15-29 ans) et par pays de naissance ou nationalité (edat_lfse_35,
+    edat_lfse_36, 15-34 ans)
+  ligne_id: estat-053149
+  eligible: oui
+  longlist: education
+- serie_id: sdg_08_20a?freq=A&sex=T&age=Y15-29&wstatus=NEMP&citizen=NAT&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: taux de NEET par nationalité (sdg_08_20a, 15-29 ans) et par pays de naissance ou nationalité (edat_lfse_35,
+    edat_lfse_36, 15-34 ans)
+  ligne_id: estat-053150
+  eligible: oui
+  longlist: education
+- serie_id: sdg_08_20a?freq=A&sex=T&age=Y15-29&wstatus=NEMP&citizen=NEU27_2020_FOR&training=NO_FE_NO_NFE&unit=PC&geo=FR
+  source: Eurostat
+  nature: taux de NEET par nationalité (sdg_08_20a, 15-29 ans) et par pays de naissance ou nationalité (edat_lfse_35,
+    edat_lfse_36, 15-34 ans)
+  ligne_id: estat-053151
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null

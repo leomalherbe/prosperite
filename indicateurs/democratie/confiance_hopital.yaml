@@ -40,6 +40,21 @@ variantes:
   nature: 'doublon technique : copie Melodi (DS_NAT_SDG, 16.i4) de la série BDM'
   ligne_id: melodi-005630
   eligible: oui
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA13_AB_1, modalités 1+2
+  source: DREES
+  nature: 'confiance dans ce que disent les médecins en cas de crise sanitaire (baromètre DREES, SA13_AB_1, « oui,
+    tout à fait » ou « oui, plutôt », « ne sait pas » au dénominateur ; 8 vagues de 2015 à 2025 : 86,17 % en 2015,
+    83,59 % en 2020, 88,97 % en 2025) ; renvoi hors long-list de sante (SAN-11)'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+  statut: disponible
+- serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+    ; variable SA13_CD_1, modalités 1+2
+  source: DREES
+  nature: 'même question sans la mention de crise sanitaire (SA13_CD_1, 2023 et 2025 : 88,11 % et 91,60 %), posée
+    à une partie de l''échantillon ; renvoi hors long-list de sante (SAN-11)'
+  preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+  statut: disponible
 socle_v1:
   seuil_minimal: null
   objectif: null

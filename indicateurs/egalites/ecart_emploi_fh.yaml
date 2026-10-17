@@ -54,11 +54,86 @@ variantes:
   ligne_id: bdm-000633
   eligible: oui
   longlist: travail
+- serie_id: '011818712'
+  source: INSEE BDM
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: bdm-000650
+  eligible: oui
+  longlist: travail
+- serie_id: '011818740'
+  source: INSEE BDM
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: bdm-000678
+  eligible: oui
+  longlist: travail
+- serie_id: '010596082'
+  source: INSEE BDM
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: bdm-001088
+  eligible: oui
+  longlist: travail
+- serie_id: '010596083'
+  source: INSEE BDM
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: bdm-001089
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergaed?freq=A&unit=PC&sex=M&sex=F&age=Y15-74&isced11=TOTAL&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: estat-000054
+  eligible: oui
+  longlist: travail
 - serie_id: sdg_08_30?freq=A&indic_em=EMP_LFS&sex=M&sex=F&age=Y20-64&unit=PC_POP&geo=FR
   source: Eurostat
   nature: 'composantes : taux d''emploi par sexe (sdg_08_30, 20-64 ans, 2009-2025 ; lfsi_emp_a, 15-64 ans, 2003-2025)
     et taux d''activité par sexe (long-list travail)'
   ligne_id: estat-002091
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergan?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&citizen=TOTAL&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: estat-054243
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergaedn?freq=A&citizen=TOTAL&isced11=TOTAL&sex=M&sex=F&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: estat-054249
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergacob?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&c_birth=TOTAL&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: estat-054252
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_ergaedcob?freq=A&c_birth=TOTAL&isced11=TOTAL&sex=M&sex=F&age=Y_GE15&unit=PC&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: estat-054258
+  eligible: oui
+  longlist: travail
+- serie_id: sdg_05_40?freq=A&reason=FAM_CARE&sex=T&age=Y20-64&unit=PC_INAC_WWRK&geo=FR
+  source: Eurostat
+  nature: inactivité pour responsabilités familiales, 20-64 ans, ensemble et par sexe (Eurostat sdg_05_40, ODD 5)
+  ligne_id: estat-002065
+  eligible: oui
+  longlist: travail
+- serie_id: sdg_05_40?freq=A&reason=FAM_CARE&sex=M&sex=F&age=Y20-64&unit=PC_INAC_WWRK&geo=FR
+  source: Eurostat
+  nature: inactivité pour responsabilités familiales, 20-64 ans, ensemble et par sexe (Eurostat sdg_05_40, ODD 5)
+  ligne_id: estat-002066
   eligible: oui
   longlist: travail
 - serie_id: lfsi_emp_a?freq=A&indic_em=ACT&sex=M&sex=F&age=Y15-64&unit=PC_POP&geo=FR
@@ -68,11 +143,74 @@ variantes:
   ligne_id: estat-025127
   eligible: oui
   longlist: travail
+- serie_id: lfsi_emp_a_h?freq=A&age=Y15-64&unit=PC_POP&sex=M&sex=F&indic_em=EMP_LFS&geo=FR
+  source: Eurostat
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: estat-025110
+  eligible: oui
+  longlist: travail
 - serie_id: lfsi_emp_a?freq=A&indic_em=EMP_LFS&sex=M&sex=F&age=Y15-64&unit=PC_POP&geo=FR
   source: Eurostat
   nature: 'composantes : taux d''emploi par sexe (sdg_08_30, 20-64 ans, 2009-2025 ; lfsi_emp_a, 15-64 ans, 2003-2025)
     et taux d''activité par sexe (long-list travail)'
   ligne_id: estat-025130
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-002514
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-002515
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-003668
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-003669
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-002517
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=Y15T64&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=EMPRATE_EDUC&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-002518
+  eligible: oui
+  longlist: travail
+- serie_id: DS_NAT_SDG?AGE=Y15T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i2&PCS=_Z&SDG=SDG8&SEX=F&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-005378
+  eligible: oui
+  longlist: travail
+- serie_id: DS_NAT_SDG?AGE=Y15T64&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F_X_D976&INDICATOR_SDG=8.i2&PCS=_Z&SDG=SDG8&SEX=M&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: composantes par sexe du taux d'emploi (INSEE séries longues 15-64 ans et 15 ans ou plus, BDM CVS et annuelle,
+    ODD 8.i2 ; Eurostat lfsi_emp_a_h 1992-2020 et totaux par sexe des jeux par diplôme, nationalité et pays de naissance)
+  ligne_id: melodi-005379
   eligible: oui
   longlist: travail
 socle_v1:

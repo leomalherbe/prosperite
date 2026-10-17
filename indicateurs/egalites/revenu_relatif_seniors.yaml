@@ -40,6 +40,18 @@ note_pertinence: 'Le rapport des revenus médians passe de 0,90 (2000) à 1,04 (
   absolu à 1 (D34), il mesure la distance à l''égalité quel que soit le groupe avantagé. Le revenu ne tient pas
   compte du patrimoine (logement possédé), plus élevé chez les plus âgés.'
 variantes:
+- serie_id: ilc_pnp3?freq=A&sex=T&unit=PC&geo=FR
+  source: Eurostat
+  nature: taux de remplacement agrégé des pensions, ensemble et par sexe (Eurostat ilc_pnp3)
+  ligne_id: estat-030675
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_pnp3?freq=A&sex=M&sex=F&unit=PC&geo=FR
+  source: Eurostat
+  nature: taux de remplacement agrégé des pensions, ensemble et par sexe (Eurostat ilc_pnp3)
+  ligne_id: estat-030676
+  eligible: oui
+  longlist: niveau_de_vie
 - serie_id: ilc_pnp2?freq=A&statinfo=R_MED_I&age=Y_GE65&sex=M&sex=F&geo=FR
   source: Eurostat
   nature: ventilation par sexe et même rapport pour les 60 ans ou plus (ilc_pns2)

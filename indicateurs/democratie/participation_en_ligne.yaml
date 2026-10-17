@@ -52,6 +52,20 @@ variantes:
   ligne_id: estat-005593
   eligible: oui
   longlist: logement_cadre_vie
+- serie_id: isoc_r_iuse_i?freq=A&indic_is=I_IUCPP&unit=PC_IND&geo=FR
+  source: Eurostat
+  nature: participation civique ou politique en ligne, ensemble des individus (isoc_ci_ac_i et valeur nationale
+    de la table régionale isoc_r_iuse_i, indicateur I_IUCPP, 2013-2025)
+  ligne_id: estat-004548
+  eligible: a_verifier
+  longlist: logement_cadre_vie
+- serie_id: isoc_ci_ac_i?freq=A&indic_is=I_IUCPP&unit=PC_IND&ind_type=IND_TOTAL&geo=FR
+  source: Eurostat
+  nature: participation civique ou politique en ligne, ensemble des individus (isoc_ci_ac_i et valeur nationale
+    de la table régionale isoc_r_iuse_i, indicateur I_IUCPP, 2013-2025)
+  ligne_id: estat-005500
+  eligible: a_verifier
+  longlist: logement_cadre_vie
 socle_v1:
   seuil_minimal: null
   objectif: null

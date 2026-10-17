@@ -49,6 +49,24 @@ variantes:
   ligne_id: estat-054198
   eligible: oui
   longlist: education
+- serie_id: sdg_04_10a?freq=A&sex=T&wstatus=POP&unit=PC&age=Y18-24&citizen=EU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: sorties précoces des nationaux, des ressortissants de l'UE et hors UE (sdg_04_10a)
+  ligne_id: estat-053146
+  eligible: oui
+  longlist: education
+- serie_id: sdg_04_10a?freq=A&sex=T&wstatus=POP&unit=PC&age=Y18-24&citizen=NAT&geo=FR
+  source: Eurostat
+  nature: sorties précoces des nationaux, des ressortissants de l'UE et hors UE (sdg_04_10a)
+  ligne_id: estat-053147
+  eligible: oui
+  longlist: education
+- serie_id: sdg_04_10a?freq=A&sex=T&wstatus=POP&unit=PC&age=Y18-24&citizen=NEU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: sorties précoces des nationaux, des ressortissants de l'UE et hors UE (sdg_04_10a)
+  ligne_id: estat-053148
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null

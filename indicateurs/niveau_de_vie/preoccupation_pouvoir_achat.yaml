@@ -1,0 +1,75 @@
+id: preoccupation_pouvoir_achat
+libelle: Personnes préoccupées par le niveau des salaires et du pouvoir d'achat (baromètre DREES)
+dimension: niveau_de_vie
+sous_theme: pauvreté ressentie
+famille: pauvrete_subjective
+variante_principale: non
+definition: 'Part des personnes interrogées par le baromètre d''opinion de la DREES qui se disent « beaucoup » ou
+  « assez » préoccupées par le niveau des salaires et du pouvoir d''achat (question OG04_9 : « Êtes-vous personnellement
+  préoccupé(e) par… le niveau des salaires et du pouvoir d''achat ? »), non-réponses au dénominateur, pondération
+  de redressement de l''enquête.'
+unite: '% des répondants'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: DREES (baromètre d'opinion)
+source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_9, modalités 1+2
+composantes:
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable OG04_9, modalités 1+2
+formule: 'part = 100 × somme(poids des réponses OG04_9 = 1 « beaucoup » ou 2 « assez ») / somme(poids des réponses,
+  « ne sait pas » 999999999 compris), par année (première année lue : 2014) ; distribution pondérée du robot M04
+  ; convention de la DREES (D45), celle des autres questions OG04'
+source_niveau: 2
+url_api: https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/431_le-barometre-d-opinion/attachments/barometre2000_2025_diff_csv
+url_page: https://data.drees.solidarites-sante.gouv.fr/explore/dataset/431_le-barometre-d-opinion/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/drees__barometre_2000_2025_distributions.csv
+rattachement_propose: 'hors long-list : question OG04_9 du baromètre DREES non cataloguée par M04, signalée par
+  la correction travail (maintenance TRA-14, audit M06 travail O4) et proposée à niveau_de_vie (pouvoir d''achat,
+  contenu de la dimension)'
+raccordement: 'non : question posée chaque année de 2014 à 2025'
+incontournable: non
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: 'Seule mesure ressentie et annuelle de l''inquiétude pour le pouvoir d''achat, 12 vagues de
+  2014 à 2025 entre 87,7 % et 90,6 % des répondants, recalculée sur les microdonnées sans valeur publiée pour la
+  recouper (D38 b : au plus retenir_variante).'
+note_pertinence: La préoccupation pour les salaires et le pouvoir d'achat traduit une inquiétude matérielle ressentie,
+  voisine de la difficulté à joindre les deux bouts, principale de la famille. Comme les autres questions OG04 du
+  baromètre (logement, chômage, insécurité), elle mêle une inquiétude personnelle et un jugement sur la situation
+  du pays. Elle varie peu (entre 87,7 % et 90,6 %), ce qui n'est pas un motif d'écart (D34) mais pèsera sur le choix
+  des bornes.
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- calcul_sur_microdonnees
+- enquete_metropole
+- licence_a_confirmer
+- non_recoupe
+- peu_variable
+notes: 'Parts recalculées sur docs/sources/series/drees__barometre_2000_2025_distributions.csv (somme des modalités
+  1 « beaucoup » et 2 « assez » de og04_9, « ne sait pas » au dénominateur) : 88,63 (2014), 89,33 (2015), 88,20
+  (2016), 87,97 (2017), 89,95 (2018), 89,62 (2019), 87,67 (2020), 89,12 (2021), 90,62 (2022), 89,05 (2023), 88,56
+  (2024), 90,19 (2025) ; part des « ne sait pas » au plus 0,32 % (2021). Couverture 2014-2025 (12 années) lue dans
+  drees__barometre_2000_2025_couverture.csv ; libellés dans les dictionnaires 2025 du robot. Recoupement (D34, D38
+  b) : la feuille 5 des tableaux croisés simplifiés 2025 lue par le robot s''arrête aux questions OG04_1 et OG04_3
+  (aucune valeur publiée d''OG04_9 dans le dépôt) ; la convention du dénominateur reproduit la valeur publiée par
+  la DREES pour OG04_1 en 2025 (55,35 %, voir logement_cadre_vie/preoccupation_logement). Signalement TRA-14 de
+  la correction travail soldé par cette fiche (le catalogage de la question reste à faire).'

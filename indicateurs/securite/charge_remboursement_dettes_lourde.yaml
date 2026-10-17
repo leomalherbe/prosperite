@@ -1,0 +1,88 @@
+id: charge_remboursement_dettes_lourde
+libelle: Remboursement de crédits ou de prêts ressenti comme une lourde charge
+dimension: securite
+sous_theme: sécurité économique
+famille: charge_remboursement_dettes
+variante_principale: oui
+definition: 'Part des personnes vivant dans un ménage qui déclare que le remboursement de dettes liées à des achats
+  à crédit ou à des prêts représente une lourde charge financière (EU-SILC, volet français SRCV ; autres réponses
+  : une certaine charge, aucune charge ; les trois parts somment à 100, champ exact du dénominateur à vérifier dans
+  les métadonnées).'
+unite: '% de la population concernée'
+sens: bas
+type: resultat
+declaratif: oui
+composite: non
+source_organisme: Eurostat (EU-SILC ; enquête SRCV de l'INSEE)
+source_jeu: ilc_mded05 — Charge financière du remboursement de dettes résultant d'achats à crédit ou de prêts
+source_serie_id: ilc_mded05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mded05/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2004
+derniere_annee: 2025
+nb_points_depuis_2000: 22
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-031755
+hors_longlist: non
+rattachement_propose: 'ligne de la long-list niveau_de_vie (groupe endettement_menages) renvoyée à securite : endettement
+  des ménages → sécurité économique (D39, D46)'
+raccordement: non
+incontournable: non
+socle_propose: non
+recommandation: retenir
+motif_recommandation: Seule mesure du poids ressenti des remboursements de crédits, annuelle de 2004 à 2025 (22
+  points, 23,1 % en 2004, 27,8 % en 2014, 23,0 % en 2025), ruptures signalées en 2020 et 2022.
+note_pertinence: Le poids ressenti des remboursements signale les ménages que leurs crédits mettent en difficulté
+  avant les retards de paiement et le surendettement, autres fiches de la sécurité économique. La part qui juge
+  cette charge lourde monte de 23,1 % en 2004 à 27,8 % en 2014, redescend à 21,6 % en 2019 et se tient autour de
+  23 % à 24 % depuis 2022, après un point bas de 16,7 % en 2021 entre deux ruptures. Les ventilations par type de
+  ménage et les compléments (une certaine charge, aucune charge) sont en variantes.
+variantes:
+- serie_id: ilc_mded05?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=HVY&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
+  ligne_id: estat-031756
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=NONE&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
+  ligne_id: estat-031757
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded05?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=NONE&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
+  ligne_id: estat-031758
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
+  ligne_id: estat-031759
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mded05?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=SOME&unit=PC&geo=FR
+  source: Eurostat
+  nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
+  ligne_id: estat-031760
+  eligible: oui
+  longlist: niveau_de_vie
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2020
+- rupture_2022
+- point_bas_2021
+- denominateur_a_verifier
+notes: 'Valeurs et drapeaux lus sur l''API Eurostat le 17/10/2026 (mise à jour du 17/09/2026) : 23,1 (2004), 21,3
+  (2005), 25,3 (2007), 26,3 (2008), 24,3 (2010), 25,7 (2013), 27,8 (2014), 23,0 (2017), 21,6 (2019), 22,9 b (2020),
+  16,7 (2021), 23,6 b (2022), 24,0 (2023), 23,8 (2024), 23,0 (2025) ; en 2024, « lourde » 23,8 + « une certaine
+  » 17,4 + « aucune » 58,8 = 100. Même construction que logement_cadre_vie/charge_logement_lourde (ilc_mded04),
+  restée annuelle ici (22 valeurs de 2004 à 2025).'

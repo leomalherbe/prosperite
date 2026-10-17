@@ -1,0 +1,86 @@
+id: deces_chaleur
+libelle: Part des décès de l'été attribuables à la chaleur
+dimension: planete
+sous_theme: 'climat : aléas et adaptation'
+famille: deces_chaleur
+variante_principale: oui
+definition: 'Part des décès toutes causes survenus pendant la période de surveillance estivale (1er juin - 15 septembre)
+  qui sont attribuables à la chaleur, tous âges, France hexagonale : estimation populationnelle de Santé publique
+  France fondée sur les relations température-mortalité de chaque département, et non sur les causes inscrites aux
+  certificats de décès (champ af_chaleur du jeu).'
+unite: '% des décès de la période estivale'
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Santé publique France (Odissé)
+source_jeu: canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france (champ
+  af_chaleur, classe d'âge « Tous Ages »)
+source_serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france
+  (af_chaleur, Tous Ages)
+source_niveau: 1
+url_api: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france/exports/csv?delimiter=%3B
+url_page: https://odisse.santepubliquefrance.fr/explore/dataset/canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france/information/
+frequence: annuelle
+premiere_annee: 2014
+derniere_annee: 2025
+nb_points_depuis_2000: 12
+geo: FM
+eligibilite_longlist: hors_longlist
+ligne_id: ''
+hors_longlist: oui
+statut_serie: disponible
+preuve: docs/sources/series/spf_odisse__canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france.txt
+rattachement_propose: 'hors long-list : jeu Santé publique France non catalogué par M04 (maintenance SAN-10), renvoyé
+  par sante (groupe deces_chaleur_planete, règle 1020) à planete au titre des aléas climatiques subis (A14, D43)'
+raccordement: 'non : la canicule de 2003 n''est pas couverte par le jeu, qui commence en 2014'
+incontournable: non
+socle_propose: non
+recommandation: retenir
+motif_recommandation: Seule mesure annuelle de l'effet sanitaire des fortes chaleurs, rattachée à planete par D43,
+  12 valeurs de 2014 à 2025 lues par le robot (0,7 % en 2014, 4,0 % en 2022, 3,4 % en 2025).
+note_pertinence: Les décès attribuables à la chaleur traduisent en vies humaines l'aléa climatique le plus direct
+  pour la population, que la dimension suit déjà par le nombre de jours de canicule. La part des décès estivaux
+  neutralise la taille de la population ; le nombre de décès (1 104 en 2014, 6 969 en 2022, 5 722 en 2025), la part
+  pendant les seules vagues de chaleur et les 75 ans ou plus sont en variantes. La série commence en 2014 et dépend
+  du modèle épidémiologique de Santé publique France, révisable.
+variantes:
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france
+    (dc_chaleur, Tous Ages)
+  source: Santé publique France (Odissé)
+  nature: nombre de décès attribuables à la chaleur pendant la période estivale, tous âges (dc_chaleur, intervalle
+    dc_chaleur_inf - dc_chaleur_sup ; 1 104 en 2014, 6 969 en 2022, 5 722 en 2025)
+  preuve: docs/sources/series/spf_odisse__canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france.txt
+  statut: disponible
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france
+    (af_canicule, Tous Ages)
+  source: Santé publique France (Odissé)
+  nature: part des décès pendant les vagues de chaleur attribuables à la chaleur, tous âges (af_canicule ; 5,5 %
+    en 2014, 10,3 % en 2022, 12,4 % en 2025) ; le nombre correspondant est dc_canicule
+  preuve: docs/sources/series/spf_odisse__canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france.txt
+  statut: disponible
+- serie_id: https://odisse.santepubliquefrance.fr/api/explore/v2.1/catalog/datasets/canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france
+    (af_chaleur, Plus de 75 ans)
+  source: Santé publique France (Odissé)
+  nature: même part pour les 75 ans ou plus (af_chaleur, classe « Plus de 75 ans » ; 0,7 % en 2014, 4,3 % en 2022,
+    3,6 % en 2025), et les nombres correspondants
+  preuve: docs/sources/series/spf_odisse__canicules-deces-attribuables-a-la-chaleur-pendant-lete-et-pendant-les-vagues-de-chaleur-france.txt
+  statut: disponible
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- hors_longlist
+- estimation_modelisee
+- canicule_2003_non_couverte
+- champ_metropole
+- licence_a_confirmer
+notes: 'Valeurs lues dans la sortie du robot (vague 13, 16/10/2026) : af_chaleur tous âges 0,7 (2014), 2,4 (2015),
+  1,7 (2016), 2,2 (2017), 2,6 (2018), 2,8 (2019), 2,7 (2020), 1,2 (2021), 4,0 (2022), 3,1 (2023), 2,2 (2024), 3,4
+  (2025). Définitions lues sur la page d''information du jeu (WebFetch, 17/10/2026) : période de surveillance du
+  1er juin au 15 septembre ; fraction = décès toutes causes attribuables à la chaleur rapportés au nombre total
+  de décès de la zone et de la période ; relations température-mortalité construites pour l''ensemble des départements
+  hexagonaux (geo FM) ; méthode : Pascal M. et al., Discover Public Health, 2024, 21(1), 44 ; licence non indiquée
+  sur la page. Cataloguer le jeu : SAN-10.'

@@ -43,6 +43,30 @@ note_pertinence: 'C''est la mesure que l''INSEE commente chaque année pour le s
   temps partiel mais pas les différences de poste. Elle couvre 2000-2005, absent de l''indicateur européen, et peut
   servir à le raccorder. L''écart est à calculer : il ne figure pas tel quel au catalogue.'
 variantes:
+- serie_id: '010752331'
+  source: INSEE BDM
+  nature: salaire net annuel moyen par sexe, secteur privé, en EQTP et des postes à temps complet (INSEE BDM)
+  ligne_id: bdm-001228
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: '010752332'
+  source: INSEE BDM
+  nature: salaire net annuel moyen par sexe, secteur privé, en EQTP et des postes à temps complet (INSEE BDM)
+  ligne_id: bdm-001229
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: '010752364'
+  source: INSEE BDM
+  nature: salaire net annuel moyen par sexe, secteur privé, en EQTP et des postes à temps complet (INSEE BDM)
+  ligne_id: bdm-001261
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: '010752365'
+  source: INSEE BDM
+  nature: salaire net annuel moyen par sexe, secteur privé, en EQTP et des postes à temps complet (INSEE BDM)
+  ligne_id: bdm-001262
+  eligible: oui
+  longlist: niveau_de_vie
 - serie_id: DS_DERA_PRIVE_SERIES_LONGUES?ACTIVITY=_T&AGE=_T&DERA_MEASURE=SALAIRE_NET_EQTP_MENSUEL_MOYEN_EUROS_CONSTANTS&FREQ=A&GEO=FRANCE-F&NUMBER_EMPL=_T&PCS_ESE=_T&QUANTILE=_T&SEX=F&UNIT_MEASURE=XDC&WKTIME=FT
   source: INSEE Melodi
   nature: salaires nets moyens des postes à temps complet par sexe, depuis 1951 (INSEE ; long-list niveau_de_vie)

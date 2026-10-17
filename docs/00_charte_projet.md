@@ -73,19 +73,19 @@ Deux gels successifs, chacun avec des critères explicites, un dossier de décis
 
 **Ensuite** : socle des bornes v1 (même mécanique, classeur par dimension) ; puis boucle intersubjective sur la structure (dimensions jamais activées, indicateurs toujours décochés → arguments pour une v2).
 
-## 4. Grille de dimensions v1 — FIGÉE (gel 1, 13 octobre 2026)
+## 4. Grille de dimensions v1.1 — FIGÉE (gel 1 du 13 octobre 2026, révision D49 du 17 octobre)
 
 Décisions de Léo Malherbe (journal D23 à D26) sur le dossier de décision de M03 (`docs/methodo/31_dossier_decision_gel1.md`). Le fichier de référence est `indicateurs/dimensions.yaml` (définitions, contenu, exclusions, règles de rattachement R1–R8). Toute modification passe par une décision au journal et un changement de version. Chaque dimension est de type **plancher** (on vise au-dessus d'un minimum) ou **plafond** (on vise en dessous d'un maximum).
 
 | # | Dimension (id) | Contenu | Type |
 |---|---|---|---|
-| 1 | Niveau de vie (`niveau_de_vie`) | Revenus, pouvoir d'achat, consommation, PIB par habitant (indicateur ordinaire), pauvreté et privations, accès à l'alimentation, patrimoine des ménages | plancher |
+| 1 | Niveau de vie (`niveau_de_vie`) | Revenus, pouvoir d'achat, consommation, PIB par habitant (indicateur ordinaire), pauvreté et privations, accès à l'alimentation, patrimoine des ménages, sécurité économique des ménages (v1.1, D49) | plancher |
 | 2 | Travail et emploi (`travail`) | Emploi, chômage, NEET, qualité et sécurité de l'emploi, conditions et santé au travail (dont longues durées et horaires atypiques), satisfaction au travail | plancher |
 | 3 | Logement et cadre de vie (`logement_cadre_vie`) | Coût et qualité du logement, surpeuplement, précarité énergétique, environnement local subi (air, bruit, eau du robinet, nature), accès aux services, transports, infrastructures et numérique | plancher |
 | 4 | Santé (`sante`) | Espérance de vie (en bonne santé), mortalité évitable, santé perçue, santé mentale, accès aux soins, comportements et nutrition | plancher |
 | 5 | Éducation et compétences (`education`) | Diplômes, sorties précoces, compétences des élèves et des adultes, compétences numériques, formation des adultes, effort de R&D | plancher |
 | 6 | Liens sociaux et bien-être ressenti (`liens_bien_etre`) | Soutien social, solitude, confiance envers les autres, engagement, loisirs et pratiques culturelles et sportives, satisfaction dans la vie (indicateur ordinaire), émotions, sens | plancher |
-| 7 | Sécurité (`securite`) | Atteintes aux personnes et aux biens, sentiment d'insécurité, sécurité routière, sécurité économique des ménages | plancher |
+| 7 | Sécurité (`securite`) | Atteintes aux personnes et aux biens, sentiment d'insécurité, sécurité routière (la sécurité économique des ménages est passée en niveau de vie, v1.1, D49) | plancher |
 | 8 | Démocratie et institutions (`democratie`) | Participation, libertés, État de droit et justice, corruption, confiance dans les institutions ; composites admis par familles | plancher |
 | 9 | Égalités (`egalites`) | Inégalités de revenu et de patrimoine, écarts femmes-hommes, écarts et discriminations selon l'origine, territoires, générations, mobilité sociale | plancher |
 | 10 | Planète (`planete`) | Émissions et empreinte carbone, aléas climatiques subis, énergie (consommation, fossiles, renouvelables), biodiversité, sols, eau, azote et phosphore, agriculture, pollutions, matières et recyclage | plafond |

@@ -27,9 +27,11 @@ ligne_id: estat-031807
 hors_longlist: non
 raccordement: 'non : série EU-SILC depuis 2014'
 incontournable: non
+socle_propose: non
 recommandation: retenir
-motif_recommandation: Seule mesure de la privation numérique pour raisons financières, série Eurostat annuelle de
-  2014 à 2025 (12 points d'après la long-list).
+motif_recommandation: Variante principale de la famille privation_internet (privation numérique pour raisons financières),
+  série Eurostat annuelle de 2014 à 2025 (12 points), élément de la privation matérielle et sociale de l'UE ; la
+  privation d'ordinateur, plus longue (2004-2025), est en variante.
 note_pertinence: L'indicateur isole les personnes exclues du numérique faute de moyens, une privation devenue pénalisante
   quand les démarches passent en ligne. L'élément entre dans la privation matérielle et sociale suivie en niveau_de_vie,
   ce que le contrôle de redondance devra noter. La part est faible et baisse de 2,7 % en 2014 à 1,4 % en 2024 (1,6
@@ -119,4 +121,5 @@ qualite:
 notes: 'Capacité financière déclarée : déclaratif non (méthode §4). Valeurs lues (ilc_mddu07a, ensemble, mise à
   jour Eurostat du 17/09/2026) : 2,7 (2014), 2,1 (2015), 1,8 (2017), 1,9 (2020, b), 1,5 (2021), 1,7 (2022, b), 1,4
   (2024), 1,6 (2025). Variantes : ventilations par âge, sexe, statut d''activité, quintile, diplôme, urbanisation
-  et risque de pauvreté ou d''exclusion.'
+  et risque de pauvreté ou d''exclusion. Fiche de la même famille : privation_ordinateur (ilc_mddu03, lignes renvoyées
+  par education, audit M06 O1).'

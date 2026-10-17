@@ -25,7 +25,8 @@ eligibilite_longlist: oui
 ligne_id: estat-031453
 hors_longlist: non
 raccordement: 'non : série EU-SILC depuis 2004'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre lecture de la famille surpeuplement (espace moyen disponible, indicateur du Better Life
   Index de l'OCDE), série Eurostat annuelle de 2004 à 2025 (22 points d'après la long-list).
@@ -69,4 +70,5 @@ qualite:
 - faible_variabilite
 notes: 'Valeurs lues (ilc_lvho03, ensemble, mise à jour Eurostat du 17/09/2026) : 1,7 (2004 à 2008), 1,8 (2009 à
   2018), 1,9 (2019), 1,8 (2020, b ; 2021 ; 2022, b ; 2023 à 2025). Variantes : ilc_lvho04 (type de ménage, revenu),
-  ilc_lvho04d (urbanisation), ilc_lvho04n (table régionale, valeur nationale).'
+  ilc_lvho04d (urbanisation), ilc_lvho04n (table régionale, valeur nationale). Incontournable : non (D38 d : l''incontournable
+  se porte sur la variante principale de la famille).'

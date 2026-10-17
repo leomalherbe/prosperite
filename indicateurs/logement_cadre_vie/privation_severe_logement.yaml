@@ -30,6 +30,7 @@ rattachement_propose: ligne de la long-list niveau_de_vie (groupe privation_loge
   ; qualité du logement → logement_cadre_vie ; à trancher au gel 2
 raccordement: 'non : série EU-SILC annuelle de 2004 à 2020, puis module triennal (2023)'
 incontournable: oui
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Indicateur incontournable qui croise surpeuplement et défauts du logement (suivi ODD 11 de
   l'UE, sdg_11_11), 18 valeurs de 2004 à 2023 (annuelles jusqu'en 2020, puis 2023, D17).
@@ -217,6 +218,18 @@ variantes:
   ligne_id: estat-031840
   eligible: oui
   longlist: niveau_de_vie
+- serie_id: ilc_mdho06q?freq=A&unit=PC&quant_inc=TOTAL&geo=FR
+  source: Eurostat
+  nature: 'ilc_mdho06q : ensemble et ventilation par quintile de revenu (lignes renvoyées par niveau_de_vie)'
+  ligne_id: estat-031859
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: ilc_mdho06q?freq=A&unit=PC&quant_inc=QU1&quant_inc=QU2&quant_inc=QU3&quant_inc=QU4&quant_inc=QU5&geo=FR
+  source: Eurostat
+  nature: 'ilc_mdho06q : ensemble et ventilation par quintile de revenu (lignes renvoyées par niveau_de_vie)'
+  ligne_id: estat-031860
+  eligible: oui
+  longlist: niveau_de_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -226,10 +239,11 @@ qualite:
 - rupture_2020
 - module_triennal_depuis_2021
 - recoupe_composantes
-- valeurs_lues_sur_table_odd
 notes: 'Valeurs lues sur la table ODD sdg_11_11 (même indicateur, ensemble, mise à jour Eurostat du 21/05/2026 ;
   l''API de ilc_mdho06a a été refusée par le proxy le 15/10/2026, HTTP 429) : 3,4 (2004), 2,1 (2013 et 2017), 2,7
   (2018), 2,3 (2019), 3,8 (2020, b), 4,6 (2023) ; sous le seuil de pauvreté : 9,6 (2004), 13,7 (2023). Les défauts
   du logement relèvent du module triennal d''EU-SILC depuis 2021 (vagues 2023 et 2026, page des modules d''Eurostat
   lue le 15/10/2026). Variantes : table ODD sdg_11_11 et ventilations par sexe et âge (lignes de niveau_de_vie),
-  ventilations par type de ménage, statut d''occupation et urbanisation (ilc_mdho06b à d), handicap (hlth_dhc030).'
+  ventilations par type de ménage, statut d''occupation et urbanisation (ilc_mdho06b à d), handicap (hlth_dhc030)
+  ; ensemble et ventilation par quintile de revenu (ilc_mdho06q, lignes renvoyées par niveau_de_vie, D38 a). Valeurs
+  confirmées sur le jeu primaire ilc_mdho06a par l''audit M06 (16/10/2026).'

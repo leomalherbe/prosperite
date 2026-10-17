@@ -27,6 +27,7 @@ ligne_id: estat-031383
 hors_longlist: non
 raccordement: 'non : série EU-SILC depuis 2004'
 incontournable: non
+socle_propose: non
 recommandation: ecarter
 motif_recommandation: Sens ambigu (confort pour le ménage ou usage peu efficace du parc, relevé par le crosswalk
   M03), malgré une série Eurostat annuelle de 2004 à 2025 (22 points).
@@ -84,5 +85,9 @@ socle_v1:
   objectif: null
   type_justification: null
   justification: ''
-qualite: []
-notes: 'Variantes : ventilations par sexe, âge, type de ménage, quintile, statut d''occupation et urbanisation.'
+qualite:
+- rupture_2020
+- rupture_2022
+notes: 'Valeurs lues (ilc_lvho50a, ensemble, mise à jour Eurostat du 17/09/2026) : 37,8 (2004), 41,0 (2010), 44,2
+  (2013), 43,8 (2019), 42,2 (2020, b), 41,6 (2022, b), 40,0 (2024), 40,4 (2025). Variantes : ventilations par sexe,
+  âge, type de ménage, quintile, statut d''occupation et urbanisation.'

@@ -1,0 +1,71 @@
+id: raccordement_traitement_eaux_usees
+libelle: Population raccordée à un traitement secondaire des eaux usées
+dimension: planete
+sous_theme: eau
+famille: conformite_assainissement_collectif
+variante_principale: non
+definition: Part de la population connectée au moins à un traitement secondaire des eaux usées (Eurostat, suivi
+  des ODD de l'UE) ; le libellé couvre les traitements urbains, individuels et autres, mais la France ne déclare
+  que les stations urbaines (voir notes).
+unite: '% de la population'
+sens: ambigu
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: sdg_06_20 (population connectée au moins à un traitement secondaire des eaux usées)
+source_serie_id: sdg_06_20?freq=A&ww_tp=WWT_GE2&unit=PC&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sdg_06_20?freq=A&ww_tp=WWT_GE2&unit=PC&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/sdg_06_20/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2001
+derniere_annee: 2024
+nb_points_depuis_2000: 19
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-002071
+hors_longlist: non
+rattachement_propose: ligne de la long-list planete ; assainissement → planete (D39), fiche transférée de logement_cadre_vie
+  par son correcteur (D42)
+raccordement: 'non : série Eurostat de 2001 à 2024, sans valeur de 2005 à 2009'
+incontournable: non
+socle_propose: non
+recommandation: ecarter
+motif_recommandation: 'Sens ambigu en France : la série (77,30 % en 2001, 80,00 % en 2024) est la part de la population
+  raccordée à une station urbaine à traitement secondaire ou tertiaire, les 18 % en assainissement individuel n''y
+  étant jamais comptés (env_ww_con lu le 16/10/2026, J4 de l''audit M06).'
+note_pertinence: 'Le raccordement à une station de traitement est la mesure européenne de l''assainissement des
+  eaux usées (ODD 6.3). En France, la population non comptée vit surtout dans des logements en assainissement individuel
+  (18,00 % chaque année depuis 2010), dont la conformité est suivie par la variante non collective de conformite_assainissement_collectif
+  : une part plus élevée de raccordement n''est donc pas un progrès en soi. Depuis 2010, les variations de la série
+  tiennent surtout à la part des stations au traitement « non spécifié » (de 1,46 % à 4,30 %), la part collectée
+  étant fixée à 82,00 %.'
+variantes:
+- serie_id: env_ww_con?freq=A&ww_tp=TOTAL&unit=PC&geo=FR
+  source: Eurostat
+  nature: Eurostat env_ww_con, ww_tp=TOTAL (« total connecté au traitement des eaux usées », 100 % depuis 2010)
+  ligne_id: estat-041327
+  eligible: oui
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- annees_manquantes_2005_2009
+- faible_variabilite
+- sens_ambigu
+notes: 'Valeurs lues (sdg_06_20, WWT_GE2, mise à jour Eurostat du 18/09/2026, aucun drapeau) : 77,30 (2001), 79,50
+  (2004), 77,70 (2010), 80,46 (2016), 79,56 (2022 et 2023), 80,00 (2024) ; aucune valeur de 2005 à 2009. Libellé
+  de la modalité : « Traitement des eaux usées urbaines, individuelles (autonomes) et autres - avec au moins un
+  traitement secondaire ». Décomposition lue (env_ww_con, France, % de la population, mise à jour Eurostat du 18/09/2026,
+  lue le 16/10/2026) : stations urbaines à traitement secondaire 13,20 (2010) et 9,50 (2024), à traitement tertiaire
+  64,50 (2010) et 70,50 (2024), dont la somme égale la série (77,70 et 80,00) ; traitement non spécifié 4,30 (2010),
+  1,46 (2012), 2,44 (2022), 1,90 (2024) ; part collectée 82,00 et traitement individuel 18,00 chaque année depuis
+  2010 (estimations) ; traitement individuel avec au moins un traitement secondaire : aucune valeur pour la France.
+  Le motif de M05 (part non raccordée relevant de l''assainissement individuel) est donc confirmé, et la question
+  J4 de l''audit tranchée en faveur du sens ambigu. Variante : env_ww_con, ww_tp=TOTAL (« total connecté au traitement
+  des eaux usées », 100,00 % chaque année depuis 2010, intitulé à tort « population raccordée à des stations d''épuration
+  » au catalogue). La part raccordée à un traitement tertiaire (élimination de l''azote et du phosphore) n''est
+  pas cataloguée : piste pour planete, signalée (LOG-12). L''accès des ménages à des sanitaires est porté par logement_cadre_vie/sans_installations_sanitaires.'

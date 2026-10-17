@@ -31,13 +31,15 @@ rattachement_propose: ligne de la long-list niveau_de_vie (groupe cout_logement)
   coût du logement → logement_cadre_vie ; à trancher au gel 2
 raccordement: 'non : série des comptes nationaux depuis 1959'
 incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Seule mesure du poids du logement dans le revenu des ménages publiée par l'INSEE, annuelle
   de 1959 à 2025 (26 points depuis 2000), lecture macroéconomique complémentaire du taux de surcharge.
 note_pertinence: L'indicateur mesure le poids moyen du logement dans le revenu de l'ensemble des ménages, y compris
   la valeur du service de logement que se rendent les propriétaires occupants (loyers imputés). Sa longueur situe
   la période depuis 2000 dans une tendance longue ; il ne dit rien de la répartition de la charge entre ménages.
-  Les valeurs n'ont pas été relues (API Melodi non interrogée).
+  La part passe de 21,4 % en 2000 à 24,7 % en 2015, puis revient à 23,1 % en 2025 (API Melodi lue par le robot le
+  16/10/2026).
 variantes:
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_CWB,1.1 MEASURE=3_2 UNIT_MEASURE=PT_B7G_S14
   source: OCDE — How's Life? (base du bien-être)
@@ -73,4 +75,8 @@ qualite:
 - loyers_imputes_inclus
 notes: 'Variantes : doublon dans DD_CNA_CONSO_MENAGES_COICOP ; coefficient budgétaire du même poste dans la consommation
   des ménages et de l''économie totale ; complément de l''OCDE (How''s Life 3_2, part du revenu disponible brut
-  ajusté restant après les dépenses de logement : 79,84 % en 2024 d''après l''extrait du robot M04).'
+  ajusté restant après les dépenses de logement : 79,84 % en 2024 d''après l''extrait du robot M04). Valeurs lues
+  (Melodi DD_CNA_AGREGATS, _DEP_LOGT_REVENU, valeur, France ; docs/sources/series/insee_melodi__logement_poids_logement_revenu.txt,
+  vague 16 du robot, 16/10/2026) : 10,495 (1959), 21,421 (2000), 22,547 (2008), 24,653 (2015), 24,106 (2020), 23,499
+  (2022), 22,684 (2024), 23,072 (2025) ; une valeur par année de 1959 à 2025 (67 valeurs), 2025 provisoire d''après
+  le catalogue.'

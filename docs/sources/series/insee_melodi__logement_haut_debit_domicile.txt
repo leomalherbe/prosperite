@@ -1,0 +1,22 @@
+# insee_melodi / logement_haut_debit_domicile
+# URL : https://api.insee.fr/melodi/data/DS_TICM_EQUIPEMENT?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&MUN_DENSITY_LEVEL=_T&PCS_ESE=_T&QUANTILE_NIVVIE=_T&SEX=_T&TICM_MEASURE=HAUT_DEBIT&maxResult=10000
+# Mode : regex:"TIME_PERIOD"\s*:\s*"(\d{4})"[^}]*\}[^"]*"measures"\s*:\s*\{\s*"(\w+)"\s*:\s*\{\s*"value"\s*:\s*([-0-9.Ee]+)
+# Lu le 2026-10-16T08:32:57Z — HTTP 200 — application/json — 8026 octets
+
+16 correspondances distinctes du motif '"TIME_PERIOD"\\s*:\\s*"(\\d{4})"[^}]*\\}[^"]*"measures"\\s*:\\s*\\{\\s*"(\\w+)"\\s*:\\s*\\{\\s*"value"\\s*:\\s*([-0-9.Ee]+)' :
+2009	OBS_VALUE_NIVEAU	61.4
+2025	OBS_VALUE_NIVEAU	89.9
+2010	OBS_VALUE_NIVEAU	64.4
+2011	OBS_VALUE_NIVEAU	69.8
+2024	OBS_VALUE_NIVEAU	88.8
+2012	OBS_VALUE_NIVEAU	75.2
+2015	OBS_VALUE_NIVEAU	75.0
+2013	OBS_VALUE_NIVEAU	76.5
+2016	OBS_VALUE_NIVEAU	77.5
+2022	OBS_VALUE_NIVEAU	85.8
+2014	OBS_VALUE_NIVEAU	75.3
+2023	OBS_VALUE_NIVEAU	87.5
+2021	OBS_VALUE_NIVEAU	85.3
+2017	OBS_VALUE_NIVEAU	77.7
+2019	OBS_VALUE_NIVEAU	80.6
+2018	OBS_VALUE_NIVEAU	79.6

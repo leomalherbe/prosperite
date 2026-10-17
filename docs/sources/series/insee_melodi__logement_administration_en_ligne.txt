@@ -1,0 +1,22 @@
+# insee_melodi / logement_administration_en_ligne
+# URL : https://api.insee.fr/melodi/data/DS_TICM_PRATIQUES?AGE=_T&EDUC=_T&EMPSTA=_T&FREQ=A&PCS_ESE=_T&SEX=_T&TICM_MEASURE=EGOV_12MOIS&maxResult=10000
+# Mode : regex:"TIME_PERIOD"\s*:\s*"(\d{4})"[^}]*\}[^"]*"measures"\s*:\s*\{\s*"(\w+)"\s*:\s*\{\s*"value"\s*:\s*([-0-9.Ee]+)
+# Lu le 2026-10-16T08:32:56Z — HTTP 200 — application/json — 6867 octets
+
+16 correspondances distinctes du motif '"TIME_PERIOD"\\s*:\\s*"(\\d{4})"[^}]*\\}[^"]*"measures"\\s*:\\s*\\{\\s*"(\\w+)"\\s*:\\s*\\{\\s*"value"\\s*:\\s*([-0-9.Ee]+)' :
+2011	OBS_VALUE_NIVEAU	51.2
+2013	OBS_VALUE_NIVEAU	54.3
+2014	OBS_VALUE_NIVEAU	57.6
+2016	OBS_VALUE_NIVEAU	59.4
+2022	OBS_VALUE_NIVEAU	76.2
+2025	OBS_VALUE_NIVEAU	81.0
+2023	OBS_VALUE_NIVEAU	77.4
+2024	OBS_VALUE_NIVEAU	80.7
+2009	OBS_VALUE_NIVEAU	42.4
+2018	OBS_VALUE_NIVEAU	64.6
+2021	OBS_VALUE_NIVEAU	74.1
+2017	OBS_VALUE_NIVEAU	61.4
+2010	OBS_VALUE_NIVEAU	50.8
+2019	OBS_VALUE_NIVEAU	67.9
+2015	OBS_VALUE_NIVEAU	56.6
+2012	OBS_VALUE_NIVEAU	55.2

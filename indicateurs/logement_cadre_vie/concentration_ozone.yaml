@@ -28,7 +28,8 @@ eligibilite_longlist: oui
 ligne_id: m04-000370
 hors_longlist: non
 raccordement: 'non : série du SDES depuis 2000'
-incontournable: oui
+incontournable: non
+socle_propose: non
 recommandation: retenir_variante
 motif_recommandation: Autre statistique de la famille depassement_norme_ozone (niveau de fond plutôt que dépassement
   de norme), série du SDES annuelle de 2000 à 2024 (25 points d'après la long-list).
@@ -43,4 +44,4 @@ socle_v1:
   justification: ''
 qualite:
 - indice
-notes: ''
+notes: 'Incontournable : non (D38 d : l''incontournable se porte sur la variante principale de la famille).'

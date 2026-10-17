@@ -25,19 +25,19 @@ geo: FE
 eligibilite_longlist: a_verifier
 ligne_id: bdm-001100
 hors_longlist: non
-rattachement_propose: lignes de la long-list niveau_de_vie (groupe bancarisation_services) renvoyées à logement_cadre_vie
-  ; accès aux services → logement_cadre_vie ; à trancher au gel 2
+rattachement_propose: ligne de la long-list niveau_de_vie (groupe bancarisation_services) renvoyée à logement_cadre_vie
+  ; accès aux services → logement_cadre_vie, tranché par D42
 raccordement: 'non : série irrégulière depuis 2011 (2011, 2014, 2017, 2021, 2024 ; report de la dernière valeur,
   D17)'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Seule mesure de l'accès aux services financiers (ODD 8.10.2), série INSEE irrégulière de 2011
   à 2024 (5 points, écart moyen supérieur à 1,5 an), admise par D17 et D28.
 note_pertinence: 'L''accès à un compte conditionne le versement des revenus et des prestations et l''accès à la
   plupart des services. La part est proche de la totalité des adultes (97,0 % en 2011, 94,0 % en 2017, 99,2 % en
   2021 et 2024, BDM lue le 15/10/2026) : l''indicateur distinguera peu les années, mais une baisse signalerait une
-  exclusion bancaire. Son rattachement à l''accès aux services, proposé par niveau_de_vie, est à trancher par la
-  session mère.'
+  exclusion bancaire. Son rattachement à l''accès aux services est confirmé par D42.'
 variantes:
 - serie_id: DS_NAT_SDG?AGE=Y_GE15&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=8.i7&PCS=_Z&SDG=SDG8&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
   source: INSEE Melodi

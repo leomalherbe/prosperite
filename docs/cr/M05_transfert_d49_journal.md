@@ -82,4 +82,4 @@ Les 5 sous-thèmes de `niveau_de_vie` dans `dimensions.yaml` ont chacun au moins
 
 ## 8. Commits et pull request
 
-Voir la description de la pull request (« Transfert D49 : sécurité économique des ménages → niveau_de_vie ; socles proposés D50 »).
+Branche rebasée sur `origin/main` (`1b4b42b`, classeurs v1.3 de trois dimensions, sans conflit) avant le premier envoi. Commits : `1dbe497` (transfert D49 : fiches, règles, présélections, tableaux), `f3527cd` (socles D50 de `planete` et `travail`), `a2d5208` (journal et NDV-13), puis le numéro de la pull request dans ce journal. Pull request **#37** (« Transfert D49 : sécurité économique des ménages → niveau_de_vie ; socles proposés D50 »).

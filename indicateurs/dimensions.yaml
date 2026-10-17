@@ -2,9 +2,10 @@
 # Décisions de Léo Malherbe du 13 octobre 2026 (journal D23 à D26), sur proposition de la mission M03
 # (docs/methodo/31_dossier_decision_gel1.md). Toute modification passe par une décision au journal et un
 # changement de version. type : plancher (on vise au-dessus d'un minimum) | plafond (on vise en dessous d'un maximum).
-version: v1
+version: v1.1
 statut: figee
 date_gel: 2026-10-13
+revision: "2026-10-17 — D49 : la sécurité économique des ménages passe de securite à niveau_de_vie"
 dimensions:
   - id: niveau_de_vie
     libelle: "Niveau de vie"
@@ -92,13 +93,12 @@ dimensions:
   - id: securite
     libelle: "Sécurité"
     type: plancher
-    definition: "Être protégé des atteintes aux personnes et aux biens, des accidents de la route et des coups durs financiers, et se sentir en sécurité."
-    question: "Est-ce qu'on est à l'abri des violences, des vols et des accidents, est-ce qu'on peut faire face à un coup dur financier, et est-ce qu'on se sent en sécurité ?"
+    definition: "Être protégé des atteintes aux personnes et aux biens et des accidents de la route, et se sentir en sécurité."
+    question: "Est-ce qu'on est à l'abri des violences, des vols et des accidents, et est-ce qu'on se sent en sécurité ?"
     contenu:
       - atteintes aux personnes (homicides, violences physiques, sexuelles, intrafamiliales) et aux biens (cambriolages, vols)
       - sentiment d'insécurité, se sentir en sécurité la nuit
       - "sécurité routière : tués et blessés (A6)"
-      - "sécurité économique des ménages : dépense imprévue, retards de paiement, surendettement, épargne de précaution"
     exclusions:
       - confiance envers les autres → liens_bien_etre ; confiance dans les institutions → democratie (A11) ; sécurité de l'emploi → travail (A15)
 
@@ -152,3 +152,4 @@ regles:
   - R6: hors v1 — thème « temps libre, travail domestique et équilibre des temps » (A4 ; les durées et horaires de travail restent dans travail, D27) ; dette publique, investissement, patrimoine national (A5) ; stabilité financière (A16).
   - R7: PIB par habitant = indicateur ordinaire de niveau_de_vie ; appartenance au socle décidée au gel 2 (A12).
   - R8: indices composites admis (D18) avec une variante principale par famille ; indicateurs irréguliers admis avec report de la dernière valeur (D17) ; indicateurs de moyens admis avec type moyen (D19).
+  - R9: sécurité économique des ménages (dépense imprévue, épargne de précaution, retards de paiement, surendettement, risque de pauvreté ressenti, opinions sur l'épargne et la situation financière) → niveau_de_vie (D49, grille v1.1).

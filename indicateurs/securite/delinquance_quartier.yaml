@@ -17,7 +17,7 @@ source_serie_id: ilc_mddw03?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
 source_niveau: 1
 url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mddw03?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&geo=FR
 url_page: https://ec.europa.eu/eurostat/databrowser/view/ilc_mddw03/default/table?lang=fr
-frequence: annuelle
+frequence: irreguliere
 premiere_annee: 2004
 derniere_annee: 2023
 nb_points_depuis_2000: 18
@@ -27,6 +27,9 @@ ligne_id: estat-031893
 hors_longlist: non
 raccordement: 'non : question triennale depuis 2020 (pas de valeur 2021-2022), report de la dernière valeur (D17)'
 incontournable: oui
+socle_propose: non
+derogation_socle: 'Décision de Léo au gel 2 (classeur retourné le 17/10/2026, docs/validation/classeurs/retours/validation_securite_2026-10-17.xlsx,
+  D49) : retenu, hors du socle.'
 recommandation: retenir
 motif_recommandation: Indicateur phare du cadre Eurostat QoL (sécurité physique), 2004-2023 (22,3 % en 2004, 14,7
   % en 2023), source publique de niveau 1 ; devenu triennal après 2020 (pas de valeur 2021-2022).

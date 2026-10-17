@@ -8,8 +8,16 @@ reporte dans le CSV (les autres colonnes du CSV ne sont pas touchées) :
 
 Principe (D20, validation par exception) : chaque ligne porte la recommandation de l'agent et la
 décision qui s'appliquera par défaut ; Léo ne remplit `decision_leo` que là où il diverge.
-Décision par défaut : recommandation `retenir` + variante principale + incontournable → `retenu_socle` ;
-`retenir` ou `retenir_variante` → `retenu` ; `ecarter` → `ecarte`.
+Décision par défaut (D41, méthode 33 v1.3) : `socle_propose: oui` (recommandation `retenir`) → `retenu_socle` ;
+autre `retenir` ou `retenir_variante` → `retenu` ; `ecarter` → `ecarte`. Repli pour une fiche sans
+`socle_propose` (dimension dont la correction n'est pas fusionnée) : règle D37, `retenir` + variante principale +
+incontournable → `retenu_socle`.
+Le classeur montre le sous-thème et le socle proposé de chaque fiche (lus dans les fiches YAML si le tableau est
+encore au format v1.2) ; la feuille « Synthèse » compte les `retenu_socle` par sous-thème (par défaut et après les
+décisions saisies).
+Conservation des décisions : l'export écrit dans le classeur les `decision_leo`/`commentaire_leo` du CSV ; si un
+classeur existe déjà, les décisions qu'il porte et que le CSV n'a pas encore (classeur rempli mais pas encore
+importé) sont reprises au lieu d'être écrasées ; l'import ne vide jamais une décision du CSV.
 """
 
 from __future__ import annotations
@@ -35,6 +43,7 @@ POLICE = "Arial"
 
 COLONNES = [
     # (clé CSV, en-tête affiché, largeur)
+    ("sous_theme", "Sous-thème", 22),
     ("famille", "Famille", 22),
     ("id", "Identifiant", 28),
     ("libelle", "Libellé", 44),
@@ -49,6 +58,7 @@ COLONNES = [
     ("declaratif", "Déclaratif", 10),
     ("composite", "Composite", 10),
     ("incontournable", "Incontournable", 13),
+    ("socle_propose", "Socle proposé", 11),
     ("recommandation", "Recommandation de l'agent", 16),
     ("motif", "Motif de la recommandation", 70),
     ("decision_par_defaut", "Décision par défaut (si vous ne remplissez rien)", 18),
@@ -59,8 +69,12 @@ COLONNES = [
 
 def decision_par_defaut(ligne: dict) -> str:
     rec = (ligne.get("recommandation") or "").strip()
+    principale = ligne.get("variante_principale") == "oui"
     if rec == "retenir":
-        if ligne.get("variante_principale") == "oui" and ligne.get("incontournable") == "oui":
+        socle = (ligne.get("socle_propose") or "").strip()
+        if socle:  # D41 : retenu_socle = socle_propose: oui (le vérificateur le réserve aux principales)
+            return "retenu_socle" if socle == "oui" else "retenu"
+        if principale and ligne.get("incontournable") == "oui":  # repli D37 (fiche sans socle_propose)
             return "retenu_socle"
         return "retenu"
     if rec == "retenir_variante":
@@ -70,21 +84,107 @@ def decision_par_defaut(ligne: dict) -> str:
     return "a_discuter"
 
 
+def completer_depuis_fiches(dimension: str, lignes: list[dict]) -> list[dict]:
+    """Tableau antérieur à la méthode v1.3 (sans `sous_theme` ni `socle_propose`) : lit ces champs dans les fiches."""
+    if not lignes or ("sous_theme" in lignes[0] and "socle_propose" in lignes[0]):
+        return lignes
+    import yaml  # noqa: WPS433
+
+    fiches = {}
+    for chemin in (RACINE / "indicateurs" / dimension).glob("*.yaml"):
+        if not chemin.name.startswith("_"):
+            f = yaml.safe_load(chemin.read_text(encoding="utf-8")) or {}
+            fiches[f.get("id", chemin.stem)] = f
+    for l in lignes:
+        f = fiches.get(l.get("id"), {})
+        l.setdefault("sous_theme", f.get("sous_theme", ""))
+        l.setdefault("socle_propose", f.get("socle_propose", ""))
+    return lignes
+
+
 def lire_csv(dimension: str) -> list[dict]:
     chemin = DOSSIER_CSV / f"validation_{dimension}.csv"
     with chemin.open(encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
+        return completer_depuis_fiches(dimension, list(csv.DictReader(f)))
 
 
 def trier(lignes: list[dict]) -> list[dict]:
-    # par famille, variante principale d'abord, puis identifiant
-    return sorted(lignes, key=lambda l: (l.get("famille", ""), 0 if l.get("variante_principale") == "oui" else 1, l.get("id", "")))
+    # par sous-thème, puis famille, variante principale d'abord, puis identifiant
+    return sorted(lignes, key=lambda l: (l.get("sous_theme", ""), l.get("famille", ""),
+                                         0 if l.get("variante_principale") == "oui" else 1, l.get("id", "")))
+
+
+def sous_themes(lignes: list[dict]) -> list[str]:
+    """Sous-thèmes distincts, dans l'ordre du classeur."""
+    vus: list[str] = []
+    for l in lignes:
+        st = l.get("sous_theme", "") or ""
+        if st not in vus:
+            vus.append(st)
+    return vus
+
+
+def lire_decisions_classeur(fichier: Path) -> dict[str, tuple[str, str]]:
+    """Décisions et commentaires saisis dans un classeur (onglet « Validation »), par identifiant ; une décision
+    hors liste est ignorée (avertissement)."""
+    wb = load_workbook(fichier, data_only=True)
+    ws = wb["Validation"]
+    entetes = {str(ws.cell(row=1, column=j).value): j for j in range(1, ws.max_column + 1)}
+    j_id = entetes["Identifiant"]
+    j_dec = entetes["Votre décision (liste déroulante)"]
+    j_com = entetes["Votre commentaire"]
+    decisions = {}
+    for i in range(2, ws.max_row + 1):
+        ident = ws.cell(row=i, column=j_id).value
+        if not ident:
+            continue
+        dec = str(ws.cell(row=i, column=j_dec).value or "").strip()
+        com = str(ws.cell(row=i, column=j_com).value or "").strip()
+        if dec and dec not in DECISIONS:
+            print(f"avertissement — {ident} : décision « {dec} » non admise, ignorée", file=sys.stderr)
+            dec = ""
+        decisions[str(ident).strip()] = (dec, com)
+    return decisions
+
+
+def reprendre_decisions_classeur(lignes: list[dict], fichier: Path) -> int:
+    """Avant de réécrire un classeur existant : reprend les décisions qu'il porte et que le CSV n'a pas (classeur
+    rempli mais pas encore importé). En cas de désaccord, la valeur du CSV est gardée et signalée. Renvoie le nombre
+    de lignes reprises."""
+    if not fichier.exists():
+        return 0
+    try:
+        existantes = lire_decisions_classeur(fichier)
+    except (KeyError, ValueError, OSError) as exc:  # classeur illisible ou d'un autre format
+        print(f"avertissement — {fichier.name} existant illisible ({exc}) : aucune décision reprise", file=sys.stderr)
+        return 0
+    n = 0
+    ids = set()
+    for l in lignes:
+        ids.add(l.get("id"))
+        dec, com = existantes.get(l.get("id"), ("", ""))
+        if not (dec or com):
+            continue
+        actuel = ((l.get("decision_leo") or "").strip(), (l.get("commentaire_leo") or "").strip())
+        if not any(actuel):
+            l["decision_leo"], l["commentaire_leo"] = dec, com
+            print(f"avertissement — {l.get('id')} : décision du classeur existant non encore importée, conservée "
+                  f"({dec or '—'})", file=sys.stderr)
+            n += 1
+        elif actuel != (dec, com):
+            print(f"avertissement — {l.get('id')} : le classeur existant ({dec}) diffère du CSV ({actuel[0]}) : "
+                  "valeur du CSV gardée", file=sys.stderr)
+    for ident, (dec, com) in existantes.items():
+        if ident not in ids and (dec or com):
+            print(f"avertissement — {ident} : décision du classeur existant sans ligne dans le CSV", file=sys.stderr)
+    return n
 
 
 def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
     lignes = trier(lire_csv(dimension))
     DOSSIER_XLSX.mkdir(parents=True, exist_ok=True)
     sortie = DOSSIER_XLSX / f"validation_{dimension}.xlsx"
+    reprendre_decisions_classeur(lignes, sortie)
 
     wb = Workbook()
     # --- Feuille 1 : mode d'emploi -------------------------------------------------
@@ -95,8 +195,9 @@ def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
         (f"Gel 2 — validation des indicateurs de la dimension « {titre} »", True),
         ("", False),
         ("Comment remplir ce classeur (validation par exception, charte §3.6, décision D20)", True),
-        ("1. Ouvrez l'onglet « Validation ». Chaque ligne est un indicateur candidat (une fiche YAML dans le dépôt), regroupé par famille ; la variante principale de chaque famille est en tête.", False),
+        ("1. Ouvrez l'onglet « Validation ». Chaque ligne est un indicateur candidat (une fiche YAML dans le dépôt), regroupé par sous-thème puis par famille ; la variante principale de chaque famille est en tête.", False),
         ("2. Les colonnes grises sont informatives. La colonne « Recommandation de l'agent » et son motif résument l'analyse ; la colonne « Décision par défaut » indique ce qui s'appliquera si vous ne remplissez rien.", False),
+        ("   « Socle proposé » = oui : l'agent propose de cocher l'indicateur par défaut (décision D41 : les incontournables et une fiche principale par sous-thème de la dimension, 8 au plus) ; sa décision par défaut est alors retenu_socle. L'onglet « Synthèse » compte le socle par sous-thème.", False),
         ("3. Ne remplissez la colonne jaune « Votre décision » que là où vous divergez ou hésitez. Valeurs possibles (liste déroulante) :", False),
         ("     retenu = disponible dans l'outil, non coché par défaut ;", False),
         ("     retenu_socle = disponible ET coché par défaut dans la configuration de référence ;", False),
@@ -107,6 +208,7 @@ def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
         ("", False),
         ("Rappels", True),
         ("— Une famille regroupe des variantes d'un même concept (autre seuil, autre source, ventilation) : en général une seule variante est cochée par défaut.", False),
+        ("— Le socle est une proposition : pour l'élargir, mettez retenu_socle sur d'autres lignes ; pour le réduire, mettez retenu sur une ligne proposée.", False),
         ("— « Incontournable » = présent dans au moins trois cadres de référence (Doughnut, Stiglitz-Sen-Fitoussi, OCDE, Eurostat, INSEE).", False),
         ("— « Déclaratif » = donnée d'enquête d'opinion ou de ressenti ; « Composite » = indice agrégé d'un producteur tiers (V-Dem, CPI…).", False),
         ("— Sens « ambigu » : l'agent n'a pas pu établir si plus haut est mieux ; ces lignes sont écartées par défaut.", False),
@@ -166,19 +268,24 @@ def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
 
     # --- Feuille 3 : synthèse (formules) -------------------------------------------
     sy = wb.create_sheet("Synthèse")
-    plage_rec = f"Validation!${get_column_letter(col['recommandation'])}$2:${get_column_letter(col['recommandation'])}${n}"
-    plage_def = f"Validation!${get_column_letter(col['decision_par_defaut'])}$2:${get_column_letter(col['decision_par_defaut'])}${n}"
-    plage_dec = f"Validation!${lettre_dec}$2:${lettre_dec}${n}"
-    plage_fam = f"Validation!${get_column_letter(col['famille'])}$2:${get_column_letter(col['famille'])}${n}"
+
+    def plage(cle: str) -> str:
+        lettre = get_column_letter(col[cle])
+        return f"Validation!${lettre}$2:${lettre}${n}"
+
+    plage_rec, plage_def, plage_dec = plage("recommandation"), plage("decision_par_defaut"), plage("decision_leo")
+    plage_fam, plage_st, plage_id = plage("famille"), plage("sous_theme"), plage("id")
     lignes_syn = [
         ("Dimension", titre),
-        ("Indicateurs candidats (fiches)", f"=COUNTA(Validation!$B$2:$B${n})"),
+        ("Indicateurs candidats (fiches)", f"=COUNTA({plage_id})"),
         ("Familles distinctes", f"=SUMPRODUCT(({plage_fam}<>\"\")/COUNTIF({plage_fam},{plage_fam}&\"\"))"),
         ("", ""),
         ("Recommandations de l'agent", ""),
         ("  retenir", f"=COUNTIF({plage_rec},\"retenir\")"),
         ("  retenir_variante", f"=COUNTIF({plage_rec},\"retenir_variante\")"),
         ("  ecarter", f"=COUNTIF({plage_rec},\"ecarter\")"),
+        ("", ""),
+        ("Socle proposé par l'agent (D41)", f"=COUNTIF({plage('socle_propose')},\"oui\")"),
         ("", ""),
         ("Décisions par défaut", ""),
         ("  retenu_socle", f"=COUNTIF({plage_def},\"retenu_socle\")"),
@@ -197,9 +304,32 @@ def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
         cb = sy.cell(row=i, column=2, value=b)
         ca.font = Font(name=POLICE, bold=not a.startswith("  ") and a != "", size=10)
         cb.font = Font(name=POLICE, size=10)
+
+    # socle par sous-thème (D41) : par défaut, et après les décisions saisies (la décision saisie l'emporte)
+    debut = len(lignes_syn) + 2
+    entetes_st = ["Socle par sous-thème (D41)", "Fiches", "retenu_socle par défaut", "retenu_socle après vos décisions"]
+    for j, t in enumerate(entetes_st, 1):
+        sy.cell(row=debut, column=j, value=t).font = Font(name=POLICE, bold=True, size=10)
+    ligne = debut
+    for ligne, st in enumerate(sous_themes(lignes), debut + 1):
+        ref = f"$A{ligne}"
+        valeurs = [st or "(sans sous-thème)",
+                   f"=COUNTIF({plage_st},{ref})",
+                   f"=COUNTIFS({plage_st},{ref},{plage_def},\"retenu_socle\")",
+                   f"=SUMPRODUCT(({plage_st}={ref})*((({plage_dec}=\"\")*({plage_def}=\"retenu_socle\"))"
+                   f"+({plage_dec}=\"retenu_socle\")))"]
+        for j, v in enumerate(valeurs, 1):
+            sy.cell(row=ligne, column=j, value=v).font = Font(name=POLICE, size=10)
+    total = ligne + 1
+    sy.cell(row=total, column=1, value="Total").font = Font(name=POLICE, bold=True, size=10)
+    for j in (2, 3, 4):
+        lettre = get_column_letter(j)
+        sy.cell(row=total, column=j, value=f"=SUM({lettre}{debut + 1}:{lettre}{ligne})").font = Font(name=POLICE, bold=True, size=10)
     sy.column_dimensions["A"].width = 40
     sy.column_dimensions["B"].width = 18
-    sy.cell(row=len(lignes_syn) + 2, column=1, value="Les comptes se recalculent à l'ouverture dans Excel.").font = Font(name=POLICE, italic=True, size=9)
+    sy.column_dimensions["C"].width = 22
+    sy.column_dimensions["D"].width = 30
+    sy.cell(row=total + 2, column=1, value="Les comptes se recalculent à l'ouverture dans Excel.").font = Font(name=POLICE, italic=True, size=9)
 
     wb.save(sortie)
     return sortie
@@ -208,37 +338,21 @@ def exporter(dimension: str, libelle_dimension: str | None = None) -> Path:
 def importer(dimension: str, fichier: Path | None = None) -> int:
     chemin_csv = DOSSIER_CSV / f"validation_{dimension}.csv"
     fichier = fichier or (DOSSIER_XLSX / f"validation_{dimension}.xlsx")
-    wb = load_workbook(fichier, data_only=True)
-    ws = wb["Validation"]
-    entetes = {str(ws.cell(row=1, column=j).value): j for j in range(1, ws.max_column + 1)}
-    j_id = entetes["Identifiant"]
-    j_dec = entetes["Votre décision (liste déroulante)"]
-    j_com = entetes["Votre commentaire"]
-    decisions = {}
-    for i in range(2, ws.max_row + 1):
-        ident = ws.cell(row=i, column=j_id).value
-        if not ident:
-            continue
-        dec = (ws.cell(row=i, column=j_dec).value or "")
-        com = (ws.cell(row=i, column=j_com).value or "")
-        dec = str(dec).strip()
-        if dec and dec not in DECISIONS:
-            print(f"avertissement — {ident} : décision « {dec} » non admise, ignorée", file=sys.stderr)
-            dec = ""
-        decisions[str(ident).strip()] = (dec, str(com).strip())
+    decisions = lire_decisions_classeur(fichier)
     with chemin_csv.open(encoding="utf-8", newline="") as f:
         lecteur = csv.DictReader(f)
         champs = lecteur.fieldnames or []
         lignes = list(lecteur)
     n = 0
     for l in lignes:
-        if l["id"] in decisions:
-            dec, com = decisions[l["id"]]
-            if dec or com:
-                l["decision_leo"], l["commentaire_leo"] = dec, com
-                n += 1
+        dec, com = decisions.get(l["id"], ("", ""))
+        # une cellule vide du classeur ne vide jamais une valeur déjà importée
+        nouveau = (dec or l.get("decision_leo", ""), com or l.get("commentaire_leo", ""))
+        if (dec or com) and nouveau != (l.get("decision_leo", ""), l.get("commentaire_leo", "")):
+            l["decision_leo"], l["commentaire_leo"] = nouveau
+            n += 1
     with chemin_csv.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=champs)
+        w = csv.DictWriter(f, fieldnames=champs, lineterminator="\n")
         w.writeheader()
         w.writerows(lignes)
     print(f"{dimension} : {n} décision(s) ou commentaire(s) reportés dans {chemin_csv.name}")

@@ -3,7 +3,7 @@ libelle: Écart de rémunération horaire entre hommes et femmes (non corrigé)
 dimension: egalites
 sous_theme: écarts femmes-hommes
 famille: ecart_salaire_fh
-variante_principale: oui
+variante_principale: non
 definition: Différence entre le salaire horaire brut moyen des hommes et celui des femmes, en pourcentage du salaire
   masculin, dans l'industrie, la construction et les services hors administration publique (entreprises de 10 salariés
   ou plus ; écart non corrigé des différences de poste ou d'expérience).
@@ -27,14 +27,16 @@ eligibilite_longlist: oui
 ligne_id: estat-000004
 hors_longlist: non
 raccordement: 'a_etudier : 2000-2005 par l''écart de salaire net en équivalent temps plein de l''INSEE (ecart_salaire_eqtp_fh)'
-incontournable: oui
-recommandation: retenir
-motif_recommandation: Indicateur européen de référence repris par l'INSEE comme indicateur ODD national 5.i1 et
-  par Eurostat QoL, annuel de 2006 à 2024 (15,4 % en 2006, 11,8 % en 2024, valeurs provisoires en 2023-2024).
+incontournable: non
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: 'Retiré du socle par Léo au gel 2 (D48), gardé comme alternative de l''écart de salaire en
+  EQTP, désormais principal : indicateur européen de référence (ODD national 5.i1), annuel de 2006 à 2024 (15,4
+  % en 2006, 11,8 % en 2024).'
 note_pertinence: L'écart « non corrigé » mesure l'inégalité globale de rémunération, y compris celle qui vient de
   la ségrégation des emplois, et non la seule discrimination à poste égal. Il a nettement baissé depuis 2019 (16,0
-  % en 2019, 11,8 % en 2024). La variante INSEE en équivalent temps plein, plus longue (1996-2024), est proposée
-  dans la même famille.
+  % en 2019, 11,8 % en 2024). La mesure INSEE en équivalent temps plein, plus longue (1996-2024), est la principale
+  de la famille depuis le gel 2 (D48).
 variantes:
 - serie_id: '010594727'
   source: INSEE BDM

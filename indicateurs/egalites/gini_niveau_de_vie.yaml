@@ -3,7 +3,7 @@ libelle: Indice de Gini du niveau de vie
 dimension: egalites
 sous_theme: inégalités de revenu
 famille: inegalite_revenu
-variante_principale: non
+variante_principale: oui
 definition: Indice de concentration des niveaux de vie, de 0 (égalité parfaite) à 1 (une personne détient tout),
   après impôts directs et prestations sociales (enquête ERFS, données rétropolées, France métropolitaine).
 unite: indice (0 à 1)
@@ -27,9 +27,11 @@ ligne_id: melodi-005329
 hors_longlist: non
 raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
 incontournable: oui
-recommandation: retenir_variante
-motif_recommandation: Statistique la plus répandue dans les comparaisons internationales, publiée par l'INSEE de
-  1996 à 2024 (25 points depuis 2000), proposée comme alternative au S80/S20 dans la même famille.
+socle_propose: oui
+recommandation: retenir
+motif_recommandation: 'Placé au socle par Léo au gel 2 et devenu principal de la famille inegalite_revenu (D48)
+  : statistique la plus répandue dans les comparaisons internationales, publiée par l''INSEE de 1996 à 2024 (25
+  points depuis 2000).'
 note_pertinence: Le Gini résume toute la distribution, mais il est peu sensible aux extrémités et difficile à expliquer
   au public. La version EU-SILC (ilc_di12) passe de 29,2 en 2014 à 30,4 en 2025 (sur 100), avec ruptures en 2020
   et 2022. À utiliser à la place du S80/S20, pas en plus.

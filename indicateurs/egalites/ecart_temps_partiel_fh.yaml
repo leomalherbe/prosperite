@@ -31,6 +31,7 @@ ligne_id: estat-002062
 hors_longlist: non
 raccordement: 'a_etudier : 2003-2008 par la part du temps partiel par sexe de l''INSEE (enquête Emploi)'
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Inégalité de durée d'emploi distincte de l'écart d'emploi, annuelle de 2009 à 2025, dont l'ampleur
   a nettement baissé (25,2 points en 2009, 17,5 en 2025, en valeur absolue).
@@ -61,6 +62,41 @@ variantes:
   nature: 'INSEE : part du temps partiel dans l''emploi des femmes et des hommes (trimestriel, 2003-2026 ; long-list
     travail)'
   ligne_id: bdm-000594
+  eligible: oui
+  longlist: travail
+- serie_id: lfsi_pt_a_h?freq=A&worktime=PT&age=Y15-74&unit=THS_PER&sex=M&sex=F&geo=FR
+  source: Eurostat
+  nature: composantes par sexe de la part du temps partiel (INSEE séries longues ; Eurostat lfsi_pt_a 15-64 ans,
+    lfsa_eppga 15 ans ou plus, lfsi_pt_a_h en milliers 1993-2020)
+  ligne_id: estat-025122
+  eligible: oui
+  longlist: travail
+- serie_id: lfsi_pt_a?freq=A&wstatus=EMP_PT&sex=M&sex=F&age=Y15-64&unit=PC_EMP&geo=FR
+  source: Eurostat
+  nature: composantes par sexe de la part du temps partiel (INSEE séries longues ; Eurostat lfsi_pt_a 15-64 ans,
+    lfsa_eppga 15 ans ou plus, lfsi_pt_a_h en milliers 1993-2020)
+  ligne_id: estat-025142
+  eligible: oui
+  longlist: travail
+- serie_id: lfsa_eppga?freq=A&unit=PC&sex=M&sex=F&age=Y_GE15&geo=FR
+  source: Eurostat
+  nature: composantes par sexe de la part du temps partiel (INSEE séries longues ; Eurostat lfsi_pt_a 15-64 ans,
+    lfsa_eppga 15 ans ou plus, lfsi_pt_a_h en milliers 1993-2020)
+  ligne_id: estat-025567
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_WKTIME_IN_EMP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=F&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe de la part du temps partiel (INSEE séries longues ; Eurostat lfsi_pt_a 15-64 ans,
+    lfsa_eppga 15 ans ou plus, lfsi_pt_a_h en milliers 1993-2020)
+  ligne_id: melodi-003748
+  eligible: oui
+  longlist: travail
+- serie_id: DD_EEC_SERIES?AGE=_T&COMPOHALO=_T&EDUC=_T&EEC_MEASURE=PT_WKTIME_IN_EMP_BY_SEX_AGE&EMPFORM=_T&EMPSTA=1&PCS=_T&SEX=M&UNDEREMP=_T&UNEMPDUR=_T&UNIT_MEASURE=PT&WKTIME=_T
+  source: INSEE Melodi
+  nature: composantes par sexe de la part du temps partiel (INSEE séries longues ; Eurostat lfsi_pt_a 15-64 ans,
+    lfsa_eppga 15 ans ou plus, lfsi_pt_a_h en milliers 1993-2020)
+  ligne_id: melodi-003751
   eligible: oui
   longlist: travail
 socle_v1:

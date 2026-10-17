@@ -1,0 +1,56 @@
+id: accidents_travail_mortels_eurostat
+libelle: Accidents du travail mortels, taux d'incidence (Eurostat, statistiques européennes ESAW)
+dimension: travail
+sous_theme: conditions et santé au travail
+famille: accidents_travail_mortels
+variante_principale: non
+definition: Nombre d'accidents du travail mortels pour 100 000 personnes occupées, toutes activités (NACE Rév. 2,
+  total), selon les statistiques européennes des accidents du travail (ESAW) transmises par la France à Eurostat.
+unite: accidents mortels pour 100 000 personnes occupées
+sens: bas
+type: resultat
+declaratif: non
+composite: non
+source_organisme: Eurostat
+source_jeu: hsw_n2_02 (accidents du travail mortels par activité de la NACE Rév. 2)
+source_serie_id: hsw_n2_02?freq=A&unit=RT_INC&nace_r2=TOTAL&geo=FR
+source_niveau: 1
+url_api: https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hsw_n2_02?freq=A&unit=RT_INC&nace_r2=TOTAL&geo=FR
+url_page: https://ec.europa.eu/eurostat/databrowser/view/hsw_n2_02/default/table?lang=fr
+frequence: annuelle
+premiere_annee: 2008
+derniere_annee: 2024
+nb_points_depuis_2000: 17
+geo: FR
+eligibilite_longlist: oui
+ligne_id: estat-021652
+hors_longlist: non
+raccordement: 'a_etudier : sert à couvrir 2008-2014, avant la série nationale Ameli (2015-2024) ; champ et dénominateur
+  différents (personnes occupées contre salariés du régime général), ruptures en 2014, 2017, 2020 et 2022 ; sur
+  2015-2018 l''écart va de -0,33 à +0,01 point (D45)'
+incontournable: non
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: Seule série des accidents mortels avant 2015 (2008-2024, 17 points, ruptures en 2014, 2017,
+  2020 et 2022), gardée en variante de la série nationale pour la profondeur (D40, D45).
+note_pertinence: 'La série nationale de l''Assurance maladie ne commence qu''en 2015 ; la série européenne remonte
+  à 2008 et permet de couvrir 2008-2014 après raccordement. Les deux séries suivent la même trajectoire (2,74 contre
+  2,88 en 2018, 3,54 contre 3,75 en 2019, 3,61 contre 3,67 en 2024) mais leur champ diffère. Le raccordement reste
+  à étudier : les ruptures de 2014 et 2017 tombent dans la période de recouvrement.'
+variantes: []
+socle_v1:
+  seuil_minimal: null
+  objectif: null
+  type_justification: null
+  justification: ''
+qualite:
+- rupture_2014
+- rupture_2017
+- rupture_2020
+- rupture_2022
+- champ_differe_serie_nationale
+notes: 'Valeurs lues sur l''API Eurostat le 16/10/2026 (mise à jour du 25/09/2026), taux d''incidence, total NACE
+  : 1,56 (2008), 2,17 (2009), 2,36 (2010), 3,09 (2011), 2,53 (2012), 2,42 (2013), 2,70 b (2014), 2,57 (2015), 2,75
+  (2016), 2,65 b (2017), 2,74 (2018), 3,54 (2019), 2,55 b (2020), 3,32 (2021), 3,49 b (2022), 3,60 (2023), 3,61
+  (2024). Série nationale (fiche principale) : 2,90 (2015), 2,74 (2016), 2,75 (2017), 2,88 (2018). Ancienne variante
+  de accidents_travail_mortels (règle 331), devenue fiche variante par D45 pour porter le raccordement.'

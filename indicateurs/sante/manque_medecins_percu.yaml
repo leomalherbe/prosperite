@@ -14,11 +14,11 @@ declaratif: oui
 composite: non
 source_organisme: DREES (baromètre d'opinion)
 source_jeu: Baromètre d'opinion de la DREES (data.drees, jeu 431_le-barometre-d-opinion), microdonnées pondérées
-source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable SA09_1, modalités 3
+source_serie_id: data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA09_1, modalités 3
 composantes:
-- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièces jointes barometre2000_2024_diff_csv
-  et barometre2025_diff_csv ; variable SA09_1, modalités 3
+- data.drees.solidarites-sante.gouv.fr, jeu 431_le-barometre-d-opinion, pièce jointe barometre2000_2025_diff_csv
+  ; variable SA09_1, modalités 3
 formule: SA09_1 modalité 3 / ensemble des répondants * 100 (part pondérée ; non-réponses au dénominateur, convention
   du tableau officiel de la DREES, D45)
 source_niveau: 2

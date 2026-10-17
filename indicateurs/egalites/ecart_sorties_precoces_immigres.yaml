@@ -35,6 +35,7 @@ rattachement_propose: 'ligne de la long-list education (ventilation par pays de 
   relève d''egalites (exclusion d''education : écarts selon l''origine → egalites) ; à trancher au gel 2'
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Écart absolu (D34) construit sur une série annuelle de 2006 à 2025 pour les jeunes nés hors
   de l'UE (21,4 % en 2006, 12,7 % en 2025, lu sur l'API), qui mesure la réussite scolaire selon l'origine (A8).
@@ -46,6 +47,24 @@ variantes:
   source: Eurostat
   nature: même écart selon la nationalité (edat_lfse_01 ; long-list education)
   ligne_id: estat-054198
+  eligible: oui
+  longlist: education
+- serie_id: sdg_04_10a?freq=A&sex=T&wstatus=POP&unit=PC&age=Y18-24&citizen=EU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: sorties précoces des nationaux, des ressortissants de l'UE et hors UE (sdg_04_10a)
+  ligne_id: estat-053146
+  eligible: oui
+  longlist: education
+- serie_id: sdg_04_10a?freq=A&sex=T&wstatus=POP&unit=PC&age=Y18-24&citizen=NAT&geo=FR
+  source: Eurostat
+  nature: sorties précoces des nationaux, des ressortissants de l'UE et hors UE (sdg_04_10a)
+  ligne_id: estat-053147
+  eligible: oui
+  longlist: education
+- serie_id: sdg_04_10a?freq=A&sex=T&wstatus=POP&unit=PC&age=Y18-24&citizen=NEU27_2020_FOR&geo=FR
+  source: Eurostat
+  nature: sorties précoces des nationaux, des ressortissants de l'UE et hors UE (sdg_04_10a)
+  ligne_id: estat-053148
   eligible: oui
   longlist: education
 socle_v1:

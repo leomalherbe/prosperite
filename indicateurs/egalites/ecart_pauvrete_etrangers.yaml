@@ -3,7 +3,7 @@ libelle: Écart de taux de pauvreté entre étrangers et Français (18 ans ou pl
 dimension: egalites
 sous_theme: écarts selon l'origine
 famille: ecart_pauvrete_origine
-variante_principale: oui
+variante_principale: non
 definition: Écart, en valeur absolue et en points, entre le taux de pauvreté monétaire (seuil de 60 % du revenu
   médian) des personnes de 18 ans ou plus de nationalité étrangère et celui des personnes de nationalité française
   (EU-SILC, jeu ilc_li31).
@@ -34,9 +34,11 @@ rattachement_propose: lignes de la long-list niveau_de_vie (taux de pauvreté pa
   relève d'egalites (A8, R3), les niveaux restent dans niveau_de_vie ; à trancher au gel 2
 raccordement: non
 incontournable: non
-recommandation: retenir
-motif_recommandation: Écart construit sur deux séries annuelles de 2004 à 2025 (22 points), très stable et de signe
-  constant (32,8 % contre 11,8 % en 2004, 34,0 % contre 12,8 % en 2025).
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: 'Gardé comme alternative de l''écart de revenu médian selon l''origine, placé au socle et
+  devenu principal par la décision de Léo (D48) : écart construit sur deux séries annuelles de 2004 à 2025 (22 points),
+  de signe constant.'
 note_pertinence: 'Les étrangers ont un risque de pauvreté presque trois fois plus élevé que les Français, sans réduction
   depuis vingt ans. La nationalité exclut les immigrés devenus Français ; la variante par pays de naissance (ilc_li32)
   ne commence qu''en 2015 au catalogue. Petits effectifs : la série est heurtée (37,8 % en 2013 et 2019, 39,7 %

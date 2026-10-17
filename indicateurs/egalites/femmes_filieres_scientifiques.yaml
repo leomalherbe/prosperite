@@ -27,6 +27,7 @@ ligne_id: bdm-000808
 hors_longlist: non
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Indicateur ODD national de la ségrégation des filières, annuel de 2010 à 2025 (39,0 % en 2010,
   46,4 % en 2025, valeur provisoire), sur le seul champ où la part des femmes reste sous la parité.
@@ -82,6 +83,20 @@ variantes:
   nature: 'Eurostat : part des femmes parmi les chercheurs (rd_p_femres, 2010-2017, non éligible)'
   ligne_id: estat-052226
   eligible: non
+- serie_id: educ_uoe_enra32?freq=A&sex=F&isced11=ED5-8&iscedf13=F05_06_07&unit=PC&geo=FR
+  source: Eurostat
+  nature: part des femmes parmi les étudiants du supérieur en sciences, TIC et ingénierie, et en TIC seules (Eurostat
+    educ_uoe_enra32)
+  ligne_id: estat-022583
+  eligible: oui
+  longlist: education
+- serie_id: educ_uoe_enra32?freq=A&sex=F&isced11=ED5-8&iscedf13=F06&unit=PC&geo=FR
+  source: Eurostat
+  nature: part des femmes parmi les étudiants du supérieur en sciences, TIC et ingénierie, et en TIC seules (Eurostat
+    educ_uoe_enra32)
+  ligne_id: estat-022584
+  eligible: oui
+  longlist: education
 socle_v1:
   seuil_minimal: null
   objectif: null

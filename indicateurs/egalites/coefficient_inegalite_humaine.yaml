@@ -1,9 +1,9 @@
 id: coefficient_inegalite_humaine
 libelle: Coefficient d'inégalité humaine (PNUD)
 dimension: egalites
-sous_theme: inégalités multidimensionnelles
-famille: coefficient_inegalite_humaine
-variante_principale: oui
+sous_theme: inégalités de revenu
+famille: inegalite_revenu
+variante_principale: non
 definition: Moyenne arithmétique des inégalités (indices d'Atkinson) de durée de vie, d'éducation et de revenu calculées
   par le PNUD, en pourcentage.
 unite: '%'
@@ -29,12 +29,15 @@ ligne_id: m04-000350
 hors_longlist: non
 raccordement: non
 incontournable: non
-recommandation: retenir
-motif_recommandation: Seul indicateur synthétique des inégalités dans plusieurs domaines, composite admis par D18,
-  annuel de 2010 à 2023 (14 points ; 8,97 en 2023).
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: Composite du PNUD couvrant plusieurs dimensions (durée de vie, éducation, revenu), plafonné
+  à retenir_variante et rangé dans la famille de son concept dominant, l'inégalité de revenu (D38 c), annuel de
+  2010 à 2023 (14 points ; 8,97 en 2023).
 note_pertinence: 'Le coefficient réunit les inégalités de santé, d''éducation et de revenu ; la composante revenu
-  (17,9 en 2023) pèse le plus. Il recoupe les fiches de la famille inegalite_revenu et inegalite_esperance_vie :
-  double compte à traiter au contrôle de redondance (D18).'
+  (17,9 en 2023) pèse le plus. La règle D38 (c) plafonne les composites qui couvrent plusieurs dimensions à retenir_variante,
+  jamais au socle : la fiche devient une variante de la famille inegalite_revenu, son concept dominant. Il recoupe
+  les fiches de cette famille et inegalite_esperance_vie : double compte à traiter au contrôle de redondance (D18).'
 variantes:
 - serie_id: https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv (colonnes
     ihdi_<année>)

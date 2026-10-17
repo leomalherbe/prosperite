@@ -4,7 +4,7 @@ libelle: Rapport interquintile S80/S20 du niveau de vie (masses détenues par le
 dimension: egalites
 sous_theme: inégalités de revenu
 famille: inegalite_revenu
-variante_principale: oui
+variante_principale: non
 definition: Rapport entre la masse des niveaux de vie détenue par les 20 % de personnes les plus aisées et celle
   détenue par les 20 % les plus modestes, après impôts directs et prestations sociales (enquête Revenus fiscaux
   et sociaux, données rétropolées, France métropolitaine, ménages ordinaires).
@@ -30,11 +30,12 @@ hors_longlist: non
 rattachement_propose: ligne de la long-list niveau_de_vie (étiquette v0 « niveau_de_vie » du jeu INSEE) ; rattachement
   proposé à egalites (indicateur de dispersion, R3), à trancher au gel 2
 raccordement: 'non : série rétropolée par l''INSEE depuis 1996, sans rupture'
-incontournable: oui
-recommandation: retenir
-motif_recommandation: Concept présent dans les cinq cadres de référence (inégalité de revenu) et indicateur de richesse
-  nationale n° 6, publié sans rupture de 1996 à 2024 (25 points depuis 2000) dans la version rétropolée de l'INSEE,
-  plus récente d'un an que la série ODD de la BDM.
+incontournable: non
+socle_propose: non
+recommandation: retenir_variante
+motif_recommandation: 'Retiré du socle par Léo au gel 2 (D48), gardé comme alternative du Gini du niveau de vie,
+  désormais principal : concept des cinq cadres de référence, publié sans rupture de 1996 à 2024 (25 points depuis
+  2000) dans la version rétropolée de l''INSEE.'
 note_pertinence: 'C''est l''indicateur d''inégalité le plus lisible : en 2024, les 20 % les plus aisés détiennent
   4,62 fois la masse de niveau de vie des 20 % les plus modestes (note de lecture du jeu Melodi). La série rétropolée
   neutralise les ruptures de 2010, 2012 et 2020 de l''enquête ERFS. Les autres statistiques de la famille (Gini,

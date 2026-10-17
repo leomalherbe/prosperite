@@ -33,6 +33,7 @@ rattachement_propose: ligne de la long-list niveau_de_vie (ventilation par sexe 
   relève d'egalites (R3), le niveau reste dans niveau_de_vie ; à trancher au gel 2
 raccordement: non
 incontournable: non
+socle_propose: non
 recommandation: retenir
 motif_recommandation: Écart absolu (D34) des taux de pauvreté des femmes et des hommes, annuel de 2000 à 2025 sauf
   2003 (25 points), entre 0,2 et 2,0 points (2,0 en 2025), seule mesure de l'écart de pauvreté selon le sexe pour
@@ -42,6 +43,42 @@ note_pertinence: 'La pauvreté est mesurée au niveau du ménage : l''écart ent
   les 65 ans ou plus, l''écart est plus net (13,1 % contre 9,8 % en 2025). L''écart ne s''est inversé qu''une fois
   (-0,2 point en 2018) ; la valeur absolue (D34) le compte comme une distance à la parité.'
 variantes:
+- serie_id: '010594447'
+  source: INSEE BDM
+  nature: taux de pauvreté au seuil de 60 % par sexe (INSEE BDM et Melodi ODD 1.i1a, ERFS non rétropolée)
+  ligne_id: bdm-000838
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: '010594448'
+  source: INSEE BDM
+  nature: taux de pauvreté au seuil de 60 % par sexe (INSEE BDM et Melodi ODD 1.i1a, ERFS non rétropolée)
+  ligne_id: bdm-000839
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=F&TPH=_T
+  source: INSEE Melodi
+  nature: taux de pauvreté au seuil de 60 % par sexe (INSEE BDM et Melodi ODD 1.i1a, ERFS non rétropolée)
+  ligne_id: melodi-005103
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_ERFS_NON_RETROPOLE?AGE=_T&COMPARE_TIME=NB&EMPSTA_ENQ=_T&ERFS_MEASURE=PR_MD60&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&SEX=M&TPH=_T
+  source: INSEE Melodi
+  nature: taux de pauvreté au seuil de 60 % par sexe (INSEE BDM et Melodi ODD 1.i1a, ERFS non rétropolée)
+  ligne_id: melodi-005104
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=F&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: taux de pauvreté au seuil de 60 % par sexe (INSEE BDM et Melodi ODD 1.i1a, ERFS non rétropolée)
+  ligne_id: melodi-005516
+  eligible: oui
+  longlist: niveau_de_vie
+- serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=NIVIEMED_S60&EMPSTA=_T&GEO=FRANCE-FM&INDICATOR_SDG=1.i1a&PCS=_T&SDG=SDG1&SEX=M&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=PT
+  source: INSEE Melodi
+  nature: taux de pauvreté au seuil de 60 % par sexe (INSEE BDM et Melodi ODD 1.i1a, ERFS non rétropolée)
+  ligne_id: melodi-005517
+  eligible: oui
+  longlist: niveau_de_vie
 - serie_id: ilc_pnp12?freq=A&age=Y_GE65&unit=NR&geo=FR
   source: Eurostat
   nature: 'Eurostat ilc_pnp12 : « différences de sexe dans le taux de risque de pauvreté » (65 ans ou plus, moins

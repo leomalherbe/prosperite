@@ -27,7 +27,8 @@ eligibilite_longlist: oui
 ligne_id: estat-008085
 hors_longlist: non
 rattachement_propose: 'ligne de la long-list niveau_de_vie (groupe endettement_menages) renvoyée à securite : endettement
-  des ménages → sécurité économique (D39, D46)'
+  des ménages → sécurité économique (D39, D46) ; la sécurité économique des ménages passe en niveau_de_vie (D49)
+  : à transférer'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -135,4 +136,6 @@ notes: 'Valeurs lues sur l''API Eurostat le 17/10/2026 (mise à jour du 14/10/20
   (2023), 93,63 p (2024) ; série disponible depuis 1995 (55,25). Sens : un endettement plus élevé est une vulnérabilité
   (OCDE, How''s Life, capital économique ; tableau de bord de la procédure de déséquilibre macroéconomique de l''Union
   pour la dette privée) ; il accompagne aussi l''accès à la propriété, d''où `sens_a_confirmer` : Léo tranche au
-  gel 2. INSEE principal non retenu : la série ODD 17.i4a de l''INSEE est en % du PIB, autre définition (variante).'
+  gel 2. INSEE principal non retenu : la série ODD 17.i4a de l''INSEE est en % du PIB, autre définition (variante).
+  Sécurité économique des ménages : fiche créée par la reprise des lignes renvoyées (D46) après le classeur de securite
+  ; à transférer vers niveau_de_vie avec les 8 fiches de D49, où Léo la validera.'

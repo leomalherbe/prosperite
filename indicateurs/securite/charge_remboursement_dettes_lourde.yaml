@@ -28,7 +28,8 @@ eligibilite_longlist: oui
 ligne_id: estat-031755
 hors_longlist: non
 rattachement_propose: 'ligne de la long-list niveau_de_vie (groupe endettement_menages) renvoyée à securite : endettement
-  des ménages → sécurité économique (D39, D46)'
+  des ménages → sécurité économique (D39, D46) ; la sécurité économique des ménages passe en niveau_de_vie (D49)
+  : à transférer'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -85,4 +86,6 @@ notes: 'Valeurs et drapeaux lus sur l''API Eurostat le 17/10/2026 (mise à jour 
   (2005), 25,3 (2007), 26,3 (2008), 24,3 (2010), 25,7 (2013), 27,8 (2014), 23,0 (2017), 21,6 (2019), 22,9 b (2020),
   16,7 (2021), 23,6 b (2022), 24,0 (2023), 23,8 (2024), 23,0 (2025) ; en 2024, « lourde » 23,8 + « une certaine
   » 17,4 + « aucune » 58,8 = 100. Même construction que logement_cadre_vie/charge_logement_lourde (ilc_mded04),
-  restée annuelle ici (22 valeurs de 2004 à 2025).'
+  restée annuelle ici (22 valeurs de 2004 à 2025). Sécurité économique des ménages : fiche créée par la reprise
+  des lignes renvoyées (D46) après le classeur de securite ; à transférer vers niveau_de_vie avec les 8 fiches de
+  D49, où Léo la validera.'

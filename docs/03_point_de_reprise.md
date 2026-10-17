@@ -1,20 +1,18 @@
 # Point de reprise — session mère
 
-Mis à jour le 2026-10-17 à 12 h 15 (Paris). Ce document permet à toute session (mère ou reprise après redémarrage) de reprendre le pilotage sans relire l'historique de conversation. Il est réécrit à chaque étape importante.
+Mis à jour le 2026-10-17 à 14 h 05 (Paris). Ce document permet à toute session (mère ou reprise après redémarrage) de reprendre le pilotage sans relire l'historique de conversation. Il est réécrit à chaque étape importante.
 
 ## État du projet
 - **Phase 0** cadrage : fait (charte v1.2, journal D01–D47).
 - **Gel 1** (dimensions) : fait le 13/10 (`indicateurs/dimensions.yaml` v1 figée).
 - **M01–M04, M05-prep** : terminées et fusionnées (PR #1–#5).
 - **M05 fiches indicateurs** : faites pour les 10 dimensions ; **M06 audits croisés** : faits pour les 10 ; **corrections après audit** : faites et fusionnées pour les 10 (dernière : logement_cadre_vie, PR #35, avec transfert de l'assainissement vers planète). Méthode commune : `docs/methodo/33_methode_fiches_M05.md` (v1.3 en cours sur la branche transversale).
-- **Gel 2** : `democratie` et `liens_bien_etre` **figées par Léo** (D47 ; décisions dans `docs/validation/validation_<dim>.csv`, classeurs retournés archivés dans `docs/validation/classeurs/retours/`). Les 8 autres dimensions attendent leurs classeurs.
-- **En cours** : branche `m05-transversal-gel2` (agent lancé le 17/10 à 12 h 10) — socle proposé par sous-thème (D41) sur les 10 dimensions, lignes renvoyées non reprises (D46), vérificateur et classeur v1.3, tableaux de validation régénérés → PR à fusionner.
+- **Gel 2** : `democratie`, `liens_bien_etre`, `egalites`, `securite` **figées par Léo** (D47–D49 ; décisions dans `docs/validation/validation_<dim>.csv`, classeurs retournés archivés dans `docs/validation/classeurs/retours/`). Grille **v1.1** (D49 : sécurité économique des ménages → niveau_de_vie, transfert exécuté, PR #37). Transversal fusionné (PR #36 : socle proposé par sous-thème sur les 10 dimensions, 606 lignes renvoyées reprises, vérificateur et classeur v1.3, méthode 33 v1.3). Les **6 classeurs restants** (niveau_de_vie 39 fiches, travail 40, logement_cadre_vie 43, sante 50, education 39, planete 79) sont déposés dans le dossier OneDrive `30_dimensions_indicateurs/validation/` le 17/10 ; Léo les remplit à son rythme.
+- Aucun agent en cours.
 
 ## Prochaines étapes (dans l'ordre)
-1. Fusionner la PR transversale ; `python -m pytest -q` ; vérificateur à 0 erreur sur les 10 dimensions ; `--lignes-renvoyees` sans orpheline.
-2. Générer les **8 classeurs** restants (`python scripts/classeur_validation.py exporter --toutes`, v1.3 : défaut `retenu_socle` = `socle_propose: oui`) et les déposer dans le dossier OneDrive `30_dimensions_indicateurs/validation/` (ne pas écraser les deux classeurs validés) ; prévenir Léo.
-3. À chaque classeur retourné : `python scripts/classeur_validation.py importer --dimension <dim> --fichier <xlsx>` ; archiver le retour dans `docs/validation/classeurs/retours/` ; consigner au journal (D48…) ; traiter les `a_discuter` par questions cliquables en session.
-4. Quand les 10 sont figées : **base d'indicateurs v1.0** (`statut: fige` sur les fiches, journal des modifications, versionnement sémantique, charte §3.6), puis **M07 socle des bornes v1** (seuil minimal / objectif par indicateur retenu, hiérarchie officiel > scientifique > historique > européen > expert ; vérifier Q-F ZAN et énergie-climat), **M08 pipeline de données et millésimes**, **M09 front** (3 modes + jeu), **phase 7 collecte** (Supabase UE).
+1. À chaque classeur retourné (Léo enregistre sur place dans le dossier OneDrive, ou le joint dans la conversation) : `python scripts/classeur_validation.py importer --dimension <dim> --fichier <xlsx>` ; archiver le retour dans `docs/validation/classeurs/retours/` ; consigner au journal (D48…) ; traiter les `a_discuter` par questions cliquables en session.
+2. Quand les 10 sont figées : **base d'indicateurs v1.0** (`statut: fige` sur les fiches, journal des modifications, versionnement sémantique, charte §3.6), puis **M07 socle des bornes v1** (seuil minimal / objectif par indicateur retenu, hiérarchie officiel > scientifique > historique > européen > expert ; vérifier Q-F ZAN et énergie-climat), **M08 pipeline de données et millésimes**, **M09 front** (3 modes + jeu), **phase 7 collecte** (Supabase UE).
 
 ## Décisions en attente de Léo
 - Remplir les 8 classeurs restants (validation par exception) quand ils seront déposés.

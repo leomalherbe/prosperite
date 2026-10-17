@@ -17,10 +17,11 @@ dimensions:
       - pauvreté monétaire, intensité de la pauvreté, privation matérielle et sociale
       - accès à l'alimentation (insécurité alimentaire, privation alimentaire) (A2)
       - patrimoine des ménages
+      - "sécurité économique des ménages : dépense imprévue, épargne de précaution, retards de paiement, surendettement, risque de pauvreté ressenti, opinions sur l’épargne et la situation financière (D49, v1.1)"
     exclusions:
       - dette publique, investissement, patrimoine national (non retenus, A5)
       - stabilité financière, levier bancaire (non retenue, A16)
-      - écarts de revenus → egalites ; réserves financières des ménages et surendettement → securite
+      - écarts de revenus → egalites ; sécurité économique des ménages désormais ici (D49)
 
   - id: travail
     libelle: "Travail et emploi"

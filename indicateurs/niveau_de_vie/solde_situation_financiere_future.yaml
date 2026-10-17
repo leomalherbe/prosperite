@@ -1,7 +1,7 @@
 id: solde_situation_financiere_future
 libelle: Opinion des ménages sur les perspectives de leur situation financière (solde)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: situation_financiere_percue
 variante_principale: non
 definition: Solde des réponses (amélioration moins détérioration) à la question sur l'évolution attendue de leur
@@ -28,12 +28,15 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000703
 hors_longlist: non
+rattachement_propose: 'ligne de la long-list securite renvoyée à niveau_de_vie (groupe securite/solde_situation_financiere_future_niveau_de_vie)
+  : sécurité économique des ménages → niveau_de_vie (D49, D50, grille v1.1, R9) ; la table de correspondance v0→v1
+  la place encore en securite (correction signalée à la session mère)'
 raccordement: non
 incontournable: non
 socle_propose: non
-recommandation: retenir_variante
-motif_recommandation: 'Même enquête et même période (1970-2026), mais porte sur une anticipation et non sur la situation
-  vécue : variante de la situation financière passée (D29, P8).'
+recommandation: ecarter
+motif_recommandation: 'Écartée par Léo au gel 2 de securite (D49, classeur du 17/10/2026) : anticipation de la situation
+  financière, variante de la situation passée (1970-2026, D29, P8).'
 note_pertinence: Les perspectives expriment l'inquiétude ou la confiance des ménages pour l'année à venir, proche
   du sentiment d'insécurité économique. Elles sont plus volatiles et plus liées au climat général que la situation
   passée. La version CVS (000857197) est elle aussi classée hors grille par erreur.
@@ -53,4 +56,6 @@ qualite:
 - agregation_annuelle
 - solde_d_opinion_evolution
 notes: 'Moyenne annuelle calculée par le projet (D34) sur les valeurs mensuelles publiées : l''INSEE ne publie pas
-  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire).'
+  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire). Transférée de securite
+  vers niveau_de_vie le 17/10/2026 (D49, D50, grille v1.1, R9) ; écartée par Léo au gel 2 de securite (D49), décision
+  conservée.'

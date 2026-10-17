@@ -1,7 +1,7 @@
 id: charge_remboursement_dettes_lourde
 libelle: Remboursement de crédits ou de prêts ressenti comme une lourde charge
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: charge_remboursement_dettes
 variante_principale: oui
 definition: 'Part des personnes vivant dans un ménage qui déclare que le remboursement de dettes liées à des achats
@@ -27,9 +27,6 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-031755
 hors_longlist: non
-rattachement_propose: 'ligne de la long-list niveau_de_vie (groupe endettement_menages) renvoyée à securite : endettement
-  des ménages → sécurité économique (D39, D46) ; la sécurité économique des ménages passe en niveau_de_vie (D49)
-  : à transférer'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -47,31 +44,26 @@ variantes:
   nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
   ligne_id: estat-031756
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: ilc_mded05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=NONE&unit=PC&geo=FR
   source: Eurostat
   nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
   ligne_id: estat-031757
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: ilc_mded05?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=NONE&unit=PC&geo=FR
   source: Eurostat
   nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
   ligne_id: estat-031758
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: ilc_mded05?freq=A&hhcomp=TOTAL&rskpovth=TOTAL&lev_bur=SOME&unit=PC&geo=FR
   source: Eurostat
   nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
   ligne_id: estat-031759
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: ilc_mded05?freq=A&hhcomp=M1&hhcomp=F1&hhcomp=A1&hhcomp=A1_DCH&hhcomp=A2&hhcomp=A2_DCH1&hhcomp=A2_DCH2&hhcomp=A2_DCH_GE3&hhcomp=A_GE3&hhcomp=A_GE3_DCH&hhcomp=DCH&hhcomp=NDCH&hhcomp=A1_LT65&hhcomp=A1_GE65&hhcomp=A2_2LT65&hhcomp=A2_GE1_GE65&rskpovth=TOTAL&lev_bur=SOME&unit=PC&geo=FR
   source: Eurostat
   nature: ventilation par type de ménage ; compléments (une certaine charge, aucune charge)
   ligne_id: estat-031760
   eligible: oui
-  longlist: niveau_de_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -86,6 +78,7 @@ notes: 'Valeurs et drapeaux lus sur l''API Eurostat le 17/10/2026 (mise à jour 
   (2005), 25,3 (2007), 26,3 (2008), 24,3 (2010), 25,7 (2013), 27,8 (2014), 23,0 (2017), 21,6 (2019), 22,9 b (2020),
   16,7 (2021), 23,6 b (2022), 24,0 (2023), 23,8 (2024), 23,0 (2025) ; en 2024, « lourde » 23,8 + « une certaine
   » 17,4 + « aucune » 58,8 = 100. Même construction que logement_cadre_vie/charge_logement_lourde (ilc_mded04),
-  restée annuelle ici (22 valeurs de 2004 à 2025). Sécurité économique des ménages : fiche créée par la reprise
-  des lignes renvoyées (D46) après le classeur de securite ; à transférer vers niveau_de_vie avec les 8 fiches de
-  D49, où Léo la validera.'
+  restée annuelle ici (22 valeurs de 2004 à 2025). Sécurité économique des ménages : fiche créée en securite par
+  la reprise des lignes renvoyées (D46) après le classeur de securite, transférée vers niveau_de_vie avec les 8
+  fiches de D49 le 17/10/2026 (D50) ; série principale dans la long-list niveau_de_vie, plus de renvoi ; Léo la
+  validera ici.'

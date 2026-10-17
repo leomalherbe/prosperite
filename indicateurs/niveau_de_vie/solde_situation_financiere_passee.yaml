@@ -1,7 +1,7 @@
 id: solde_situation_financiere_passee
 libelle: Opinion des ménages sur l'évolution passée de leur situation financière (solde)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: situation_financiere_percue
 variante_principale: oui
 definition: Solde des réponses (part des ménages déclarant une amélioration moins part déclarant une détérioration)
@@ -28,6 +28,9 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000702
 hors_longlist: non
+rattachement_propose: 'ligne de la long-list securite renvoyée à niveau_de_vie (groupe securite/solde_situation_financiere_passee_niveau_de_vie)
+  : sécurité économique des ménages → niveau_de_vie (D49, D50, grille v1.1, R9) ; la table de correspondance v0→v1
+  la place encore en securite (correction signalée à la session mère)'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -56,4 +59,6 @@ qualite:
 - agregation_annuelle
 - solde_d_opinion_evolution
 notes: 'Moyenne annuelle calculée par le projet (D34) sur les valeurs mensuelles publiées : l''INSEE ne publie pas
-  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire).'
+  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire). Transférée de securite
+  vers niveau_de_vie le 17/10/2026 (D49, D50, grille v1.1, R9) ; décision de Léo en securite : a_discuter (« ce
+  qui relève de la sécurité économique correspond plutôt à la dimension niveau de vie »), à revalider ici.'

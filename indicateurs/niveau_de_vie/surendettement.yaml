@@ -1,7 +1,7 @@
 id: surendettement
 libelle: Situations de surendettement soumises aux commissions (nombre de dossiers)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: surendettement
 variante_principale: oui
 definition: Nombre de dossiers de surendettement déposés dans l'année auprès des commissions de surendettement de
@@ -25,6 +25,9 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000874
 hors_longlist: non
+rattachement_propose: 'ligne de la long-list securite renvoyée à niveau_de_vie (groupe securite/surendettement_niveau_de_vie)
+  : sécurité économique des ménages → niveau_de_vie (D49, D50, grille v1.1, R9) ; la table de correspondance v0→v1
+  la place encore en securite (correction signalée à la session mère)'
 raccordement: 'a_etudier : 2000-2009 par les dépôts de dossiers de la Banque de France (Webstat, API avec compte,
   D21)'
 incontournable: non
@@ -43,11 +46,13 @@ variantes:
   nature: 'ITDD (Banque de France) : dossiers déposés, France entière, 2014-2024'
   ligne_id: m04-000308
   eligible: oui
+  longlist: securite
 - serie_id: DS_NAT_SDG?AGE=_T&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-FM&INDICATOR_SDG=1.i5&PCS=_Z&SDG=SDG1&SEX=_T&TYPE_INDICATOR_SDG=I_SDG&UNIT_MEASURE=NR
   source: INSEE Melodi
   nature: 'doublon technique : copie Melodi de la série BDM (ODD 1.i5)'
   ligne_id: melodi-005539
   eligible: oui
+  longlist: securite
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -56,8 +61,10 @@ socle_v1:
 qualite:
 - en_nombre
 - dependance_reglementaire
-notes: Indicateur retenu en nombre, comme l'indicateur ODD 1.i5 publié. Un taux pour 100 000 habitants (010594499
+notes: 'Indicateur retenu en nombre, comme l''indicateur ODD 1.i5 publié. Un taux pour 100 000 habitants (010594499
   / 000067671 × 100 000, population moyenne de France métropolitaine, 1946-2025) pourrait être calculé par le pipeline,
-  mais il n'est pas retenu comme série principale faute de valeurs officielles pour le recoupement (D34) ; la population
-  métropolitaine n'augmente que de 5,7 % de 2010 à 2024 (BDM 000067671 lue le 14/10/2026), peu au regard des mouvements
-  de la série (-50 % de 2010 à 2020).
+  mais il n''est pas retenu comme série principale faute de valeurs officielles pour le recoupement (D34) ; la population
+  métropolitaine n''augmente que de 5,7 % de 2010 à 2024 (BDM 000067671 lue le 14/10/2026), peu au regard des mouvements
+  de la série (-50 % de 2010 à 2020). Transférée de securite vers niveau_de_vie le 17/10/2026 (D49, D50, grille
+  v1.1, R9) ; décision de Léo en securite : a_discuter (« ce qui relève de la sécurité économique correspond plutôt
+  à la dimension niveau de vie »), à revalider ici.'

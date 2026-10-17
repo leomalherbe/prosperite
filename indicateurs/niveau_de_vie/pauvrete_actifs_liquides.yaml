@@ -1,7 +1,7 @@
 id: pauvrete_actifs_liquides
 libelle: Pauvreté en actifs financiers liquides (épargne de précaution insuffisante)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: epargne_precaution
 variante_principale: oui
 definition: Part de la population dont les actifs financiers liquides (dépôts, épargne disponible), par unité de
@@ -26,9 +26,16 @@ geo: FR
 eligibilite_longlist: a_verifier
 ligne_id: m04-000007
 hors_longlist: non
+rattachement_propose: 'ligne de la long-list securite renvoyée à niveau_de_vie (groupe securite/pauvrete_actifs_liquides_niveau_de_vie)
+  : sécurité économique des ménages → niveau_de_vie (D49, D50, grille v1.1, R9) ; la table de correspondance v0→v1
+  la place encore en securite (correction signalée à la session mère)'
 raccordement: non
 incontournable: oui
-socle_propose: oui
+socle_propose: non
+derogation_socle: 'Redondance avec depense_imprevue, fiche annuelle du même concept du crosswalk (sécurité économique
+  : dépense imprévue, épargne liquide ; SSF, OCDE, Eurostat) placée au socle proposé, alors que cette série n''a
+  que 4 valeurs irrégulières (2009-2020) : une seule fiche au socle pour le sous-thème (D50) ; Léo peut l''ajouter
+  au gel 2.'
 recommandation: retenir
 motif_recommandation: 'Seule mesure de l''épargne de précaution, indicateur OCDE 1_6 (35,9 % en 2020), mais 4 valeurs
   seulement (2009, 2014, 2017, 2020) : report de la dernière valeur (D17).'
@@ -45,4 +52,6 @@ socle_v1:
 qualite:
 - irreguliere
 - quatre_points
-notes: 'Filtre dans le flux OCDE : MEASURE = 1_6, UNIT_MEASURE = PT_POP, AGE, SEX, EDUCATION_LEV = _T.'
+notes: 'Filtre dans le flux OCDE : MEASURE = 1_6, UNIT_MEASURE = PT_POP, AGE, SEX, EDUCATION_LEV = _T. Transférée
+  de securite vers niveau_de_vie le 17/10/2026 (D49, D50, grille v1.1, R9) ; décision de Léo en securite : a_discuter
+  (« ce qui relève de la sécurité économique correspond plutôt à la dimension niveau de vie »), à revalider ici.'

@@ -1,7 +1,7 @@
 id: solde_capacite_epargne_future
 libelle: Opinion des ménages sur leur capacité d'épargne future (solde)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: capacite_epargne_percue
 variante_principale: non
 definition: Solde des réponses (amélioration moins détérioration) à la question sur la capacité du ménage à épargner
@@ -27,6 +27,9 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: bdm-000704
 hors_longlist: non
+rattachement_propose: 'ligne de la long-list securite renvoyée à niveau_de_vie (groupe securite/solde_capacite_epargne_future_niveau_de_vie)
+  : sécurité économique des ménages → niveau_de_vie (D49, D50, grille v1.1, R9) ; la table de correspondance v0→v1
+  la place encore en securite (correction signalée à la session mère)'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -41,6 +44,7 @@ variantes:
   nature: données CVS
   ligne_id: bdm-000714
   eligible: oui
+  longlist: securite
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -49,4 +53,6 @@ socle_v1:
 qualite:
 - agregation_annuelle
 notes: 'Moyenne annuelle calculée par le projet (D34) sur les valeurs mensuelles publiées : l''INSEE ne publie pas
-  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire).'
+  de moyenne annuelle de ce solde, aucun recoupement n''est donc possible (calcul élémentaire). Transférée de securite
+  vers niveau_de_vie le 17/10/2026 (D49, D50, grille v1.1, R9) ; décision de Léo en securite : a_discuter (« ce
+  qui relève de la sécurité économique correspond plutôt à la dimension niveau de vie »), à revalider ici.'

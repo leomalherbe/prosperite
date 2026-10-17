@@ -1,7 +1,7 @@
 id: risque_pauvrete_ressenti
 libelle: Personnes estimant risquer de devenir pauvres dans les cinq ans (baromètre DREES)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: insecurite_economique_ressentie
 variante_principale: oui
 definition: Part des adultes résidant en France métropolitaine (âge minimal à vérifier) qui répondent « oui, plutôt
@@ -33,6 +33,9 @@ geo: FM
 eligibilite_longlist: oui
 ligne_id: m04-000263
 hors_longlist: non
+rattachement_propose: 'ligne de la long-list securite renvoyée à niveau_de_vie (groupe securite/risque_pauvrete_ressenti_niveau_de_vie)
+  : sécurité économique des ménages → niveau_de_vie (D49, D50, grille v1.1, R9) ; la table de correspondance v0→v1
+  la place encore en securite (correction signalée à la session mère)'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -66,4 +69,8 @@ notes: 'Modalité 1 seule (consigne de la session mère, coordination NDV-4 avec
   2021, 19,5 % en 2025 (calcul de l''agent correcteur, lecture d''appoint, pas une variante). Recoupement (D34)
   : tableaux croisés simplifiés publiés par la DREES pour 2025 (docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
   : 16,12 % « oui, plutôt », 59,80 % « non, plutôt pas », 17,41 % « déjà pauvre », 6,67 % sans réponse, identiques
-  au calcul du robot ; vagues 2014-2023 non recoupées.'
+  au calcul du robot ; vagues 2014-2023 non recoupées. Transférée de securite vers niveau_de_vie le 17/10/2026 (D49,
+  D50, grille v1.1, R9) ; décision de Léo en securite : a_discuter (« ce qui relève de la sécurité économique correspond
+  plutôt à la dimension niveau de vie »), à revalider ici. Famille distincte de pauvrete_subjective (difficulte_joindre_deux_bouts,
+  pauvrete_ressentie) après le transfert : la crainte de devenir pauvre dans les cinq ans (risque) ne se substitue
+  pas à l''auto-identification comme pauvre (état) ; les modalités 1 et 3 de PE03, exclusives, se lisent ensemble.'

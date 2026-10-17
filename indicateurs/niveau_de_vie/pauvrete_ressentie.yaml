@@ -42,8 +42,8 @@ note_pertinence: 'Se dire pauvre n''est pas la même chose qu''avoir du mal à b
   le sentiment d''appartenir aux pauvres. La part passe de 7,87 % en 2014 à 12,65 % en 2017, 17,12 % en 2018, 19,24
   % en 2023 et 17,41 % en 2025 (sortie du robot M04) ; le saut de 2018 coïncide avec celui des non-réponses (1,35
   % puis 6,08 %), d''où une rupture possible. La modalité 1 de la même question (« oui, plutôt » : risque de devenir
-  pauvre) est la fiche securite/risque_pauvrete_ressenti : chaque fiche compte une seule modalité et elles se lisent
-  ensemble.'
+  pauvre) est la fiche risque_pauvrete_ressenti (transférée de securite, D49) : chaque fiche compte une seule modalité
+  et elles se lisent ensemble.'
 variantes: []
 socle_v1:
   seuil_minimal: null
@@ -61,11 +61,12 @@ qualite:
 notes: 'geo FM et non FR : la fiche du jeu 431 indique un échantillon représentatif de la France métropolitaine
   (maintenance n° 4). Valeurs (docs/sources/series/drees__barometre_2000_2025_distributions.csv) : 7,87 (2014),
   12,38 (2015), 12,65 (2017), 17,12 (2018), 18,71 (2022), 19,24 (2023), 17,41 (2025) ; non-réponses 1,35 % (2017),
-  6,08 % (2018), entre 6,2 et 7,8 % ensuite, comme pour la fiche sœur de securite (rupture_possible_2018). Contrôle
-  de plausibilité (D34, D38 b) : tableau croisé simplifié publié par la DREES pour 2025 (docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
+  6,08 % (2018), entre 6,2 et 7,8 % ensuite, comme pour la fiche sœur risque_pauvrete_ressenti (rupture_possible_2018).
+  Contrôle de plausibilité (D34, D38 b) : tableau croisé simplifié publié par la DREES pour 2025 (docs/sources/series/drees__barometre_tc_simplifies_2025.txt)
   : 16,12 % « oui, plutôt », 59,80 % « non, plutôt pas », 17,41 % « déjà pauvre », 6,67 % sans réponse, identiques
-  au calcul du robot ; vagues 2014-2023 non recoupées. Coordination avec securite : la correction n° 3 de la liste
-  partagée (somme des modalités 1 et 3) est abandonnée (SEC-2, NDV-4 close) ; modalité 1 en securite, modalité 3
-  ici. source_serie_id et url_api : pièce jointe unique barometre2000_2025_diff_csv, comme la fiche sœur ; identifiant
-  du catalogue M04 aligné le 16/10/2026 (D45, NDV-12). Pas de vague 2024 pour PE03 (couverture du robot). Licence
-  non indiquée sur la page du jeu (Licence Ouverte à confirmer).'
+  au calcul du robot ; vagues 2014-2023 non recoupées. Coordination avec la fiche sœur risque_pauvrete_ressenti
+  (en securite jusqu''au transfert D49) : la correction n° 3 de la liste partagée (somme des modalités 1 et 3) est
+  abandonnée (SEC-2, NDV-4 close) ; modalité 1 dans risque_pauvrete_ressenti, modalité 3 ici (familles distinctes
+  : risque à cinq ans et état ressenti). source_serie_id et url_api : pièce jointe unique barometre2000_2025_diff_csv,
+  comme la fiche sœur ; identifiant du catalogue M04 aligné le 16/10/2026 (D45, NDV-12). Pas de vague 2024 pour
+  PE03 (couverture du robot). Licence non indiquée sur la page du jeu (Licence Ouverte à confirmer).'

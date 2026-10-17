@@ -1,7 +1,7 @@
 id: endettement_menages
 libelle: Taux d'endettement brut des ménages (dette rapportée au revenu disponible brut)
-dimension: securite
-sous_theme: sécurité économique
+dimension: niveau_de_vie
+sous_theme: sécurité économique des ménages
 famille: endettement_menages
 variante_principale: oui
 definition: Encours des crédits contractés par les ménages (engagements AF4 des comptes financiers) rapporté à leur
@@ -26,9 +26,6 @@ geo: FR
 eligibilite_longlist: oui
 ligne_id: estat-008085
 hors_longlist: non
-rattachement_propose: 'ligne de la long-list niveau_de_vie (groupe endettement_menages) renvoyée à securite : endettement
-  des ménages → sécurité économique (D39, D46) ; la sécurité économique des ménages passe en niveau_de_vie (D49)
-  : à transférer'
 raccordement: non
 incontournable: non
 socle_propose: non
@@ -49,7 +46,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: bdm-000962
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: nasa_10_f_bs?freq=A&unit=PC_GADI&co_nco=CO&sector=S14_S15&finpos=LIAB&na_item=F3_F4&geo=FR
   source: Eurostat
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -57,7 +53,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: estat-005934
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: nasa_10_ki?freq=A&unit=PC&na_item=DIR_S14_S15&sector=S14_S15&geo=FR
   source: Eurostat
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -65,7 +60,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: estat-008086
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: OECD.WISE.WDP,DSD_HSL@DF_HSL_FWB,1.1 MEASURE=15_6 UNIT_MEASURE=PT_B6N_S1M
   source: OCDE — How's Life? (base du bien-être)
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -73,7 +67,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: m04-000116
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: https://data-api.ecb.europa.eu/service/data/QSA/Q.N.FR.W0.S1M.S1.N.L.LE.F4.T._Z.XDC_R_B6GA_CY._T.S.V.N._T
   source: BCE — ECB Data Portal (SDMX, comptes financiers trimestriels QSA)
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -81,7 +74,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: m04-000405
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: DS_NAT_SDG?AGE=_Z&BASE_PER=_Z&COMPOSITE_BREAKDOWN=_Z&EMPSTA=_Z&GEO=FRANCE-F&INDICATOR_SDG=17.i4a&PCS=_Z&SDG=SDG17&SEX=_Z&TYPE_INDICATOR_SDG=I_SDG_NWI&UNIT_MEASURE=PT
   source: INSEE Melodi
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -89,7 +81,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: melodi-005713
   eligible: oui
-  longlist: niveau_de_vie
 - serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_ENDETT_COUR&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
   source: INSEE Melodi
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -97,7 +88,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: melodi-004424
   eligible: a_verifier
-  longlist: niveau_de_vie
 - serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_ENDETT_COUR&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
   source: INSEE Melodi
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -105,7 +95,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: melodi-004425
   eligible: a_verifier
-  longlist: niveau_de_vie
 - serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_ENDETT_CST&GEO=FRANCE-FM&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
   source: INSEE Melodi
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -113,7 +102,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: melodi-004426
   eligible: a_verifier
-  longlist: niveau_de_vie
 - serie_id: DS_ENQPAT_DET?AGE=_T&COMPARE_TIME=1_2010&DEG_URB_UNIT=_T&ENQPAT_MEASURE=MT_MOY_ENDETT_CST&GEO=FRANCE-F_X_D976&PCS=_T&QUANTILE=_T&QUANTILE_MEASURE=_T&TPH=_T
   source: INSEE Melodi
   nature: même ratio ménages et ISBLSM, engagements en % du revenu disponible ajusté (nasa_10_f_bs), OCDE (dette
@@ -121,7 +109,6 @@ variantes:
     PIB, BDM et Melodi), endettement moyen de l'enquête Patrimoine
   ligne_id: melodi-004427
   eligible: a_verifier
-  longlist: niveau_de_vie
 socle_v1:
   seuil_minimal: null
   objectif: null
@@ -137,5 +124,6 @@ notes: 'Valeurs lues sur l''API Eurostat le 17/10/2026 (mise à jour du 14/10/20
   (OCDE, How''s Life, capital économique ; tableau de bord de la procédure de déséquilibre macroéconomique de l''Union
   pour la dette privée) ; il accompagne aussi l''accès à la propriété, d''où `sens_a_confirmer` : Léo tranche au
   gel 2. INSEE principal non retenu : la série ODD 17.i4a de l''INSEE est en % du PIB, autre définition (variante).
-  Sécurité économique des ménages : fiche créée par la reprise des lignes renvoyées (D46) après le classeur de securite
-  ; à transférer vers niveau_de_vie avec les 8 fiches de D49, où Léo la validera.'
+  Sécurité économique des ménages : fiche créée en securite par la reprise des lignes renvoyées (D46) après le classeur
+  de securite, transférée vers niveau_de_vie avec les 8 fiches de D49 le 17/10/2026 (D50) ; série principale dans
+  la long-list niveau_de_vie, plus de renvoi ; Léo la validera ici.'
